@@ -1,0 +1,23 @@
+{
+  "name": "agentcorp",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/shared",
+    "packages/db",
+    "packages/agent-core",
+    "packages/server",
+    "packages/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=packages/server & npm run dev --workspace=packages/web",
+    "dev:server": "npm run dev --workspace=packages/server",
+    "dev:web": "npm run dev --workspace=packages/web",
+    "build": "npm run build --workspaces",
+    "db:generate": "npm run generate --workspace=packages/db",
+    "db:migrate": "npm run migrate --workspace=packages/db"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

@@ -1,0 +1,405 @@
+import { useState, useEffect, useCallback } from 'react';
+import {
+  knowledgeApi,
+  type KnowledgeBase,
+  type KnowledgeBaseDetail,
+  type KnowledgeSearchResult,
+} from '@/api/client';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { Badge } from '@/components/ui/badge';
+import { ConfirmDialog } from '@/components/ui/confirm-dialog';
+import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
+import { useToast } from '@/components/ui/toast';
+import {
+  Plus, Trash2, Search, Loader2, ChevronDown, ChevronRight,
+  FileText, X, Pencil,
+} from 'lucide-react';
+
+export default function KnowledgeBasesPage() {
+  const [kbs, setKbs] = useState<KnowledgeBase[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [expandedDetail, setExpandedDetail] = useState<KnowledgeBaseDetail | null>(null);
+  const [showCreateDialog, setShowCreateDialog] = useState(false);
+  const [editTarget, setEditTarget] = useState<KnowledgeBase | null>(null);
+  const [deleteTarget, setDeleteTarget] = useState<KnowledgeBase | null>(null);
+  const [deleting, setDeleting] = useState(false);
+  const [showDocDialog, setShowDocDialog] = useState(false);
+  const [docKbId, setDocKbId] = useState('');
+  const [deleteDocTarget, setDeleteDocTarget] = useState<{ kbId: string; docId: string; title: string } | null>(null);
+  const [deletingDoc, setDeletingDoc] = useState(false);
+  const [searchKbId, setSearchKbId] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<KnowledgeSearchResult[]>([]);
+  const [searching, setSearching] = useState(false);
+  const { toast } = useToast();
+
+  const load = useCallback(async () => {
+    try {
+      const res = await knowledgeApi.list();
+      setKbs(res.data);
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : '加载失败', 'error');
+    } finally {
+      setLoading(false);
+    }
+  }, [toast]);
+
+  useEffect(() => { load(); }, [load]);
+
+  const toggleExpand = async (id: string) => {
+    if (expandedId === id) {
+      setExpandedId(null);
+      setExpandedDetail(null);
+      setSearchQuery('');
+      setSearchResults([]);
+      setSearchKbId('');
+      return;
+    }
+    setExpandedId(id);
+    try {
+      const res = await knowledgeApi.get(id);
+      setExpandedDetail(res.data);
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : '加载失败', 'error');
+    }
+  };
+
+  const handleDeleteKb = async () => {
+    if (!deleteTarget) return;
+    setDeleting(true);
+    try {
+      await knowledgeApi.delete(deleteTarget.id);
+      toast('知识库已删除', 'success');
+      setDeleteTarget(null);
+      if (expandedId === deleteTarget.id) { setExpandedId(null); setExpandedDetail(null); }
+      load();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : '删除失败', 'error');
+    } finally {
+      setDeleting(false);
+    }
+  };
+
+  const handleDeleteDoc = async () => {
+    if (!deleteDocTarget) return;
+    setDeletingDoc(true);
+    try {
+      await knowledgeApi.deleteDocument(deleteDocTarget.kbId, deleteDocTarget.docId);
+      toast('文档已删除', 'success');
+      setDeleteDocTarget(null);
+      // Refresh expanded detail
+      if (expandedId) {
+        const res = await knowledgeApi.get(expandedId);
+        setExpandedDetail(res.data);
+      }
+      load();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : '删除失败', 'error');
+    } finally {
+      setDeletingDoc(false);
+    }
+  };
+
+  const handleSearch = async (kbId: string) => {
+    if (!searchQuery.trim()) return;
+    setSearching(true);
+    setSearchKbId(kbId);
+    try {
+      const res = await knowledgeApi.search(kbId, searchQuery.trim());
+      setSearchResults(res.data);
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : '搜索失败', 'error');
+    } finally {
+      setSearching(false);
+    }
+  };
+
+  if (loading) {
+    return <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>;
+  }
+
+  return (
+    <div className="p-6">
+      <div className="flex items-center justify-between mb-6">
+        <h2 className="text-2xl font-semibold">知识库管理</h2>
+        <Button onClick={() => setShowCreateDialog(true)}>
+          <Plus className="h-4 w-4" /> 新建知识库
+        </Button>
+      </div>
+
+      {kbs.length === 0 ? (
+        <div className="text-center py-12 text-muted-foreground">暂无知识库</div>
+      ) : (
+        <div className="space-y-3">
+          {kbs.map(kb => (
+            <div key={kb.id} className="border rounded-lg">
+              <div
+                className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-muted/50"
+                onClick={() => toggleExpand(kb.id)}
+              >
+                {expandedId === kb.id ? <ChevronDown className="h-4 w-4 shrink-0" /> : <ChevronRight className="h-4 w-4 shrink-0" />}
+                <div className="flex-1 min-w-0">
+                  <div className="font-medium">{kb.name}</div>
+                  {kb.description && <div className="text-sm text-muted-foreground truncate">{kb.description}</div>}
+                </div>
+                <Badge variant="secondary">{kb.documentCount} 篇文档</Badge>
+                <Button variant="ghost" size="icon" onClick={e => { e.stopPropagation(); setEditTarget(kb); }}>
+                  <Pencil className="h-4 w-4" />
+                </Button>
+                <Button variant="ghost" size="icon" onClick={e => { e.stopPropagation(); setDeleteTarget(kb); }}>
+                  <Trash2 className="h-4 w-4 text-destructive" />
+                </Button>
+              </div>
+
+              {expandedId === kb.id && expandedDetail && (
+                <div className="border-t px-4 py-3 space-y-3">
+                  {/* Search bar */}
+                  <div className="flex gap-2">
+                    <div className="relative flex-1">
+                      <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                      <Input
+                        className="pl-9"
+                        placeholder="搜索知识库内容..."
+                        value={searchKbId === kb.id ? searchQuery : ''}
+                        onChange={e => { setSearchQuery(e.target.value); setSearchKbId(kb.id); }}
+                        onKeyDown={e => { if (e.key === 'Enter') handleSearch(kb.id); }}
+                      />
+                    </div>
+                    <Button variant="outline" onClick={() => handleSearch(kb.id)} disabled={searching}>
+                      {searching ? <Loader2 className="h-4 w-4 animate-spin" /> : '搜索'}
+                    </Button>
+                    <Button onClick={() => { setDocKbId(kb.id); setShowDocDialog(true); }}>
+                      <Plus className="h-4 w-4" /> 添加文档
+                    </Button>
+                  </div>
+
+                  {/* Search results */}
+                  {searchKbId === kb.id && searchResults.length > 0 && (
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm font-medium">搜索结果 ({searchResults.length})</span>
+                        <Button variant="ghost" size="sm" onClick={() => { setSearchResults([]); setSearchQuery(''); }}>
+                          <X className="h-3 w-3" /> 清除
+                        </Button>
+                      </div>
+                      {searchResults.map(r => (
+                        <div key={r.chunkId} className="border rounded p-3 text-sm">
+                          <div className="font-medium text-xs text-muted-foreground mb-1">{r.documentTitle}</div>
+                          <div className="whitespace-pre-wrap">{r.chunkContent}</div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Documents list */}
+                  {expandedDetail.documents.length === 0 ? (
+                    <div className="text-sm text-muted-foreground py-2">暂无文档</div>
+                  ) : (
+                    <div className="space-y-1">
+                      {expandedDetail.documents.map(doc => (
+                        <div key={doc.id} className="flex items-center gap-3 px-3 py-2 rounded hover:bg-muted/50">
+                          <FileText className="h-4 w-4 text-muted-foreground shrink-0" />
+                          <div className="flex-1 min-w-0">
+                            <div className="text-sm font-medium">{doc.title}</div>
+                            <div className="text-xs text-muted-foreground">{doc.chunkCount} 个分块</div>
+                          </div>
+                          <Button
+                            variant="ghost" size="icon"
+                            onClick={() => setDeleteDocTarget({ kbId: kb.id, docId: doc.id, title: doc.title })}
+                          >
+                            <Trash2 className="h-3 w-3 text-destructive" />
+                          </Button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Create/Edit KB Dialog */}
+      <KBFormDialog
+        open={showCreateDialog || !!editTarget}
+        onClose={() => { setShowCreateDialog(false); setEditTarget(null); }}
+        editTarget={editTarget}
+        onSuccess={() => {
+          setShowCreateDialog(false);
+          setEditTarget(null);
+          load();
+          if (expandedId) {
+            knowledgeApi.get(expandedId).then(res => setExpandedDetail(res.data)).catch(() => {});
+          }
+        }}
+      />
+
+      {/* Add Document Dialog */}
+      <AddDocumentDialog
+        open={showDocDialog}
+        kbId={docKbId}
+        onClose={() => setShowDocDialog(false)}
+        onSuccess={() => {
+          setShowDocDialog(false);
+          load();
+          if (expandedId) {
+            knowledgeApi.get(expandedId).then(res => setExpandedDetail(res.data)).catch(() => {});
+          }
+        }}
+      />
+
+      {/* Delete KB Confirm */}
+      <ConfirmDialog
+        open={!!deleteTarget}
+        onOpenChange={() => setDeleteTarget(null)}
+        title="删除知识库"
+        description={`确定要删除知识库「${deleteTarget?.name}」及其所有文档吗？`}
+        onConfirm={handleDeleteKb}
+        loading={deleting}
+      />
+
+      {/* Delete Document Confirm */}
+      <ConfirmDialog
+        open={!!deleteDocTarget}
+        onOpenChange={() => setDeleteDocTarget(null)}
+        title="删除文档"
+        description={`确定要删除文档「${deleteDocTarget?.title}」吗？`}
+        onConfirm={handleDeleteDoc}
+        loading={deletingDoc}
+      />
+    </div>
+  );
+}
+
+// ---- KB Create/Edit Dialog ----
+
+function KBFormDialog({ open, onClose, editTarget, onSuccess }: {
+  open: boolean;
+  onClose: () => void;
+  editTarget: KnowledgeBase | null;
+  onSuccess: () => void;
+}) {
+  const [name, setName] = useState('');
+  const [description, setDescription] = useState('');
+  const [saving, setSaving] = useState(false);
+  const { toast } = useToast();
+
+  useEffect(() => {
+    if (editTarget) {
+      setName(editTarget.name);
+      setDescription(editTarget.description || '');
+    } else {
+      setName('');
+      setDescription('');
+    }
+  }, [editTarget, open]);
+
+  const handleSubmit = async () => {
+    if (!name.trim()) return;
+    setSaving(true);
+    try {
+      if (editTarget) {
+        await knowledgeApi.update(editTarget.id, { name: name.trim(), description: description.trim() || undefined });
+        toast('知识库已更新', 'success');
+      } else {
+        await knowledgeApi.create({ name: name.trim(), description: description.trim() || undefined });
+        toast('知识库已创建', 'success');
+      }
+      onSuccess();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : '保存失败', 'error');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  return (
+    <Dialog open={open} onOpenChange={onClose}>
+      <DialogHeader>
+        <DialogTitle>{editTarget ? '编辑知识库' : '新建知识库'}</DialogTitle>
+      </DialogHeader>
+      <div className="space-y-4">
+        <div className="space-y-2">
+          <Label>名称</Label>
+          <Input value={name} onChange={e => setName(e.target.value)} placeholder="知识库名称" />
+        </div>
+        <div className="space-y-2">
+          <Label>描述</Label>
+          <Input value={description} onChange={e => setDescription(e.target.value)} placeholder="可选描述" />
+        </div>
+      </div>
+      <DialogFooter>
+        <Button variant="outline" onClick={onClose} disabled={saving}>取消</Button>
+        <Button onClick={handleSubmit} disabled={saving || !name.trim()}>
+          {saving ? '保存中...' : '保存'}
+        </Button>
+      </DialogFooter>
+    </Dialog>
+  );
+}
+
+// ---- Add Document Dialog ----
+
+function AddDocumentDialog({ open, kbId, onClose, onSuccess }: {
+  open: boolean;
+  kbId: string;
+  onClose: () => void;
+  onSuccess: () => void;
+}) {
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const [saving, setSaving] = useState(false);
+  const { toast } = useToast();
+
+  useEffect(() => {
+    if (open) { setTitle(''); setContent(''); }
+  }, [open]);
+
+  const handleSubmit = async () => {
+    if (!title.trim() || !content.trim()) return;
+    setSaving(true);
+    try {
+      await knowledgeApi.addDocument(kbId, { title: title.trim(), content: content.trim() });
+      toast('文档已添加', 'success');
+      onSuccess();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : '添加失败', 'error');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  return (
+    <Dialog open={open} onOpenChange={onClose}>
+      <DialogHeader>
+        <DialogTitle>添加文档</DialogTitle>
+      </DialogHeader>
+      <div className="space-y-4">
+        <div className="space-y-2">
+          <Label>标题</Label>
+          <Input value={title} onChange={e => setTitle(e.target.value)} placeholder="文档标题" />
+        </div>
+        <div className="space-y-2">
+          <Label>内容</Label>
+          <Textarea
+            value={content}
+            onChange={e => setContent(e.target.value)}
+            placeholder="粘贴文档内容..."
+            rows={10}
+          />
+        </div>
+      </div>
+      <DialogFooter>
+        <Button variant="outline" onClick={onClose} disabled={saving}>取消</Button>
+        <Button onClick={handleSubmit} disabled={saving || !title.trim() || !content.trim()}>
+          {saving ? '添加中...' : '添加'}
+        </Button>
+      </DialogFooter>
+    </Dialog>
+  );
+}

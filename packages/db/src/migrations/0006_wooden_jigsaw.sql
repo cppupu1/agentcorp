@@ -1,0 +1,1 @@
+ALTER TABLE `tools` ADD `transport_type` text DEFAULT 'stdio';
