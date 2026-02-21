@@ -12,7 +12,8 @@ import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useI18n } from '@/i18n';
-import { Plus, Pencil, Trash2, ChevronDown, ChevronRight, Loader2 } from 'lucide-react';
+import { EmptyState } from '@/components/ui/empty-state';
+import { Plus, Pencil, Trash2, ChevronDown, ChevronRight, Loader2, FlaskConical } from 'lucide-react';
 
 const watchTargetKeys: Record<string, string> = {
   employee: 'changeTest.watchEmployee',
@@ -116,9 +117,9 @@ export default function ChangeTestConfigsPage() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('changeTest.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('changeTest.title')}</h2>
         <Button onClick={() => { setEditing(null); setFormOpen(true); }}>
           <Plus className="h-4 w-4" /> {t('changeTest.create')}
         </Button>
@@ -127,43 +128,27 @@ export default function ChangeTestConfigsPage() {
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : configs.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('changeTest.empty')}</div>
+        <EmptyState icon={<FlaskConical className="h-10 w-10" />} title={t('changeTest.empty')} description={t('changeTest.emptyDesc')} action={<Button onClick={() => { setEditing(null); setFormOpen(true); }}><Plus className="h-4 w-4" /> {t('changeTest.create')}</Button>} />
       ) : (
-        <div className="border rounded-lg overflow-hidden">
-          <table className="w-full text-sm">
-            <thead className="bg-muted/50">
-              <tr>
-                <th className="text-left px-4 py-3 font-medium w-8"></th>
-                <th className="text-left px-4 py-3 font-medium">{t('changeTest.configName')}</th>
-                <th className="text-left px-4 py-3 font-medium">{t('changeTest.watchTarget')}</th>
-                <th className="text-left px-4 py-3 font-medium">{t('changeTest.watchId')}</th>
-                <th className="text-left px-4 py-3 font-medium">{t('changeTest.selectScenarios')}</th>
-                <th className="text-left px-4 py-3 font-medium">{t('models.status')}</th>
-                <th className="text-left px-4 py-3 font-medium">{t('changeTest.lastTriggered')}</th>
-                <th className="text-right px-4 py-3 font-medium">{t('models.actions')}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {configs.map(c => {
-                const sIds = parseScenarioIds(c.scenarioIds);
-                const isExpanded = expandedId === c.id;
-                return (
-                  <ConfigRow
-                    key={c.id}
-                    config={c}
-                    scenarioCount={sIds.length}
-                    isExpanded={isExpanded}
-                    detail={isExpanded ? expandedDetail : null}
-                    scenarios={scenarios}
-                    onExpand={() => handleExpand(c.id)}
-                    onToggle={() => handleToggleEnabled(c)}
-                    onEdit={() => { setEditing(c); setFormOpen(true); }}
-                    onDelete={() => setDeleteTarget(c)}
-                  />
-                );
-              })}
-            </tbody>
-          </table>
+        <div className="space-y-2">
+          {configs.map(c => {
+            const sIds = parseScenarioIds(c.scenarioIds);
+            const isExpanded = expandedId === c.id;
+            return (
+              <ConfigCard
+                key={c.id}
+                config={c}
+                scenarioCount={sIds.length}
+                isExpanded={isExpanded}
+                detail={isExpanded ? expandedDetail : null}
+                scenarios={scenarios}
+                onExpand={() => handleExpand(c.id)}
+                onToggle={() => handleToggleEnabled(c)}
+                onEdit={() => { setEditing(c); setFormOpen(true); }}
+                onDelete={() => setDeleteTarget(c)}
+              />
+            );
+          })}
         </div>
       )}
 
@@ -188,7 +173,7 @@ export default function ChangeTestConfigsPage() {
   );
 }
 
-function ConfigRow({
+function ConfigCard({
   config, scenarioCount, isExpanded, detail, scenarios,
   onExpand, onToggle, onEdit, onDelete,
 }: {
@@ -204,66 +189,50 @@ function ConfigRow({
 }) {
   const { t, locale } = useI18n();
   return (
-    <>
-      <tr className="border-t">
-        <td className="px-4 py-3">
-          <button onClick={onExpand} className="p-0.5 hover:bg-muted rounded">
-            {isExpanded ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
-          </button>
-        </td>
-        <td className="px-4 py-3 font-medium">{config.name}</td>
-        <td className="px-4 py-3">
-          <Badge variant="secondary">{watchTargetKeys[config.watchTarget] ? t(watchTargetKeys[config.watchTarget]) : config.watchTarget}</Badge>
-        </td>
-        <td className="px-4 py-3 text-muted-foreground text-xs font-mono">
-          {config.watchId || t('common.all')}
-        </td>
-        <td className="px-4 py-3">{scenarioCount}</td>
-        <td className="px-4 py-3">
+    <div className="bg-card border border-border/50 rounded-xl shadow-sm overflow-hidden">
+      <div className="p-4 flex items-center gap-4 cursor-pointer hover:bg-muted/30 transition-colors" onClick={onExpand}>
+        {isExpanded ? <ChevronDown className="h-4 w-4 shrink-0" /> : <ChevronRight className="h-4 w-4 shrink-0" />}
+        <div className="flex-1 min-w-0">
+          <div className="font-medium text-sm">{config.name}</div>
+          <div className="flex items-center gap-3 mt-1 text-xs text-muted-foreground">
+            <Badge variant="secondary">{watchTargetKeys[config.watchTarget] ? t(watchTargetKeys[config.watchTarget]) : config.watchTarget}</Badge>
+            <span className="font-mono">{config.watchId || t('common.all')}</span>
+            <span>{scenarioCount} scenarios</span>
+            <span>{config.lastTriggeredAt ? new Date(config.lastTriggeredAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US') : '-'}</span>
+          </div>
+        </div>
+        <div className="flex items-center gap-2 shrink-0" onClick={e => e.stopPropagation()}>
           <button
             onClick={onToggle}
             className={`px-2 py-0.5 rounded text-xs font-medium transition-colors ${
-              config.enabled ? 'bg-green-100 text-green-700 hover:bg-green-200' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+              config.enabled ? 'bg-success/15 text-success hover:bg-success/25' : 'bg-muted text-muted-foreground hover:bg-muted/80'
             }`}
           >
             {config.enabled ? t('changeTest.enabled') : t('changeTest.disabled')}
           </button>
-        </td>
-        <td className="px-4 py-3 text-muted-foreground text-xs">
-          {config.lastTriggeredAt ? new Date(config.lastTriggeredAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US') : '-'}
-        </td>
-        <td className="px-4 py-3 text-right">
-          <div className="flex justify-end gap-1">
-            <Button variant="ghost" size="sm" onClick={onEdit}>
-              <Pencil className="h-3 w-3" />
-            </Button>
-            <Button variant="ghost" size="sm" onClick={onDelete}>
-              <Trash2 className="h-3 w-3 text-destructive" />
-            </Button>
-          </div>
-        </td>
-      </tr>
+          <Button variant="ghost" size="sm" onClick={onEdit}><Pencil className="h-3 w-3" /></Button>
+          <Button variant="ghost" size="sm" onClick={onDelete}><Trash2 className="h-3 w-3 text-destructive" /></Button>
+        </div>
+      </div>
       {isExpanded && detail && (
-        <tr className="border-t bg-muted/30">
-          <td colSpan={8} className="px-8 py-4">
-            <p className="text-sm font-medium mb-2">{t('changeTest.runs')}</p>
-            {detail.runs.length === 0 ? (
-              <p className="text-xs text-muted-foreground">{t('changeTest.noRuns')}</p>
-            ) : (
-              <div className="space-y-1">
-                {detail.runs.map(run => (
-                  <div key={run.id} className="flex items-center gap-4 text-xs py-1">
-                    <span className="text-muted-foreground">{new Date(run.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</span>
-                    <Badge variant="secondary">{run.changeType}</Badge>
-                    <span className="font-mono text-muted-foreground">{run.testRunId || '-'}</span>
-                  </div>
-                ))}
-              </div>
-            )}
-          </td>
-        </tr>
+        <div className="border-t border-border/50 px-8 py-4 bg-muted/10">
+          <p className="text-sm font-medium mb-2">{t('changeTest.runs')}</p>
+          {detail.runs.length === 0 ? (
+            <p className="text-xs text-muted-foreground">{t('changeTest.noRuns')}</p>
+          ) : (
+            <div className="space-y-1">
+              {detail.runs.map(run => (
+                <div key={run.id} className="flex items-center gap-4 text-xs py-1">
+                  <span className="text-muted-foreground">{new Date(run.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</span>
+                  <Badge variant="secondary">{run.changeType}</Badge>
+                  <span className="font-mono text-muted-foreground">{run.testRunId || '-'}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       )}
-    </>
+    </div>
   );
 }
 
@@ -364,7 +333,7 @@ function ConfigFormDialog({
             type="button"
             onClick={() => setEnabled(!enabled)}
             className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${
-              enabled ? 'bg-primary' : 'bg-gray-300'
+              enabled ? 'bg-primary' : 'bg-muted-foreground/30'
             }`}
             role="switch"
             aria-checked={enabled}

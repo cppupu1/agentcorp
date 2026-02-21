@@ -40,9 +40,9 @@ export default function TestingPage() {
   const { t } = useI18n();
 
   return (
-    <div className="p-6 max-w-5xl">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('testing.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('testing.title')}</h2>
       </div>
       <div className="flex gap-2 mb-4 border-b">
         <button
@@ -134,7 +134,7 @@ function ScenariosTab() {
             return (
               <div
                 key={item.id}
-                className="border rounded-lg p-4 flex items-center gap-3 hover:bg-muted/50 transition-colors cursor-pointer"
+                className="bg-card border border-border/50 rounded-xl p-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-all cursor-pointer"
                 onClick={() => { setEditTarget(item); setEditOpen(true); }}
               >
                 <div className="flex-1 min-w-0">
@@ -469,7 +469,7 @@ function RunsTab() {
         const stVariant = st?.variant || 'secondary' as const;
         const isExpanded = expandedId === run.id;
         return (
-          <div key={run.id} className="border rounded-lg overflow-hidden">
+          <div key={run.id} className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm">
             <div
               className="p-4 flex items-center gap-3 cursor-pointer hover:bg-muted/50 transition-colors"
               onClick={() => toggleExpand(run.id)}
@@ -485,8 +485,8 @@ function RunsTab() {
                 </div>
                 <div className="flex items-center gap-3 text-xs text-muted-foreground">
                   <span>{t('testing.totalScenarios').replace('{count}', String(run.totalScenarios ?? 0))}</span>
-                  <span className="text-green-600">{t('testing.passed').replace('{count}', String(run.passedScenarios ?? 0))}</span>
-                  <span className="text-red-600">{t('testing.failed').replace('{count}', String(run.failedScenarios ?? 0))}</span>
+                  <span className="text-success">{t('testing.passed').replace('{count}', String(run.passedScenarios ?? 0))}</span>
+                  <span className="text-destructive">{t('testing.failed').replace('{count}', String(run.failedScenarios ?? 0))}</span>
                   {run.summary && <span className="truncate">- {run.summary}</span>}
                 </div>
               </div>
@@ -510,7 +510,7 @@ function RunsTab() {
                             <Badge variant={rlVariant}>{rlLabel}</Badge>
                             <span className="text-sm font-medium">{r.scenarioName || r.scenarioId}</span>
                             {r.score !== null && (
-                              <span className={`text-xs font-mono ml-auto ${r.score >= 60 ? 'text-green-600' : 'text-red-600'}`}>
+                              <span className={`text-xs font-mono ml-auto ${r.score >= 60 ? 'text-success' : 'text-destructive'}`}>
                                 {t('testing.score').replace('{score}', String(r.score))}
                               </span>
                             )}

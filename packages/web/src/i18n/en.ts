@@ -54,6 +54,12 @@ export const en: Record<keyof typeof zh, string> = {
   'nav.help': 'Help',
   'nav.changeTests': 'Change Tests',
   'nav.hr': 'HR Assistant',
+  'nav.group.workspace': 'Workspace',
+  'nav.group.resources': 'Resources',
+  'nav.group.operations': 'Operations',
+  'nav.group.monitoring': 'Monitoring',
+  'nav.group.system': 'System',
+  'nav.searchPlaceholder': 'Search...',
 
   // app
   'app.frozen': 'System Frozen — All tasks paused',
@@ -77,6 +83,12 @@ export const en: Record<keyof typeof zh, string> = {
   'home.addEmployee': 'Add Employee',
   'home.createTeam': 'Create Team',
   'home.createTask': 'Create Task',
+  'home.recentTasks': 'Recent Tasks',
+  'home.viewAll': 'View All',
+  'home.noTasks': 'No tasks yet',
+  'home.welcome': 'Welcome Back',
+  'home.welcomeDesc': 'Here is your AgentCorp dashboard overview',
+  'home.templates': 'Templates',
 
   // health
   'health.activeTasks': 'Active Tasks',
@@ -156,6 +168,7 @@ export const en: Record<keyof typeof zh, string> = {
   'employees.add': 'Add Employee',
   'employees.search': 'Search employees...',
   'employees.empty': 'No employees',
+  'employees.emptyDesc': 'Add an AI employee to get started',
   'employees.deleteEmployee': 'Delete Employee',
   'employees.deleteConfirm': 'Are you sure you want to delete employee "{name}"?',
   'employees.deleted': 'Employee deleted',
@@ -221,6 +234,7 @@ export const en: Record<keyof typeof zh, string> = {
   'teams.create': 'Create Team',
   'teams.search': 'Search teams...',
   'teams.empty': 'No teams',
+  'teams.emptyDesc': 'Create a team to organize collaboration',
   'teams.pmNotSet': 'PM: Not set',
   'teams.memberCount': '{count} members',
   'teams.toolCount': '{count} tools',
@@ -280,6 +294,7 @@ export const en: Record<keyof typeof zh, string> = {
   'tasks.allTeams': 'All Teams',
   'tasks.allStatus': 'All Status',
   'tasks.empty': 'No tasks',
+  'tasks.emptyDesc': 'Create a task to start collaborating',
   'tasks.unnamed': 'Unnamed Task',
   'tasks.auto': 'Auto',
   'tasks.suggest': 'Suggest',
@@ -501,6 +516,7 @@ export const en: Record<keyof typeof zh, string> = {
   'triggers.title': 'Trigger Management',
   'triggers.add': 'Add Trigger',
   'triggers.empty': 'No triggers',
+  'triggers.emptyDesc': 'Add a trigger to automatically create tasks',
   'triggers.name': 'Name',
   'triggers.type': 'Type',
   'triggers.team': 'Team',
@@ -824,6 +840,7 @@ export const en: Record<keyof typeof zh, string> = {
   'changeTest.title': 'Change Test Config',
   'changeTest.create': 'New Config',
   'changeTest.empty': 'No change test configs',
+  'changeTest.emptyDesc': 'Create a config to monitor changes and auto-trigger tests',
   'changeTest.deleteConfig': 'Delete Config',
   'changeTest.deleteConfirm': 'Are you sure you want to delete config "{name}"?',
   'changeTest.editConfig': 'Edit Config',
@@ -848,6 +865,7 @@ export const en: Record<keyof typeof zh, string> = {
   'deployment.title': 'Deployment Management',
   'deployment.create': 'New Deployment',
   'deployment.empty': 'No deployment records',
+  'deployment.emptyDesc': 'Create a deployment to manage employee rollout',
   'deployment.stageSimulation': 'Simulation',
   'deployment.stageShadow': 'Shadow',
   'deployment.stageLimitedAuto': 'Limited Auto',
@@ -867,6 +885,7 @@ export const en: Record<keyof typeof zh, string> = {
   'deployment.selectEmployeePlaceholder': 'Select employee',
   'deployment.selectTeam': 'Team (optional)',
   'deployment.noTeam': 'No team',
+  'deployment.deleted': 'Deleted',
   'deployment.promoted': 'Promoted to {stage}',
   'deployment.notPromoted': 'Promotion criteria not met',
   'deployment.manualPromoted': 'Manually promoted',
@@ -910,6 +929,18 @@ export const en: Record<keyof typeof zh, string> = {
   'help.emergency': 'Emergency Stop',
   'help.emergencyDesc': 'The red "Emergency Stop" button at the top of the sidebar immediately freezes the system, pausing all running tasks and preventing new ones. After freezing, the button turns green for "Resume", click to restore.',
   'help.recommendedFlow': 'Recommended flow: Configure Models → Add Tools → Create Employees → Build Teams → Publish Tasks',
+
+  // workflow stepper
+  'taskDetail.stepDraft': 'Draft',
+  'taskDetail.stepAligning': 'Align',
+  'taskDetail.stepReview': 'Review',
+  'taskDetail.stepExecuting': 'Execute',
+  'taskDetail.stepCompleted': 'Done',
+
+  // theme
+  'theme.light': 'Light Mode',
+  'theme.dark': 'Dark Mode',
+  'theme.system': 'System',
 
   // HR assistant
   'hr.title': 'HR Assistant',

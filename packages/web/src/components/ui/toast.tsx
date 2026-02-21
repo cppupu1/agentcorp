@@ -44,16 +44,18 @@ export function ToastProvider({ children }: { children: ReactNode }) {
             key={t.id}
             data-testid={t.type === 'error' ? 'error-toast' : undefined}
             className={cn(
-              'flex items-center gap-2 rounded-md px-4 py-3 text-sm shadow-lg min-w-[300px] max-w-[450px]',
-              t.type === 'success' && 'bg-green-600 text-white',
+              'relative overflow-hidden flex items-center gap-2 rounded-md px-4 py-3 text-sm shadow-lg min-w-[300px] max-w-[450px]',
+              t.type === 'success' && 'bg-success text-success-foreground',
               t.type === 'error' && 'bg-destructive text-white',
               t.type === 'info' && 'bg-foreground text-background',
             )}
+            style={{ animation: 'slideInRight 0.3s ease-out' }}
           >
             <span className="flex-1" data-testid="error-toast-message">{t.message}</span>
             <button onClick={() => dismiss(t.id)} className="shrink-0 cursor-pointer">
               <X className="h-4 w-4" />
             </button>
+            <div className="absolute bottom-0 left-0 h-0.5 bg-white/30" style={{ animation: 'progressShrink 4s linear forwards' }} />
           </div>
         ))}
       </div>

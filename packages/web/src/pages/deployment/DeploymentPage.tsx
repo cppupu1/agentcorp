@@ -11,7 +11,8 @@ import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useI18n } from '@/i18n';
-import { Plus, ChevronUp, ChevronDown, ClipboardCheck, Trash2, Loader2, ChevronRight } from 'lucide-react';
+import { EmptyState } from '@/components/ui/empty-state';
+import { Plus, ChevronUp, ChevronDown, ClipboardCheck, Trash2, Loader2, ChevronRight, Rocket } from 'lucide-react';
 
 const STAGES = ['simulation', 'shadow', 'limited_auto', 'full_auto'] as const;
 
@@ -40,10 +41,10 @@ function StageIndicator({ current }: { current: string }) {
           <div
             className={`w-3 h-3 rounded-full transition-colors ${
               i <= idx
-                ? s === 'simulation' ? 'bg-gray-400'
-                : s === 'shadow' ? 'bg-blue-500'
-                : s === 'limited_auto' ? 'bg-yellow-500'
-                : 'bg-green-500'
+                ? s === 'simulation' ? 'bg-muted-foreground'
+                : s === 'shadow' ? 'bg-info'
+                : s === 'limited_auto' ? 'bg-warning'
+                : 'bg-success'
                 : 'bg-muted'
             }`}
             title={stageLabel(s)}
@@ -127,7 +128,7 @@ export default function DeploymentPage() {
     setDeleting(true);
     try {
       await deploymentApi.delete(deleteTarget.id);
-      toast(t('incidents.deleted'), 'success');
+      toast(t('deployment.deleted'), 'success');
       setDeleteTarget(null);
       if (expandedId === deleteTarget.id) { setExpandedId(null); setDetail(null); }
       load();
@@ -150,9 +151,9 @@ export default function DeploymentPage() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('deployment.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('deployment.title')}</h2>
         <Button onClick={() => setCreateOpen(true)}>
           <Plus className="h-4 w-4" /> {t('deployment.create')}
         </Button>
@@ -161,14 +162,14 @@ export default function DeploymentPage() {
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : stages.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('deployment.empty')}</div>
+        <EmptyState icon={<Rocket className="h-10 w-10" />} title={t('deployment.empty')} description={t('deployment.emptyDesc')} action={<Button onClick={() => setCreateOpen(true)}><Plus className="h-4 w-4" /> {t('deployment.create')}</Button>} />
       ) : (
         <div className="space-y-3">
           {stages.map(s => {
             const badge = stageBadge[s.stage] || stageBadge.simulation;
             const isExpanded = expandedId === s.id;
             return (
-              <div key={s.id} className="border rounded-lg overflow-hidden">
+              <div key={s.id} className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm">
                 <div
                   className="flex items-center gap-4 px-4 py-3 cursor-pointer hover:bg-muted/30 transition-colors"
                   onClick={() => handleExpand(s.id)}

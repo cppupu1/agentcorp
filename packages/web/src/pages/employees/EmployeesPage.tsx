@@ -9,7 +9,9 @@ import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useDebouncedValue } from '@/hooks/useDebouncedValue';
 import ImportEmployeeDialog from './ImportEmployeeDialog';
-import { Plus, Pencil, Trash2, Copy, MessageSquare, Search, Loader2, LayoutGrid, List, Download, Upload, CheckSquare, Square } from 'lucide-react';
+import { Skeleton } from '@/components/ui/skeleton';
+import { EmptyState } from '@/components/ui/empty-state';
+import { Plus, Pencil, Trash2, Copy, MessageSquare, Search, Loader2, LayoutGrid, List, Download, Upload, CheckSquare, Square, Users } from 'lucide-react';
 
 export default function EmployeesPage() {
   const [employees, setEmployees] = useState<Employee[]>([]);
@@ -98,19 +100,19 @@ export default function EmployeesPage() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('employees.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('employees.title')}</h2>
         <div className="flex gap-2">
-          <Button variant="outline" onClick={() => setShowImport(true)}>
+          <Button variant="outline" size="sm" onClick={() => setShowImport(true)}>
             <Upload className="h-4 w-4" /> {t('common.import')}
           </Button>
-          <Button variant="outline" onClick={() => { setSelectMode(!selectMode); setSelected(new Set()); }}>
+          <Button variant="outline" size="sm" onClick={() => { setSelectMode(!selectMode); setSelected(new Set()); }}>
             {selectMode ? <Square className="h-4 w-4" /> : <CheckSquare className="h-4 w-4" />}
             {selectMode ? t('employees.cancelSelect') : t('employees.multiSelect')}
           </Button>
           {selectMode && selected.size > 0 && (
-            <Button variant="outline" onClick={handleExport}>
+            <Button variant="outline" size="sm" onClick={handleExport}>
               <Download className="h-4 w-4" /> {t('common.export')} ({selected.size})
             </Button>
           )}
@@ -154,9 +156,9 @@ export default function EmployeesPage() {
       )}
 
       {loading ? (
-        <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{Array.from({ length: 6 }, (_, i) => <Skeleton key={i} className="h-44 rounded-xl" />)}</div>
       ) : employees.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('employees.empty')}</div>
+        <EmptyState icon={<Users className="h-10 w-10" />} title={t('employees.empty')} description={t('employees.emptyDesc')} action={<Button onClick={() => navigate('/employees/new')}><Plus className="h-4 w-4" /> {t('employees.add')}</Button>} />
       ) : viewMode === 'card' ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {employees.map(emp => (
@@ -194,7 +196,7 @@ function EmployeeCard({ emp, selectMode, selected, onToggle, onEdit, onCopy, onD
 }) {
   const { t } = useI18n();
   return (
-    <div data-testid={`employee-item-${emp.id}`} className={`border rounded-lg p-4 space-y-3 ${selected ? 'border-primary bg-primary/5' : ''}`} onClick={selectMode ? onToggle : undefined}>
+    <div data-testid={`employee-item-${emp.id}`} className={`bg-card border rounded-xl p-4 space-y-3 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all ${selected ? 'border-primary ring-1 ring-primary/20' : 'border-border/50'}`} onClick={selectMode ? onToggle : undefined}>
       <div className="flex items-start gap-3">
         {selectMode && (
           <input type="checkbox" checked={selected} onChange={onToggle} className="mt-1" onClick={e => e.stopPropagation()} />
@@ -226,7 +228,7 @@ function EmployeeListItem({ emp, selectMode, selected, onToggle, onEdit, onCopy,
 }) {
   const { t } = useI18n();
   return (
-    <div data-testid={`employee-item-${emp.id}`} className={`flex items-center gap-4 border rounded-md px-4 py-3 ${selected ? 'border-primary bg-primary/5' : ''}`} onClick={selectMode ? onToggle : undefined}>
+    <div data-testid={`employee-item-${emp.id}`} className={`flex items-center gap-4 bg-card border rounded-xl px-4 py-3 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all ${selected ? 'border-primary ring-1 ring-primary/20' : 'border-border/50'}`} onClick={selectMode ? onToggle : undefined}>
       {selectMode && (
         <input type="checkbox" checked={selected} onChange={onToggle} onClick={e => e.stopPropagation()} />
       )}

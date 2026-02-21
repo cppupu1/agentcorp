@@ -52,6 +52,12 @@ export const zh = {
   'nav.help': '帮助',
   'nav.changeTests': '变更测试',
   'nav.hr': 'HR助手',
+  'nav.group.workspace': '工作台',
+  'nav.group.resources': '资源管理',
+  'nav.group.operations': '运营',
+  'nav.group.monitoring': '监控与质量',
+  'nav.group.system': '系统',
+  'nav.searchPlaceholder': '搜索功能...',
 
   // app
   'app.frozen': '系统已冻结 — 所有任务已暂停',
@@ -75,6 +81,12 @@ export const zh = {
   'home.addEmployee': '添加员工',
   'home.createTeam': '创建团队',
   'home.createTask': '创建任务',
+  'home.recentTasks': '最近任务',
+  'home.viewAll': '查看全部',
+  'home.noTasks': '暂无任务',
+  'home.welcome': '欢迎回来',
+  'home.welcomeDesc': '这是您的 AgentCorp 控制台概览',
+  'home.templates': '场景模板',
 
   // health dashboard
   'health.activeTasks': '执行中任务',
@@ -154,6 +166,7 @@ export const zh = {
   'employees.add': '添加员工',
   'employees.search': '搜索员工...',
   'employees.empty': '暂无员工',
+  'employees.emptyDesc': '添加一个 AI 员工来开始工作',
   'employees.deleteEmployee': '删除员工',
   'employees.deleteConfirm': '确定要删除员工「{name}」吗？',
   'employees.deleted': '员工已删除',
@@ -219,6 +232,7 @@ export const zh = {
   'teams.create': '创建团队',
   'teams.search': '搜索团队...',
   'teams.empty': '暂无团队',
+  'teams.emptyDesc': '创建一个团队来组织协作',
   'teams.pmNotSet': 'PM: 未指定',
   'teams.memberCount': '{count} 成员',
   'teams.toolCount': '{count} 工具',
@@ -278,6 +292,7 @@ export const zh = {
   'tasks.allTeams': '全部团队',
   'tasks.allStatus': '全部状态',
   'tasks.empty': '暂无任务',
+  'tasks.emptyDesc': '创建一个任务来开始协作',
   'tasks.unnamed': '未命名任务',
   'tasks.auto': '自动',
   'tasks.suggest': '建议',
@@ -499,6 +514,7 @@ export const zh = {
   'triggers.title': '触发器管理',
   'triggers.add': '添加触发器',
   'triggers.empty': '暂无触发器',
+  'triggers.emptyDesc': '添加触发器来自动创建任务',
   'triggers.name': '名称',
   'triggers.type': '类型',
   'triggers.team': '团队',
@@ -822,6 +838,7 @@ export const zh = {
   'changeTest.title': '变更测试配置',
   'changeTest.create': '新建配置',
   'changeTest.empty': '暂无变更测试配置',
+  'changeTest.emptyDesc': '新建配置来监控变更并自动触发测试',
   'changeTest.deleteConfig': '删除配置',
   'changeTest.deleteConfirm': '确定要删除配置「{name}」吗？',
   'changeTest.editConfig': '编辑配置',
@@ -846,6 +863,7 @@ export const zh = {
   'deployment.title': '上线管理',
   'deployment.create': '新建部署',
   'deployment.empty': '暂无部署阶段记录',
+  'deployment.emptyDesc': '新建部署来管理员工的上线流程',
   'deployment.stageSimulation': '模拟',
   'deployment.stageShadow': '影子',
   'deployment.stageLimitedAuto': '限制自动',
@@ -865,6 +883,7 @@ export const zh = {
   'deployment.selectEmployeePlaceholder': '请选择员工',
   'deployment.selectTeam': '团队(可选)',
   'deployment.noTeam': '不关联团队',
+  'deployment.deleted': '已删除',
   'deployment.promoted': '已晋升至{stage}',
   'deployment.notPromoted': '未满足晋升条件',
   'deployment.manualPromoted': '已手动晋升',
@@ -908,6 +927,18 @@ export const zh = {
   'help.emergency': '紧急停止',
   'help.emergencyDesc': '侧边栏顶部的红色「紧急停止」按钮可立即冻结系统，暂停所有正在执行的任务并禁止创建新任务。冻结后按钮变为绿色「解除冻结」，点击即可恢复。',
   'help.recommendedFlow': '推荐流程：配置模型 → 添加工具 → 创建员工 → 组建团队 → 发布任务',
+
+  // workflow stepper
+  'taskDetail.stepDraft': '草稿',
+  'taskDetail.stepAligning': '对齐',
+  'taskDetail.stepReview': '审批',
+  'taskDetail.stepExecuting': '执行',
+  'taskDetail.stepCompleted': '完成',
+
+  // theme
+  'theme.light': '浅色模式',
+  'theme.dark': '深色模式',
+  'theme.system': '跟随系统',
 
   // HR assistant
   'hr.title': 'HR 助手',

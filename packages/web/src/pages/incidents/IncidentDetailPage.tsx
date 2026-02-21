@@ -98,13 +98,13 @@ export default function IncidentDetailPage() {
   const status = statusLabels[report.status || 'draft'] || { label: report.status, variant: 'secondary' as const };
 
   return (
-    <div className="p-6 max-w-4xl">
+    <div className="p-6 max-w-4xl mx-auto">
       <button onClick={() => navigate('/incidents')} className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-4">
         <ArrowLeft className="h-4 w-4" /> {t('incidentDetail.backToList')}
       </button>
 
       <div className="flex items-center gap-3 mb-6">
-        <h2 className="text-2xl font-semibold">{t('incidentDetail.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('incidentDetail.title')}</h2>
         <Badge variant={trigger.variant}>{trigger.label}</Badge>
         <Badge variant={status.variant}>{status.label}</Badge>
       </div>
@@ -121,14 +121,14 @@ export default function IncidentDetailPage() {
           <div className="relative pl-6 border-l-2 border-muted space-y-3">
             {report.timeline.map((event, i) => {
               const typeColors: Record<string, string> = {
-                error: 'bg-red-500',
-                finding: 'bg-yellow-500',
-                decision: 'bg-blue-500',
-                tool_call: 'bg-gray-400',
+                error: 'bg-destructive',
+                finding: 'bg-warning',
+                decision: 'bg-info',
+                tool_call: 'bg-muted-foreground',
               };
               return (
                 <div key={i} className="relative">
-                  <div className={`absolute -left-[25px] top-1.5 h-2.5 w-2.5 rounded-full ${typeColors[event.type] || 'bg-gray-400'}`} />
+                  <div className={`absolute -left-[25px] top-1.5 h-2.5 w-2.5 rounded-full ${typeColors[event.type] || 'bg-muted-foreground'}`} />
                   <div className="text-xs text-muted-foreground">{new Date(event.time).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</div>
                   <div className="text-sm">{event.summary}</div>
                 </div>

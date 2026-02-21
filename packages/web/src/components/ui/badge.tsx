@@ -9,8 +9,8 @@ const variants: Record<string, string> = {
   secondary: 'bg-secondary text-secondary-foreground',
   destructive: 'bg-destructive/15 text-destructive',
   outline: 'border border-input text-foreground',
-  success: 'bg-green-100 text-green-800',
-  warning: 'bg-yellow-100 text-yellow-800',
+  success: 'bg-success/15 text-success',
+  warning: 'bg-warning/15 text-warning',
 };
 
 export function Badge({ className, variant = 'default', ...props }: BadgeProps) {

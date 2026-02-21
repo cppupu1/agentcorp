@@ -125,9 +125,9 @@ export default function KnowledgeBasesPage() {
   }
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('kb.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('kb.title')}</h2>
         <Button onClick={() => setShowCreateDialog(true)}>
           <Plus className="h-4 w-4" /> {t('kb.create')}
         </Button>
@@ -138,7 +138,7 @@ export default function KnowledgeBasesPage() {
       ) : (
         <div className="space-y-3">
           {kbs.map(kb => (
-            <div key={kb.id} className="border rounded-lg">
+            <div key={kb.id} className="bg-card border border-border/50 rounded-xl shadow-sm">
               <div
                 className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-muted/50"
                 onClick={() => toggleExpand(kb.id)}

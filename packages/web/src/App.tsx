@@ -1,11 +1,18 @@
-import { BrowserRouter, Routes, Route, NavLink, useNavigate } from 'react-router';
-import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, NavLink, useNavigate, useLocation } from 'react-router';
+import { useState, useEffect, createContext, useContext } from 'react';
 import { ToastProvider, useToast } from '@/components/ui/toast';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { SystemStatusProvider, useSystemStatus } from '@/contexts/SystemStatusContext';
 import { systemApi, notificationsApi } from '@/api/client';
-import { Bell, Languages } from 'lucide-react';
+import {
+  Bell, Languages, Home, Brain, Wrench, Bot, Users, UsersRound,
+  ClipboardList, Timer, ShieldCheck, BookOpen, BarChart3, DollarSign,
+  Microscope, AlertTriangle, Rocket, FlaskConical, RefreshCw,
+  Settings, HelpCircle, Search, PanelLeftClose, PanelLeft, ChevronDown,
+  Sun, Moon, Monitor,
+} from 'lucide-react';
 import { useI18n, type TranslationKeys } from '@/i18n';
+import { useTheme } from '@/contexts/ThemeContext';
 import ModelsPage from '@/pages/models/ModelsPage';
 import ToolsPage from '@/pages/tools/ToolsPage';
 import EmployeesPage from '@/pages/employees/EmployeesPage';
@@ -32,51 +39,113 @@ import HrAssistantPage from '@/pages/hr/HrAssistantPage';
 import QualityDashboardPage from '@/pages/quality/QualityDashboardPage';
 import RoiReviewPage from '@/pages/roi/RoiReviewPage';
 import ImprovementPage from '@/pages/improvement/ImprovementPage';
+import PageLayout from '@/components/PageLayout';
 import './index.css';
 
-const navItems: { path: string; labelKey: TranslationKeys; icon: string }[] = [
-  { path: '/', labelKey: 'nav.home', icon: '🏠' },
-  { path: '/models', labelKey: 'nav.models', icon: '🧠' },
-  { path: '/tools', labelKey: 'nav.tools', icon: '🔧' },
-  { path: '/hr', labelKey: 'nav.hr', icon: '🤖' },
-  { path: '/employees', labelKey: 'nav.employees', icon: '👤' },
-  { path: '/teams', labelKey: 'nav.teams', icon: '👥' },
-  { path: '/tasks', labelKey: 'nav.tasks', icon: '📋' },
-  { path: '/triggers', labelKey: 'nav.triggers', icon: '⏰' },
-  { path: '/policies', labelKey: 'nav.policies', icon: '📜' },
-  { path: '/knowledge', labelKey: 'nav.knowledge', icon: '📚' },
-  { path: '/quality', labelKey: 'nav.quality', icon: '📊' },
-  { path: '/roi', labelKey: 'nav.roi', icon: '💰' },
-  { path: '/improvement', labelKey: 'nav.improvement', icon: '🔬' },
-  { path: '/incidents', labelKey: 'nav.incidents', icon: '🚨' },
-  { path: '/deployment', labelKey: 'nav.deployment', icon: '🚀' },
-  { path: '/testing', labelKey: 'nav.testing', icon: '🧪' },
-  { path: '/change-tests', labelKey: 'nav.changeTests', icon: '🔄' },
-  { path: '/settings', labelKey: 'nav.settings', icon: '⚙️' },
-  { path: '/help', labelKey: 'nav.help', icon: '❓' },
+type NavItem = { path: string; labelKey: TranslationKeys; icon: React.ComponentType<{ className?: string }> };
+type NavGroup = { groupKey: TranslationKeys; items: NavItem[] };
+
+const navGroups: NavGroup[] = [
+  {
+    groupKey: 'nav.group.workspace',
+    items: [
+      { path: '/', labelKey: 'nav.home', icon: Home },
+      { path: '/hr', labelKey: 'nav.hr', icon: Bot },
+      { path: '/tasks', labelKey: 'nav.tasks', icon: ClipboardList },
+    ],
+  },
+  {
+    groupKey: 'nav.group.resources',
+    items: [
+      { path: '/models', labelKey: 'nav.models', icon: Brain },
+      { path: '/tools', labelKey: 'nav.tools', icon: Wrench },
+      { path: '/employees', labelKey: 'nav.employees', icon: Users },
+      { path: '/teams', labelKey: 'nav.teams', icon: UsersRound },
+    ],
+  },
+  {
+    groupKey: 'nav.group.operations',
+    items: [
+      { path: '/triggers', labelKey: 'nav.triggers', icon: Timer },
+      { path: '/policies', labelKey: 'nav.policies', icon: ShieldCheck },
+      { path: '/knowledge', labelKey: 'nav.knowledge', icon: BookOpen },
+    ],
+  },
+  {
+    groupKey: 'nav.group.monitoring',
+    items: [
+      { path: '/quality', labelKey: 'nav.quality', icon: BarChart3 },
+      { path: '/roi', labelKey: 'nav.roi', icon: DollarSign },
+      { path: '/improvement', labelKey: 'nav.improvement', icon: Microscope },
+      { path: '/incidents', labelKey: 'nav.incidents', icon: AlertTriangle },
+      { path: '/deployment', labelKey: 'nav.deployment', icon: Rocket },
+      { path: '/testing', labelKey: 'nav.testing', icon: FlaskConical },
+      { path: '/change-tests', labelKey: 'nav.changeTests', icon: RefreshCw },
+    ],
+  },
+  {
+    groupKey: 'nav.group.system',
+    items: [
+      { path: '/settings', labelKey: 'nav.settings', icon: Settings },
+      { path: '/help', labelKey: 'nav.help', icon: HelpCircle },
+    ],
+  },
 ];
 
-function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
+// Sidebar collapse context
+const SidebarContext = createContext({ collapsed: false, toggle: () => {} });
+const useSidebar = () => useContext(SidebarContext);
+
+function NavGroupSection({ group, collapsed, onNavigate }: { group: NavGroup; collapsed: boolean; onNavigate?: () => void }) {
   const { t } = useI18n();
+  const [open, setOpen] = useState(true);
+
   return (
-    <nav className="flex-1 p-2 space-y-1" aria-label="Navigation">
-      {navItems.map((item) => (
-        <NavLink
-          key={item.path}
-          to={item.path}
-          end={item.path === '/'}
-          onClick={onNavigate}
-          className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
-              isActive
-                ? 'bg-sidebar-accent text-sidebar-accent-foreground font-medium'
-                : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
-            }${item.path === '/hr' ? ' font-semibold border border-primary/30 bg-primary/5' : ''}`
-          }
+    <div className="mb-1">
+      {!collapsed && (
+        <button
+          onClick={() => setOpen(!open)}
+          className="flex items-center justify-between w-full px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-sidebar-muted hover:text-sidebar-foreground transition-colors"
         >
-          <span aria-hidden="true">{item.icon}</span>
-          <span>{t(item.labelKey)}</span>
-        </NavLink>
+          <span>{t(group.groupKey)}</span>
+          <ChevronDown className={`h-3 w-3 transition-transform ${open ? '' : '-rotate-90'}`} />
+        </button>
+      )}
+      {(open || collapsed) && (
+        <div className="space-y-0.5">
+          {group.items.map((item) => (
+            <NavLink
+              key={item.path}
+              to={item.path}
+              end={item.path === '/'}
+              onClick={onNavigate}
+              className={({ isActive }) =>
+                `flex items-center gap-3 rounded-lg text-[13px] transition-all ${
+                  collapsed ? 'justify-center px-2 py-2 mx-1' : 'px-3 py-2 mx-2'
+                } ${
+                  isActive
+                    ? 'bg-sidebar-accent text-sidebar-accent-foreground font-medium shadow-sm'
+                    : 'text-sidebar-foreground/70 hover:text-sidebar-foreground hover:bg-sidebar-accent/50'
+                }`
+              }
+              title={collapsed ? t(item.labelKey) : undefined}
+            >
+              <item.icon className="h-4 w-4 shrink-0" />
+              {!collapsed && <span>{t(item.labelKey)}</span>}
+            </NavLink>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
+  const { collapsed } = useSidebar();
+  return (
+    <nav className="flex-1 overflow-y-auto py-2 space-y-1" aria-label="Navigation">
+      {navGroups.map((group) => (
+        <NavGroupSection key={group.groupKey} group={group} collapsed={collapsed} onNavigate={onNavigate} />
       ))}
     </nav>
   );
@@ -104,7 +173,7 @@ function NotificationBell() {
     >
       <Bell className="h-4 w-4" />
       {count > 0 && (
-        <span className="absolute -top-0.5 -right-0.5 h-4 min-w-[16px] px-1 flex items-center justify-center rounded-full bg-red-500 text-white text-[10px] font-medium">
+        <span className="absolute -top-0.5 -right-0.5 h-4 min-w-[16px] px-1 flex items-center justify-center rounded-full bg-destructive text-destructive-foreground text-[10px] font-medium">
           {count > 99 ? '99+' : count}
         </span>
       )}
@@ -142,8 +211,8 @@ function EmergencyButton() {
       disabled={loading || status === 'loading'}
       className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
         status === 'frozen'
-          ? 'bg-green-600 hover:bg-green-700 text-white'
-          : 'bg-red-600 hover:bg-red-700 text-white'
+          ? 'bg-success hover:bg-success/90 text-success-foreground'
+          : 'bg-destructive hover:bg-destructive/90 text-destructive-foreground'
       } disabled:opacity-50`}
     >
       {loading ? '...' : status === 'frozen' ? t('app.emergencyResume') : t('app.emergencyStop')}
@@ -156,7 +225,7 @@ function FrozenBanner() {
   const { t } = useI18n();
   if (status !== 'frozen') return null;
   return (
-    <div className="bg-red-600 text-white text-center py-1.5 text-sm font-medium">
+    <div className="bg-destructive text-destructive-foreground text-center py-1.5 text-sm font-medium">
       {t('app.frozen')}
     </div>
   );
@@ -175,27 +244,42 @@ function LanguageToggle() {
   );
 }
 
+function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+  const { t } = useI18n();
+  const next = theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light';
+  const Icon = theme === 'dark' ? Moon : theme === 'system' ? Monitor : Sun;
+  const label = theme === 'light' ? t('theme.light') : theme === 'dark' ? t('theme.dark') : t('theme.system');
+  return (
+    <button
+      onClick={() => setTheme(next)}
+      className="p-1.5 rounded-md hover:bg-sidebar-accent/50 transition-colors"
+      title={label}
+      data-testid="theme-toggle"
+    >
+      <Icon className="h-4 w-4" />
+    </button>
+  );
+}
+
 function MobileHeader() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="md:hidden border-b border-border bg-sidebar-background">
-      <div className="flex items-center justify-between px-4 py-3">
-        <h1 className="text-lg font-semibold">AgentCorp</h1>
+    <div className="md:hidden border-b border-sidebar-border bg-sidebar-background text-sidebar-foreground">
+      <div className="flex items-center justify-between px-4 h-14">
+        <h1 className="text-base font-bold tracking-tight">AgentCorp</h1>
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <LanguageToggle />
           <NotificationBell />
           <EmergencyButton />
           <button
             onClick={() => setOpen(!open)}
-            className="p-1 rounded-md hover:bg-sidebar-accent/50"
+            className="p-1.5 rounded-md hover:bg-sidebar-accent/50"
             aria-label="Toggle navigation"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              {open ? (
-                <path d="M18 6L6 18M6 6l12 12" />
-              ) : (
-                <path d="M3 12h18M3 6h18M3 18h18" />
-              )}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              {open ? <path d="M18 6L6 18M6 6l12 12" /> : <path d="M3 12h18M3 6h18M3 18h18" />}
             </svg>
           </button>
         </div>
@@ -210,17 +294,23 @@ function MobileHeader() {
 }
 
 function DesktopSidebar() {
+  const { collapsed, toggle } = useSidebar();
+  const { t } = useI18n();
   return (
-    <aside className="hidden md:flex w-56 h-screen border-r border-border bg-sidebar-background flex-col">
-      <div className="p-4 border-b border-border flex items-center justify-between">
-        <h1 className="text-lg font-semibold text-sidebar-foreground">AgentCorp</h1>
-        <div className="flex items-center gap-1">
-          <LanguageToggle />
-          <NotificationBell />
-          <EmergencyButton />
-        </div>
+    <aside className={`hidden md:flex h-screen flex-col bg-sidebar-background text-sidebar-foreground transition-all duration-300 ${collapsed ? 'w-16' : 'w-60'}`}>
+      <div className={`flex items-center border-b border-sidebar-border h-14 shrink-0 ${collapsed ? 'justify-center px-2' : 'justify-between px-4'}`}>
+        {!collapsed && <h1 className="text-base font-bold text-sidebar-primary-foreground tracking-tight">AgentCorp</h1>}
+        <button onClick={toggle} className="p-1.5 rounded-md hover:bg-sidebar-accent/50 text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors" title={collapsed ? 'Expand' : 'Collapse'}>
+          {collapsed ? <PanelLeft className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />}
+        </button>
       </div>
       <Sidebar />
+      <div className={`border-t border-sidebar-border p-3 shrink-0 ${collapsed ? 'flex flex-col items-center gap-2' : 'flex items-center gap-2'}`}>
+        <ThemeToggle />
+        <LanguageToggle />
+        <NotificationBell />
+        {!collapsed && <EmergencyButton />}
+      </div>
     </aside>
   );
 }
@@ -239,17 +329,20 @@ function NotFoundPage() {
 }
 
 export default function App() {
+  const [collapsed, setCollapsed] = useState(false);
   return (
     <BrowserRouter>
       <ToastProvider>
         <SystemStatusProvider>
-          <FrozenBanner />
-          <div className="flex flex-col md:flex-row h-screen">
-            <MobileHeader />
-            <DesktopSidebar />
-            <main className="flex-1 overflow-auto min-w-0">
-              <ErrorBoundary>
-                <Routes>
+          <SidebarContext.Provider value={{ collapsed, toggle: () => setCollapsed(c => !c) }}>
+            <FrozenBanner />
+            <div className="flex flex-col md:flex-row h-screen">
+              <MobileHeader />
+              <DesktopSidebar />
+              <main className="flex-1 min-w-0 bg-background">
+                <ErrorBoundary>
+                  <PageLayout>
+                  <Routes>
                   <Route path="/" element={<HomePage />} />
                   <Route path="/models" element={<ModelsPage />} />
                   <Route path="/tools" element={<ToolsPage />} />
@@ -280,9 +373,11 @@ export default function App() {
                   <Route path="/notifications" element={<NotificationsPage />} />
                   <Route path="*" element={<NotFoundPage />} />
                 </Routes>
-              </ErrorBoundary>
-            </main>
-          </div>
+                  </PageLayout>
+                </ErrorBoundary>
+              </main>
+            </div>
+          </SidebarContext.Provider>
         </SystemStatusProvider>
       </ToastProvider>
     </BrowserRouter>

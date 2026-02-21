@@ -4,8 +4,8 @@ export default function HelpPage() {
   const { t } = useI18n();
 
   return (
-    <div className="p-6 max-w-3xl mx-auto space-y-8">
-      <h2 className="text-2xl font-semibold">{t('help.title')}</h2>
+    <div className="p-6 max-w-6xl mx-auto space-y-8">
+      <h2 className="text-2xl font-bold tracking-tight">{t('help.title')}</h2>
       <p className="text-muted-foreground">
         {t('help.intro')}
       </p>
@@ -70,7 +70,7 @@ export default function HelpPage() {
         <p>{t('help.emergencyDesc')}</p>
       </Section>
 
-      <div className="border rounded-lg bg-muted/30 p-4 text-sm text-muted-foreground">
+      <div className="bg-card border border-border/50 rounded-xl p-4 text-sm text-muted-foreground shadow-sm">
         {t('help.recommendedFlow')}
       </div>
     </div>

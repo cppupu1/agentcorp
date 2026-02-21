@@ -144,8 +144,8 @@ export default function TeamFormPage() {
   }
 
   return (
-    <div className="p-6 max-w-3xl">
-      <h2 className="text-2xl font-semibold mb-6">{isEdit ? t('teamForm.editTeam') : t('teamForm.createTeam')}</h2>
+    <div className="p-6 max-w-3xl mx-auto">
+      <h2 className="text-2xl font-bold tracking-tight mb-6">{isEdit ? t('teamForm.editTeam') : t('teamForm.createTeam')}</h2>
 
       <form onSubmit={handleSubmit} className="space-y-8">
         {/* Basic Info */}

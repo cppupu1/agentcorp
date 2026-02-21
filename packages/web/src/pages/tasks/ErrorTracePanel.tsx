@@ -6,10 +6,10 @@ import { useI18n } from '@/i18n';
 import { AlertOctagon, RefreshCw, ArrowRight } from 'lucide-react';
 
 const ERROR_TYPE_KEYS: Record<string, { key: string; color: string }> = {
-  validation_failed: { key: 'errorTrace.validationFailed', color: 'bg-yellow-100 text-yellow-800' },
-  execution_error: { key: 'errorTrace.executionError', color: 'bg-red-100 text-red-800' },
-  timeout: { key: 'errorTrace.timeout', color: 'bg-orange-100 text-orange-800' },
-  quality_rejected: { key: 'errorTrace.qualityRejected', color: 'bg-purple-100 text-purple-800' },
+  validation_failed: { key: 'errorTrace.validationFailed', color: 'bg-warning/15 text-warning' },
+  execution_error: { key: 'errorTrace.executionError', color: 'bg-destructive/15 text-destructive' },
+  timeout: { key: 'errorTrace.timeout', color: 'bg-warning/20 text-warning' },
+  quality_rejected: { key: 'errorTrace.qualityRejected', color: 'bg-primary/15 text-primary' },
 };
 
 const RESOLUTION_KEYS: Record<string, { key: string; icon: React.ReactNode }> = {
@@ -63,7 +63,7 @@ export default function ErrorTracePanel({ taskId }: { taskId: string }) {
       <div className="relative">
         <div className="absolute left-4 top-0 bottom-0 w-px bg-border" />
         {traces.map((trace) => {
-          const typeInfo = ERROR_TYPE_KEYS[trace.errorType] || { key: '', color: 'bg-gray-100 text-gray-800' };
+          const typeInfo = ERROR_TYPE_KEYS[trace.errorType] || { key: '', color: 'bg-muted text-muted-foreground' };
           const resInfo = trace.resolution ? RESOLUTION_KEYS[trace.resolution] : null;
           return (
             <div key={trace.id} className="relative pl-10 pb-4">

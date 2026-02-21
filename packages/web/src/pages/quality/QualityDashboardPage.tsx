@@ -13,8 +13,8 @@ export default function QualityDashboardPage() {
   const { t } = useI18n();
 
   return (
-    <div className="p-6 max-w-5xl">
-      <h2 className="text-2xl font-semibold mb-4">{t('quality.title')}</h2>
+    <div className="p-6 max-w-6xl mx-auto">
+      <h2 className="text-2xl font-bold tracking-tight mb-4">{t('quality.title')}</h2>
       <div className="flex gap-2 mb-6">
         {([['trend', t('quality.tabTrend')], ['ranking', t('quality.tabRanking')], ['alerts', t('quality.tabAlerts')]] as [Tab, string][]).map(([key, label]) => (
           <Button key={key} variant={tab === key ? 'default' : 'outline'} size="sm" onClick={() => setTab(key)}>
@@ -63,8 +63,8 @@ function TrendTab() {
                     <td className="py-2 px-3">{r.period}</td>
                     <td className="text-right py-2 px-3">{r.totalRuns}</td>
                     <td className="text-right py-2 px-3">{r.totalScenarios}</td>
-                    <td className="text-right py-2 px-3 text-green-600">{r.passedScenarios}</td>
-                    <td className="text-right py-2 px-3 text-red-600">{r.failedScenarios}</td>
+                    <td className="text-right py-2 px-3 text-success">{r.passedScenarios}</td>
+                    <td className="text-right py-2 px-3 text-destructive">{r.failedScenarios}</td>
                     <td className="text-right py-2 px-3">{r.totalScenarios > 0 ? Math.round(r.passedScenarios / r.totalScenarios * 100) : 0}%</td>
                   </tr>
                 ))}
@@ -89,8 +89,8 @@ function TrendTab() {
                   <tr key={r.period} className="border-b">
                     <td className="py-2 px-3">{r.period}</td>
                     <td className="text-right py-2 px-3">{r.total}</td>
-                    <td className="text-right py-2 px-3 text-red-600">{r.critical}</td>
-                    <td className="text-right py-2 px-3 text-yellow-600">{r.warning}</td>
+                    <td className="text-right py-2 px-3 text-destructive">{r.critical}</td>
+                    <td className="text-right py-2 px-3 text-warning">{r.warning}</td>
                   </tr>
                 ))}
               </tbody>
@@ -167,7 +167,7 @@ function AlertsTab() {
         {data.qualityDropAlerts.length === 0 ? <p className="text-muted-foreground text-sm">{t('quality.noDropAlerts')}</p> : (
           <div className="space-y-2">
             {data.qualityDropAlerts.map(a => (
-              <div key={a.employeeId} className="border rounded-lg p-3">
+              <div key={a.employeeId} className="bg-card border border-border/50 rounded-xl p-3 shadow-sm">
                 <div className="flex items-center gap-2">
                   <Badge variant="destructive">{t('quality.drop', { value: a.drop })}</Badge>
                   <span className="font-medium">{a.employeeName}</span>
@@ -185,7 +185,7 @@ function AlertsTab() {
         {data.criticalFindings.length === 0 ? <p className="text-muted-foreground text-sm">{t('quality.noCriticalFindings')}</p> : (
           <div className="space-y-2">
             {data.criticalFindings.map(f => (
-              <div key={f.id} className="border rounded-lg p-3">
+              <div key={f.id} className="bg-card border border-border/50 rounded-xl p-3 shadow-sm">
                 <Badge variant="destructive">{t('quality.critical')}</Badge>
                 <p className="text-sm mt-1">{f.description}</p>
                 <p className="text-xs text-muted-foreground mt-1">{new Date(f.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</p>

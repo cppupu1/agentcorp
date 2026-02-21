@@ -120,9 +120,9 @@ export default function ToolsPage() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('tools.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('tools.title')}</h2>
         <Button data-testid="create-tool-btn" onClick={() => { setEditing(null); setFormOpen(true); }}>
           <Plus className="h-4 w-4" /> {t('tools.add')}
         </Button>
@@ -140,7 +140,7 @@ export default function ToolsPage() {
       ) : (
         <div className="space-y-4">
           {Array.from(grouped.entries()).map(([group, items]) => (
-            <div key={group} className="border rounded-lg">
+            <div key={group} className="bg-card border border-border/50 rounded-xl shadow-sm">
               <button
                 className="flex items-center gap-2 w-full px-4 py-3 text-sm font-medium hover:bg-muted/50 cursor-pointer"
                 onClick={() => toggleGroup(group)}
@@ -155,7 +155,7 @@ export default function ToolsPage() {
                     const variant = statusVariant[tool.status] || statusVariant.untested;
                     const label = t(statusLabelKey[tool.status] || statusLabelKey.untested);
                     return (
-                      <div key={tool.id} data-testid={`tool-item-${tool.id}`} className="border rounded-md p-4 space-y-2">
+                      <div key={tool.id} data-testid={`tool-item-${tool.id}`} className="border border-border/50 rounded-xl p-4 space-y-2 hover:shadow-sm transition-all">
                         <div className="flex items-start justify-between">
                           <div className="font-medium text-sm">{tool.name}</div>
                           <Badge variant={variant} data-testid={`tool-status-${tool.id}`}>{label}</Badge>

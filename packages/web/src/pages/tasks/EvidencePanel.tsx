@@ -5,12 +5,12 @@ import { useI18n } from '@/i18n';
 import { Loader2, ChevronDown, ChevronRight } from 'lucide-react';
 
 const TYPE_KEYS: Record<string, { key: string; color: string }> = {
-  input: { key: 'evidence.typeInput', color: 'bg-blue-100 text-blue-800' },
-  output: { key: 'evidence.typeOutput', color: 'bg-green-100 text-green-800' },
-  decision: { key: 'evidence.typeDecision', color: 'bg-purple-100 text-purple-800' },
-  tool_call: { key: 'evidence.typeToolCall', color: 'bg-orange-100 text-orange-800' },
-  review: { key: 'evidence.typeReview', color: 'bg-yellow-100 text-yellow-800' },
-  approval: { key: 'evidence.typeApproval', color: 'bg-emerald-100 text-emerald-800' },
+  input: { key: 'evidence.typeInput', color: 'bg-info/15 text-info' },
+  output: { key: 'evidence.typeOutput', color: 'bg-success/15 text-success' },
+  decision: { key: 'evidence.typeDecision', color: 'bg-primary/15 text-primary' },
+  tool_call: { key: 'evidence.typeToolCall', color: 'bg-warning/15 text-warning' },
+  review: { key: 'evidence.typeReview', color: 'bg-warning/20 text-warning' },
+  approval: { key: 'evidence.typeApproval', color: 'bg-success/20 text-success' },
 };
 
 const SOURCE_KEYS: Record<string, string> = {
@@ -22,7 +22,7 @@ const SOURCE_KEYS: Record<string, string> = {
 
 function TypeBadge({ type }: { type: string }) {
   const { t } = useI18n();
-  const config = TYPE_KEYS[type] || { key: '', color: 'bg-gray-100 text-gray-800' };
+  const config = TYPE_KEYS[type] || { key: '', color: 'bg-muted text-muted-foreground' };
   return <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${config.color}`}>{config.key ? t(config.key) : type}</span>;
 }
 

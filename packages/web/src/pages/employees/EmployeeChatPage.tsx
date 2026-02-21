@@ -209,7 +209,7 @@ export default function EmployeeChatPage() {
         msg.toolCalls.push({ id: data.toolCallId, toolName: data.toolName, args: data.args });
         break;
       case 'tool_result': {
-        const tc = msg.toolCalls.find(t => t.id === data.toolCallId);
+        const tc = msg.toolCalls.find(entry => entry.id === data.toolCallId);
         if (tc) { tc.result = data.result; tc.isError = data.isError; }
         break;
       }
@@ -375,7 +375,7 @@ function ToolCallsDisplay({ toolCalls }: { toolCalls: ToolCallEntry[] }) {
             className="w-full px-2 py-1 flex items-center gap-2 hover:bg-accent/50 text-left"
             onClick={() => toggle(tc.id)}
           >
-            <span className={tc.result !== undefined ? (tc.isError ? 'text-destructive' : 'text-green-600') : 'text-yellow-600'}>
+            <span className={tc.result !== undefined ? (tc.isError ? 'text-destructive' : 'text-success') : 'text-warning'}>
               {tc.result !== undefined ? (tc.isError ? '✗' : '✓') : '⟳'}
             </span>
             <span className="font-mono">{tc.toolName}</span>

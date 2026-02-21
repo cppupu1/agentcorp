@@ -66,9 +66,9 @@ export default function NotificationsPage() {
   ];
 
   return (
-    <div className="p-6 max-w-3xl">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold flex items-center gap-2">
+        <h2 className="text-2xl font-bold tracking-tight flex items-center gap-2">
           <Bell className="h-6 w-6" /> {t('notifications.title')}
         </h2>
         <Button variant="outline" size="sm" onClick={handleMarkAllRead}>
@@ -77,17 +77,17 @@ export default function NotificationsPage() {
       </div>
 
       <div className="flex gap-2 mb-4">
-        {tabs.map(t => (
+        {tabs.map(item => (
           <button
-            key={t.key}
-            onClick={() => setTab(t.key)}
+            key={item.key}
+            onClick={() => setTab(item.key)}
             className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
-              tab === t.key
+              tab === item.key
                 ? 'bg-primary text-primary-foreground'
                 : 'bg-muted text-muted-foreground hover:bg-muted/80'
             }`}
           >
-            {t.label}
+            {item.label}
           </button>
         ))}
       </div>
@@ -105,8 +105,8 @@ export default function NotificationsPage() {
             return (
               <div
                 key={item.id}
-                className={`border rounded-lg p-4 flex items-start gap-3 transition-colors ${
-                  item.read ? 'opacity-60' : 'bg-card'
+                className={`bg-card border border-border/50 rounded-xl p-4 flex items-start gap-3 transition-all shadow-sm hover:shadow-md ${
+                  item.read ? 'opacity-60' : ''
                 }`}
               >
                 <div className="flex-1 min-w-0">

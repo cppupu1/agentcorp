@@ -97,7 +97,7 @@ export default function ObserverPanel({ taskId }: { taskId: string }) {
                 {finding.severity === 'critical' ? (
                   <AlertTriangle className="h-4 w-4 text-destructive shrink-0" />
                 ) : finding.resolution ? (
-                  <CheckCircle className="h-4 w-4 text-green-600 shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-success shrink-0" />
                 ) : (
                   <Eye className="h-4 w-4 text-muted-foreground shrink-0" />
                 )}

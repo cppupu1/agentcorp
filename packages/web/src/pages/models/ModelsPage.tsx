@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table';
+
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
@@ -110,9 +110,9 @@ export default function ModelsPage() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('models.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('models.title')}</h2>
         <Button data-testid="create-model-btn" onClick={() => { setEditing(null); setFormOpen(true); }}>
           <Plus className="h-4 w-4" /> {t('models.add')}
         </Button>
@@ -123,52 +123,34 @@ export default function ModelsPage() {
       ) : models.length === 0 ? (
         <div className="text-center py-12 text-muted-foreground">{t('models.empty')}</div>
       ) : (
-        <div className="overflow-x-auto">
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead>{t('models.name')}</TableHead>
-              <TableHead>{t('models.modelId')}</TableHead>
-              <TableHead>Base URL</TableHead>
-              <TableHead>{t('models.status')}</TableHead>
-              <TableHead className="text-right">{t('models.actions')}</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {models.map(m => {
-              const variant = statusVariant[m.status] || statusVariant.untested;
-              const label = t(statusLabelKey[m.status] || statusLabelKey.untested);
-              return (
-                <TableRow key={m.id} data-testid={`model-item-${m.id}`}>
-                  <TableCell className="font-medium">{m.name}</TableCell>
-                  <TableCell className="text-muted-foreground">{m.modelId}</TableCell>
-                  <TableCell className="text-muted-foreground text-xs max-w-[200px] truncate">{m.baseUrl}</TableCell>
-                  <TableCell>
-                    <Badge variant={variant} data-testid={`model-status-${m.id}`}>{label}</Badge>
-                  </TableCell>
-                  <TableCell className="text-right">
-                    <div className="flex justify-end gap-1">
-                      <Button variant="ghost" size="icon" onClick={() => { setEditing(m); setFormOpen(true); }}>
-                        <Pencil className="h-4 w-4" />
-                      </Button>
-                      <Button
-                        variant="ghost" size="icon"
-                        data-testid="test-model-btn"
-                        disabled={testingId === m.id}
-                        onClick={() => handleTest(m)}
-                      >
-                        {testingId === m.id ? <Loader2 className="h-4 w-4 animate-spin" /> : <Zap className="h-4 w-4" />}
-                      </Button>
-                      <Button variant="ghost" size="icon" onClick={() => setDeleteTarget(m)}>
-                        <Trash2 className="h-4 w-4 text-destructive" />
-                      </Button>
-                    </div>
-                  </TableCell>
-                </TableRow>
-              );
-            })}
-          </TableBody>
-        </Table>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {models.map(m => {
+            const variant = statusVariant[m.status] || statusVariant.untested;
+            const label = t(statusLabelKey[m.status] || statusLabelKey.untested);
+            return (
+              <div key={m.id} data-testid={`model-item-${m.id}`} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm hover:shadow-md transition-all space-y-3">
+                <div className="flex items-start justify-between">
+                  <div className="min-w-0">
+                    <div className="font-medium text-sm">{m.name}</div>
+                    <div className="text-xs text-muted-foreground mt-0.5 font-mono">{m.modelId}</div>
+                  </div>
+                  <Badge variant={variant} data-testid={`model-status-${m.id}`}>{label}</Badge>
+                </div>
+                <div className="text-xs text-muted-foreground truncate">{m.baseUrl}</div>
+                <div className="flex gap-1 pt-1 border-t border-border/50">
+                  <Button variant="ghost" size="sm" onClick={() => { setEditing(m); setFormOpen(true); }}>
+                    <Pencil className="h-3 w-3" />
+                  </Button>
+                  <Button variant="ghost" size="sm" data-testid="test-model-btn" disabled={testingId === m.id} onClick={() => handleTest(m)}>
+                    {testingId === m.id ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
+                  </Button>
+                  <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(m)} className="ml-auto">
+                    <Trash2 className="h-3 w-3 text-destructive" />
+                  </Button>
+                </div>
+              </div>
+            );
+          })}
         </div>
       )}
 

@@ -14,8 +14,8 @@ export default function RoiReviewPage() {
   const { t } = useI18n();
 
   return (
-    <div className="p-6 max-w-5xl">
-      <h2 className="text-2xl font-semibold mb-4">{t('roi.title')}</h2>
+    <div className="p-6 max-w-6xl mx-auto">
+      <h2 className="text-2xl font-bold tracking-tight mb-4">{t('roi.title')}</h2>
       <div className="flex gap-2 mb-6">
         {([['cost', t('roi.tabCost')], ['competency', t('roi.tabCompetency')], ['team', t('roi.tabTeam')]] as [Tab, string][]).map(([key, label]) => (
           <Button key={key} variant={tab === key ? 'default' : 'outline'} size="sm" onClick={() => setTab(key)}>
@@ -183,7 +183,7 @@ function TeamTab() {
         <p className="text-muted-foreground text-sm">{selectedId ? t('common.noData') : t('roi.selectTeamHint')}</p>
       ) : (
         <div>
-          <div className="mb-4 p-3 border rounded-lg">
+          <div className="mb-4 p-3 bg-card border border-border/50 rounded-xl shadow-sm">
             <span className="text-sm text-muted-foreground">{t('roi.teamAvgScore')}</span>
             <Badge variant={data.avgScore >= 70 ? 'success' : data.avgScore >= 50 ? 'warning' : 'destructive'}>
               {data.avgScore}

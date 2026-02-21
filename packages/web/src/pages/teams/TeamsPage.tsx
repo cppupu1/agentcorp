@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useDebouncedValue } from '@/hooks/useDebouncedValue';
+import { EmptyState } from '@/components/ui/empty-state';
 import { Plus, Pencil, Trash2, Copy, Search, Loader2, Users } from 'lucide-react';
 import { useI18n } from '@/i18n';
 
@@ -77,9 +78,9 @@ export default function TeamsPage() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('teams.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('teams.title')}</h2>
         <Button onClick={() => navigate('/teams/new')} data-testid="create-team-btn">
           <Plus className="h-4 w-4" /> {t('teams.create')}
         </Button>
@@ -93,11 +94,11 @@ export default function TeamsPage() {
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : filtered.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('teams.empty')}</div>
+        <EmptyState icon={<Users className="h-10 w-10" />} title={t('teams.empty')} description={t('teams.emptyDesc')} action={<Button onClick={() => navigate('/teams/new')}><Plus className="h-4 w-4" /> {t('teams.create')}</Button>} />
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map(team => (
-            <div key={team.id} data-testid={`team-item-${team.id}`} className="border rounded-lg p-4 space-y-3">
+            <div key={team.id} data-testid={`team-item-${team.id}`} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all space-y-3">
               <div className="flex items-start justify-between">
                 <div>
                   <div className="font-medium">{team.name}</div>
@@ -121,7 +122,7 @@ export default function TeamsPage() {
                 <span>{team.taskCount} {t('nav.tasks')}</span>
               </div>
 
-              <div className="flex gap-1 pt-1 border-t">
+              <div className="flex gap-1 pt-1 border-t border-border/50">
                 <Button variant="ghost" size="sm" onClick={() => navigate(`/teams/${team.id}/edit`)}>
                   <Pencil className="h-3 w-3 mr-1" /> {t('common.edit')}
                 </Button>

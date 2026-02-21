@@ -1,30 +1,33 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router';
-import { templatesApi, modelsApi, type TemplateSummary, type Model } from '@/api/client';
+import { useNavigate, Link } from 'react-router';
+import { templatesApi, modelsApi, tasksApi, type TemplateSummary, type Model, type TaskSummary } from '@/api/client';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
-import { Loader2, ArrowRight, Users } from 'lucide-react';
+import { Skeleton } from '@/components/ui/skeleton';
+import { Loader2, ArrowRight, Users, Plus, UserPlus, UsersRound, ClipboardList, ChevronRight } from 'lucide-react';
 import { useI18n } from '@/i18n';
 import HealthDashboard from './HealthDashboard';
 
 export default function HomePage() {
   const [templates, setTemplates] = useState<TemplateSummary[]>([]);
   const [models, setModels] = useState<Model[]>([]);
+  const [tasks, setTasks] = useState<TaskSummary[]>([]);
   const [loading, setLoading] = useState(true);
   const [applying, setApplying] = useState<string | null>(null);
   const [selectedModel, setSelectedModel] = useState<string>('');
   const { toast } = useToast();
   const navigate = useNavigate();
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
 
   useEffect(() => {
-    Promise.all([templatesApi.list(), modelsApi.list()])
-      .then(([tplRes, modelRes]) => {
+    Promise.all([templatesApi.list(), modelsApi.list(), tasksApi.list()])
+      .then(([tplRes, modelRes, taskRes]) => {
         setTemplates(tplRes.data);
-        setModels(modelRes.data.filter(m => m.status === 'available'));
-        if (modelRes.data.filter(m => m.status === 'available').length > 0) {
-          setSelectedModel(modelRes.data.filter(m => m.status === 'available')[0].id);
-        }
+        const available = modelRes.data.filter(m => m.status === 'available');
+        setModels(available);
+        if (available.length > 0) setSelectedModel(available[0].id);
+        setTasks(taskRes.data.slice(0, 5));
       })
       .catch(err => toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error'))
       .finally(() => setLoading(false));
@@ -49,82 +52,112 @@ export default function HomePage() {
 
   if (loading) {
     return (
-      <div className="flex justify-center py-20">
-        <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+      <div className="p-6 max-w-6xl mx-auto space-y-6">
+        <div><Skeleton className="h-8 w-48" /><Skeleton className="h-4 w-72 mt-2" /></div>
+        <div className="grid grid-cols-4 gap-4">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-24 rounded-xl" />)}</div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">{Array.from({ length: 3 }, (_, i) => <Skeleton key={i} className="h-14 rounded-xl" />)}</div>
+        <div className="grid lg:grid-cols-5 gap-6">
+          <div className="lg:col-span-2 space-y-3">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-12 rounded-lg" />)}</div>
+          <div className="lg:col-span-3 grid gap-3 sm:grid-cols-2">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-36 rounded-xl" />)}</div>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
+    <div className="p-6 max-w-6xl mx-auto space-y-6">
+      {/* Welcome header */}
+      <div>
+        <h2 className="text-2xl font-bold tracking-tight">{t('home.welcome')}</h2>
+        <p className="text-muted-foreground mt-1">{t('home.welcomeDesc')}</p>
+      </div>
+
+      {/* Stats */}
       <HealthDashboard />
 
-      <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">{t('home.quickStart')}</h2>
-        <p className="text-muted-foreground">
-          {t('home.quickStartDesc')}
-        </p>
+      {/* Quick actions */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <button onClick={() => navigate('/employees/new')} className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/50 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+          <div className="p-2 rounded-lg bg-primary/10 text-primary"><UserPlus className="h-4 w-4" /></div>
+          <span className="text-sm font-medium">{t('home.addEmployee')}</span>
+        </button>
+        <button onClick={() => navigate('/teams/new')} className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/50 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+          <div className="p-2 rounded-lg bg-accent text-accent-foreground"><UsersRound className="h-4 w-4" /></div>
+          <span className="text-sm font-medium">{t('home.createTeam')}</span>
+        </button>
+        <button onClick={() => navigate('/tasks/new')} className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/50 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+          <div className="p-2 rounded-lg bg-success/10 text-success"><ClipboardList className="h-4 w-4" /></div>
+          <span className="text-sm font-medium">{t('home.createTask')}</span>
+        </button>
       </div>
 
-      {models.length === 0 && (
-        <div className="mb-6 p-4 rounded-lg border border-yellow-200 bg-yellow-50 text-yellow-800 text-sm">
-          {t('home.noModels')}
-          <a href="/models" className="underline font-medium mx-1">{t('home.addModelLink')}</a>
-          {t('home.noModelsAfter')}
-        </div>
-      )}
-
-      {models.length > 0 && (
-        <div className="mb-6">
-          <label className="block text-sm font-medium mb-2">{t('home.selectModel')}</label>
-          <select
-            className="w-full max-w-xs border rounded-md px-3 py-2 text-sm bg-background"
-            value={selectedModel}
-            onChange={e => setSelectedModel(e.target.value)}
-          >
-            {models.map(m => (
-              <option key={m.id} value={m.id}>{m.name} ({m.modelId})</option>
-            ))}
-          </select>
-        </div>
-      )}
-
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {templates.map(tpl => (
-          <div key={tpl.id} className="border rounded-lg p-5 space-y-3 hover:border-primary/50 transition-colors">
-            <div className="flex items-center gap-3">
-              <span className="text-3xl">{tpl.icon}</span>
-              <div>
-                <h3 className="font-semibold">{tpl.name}</h3>
-                <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                  <Users className="h-3 w-3" />
-                  <span>{tpl.employeeCount}{t('common.members')}</span>
-                </div>
-              </div>
-            </div>
-            <p className="text-sm text-muted-foreground line-clamp-3">{tpl.description}</p>
-            <Button
-              className="w-full"
-              disabled={!selectedModel || applying !== null}
-              onClick={() => handleApply(tpl.id)}
-            >
-              {applying === tpl.id ? (
-                <Loader2 className="h-4 w-4 animate-spin mr-1" />
-              ) : (
-                <ArrowRight className="h-4 w-4 mr-1" />
-              )}
-              {t('home.useTemplate')}
-            </Button>
+      {/* Two-column: Recent Tasks + Templates */}
+      <div className="grid lg:grid-cols-5 gap-6">
+        {/* Recent tasks */}
+        <div className="lg:col-span-2 bg-card rounded-xl border border-border/50 shadow-sm">
+          <div className="flex items-center justify-between px-5 py-4 border-b border-border/50">
+            <h3 className="text-sm font-semibold">{t('home.recentTasks')}</h3>
+            <Link to="/tasks" className="text-xs text-primary hover:underline flex items-center gap-0.5">
+              {t('home.viewAll')} <ChevronRight className="h-3 w-3" />
+            </Link>
           </div>
-        ))}
-      </div>
+          <div className="divide-y divide-border/50">
+            {tasks.length === 0 ? (
+              <p className="px-5 py-8 text-sm text-muted-foreground text-center">{t('home.noTasks')}</p>
+            ) : tasks.map(task => (
+              <Link key={task.id} to={`/tasks/${task.id}`} className="flex items-center justify-between px-5 py-3 hover:bg-muted/50 transition-colors">
+                <div className="min-w-0">
+                  <p className="text-sm font-medium truncate">{task.title || task.description?.slice(0, 40)}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{task.teamName || '-'}</p>
+                </div>
+                <Badge variant={task.status === 'completed' ? 'success' : task.status === 'failed' ? 'destructive' : 'secondary'} className="shrink-0 ml-2">
+                  {task.status}
+                </Badge>
+              </Link>
+            ))}
+          </div>
+        </div>
 
-      <div className="mt-8 pt-6 border-t">
-        <h3 className="text-lg font-medium mb-3">{t('home.manualCreate')}</h3>
-        <div className="flex gap-3">
-          <Button variant="outline" onClick={() => navigate('/employees/new')}>{t('home.addEmployee')}</Button>
-          <Button variant="outline" onClick={() => navigate('/teams/new')}>{t('home.createTeam')}</Button>
-          <Button variant="outline" onClick={() => navigate('/tasks/new')}>{t('home.createTask')}</Button>
+        {/* Templates */}
+        <div className="lg:col-span-3 space-y-4">
+          <div className="flex items-center justify-between">
+            <h3 className="text-sm font-semibold">{t('home.templates')}</h3>
+            {models.length > 0 && (
+              <select className="border rounded-lg px-3 py-1.5 text-xs bg-card" value={selectedModel} onChange={e => setSelectedModel(e.target.value)}>
+                {models.map(m => <option key={m.id} value={m.id}>{m.name}</option>)}
+              </select>
+            )}
+          </div>
+
+          {models.length === 0 && (
+            <div className="p-4 rounded-xl border border-warning/30 bg-warning/10 text-warning text-sm">
+              {t('home.noModels')}
+              <a href="/models" className="underline font-medium mx-1">{t('home.addModelLink')}</a>
+              {t('home.noModelsAfter')}
+            </div>
+          )}
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            {templates.map(tpl => (
+              <div key={tpl.id} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-primary/30 transition-all space-y-3">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">{tpl.icon}</span>
+                  <div className="min-w-0">
+                    <h4 className="font-semibold text-sm">{tpl.name}</h4>
+                    <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                      <Users className="h-3 w-3" />
+                      <span>{tpl.employeeCount}{t('common.members')}</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-xs text-muted-foreground line-clamp-2">{tpl.description}</p>
+                <Button size="sm" className="w-full" disabled={!selectedModel || applying !== null} onClick={() => handleApply(tpl.id)}>
+                  {applying === tpl.id ? <Loader2 className="h-3 w-3 animate-spin" /> : <ArrowRight className="h-3 w-3" />}
+                  {t('home.useTemplate')}
+                </Button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -63,9 +63,9 @@ export default function IncidentsPage() {
   };
 
   return (
-    <div className="p-6 max-w-4xl">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('incidents.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('incidents.title')}</h2>
         <Button size="sm" onClick={() => setCreateOpen(true)} className="gap-1">
           <Plus className="h-4 w-4" /> {t('incidents.manualCreate')}
         </Button>
@@ -86,7 +86,7 @@ export default function IncidentsPage() {
               <div
                 key={item.id}
                 onClick={() => navigate(`/incidents/${item.id}`)}
-                className="border rounded-lg p-4 flex items-center gap-3 cursor-pointer hover:bg-muted/50 transition-colors"
+                className="bg-card border border-border/50 rounded-xl p-4 flex items-center gap-3 cursor-pointer shadow-sm hover:shadow-md transition-all"
               >
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">

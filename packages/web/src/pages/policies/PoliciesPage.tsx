@@ -138,9 +138,9 @@ export default function PoliciesPage() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('policies.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('policies.title')}</h2>
         <Button onClick={() => { setEditing(null); setFormOpen(true); }}>
           <Plus className="h-4 w-4" /> {t('policies.create')}
         </Button>
@@ -153,7 +153,7 @@ export default function PoliciesPage() {
       ) : (
         <div className="space-y-3">
           {packages.map(pkg => (
-            <div key={pkg.id} className="border rounded-lg">
+            <div key={pkg.id} className="bg-card border border-border/50 rounded-xl shadow-sm">
               <button
                 className="flex items-center gap-3 w-full px-4 py-3 text-left hover:bg-muted/50"
                 onClick={() => toggleExpand(pkg.id)}

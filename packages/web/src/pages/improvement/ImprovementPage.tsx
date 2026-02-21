@@ -14,8 +14,8 @@ export default function ImprovementPage() {
   const { t } = useI18n();
 
   return (
-    <div className="p-6 max-w-5xl">
-      <h2 className="text-2xl font-semibold mb-4">{t('improvement.title')}</h2>
+    <div className="p-6 max-w-6xl mx-auto">
+      <h2 className="text-2xl font-bold tracking-tight mb-4">{t('improvement.title')}</h2>
       <div className="flex gap-2 mb-6">
         {([['diagnose', t('improvement.tabDiagnose')], ['proposals', t('improvement.tabProposals')]] as [Tab, string][]).map(([key, label]) => (
           <Button key={key} variant={tab === key ? 'default' : 'outline'} size="sm" onClick={() => setTab(key)}>
@@ -79,7 +79,7 @@ function DiagnoseTab() {
       </div>
 
       {diagnosis && (
-        <div className="border rounded-lg p-4 space-y-3">
+        <div className="bg-card border border-border/50 rounded-xl p-4 space-y-3 shadow-sm">
           <h3 className="font-medium">{t('improvement.diagnosisResult', { name: diagnosis.employeeName })}</h3>
           <p className="text-sm">{t('improvement.analysisPeriod', { period: diagnosis.period })}</p>
           {diagnosis.testPassRate !== null && (
@@ -155,7 +155,7 @@ function ProposalsTab() {
         let suggestion: any = {};
         try { suggestion = JSON.parse(item.suggestion); } catch {}
         return (
-          <div key={item.id} className="border rounded-lg p-4">
+          <div key={item.id} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm">
             <div className="flex items-center gap-2 mb-2">
               <Badge variant={st.variant}>{st.label}</Badge>
               <Badge variant="secondary">{item.category}</Badge>

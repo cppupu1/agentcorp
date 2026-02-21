@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
+import { EmptyState } from '@/components/ui/empty-state';
 import { Plus, Pencil, Trash2, Zap, Loader2 } from 'lucide-react';
 import { useI18n } from '@/i18n';
 
@@ -111,9 +112,9 @@ export default function TriggersPage() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-6xl mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">{t('triggers.title')}</h2>
+        <h2 className="text-2xl font-bold tracking-tight">{t('triggers.title')}</h2>
         <Button onClick={() => { setEditing(null); setFormOpen(true); }}>
           <Plus className="h-4 w-4" /> {t('triggers.add')}
         </Button>
@@ -122,60 +123,46 @@ export default function TriggersPage() {
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : triggers.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('triggers.empty')}</div>
+        <EmptyState icon={<Zap className="h-10 w-10" />} title={t('triggers.empty')} description={t('triggers.emptyDesc')} action={<Button onClick={() => { setEditing(null); setFormOpen(true); }}><Plus className="h-4 w-4" /> {t('triggers.add')}</Button>} />
       ) : (
-        <div className="border rounded-lg overflow-hidden">
-          <table className="w-full text-sm">
-            <thead className="bg-muted/50">
-              <tr>
-                <th className="text-left px-4 py-3 font-medium">{t('triggers.name')}</th>
-                <th className="text-left px-4 py-3 font-medium">{t('triggers.type')}</th>
-                <th className="text-left px-4 py-3 font-medium">{t('triggers.team')}</th>
-                <th className="text-left px-4 py-3 font-medium">{t('triggers.status')}</th>
-                <th className="text-left px-4 py-3 font-medium">{t('triggers.lastFired')}</th>
-                <th className="text-right px-4 py-3 font-medium">{t('triggers.actions')}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {triggers.map(trig => {
-                const variant = typeVariant[trig.type] || typeVariant.event;
-                const typeLabel = t(typeLabelKey[trig.type] || typeLabelKey.event);
-                return (
-                  <tr key={trig.id} className="border-t">
-                    <td className="px-4 py-3 font-medium">{trig.name}</td>
-                    <td className="px-4 py-3"><Badge variant={variant}>{typeLabel}</Badge></td>
-                    <td className="px-4 py-3 text-muted-foreground">{trig.teamName || '-'}</td>
-                    <td className="px-4 py-3">
-                      <button
-                        onClick={() => handleToggleEnabled(trig)}
-                        className={`px-2 py-0.5 rounded text-xs font-medium transition-colors ${
-                          trig.enabled ? 'bg-green-100 text-green-700 hover:bg-green-200' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
-                        }`}
-                      >
-                        {trig.enabled ? t('triggers.enabled') : t('triggers.disabled')}
-                      </button>
-                    </td>
-                    <td className="px-4 py-3 text-muted-foreground text-xs">
-                      {trig.lastFiredAt ? new Date(trig.lastFiredAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US') : '-'}
-                    </td>
-                    <td className="px-4 py-3 text-right">
-                      <div className="flex justify-end gap-1">
-                        <Button variant="ghost" size="sm" onClick={() => handleFire(trig)} disabled={firingId === trig.id}>
-                          {firingId === trig.id ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
-                        </Button>
-                        <Button variant="ghost" size="sm" onClick={() => { setEditing(trig); setFormOpen(true); }}>
-                          <Pencil className="h-3 w-3" />
-                        </Button>
-                        <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(trig)}>
-                          <Trash2 className="h-3 w-3 text-destructive" />
-                        </Button>
-                      </div>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+        <div className="space-y-2">
+          {triggers.map(trig => {
+            const variant = typeVariant[trig.type] || typeVariant.event;
+            const typeLabel = t(typeLabelKey[trig.type] || typeLabelKey.event);
+            return (
+              <div key={trig.id} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm hover:shadow-md transition-all">
+                <div className="flex items-center justify-between gap-4">
+                  <div className="min-w-0 flex-1">
+                    <div className="font-medium text-sm">{trig.name}</div>
+                    <div className="flex items-center gap-3 mt-1.5 text-xs text-muted-foreground">
+                      <Badge variant={variant}>{typeLabel}</Badge>
+                      {trig.teamName && <span>{trig.teamName}</span>}
+                      <span>{trig.lastFiredAt ? new Date(trig.lastFiredAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US') : '-'}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <button
+                      onClick={() => handleToggleEnabled(trig)}
+                      className={`px-2 py-0.5 rounded text-xs font-medium transition-colors ${
+                        trig.enabled ? 'bg-success/15 text-success hover:bg-success/25' : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                      }`}
+                    >
+                      {trig.enabled ? t('triggers.enabled') : t('triggers.disabled')}
+                    </button>
+                    <Button variant="ghost" size="sm" onClick={() => handleFire(trig)} disabled={firingId === trig.id}>
+                      {firingId === trig.id ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
+                    </Button>
+                    <Button variant="ghost" size="sm" onClick={() => { setEditing(trig); setFormOpen(true); }}>
+                      <Pencil className="h-3 w-3" />
+                    </Button>
+                    <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(trig)}>
+                      <Trash2 className="h-3 w-3 text-destructive" />
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       )}
 

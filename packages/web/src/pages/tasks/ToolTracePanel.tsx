@@ -19,12 +19,12 @@ export default function ToolTracePanel({ taskId }: { taskId: string }) {
   }, [taskId]);
 
   const toolNames = useMemo(() => {
-    const names = new Set(traces.map(t => t.toolName || ''));
+    const names = new Set(traces.map(tr => tr.toolName || ''));
     return Array.from(names).filter(Boolean).sort();
   }, [traces]);
 
   const filtered = filter
-    ? traces.filter(t => t.toolName === filter)
+    ? traces.filter(tr => tr.toolName === filter)
     : traces;
 
   if (loading) {
@@ -62,12 +62,12 @@ export default function ToolTracePanel({ taskId }: { taskId: string }) {
             </tr>
           </thead>
           <tbody>
-            {filtered.map(t => (
+            {filtered.map(tr => (
               <TraceRow
-                key={t.id}
-                trace={t}
-                expanded={expandedId === t.id}
-                onToggle={() => setExpandedId(expandedId === t.id ? null : t.id)}
+                key={tr.id}
+                trace={tr}
+                expanded={expandedId === tr.id}
+                onToggle={() => setExpandedId(expandedId === tr.id ? null : tr.id)}
               />
             ))}
           </tbody>

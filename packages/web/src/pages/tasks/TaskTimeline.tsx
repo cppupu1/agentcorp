@@ -60,7 +60,7 @@ function TimelineItem({ event }: { event: TimelineEvent }) {
     <div className="border rounded-lg p-3">
       <div className="flex items-center gap-2 cursor-pointer" onClick={() => setExpanded(!expanded)}>
         {expanded ? <ChevronDown className="h-3 w-3 text-muted-foreground" /> : <ChevronRight className="h-3 w-3 text-muted-foreground" />}
-        {isDecision ? <Brain className="h-4 w-4 text-blue-500" /> : <Wrench className="h-4 w-4 text-orange-500" />}
+        {isDecision ? <Brain className="h-4 w-4 text-info" /> : <Wrench className="h-4 w-4 text-warning" />}
         <span className="text-sm font-medium flex-1">
           {isDecision ? event.action : event.toolName}
         </span>

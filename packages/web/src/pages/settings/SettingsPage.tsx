@@ -60,12 +60,12 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="p-6 max-w-2xl">
-      <h2 className="text-2xl font-semibold mb-6">{t('settings.title')}</h2>
+    <div className="p-6 max-w-6xl mx-auto">
+      <h2 className="text-2xl font-bold tracking-tight mb-6">{t('settings.title')}</h2>
 
       <div className="space-y-6">
         {SETTING_DEFS.map(def => (
-          <div key={def.key} className="border rounded-lg p-4">
+          <div key={def.key} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm">
             <label className="block text-sm font-medium mb-1">{t(def.labelKey)}</label>
             <p className="text-xs text-muted-foreground mb-3">{t(def.descKey)}</p>
             <div className="flex items-center gap-2">
@@ -162,11 +162,11 @@ function WebhookSection() {
           {configs.map(c => {
             const events: string[] = (() => { try { return JSON.parse(c.events); } catch { return []; } })();
             return (
-              <div key={c.id} className="border rounded-lg p-4">
+              <div key={c.id} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm">
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <span className="font-medium text-sm">{c.name}</span>
-                    <span className={`text-xs px-1.5 py-0.5 rounded ${c.enabled ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}`}>
+                    <span className={`text-xs px-1.5 py-0.5 rounded ${c.enabled ? 'bg-success/15 text-success' : 'bg-muted text-muted-foreground'}`}>
                       {c.enabled ? t('settings.webhookEnabled') : t('settings.webhookDisabled')}
                     </span>
                   </div>
@@ -269,7 +269,7 @@ function WebhookForm({ editing, onClose, onSaved }: {
   };
 
   return (
-    <div className="border rounded-lg p-4 mt-4 bg-card">
+    <div className="bg-card border border-border/50 rounded-xl p-4 mt-4 shadow-sm">
       <h4 className="text-sm font-medium mb-3">{editing ? t('settings.editWebhook') : t('settings.addWebhook')}</h4>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div className="space-y-1">

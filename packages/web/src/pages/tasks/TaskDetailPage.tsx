@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
+import { Skeleton } from '@/components/ui/skeleton';
 import { Loader2, Send, ArrowLeft, Check, X } from 'lucide-react';
 import CostPanel from './CostPanel';
 import ErrorTracePanel from './ErrorTracePanel';
@@ -52,7 +54,17 @@ export default function TaskDetailPage() {
   useEffect(() => { loadTask(); }, [loadTask]);
 
   if (loading) {
-    return <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>;
+    return (
+      <div className="p-6 max-w-4xl mx-auto space-y-6">
+        <div className="flex items-center gap-3">
+          <Skeleton className="h-8 w-8 rounded" />
+          <div className="flex-1"><Skeleton className="h-7 w-64" /><Skeleton className="h-4 w-40 mt-1" /></div>
+        </div>
+        <Skeleton className="h-8 w-full rounded-full" />
+        <Skeleton className="h-24 rounded-xl" />
+        <Skeleton className="h-48 rounded-lg" />
+      </div>
+    );
   }
 
   if (!task) {
@@ -67,13 +79,13 @@ export default function TaskDetailPage() {
   const status = task.status ?? 'draft';
 
   return (
-    <div className="p-6 max-w-4xl">
+    <div className="p-6 max-w-4xl mx-auto">
       <div className="flex items-center gap-3 mb-6">
         <Button variant="ghost" size="sm" onClick={() => navigate('/tasks')}>
           <ArrowLeft className="h-4 w-4" />
         </Button>
         <div className="flex-1">
-          <h2 className="text-2xl font-semibold">{task.title || t('taskDetail.unnamed')}</h2>
+          <h2 className="text-2xl font-bold tracking-tight">{task.title || t('taskDetail.unnamed')}</h2>
           <p className="text-sm text-muted-foreground">{task.teamName} · {STATUS_KEYS[status] ? t(STATUS_KEYS[status]) : status}{task.mode === 'auto' ? ` · ${t('taskDetail.autoMode')}` : ''}</p>
         </div>
         <Badge variant={status === 'executing' ? 'default' : status === 'paused' ? 'destructive' : 'secondary'}>{STATUS_KEYS[status] ? t(STATUS_KEYS[status]) : status}</Badge>
@@ -84,8 +96,10 @@ export default function TaskDetailPage() {
         )}
       </div>
 
+      <WorkflowStepper status={status} />
+
       {task.description && (
-        <div className="mb-6 p-4 bg-muted/30 rounded-lg">
+        <div className="mb-6 p-4 bg-muted/30 rounded-xl border border-border/50">
           <p className="text-sm text-muted-foreground mb-1">{t('taskDetail.description')}</p>
           <p className="text-sm">{task.description}</p>
         </div>
@@ -160,54 +174,38 @@ export default function TaskDetailPage() {
 
       {/* Executing / Completed / Failed with tabs */}
       {['executing', 'completed', 'failed'].includes(status) && (
-        <>
-          <div className="flex gap-1 border-b mb-4">
-            {[
-              { key: 'execution' as const, label: t('taskDetail.tabExecution') },
-              { key: 'timeline' as const, label: t('taskDetail.tabTimeline') },
-              { key: 'tool-trace' as const, label: t('taskDetail.tabToolTrace') },
-              { key: 'evidence' as const, label: t('taskDetail.tabEvidence') },
-              { key: 'dag' as const, label: t('taskDetail.tabVisualization') },
-            ].map(tab => (
-              <button
-                key={tab.key}
-                className={`px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors ${
-                  activeTab === tab.key
-                    ? 'border-primary text-primary'
-                    : 'border-transparent text-muted-foreground hover:text-foreground'
-                }`}
-                onClick={() => setActiveTab(tab.key)}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
+        <Tabs value={activeTab} onChange={setActiveTab as (v: string) => void}>
+          <TabsList className="mb-4">
+            <TabsTrigger value="execution">{t('taskDetail.tabExecution')}</TabsTrigger>
+            <TabsTrigger value="timeline">{t('taskDetail.tabTimeline')}</TabsTrigger>
+            <TabsTrigger value="tool-trace">{t('taskDetail.tabToolTrace')}</TabsTrigger>
+            <TabsTrigger value="evidence">{t('taskDetail.tabEvidence')}</TabsTrigger>
+            <TabsTrigger value="dag">{t('taskDetail.tabVisualization')}</TabsTrigger>
+          </TabsList>
 
-          {activeTab === 'execution' && (
-            <>
-              {status === 'executing' && (
-                <div data-testid="task-executing-panel">
-                  <ExecutingSection task={task} onStatusChange={loadTask} />
-                </div>
-              )}
-              {status === 'completed' && <CompletedSection task={task} />}
-              {status === 'failed' && (
-                <div className="space-y-4">
-                  <h3 className="text-lg font-medium text-destructive">{t('taskDetail.taskFailed')}</h3>
-                  {task.result != null && (
-                    <div className="border border-destructive/30 rounded-lg p-4">
-                      <p className="text-sm">{(task.result as any).error || t('taskDetail.unknownError')}</p>
-                    </div>
-                  )}
-                </div>
-              )}
-            </>
-          )}
+          <TabsContent value="execution">
+            {status === 'executing' && (
+              <div data-testid="task-executing-panel">
+                <ExecutingSection task={task} onStatusChange={loadTask} />
+              </div>
+            )}
+            {status === 'completed' && <CompletedSection task={task} />}
+            {status === 'failed' && (
+              <div className="space-y-4">
+                <h3 className="text-lg font-medium text-destructive">{t('taskDetail.taskFailed')}</h3>
+                {task.result != null && (
+                  <div className="border border-destructive/30 rounded-lg p-4">
+                    <p className="text-sm">{(task.result as any).error || t('taskDetail.unknownError')}</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </TabsContent>
 
-          {activeTab === 'timeline' && <TaskTimeline taskId={task.id} />}
-          {activeTab === 'tool-trace' && <ToolTracePanel taskId={task.id} />}
-          {activeTab === 'evidence' && <EvidencePanel taskId={task.id} />}
-          {activeTab === 'dag' && <TaskDAG taskId={task.id} />}
+          <TabsContent value="timeline"><TaskTimeline taskId={task.id} /></TabsContent>
+          <TabsContent value="tool-trace"><ToolTracePanel taskId={task.id} /></TabsContent>
+          <TabsContent value="evidence"><EvidencePanel taskId={task.id} /></TabsContent>
+          <TabsContent value="dag"><TaskDAG taskId={task.id} /></TabsContent>
 
           {/* Cost Panel */}
           <div className="mt-6">
@@ -237,8 +235,58 @@ export default function TaskDetailPage() {
               </div>
             </details>
           </div>
-        </>
+        </Tabs>
       )}
+    </div>
+  );
+}
+
+// ---- Workflow Stepper ----
+
+const STEPS = [
+  { key: 'draft', labelKey: 'taskDetail.stepDraft' },
+  { key: 'aligning', labelKey: 'taskDetail.stepAligning' },
+  { key: 'review', labelKey: 'taskDetail.stepReview' },
+  { key: 'executing', labelKey: 'taskDetail.stepExecuting' },
+  { key: 'completed', labelKey: 'taskDetail.stepCompleted' },
+] as const;
+
+function statusToStep(status: string): number {
+  if (status === 'draft') return 0;
+  if (status === 'aligning') return 1;
+  if (['brief_review', 'team_review', 'plan_review'].includes(status)) return 2;
+  if (status === 'executing' || status === 'paused') return 3;
+  if (status === 'completed') return 4;
+  if (status === 'failed') return 3;
+  return 0;
+}
+
+function WorkflowStepper({ status }: { status: string }) {
+  const { t } = useI18n();
+  const current = statusToStep(status);
+  const failed = status === 'failed';
+
+  return (
+    <div className="flex items-center gap-1 mb-6" data-testid="workflow-stepper">
+      {STEPS.map((step, i) => {
+        const done = i < current;
+        const active = i === current;
+        const isFailed = active && failed;
+        return (
+          <div key={step.key} className="flex items-center gap-1 flex-1">
+            <div className="flex flex-col items-center flex-1">
+              <div className={`h-2 w-full rounded-full transition-colors ${
+                done ? 'bg-success' : isFailed ? 'bg-destructive' : active ? 'bg-primary' : 'bg-muted'
+              }`} />
+              <span className={`text-[11px] mt-1 ${
+                active ? (isFailed ? 'text-destructive' : 'text-primary') : done ? 'text-success' : 'text-muted-foreground'
+              }`}>
+                {t(step.labelKey)}
+              </span>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -685,7 +733,7 @@ function CompletedSection({ task }: { task: TaskDetail }) {
           {result.subtaskSummary && (
             <div className="flex gap-4 text-sm">
               <span>{t('taskDetail.total')}: {result.subtaskSummary.total}</span>
-              <span className="text-green-600">{t('taskDetail.completed')}: {result.subtaskSummary.completed}</span>
+              <span className="text-success">{t('taskDetail.completed')}: {result.subtaskSummary.completed}</span>
               {result.subtaskSummary.failed > 0 && <span className="text-destructive">{t('taskDetail.failed')}: {result.subtaskSummary.failed}</span>}
             </div>
           )}

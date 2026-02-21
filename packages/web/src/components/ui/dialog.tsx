@@ -58,12 +58,13 @@ export function Dialog({ open, onOpenChange, children }: DialogProps) {
       className="fixed inset-0 z-50 flex items-center justify-center"
       onClick={(e) => { if (e.target === overlayRef.current) onOpenChange(false); }}
     >
-      <div className="fixed inset-0 bg-black/50" />
+      <div className="fixed inset-0 bg-black/50" style={{ animation: 'fadeIn 0.2s ease-out' }} />
       <div
         ref={contentRef}
         role="dialog"
         aria-modal="true"
         className="relative z-50 w-full max-w-lg max-h-[85vh] overflow-auto rounded-lg border bg-background p-6 shadow-lg"
+        style={{ animation: 'scaleIn 0.2s ease-out' }}
       >
         {children}
       </div>
