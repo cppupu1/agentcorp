@@ -4,6 +4,7 @@ import { templatesApi, modelsApi, type TemplateSummary, type Model } from '@/api
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/toast';
 import { Loader2, ArrowRight, Users } from 'lucide-react';
+import { useI18n } from '@/i18n';
 import HealthDashboard from './HealthDashboard';
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
   const [selectedModel, setSelectedModel] = useState<string>('');
   const { toast } = useToast();
   const navigate = useNavigate();
+  const { t } = useI18n();
 
   useEffect(() => {
     Promise.all([templatesApi.list(), modelsApi.list()])
@@ -24,22 +26,22 @@ export default function HomePage() {
           setSelectedModel(modelRes.data.filter(m => m.status === 'available')[0].id);
         }
       })
-      .catch(err => toast(err instanceof Error ? err.message : '加载失败', 'error'))
+      .catch(err => toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error'))
       .finally(() => setLoading(false));
-  }, [toast]);
+  }, [toast, t]);
 
   const handleApply = async (templateId: string) => {
     if (!selectedModel) {
-      toast('请先选择一个可用的模型', 'error');
+      toast(t('home.selectModelFirst'), 'error');
       return;
     }
     setApplying(templateId);
     try {
       const res = await templatesApi.apply(templateId, selectedModel);
-      toast('团队创建成功', 'success');
+      toast(t('home.teamCreated'), 'success');
       navigate(`/teams/${res.data.teamId}/edit`);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '应用模板失败', 'error');
+      toast(err instanceof Error ? err.message : t('home.applyFailed'), 'error');
     } finally {
       setApplying(null);
     }
@@ -58,23 +60,23 @@ export default function HomePage() {
       <HealthDashboard />
 
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">快速开始</h2>
+        <h2 className="text-2xl font-semibold mb-2">{t('home.quickStart')}</h2>
         <p className="text-muted-foreground">
-          选择一个场景模板，快速创建团队并开始工作
+          {t('home.quickStartDesc')}
         </p>
       </div>
 
       {models.length === 0 && (
         <div className="mb-6 p-4 rounded-lg border border-yellow-200 bg-yellow-50 text-yellow-800 text-sm">
-          暂无可用模型，请先
-          <a href="/models" className="underline font-medium mx-1">添加并测试模型</a>
-          后再使用模板。
+          {t('home.noModels')}
+          <a href="/models" className="underline font-medium mx-1">{t('home.addModelLink')}</a>
+          {t('home.noModelsAfter')}
         </div>
       )}
 
       {models.length > 0 && (
         <div className="mb-6">
-          <label className="block text-sm font-medium mb-2">选择模型</label>
+          <label className="block text-sm font-medium mb-2">{t('home.selectModel')}</label>
           <select
             className="w-full max-w-xs border rounded-md px-3 py-2 text-sm bg-background"
             value={selectedModel}
@@ -96,7 +98,7 @@ export default function HomePage() {
                 <h3 className="font-semibold">{tpl.name}</h3>
                 <div className="flex items-center gap-1 text-xs text-muted-foreground">
                   <Users className="h-3 w-3" />
-                  <span>{tpl.employeeCount} 名成员</span>
+                  <span>{tpl.employeeCount}{t('common.members')}</span>
                 </div>
               </div>
             </div>
@@ -111,18 +113,18 @@ export default function HomePage() {
               ) : (
                 <ArrowRight className="h-4 w-4 mr-1" />
               )}
-              使用此模板
+              {t('home.useTemplate')}
             </Button>
           </div>
         ))}
       </div>
 
       <div className="mt-8 pt-6 border-t">
-        <h3 className="text-lg font-medium mb-3">或者手动创建</h3>
+        <h3 className="text-lg font-medium mb-3">{t('home.manualCreate')}</h3>
         <div className="flex gap-3">
-          <Button variant="outline" onClick={() => navigate('/employees/new')}>添加员工</Button>
-          <Button variant="outline" onClick={() => navigate('/teams/new')}>创建团队</Button>
-          <Button variant="outline" onClick={() => navigate('/tasks/new')}>创建任务</Button>
+          <Button variant="outline" onClick={() => navigate('/employees/new')}>{t('home.addEmployee')}</Button>
+          <Button variant="outline" onClick={() => navigate('/teams/new')}>{t('home.createTeam')}</Button>
+          <Button variant="outline" onClick={() => navigate('/tasks/new')}>{t('home.createTask')}</Button>
         </div>
       </div>
     </div>

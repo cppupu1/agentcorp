@@ -13,6 +13,7 @@ import { Badge } from '@/components/ui/badge';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { useToast } from '@/components/ui/toast';
+import { useI18n } from '@/i18n';
 import {
   Plus, Trash2, Search, Loader2, ChevronDown, ChevronRight,
   FileText, X, Pencil,
@@ -36,13 +37,14 @@ export default function KnowledgeBasesPage() {
   const [searchResults, setSearchResults] = useState<KnowledgeSearchResult[]>([]);
   const [searching, setSearching] = useState(false);
   const { toast } = useToast();
+  const { t } = useI18n();
 
   const load = useCallback(async () => {
     try {
       const res = await knowledgeApi.list();
       setKbs(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -64,7 +66,7 @@ export default function KnowledgeBasesPage() {
       const res = await knowledgeApi.get(id);
       setExpandedDetail(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     }
   };
 
@@ -73,12 +75,12 @@ export default function KnowledgeBasesPage() {
     setDeleting(true);
     try {
       await knowledgeApi.delete(deleteTarget.id);
-      toast('知识库已删除', 'success');
+      toast(t('kb.kbDeleted'), 'success');
       setDeleteTarget(null);
       if (expandedId === deleteTarget.id) { setExpandedId(null); setExpandedDetail(null); }
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -89,7 +91,7 @@ export default function KnowledgeBasesPage() {
     setDeletingDoc(true);
     try {
       await knowledgeApi.deleteDocument(deleteDocTarget.kbId, deleteDocTarget.docId);
-      toast('文档已删除', 'success');
+      toast(t('kb.docDeleted'), 'success');
       setDeleteDocTarget(null);
       // Refresh expanded detail
       if (expandedId) {
@@ -98,7 +100,7 @@ export default function KnowledgeBasesPage() {
       }
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeletingDoc(false);
     }
@@ -112,7 +114,7 @@ export default function KnowledgeBasesPage() {
       const res = await knowledgeApi.search(kbId, searchQuery.trim());
       setSearchResults(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '搜索失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     } finally {
       setSearching(false);
     }
@@ -125,14 +127,14 @@ export default function KnowledgeBasesPage() {
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">知识库管理</h2>
+        <h2 className="text-2xl font-semibold">{t('kb.title')}</h2>
         <Button onClick={() => setShowCreateDialog(true)}>
-          <Plus className="h-4 w-4" /> 新建知识库
+          <Plus className="h-4 w-4" /> {t('kb.create')}
         </Button>
       </div>
 
       {kbs.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无知识库</div>
+        <div className="text-center py-12 text-muted-foreground">{t('kb.empty')}</div>
       ) : (
         <div className="space-y-3">
           {kbs.map(kb => (
@@ -146,7 +148,7 @@ export default function KnowledgeBasesPage() {
                   <div className="font-medium">{kb.name}</div>
                   {kb.description && <div className="text-sm text-muted-foreground truncate">{kb.description}</div>}
                 </div>
-                <Badge variant="secondary">{kb.documentCount} 篇文档</Badge>
+                <Badge variant="secondary">{t('kb.docCount', { count: kb.documentCount })}</Badge>
                 <Button variant="ghost" size="icon" onClick={e => { e.stopPropagation(); setEditTarget(kb); }}>
                   <Pencil className="h-4 w-4" />
                 </Button>
@@ -163,17 +165,17 @@ export default function KnowledgeBasesPage() {
                       <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                       <Input
                         className="pl-9"
-                        placeholder="搜索知识库内容..."
+                        placeholder={t('kb.searchPlaceholder')}
                         value={searchKbId === kb.id ? searchQuery : ''}
                         onChange={e => { setSearchQuery(e.target.value); setSearchKbId(kb.id); }}
                         onKeyDown={e => { if (e.key === 'Enter') handleSearch(kb.id); }}
                       />
                     </div>
                     <Button variant="outline" onClick={() => handleSearch(kb.id)} disabled={searching}>
-                      {searching ? <Loader2 className="h-4 w-4 animate-spin" /> : '搜索'}
+                      {searching ? <Loader2 className="h-4 w-4 animate-spin" /> : t('common.search')}
                     </Button>
                     <Button onClick={() => { setDocKbId(kb.id); setShowDocDialog(true); }}>
-                      <Plus className="h-4 w-4" /> 添加文档
+                      <Plus className="h-4 w-4" /> {t('kb.addDoc')}
                     </Button>
                   </div>
 
@@ -181,9 +183,9 @@ export default function KnowledgeBasesPage() {
                   {searchKbId === kb.id && searchResults.length > 0 && (
                     <div className="space-y-2">
                       <div className="flex items-center justify-between">
-                        <span className="text-sm font-medium">搜索结果 ({searchResults.length})</span>
+                        <span className="text-sm font-medium">{t('kb.searchResults', { count: searchResults.length })}</span>
                         <Button variant="ghost" size="sm" onClick={() => { setSearchResults([]); setSearchQuery(''); }}>
-                          <X className="h-3 w-3" /> 清除
+                          <X className="h-3 w-3" /> {t('kb.clearSearch')}
                         </Button>
                       </div>
                       {searchResults.map(r => (
@@ -197,7 +199,7 @@ export default function KnowledgeBasesPage() {
 
                   {/* Documents list */}
                   {expandedDetail.documents.length === 0 ? (
-                    <div className="text-sm text-muted-foreground py-2">暂无文档</div>
+                    <div className="text-sm text-muted-foreground py-2">{t('kb.noDocs')}</div>
                   ) : (
                     <div className="space-y-1">
                       {expandedDetail.documents.map(doc => (
@@ -205,7 +207,7 @@ export default function KnowledgeBasesPage() {
                           <FileText className="h-4 w-4 text-muted-foreground shrink-0" />
                           <div className="flex-1 min-w-0">
                             <div className="text-sm font-medium">{doc.title}</div>
-                            <div className="text-xs text-muted-foreground">{doc.chunkCount} 个分块</div>
+                            <div className="text-xs text-muted-foreground">{t('kb.chunkCount', { count: doc.chunkCount ?? 0 })}</div>
                           </div>
                           <Button
                             variant="ghost" size="icon"
@@ -257,8 +259,8 @@ export default function KnowledgeBasesPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除知识库"
-        description={`确定要删除知识库「${deleteTarget?.name}」及其所有文档吗？`}
+        title={t('kb.deleteKb')}
+        description={`${deleteTarget?.name}`}
         onConfirm={handleDeleteKb}
         loading={deleting}
       />
@@ -267,8 +269,8 @@ export default function KnowledgeBasesPage() {
       <ConfirmDialog
         open={!!deleteDocTarget}
         onOpenChange={() => setDeleteDocTarget(null)}
-        title="删除文档"
-        description={`确定要删除文档「${deleteDocTarget?.title}」吗？`}
+        title={t('kb.deleteDoc')}
+        description={`${deleteDocTarget?.title}`}
         onConfirm={handleDeleteDoc}
         loading={deletingDoc}
       />
@@ -288,6 +290,7 @@ function KBFormDialog({ open, onClose, editTarget, onSuccess }: {
   const [description, setDescription] = useState('');
   const [saving, setSaving] = useState(false);
   const { toast } = useToast();
+  const { t } = useI18n();
 
   useEffect(() => {
     if (editTarget) {
@@ -305,14 +308,14 @@ function KBFormDialog({ open, onClose, editTarget, onSuccess }: {
     try {
       if (editTarget) {
         await knowledgeApi.update(editTarget.id, { name: name.trim(), description: description.trim() || undefined });
-        toast('知识库已更新', 'success');
+        toast(t('kb.kbUpdated'), 'success');
       } else {
         await knowledgeApi.create({ name: name.trim(), description: description.trim() || undefined });
-        toast('知识库已创建', 'success');
+        toast(t('kb.kbCreated'), 'success');
       }
       onSuccess();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '保存失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.saveFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -321,22 +324,22 @@ function KBFormDialog({ open, onClose, editTarget, onSuccess }: {
   return (
     <Dialog open={open} onOpenChange={onClose}>
       <DialogHeader>
-        <DialogTitle>{editTarget ? '编辑知识库' : '新建知识库'}</DialogTitle>
+        <DialogTitle>{editTarget ? t('kb.editKb') : t('kb.createKb')}</DialogTitle>
       </DialogHeader>
       <div className="space-y-4">
         <div className="space-y-2">
-          <Label>名称</Label>
-          <Input value={name} onChange={e => setName(e.target.value)} placeholder="知识库名称" />
+          <Label>{t('kb.kbName')}</Label>
+          <Input value={name} onChange={e => setName(e.target.value)} placeholder={t('kb.kbNamePlaceholder')} />
         </div>
         <div className="space-y-2">
-          <Label>描述</Label>
-          <Input value={description} onChange={e => setDescription(e.target.value)} placeholder="可选描述" />
+          <Label>{t('kb.kbDesc')}</Label>
+          <Input value={description} onChange={e => setDescription(e.target.value)} placeholder={t('kb.kbDescPlaceholder')} />
         </div>
       </div>
       <DialogFooter>
-        <Button variant="outline" onClick={onClose} disabled={saving}>取消</Button>
+        <Button variant="outline" onClick={onClose} disabled={saving}>{t('common.cancel')}</Button>
         <Button onClick={handleSubmit} disabled={saving || !name.trim()}>
-          {saving ? '保存中...' : '保存'}
+          {saving ? t('common.saving') : t('common.save')}
         </Button>
       </DialogFooter>
     </Dialog>
@@ -355,6 +358,7 @@ function AddDocumentDialog({ open, kbId, onClose, onSuccess }: {
   const [content, setContent] = useState('');
   const [saving, setSaving] = useState(false);
   const { toast } = useToast();
+  const { t } = useI18n();
 
   useEffect(() => {
     if (open) { setTitle(''); setContent(''); }
@@ -365,10 +369,10 @@ function AddDocumentDialog({ open, kbId, onClose, onSuccess }: {
     setSaving(true);
     try {
       await knowledgeApi.addDocument(kbId, { title: title.trim(), content: content.trim() });
-      toast('文档已添加', 'success');
+      toast(t('kb.docAdded'), 'success');
       onSuccess();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '添加失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -377,27 +381,27 @@ function AddDocumentDialog({ open, kbId, onClose, onSuccess }: {
   return (
     <Dialog open={open} onOpenChange={onClose}>
       <DialogHeader>
-        <DialogTitle>添加文档</DialogTitle>
+        <DialogTitle>{t('kb.addDocDialog')}</DialogTitle>
       </DialogHeader>
       <div className="space-y-4">
         <div className="space-y-2">
-          <Label>标题</Label>
-          <Input value={title} onChange={e => setTitle(e.target.value)} placeholder="文档标题" />
+          <Label>{t('kb.docTitle')}</Label>
+          <Input value={title} onChange={e => setTitle(e.target.value)} placeholder={t('kb.docTitlePlaceholder')} />
         </div>
         <div className="space-y-2">
-          <Label>内容</Label>
+          <Label>{t('kb.docContent')}</Label>
           <Textarea
             value={content}
             onChange={e => setContent(e.target.value)}
-            placeholder="粘贴文档内容..."
+            placeholder={t('kb.docContentPlaceholder')}
             rows={10}
           />
         </div>
       </div>
       <DialogFooter>
-        <Button variant="outline" onClick={onClose} disabled={saving}>取消</Button>
+        <Button variant="outline" onClick={onClose} disabled={saving}>{t('common.cancel')}</Button>
         <Button onClick={handleSubmit} disabled={saving || !title.trim() || !content.trim()}>
-          {saving ? '添加中...' : '添加'}
+          {saving ? t('kb.adding') : t('common.add')}
         </Button>
       </DialogFooter>
     </Dialog>

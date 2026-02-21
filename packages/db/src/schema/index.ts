@@ -506,3 +506,70 @@ export const changeTestRuns = sqliteTable('change_test_runs', {
 }, (table) => [
   index('idx_change_test_runs_config').on(table.configId),
 ]);
+
+// ============ employee_memories (Phase3-F1) ============
+export const employeeMemories = sqliteTable('employee_memories', {
+  id: text('id').primaryKey(),
+  employeeId: text('employee_id').notNull().references(() => employees.id, { onDelete: 'cascade' }),
+  sourceTaskId: text('source_task_id').references(() => tasks.id, { onDelete: 'set null' }),
+  type: text('type').notNull(), // 'strategy'|'failure'|'pattern'|'insight'
+  summary: text('summary').notNull(),
+  detail: text('detail').notNull(),
+  tags: text('tags'), // JSON array
+  confidence: integer('confidence').default(50),
+  usageCount: integer('usage_count').default(0),
+  lastUsedAt: text('last_used_at'),
+  createdAt: text('created_at').notNull(),
+  updatedAt: text('updated_at').notNull(),
+}, (table) => [
+  index('idx_employee_memories_employee').on(table.employeeId),
+]);
+
+// ============ team_memories (Phase3-F1) ============
+export const teamMemories = sqliteTable('team_memories', {
+  id: text('id').primaryKey(),
+  teamId: text('team_id').notNull().references(() => teams.id, { onDelete: 'cascade' }),
+  sourceTaskId: text('source_task_id').references(() => tasks.id, { onDelete: 'set null' }),
+  type: text('type').notNull(), // 'review_summary'|'execution_template'|'collaboration_pattern'
+  summary: text('summary').notNull(),
+  detail: text('detail').notNull(),
+  tags: text('tags'), // JSON array
+  createdAt: text('created_at').notNull(),
+  updatedAt: text('updated_at').notNull(),
+}, (table) => [
+  index('idx_team_memories_team').on(table.teamId),
+]);
+
+// ============ improvement_proposals (Phase3-F3) ============
+export const improvementProposals = sqliteTable('improvement_proposals', {
+  id: text('id').primaryKey(),
+  targetType: text('target_type').notNull(), // 'employee'|'model'|'tool'|'config'
+  targetId: text('target_id').notNull(),
+  category: text('category').notNull(), // 'prompt_optimization'|'model_recommendation'|'tool_recommendation'|'config_change'
+  diagnosis: text('diagnosis').notNull(),
+  suggestion: text('suggestion').notNull(), // JSON
+  status: text('status').default('pending'), // 'pending'|'approved'|'rejected'|'applied'
+  appliedAt: text('applied_at'),
+  testRunId: text('test_run_id'),
+  sourceData: text('source_data'), // JSON
+  createdAt: text('created_at').notNull(),
+  updatedAt: text('updated_at').notNull(),
+});
+
+// ============ employee_competency_scores (Phase3-F4) ============
+export const employeeCompetencyScores = sqliteTable('employee_competency_scores', {
+  id: text('id').primaryKey(),
+  employeeId: text('employee_id').notNull().references(() => employees.id, { onDelete: 'cascade' }),
+  period: text('period').notNull(), // 'YYYY-MM'
+  completionRate: integer('completion_rate'),
+  qualityScore: integer('quality_score'),
+  efficiencyScore: integer('efficiency_score'),
+  stabilityScore: integer('stability_score'),
+  overallScore: integer('overall_score'),
+  taskCount: integer('task_count').default(0),
+  details: text('details'), // JSON
+  createdAt: text('created_at').notNull(),
+}, (table) => [
+  index('idx_competency_scores_employee').on(table.employeeId),
+  uniqueIndex('uq_competency_employee_period').on(table.employeeId, table.period),
+]);

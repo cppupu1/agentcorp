@@ -8,20 +8,22 @@ import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
 import { Loader2, X, Plus } from 'lucide-react';
+import { useI18n } from '@/i18n';
 
 const COLLAB_MODES = [
-  { value: 'free', label: '自由协作', enabled: true, description: 'PM自由调度子任务，灵活分配' },
-  { value: 'pipeline', label: '流水线', enabled: true, description: '子任务将按顺序执行，前一个的输出作为后一个的输入' },
-  { value: 'debate', label: '辩论', enabled: true, description: '所有成员并行分析，交叉审查后由PM综合' },
-  { value: 'vote', label: '投票', enabled: true, description: '所有成员独立判断，多数票决定结果' },
-  { value: 'master_slave', label: '主从', enabled: true, description: '主节点规划，从节点并行执行，主节点汇总' },
-];
+  { value: 'free', labelKey: 'teamForm.collabFree', enabled: true, descKey: 'teamForm.collabFreeDesc' },
+  { value: 'pipeline', labelKey: 'teamForm.collabPipeline', enabled: true, descKey: 'teamForm.collabPipelineDesc' },
+  { value: 'debate', labelKey: 'teamForm.collabDebate', enabled: true, descKey: 'teamForm.collabDebateDesc' },
+  { value: 'vote', labelKey: 'teamForm.collabVoting', enabled: true, descKey: 'teamForm.collabVotingDesc' },
+  { value: 'master_slave', labelKey: 'teamForm.collabMasterSlave', enabled: true, descKey: 'teamForm.collabMasterSlaveDesc' },
+] as const;
 
 export default function TeamFormPage() {
   const { id } = useParams<{ id: string }>();
   const isEdit = !!id;
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { t } = useI18n();
 
   const [loading, setLoading] = useState(isEdit);
   const [saving, setSaving] = useState(false);
@@ -50,7 +52,7 @@ export default function TeamFormPage() {
       setAllTools(toolRes.data);
       setAllPolicies(polRes.data);
     }).catch(err => {
-      toast(err instanceof Error ? err.message : '加载参考数据失败', 'error');
+      toast(err instanceof Error ? err.message : t('teamForm.loadFailed'), 'error');
     });
   }, [toast]);
 
@@ -58,27 +60,27 @@ export default function TeamFormPage() {
   useEffect(() => {
     if (!id) return;
     teamsApi.get(id).then(res => {
-      const t = res.data;
-      setName(t.name);
-      setDescription(t.description || '');
-      setScenario(t.scenario || '');
-      setPmEmployeeId(t.pmEmployeeId || '');
-      setCollaborationMode(t.collaborationMode || 'free');
-      setMembers(t.members.map(m => ({ employeeId: m.id, role: m.role || 'member' })));
-      setSelectedToolIds(new Set(t.tools.map(tool => tool.id)));
+      const td = res.data;
+      setName(td.name);
+      setDescription(td.description || '');
+      setScenario(td.scenario || '');
+      setPmEmployeeId(td.pmEmployeeId || '');
+      setCollaborationMode(td.collaborationMode || 'free');
+      setMembers(td.members.map(m => ({ employeeId: m.id, role: m.role || 'member' })));
+      setSelectedToolIds(new Set(td.tools.map(tool => tool.id)));
       // Load team policies
       policiesApi.getTeamPolicies(id).then(res => setTeamPolicies(res.data)).catch(() => {});
       setLoading(false);
     }).catch(err => {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
       navigate('/teams');
     });
-  }, [id, navigate, toast]);
+  }, [id, navigate, toast, t]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !pmEmployeeId) {
-      toast('请填写团队名称并选择PM', 'error');
+      toast(t('teamForm.nameRequired'), 'error');
       return;
     }
     setSaving(true);
@@ -94,14 +96,14 @@ export default function TeamFormPage() {
       };
       if (isEdit) {
         await teamsApi.update(id!, body);
-        toast('团队已更新', 'success');
+        toast(t('teamForm.updated'), 'success');
       } else {
         await teamsApi.create(body);
-        toast('团队已创建', 'success');
+        toast(t('teamForm.created'), 'success');
       }
       navigate('/teams');
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '保存失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.saveFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -135,37 +137,37 @@ export default function TeamFormPage() {
 
   // Group tools by groupName
   const toolGroups = new Map<string, Tool[]>();
-  for (const t of allTools) {
-    const group = t.groupName || '未分组';
+  for (const tl of allTools) {
+    const group = tl.groupName || t('tools.ungrouped');
     if (!toolGroups.has(group)) toolGroups.set(group, []);
-    toolGroups.get(group)!.push(t);
+    toolGroups.get(group)!.push(tl);
   }
 
   return (
     <div className="p-6 max-w-3xl">
-      <h2 className="text-2xl font-semibold mb-6">{isEdit ? '编辑团队' : '创建团队'}</h2>
+      <h2 className="text-2xl font-semibold mb-6">{isEdit ? t('teamForm.editTeam') : t('teamForm.createTeam')}</h2>
 
       <form onSubmit={handleSubmit} className="space-y-8">
         {/* Basic Info */}
         <section className="space-y-4">
-          <h3 className="text-lg font-medium border-b pb-2">基本信息</h3>
+          <h3 className="text-lg font-medium border-b pb-2">{t('teamForm.basicInfo')}</h3>
           <div className="space-y-2">
-            <Label htmlFor="name">团队名称 *</Label>
-            <Input id="name" value={name} onChange={e => setName(e.target.value)} placeholder="如：数据分析团队" required />
+            <Label htmlFor="name">{t('teamForm.name')} *</Label>
+            <Input id="name" value={name} onChange={e => setName(e.target.value)} placeholder={t('teamForm.namePlaceholder')} required />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="desc">描述</Label>
-            <Textarea id="desc" value={description} onChange={e => setDescription(e.target.value)} placeholder="团队职责描述..." rows={3} />
+            <Label htmlFor="desc">{t('teamForm.desc')}</Label>
+            <Textarea id="desc" value={description} onChange={e => setDescription(e.target.value)} placeholder={t('teamForm.descPlaceholder')} rows={3} />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="scenario">场景标签</Label>
-            <Input id="scenario" value={scenario} onChange={e => setScenario(e.target.value)} placeholder="如：数据分析、客服、研发" />
+            <Label htmlFor="scenario">{t('teamForm.scenario')}</Label>
+            <Input id="scenario" value={scenario} onChange={e => setScenario(e.target.value)} placeholder={t('teamForm.scenarioPlaceholder')} />
           </div>
         </section>
 
         {/* PM Selection */}
         <section className="space-y-4">
-          <h3 className="text-lg font-medium border-b pb-2">项目经理 (PM) *</h3>
+          <h3 className="text-lg font-medium border-b pb-2">{t('teamForm.pm')} *</h3>
           <select
             className="w-full border rounded-md px-3 py-2 text-sm bg-background"
             value={pmEmployeeId}
@@ -179,7 +181,7 @@ export default function TeamFormPage() {
             }}
             required
           >
-            <option value="">选择PM...</option>
+            <option value="">{t('teamForm.selectPm')}</option>
             {allEmployees.map(emp => (
               <option key={emp.id} value={emp.id}>{emp.avatar || '👤'} {emp.name} ({emp.modelName})</option>
             ))}
@@ -188,7 +190,7 @@ export default function TeamFormPage() {
 
         {/* Members */}
         <section className="space-y-4">
-          <h3 className="text-lg font-medium border-b pb-2">团队成员</h3>
+          <h3 className="text-lg font-medium border-b pb-2">{t('teamForm.members')}</h3>
           {members.length > 0 && (
             <div className="space-y-2">
               {members.map(m => {
@@ -202,8 +204,8 @@ export default function TeamFormPage() {
                       value={m.role}
                       onChange={e => setMembers(prev => prev.map(x => x.employeeId === m.employeeId ? { ...x, role: e.target.value } : x))}
                     >
-                      <option value="member">成员</option>
-                      <option value="observer">观察者</option>
+                      <option value="member">{t('teamForm.roleMember')}</option>
+                      <option value="observer">{t('teamForm.roleObserver')}</option>
                     </select>
                     <button type="button" onClick={() => removeMember(m.employeeId)} className="text-muted-foreground hover:text-destructive">
                       <X className="h-4 w-4" />
@@ -219,7 +221,7 @@ export default function TeamFormPage() {
               value=""
               onChange={e => { if (e.target.value) addMember(e.target.value); }}
             >
-              <option value="">添加成员...</option>
+              <option value="">{t('teamForm.addMember')}</option>
               {memberCandidates.map(emp => (
                 <option key={emp.id} value={emp.id}>{emp.avatar || '👤'} {emp.name}</option>
               ))}
@@ -229,31 +231,31 @@ export default function TeamFormPage() {
 
         {/* Tools */}
         <section className="space-y-4">
-          <h3 className="text-lg font-medium border-b pb-2">工具授权</h3>
+          <h3 className="text-lg font-medium border-b pb-2">{t('teamForm.toolAuth')}</h3>
           {Array.from(toolGroups).map(([group, groupTools]) => (
             <div key={group}>
               <div className="text-sm font-medium text-muted-foreground mb-2">{group}</div>
               <div className="flex flex-wrap gap-2">
-                {groupTools.map(t => (
+                {groupTools.map(tl => (
                   <Badge
-                    key={t.id}
-                    variant={selectedToolIds.has(t.id) ? 'default' : 'outline'}
+                    key={tl.id}
+                    variant={selectedToolIds.has(tl.id) ? 'default' : 'outline'}
                     className="cursor-pointer"
-                    onClick={() => toggleTool(t.id)}
+                    onClick={() => toggleTool(tl.id)}
                   >
-                    {t.name}
+                    {tl.name}
                   </Badge>
                 ))}
               </div>
             </div>
           ))}
-          {allTools.length === 0 && <p className="text-sm text-muted-foreground">暂无可用工具</p>}
+          {allTools.length === 0 && <p className="text-sm text-muted-foreground">{t('teamForm.noTools')}</p>}
         </section>
 
         {/* Policy Packages */}
         {isEdit && id && (
           <section className="space-y-4">
-            <h3 className="text-lg font-medium border-b pb-2">策略包</h3>
+            <h3 className="text-lg font-medium border-b pb-2">{t('teamForm.policies')}</h3>
             {teamPolicies.length > 0 && (
               <div className="space-y-2">
                 {teamPolicies.map(tp => (
@@ -261,7 +263,7 @@ export default function TeamFormPage() {
                     <span className="flex-1 text-sm">
                       {tp.packageName}
                       {tp.version != null && <span className="text-xs text-muted-foreground ml-1">v{tp.version}</span>}
-                      {tp.isBuiltin ? <Badge variant="secondary" className="ml-2">内置</Badge> : null}
+                      {tp.isBuiltin ? <Badge variant="secondary" className="ml-2">{t('policies.builtin')}</Badge> : null}
                     </span>
                     <button
                       type="button"
@@ -269,9 +271,9 @@ export default function TeamFormPage() {
                         try {
                           await policiesApi.removeFromTeam(id, tp.packageId);
                           setTeamPolicies(prev => prev.filter(p => p.packageId !== tp.packageId));
-                          toast('策略包已移除', 'success');
+                          toast(t('teamForm.policyRemoved'), 'success');
                         } catch (err: unknown) {
-                          toast(err instanceof Error ? err.message : '移除失败', 'error');
+                          toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
                         }
                       }}
                       className="text-muted-foreground hover:text-destructive"
@@ -292,27 +294,27 @@ export default function TeamFormPage() {
                   try {
                     const res = await policiesApi.assignToTeam(id, pkgId);
                     setTeamPolicies(res.data);
-                    toast('策略包已添加', 'success');
+                    toast(t('teamForm.policyAdded'), 'success');
                   } catch (err: unknown) {
-                    toast(err instanceof Error ? err.message : '添加失败', 'error');
+                    toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
                   }
                 }}
               >
-                <option value="">添加策略包...</option>
+                <option value="">{t('teamForm.addPolicy')}</option>
                 {allPolicies
                   .filter(p => !teamPolicies.some(tp => tp.packageId === p.id))
                   .map(p => (
-                    <option key={p.id} value={p.id}>{p.name}{p.isBuiltin ? ' (内置)' : ''}</option>
+                    <option key={p.id} value={p.id}>{p.name}{p.isBuiltin ? ` (${t('policies.builtin')})` : ''}</option>
                   ))}
               </select>
             )}
-            {!isEdit && <p className="text-sm text-muted-foreground">保存团队后可配置策略包</p>}
+            {!isEdit && <p className="text-sm text-muted-foreground">{t('teamForm.policyHint')}</p>}
           </section>
         )}
 
         {/* Collaboration Mode */}
         <section className="space-y-4">
-          <h3 className="text-lg font-medium border-b pb-2">协作模式</h3>
+          <h3 className="text-lg font-medium border-b pb-2">{t('teamForm.collabMode')}</h3>
           <div className="flex flex-wrap gap-3">
             {COLLAB_MODES.map(mode => (
               <label
@@ -330,14 +332,14 @@ export default function TeamFormPage() {
                   disabled={!mode.enabled}
                   className="accent-primary"
                 />
-                {mode.label}
+                {t(mode.labelKey)}
               </label>
             ))}
           </div>
           {(() => {
             const selected = COLLAB_MODES.find(m => m.value === collaborationMode);
-            return selected?.description ? (
-              <p className="text-sm text-muted-foreground mt-2">{selected.description}</p>
+            return selected?.descKey ? (
+              <p className="text-sm text-muted-foreground mt-2">{t(selected.descKey)}</p>
             ) : null;
           })()}
         </section>
@@ -345,9 +347,9 @@ export default function TeamFormPage() {
         {/* Actions */}
         <div className="flex gap-3 pt-4 border-t">
           <Button type="submit" disabled={saving}>
-            {saving ? <><Loader2 className="h-4 w-4 animate-spin mr-1" /> 保存中...</> : isEdit ? '保存' : '创建'}
+            {saving ? <><Loader2 className="h-4 w-4 animate-spin mr-1" /> {t('common.saving')}</> : isEdit ? t('common.save') : t('common.create')}
           </Button>
-          <Button type="button" variant="outline" onClick={() => navigate('/teams')}>取消</Button>
+          <Button type="button" variant="outline" onClick={() => navigate('/teams')}>{t('common.cancel')}</Button>
         </div>
       </form>
     </div>

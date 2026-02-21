@@ -1,9 +1,11 @@
 import { useState, useEffect, useMemo } from 'react';
 import { observabilityApi, type TimelineEvent } from '@/api/client';
 import { Badge } from '@/components/ui/badge';
+import { useI18n } from '@/i18n';
 import { Loader2, ChevronDown, ChevronRight } from 'lucide-react';
 
 export default function ToolTracePanel({ taskId }: { taskId: string }) {
+  const { t } = useI18n();
   const [traces, setTraces] = useState<TimelineEvent[]>([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('');
@@ -30,20 +32,20 @@ export default function ToolTracePanel({ taskId }: { taskId: string }) {
   }
 
   if (traces.length === 0) {
-    return <p className="text-sm text-muted-foreground py-4">暂无工具调用记录</p>;
+    return <p className="text-sm text-muted-foreground py-4">{t('toolTrace.noRecords')}</p>;
   }
 
   return (
     <div className="space-y-3">
       {toolNames.length > 1 && (
         <div className="flex items-center gap-2">
-          <span className="text-sm text-muted-foreground">筛选:</span>
+          <span className="text-sm text-muted-foreground">{t('toolTrace.filter')}</span>
           <select
             className="border rounded px-2 py-1 text-sm bg-background"
             value={filter}
             onChange={e => setFilter(e.target.value)}
           >
-            <option value="">全部</option>
+            <option value="">{t('common.all')}</option>
             {toolNames.map(n => <option key={n} value={n}>{n}</option>)}
           </select>
         </div>
@@ -53,10 +55,10 @@ export default function ToolTracePanel({ taskId }: { taskId: string }) {
           <thead className="bg-muted/50">
             <tr>
               <th className="text-left px-3 py-2 font-medium w-8"></th>
-              <th className="text-left px-3 py-2 font-medium">时间</th>
-              <th className="text-left px-3 py-2 font-medium">工具</th>
-              <th className="text-left px-3 py-2 font-medium">耗时</th>
-              <th className="text-left px-3 py-2 font-medium">状态</th>
+              <th className="text-left px-3 py-2 font-medium">{t('toolTrace.time')}</th>
+              <th className="text-left px-3 py-2 font-medium">{t('toolTrace.tool')}</th>
+              <th className="text-left px-3 py-2 font-medium">{t('toolTrace.duration')}</th>
+              <th className="text-left px-3 py-2 font-medium">{t('toolTrace.status')}</th>
             </tr>
           </thead>
           <tbody>
@@ -80,6 +82,7 @@ function TraceRow({ trace, expanded, onToggle }: {
   expanded: boolean;
   onToggle: () => void;
 }) {
+  const { t } = useI18n();
   const time = new Date(trace.createdAt).toLocaleTimeString();
   return (
     <>
@@ -94,7 +97,7 @@ function TraceRow({ trace, expanded, onToggle }: {
         </td>
         <td className="px-3 py-2">
           <Badge variant={trace.isError ? 'destructive' : 'default'} className="text-xs">
-            {trace.isError ? '错误' : '成功'}
+            {trace.isError ? t('toolTrace.error') : t('toolTrace.success')}
           </Badge>
         </td>
       </tr>
@@ -104,13 +107,13 @@ function TraceRow({ trace, expanded, onToggle }: {
             <div className="space-y-2">
               {trace.input != null && (
                 <div>
-                  <p className="text-xs text-muted-foreground mb-1">输入</p>
+                  <p className="text-xs text-muted-foreground mb-1">{t('timeline.input')}</p>
                   <pre className="text-xs bg-muted rounded p-2 overflow-auto max-h-32">{JSON.stringify(trace.input, null, 2)}</pre>
                 </div>
               )}
               {trace.output != null && (
                 <div>
-                  <p className="text-xs text-muted-foreground mb-1">输出</p>
+                  <p className="text-xs text-muted-foreground mb-1">{t('timeline.output')}</p>
                   <pre className="text-xs bg-muted rounded p-2 overflow-auto max-h-32">{JSON.stringify(trace.output, null, 2)}</pre>
                 </div>
               )}

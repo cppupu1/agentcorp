@@ -8,6 +8,7 @@ import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useDebouncedValue } from '@/hooks/useDebouncedValue';
 import { Plus, Pencil, Trash2, Copy, Search, Loader2, Users } from 'lucide-react';
+import { useI18n } from '@/i18n';
 
 export default function TeamsPage() {
   const [teams, setTeams] = useState<Team[]>([]);
@@ -19,13 +20,14 @@ export default function TeamsPage() {
   const [copyingId, setCopyingId] = useState<string | null>(null);
   const { toast } = useToast();
   const navigate = useNavigate();
+  const { t } = useI18n();
 
   const load = useCallback(async () => {
     try {
       const res = await teamsApi.list();
       setTeams(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -34,7 +36,7 @@ export default function TeamsPage() {
   useEffect(() => { load(); }, [load]);
 
   const filtered = debouncedSearch
-    ? teams.filter(t => t.name.toLowerCase().includes(debouncedSearch.toLowerCase()))
+    ? teams.filter(tm => tm.name.toLowerCase().includes(debouncedSearch.toLowerCase()))
     : teams;
 
   const handleDelete = async () => {
@@ -42,11 +44,11 @@ export default function TeamsPage() {
     setDeleting(true);
     try {
       await teamsApi.delete(deleteTarget.id);
-      toast('团队已删除', 'success');
+      toast(t('teams.deleted'), 'success');
       setDeleteTarget(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -57,41 +59,41 @@ export default function TeamsPage() {
     setCopyingId(team.id);
     try {
       await teamsApi.copy(team.id);
-      toast('团队已复制', 'success');
+      toast(t('teams.duplicated'), 'success');
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '复制失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.copyFailed'), 'error');
     } finally {
       setCopyingId(null);
     }
   };
 
   const modeLabels: Record<string, string> = {
-    free: '自由协作',
-    pipeline: '流水线',
-    debate: '辩论',
-    vote: '投票',
-    master_slave: '主从',
+    free: t('teams.modeCollab'),
+    pipeline: t('teams.modePipeline'),
+    debate: t('teams.modeDebate'),
+    vote: t('teams.modeVoting'),
+    master_slave: t('teams.modeMasterSlave'),
   };
 
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">团队管理</h2>
+        <h2 className="text-2xl font-semibold">{t('teams.title')}</h2>
         <Button onClick={() => navigate('/teams/new')} data-testid="create-team-btn">
-          <Plus className="h-4 w-4" /> 创建团队
+          <Plus className="h-4 w-4" /> {t('teams.create')}
         </Button>
       </div>
 
       <div className="relative max-w-sm mb-4">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-        <Input className="pl-9" placeholder="搜索团队..." value={search} onChange={e => setSearch(e.target.value)} />
+        <Input className="pl-9" placeholder={t('teams.search')} value={search} onChange={e => setSearch(e.target.value)} />
       </div>
 
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : filtered.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无团队</div>
+        <div className="text-center py-12 text-muted-foreground">{t('teams.empty')}</div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map(team => (
@@ -108,23 +110,23 @@ export default function TeamsPage() {
 
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="text-lg">{team.pmAvatar || '👤'}</span>
-                <span>PM: {team.pmName || '未指定'}</span>
+                <span>{team.pmName ? `PM: ${team.pmName}` : t('teams.pmNotSet')}</span>
               </div>
 
               {team.scenario && <Badge variant="outline" className="text-xs">{team.scenario}</Badge>}
 
               <div className="flex gap-4 text-xs text-muted-foreground">
-                <span><Users className="inline h-3 w-3 mr-1" />{team.memberCount} 成员</span>
-                <span>{team.toolCount} 工具</span>
-                <span>{team.taskCount} 任务</span>
+                <span><Users className="inline h-3 w-3 mr-1" />{team.memberCount} {t('common.members')}</span>
+                <span>{team.toolCount} {t('common.tools')}</span>
+                <span>{team.taskCount} {t('nav.tasks')}</span>
               </div>
 
               <div className="flex gap-1 pt-1 border-t">
                 <Button variant="ghost" size="sm" onClick={() => navigate(`/teams/${team.id}/edit`)}>
-                  <Pencil className="h-3 w-3 mr-1" /> 编辑
+                  <Pencil className="h-3 w-3 mr-1" /> {t('common.edit')}
                 </Button>
                 <Button variant="ghost" size="sm" onClick={() => handleCopy(team)} disabled={copyingId === team.id}>
-                  {copyingId === team.id ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : <Copy className="h-3 w-3 mr-1" />} 复制
+                  {copyingId === team.id ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : <Copy className="h-3 w-3 mr-1" />} {t('common.copy')}
                 </Button>
                 <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(team)} className="ml-auto">
                   <Trash2 className="h-3 w-3 text-destructive" />
@@ -138,8 +140,8 @@ export default function TeamsPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除团队"
-        description={`确定要删除团队「${deleteTarget?.name}」吗？`}
+        title={t('teams.deleteTeam')}
+        description={t('teams.deleteConfirm', { name: deleteTarget?.name ?? '' })}
         onConfirm={handleDelete}
         loading={deleting}
       />

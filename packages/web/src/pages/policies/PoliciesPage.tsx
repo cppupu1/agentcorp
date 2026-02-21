@@ -13,6 +13,7 @@ import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
+import { useI18n } from '@/i18n';
 import { Plus, Trash2, Loader2, ChevronDown, ChevronRight, Pencil, RotateCcw } from 'lucide-react';
 
 export default function PoliciesPage() {
@@ -29,13 +30,14 @@ export default function PoliciesPage() {
   const [saving, setSaving] = useState(false);
   const [deleting, setDeleting] = useState(false);
   const { toast } = useToast();
+  const { t } = useI18n();
 
   const load = useCallback(async () => {
     try {
       const res = await policiesApi.list();
       setPackages(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -55,7 +57,7 @@ export default function PoliciesPage() {
       const res = await policiesApi.get(id);
       setDetail(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载详情失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setDetailLoading(false);
     }
@@ -66,16 +68,16 @@ export default function PoliciesPage() {
     try {
       if (editing) {
         await policiesApi.update(editing.id, input);
-        toast('策略包已更新', 'success');
+        toast(t('policies.updated'), 'success');
       } else {
         await policiesApi.create({ ...input, rules: input.rules || [] });
-        toast('策略包已创建', 'success');
+        toast(t('policies.created'), 'success');
       }
       setFormOpen(false);
       setEditing(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '保存失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.saveFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -86,7 +88,7 @@ export default function PoliciesPage() {
     setDeleting(true);
     try {
       await policiesApi.delete(deleteTarget.id);
-      toast('策略包已删除', 'success');
+      toast(t('policies.deleted'), 'success');
       setDeleteTarget(null);
       if (expandedId === deleteTarget.id) {
         setExpandedId(null);
@@ -94,7 +96,7 @@ export default function PoliciesPage() {
       }
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -104,10 +106,10 @@ export default function PoliciesPage() {
     try {
       const res = await policiesApi.activateVersion(packageId, versionId);
       setDetail(res.data);
-      toast('版本已激活', 'success');
+      toast(t('policies.versionActivated'), 'success');
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '激活失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     }
   };
 
@@ -119,10 +121,10 @@ export default function PoliciesPage() {
       setDetail(res.data);
       setVersionFormOpen(false);
       setVersionTarget(null);
-      toast('新版本已创建', 'success');
+      toast(t('policies.versionCreated'), 'success');
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '创建版本失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -138,16 +140,16 @@ export default function PoliciesPage() {
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">策略包管理</h2>
+        <h2 className="text-2xl font-semibold">{t('policies.title')}</h2>
         <Button onClick={() => { setEditing(null); setFormOpen(true); }}>
-          <Plus className="h-4 w-4" /> 创建策略包
+          <Plus className="h-4 w-4" /> {t('policies.create')}
         </Button>
       </div>
 
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : packages.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无策略包</div>
+        <div className="text-center py-12 text-muted-foreground">{t('policies.empty')}</div>
       ) : (
         <div className="space-y-3">
           {packages.map(pkg => (
@@ -160,13 +162,13 @@ export default function PoliciesPage() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
                     <span className="font-medium text-sm">{pkg.name}</span>
-                    {pkg.isBuiltin ? <Badge variant="secondary">内置</Badge> : null}
+                    {pkg.isBuiltin ? <Badge variant="secondary">{t('policies.builtin')}</Badge> : null}
                     {pkg.scenario && <Badge variant="secondary">{pkg.scenario}</Badge>}
                   </div>
                   {pkg.description && <p className="text-xs text-muted-foreground mt-0.5 truncate">{pkg.description}</p>}
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
-                  <Badge variant="secondary">{pkg.versionCount} 个版本</Badge>
+                  <Badge variant="secondary">{t('policies.versionCount', { count: pkg.versionCount })}</Badge>
                   {pkg.activeVersion && <Badge variant="default">v{pkg.activeVersion}</Badge>}
                 </div>
               </button>
@@ -177,22 +179,22 @@ export default function PoliciesPage() {
                     {!pkg.isBuiltin && (
                       <>
                         <Button variant="outline" size="sm" onClick={(e) => { e.stopPropagation(); setEditing(pkg); setFormOpen(true); }}>
-                          <Pencil className="h-3 w-3" /> 编辑
+                          <Pencil className="h-3 w-3" /> {t('common.edit')}
                         </Button>
                         <Button variant="outline" size="sm" onClick={(e) => { e.stopPropagation(); setDeleteTarget(pkg); }}>
-                          <Trash2 className="h-3 w-3 text-destructive" /> 删除
+                          <Trash2 className="h-3 w-3 text-destructive" /> {t('common.delete')}
                         </Button>
                       </>
                     )}
                     <Button variant="outline" size="sm" onClick={() => { setVersionTarget(pkg.id); setVersionFormOpen(true); }}>
-                      <Plus className="h-3 w-3" /> 新版本
+                      <Plus className="h-3 w-3" /> {t('policies.newVersion')}
                     </Button>
                   </div>
 
                   {detailLoading ? (
                     <div className="flex justify-center py-4"><Loader2 className="h-5 w-5 animate-spin text-muted-foreground" /></div>
                   ) : detail?.versions.length === 0 ? (
-                    <p className="text-sm text-muted-foreground py-2">暂无版本</p>
+                    <p className="text-sm text-muted-foreground py-2">{t('policies.noVersions')}</p>
                   ) : (
                     <div className="space-y-2">
                       {detail?.versions.map(ver => (
@@ -200,13 +202,13 @@ export default function PoliciesPage() {
                           <div className="flex items-center justify-between mb-2">
                             <div className="flex items-center gap-2">
                               <span className="text-sm font-medium">v{ver.version}</span>
-                              {ver.isActive ? <Badge variant="default">当前激活</Badge> : null}
+                              {ver.isActive ? <Badge variant="default">{t('policies.activeVersion')}</Badge> : null}
                               {ver.changelog && <span className="text-xs text-muted-foreground">{ver.changelog}</span>}
                             </div>
                             <div className="flex gap-1">
                               {!ver.isActive && (
-                                <Button variant="ghost" size="sm" onClick={() => handleActivate(pkg.id, ver.id)} title="激活此版本">
-                                  <RotateCcw className="h-3 w-3" /> 激活
+                                <Button variant="ghost" size="sm" onClick={() => handleActivate(pkg.id, ver.id)} title={t('policies.activate')}>
+                                  <RotateCcw className="h-3 w-3" /> {t('policies.activate')}
                                 </Button>
                               )}
                             </div>
@@ -247,8 +249,8 @@ export default function PoliciesPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除策略包"
-        description={`确定要删除策略包「${deleteTarget?.name}」吗？所有版本和团队关联将被删除。`}
+        title={t('policies.deletePolicy')}
+        description={`${deleteTarget?.name}`}
         onConfirm={handleDelete}
         loading={deleting}
       />
@@ -270,6 +272,7 @@ function PackageFormDialog({
   const [scenario, setScenario] = useState('');
   const [rulesText, setRulesText] = useState('[]');
   const [rulesError, setRulesError] = useState<string | null>(null);
+  const { t } = useI18n();
 
   useEffect(() => {
     if (open) {
@@ -291,7 +294,7 @@ function PackageFormDialog({
         rules = JSON.parse(rulesText);
         if (!Array.isArray(rules)) throw new Error();
       } catch {
-        setRulesError('rules 必须是合法的 JSON 数组');
+        setRulesError(t('policies.rulesHint'));
         return;
       }
       setRulesError(null);
@@ -302,24 +305,24 @@ function PackageFormDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle>{editing ? '编辑策略包' : '创建策略包'}</DialogTitle>
+        <DialogTitle>{editing ? t('policies.editPolicy') : t('policies.createPolicy')}</DialogTitle>
       </DialogHeader>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label>名称</Label>
-          <Input value={name} onChange={e => setName(e.target.value)} placeholder="策略包名称" required />
+          <Label>{t('policies.name')}</Label>
+          <Input value={name} onChange={e => setName(e.target.value)} placeholder={t('policies.name')} required />
         </div>
         <div className="space-y-2">
-          <Label>描述</Label>
-          <Textarea value={description} onChange={e => setDescription(e.target.value)} placeholder="策略包描述" rows={2} />
+          <Label>{t('policies.desc')}</Label>
+          <Textarea value={description} onChange={e => setDescription(e.target.value)} placeholder={t('policies.desc')} rows={2} />
         </div>
         <div className="space-y-2">
-          <Label>场景</Label>
-          <Input value={scenario} onChange={e => setScenario(e.target.value)} placeholder="如：通用、安全、质量" />
+          <Label>{t('policies.scenario')}</Label>
+          <Input value={scenario} onChange={e => setScenario(e.target.value)} placeholder={t('policies.scenario')} />
         </div>
         {!editing && (
           <div className="space-y-2">
-            <Label>规则 (JSON)</Label>
+            <Label>{t('policies.rules')}</Label>
             <Textarea
               value={rulesText}
               onChange={e => { setRulesText(e.target.value); setRulesError(null); }}
@@ -331,8 +334,8 @@ function PackageFormDialog({
           </div>
         )}
         <DialogFooter>
-          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>取消</Button>
-          <Button type="submit" disabled={saving}>{saving ? '保存中...' : '保存'}</Button>
+          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>{t('common.cancel')}</Button>
+          <Button type="submit" disabled={saving}>{saving ? t('common.saving') : t('common.save')}</Button>
         </DialogFooter>
       </form>
     </Dialog>
@@ -350,6 +353,7 @@ function VersionFormDialog({
   const [rulesText, setRulesText] = useState('[]');
   const [changelog, setChangelog] = useState('');
   const [rulesError, setRulesError] = useState<string | null>(null);
+  const { t } = useI18n();
 
   useEffect(() => {
     if (open) {
@@ -366,7 +370,7 @@ function VersionFormDialog({
       rules = JSON.parse(rulesText);
       if (!Array.isArray(rules)) throw new Error();
     } catch {
-      setRulesError('rules 必须是合法的 JSON 数组');
+      setRulesError(t('policies.rulesHint'));
       return;
     }
     setRulesError(null);
@@ -376,11 +380,11 @@ function VersionFormDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle>创建新版本</DialogTitle>
+        <DialogTitle>{t('policies.createVersion')}</DialogTitle>
       </DialogHeader>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label>规则 (JSON)</Label>
+          <Label>{t('policies.rules')}</Label>
           <Textarea
             value={rulesText}
             onChange={e => { setRulesText(e.target.value); setRulesError(null); }}
@@ -392,12 +396,12 @@ function VersionFormDialog({
           {rulesError && <p className="text-xs text-destructive">{rulesError}</p>}
         </div>
         <div className="space-y-2">
-          <Label>变更说明</Label>
-          <Input value={changelog} onChange={e => setChangelog(e.target.value)} placeholder="本次变更说明" />
+          <Label>{t('policies.changelog')}</Label>
+          <Input value={changelog} onChange={e => setChangelog(e.target.value)} placeholder={t('policies.changelog')} />
         </div>
         <DialogFooter>
-          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>取消</Button>
-          <Button type="submit" disabled={saving}>{saving ? '创建中...' : '创建版本'}</Button>
+          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>{t('common.cancel')}</Button>
+          <Button type="submit" disabled={saving}>{saving ? t('common.creating') : t('policies.createVersion')}</Button>
         </DialogFooter>
       </form>
     </Dialog>

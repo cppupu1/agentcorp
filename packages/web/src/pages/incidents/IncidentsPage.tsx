@@ -8,20 +8,8 @@ import { Label } from '@/components/ui/label';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
+import { useI18n } from '@/i18n';
 import { Loader2, Plus, Trash2 } from 'lucide-react';
-
-const triggerLabels: Record<string, { label: string; variant: 'destructive' | 'warning' | 'secondary' }> = {
-  emergency_stop: { label: '紧急停止', variant: 'destructive' },
-  circuit_breaker: { label: '熔断', variant: 'destructive' },
-  observer_critical: { label: '观察者告警', variant: 'warning' },
-  manual: { label: '手动创建', variant: 'secondary' },
-};
-
-const statusLabels: Record<string, { label: string; variant: 'secondary' | 'warning' | 'success' }> = {
-  draft: { label: '草稿', variant: 'secondary' },
-  analyzing: { label: '分析中', variant: 'warning' },
-  completed: { label: '已完成', variant: 'success' },
-};
 
 export default function IncidentsPage() {
   const [items, setItems] = useState<IncidentReport[]>([]);
@@ -30,14 +18,28 @@ export default function IncidentsPage() {
   const [deleteTarget, setDeleteTarget] = useState<IncidentReport | null>(null);
   const [deleting, setDeleting] = useState(false);
   const { toast } = useToast();
+  const { t, locale } = useI18n();
   const navigate = useNavigate();
+
+  const triggerLabels: Record<string, { label: string; variant: 'destructive' | 'warning' | 'secondary' }> = {
+    emergency_stop: { label: t('incidents.triggerEmergency'), variant: 'destructive' },
+    circuit_breaker: { label: t('incidents.triggerCircuitBreaker'), variant: 'destructive' },
+    observer_critical: { label: t('incidents.triggerObserver'), variant: 'warning' },
+    manual: { label: t('incidents.triggerManual'), variant: 'secondary' },
+  };
+
+  const statusLabels: Record<string, { label: string; variant: 'secondary' | 'warning' | 'success' }> = {
+    draft: { label: t('incidents.statusDraft'), variant: 'secondary' },
+    analyzing: { label: t('incidents.statusAnalyzing'), variant: 'warning' },
+    completed: { label: t('incidents.statusCompleted'), variant: 'success' },
+  };
 
   const load = useCallback(async () => {
     try {
       const res = await incidentsApi.list();
       setItems(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -50,11 +52,11 @@ export default function IncidentsPage() {
     setDeleting(true);
     try {
       await incidentsApi.delete(deleteTarget.id);
-      toast('已删除', 'success');
+      toast(t('incidents.deleted'), 'success');
       setDeleteTarget(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -63,9 +65,9 @@ export default function IncidentsPage() {
   return (
     <div className="p-6 max-w-4xl">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">事故复盘</h2>
+        <h2 className="text-2xl font-semibold">{t('incidents.title')}</h2>
         <Button size="sm" onClick={() => setCreateOpen(true)} className="gap-1">
-          <Plus className="h-4 w-4" /> 手动创建
+          <Plus className="h-4 w-4" /> {t('incidents.manualCreate')}
         </Button>
       </div>
 
@@ -74,7 +76,7 @@ export default function IncidentsPage() {
           <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
         </div>
       ) : items.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无事故报告</div>
+        <div className="text-center py-12 text-muted-foreground">{t('incidents.empty')}</div>
       ) : (
         <div className="space-y-2">
           {items.map(item => {
@@ -90,13 +92,13 @@ export default function IncidentsPage() {
                   <div className="flex items-center gap-2 mb-1">
                     <Badge variant={trigger.variant}>{trigger.label}</Badge>
                     <Badge variant={status.variant}>{status.label}</Badge>
-                    <span className="font-medium text-sm truncate">{item.taskTitle || '未知任务'}</span>
+                    <span className="font-medium text-sm truncate">{item.taskTitle || t('incidents.unknownTask')}</span>
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    {new Date(item.createdAt).toLocaleString('zh-CN')}
+                    {new Date(item.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}
                   </div>
                 </div>
-                <Button variant="ghost" size="icon" onClick={(e) => { e.stopPropagation(); setDeleteTarget(item); }} title="删除">
+                <Button variant="ghost" size="icon" onClick={(e) => { e.stopPropagation(); setDeleteTarget(item); }} title={t('common.delete')}>
                   <Trash2 className="h-4 w-4" />
                 </Button>
               </div>
@@ -114,8 +116,8 @@ export default function IncidentsPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除事故报告"
-        description={`确定要删除此事故报告吗？`}
+        title={t('incidents.deleteIncident')}
+        description={t('incidents.deleteConfirm')}
         onConfirm={handleDelete}
         loading={deleting}
       />
@@ -133,6 +135,7 @@ function CreateIncidentDialog({
   const [taskId, setTaskId] = useState('');
   const [saving, setSaving] = useState(false);
   const { toast } = useToast();
+  const { t } = useI18n();
 
   useEffect(() => { if (open) setTaskId(''); }, [open]);
 
@@ -144,7 +147,7 @@ function CreateIncidentDialog({
       const res = await incidentsApi.create({ taskId: taskId.trim(), triggerType: 'manual' });
       onCreated(res.data.id);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '创建失败', 'error');
+      toast(err instanceof Error ? err.message : t('incidents.createFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -153,16 +156,16 @@ function CreateIncidentDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle>手动创建事故报告</DialogTitle>
+        <DialogTitle>{t('incidents.createDialog')}</DialogTitle>
       </DialogHeader>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label>关联任务 ID</Label>
-          <Input value={taskId} onChange={e => setTaskId(e.target.value)} placeholder="输入任务 ID" required />
+          <Label>{t('incidents.taskId')}</Label>
+          <Input value={taskId} onChange={e => setTaskId(e.target.value)} placeholder={t('incidents.taskIdPlaceholder')} required />
         </div>
         <DialogFooter>
-          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>取消</Button>
-          <Button type="submit" disabled={saving}>{saving ? '创建中...' : '创建'}</Button>
+          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>{t('common.cancel')}</Button>
+          <Button type="submit" disabled={saving}>{saving ? t('common.creating') : t('common.create')}</Button>
         </DialogFooter>
       </form>
     </Dialog>

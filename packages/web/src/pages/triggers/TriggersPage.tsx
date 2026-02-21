@@ -9,11 +9,17 @@ import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { Plus, Pencil, Trash2, Zap, Loader2 } from 'lucide-react';
+import { useI18n } from '@/i18n';
 
-const typeBadge: Record<string, { variant: 'secondary' | 'success' | 'destructive'; label: string }> = {
-  cron: { variant: 'secondary', label: '定时' },
-  webhook: { variant: 'success', label: 'Webhook' },
-  event: { variant: 'destructive', label: '事件' },
+const typeVariant: Record<string, 'secondary' | 'success' | 'destructive'> = {
+  cron: 'secondary',
+  webhook: 'success',
+  event: 'destructive',
+};
+const typeLabelKey: Record<string, string> = {
+  cron: 'triggers.typeCron',
+  webhook: 'triggers.typeWebhook',
+  event: 'triggers.typeEvent',
 };
 
 export default function TriggersPage() {
@@ -27,6 +33,7 @@ export default function TriggersPage() {
   const [deleting, setDeleting] = useState(false);
   const [teams, setTeams] = useState<Team[]>([]);
   const { toast } = useToast();
+  const { t, locale } = useI18n();
 
   const load = useCallback(async () => {
     try {
@@ -37,7 +44,7 @@ export default function TriggersPage() {
       setTriggers(trigRes.data);
       setTeams(teamRes.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -48,10 +55,10 @@ export default function TriggersPage() {
   const handleToggleEnabled = async (trigger: Trigger) => {
     try {
       await triggersApi.update(trigger.id, { enabled: !trigger.enabled });
-      toast(trigger.enabled ? '已禁用' : '已启用', 'success');
+      toast(trigger.enabled ? t('triggers.disabled') : t('triggers.enabled'), 'success');
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '操作失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     }
   };
 
@@ -59,10 +66,10 @@ export default function TriggersPage() {
     setFiringId(trigger.id);
     try {
       const res = await triggersApi.fire(trigger.id);
-      toast(`触发器已触发，任务 ID: ${res.data.taskId}`, 'success');
+      toast(t('triggers.fired', { taskId: res.data.taskId }), 'success');
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '触发失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     } finally {
       setFiringId(null);
     }
@@ -73,16 +80,16 @@ export default function TriggersPage() {
     try {
       if (editing) {
         await triggersApi.update(editing.id, input);
-        toast('触发器已更新', 'success');
+        toast(t('triggers.updated'), 'success');
       } else {
         await triggersApi.create(input);
-        toast('触发器已创建', 'success');
+        toast(t('triggers.created'), 'success');
       }
       setFormOpen(false);
       setEditing(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '保存失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.saveFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -93,11 +100,11 @@ export default function TriggersPage() {
     setDeleting(true);
     try {
       await triggersApi.delete(deleteTarget.id);
-      toast('触发器已删除', 'success');
+      toast(t('triggers.deleted'), 'success');
       setDeleteTarget(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -106,59 +113,60 @@ export default function TriggersPage() {
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">触发器管理</h2>
+        <h2 className="text-2xl font-semibold">{t('triggers.title')}</h2>
         <Button onClick={() => { setEditing(null); setFormOpen(true); }}>
-          <Plus className="h-4 w-4" /> 添加触发器
+          <Plus className="h-4 w-4" /> {t('triggers.add')}
         </Button>
       </div>
 
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : triggers.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无触发器</div>
+        <div className="text-center py-12 text-muted-foreground">{t('triggers.empty')}</div>
       ) : (
         <div className="border rounded-lg overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-muted/50">
               <tr>
-                <th className="text-left px-4 py-3 font-medium">名称</th>
-                <th className="text-left px-4 py-3 font-medium">类型</th>
-                <th className="text-left px-4 py-3 font-medium">团队</th>
-                <th className="text-left px-4 py-3 font-medium">状态</th>
-                <th className="text-left px-4 py-3 font-medium">上次触发</th>
-                <th className="text-right px-4 py-3 font-medium">操作</th>
+                <th className="text-left px-4 py-3 font-medium">{t('triggers.name')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('triggers.type')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('triggers.team')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('triggers.status')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('triggers.lastFired')}</th>
+                <th className="text-right px-4 py-3 font-medium">{t('triggers.actions')}</th>
               </tr>
             </thead>
             <tbody>
-              {triggers.map(t => {
-                const tb = typeBadge[t.type] || typeBadge.event;
+              {triggers.map(trig => {
+                const variant = typeVariant[trig.type] || typeVariant.event;
+                const typeLabel = t(typeLabelKey[trig.type] || typeLabelKey.event);
                 return (
-                  <tr key={t.id} className="border-t">
-                    <td className="px-4 py-3 font-medium">{t.name}</td>
-                    <td className="px-4 py-3"><Badge variant={tb.variant}>{tb.label}</Badge></td>
-                    <td className="px-4 py-3 text-muted-foreground">{t.teamName || '-'}</td>
+                  <tr key={trig.id} className="border-t">
+                    <td className="px-4 py-3 font-medium">{trig.name}</td>
+                    <td className="px-4 py-3"><Badge variant={variant}>{typeLabel}</Badge></td>
+                    <td className="px-4 py-3 text-muted-foreground">{trig.teamName || '-'}</td>
                     <td className="px-4 py-3">
                       <button
-                        onClick={() => handleToggleEnabled(t)}
+                        onClick={() => handleToggleEnabled(trig)}
                         className={`px-2 py-0.5 rounded text-xs font-medium transition-colors ${
-                          t.enabled ? 'bg-green-100 text-green-700 hover:bg-green-200' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+                          trig.enabled ? 'bg-green-100 text-green-700 hover:bg-green-200' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
                         }`}
                       >
-                        {t.enabled ? '已启用' : '已禁用'}
+                        {trig.enabled ? t('triggers.enabled') : t('triggers.disabled')}
                       </button>
                     </td>
                     <td className="px-4 py-3 text-muted-foreground text-xs">
-                      {t.lastFiredAt ? new Date(t.lastFiredAt).toLocaleString() : '-'}
+                      {trig.lastFiredAt ? new Date(trig.lastFiredAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US') : '-'}
                     </td>
                     <td className="px-4 py-3 text-right">
                       <div className="flex justify-end gap-1">
-                        <Button variant="ghost" size="sm" onClick={() => handleFire(t)} disabled={firingId === t.id}>
-                          {firingId === t.id ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
+                        <Button variant="ghost" size="sm" onClick={() => handleFire(trig)} disabled={firingId === trig.id}>
+                          {firingId === trig.id ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
                         </Button>
-                        <Button variant="ghost" size="sm" onClick={() => { setEditing(t); setFormOpen(true); }}>
+                        <Button variant="ghost" size="sm" onClick={() => { setEditing(trig); setFormOpen(true); }}>
                           <Pencil className="h-3 w-3" />
                         </Button>
-                        <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(t)}>
+                        <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(trig)}>
                           <Trash2 className="h-3 w-3 text-destructive" />
                         </Button>
                       </div>
@@ -183,8 +191,8 @@ export default function TriggersPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除触发器"
-        description={`确定要删除触发器「${deleteTarget?.name}」吗？`}
+        title={t('triggers.deleteTrigger')}
+        description={t('triggers.deleteConfirm', { name: deleteTarget?.name ?? '' })}
         onConfirm={handleDelete}
         loading={deleting}
       />
@@ -202,6 +210,7 @@ function TriggerFormDialog({
   onSave: (input: TriggerInput) => void;
   saving: boolean;
 }) {
+  const { t } = useI18n();
   const [name, setName] = useState('');
   const [type, setType] = useState<'cron' | 'webhook' | 'event'>('cron');
   const [teamId, setTeamId] = useState('');
@@ -243,73 +252,73 @@ function TriggerFormDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle>{editing ? '编辑触发器' : '添加触发器'}</DialogTitle>
+        <DialogTitle>{editing ? t('triggers.editTrigger') : t('triggers.addTrigger')}</DialogTitle>
       </DialogHeader>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label>名称</Label>
-          <Input value={name} onChange={e => setName(e.target.value)} placeholder="触发器名称" required />
+          <Label>{t('triggers.name')}</Label>
+          <Input value={name} onChange={e => setName(e.target.value)} required />
         </div>
         <div className="space-y-2">
-          <Label>类型</Label>
+          <Label>{t('triggers.type')}</Label>
           <select className="w-full border rounded-md px-3 py-2 text-sm bg-background" value={type} onChange={e => setType(e.target.value as 'cron' | 'webhook' | 'event')}>
-            <option value="cron">定时 (Cron)</option>
-            <option value="webhook">Webhook</option>
-            <option value="event">事件</option>
+            <option value="cron">{t('triggers.typeCron')}</option>
+            <option value="webhook">{t('triggers.typeWebhook')}</option>
+            <option value="event">{t('triggers.typeEvent')}</option>
           </select>
         </div>
 
         {type === 'cron' && (
           <div className="space-y-2">
-            <Label>Cron 表达式</Label>
-            <Input value={cronExpr} onChange={e => setCronExpr(e.target.value)} placeholder="*/5 (每5分钟)" />
-            <p className="text-xs text-muted-foreground">MVP 仅支持 */N 分钟模式</p>
+            <Label>{t('triggers.cronExpr')}</Label>
+            <Input value={cronExpr} onChange={e => setCronExpr(e.target.value)} placeholder="*/5" />
+            <p className="text-xs text-muted-foreground">{t('triggers.cronHint')}</p>
           </div>
         )}
         {type === 'webhook' && (
           <div className="space-y-2">
-            <Label>Webhook 路径</Label>
+            <Label>{t('triggers.webhookPath')}</Label>
             <Input value={webhookPath} onChange={e => setWebhookPath(e.target.value)} placeholder="my-webhook" />
-            <p className="text-xs text-muted-foreground">触发地址: POST /api/webhooks/{webhookPath || '...'}</p>
+            <p className="text-xs text-muted-foreground">{t('triggers.webhookHint', { path: webhookPath || '...' })}</p>
           </div>
         )}
         {type === 'event' && (
           <div className="space-y-2">
-            <Label>事件类型</Label>
+            <Label>{t('triggers.eventType')}</Label>
             <Input value={eventType} onChange={e => setEventType(e.target.value)} placeholder="task_completed" />
           </div>
         )}
 
         <div className="space-y-2">
-          <Label>关联团队</Label>
+          <Label>{t('triggers.team')}</Label>
           <select className="w-full border rounded-md px-3 py-2 text-sm bg-background" value={teamId} onChange={e => setTeamId(e.target.value)} required>
-            <option value="">请选择团队</option>
-            {teams.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
+            <option value="">{t('triggers.selectTeam')}</option>
+            {teams.map(tm => <option key={tm.id} value={tm.id}>{tm.name}</option>)}
           </select>
         </div>
 
         <div className="border-t pt-4 space-y-3">
-          <p className="text-sm font-medium">任务模板</p>
+          <p className="text-sm font-medium">{t('triggers.taskTemplate')}</p>
           <div className="space-y-2">
-            <Label>任务标题</Label>
-            <Input value={taskTitle} onChange={e => setTaskTitle(e.target.value)} placeholder="任务标题" required />
+            <Label>{t('triggers.taskTitle')}</Label>
+            <Input value={taskTitle} onChange={e => setTaskTitle(e.target.value)} required />
           </div>
           <div className="space-y-2">
-            <Label>任务描述</Label>
-            <Textarea value={taskDescription} onChange={e => setTaskDescription(e.target.value)} placeholder="任务描述" rows={3} required />
+            <Label>{t('triggers.taskDesc')}</Label>
+            <Textarea value={taskDescription} onChange={e => setTaskDescription(e.target.value)} rows={3} required />
           </div>
           <div className="space-y-2">
-            <Label>执行模式</Label>
+            <Label>{t('triggers.execMode')}</Label>
             <select className="w-full border rounded-md px-3 py-2 text-sm bg-background" value={taskMode} onChange={e => setTaskMode(e.target.value)}>
-              <option value="suggest">建议模式 (suggest)</option>
-              <option value="auto">自动模式 (auto)</option>
+              <option value="suggest">{t('triggers.suggestMode')}</option>
+              <option value="auto">{t('triggers.autoMode')}</option>
             </select>
           </div>
         </div>
 
         <DialogFooter>
-          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>取消</Button>
-          <Button type="submit" disabled={saving}>{saving ? '保存中...' : '保存'}</Button>
+          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>{t('common.cancel')}</Button>
+          <Button type="submit" disabled={saving}>{saving ? t('common.saving') : t('common.save')}</Button>
         </DialogFooter>
       </form>
     </Dialog>

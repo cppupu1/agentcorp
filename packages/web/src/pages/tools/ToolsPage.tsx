@@ -9,11 +9,17 @@ import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { Plus, Pencil, Trash2, Zap, Loader2, Search, ChevronDown, ChevronRight, X } from 'lucide-react';
+import { useI18n } from '@/i18n';
 
-const statusBadge: Record<string, { variant: 'secondary' | 'success' | 'destructive'; label: string }> = {
-  untested: { variant: 'secondary', label: '未测试' },
-  available: { variant: 'success', label: '可用' },
-  unavailable: { variant: 'destructive', label: '不可用' },
+const statusVariant: Record<string, 'secondary' | 'success' | 'destructive'> = {
+  untested: 'secondary',
+  available: 'success',
+  unavailable: 'destructive',
+};
+const statusLabelKey: Record<string, string> = {
+  untested: 'tools.statusUntested',
+  available: 'tools.statusAvailable',
+  unavailable: 'tools.statusUnavailable',
 };
 
 export default function ToolsPage() {
@@ -28,13 +34,14 @@ export default function ToolsPage() {
   const [deleting, setDeleting] = useState(false);
   const [collapsedGroups, setCollapsedGroups] = useState<Set<string>>(new Set());
   const { toast } = useToast();
+  const { t } = useI18n();
 
   const load = useCallback(async () => {
     try {
       const res = await toolsApi.list();
       setTools(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -43,14 +50,14 @@ export default function ToolsPage() {
   useEffect(() => { load(); }, [load]);
 
   // Group tools
-  const filtered = tools.filter(t =>
-    !search || t.name.toLowerCase().includes(search.toLowerCase()) || t.description.toLowerCase().includes(search.toLowerCase())
+  const filtered = tools.filter(tool =>
+    !search || tool.name.toLowerCase().includes(search.toLowerCase()) || tool.description.toLowerCase().includes(search.toLowerCase())
   );
   const grouped = new Map<string, Tool[]>();
-  for (const t of filtered) {
-    const g = t.groupName || '未分组';
+  for (const tool of filtered) {
+    const g = tool.groupName || t('tools.ungrouped');
     if (!grouped.has(g)) grouped.set(g, []);
-    grouped.get(g)!.push(t);
+    grouped.get(g)!.push(tool);
   }
 
   const toggleGroup = (g: string) => {
@@ -66,16 +73,16 @@ export default function ToolsPage() {
     try {
       if (editing) {
         await toolsApi.update(editing.id, input);
-        toast('工具已更新', 'success');
+        toast(t('tools.updated'), 'success');
       } else {
         await toolsApi.create(input);
-        toast('工具已创建', 'success');
+        toast(t('tools.created'), 'success');
       }
       setFormOpen(false);
       setEditing(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '保存失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.saveFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -86,11 +93,11 @@ export default function ToolsPage() {
     setDeleting(true);
     try {
       await toolsApi.delete(deleteTarget.id);
-      toast('工具已删除', 'success');
+      toast(t('tools.deleted'), 'success');
       setDeleteTarget(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -101,12 +108,12 @@ export default function ToolsPage() {
     try {
       const res = await toolsApi.test(tool.id);
       const msg = res.success
-        ? `${res.message}${res.tools ? ': ' + res.tools.map(t => t.name).join(', ') : ''}`
+        ? `${res.message}${res.tools ? ': ' + res.tools.map(tt => tt.name).join(', ') : ''}`
         : res.message;
       toast(msg, res.success ? 'success' : 'error');
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '测试失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     } finally {
       setTestingId(null);
     }
@@ -115,21 +122,21 @@ export default function ToolsPage() {
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">工具管理</h2>
+        <h2 className="text-2xl font-semibold">{t('tools.title')}</h2>
         <Button data-testid="create-tool-btn" onClick={() => { setEditing(null); setFormOpen(true); }}>
-          <Plus className="h-4 w-4" /> 添加工具
+          <Plus className="h-4 w-4" /> {t('tools.add')}
         </Button>
       </div>
 
       <div className="relative mb-4 max-w-sm">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-        <Input className="pl-9" placeholder="搜索工具..." value={search} onChange={e => setSearch(e.target.value)} />
+        <Input className="pl-9" placeholder={t('tools.search')} value={search} onChange={e => setSearch(e.target.value)} />
       </div>
 
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : filtered.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无工具</div>
+        <div className="text-center py-12 text-muted-foreground">{t('tools.empty')}</div>
       ) : (
         <div className="space-y-4">
           {Array.from(grouped.entries()).map(([group, items]) => (
@@ -144,27 +151,28 @@ export default function ToolsPage() {
               </button>
               {!collapsedGroups.has(group) && (
                 <div className="px-4 pb-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {items.map(t => {
-                    const s = statusBadge[t.status] || statusBadge.untested;
+                  {items.map(tool => {
+                    const variant = statusVariant[tool.status] || statusVariant.untested;
+                    const label = t(statusLabelKey[tool.status] || statusLabelKey.untested);
                     return (
-                      <div key={t.id} data-testid={`tool-item-${t.id}`} className="border rounded-md p-4 space-y-2">
+                      <div key={tool.id} data-testid={`tool-item-${tool.id}`} className="border rounded-md p-4 space-y-2">
                         <div className="flex items-start justify-between">
-                          <div className="font-medium text-sm">{t.name}</div>
-                          <Badge variant={s.variant} data-testid={`tool-status-${t.id}`}>{s.label}</Badge>
+                          <div className="font-medium text-sm">{tool.name}</div>
+                          <Badge variant={variant} data-testid={`tool-status-${tool.id}`}>{label}</Badge>
                         </div>
-                        <p className="text-xs text-muted-foreground line-clamp-2">{t.description}</p>
+                        <p className="text-xs text-muted-foreground line-clamp-2">{tool.description}</p>
                         <div className="flex items-center gap-1.5">
-                          {t.transportType === 'sse' && <Badge variant="secondary" className="text-[10px] px-1 py-0">SSE</Badge>}
-                          <span className="text-xs text-muted-foreground font-mono truncate">{t.command}</span>
+                          {tool.transportType === 'sse' && <Badge variant="secondary" className="text-[10px] px-1 py-0">SSE</Badge>}
+                          <span className="text-xs text-muted-foreground font-mono truncate">{tool.command}</span>
                         </div>
                         <div className="flex gap-1 pt-1">
-                          <Button variant="ghost" size="sm" onClick={() => { setEditing(t); setFormOpen(true); }}>
+                          <Button variant="ghost" size="sm" onClick={() => { setEditing(tool); setFormOpen(true); }}>
                             <Pencil className="h-3 w-3" />
                           </Button>
-                          <Button variant="ghost" size="sm" data-testid="test-tool-btn" disabled={testingId === t.id} onClick={() => handleTest(t)}>
-                            {testingId === t.id ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
+                          <Button variant="ghost" size="sm" data-testid="test-tool-btn" disabled={testingId === tool.id} onClick={() => handleTest(tool)}>
+                            {testingId === tool.id ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
                           </Button>
-                          <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(t)}>
+                          <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(tool)}>
                             <Trash2 className="h-3 w-3 text-destructive" />
                           </Button>
                         </div>
@@ -189,8 +197,8 @@ export default function ToolsPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除工具"
-        description={`确定要删除工具「${deleteTarget?.name}」吗？`}
+        title={t('tools.deleteTool')}
+        description={t('tools.deleteToolConfirm', { name: deleteTarget?.name ?? '' })}
         onConfirm={handleDelete}
         loading={deleting}
       />
@@ -215,6 +223,7 @@ function ToolFormDialog({
   const [envVars, setEnvVars] = useState<Array<{ key: string; value: string }>>([]);
   const [groupName, setGroupName] = useState('');
   const [accessLevel, setAccessLevel] = useState('read');
+  const { t } = useI18n();
 
   useEffect(() => {
     if (open) {
@@ -247,46 +256,46 @@ function ToolFormDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle>{editing ? '编辑工具' : '添加工具'}</DialogTitle>
+        <DialogTitle>{editing ? t('tools.editTool') : t('tools.addTool')}</DialogTitle>
       </DialogHeader>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label>名称</Label>
-          <Input data-testid="tool-name-input" value={name} onChange={e => setName(e.target.value)} placeholder="如：文件系统" required />
+          <Label>{t('tools.toolName')}</Label>
+          <Input data-testid="tool-name-input" value={name} onChange={e => setName(e.target.value)} placeholder={t('tools.namePlaceholder')} required />
         </div>
         <div className="space-y-2">
-          <Label>描述</Label>
-          <Textarea data-testid="tool-description-input" value={description} onChange={e => setDescription(e.target.value)} placeholder="此描述会被 LLM 读取，请清晰描述工具能力" rows={3} required />
+          <Label>{t('tools.description')}</Label>
+          <Textarea data-testid="tool-description-input" value={description} onChange={e => setDescription(e.target.value)} placeholder={t('tools.descPlaceholder')} rows={3} required />
         </div>
         <div className="space-y-2">
-          <Label>传输类型</Label>
+          <Label>{t('tools.transportType')}</Label>
           <select
             className="w-full border rounded-md px-3 py-2 text-sm bg-background"
             value={transportType}
             onChange={e => setTransportType(e.target.value)}
           >
-            <option value="stdio">Stdio — 本地 npm 包启动</option>
-            <option value="sse">SSE — 远程 MCP 服务</option>
+            <option value="stdio">{t('tools.stdio')}</option>
+            <option value="sse">{t('tools.sse')}</option>
           </select>
         </div>
         <div className="space-y-2">
-          <Label>{transportType === 'sse' ? 'SSE 地址' : '启动命令'}</Label>
+          <Label>{transportType === 'sse' ? t('tools.sseUrl') : t('tools.command')}</Label>
           <Input data-testid="tool-command-input" value={command} onChange={e => setCommand(e.target.value)} placeholder={transportType === 'sse' ? 'https://mcp.example.com/sse' : '@modelcontextprotocol/server-filesystem'} required />
         </div>
         {transportType === 'stdio' && (
           <div className="space-y-2">
-            <Label>启动参数</Label>
+            <Label>{t('tools.args')}</Label>
             {args.map((arg, i) => (
               <div key={i} className="flex gap-2">
-                <Input value={arg} onChange={e => { const a = [...args]; a[i] = e.target.value; setArgs(a); }} placeholder={`参数 ${i + 1}`} />
+                <Input value={arg} onChange={e => { const a = [...args]; a[i] = e.target.value; setArgs(a); }} placeholder={t('tools.argPlaceholder', { n: i + 1 })} />
                 <Button type="button" variant="ghost" size="icon" onClick={() => setArgs(args.filter((_, j) => j !== i))}><X className="h-4 w-4" /></Button>
               </div>
             ))}
-            <Button type="button" variant="outline" size="sm" onClick={() => setArgs([...args, ''])}>+ 添加参数</Button>
+            <Button type="button" variant="outline" size="sm" onClick={() => setArgs([...args, ''])}>{t('tools.addArg')}</Button>
           </div>
         )}
         <div className="space-y-2">
-          <Label>{transportType === 'sse' ? '请求头' : '环境变量'}</Label>
+          <Label>{transportType === 'sse' ? t('tools.headers') : t('tools.envVars')}</Label>
           {envVars.map((ev, i) => (
             <div key={i} className="flex gap-2">
               <Input value={ev.key} onChange={e => { const v = [...envVars]; v[i] = { ...v[i], key: e.target.value }; setEnvVars(v); }} placeholder={transportType === 'sse' ? 'Header Name' : 'KEY'} className="w-1/3" />
@@ -294,27 +303,27 @@ function ToolFormDialog({
               <Button type="button" variant="ghost" size="icon" onClick={() => setEnvVars(envVars.filter((_, j) => j !== i))}><X className="h-4 w-4" /></Button>
             </div>
           ))}
-          <Button type="button" variant="outline" size="sm" onClick={() => setEnvVars([...envVars, { key: '', value: '' }])}>+ 添加{transportType === 'sse' ? '请求头' : '环境变量'}</Button>
+          <Button type="button" variant="outline" size="sm" onClick={() => setEnvVars([...envVars, { key: '', value: '' }])}>{transportType === 'sse' ? t('tools.addHeader') : t('tools.addEnv')}</Button>
         </div>
         <div className="space-y-2">
-          <Label>分组</Label>
-          <Input data-testid="tool-groupName-input" value={groupName} onChange={e => setGroupName(e.target.value)} placeholder="如：文件操作" />
+          <Label>{t('tools.group')}</Label>
+          <Input data-testid="tool-groupName-input" value={groupName} onChange={e => setGroupName(e.target.value)} placeholder={t('tools.groupPlaceholder')} />
         </div>
         <div className="space-y-2">
-          <Label>访问级别</Label>
+          <Label>{t('tools.accessLevel')}</Label>
           <select
             className="w-full border rounded-md px-3 py-2 text-sm bg-background"
             value={accessLevel}
             onChange={e => setAccessLevel(e.target.value)}
           >
-            <option value="read">只读 (read) — 建议模式可用</option>
-            <option value="write">读写 (write) — 仅自动模式可用</option>
-            <option value="admin">管理 (admin) — 仅自动模式可用</option>
+            <option value="read">{t('tools.readonly')}</option>
+            <option value="write">{t('tools.readwrite')}</option>
+            <option value="admin">{t('tools.admin')}</option>
           </select>
         </div>
         <DialogFooter>
-          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>取消</Button>
-          <Button type="submit" disabled={saving}>{saving ? '保存中...' : '保存'}</Button>
+          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>{t('common.cancel')}</Button>
+          <Button type="submit" disabled={saving}>{saving ? t('common.saving') : t('common.save')}</Button>
         </DialogFooter>
       </form>
     </Dialog>

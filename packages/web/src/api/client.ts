@@ -27,7 +27,7 @@ async function request<T>(path: string, options?: RequestInit): Promise<T> {
   try {
     json = JSON.parse(text);
   } catch {
-    throw new ApiError({ code: 'NETWORK_ERROR', message: `服务器返回异常 (${res.status})` });
+    throw new ApiError({ code: 'NETWORK_ERROR', message: `Server error (${res.status})` });
   }
   if (!res.ok) {
     const err = json.error || { code: 'INTERNAL_ERROR', message: res.statusText };
@@ -980,4 +980,177 @@ export const hrAssistantApi = {
   listSessions: () => request<ChatSession[]>('/hr-assistant/sessions'),
   getMessages: (sessionId: string) => request<HrChatMessage[]>(`/hr-assistant/${sessionId}/messages`),
   deleteSession: (sessionId: string) => request<{ sessionId: string }>(`/hr-assistant/${sessionId}`, { method: 'DELETE' }),
+};
+
+// Quality Dashboard
+export interface QualityTrendData {
+  testTrend: Array<{ period: string; totalRuns: number; totalScenarios: number; passedScenarios: number; failedScenarios: number }>;
+  findingTrend: Array<{ period: string; total: number; critical: number; warning: number }>;
+}
+
+export interface QualityRankingItem {
+  employeeId: string;
+  employeeName: string;
+  totalRuns: number;
+  totalScenarios: number;
+  passedScenarios: number;
+  passRate: number;
+}
+
+export interface QualityAlerts {
+  qualityDropAlerts: Array<{ employeeId: string; employeeName: string; currentRate: number; previousRate: number; drop: number }>;
+  criticalFindings: Array<{ id: string; taskId: string; description: string; createdAt: string }>;
+}
+
+export const qualityApi = {
+  getTrend: (startDate?: string, endDate?: string, granularity?: string) => {
+    const qs = new URLSearchParams();
+    if (startDate) qs.set('startDate', startDate);
+    if (endDate) qs.set('endDate', endDate);
+    if (granularity) qs.set('granularity', granularity);
+    const q = qs.toString();
+    return request<{ data: QualityTrendData }>(`/quality/trend${q ? `?${q}` : ''}`);
+  },
+  getRanking: () => request<{ data: QualityRankingItem[] }>('/quality/ranking'),
+  getAlerts: () => request<{ data: QualityAlerts }>('/quality/alerts'),
+};
+
+// ROI Review
+export interface CostTrendItem {
+  period: string;
+  totalCost: number;
+  totalTokens: number;
+  taskCount: number;
+}
+
+export interface CompetencyScore {
+  id: string;
+  employeeId: string;
+  period: string;
+  completionRate: number | null;
+  qualityScore: number | null;
+  efficiencyScore: number | null;
+  stabilityScore: number | null;
+  overallScore: number | null;
+  taskCount: number | null;
+  details: string | null;
+  createdAt: string;
+}
+
+export interface TeamEffectiveness {
+  teamId: string;
+  members: Array<{ employeeId: string; employeeName: string; role: string; competency: CompetencyScore | null }>;
+  avgScore: number;
+}
+
+export const roiApi = {
+  getTaskCostReview: (taskId: string) => request<{ data: any }>(`/tasks/${taskId}/cost-review`),
+  getCostTrend: (startDate?: string, endDate?: string, granularity?: string) => {
+    const qs = new URLSearchParams();
+    if (startDate) qs.set('startDate', startDate);
+    if (endDate) qs.set('endDate', endDate);
+    if (granularity) qs.set('granularity', granularity);
+    const q = qs.toString();
+    return request<{ data: CostTrendItem[] }>(`/roi/cost-trend${q ? `?${q}` : ''}`);
+  },
+  computeCompetency: (employeeId: string, period?: string) =>
+    request<{ data: CompetencyScore }>(`/employees/${employeeId}/compute-competency`, {
+      method: 'POST', body: JSON.stringify({ period }),
+    }),
+  getCompetencyHistory: (employeeId: string) =>
+    request<{ data: CompetencyScore[] }>(`/employees/${employeeId}/competency-history`),
+  getTeamEffectiveness: (teamId: string) =>
+    request<{ data: TeamEffectiveness }>(`/teams/${teamId}/effectiveness`),
+};
+
+// Memory
+export interface EmployeeMemory {
+  id: string;
+  employeeId: string;
+  sourceTaskId: string | null;
+  type: string;
+  summary: string;
+  detail: string;
+  tags: string | null;
+  confidence: number | null;
+  usageCount: number | null;
+  lastUsedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface TeamMemory {
+  id: string;
+  teamId: string;
+  sourceTaskId: string | null;
+  type: string;
+  summary: string;
+  detail: string;
+  tags: string | null;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export const memoryApi = {
+  getEmployeeMemories: (employeeId: string, opts?: { type?: string; search?: string }) => {
+    const qs = new URLSearchParams();
+    if (opts?.type) qs.set('type', opts.type);
+    if (opts?.search) qs.set('search', opts.search);
+    const q = qs.toString();
+    return request<{ data: EmployeeMemory[] }>(`/employees/${employeeId}/memories${q ? `?${q}` : ''}`);
+  },
+  getTeamMemories: (teamId: string, opts?: { type?: string }) => {
+    const qs = new URLSearchParams();
+    if (opts?.type) qs.set('type', opts.type);
+    const q = qs.toString();
+    return request<{ data: TeamMemory[] }>(`/teams/${teamId}/memories${q ? `?${q}` : ''}`);
+  },
+  extractFromTask: (taskId: string) =>
+    request<{ data: { extracted: number; ids: string[] } }>(`/tasks/${taskId}/extract-memories`, { method: 'POST' }),
+  updateEmployeeMemory: (id: string, body: { summary?: string; detail?: string; tags?: string[] }) =>
+    request<{ data: { id: string } }>(`/employee-memories/${id}`, { method: 'PUT', body: JSON.stringify(body) }),
+  deleteEmployeeMemory: (id: string) =>
+    request<{ data: { id: string } }>(`/employee-memories/${id}`, { method: 'DELETE' }),
+  updateTeamMemory: (id: string, body: { summary?: string; detail?: string; tags?: string[] }) =>
+    request<{ data: { id: string } }>(`/team-memories/${id}`, { method: 'PUT', body: JSON.stringify(body) }),
+  deleteTeamMemory: (id: string) =>
+    request<{ data: { id: string } }>(`/team-memories/${id}`, { method: 'DELETE' }),
+};
+
+// Self-Improvement
+export interface ImprovementProposal {
+  id: string;
+  targetType: string;
+  targetId: string;
+  category: string;
+  diagnosis: string;
+  suggestion: string;
+  status: string;
+  appliedAt: string | null;
+  testRunId: string | null;
+  sourceData: string | null;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export const improvementApi = {
+  diagnose: (employeeId: string) =>
+    request<{ data: any }>(`/employees/${employeeId}/diagnose`, { method: 'POST' }),
+  optimizePrompt: (employeeId: string, diagnosis: any) =>
+    request<{ data: { id: string; suggestion: any } }>(`/employees/${employeeId}/optimize-prompt`, {
+      method: 'POST', body: JSON.stringify({ diagnosis }),
+    }),
+  listProposals: (opts?: { targetType?: string; status?: string }) => {
+    const qs = new URLSearchParams();
+    if (opts?.targetType) qs.set('targetType', opts.targetType);
+    if (opts?.status) qs.set('status', opts.status);
+    const q = qs.toString();
+    return request<{ data: ImprovementProposal[] }>(`/improvement-proposals${q ? `?${q}` : ''}`);
+  },
+  approve: (id: string) =>
+    request<{ data: { id: string; status: string } }>(`/improvement-proposals/${id}/approve`, { method: 'POST' }),
+  reject: (id: string) =>
+    request<{ data: { id: string; status: string } }>(`/improvement-proposals/${id}/reject`, { method: 'POST' }),
+  apply: (id: string) =>
+    request<{ data: { id: string; status: string } }>(`/improvement-proposals/${id}/apply`, { method: 'POST' }),
 };

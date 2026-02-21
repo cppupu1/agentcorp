@@ -3,28 +3,30 @@ import { observerApi, type ObserverFinding } from '@/api/client';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/toast';
+import { useI18n } from '@/i18n';
 import { Eye, AlertTriangle, CheckCircle, Loader2, RefreshCw } from 'lucide-react';
 
-const SEVERITY_CONFIG: Record<string, { label: string; variant: 'default' | 'warning' | 'destructive' }> = {
-  info: { label: '信息', variant: 'default' },
-  warning: { label: '警告', variant: 'warning' },
-  critical: { label: '严重', variant: 'destructive' },
+const SEVERITY_KEYS: Record<string, { key: string; variant: 'default' | 'warning' | 'destructive' }> = {
+  info: { key: 'observer.severityInfo', variant: 'default' },
+  warning: { key: 'observer.severityWarning', variant: 'warning' },
+  critical: { key: 'observer.severityCritical', variant: 'destructive' },
 };
 
-const CATEGORY_LABELS: Record<string, string> = {
-  factual_error: '事实错误',
-  contradiction: '矛盾',
-  goal_drift: '目标偏离',
-  quality: '质量问题',
+const CATEGORY_KEYS: Record<string, string> = {
+  factual_error: 'observer.catFactualError',
+  contradiction: 'observer.catContradiction',
+  goal_drift: 'observer.catGoalDrift',
+  quality: 'observer.catQuality',
 };
 
-const RESOLUTION_LABELS: Record<string, string> = {
-  acknowledged: '已确认',
-  fixed: '已修复',
-  dismissed: '已忽略',
+const RESOLUTION_KEYS: Record<string, string> = {
+  acknowledged: 'observer.resAcknowledged',
+  fixed: 'observer.resFixed',
+  dismissed: 'observer.resDismissed',
 };
 
 export default function ObserverPanel({ taskId }: { taskId: string }) {
+  const { t } = useI18n();
   const [findings, setFindings] = useState<ObserverFinding[]>([]);
   const [loading, setLoading] = useState(true);
   const [resolving, setResolving] = useState<string | null>(null);
@@ -35,7 +37,7 @@ export default function ObserverPanel({ taskId }: { taskId: string }) {
       const res = await observerApi.getFindings(taskId);
       setFindings(res.data);
     } catch {
-      toast('加载观察者发现失败', 'error');
+      toast(t('observer.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -50,9 +52,9 @@ export default function ObserverPanel({ taskId }: { taskId: string }) {
       setFindings(prev => prev.map(f =>
         f.id === findingId ? { ...f, resolution } : f
       ));
-      toast(`已标记为${RESOLUTION_LABELS[resolution] || resolution}`, 'success');
+      toast(t('observer.markedAs', { resolution: RESOLUTION_KEYS[resolution] ? t(RESOLUTION_KEYS[resolution]) : resolution }), 'success');
     } catch {
-      toast('操作失败', 'error');
+      toast(t('common.operationFailed'), 'error');
     } finally {
       setResolving(null);
     }
@@ -70,7 +72,7 @@ export default function ObserverPanel({ taskId }: { taskId: string }) {
     return (
       <div className="text-center py-8 text-muted-foreground">
         <Eye className="h-8 w-8 mx-auto mb-2 opacity-40" />
-        <p className="text-sm">暂无观察者发现</p>
+        <p className="text-sm">{t('observer.noFindings')}</p>
       </div>
     );
   }
@@ -80,15 +82,14 @@ export default function ObserverPanel({ taskId }: { taskId: string }) {
       <div className="flex items-center gap-2 mb-4">
         <Eye className="h-4 w-4 text-muted-foreground" />
         <span className="text-sm text-muted-foreground">
-          共 {findings.length} 条发现，
-          {findings.filter(f => !f.resolution).length} 条待处理
+          {t('observer.totalFindings', { total: findings.length, pending: findings.filter(f => !f.resolution).length })}
         </span>
         <Button size="sm" variant="ghost" className="ml-auto" onClick={() => loadFindings()}>
           <RefreshCw className={`h-3 w-3 ${loading ? 'animate-spin' : ''}`} />
         </Button>
       </div>
       {findings.map(finding => {
-        const sev = SEVERITY_CONFIG[finding.severity] || SEVERITY_CONFIG.info;
+        const sev = SEVERITY_KEYS[finding.severity] || SEVERITY_KEYS.info;
         return (
           <div key={finding.id} className="border rounded-lg p-3 space-y-2">
             <div className="flex items-start gap-2">
@@ -100,10 +101,10 @@ export default function ObserverPanel({ taskId }: { taskId: string }) {
                 ) : (
                   <Eye className="h-4 w-4 text-muted-foreground shrink-0" />
                 )}
-                <Badge variant={sev.variant} className="text-xs">{sev.label}</Badge>
-                <Badge variant="outline" className="text-xs">{CATEGORY_LABELS[finding.category] || finding.category}</Badge>
+                <Badge variant={sev.variant} className="text-xs">{t(sev.key)}</Badge>
+                <Badge variant="outline" className="text-xs">{CATEGORY_KEYS[finding.category] ? t(CATEGORY_KEYS[finding.category]) : finding.category}</Badge>
                 {finding.resolution && (
-                  <Badge variant="secondary" className="text-xs">{RESOLUTION_LABELS[finding.resolution] || finding.resolution}</Badge>
+                  <Badge variant="secondary" className="text-xs">{RESOLUTION_KEYS[finding.resolution] ? t(RESOLUTION_KEYS[finding.resolution]) : finding.resolution}</Badge>
                 )}
               </div>
               <span className="text-xs text-muted-foreground shrink-0">
@@ -119,21 +120,21 @@ export default function ObserverPanel({ taskId }: { taskId: string }) {
                   onClick={() => handleResolve(finding.id, 'acknowledged')}
                 >
                   {resolving === finding.id ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : null}
-                  确认
+                  {t('observer.acknowledge')}
                 </Button>
                 <Button
                   size="sm" variant="outline"
                   disabled={resolving === finding.id}
                   onClick={() => handleResolve(finding.id, 'fixed')}
                 >
-                  已修复
+                  {t('observer.fix')}
                 </Button>
                 <Button
                   size="sm" variant="ghost"
                   disabled={resolving === finding.id}
                   onClick={() => handleResolve(finding.id, 'dismissed')}
                 >
-                  忽略
+                  {t('observer.dismiss')}
                 </Button>
               </div>
             )}

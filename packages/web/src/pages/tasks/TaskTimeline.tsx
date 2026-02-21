@@ -2,11 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 import { observabilityApi, type TimelineEvent } from '@/api/client';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { useI18n } from '@/i18n';
 import { Loader2, Clock, Wrench, Brain, ChevronDown, ChevronRight, RefreshCw } from 'lucide-react';
 
-const ACTOR_LABELS: Record<string, string> = { pm: 'PM', employee: '员工', system: '系统' };
-
 export default function TaskTimeline({ taskId }: { taskId: string }) {
+  const { t } = useI18n();
   const [events, setEvents] = useState<TimelineEvent[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -31,7 +31,7 @@ export default function TaskTimeline({ taskId }: { taskId: string }) {
   }
 
   if (events.length === 0) {
-    return <p className="text-sm text-muted-foreground py-4">暂无时间线事件</p>;
+    return <p className="text-sm text-muted-foreground py-4">{t('timeline.noEvents')}</p>;
   }
 
   return (
@@ -48,7 +48,10 @@ export default function TaskTimeline({ taskId }: { taskId: string }) {
   );
 }
 
+const ACTOR_LABELS: Record<string, string> = { pm: 'timeline.actorPm', employee: 'timeline.actorEmployee', system: 'timeline.actorSystem' };
+
 function TimelineItem({ event }: { event: TimelineEvent }) {
+  const { t } = useI18n();
   const [expanded, setExpanded] = useState(false);
   const isDecision = event.type === 'decision';
   const time = new Date(event.createdAt).toLocaleTimeString();
@@ -62,10 +65,10 @@ function TimelineItem({ event }: { event: TimelineEvent }) {
           {isDecision ? event.action : event.toolName}
         </span>
         {isDecision && event.actor && (
-          <Badge variant="outline" className="text-xs">{ACTOR_LABELS[event.actor] || event.actor}</Badge>
+          <Badge variant="outline" className="text-xs">{ACTOR_LABELS[event.actor] ? t(ACTOR_LABELS[event.actor]) : event.actor}</Badge>
         )}
         {!isDecision && event.isError && (
-          <Badge variant="destructive" className="text-xs">错误</Badge>
+          <Badge variant="destructive" className="text-xs">{t('timeline.error')}</Badge>
         )}
         {!isDecision && event.durationMs != null && (
           <span className="text-xs text-muted-foreground">{event.durationMs}ms</span>
@@ -77,13 +80,13 @@ function TimelineItem({ event }: { event: TimelineEvent }) {
       {expanded && (
         <div className="mt-2 space-y-2 pl-7">
           {event.reasoning && (
-            <div><p className="text-xs text-muted-foreground">推理</p><p className="text-xs bg-muted rounded p-2">{event.reasoning}</p></div>
+            <div><p className="text-xs text-muted-foreground">{t('timeline.reasoning')}</p><p className="text-xs bg-muted rounded p-2">{event.reasoning}</p></div>
           )}
           {event.input != null && (
-            <div><p className="text-xs text-muted-foreground">输入</p><pre className="text-xs bg-muted rounded p-2 overflow-auto max-h-40">{JSON.stringify(event.input, null, 2)}</pre></div>
+            <div><p className="text-xs text-muted-foreground">{t('timeline.input')}</p><pre className="text-xs bg-muted rounded p-2 overflow-auto max-h-40">{JSON.stringify(event.input, null, 2)}</pre></div>
           )}
           {event.output != null && (
-            <div><p className="text-xs text-muted-foreground">输出</p><pre className="text-xs bg-muted rounded p-2 overflow-auto max-h-40">{JSON.stringify(event.output, null, 2)}</pre></div>
+            <div><p className="text-xs text-muted-foreground">{t('timeline.output')}</p><pre className="text-xs bg-muted rounded p-2 overflow-auto max-h-40">{JSON.stringify(event.output, null, 2)}</pre></div>
           )}
         </div>
       )}

@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router';
 import { employeesApi, type Employee } from '@/api/client';
+import { useI18n } from '@/i18n';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
@@ -25,6 +26,7 @@ export default function EmployeesPage() {
   const [showImport, setShowImport] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
+  const { t } = useI18n();
 
   const load = useCallback(async () => {
     try {
@@ -35,7 +37,7 @@ export default function EmployeesPage() {
       setEmployees(empRes.data);
       setTags(tagRes.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -48,11 +50,11 @@ export default function EmployeesPage() {
     setDeleting(true);
     try {
       await employeesApi.delete(deleteTarget.id);
-      toast('员工已删除', 'success');
+      toast(t('employees.deleted'), 'success');
       setDeleteTarget(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -61,10 +63,10 @@ export default function EmployeesPage() {
   const handleCopy = async (emp: Employee) => {
     try {
       await employeesApi.copy(emp.id);
-      toast('员工已复制', 'success');
+      toast(t('employees.copied'), 'success');
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '复制失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.copyFailed'), 'error');
     }
   };
 
@@ -87,33 +89,33 @@ export default function EmployeesPage() {
       a.download = `employees-export-${Date.now()}.json`;
       a.click();
       URL.revokeObjectURL(url);
-      toast(`已导出 ${res.data.length} 个员工`, 'success');
+      toast(t('employees.exported', { count: res.data.length }), 'success');
       setSelectMode(false);
       setSelected(new Set());
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '导出失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.exportFailed'), 'error');
     }
   };
 
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">员工管理</h2>
+        <h2 className="text-2xl font-semibold">{t('employees.title')}</h2>
         <div className="flex gap-2">
           <Button variant="outline" onClick={() => setShowImport(true)}>
-            <Upload className="h-4 w-4" /> 导入
+            <Upload className="h-4 w-4" /> {t('common.import')}
           </Button>
           <Button variant="outline" onClick={() => { setSelectMode(!selectMode); setSelected(new Set()); }}>
             {selectMode ? <Square className="h-4 w-4" /> : <CheckSquare className="h-4 w-4" />}
-            {selectMode ? '取消选择' : '多选'}
+            {selectMode ? t('employees.cancelSelect') : t('employees.multiSelect')}
           </Button>
           {selectMode && selected.size > 0 && (
             <Button variant="outline" onClick={handleExport}>
-              <Download className="h-4 w-4" /> 导出 ({selected.size})
+              <Download className="h-4 w-4" /> {t('common.export')} ({selected.size})
             </Button>
           )}
           <Button data-testid="create-employee-btn" onClick={() => navigate('/employees/new')}>
-            <Plus className="h-4 w-4" /> 添加员工
+            <Plus className="h-4 w-4" /> {t('employees.add')}
           </Button>
         </div>
       </div>
@@ -121,7 +123,7 @@ export default function EmployeesPage() {
       <div className="flex items-center gap-4 mb-4">
         <div className="relative flex-1 max-w-sm">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-          <Input className="pl-9" placeholder="搜索员工..." value={search} onChange={e => setSearch(e.target.value)} />
+          <Input className="pl-9" placeholder={t('employees.search')} value={search} onChange={e => setSearch(e.target.value)} />
         </div>
         <div className="flex gap-1">
           <Button variant={viewMode === 'card' ? 'secondary' : 'ghost'} size="icon" onClick={() => setViewMode('card')}>
@@ -139,7 +141,7 @@ export default function EmployeesPage() {
             variant={selectedTag === null ? 'default' : 'outline'}
             className="cursor-pointer shrink-0"
             onClick={() => setSelectedTag(null)}
-          >全部</Badge>
+          >{t('common.all')}</Badge>
           {tags.map(tag => (
             <Badge
               key={tag}
@@ -154,7 +156,7 @@ export default function EmployeesPage() {
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : employees.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无员工</div>
+        <div className="text-center py-12 text-muted-foreground">{t('employees.empty')}</div>
       ) : viewMode === 'card' ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {employees.map(emp => (
@@ -172,8 +174,8 @@ export default function EmployeesPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除员工"
-        description={`确定要删除员工「${deleteTarget?.name}」吗？`}
+        title={t('employees.deleteEmployee')}
+        description={t('employees.deleteConfirm', { name: deleteTarget?.name ?? '' })}
         onConfirm={handleDelete}
         loading={deleting}
       />
@@ -190,6 +192,7 @@ export default function EmployeesPage() {
 function EmployeeCard({ emp, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
   emp: Employee; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
 }) {
+  const { t } = useI18n();
   return (
     <div data-testid={`employee-item-${emp.id}`} className={`border rounded-lg p-4 space-y-3 ${selected ? 'border-primary bg-primary/5' : ''}`} onClick={selectMode ? onToggle : undefined}>
       <div className="flex items-start gap-3">
@@ -199,7 +202,7 @@ function EmployeeCard({ emp, selectMode, selected, onToggle, onEdit, onCopy, onD
         <span className="text-2xl">{emp.avatar || '👤'}</span>
         <div className="flex-1 min-w-0">
           <div className="font-medium">{emp.name}</div>
-          <div className="text-xs text-muted-foreground">{emp.modelName} · {emp.toolCount} 个工具</div>
+          <div className="text-xs text-muted-foreground">{emp.modelName} · {emp.toolCount} {t('common.tools')}</div>
         </div>
       </div>
       {emp.description && <p className="text-sm text-muted-foreground line-clamp-2">{emp.description}</p>}
@@ -209,9 +212,9 @@ function EmployeeCard({ emp, selectMode, selected, onToggle, onEdit, onCopy, onD
         </div>
       )}
       <div className="flex gap-1 pt-1 border-t">
-        <Button variant="ghost" size="sm" onClick={onEdit}><Pencil className="h-3 w-3 mr-1" /> 编辑</Button>
-        <Button variant="ghost" size="sm" onClick={onCopy}><Copy className="h-3 w-3 mr-1" /> 复制</Button>
-        <Button variant="ghost" size="sm" onClick={onChat}><MessageSquare className="h-3 w-3 mr-1" /> 对话</Button>
+        <Button variant="ghost" size="sm" onClick={onEdit}><Pencil className="h-3 w-3 mr-1" /> {t('common.edit')}</Button>
+        <Button variant="ghost" size="sm" onClick={onCopy}><Copy className="h-3 w-3 mr-1" /> {t('common.copy')}</Button>
+        <Button variant="ghost" size="sm" onClick={onChat}><MessageSquare className="h-3 w-3 mr-1" /> {t('employees.chat')}</Button>
         <Button variant="ghost" size="sm" onClick={onDelete} className="ml-auto"><Trash2 className="h-3 w-3 text-destructive" /></Button>
       </div>
     </div>
@@ -221,6 +224,7 @@ function EmployeeCard({ emp, selectMode, selected, onToggle, onEdit, onCopy, onD
 function EmployeeListItem({ emp, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
   emp: Employee; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
 }) {
+  const { t } = useI18n();
   return (
     <div data-testid={`employee-item-${emp.id}`} className={`flex items-center gap-4 border rounded-md px-4 py-3 ${selected ? 'border-primary bg-primary/5' : ''}`} onClick={selectMode ? onToggle : undefined}>
       {selectMode && (
@@ -229,7 +233,7 @@ function EmployeeListItem({ emp, selectMode, selected, onToggle, onEdit, onCopy,
       <span className="text-xl">{emp.avatar || '👤'}</span>
       <div className="flex-1 min-w-0">
         <div className="font-medium text-sm">{emp.name}</div>
-        <div className="text-xs text-muted-foreground">{emp.modelName} · {emp.toolCount} 个工具</div>
+        <div className="text-xs text-muted-foreground">{emp.modelName} · {emp.toolCount} {t('common.tools')}</div>
       </div>
       <div className="flex flex-wrap gap-1">
         {emp.tags.map(tag => <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>)}

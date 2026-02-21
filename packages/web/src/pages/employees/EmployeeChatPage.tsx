@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, Link } from 'react-router';
 import { chatApi, employeesApi } from '@/api/client';
 import type { ChatSession, ChatMessage, EmployeeDetail } from '@/api/client';
+import { useI18n } from '@/i18n';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -22,6 +23,7 @@ interface StreamingMessage {
 
 export default function EmployeeChatPage() {
   const { id } = useParams<{ id: string }>();
+  const { t } = useI18n();
   const [employee, setEmployee] = useState<EmployeeDetail | null>(null);
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
@@ -181,7 +183,7 @@ export default function EmployeeChatPage() {
       }
     } catch (err) {
       if (err instanceof DOMException && err.name === 'AbortError') return;
-      streamState.text += `\n\n[错误: ${err instanceof Error ? err.message : String(err)}]`;
+      streamState.text += `\n\n[${t('chat.error', { message: err instanceof Error ? err.message : String(err) })}]`;
       streamState.done = true;
       setStreaming({ ...streamState, toolCalls: streamState.toolCalls.map(tc => ({ ...tc })) });
     } finally {
@@ -212,7 +214,7 @@ export default function EmployeeChatPage() {
         break;
       }
       case 'error':
-        msg.text += `\n\n[错误: ${data.message}]`;
+        msg.text += `\n\n[${t('chat.error', { message: data.message })}]`;
         break;
       case 'done':
         msg.done = true;
@@ -233,9 +235,9 @@ export default function EmployeeChatPage() {
       <div className="w-60 border-r border-border flex flex-col bg-muted/30">
         <div className="p-3 border-b border-border flex items-center justify-between">
           <Link to="/employees" className="text-sm text-muted-foreground hover:text-foreground">
-            &larr; 返回
+            &larr; {t('chat.back')}
           </Link>
-          <Button size="sm" onClick={createNewSession}>新对话</Button>
+          <Button size="sm" onClick={createNewSession}>{t('chat.newChat')}</Button>
         </div>
         <div className="flex-1 overflow-auto p-2 space-y-1">
           {sessions.map(s => (
@@ -256,7 +258,7 @@ export default function EmployeeChatPage() {
             </div>
           ))}
           {sessions.length === 0 && (
-            <p className="text-sm text-muted-foreground text-center py-4">暂无对话</p>
+            <p className="text-sm text-muted-foreground text-center py-4">{t('chat.noSessions')}</p>
           )}
         </div>
       </div>
@@ -265,7 +267,7 @@ export default function EmployeeChatPage() {
       <div className="flex-1 flex flex-col">
         {/* Header */}
         <div className="px-4 py-3 border-b border-border">
-          <h2 className="text-lg font-semibold">{employee?.name ?? '加载中...'}</h2>
+          <h2 className="text-lg font-semibold">{employee?.name ?? t('common.loading')}</h2>
           {employee?.description && (
             <p className="text-sm text-muted-foreground">{employee.description}</p>
           )}
@@ -275,7 +277,7 @@ export default function EmployeeChatPage() {
         <div ref={chatContainerRef} className="flex-1 overflow-auto p-4 space-y-4">
           {!activeSessionId && (
             <div className="flex items-center justify-center h-full text-muted-foreground">
-              选择或创建一个对话开始聊天
+              {t('chat.selectOrCreate')}
             </div>
           )}
           {messages.filter(m => m.content).map(m => (
@@ -293,12 +295,12 @@ export default function EmployeeChatPage() {
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="输入消息..."
+                placeholder={t('chat.inputPlaceholder')}
                 disabled={sending}
                 className="flex-1"
               />
               <Button onClick={sendMessage} disabled={sending || !input.trim()}>
-                {sending ? '发送中...' : '发送'}
+                {sending ? t('chat.sending') : t('chat.send')}
               </Button>
             </div>
           </div>
@@ -330,13 +332,14 @@ function MessageBubble({ message }: { message: ChatMessage }) {
 }
 
 function StreamingBubble({ msg }: { msg: StreamingMessage }) {
+  const { t } = useI18n();
   return (
     <div className="flex justify-start">
       <div className="max-w-[75%] rounded-lg px-4 py-2 bg-muted">
         {msg.text ? (
           <div className="whitespace-pre-wrap text-sm">{msg.text}</div>
         ) : (
-          <div className="text-sm text-muted-foreground">思考中...</div>
+          <div className="text-sm text-muted-foreground">{t('chat.thinking')}</div>
         )}
         {msg.toolCalls.length > 0 && <ToolCallsDisplay toolCalls={msg.toolCalls} />}
         {!msg.done && <span className="inline-block w-2 h-4 bg-foreground/50 animate-pulse ml-1" />}
@@ -354,6 +357,7 @@ function truncateDisplay(value: unknown): string {
 
 function ToolCallsDisplay({ toolCalls }: { toolCalls: ToolCallEntry[] }) {
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
+  const { t } = useI18n();
 
   const toggle = (tcId: string) => {
     setExpanded(prev => {
@@ -380,12 +384,12 @@ function ToolCallsDisplay({ toolCalls }: { toolCalls: ToolCallEntry[] }) {
           {expanded.has(tc.id) && (
             <div className="px-2 py-1 border-t border-border bg-muted/50 space-y-1">
               <div>
-                <span className="text-muted-foreground">参数: </span>
+                <span className="text-muted-foreground">{t('chat.params')}</span>
                 <pre className="inline whitespace-pre-wrap">{truncateDisplay(tc.args)}</pre>
               </div>
               {tc.result !== undefined && (
                 <div>
-                  <span className="text-muted-foreground">结果: </span>
+                  <span className="text-muted-foreground">{t('chat.result')}</span>
                   <pre className="inline whitespace-pre-wrap">{truncateDisplay(tc.result)}</pre>
                 </div>
               )}

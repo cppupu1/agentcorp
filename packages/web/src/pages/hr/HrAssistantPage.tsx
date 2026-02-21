@@ -4,6 +4,7 @@ import { hrAssistantApi } from '@/api/client';
 import type { ChatSession, HrChatMessage } from '@/api/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { useI18n } from '@/i18n';
 
 interface ToolCallEntry {
   id: string;
@@ -21,6 +22,7 @@ interface StreamingMessage {
 }
 
 export default function HrAssistantPage() {
+  const { t } = useI18n();
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
   const [messages, setMessages] = useState<HrChatMessage[]>([]);
@@ -161,7 +163,7 @@ export default function HrAssistantPage() {
       }
     } catch (err) {
       if (err instanceof DOMException && err.name === 'AbortError') return;
-      streamState.text += `\n\n[错误: ${err instanceof Error ? err.message : String(err)}]`;
+      streamState.text += `\n\n[Error: ${err instanceof Error ? err.message : String(err)}]`;
       streamState.done = true;
       setStreaming({ ...streamState, toolCalls: streamState.toolCalls.map(tc => ({ ...tc })) });
     } finally {
@@ -191,7 +193,7 @@ export default function HrAssistantPage() {
         break;
       }
       case 'error':
-        msg.text += `\n\n[错误: ${data.message}]`;
+        msg.text += `\n\n[Error: ${data.message}]`;
         break;
       case 'done':
         msg.done = true;
@@ -211,8 +213,8 @@ export default function HrAssistantPage() {
       {/* Session Sidebar */}
       <div className="w-60 border-r border-border flex flex-col bg-muted/30">
         <div className="p-3 border-b border-border flex items-center justify-between">
-          <span className="text-sm font-semibold text-primary">HR 助手</span>
-          <Button size="sm" onClick={createNewSession}>新对话</Button>
+          <span className="text-sm font-semibold text-primary">{t('hr.title')}</span>
+          <Button size="sm" onClick={createNewSession}>{t('hr.newChat')}</Button>
         </div>
         <div className="flex-1 overflow-auto p-2 space-y-1">
           {sessions.map(s => (
@@ -233,7 +235,7 @@ export default function HrAssistantPage() {
             </div>
           ))}
           {sessions.length === 0 && (
-            <p className="text-sm text-muted-foreground text-center py-4">暂无对话</p>
+            <p className="text-sm text-muted-foreground text-center py-4">{t('hr.noSessions')}</p>
           )}
         </div>
       </div>
@@ -241,14 +243,14 @@ export default function HrAssistantPage() {
       {/* Chat Area */}
       <div className="flex-1 flex flex-col">
         <div className="px-4 py-3 border-b border-border bg-primary/5">
-          <h2 className="text-lg font-semibold">HR 助手</h2>
-          <p className="text-sm text-muted-foreground">通过对话描述需求，AI 帮你创建和配置员工</p>
+          <h2 className="text-lg font-semibold">{t('hr.title')}</h2>
+          <p className="text-sm text-muted-foreground">{t('hr.selectOrCreate')}</p>
         </div>
 
         <div ref={chatContainerRef} className="flex-1 overflow-auto p-4 space-y-4">
           {!activeSessionId && (
             <div className="flex items-center justify-center h-full text-muted-foreground">
-              创建新对话，描述你需要的员工角色
+              {t('hr.selectOrCreate')}
             </div>
           )}
           {messages.filter(m => m.content).map(m => (
@@ -265,12 +267,12 @@ export default function HrAssistantPage() {
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="描述你需要的员工..."
+                placeholder={t('hr.inputPlaceholder')}
                 disabled={sending}
                 className="flex-1"
               />
               <Button onClick={sendMessage} disabled={sending || !input.trim()}>
-                {sending ? '发送中...' : '发送'}
+                {sending ? t('hr.sending') : t('hr.send')}
               </Button>
             </div>
           </div>
@@ -302,13 +304,14 @@ function MessageBubble({ message }: { message: HrChatMessage }) {
 }
 
 function StreamingBubble({ msg }: { msg: StreamingMessage }) {
+  const { t } = useI18n();
   return (
     <div className="flex justify-start">
       <div className="max-w-[75%] rounded-lg px-4 py-2 bg-muted">
         {msg.text ? (
           <div className="whitespace-pre-wrap text-sm">{msg.text}</div>
         ) : (
-          <div className="text-sm text-muted-foreground">思考中...</div>
+          <div className="text-sm text-muted-foreground">{t('hr.thinking')}</div>
         )}
         {msg.toolCalls.length > 0 && <ToolCallsDisplay toolCalls={msg.toolCalls} />}
         {!msg.done && <span className="inline-block w-2 h-4 bg-foreground/50 animate-pulse ml-1" />}
@@ -318,6 +321,7 @@ function StreamingBubble({ msg }: { msg: StreamingMessage }) {
 }
 
 function ToolCallsDisplay({ toolCalls }: { toolCalls: ToolCallEntry[] }) {
+  const { t } = useI18n();
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
   const toggle = (tcId: string) => {
@@ -362,7 +366,7 @@ function ToolCallsDisplay({ toolCalls }: { toolCalls: ToolCallEntry[] }) {
                   className="text-primary hover:underline ml-1"
                   onClick={e => e.stopPropagation()}
                 >
-                  查看员工
+                  {t('employees.chat')}
                 </Link>
               )}
               <span className="ml-auto text-muted-foreground">{expanded.has(tc.id) ? '▾' : '▸'}</span>
@@ -370,12 +374,12 @@ function ToolCallsDisplay({ toolCalls }: { toolCalls: ToolCallEntry[] }) {
             {expanded.has(tc.id) && (
               <div className="px-2 py-1 border-t border-border bg-muted/50 space-y-1">
                 <div>
-                  <span className="text-muted-foreground">参数: </span>
+                  <span className="text-muted-foreground">{t('chat.params')}</span>
                   <pre className="inline whitespace-pre-wrap">{truncate(tc.args)}</pre>
                 </div>
                 {tc.result !== undefined && (
                   <div>
-                    <span className="text-muted-foreground">结果: </span>
+                    <span className="text-muted-foreground">{t('chat.result')}</span>
                     <pre className="inline whitespace-pre-wrap">{truncate(tc.result)}</pre>
                   </div>
                 )}

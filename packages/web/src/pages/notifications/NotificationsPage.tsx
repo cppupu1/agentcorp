@@ -4,15 +4,16 @@ import { notificationsApi, type Notification } from '@/api/client';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
+import { useI18n } from '@/i18n';
 import { Bell, Check, CheckCheck, Loader2 } from 'lucide-react';
 
-const typeLabels: Record<string, { label: string; variant: 'secondary' | 'success' | 'destructive' }> = {
-  task_approval: { label: '审批', variant: 'secondary' },
-  task_completed: { label: '完成', variant: 'success' },
-  task_failed: { label: '失败', variant: 'destructive' },
-  circuit_breaker: { label: '熔断', variant: 'destructive' },
-  observer_alert: { label: '观察', variant: 'secondary' },
-  trigger_fired: { label: '触发', variant: 'secondary' },
+const typeKeys: Record<string, { key: string; variant: 'secondary' | 'success' | 'destructive' }> = {
+  task_approval: { key: 'notifications.typeApproval', variant: 'secondary' },
+  task_completed: { key: 'notifications.typeCompleted', variant: 'success' },
+  task_failed: { key: 'notifications.typeFailed', variant: 'destructive' },
+  circuit_breaker: { key: 'notifications.typeCircuitBreaker', variant: 'destructive' },
+  observer_alert: { key: 'notifications.typeObserver', variant: 'secondary' },
+  trigger_fired: { key: 'notifications.typeTrigger', variant: 'secondary' },
 };
 
 type FilterTab = 'all' | 'unread' | 'read';
@@ -22,6 +23,7 @@ export default function NotificationsPage() {
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState<FilterTab>('all');
   const { toast } = useToast();
+  const { t, locale } = useI18n();
   const navigate = useNavigate();
 
   const load = useCallback(async () => {
@@ -30,7 +32,7 @@ export default function NotificationsPage() {
       const res = await notificationsApi.list(readParam);
       setItems(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -43,34 +45,34 @@ export default function NotificationsPage() {
       await notificationsApi.markRead(id);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '操作失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     }
   };
 
   const handleMarkAllRead = async () => {
     try {
       await notificationsApi.markAllRead();
-      toast('已全部标记为已读', 'success');
+      toast(t('notifications.allMarkedRead'), 'success');
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '操作失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     }
   };
 
   const tabs: { key: FilterTab; label: string }[] = [
-    { key: 'all', label: '全部' },
-    { key: 'unread', label: '未读' },
-    { key: 'read', label: '已读' },
+    { key: 'all', label: t('notifications.tabAll') },
+    { key: 'unread', label: t('notifications.tabUnread') },
+    { key: 'read', label: t('notifications.tabRead') },
   ];
 
   return (
     <div className="p-6 max-w-3xl">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-semibold flex items-center gap-2">
-          <Bell className="h-6 w-6" /> 通知中心
+          <Bell className="h-6 w-6" /> {t('notifications.title')}
         </h2>
         <Button variant="outline" size="sm" onClick={handleMarkAllRead}>
-          <CheckCheck className="h-4 w-4 mr-1" /> 全部已读
+          <CheckCheck className="h-4 w-4 mr-1" /> {t('notifications.markAllRead')}
         </Button>
       </div>
 
@@ -95,11 +97,11 @@ export default function NotificationsPage() {
           <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
         </div>
       ) : items.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无通知</div>
+        <div className="text-center py-12 text-muted-foreground">{t('notifications.empty')}</div>
       ) : (
         <div className="space-y-2">
           {items.map(item => {
-            const t = typeLabels[item.type] || { label: item.type, variant: 'secondary' as const };
+            const tp = typeKeys[item.type] || { key: '', variant: 'secondary' as const };
             return (
               <div
                 key={item.id}
@@ -109,25 +111,25 @@ export default function NotificationsPage() {
               >
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <Badge variant={t.variant}>{t.label}</Badge>
+                    <Badge variant={tp.variant}>{tp.key ? t(tp.key) : item.type}</Badge>
                     <span className="font-medium text-sm">{item.title}</span>
                     {!item.read && <span className="h-2 w-2 rounded-full bg-blue-500 flex-shrink-0" />}
                   </div>
                   <p className="text-sm text-muted-foreground mb-1">{item.content}</p>
                   <div className="flex items-center gap-3 text-xs text-muted-foreground">
-                    <span>{new Date(item.createdAt).toLocaleString('zh-CN')}</span>
+                    <span>{new Date(item.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</span>
                     {item.taskId && (
                       <button
                         className="text-primary hover:underline"
                         onClick={() => navigate(`/tasks/${item.taskId}`)}
                       >
-                        查看任务
+                        {t('notifications.viewTask')}
                       </button>
                     )}
                   </div>
                 </div>
                 {!item.read && (
-                  <Button variant="ghost" size="icon" onClick={() => handleMarkRead(item.id)} title="标记已读">
+                  <Button variant="ghost" size="icon" onClick={() => handleMarkRead(item.id)} title={t('notifications.markRead')}>
                     <Check className="h-4 w-4" />
                   </Button>
                 )}

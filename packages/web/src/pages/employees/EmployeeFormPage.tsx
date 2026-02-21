@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import { employeesApi, modelsApi, toolsApi, knowledgeApi, type Model, type Tool, type EmployeeInput, type KnowledgeBase } from '@/api/client';
+import { useI18n } from '@/i18n';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -15,6 +16,7 @@ export default function EmployeeFormPage() {
   const isEdit = !!id;
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { t } = useI18n();
 
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -56,7 +58,7 @@ export default function EmployeeFormPage() {
           setAssignedKbs(kbRes.data);
         }
       } catch (err: unknown) {
-        toast(err instanceof Error ? err.message : '加载失败', 'error');
+        toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
       } finally {
         setLoading(false);
       }
@@ -85,14 +87,14 @@ export default function EmployeeFormPage() {
     try {
       if (isEdit) {
         await employeesApi.update(id, input);
-        toast('员工已更新', 'success');
+        toast(t('employees.updated'), 'success');
       } else {
         await employeesApi.create(input);
-        toast('员工已创建', 'success');
+        toast(t('employees.created'), 'success');
       }
       navigate('/employees');
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '保存失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.saveFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -105,45 +107,45 @@ export default function EmployeeFormPage() {
   return (
     <div className="p-6 max-w-2xl">
       <Button variant="ghost" className="mb-4" onClick={() => navigate('/employees')}>
-        <ArrowLeft className="h-4 w-4 mr-1" /> 返回
+        <ArrowLeft className="h-4 w-4 mr-1" /> {t('common.back')}
       </Button>
-      <h2 className="text-2xl font-semibold mb-6">{isEdit ? '编辑员工' : '添加员工'}</h2>
+      <h2 className="text-2xl font-semibold mb-6">{isEdit ? t('employees.editEmployee') : t('employees.addEmployee')}</h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Basic info */}
         <section className="space-y-4">
-          <h3 className="text-sm font-medium text-muted-foreground">基本信息</h3>
+          <h3 className="text-sm font-medium text-muted-foreground">{t('employees.basicInfo')}</h3>
           <div className="grid grid-cols-[80px_1fr] gap-4">
             <div className="space-y-2">
-              <Label>头像</Label>
+              <Label>{t('employees.avatar')}</Label>
               <Input data-testid="employee-avatar-input" value={avatar} onChange={e => setAvatar(e.target.value)} placeholder="🧑‍💼" className="text-center text-xl" />
             </div>
             <div className="space-y-2">
-              <Label>名称</Label>
-              <Input data-testid="employee-name-input" value={name} onChange={e => setName(e.target.value)} placeholder="如：资深分析师" required />
+              <Label>{t('employees.name')}</Label>
+              <Input data-testid="employee-name-input" value={name} onChange={e => setName(e.target.value)} placeholder={t('employees.namePlaceholder')} required />
             </div>
           </div>
           <div className="space-y-2">
-            <Label>描述</Label>
-            <Input data-testid="employee-description-input" value={description} onChange={e => setDescription(e.target.value)} placeholder="简要描述员工的能力和职责" />
+            <Label>{t('employees.desc')}</Label>
+            <Input data-testid="employee-description-input" value={description} onChange={e => setDescription(e.target.value)} placeholder={t('employees.descPlaceholder')} />
           </div>
         </section>
 
         {/* Model */}
         <section className="space-y-4">
-          <h3 className="text-sm font-medium text-muted-foreground">大脑（模型）</h3>
+          <h3 className="text-sm font-medium text-muted-foreground">{t('employees.brain')}</h3>
           <Select data-testid="employee-modelId-input" value={modelId} onChange={e => setModelId(e.target.value)} required>
-            <option value="">选择模型...</option>
+            <option value="">{t('employees.selectModel')}</option>
             {models.map(m => <option key={m.id} value={m.id}>{m.name} ({m.modelId})</option>)}
           </Select>
         </section>
 
         {/* Tools */}
         <section className="space-y-4">
-          <h3 className="text-sm font-medium text-muted-foreground">工具分配</h3>
+          <h3 className="text-sm font-medium text-muted-foreground">{t('employees.toolAssign')}</h3>
           <div className="border rounded-md p-3 max-h-48 overflow-y-auto space-y-1">
             {allTools.length === 0 ? (
-              <p className="text-sm text-muted-foreground">暂无可用工具</p>
+              <p className="text-sm text-muted-foreground">{t('employees.noTools')}</p>
             ) : allTools.map(t => (
               <label key={t.id} className="flex items-center gap-2 py-1 cursor-pointer">
                 <input
@@ -164,12 +166,12 @@ export default function EmployeeFormPage() {
 
         {/* System prompt */}
         <section className="space-y-4">
-          <h3 className="text-sm font-medium text-muted-foreground">系统提示词</h3>
+          <h3 className="text-sm font-medium text-muted-foreground">{t('employees.systemPrompt')}</h3>
           <Textarea
             data-testid="employee-systemPrompt-input"
             value={systemPrompt}
             onChange={e => setSystemPrompt(e.target.value)}
-            placeholder="定义员工的角色、职责和行为准则..."
+            placeholder={t('employees.systemPromptPlaceholder')}
             rows={8}
             required
           />
@@ -177,7 +179,7 @@ export default function EmployeeFormPage() {
 
         {/* Tags */}
         <section className="space-y-4">
-          <h3 className="text-sm font-medium text-muted-foreground">标签</h3>
+          <h3 className="text-sm font-medium text-muted-foreground">{t('employees.tags')}</h3>
           <div className="flex flex-wrap gap-2 mb-2">
             {tags.map(tag => (
               <Badge key={tag} variant="secondary" className="gap-1">
@@ -191,16 +193,16 @@ export default function EmployeeFormPage() {
               value={tagInput}
               onChange={e => setTagInput(e.target.value)}
               onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); addTag(); } }}
-              placeholder="输入标签后回车"
+              placeholder={t('employees.tagPlaceholder')}
             />
-            <Button type="button" variant="outline" onClick={addTag}>添加</Button>
+            <Button type="button" variant="outline" onClick={addTag}>{t('common.add')}</Button>
           </div>
         </section>
 
         {/* Knowledge Bases (only in edit mode) */}
         {isEdit && (
           <section className="space-y-4">
-            <h3 className="text-sm font-medium text-muted-foreground">知识库</h3>
+            <h3 className="text-sm font-medium text-muted-foreground">{t('employees.knowledgeBases')}</h3>
             {assignedKbs.length > 0 && (
               <div className="space-y-2">
                 {assignedKbs.map(kb => (
@@ -215,9 +217,9 @@ export default function EmployeeFormPage() {
                         try {
                           await knowledgeApi.removeFromEmployee(id, kb.id);
                           setAssignedKbs(assignedKbs.filter(k => k.id !== kb.id));
-                          toast('已移除知识库', 'success');
+                          toast(t('employees.kbRemoved'), 'success');
                         } catch (err: unknown) {
-                          toast(err instanceof Error ? err.message : '操作失败', 'error');
+                          toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
                         }
                       }}
                     >
@@ -239,14 +241,14 @@ export default function EmployeeFormPage() {
                       await knowledgeApi.assignToEmployee(id, kbId);
                       const kb = allKbs.find(k => k.id === kbId);
                       if (kb) setAssignedKbs([...assignedKbs, { id: kb.id, name: kb.name, description: kb.description }]);
-                      toast('已分配知识库', 'success');
+                      toast(t('employees.kbAssigned'), 'success');
                       e.target.value = '';
                     } catch (err: unknown) {
-                      toast(err instanceof Error ? err.message : '操作失败', 'error');
+                      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
                     }
                   }}
                 >
-                  <option value="">选择知识库...</option>
+                  <option value="">{t('employees.selectKb')}</option>
                   {allKbs.filter(kb => !assignedKbs.find(a => a.id === kb.id)).map(kb => (
                     <option key={kb.id} value={kb.id}>{kb.name}</option>
                   ))}
@@ -254,14 +256,14 @@ export default function EmployeeFormPage() {
               </div>
             )}
             {allKbs.length === 0 && assignedKbs.length === 0 && (
-              <p className="text-sm text-muted-foreground">暂无可用知识库</p>
+              <p className="text-sm text-muted-foreground">{t('employees.noKbs')}</p>
             )}
           </section>
         )}
 
         <div className="flex gap-2 pt-4 border-t">
-          <Button type="button" variant="outline" onClick={() => navigate('/employees')}>取消</Button>
-          <Button type="submit" disabled={saving}>{saving ? '保存中...' : '保存'}</Button>
+          <Button type="button" variant="outline" onClick={() => navigate('/employees')}>{t('common.cancel')}</Button>
+          <Button type="submit" disabled={saving}>{saving ? t('common.saving') : t('common.save')}</Button>
         </div>
       </form>
     </div>

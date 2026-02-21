@@ -11,6 +11,7 @@ import {
 import '@xyflow/react/dist/style.css';
 import dagre from '@dagrejs/dagre';
 import { visualizationApi, type DAGData } from '@/api/client';
+import { useI18n } from '@/i18n';
 import { Loader2 } from 'lucide-react';
 
 const STATUS_COLORS: Record<string, { bg: string; border: string; text: string }> = {
@@ -21,12 +22,12 @@ const STATUS_COLORS: Record<string, { bg: string; border: string; text: string }
   failed: { bg: '#fee2e2', border: '#ef4444', text: '#b91c1c' },
 };
 
-const STATUS_LABELS: Record<string, string> = {
-  pending: '待执行',
-  executing: '执行中',
-  running: '执行中',
-  completed: '已完成',
-  failed: '失败',
+const STATUS_LABEL_KEYS: Record<string, string> = {
+  pending: 'dag.statusPending',
+  executing: 'dag.statusExecuting',
+  running: 'dag.statusExecuting',
+  completed: 'dag.statusCompleted',
+  failed: 'dag.statusFailed',
 };
 
 const NODE_WIDTH = 200;
@@ -58,6 +59,7 @@ function getLayoutedElements(nodes: Node[], edges: Edge[]) {
 }
 
 function SubtaskNode({ data }: { data: { title: string; status: string; assigneeName: string } }) {
+  const { t } = useI18n();
   const colors = STATUS_COLORS[data.status] || STATUS_COLORS.pending;
   return (
     <div
@@ -88,7 +90,7 @@ function SubtaskNode({ data }: { data: { title: string; status: string; assignee
             background: `${colors.border}20`,
           }}
         >
-          {STATUS_LABELS[data.status] || data.status}
+          {STATUS_LABEL_KEYS[data.status] ? t(STATUS_LABEL_KEYS[data.status]) : data.status}
         </span>
         <span style={{ fontSize: 11, color: '#6b7280' }}>{data.assigneeName}</span>
       </div>
@@ -100,6 +102,7 @@ function SubtaskNode({ data }: { data: { title: string; status: string; assignee
 const nodeTypes = { subtask: SubtaskNode };
 
 export default function TaskDAG({ taskId }: { taskId: string }) {
+  const { t } = useI18n();
   const [dagData, setDagData] = useState<DAGData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -108,7 +111,7 @@ export default function TaskDAG({ taskId }: { taskId: string }) {
     setLoading(true);
     visualizationApi.getDAG(taskId)
       .then(res => { setDagData(res.data); setError(null); })
-      .catch(err => setError(err instanceof Error ? err.message : '加载失败'))
+      .catch(err => setError(err instanceof Error ? err.message : t('common.loadFailed')))
       .finally(() => setLoading(false));
   }, [taskId]);
 
@@ -143,7 +146,7 @@ export default function TaskDAG({ taskId }: { taskId: string }) {
   }
 
   if (!dagData || dagData.nodes.length === 0) {
-    return <div className="text-center py-8 text-sm text-muted-foreground">暂无子任务数据</div>;
+    return <div className="text-center py-8 text-sm text-muted-foreground">{t('dag.noSubtasks')}</div>;
   }
 
   const { stats } = dagData;
@@ -151,11 +154,11 @@ export default function TaskDAG({ taskId }: { taskId: string }) {
   return (
     <div className="space-y-3">
       <div className="flex gap-4 text-sm">
-        <span>总计: {stats.total}</span>
-        <span style={{ color: '#22c55e' }}>完成: {stats.completed}</span>
-        <span style={{ color: '#3b82f6' }}>执行中: {stats.executing}</span>
-        {stats.failed > 0 && <span style={{ color: '#ef4444' }}>失败: {stats.failed}</span>}
-        <span style={{ color: '#9ca3af' }}>待执行: {stats.pending}</span>
+        <span>{t('dag.total', { count: stats.total })}</span>
+        <span style={{ color: '#22c55e' }}>{t('dag.completed', { count: stats.completed })}</span>
+        <span style={{ color: '#3b82f6' }}>{t('dag.executing', { count: stats.executing })}</span>
+        {stats.failed > 0 && <span style={{ color: '#ef4444' }}>{t('dag.failed', { count: stats.failed })}</span>}
+        <span style={{ color: '#9ca3af' }}>{t('dag.pending', { count: stats.pending })}</span>
       </div>
       <div style={{ height: 500 }} className="border rounded-lg">
         <ReactFlow

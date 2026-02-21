@@ -12,35 +12,37 @@ import { Select } from '@/components/ui/select';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
+import { useI18n } from '@/i18n';
 import { Loader2, Plus, Trash2, Play, ChevronDown, ChevronRight } from 'lucide-react';
 
-const categoryLabels: Record<string, { label: string; variant: 'default' | 'secondary' | 'warning' | 'destructive' }> = {
-  safety: { label: '安全', variant: 'destructive' },
-  quality: { label: '质量', variant: 'default' },
-  performance: { label: '性能', variant: 'warning' },
-  compliance: { label: '合规', variant: 'secondary' },
+const categoryKeys: Record<string, { key: string; variant: 'default' | 'secondary' | 'warning' | 'destructive' }> = {
+  safety: { key: 'testing.catSafety', variant: 'destructive' },
+  quality: { key: 'testing.catQuality', variant: 'default' },
+  performance: { key: 'testing.catPerformance', variant: 'warning' },
+  compliance: { key: 'testing.catCompliance', variant: 'secondary' },
 };
 
-const statusLabels: Record<string, { label: string; variant: 'secondary' | 'warning' | 'success' | 'destructive' }> = {
-  pending: { label: '等待中', variant: 'secondary' },
-  running: { label: '运行中', variant: 'warning' },
-  completed: { label: '已完成', variant: 'success' },
-  failed: { label: '失败', variant: 'destructive' },
+const statusKeys: Record<string, { key: string; variant: 'secondary' | 'warning' | 'success' | 'destructive' }> = {
+  pending: { key: 'testing.statusPending', variant: 'secondary' },
+  running: { key: 'testing.statusRunning', variant: 'warning' },
+  completed: { key: 'testing.statusCompleted', variant: 'success' },
+  failed: { key: 'testing.statusFailed', variant: 'destructive' },
 };
 
-const resultLabels: Record<string, { label: string; variant: 'success' | 'destructive' | 'warning' }> = {
-  passed: { label: '通过', variant: 'success' },
-  failed: { label: '未通过', variant: 'destructive' },
-  error: { label: '错误', variant: 'warning' },
+const resultKeys: Record<string, { key: string; variant: 'success' | 'destructive' | 'warning' }> = {
+  passed: { key: 'testing.resultPassed', variant: 'success' },
+  failed: { key: 'testing.resultFailed', variant: 'destructive' },
+  error: { key: 'testing.resultError', variant: 'warning' },
 };
 
 export default function TestingPage() {
   const [tab, setTab] = useState<'scenarios' | 'runs'>('scenarios');
+  const { t } = useI18n();
 
   return (
     <div className="p-6 max-w-5xl">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">行为测试</h2>
+        <h2 className="text-2xl font-semibold">{t('testing.title')}</h2>
       </div>
       <div className="flex gap-2 mb-4 border-b">
         <button
@@ -49,7 +51,7 @@ export default function TestingPage() {
             tab === 'scenarios' ? 'border-primary text-primary' : 'border-transparent text-muted-foreground hover:text-foreground'
           }`}
         >
-          测试场景
+          {t('testing.tabScenarios')}
         </button>
         <button
           onClick={() => setTab('runs')}
@@ -57,7 +59,7 @@ export default function TestingPage() {
             tab === 'runs' ? 'border-primary text-primary' : 'border-transparent text-muted-foreground hover:text-foreground'
           }`}
         >
-          测试记录
+          {t('testing.tabRuns')}
         </button>
       </div>
       {tab === 'scenarios' ? <ScenariosTab /> : <RunsTab />}
@@ -76,17 +78,18 @@ function ScenariosTab() {
   const [deleting, setDeleting] = useState(false);
   const [runOpen, setRunOpen] = useState(false);
   const { toast } = useToast();
+  const { t } = useI18n();
 
   const load = useCallback(async () => {
     try {
       const res = await testingApi.listScenarios();
       setItems(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
-  }, [toast]);
+  }, [toast, t]);
 
   useEffect(() => { load(); }, [load]);
 
@@ -95,11 +98,11 @@ function ScenariosTab() {
     setDeleting(true);
     try {
       await testingApi.deleteScenario(deleteTarget.id);
-      toast('已删除', 'success');
+      toast(t('common.delete'), 'success');
       setDeleteTarget(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -109,10 +112,10 @@ function ScenariosTab() {
     <>
       <div className="flex gap-2 mb-4">
         <Button size="sm" onClick={() => { setEditTarget(null); setEditOpen(true); }} className="gap-1">
-          <Plus className="h-4 w-4" /> 新建场景
+          <Plus className="h-4 w-4" /> {t('testing.newScenario')}
         </Button>
         <Button size="sm" variant="outline" onClick={() => setRunOpen(true)} className="gap-1">
-          <Play className="h-4 w-4" /> 运行测试
+          <Play className="h-4 w-4" /> {t('testing.runTest')}
         </Button>
       </div>
 
@@ -121,11 +124,13 @@ function ScenariosTab() {
           <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
         </div>
       ) : items.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无测试场景</div>
+        <div className="text-center py-12 text-muted-foreground">{t('testing.noScenarios')}</div>
       ) : (
         <div className="space-y-2">
           {items.map(item => {
-            const cat = categoryLabels[item.category || ''] || { label: item.category || '未分类', variant: 'secondary' as const };
+            const cat = categoryKeys[item.category || ''];
+            const catLabel = cat ? t(cat.key) : (item.category || t('testing.uncategorized'));
+            const catVariant = cat?.variant || 'secondary' as const;
             return (
               <div
                 key={item.id}
@@ -134,19 +139,19 @@ function ScenariosTab() {
               >
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <Badge variant={cat.variant}>{cat.label}</Badge>
+                    <Badge variant={catVariant}>{catLabel}</Badge>
                     <span className="font-medium text-sm truncate">{item.name}</span>
                   </div>
                   {item.description && (
                     <p className="text-xs text-muted-foreground truncate">{item.description}</p>
                   )}
                   <div className="flex gap-1 mt-1">
-                    {(item.tags || []).map(t => (
-                      <Badge key={t} variant="outline" className="text-[10px]">{t}</Badge>
+                    {(item.tags || []).map(tag => (
+                      <Badge key={tag} variant="outline" className="text-[10px]">{tag}</Badge>
                     ))}
                   </div>
                 </div>
-                <Button variant="ghost" size="icon" onClick={(e) => { e.stopPropagation(); setDeleteTarget(item); }} title="删除">
+                <Button variant="ghost" size="icon" onClick={(e) => { e.stopPropagation(); setDeleteTarget(item); }} title={t('common.delete')}>
                   <Trash2 className="h-4 w-4" />
                 </Button>
               </div>
@@ -172,8 +177,8 @@ function ScenariosTab() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除测试场景"
-        description={`确定要删除场景「${deleteTarget?.name}」吗？`}
+        title={t('testing.deleteScenario')}
+        description={t('testing.deleteConfirm').replace('{name}', deleteTarget?.name || '')}
         onConfirm={handleDelete}
         loading={deleting}
       />
@@ -199,6 +204,7 @@ function ScenarioDialog({
   const [tags, setTags] = useState('');
   const [saving, setSaving] = useState(false);
   const { toast } = useToast();
+  const { t } = useI18n();
 
   useEffect(() => {
     if (open) {
@@ -227,18 +233,18 @@ function ScenarioDialog({
         category: category || undefined,
         input: input.trim(),
         expectedBehavior: expectedBehavior.trim(),
-        tags: tags.trim() ? tags.split(',').map(t => t.trim()).filter(Boolean) : undefined,
+        tags: tags.trim() ? tags.split(',').map(s => s.trim()).filter(Boolean) : undefined,
       };
       if (scenario) {
         await testingApi.updateScenario(scenario.id, body);
-        toast('已更新', 'success');
+        toast(t('testing.updated'), 'success');
       } else {
         await testingApi.createScenario(body);
-        toast('已创建', 'success');
+        toast(t('testing.created'), 'success');
       }
       onSaved();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '保存失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.saveFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -247,42 +253,42 @@ function ScenarioDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle>{scenario ? '编辑测试场景' : '新建测试场景'}</DialogTitle>
+        <DialogTitle>{scenario ? t('testing.editScenario') : t('testing.createScenario')}</DialogTitle>
       </DialogHeader>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div className="space-y-1">
-          <Label>名称</Label>
+          <Label>{t('testing.scenarioName')}</Label>
           <Input value={name} onChange={e => setName(e.target.value)} required />
         </div>
         <div className="space-y-1">
-          <Label>分类</Label>
+          <Label>{t('testing.category')}</Label>
           <Select value={category} onChange={e => setCategory(e.target.value)}>
-            <option value="">未分类</option>
-            <option value="safety">安全</option>
-            <option value="quality">质量</option>
-            <option value="performance">性能</option>
-            <option value="compliance">合规</option>
+            <option value="">{t('testing.uncategorized')}</option>
+            <option value="safety">{t('testing.catSafety')}</option>
+            <option value="quality">{t('testing.catQuality')}</option>
+            <option value="performance">{t('testing.catPerformance')}</option>
+            <option value="compliance">{t('testing.catCompliance')}</option>
           </Select>
         </div>
         <div className="space-y-1">
-          <Label>描述</Label>
+          <Label>{t('testing.description')}</Label>
           <Input value={description} onChange={e => setDescription(e.target.value)} />
         </div>
         <div className="space-y-1">
-          <Label>测试输入 (发送给员工的提示)</Label>
+          <Label>{t('testing.testInput')}</Label>
           <Textarea value={input} onChange={e => setInput(e.target.value)} rows={3} required />
         </div>
         <div className="space-y-1">
-          <Label>预期行为</Label>
+          <Label>{t('testing.expectedBehavior')}</Label>
           <Textarea value={expectedBehavior} onChange={e => setExpectedBehavior(e.target.value)} rows={2} required />
         </div>
         <div className="space-y-1">
-          <Label>标签 (逗号分隔)</Label>
+          <Label>{t('testing.tagsComma')}</Label>
           <Input value={tags} onChange={e => setTags(e.target.value)} placeholder="tag1, tag2" />
         </div>
         <DialogFooter>
-          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>取消</Button>
-          <Button type="submit" disabled={saving}>{saving ? '保存中...' : '保存'}</Button>
+          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>{t('common.cancel')}</Button>
+          <Button type="submit" disabled={saving}>{saving ? t('common.saving') : t('common.save')}</Button>
         </DialogFooter>
       </form>
     </Dialog>
@@ -304,6 +310,7 @@ function RunTestDialog({
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [running, setRunning] = useState(false);
   const { toast } = useToast();
+  const { t } = useI18n();
 
   useEffect(() => {
     if (open) {
@@ -334,10 +341,10 @@ function RunTestDialog({
     setRunning(true);
     try {
       await testingApi.startRun({ employeeId, scenarioIds: Array.from(selectedIds) });
-      toast('测试已启动', 'success');
+      toast(t('testing.started'), 'success');
       onStarted();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '启动失败', 'error');
+      toast(err instanceof Error ? err.message : t('testing.startFailed'), 'error');
     } finally {
       setRunning(false);
     }
@@ -346,13 +353,13 @@ function RunTestDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle>运行测试</DialogTitle>
+        <DialogTitle>{t('testing.runDialog')}</DialogTitle>
       </DialogHeader>
       <div className="space-y-3">
         <div className="space-y-1">
-          <Label>选择员工</Label>
+          <Label>{t('testing.selectEmployee')}</Label>
           <Select value={employeeId} onChange={e => setEmployeeId(e.target.value)}>
-            <option value="">请选择...</option>
+            <option value="">...</option>
             {employees.map(emp => (
               <option key={emp.id} value={emp.id}>{emp.name}</option>
             ))}
@@ -360,37 +367,40 @@ function RunTestDialog({
         </div>
         <div className="space-y-1">
           <div className="flex items-center justify-between">
-            <Label>选择场景</Label>
+            <Label>{t('testing.selectScenarios')}</Label>
             <button type="button" onClick={selectAll} className="text-xs text-primary hover:underline">
-              {selectedIds.size === scenarios.length ? '取消全选' : '全选'}
+              {selectedIds.size === scenarios.length ? t('testing.deselectAll') : t('testing.selectAll')}
             </button>
           </div>
           <div className="max-h-48 overflow-auto border rounded-md p-2 space-y-1">
             {scenarios.length === 0 ? (
-              <p className="text-xs text-muted-foreground">暂无场景，请先创建</p>
-            ) : scenarios.map(s => (
-              <label key={s.id} className="flex items-center gap-2 text-sm cursor-pointer hover:bg-muted/50 rounded px-1 py-0.5">
-                <input
-                  type="checkbox"
-                  checked={selectedIds.has(s.id)}
-                  onChange={() => toggleScenario(s.id)}
-                  className="rounded"
-                />
-                <span className="truncate">{s.name}</span>
-                {s.category && (
-                  <Badge variant={categoryLabels[s.category]?.variant || 'secondary'} className="text-[10px] ml-auto shrink-0">
-                    {categoryLabels[s.category]?.label || s.category}
-                  </Badge>
-                )}
-              </label>
-            ))}
+              <p className="text-xs text-muted-foreground">{t('testing.noScenariosHint')}</p>
+            ) : scenarios.map(s => {
+              const cat = categoryKeys[s.category || ''];
+              return (
+                <label key={s.id} className="flex items-center gap-2 text-sm cursor-pointer hover:bg-muted/50 rounded px-1 py-0.5">
+                  <input
+                    type="checkbox"
+                    checked={selectedIds.has(s.id)}
+                    onChange={() => toggleScenario(s.id)}
+                    className="rounded"
+                  />
+                  <span className="truncate">{s.name}</span>
+                  {s.category && (
+                    <Badge variant={cat?.variant || 'secondary'} className="text-[10px] ml-auto shrink-0">
+                      {cat ? t(cat.key) : s.category}
+                    </Badge>
+                  )}
+                </label>
+              );
+            })}
           </div>
         </div>
       </div>
       <DialogFooter>
-        <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>取消</Button>
+        <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>{t('common.cancel')}</Button>
         <Button onClick={handleRun} disabled={running || !employeeId || selectedIds.size === 0}>
-          {running ? '启动中...' : `运行 (${selectedIds.size})`}
+          {running ? t('testing.running') : t('testing.runCount').replace('{count}', String(selectedIds.size))}
         </Button>
       </DialogFooter>
     </Dialog>
@@ -406,17 +416,18 @@ function RunsTab() {
   const [detail, setDetail] = useState<TestRunDetail | null>(null);
   const [detailLoading, setDetailLoading] = useState(false);
   const { toast } = useToast();
+  const { t, locale } = useI18n();
 
   const load = useCallback(async () => {
     try {
       const res = await testingApi.listRuns();
       setItems(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
-  }, [toast]);
+  }, [toast, t]);
 
   useEffect(() => { load(); }, [load]);
 
@@ -432,7 +443,7 @@ function RunsTab() {
       const res = await testingApi.getRun(id);
       setDetail(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载详情失败', 'error');
+      toast(err instanceof Error ? err.message : t('testing.loadDetailFailed'), 'error');
     } finally {
       setDetailLoading(false);
     }
@@ -447,13 +458,15 @@ function RunsTab() {
   }
 
   if (items.length === 0) {
-    return <div className="text-center py-12 text-muted-foreground">暂无测试记录</div>;
+    return <div className="text-center py-12 text-muted-foreground">{t('testing.noRuns')}</div>;
   }
 
   return (
     <div className="space-y-2">
       {items.map(run => {
-        const st = statusLabels[run.status || 'pending'] || { label: run.status, variant: 'secondary' as const };
+        const st = statusKeys[run.status || 'pending'];
+        const stLabel = st ? t(st.key) : run.status;
+        const stVariant = st?.variant || 'secondary' as const;
         const isExpanded = expandedId === run.id;
         return (
           <div key={run.id} className="border rounded-lg overflow-hidden">
@@ -464,16 +477,16 @@ function RunsTab() {
               {isExpanded ? <ChevronDown className="h-4 w-4 shrink-0" /> : <ChevronRight className="h-4 w-4 shrink-0" />}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <Badge variant={st.variant}>{st.label}</Badge>
-                  <span className="font-medium text-sm">{run.employeeName || '未知员工'}</span>
+                  <Badge variant={stVariant}>{stLabel}</Badge>
+                  <span className="font-medium text-sm">{run.employeeName || t('testing.unknownEmployee')}</span>
                   <span className="text-xs text-muted-foreground ml-auto">
-                    {new Date(run.createdAt).toLocaleString('zh-CN')}
+                    {new Date(run.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}
                   </span>
                 </div>
                 <div className="flex items-center gap-3 text-xs text-muted-foreground">
-                  <span>共 {run.totalScenarios ?? 0} 个场景</span>
-                  <span className="text-green-600">通过 {run.passedScenarios ?? 0}</span>
-                  <span className="text-red-600">失败 {run.failedScenarios ?? 0}</span>
+                  <span>{t('testing.totalScenarios').replace('{count}', String(run.totalScenarios ?? 0))}</span>
+                  <span className="text-green-600">{t('testing.passed').replace('{count}', String(run.passedScenarios ?? 0))}</span>
+                  <span className="text-red-600">{t('testing.failed').replace('{count}', String(run.failedScenarios ?? 0))}</span>
                   {run.summary && <span className="truncate">- {run.summary}</span>}
                 </div>
               </div>
@@ -487,16 +500,18 @@ function RunsTab() {
                 ) : detail && detail.results.length > 0 ? (
                   <div className="space-y-2">
                     {detail.results.map(r => {
-                      const rl = resultLabels[r.status] || { label: r.status, variant: 'secondary' as const };
+                      const rl = resultKeys[r.status];
+                      const rlLabel = rl ? t(rl.key) : r.status;
+                      const rlVariant = rl?.variant || 'secondary' as const;
                       const evalData = r.evaluation as Record<string, unknown> | null;
                       return (
                         <div key={r.id} className="border rounded p-3 bg-background">
                           <div className="flex items-center gap-2 mb-1">
-                            <Badge variant={rl.variant}>{rl.label}</Badge>
+                            <Badge variant={rlVariant}>{rlLabel}</Badge>
                             <span className="text-sm font-medium">{r.scenarioName || r.scenarioId}</span>
                             {r.score !== null && (
                               <span className={`text-xs font-mono ml-auto ${r.score >= 60 ? 'text-green-600' : 'text-red-600'}`}>
-                                {r.score}分
+                                {t('testing.score').replace('{score}', String(r.score))}
                               </span>
                             )}
                             {r.durationMs !== null && (
@@ -513,7 +528,7 @@ function RunsTab() {
                     })}
                   </div>
                 ) : (
-                  <p className="text-xs text-muted-foreground text-center py-2">暂无结果</p>
+                  <p className="text-xs text-muted-foreground text-center py-2">{t('testing.noResults')}</p>
                 )}
               </div>
             )}

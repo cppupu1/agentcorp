@@ -6,16 +6,17 @@ import { Badge } from '@/components/ui/badge';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { Plus, Trash2, Loader2 } from 'lucide-react';
+import { useI18n } from '@/i18n';
 
-const STATUS_LABELS: Record<string, { label: string; variant: 'default' | 'secondary' | 'outline' | 'destructive' }> = {
-  draft: { label: '草稿', variant: 'secondary' },
-  aligning: { label: '对齐中', variant: 'default' },
-  brief_review: { label: '任务书审批', variant: 'outline' },
-  team_review: { label: '团队审批', variant: 'outline' },
-  plan_review: { label: '计划审批', variant: 'outline' },
-  executing: { label: '执行中', variant: 'default' },
-  completed: { label: '已完成', variant: 'secondary' },
-  failed: { label: '失败', variant: 'destructive' },
+const STATUS_KEYS: Record<string, { key: string; variant: 'default' | 'secondary' | 'outline' | 'destructive' }> = {
+  draft: { key: 'tasks.statusDraft', variant: 'secondary' },
+  aligning: { key: 'tasks.statusAligning', variant: 'default' },
+  brief_review: { key: 'tasks.statusBriefApproval', variant: 'outline' },
+  team_review: { key: 'tasks.statusTeamApproval', variant: 'outline' },
+  plan_review: { key: 'tasks.statusPlanApproval', variant: 'outline' },
+  executing: { key: 'tasks.statusExecuting', variant: 'default' },
+  completed: { key: 'tasks.statusCompleted', variant: 'secondary' },
+  failed: { key: 'tasks.statusFailed', variant: 'destructive' },
 };
 
 export default function TasksPage() {
@@ -28,6 +29,7 @@ export default function TasksPage() {
   const [deleting, setDeleting] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
+  const { t } = useI18n();
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -38,7 +40,7 @@ export default function TasksPage() {
       const res = await tasksApi.list(params);
       setTasks(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -55,11 +57,11 @@ export default function TasksPage() {
     setDeleting(true);
     try {
       await tasksApi.delete(deleteTarget.id);
-      toast('任务已删除', 'success');
+      toast(t('tasks.deleted'), 'success');
       setDeleteTarget(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -68,9 +70,9 @@ export default function TasksPage() {
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">任务管理</h2>
+        <h2 className="text-2xl font-semibold">{t('tasks.title')}</h2>
         <Button onClick={() => navigate('/tasks/new')} data-testid="create-task-btn">
-          <Plus className="h-4 w-4" /> 创建任务
+          <Plus className="h-4 w-4" /> {t('tasks.create')}
         </Button>
       </div>
 
@@ -80,17 +82,17 @@ export default function TasksPage() {
           value={filterTeam}
           onChange={e => setFilterTeam(e.target.value)}
         >
-          <option value="">全部团队</option>
-          {teams.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
+          <option value="">{t('tasks.allTeams')}</option>
+          {teams.map(tm => <option key={tm.id} value={tm.id}>{tm.name}</option>)}
         </select>
         <select
           className="border rounded-md px-3 py-2 text-sm bg-background"
           value={filterStatus}
           onChange={e => setFilterStatus(e.target.value)}
         >
-          <option value="">全部状态</option>
-          {Object.entries(STATUS_LABELS).map(([k, v]) => (
-            <option key={k} value={k}>{v.label}</option>
+          <option value="">{t('tasks.allStatus')}</option>
+          {Object.entries(STATUS_KEYS).map(([k, v]) => (
+            <option key={k} value={k}>{t(v.key)}</option>
           ))}
         </select>
       </div>
@@ -98,23 +100,23 @@ export default function TasksPage() {
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : tasks.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无任务</div>
+        <div className="text-center py-12 text-muted-foreground">{t('tasks.empty')}</div>
       ) : (
         <div className="border rounded-lg overflow-x-auto">
           <table className="w-full text-sm min-w-[600px]">
             <thead className="bg-muted/50">
               <tr>
-                <th className="text-left px-4 py-3 font-medium">标题</th>
-                <th className="text-left px-4 py-3 font-medium">团队</th>
-                <th className="text-left px-4 py-3 font-medium">状态</th>
-                <th className="text-left px-4 py-3 font-medium">模式</th>
-                <th className="text-left px-4 py-3 font-medium">创建时间</th>
+                <th className="text-left px-4 py-3 font-medium">{t('tasks.colTitle')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('tasks.colTeam')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('tasks.colStatus')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('tasks.colMode')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('tasks.colCreatedAt')}</th>
                 <th className="px-4 py-3"></th>
               </tr>
             </thead>
             <tbody>
               {tasks.map(task => {
-                const st = STATUS_LABELS[task.status ?? ''] || { label: task.status, variant: 'secondary' as const };
+                const st = STATUS_KEYS[task.status ?? ''] || { key: task.status, variant: 'secondary' as const };
                 return (
                   <tr
                     key={task.id}
@@ -123,13 +125,13 @@ export default function TasksPage() {
                     onClick={() => navigate(`/tasks/${task.id}`)}
                   >
                     <td className="px-4 py-3">
-                      <div className="font-medium">{task.title || task.description?.slice(0, 50) || '未命名任务'}</div>
+                      <div className="font-medium">{task.title || task.description?.slice(0, 50) || t('tasks.unnamed')}</div>
                     </td>
                     <td className="px-4 py-3 text-muted-foreground">{task.teamName}</td>
                     <td className="px-4 py-3">
-                      <Badge variant={st.variant}>{st.label}</Badge>
+                      <Badge variant={st.variant}>{t(st.key)}</Badge>
                     </td>
-                    <td className="px-4 py-3 text-muted-foreground">{task.mode === 'auto' ? '自动' : '建议'}</td>
+                    <td className="px-4 py-3 text-muted-foreground">{task.mode === 'auto' ? t('tasks.auto') : t('tasks.suggest')}</td>
                     <td className="px-4 py-3 text-muted-foreground">{new Date(task.createdAt).toLocaleDateString()}</td>
                     <td className="px-4 py-3">
                       <Button
@@ -152,8 +154,8 @@ export default function TasksPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除任务"
-        description={`确定要删除任务「${deleteTarget?.title || '未命名'}」吗？`}
+        title={t('tasks.deleteTask')}
+        description={t('tasks.deleteConfirm').replace('{name}', deleteTarget?.title || t('tasks.unnamed'))}
         onConfirm={handleDelete}
         loading={deleting}
       />

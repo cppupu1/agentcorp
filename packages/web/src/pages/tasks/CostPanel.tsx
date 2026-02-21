@@ -3,6 +3,7 @@ import { costApi, type TaskCostBreakdown } from '@/api/client';
 import { DollarSign, TrendingUp, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table';
+import { useI18n } from '@/i18n';
 
 function formatCost(cents: number | null): string {
   if (cents == null || cents === 0) return '$0.00';
@@ -10,6 +11,7 @@ function formatCost(cents: number | null): string {
 }
 
 export default function CostPanel({ taskId }: { taskId: string }) {
+  const { t } = useI18n();
   const [data, setData] = useState<TaskCostBreakdown | null>(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -45,7 +47,7 @@ export default function CostPanel({ taskId }: { taskId: string }) {
     <details className="border rounded-lg" open>
       <summary className="flex items-center gap-2 p-4 cursor-pointer select-none">
         <DollarSign className="h-4 w-4 text-muted-foreground" />
-        <span className="text-sm font-medium">费用估算</span>
+        <span className="text-sm font-medium">{t('cost.title')}</span>
         {actualCost != null && actualCost > 0 && (
           <span className="text-xs text-muted-foreground ml-auto mr-2">{formatCost(actualCost)}</span>
         )}
@@ -57,16 +59,16 @@ export default function CostPanel({ taskId }: { taskId: string }) {
         <div className="flex gap-4 text-sm">
           <div className="flex items-center gap-1">
             <TrendingUp className="h-3 w-3 text-muted-foreground" />
-            <span className="text-muted-foreground">预估:</span>
+            <span className="text-muted-foreground">{t('cost.estimated')}</span>
             <span>{formatCost(estimatedCost)}</span>
           </div>
           <div>
-            <span className="text-muted-foreground">实际:</span>
+            <span className="text-muted-foreground">{t('cost.actual')}</span>
             <span className={overBudget ? ' text-destructive font-medium' : ''}> {formatCost(actualCost)}</span>
           </div>
           {budgetLimit != null && (
             <div>
-              <span className="text-muted-foreground">预算:</span>
+              <span className="text-muted-foreground">{t('cost.budget')}</span>
               <span> {formatCost(budgetLimit)}</span>
             </div>
           )}
@@ -89,11 +91,11 @@ export default function CostPanel({ taskId }: { taskId: string }) {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead>成员</TableHead>
-                  <TableHead>子任务</TableHead>
-                  <TableHead className="text-right">输入Token</TableHead>
-                  <TableHead className="text-right">输出Token</TableHead>
-                  <TableHead className="text-right">费用</TableHead>
+                  <TableHead>{t('cost.member')}</TableHead>
+                  <TableHead>{t('cost.subtask')}</TableHead>
+                  <TableHead className="text-right">{t('cost.inputToken')}</TableHead>
+                  <TableHead className="text-right">{t('cost.outputToken')}</TableHead>
+                  <TableHead className="text-right">{t('cost.fee')}</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>

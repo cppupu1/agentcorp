@@ -13,17 +13,19 @@ import ToolTracePanel from './ToolTracePanel';
 import ObserverPanel from './ObserverPanel';
 import EvidencePanel from './EvidencePanel';
 import TaskDAG from './TaskDAG';
+import { useI18n } from '@/i18n';
 
-const STATUS_LABELS: Record<string, string> = {
-  draft: '草稿', aligning: '对齐中', brief_review: '任务书审批',
-  team_review: '团队审批', plan_review: '计划审批',
-  executing: '执行中', paused: '已暂停', completed: '已完成', failed: '失败',
+const STATUS_KEYS: Record<string, string> = {
+  draft: 'tasks.statusDraft', aligning: 'tasks.statusAligning', brief_review: 'tasks.statusBriefApproval',
+  team_review: 'tasks.statusTeamApproval', plan_review: 'tasks.statusPlanApproval',
+  executing: 'tasks.statusExecuting', paused: 'tasks.statusPaused', completed: 'tasks.statusCompleted', failed: 'tasks.statusFailed',
 };
 
 export default function TaskDetailPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { t } = useI18n();
   const [task, setTask] = useState<TaskDetail | null>(null);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -37,7 +39,7 @@ export default function TaskDetailPage() {
       setTask(res.data);
       setLoadError(null);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : '加载失败';
+      const msg = err instanceof Error ? err.message : t('common.loadFailed');
       toast(msg, 'error');
       setLoadError(msg);
       // Only navigate away for 404
@@ -56,8 +58,8 @@ export default function TaskDetailPage() {
   if (!task) {
     return (
       <div className="p-6 text-center">
-        <p className="text-muted-foreground mb-4">{loadError || '加载失败'}</p>
-        <Button variant="outline" onClick={() => navigate('/tasks')}>返回任务列表</Button>
+        <p className="text-muted-foreground mb-4">{loadError || t('common.loadFailed')}</p>
+        <Button variant="outline" onClick={() => navigate('/tasks')}>{t('taskDetail.backToTaskList')}</Button>
       </div>
     );
   }
@@ -71,10 +73,10 @@ export default function TaskDetailPage() {
           <ArrowLeft className="h-4 w-4" />
         </Button>
         <div className="flex-1">
-          <h2 className="text-2xl font-semibold">{task.title || '未命名任务'}</h2>
-          <p className="text-sm text-muted-foreground">{task.teamName} · {STATUS_LABELS[status] || status}{task.mode === 'auto' ? ' · 自动模式' : ''}</p>
+          <h2 className="text-2xl font-semibold">{task.title || t('taskDetail.unnamed')}</h2>
+          <p className="text-sm text-muted-foreground">{task.teamName} · {STATUS_KEYS[status] ? t(STATUS_KEYS[status]) : status}{task.mode === 'auto' ? ` · ${t('taskDetail.autoMode')}` : ''}</p>
         </div>
-        <Badge variant={status === 'executing' ? 'default' : status === 'paused' ? 'destructive' : 'secondary'}>{STATUS_LABELS[status] || status}</Badge>
+        <Badge variant={status === 'executing' ? 'default' : status === 'paused' ? 'destructive' : 'secondary'}>{STATUS_KEYS[status] ? t(STATUS_KEYS[status]) : status}</Badge>
         {(task.tokenUsage ?? 0) > 0 && (
           <span className="text-xs text-muted-foreground ml-2">
             Token: {(task.tokenUsage ?? 0).toLocaleString()}
@@ -84,7 +86,7 @@ export default function TaskDetailPage() {
 
       {task.description && (
         <div className="mb-6 p-4 bg-muted/30 rounded-lg">
-          <p className="text-sm text-muted-foreground mb-1">任务描述</p>
+          <p className="text-sm text-muted-foreground mb-1">{t('taskDetail.description')}</p>
           <p className="text-sm">{task.description}</p>
         </div>
       )}
@@ -106,9 +108,9 @@ export default function TaskDetailPage() {
             try {
               const res = await tasksApi.approveBrief(task.id, { approved });
               setTask(res.data);
-              toast(approved ? '任务书已通过' : '已退回修改', 'success');
+              toast(approved ? t('taskDetail.briefApproved') : t('taskDetail.returnedForRevision'), 'success');
             } catch (err: unknown) {
-              toast(err instanceof Error ? err.message : '操作失败', 'error');
+              toast(err instanceof Error ? err.message : t('taskDetail.approvalFailed'), 'error');
             } finally {
               setApproving(false);
             }
@@ -126,9 +128,9 @@ export default function TaskDetailPage() {
             try {
               const res = await tasksApi.approveTeam(task.id, { approved });
               setTask(res.data);
-              toast(approved ? '团队配置已确认' : '已退回修改', 'success');
+              toast(approved ? t('taskDetail.teamConfirmed') : t('taskDetail.returnedForRevision'), 'success');
             } catch (err: unknown) {
-              toast(err instanceof Error ? err.message : '操作失败', 'error');
+              toast(err instanceof Error ? err.message : t('taskDetail.approvalFailed'), 'error');
             } finally {
               setApproving(false);
             }
@@ -146,9 +148,9 @@ export default function TaskDetailPage() {
             try {
               const res = await tasksApi.approvePlan(task.id, { approved });
               setTask(res.data);
-              toast(approved ? '执行计划已通过，开始执行' : '已退回修改', 'success');
+              toast(approved ? t('taskDetail.planApprovedStart') : t('taskDetail.returnedForRevision'), 'success');
             } catch (err: unknown) {
-              toast(err instanceof Error ? err.message : '操作失败', 'error');
+              toast(err instanceof Error ? err.message : t('taskDetail.approvalFailed'), 'error');
             } finally {
               setApproving(false);
             }
@@ -161,11 +163,11 @@ export default function TaskDetailPage() {
         <>
           <div className="flex gap-1 border-b mb-4">
             {[
-              { key: 'execution' as const, label: '执行' },
-              { key: 'timeline' as const, label: '时间线' },
-              { key: 'tool-trace' as const, label: '工具追踪' },
-              { key: 'evidence' as const, label: '证据链' },
-              { key: 'dag' as const, label: '可视化' },
+              { key: 'execution' as const, label: t('taskDetail.tabExecution') },
+              { key: 'timeline' as const, label: t('taskDetail.tabTimeline') },
+              { key: 'tool-trace' as const, label: t('taskDetail.tabToolTrace') },
+              { key: 'evidence' as const, label: t('taskDetail.tabEvidence') },
+              { key: 'dag' as const, label: t('taskDetail.tabVisualization') },
             ].map(tab => (
               <button
                 key={tab.key}
@@ -191,10 +193,10 @@ export default function TaskDetailPage() {
               {status === 'completed' && <CompletedSection task={task} />}
               {status === 'failed' && (
                 <div className="space-y-4">
-                  <h3 className="text-lg font-medium text-destructive">任务失败</h3>
+                  <h3 className="text-lg font-medium text-destructive">{t('taskDetail.taskFailed')}</h3>
                   {task.result != null && (
                     <div className="border border-destructive/30 rounded-lg p-4">
-                      <p className="text-sm">{(task.result as any).error || '未知错误'}</p>
+                      <p className="text-sm">{(task.result as any).error || t('taskDetail.unknownError')}</p>
                     </div>
                   )}
                 </div>
@@ -216,7 +218,7 @@ export default function TaskDetailPage() {
           <div className="mt-6">
             <details className="group">
               <summary className="cursor-pointer text-sm font-medium text-muted-foreground hover:text-foreground">
-                错误追踪
+                {t('taskDetail.tabErrorTrace')}
               </summary>
               <div className="mt-3">
                 <ErrorTracePanel taskId={task.id} />
@@ -228,7 +230,7 @@ export default function TaskDetailPage() {
           <div className="mt-6">
             <details className="group">
               <summary className="cursor-pointer text-sm font-medium text-muted-foreground hover:text-foreground">
-                观察者
+                {t('taskDetail.tabObserver')}
               </summary>
               <div className="mt-3">
                 <ObserverPanel taskId={task.id} />
@@ -251,6 +253,7 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
   const abortRef = useRef<AbortController | null>(null);
+  const { t } = useI18n();
 
   useEffect(() => {
     tasksApi.messages(taskId, 'chat').then(res => setMessages(res.data)).catch(() => {});
@@ -328,7 +331,7 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
               } else if (eventType === 'status_change') {
                 statusChanged = true;
               } else if (eventType === 'error') {
-                toast(data.message || '对话出错', 'error');
+                toast(data.message || t('taskDetail.chatError'), 'error');
               }
             } catch {}
           } else if (line === '') {
@@ -359,7 +362,7 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
       }
     } catch (err: unknown) {
       if ((err as Error).name !== 'AbortError') {
-        toast(err instanceof Error ? err.message : '发送失败', 'error');
+        toast(err instanceof Error ? err.message : t('taskDetail.sendFailed'), 'error');
       }
     } finally {
       setSending(false);
@@ -390,7 +393,7 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
         <Textarea
           value={input}
           onChange={e => setInput(e.target.value)}
-          placeholder="输入消息与PM对话..."
+          placeholder={t('taskDetail.chatPlaceholder')}
           rows={2}
           className="flex-1 resize-none"
           data-testid="chat-input"
@@ -408,24 +411,25 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
 
 function BriefReviewSection({ task, approving, onApprove }: { task: TaskDetail; approving: boolean; onApprove: (approved: boolean) => void }) {
   const brief = task.brief;
+  const { t } = useI18n();
   if (!brief) return null;
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-medium">任务书审批</h3>
+      <h3 className="text-lg font-medium">{t('taskDetail.briefApproval')}</h3>
       <div className="border rounded-lg p-4 space-y-3">
-        <div><span className="text-sm text-muted-foreground">标题：</span><span className="font-medium">{brief.title}</span></div>
-        <div><span className="text-sm text-muted-foreground">目标：</span><p className="text-sm mt-1">{brief.objective}</p></div>
-        <div><span className="text-sm text-muted-foreground">交付物：</span><p className="text-sm mt-1">{brief.deliverables}</p></div>
-        {brief.constraints && <div><span className="text-sm text-muted-foreground">约束条件：</span><p className="text-sm mt-1">{brief.constraints}</p></div>}
-        <div><span className="text-sm text-muted-foreground">验收标准：</span><p className="text-sm mt-1">{brief.acceptanceCriteria}</p></div>
+        <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefTitle')}</span><span className="font-medium">{brief.title}</span></div>
+        <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefObjective')}</span><p className="text-sm mt-1">{brief.objective}</p></div>
+        <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefDeliverables')}</span><p className="text-sm mt-1">{brief.deliverables}</p></div>
+        {brief.constraints && <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefConstraints')}</span><p className="text-sm mt-1">{brief.constraints}</p></div>}
+        <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefAcceptanceCriteria')}</span><p className="text-sm mt-1">{brief.acceptanceCriteria}</p></div>
       </div>
       <div className="flex gap-3">
         <Button onClick={() => onApprove(true)} disabled={approving} data-testid="approve-brief-btn">
           {approving ? <Loader2 className="h-4 w-4 animate-spin mr-1" /> : <Check className="h-4 w-4 mr-1" />}
-          通过
+          {t('taskDetail.pass')}
         </Button>
         <Button variant="outline" onClick={() => onApprove(false)} disabled={approving} data-testid="reject-brief-btn">
-          <X className="h-4 w-4 mr-1" /> 退回修改
+          <X className="h-4 w-4 mr-1" /> {t('taskDetail.returnRevision')}
         </Button>
       </div>
     </div>
@@ -436,18 +440,19 @@ function BriefReviewSection({ task, approving, onApprove }: { task: TaskDetail; 
 
 function TeamReviewSection({ task, approving, onApprove }: { task: TaskDetail; approving: boolean; onApprove: (approved: boolean) => void }) {
   const config = task.teamConfig;
+  const { t } = useI18n();
   if (!config) return null;
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-medium">团队配置审批</h3>
+      <h3 className="text-lg font-medium">{t('taskDetail.teamConfigApproval')}</h3>
       {config.pm && (
         <div className="border rounded-lg p-3">
-          <p className="text-sm text-muted-foreground mb-1">项目经理</p>
+          <p className="text-sm text-muted-foreground mb-1">{t('taskDetail.projectManager')}</p>
           <p className="font-medium">{config.pm.name}</p>
         </div>
       )}
       <div className="space-y-2">
-        <p className="text-sm text-muted-foreground">参与成员 ({config.members.length})</p>
+        <p className="text-sm text-muted-foreground">{t('taskDetail.participantMembers')} ({config.members.length})</p>
         {config.members.map(m => (
           <div key={m.id} className="border rounded-lg p-3">
             <p className="font-medium text-sm">{m.name}</p>
@@ -458,10 +463,10 @@ function TeamReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
       <div className="flex gap-3">
         <Button onClick={() => onApprove(true)} disabled={approving} data-testid="approve-team-btn">
           {approving ? <Loader2 className="h-4 w-4 animate-spin mr-1" /> : <Check className="h-4 w-4 mr-1" />}
-          确认团队
+          {t('taskDetail.confirmTeam')}
         </Button>
         <Button variant="outline" onClick={() => onApprove(false)} disabled={approving} data-testid="reject-team-btn">
-          <X className="h-4 w-4 mr-1" /> 退回修改
+          <X className="h-4 w-4 mr-1" /> {t('taskDetail.returnRevision')}
         </Button>
       </div>
     </div>
@@ -472,6 +477,7 @@ function TeamReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
 
 function PlanReviewSection({ task, approving, onApprove }: { task: TaskDetail; approving: boolean; onApprove: (approved: boolean) => void }) {
   const plan = task.plan;
+  const { t } = useI18n();
   if (!plan) return null;
   // Build assignee name lookup from teamConfig
   const nameMap = new Map<string, string>();
@@ -483,7 +489,7 @@ function PlanReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
   const titleMap = new Map(plan.subtasks.map(st => [st.id, st.title]));
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-medium">执行计划审批</h3>
+      <h3 className="text-lg font-medium">{t('taskDetail.planApproval')}</h3>
       <div className="space-y-2">
         {plan.subtasks.map((st, i) => (
           <div key={st.id} className="border rounded-lg p-3 flex items-start gap-3">
@@ -492,8 +498,8 @@ function PlanReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
               <p className="font-medium text-sm">{st.title}</p>
               {st.description && <p className="text-xs text-muted-foreground mt-1">{st.description}</p>}
               <div className="flex gap-2 mt-1">
-                <Badge variant="outline" className="text-xs">负责人: {nameMap.get(st.assigneeId) || st.assigneeId}</Badge>
-                {st.dependsOn.length > 0 && <Badge variant="secondary" className="text-xs">依赖: {st.dependsOn.map(id => titleMap.get(id) || id).join(', ')}</Badge>}
+                <Badge variant="outline" className="text-xs">{t('taskDetail.assignee')}: {nameMap.get(st.assigneeId) || st.assigneeId}</Badge>
+                {st.dependsOn.length > 0 && <Badge variant="secondary" className="text-xs">{t('taskDetail.dependency')}: {st.dependsOn.map(id => titleMap.get(id) || id).join(', ')}</Badge>}
               </div>
             </div>
           </div>
@@ -502,10 +508,10 @@ function PlanReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
       <div className="flex gap-3">
         <Button onClick={() => onApprove(true)} disabled={approving} data-testid="approve-plan-btn">
           {approving ? <Loader2 className="h-4 w-4 animate-spin mr-1" /> : <Check className="h-4 w-4 mr-1" />}
-          开始执行
+          {t('taskDetail.startExecution')}
         </Button>
         <Button variant="outline" onClick={() => onApprove(false)} disabled={approving} data-testid="reject-plan-btn">
-          <X className="h-4 w-4 mr-1" /> 退回修改
+          <X className="h-4 w-4 mr-1" /> {t('taskDetail.returnRevision')}
         </Button>
       </div>
     </div>
@@ -525,6 +531,7 @@ interface SubtaskState {
 }
 
 function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatusChange: () => void }) {
+  const { t } = useI18n();
   const [subs, setSubs] = useState<SubtaskState[]>(
     task.subtasks.map(s => ({
       id: s.id, title: s.title, status: s.status || 'pending',
@@ -552,7 +559,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       setSubs(prev => prev.map(s =>
         s.id === data.subtaskId ? { ...s, status: 'running', assigneeName: data.employeeName || s.assigneeName } : s
       ));
-      addLog(data.timestamp, `子任务「${data.title}」开始执行 (${data.employeeName})`);
+      addLog(data.timestamp, `${t('taskDetail.subtaskStarted').replace('{title}', data.title).replace('{name}', data.employeeName)}`);
     });
 
     es.addEventListener('subtask_completed', (e) => {
@@ -560,7 +567,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       setSubs(prev => prev.map(s =>
         s.id === data.subtaskId ? { ...s, status: 'completed', output: data.output?.summary } : s
       ));
-      addLog(data.timestamp, `子任务完成`);
+      addLog(data.timestamp, t('taskDetail.subtaskCompleted'));
     });
 
     es.addEventListener('subtask_failed', (e) => {
@@ -568,7 +575,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       setSubs(prev => prev.map(s =>
         s.id === data.subtaskId ? { ...s, status: 'failed', error: data.error } : s
       ));
-      addLog(data.timestamp, `子任务失败: ${data.error}`);
+      addLog(data.timestamp, t('taskDetail.subtaskFailed').replace('{error}', data.error));
     });
 
     es.addEventListener('pm_decision', (e) => {
@@ -584,10 +591,10 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
         ));
       } else if (data.action === 'reassigned') {
         setSubs(prev => prev.map(s =>
-          s.id === data.subtaskId ? { ...s, status: 'pending', error: undefined, assigneeName: '重新分配中' } : s
+          s.id === data.subtaskId ? { ...s, status: 'pending', error: undefined, assigneeName: t('taskDetail.reassigning') } : s
         ));
       }
-      addLog(data.timestamp, `错误保护: ${data.message}`);
+      addLog(data.timestamp, t('taskDetail.errorProtection').replace('{message}', data.message));
     });
 
     es.addEventListener('task_status', (e) => {
@@ -621,7 +628,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
 
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-medium">执行中</h3>
+      <h3 className="text-lg font-medium">{t('taskDetail.executing')}</h3>
       <div className="flex items-center gap-3" data-testid="task-progress">
         <div className="flex-1 bg-muted rounded-full h-2">
           <div className="bg-primary rounded-full h-2 transition-all" style={{ width: `${progress}%` }} />
@@ -632,11 +639,11 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
         {subs.map(st => (
           <div key={st.id} data-testid={`subtask-item-${st.id}`} className="border rounded-lg p-3 flex items-center gap-3">
             <Badge variant={st.status === 'completed' ? 'default' : st.status === 'running' ? 'secondary' : st.status === 'failed' ? 'destructive' : 'outline'} className="text-xs">
-              {st.status === 'completed' ? '完成' : st.status === 'running' ? '执行中' : st.status === 'failed' ? '失败' : '待执行'}
+              {st.status === 'completed' ? t('taskDetail.statusCompleted') : st.status === 'running' ? t('taskDetail.statusRunning') : st.status === 'failed' ? t('taskDetail.statusFailed') : t('taskDetail.statusPending')}
             </Badge>
             <div className="flex-1">
               <p className="text-sm font-medium">{st.title}</p>
-              <p className="text-xs text-muted-foreground">{st.assigneeName || '未分配'}</p>
+              <p className="text-xs text-muted-foreground">{st.assigneeName || t('taskDetail.unassigned')}</p>
               {st.error && <p className="text-xs text-destructive mt-1">{st.error}</p>}
               {st.output && <p className="text-xs text-muted-foreground mt-1">{st.output}</p>}
             </div>
@@ -646,7 +653,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       </div>
       {logs.length > 0 && (
         <div className="border rounded-lg p-3 max-h-48 overflow-y-auto">
-          <p className="text-sm text-muted-foreground mb-2">执行日志</p>
+          <p className="text-sm text-muted-foreground mb-2">{t('taskDetail.executionLog')}</p>
           {logs.map((log, i) => (
             <p key={i} className="text-xs text-muted-foreground">
               <span className="text-muted-foreground/60">{new Date(log.time).toLocaleTimeString()}</span> {log.text}
@@ -661,36 +668,37 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
 // ---- Completed ----
 
 function CompletedSection({ task }: { task: TaskDetail }) {
+  const { t, locale } = useI18n();
   const result = task.result as any;
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-medium">任务完成</h3>
+      <h3 className="text-lg font-medium">{t('taskDetail.taskCompleted')}</h3>
       {result && (
         <div className="border rounded-lg p-4 space-y-3">
-          {result.summary && <div><p className="text-sm text-muted-foreground">摘要</p><p className="text-sm mt-1">{result.summary}</p></div>}
+          {result.summary && <div><p className="text-sm text-muted-foreground">{t('taskDetail.summary')}</p><p className="text-sm mt-1">{result.summary}</p></div>}
           {result.deliverables && (
             <div>
-              <p className="text-sm text-muted-foreground">交付物</p>
+              <p className="text-sm text-muted-foreground">{t('taskDetail.resultDeliverables')}</p>
               <div className="text-sm mt-1 prose prose-sm max-w-none whitespace-pre-wrap">{result.deliverables}</div>
             </div>
           )}
           {result.subtaskSummary && (
             <div className="flex gap-4 text-sm">
-              <span>总计: {result.subtaskSummary.total}</span>
-              <span className="text-green-600">完成: {result.subtaskSummary.completed}</span>
-              {result.subtaskSummary.failed > 0 && <span className="text-destructive">失败: {result.subtaskSummary.failed}</span>}
+              <span>{t('taskDetail.total')}: {result.subtaskSummary.total}</span>
+              <span className="text-green-600">{t('taskDetail.completed')}: {result.subtaskSummary.completed}</span>
+              {result.subtaskSummary.failed > 0 && <span className="text-destructive">{t('taskDetail.failed')}: {result.subtaskSummary.failed}</span>}
             </div>
           )}
-          {result.completedAt && <p className="text-xs text-muted-foreground">完成时间: {new Date(result.completedAt).toLocaleString()}</p>}
+          {result.completedAt && <p className="text-xs text-muted-foreground">{t('taskDetail.completedTime')}: {new Date(result.completedAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</p>}
         </div>
       )}
       {task.subtasks.length > 0 && (
         <div className="space-y-2">
-          <p className="text-sm text-muted-foreground">子任务摘要</p>
+          <p className="text-sm text-muted-foreground">{t('taskDetail.subtaskSummary')}</p>
           {task.subtasks.map(st => (
             <div key={st.id} className="border rounded-lg p-3 flex items-center gap-3">
               <Badge variant={st.status === 'completed' ? 'default' : 'destructive'} className="text-xs">
-                {st.status === 'completed' ? '完成' : st.status}
+                {st.status === 'completed' ? t('taskDetail.statusCompleted') : st.status}
               </Badge>
               <span className="text-sm">{st.title}</span>
             </div>

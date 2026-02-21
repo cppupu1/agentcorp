@@ -30,6 +30,10 @@ import { registerVisualizationRoutes } from './routes/visualization.js';
 import { registerChangeTestingRoutes } from './routes/change-testing.js';
 import { registerTestingRoutes } from './routes/testing.js';
 import { registerHrAssistantRoutes } from './routes/hr-assistant.js';
+import { registerQualityDashboardRoutes } from './routes/quality-dashboard.js';
+import { registerRoiReviewRoutes } from './routes/roi-review.js';
+import { registerMemoryRoutes } from './routes/memory.js';
+import { registerSelfImprovementRoutes } from './routes/self-improvement.js';
 import { sseManager } from './services/sse-manager.js';
 import { recoverStuckTasks, cancelAllExecutions } from './services/task-executor.js';
 import { seedBuiltinPolicies } from './services/policies.js';
@@ -71,6 +75,10 @@ registerVisualizationRoutes(app);
 registerChangeTestingRoutes(app);
 registerTestingRoutes(app);
 registerHrAssistantRoutes(app);
+registerQualityDashboardRoutes(app);
+registerRoiReviewRoutes(app);
+registerMemoryRoutes(app);
+registerSelfImprovementRoutes(app);
 
 // Serve frontend static files (production mode)
 const webDistPath = resolve(__dirname, '../../web/dist');

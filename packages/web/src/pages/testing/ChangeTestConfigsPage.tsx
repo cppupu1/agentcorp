@@ -11,13 +11,13 @@ import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
+import { useI18n } from '@/i18n';
 import { Plus, Pencil, Trash2, ChevronDown, ChevronRight, Loader2 } from 'lucide-react';
 
-const watchTargetLabels: Record<string, string> = {
-  employee: '员工',
-  model: '模型',
-  tool: '工具',
-  prompt: '提示词',
+const watchTargetKeys: Record<string, string> = {
+  employee: 'changeTest.watchEmployee',
+  tool: 'changeTest.watchTool',
+  policy: 'changeTest.watchPolicy',
 };
 
 function parseScenarioIds(raw: string): string[] {
@@ -36,6 +36,7 @@ export default function ChangeTestConfigsPage() {
   const [expandedDetail, setExpandedDetail] = useState<ChangeTestConfigDetail | null>(null);
   const [scenarios, setScenarios] = useState<TestScenario[]>([]);
   const { toast } = useToast();
+  const { t } = useI18n();
 
   const load = useCallback(async () => {
     try {
@@ -46,21 +47,21 @@ export default function ChangeTestConfigsPage() {
       setConfigs(configRes.data);
       setScenarios(scenarioRes.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
-  }, [toast]);
+  }, [toast, t]);
 
   useEffect(() => { load(); }, [load]);
 
   const handleToggleEnabled = async (config: ChangeTestConfig) => {
     try {
       await changeTestingApi.update(config.id, { enabled: !config.enabled });
-      toast(config.enabled ? '已禁用' : '已启用', 'success');
+      toast(config.enabled ? t('changeTest.disabled') : t('changeTest.enabled'), 'success');
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '操作失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     }
   };
 
@@ -75,7 +76,7 @@ export default function ChangeTestConfigsPage() {
       setExpandedDetail(res.data);
       setExpandedId(id);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载详情失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     }
   };
 
@@ -84,16 +85,16 @@ export default function ChangeTestConfigsPage() {
     try {
       if (editing) {
         await changeTestingApi.update(editing.id, input);
-        toast('配置已更新', 'success');
+        toast(t('changeTest.updated'), 'success');
       } else {
         await changeTestingApi.create(input);
-        toast('配置已创建', 'success');
+        toast(t('changeTest.created'), 'success');
       }
       setFormOpen(false);
       setEditing(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '保存失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.saveFailed'), 'error');
     } finally {
       setSaving(false);
     }
@@ -104,11 +105,11 @@ export default function ChangeTestConfigsPage() {
     setDeleting(true);
     try {
       await changeTestingApi.delete(deleteTarget.id);
-      toast('配置已删除', 'success');
+      toast(t('changeTest.deleted'), 'success');
       setDeleteTarget(null);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -117,29 +118,29 @@ export default function ChangeTestConfigsPage() {
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">变更测试配置</h2>
+        <h2 className="text-2xl font-semibold">{t('changeTest.title')}</h2>
         <Button onClick={() => { setEditing(null); setFormOpen(true); }}>
-          <Plus className="h-4 w-4" /> 添加配置
+          <Plus className="h-4 w-4" /> {t('changeTest.create')}
         </Button>
       </div>
 
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : configs.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无变更测试配置</div>
+        <div className="text-center py-12 text-muted-foreground">{t('changeTest.empty')}</div>
       ) : (
         <div className="border rounded-lg overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-muted/50">
               <tr>
                 <th className="text-left px-4 py-3 font-medium w-8"></th>
-                <th className="text-left px-4 py-3 font-medium">名称</th>
-                <th className="text-left px-4 py-3 font-medium">监控目标</th>
-                <th className="text-left px-4 py-3 font-medium">监控ID</th>
-                <th className="text-left px-4 py-3 font-medium">场景数</th>
-                <th className="text-left px-4 py-3 font-medium">状态</th>
-                <th className="text-left px-4 py-3 font-medium">上次触发</th>
-                <th className="text-right px-4 py-3 font-medium">操作</th>
+                <th className="text-left px-4 py-3 font-medium">{t('changeTest.configName')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('changeTest.watchTarget')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('changeTest.watchId')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('changeTest.selectScenarios')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('models.status')}</th>
+                <th className="text-left px-4 py-3 font-medium">{t('changeTest.lastTriggered')}</th>
+                <th className="text-right px-4 py-3 font-medium">{t('models.actions')}</th>
               </tr>
             </thead>
             <tbody>
@@ -178,8 +179,8 @@ export default function ChangeTestConfigsPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除配置"
-        description={`确定要删除变更测试配置「${deleteTarget?.name}」吗？`}
+        title={t('changeTest.deleteConfig')}
+        description={t('changeTest.deleteConfirm').replace('{name}', deleteTarget?.name || '')}
         onConfirm={handleDelete}
         loading={deleting}
       />
@@ -201,20 +202,21 @@ function ConfigRow({
   onEdit: () => void;
   onDelete: () => void;
 }) {
+  const { t, locale } = useI18n();
   return (
     <>
       <tr className="border-t">
         <td className="px-4 py-3">
-          <button onClick={onExpand} className="p-0.5 hover:bg-muted rounded" aria-label="展开详情">
+          <button onClick={onExpand} className="p-0.5 hover:bg-muted rounded">
             {isExpanded ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
           </button>
         </td>
         <td className="px-4 py-3 font-medium">{config.name}</td>
         <td className="px-4 py-3">
-          <Badge variant="secondary">{watchTargetLabels[config.watchTarget] || config.watchTarget}</Badge>
+          <Badge variant="secondary">{watchTargetKeys[config.watchTarget] ? t(watchTargetKeys[config.watchTarget]) : config.watchTarget}</Badge>
         </td>
         <td className="px-4 py-3 text-muted-foreground text-xs font-mono">
-          {config.watchId || '全部'}
+          {config.watchId || t('common.all')}
         </td>
         <td className="px-4 py-3">{scenarioCount}</td>
         <td className="px-4 py-3">
@@ -224,11 +226,11 @@ function ConfigRow({
               config.enabled ? 'bg-green-100 text-green-700 hover:bg-green-200' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
             }`}
           >
-            {config.enabled ? '已启用' : '已禁用'}
+            {config.enabled ? t('changeTest.enabled') : t('changeTest.disabled')}
           </button>
         </td>
         <td className="px-4 py-3 text-muted-foreground text-xs">
-          {config.lastTriggeredAt ? new Date(config.lastTriggeredAt).toLocaleString() : '-'}
+          {config.lastTriggeredAt ? new Date(config.lastTriggeredAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US') : '-'}
         </td>
         <td className="px-4 py-3 text-right">
           <div className="flex justify-end gap-1">
@@ -244,14 +246,14 @@ function ConfigRow({
       {isExpanded && detail && (
         <tr className="border-t bg-muted/30">
           <td colSpan={8} className="px-8 py-4">
-            <p className="text-sm font-medium mb-2">最近变更测试运行</p>
+            <p className="text-sm font-medium mb-2">{t('changeTest.runs')}</p>
             {detail.runs.length === 0 ? (
-              <p className="text-xs text-muted-foreground">暂无运行记录</p>
+              <p className="text-xs text-muted-foreground">{t('changeTest.noRuns')}</p>
             ) : (
               <div className="space-y-1">
                 {detail.runs.map(run => (
                   <div key={run.id} className="flex items-center gap-4 text-xs py-1">
-                    <span className="text-muted-foreground">{new Date(run.createdAt).toLocaleString()}</span>
+                    <span className="text-muted-foreground">{new Date(run.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</span>
                     <Badge variant="secondary">{run.changeType}</Badge>
                     <span className="font-mono text-muted-foreground">{run.testRunId || '-'}</span>
                   </div>
@@ -280,6 +282,7 @@ function ConfigFormDialog({
   const [watchId, setWatchId] = useState('');
   const [selectedScenarioIds, setSelectedScenarioIds] = useState<string[]>([]);
   const [enabled, setEnabled] = useState(true);
+  const { t } = useI18n();
 
   useEffect(() => {
     if (open) {
@@ -311,34 +314,33 @@ function ConfigFormDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle>{editing ? '编辑变更测试配置' : '添加变更测试配置'}</DialogTitle>
+        <DialogTitle>{editing ? t('changeTest.editConfig') : t('changeTest.createConfig')}</DialogTitle>
       </DialogHeader>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label>名称</Label>
-          <Input value={name} onChange={e => setName(e.target.value)} placeholder="配置名称" required />
+          <Label>{t('changeTest.configName')}</Label>
+          <Input value={name} onChange={e => setName(e.target.value)} required />
         </div>
         <div className="space-y-2">
-          <Label>监控目标</Label>
+          <Label>{t('changeTest.watchTarget')}</Label>
           <select
             className="w-full border rounded-md px-3 py-2 text-sm bg-background"
             value={watchTarget}
             onChange={e => setWatchTarget(e.target.value)}
           >
-            <option value="employee">员工</option>
-            <option value="model">模型</option>
-            <option value="tool">工具</option>
-            <option value="prompt">提示词</option>
+            <option value="employee">{t('changeTest.watchEmployee')}</option>
+            <option value="tool">{t('changeTest.watchTool')}</option>
+            <option value="policy">{t('changeTest.watchPolicy')}</option>
           </select>
         </div>
         <div className="space-y-2">
-          <Label>监控ID (留空表示监控全部)</Label>
-          <Input value={watchId} onChange={e => setWatchId(e.target.value)} placeholder="特定实体ID，留空=全部" />
+          <Label>{t('changeTest.watchId')}</Label>
+          <Input value={watchId} onChange={e => setWatchId(e.target.value)} />
         </div>
         <div className="space-y-2">
-          <Label>测试场景</Label>
+          <Label>{t('changeTest.selectScenarios')}</Label>
           {scenarios.length === 0 ? (
-            <p className="text-xs text-muted-foreground">暂无可用测试场景，请先创建测试场景</p>
+            <p className="text-xs text-muted-foreground">{t('testing.noScenariosHint')}</p>
           ) : (
             <div className="border rounded-md max-h-48 overflow-y-auto p-2 space-y-1">
               {scenarios.map(s => (
@@ -355,10 +357,9 @@ function ConfigFormDialog({
               ))}
             </div>
           )}
-          <p className="text-xs text-muted-foreground">已选 {selectedScenarioIds.length} 个场景</p>
         </div>
         <div className="flex items-center gap-2">
-          <Label>启用</Label>
+          <Label>{t('changeTest.enabled')}</Label>
           <button
             type="button"
             onClick={() => setEnabled(!enabled)}
@@ -374,9 +375,9 @@ function ConfigFormDialog({
           </button>
         </div>
         <DialogFooter>
-          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>取消</Button>
+          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>{t('common.cancel')}</Button>
           <Button type="submit" disabled={saving || selectedScenarioIds.length === 0}>
-            {saving ? '保存中...' : '保存'}
+            {saving ? t('common.saving') : t('common.save')}
           </Button>
         </DialogFooter>
       </form>

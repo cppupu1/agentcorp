@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { observabilityApi, type HealthStats } from '@/api/client';
 import { Activity, AlertTriangle, CheckCircle, Zap } from 'lucide-react';
+import { useI18n } from '@/i18n';
 
 export default function HealthDashboard() {
   const [stats, setStats] = useState<HealthStats | null>(null);
+  const { t } = useI18n();
 
   useEffect(() => {
     observabilityApi.getHealthStats()
@@ -14,10 +16,10 @@ export default function HealthDashboard() {
   if (!stats) return null;
 
   const cards = [
-    { label: '执行中任务', value: stats.activeTasks, icon: Activity, color: 'text-blue-500' },
-    { label: '24h 失败', value: stats.failedTasksLast24h, icon: AlertTriangle, color: 'text-red-500' },
-    { label: '24h 完成', value: stats.completedTasksLast24h, icon: CheckCircle, color: 'text-green-500' },
-    { label: 'Token 总量', value: stats.totalTokenUsage.toLocaleString(), icon: Zap, color: 'text-yellow-500' },
+    { label: t('health.activeTasks'), value: stats.activeTasks, icon: Activity, color: 'text-blue-500' },
+    { label: t('health.failed24h'), value: stats.failedTasksLast24h, icon: AlertTriangle, color: 'text-red-500' },
+    { label: t('health.completed24h'), value: stats.completedTasksLast24h, icon: CheckCircle, color: 'text-green-500' },
+    { label: t('health.totalTokens'), value: stats.totalTokenUsage.toLocaleString(), icon: Zap, color: 'text-yellow-500' },
   ];
 
   return (

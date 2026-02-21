@@ -4,7 +4,8 @@ import { ToastProvider, useToast } from '@/components/ui/toast';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { SystemStatusProvider, useSystemStatus } from '@/contexts/SystemStatusContext';
 import { systemApi, notificationsApi } from '@/api/client';
-import { Bell } from 'lucide-react';
+import { Bell, Languages } from 'lucide-react';
+import { useI18n, type TranslationKeys } from '@/i18n';
 import ModelsPage from '@/pages/models/ModelsPage';
 import ToolsPage from '@/pages/tools/ToolsPage';
 import EmployeesPage from '@/pages/employees/EmployeesPage';
@@ -28,30 +29,37 @@ import ChangeTestConfigsPage from '@/pages/testing/ChangeTestConfigsPage';
 import TestingPage from '@/pages/testing/TestingPage';
 import HelpPage from '@/pages/help/HelpPage';
 import HrAssistantPage from '@/pages/hr/HrAssistantPage';
+import QualityDashboardPage from '@/pages/quality/QualityDashboardPage';
+import RoiReviewPage from '@/pages/roi/RoiReviewPage';
+import ImprovementPage from '@/pages/improvement/ImprovementPage';
 import './index.css';
 
-const navItems = [
-  { path: '/', label: '首页', icon: '🏠' },
-  { path: '/models', label: '模型', icon: '🧠' },
-  { path: '/tools', label: '工具', icon: '🔧' },
-  { path: '/hr', label: 'HR助手', icon: '🤖' },
-  { path: '/employees', label: '员工', icon: '👤' },
-  { path: '/teams', label: '团队', icon: '👥' },
-  { path: '/tasks', label: '任务', icon: '📋' },
-  { path: '/triggers', label: '触发器', icon: '⏰' },
-  { path: '/policies', label: '策略', icon: '📜' },
-  { path: '/knowledge', label: '知识库', icon: '📚' },
-  { path: '/incidents', label: '事故', icon: '🚨' },
-  { path: '/deployment', label: '上线', icon: '🚀' },
-  { path: '/testing', label: '测试', icon: '🧪' },
-  { path: '/change-tests', label: '变更测试', icon: '🔄' },
-  { path: '/settings', label: '设置', icon: '⚙️' },
-  { path: '/help', label: '帮助', icon: '❓' },
+const navItems: { path: string; labelKey: TranslationKeys; icon: string }[] = [
+  { path: '/', labelKey: 'nav.home', icon: '🏠' },
+  { path: '/models', labelKey: 'nav.models', icon: '🧠' },
+  { path: '/tools', labelKey: 'nav.tools', icon: '🔧' },
+  { path: '/hr', labelKey: 'nav.hr', icon: '🤖' },
+  { path: '/employees', labelKey: 'nav.employees', icon: '👤' },
+  { path: '/teams', labelKey: 'nav.teams', icon: '👥' },
+  { path: '/tasks', labelKey: 'nav.tasks', icon: '📋' },
+  { path: '/triggers', labelKey: 'nav.triggers', icon: '⏰' },
+  { path: '/policies', labelKey: 'nav.policies', icon: '📜' },
+  { path: '/knowledge', labelKey: 'nav.knowledge', icon: '📚' },
+  { path: '/quality', labelKey: 'nav.quality', icon: '📊' },
+  { path: '/roi', labelKey: 'nav.roi', icon: '💰' },
+  { path: '/improvement', labelKey: 'nav.improvement', icon: '🔬' },
+  { path: '/incidents', labelKey: 'nav.incidents', icon: '🚨' },
+  { path: '/deployment', labelKey: 'nav.deployment', icon: '🚀' },
+  { path: '/testing', labelKey: 'nav.testing', icon: '🧪' },
+  { path: '/change-tests', labelKey: 'nav.changeTests', icon: '🔄' },
+  { path: '/settings', labelKey: 'nav.settings', icon: '⚙️' },
+  { path: '/help', labelKey: 'nav.help', icon: '❓' },
 ];
 
 function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
+  const { t } = useI18n();
   return (
-    <nav className="flex-1 p-2 space-y-1" aria-label="主导航">
+    <nav className="flex-1 p-2 space-y-1" aria-label="Navigation">
       {navItems.map((item) => (
         <NavLink
           key={item.path}
@@ -67,7 +75,7 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
           }
         >
           <span aria-hidden="true">{item.icon}</span>
-          <span>{item.label}</span>
+          <span>{t(item.labelKey)}</span>
         </NavLink>
       ))}
     </nav>
@@ -77,6 +85,7 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
 function NotificationBell() {
   const [count, setCount] = useState(0);
   const navigate = useNavigate();
+  const { t } = useI18n();
 
   useEffect(() => {
     const fetchCount = () => {
@@ -91,7 +100,7 @@ function NotificationBell() {
     <button
       onClick={() => navigate('/notifications')}
       className="relative p-1.5 rounded-md hover:bg-sidebar-accent/50 transition-colors"
-      aria-label="通知"
+      aria-label={t('nav.notifications')}
     >
       <Bell className="h-4 w-4" />
       {count > 0 && (
@@ -106,6 +115,7 @@ function NotificationBell() {
 function EmergencyButton() {
   const { status, refresh } = useSystemStatus();
   const { toast } = useToast();
+  const { t } = useI18n();
   const [loading, setLoading] = useState(false);
 
   const handleToggle = async () => {
@@ -113,14 +123,14 @@ function EmergencyButton() {
     try {
       if (status === 'frozen') {
         await systemApi.emergencyResume();
-        toast('系统已恢复正常', 'success');
+        toast(t('common.operationSuccess'), 'success');
       } else {
         await systemApi.emergencyStop();
-        toast('系统已紧急冻结', 'success');
+        toast(t('common.operationSuccess'), 'success');
       }
       await refresh();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '操作失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -136,18 +146,32 @@ function EmergencyButton() {
           : 'bg-red-600 hover:bg-red-700 text-white'
       } disabled:opacity-50`}
     >
-      {loading ? '...' : status === 'frozen' ? '解除冻结' : '紧急停止'}
+      {loading ? '...' : status === 'frozen' ? t('app.emergencyResume') : t('app.emergencyStop')}
     </button>
   );
 }
 
 function FrozenBanner() {
   const { status } = useSystemStatus();
+  const { t } = useI18n();
   if (status !== 'frozen') return null;
   return (
     <div className="bg-red-600 text-white text-center py-1.5 text-sm font-medium">
-      系统已冻结 — 所有任务执行已暂停，新任务创建已禁止
+      {t('app.frozen')}
     </div>
+  );
+}
+
+function LanguageToggle() {
+  const { locale, setLocale } = useI18n();
+  return (
+    <button
+      onClick={() => setLocale(locale === 'zh' ? 'en' : 'zh')}
+      className="p-1.5 rounded-md hover:bg-sidebar-accent/50 transition-colors text-xs font-medium"
+      title={locale === 'zh' ? 'English' : '中文'}
+    >
+      <Languages className="h-4 w-4" />
+    </button>
   );
 }
 
@@ -158,12 +182,13 @@ function MobileHeader() {
       <div className="flex items-center justify-between px-4 py-3">
         <h1 className="text-lg font-semibold">AgentCorp</h1>
         <div className="flex items-center gap-2">
+          <LanguageToggle />
           <NotificationBell />
           <EmergencyButton />
           <button
             onClick={() => setOpen(!open)}
             className="p-1 rounded-md hover:bg-sidebar-accent/50"
-            aria-label="切换导航菜单"
+            aria-label="Toggle navigation"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               {open ? (
@@ -190,6 +215,7 @@ function DesktopSidebar() {
       <div className="p-4 border-b border-border flex items-center justify-between">
         <h1 className="text-lg font-semibold text-sidebar-foreground">AgentCorp</h1>
         <div className="flex items-center gap-1">
+          <LanguageToggle />
           <NotificationBell />
           <EmergencyButton />
         </div>
@@ -200,12 +226,13 @@ function DesktopSidebar() {
 }
 
 function NotFoundPage() {
+  const { t } = useI18n();
   return (
     <div className="flex flex-col items-center justify-center h-full p-8 text-center">
       <h2 className="text-4xl font-bold text-muted-foreground mb-2">404</h2>
-      <p className="text-sm text-muted-foreground mb-4">页面不存在</p>
+      <p className="text-sm text-muted-foreground mb-4">{t('app.notFound')}</p>
       <a href="/tasks" className="px-4 py-2 text-sm rounded-md bg-primary text-primary-foreground hover:bg-primary/90">
-        返回首页
+        {t('app.backHome')}
       </a>
     </div>
   );
@@ -238,6 +265,9 @@ export default function App() {
                   <Route path="/tasks/new" element={<TaskCreatePage />} />
                   <Route path="/tasks/:id" element={<TaskDetailPage />} />
                   <Route path="/triggers" element={<TriggersPage />} />
+                  <Route path="/quality" element={<QualityDashboardPage />} />
+                  <Route path="/roi" element={<RoiReviewPage />} />
+                  <Route path="/improvement" element={<ImprovementPage />} />
                   <Route path="/incidents" element={<IncidentsPage />} />
                   <Route path="/incidents/:id" element={<IncidentDetailPage />} />
                   <Route path="/policies" element={<PoliciesPage />} />

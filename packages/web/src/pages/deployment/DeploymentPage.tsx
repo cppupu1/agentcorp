@@ -10,15 +10,16 @@ import { Label } from '@/components/ui/label';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
+import { useI18n } from '@/i18n';
 import { Plus, ChevronUp, ChevronDown, ClipboardCheck, Trash2, Loader2, ChevronRight } from 'lucide-react';
 
 const STAGES = ['simulation', 'shadow', 'limited_auto', 'full_auto'] as const;
 
-const stageLabel: Record<string, string> = {
-  simulation: '模拟',
-  shadow: '影子',
-  limited_auto: '限制自动',
-  full_auto: '完全自动',
+const stageLabelKeys: Record<string, string> = {
+  simulation: 'deployment.stageSimulation',
+  shadow: 'deployment.stageShadow',
+  limited_auto: 'deployment.stageLimitedAuto',
+  full_auto: 'deployment.stageFullAuto',
 };
 
 const stageBadge: Record<string, { variant: 'secondary' | 'default' | 'warning' | 'success'; }> = {
@@ -29,9 +30,11 @@ const stageBadge: Record<string, { variant: 'secondary' | 'default' | 'warning' 
 };
 
 function StageIndicator({ current }: { current: string }) {
+  const { t } = useI18n();
+  const stageLabel = (s: string) => t(stageLabelKeys[s] as any);
   const idx = STAGES.indexOf(current as typeof STAGES[number]);
   return (
-    <div className="flex items-center gap-1" role="group" aria-label={`当前阶段: ${stageLabel[current]}`}>
+    <div className="flex items-center gap-1" role="group" aria-label={`${t('deployment.currentStage')} ${stageLabel(current)}`}>
       {STAGES.map((s, i) => (
         <div key={s} className="flex items-center gap-1">
           <div
@@ -43,7 +46,7 @@ function StageIndicator({ current }: { current: string }) {
                 : 'bg-green-500'
                 : 'bg-muted'
             }`}
-            title={stageLabel[s]}
+            title={stageLabel(s)}
           />
           {i < STAGES.length - 1 && (
             <div className={`w-4 h-0.5 ${i < idx ? 'bg-muted-foreground/40' : 'bg-muted'}`} />
@@ -66,13 +69,15 @@ export default function DeploymentPage() {
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [teams, setTeams] = useState<Team[]>([]);
   const { toast } = useToast();
+  const { t } = useI18n();
+  const stageLabel = (s: string) => t(stageLabelKeys[s] as any);
 
   const load = useCallback(async () => {
     try {
       const res = await deploymentApi.list();
       setStages(res.data);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
       setLoading(false);
     }
@@ -87,7 +92,7 @@ export default function DeploymentPage() {
       setDetail(res.data);
       setExpandedId(id);
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '加载详情失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     }
   };
 
@@ -101,17 +106,17 @@ export default function DeploymentPage() {
       if (action === 'evaluate') {
         const lastEval = res.data.evaluations[0];
         if (lastEval?.result === 'promoted') {
-          toast(`已晋升至 ${stageLabel[lastEval.toStage]}`, 'success');
+          toast(t('deployment.promoted', { stage: stageLabel(lastEval.toStage) }), 'success');
         } else if (lastEval?.result === 'rejected') {
-          toast(`未满足晋升条件: ${lastEval.reason}`, 'error');
+          toast(t('deployment.notPromoted') + ': ' + lastEval.reason, 'error');
         }
       } else {
-        toast(action === 'promote' ? '已手动晋升' : '已手动降级', 'success');
+        toast(action === 'promote' ? t('deployment.manualPromoted') : t('deployment.manualDemoted'), 'success');
       }
       if (expandedId === id) { setDetail(res.data); }
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '操作失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     } finally {
       setActionLoading(null);
     }
@@ -122,12 +127,12 @@ export default function DeploymentPage() {
     setDeleting(true);
     try {
       await deploymentApi.delete(deleteTarget.id);
-      toast('已删除', 'success');
+      toast(t('incidents.deleted'), 'success');
       setDeleteTarget(null);
       if (expandedId === deleteTarget.id) { setExpandedId(null); setDetail(null); }
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '删除失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.deleteFailed'), 'error');
     } finally {
       setDeleting(false);
     }
@@ -136,27 +141,27 @@ export default function DeploymentPage() {
   const handleCreate = async (employeeId: string, teamId?: string) => {
     try {
       await deploymentApi.create({ employeeId, teamId });
-      toast('部署阶段已创建', 'success');
+      toast(t('deployment.created'), 'success');
       setCreateOpen(false);
       load();
     } catch (err: unknown) {
-      toast(err instanceof Error ? err.message : '创建失败', 'error');
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
     }
   };
 
   return (
     <div className="p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">上线管理</h2>
+        <h2 className="text-2xl font-semibold">{t('deployment.title')}</h2>
         <Button onClick={() => setCreateOpen(true)}>
-          <Plus className="h-4 w-4" /> 新建部署
+          <Plus className="h-4 w-4" /> {t('deployment.create')}
         </Button>
       </div>
 
       {loading ? (
         <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
       ) : stages.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">暂无部署阶段记录</div>
+        <div className="text-center py-12 text-muted-foreground">{t('deployment.empty')}</div>
       ) : (
         <div className="space-y-3">
           {stages.map(s => {
@@ -180,13 +185,13 @@ export default function DeploymentPage() {
                     </div>
                   </div>
                   <StageIndicator current={s.stage} />
-                  <Badge variant={badge.variant}>{stageLabel[s.stage]}</Badge>
+                  <Badge variant={badge.variant}>{stageLabel(s.stage)}</Badge>
                   <div className="flex items-center gap-1" onClick={e => e.stopPropagation()}>
                     <Button
                       variant="ghost" size="sm"
                       onClick={() => handleAction(s.id, 'evaluate')}
                       disabled={actionLoading === `${s.id}-evaluate` || s.stage === 'full_auto'}
-                      title="评估晋升"
+                      title={t('deployment.evaluate')}
                     >
                       {actionLoading === `${s.id}-evaluate` ? <Loader2 className="h-3 w-3 animate-spin" /> : <ClipboardCheck className="h-3 w-3" />}
                     </Button>
@@ -194,7 +199,7 @@ export default function DeploymentPage() {
                       variant="ghost" size="sm"
                       onClick={() => handleAction(s.id, 'promote')}
                       disabled={actionLoading === `${s.id}-promote` || s.stage === 'full_auto'}
-                      title="手动晋升"
+                      title={t('deployment.promote')}
                     >
                       {actionLoading === `${s.id}-promote` ? <Loader2 className="h-3 w-3 animate-spin" /> : <ChevronUp className="h-3 w-3" />}
                     </Button>
@@ -202,11 +207,11 @@ export default function DeploymentPage() {
                       variant="ghost" size="sm"
                       onClick={() => handleAction(s.id, 'demote')}
                       disabled={actionLoading === `${s.id}-demote` || s.stage === 'simulation'}
-                      title="手动降级"
+                      title={t('deployment.demote')}
                     >
                       {actionLoading === `${s.id}-demote` ? <Loader2 className="h-3 w-3 animate-spin" /> : <ChevronDown className="h-3 w-3" />}
                     </Button>
-                    <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(s)} title="删除">
+                    <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(s)} title={t('common.delete')}>
                       <Trash2 className="h-3 w-3 text-destructive" />
                     </Button>
                   </div>
@@ -214,9 +219,9 @@ export default function DeploymentPage() {
 
                 {isExpanded && detail && (
                   <div className="border-t px-4 py-3 bg-muted/10">
-                    <h4 className="text-sm font-medium mb-2">评估历史</h4>
+                    <h4 className="text-sm font-medium mb-2">{t('deployment.evalHistory')}</h4>
                     {detail.evaluations.length === 0 ? (
-                      <p className="text-xs text-muted-foreground">暂无评估记录</p>
+                      <p className="text-xs text-muted-foreground">{t('deployment.noEvals')}</p>
                     ) : (
                       <div className="space-y-2">
                         {detail.evaluations.map(ev => (
@@ -248,8 +253,8 @@ export default function DeploymentPage() {
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}
-        title="删除部署阶段"
-        description={`确定要删除「${deleteTarget?.employeeName}」的部署阶段记录吗？`}
+        title={t('deployment.deleteStage')}
+        description={`${deleteTarget?.employeeName}`}
         onConfirm={handleDelete}
         loading={deleting}
       />
@@ -258,11 +263,13 @@ export default function DeploymentPage() {
 }
 
 function EvaluationRow({ evaluation: ev }: { evaluation: StageEvaluation }) {
+  const { t, locale } = useI18n();
+  const stageLabel = (s: string) => t(stageLabelKeys[s] as any);
   const resultBadge = ev.result === 'promoted'
-    ? { variant: 'success' as const, label: '通过' }
+    ? { variant: 'success' as const, label: t('deployment.evalPromoted') }
     : ev.result === 'rejected'
-    ? { variant: 'destructive' as const, label: '未通过' }
-    : { variant: 'secondary' as const, label: '待定' };
+    ? { variant: 'destructive' as const, label: t('deployment.evalRejected') }
+    : { variant: 'secondary' as const, label: t('deployment.evalPending') };
 
   const metrics = ev.metrics as { taskCount?: number; completedCount?: number; successRate?: number };
 
@@ -271,16 +278,16 @@ function EvaluationRow({ evaluation: ev }: { evaluation: StageEvaluation }) {
       <Badge variant={resultBadge.variant}>{resultBadge.label}</Badge>
       <div className="flex-1 min-w-0">
         <div className="text-muted-foreground">
-          {stageLabel[ev.fromStage]} → {stageLabel[ev.toStage]}
+          {stageLabel(ev.fromStage)} &rarr; {stageLabel(ev.toStage)}
         </div>
         {metrics.taskCount !== undefined && (
           <div className="text-muted-foreground mt-0.5">
-            任务: {metrics.completedCount ?? 0}/{metrics.taskCount ?? 0}, 成功率: {metrics.successRate !== undefined ? (metrics.successRate * 100).toFixed(1) + '%' : '-'}
+            {t('deployment.evalTask', { total: metrics.taskCount ?? 0, success: metrics.completedCount ?? 0 })}{metrics.successRate !== undefined ? (metrics.successRate * 100).toFixed(1) + '%' : '-'}
           </div>
         )}
         {ev.reason && <div className="mt-0.5">{ev.reason}</div>}
       </div>
-      <span className="text-muted-foreground whitespace-nowrap">{new Date(ev.createdAt).toLocaleString()}</span>
+      <span className="text-muted-foreground whitespace-nowrap">{new Date(ev.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</span>
     </div>
   );
 }
@@ -298,6 +305,7 @@ function CreateDeploymentDialog({
   const [employeeId, setEmployeeId] = useState('');
   const [teamId, setTeamId] = useState('');
   const [loaded, setLoaded] = useState(false);
+  const { t } = useI18n();
 
   useEffect(() => {
     if (open && !loaded) {
@@ -314,35 +322,35 @@ function CreateDeploymentDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle>新建部署阶段</DialogTitle>
+        <DialogTitle>{t('deployment.createDialog')}</DialogTitle>
       </DialogHeader>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label>员工</Label>
+          <Label>{t('deployment.selectEmployee')}</Label>
           <select
             className="w-full border rounded-md px-3 py-2 text-sm bg-background"
             value={employeeId}
             onChange={e => setEmployeeId(e.target.value)}
             required
           >
-            <option value="">请选择员工</option>
+            <option value="">{t('deployment.selectEmployeePlaceholder')}</option>
             {employees.map(emp => <option key={emp.id} value={emp.id}>{emp.name}</option>)}
           </select>
         </div>
         <div className="space-y-2">
-          <Label>团队 (可选)</Label>
+          <Label>{t('deployment.selectTeam')}</Label>
           <select
             className="w-full border rounded-md px-3 py-2 text-sm bg-background"
             value={teamId}
             onChange={e => setTeamId(e.target.value)}
           >
-            <option value="">不关联团队</option>
-            {teams.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
+            <option value="">{t('deployment.noTeam')}</option>
+            {teams.map(tm => <option key={tm.id} value={tm.id}>{tm.name}</option>)}
           </select>
         </div>
         <DialogFooter>
-          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>取消</Button>
-          <Button type="submit" disabled={!employeeId}>创建</Button>
+          <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>{t('common.cancel')}</Button>
+          <Button type="submit" disabled={!employeeId}>{t('common.create')}</Button>
         </DialogFooter>
       </form>
     </Dialog>
