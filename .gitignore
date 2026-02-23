@@ -6,4 +6,7 @@ data/
 *.db-journal
 .DS_Store
 e2e-screenshots/
+screenshots/
+test-results/
+visual-audit.mjs
 CLAUDE.md
