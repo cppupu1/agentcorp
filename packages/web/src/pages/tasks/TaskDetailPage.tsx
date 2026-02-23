@@ -606,6 +606,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       assigneeId: s.assigneeId, assigneeName: s.assigneeName,
     }))
   );
+  const [toolActivity, setToolActivity] = useState<Record<string, string>>({});
   const [logs, setLogs] = useState<Array<{ time: string; text: string }>>([]);
   const onStatusChangeRef = useRef(onStatusChange);
   onStatusChangeRef.current = onStatusChange;
@@ -665,6 +666,16 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       addLog(data.timestamp, t('taskDetail.errorProtection').replace('{message}', data.message));
     });
 
+    es.addEventListener('subtask_tool_call', (e) => {
+      const data = JSON.parse(e.data);
+      setToolActivity(prev => ({ ...prev, [data.subtaskId]: data.toolName }));
+    });
+
+    es.addEventListener('subtask_tool_result', (e) => {
+      const data = JSON.parse(e.data);
+      setToolActivity(prev => { const next = { ...prev }; delete next[data.subtaskId]; return next; });
+    });
+
     es.addEventListener('task_status', (e) => {
       const data = JSON.parse(e.data);
       if (data.status === 'completed' || data.status === 'failed') {
@@ -705,13 +716,16 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       </div>
       <div className="space-y-2">
         {subs.map(st => (
-          <div key={st.id} data-testid={`subtask-item-${st.id}`} className="rounded-2xl bg-muted/40 p-4 border border-border/40 flex items-center gap-3">
+          <div key={st.id} data-testid={`subtask-item-${st.id}`} className={`rounded-2xl bg-muted/40 p-4 border border-border/40 flex items-center gap-3${st.status === 'running' ? ' animate-subtask-pulse' : ''}`}>
             <Badge variant={st.status === 'completed' ? 'default' : st.status === 'running' ? 'secondary' : st.status === 'failed' ? 'destructive' : 'outline'} className="text-xs">
               {st.status === 'completed' ? t('taskDetail.statusCompleted') : st.status === 'running' ? t('taskDetail.statusRunning') : st.status === 'failed' ? t('taskDetail.statusFailed') : t('taskDetail.statusPending')}
             </Badge>
             <div className="flex-1">
               <p className="text-sm font-medium">{st.title}</p>
               <p className="text-xs text-muted-foreground">{st.assigneeName || t('taskDetail.unassigned')}</p>
+              {st.status === 'running' && toolActivity[st.id] && (
+                <p className="text-xs text-primary mt-1">{t('taskDetail.usingTool').replace('{tool}', toolActivity[st.id])}</p>
+              )}
               {st.error && <p className="text-xs text-destructive mt-1">{st.error}</p>}
               {st.output && <p className="text-xs text-muted-foreground mt-1">{st.output}</p>}
             </div>

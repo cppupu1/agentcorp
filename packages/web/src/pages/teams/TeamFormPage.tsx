@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate, useLocation } from 'react-router';
 import { teamsApi, employeesApi, toolsApi, policiesApi, type Employee, type Tool, type TeamDetail, type PolicyPackage, type TeamPolicy } from '@/api/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -23,8 +23,10 @@ export default function TeamFormPage() {
   const { id } = useParams<{ id: string }>();
   const isEdit = !!id;
   const navigate = useNavigate();
+  const location = useLocation();
   const { toast } = useToast();
   const { t } = useI18n();
+  const prefill = (location.state as any)?.magicPrefill;
 
   const [loading, setLoading] = useState(isEdit);
   const [saving, setSaving] = useState(false);
@@ -34,11 +36,11 @@ export default function TeamFormPage() {
   const [teamPolicies, setTeamPolicies] = useState<TeamPolicy[]>([]);
 
   // Form state
-  const [name, setName] = useState('');
-  const [description, setDescription] = useState('');
-  const [scenario, setScenario] = useState('');
+  const [name, setName] = useState(prefill?.name ?? '');
+  const [description, setDescription] = useState(prefill?.description ?? '');
+  const [scenario, setScenario] = useState(prefill?.scenario ?? '');
   const [pmEmployeeId, setPmEmployeeId] = useState('');
-  const [collaborationMode, setCollaborationMode] = useState('free');
+  const [collaborationMode, setCollaborationMode] = useState(prefill?.collaborationMode ?? 'free');
   const [members, setMembers] = useState<Array<{ employeeId: string; role: string }>>([]);
   const [selectedToolIds, setSelectedToolIds] = useState<Set<string>>(new Set());
 

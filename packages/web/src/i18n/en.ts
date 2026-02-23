@@ -1003,4 +1003,36 @@ export const en: Record<keyof typeof zh, string> = {
   'settings.webhookEmptyDesc': 'Configure webhooks to receive system event notifications',
   'incidents.emptyDesc': 'Great! Your AI team is running smoothly',
   'home.noTasksDesc': 'Create a task to start collaborating',
+
+  // magic input
+  'magic.placeholder.task': 'Describe the task you want to accomplish, AI will help fill the form...',
+  'magic.placeholder.team': 'Describe the team you want to build, AI will help fill the form...',
+  'magic.parsing': 'Parsing...',
+  'magic.parseFailed': 'AI parsing failed, please fill in manually',
+
+  // execution animation
+  'taskDetail.usingTool': 'Calling: {tool}',
+
+  // employee growth
+  'employees.level_expert': 'Expert',
+  'employees.level_senior': 'Senior',
+  'employees.level_intermediate': 'Intermediate',
+  'employees.level_junior': 'Junior',
+  'employees.taskCount': '{count} tasks',
+
+  // policy templates
+  'policies.tplTitle': 'Start from Template',
+  'policies.tplCodeReview': 'Code Review Standards',
+  'policies.tplCodeReviewDesc': 'Rules for code quality, security, and performance review',
+  'policies.tplDataSecurity': 'Data Security Policy',
+  'policies.tplDataSecurityDesc': 'Rules for data access, encryption, and privacy protection',
+  'policies.fromTemplate': 'Use Template',
+
+  // kb templates
+  'kb.tplTitle': 'Start from Template',
+  'kb.tplProductFAQ': 'Product FAQ',
+  'kb.tplProductFAQDesc': 'Common product questions and answers knowledge base',
+  'kb.tplTechDocs': 'Technical Docs',
+  'kb.tplTechDocsDesc': 'Technical architecture and development standards documentation',
+  'kb.fromTemplate': 'Use Template',
 };

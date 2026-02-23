@@ -27,6 +27,7 @@ export default function KnowledgeBasesPage() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [expandedDetail, setExpandedDetail] = useState<KnowledgeBaseDetail | null>(null);
   const [showCreateDialog, setShowCreateDialog] = useState(false);
+  const [createPrefill, setCreatePrefill] = useState<{ name: string; description: string } | null>(null);
   const [editTarget, setEditTarget] = useState<KnowledgeBase | null>(null);
   const [deleteTarget, setDeleteTarget] = useState<KnowledgeBase | null>(null);
   const [deleting, setDeleting] = useState(false);
@@ -137,7 +138,24 @@ export default function KnowledgeBasesPage() {
       </div>
 
       {kbs.length === 0 ? (
-        <EmptyState icon={<BookOpen className="h-10 w-10" />} title={t('kb.empty')} description={t('kb.emptyDesc')} action={<Button onClick={() => setShowCreateDialog(true)}><Plus className="h-4 w-4" /> {t('kb.create')}</Button>} />
+        <div className="space-y-6">
+          <EmptyState icon={<BookOpen className="h-10 w-10" />} title={t('kb.empty')} description={t('kb.emptyDesc')} action={<Button onClick={() => { setCreatePrefill(null); setShowCreateDialog(true); }}><Plus className="h-4 w-4" /> {t('kb.create')}</Button>} />
+          <div>
+            <p className="text-sm font-medium text-muted-foreground mb-3">{t('kb.tplTitle')}</p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {[
+                { name: t('kb.tplProductFAQ'), desc: t('kb.tplProductFAQDesc') },
+                { name: t('kb.tplTechDocs'), desc: t('kb.tplTechDocsDesc') },
+              ].map(tpl => (
+                <button key={tpl.name} className="text-left bg-card rounded-2xl p-4 border border-dashed border-primary/30 hover:border-primary/60 hover:bg-primary/5 transition-all" onClick={() => { setCreatePrefill({ name: tpl.name, description: tpl.desc }); setShowCreateDialog(true); }}>
+                  <p className="font-medium text-sm">{tpl.name}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{tpl.desc}</p>
+                  <span className="text-xs text-primary mt-2 inline-block">{t('kb.fromTemplate')}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       ) : (
         <div className="space-y-3">
           {kbs.map(kb => (
@@ -234,8 +252,9 @@ export default function KnowledgeBasesPage() {
       {/* Create/Edit KB Dialog */}
       <KBFormDialog
         open={showCreateDialog || !!editTarget}
-        onClose={() => { setShowCreateDialog(false); setEditTarget(null); }}
+        onClose={() => { setShowCreateDialog(false); setEditTarget(null); setCreatePrefill(null); }}
         editTarget={editTarget}
+        prefill={createPrefill}
         onSuccess={() => {
           setShowCreateDialog(false);
           setEditTarget(null);
@@ -285,10 +304,11 @@ export default function KnowledgeBasesPage() {
 
 // ---- KB Create/Edit Dialog ----
 
-function KBFormDialog({ open, onClose, editTarget, onSuccess }: {
+function KBFormDialog({ open, onClose, editTarget, prefill, onSuccess }: {
   open: boolean;
   onClose: () => void;
   editTarget: KnowledgeBase | null;
+  prefill?: { name: string; description: string } | null;
   onSuccess: () => void;
 }) {
   const [name, setName] = useState('');
@@ -302,10 +322,10 @@ function KBFormDialog({ open, onClose, editTarget, onSuccess }: {
       setName(editTarget.name);
       setDescription(editTarget.description || '');
     } else {
-      setName('');
-      setDescription('');
+      setName(prefill?.name ?? '');
+      setDescription(prefill?.description ?? '');
     }
-  }, [editTarget, open]);
+  }, [editTarget, prefill, open]);
 
   const handleSubmit = async () => {
     if (!name.trim()) return;

@@ -2,6 +2,8 @@ import type { FastifyInstance } from 'fastify';
 import { AppError } from '../errors.js';
 import * as employeeService from '../services/employees.js';
 import { triggerChangeTests } from '../services/change-testing.js';
+import { db, employees } from '@agentcorp/db';
+import { sql } from 'drizzle-orm';
 
 interface EmployeeBody {
   name?: string;
@@ -49,6 +51,22 @@ export function registerEmployeeRoutes(app: FastifyInstance) {
   // Tags
   app.get('/api/employees/tags', async () => {
     return { data: await employeeService.listTags() };
+  });
+
+  // Growth stats
+  app.get('/api/employees/growth-stats', async () => {
+    const stats = await db.select({
+      employeeId: employees.id,
+      overallScore: sql<number | null>`(
+        SELECT overall_score FROM employee_competency_scores
+        WHERE employee_id = ${employees.id}
+        ORDER BY period DESC LIMIT 1
+      )`,
+      taskCount: sql<number>`(
+        SELECT count(*) FROM subtasks WHERE assignee_id = ${employees.id}
+      )`,
+    }).from(employees);
+    return { data: stats };
   });
 
   // Export (before /:id to avoid conflict)

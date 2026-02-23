@@ -9,6 +9,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { EmptyState } from '@/components/ui/empty-state';
 import { Plus, Trash2, Loader2, Search, Clock, ClipboardList } from 'lucide-react';
 import { useI18n } from '@/i18n';
+import { MagicInput } from '@/components/MagicInput';
 
 const STATUS_KEYS: Record<string, { key: string; variant: 'default' | 'secondary' | 'outline' | 'destructive' | 'success' | 'warning' }> = {
   draft: { key: 'tasks.statusDraft', variant: 'secondary' },
@@ -77,6 +78,8 @@ export default function TasksPage() {
           <Plus className="h-4 w-4" /> {t('tasks.create')}
         </Button>
       </div>
+
+      <MagicInput type="task" />
 
       <div className="flex gap-3 mb-5">
         <select className="h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20" value={filterTeam} onChange={e => setFilterTeam(e.target.value)}>

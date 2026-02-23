@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate, useLocation } from 'react-router';
 import { tasksApi, teamsApi, employeesApi, type Team, type Employee } from '@/api/client';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -11,15 +11,17 @@ import { Link } from 'react-router';
 
 export default function TaskCreatePage() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { toast } = useToast();
   const { t } = useI18n();
+  const prefill = (location.state as any)?.magicPrefill;
   const [createMode, setCreateMode] = useState<'quick' | 'team'>('quick');
   const [teams, setTeams] = useState<Team[]>([]);
   const [teamId, setTeamId] = useState('');
   const [allEmployees, setAllEmployees] = useState<Employee[]>([]);
   const [pmEmployeeId, setPmEmployeeId] = useState('');
-  const [description, setDescription] = useState('');
-  const [mode, setMode] = useState('suggest');
+  const [description, setDescription] = useState(prefill?.description ?? '');
+  const [mode, setMode] = useState(prefill?.mode ?? 'suggest');
   const [saving, setSaving] = useState(false);
 
   useEffect(() => {

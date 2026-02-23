@@ -205,6 +205,15 @@ html {
 .state-layer:hover::after { opacity: 0.08; }
 .state-layer:active::after { opacity: 0.12; }
 
+/* Subtask pulse animation */
+@keyframes subtaskPulse {
+  0%, 100% { box-shadow: 0 0 0 0 oklch(0.55 0.15 260 / 0.3); }
+  50% { box-shadow: 0 0 0 6px oklch(0.55 0.15 260 / 0); }
+}
+.animate-subtask-pulse {
+  animation: subtaskPulse 2s ease-in-out infinite;
+}
+
 /* Global transition utility */
 .md-transition {
   transition-property: all;

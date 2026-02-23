@@ -26,6 +26,7 @@ export default function PoliciesPage() {
   const [detailLoading, setDetailLoading] = useState(false);
   const [formOpen, setFormOpen] = useState(false);
   const [editing, setEditing] = useState<PolicyPackage | null>(null);
+  const [prefill, setPrefill] = useState<{ name: string; description: string; rules: unknown[] } | null>(null);
   const [versionFormOpen, setVersionFormOpen] = useState(false);
   const [versionTarget, setVersionTarget] = useState<string | null>(null);
   const [deleteTarget, setDeleteTarget] = useState<PolicyPackage | null>(null);
@@ -151,7 +152,24 @@ export default function PoliciesPage() {
       {loading ? (
         <div className="space-y-3">{Array.from({ length: 3 }, (_, i) => <Skeleton key={i} className="h-16 rounded-2xl" />)}</div>
       ) : packages.length === 0 ? (
-        <EmptyState icon={<ShieldCheck className="h-10 w-10" />} title={t('policies.empty')} description={t('policies.emptyDesc')} action={<Button onClick={() => { setEditing(null); setFormOpen(true); }}><Plus className="h-4 w-4" /> {t('policies.create')}</Button>} />
+        <div className="space-y-6">
+          <EmptyState icon={<ShieldCheck className="h-10 w-10" />} title={t('policies.empty')} description={t('policies.emptyDesc')} action={<Button onClick={() => { setEditing(null); setPrefill(null); setFormOpen(true); }}><Plus className="h-4 w-4" /> {t('policies.create')}</Button>} />
+          <div>
+            <p className="text-sm font-medium text-muted-foreground mb-3">{t('policies.tplTitle')}</p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {[
+                { name: t('policies.tplCodeReview'), desc: t('policies.tplCodeReviewDesc'), rules: [{ type: 'guardrail', rule: 'All code must pass linting', severity: 'high' }, { type: 'guardrail', rule: 'No hardcoded secrets', severity: 'critical' }] },
+                { name: t('policies.tplDataSecurity'), desc: t('policies.tplDataSecurityDesc'), rules: [{ type: 'guardrail', rule: 'PII must be masked in logs', severity: 'critical' }, { type: 'guardrail', rule: 'Data encryption at rest required', severity: 'high' }] },
+              ].map(tpl => (
+                <button key={tpl.name} className="text-left bg-card rounded-2xl p-4 border border-dashed border-primary/30 hover:border-primary/60 hover:bg-primary/5 transition-all" onClick={() => { setPrefill({ name: tpl.name, description: tpl.desc, rules: tpl.rules }); setEditing(null); setFormOpen(true); }}>
+                  <p className="font-medium text-sm">{tpl.name}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{tpl.desc}</p>
+                  <span className="text-xs text-primary mt-2 inline-block">{t('policies.fromTemplate')}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       ) : (
         <div className="space-y-3">
           {packages.map(pkg => (
@@ -235,8 +253,9 @@ export default function PoliciesPage() {
 
       <PackageFormDialog
         open={formOpen}
-        onOpenChange={(v) => { setFormOpen(v); if (!v) setEditing(null); }}
+        onOpenChange={(v) => { setFormOpen(v); if (!v) { setEditing(null); setPrefill(null); } }}
         editing={editing}
+        prefill={prefill}
         onSave={handleSavePackage}
         saving={saving}
       />
@@ -261,11 +280,12 @@ export default function PoliciesPage() {
 }
 
 function PackageFormDialog({
-  open, onOpenChange, editing, onSave, saving,
+  open, onOpenChange, editing, prefill, onSave, saving,
 }: {
   open: boolean;
   onOpenChange: (v: boolean) => void;
   editing: PolicyPackage | null;
+  prefill?: { name: string; description: string; rules: unknown[] } | null;
   onSave: (input: { name: string; description?: string; scenario?: string; rules?: unknown[] }) => void;
   saving: boolean;
 }) {
@@ -278,13 +298,13 @@ function PackageFormDialog({
 
   useEffect(() => {
     if (open) {
-      setName(editing?.name ?? '');
-      setDescription(editing?.description ?? '');
+      setName(editing?.name ?? prefill?.name ?? '');
+      setDescription(editing?.description ?? prefill?.description ?? '');
       setScenario(editing?.scenario ?? '');
-      setRulesText('[]');
+      setRulesText(prefill?.rules ? JSON.stringify(prefill.rules, null, 2) : '[]');
       setRulesError(null);
     }
-  }, [open, editing]);
+  }, [open, editing, prefill]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

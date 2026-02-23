@@ -34,6 +34,7 @@ import { registerQualityDashboardRoutes } from './routes/quality-dashboard.js';
 import { registerRoiReviewRoutes } from './routes/roi-review.js';
 import { registerMemoryRoutes } from './routes/memory.js';
 import { registerSelfImprovementRoutes } from './routes/self-improvement.js';
+import { registerAiParseRoutes } from './routes/ai-parse.js';
 import { sseManager } from './services/sse-manager.js';
 import { recoverStuckTasks, cancelAllExecutions } from './services/task-executor.js';
 import { seedBuiltinPolicies } from './services/policies.js';
@@ -79,6 +80,7 @@ registerQualityDashboardRoutes(app);
 registerRoiReviewRoutes(app);
 registerMemoryRoutes(app);
 registerSelfImprovementRoutes(app);
+registerAiParseRoutes(app);
 
 // Serve frontend static files (production mode)
 const webDistPath = resolve(__dirname, '../../web/dist');

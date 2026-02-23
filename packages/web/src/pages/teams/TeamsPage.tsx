@@ -11,6 +11,7 @@ import { EmptyState } from '@/components/ui/empty-state';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Plus, Pencil, Trash2, Copy, Search, Loader2, Users } from 'lucide-react';
 import { useI18n } from '@/i18n';
+import { MagicInput } from '@/components/MagicInput';
 
 export default function TeamsPage() {
   const [teams, setTeams] = useState<Team[]>([]);
@@ -86,6 +87,8 @@ export default function TeamsPage() {
           <Plus className="h-4 w-4" /> {t('teams.create')}
         </Button>
       </div>
+
+      <MagicInput type="team" />
 
       <div className="relative max-w-sm mb-4">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />

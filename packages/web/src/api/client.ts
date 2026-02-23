@@ -78,6 +78,7 @@ export const employeesApi = {
       method: 'POST',
       body: JSON.stringify({ employees, modelId }),
     }),
+  growthStats: () => request<{ data: Array<{ employeeId: string; overallScore: number | null; taskCount: number }> }>('/employees/growth-stats'),
 };
 
 // Types
@@ -966,6 +967,12 @@ export const changeTestingApi = {
     request<{ data: ChangeTestConfig }>(`/change-test-configs/${id}`, { method: 'PUT', body: JSON.stringify(body) }),
   delete: (id: string) =>
     request<{ data: { id: string } }>(`/change-test-configs/${id}`, { method: 'DELETE' }),
+};
+
+// AI Parse
+export const aiApi = {
+  parseIntent: (text: string, type: 'task' | 'team') =>
+    request<{ data: Record<string, string> }>('/ai/parse-intent', { method: 'POST', body: JSON.stringify({ text, type }) }),
 };
 
 // HR Assistant

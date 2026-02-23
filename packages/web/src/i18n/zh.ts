@@ -1001,4 +1001,36 @@ export const zh = {
   'settings.webhookEmptyDesc': '配置 Webhook 接收系统事件通知',
   'incidents.emptyDesc': '太棒了！你的 AI 团队运转良好',
   'home.noTasksDesc': '创建一个任务来开始协作',
+
+  // magic input
+  'magic.placeholder.task': '描述你想完成的任务，AI 将帮你填写表单...',
+  'magic.placeholder.team': '描述你想组建的团队，AI 将帮你填写表单...',
+  'magic.parsing': '正在解析...',
+  'magic.parseFailed': 'AI 解析失败，请手动填写',
+
+  // execution animation
+  'taskDetail.usingTool': '正在调用: {tool}',
+
+  // employee growth
+  'employees.level_expert': '专家',
+  'employees.level_senior': '高级',
+  'employees.level_intermediate': '中级',
+  'employees.level_junior': '初级',
+  'employees.taskCount': '{count} 个任务',
+
+  // policy templates
+  'policies.tplTitle': '从模板开始',
+  'policies.tplCodeReview': '代码审查规范',
+  'policies.tplCodeReviewDesc': '包含代码质量、安全性、性能等审查规则',
+  'policies.tplDataSecurity': '数据安全策略',
+  'policies.tplDataSecurityDesc': '包含数据访问、加密、隐私保护等规则',
+  'policies.fromTemplate': '使用模板',
+
+  // kb templates
+  'kb.tplTitle': '从模板开始',
+  'kb.tplProductFAQ': '产品 FAQ',
+  'kb.tplProductFAQDesc': '常见产品问题与解答知识库',
+  'kb.tplTechDocs': '技术文档',
+  'kb.tplTechDocsDesc': '技术架构与开发规范文档库',
+  'kb.fromTemplate': '使用模板',
 } as const;

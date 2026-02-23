@@ -13,9 +13,24 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { EmptyState } from '@/components/ui/empty-state';
 import { Plus, Pencil, Trash2, Copy, MessageSquare, Search, Loader2, LayoutGrid, List, Download, Upload, CheckSquare, Square, Users } from 'lucide-react';
 
+type GrowthStat = { employeeId: string; overallScore: number | null; taskCount: number };
+
+function getLevel(score: number | null): string | null {
+  if (score == null) return null;
+  if (score >= 90) return 'expert';
+  if (score >= 70) return 'senior';
+  if (score >= 50) return 'intermediate';
+  return 'junior';
+}
+
+const LEVEL_VARIANT: Record<string, 'default' | 'secondary' | 'outline'> = {
+  expert: 'default', senior: 'default', intermediate: 'secondary', junior: 'outline',
+};
+
 export default function EmployeesPage() {
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [tags, setTags] = useState<string[]>([]);
+  const [growthMap, setGrowthMap] = useState<Record<string, GrowthStat>>({});
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const debouncedSearch = useDebouncedValue(search, 300);
@@ -32,12 +47,16 @@ export default function EmployeesPage() {
 
   const load = useCallback(async () => {
     try {
-      const [empRes, tagRes] = await Promise.all([
+      const [empRes, tagRes, growthRes] = await Promise.all([
         employeesApi.list({ tag: selectedTag ?? undefined, search: debouncedSearch || undefined }),
         employeesApi.tags(),
+        employeesApi.growthStats(),
       ]);
       setEmployees(empRes.data);
       setTags(tagRes.data);
+      const map: Record<string, GrowthStat> = {};
+      for (const s of growthRes.data) map[s.employeeId] = s;
+      setGrowthMap(map);
     } catch (err: unknown) {
       toast(err instanceof Error ? err.message : t('common.loadFailed'), 'error');
     } finally {
@@ -162,13 +181,13 @@ export default function EmployeesPage() {
       ) : viewMode === 'card' ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {employees.map(emp => (
-            <EmployeeCard key={emp.id} emp={emp} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
+            <EmployeeCard key={emp.id} emp={emp} growth={growthMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
           ))}
         </div>
       ) : (
         <div className="space-y-2">
           {employees.map(emp => (
-            <EmployeeListItem key={emp.id} emp={emp} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
+            <EmployeeListItem key={emp.id} emp={emp} growth={growthMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
           ))}
         </div>
       )}
@@ -191,10 +210,11 @@ export default function EmployeesPage() {
   );
 }
 
-function EmployeeCard({ emp, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
-  emp: Employee; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
+function EmployeeCard({ emp, growth, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
+  emp: Employee; growth?: GrowthStat; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
 }) {
   const { t } = useI18n();
+  const level = getLevel(growth?.overallScore ?? null);
   return (
     <div data-testid={`employee-item-${emp.id}`} className={`bg-card rounded-3xl p-6 border border-border/40 space-y-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all ${selected ? 'ring-2 ring-primary/30' : ''}`} onClick={selectMode ? onToggle : undefined} {...(selectMode ? { role: 'button', tabIndex: 0, onKeyDown: (e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') onToggle(); } } : {})}>
       <div className="flex items-start gap-3">
@@ -203,8 +223,11 @@ function EmployeeCard({ emp, selectMode, selected, onToggle, onEdit, onCopy, onD
         )}
         <span className="text-2xl">{emp.avatar || '👤'}</span>
         <div className="flex-1 min-w-0">
-          <div className="font-medium">{emp.name}</div>
-          <div className="text-xs text-muted-foreground">{emp.modelName} · {emp.toolCount} {t('common.tools')}</div>
+          <div className="flex items-center gap-2">
+            <span className="font-medium">{emp.name}</span>
+            {level && <Badge variant={LEVEL_VARIANT[level]} className="text-xs">{t(`employees.level_${level}`)}</Badge>}
+          </div>
+          <div className="text-xs text-muted-foreground">{emp.modelName} · {emp.toolCount} {t('common.tools')}{growth?.taskCount ? ` · ${t('employees.taskCount').replace('{count}', String(growth.taskCount))}` : ''}</div>
         </div>
       </div>
       {emp.description && <p className="text-sm text-muted-foreground line-clamp-2">{emp.description}</p>}
@@ -214,19 +237,20 @@ function EmployeeCard({ emp, selectMode, selected, onToggle, onEdit, onCopy, onD
         </div>
       )}
       <div className="flex gap-1 pt-1 border-t">
-        <Button variant="ghost" size="sm" onClick={onEdit}><Pencil className="h-3 w-3 mr-1" /> {t('common.edit')}</Button>
-        <Button variant="ghost" size="sm" onClick={onCopy}><Copy className="h-3 w-3 mr-1" /> {t('common.copy')}</Button>
-        <Button variant="ghost" size="sm" onClick={onChat}><MessageSquare className="h-3 w-3 mr-1" /> {t('employees.chat')}</Button>
-        <Button variant="ghost" size="sm" onClick={onDelete} className="ml-auto"><Trash2 className="h-3 w-3 text-destructive" /></Button>
+        <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); onEdit(); }}><Pencil className="h-3 w-3 mr-1" /> {t('common.edit')}</Button>
+        <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); onCopy(); }}><Copy className="h-3 w-3 mr-1" /> {t('common.copy')}</Button>
+        <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); onChat(); }}><MessageSquare className="h-3 w-3 mr-1" /> {t('employees.chat')}</Button>
+        <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); onDelete(); }} className="ml-auto"><Trash2 className="h-3 w-3 text-destructive" /></Button>
       </div>
     </div>
   );
 }
 
-function EmployeeListItem({ emp, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
-  emp: Employee; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
+function EmployeeListItem({ emp, growth, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
+  emp: Employee; growth?: GrowthStat; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
 }) {
   const { t } = useI18n();
+  const level = getLevel(growth?.overallScore ?? null);
   return (
     <div data-testid={`employee-item-${emp.id}`} className={`flex items-center gap-4 bg-card rounded-2xl px-4 py-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all ${selected ? 'ring-2 ring-primary/30' : ''}`} onClick={selectMode ? onToggle : undefined} {...(selectMode ? { role: 'button', tabIndex: 0, onKeyDown: (e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') onToggle(); } } : {})}>
       {selectMode && (
@@ -234,7 +258,10 @@ function EmployeeListItem({ emp, selectMode, selected, onToggle, onEdit, onCopy,
       )}
       <span className="text-xl">{emp.avatar || '👤'}</span>
       <div className="flex-1 min-w-0">
-        <div className="font-medium text-sm">{emp.name}</div>
+        <div className="flex items-center gap-2">
+          <span className="font-medium text-sm">{emp.name}</span>
+          {level && <Badge variant={LEVEL_VARIANT[level]} className="text-xs">{t(`employees.level_${level}`)}</Badge>}
+        </div>
         <div className="text-xs text-muted-foreground">{emp.modelName} · {emp.toolCount} {t('common.tools')}</div>
       </div>
       <div className="flex flex-wrap gap-1">
