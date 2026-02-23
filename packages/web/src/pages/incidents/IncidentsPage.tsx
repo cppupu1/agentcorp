@@ -10,7 +10,8 @@ import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useI18n } from '@/i18n';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Loader2, Plus, Trash2 } from 'lucide-react';
+import { EmptyState } from '@/components/ui/empty-state';
+import { Loader2, Plus, Trash2, ShieldCheck } from 'lucide-react';
 
 export default function IncidentsPage() {
   const [items, setItems] = useState<IncidentReport[]>([]);
@@ -64,9 +65,9 @@ export default function IncidentsPage() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('incidents.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('incidents.title')}</h2>
         <Button size="sm" onClick={() => setCreateOpen(true)} className="gap-1">
           <Plus className="h-4 w-4" /> {t('incidents.manualCreate')}
         </Button>
@@ -75,9 +76,7 @@ export default function IncidentsPage() {
       {loading ? (
         <div className="space-y-2">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-16 rounded-2xl" />)}</div>
       ) : items.length === 0 ? (
-        <div className="flex flex-col items-center justify-center py-16 text-center">
-          <p className="text-muted-foreground">{t('incidents.empty')}</p>
-        </div>
+        <EmptyState icon={<ShieldCheck className="h-10 w-10" />} title={t('incidents.empty')} description={t('incidents.emptyDesc')} />
       ) : (
         <div className="space-y-2">
           {items.map(item => {
@@ -90,7 +89,7 @@ export default function IncidentsPage() {
                 onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') navigate(`/incidents/${item.id}`); }}
                 role="button"
                 tabIndex={0}
-                className="bg-card rounded-2xl p-5 flex items-center gap-3 cursor-pointer shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all"
+                className="bg-card rounded-3xl p-6 border border-border/40 flex items-center gap-3 cursor-pointer shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all"
               >
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">

@@ -79,9 +79,9 @@ export default function TeamsPage() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('teams.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('teams.title')}</h2>
         <Button onClick={() => navigate('/teams/new')} data-testid="create-team-btn">
           <Plus className="h-4 w-4" /> {t('teams.create')}
         </Button>
@@ -99,7 +99,7 @@ export default function TeamsPage() {
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map(team => (
-            <div key={team.id} data-testid={`team-item-${team.id}`} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all space-y-3">
+            <div key={team.id} data-testid={`team-item-${team.id}`} className="bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all space-y-3">
               <div className="flex items-start justify-between">
                 <div>
                   <div className="font-medium">{team.name}</div>

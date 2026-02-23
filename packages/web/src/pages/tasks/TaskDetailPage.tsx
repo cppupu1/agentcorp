@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Loader2, Send, ArrowLeft, Check, X } from 'lucide-react';
+import { Loader2, Send, ArrowLeft, Check, X, Download } from 'lucide-react';
 import CostPanel from './CostPanel';
 import ErrorTracePanel from './ErrorTracePanel';
 import TaskTimeline from './TaskTimeline';
@@ -17,6 +17,7 @@ import ObserverPanel from './ObserverPanel';
 import EvidencePanel from './EvidencePanel';
 import TaskDAG from './TaskDAG';
 import { useI18n } from '@/i18n';
+import { useIMEComposing } from '@/hooks/useIMEComposing';
 
 const STATUS_KEYS: Record<string, string> = {
   draft: 'tasks.statusDraft', aligning: 'tasks.statusAligning', brief_review: 'tasks.statusBriefApproval',
@@ -62,7 +63,7 @@ export default function TaskDetailPage() {
           <div className="flex-1"><Skeleton className="h-7 w-64" /><Skeleton className="h-4 w-40 mt-1" /></div>
         </div>
         <Skeleton className="h-8 w-full rounded-full" />
-        <Skeleton className="h-24 rounded-xl" />
+        <Skeleton className="h-28 rounded-3xl" />
         <Skeleton className="h-48 rounded-lg" />
       </div>
     );
@@ -86,7 +87,7 @@ export default function TaskDetailPage() {
           <ArrowLeft className="h-4 w-4" />
         </Button>
         <div className="flex-1">
-          <h2 className="text-2xl font-bold tracking-tight">{task.title || t('taskDetail.unnamed')}</h2>
+          <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{task.title || t('taskDetail.unnamed')}</h2>
           <p className="text-sm text-muted-foreground">{task.teamName} · {STATUS_KEYS[status] ? t(STATUS_KEYS[status]) : status}{task.mode === 'auto' ? ` · ${t('taskDetail.autoMode')}` : ''}</p>
         </div>
         <Badge variant={status === 'executing' ? 'default' : status === 'paused' ? 'destructive' : 'secondary'}>{STATUS_KEYS[status] ? t(STATUS_KEYS[status]) : status}</Badge>
@@ -193,7 +194,20 @@ export default function TaskDetailPage() {
             {status === 'completed' && <CompletedSection task={task} />}
             {status === 'failed' && (
               <div className="space-y-4">
-                <h3 className="text-lg font-medium text-destructive">{t('taskDetail.taskFailed')}</h3>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-medium text-destructive">{t('taskDetail.taskFailed')}</h3>
+                  <Button onClick={async () => {
+                    try {
+                      const res = await tasksApi.retry(task.id);
+                      setTask(res.data);
+                      toast(t('taskDetail.retryStarted'), 'success');
+                    } catch (err: unknown) {
+                      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
+                    }
+                  }}>
+                    {t('taskDetail.retry')}
+                  </Button>
+                </div>
                 {task.result != null && (
                   <div className="rounded-2xl p-4 bg-destructive/5 shadow-[var(--shadow-sm)]">
                     <p className="text-sm">{(task.result as any).error || t('taskDetail.unknownError')}</p>
@@ -303,6 +317,7 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
   const { toast } = useToast();
   const abortRef = useRef<AbortController | null>(null);
   const { t } = useI18n();
+  const { onCompositionStart, onCompositionEnd, isComposing } = useIMEComposing();
 
   useEffect(() => {
     tasksApi.messages(taskId, 'chat').then(res => setMessages(res.data)).catch(() => {});
@@ -420,7 +435,7 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
   };
 
   return (
-    <div className="bg-card rounded-2xl shadow-[var(--shadow-sm)] overflow-hidden">
+    <div className="bg-card rounded-3xl border border-border/40 shadow-[var(--shadow-sm)] overflow-hidden md-transition">
       <div className="h-96 overflow-y-auto p-4 space-y-3">
         {messages.filter(m => m.content).map(msg => (
           <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
@@ -448,7 +463,9 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
           rows={2}
           className="flex-1 resize-none"
           data-testid="chat-input"
-          onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); handleSend(); } }}
+          onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey && !isComposing(e)) { e.preventDefault(); handleSend(); } }}
+          onCompositionStart={onCompositionStart}
+          onCompositionEnd={onCompositionEnd}
         />
         <Button onClick={handleSend} disabled={sending || !input.trim()} className="self-end" data-testid="chat-send-btn">
           {sending ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
@@ -467,7 +484,7 @@ function BriefReviewSection({ task, approving, onApprove }: { task: TaskDetail; 
   return (
     <div className="space-y-4">
       <h3 className="text-lg font-medium">{t('taskDetail.briefApproval')}</h3>
-      <div className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] space-y-3">
+      <div className="bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)] space-y-3">
         <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefTitle')}</span><span className="font-medium">{brief.title}</span></div>
         <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefObjective')}</span><p className="text-sm mt-1">{brief.objective}</p></div>
         <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefDeliverables')}</span><p className="text-sm mt-1">{brief.deliverables}</p></div>
@@ -497,7 +514,7 @@ function TeamReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
     <div className="space-y-4">
       <h3 className="text-lg font-medium">{t('taskDetail.teamConfigApproval')}</h3>
       {config.pm && (
-        <div className="rounded-xl bg-muted/30 p-3">
+        <div className="rounded-2xl bg-muted/40 p-4 border border-border/40">
           <p className="text-sm text-muted-foreground mb-1">{t('taskDetail.projectManager')}</p>
           <p className="font-medium">{config.pm.name}</p>
         </div>
@@ -505,7 +522,7 @@ function TeamReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
       <div className="space-y-2">
         <p className="text-sm text-muted-foreground">{t('taskDetail.participantMembers')} ({config.members.length})</p>
         {config.members.map(m => (
-          <div key={m.id} className="rounded-xl bg-muted/30 p-3">
+          <div key={m.id} className="rounded-2xl bg-muted/40 p-4 border border-border/40">
             <p className="font-medium text-sm">{m.name}</p>
             {m.taskPrompt && <p className="text-xs text-muted-foreground mt-1">{m.taskPrompt}</p>}
           </div>
@@ -543,7 +560,7 @@ function PlanReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
       <h3 className="text-lg font-medium">{t('taskDetail.planApproval')}</h3>
       <div className="space-y-2">
         {plan.subtasks.map((st, i) => (
-          <div key={st.id} className="rounded-xl bg-muted/30 p-3 flex items-start gap-3">
+          <div key={st.id} className="rounded-2xl bg-muted/40 p-4 border border-border/40 flex items-start gap-3">
             <span className="text-xs bg-muted rounded-full w-6 h-6 flex items-center justify-center shrink-0">{i + 1}</span>
             <div className="flex-1">
               <p className="font-medium text-sm">{st.title}</p>
@@ -688,7 +705,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       </div>
       <div className="space-y-2">
         {subs.map(st => (
-          <div key={st.id} data-testid={`subtask-item-${st.id}`} className="rounded-xl bg-muted/30 p-3 flex items-center gap-3">
+          <div key={st.id} data-testid={`subtask-item-${st.id}`} className="rounded-2xl bg-muted/40 p-4 border border-border/40 flex items-center gap-3">
             <Badge variant={st.status === 'completed' ? 'default' : st.status === 'running' ? 'secondary' : st.status === 'failed' ? 'destructive' : 'outline'} className="text-xs">
               {st.status === 'completed' ? t('taskDetail.statusCompleted') : st.status === 'running' ? t('taskDetail.statusRunning') : st.status === 'failed' ? t('taskDetail.statusFailed') : t('taskDetail.statusPending')}
             </Badge>
@@ -703,7 +720,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
         ))}
       </div>
       {logs.length > 0 && (
-        <div className="rounded-xl bg-muted/30 p-3 max-h-48 overflow-y-auto">
+        <div className="rounded-2xl bg-muted/40 p-4 border border-border/40 max-h-48 overflow-y-auto">
           <p className="text-sm text-muted-foreground mb-2">{t('taskDetail.executionLog')}</p>
           {logs.map((log, i) => (
             <p key={i} className="text-xs text-muted-foreground">
@@ -720,12 +737,44 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
 
 function CompletedSection({ task }: { task: TaskDetail }) {
   const { t, locale } = useI18n();
+  const { toast } = useToast();
+  const [exporting, setExporting] = useState<string | null>(null);
   const result = task.result as any;
+
+  const handleExport = async (fmt: string) => {
+    setExporting(fmt);
+    try {
+      const res = await fetch(`/api/tasks/${task.id}/export/${fmt}`);
+      if (!res.ok) throw new Error();
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${task.title || 'task'}-${task.id}.${fmt}`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch {
+      toast(t('common.exportFailed'), 'error');
+    } finally {
+      setExporting(null);
+    }
+  };
+
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-medium">{t('taskDetail.taskCompleted')}</h3>
+      <div className="flex items-center justify-between">
+        <h3 className="text-lg font-medium">{t('taskDetail.taskCompleted')}</h3>
+        <div className="flex gap-2">
+          {(['pdf', 'docx', 'xlsx'] as const).map(fmt => (
+            <Button key={fmt} variant="outline" size="sm" disabled={exporting !== null} onClick={() => handleExport(fmt)}>
+              {exporting === fmt ? <Loader2 className="h-4 w-4 mr-1 animate-spin" /> : <Download className="h-4 w-4 mr-1" />}
+              {t(`taskDetail.export${fmt === 'pdf' ? 'PDF' : fmt === 'docx' ? 'Word' : 'Excel'}`)}
+            </Button>
+          ))}
+        </div>
+      </div>
       {result && (
-        <div className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] space-y-3">
+        <div className="bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)] space-y-3">
           {result.summary && <div><p className="text-sm text-muted-foreground">{t('taskDetail.summary')}</p><p className="text-sm mt-1">{result.summary}</p></div>}
           {result.deliverables && (
             <div>
@@ -747,7 +796,7 @@ function CompletedSection({ task }: { task: TaskDetail }) {
         <div className="space-y-2">
           <p className="text-sm text-muted-foreground">{t('taskDetail.subtaskSummary')}</p>
           {task.subtasks.map(st => (
-            <div key={st.id} className="rounded-xl bg-muted/30 p-3 flex items-center gap-3">
+            <div key={st.id} className="rounded-2xl bg-muted/40 p-4 border border-border/40 flex items-center gap-3">
               <Badge variant={st.status === 'completed' ? 'default' : 'destructive'} className="text-xs">
                 {st.status === 'completed' ? t('taskDetail.statusCompleted') : st.status}
               </Badge>

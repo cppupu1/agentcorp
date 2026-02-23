@@ -9,7 +9,8 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
-import { Plus, Pencil, Trash2, Zap, Loader2 } from 'lucide-react';
+import { Plus, Pencil, Trash2, Zap, Loader2, Brain } from 'lucide-react';
+import { EmptyState } from '@/components/ui/empty-state';
 
 const statusVariant: Record<string, 'secondary' | 'success' | 'destructive'> = {
   untested: 'secondary',
@@ -110,42 +111,45 @@ export default function ModelsPage() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('models.title')}</h2>
-        <Button data-testid="create-model-btn" onClick={() => { setEditing(null); setFormOpen(true); }}>
-          <Plus className="h-4 w-4" /> {t('models.add')}
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <div>
+          <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('models.title')}</h2>
+          <p className="text-[15px] text-muted-foreground mt-1.5">{t('nav.models')}</p>
+        </div>
+        <Button data-testid="create-model-btn" onClick={() => { setEditing(null); setFormOpen(true); }} className="shadow-[var(--shadow-sm)]">
+          <Plus className="h-4 w-4 mr-1.5" /> {t('models.add')}
         </Button>
       </div>
 
       {loading ? (
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{Array.from({ length: 6 }, (_, i) => <Skeleton key={i} className="h-40 rounded-2xl" />)}</div>
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{Array.from({ length: 6 }, (_, i) => <Skeleton key={i} className="h-44 rounded-3xl" />)}</div>
       ) : models.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('models.empty')}</div>
+        <EmptyState icon={<Brain className="h-10 w-10" />} title={t('models.empty')} description={t('models.emptyDesc')} action={<Button onClick={() => { setEditing(null); setFormOpen(true); }}><Plus className="h-4 w-4" /> {t('models.add')}</Button>} />
       ) : (
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {models.map(m => {
             const variant = statusVariant[m.status] || statusVariant.untested;
             const label = t(statusLabelKey[m.status] || statusLabelKey.untested);
             return (
-              <div key={m.id} data-testid={`model-item-${m.id}`} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all space-y-3">
-                <div className="flex items-start justify-between">
-                  <div className="min-w-0">
-                    <div className="font-medium text-sm">{m.name}</div>
-                    <div className="text-xs text-muted-foreground mt-0.5 font-mono">{m.modelId}</div>
+              <div key={m.id} data-testid={`model-item-${m.id}`} className="bg-card rounded-3xl p-6 shadow-[var(--shadow-sm)] border border-border/40 hover:shadow-[var(--shadow-md)] hover:-translate-y-1 md-transition flex flex-col h-full">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="min-w-0 pr-3">
+                    <div className="font-heading font-medium text-base text-foreground/90">{m.name}</div>
+                    <div className="text-[13px] text-muted-foreground mt-1 font-mono bg-muted/50 px-2 py-0.5 rounded-md inline-block max-w-full truncate">{m.modelId}</div>
                   </div>
                   <Badge variant={variant} data-testid={`model-status-${m.id}`}>{label}</Badge>
                 </div>
-                <div className="text-xs text-muted-foreground truncate">{m.baseUrl}</div>
-                <div className="flex gap-1 pt-1 border-t border-border/50">
-                  <Button variant="ghost" size="sm" onClick={() => { setEditing(m); setFormOpen(true); }}>
-                    <Pencil className="h-3 w-3" />
+                <div className="text-[14px] text-muted-foreground truncate mb-4">{m.baseUrl}</div>
+                <div className="flex gap-2 pt-4 mt-auto border-t border-border/30">
+                  <Button variant="secondary" size="sm" className="rounded-2xl flex-1" onClick={() => { setEditing(m); setFormOpen(true); }}>
+                    <Pencil className="h-4 w-4 mr-1.5" /> {t('common.edit')}
                   </Button>
-                  <Button variant="ghost" size="sm" data-testid="test-model-btn" disabled={testingId === m.id} onClick={() => handleTest(m)}>
-                    {testingId === m.id ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
+                  <Button variant="outline" size="sm" className="rounded-2xl flex-1" data-testid="test-model-btn" disabled={testingId === m.id} onClick={() => handleTest(m)}>
+                    {testingId === m.id ? <Loader2 className="h-4 w-4 animate-spin mr-1.5" /> : <Zap className="h-4 w-4 mr-1.5" />} {t('models.test')}
                   </Button>
-                  <Button variant="ghost" size="sm" onClick={() => setDeleteTarget(m)} className="ml-auto">
-                    <Trash2 className="h-3 w-3 text-destructive" />
+                  <Button variant="ghost" size="icon" className="rounded-2xl shrink-0" onClick={() => setDeleteTarget(m)}>
+                    <Trash2 className="h-4 w-4 text-destructive" />
                   </Button>
                 </div>
               </div>

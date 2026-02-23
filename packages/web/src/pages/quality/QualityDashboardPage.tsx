@@ -13,7 +13,7 @@ export default function QualityDashboardPage() {
   const { t } = useI18n();
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold tracking-tight mb-4">{t('quality.title')}</h2>
       <div className="flex gap-2 mb-6">
         {([['trend', t('quality.tabTrend')], ['ranking', t('quality.tabRanking')], ['alerts', t('quality.tabAlerts')]] as [Tab, string][]).map(([key, label]) => (
@@ -40,7 +40,7 @@ function TrendTab() {
   }, [toast]);
 
   if (loading) return <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>;
-  if (!data) return <div className="text-center py-12 text-muted-foreground">{t('common.noData')}</div>;
+  if (!data) return <div className="text-center py-16 text-[15px] text-muted-foreground bg-muted/30 rounded-3xl border border-dashed border-border/50">{t('common.noData')}</div>;
 
   return (
     <div className="space-y-6">
@@ -113,7 +113,7 @@ function RankingTab() {
   }, [toast]);
 
   if (loading) return <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>;
-  if (data.length === 0) return <div className="text-center py-12 text-muted-foreground">{t('quality.noRankingData')}</div>;
+  if (data.length === 0) return <div className="text-center py-16 text-[15px] text-muted-foreground bg-muted/30 rounded-3xl border border-dashed border-border/50">{t('quality.noRankingData')}</div>;
 
   return (
     <div className="overflow-x-auto">
@@ -158,7 +158,7 @@ function AlertsTab() {
   }, [toast]);
 
   if (loading) return <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>;
-  if (!data) return <div className="text-center py-12 text-muted-foreground">{t('common.noData')}</div>;
+  if (!data) return <div className="text-center py-16 text-[15px] text-muted-foreground bg-muted/30 rounded-3xl border border-dashed border-border/50">{t('common.noData')}</div>;
 
   return (
     <div className="space-y-6">
@@ -167,7 +167,7 @@ function AlertsTab() {
         {data.qualityDropAlerts.length === 0 ? <p className="text-muted-foreground text-sm">{t('quality.noDropAlerts')}</p> : (
           <div className="space-y-2">
             {data.qualityDropAlerts.map(a => (
-              <div key={a.employeeId} className="bg-card rounded-2xl p-4 shadow-[var(--shadow-sm)]">
+              <div key={a.employeeId} className="bg-card rounded-3xl p-5 border border-border/40 shadow-[var(--shadow-sm)] md-transition">
                 <div className="flex items-center gap-2">
                   <Badge variant="destructive">{t('quality.drop', { value: a.drop })}</Badge>
                   <span className="font-medium">{a.employeeName}</span>
@@ -185,7 +185,7 @@ function AlertsTab() {
         {data.criticalFindings.length === 0 ? <p className="text-muted-foreground text-sm">{t('quality.noCriticalFindings')}</p> : (
           <div className="space-y-2">
             {data.criticalFindings.map(f => (
-              <div key={f.id} className="bg-card rounded-2xl p-4 shadow-[var(--shadow-sm)]">
+              <div key={f.id} className="bg-card rounded-3xl p-5 border border-border/40 shadow-[var(--shadow-sm)] md-transition">
                 <Badge variant="destructive">{t('quality.critical')}</Badge>
                 <p className="text-sm mt-1">{f.description}</p>
                 <p className="text-xs text-muted-foreground mt-1">{new Date(f.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</p>

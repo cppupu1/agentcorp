@@ -38,24 +38,23 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   return (
     <ToastContext.Provider value={{ toast }}>
       {children}
-      <div className="fixed bottom-4 right-4 z-[100] flex flex-col gap-2">
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] flex flex-col gap-3 pointer-events-none">
         {toasts.map(t => (
           <div
             key={t.id}
             data-testid={t.type === 'error' ? 'error-toast' : undefined}
             className={cn(
-              'relative overflow-hidden flex items-center gap-2 rounded-xl px-5 py-4 text-sm shadow-lg min-w-[300px] max-w-[450px]',
+              'pointer-events-auto relative overflow-hidden flex items-center gap-3 rounded-full px-6 py-3.5 text-[14px] font-medium shadow-[var(--shadow-lg)] min-w-[320px] max-w-[480px]',
               t.type === 'success' && 'bg-success text-success-foreground',
-              t.type === 'error' && 'bg-destructive text-white',
+              t.type === 'error' && 'bg-destructive text-destructive-foreground',
               t.type === 'info' && 'bg-foreground text-background',
             )}
-            style={{ animation: 'slideInRight 0.3s ease-out' }}
+            style={{ animation: 'slideUp 0.3s cubic-bezier(0.2, 0, 0, 1)' }}
           >
             <span className="flex-1" data-testid="error-toast-message">{t.message}</span>
-            <button onClick={() => dismiss(t.id)} className="shrink-0 cursor-pointer">
+            <button onClick={() => dismiss(t.id)} className="shrink-0 cursor-pointer p-1 rounded-full hover:bg-white/20 md-transition">
               <X className="h-4 w-4" />
             </button>
-            <div className="absolute bottom-0 left-0 h-0.5 bg-white/30" style={{ animation: 'progressShrink 4s linear forwards' }} />
           </div>
         ))}
       </div>

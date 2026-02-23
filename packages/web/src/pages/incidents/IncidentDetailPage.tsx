@@ -104,7 +104,7 @@ export default function IncidentDetailPage() {
       </button>
 
       <div className="flex items-center gap-3 mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('incidentDetail.title')}</h2>
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('incidentDetail.title')}</h2>
         <Badge variant={trigger.variant}>{trigger.label}</Badge>
         <Badge variant={status.variant}>{status.label}</Badge>
       </div>

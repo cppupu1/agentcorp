@@ -15,11 +15,11 @@ import { useI18n } from '@/i18n';
 import { Loader2 } from 'lucide-react';
 
 const STATUS_COLORS: Record<string, { bg: string; border: string; text: string }> = {
-  pending: { bg: '#f3f4f6', border: '#9ca3af', text: '#6b7280' },
-  executing: { bg: '#dbeafe', border: '#3b82f6', text: '#1d4ed8' },
-  running: { bg: '#dbeafe', border: '#3b82f6', text: '#1d4ed8' },
-  completed: { bg: '#dcfce7', border: '#22c55e', text: '#15803d' },
-  failed: { bg: '#fee2e2', border: '#ef4444', text: '#b91c1c' },
+  pending: { bg: 'var(--muted)', border: 'var(--border)', text: 'var(--muted-foreground)' },
+  executing: { bg: 'color-mix(in oklch, var(--primary) 12%, transparent)', border: 'var(--primary)', text: 'var(--primary)' },
+  running: { bg: 'color-mix(in oklch, var(--primary) 12%, transparent)', border: 'var(--primary)', text: 'var(--primary)' },
+  completed: { bg: 'color-mix(in oklch, var(--success) 12%, transparent)', border: 'var(--success)', text: 'var(--success)' },
+  failed: { bg: 'color-mix(in oklch, var(--destructive) 12%, transparent)', border: 'var(--destructive)', text: 'var(--destructive)' },
 };
 
 const STATUS_LABEL_KEYS: Record<string, string> = {
@@ -30,13 +30,13 @@ const STATUS_LABEL_KEYS: Record<string, string> = {
   failed: 'dag.statusFailed',
 };
 
-const NODE_WIDTH = 200;
-const NODE_HEIGHT = 70;
+const NODE_WIDTH = 220;
+const NODE_HEIGHT = 80;
 
 function getLayoutedElements(nodes: Node[], edges: Edge[]) {
   const g = new dagre.graphlib.Graph();
   g.setDefaultEdgeLabel(() => ({}));
-  g.setGraph({ rankdir: 'TB', nodesep: 50, ranksep: 80 });
+  g.setGraph({ rankdir: 'TB', nodesep: 60, ranksep: 90 });
 
   nodes.forEach((node) => {
     g.setNode(node.id, { width: NODE_WIDTH, height: NODE_HEIGHT });
@@ -63,11 +63,12 @@ function SubtaskNode({ data }: { data: { title: string; status: string; assignee
   const colors = STATUS_COLORS[data.status] || STATUS_COLORS.pending;
   return (
     <div
+      className="shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] md-transition"
       style={{
         background: colors.bg,
-        border: `2px solid ${colors.border}`,
-        borderRadius: 8,
-        padding: '8px 12px',
+        border: `1px solid color-mix(in oklch, ${colors.border} 30%, transparent)`,
+        borderRadius: 24,
+        padding: '12px 16px',
         width: NODE_WIDTH,
         minHeight: NODE_HEIGHT,
         display: 'flex',
@@ -75,8 +76,8 @@ function SubtaskNode({ data }: { data: { title: string; status: string; assignee
         justifyContent: 'center',
       }}
     >
-      <Handle type="target" position={Position.Top} style={{ background: colors.border }} />
-      <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 4, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+      <Handle type="target" position={Position.Top} style={{ background: 'transparent', border: 'none' }} />
+      <div className="font-heading" style={{ fontSize: 14, fontWeight: 500, marginBottom: 8, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--foreground)' }}>
         {data.title}
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -84,17 +85,19 @@ function SubtaskNode({ data }: { data: { title: string; status: string; assignee
           style={{
             fontSize: 11,
             color: colors.text,
-            fontWeight: 500,
-            padding: '1px 6px',
-            borderRadius: 4,
-            background: `${colors.border}20`,
+            fontWeight: 600,
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            padding: '2px 8px',
+            borderRadius: 12,
+            background: `color-mix(in oklch, ${colors.border} 15%, transparent)`,
           }}
         >
           {STATUS_LABEL_KEYS[data.status] ? t(STATUS_LABEL_KEYS[data.status]) : data.status}
         </span>
-        <span style={{ fontSize: 11, color: '#6b7280' }}>{data.assigneeName}</span>
+        <span style={{ fontSize: 12, color: 'var(--muted-foreground)', fontWeight: 500 }}>{data.assigneeName}</span>
       </div>
-      <Handle type="source" position={Position.Bottom} style={{ background: colors.border }} />
+      <Handle type="source" position={Position.Bottom} style={{ background: 'transparent', border: 'none' }} />
     </div>
   );
 }
@@ -130,7 +133,7 @@ export default function TaskDAG({ taskId }: { taskId: string }) {
       source: e.source,
       target: e.target,
       animated: true,
-      style: { stroke: '#94a3b8', strokeWidth: 2 },
+      style: { stroke: 'var(--muted-foreground)', strokeWidth: 2, opacity: 0.5 },
     }));
 
     const { nodes, edges } = getLayoutedElements(flowNodes, flowEdges);
@@ -152,15 +155,15 @@ export default function TaskDAG({ taskId }: { taskId: string }) {
   const { stats } = dagData;
 
   return (
-    <div className="space-y-3">
-      <div className="flex gap-4 text-sm">
-        <span>{t('dag.total', { count: stats.total })}</span>
-        <span style={{ color: '#22c55e' }}>{t('dag.completed', { count: stats.completed })}</span>
-        <span style={{ color: '#3b82f6' }}>{t('dag.executing', { count: stats.executing })}</span>
-        {stats.failed > 0 && <span style={{ color: '#ef4444' }}>{t('dag.failed', { count: stats.failed })}</span>}
-        <span style={{ color: '#9ca3af' }}>{t('dag.pending', { count: stats.pending })}</span>
+    <div className="space-y-4">
+      <div className="flex gap-4 text-[13px] font-medium px-2 uppercase tracking-wide">
+        <span className="text-foreground/80">{t('dag.total', { count: stats.total })}</span>
+        <span className="text-success">{t('dag.completed', { count: stats.completed })}</span>
+        <span className="text-primary">{t('dag.executing', { count: stats.executing })}</span>
+        {stats.failed > 0 && <span className="text-destructive">{t('dag.failed', { count: stats.failed })}</span>}
+        <span className="text-muted-foreground">{t('dag.pending', { count: stats.pending })}</span>
       </div>
-      <div style={{ height: 500 }} className="border rounded-lg">
+      <div style={{ height: 500 }} className="border border-border/40 bg-muted/20 rounded-3xl overflow-hidden shadow-inner">
         <ReactFlow
           nodes={layoutedNodes}
           edges={layoutedEdges}

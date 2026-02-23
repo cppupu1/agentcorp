@@ -100,9 +100,9 @@ export default function EmployeesPage() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('employees.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('employees.title')}</h2>
         <div className="flex flex-wrap gap-2">
           <Button variant="outline" size="sm" onClick={() => setShowImport(true)}>
             <Upload className="h-4 w-4" /> {t('common.import')}
@@ -196,7 +196,7 @@ function EmployeeCard({ emp, selectMode, selected, onToggle, onEdit, onCopy, onD
 }) {
   const { t } = useI18n();
   return (
-    <div data-testid={`employee-item-${emp.id}`} className={`bg-card rounded-2xl p-5 space-y-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all ${selected ? 'ring-2 ring-primary/30' : ''}`} onClick={selectMode ? onToggle : undefined} {...(selectMode ? { role: 'button', tabIndex: 0, onKeyDown: (e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') onToggle(); } } : {})}>
+    <div data-testid={`employee-item-${emp.id}`} className={`bg-card rounded-3xl p-6 border border-border/40 space-y-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all ${selected ? 'ring-2 ring-primary/30' : ''}`} onClick={selectMode ? onToggle : undefined} {...(selectMode ? { role: 'button', tabIndex: 0, onKeyDown: (e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') onToggle(); } } : {})}>
       <div className="flex items-start gap-3">
         {selectMode && (
           <input type="checkbox" checked={selected} onChange={onToggle} className="mt-1" onClick={e => e.stopPropagation()} />

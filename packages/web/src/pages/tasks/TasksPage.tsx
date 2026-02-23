@@ -70,20 +70,20 @@ export default function TasksPage() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('tasks.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('tasks.title')}</h2>
         <Button onClick={() => navigate('/tasks/new')} data-testid="create-task-btn">
           <Plus className="h-4 w-4" /> {t('tasks.create')}
         </Button>
       </div>
 
       <div className="flex gap-3 mb-5">
-        <select className="h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50" value={filterTeam} onChange={e => setFilterTeam(e.target.value)}>
+        <select className="h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20" value={filterTeam} onChange={e => setFilterTeam(e.target.value)}>
           <option value="">{t('tasks.allTeams')}</option>
           {teams.map(tm => <option key={tm.id} value={tm.id}>{tm.name}</option>)}
         </select>
-        <select className="h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50" value={filterStatus} onChange={e => setFilterStatus(e.target.value)}>
+        <select className="h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20" value={filterStatus} onChange={e => setFilterStatus(e.target.value)}>
           <option value="">{t('tasks.allStatus')}</option>
           {Object.entries(STATUS_KEYS).map(([k, v]) => (
             <option key={k} value={k}>{t(v.key)}</option>
@@ -103,7 +103,7 @@ export default function TasksPage() {
               <div
                 key={task.id}
                 data-testid={`task-item-${task.id}`}
-                className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:ring-1 hover:ring-primary/20 hover:-translate-y-0.5 cursor-pointer transition-all"
+                className="bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:ring-1 hover:ring-primary/20 hover:-translate-y-0.5 cursor-pointer transition-all"
                 role="button"
                 tabIndex={0}
                 onClick={() => navigate(`/tasks/${task.id}`)}

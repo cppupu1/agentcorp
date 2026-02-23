@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import { employeesApi, modelsApi, toolsApi, knowledgeApi, type Model, type Tool, type EmployeeInput, type KnowledgeBase } from '@/api/client';
 import { useI18n } from '@/i18n';
+import { useIMEComposing } from '@/hooks/useIMEComposing';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -9,7 +10,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
-import { ArrowLeft, Loader2, X, Plus } from 'lucide-react';
+import { ArrowLeft, Loader2, X, Plus, AlertCircle } from 'lucide-react';
+import { Link } from 'react-router';
 
 export default function EmployeeFormPage() {
   const { id } = useParams<{ id: string }>();
@@ -17,6 +19,7 @@ export default function EmployeeFormPage() {
   const navigate = useNavigate();
   const { toast } = useToast();
   const { t } = useI18n();
+  const { onCompositionStart, onCompositionEnd, isComposing } = useIMEComposing();
 
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -134,16 +137,24 @@ export default function EmployeeFormPage() {
         {/* Model */}
         <section className="space-y-4">
           <h3 className="text-sm font-medium text-muted-foreground">{t('employees.brain')} <span className="text-destructive">*</span></h3>
-          <Select data-testid="employee-modelId-input" value={modelId} onChange={e => setModelId(e.target.value)} required>
-            <option value="">{t('employees.selectModel')}</option>
-            {models.map(m => <option key={m.id} value={m.id}>{m.name} ({m.modelId})</option>)}
-          </Select>
+          {models.length === 0 ? (
+            <div className="flex items-center gap-3 p-4 rounded-2xl border border-warning/30 bg-warning/10 text-sm">
+              <AlertCircle className="h-5 w-5 text-warning shrink-0" />
+              <span>{t('onboarding.noModels')}</span>
+              <Link to="/models" className="text-primary hover:underline font-medium ml-auto shrink-0">{t('onboarding.goCreate')}</Link>
+            </div>
+          ) : (
+            <Select data-testid="employee-modelId-input" value={modelId} onChange={e => setModelId(e.target.value)} required>
+              <option value="">{t('employees.selectModel')}</option>
+              {models.map(m => <option key={m.id} value={m.id}>{m.name} ({m.modelId})</option>)}
+            </Select>
+          )}
         </section>
 
         {/* Tools */}
         <section className="space-y-4">
           <h3 className="text-sm font-medium text-muted-foreground">{t('employees.toolAssign')}</h3>
-          <div className="rounded-xl bg-muted/30 p-3 max-h-48 overflow-y-auto space-y-1">
+          <div className="rounded-2xl bg-muted/40 p-4 border border-border/40 max-h-48 overflow-y-auto space-y-1">
             {allTools.length === 0 ? (
               <p className="text-sm text-muted-foreground">{t('employees.noTools')}</p>
             ) : allTools.map(tool => (
@@ -192,7 +203,9 @@ export default function EmployeeFormPage() {
             <Input
               value={tagInput}
               onChange={e => setTagInput(e.target.value)}
-              onKeyDown={e => { if (e.key === 'Enter' && !e.nativeEvent.isComposing) { e.preventDefault(); addTag(); } }}
+              onKeyDown={e => { if (e.key === 'Enter' && !isComposing(e)) { e.preventDefault(); addTag(); } }}
+              onCompositionStart={onCompositionStart}
+              onCompositionEnd={onCompositionEnd}
               placeholder={t('employees.tagPlaceholder')}
             />
             <Button type="button" variant="outline" onClick={addTag}>{t('common.add')}</Button>

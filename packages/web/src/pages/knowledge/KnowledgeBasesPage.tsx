@@ -14,10 +14,12 @@ import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { useToast } from '@/components/ui/toast';
 import { useI18n } from '@/i18n';
+import { useIMEComposing } from '@/hooks/useIMEComposing';
 import {
   Plus, Trash2, Search, Loader2, ChevronDown, ChevronRight,
-  FileText, X, Pencil,
+  FileText, X, Pencil, BookOpen,
 } from 'lucide-react';
+import { EmptyState } from '@/components/ui/empty-state';
 
 export default function KnowledgeBasesPage() {
   const [kbs, setKbs] = useState<KnowledgeBase[]>([]);
@@ -38,6 +40,7 @@ export default function KnowledgeBasesPage() {
   const [searching, setSearching] = useState(false);
   const { toast } = useToast();
   const { t } = useI18n();
+  const { onCompositionStart, onCompositionEnd, isComposing } = useIMEComposing();
 
   const load = useCallback(async () => {
     try {
@@ -125,20 +128,20 @@ export default function KnowledgeBasesPage() {
   }
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('kb.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('kb.title')}</h2>
         <Button onClick={() => setShowCreateDialog(true)}>
           <Plus className="h-4 w-4" /> {t('kb.create')}
         </Button>
       </div>
 
       {kbs.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('kb.empty')}</div>
+        <EmptyState icon={<BookOpen className="h-10 w-10" />} title={t('kb.empty')} description={t('kb.emptyDesc')} action={<Button onClick={() => setShowCreateDialog(true)}><Plus className="h-4 w-4" /> {t('kb.create')}</Button>} />
       ) : (
         <div className="space-y-3">
           {kbs.map(kb => (
-            <div key={kb.id} className="bg-card rounded-2xl shadow-[var(--shadow-sm)]">
+            <div key={kb.id} className="bg-card rounded-3xl border border-border/40 shadow-[var(--shadow-sm)] md-transition">
               <div
                 className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-muted/50"
                 onClick={() => toggleExpand(kb.id)}
@@ -168,7 +171,9 @@ export default function KnowledgeBasesPage() {
                         placeholder={t('kb.searchPlaceholder')}
                         value={searchKbId === kb.id ? searchQuery : ''}
                         onChange={e => { setSearchQuery(e.target.value); setSearchKbId(kb.id); }}
-                        onKeyDown={e => { if (e.key === 'Enter' && !e.nativeEvent.isComposing) handleSearch(kb.id); }}
+                        onKeyDown={e => { if (e.key === 'Enter' && !isComposing(e)) handleSearch(kb.id); }}
+                        onCompositionStart={onCompositionStart}
+                        onCompositionEnd={onCompositionEnd}
                       />
                     </div>
                     <Button variant="outline" onClick={() => handleSearch(kb.id)} disabled={searching}>

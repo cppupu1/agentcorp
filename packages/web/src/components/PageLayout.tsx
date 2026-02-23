@@ -42,12 +42,12 @@ function Breadcrumbs() {
   }
 
   return (
-    <nav className="flex items-center gap-1 text-sm text-muted-foreground" aria-label="Breadcrumb">
-      <Link to="/" className="hover:text-foreground hover:underline underline-offset-4 transition-colors">{t('nav.home')}</Link>
+    <nav className="flex items-center gap-1.5 text-[15px] font-medium text-muted-foreground" aria-label="Breadcrumb">
+      <Link to="/" className="hover:text-foreground hover:bg-muted/50 px-2 py-1 rounded-md transition-colors md-transition">{t('nav.home')}</Link>
       {crumbs.map((c) => (
-        <span key={c.path} className="flex items-center gap-1">
-          <ChevronRight className="h-3 w-3" />
-          <Link to={c.path} className="hover:text-foreground hover:underline underline-offset-4 transition-colors">{c.label}</Link>
+        <span key={c.path} className="flex items-center gap-1.5">
+          <ChevronRight className="h-4 w-4 opacity-50" />
+          <Link to={c.path} className="hover:text-foreground hover:bg-muted/50 px-2 py-1 rounded-md transition-colors md-transition">{c.label}</Link>
         </span>
       ))}
     </nav>
@@ -56,11 +56,11 @@ function Breadcrumbs() {
 
 export default function PageLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex flex-col h-full">
-      <header className="shrink-0 h-14 flex items-center px-6 bg-card shadow-[var(--shadow-sm)]">
+    <div className="flex flex-col h-full bg-background">
+      <header className="shrink-0 h-16 flex items-center px-6 bg-background">
         <Breadcrumbs />
       </header>
-      <div className="flex-1 overflow-auto">
+      <div className="flex-1 overflow-auto px-4 md:px-8 pb-8">
         {children}
       </div>
     </div>

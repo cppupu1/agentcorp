@@ -55,16 +55,16 @@ export function Dialog({ open, onOpenChange, children }: DialogProps) {
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-50 flex items-center justify-center"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
       onClick={(e) => { if (e.target === overlayRef.current) onOpenChange(false); }}
     >
-      <div className="fixed inset-0 bg-black/50" style={{ animation: 'fadeIn 0.2s ease-out' }} />
+      <div className="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-200" style={{ animation: 'fadeIn 0.2s cubic-bezier(0.2, 0, 0, 1)' }} />
       <div
         ref={contentRef}
         role="dialog"
         aria-modal="true"
-        className="relative z-50 w-full max-w-lg max-h-[85vh] overflow-auto rounded-[28px] border-0 bg-background p-6 shadow-lg"
-        style={{ animation: 'scaleIn 0.2s ease-out' }}
+        className="relative z-50 w-full max-w-lg max-h-[85vh] overflow-auto rounded-[28px] border border-border/40 bg-card p-6 md:p-8 shadow-[var(--shadow-xl)]"
+        style={{ animation: 'slideUp 0.3s cubic-bezier(0.2, 0, 0, 1)' }}
       >
         {children}
       </div>
@@ -73,13 +73,13 @@ export function Dialog({ open, onOpenChange, children }: DialogProps) {
 }
 
 export function DialogHeader({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('flex flex-col space-y-1.5 mb-4', className)} {...props} />;
+  return <div className={cn('flex flex-col space-y-2 mb-6', className)} {...props} />;
 }
 
 export function DialogTitle({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
-  return <h2 className={cn('text-lg font-semibold leading-none tracking-tight', className)} {...props} />;
+  return <h2 className={cn('text-2xl font-heading font-medium tracking-tight text-foreground/90', className)} {...props} />;
 }
 
 export function DialogFooter({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('flex justify-end gap-2 mt-4', className)} {...props} />;
+  return <div className={cn('flex flex-col-reverse sm:flex-row sm:justify-end gap-3 mt-8', className)} {...props} />;
 }

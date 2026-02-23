@@ -128,7 +128,7 @@ export default function ImportEmployeeDialog({ open, onClose, onSuccess }: Props
               <p className="text-sm text-muted-foreground">{t('import.noModels')}</p>
             ) : (
               <select
-                className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+                className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
                 value={selectedModel}
                 onChange={e => setSelectedModel(e.target.value)}
               >

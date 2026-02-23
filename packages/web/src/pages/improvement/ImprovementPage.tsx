@@ -14,7 +14,7 @@ export default function ImprovementPage() {
   const { t } = useI18n();
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold tracking-tight mb-4">{t('improvement.title')}</h2>
       <div className="flex gap-2 mb-6">
         {([['diagnose', t('improvement.tabDiagnose')], ['proposals', t('improvement.tabProposals')]] as [Tab, string][]).map(([key, label]) => (
@@ -79,7 +79,7 @@ function DiagnoseTab() {
       </div>
 
       {diagnosis && (
-        <div className="bg-card rounded-2xl p-5 space-y-3 shadow-[var(--shadow-sm)]">
+        <div className="bg-card rounded-3xl p-6 border border-border/40 space-y-3 shadow-[var(--shadow-sm)]">
           <h3 className="font-medium">{t('improvement.diagnosisResult', { name: diagnosis.employeeName })}</h3>
           <p className="text-sm">{t('improvement.analysisPeriod', { period: diagnosis.period })}</p>
           {diagnosis.testPassRate !== null && (
@@ -146,7 +146,7 @@ function ProposalsTab() {
   };
 
   if (loading) return <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>;
-  if (items.length === 0) return <div className="text-center py-12 text-muted-foreground">{t('improvement.noProposals')}</div>;
+  if (items.length === 0) return <div className="text-center py-16 text-[15px] text-muted-foreground bg-muted/30 rounded-3xl border border-dashed border-border/50">{t('improvement.noProposals')}</div>;
 
   return (
     <div className="space-y-2">
@@ -155,7 +155,7 @@ function ProposalsTab() {
         let suggestion: any = {};
         try { suggestion = JSON.parse(item.suggestion); } catch {}
         return (
-          <div key={item.id} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)]">
+          <div key={item.id} className="bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)]">
             <div className="flex items-center gap-2 mb-2">
               <Badge variant={st.variant}>{st.label}</Badge>
               <Badge variant="secondary">{item.category}</Badge>

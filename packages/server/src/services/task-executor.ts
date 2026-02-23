@@ -732,3 +732,24 @@ export async function failTask(taskId: string, error: string): Promise<void> {
     sseManager.emit(taskId, 'task_status', { taskId, status: 'failed', previousStatus: 'executing' });
   }
 }
+
+export async function retryTask(taskId: string): Promise<void> {
+  const [task] = await db.select().from(tasks).where(eq(tasks.id, taskId));
+  if (!task) throw new Error(`任务 ${taskId} 不存在`);
+  if (task.status !== 'failed') throw new Error(`仅失败的任务可重试`);
+
+  // Reset non-completed subtasks to pending
+  db.update(subtasks)
+    .set({ status: 'pending', output: null, retryCount: 0, updatedAt: now() })
+    .where(and(eq(subtasks.taskId, taskId), inArray(subtasks.status, ['failed', 'running', 'paused'])))
+    .run();
+
+  // Reset task to executing
+  db.update(tasks)
+    .set({ status: 'executing', result: null, updatedAt: now() })
+    .where(eq(tasks.id, taskId))
+    .run();
+
+  sseManager.emit(taskId, 'task_status', { taskId, status: 'executing', previousStatus: 'failed' });
+  startTaskExecution(taskId);
+}

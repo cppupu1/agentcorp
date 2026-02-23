@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/button';
 import MarkdownContent from '@/components/MarkdownContent';
 import { Input } from '@/components/ui/input';
 import { useI18n } from '@/i18n';
+import { useIMEComposing } from '@/hooks/useIMEComposing';
+import { Loader2 } from 'lucide-react';
 
 interface ToolCallEntry {
   id: string;
@@ -24,6 +26,7 @@ interface StreamingMessage {
 
 export default function HrAssistantPage() {
   const { t } = useI18n();
+  const { onCompositionStart, onCompositionEnd, isComposing } = useIMEComposing();
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
   const [messages, setMessages] = useState<HrChatMessage[]>([]);
@@ -203,7 +206,7 @@ export default function HrAssistantPage() {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
+    if (e.key === 'Enter' && !e.shiftKey && !isComposing(e)) {
       e.preventDefault();
       sendMessage();
     }
@@ -248,9 +251,9 @@ export default function HrAssistantPage() {
           <p className="text-sm text-muted-foreground">{t('hr.selectOrCreate')}</p>
         </div>
 
-        <div ref={chatContainerRef} className="flex-1 overflow-auto p-4 space-y-4">
+        <div ref={chatContainerRef} className="flex-1 overflow-auto p-4 md:p-8 space-y-2">
           {!activeSessionId && (
-            <div className="flex items-center justify-center h-full text-muted-foreground">
+            <div className="flex items-center justify-center h-full text-muted-foreground/50 text-[15px] font-medium">
               {t('hr.selectOrCreate')}
             </div>
           )}
@@ -262,18 +265,27 @@ export default function HrAssistantPage() {
         </div>
 
         {activeSessionId && (
-          <div className="p-4 border-t border-border/50">
-            <div className="flex gap-2">
-              <Input
+          <div className="p-4 md:p-6 bg-background shrink-0">
+            <div className="max-w-4xl mx-auto relative flex items-end gap-2 bg-muted/40 p-2 rounded-[28px] border border-border/40 focus-within:ring-2 focus-within:ring-primary/20 focus-within:border-primary/50 transition-all md-transition shadow-[var(--shadow-sm)]">
+              <textarea
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
+                onCompositionStart={onCompositionStart}
+                onCompositionEnd={onCompositionEnd}
                 placeholder={t('hr.inputPlaceholder')}
                 disabled={sending}
-                className="flex-1"
+                rows={1}
+                className="flex-1 max-h-32 min-h-[44px] bg-transparent border-0 px-4 py-3 text-[15px] resize-none focus:outline-none placeholder:text-muted-foreground/70"
+                style={{ height: 'auto' }}
+                onInput={(e) => {
+                  const target = e.target as HTMLTextAreaElement;
+                  target.style.height = 'auto';
+                  target.style.height = `${Math.min(target.scrollHeight, 128)}px`;
+                }}
               />
-              <Button onClick={sendMessage} disabled={sending || !input.trim()}>
-                {sending ? t('hr.sending') : t('hr.send')}
+              <Button size="icon" className="h-11 w-11 rounded-full shrink-0 mb-0.5 mr-0.5" onClick={sendMessage} disabled={sending || !input.trim()}>
+                {sending ? <Loader2 className="h-5 w-5 animate-spin" /> : <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>}
               </Button>
             </div>
           </div>
@@ -293,14 +305,16 @@ function MessageBubble({ message }: { message: HrChatMessage }) {
   }
 
   return (
-    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
-      <div className={`max-w-[75%] rounded-lg px-4 py-2 ${
-        isUser ? 'bg-primary text-primary-foreground' : 'bg-muted'
+    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} w-full mb-6 group`}>
+      <div className={`max-w-[85%] md:max-w-[75%] px-5 py-4 shadow-[var(--shadow-sm)] md-transition ${
+        isUser 
+          ? 'bg-primary text-primary-foreground rounded-[24px] rounded-tr-[4px]' 
+          : 'bg-card text-foreground border border-border/40 rounded-[24px] rounded-tl-[4px]'
       }`}>
         {isUser ? (
-          <div className="whitespace-pre-wrap text-sm">{message.content}</div>
+          <div className="whitespace-pre-wrap text-[15px] leading-relaxed">{message.content}</div>
         ) : (
-          <MarkdownContent content={message.content} className="text-sm" />
+          <MarkdownContent content={message.content} className="text-[15px] leading-relaxed" />
         )}
         {toolCalls.length > 0 && <ToolCallsDisplay toolCalls={toolCalls} />}
       </div>
@@ -311,15 +325,17 @@ function MessageBubble({ message }: { message: HrChatMessage }) {
 function StreamingBubble({ msg }: { msg: StreamingMessage }) {
   const { t } = useI18n();
   return (
-    <div className="flex justify-start">
-      <div className="max-w-[75%] rounded-lg px-4 py-2 bg-muted">
+    <div className="flex justify-start w-full mb-6">
+      <div className="max-w-[85%] md:max-w-[75%] px-5 py-4 shadow-[var(--shadow-sm)] md-transition bg-card text-foreground border border-border/40 rounded-[24px] rounded-tl-[4px]">
         {msg.text ? (
-          <MarkdownContent content={msg.text} className="text-sm" />
+          <MarkdownContent content={msg.text} className="text-[15px] leading-relaxed" />
         ) : (
-          <div className="text-sm text-muted-foreground">{t('hr.thinking')}</div>
+          <div className="text-[15px] text-muted-foreground flex items-center gap-2">
+            <Loader2 className="h-4 w-4 animate-spin opacity-50" /> {t('hr.thinking')}
+          </div>
         )}
         {msg.toolCalls.length > 0 && <ToolCallsDisplay toolCalls={msg.toolCalls} />}
-        {!msg.done && <span className="inline-block w-2 h-4 bg-foreground/50 animate-pulse ml-1" />}
+        {!msg.done && <span className="inline-block w-2 h-4 bg-foreground/40 animate-pulse ml-1 rounded-sm align-middle" />}
       </div>
     </div>
   );
@@ -352,17 +368,17 @@ function ToolCallsDisplay({ toolCalls }: { toolCalls: ToolCallEntry[] }) {
   };
 
   return (
-    <div className="mt-2 space-y-1">
+    <div className="mt-4 space-y-2">
       {toolCalls.map(tc => {
         const empId = getCreatedEmployeeId(tc);
         return (
-          <div key={tc.id} className="border border-border rounded text-xs">
+          <div key={tc.id} className="border border-border/60 rounded-xl text-[13px] bg-muted/20 overflow-hidden md-transition">
             <button
-              className="w-full px-2 py-1 flex items-center gap-2 hover:bg-accent/50 text-left"
+              className="w-full px-3 py-2.5 flex items-center gap-2.5 hover:bg-muted/50 text-left transition-colors font-mono font-medium text-muted-foreground/90"
               onClick={() => toggle(tc.id)}
             >
               <span className={tc.result !== undefined ? (tc.isError ? 'text-destructive' : 'text-success') : 'text-warning'}>
-                {tc.result !== undefined ? (tc.isError ? '✗' : '✓') : '⟳'}
+                {tc.result !== undefined ? (tc.isError ? '✗' : '✓') : <Loader2 className="h-3.5 w-3.5 animate-spin" />}
               </span>
               <span className="font-mono">{tc.toolName}</span>
               {empId && (

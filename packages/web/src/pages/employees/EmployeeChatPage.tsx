@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router';
 import { chatApi, employeesApi } from '@/api/client';
 import type { ChatSession, ChatMessage, EmployeeDetail } from '@/api/client';
 import { useI18n } from '@/i18n';
+import { useIMEComposing } from '@/hooks/useIMEComposing';
 import MarkdownContent from '@/components/MarkdownContent';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -25,6 +26,7 @@ interface StreamingMessage {
 export default function EmployeeChatPage() {
   const { id } = useParams<{ id: string }>();
   const { t } = useI18n();
+  const { onCompositionStart, onCompositionEnd, isComposing } = useIMEComposing();
   const [employee, setEmployee] = useState<EmployeeDetail | null>(null);
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
@@ -224,7 +226,7 @@ export default function EmployeeChatPage() {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
+    if (e.key === 'Enter' && !e.shiftKey && !isComposing(e)) {
       e.preventDefault();
       sendMessage();
     }
@@ -296,6 +298,8 @@ export default function EmployeeChatPage() {
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
+                onCompositionStart={onCompositionStart}
+                onCompositionEnd={onCompositionEnd}
                 placeholder={t('chat.inputPlaceholder')}
                 disabled={sending}
                 className="flex-1"

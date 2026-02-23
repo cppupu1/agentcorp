@@ -9,7 +9,8 @@ import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Plus, Pencil, Trash2, Zap, Loader2, Search, ChevronDown, ChevronRight, X } from 'lucide-react';
+import { Plus, Pencil, Trash2, Zap, Loader2, Search, ChevronDown, ChevronRight, X, Wrench } from 'lucide-react';
+import { EmptyState } from '@/components/ui/empty-state';
 import { useI18n } from '@/i18n';
 
 const statusVariant: Record<string, 'secondary' | 'success' | 'destructive'> = {
@@ -121,9 +122,9 @@ export default function ToolsPage() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('tools.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('tools.title')}</h2>
         <Button data-testid="create-tool-btn" onClick={() => { setEditing(null); setFormOpen(true); }}>
           <Plus className="h-4 w-4" /> {t('tools.add')}
         </Button>
@@ -137,11 +138,11 @@ export default function ToolsPage() {
       {loading ? (
         <div className="space-y-4">{Array.from({ length: 2 }, (_, i) => <Skeleton key={i} className="h-48 rounded-2xl" />)}</div>
       ) : filtered.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('tools.empty')}</div>
+        <EmptyState icon={<Wrench className="h-10 w-10" />} title={t('tools.empty')} description={t('tools.emptyDesc')} action={<Button onClick={() => { setEditing(null); setFormOpen(true); }}><Plus className="h-4 w-4" /> {t('tools.add')}</Button>} />
       ) : (
         <div className="space-y-4">
           {Array.from(grouped.entries()).map(([group, items]) => (
-            <div key={group} className="bg-card rounded-2xl shadow-[var(--shadow-sm)]">
+            <div key={group} className="bg-card rounded-3xl border border-border/40 shadow-[var(--shadow-sm)] md-transition">
               <button
                 className="flex items-center gap-2 w-full px-4 py-3 text-sm font-medium hover:bg-muted/50 cursor-pointer"
                 onClick={() => toggleGroup(group)}
@@ -156,7 +157,7 @@ export default function ToolsPage() {
                     const variant = statusVariant[tool.status] || statusVariant.untested;
                     const label = t(statusLabelKey[tool.status] || statusLabelKey.untested);
                     return (
-                      <div key={tool.id} data-testid={`tool-item-${tool.id}`} className="rounded-2xl p-5 space-y-2 hover:shadow-[var(--shadow-sm)] transition-all bg-muted/30">
+                      <div key={tool.id} data-testid={`tool-item-${tool.id}`} className="rounded-3xl p-6 md-transition border border-border/40 space-y-2 hover:shadow-[var(--shadow-sm)] transition-all bg-muted/30">
                         <div className="flex items-start justify-between">
                           <div className="font-medium text-sm">{tool.name}</div>
                           <Badge variant={variant} data-testid={`tool-status-${tool.id}`}>{label}</Badge>
@@ -271,7 +272,7 @@ function ToolFormDialog({
         <div className="space-y-2">
           <Label>{t('tools.transportType')}</Label>
           <select
-            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
             value={transportType}
             onChange={e => setTransportType(e.target.value)}
           >
@@ -313,7 +314,7 @@ function ToolFormDialog({
         <div className="space-y-2">
           <Label>{t('tools.accessLevel')}</Label>
           <select
-            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
             value={accessLevel}
             onChange={e => setAccessLevel(e.target.value)}
           >

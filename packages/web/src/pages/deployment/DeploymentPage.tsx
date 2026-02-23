@@ -151,9 +151,9 @@ export default function DeploymentPage() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('deployment.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('deployment.title')}</h2>
         <Button onClick={() => setCreateOpen(true)}>
           <Plus className="h-4 w-4" /> {t('deployment.create')}
         </Button>
@@ -329,7 +329,7 @@ function CreateDeploymentDialog({
         <div className="space-y-2">
           <Label>{t('deployment.selectEmployee')}</Label>
           <select
-            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
             value={employeeId}
             onChange={e => setEmployeeId(e.target.value)}
             required
@@ -341,7 +341,7 @@ function CreateDeploymentDialog({
         <div className="space-y-2">
           <Label>{t('deployment.selectTeam')}</Label>
           <select
-            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
             value={teamId}
             onChange={e => setTeamId(e.target.value)}
           >

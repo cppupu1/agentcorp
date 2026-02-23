@@ -7,8 +7,9 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
-import { Loader2, X, Plus } from 'lucide-react';
+import { Loader2, X, Plus, AlertCircle } from 'lucide-react';
 import { useI18n } from '@/i18n';
+import { Link } from 'react-router';
 
 const COLLAB_MODES = [
   { value: 'free', labelKey: 'teamForm.collabFree', enabled: true, descKey: 'teamForm.collabFreeDesc' },
@@ -168,24 +169,31 @@ export default function TeamFormPage() {
         {/* PM Selection */}
         <section className="space-y-4">
           <h3 className="text-lg font-medium border-b pb-2">{t('teamForm.pm')} *</h3>
-          <select
-            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
-            value={pmEmployeeId}
-            onChange={e => {
-              const newPmId = e.target.value;
-              setPmEmployeeId(newPmId);
-              // Remove new PM from members list if they were added as a member
-              if (newPmId) {
-                setMembers(prev => prev.filter(m => m.employeeId !== newPmId));
-              }
-            }}
-            required
-          >
-            <option value="">{t('teamForm.selectPm')}</option>
-            {allEmployees.map(emp => (
-              <option key={emp.id} value={emp.id}>{emp.avatar || '👤'} {emp.name} ({emp.modelName})</option>
-            ))}
-          </select>
+          {allEmployees.length === 0 ? (
+            <div className="flex items-center gap-3 p-4 rounded-2xl border border-warning/30 bg-warning/10 text-sm">
+              <AlertCircle className="h-5 w-5 text-warning shrink-0" />
+              <span>{t('onboarding.noEmployees')}</span>
+              <Link to="/employees/new" className="text-primary hover:underline font-medium ml-auto shrink-0">{t('onboarding.goCreate')}</Link>
+            </div>
+          ) : (
+            <select
+              className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
+              value={pmEmployeeId}
+              onChange={e => {
+                const newPmId = e.target.value;
+                setPmEmployeeId(newPmId);
+                if (newPmId) {
+                  setMembers(prev => prev.filter(m => m.employeeId !== newPmId));
+                }
+              }}
+              required
+            >
+              <option value="">{t('teamForm.selectPm')}</option>
+              {allEmployees.map(emp => (
+                <option key={emp.id} value={emp.id}>{emp.avatar || '👤'} {emp.name} ({emp.modelName})</option>
+              ))}
+            </select>
+          )}
         </section>
 
         {/* Members */}
@@ -217,7 +225,7 @@ export default function TeamFormPage() {
           )}
           {memberCandidates.length > 0 && (
             <select
-              className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+              className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
               value=""
               onChange={e => { if (e.target.value) addMember(e.target.value); }}
             >
@@ -286,7 +294,7 @@ export default function TeamFormPage() {
             )}
             {allPolicies.filter(p => !teamPolicies.some(tp => tp.packageId === p.id)).length > 0 && (
               <select
-                className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+                className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
                 value=""
                 onChange={async (e) => {
                   const pkgId = e.target.value;

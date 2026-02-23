@@ -14,7 +14,7 @@ export default function RoiReviewPage() {
   const { t } = useI18n();
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold tracking-tight mb-4">{t('roi.title')}</h2>
       <div className="flex gap-2 mb-6">
         {([['cost', t('roi.tabCost')], ['competency', t('roi.tabCompetency')], ['team', t('roi.tabTeam')]] as [Tab, string][]).map(([key, label]) => (
@@ -41,7 +41,7 @@ function CostTrendTab() {
   }, [toast]);
 
   if (loading) return <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>;
-  if (data.length === 0) return <div className="text-center py-12 text-muted-foreground">{t('roi.noCostData')}</div>;
+  if (data.length === 0) return <div className="text-center py-16 text-[15px] text-muted-foreground bg-muted/30 rounded-3xl border border-dashed border-border/50">{t('roi.noCostData')}</div>;
 
   return (
     <div className="overflow-x-auto">
@@ -183,7 +183,7 @@ function TeamTab() {
         <p className="text-muted-foreground text-sm">{selectedId ? t('common.noData') : t('roi.selectTeamHint')}</p>
       ) : (
         <div>
-          <div className="mb-4 p-4 bg-card rounded-2xl shadow-[var(--shadow-sm)]">
+          <div className="mb-4 p-4 bg-card rounded-3xl border border-border/40 shadow-[var(--shadow-sm)] md-transition">
             <span className="text-sm text-muted-foreground">{t('roi.teamAvgScore')}</span>
             <Badge variant={data.avgScore >= 70 ? 'success' : data.avgScore >= 50 ? 'warning' : 'destructive'}>
               {data.avgScore}

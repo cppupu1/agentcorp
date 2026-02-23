@@ -366,6 +366,8 @@ export const tasksApi = {
     request<{ data: TaskDetail }>(`/tasks/${id}/approve-team`, { method: 'POST', body: JSON.stringify(body) }),
   approvePlan: (id: string, body: { approved: boolean; feedback?: string }) =>
     request<{ data: TaskDetail }>(`/tasks/${id}/approve-plan`, { method: 'POST', body: JSON.stringify(body) }),
+  retry: (id: string) =>
+    request<{ data: TaskDetail }>(`/tasks/${id}/retry`, { method: 'POST' }),
 };
 
 // Notifications

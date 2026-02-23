@@ -6,7 +6,8 @@ import { Label } from '@/components/ui/label';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useI18n } from '@/i18n';
-import { Loader2, Save, Plus, Pencil, Trash2 } from 'lucide-react';
+import { Loader2, Save, Plus, Pencil, Trash2, Bell } from 'lucide-react';
+import { EmptyState } from '@/components/ui/empty-state';
 
 const SETTING_DEFS = [
   { key: 'subtask_token_limit', labelKey: 'settings.subtaskTokenLimit', descKey: 'settings.subtaskTokenLimitDesc', default: '100000', unitKey: 'settings.unitTokens' },
@@ -60,12 +61,12 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold tracking-tight mb-6">{t('settings.title')}</h2>
 
       <div className="space-y-6">
         {SETTING_DEFS.map(def => (
-          <div key={def.key} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)]">
+          <div key={def.key} className="bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)]">
             <label className="block text-sm font-medium mb-1">{t(def.labelKey)}</label>
             <p className="text-xs text-muted-foreground mb-3">{t(def.descKey)}</p>
             <div className="flex items-center gap-2">
@@ -156,13 +157,13 @@ function WebhookSection() {
           <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />
         </div>
       ) : configs.length === 0 ? (
-        <div className="text-center py-8 text-muted-foreground text-sm">{t('settings.webhookEmpty')}</div>
+        <EmptyState icon={<Bell className="h-10 w-10" />} title={t('settings.webhookEmpty')} description={t('settings.webhookEmptyDesc')} action={<Button size="sm" onClick={() => { setEditing(null); setFormOpen(true); }}><Plus className="h-4 w-4" /> {t('common.add')}</Button>} />
       ) : (
         <div className="space-y-3">
           {configs.map(c => {
             const events: string[] = (() => { try { return JSON.parse(c.events); } catch { return []; } })();
             return (
-              <div key={c.id} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)]">
+              <div key={c.id} className="bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)]">
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <span className="font-medium text-sm">{c.name}</span>
@@ -269,7 +270,7 @@ function WebhookForm({ editing, onClose, onSaved }: {
   };
 
   return (
-    <div className="bg-card rounded-2xl p-5 mt-4 shadow-[var(--shadow-sm)]">
+    <div className="bg-card rounded-3xl p-6 border border-border/40 mt-4 shadow-[var(--shadow-sm)]">
       <h4 className="text-sm font-medium mb-3">{editing ? t('settings.editWebhook') : t('settings.addWebhook')}</h4>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div className="space-y-1">

@@ -8,6 +8,8 @@ import {
 import type { TaskChatCallbacks } from '../services/tasks.js';
 import { sseManager } from '../services/sse-manager.js';
 import { getErrorTrace } from '../services/error-protection.js';
+import { exportTask } from '../services/task-export.js';
+import { retryTask } from '../services/task-executor.js';
 
 function validateCreate(body: Record<string, unknown>) {
   const errors: Array<{ field: string; rule: string; message: string }> = [];
@@ -159,6 +161,12 @@ export function registerTaskRoutes(app: FastifyInstance) {
     },
   );
 
+  // Retry failed task
+  app.post<{ Params: { id: string } }>('/api/tasks/:id/retry', async (req) => {
+    await retryTask(req.params.id);
+    return { data: await getTask(req.params.id) };
+  });
+
   // SSE: Subscribe to task execution events
   app.get<{ Params: { id: string } }>('/api/tasks/:id/events', async (req, reply) => {
     const task = await getTask(req.params.id);
@@ -220,5 +228,22 @@ export function registerTaskRoutes(app: FastifyInstance) {
   app.get<{ Params: { id: string } }>('/api/tasks/:id/error-trace', async (req) => {
     await getTask(req.params.id); // validate task exists
     return { data: await getErrorTrace(req.params.id) };
+  });
+
+  // Export task result
+  app.get<{ Params: { id: string; format: string } }>('/api/tasks/:id/export/:format', async (req, reply) => {
+    const { format } = req.params;
+    if (!['pdf', 'docx', 'xlsx'].includes(format)) {
+      throw new AppError('VALIDATION_ERROR', '不支持的导出格式');
+    }
+    const task = await getTask(req.params.id);
+    if (task.status !== 'completed' && task.status !== 'failed') {
+      throw new AppError('INVALID_STATE', '仅已完成或失败的任务可导出');
+    }
+    const { buffer, contentType, filename } = await exportTask(req.params.id, format);
+    return reply
+      .header('Content-Type', contentType)
+      .header('Content-Disposition', `attachment; filename="${encodeURIComponent(filename)}"`)
+      .send(buffer);
   });
 }

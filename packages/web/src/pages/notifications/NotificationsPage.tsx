@@ -66,8 +66,8 @@ export default function NotificationsPage() {
   ];
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
         <h2 className="text-2xl font-bold tracking-tight flex items-center gap-2">
           <Bell className="h-6 w-6" /> {t('notifications.title')}
         </h2>
@@ -97,7 +97,7 @@ export default function NotificationsPage() {
           <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
         </div>
       ) : items.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('notifications.empty')}</div>
+        <div className="text-center py-16 text-[15px] text-muted-foreground bg-muted/30 rounded-3xl border border-dashed border-border/50">{t('notifications.empty')}</div>
       ) : (
         <div className="space-y-2">
           {items.map(item => {
@@ -105,7 +105,7 @@ export default function NotificationsPage() {
             return (
               <div
                 key={item.id}
-                className={`bg-card rounded-2xl p-5 flex items-start gap-3 transition-all shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] ${
+                className={`bg-card rounded-3xl p-6 border border-border/40 flex items-start gap-3 transition-all shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] ${
                   item.read ? 'opacity-60' : ''
                 }`}
               >

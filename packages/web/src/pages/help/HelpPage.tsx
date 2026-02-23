@@ -5,7 +5,7 @@ export default function HelpPage() {
 
   return (
     <div className="p-6 max-w-6xl mx-auto space-y-8">
-      <h2 className="text-2xl font-bold tracking-tight">{t('help.title')}</h2>
+      <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('help.title')}</h2>
       <p className="text-muted-foreground">
         {t('help.intro')}
       </p>
@@ -70,7 +70,7 @@ export default function HelpPage() {
         <p>{t('help.emergencyDesc')}</p>
       </Section>
 
-      <div className="bg-card rounded-2xl p-5 text-sm text-muted-foreground shadow-[var(--shadow-sm)]">
+      <div className="bg-card rounded-3xl p-6 border border-border/40 text-sm text-muted-foreground shadow-[var(--shadow-sm)]">
         {t('help.recommendedFlow')}
       </div>
     </div>

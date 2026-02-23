@@ -13,7 +13,8 @@ import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useI18n } from '@/i18n';
-import { Loader2, Plus, Trash2, Play, ChevronDown, ChevronRight } from 'lucide-react';
+import { Loader2, Plus, Trash2, Play, ChevronDown, ChevronRight, FlaskConical } from 'lucide-react';
+import { EmptyState } from '@/components/ui/empty-state';
 
 const categoryKeys: Record<string, { key: string; variant: 'default' | 'secondary' | 'warning' | 'destructive' }> = {
   safety: { key: 'testing.catSafety', variant: 'destructive' },
@@ -40,9 +41,9 @@ export default function TestingPage() {
   const { t } = useI18n();
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('testing.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('testing.title')}</h2>
       </div>
       <div className="flex gap-2 mb-4 border-b">
         <button
@@ -124,7 +125,7 @@ function ScenariosTab() {
           <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
         </div>
       ) : items.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('testing.noScenarios')}</div>
+        <EmptyState icon={<FlaskConical className="h-10 w-10" />} title={t('testing.noScenarios')} description={t('testing.noScenariosDesc')} action={<Button size="sm" onClick={() => { setEditTarget(null); setEditOpen(true); }}><Plus className="h-4 w-4" /> {t('testing.newScenario')}</Button>} />
       ) : (
         <div className="space-y-2">
           {items.map(item => {
@@ -134,7 +135,7 @@ function ScenariosTab() {
             return (
               <div
                 key={item.id}
-                className="bg-card rounded-2xl p-5 flex items-center gap-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all cursor-pointer"
+                className="bg-card rounded-3xl p-6 border border-border/40 flex items-center gap-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all cursor-pointer"
                 onClick={() => { setEditTarget(item); setEditOpen(true); }}
               >
                 <div className="flex-1 min-w-0">
@@ -458,7 +459,7 @@ function RunsTab() {
   }
 
   if (items.length === 0) {
-    return <div className="text-center py-12 text-muted-foreground">{t('testing.noRuns')}</div>;
+    return <div className="text-center py-16 text-[15px] text-muted-foreground bg-muted/30 rounded-3xl border border-dashed border-border/50">{t('testing.noRuns')}</div>;
   }
 
   return (

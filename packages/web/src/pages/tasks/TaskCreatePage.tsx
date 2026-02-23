@@ -5,8 +5,9 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/components/ui/toast';
-import { Loader2 } from 'lucide-react';
+import { Loader2, AlertCircle } from 'lucide-react';
 import { useI18n } from '@/i18n';
+import { Link } from 'react-router';
 
 export default function TaskCreatePage() {
   const navigate = useNavigate();
@@ -81,27 +82,43 @@ export default function TaskCreatePage() {
         {createMode === 'quick' ? (
           <div className="space-y-2">
             <Label>{t('taskCreate.selectPm')} *</Label>
-            <select
-              className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
-              value={pmEmployeeId}
-              onChange={e => setPmEmployeeId(e.target.value)}
-            >
-              <option value="">{t('taskCreate.selectPm')}...</option>
-              {allEmployees.map(e => <option key={e.id} value={e.id}>{e.name}</option>)}
-            </select>
+            {allEmployees.length === 0 ? (
+              <div className="flex items-center gap-3 p-4 rounded-2xl border border-warning/30 bg-warning/10 text-sm">
+                <AlertCircle className="h-5 w-5 text-warning shrink-0" />
+                <span>{t('onboarding.noEmployees')}</span>
+                <Link to="/employees/new" className="text-primary hover:underline font-medium ml-auto shrink-0">{t('onboarding.goCreate')}</Link>
+              </div>
+            ) : (
+              <select
+                className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
+                value={pmEmployeeId}
+                onChange={e => setPmEmployeeId(e.target.value)}
+              >
+                <option value="">{t('taskCreate.selectPm')}...</option>
+                {allEmployees.map(e => <option key={e.id} value={e.id}>{e.name}</option>)}
+              </select>
+            )}
           </div>
         ) : (
           <div className="space-y-2">
             <Label>{t('taskCreate.selectTeam')} *</Label>
-            <select
-              className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
-              value={teamId}
-              onChange={e => setTeamId(e.target.value)}
-              data-testid="task-teamId-input"
-            >
-              <option value="">{t('taskCreate.selectTeam')}...</option>
-              {teams.map(team => <option key={team.id} value={team.id}>{team.name}</option>)}
-            </select>
+            {teams.length === 0 ? (
+              <div className="flex items-center gap-3 p-4 rounded-2xl border border-warning/30 bg-warning/10 text-sm">
+                <AlertCircle className="h-5 w-5 text-warning shrink-0" />
+                <span>{t('onboarding.noTeams')}</span>
+                <Link to="/teams/new" className="text-primary hover:underline font-medium ml-auto shrink-0">{t('onboarding.goCreate')}</Link>
+              </div>
+            ) : (
+              <select
+                className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20"
+                value={teamId}
+                onChange={e => setTeamId(e.target.value)}
+                data-testid="task-teamId-input"
+              >
+                <option value="">{t('taskCreate.selectTeam')}...</option>
+                {teams.map(team => <option key={team.id} value={team.id}>{team.name}</option>)}
+              </select>
+            )}
           </div>
         )}
         <div className="space-y-2">

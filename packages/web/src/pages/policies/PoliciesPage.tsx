@@ -15,7 +15,8 @@ import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useI18n } from '@/i18n';
-import { Plus, Trash2, Loader2, ChevronDown, ChevronRight, Pencil, RotateCcw } from 'lucide-react';
+import { Plus, Trash2, Loader2, ChevronDown, ChevronRight, Pencil, RotateCcw, ShieldCheck } from 'lucide-react';
+import { EmptyState } from '@/components/ui/empty-state';
 
 export default function PoliciesPage() {
   const [packages, setPackages] = useState<PolicyPackage[]>([]);
@@ -139,9 +140,9 @@ export default function PoliciesPage() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('policies.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('policies.title')}</h2>
         <Button onClick={() => { setEditing(null); setFormOpen(true); }}>
           <Plus className="h-4 w-4" /> {t('policies.create')}
         </Button>
@@ -150,11 +151,11 @@ export default function PoliciesPage() {
       {loading ? (
         <div className="space-y-3">{Array.from({ length: 3 }, (_, i) => <Skeleton key={i} className="h-16 rounded-2xl" />)}</div>
       ) : packages.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('policies.empty')}</div>
+        <EmptyState icon={<ShieldCheck className="h-10 w-10" />} title={t('policies.empty')} description={t('policies.emptyDesc')} action={<Button onClick={() => { setEditing(null); setFormOpen(true); }}><Plus className="h-4 w-4" /> {t('policies.create')}</Button>} />
       ) : (
         <div className="space-y-3">
           {packages.map(pkg => (
-            <div key={pkg.id} className="bg-card rounded-2xl shadow-[var(--shadow-sm)]">
+            <div key={pkg.id} className="bg-card rounded-3xl border border-border/40 shadow-[var(--shadow-sm)] md-transition">
               <button
                 className="flex items-center gap-3 w-full px-4 py-3 text-left hover:bg-muted/50"
                 onClick={() => toggleExpand(pkg.id)}

@@ -21,6 +21,14 @@ function safeJsonParse<T>(raw: string | null, fallback: T): T {
 const BRIEF_FIELDS = ['title', 'objective', 'deliverables', 'constraints', 'acceptanceCriteria'];
 const VALID_CHAT_STATES = ['draft', 'aligning'];
 
+const STATE_ORDER = ['draft', 'aligning', 'brief_review', 'team_review', 'plan_review', 'executing', 'completed', 'failed'];
+
+function isStatePast(current: string | null, required: string): boolean {
+  const ci = STATE_ORDER.indexOf(current ?? '');
+  const ri = STATE_ORDER.indexOf(required);
+  return ci > ri;
+}
+
 function assertState(task: { status: string | null }, requiredStatus: string, action: string) {
   if (task.status !== requiredStatus) {
     throw new AppError('INVALID_STATE', `当前状态 ${task.status} 不允许执行 ${action} 操作`, {
@@ -451,6 +459,7 @@ export async function approveBrief(taskId: string, input: { approved: boolean; m
   assertNotFrozen();
   const [task] = await db.select().from(tasks).where(eq(tasks.id, taskId));
   if (!task) throw new AppError('NOT_FOUND', `任务 ${taskId} 不存在`);
+  if (isStatePast(task.status, 'brief_review')) return getTask(taskId);
   assertState(task, 'brief_review', 'approve-brief');
 
   if (!input.approved) {
@@ -501,6 +510,7 @@ export async function approveTeam(taskId: string, input: { approved: boolean; ad
   assertNotFrozen();
   const [task] = await db.select().from(tasks).where(eq(tasks.id, taskId));
   if (!task) throw new AppError('NOT_FOUND', `任务 ${taskId} 不存在`);
+  if (isStatePast(task.status, 'team_review')) return getTask(taskId);
   assertState(task, 'team_review', 'approve-team');
 
   if (!input.approved) {
@@ -569,6 +579,7 @@ export async function approvePlan(taskId: string, input: { approved: boolean; fe
   assertNotFrozen();
   const [task] = await db.select().from(tasks).where(eq(tasks.id, taskId));
   if (!task) throw new AppError('NOT_FOUND', `任务 ${taskId} 不存在`);
+  if (isStatePast(task.status, 'plan_review')) return getTask(taskId);
   assertState(task, 'plan_review', 'approve-plan');
 
   if (!input.approved) {

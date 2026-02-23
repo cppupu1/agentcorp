@@ -40,6 +40,7 @@ import QualityDashboardPage from '@/pages/quality/QualityDashboardPage';
 import RoiReviewPage from '@/pages/roi/RoiReviewPage';
 import ImprovementPage from '@/pages/improvement/ImprovementPage';
 import PageLayout from '@/components/PageLayout';
+import CommandPalette from '@/components/CommandPalette';
 import './index.css';
 
 type NavItem = { path: string; labelKey: TranslationKeys; icon: React.ComponentType<{ className?: string }> };
@@ -106,10 +107,10 @@ function NavGroupSection({ group, collapsed, onNavigate }: { group: NavGroup; co
         <button
           onClick={() => setOpen(!open)}
           aria-expanded={open}
-          className="flex items-center justify-between w-full px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-sidebar-muted hover:text-sidebar-foreground transition-colors"
+          className="flex items-center justify-between w-full px-5 py-2.5 text-[12px] font-medium tracking-wide text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors md-transition"
         >
           <span>{t(group.groupKey)}</span>
-          <ChevronDown className={`h-3 w-3 transition-transform ${open ? '' : '-rotate-90'}`} />
+          <ChevronDown className={`h-4 w-4 transition-transform ${open ? '' : '-rotate-90'}`} />
         </button>
       )}
       {(open || collapsed) && (
@@ -121,12 +122,12 @@ function NavGroupSection({ group, collapsed, onNavigate }: { group: NavGroup; co
               end={item.path === '/'}
               onClick={onNavigate}
               className={({ isActive }) =>
-                `flex items-center gap-3 rounded-xl text-[13px] transition-all ${
-                  collapsed ? 'justify-center px-2 py-2 mx-1' : 'px-3 py-2 mx-2'
+                `flex items-center gap-3 rounded-full text-[14px] font-medium transition-all duration-200 md-transition ${
+                  collapsed ? 'justify-center px-2 py-2.5 mx-1' : 'px-4 py-2.5 mx-2'
                 } ${
                   isActive
-                    ? 'bg-sidebar-accent text-sidebar-accent-foreground font-medium shadow-sm'
-                    : 'text-sidebar-foreground/70 hover:text-sidebar-foreground hover:bg-sidebar-accent/50'
+                    ? 'bg-sidebar-primary/10 text-sidebar-primary'
+                    : 'text-sidebar-foreground/80 hover:text-sidebar-foreground hover:bg-sidebar-accent/50'
                 }`
               }
               title={collapsed ? t(item.labelKey) : undefined}
@@ -269,8 +270,8 @@ function MobileHeader() {
   const [open, setOpen] = useState(false);
   return (
     <div className="md:hidden border-b border-sidebar-border bg-sidebar-background text-sidebar-foreground">
-      <div className="flex items-center justify-between px-4 h-14">
-        <h1 className="text-base font-bold tracking-tight">AgentCorp</h1>
+      <div className="flex items-center justify-between px-4 h-16">
+        <h1 className="text-xl font-heading font-medium tracking-tight">AgentCorp</h1>
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <LanguageToggle />
@@ -300,15 +301,15 @@ function DesktopSidebar() {
   const { collapsed, toggle } = useSidebar();
   const { t } = useI18n();
   return (
-    <aside className={`hidden md:flex h-screen flex-col bg-sidebar-background text-sidebar-foreground shadow-[var(--shadow-md)] transition-all duration-300 ${collapsed ? 'w-16' : 'w-60'}`}>
-      <div className={`flex items-center border-b border-sidebar-border/50 h-14 shrink-0 ${collapsed ? 'justify-center px-2' : 'justify-between px-4'}`}>
-        {!collapsed && <h1 className="text-base font-bold text-sidebar-primary-foreground tracking-tight">AgentCorp</h1>}
-        <button onClick={toggle} className="p-1.5 rounded-lg hover:bg-sidebar-accent/50 text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors" aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'} title={collapsed ? 'Expand' : 'Collapse'}>
-          {collapsed ? <PanelLeft className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />}
+    <aside className={`hidden md:flex h-screen flex-col bg-sidebar-background text-sidebar-foreground border-r border-border/40 transition-all duration-300 md-transition ${collapsed ? 'w-20' : 'w-72'}`}>
+      <div className={`flex items-center h-16 shrink-0 ${collapsed ? 'justify-center px-2' : 'justify-between px-6'}`}>
+        {!collapsed && <h1 className="text-xl font-heading font-medium text-sidebar-foreground tracking-tight">AgentCorp</h1>}
+        <button onClick={toggle} className="p-2 rounded-full hover:bg-sidebar-accent/50 text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors md-transition" aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'} title={collapsed ? 'Expand' : 'Collapse'}>
+          {collapsed ? <PanelLeft className="h-5 w-5" /> : <PanelLeftClose className="h-5 w-5" />}
         </button>
       </div>
       <Sidebar />
-      <div className={`border-t border-sidebar-border/50 p-3 shrink-0 ${collapsed ? 'flex flex-col items-center gap-2' : 'flex items-center gap-2'}`}>
+      <div className={`mt-auto pb-4 pt-2 px-4 shrink-0 ${collapsed ? 'flex flex-col items-center gap-3' : 'flex items-center gap-3'}`}>
         <ThemeToggle />
         <LanguageToggle />
         <NotificationBell />
@@ -338,6 +339,7 @@ export default function App() {
       <ToastProvider>
         <SystemStatusProvider>
           <SidebarContext.Provider value={{ collapsed, toggle: () => setCollapsed(c => !c) }}>
+            <CommandPalette />
             <FrozenBanner />
             <div className="flex flex-col md:flex-row h-screen">
               <MobileHeader />

@@ -112,9 +112,9 @@ export default function TriggersPage() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{t('triggers.title')}</h2>
+    <div className="p-4 md:p-8 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
+        <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('triggers.title')}</h2>
         <Button onClick={() => { setEditing(null); setFormOpen(true); }}>
           <Plus className="h-4 w-4" /> {t('triggers.add')}
         </Button>
@@ -130,7 +130,7 @@ export default function TriggersPage() {
             const variant = typeVariant[trig.type] || typeVariant.event;
             const typeLabel = t(typeLabelKey[trig.type] || typeLabelKey.event);
             return (
-              <div key={trig.id} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all">
+              <div key={trig.id} className="bg-card rounded-3xl p-6 shadow-[var(--shadow-sm)] border border-border/40 hover:shadow-[var(--shadow-md)] hover:-translate-y-1 md-transition flex flex-col">
                 <div className="flex items-center justify-between gap-4">
                   <div className="min-w-0 flex-1">
                     <div className="font-medium text-sm">{trig.name}</div>
@@ -248,7 +248,7 @@ function TriggerFormDialog({
         </div>
         <div className="space-y-2">
           <Label>{t('triggers.type')}</Label>
-          <select className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50" value={type} onChange={e => setType(e.target.value as 'cron' | 'webhook' | 'event')}>
+          <select className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20" value={type} onChange={e => setType(e.target.value as 'cron' | 'webhook' | 'event')}>
             <option value="cron">{t('triggers.typeCron')}</option>
             <option value="webhook">{t('triggers.typeWebhook')}</option>
             <option value="event">{t('triggers.typeEvent')}</option>
@@ -278,7 +278,7 @@ function TriggerFormDialog({
 
         <div className="space-y-2">
           <Label>{t('triggers.team')}</Label>
-          <select className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50" value={teamId} onChange={e => setTeamId(e.target.value)} required>
+          <select className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20" value={teamId} onChange={e => setTeamId(e.target.value)} required>
             <option value="">{t('triggers.selectTeam')}</option>
             {teams.map(tm => <option key={tm.id} value={tm.id}>{tm.name}</option>)}
           </select>
@@ -296,7 +296,7 @@ function TriggerFormDialog({
           </div>
           <div className="space-y-2">
             <Label>{t('triggers.execMode')}</Label>
-            <select className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50" value={taskMode} onChange={e => setTaskMode(e.target.value)}>
+            <select className="w-full h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20" value={taskMode} onChange={e => setTaskMode(e.target.value)}>
               <option value="suggest">{t('triggers.suggestMode')}</option>
               <option value="auto">{t('triggers.autoMode')}</option>
             </select>
