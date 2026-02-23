@@ -44,7 +44,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
             key={t.id}
             data-testid={t.type === 'error' ? 'error-toast' : undefined}
             className={cn(
-              'relative overflow-hidden flex items-center gap-2 rounded-md px-4 py-3 text-sm shadow-lg min-w-[300px] max-w-[450px]',
+              'relative overflow-hidden flex items-center gap-2 rounded-xl px-5 py-4 text-sm shadow-lg min-w-[300px] max-w-[450px]',
               t.type === 'success' && 'bg-success text-success-foreground',
               t.type === 'error' && 'bg-destructive text-white',
               t.type === 'info' && 'bg-foreground text-background',

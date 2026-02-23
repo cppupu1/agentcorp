@@ -25,7 +25,7 @@ export default function HealthDashboard() {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
       {cards.map(c => (
-        <div key={c.label} className="bg-card rounded-xl p-5 shadow-sm border border-border/50 hover:shadow-md transition-shadow">
+        <div key={c.label} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all">
           <div className="flex items-center justify-between mb-3">
             <div className={`p-2 rounded-lg ${c.bg} ring-1 ${c.ring}`}>
               <c.icon className={`h-4 w-4 ${c.color}`} />

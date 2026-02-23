@@ -183,7 +183,7 @@ function TeamTab() {
         <p className="text-muted-foreground text-sm">{selectedId ? t('common.noData') : t('roi.selectTeamHint')}</p>
       ) : (
         <div>
-          <div className="mb-4 p-3 bg-card border border-border/50 rounded-xl shadow-sm">
+          <div className="mb-4 p-4 bg-card rounded-2xl shadow-[var(--shadow-sm)]">
             <span className="text-sm text-muted-foreground">{t('roi.teamAvgScore')}</span>
             <Badge variant={data.avgScore >= 70 ? 'success' : data.avgScore >= 50 ? 'warning' : 'destructive'}>
               {data.avgScore}

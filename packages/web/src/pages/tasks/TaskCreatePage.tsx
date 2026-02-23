@@ -66,12 +66,12 @@ export default function TaskCreatePage() {
         <div className="space-y-2">
           <Label>{t('taskCreate.method')}</Label>
           <div className="flex gap-3">
-            <label className={`flex-1 border rounded-lg p-3 cursor-pointer transition-colors ${createMode === 'quick' ? 'border-primary bg-primary/5' : ''}`}>
+            <label className={`flex-1 rounded-xl p-3 cursor-pointer transition-colors ${createMode === 'quick' ? 'bg-primary/10 ring-2 ring-primary/30' : 'bg-muted/30'}`}>
               <input type="radio" name="createMode" value="quick" checked={createMode === 'quick'} onChange={() => setCreateMode('quick')} className="sr-only" />
               <div className="font-medium text-sm mb-1">{t('taskCreate.quickMode')}</div>
               <div className="text-xs text-muted-foreground">{t('taskCreate.quickModeDesc')}</div>
             </label>
-            <label className={`flex-1 border rounded-lg p-3 cursor-pointer transition-colors ${createMode === 'team' ? 'border-primary bg-primary/5' : ''}`}>
+            <label className={`flex-1 rounded-xl p-3 cursor-pointer transition-colors ${createMode === 'team' ? 'bg-primary/10 ring-2 ring-primary/30' : 'bg-muted/30'}`}>
               <input type="radio" name="createMode" value="team" checked={createMode === 'team'} onChange={() => setCreateMode('team')} className="sr-only" />
               <div className="font-medium text-sm mb-1">{t('taskCreate.teamMode')}</div>
               <div className="text-xs text-muted-foreground">{t('taskCreate.teamModeDesc')}</div>
@@ -82,7 +82,7 @@ export default function TaskCreatePage() {
           <div className="space-y-2">
             <Label>{t('taskCreate.selectPm')} *</Label>
             <select
-              className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+              className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
               value={pmEmployeeId}
               onChange={e => setPmEmployeeId(e.target.value)}
             >
@@ -94,7 +94,7 @@ export default function TaskCreatePage() {
           <div className="space-y-2">
             <Label>{t('taskCreate.selectTeam')} *</Label>
             <select
-              className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+              className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
               value={teamId}
               onChange={e => setTeamId(e.target.value)}
               data-testid="task-teamId-input"
@@ -120,12 +120,12 @@ export default function TaskCreatePage() {
         <div className="space-y-2">
           <Label>{t('taskCreate.execMode')}</Label>
           <div className="flex gap-3">
-            <label className={`flex-1 border rounded-lg p-3 cursor-pointer transition-colors ${mode === 'suggest' ? 'border-primary bg-primary/5' : ''}`}>
+            <label className={`flex-1 rounded-xl p-3 cursor-pointer transition-colors ${mode === 'suggest' ? 'bg-primary/10 ring-2 ring-primary/30' : 'bg-muted/30'}`}>
               <input type="radio" name="mode" value="suggest" checked={mode === 'suggest'} onChange={() => setMode('suggest')} className="sr-only" />
               <div className="font-medium text-sm mb-1">{t('taskCreate.suggestMode')}</div>
               <div className="text-xs text-muted-foreground">{t('taskCreate.suggestModeDetail')}</div>
             </label>
-            <label className={`flex-1 border rounded-lg p-3 cursor-pointer transition-colors ${mode === 'auto' ? 'border-primary bg-primary/5' : ''}`}>
+            <label className={`flex-1 rounded-xl p-3 cursor-pointer transition-colors ${mode === 'auto' ? 'bg-primary/10 ring-2 ring-primary/30' : 'bg-muted/30'}`}>
               <input type="radio" name="mode" value="auto" checked={mode === 'auto'} onChange={() => setMode('auto')} className="sr-only" />
               <div className="font-medium text-sm mb-1">{t('taskCreate.autoMode')}</div>
               <div className="text-xs text-muted-foreground">{t('taskCreate.autoModeDetail')}</div>

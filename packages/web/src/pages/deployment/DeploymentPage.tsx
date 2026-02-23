@@ -169,7 +169,7 @@ export default function DeploymentPage() {
             const badge = stageBadge[s.stage] || stageBadge.simulation;
             const isExpanded = expandedId === s.id;
             return (
-              <div key={s.id} className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm">
+              <div key={s.id} className="bg-card rounded-2xl overflow-hidden shadow-[var(--shadow-sm)]">
                 <div
                   className="flex items-center gap-4 px-4 py-3 cursor-pointer hover:bg-muted/30 transition-colors"
                   onClick={() => handleExpand(s.id)}
@@ -329,7 +329,7 @@ function CreateDeploymentDialog({
         <div className="space-y-2">
           <Label>{t('deployment.selectEmployee')}</Label>
           <select
-            className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             value={employeeId}
             onChange={e => setEmployeeId(e.target.value)}
             required
@@ -341,7 +341,7 @@ function CreateDeploymentDialog({
         <div className="space-y-2">
           <Label>{t('deployment.selectTeam')}</Label>
           <select
-            className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             value={teamId}
             onChange={e => setTeamId(e.target.value)}
           >

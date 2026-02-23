@@ -79,7 +79,7 @@ function DiagnoseTab() {
       </div>
 
       {diagnosis && (
-        <div className="bg-card border border-border/50 rounded-xl p-4 space-y-3 shadow-sm">
+        <div className="bg-card rounded-2xl p-5 space-y-3 shadow-[var(--shadow-sm)]">
           <h3 className="font-medium">{t('improvement.diagnosisResult', { name: diagnosis.employeeName })}</h3>
           <p className="text-sm">{t('improvement.analysisPeriod', { period: diagnosis.period })}</p>
           {diagnosis.testPassRate !== null && (
@@ -155,7 +155,7 @@ function ProposalsTab() {
         let suggestion: any = {};
         try { suggestion = JSON.parse(item.suggestion); } catch {}
         return (
-          <div key={item.id} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm">
+          <div key={item.id} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)]">
             <div className="flex items-center gap-2 mb-2">
               <Badge variant={st.variant}>{st.label}</Badge>
               <Badge variant="secondary">{item.category}</Badge>

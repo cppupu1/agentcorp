@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
+import { Skeleton } from '@/components/ui/skeleton';
 import { Plus, Pencil, Trash2, Zap, Loader2, Search, ChevronDown, ChevronRight, X } from 'lucide-react';
 import { useI18n } from '@/i18n';
 
@@ -134,13 +135,13 @@ export default function ToolsPage() {
       </div>
 
       {loading ? (
-        <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
+        <div className="space-y-4">{Array.from({ length: 2 }, (_, i) => <Skeleton key={i} className="h-48 rounded-2xl" />)}</div>
       ) : filtered.length === 0 ? (
         <div className="text-center py-12 text-muted-foreground">{t('tools.empty')}</div>
       ) : (
         <div className="space-y-4">
           {Array.from(grouped.entries()).map(([group, items]) => (
-            <div key={group} className="bg-card border border-border/50 rounded-xl shadow-sm">
+            <div key={group} className="bg-card rounded-2xl shadow-[var(--shadow-sm)]">
               <button
                 className="flex items-center gap-2 w-full px-4 py-3 text-sm font-medium hover:bg-muted/50 cursor-pointer"
                 onClick={() => toggleGroup(group)}
@@ -155,7 +156,7 @@ export default function ToolsPage() {
                     const variant = statusVariant[tool.status] || statusVariant.untested;
                     const label = t(statusLabelKey[tool.status] || statusLabelKey.untested);
                     return (
-                      <div key={tool.id} data-testid={`tool-item-${tool.id}`} className="border border-border/50 rounded-xl p-4 space-y-2 hover:shadow-sm transition-all">
+                      <div key={tool.id} data-testid={`tool-item-${tool.id}`} className="rounded-2xl p-5 space-y-2 hover:shadow-[var(--shadow-sm)] transition-all bg-muted/30">
                         <div className="flex items-start justify-between">
                           <div className="font-medium text-sm">{tool.name}</div>
                           <Badge variant={variant} data-testid={`tool-status-${tool.id}`}>{label}</Badge>
@@ -270,7 +271,7 @@ function ToolFormDialog({
         <div className="space-y-2">
           <Label>{t('tools.transportType')}</Label>
           <select
-            className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             value={transportType}
             onChange={e => setTransportType(e.target.value)}
           >
@@ -312,7 +313,7 @@ function ToolFormDialog({
         <div className="space-y-2">
           <Label>{t('tools.accessLevel')}</Label>
           <select
-            className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             value={accessLevel}
             onChange={e => setAccessLevel(e.target.value)}
           >

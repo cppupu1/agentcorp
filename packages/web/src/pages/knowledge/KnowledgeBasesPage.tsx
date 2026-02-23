@@ -138,7 +138,7 @@ export default function KnowledgeBasesPage() {
       ) : (
         <div className="space-y-3">
           {kbs.map(kb => (
-            <div key={kb.id} className="bg-card border border-border/50 rounded-xl shadow-sm">
+            <div key={kb.id} className="bg-card rounded-2xl shadow-[var(--shadow-sm)]">
               <div
                 className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-muted/50"
                 onClick={() => toggleExpand(kb.id)}
@@ -168,7 +168,7 @@ export default function KnowledgeBasesPage() {
                         placeholder={t('kb.searchPlaceholder')}
                         value={searchKbId === kb.id ? searchQuery : ''}
                         onChange={e => { setSearchQuery(e.target.value); setSearchKbId(kb.id); }}
-                        onKeyDown={e => { if (e.key === 'Enter') handleSearch(kb.id); }}
+                        onKeyDown={e => { if (e.key === 'Enter' && !e.nativeEvent.isComposing) handleSearch(kb.id); }}
                       />
                     </div>
                     <Button variant="outline" onClick={() => handleSearch(kb.id)} disabled={searching}>

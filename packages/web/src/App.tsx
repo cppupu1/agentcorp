@@ -105,6 +105,7 @@ function NavGroupSection({ group, collapsed, onNavigate }: { group: NavGroup; co
       {!collapsed && (
         <button
           onClick={() => setOpen(!open)}
+          aria-expanded={open}
           className="flex items-center justify-between w-full px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-sidebar-muted hover:text-sidebar-foreground transition-colors"
         >
           <span>{t(group.groupKey)}</span>
@@ -120,7 +121,7 @@ function NavGroupSection({ group, collapsed, onNavigate }: { group: NavGroup; co
               end={item.path === '/'}
               onClick={onNavigate}
               className={({ isActive }) =>
-                `flex items-center gap-3 rounded-lg text-[13px] transition-all ${
+                `flex items-center gap-3 rounded-xl text-[13px] transition-all ${
                   collapsed ? 'justify-center px-2 py-2 mx-1' : 'px-3 py-2 mx-2'
                 } ${
                   isActive
@@ -168,7 +169,7 @@ function NotificationBell() {
   return (
     <button
       onClick={() => navigate('/notifications')}
-      className="relative p-1.5 rounded-md hover:bg-sidebar-accent/50 transition-colors"
+      className="relative p-1.5 rounded-lg hover:bg-sidebar-accent/50 transition-colors"
       aria-label={t('nav.notifications')}
     >
       <Bell className="h-4 w-4" />
@@ -209,7 +210,7 @@ function EmergencyButton() {
     <button
       onClick={handleToggle}
       disabled={loading || status === 'loading'}
-      className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+      className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
         status === 'frozen'
           ? 'bg-success hover:bg-success/90 text-success-foreground'
           : 'bg-destructive hover:bg-destructive/90 text-destructive-foreground'
@@ -236,8 +237,9 @@ function LanguageToggle() {
   return (
     <button
       onClick={() => setLocale(locale === 'zh' ? 'en' : 'zh')}
-      className="p-1.5 rounded-md hover:bg-sidebar-accent/50 transition-colors text-xs font-medium"
+      className="p-1.5 rounded-lg hover:bg-sidebar-accent/50 transition-colors text-xs font-medium"
       title={locale === 'zh' ? 'English' : '中文'}
+      aria-label={locale === 'zh' ? 'Switch to English' : '切换到中文'}
     >
       <Languages className="h-4 w-4" />
     </button>
@@ -253,8 +255,9 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(next)}
-      className="p-1.5 rounded-md hover:bg-sidebar-accent/50 transition-colors"
+      className="p-1.5 rounded-lg hover:bg-sidebar-accent/50 transition-colors"
       title={label}
+      aria-label={label}
       data-testid="theme-toggle"
     >
       <Icon className="h-4 w-4" />
@@ -275,7 +278,7 @@ function MobileHeader() {
           <EmergencyButton />
           <button
             onClick={() => setOpen(!open)}
-            className="p-1.5 rounded-md hover:bg-sidebar-accent/50"
+            className="p-1.5 rounded-lg hover:bg-sidebar-accent/50"
             aria-label="Toggle navigation"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -297,15 +300,15 @@ function DesktopSidebar() {
   const { collapsed, toggle } = useSidebar();
   const { t } = useI18n();
   return (
-    <aside className={`hidden md:flex h-screen flex-col bg-sidebar-background text-sidebar-foreground transition-all duration-300 ${collapsed ? 'w-16' : 'w-60'}`}>
-      <div className={`flex items-center border-b border-sidebar-border h-14 shrink-0 ${collapsed ? 'justify-center px-2' : 'justify-between px-4'}`}>
+    <aside className={`hidden md:flex h-screen flex-col bg-sidebar-background text-sidebar-foreground shadow-[var(--shadow-md)] transition-all duration-300 ${collapsed ? 'w-16' : 'w-60'}`}>
+      <div className={`flex items-center border-b border-sidebar-border/50 h-14 shrink-0 ${collapsed ? 'justify-center px-2' : 'justify-between px-4'}`}>
         {!collapsed && <h1 className="text-base font-bold text-sidebar-primary-foreground tracking-tight">AgentCorp</h1>}
-        <button onClick={toggle} className="p-1.5 rounded-md hover:bg-sidebar-accent/50 text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors" title={collapsed ? 'Expand' : 'Collapse'}>
+        <button onClick={toggle} className="p-1.5 rounded-lg hover:bg-sidebar-accent/50 text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors" aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'} title={collapsed ? 'Expand' : 'Collapse'}>
           {collapsed ? <PanelLeft className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />}
         </button>
       </div>
       <Sidebar />
-      <div className={`border-t border-sidebar-border p-3 shrink-0 ${collapsed ? 'flex flex-col items-center gap-2' : 'flex items-center gap-2'}`}>
+      <div className={`border-t border-sidebar-border/50 p-3 shrink-0 ${collapsed ? 'flex flex-col items-center gap-2' : 'flex items-center gap-2'}`}>
         <ThemeToggle />
         <LanguageToggle />
         <NotificationBell />
@@ -321,7 +324,7 @@ function NotFoundPage() {
     <div className="flex flex-col items-center justify-center h-full p-8 text-center">
       <h2 className="text-4xl font-bold text-muted-foreground mb-2">404</h2>
       <p className="text-sm text-muted-foreground mb-4">{t('app.notFound')}</p>
-      <a href="/tasks" className="px-4 py-2 text-sm rounded-md bg-primary text-primary-foreground hover:bg-primary/90">
+      <a href="/tasks" className="px-6 py-2 text-sm rounded-full bg-primary text-primary-foreground hover:bg-primary/90">
         {t('app.backHome')}
       </a>
     </div>

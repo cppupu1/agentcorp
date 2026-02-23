@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router';
 import { chatApi, employeesApi } from '@/api/client';
 import type { ChatSession, ChatMessage, EmployeeDetail } from '@/api/client';
 import { useI18n } from '@/i18n';
+import MarkdownContent from '@/components/MarkdownContent';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -324,7 +325,11 @@ function MessageBubble({ message }: { message: ChatMessage }) {
       <div className={`max-w-[75%] rounded-lg px-4 py-2 ${
         isUser ? 'bg-primary text-primary-foreground' : 'bg-muted'
       }`}>
-        <div className="whitespace-pre-wrap text-sm">{message.content}</div>
+        {isUser ? (
+          <div className="whitespace-pre-wrap text-sm">{message.content}</div>
+        ) : (
+          <MarkdownContent content={message.content} className="text-sm" />
+        )}
         {toolCalls.length > 0 && <ToolCallsDisplay toolCalls={toolCalls} />}
       </div>
     </div>
@@ -337,7 +342,7 @@ function StreamingBubble({ msg }: { msg: StreamingMessage }) {
     <div className="flex justify-start">
       <div className="max-w-[75%] rounded-lg px-4 py-2 bg-muted">
         {msg.text ? (
-          <div className="whitespace-pre-wrap text-sm">{msg.text}</div>
+          <MarkdownContent content={msg.text} className="text-sm" />
         ) : (
           <div className="text-sm text-muted-foreground">{t('chat.thinking')}</div>
         )}

@@ -89,7 +89,7 @@ export default function ImportEmployeeDialog({ open, onClose, onSuccess }: Props
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50" onClick={onClose}>
-      <div className="bg-background rounded-lg shadow-lg w-full max-w-lg mx-4 p-6" onClick={e => e.stopPropagation()}>
+      <div className="bg-background rounded-[28px] shadow-lg w-full max-w-lg mx-4 p-6" onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-lg font-semibold">{t('import.title')}</h3>
           <button onClick={onClose} className="p-1 rounded hover:bg-muted"><X className="h-4 w-4" /></button>
@@ -107,7 +107,7 @@ export default function ImportEmployeeDialog({ open, onClose, onSuccess }: Props
           {employees.length > 0 && (
             <div>
               <label className="block text-sm font-medium mb-1">{t('import.preview', { count: employees.length })}</label>
-              <div className="border rounded-md max-h-40 overflow-auto p-2 text-sm space-y-1">
+              <div className="rounded-xl bg-muted/30 max-h-40 overflow-auto p-2 text-sm space-y-1">
                 {employees.map((emp, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <span className="font-medium">{emp.name}</span>
@@ -128,7 +128,7 @@ export default function ImportEmployeeDialog({ open, onClose, onSuccess }: Props
               <p className="text-sm text-muted-foreground">{t('import.noModels')}</p>
             ) : (
               <select
-                className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+                className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
                 value={selectedModel}
                 onChange={e => setSelectedModel(e.target.value)}
               >

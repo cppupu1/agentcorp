@@ -134,7 +134,7 @@ function ScenariosTab() {
             return (
               <div
                 key={item.id}
-                className="bg-card border border-border/50 rounded-xl p-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-all cursor-pointer"
+                className="bg-card rounded-2xl p-5 flex items-center gap-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all cursor-pointer"
                 onClick={() => { setEditTarget(item); setEditOpen(true); }}
               >
                 <div className="flex-1 min-w-0">
@@ -469,7 +469,7 @@ function RunsTab() {
         const stVariant = st?.variant || 'secondary' as const;
         const isExpanded = expandedId === run.id;
         return (
-          <div key={run.id} className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm">
+          <div key={run.id} className="bg-card rounded-2xl overflow-hidden shadow-[var(--shadow-sm)]">
             <div
               className="p-4 flex items-center gap-3 cursor-pointer hover:bg-muted/50 transition-colors"
               onClick={() => toggleExpand(run.id)}

@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
+import { Skeleton } from '@/components/ui/skeleton';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
@@ -147,13 +148,13 @@ export default function PoliciesPage() {
       </div>
 
       {loading ? (
-        <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
+        <div className="space-y-3">{Array.from({ length: 3 }, (_, i) => <Skeleton key={i} className="h-16 rounded-2xl" />)}</div>
       ) : packages.length === 0 ? (
         <div className="text-center py-12 text-muted-foreground">{t('policies.empty')}</div>
       ) : (
         <div className="space-y-3">
           {packages.map(pkg => (
-            <div key={pkg.id} className="bg-card border border-border/50 rounded-xl shadow-sm">
+            <div key={pkg.id} className="bg-card rounded-2xl shadow-[var(--shadow-sm)]">
               <button
                 className="flex items-center gap-3 w-full px-4 py-3 text-left hover:bg-muted/50"
                 onClick={() => toggleExpand(pkg.id)}

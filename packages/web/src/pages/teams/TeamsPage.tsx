@@ -8,6 +8,7 @@ import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useDebouncedValue } from '@/hooks/useDebouncedValue';
 import { EmptyState } from '@/components/ui/empty-state';
+import { Skeleton } from '@/components/ui/skeleton';
 import { Plus, Pencil, Trash2, Copy, Search, Loader2, Users } from 'lucide-react';
 import { useI18n } from '@/i18n';
 
@@ -92,13 +93,13 @@ export default function TeamsPage() {
       </div>
 
       {loading ? (
-        <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{Array.from({ length: 6 }, (_, i) => <Skeleton key={i} className="h-44 rounded-2xl" />)}</div>
       ) : filtered.length === 0 ? (
         <EmptyState icon={<Users className="h-10 w-10" />} title={t('teams.empty')} description={t('teams.emptyDesc')} action={<Button onClick={() => navigate('/teams/new')}><Plus className="h-4 w-4" /> {t('teams.create')}</Button>} />
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map(team => (
-            <div key={team.id} data-testid={`team-item-${team.id}`} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all space-y-3">
+            <div key={team.id} data-testid={`team-item-${team.id}`} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all space-y-3">
               <div className="flex items-start justify-between">
                 <div>
                   <div className="font-medium">{team.name}</div>

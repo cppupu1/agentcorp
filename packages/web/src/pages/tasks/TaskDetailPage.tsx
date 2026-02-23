@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { tasksApi, ApiError, type TaskDetail, type TaskMessage } from '@/api/client';
 import { Button } from '@/components/ui/button';
+import MarkdownContent from '@/components/MarkdownContent';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
@@ -99,7 +100,7 @@ export default function TaskDetailPage() {
       <WorkflowStepper status={status} />
 
       {task.description && (
-        <div className="mb-6 p-4 bg-muted/30 rounded-xl border border-border/50">
+        <div className="mb-6 p-5 bg-muted/30 rounded-2xl shadow-[var(--shadow-sm)]">
           <p className="text-sm text-muted-foreground mb-1">{t('taskDetail.description')}</p>
           <p className="text-sm">{task.description}</p>
         </div>
@@ -194,7 +195,7 @@ export default function TaskDetailPage() {
               <div className="space-y-4">
                 <h3 className="text-lg font-medium text-destructive">{t('taskDetail.taskFailed')}</h3>
                 {task.result != null && (
-                  <div className="border border-destructive/30 rounded-lg p-4">
+                  <div className="rounded-2xl p-4 bg-destructive/5 shadow-[var(--shadow-sm)]">
                     <p className="text-sm">{(task.result as any).error || t('taskDetail.unknownError')}</p>
                   </div>
                 )}
@@ -419,25 +420,27 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
   };
 
   return (
-    <div className="border rounded-lg">
+    <div className="bg-card rounded-2xl shadow-[var(--shadow-sm)] overflow-hidden">
       <div className="h-96 overflow-y-auto p-4 space-y-3">
         {messages.filter(m => m.content).map(msg => (
           <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
             <div className={`max-w-[80%] rounded-lg px-4 py-2 text-sm ${
               msg.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted'
             }`}>
-              {msg.content}
+              {msg.role === 'user' ? msg.content : <MarkdownContent content={msg.content} className="text-sm" />}
             </div>
           </div>
         ))}
         {streamText && (
           <div className="flex justify-start">
-            <div className="max-w-[80%] rounded-lg px-4 py-2 text-sm bg-muted">{streamText}</div>
+            <div className="max-w-[80%] rounded-lg px-4 py-2 text-sm bg-muted">
+              <MarkdownContent content={streamText} className="text-sm" />
+            </div>
           </div>
         )}
         <div ref={messagesEndRef} />
       </div>
-      <div className="border-t p-3 flex gap-2">
+      <div className="border-t border-border/50 p-3 flex gap-2">
         <Textarea
           value={input}
           onChange={e => setInput(e.target.value)}
@@ -464,7 +467,7 @@ function BriefReviewSection({ task, approving, onApprove }: { task: TaskDetail; 
   return (
     <div className="space-y-4">
       <h3 className="text-lg font-medium">{t('taskDetail.briefApproval')}</h3>
-      <div className="border rounded-lg p-4 space-y-3">
+      <div className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] space-y-3">
         <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefTitle')}</span><span className="font-medium">{brief.title}</span></div>
         <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefObjective')}</span><p className="text-sm mt-1">{brief.objective}</p></div>
         <div><span className="text-sm text-muted-foreground">{t('taskDetail.briefDeliverables')}</span><p className="text-sm mt-1">{brief.deliverables}</p></div>
@@ -494,7 +497,7 @@ function TeamReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
     <div className="space-y-4">
       <h3 className="text-lg font-medium">{t('taskDetail.teamConfigApproval')}</h3>
       {config.pm && (
-        <div className="border rounded-lg p-3">
+        <div className="rounded-xl bg-muted/30 p-3">
           <p className="text-sm text-muted-foreground mb-1">{t('taskDetail.projectManager')}</p>
           <p className="font-medium">{config.pm.name}</p>
         </div>
@@ -502,7 +505,7 @@ function TeamReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
       <div className="space-y-2">
         <p className="text-sm text-muted-foreground">{t('taskDetail.participantMembers')} ({config.members.length})</p>
         {config.members.map(m => (
-          <div key={m.id} className="border rounded-lg p-3">
+          <div key={m.id} className="rounded-xl bg-muted/30 p-3">
             <p className="font-medium text-sm">{m.name}</p>
             {m.taskPrompt && <p className="text-xs text-muted-foreground mt-1">{m.taskPrompt}</p>}
           </div>
@@ -540,7 +543,7 @@ function PlanReviewSection({ task, approving, onApprove }: { task: TaskDetail; a
       <h3 className="text-lg font-medium">{t('taskDetail.planApproval')}</h3>
       <div className="space-y-2">
         {plan.subtasks.map((st, i) => (
-          <div key={st.id} className="border rounded-lg p-3 flex items-start gap-3">
+          <div key={st.id} className="rounded-xl bg-muted/30 p-3 flex items-start gap-3">
             <span className="text-xs bg-muted rounded-full w-6 h-6 flex items-center justify-center shrink-0">{i + 1}</span>
             <div className="flex-1">
               <p className="font-medium text-sm">{st.title}</p>
@@ -685,7 +688,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       </div>
       <div className="space-y-2">
         {subs.map(st => (
-          <div key={st.id} data-testid={`subtask-item-${st.id}`} className="border rounded-lg p-3 flex items-center gap-3">
+          <div key={st.id} data-testid={`subtask-item-${st.id}`} className="rounded-xl bg-muted/30 p-3 flex items-center gap-3">
             <Badge variant={st.status === 'completed' ? 'default' : st.status === 'running' ? 'secondary' : st.status === 'failed' ? 'destructive' : 'outline'} className="text-xs">
               {st.status === 'completed' ? t('taskDetail.statusCompleted') : st.status === 'running' ? t('taskDetail.statusRunning') : st.status === 'failed' ? t('taskDetail.statusFailed') : t('taskDetail.statusPending')}
             </Badge>
@@ -700,7 +703,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
         ))}
       </div>
       {logs.length > 0 && (
-        <div className="border rounded-lg p-3 max-h-48 overflow-y-auto">
+        <div className="rounded-xl bg-muted/30 p-3 max-h-48 overflow-y-auto">
           <p className="text-sm text-muted-foreground mb-2">{t('taskDetail.executionLog')}</p>
           {logs.map((log, i) => (
             <p key={i} className="text-xs text-muted-foreground">
@@ -722,12 +725,12 @@ function CompletedSection({ task }: { task: TaskDetail }) {
     <div className="space-y-4">
       <h3 className="text-lg font-medium">{t('taskDetail.taskCompleted')}</h3>
       {result && (
-        <div className="border rounded-lg p-4 space-y-3">
+        <div className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] space-y-3">
           {result.summary && <div><p className="text-sm text-muted-foreground">{t('taskDetail.summary')}</p><p className="text-sm mt-1">{result.summary}</p></div>}
           {result.deliverables && (
             <div>
               <p className="text-sm text-muted-foreground">{t('taskDetail.resultDeliverables')}</p>
-              <div className="text-sm mt-1 prose prose-sm max-w-none whitespace-pre-wrap">{result.deliverables}</div>
+              <MarkdownContent content={result.deliverables} className="text-sm mt-1" />
             </div>
           )}
           {result.subtaskSummary && (
@@ -744,7 +747,7 @@ function CompletedSection({ task }: { task: TaskDetail }) {
         <div className="space-y-2">
           <p className="text-sm text-muted-foreground">{t('taskDetail.subtaskSummary')}</p>
           {task.subtasks.map(st => (
-            <div key={st.id} className="border rounded-lg p-3 flex items-center gap-3">
+            <div key={st.id} className="rounded-xl bg-muted/30 p-3 flex items-center gap-3">
               <Badge variant={st.status === 'completed' ? 'default' : 'destructive'} className="text-xs">
                 {st.status === 'completed' ? t('taskDetail.statusCompleted') : st.status}
               </Badge>

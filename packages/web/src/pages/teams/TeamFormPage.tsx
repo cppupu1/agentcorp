@@ -169,7 +169,7 @@ export default function TeamFormPage() {
         <section className="space-y-4">
           <h3 className="text-lg font-medium border-b pb-2">{t('teamForm.pm')} *</h3>
           <select
-            className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+            className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             value={pmEmployeeId}
             onChange={e => {
               const newPmId = e.target.value;
@@ -196,11 +196,11 @@ export default function TeamFormPage() {
               {members.map(m => {
                 const emp = allEmployees.find(e => e.id === m.employeeId);
                 return (
-                  <div key={m.employeeId} className="flex items-center gap-3 border rounded-md px-3 py-2">
+                  <div key={m.employeeId} className="flex items-center gap-3 rounded-xl bg-muted/30 px-3 py-2">
                     <span>{emp?.avatar || '👤'}</span>
                     <span className="flex-1 text-sm">{emp?.name || m.employeeId}</span>
                     <select
-                      className="border rounded px-2 py-1 text-xs bg-background"
+                      className="h-7 rounded-lg border-0 bg-muted px-2 py-0.5 text-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
                       value={m.role}
                       onChange={e => setMembers(prev => prev.map(x => x.employeeId === m.employeeId ? { ...x, role: e.target.value } : x))}
                     >
@@ -217,7 +217,7 @@ export default function TeamFormPage() {
           )}
           {memberCandidates.length > 0 && (
             <select
-              className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+              className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
               value=""
               onChange={e => { if (e.target.value) addMember(e.target.value); }}
             >
@@ -259,7 +259,7 @@ export default function TeamFormPage() {
             {teamPolicies.length > 0 && (
               <div className="space-y-2">
                 {teamPolicies.map(tp => (
-                  <div key={tp.packageId} className="flex items-center gap-3 border rounded-md px-3 py-2">
+                  <div key={tp.packageId} className="flex items-center gap-3 rounded-xl bg-muted/30 px-3 py-2">
                     <span className="flex-1 text-sm">
                       {tp.packageName}
                       {tp.version != null && <span className="text-xs text-muted-foreground ml-1">v{tp.version}</span>}
@@ -286,7 +286,7 @@ export default function TeamFormPage() {
             )}
             {allPolicies.filter(p => !teamPolicies.some(tp => tp.packageId === p.id)).length > 0 && (
               <select
-                className="w-full border rounded-md px-3 py-2 text-sm bg-background"
+                className="w-full h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
                 value=""
                 onChange={async (e) => {
                   const pkgId = e.target.value;
@@ -319,8 +319,8 @@ export default function TeamFormPage() {
             {COLLAB_MODES.map(mode => (
               <label
                 key={mode.value}
-                className={`flex items-center gap-2 border rounded-md px-4 py-2 text-sm cursor-pointer transition-colors ${
-                  collaborationMode === mode.value ? 'border-primary bg-primary/5' : ''
+                className={`flex items-center gap-2 rounded-xl px-4 py-2 text-sm cursor-pointer transition-colors ${
+                  collaborationMode === mode.value ? 'bg-primary/10 ring-2 ring-primary/30' : 'bg-muted/30'
                 } ${!mode.enabled ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 <input

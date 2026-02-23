@@ -143,7 +143,7 @@ export default function EmployeeFormPage() {
         {/* Tools */}
         <section className="space-y-4">
           <h3 className="text-sm font-medium text-muted-foreground">{t('employees.toolAssign')}</h3>
-          <div className="border rounded-md p-3 max-h-48 overflow-y-auto space-y-1">
+          <div className="rounded-xl bg-muted/30 p-3 max-h-48 overflow-y-auto space-y-1">
             {allTools.length === 0 ? (
               <p className="text-sm text-muted-foreground">{t('employees.noTools')}</p>
             ) : allTools.map(tool => (
@@ -192,7 +192,7 @@ export default function EmployeeFormPage() {
             <Input
               value={tagInput}
               onChange={e => setTagInput(e.target.value)}
-              onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); addTag(); } }}
+              onKeyDown={e => { if (e.key === 'Enter' && !e.nativeEvent.isComposing) { e.preventDefault(); addTag(); } }}
               placeholder={t('employees.tagPlaceholder')}
             />
             <Button type="button" variant="outline" onClick={addTag}>{t('common.add')}</Button>
@@ -206,7 +206,7 @@ export default function EmployeeFormPage() {
             {assignedKbs.length > 0 && (
               <div className="space-y-2">
                 {assignedKbs.map(kb => (
-                  <div key={kb.id} className="flex items-center gap-3 border rounded-md px-3 py-2">
+                  <div key={kb.id} className="flex items-center gap-3 rounded-xl bg-muted/30 px-3 py-2">
                     <div className="flex-1 min-w-0">
                       <div className="text-sm font-medium">{kb.name}</div>
                       {kb.description && <div className="text-xs text-muted-foreground truncate">{kb.description}</div>}

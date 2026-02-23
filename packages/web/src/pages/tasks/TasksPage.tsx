@@ -79,11 +79,11 @@ export default function TasksPage() {
       </div>
 
       <div className="flex gap-3 mb-5">
-        <select className="border rounded-lg px-3 py-2 text-sm bg-card shadow-sm" value={filterTeam} onChange={e => setFilterTeam(e.target.value)}>
+        <select className="h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50" value={filterTeam} onChange={e => setFilterTeam(e.target.value)}>
           <option value="">{t('tasks.allTeams')}</option>
           {teams.map(tm => <option key={tm.id} value={tm.id}>{tm.name}</option>)}
         </select>
-        <select className="border rounded-lg px-3 py-2 text-sm bg-card shadow-sm" value={filterStatus} onChange={e => setFilterStatus(e.target.value)}>
+        <select className="h-10 rounded-xl border-0 bg-muted px-3 py-1 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50" value={filterStatus} onChange={e => setFilterStatus(e.target.value)}>
           <option value="">{t('tasks.allStatus')}</option>
           {Object.entries(STATUS_KEYS).map(([k, v]) => (
             <option key={k} value={k}>{t(v.key)}</option>
@@ -103,8 +103,11 @@ export default function TasksPage() {
               <div
                 key={task.id}
                 data-testid={`task-item-${task.id}`}
-                className="bg-card border border-border/50 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-primary/20 hover:-translate-y-0.5 cursor-pointer transition-all"
+                className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:ring-1 hover:ring-primary/20 hover:-translate-y-0.5 cursor-pointer transition-all"
+                role="button"
+                tabIndex={0}
                 onClick={() => navigate(`/tasks/${task.id}`)}
+                onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') navigate(`/tasks/${task.id}`); }}
               >
                 <div className="flex items-center justify-between gap-4">
                   <div className="min-w-0 flex-1">

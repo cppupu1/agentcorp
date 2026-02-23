@@ -9,6 +9,7 @@ import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useI18n } from '@/i18n';
+import { Skeleton } from '@/components/ui/skeleton';
 import { Loader2, Plus, Trash2 } from 'lucide-react';
 
 export default function IncidentsPage() {
@@ -72,11 +73,11 @@ export default function IncidentsPage() {
       </div>
 
       {loading ? (
-        <div className="flex justify-center py-12">
-          <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
-        </div>
+        <div className="space-y-2">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-16 rounded-2xl" />)}</div>
       ) : items.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">{t('incidents.empty')}</div>
+        <div className="flex flex-col items-center justify-center py-16 text-center">
+          <p className="text-muted-foreground">{t('incidents.empty')}</p>
+        </div>
       ) : (
         <div className="space-y-2">
           {items.map(item => {
@@ -86,7 +87,10 @@ export default function IncidentsPage() {
               <div
                 key={item.id}
                 onClick={() => navigate(`/incidents/${item.id}`)}
-                className="bg-card border border-border/50 rounded-xl p-4 flex items-center gap-3 cursor-pointer shadow-sm hover:shadow-md transition-all"
+                onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') navigate(`/incidents/${item.id}`); }}
+                role="button"
+                tabIndex={0}
+                className="bg-card rounded-2xl p-5 flex items-center gap-3 cursor-pointer shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all"
               >
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">

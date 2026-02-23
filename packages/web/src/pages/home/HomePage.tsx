@@ -54,10 +54,10 @@ export default function HomePage() {
     return (
       <div className="p-6 max-w-6xl mx-auto space-y-6">
         <div><Skeleton className="h-8 w-48" /><Skeleton className="h-4 w-72 mt-2" /></div>
-        <div className="grid grid-cols-4 gap-4">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-24 rounded-xl" />)}</div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-24 rounded-xl" />)}</div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">{Array.from({ length: 3 }, (_, i) => <Skeleton key={i} className="h-14 rounded-xl" />)}</div>
         <div className="grid lg:grid-cols-5 gap-6">
-          <div className="lg:col-span-2 space-y-3">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-12 rounded-lg" />)}</div>
+          <div className="lg:col-span-2 space-y-3">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-12 rounded-xl" />)}</div>
           <div className="lg:col-span-3 grid gap-3 sm:grid-cols-2">{Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-36 rounded-xl" />)}</div>
         </div>
       </div>
@@ -77,15 +77,15 @@ export default function HomePage() {
 
       {/* Quick actions */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <button onClick={() => navigate('/employees/new')} className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/50 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+        <button onClick={() => navigate('/employees/new')} className="flex items-center gap-3 p-4 bg-card rounded-2xl shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:ring-1 hover:ring-primary/20 transition-all">
           <div className="p-2 rounded-lg bg-primary/10 text-primary"><UserPlus className="h-4 w-4" /></div>
           <span className="text-sm font-medium">{t('home.addEmployee')}</span>
         </button>
-        <button onClick={() => navigate('/teams/new')} className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/50 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+        <button onClick={() => navigate('/teams/new')} className="flex items-center gap-3 p-4 bg-card rounded-2xl shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:ring-1 hover:ring-primary/20 transition-all">
           <div className="p-2 rounded-lg bg-accent text-accent-foreground"><UsersRound className="h-4 w-4" /></div>
           <span className="text-sm font-medium">{t('home.createTeam')}</span>
         </button>
-        <button onClick={() => navigate('/tasks/new')} className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/50 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+        <button onClick={() => navigate('/tasks/new')} className="flex items-center gap-3 p-4 bg-card rounded-2xl shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:ring-1 hover:ring-primary/20 transition-all">
           <div className="p-2 rounded-lg bg-success/10 text-success"><ClipboardList className="h-4 w-4" /></div>
           <span className="text-sm font-medium">{t('home.createTask')}</span>
         </button>
@@ -94,8 +94,8 @@ export default function HomePage() {
       {/* Two-column: Recent Tasks + Templates */}
       <div className="grid lg:grid-cols-5 gap-6">
         {/* Recent tasks */}
-        <div className="lg:col-span-2 bg-card rounded-xl border border-border/50 shadow-sm">
-          <div className="flex items-center justify-between px-5 py-4 border-b border-border/50">
+        <div className="lg:col-span-2 bg-card rounded-2xl shadow-[var(--shadow-sm)]">
+          <div className="flex items-center justify-between px-5 py-4">
             <h3 className="text-sm font-semibold">{t('home.recentTasks')}</h3>
             <Link to="/tasks" className="text-xs text-primary hover:underline flex items-center gap-0.5">
               {t('home.viewAll')} <ChevronRight className="h-3 w-3" />
@@ -123,7 +123,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-semibold">{t('home.templates')}</h3>
             {models.length > 0 && (
-              <select className="border rounded-lg px-3 py-1.5 text-xs bg-card" value={selectedModel} onChange={e => setSelectedModel(e.target.value)}>
+              <select className="h-8 rounded-xl border-0 bg-muted px-3 py-1 text-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50" value={selectedModel} onChange={e => setSelectedModel(e.target.value)}>
                 {models.map(m => <option key={m.id} value={m.id}>{m.name}</option>)}
               </select>
             )}
@@ -139,7 +139,7 @@ export default function HomePage() {
 
           <div className="grid gap-3 sm:grid-cols-2">
             {templates.map(tpl => (
-              <div key={tpl.id} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-primary/30 transition-all space-y-3">
+              <div key={tpl.id} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:ring-1 hover:ring-primary/20 transition-all space-y-3">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">{tpl.icon}</span>
                   <div className="min-w-0">

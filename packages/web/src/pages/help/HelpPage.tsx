@@ -70,7 +70,7 @@ export default function HelpPage() {
         <p>{t('help.emergencyDesc')}</p>
       </Section>
 
-      <div className="bg-card border border-border/50 rounded-xl p-4 text-sm text-muted-foreground shadow-sm">
+      <div className="bg-card rounded-2xl p-5 text-sm text-muted-foreground shadow-[var(--shadow-sm)]">
         {t('help.recommendedFlow')}
       </div>
     </div>

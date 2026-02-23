@@ -105,7 +105,7 @@ export default function NotificationsPage() {
             return (
               <div
                 key={item.id}
-                className={`bg-card border border-border/50 rounded-xl p-4 flex items-start gap-3 transition-all shadow-sm hover:shadow-md ${
+                className={`bg-card rounded-2xl p-5 flex items-start gap-3 transition-all shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] ${
                   item.read ? 'opacity-60' : ''
                 }`}
               >

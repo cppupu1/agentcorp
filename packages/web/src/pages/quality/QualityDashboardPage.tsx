@@ -167,7 +167,7 @@ function AlertsTab() {
         {data.qualityDropAlerts.length === 0 ? <p className="text-muted-foreground text-sm">{t('quality.noDropAlerts')}</p> : (
           <div className="space-y-2">
             {data.qualityDropAlerts.map(a => (
-              <div key={a.employeeId} className="bg-card border border-border/50 rounded-xl p-3 shadow-sm">
+              <div key={a.employeeId} className="bg-card rounded-2xl p-4 shadow-[var(--shadow-sm)]">
                 <div className="flex items-center gap-2">
                   <Badge variant="destructive">{t('quality.drop', { value: a.drop })}</Badge>
                   <span className="font-medium">{a.employeeName}</span>
@@ -185,7 +185,7 @@ function AlertsTab() {
         {data.criticalFindings.length === 0 ? <p className="text-muted-foreground text-sm">{t('quality.noCriticalFindings')}</p> : (
           <div className="space-y-2">
             {data.criticalFindings.map(f => (
-              <div key={f.id} className="bg-card border border-border/50 rounded-xl p-3 shadow-sm">
+              <div key={f.id} className="bg-card rounded-2xl p-4 shadow-[var(--shadow-sm)]">
                 <Badge variant="destructive">{t('quality.critical')}</Badge>
                 <p className="text-sm mt-1">{f.description}</p>
                 <p className="text-xs text-muted-foreground mt-1">{new Date(f.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</p>

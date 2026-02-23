@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
-
+import { Skeleton } from '@/components/ui/skeleton';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
@@ -119,7 +119,7 @@ export default function ModelsPage() {
       </div>
 
       {loading ? (
-        <div className="flex justify-center py-12"><Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /></div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{Array.from({ length: 6 }, (_, i) => <Skeleton key={i} className="h-40 rounded-2xl" />)}</div>
       ) : models.length === 0 ? (
         <div className="text-center py-12 text-muted-foreground">{t('models.empty')}</div>
       ) : (
@@ -128,7 +128,7 @@ export default function ModelsPage() {
             const variant = statusVariant[m.status] || statusVariant.untested;
             const label = t(statusLabelKey[m.status] || statusLabelKey.untested);
             return (
-              <div key={m.id} data-testid={`model-item-${m.id}`} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm hover:shadow-md transition-all space-y-3">
+              <div key={m.id} data-testid={`model-item-${m.id}`} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all space-y-3">
                 <div className="flex items-start justify-between">
                   <div className="min-w-0">
                     <div className="font-medium text-sm">{m.name}</div>

@@ -65,7 +65,7 @@ export default function SettingsPage() {
 
       <div className="space-y-6">
         {SETTING_DEFS.map(def => (
-          <div key={def.key} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm">
+          <div key={def.key} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)]">
             <label className="block text-sm font-medium mb-1">{t(def.labelKey)}</label>
             <p className="text-xs text-muted-foreground mb-3">{t(def.descKey)}</p>
             <div className="flex items-center gap-2">
@@ -162,7 +162,7 @@ function WebhookSection() {
           {configs.map(c => {
             const events: string[] = (() => { try { return JSON.parse(c.events); } catch { return []; } })();
             return (
-              <div key={c.id} className="bg-card border border-border/50 rounded-xl p-4 shadow-sm">
+              <div key={c.id} className="bg-card rounded-2xl p-5 shadow-[var(--shadow-sm)]">
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <span className="font-medium text-sm">{c.name}</span>
@@ -269,7 +269,7 @@ function WebhookForm({ editing, onClose, onSaved }: {
   };
 
   return (
-    <div className="bg-card border border-border/50 rounded-xl p-4 mt-4 shadow-sm">
+    <div className="bg-card rounded-2xl p-5 mt-4 shadow-[var(--shadow-sm)]">
       <h4 className="text-sm font-medium mb-3">{editing ? t('settings.editWebhook') : t('settings.addWebhook')}</h4>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div className="space-y-1">
@@ -293,7 +293,7 @@ function WebhookForm({ editing, onClose, onSaved }: {
                   type="checkbox"
                   checked={events.includes(opt.value)}
                   onChange={() => toggleEvent(opt.value)}
-                  className="rounded"
+                  className="rounded accent-primary h-4 w-4"
                 />
                 {t(opt.labelKey)}
               </label>
@@ -302,7 +302,7 @@ function WebhookForm({ editing, onClose, onSaved }: {
         </div>
         <div className="flex items-center gap-2">
           <label className="flex items-center gap-1.5 text-sm cursor-pointer">
-            <input type="checkbox" checked={enabled} onChange={e => setEnabled(e.target.checked)} className="rounded" />
+            <input type="checkbox" checked={enabled} onChange={e => setEnabled(e.target.checked)} className="rounded accent-primary h-4 w-4" />
             {t('settings.webhookEnabled')}
           </label>
         </div>

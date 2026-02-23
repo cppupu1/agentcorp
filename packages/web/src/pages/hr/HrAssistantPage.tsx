@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { hrAssistantApi } from '@/api/client';
 import type { ChatSession, HrChatMessage } from '@/api/client';
 import { Button } from '@/components/ui/button';
+import MarkdownContent from '@/components/MarkdownContent';
 import { Input } from '@/components/ui/input';
 import { useI18n } from '@/i18n';
 
@@ -211,8 +212,8 @@ export default function HrAssistantPage() {
   return (
     <div className="flex h-full">
       {/* Session Sidebar */}
-      <div className="w-60 border-r border-border flex flex-col bg-muted/30">
-        <div className="p-3 border-b border-border flex items-center justify-between">
+      <div className="w-60 border-r border-border/50 hidden md:flex flex-col bg-muted/30">
+        <div className="p-3 border-b border-border/50 flex items-center justify-between">
           <span className="text-sm font-semibold text-primary">{t('hr.title')}</span>
           <Button size="sm" onClick={createNewSession}>{t('hr.newChat')}</Button>
         </div>
@@ -242,7 +243,7 @@ export default function HrAssistantPage() {
 
       {/* Chat Area */}
       <div className="flex-1 flex flex-col">
-        <div className="px-4 py-3 border-b border-border bg-primary/5">
+        <div className="px-4 py-3 border-b border-border/50 bg-primary/5">
           <h2 className="text-lg font-semibold">{t('hr.title')}</h2>
           <p className="text-sm text-muted-foreground">{t('hr.selectOrCreate')}</p>
         </div>
@@ -261,7 +262,7 @@ export default function HrAssistantPage() {
         </div>
 
         {activeSessionId && (
-          <div className="p-4 border-t border-border">
+          <div className="p-4 border-t border-border/50">
             <div className="flex gap-2">
               <Input
                 value={input}
@@ -296,7 +297,11 @@ function MessageBubble({ message }: { message: HrChatMessage }) {
       <div className={`max-w-[75%] rounded-lg px-4 py-2 ${
         isUser ? 'bg-primary text-primary-foreground' : 'bg-muted'
       }`}>
-        <div className="whitespace-pre-wrap text-sm">{message.content}</div>
+        {isUser ? (
+          <div className="whitespace-pre-wrap text-sm">{message.content}</div>
+        ) : (
+          <MarkdownContent content={message.content} className="text-sm" />
+        )}
         {toolCalls.length > 0 && <ToolCallsDisplay toolCalls={toolCalls} />}
       </div>
     </div>
@@ -309,7 +314,7 @@ function StreamingBubble({ msg }: { msg: StreamingMessage }) {
     <div className="flex justify-start">
       <div className="max-w-[75%] rounded-lg px-4 py-2 bg-muted">
         {msg.text ? (
-          <div className="whitespace-pre-wrap text-sm">{msg.text}</div>
+          <MarkdownContent content={msg.text} className="text-sm" />
         ) : (
           <div className="text-sm text-muted-foreground">{t('hr.thinking')}</div>
         )}
