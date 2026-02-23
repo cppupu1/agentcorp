@@ -9,17 +9,22 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^3.0.29",
-    "@fastify/cors": "^11.0.0",
-    "@fastify/static": "^9.0.0",
     "@agentcorp/agent-core": "*",
     "@agentcorp/db": "*",
     "@agentcorp/shared": "*",
+    "@ai-sdk/openai": "^3.0.29",
+    "@fastify/cors": "^11.0.0",
+    "@fastify/static": "^9.0.0",
     "ai": "^6.0.90",
+    "docx": "^9.5.3",
     "dotenv": "^16.4.0",
-    "fastify": "^5.2.0"
+    "exceljs": "^4.4.0",
+    "fastify": "^5.2.0",
+    "marked": "^15.0.0",
+    "pdfkit": "^0.17.2"
   },
   "devDependencies": {
+    "@types/pdfkit": "^0.17.5",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0",
     "vitest": "^4.0.18"
