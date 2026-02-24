@@ -3,7 +3,7 @@ import { errorTraceApi, type ErrorTrace } from '@/api/client';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useI18n } from '@/i18n';
-import { AlertOctagon, RefreshCw, ArrowRight } from 'lucide-react';
+import { AlertOctagon, RefreshCw, ArrowRight, Sparkles, ChevronDown } from 'lucide-react';
 
 const ERROR_TYPE_KEYS: Record<string, { key: string; color: string }> = {
   validation_failed: { key: 'errorTrace.validationFailed', color: 'bg-warning/15 text-warning' },
@@ -78,7 +78,23 @@ export default function ErrorTracePanel({ taskId }: { taskId: string }) {
                     {t('errorTrace.retry', { attempt: trace.retryAttempt })}
                   </span>
                 </div>
-                <p className="text-sm">{trace.errorMessage}</p>
+                {trace.aiSummary ? (
+                  <div className="space-y-1">
+                    <p className="text-sm flex items-center gap-1.5">
+                      <Sparkles className="h-3.5 w-3.5 text-primary shrink-0" />
+                      {trace.aiSummary}
+                    </p>
+                    <details className="group/raw">
+                      <summary className="text-xs text-muted-foreground cursor-pointer flex items-center gap-1 hover:text-foreground transition-colors">
+                        <ChevronDown className="h-3 w-3 group-open/raw:rotate-180 transition-transform" />
+                        {t('errorTrace.rawError')}
+                      </summary>
+                      <pre className="mt-1 text-xs text-muted-foreground bg-muted/50 rounded p-2 overflow-x-auto whitespace-pre-wrap">{trace.errorMessage}</pre>
+                    </details>
+                  </div>
+                ) : (
+                  <p className="text-sm">{trace.errorMessage}</p>
+                )}
                 <div className="flex items-center gap-2">
                   {resInfo && (
                     <Badge variant="outline" className="text-xs gap-1">

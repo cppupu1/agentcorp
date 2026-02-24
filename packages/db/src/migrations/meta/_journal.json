@@ -64,6 +64,13 @@
       "when": 1771591515783,
       "tag": "0008_loud_outlaw_kid",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1771941256133,
+      "tag": "0009_skinny_warhawk",
+      "breakpoints": true
     }
   ]
 }

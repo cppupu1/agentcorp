@@ -1,0 +1,1 @@
+ALTER TABLE `error_traces` ADD `ai_summary` text;

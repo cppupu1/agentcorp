@@ -277,6 +277,7 @@ export const errorTraces = sqliteTable('error_traces', {
   subtaskId: text('subtask_id').notNull().references(() => subtasks.id),
   errorType: text('error_type').notNull(), // 'validation_failed'|'execution_error'|'timeout'|'quality_rejected'
   errorMessage: text('error_message').notNull(),
+  aiSummary: text('ai_summary'), // AI-generated human-readable error summary
   retryAttempt: integer('retry_attempt').default(0),
   resolution: text('resolution'), // 'retried'|'reassigned'|'skipped'|'escalated'
   createdAt: text('created_at').notNull(),

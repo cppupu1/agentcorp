@@ -505,6 +505,7 @@ export interface ErrorTrace {
   subtaskTitle: string | null;
   errorType: string;
   errorMessage: string;
+  aiSummary: string | null;
   retryAttempt: number;
   resolution: string | null;
   createdAt: string;

@@ -41,6 +41,8 @@ import RoiReviewPage from '@/pages/roi/RoiReviewPage';
 import ImprovementPage from '@/pages/improvement/ImprovementPage';
 import PageLayout from '@/components/PageLayout';
 import CommandPalette from '@/components/CommandPalette';
+import ChatDrawer from '@/components/ChatDrawer';
+import { ChatDrawerProvider } from '@/contexts/ChatDrawerContext';
 import './index.css';
 
 type NavItem = { path: string; labelKey: TranslationKeys; icon: React.ComponentType<{ className?: string }> };
@@ -338,8 +340,10 @@ export default function App() {
     <BrowserRouter>
       <ToastProvider>
         <SystemStatusProvider>
+          <ChatDrawerProvider>
           <SidebarContext.Provider value={{ collapsed, toggle: () => setCollapsed(c => !c) }}>
             <CommandPalette />
+            <ChatDrawer />
             <FrozenBanner />
             <div className="flex flex-col md:flex-row h-screen">
               <MobileHeader />
@@ -383,6 +387,7 @@ export default function App() {
               </main>
             </div>
           </SidebarContext.Provider>
+          </ChatDrawerProvider>
         </SystemStatusProvider>
       </ToastProvider>
     </BrowserRouter>

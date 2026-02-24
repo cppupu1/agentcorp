@@ -1,6 +1,7 @@
 import { db, errorTraces, subtasks, tasks, teamMembers, generateId, now } from '@agentcorp/db';
 import { eq, and } from 'drizzle-orm';
 import { sseManager } from './sse-manager.js';
+import { summarizeError } from './error-summarizer.js';
 
 // Validate subtask output (basic quality check)
 export async function validateSubtaskOutput(subtaskId: string, output: string): Promise<{ valid: boolean; reason?: string }> {
@@ -40,6 +41,9 @@ export async function handleSubtaskFailure(
     retryAttempt: retryCount,
     createdAt: now(),
   });
+
+  // Fire-and-forget AI summary generation
+  summarizeError(traceId, error);
 
   // Retry if under limit
   if (retryCount < maxRetries) {
@@ -129,6 +133,7 @@ export async function getErrorTrace(taskId: string) {
     subtaskTitle: subtasks.title,
     errorType: errorTraces.errorType,
     errorMessage: errorTraces.errorMessage,
+    aiSummary: errorTraces.aiSummary,
     retryAttempt: errorTraces.retryAttempt,
     resolution: errorTraces.resolution,
     createdAt: errorTraces.createdAt,

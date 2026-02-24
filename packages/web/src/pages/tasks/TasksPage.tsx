@@ -7,9 +7,10 @@ import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { Skeleton } from '@/components/ui/skeleton';
 import { EmptyState } from '@/components/ui/empty-state';
-import { Plus, Trash2, Loader2, Search, Clock, ClipboardList, Sparkles } from 'lucide-react';
+import { Plus, Trash2, Loader2, Search, Clock, ClipboardList, Sparkles, MessageSquare } from 'lucide-react';
 import { useI18n } from '@/i18n';
 import { MagicInput } from '@/components/MagicInput';
+import { useChatDrawer } from '@/contexts/ChatDrawerContext';
 
 const STATUS_KEYS: Record<string, { key: string; variant: 'default' | 'secondary' | 'outline' | 'destructive' | 'success' | 'warning' }> = {
   draft: { key: 'tasks.statusDraft', variant: 'secondary' },
@@ -33,6 +34,7 @@ export default function TasksPage() {
   const { toast } = useToast();
   const navigate = useNavigate();
   const { t } = useI18n();
+  const { openChat } = useChatDrawer();
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -138,6 +140,11 @@ export default function TasksPage() {
                   </div>
                   <div className="flex items-center gap-2 shrink-0">
                     <Badge variant={st.variant}>{t(st.key)}</Badge>
+                    {(task.status === 'draft' || task.status === 'aligning') && (
+                      <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); openChat(task.id, task.title || task.description?.slice(0, 30) || ''); }} title={t('chatDrawer.title')}>
+                        <MessageSquare className="h-3 w-3" />
+                      </Button>
+                    )}
                     <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); setDeleteTarget(task); }} disabled={task.status === 'executing'}>
                       <Trash2 className="h-3 w-3 text-destructive" />
                     </Button>

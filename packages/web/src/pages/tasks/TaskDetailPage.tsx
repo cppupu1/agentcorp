@@ -13,6 +13,7 @@ import CostPanel from './CostPanel';
 import ErrorTracePanel from './ErrorTracePanel';
 import TaskTimeline from './TaskTimeline';
 import ToolTracePanel from './ToolTracePanel';
+import SlashCommandMenu from '@/components/SlashCommandMenu';
 import ObserverPanel from './ObserverPanel';
 import EvidencePanel from './EvidencePanel';
 import TaskDAG from './TaskDAG';
@@ -335,10 +336,23 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
   const [sending, setSending] = useState(false);
   const [streamText, setStreamText] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const { toast } = useToast();
   const abortRef = useRef<AbortController | null>(null);
   const { t } = useI18n();
   const { onCompositionStart, onCompositionEnd, isComposing } = useIMEComposing();
+
+  const handleSlashCommand = useCallback((cmdId: string) => {
+    if (!cmdId) { setInput(''); return; }
+    setInput('');
+    if (cmdId === 'retry') {
+      tasksApi.retry(taskId).then(() => { toast(t('slashCmd.retryOk'), 'success'); onStatusChange(); }).catch(() => toast(t('slashCmd.retryFail'), 'error'));
+    } else if (cmdId === 'pause') {
+      tasksApi.pause(taskId).then(() => { toast(t('slashCmd.pauseOk'), 'success'); onStatusChange(); }).catch(() => toast(t('slashCmd.pauseFail'), 'error'));
+    } else if (cmdId === 'export' || cmdId === 'status') {
+      onStatusChange();
+    }
+  }, [taskId, toast, t, onStatusChange]);
 
   useEffect(() => {
     tasksApi.messages(taskId, 'chat').then(res => setMessages(res.data)).catch(() => {});
@@ -394,6 +408,7 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
       let buffer = '';
       let fullText = '';
       let statusChanged = false;
+      let eventType = '';
 
       while (true) {
         const { done, value } = await reader.read();
@@ -403,7 +418,6 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
         const lines = buffer.split('\n');
         buffer = lines.pop() || '';
 
-        let eventType = '';
         for (const line of lines) {
           if (line.startsWith('event: ')) {
             eventType = line.slice(7);
@@ -476,15 +490,17 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
         )}
         <div ref={messagesEndRef} />
       </div>
-      <div className="border-t border-border/50 p-3 flex gap-2">
+      <div className="border-t border-border/50 p-3 flex gap-2 relative">
+        <SlashCommandMenu input={input} onSelect={handleSlashCommand} anchorRef={textareaRef} />
         <Textarea
+          ref={textareaRef}
           value={input}
           onChange={e => setInput(e.target.value)}
           placeholder={t('taskDetail.chatPlaceholder')}
           rows={2}
           className="flex-1 resize-none"
           data-testid="chat-input"
-          onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey && !isComposing(e)) { e.preventDefault(); handleSend(); } }}
+          onKeyDown={e => { if (input.startsWith('/')) return; if (e.key === 'Enter' && !e.shiftKey && !isComposing(e)) { e.preventDefault(); handleSend(); } }}
           onCompositionStart={onCompositionStart}
           onCompositionEnd={onCompositionEnd}
         />
