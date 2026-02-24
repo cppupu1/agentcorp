@@ -30,8 +30,8 @@ const STATUS_LABEL_KEYS: Record<string, string> = {
   failed: 'dag.statusFailed',
 };
 
-const NODE_WIDTH = 220;
-const NODE_HEIGHT = 80;
+const NODE_WIDTH = 260;
+const NODE_HEIGHT = 100;
 
 function getLayoutedElements(nodes: Node[], edges: Edge[]) {
   const g = new dagre.graphlib.Graph();
@@ -77,10 +77,10 @@ function SubtaskNode({ data }: { data: { title: string; status: string; assignee
       }}
     >
       <Handle type="target" position={Position.Top} style={{ background: 'transparent', border: 'none' }} />
-      <div className="font-heading" style={{ fontSize: 14, fontWeight: 500, marginBottom: 8, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--foreground)' }}>
+      <div className="font-heading" style={{ fontSize: 14, fontWeight: 600, marginBottom: 8, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', color: 'var(--foreground)', lineHeight: 1.3 }}>
         {data.title}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
         <span
           style={{
             fontSize: 11,
@@ -95,7 +95,12 @@ function SubtaskNode({ data }: { data: { title: string; status: string; assignee
         >
           {STATUS_LABEL_KEYS[data.status] ? t(STATUS_LABEL_KEYS[data.status]) : data.status}
         </span>
-        <span style={{ fontSize: 12, color: 'var(--muted-foreground)', fontWeight: 500 }}>{data.assigneeName}</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, background: 'var(--background)', padding: '2px 8px 2px 2px', borderRadius: 16, border: `1px solid ${colors.border}` }}>
+          <div style={{ width: 20, height: 20, borderRadius: '50%', background: `color-mix(in oklch, ${colors.border} 20%, transparent)`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 700, color: colors.text }}>
+            {data.assigneeName.charAt(0).toUpperCase()}
+          </div>
+          <span style={{ fontSize: 11, color: 'var(--foreground)', fontWeight: 600 }}>{data.assigneeName}</span>
+        </div>
       </div>
       <Handle type="source" position={Position.Bottom} style={{ background: 'transparent', border: 'none' }} />
     </div>

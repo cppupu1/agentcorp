@@ -14,6 +14,7 @@ const typeKeys: Record<string, { key: string; variant: 'secondary' | 'success' |
   circuit_breaker: { key: 'notifications.typeCircuitBreaker', variant: 'destructive' },
   observer_alert: { key: 'notifications.typeObserver', variant: 'secondary' },
   trigger_fired: { key: 'notifications.typeTrigger', variant: 'secondary' },
+  improvement_suggestion: { key: 'notifications.typeImprovementSuggestion', variant: 'secondary' },
 };
 
 type FilterTab = 'all' | 'unread' | 'read';

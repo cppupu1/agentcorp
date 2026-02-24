@@ -1,4 +1,4 @@
-import { db, teams, teamMembers, teamTools, employees, models, tools, tasks, generateId, now } from '@agentcorp/db';
+import { db, teams, teamMembers, teamTools, employees, models, tools, tasks, subtasks, taskMessages, tokenUsageLogs, decisionLogs, toolCallLogs, observerFindings, errorTraces, evidenceItems, notifications, generateId, now } from '@agentcorp/db';
 import { eq, sql, inArray, desc } from 'drizzle-orm';
 import { AppError } from '../errors.js';
 
@@ -272,10 +272,23 @@ export async function deleteTeam(id: string) {
     });
   }
 
-  // Delete tasks in draft status (they reference this team)
-  const draftTasks = activeTasks.filter(t => t.status === 'draft');
-  if (draftTasks.length > 0) {
-    await db.delete(tasks).where(inArray(tasks.id, draftTasks.map(t => t.id)));
+  // Delete tasks in draft/completed status (they reference this team)
+  const removableTasks = activeTasks.filter(t => t.status === 'draft' || t.status === 'completed');
+  if (removableTasks.length > 0) {
+    const ids = removableTasks.map(t => t.id);
+    // Delete child tables referencing subtasks first
+    db.transaction((tx) => {
+      tx.delete(tokenUsageLogs).where(inArray(tokenUsageLogs.taskId, ids)).run();
+      tx.delete(decisionLogs).where(inArray(decisionLogs.taskId, ids)).run();
+      tx.delete(toolCallLogs).where(inArray(toolCallLogs.taskId, ids)).run();
+      tx.delete(observerFindings).where(inArray(observerFindings.taskId, ids)).run();
+      tx.delete(errorTraces).where(inArray(errorTraces.taskId, ids)).run();
+      tx.delete(evidenceItems).where(inArray(evidenceItems.taskId, ids)).run();
+      tx.delete(notifications).where(inArray(notifications.taskId, ids)).run();
+      tx.delete(subtasks).where(inArray(subtasks.taskId, ids)).run();
+      tx.delete(taskMessages).where(inArray(taskMessages.taskId, ids)).run();
+      tx.delete(tasks).where(inArray(tasks.id, ids)).run();
+    });
   }
 
   // team_members and team_tools cascade automatically

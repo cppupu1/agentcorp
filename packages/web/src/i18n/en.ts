@@ -123,6 +123,8 @@ export const en: Record<keyof typeof zh, string> = {
   'models.created': 'Model created',
   'models.deleted': 'Model deleted',
   'models.createFailed': 'Failed to create',
+  'models.test': 'Test Connection',
+  'models.testing': 'Testing...',
   'models.statusUntested': 'Untested',
   'models.statusAvailable': 'Available',
   'models.statusUnavailable': 'Unavailable',
@@ -674,6 +676,8 @@ export const en: Record<keyof typeof zh, string> = {
   'roi.colRole': 'Role',
   'roi.colOverallScore': 'Overall Score',
   'roi.colEvalMonth': 'Eval Month',
+  'roi.summary': 'AI Summary',
+  'roi.summaryLoading': 'Generating summary...',
 
   // improvement
   'improvement.title': 'Self Improvement',
@@ -1019,6 +1023,38 @@ export const en: Record<keyof typeof zh, string> = {
   'employees.level_intermediate': 'Intermediate',
   'employees.level_junior': 'Junior',
   'employees.taskCount': '{count} tasks',
+
+  // employee status (F1)
+  'employees.statusIdle': 'Idle',
+  'employees.statusWorking': 'Working',
+  'employees.statusWaiting': 'Waiting',
+
+  // task pause (F2)
+  'taskDetail.pauseTask': 'Pause Task',
+  'taskDetail.pauseConfirm': 'Are you sure you want to pause this executing task?',
+  'taskDetail.paused': 'Task paused',
+
+  // templates (F3)
+  'templates.gallery': 'Templates',
+  'templates.galleryDesc': 'Choose a template to quickly create a team',
+  'templates.useTemplate': 'Use Template',
+  'templates.roles': '{count} roles',
+  'templates.quickStart': 'Or quick start from a template',
+  'templates.quickStartTask': 'Try these scenarios',
+  'templates.taskSuggestion1': 'Review the latest code commits',
+  'templates.taskSuggestion2': 'Write a weekly competitor analysis report',
+  'templates.taskSuggestion3': 'Research user feedback on new features',
+
+  // improvement notification (F4)
+  'notifications.typeImprovementSuggestion': 'Improvement Suggestion',
+
+  // command palette context (F6)
+  'command.context': 'Current Page',
+  'command.viewSubtasks': 'View Subtasks',
+  'command.viewTimeline': 'View Timeline',
+  'command.chatWithEmployee': 'Chat with Employee',
+  'command.editEmployee': 'Edit Employee',
+  'command.editTeam': 'Edit Team',
 
   // policy templates
   'policies.tplTitle': 'Start from Template',

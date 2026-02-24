@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router';
-import { teamsApi, employeesApi, toolsApi, policiesApi, type Employee, type Tool, type TeamDetail, type PolicyPackage, type TeamPolicy } from '@/api/client';
+import { teamsApi, employeesApi, toolsApi, policiesApi, templatesApi, modelsApi, type Employee, type Tool, type TeamDetail, type PolicyPackage, type TeamPolicy, type TemplateSummary, type Model } from '@/api/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
-import { Loader2, X, Plus, AlertCircle } from 'lucide-react';
+import { Loader2, X, Plus, AlertCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import { useI18n } from '@/i18n';
 import { Link } from 'react-router';
 
@@ -34,6 +34,11 @@ export default function TeamFormPage() {
   const [allTools, setAllTools] = useState<Tool[]>([]);
   const [allPolicies, setAllPolicies] = useState<PolicyPackage[]>([]);
   const [teamPolicies, setTeamPolicies] = useState<TeamPolicy[]>([]);
+  const [templates, setTemplates] = useState<TemplateSummary[]>([]);
+  const [allModels, setAllModels] = useState<Model[]>([]);
+  const [tplOpen, setTplOpen] = useState(false);
+  const [tplModelId, setTplModelId] = useState('');
+  const [applyingTpl, setApplyingTpl] = useState(false);
 
   // Form state
   const [name, setName] = useState(prefill?.name ?? '');
@@ -50,14 +55,17 @@ export default function TeamFormPage() {
       employeesApi.list(),
       toolsApi.list(),
       policiesApi.list(),
-    ]).then(([empRes, toolRes, polRes]) => {
+      ...(!isEdit ? [templatesApi.list(), modelsApi.list()] : []),
+    ]).then(([empRes, toolRes, polRes, tplRes, modelRes]) => {
       setAllEmployees(empRes.data);
       setAllTools(toolRes.data);
       setAllPolicies(polRes.data);
+      if (tplRes) setTemplates((tplRes as any).data);
+      if (modelRes) setAllModels((modelRes as any).data);
     }).catch(err => {
       toast(err instanceof Error ? err.message : t('teamForm.loadFailed'), 'error');
     });
-  }, [toast]);
+  }, [toast, isEdit]);
 
   // Load existing team for edit
   useEffect(() => {
@@ -149,6 +157,51 @@ export default function TeamFormPage() {
   return (
     <div className="p-6 max-w-3xl mx-auto">
       <h2 className="text-2xl font-bold tracking-tight mb-6">{isEdit ? t('teamForm.editTeam') : t('teamForm.createTeam')}</h2>
+
+      {!isEdit && templates.length > 0 && (
+        <section className="mb-8">
+          <button type="button" className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground mb-3" onClick={() => setTplOpen(!tplOpen)}>
+            {tplOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+            {t('templates.gallery')}
+          </button>
+          {tplOpen && (
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">{t('templates.galleryDesc')}</p>
+              {allModels.length > 0 && (
+                <select className="h-9 rounded-xl border bg-muted/80 px-3 text-sm" value={tplModelId} onChange={e => setTplModelId(e.target.value)}>
+                  <option value="">{t('roi.pleaseSelect')}</option>
+                  {allModels.map(m => <option key={m.id} value={m.id}>{m.name}</option>)}
+                </select>
+              )}
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {templates.map(tpl => (
+                  <div key={tpl.id} className="rounded-2xl border border-border/40 bg-card p-4 space-y-2 shadow-[var(--shadow-sm)]">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xl">{tpl.icon}</span>
+                      <span className="font-medium text-sm">{tpl.name}</span>
+                      <Badge variant="secondary" className="text-xs ml-auto">{t('templates.roles').replace('{count}', String(tpl.employeeCount))}</Badge>
+                    </div>
+                    <p className="text-xs text-muted-foreground line-clamp-2">{tpl.description}</p>
+                    <Button size="sm" variant="outline" disabled={!tplModelId || applyingTpl} onClick={async () => {
+                      setApplyingTpl(true);
+                      try {
+                        const res = await templatesApi.apply(tpl.id, tplModelId);
+                        toast(t('teamForm.created'), 'success');
+                        navigate(`/teams/${res.data.teamId}`);
+                      } catch (err: unknown) {
+                        toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
+                      } finally { setApplyingTpl(false); }
+                    }}>
+                      {applyingTpl ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : null}
+                      {t('templates.useTemplate')}
+                    </Button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+      )}
 
       <form onSubmit={handleSubmit} className="space-y-8">
         {/* Basic Info */}

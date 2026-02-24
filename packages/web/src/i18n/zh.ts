@@ -121,6 +121,8 @@ export const zh = {
   'models.created': '模型已创建',
   'models.deleted': '模型已删除',
   'models.createFailed': '创建失败',
+  'models.test': '测试连接',
+  'models.testing': '测试中...',
   'models.statusUntested': '未测试',
   'models.statusAvailable': '可用',
   'models.statusUnavailable': '不可用',
@@ -672,6 +674,8 @@ export const zh = {
   'roi.colRole': '角色',
   'roi.colOverallScore': '综合分',
   'roi.colEvalMonth': '评估月份',
+  'roi.summary': 'AI 总结',
+  'roi.summaryLoading': '正在生成总结...',
 
   // improvement
   'improvement.title': '自我改进',
@@ -1017,6 +1021,38 @@ export const zh = {
   'employees.level_intermediate': '中级',
   'employees.level_junior': '初级',
   'employees.taskCount': '{count} 个任务',
+
+  // employee status (F1)
+  'employees.statusIdle': '空闲',
+  'employees.statusWorking': '工作中',
+  'employees.statusWaiting': '等待中',
+
+  // task pause (F2)
+  'taskDetail.pauseTask': '暂停任务',
+  'taskDetail.pauseConfirm': '确定要暂停正在执行的任务吗？',
+  'taskDetail.paused': '任务已暂停',
+
+  // templates (F3)
+  'templates.gallery': '场景模板',
+  'templates.galleryDesc': '选择一个模板快速创建团队',
+  'templates.useTemplate': '使用此模板',
+  'templates.roles': '{count} 个角色',
+  'templates.quickStart': '或从模板快速开始',
+  'templates.quickStartTask': '试试这些场景',
+  'templates.taskSuggestion1': '帮我 Review 最新提交的代码',
+  'templates.taskSuggestion2': '写一份本周竞品分析报告',
+  'templates.taskSuggestion3': '调研用户对新功能的反馈',
+
+  // improvement notification (F4)
+  'notifications.typeImprovementSuggestion': '改进建议',
+
+  // command palette context (F6)
+  'command.context': '当前页面',
+  'command.viewSubtasks': '查看子任务',
+  'command.viewTimeline': '查看时间线',
+  'command.chatWithEmployee': '与员工对话',
+  'command.editEmployee': '编辑员工',
+  'command.editTeam': '编辑团队',
 
   // policy templates
   'policies.tplTitle': '从模板开始',

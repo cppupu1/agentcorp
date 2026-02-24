@@ -6,16 +6,40 @@ import { Select } from '@/components/ui/select';
 import { useToast } from '@/components/ui/toast';
 import { Loader2 } from 'lucide-react';
 import { useI18n } from '@/i18n';
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, BarChart, Bar } from 'recharts';
 
 type Tab = 'cost' | 'competency' | 'team';
 
 export default function RoiReviewPage() {
   const [tab, setTab] = useState<Tab>('cost');
+  const [summary, setSummary] = useState<string | null>(null);
+  const [summaryLoading, setSummaryLoading] = useState(true);
   const { t } = useI18n();
+
+  useEffect(() => {
+    const ctrl = new AbortController();
+    roiApi.getSummary()
+      .then(r => { if (!ctrl.signal.aborted) setSummary(r.data.summary); })
+      .catch(() => {})
+      .finally(() => { if (!ctrl.signal.aborted) setSummaryLoading(false); });
+    return () => ctrl.abort();
+  }, []);
 
   return (
     <div className="p-4 md:p-8 max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold tracking-tight mb-4">{t('roi.title')}</h2>
+
+      {summaryLoading ? (
+        <div className="mb-6 p-4 bg-muted/30 rounded-2xl border border-border/40 text-sm text-muted-foreground flex items-center gap-2">
+          <Loader2 className="h-4 w-4 animate-spin" /> {t('roi.summaryLoading')}
+        </div>
+      ) : summary ? (
+        <div className="mb-6 p-4 bg-card rounded-2xl border border-border/40 shadow-[var(--shadow-sm)]">
+          <div className="text-xs font-medium text-muted-foreground mb-1">{t('roi.summary')}</div>
+          <p className="text-sm leading-relaxed">{summary}</p>
+        </div>
+      ) : null}
+
       <div className="flex gap-2 mb-6">
         {([['cost', t('roi.tabCost')], ['competency', t('roi.tabCompetency')], ['team', t('roi.tabTeam')]] as [Tab, string][]).map(([key, label]) => (
           <Button key={key} variant={tab === key ? 'default' : 'outline'} size="sm" onClick={() => setTab(key)}>
@@ -44,25 +68,42 @@ function CostTrendTab() {
   if (data.length === 0) return <div className="text-center py-16 text-[15px] text-muted-foreground bg-muted/30 rounded-3xl border border-dashed border-border/50">{t('roi.noCostData')}</div>;
 
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm">
-        <thead><tr className="border-b">
-          <th className="text-left py-2 px-3">{t('roi.colDate')}</th>
-          <th className="text-right py-2 px-3">{t('roi.colCost')}</th>
-          <th className="text-right py-2 px-3">{t('roi.colTokens')}</th>
-          <th className="text-right py-2 px-3">{t('roi.colTaskCount')}</th>
-        </tr></thead>
-        <tbody>
-          {data.map(r => (
-            <tr key={r.period} className="border-b">
-              <td className="py-2 px-3">{r.period}</td>
-              <td className="text-right py-2 px-3">{r.totalCost}</td>
-              <td className="text-right py-2 px-3">{r.totalTokens.toLocaleString()}</td>
-              <td className="text-right py-2 px-3">{r.taskCount}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="space-y-6">
+      {data.length >= 2 && (
+        <div className="h-64">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={data}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="period" tick={{ fontSize: 12 }} />
+              <YAxis yAxisId="cost" tick={{ fontSize: 12 }} />
+              <YAxis yAxisId="tasks" orientation="right" tick={{ fontSize: 12 }} />
+              <Tooltip />
+              <Line yAxisId="cost" type="monotone" dataKey="totalCost" stroke="hsl(var(--primary))" name={t('roi.colCost')} />
+              <Line yAxisId="tasks" type="monotone" dataKey="taskCount" stroke="hsl(var(--chart-2, 160 60% 45%))" name={t('roi.colTaskCount')} />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      )}
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead><tr className="border-b">
+            <th className="text-left py-2 px-3">{t('roi.colDate')}</th>
+            <th className="text-right py-2 px-3">{t('roi.colCost')}</th>
+            <th className="text-right py-2 px-3">{t('roi.colTokens')}</th>
+            <th className="text-right py-2 px-3">{t('roi.colTaskCount')}</th>
+          </tr></thead>
+          <tbody>
+            {data.map(r => (
+              <tr key={r.period} className="border-b">
+                <td className="py-2 px-3">{r.period}</td>
+                <td className="text-right py-2 px-3 tabular-nums">{r.totalCost}</td>
+                <td className="text-right py-2 px-3 tabular-nums">{r.totalTokens.toLocaleString()}</td>
+                <td className="text-right py-2 px-3 tabular-nums">{r.taskCount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
@@ -116,7 +157,23 @@ function CompetencyTab() {
       {loading ? <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /> : history.length === 0 ? (
         <p className="text-muted-foreground text-sm">{selectedId ? t('roi.noCompetencyData') : t('roi.selectEmployeeHint')}</p>
       ) : (
-        <div className="overflow-x-auto">
+        <div className="space-y-6">
+          {history.length >= 2 && (
+            <div className="h-64">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={history}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="period" tick={{ fontSize: 12 }} />
+                  <YAxis tick={{ fontSize: 12 }} domain={[0, 100]} />
+                  <Tooltip />
+                  <Bar dataKey="completionRate" fill="hsl(var(--primary))" name={t('roi.colCompletionRate')} />
+                  <Bar dataKey="qualityScore" fill="hsl(var(--chart-2, 160 60% 45%))" name={t('roi.colQuality')} />
+                  <Bar dataKey="overallScore" fill="hsl(var(--chart-3, 30 80% 55%))" name={t('roi.colOverall')} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          )}
+          <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="border-b">
               <th className="text-left py-2 px-3">{t('roi.colMonth')}</th>
@@ -131,20 +188,21 @@ function CompetencyTab() {
               {history.map(s => (
                 <tr key={s.id} className="border-b">
                   <td className="py-2 px-3">{s.period}</td>
-                  <td className="text-right py-2 px-3">{s.completionRate ?? '-'}</td>
-                  <td className="text-right py-2 px-3">{s.qualityScore ?? '-'}</td>
-                  <td className="text-right py-2 px-3">{s.efficiencyScore ?? '-'}</td>
-                  <td className="text-right py-2 px-3">{s.stabilityScore ?? '-'}</td>
-                  <td className="text-right py-2 px-3">
+                  <td className="text-right py-2 px-3 tabular-nums">{s.completionRate ?? '-'}</td>
+                  <td className="text-right py-2 px-3 tabular-nums">{s.qualityScore ?? '-'}</td>
+                  <td className="text-right py-2 px-3 tabular-nums">{s.efficiencyScore ?? '-'}</td>
+                  <td className="text-right py-2 px-3 tabular-nums">{s.stabilityScore ?? '-'}</td>
+                  <td className="text-right py-2 px-3 tabular-nums">
                     <Badge variant={(s.overallScore ?? 0) >= 70 ? 'success' : (s.overallScore ?? 0) >= 50 ? 'warning' : 'destructive'}>
                       {s.overallScore ?? '-'}
                     </Badge>
                   </td>
-                  <td className="text-right py-2 px-3">{s.taskCount ?? 0}</td>
+                  <td className="text-right py-2 px-3 tabular-nums">{s.taskCount ?? 0}</td>
                 </tr>
               ))}
             </tbody>
           </table>
+        </div>
         </div>
       )}
     </div>
@@ -202,7 +260,7 @@ function TeamTab() {
                   <tr key={m.employeeId} className="border-b">
                     <td className="py-2 px-3">{m.employeeName}</td>
                     <td className="py-2 px-3">{m.role}</td>
-                    <td className="text-right py-2 px-3">{m.competency?.overallScore ?? '-'}</td>
+                    <td className="text-right py-2 px-3 tabular-nums">{m.competency?.overallScore ?? '-'}</td>
                     <td className="text-right py-2 px-3">{m.competency?.period ?? '-'}</td>
                   </tr>
                 ))}

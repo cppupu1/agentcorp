@@ -214,6 +214,30 @@ html {
   animation: subtaskPulse 2s ease-in-out infinite;
 }
 
+/* AI executing glow effect */
+.glow-executing {
+  box-shadow: 0 0 16px oklch(0.55 0.15 260 / 0.2), 0 0 4px oklch(0.55 0.15 260 / 0.1);
+}
+.dark .glow-executing {
+  box-shadow: 0 0 20px oklch(0.75 0.12 260 / 0.25), 0 0 6px oklch(0.75 0.12 260 / 0.15);
+}
+
+/* Shimmer skeleton animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--muted) 25%,
+    color-mix(in oklch, var(--muted), var(--foreground) 6%) 50%,
+    var(--muted) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
 /* Global transition utility */
 .md-transition {
   transition-property: all;

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate, useSearchParams } from 'react-router';
 import { tasksApi, ApiError, type TaskDetail, type TaskMessage } from '@/api/client';
 import { Button } from '@/components/ui/button';
 import MarkdownContent from '@/components/MarkdownContent';
@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Loader2, Send, ArrowLeft, Check, X, Download } from 'lucide-react';
+import { Loader2, Send, ArrowLeft, Check, X, Download, Pause } from 'lucide-react';
 import CostPanel from './CostPanel';
 import ErrorTracePanel from './ErrorTracePanel';
 import TaskTimeline from './TaskTimeline';
@@ -34,7 +34,17 @@ export default function TaskDetailPage() {
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [approving, setApproving] = useState(false);
-  const [activeTab, setActiveTab] = useState<'execution' | 'timeline' | 'tool-trace' | 'evidence' | 'dag'>('execution');
+  const [searchParams] = useSearchParams();
+  const validTabs = ['execution', 'timeline', 'tool-trace', 'evidence', 'dag'] as const;
+  type TabValue = typeof validTabs[number];
+  const getDefaultTab = (s: string): TabValue => {
+    if (s === 'executing' || s === 'paused') return 'dag';
+    return 'execution';
+  };
+  const initialTab = validTabs.includes(searchParams.get('tab') as any)
+    ? searchParams.get('tab') as TabValue
+    : getDefaultTab('draft');
+  const [activeTab, setActiveTab] = useState<TabValue>(initialTab);
 
   const loadTask = useCallback(async () => {
     if (!id) return;
@@ -54,6 +64,17 @@ export default function TaskDetailPage() {
   }, [id, navigate, toast]);
 
   useEffect(() => { loadTask(); }, [loadTask]);
+
+  // Progressive disclosure: auto-switch tab based on task status
+  const prevStatusRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (!task || searchParams.get('tab')) return;
+    const s = task.status ?? 'draft';
+    if (prevStatusRef.current !== s) {
+      prevStatusRef.current = s;
+      setActiveTab(getDefaultTab(s));
+    }
+  }, [task, searchParams]);
 
   if (loading) {
     return (
@@ -175,7 +196,7 @@ export default function TaskDetailPage() {
       )}
 
       {/* Executing / Completed / Failed with tabs */}
-      {['executing', 'completed', 'failed'].includes(status) && (
+      {['executing', 'paused', 'waiting', 'completed', 'failed'].includes(status) && (
         <Tabs value={activeTab} onChange={setActiveTab as (v: string) => void}>
           <TabsList className="mb-4">
             <TabsTrigger value="execution">{t('taskDetail.tabExecution')}</TabsTrigger>
@@ -186,7 +207,7 @@ export default function TaskDetailPage() {
           </TabsList>
 
           <TabsContent value="execution">
-            {status === 'executing' && (
+            {(status === 'executing' || status === 'waiting' || status === 'paused') && (
               <div data-testid="task-executing-panel">
                 <ExecutingSection task={task} onStatusChange={loadTask} />
               </div>
@@ -227,10 +248,10 @@ export default function TaskDetailPage() {
             <CostPanel taskId={task.id} />
           </div>
 
-          {/* Error Trace Panel */}
+          {/* Error Trace Panel — auto-expand when failed */}
           <div className="mt-6">
-            <details className="group">
-              <summary className="cursor-pointer text-sm font-medium text-muted-foreground hover:text-foreground">
+            <details className="group" open={status === 'failed' ? true : undefined}>
+              <summary className={`cursor-pointer text-sm font-medium hover:text-foreground ${status === 'failed' ? 'text-destructive' : 'text-muted-foreground'}`}>
                 {t('taskDetail.tabErrorTrace')}
               </summary>
               <div className="mt-3">
@@ -442,14 +463,14 @@ function ChatSection({ taskId, onStatusChange }: { taskId: string; onStatusChang
             <div className={`max-w-[80%] rounded-lg px-4 py-2 text-sm ${
               msg.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted'
             }`}>
-              {msg.role === 'user' ? msg.content : <MarkdownContent content={msg.content} className="text-sm" />}
+              {msg.role === 'user' ? msg.content : <MarkdownContent taskId={taskId} content={msg.content} className="text-sm" />}
             </div>
           </div>
         ))}
         {streamText && (
           <div className="flex justify-start">
             <div className="max-w-[80%] rounded-lg px-4 py-2 text-sm bg-muted">
-              <MarkdownContent content={streamText} className="text-sm" />
+              <MarkdownContent taskId={taskId} content={streamText} className="text-sm" />
             </div>
           </div>
         )}
@@ -600,6 +621,57 @@ interface SubtaskState {
 
 function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatusChange: () => void }) {
   const { t } = useI18n();
+  const { toast } = useToast();
+  const [pausing, setPausing] = useState(false);
+
+  const [waitingDecision, setWaitingDecision] = useState<{ question: string; options: string[]; subtaskId?: string } | null>(null);
+  const [submittingDecision, setSubmittingDecision] = useState(false);
+
+  
+  useEffect(() => {
+    if (task.status === 'waiting' && !waitingDecision) {
+      tasksApi.messages(task.id, 'decision').then(res => {
+        const msgs = res.data;
+        const lastMsg = msgs[msgs.length - 1];
+        if (lastMsg && lastMsg.role === 'system') {
+          try {
+            const data = JSON.parse(lastMsg.content);
+            if (data.type === 'decision_required') {
+              setWaitingDecision({ question: data.question, options: data.options, subtaskId: data.subtaskId });
+            }
+          } catch(e) {}
+        }
+      }).catch(() => {});
+    }
+  }, [task.status, task.id]);
+  
+  const handleDecision = async (option: string) => {
+    setSubmittingDecision(true);
+    try {
+      await tasksApi.submitDecision(task.id, option, waitingDecision?.subtaskId);
+      setWaitingDecision(null);
+      onStatusChange();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
+    } finally {
+      setSubmittingDecision(false);
+    }
+  };
+
+
+  const handlePause = async () => {
+    if (!confirm(t('taskDetail.pauseConfirm'))) return;
+    setPausing(true);
+    try {
+      await tasksApi.pause(task.id);
+      toast(t('taskDetail.paused'), 'success');
+      onStatusChange();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
+    } finally {
+      setPausing(false);
+    }
+  };
   const [subs, setSubs] = useState<SubtaskState[]>(
     task.subtasks.map(s => ({
       id: s.id, title: s.title, status: s.status || 'pending',
@@ -676,6 +748,11 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       setToolActivity(prev => { const next = { ...prev }; delete next[data.subtaskId]; return next; });
     });
 
+    es.addEventListener('waiting_user_decision', (e) => {
+      const data = JSON.parse(e.data);
+      setWaitingDecision({ question: data.question, options: data.options, subtaskId: data.subtaskId });
+    });
+
     es.addEventListener('task_status', (e) => {
       const data = JSON.parse(e.data);
       if (data.status === 'completed' || data.status === 'failed') {
@@ -707,7 +784,42 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
 
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-medium">{t('taskDetail.executing')}</h3>
+      <div className="flex items-center justify-between">
+        <h3 className="text-lg font-medium">{t('taskDetail.executing')}</h3>
+        <Button variant="destructive" size="sm" onClick={handlePause} disabled={pausing}>
+          {pausing ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : <Pause className="h-3 w-3 mr-1" />}
+          {t('taskDetail.pauseTask')}
+        </Button>
+      </div>
+      
+      {waitingDecision && task.status === 'waiting' && (
+        <div className="bg-warning/10 border border-warning/20 rounded-lg p-4 mb-4">
+          <div className="flex items-start gap-3">
+            <div className="mt-0.5">
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-warning/20 text-warning text-xs font-bold">!</span>
+            </div>
+            <div className="flex-1">
+              <h4 className="text-sm font-medium text-warning-foreground mb-1">{t('taskDetail.waitingDecision') || 'Waiting for Decision'}</h4>
+              <p className="text-sm text-muted-foreground mb-3">{waitingDecision.question}</p>
+              <div className="flex flex-wrap gap-2">
+                {waitingDecision.options.map((opt, i) => (
+                  <Button 
+                    key={i} 
+                    variant="outline" 
+                    size="sm" 
+                    onClick={() => handleDecision(opt)} 
+                    disabled={submittingDecision}
+                    className="bg-background"
+                  >
+                    {opt}
+                  </Button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+  
       <div className="flex items-center gap-3" data-testid="task-progress">
         <div className="flex-1 bg-muted rounded-full h-2">
           <div className="bg-primary rounded-full h-2 transition-all" style={{ width: `${progress}%` }} />
@@ -716,7 +828,7 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
       </div>
       <div className="space-y-2">
         {subs.map(st => (
-          <div key={st.id} data-testid={`subtask-item-${st.id}`} className={`rounded-2xl bg-muted/40 p-4 border border-border/40 flex items-center gap-3${st.status === 'running' ? ' animate-subtask-pulse' : ''}`}>
+          <div key={st.id} data-testid={`subtask-item-${st.id}`} className={`rounded-2xl bg-muted/40 p-4 border border-border/40 flex items-center gap-3${st.status === 'running' ? ' animate-subtask-pulse glow-executing' : ''}`}>
             <Badge variant={st.status === 'completed' ? 'default' : st.status === 'running' ? 'secondary' : st.status === 'failed' ? 'destructive' : 'outline'} className="text-xs">
               {st.status === 'completed' ? t('taskDetail.statusCompleted') : st.status === 'running' ? t('taskDetail.statusRunning') : st.status === 'failed' ? t('taskDetail.statusFailed') : t('taskDetail.statusPending')}
             </Badge>
@@ -793,7 +905,7 @@ function CompletedSection({ task }: { task: TaskDetail }) {
           {result.deliverables && (
             <div>
               <p className="text-sm text-muted-foreground">{t('taskDetail.resultDeliverables')}</p>
-              <MarkdownContent content={result.deliverables} className="text-sm mt-1" />
+              <MarkdownContent taskId={task.id} content={result.deliverables} className="text-sm mt-1" />
             </div>
           )}
           {result.subtaskSummary && (

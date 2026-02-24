@@ -1,4 +1,4 @@
-import { db, tasks, subtasks, employees, models, employeeTools, tools, teamTools, teams, generateId, now } from '@agentcorp/db';
+import { db, tasks, subtasks, employees, models, employeeTools, tools, teamTools, teams, taskMessages, generateId, now } from '@agentcorp/db';
 import { eq, and, inArray, sql } from 'drizzle-orm';
 import { AgentRunner, createModel } from '@agentcorp/agent-core';
 import type { MCPToolConfig, AgentStreamCallbacks } from '@agentcorp/agent-core';
@@ -13,6 +13,7 @@ import { getCollaborationStrategy } from './collaboration/index.js';
 import { runObserverCheck } from './observer.js';
 import { createIncidentReport } from './incidents.js';
 import { recordEvidence } from './evidence.js';
+import { checkAndNotifyImprovements } from './self-improvement.js';
 
 function sanitizeError(err: unknown): string {
   const msg = err instanceof Error ? err.message : String(err);
@@ -37,6 +38,22 @@ function getNumericSetting(key: string, defaultValue: number): number {
 
 // Track running executions for cleanup
 const activeExecutions = new Map<string, AbortController>();
+// Key format: "taskId" (PM-level) or "taskId:subtaskId" (employee-level)
+export const pendingDecisions = new Map<string, (result: string) => void>();
+
+function decisionKey(taskId: string, subtaskId: string | null): string {
+  return subtaskId ? `${taskId}:${subtaskId}` : taskId;
+}
+
+/** Remove all pending decisions for a given task (PM + all subtasks) */
+function clearPendingDecisions(taskId: string): void {
+  for (const key of pendingDecisions.keys()) {
+    if (key === taskId || key.startsWith(`${taskId}:`)) {
+      pendingDecisions.delete(key);
+    }
+  }
+}
+
 const activePromises = new Map<string, Promise<void>>();
 
 export function isTaskExecuting(taskId: string): boolean {
@@ -115,6 +132,56 @@ async function runExecution(taskId: string, signal: AbortSignal): Promise<void> 
     runExecutionInner(taskId, signal),
     timeoutPromise,
   ]).finally(() => raceCleanup.abort());
+}
+
+function createAskUserDecisionTool(taskId: string, subtaskId: string | null, signal: AbortSignal) {
+  return tool<unknown, string>({
+    description: '当遇到无法自动解决的问题或需要用户确认（如权限拒绝、高风险操作）时调用此工具。挂起任务并等待用户回复。',
+    inputSchema: jsonSchema({
+      type: 'object' as const,
+      properties: {
+        question: { type: 'string', description: '向用户提出的问题' },
+        options: {
+          type: 'array',
+          items: { type: 'string' },
+          description: '提供给用户的备选方案',
+        },
+      },
+      required: ['question', 'options'],
+    }),
+    execute: async (args) => {
+      const { question, options } = args as { question: string; options: string[] };
+      const key = decisionKey(taskId, subtaskId);
+      return new Promise<string>((resolve, reject) => {
+        db.update(tasks).set({ status: 'waiting', updatedAt: now() }).where(eq(tasks.id, taskId)).run();
+        sseManager.emit(taskId, 'task_status', { taskId, status: 'waiting', previousStatus: 'executing' });
+        sseManager.emit(taskId, 'waiting_user_decision', { taskId, subtaskId, question, options });
+        db.insert(taskMessages).values({
+          id: generateId(), taskId, role: 'system',
+          content: JSON.stringify({ type: 'decision_required', question, options, subtaskId }),
+          messageType: 'decision', createdAt: now(),
+        }).run();
+
+        const onAbort = () => {
+          pendingDecisions.delete(key);
+          reject(new Error('任务已挂起或取消'));
+        };
+        signal.addEventListener('abort', onAbort, { once: true });
+
+        pendingDecisions.set(key, (answer: string) => {
+          signal.removeEventListener('abort', onAbort);
+          db.insert(taskMessages).values({
+            id: generateId(), taskId, role: 'user',
+            content: JSON.stringify({ type: 'decision_answer', answer }),
+            messageType: 'decision', createdAt: now(),
+          }).run();
+          db.update(tasks).set({ status: 'executing', updatedAt: now() }).where(eq(tasks.id, taskId)).run();
+          sseManager.emit(taskId, 'task_status', { taskId, status: 'executing', previousStatus: 'waiting' });
+          resolve(answer);
+        });
+      });
+    },
+  });
 }
 
 async function runExecutionInner(taskId: string, signal: AbortSignal): Promise<void> {
@@ -207,6 +274,8 @@ ${subtaskInfo}
 
   // PM meta-tools
   const pmTools: ToolSet = {
+
+    ask_user_decision: createAskUserDecisionTool(taskId, null, signal),
     assign_subtask: tool<unknown, string>({
       description: '将子任务分配给团队成员执行。返回员工的执行结果。',
       inputSchema: jsonSchema({
@@ -474,10 +543,14 @@ ${instruction}`;
     modelId: empModel.modelId,
   });
 
+  const internalTools: ToolSet = {
+    ask_user_decision: createAskUserDecisionTool(taskId, subtaskId, signal),
+  };
   const runner = new AgentRunner({
     model: aiModel as any,
     systemPrompt,
     mcpToolConfigs,
+    internalTools,
     maxSteps: 10,
   });
 
@@ -655,7 +728,7 @@ ${instruction}`;
   }
 }
 
-async function pauseTask(taskId: string, reason: string): Promise<void> {
+export async function pauseTask(taskId: string, reason: string): Promise<void> {
   const updated = db.update(tasks)
     .set({ status: 'paused', updatedAt: now() })
     .where(and(eq(tasks.id, taskId), eq(tasks.status, 'executing')))
@@ -702,6 +775,7 @@ export async function completeTask(taskId: string, summary: string, deliverables
   if (updated) {
     sseManager.emit(taskId, 'task_completed', { taskId, result });
     sseManager.emit(taskId, 'task_status', { taskId, status: 'completed', previousStatus: 'executing' });
+    checkAndNotifyImprovements(taskId).catch(() => {});
   }
 }
 
@@ -736,7 +810,10 @@ export async function failTask(taskId: string, error: string): Promise<void> {
 export async function retryTask(taskId: string): Promise<void> {
   const [task] = await db.select().from(tasks).where(eq(tasks.id, taskId));
   if (!task) throw new Error(`任务 ${taskId} 不存在`);
-  if (task.status !== 'failed') throw new Error(`仅失败的任务可重试`);
+  if (!['failed', 'paused', 'waiting'].includes(task.status ?? '')) throw new Error('仅失败或暂停的任务可重试');
+
+  // Clean up stale pending decisions from previous execution
+  clearPendingDecisions(taskId);
 
   // Reset non-completed subtasks to pending
   db.update(subtasks)

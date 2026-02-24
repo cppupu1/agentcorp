@@ -1,5 +1,5 @@
-import { db, employees, employeeTools, models, tools, teamMembers, teams, generateId, now } from '@agentcorp/db';
-import { eq, sql, inArray } from 'drizzle-orm';
+import { db, employees, employeeTools, models, tools, teamMembers, teams, subtasks, tasks, generateId, now } from '@agentcorp/db';
+import { eq, and, sql, inArray } from 'drizzle-orm';
 import { AppError } from '../errors.js';
 
 // Single-query list with model name and tool count (fixes N+1)
@@ -284,6 +284,36 @@ export async function listTags() {
     }
   }
   return Array.from(tagSet);
+}
+
+// ---- Status ----
+
+export async function getEmployeeStatuses() {
+  const allEmps = await db.select({ id: employees.id }).from(employees);
+
+  // Batch: all running subtasks grouped by assignee
+  const runningRows = await db
+    .select({ assigneeId: subtasks.assigneeId })
+    .from(subtasks)
+    .where(eq(subtasks.status, 'running'))
+    .groupBy(subtasks.assigneeId);
+  const workingSet = new Set(runningRows.map(r => r.assigneeId));
+
+  // Batch: all pending subtasks joined with executing tasks, grouped by assignee
+  const waitingRows = await db
+    .select({ assigneeId: subtasks.assigneeId })
+    .from(subtasks)
+    .innerJoin(tasks, eq(subtasks.taskId, tasks.id))
+    .where(and(eq(subtasks.status, 'pending'), eq(tasks.status, 'executing')))
+    .groupBy(subtasks.assigneeId);
+  const waitingSet = new Set(waitingRows.map(r => r.assigneeId));
+
+  return allEmps.map(emp => ({
+    employeeId: emp.id,
+    status: workingSet.has(emp.id) ? 'working' as const
+      : waitingSet.has(emp.id) ? 'waiting' as const
+      : 'idle' as const,
+  }));
 }
 
 // ---- Export ----

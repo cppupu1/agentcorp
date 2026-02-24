@@ -1,5 +1,8 @@
 import { db, tokenUsageLogs, tasks, subtasks, employees, models, testRuns, observerFindings, errorTraces, employeeCompetencyScores, teamMembers, generateId, now } from '@agentcorp/db';
 import { eq, and, gte, lte, lt, sql, desc } from 'drizzle-orm';
+import { createModel } from '@agentcorp/agent-core';
+import { generateText } from 'ai';
+import { getSetting } from './system.js';
 import { AppError } from '../errors.js';
 
 export async function getTaskCostReview(taskId: string) {
@@ -70,6 +73,66 @@ export async function getCostTrend(startDate?: string, endDate?: string, granula
     .orderBy(dateFn);
 
   return rows;
+}
+
+let summaryCache: { summary: string | null; ts: number } | null = null;
+const SUMMARY_CACHE_TTL = 10 * 60 * 1000; // 10 min
+
+export async function generateRoiSummary() {
+  if (summaryCache && Date.now() - summaryCache.ts < SUMMARY_CACHE_TTL) {
+    return { summary: summaryCache.summary };
+  }
+
+  const modelId = getSetting('hr_assistant_model_id');
+  if (!modelId) return { summary: null };
+
+  const [model] = await db.select().from(models).where(eq(models.id, modelId));
+  if (!model) return { summary: null };
+
+  // Get recent cost trend data
+  const trendData = await getCostTrend(undefined, undefined, 'day');
+  if (trendData.length === 0) return { summary: null };
+
+  // Get completed task count
+  const [taskStats] = await db.select({
+    total: sql<number>`count(*)`,
+    completed: sql<number>`sum(case when ${tasks.status} = 'completed' then 1 else 0 end)`,
+    failed: sql<number>`sum(case when ${tasks.status} = 'failed' then 1 else 0 end)`,
+  }).from(tasks);
+
+  const totalCost = trendData.reduce((s, r) => s + Number(r.totalCost), 0);
+  const totalTokens = trendData.reduce((s, r) => s + Number(r.totalTokens), 0);
+  const totalTasks = trendData.reduce((s, r) => s + Number(r.taskCount), 0);
+
+  const aiModel = createModel({
+    apiKey: model.apiKey,
+    baseURL: model.baseUrl,
+    modelId: model.modelId,
+  });
+
+  const prompt = `Based on the following AI team usage data, write a brief 2-3 sentence summary in the user's language (Chinese if data has Chinese context, otherwise English). Be specific with numbers. Focus on value delivered.
+
+Data:
+- Total cost: $${(totalCost / 100).toFixed(2)}
+- Total tokens used: ${totalTokens.toLocaleString()}
+- Tasks processed: ${totalTasks}
+- Tasks completed: ${taskStats?.completed ?? 0}
+- Tasks failed: ${taskStats?.failed ?? 0}
+- Date range: ${trendData[0].period} to ${trendData[trendData.length - 1].period}
+- Daily breakdown: ${JSON.stringify(trendData.slice(-7))}`;
+
+  try {
+    const result = await generateText({
+      model: aiModel as any,
+      system: 'You are a concise business analyst. Write a brief, data-driven summary. No markdown, no bullet points, just plain text.',
+      prompt,
+    });
+    const text = result.text.trim();
+    summaryCache = { summary: text, ts: Date.now() };
+    return { summary: text };
+  } catch {
+    return { summary: null };
+  }
 }
 
 export async function computeEmployeeCompetency(employeeId: string, period?: string) {

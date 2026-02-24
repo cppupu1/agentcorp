@@ -103,9 +103,9 @@ export default function CostPanel({ taskId }: { taskId: string }) {
                   <TableRow key={i}>
                     <TableCell className="text-sm">{row.employeeName}</TableCell>
                     <TableCell className="text-sm text-muted-foreground">{row.subtaskTitle || '-'}</TableCell>
-                    <TableCell className="text-right text-sm">{row.inputTokens.toLocaleString()}</TableCell>
-                    <TableCell className="text-right text-sm">{row.outputTokens.toLocaleString()}</TableCell>
-                    <TableCell className="text-right text-sm">{formatCost(row.cost)}</TableCell>
+                    <TableCell className="text-right text-sm tabular-nums">{row.inputTokens.toLocaleString()}</TableCell>
+                    <TableCell className="text-right text-sm tabular-nums">{row.outputTokens.toLocaleString()}</TableCell>
+                    <TableCell className="text-right text-sm tabular-nums">{formatCost(row.cost)}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

@@ -79,6 +79,7 @@ export const employeesApi = {
       body: JSON.stringify({ employees, modelId }),
     }),
   growthStats: () => request<{ data: Array<{ employeeId: string; overallScore: number | null; taskCount: number }> }>('/employees/growth-stats'),
+  statuses: () => request<{ data: Array<{ employeeId: string; status: 'idle' | 'working' | 'waiting' }> }>('/employees/statuses'),
 };
 
 // Types
@@ -369,6 +370,10 @@ export const tasksApi = {
     request<{ data: TaskDetail }>(`/tasks/${id}/approve-plan`, { method: 'POST', body: JSON.stringify(body) }),
   retry: (id: string) =>
     request<{ data: TaskDetail }>(`/tasks/${id}/retry`, { method: 'POST' }),
+  pause: (id: string, reason?: string) =>
+    request<{ data: TaskDetail }>(`/tasks/${id}/pause`, { method: 'POST', body: JSON.stringify({ reason }) }),
+  submitDecision: (id: string, decision: string, subtaskId?: string) =>
+    request<{ data: { success: boolean } }>(`/tasks/${id}/decision`, { method: 'POST', body: JSON.stringify({ decision, subtaskId }) }),
 };
 
 // Notifications
@@ -1070,6 +1075,7 @@ export const roiApi = {
     request<{ data: CompetencyScore[] }>(`/employees/${employeeId}/competency-history`),
   getTeamEffectiveness: (teamId: string) =>
     request<{ data: TeamEffectiveness }>(`/teams/${teamId}/effectiveness`),
+  getSummary: () => request<{ data: { summary: string | null } }>('/roi/summary'),
 };
 
 // Memory

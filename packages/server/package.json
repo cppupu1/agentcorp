@@ -15,6 +15,7 @@
     "@ai-sdk/openai": "^3.0.29",
     "@fastify/cors": "^11.0.0",
     "@fastify/static": "^9.0.0",
+    "@modelcontextprotocol/sdk": "^1.8.0",
     "ai": "^6.0.90",
     "docx": "^9.5.3",
     "dotenv": "^16.4.0",

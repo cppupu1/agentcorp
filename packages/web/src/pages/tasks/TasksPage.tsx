@@ -7,7 +7,7 @@ import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { Skeleton } from '@/components/ui/skeleton';
 import { EmptyState } from '@/components/ui/empty-state';
-import { Plus, Trash2, Loader2, Search, Clock, ClipboardList } from 'lucide-react';
+import { Plus, Trash2, Loader2, Search, Clock, ClipboardList, Sparkles } from 'lucide-react';
 import { useI18n } from '@/i18n';
 import { MagicInput } from '@/components/MagicInput';
 
@@ -96,8 +96,23 @@ export default function TasksPage() {
 
       {loading ? (
         <div className="space-y-2">{Array.from({ length: 5 }, (_, i) => <Skeleton key={i} className="h-16 rounded-xl" />)}</div>
+      ) : tasks.length === 0 && !filterTeam && !filterStatus ? (
+        <div className="space-y-8">
+          <EmptyState icon={<ClipboardList className="h-10 w-10" />} title={t('tasks.empty')} description={t('tasks.emptyDesc')} action={<Button onClick={() => navigate('/tasks/new')}><Plus className="h-4 w-4" /> {t('tasks.create')}</Button>} />
+          <div>
+            <p className="text-sm text-muted-foreground text-center mb-4">{t('templates.quickStartTask')}</p>
+            <div className="grid gap-3 sm:grid-cols-3 max-w-3xl mx-auto">
+              {(['templates.taskSuggestion1', 'templates.taskSuggestion2', 'templates.taskSuggestion3'] as const).map((key) => (
+                <div key={key} className="bg-card rounded-2xl p-4 border border-border/40 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all cursor-pointer group" onClick={() => navigate('/tasks/new', { state: { magicPrefill: { description: t(key) } } })}>
+                  <Sparkles className="h-4 w-4 text-primary/60 group-hover:text-primary transition-colors mb-2" />
+                  <p className="text-sm">{t(key)}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       ) : tasks.length === 0 ? (
-        <EmptyState icon={<ClipboardList className="h-10 w-10" />} title={t('tasks.empty')} description={t('tasks.emptyDesc')} action={<Button onClick={() => navigate('/tasks/new')}><Plus className="h-4 w-4" /> {t('tasks.create')}</Button>} />
+        <EmptyState icon={<ClipboardList className="h-10 w-10" />} title={t('common.noData')} description={t('tasks.emptyDesc')} />
       ) : (
         <div className="space-y-2">
           {tasks.map(task => {

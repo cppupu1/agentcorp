@@ -1,4 +1,4 @@
-import { db, tasks, taskMessages, subtasks, teams, employees, models, teamMembers, tools, teamTools, generateId, now } from '@agentcorp/db';
+import { db, tasks, taskMessages, subtasks, teams, employees, models, teamMembers, tools, teamTools, tokenUsageLogs, decisionLogs, toolCallLogs, observerFindings, errorTraces, evidenceItems, notifications, generateId, now } from '@agentcorp/db';
 import { eq, and, desc, inArray, ne } from 'drizzle-orm';
 import { AppError } from '../errors.js';
 import { AgentRunner, createModel } from '@agentcorp/agent-core';
@@ -216,13 +216,25 @@ export async function deleteTask(id: string) {
   if (!task) throw new AppError('NOT_FOUND', `任务 ${id} 不存在`);
 
   // Use transaction with status guard to prevent TOCTOU race
+  // Delete order: child tables referencing subtasks → subtasks → taskMessages → tasks
   const deleted = db.transaction((tx) => {
-    const result = tx.delete(tasks)
-      .where(and(eq(tasks.id, id), ne(tasks.status, 'executing')))
-      .run();
-    if (result.changes === 0) return false;
+    // Guard: cannot delete executing tasks
+    const [current] = tx.select({ status: tasks.status }).from(tasks).where(eq(tasks.id, id)).all();
+    if (current?.status === 'executing') return false;
+
+    // 1. Delete tables that reference subtasks.id (no cascade) + notifications
+    tx.delete(tokenUsageLogs).where(eq(tokenUsageLogs.taskId, id)).run();
+    tx.delete(decisionLogs).where(eq(decisionLogs.taskId, id)).run();
+    tx.delete(toolCallLogs).where(eq(toolCallLogs.taskId, id)).run();
+    tx.delete(observerFindings).where(eq(observerFindings.taskId, id)).run();
+    tx.delete(errorTraces).where(eq(errorTraces.taskId, id)).run();
+    tx.delete(evidenceItems).where(eq(evidenceItems.taskId, id)).run();
+    tx.delete(notifications).where(eq(notifications.taskId, id)).run();
+    // 2. Delete subtasks and messages
     tx.delete(subtasks).where(eq(subtasks.taskId, id)).run();
     tx.delete(taskMessages).where(eq(taskMessages.taskId, id)).run();
+    // 3. Delete the task itself
+    tx.delete(tasks).where(eq(tasks.id, id)).run();
     return true;
   });
 

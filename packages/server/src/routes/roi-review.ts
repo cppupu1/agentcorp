@@ -1,6 +1,6 @@
 import type { FastifyInstance } from 'fastify';
 import {
-  getTaskCostReview, getCostTrend,
+  getTaskCostReview, getCostTrend, generateRoiSummary,
   computeEmployeeCompetency, getEmployeeCompetencyHistory,
   getTeamEffectiveness,
 } from '../services/roi-review.js';
@@ -29,5 +29,9 @@ export function registerRoiReviewRoutes(app: FastifyInstance) {
 
   app.get<{ Params: { id: string } }>('/api/teams/:id/effectiveness', async (req) => {
     return { data: await getTeamEffectiveness(req.params.id) };
+  });
+
+  app.get('/api/roi/summary', async () => {
+    return { data: await generateRoiSummary() };
   });
 }

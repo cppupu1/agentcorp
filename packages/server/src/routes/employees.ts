@@ -53,6 +53,11 @@ export function registerEmployeeRoutes(app: FastifyInstance) {
     return { data: await employeeService.listTags() };
   });
 
+  // Statuses (derived from subtasks)
+  app.get('/api/employees/statuses', async () => {
+    return { data: await employeeService.getEmployeeStatuses() };
+  });
+
   // Growth stats
   app.get('/api/employees/growth-stats', async () => {
     const stats = await db.select({

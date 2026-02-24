@@ -9,7 +9,7 @@ import type { TaskChatCallbacks } from '../services/tasks.js';
 import { sseManager } from '../services/sse-manager.js';
 import { getErrorTrace } from '../services/error-protection.js';
 import { exportTask } from '../services/task-export.js';
-import { retryTask } from '../services/task-executor.js';
+import { retryTask, pauseTask, pendingDecisions } from '../services/task-executor.js';
 
 function validateCreate(body: Record<string, unknown>) {
   const errors: Array<{ field: string; rule: string; message: string }> = [];
@@ -165,6 +165,35 @@ export function registerTaskRoutes(app: FastifyInstance) {
   app.post<{ Params: { id: string } }>('/api/tasks/:id/retry', async (req) => {
     await retryTask(req.params.id);
     return { data: await getTask(req.params.id) };
+  });
+
+  // Pause executing task
+  app.post<{ Params: { id: string }; Body: { reason?: string } }>('/api/tasks/:id/pause', async (req) => {
+    const task = await getTask(req.params.id);
+    if (task.status !== 'executing') {
+      throw new AppError('INVALID_STATE', `任务状态为 ${task.status}，仅 executing 状态可暂停`);
+    }
+    await pauseTask(req.params.id, req.body?.reason || 'User requested pause');
+    return { data: await getTask(req.params.id) };
+  });
+
+
+  // Post user decision
+  app.post<{ Params: { id: string }; Body: { decision: string; subtaskId?: string } }>('/api/tasks/:id/decision', async (req) => {
+    const { id } = req.params;
+    const { decision, subtaskId } = req.body;
+    if (!decision || typeof decision !== 'string') {
+      throw new AppError('VALIDATION_ERROR', 'decision 必填');
+    }
+    // Build composite key: "taskId:subtaskId" for employee-level, "taskId" for PM-level
+    const key = subtaskId ? `${id}:${subtaskId}` : id;
+    const resolve = pendingDecisions.get(key);
+    if (!resolve) {
+      throw new AppError('NOT_FOUND', '当前任务未在等待用户决策');
+    }
+    resolve(decision);
+    pendingDecisions.delete(key);
+    return { data: { success: true } };
   });
 
   // SSE: Subscribe to task execution events

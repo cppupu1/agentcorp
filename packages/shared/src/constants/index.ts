@@ -83,6 +83,15 @@ export const ACCESS_LEVEL = {
 
 export type AccessLevel = (typeof ACCESS_LEVEL)[keyof typeof ACCESS_LEVEL];
 
+// 员工实时状态
+export const EMPLOYEE_STATUS = {
+  IDLE: 'idle',
+  WORKING: 'working',
+  WAITING: 'waiting',
+} as const;
+
+export type EmployeeStatus = (typeof EMPLOYEE_STATUS)[keyof typeof EMPLOYEE_STATUS];
+
 // 系统状态
 export const SYSTEM_STATUS = {
   NORMAL: 'normal',

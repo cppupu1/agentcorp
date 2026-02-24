@@ -12,6 +12,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Plus, Pencil, Trash2, Copy, Search, Loader2, Users } from 'lucide-react';
 import { useI18n } from '@/i18n';
 import { MagicInput } from '@/components/MagicInput';
+import { templatesApi, type TemplateSummary } from '@/api/client';
 
 export default function TeamsPage() {
   const [teams, setTeams] = useState<Team[]>([]);
@@ -21,6 +22,7 @@ export default function TeamsPage() {
   const [deleteTarget, setDeleteTarget] = useState<Team | null>(null);
   const [deleting, setDeleting] = useState(false);
   const [copyingId, setCopyingId] = useState<string | null>(null);
+  const [templates, setTemplates] = useState<TemplateSummary[]>([]);
   const { toast } = useToast();
   const navigate = useNavigate();
   const { t } = useI18n();
@@ -41,6 +43,12 @@ export default function TeamsPage() {
   const filtered = debouncedSearch
     ? teams.filter(tm => tm.name.toLowerCase().includes(debouncedSearch.toLowerCase()))
     : teams;
+
+  useEffect(() => {
+    if (!loading && filtered.length === 0) {
+      templatesApi.list().then(r => setTemplates(r.data)).catch(() => {});
+    }
+  }, [loading, filtered.length]);
 
   const handleDelete = async () => {
     if (!deleteTarget) return;
@@ -98,7 +106,24 @@ export default function TeamsPage() {
       {loading ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{Array.from({ length: 6 }, (_, i) => <Skeleton key={i} className="h-44 rounded-2xl" />)}</div>
       ) : filtered.length === 0 ? (
-        <EmptyState icon={<Users className="h-10 w-10" />} title={t('teams.empty')} description={t('teams.emptyDesc')} action={<Button onClick={() => navigate('/teams/new')}><Plus className="h-4 w-4" /> {t('teams.create')}</Button>} />
+        <div className="space-y-8">
+          <EmptyState icon={<Users className="h-10 w-10" />} title={t('teams.empty')} description={t('teams.emptyDesc')} action={<Button onClick={() => navigate('/teams/new')}><Plus className="h-4 w-4" /> {t('teams.create')}</Button>} />
+          {templates.length > 0 && (
+            <div>
+              <p className="text-sm text-muted-foreground text-center mb-4">{t('templates.quickStart')}</p>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 max-w-3xl mx-auto">
+                {templates.map(tpl => (
+                  <div key={tpl.id} className="bg-card rounded-2xl p-4 border border-border/40 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all cursor-pointer" onClick={() => navigate('/teams/new', { state: { templateId: tpl.id } })}>
+                    <div className="text-2xl mb-2">{tpl.icon}</div>
+                    <div className="font-medium text-sm">{tpl.name}</div>
+                    <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{tpl.description}</p>
+                    <div className="mt-2 text-xs text-primary">{t('templates.roles').replace('{count}', String(tpl.employeeCount))}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map(team => (

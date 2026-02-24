@@ -1,6 +1,31 @@
-import { db, improvementProposals, employees, testRuns, observerFindings, errorTraces, subtasks, generateId, now } from '@agentcorp/db';
+import { db, improvementProposals, employees, testRuns, observerFindings, errorTraces, subtasks, tasks, generateId, now } from '@agentcorp/db';
 import { eq, and, desc, sql, gte } from 'drizzle-orm';
+import { notify } from './notifications.js';
 import { AppError } from '../errors.js';
+
+export async function checkAndNotifyImprovements(taskId: string) {
+  const subs = await db.select({ assigneeId: subtasks.assigneeId, status: subtasks.status })
+    .from(subtasks).where(eq(subtasks.taskId, taskId));
+
+  const grouped: Record<string, { total: number; failed: number }> = {};
+  for (const s of subs) {
+    if (!s.assigneeId) continue;
+    if (!grouped[s.assigneeId]) grouped[s.assigneeId] = { total: 0, failed: 0 };
+    grouped[s.assigneeId].total++;
+    if (s.status === 'failed') grouped[s.assigneeId].failed++;
+  }
+
+  for (const [empId, stats] of Object.entries(grouped)) {
+    if (stats.total >= 2 && stats.failed / stats.total >= 0.5) {
+      try {
+        const diagnosis = await diagnoseQualityIssue(empId);
+        const title = `员工 ${diagnosis.employeeName} 需要改进`;
+        const content = `在任务中失败率 ${Math.round((stats.failed / stats.total) * 100)}%（${stats.failed}/${stats.total}），建议检查并优化`;
+        await notify('improvement_suggestion', title, content, taskId);
+      } catch { /* ignore individual failures */ }
+    }
+  }
+}
 
 export async function diagnoseQualityIssue(employeeId: string) {
   const [emp] = await db.select({ id: employees.id, name: employees.name, systemPrompt: employees.systemPrompt })
@@ -50,7 +75,7 @@ export async function diagnoseQualityIssue(employeeId: string) {
     testPassRate: passRate,
     topErrors: errors,
     observerIssues: findings,
-    promptLength: emp.systemPrompt.length,
+    promptLength: (emp.systemPrompt ?? '').length,
   };
 
   return diagnosis;
@@ -77,7 +102,7 @@ export async function generatePromptOptimization(employeeId: string, diagnosis: 
   }
 
   const suggestion = JSON.stringify({
-    before: emp.systemPrompt.slice(0, 200) + '...',
+    before: (emp.systemPrompt ?? '').slice(0, 200) + '...',
     recommendations: suggestions,
     reason: `基于${diagnosis.period}的数据分析`,
   });

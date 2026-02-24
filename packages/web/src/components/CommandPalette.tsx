@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo } from 'react';
 import { Command } from 'cmdk';
-import { useNavigate } from 'react-router';
+import { useNavigate, useLocation } from 'react-router';
 import { useI18n } from '@/i18n';
 import { useTheme } from '@/contexts/ThemeContext';
 import { tasksApi, employeesApi, type TaskSummary, type Employee } from '@/api/client';
@@ -14,11 +14,35 @@ import {
 export default function CommandPalette() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const { t, locale, setLocale } = useI18n();
   const { theme, setTheme } = useTheme();
-  
+
   const [recentTasks, setRecentTasks] = useState<TaskSummary[]>([]);
   const [recentEmployees, setRecentEmployees] = useState<Employee[]>([]);
+
+  const contextActions = useMemo(() => {
+    const path = location.pathname;
+    const taskMatch = path.match(/^\/tasks\/([^/]+)$/);
+    const empMatch = path.match(/^\/employees\/([^/]+)/);
+    const teamMatch = path.match(/^\/teams\/([^/]+)$/);
+    const actions: Array<{ label: string; action: () => void; icon: typeof ClipboardList }> = [];
+    if (taskMatch && taskMatch[1] !== 'new') {
+      const id = taskMatch[1];
+      actions.push({ label: t('command.viewSubtasks'), action: () => navigate(`/tasks/${id}?tab=execution`), icon: ClipboardList });
+      actions.push({ label: t('command.viewTimeline'), action: () => navigate(`/tasks/${id}?tab=timeline`), icon: Timer });
+    }
+    if (empMatch && empMatch[1] !== 'new') {
+      const id = empMatch[1];
+      actions.push({ label: t('command.chatWithEmployee'), action: () => navigate(`/employees/${id}/chat`), icon: Bot });
+      actions.push({ label: t('command.editEmployee'), action: () => navigate(`/employees/${id}/edit`), icon: Users });
+    }
+    if (teamMatch && teamMatch[1] !== 'new') {
+      const id = teamMatch[1];
+      actions.push({ label: t('command.editTeam'), action: () => navigate(`/teams/${id}/edit`), icon: UsersRound });
+    }
+    return actions;
+  }, [location.pathname, t, navigate]);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -86,6 +110,16 @@ export default function CommandPalette() {
             {t('command.noResults')}
           </Command.Empty>
 
+          {contextActions.length > 0 && (
+            <Command.Group heading={t('command.context')} className="[&_[cmdk-group-heading]]:px-3 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground">
+              {contextActions.map(ca => (
+                <Command.Item key={ca.label} value={ca.label} onSelect={() => { ca.action(); setOpen(false); }} className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-[14px] cursor-pointer data-[selected=true]:bg-accent transition-colors">
+                  <ca.icon className="h-4 w-4 text-primary shrink-0" /> {ca.label}
+                </Command.Item>
+              ))}
+            </Command.Group>
+          )}
+
           {recentTasks.length > 0 && (
             <Command.Group heading={t('home.recentTasks')} className="[&_[cmdk-group-heading]]:px-3 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground">
               {recentTasks.map(task => (
@@ -104,7 +138,7 @@ export default function CommandPalette() {
                 <Command.Item key={`emp-${emp.id}`} value={`employee ${emp.name} ${emp.id}`} onSelect={() => go(`/employees/${emp.id}/edit`)} className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-[14px] cursor-pointer data-[selected=true]:bg-accent transition-colors">
                   <span className="text-base leading-none bg-muted w-6 h-6 rounded flex items-center justify-center shrink-0">{emp.avatar || '👤'}</span>
                   <span className="font-medium">{emp.name}</span>
-                  <span className="text-[12px] text-muted-foreground ml-auto truncate max-w-[120px]">{emp.role}</span>
+                  <span className="text-[12px] text-muted-foreground ml-auto truncate max-w-[120px]">{emp.description}</span>
                 </Command.Item>
               ))}
             </Command.Group>

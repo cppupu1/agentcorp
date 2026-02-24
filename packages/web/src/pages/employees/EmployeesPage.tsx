@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router';
 import { employeesApi, type Employee } from '@/api/client';
 import { useI18n } from '@/i18n';
@@ -41,9 +41,23 @@ export default function EmployeesPage() {
   const [selectMode, setSelectMode] = useState(false);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [showImport, setShowImport] = useState(false);
+  const [statusMap, setStatusMap] = useState<Record<string, string>>({});
   const { toast } = useToast();
   const navigate = useNavigate();
   const { t } = useI18n();
+  const statusTimer = useRef<ReturnType<typeof setInterval>>(undefined);
+
+  // Poll employee statuses every 5s
+  useEffect(() => {
+    const poll = () => employeesApi.statuses().then(r => {
+      const m: Record<string, string> = {};
+      for (const s of r.data) m[s.employeeId] = s.status;
+      setStatusMap(m);
+    }).catch(() => {});
+    poll();
+    statusTimer.current = setInterval(poll, 5000);
+    return () => clearInterval(statusTimer.current);
+  }, []);
 
   const load = useCallback(async () => {
     try {
@@ -181,13 +195,13 @@ export default function EmployeesPage() {
       ) : viewMode === 'card' ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {employees.map(emp => (
-            <EmployeeCard key={emp.id} emp={emp} growth={growthMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
+            <EmployeeCard key={emp.id} emp={emp} growth={growthMap[emp.id]} status={statusMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
           ))}
         </div>
       ) : (
         <div className="space-y-2">
           {employees.map(emp => (
-            <EmployeeListItem key={emp.id} emp={emp} growth={growthMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
+            <EmployeeListItem key={emp.id} emp={emp} growth={growthMap[emp.id]} status={statusMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
           ))}
         </div>
       )}
@@ -210,21 +224,32 @@ export default function EmployeesPage() {
   );
 }
 
-function EmployeeCard({ emp, growth, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
-  emp: Employee; growth?: GrowthStat; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
+const STATUS_DOT: Record<string, string> = {
+  working: 'bg-green-500 animate-pulse',
+  waiting: 'bg-yellow-500',
+  idle: 'bg-gray-400',
+};
+
+function EmployeeCard({ emp, growth, status, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
+  emp: Employee; growth?: GrowthStat; status?: string; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
 }) {
   const { t } = useI18n();
   const level = getLevel(growth?.overallScore ?? null);
+  const statusKey = status || 'idle';
   return (
-    <div data-testid={`employee-item-${emp.id}`} className={`bg-card rounded-3xl p-6 border border-border/40 space-y-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all ${selected ? 'ring-2 ring-primary/30' : ''}`} onClick={selectMode ? onToggle : undefined} {...(selectMode ? { role: 'button', tabIndex: 0, onKeyDown: (e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') onToggle(); } } : {})}>
+    <div data-testid={`employee-item-${emp.id}`} className={`bg-card rounded-3xl p-6 border border-border/40 space-y-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all ${selected ? 'ring-2 ring-primary/30' : ''} ${statusKey === 'working' ? 'glow-executing' : ''}`} onClick={selectMode ? onToggle : undefined} {...(selectMode ? { role: 'button', tabIndex: 0, onKeyDown: (e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') onToggle(); } } : {})}>
       <div className="flex items-start gap-3">
         {selectMode && (
           <input type="checkbox" checked={selected} onChange={onToggle} className="mt-1" onClick={e => e.stopPropagation()} />
         )}
-        <span className="text-2xl">{emp.avatar || '👤'}</span>
+        <div className="relative">
+          <span className="text-2xl">{emp.avatar || '👤'}</span>
+          <span className={`absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-card ${STATUS_DOT[statusKey] || STATUS_DOT.idle}`} />
+        </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
             <span className="font-medium">{emp.name}</span>
+            <span className={`text-[10px] ${statusKey === 'working' ? 'text-green-600' : statusKey === 'waiting' ? 'text-yellow-600' : 'text-muted-foreground'}`}>{t(`employees.status${statusKey.charAt(0).toUpperCase() + statusKey.slice(1)}` as any)}</span>
             {level && <Badge variant={LEVEL_VARIANT[level]} className="text-xs">{t(`employees.level_${level}`)}</Badge>}
           </div>
           <div className="text-xs text-muted-foreground">{emp.modelName} · {emp.toolCount} {t('common.tools')}{growth?.taskCount ? ` · ${t('employees.taskCount').replace('{count}', String(growth.taskCount))}` : ''}</div>
@@ -246,20 +271,25 @@ function EmployeeCard({ emp, growth, selectMode, selected, onToggle, onEdit, onC
   );
 }
 
-function EmployeeListItem({ emp, growth, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
-  emp: Employee; growth?: GrowthStat; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
+function EmployeeListItem({ emp, growth, status, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
+  emp: Employee; growth?: GrowthStat; status?: string; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
 }) {
   const { t } = useI18n();
   const level = getLevel(growth?.overallScore ?? null);
+  const statusKey = status || 'idle';
   return (
     <div data-testid={`employee-item-${emp.id}`} className={`flex items-center gap-4 bg-card rounded-2xl px-4 py-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 transition-all ${selected ? 'ring-2 ring-primary/30' : ''}`} onClick={selectMode ? onToggle : undefined} {...(selectMode ? { role: 'button', tabIndex: 0, onKeyDown: (e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') onToggle(); } } : {})}>
       {selectMode && (
         <input type="checkbox" checked={selected} onChange={onToggle} onClick={e => e.stopPropagation()} />
       )}
-      <span className="text-xl">{emp.avatar || '👤'}</span>
+      <div className="relative">
+        <span className="text-xl">{emp.avatar || '👤'}</span>
+        <span className={`absolute -bottom-0.5 -right-0.5 h-2 w-2 rounded-full border-2 border-card ${STATUS_DOT[statusKey] || STATUS_DOT.idle}`} />
+      </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2">
           <span className="font-medium text-sm">{emp.name}</span>
+          <span className={`text-[10px] ${statusKey === 'working' ? 'text-green-600' : statusKey === 'waiting' ? 'text-yellow-600' : 'text-muted-foreground'}`}>{t(`employees.status${statusKey.charAt(0).toUpperCase() + statusKey.slice(1)}` as any)}</span>
           {level && <Badge variant={LEVEL_VARIANT[level]} className="text-xs">{t(`employees.level_${level}`)}</Badge>}
         </div>
         <div className="text-xs text-muted-foreground">{emp.modelName} · {emp.toolCount} {t('common.tools')}</div>
