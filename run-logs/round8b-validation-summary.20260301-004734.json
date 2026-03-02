@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-03-01T00:47:34.754662Z",
+  "runLabel": "round8b-20260301-004734",
+  "validated_tasks": [
+    {
+      "label": "round8b-stock-tools",
+      "taskId": "c9ab52024e1a6c8d",
+      "status": "completed",
+      "timedOut": false,
+      "allChecksPassed": true,
+      "evidence": "run-logs/round8b-stock-tools.audit.20260301-004734.json"
+    },
+    {
+      "label": "round8b-ai-search",
+      "taskId": "9699310848e736e0",
+      "status": "completed",
+      "timedOut": false,
+      "allChecksPassed": true,
+      "evidence": "run-logs/round8b-ai-search.audit.20260301-004734.json"
+    },
+    {
+      "label": "round8b-memory-time",
+      "taskId": "9b11b8845982b9a1",
+      "status": "completed",
+      "timedOut": false,
+      "allChecksPassed": true,
+      "evidence": "run-logs/round8b-memory-time.audit.20260301-004734.json"
+    }
+  ]
+}

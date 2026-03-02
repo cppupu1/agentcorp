@@ -1,0 +1,646 @@
+[
+  {
+    "id": "457f4613894aad27",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_5e585764539c43ebb589b3aa"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:56:47.530Z"
+  },
+  {
+    "id": "707dba46e2cad979",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_cdca04dcb5e34cffa00c616a"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:56:47.827Z"
+  },
+  {
+    "id": "cf93fd416c1cbd5b",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_df3b161cda9646349c2c8c8a"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:56:48.164Z"
+  },
+  {
+    "id": "268e457b2e48ea4c",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en\" class=\"roboto_bbe4bf82-module__e3NsUq__variable merriweather_6d547f96-module__smryTW__variable inter_d8da4655-module__9CpicG__variable\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"preload\" href=\"/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/b15f2a2d1ae1d457-s.p.2afb807d.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/ce62453a442c7f35-s.p.124b2306.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=256&amp;q=50 256w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=384&amp;q=50 384w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=512&amp;q=50 512w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=640&amp;q=50 640w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=750&amp;q=50 750w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=828&amp;q=50 828w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1",
+    "isError": false,
+    "durationMs": 1223,
+    "createdAt": "2026-03-02T03:56:49.387Z"
+  },
+  {
+    "id": "dd3460df8028c34b",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en-US\" class=\"\" style=\"--hero-ads-top: 68px;\"><head><meta http-equiv=\"origin-trial\" content=\"A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==\">\n\t<meta charset=\"UTF-8\">\n\t<script async=\"\" src=\"//connect.facebook.net/en_US/fbevents.js\"></script><script type=\"text/javascript\" async=\"\" charset=\"utf-8\" src=\"https://www.gstatic.com/recaptcha/releases/AWtrSI7lAmTAfV1rzWqEqz54/recaptcha__en.js\" crossorigin=\"anonymous\" integrity=\"sha384-DNsk1l2N8IJMT/1D2GaYe7/7wf4BKkES+NGns242eIkpk/PIUnpeVsUuno96AxVX\"></script><script async=\"\" src=\"https://goddesslamps.com/scripts/giwf4wd/zishe\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-M24PKK8\"></script><script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n\t\tconst successData = localStorage.getItem('turnstile_verified');\n\t\tconst failData = sessionStorage.getItem('turnstile_failed');\n\t\tconst isBot = failData ? 'true' : successData ? 'false' : null;\n\n\t\twindow.dataLayer = window.dataLayer || [];\n\t\twindow.dataLayer.push({ is_bot: isBot });\n\t</script>\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"robots\" content=\"index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1\">\n\n\t<!-- This site is optimized with the Yoast SEO Premium plugin v25.1 (Yoast SEO v25.1) - https://yoast.com/wordpress/plugins/seo/ -->\n\t<title>Artificial Intelligence (AI) | TechCrunch</title>\n\t<meta name=\"description\" content=\"Read the latest news about Artificial Intelligence (AI) on TechCrunch\">\n\t<link rel=\"canonical\" href=\"https://techcrunch.com/tag/artificial-intelligence/\">\n\t<link rel=\"next\" href=\"https://techcrunch.com/tag/artificial-intellig",
+    "isError": false,
+    "durationMs": 2032,
+    "createdAt": "2026-03-02T03:56:49.562Z"
+  },
+  {
+    "id": "df1fa2c7d2e2cafe",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en-US\"><head><meta name=\"bingbot\" content=\"nocache\"><meta charset=\"utf-8\"><meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"@verge\"><meta property=\"fb:app_id\" content=\"549923288395304\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:site_name\" content=\"The Verge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><meta name=\"apple-mobile-web-app-title\" content=\"Verge\"><meta name=\"google-site-verification\" content=\"IucFf_TKtbFFH8_YeFyEteQIwYPdANM1R46_U9DpAr4\"><link rel=\"alternate\" type=\"application/rss+xml\" title=\"The Verge\" href=\"/rss/index.xml\"><link rel=\"shortcut icon\" href=\"/static-assets/icons/favicon.ico\"><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static-assets/icons/apple-touch-icon.png\"><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/static-assets/icons/favicon-32x32.png\"><link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"/static-assets/icons/favicon-96x96.png\"><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/static-assets/icons/favicon-16x16.png\"><link rel=\"mask-icon\" href=\"/static-assets/icons/safari-pinned-tab.svg\"><link rel=\"icon\" type=\"image/png\" href=\"/static-assets/icons/android-chrome-192x192.png\" sizes=\"192x192\"><link rel=\"icon\" type=\"image/png\" href=\"/static-assets/icons/android-chrome-512x512.png\" sizes=\"512x512\"><title>Artificial Intelligence | The Verge</title><meta name=\"robots\" content=\"index,follow\"><meta name=\"description\" content=\"Artificial intelligence is more a part of our lives than ever before. While some might call it hype and compare it to NFTs or 3D TVs, AI is causing a sea change in nearly every part of the technology industry. OpenAI’s ChatGPT is arguably the best-known AI chatbot around, but with Google pushing Gemini, Microsoft building Copilot, and Apple working to make Siri good, AI is probably going to be in the spotlight for a very long time. At The Verge, we’re exploring what might be ",
+    "isError": false,
+    "durationMs": 2699,
+    "createdAt": "2026-03-02T03:56:50.525Z"
+  },
+  {
+    "id": "08cf524f53dd3a6a",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_d4424957e71342b5943366f7"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:56:55.587Z"
+  },
+  {
+    "id": "40a2eb14f7aab9dd",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_726e5e99221144d68afa10ab"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:56:56.052Z"
+  },
+  {
+    "id": "fbd8e964908807c7",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_d86ae1e92c874ee0a8cc4d21"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:56:56.235Z"
+  },
+  {
+    "id": "b2f8cbd2e116d3a3",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<html><head>\n    <style global=\"\">body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;flex-direction:column;gap:2rem;height:100%;justify-content:center;width:100%}@keyframes enlarge-appear{0%{opacity:0;transform:scale(75%) rotate(-90deg)}to{opacity:1;transform:scale(100%) rotate(0deg)}}.logo{color:#8e8ea0}.scale-appear{animation:enlarge-appear .4s ease-out}@media (min-width:768px){.scale-appear{height:48px;width:48px}}.data:empty{display:none}.data{border-radius:5px;color:#8e8ea0;text-align:center}@media (prefers-color-scheme:dark){body{background-color:#343541}.logo{color:#acacbe}}</style>\n  <meta http-equiv=\"refresh\" content=\"360\">\n<script src=\"/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=9d5d7973e8eef1bc\"></script></head>\n  <body>\n    <div class=\"container\">\n      <div class=\"logo\">\n        <svg width=\"41\" height=\"41\" viewBox=\"0 0 41 41\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" strokewidth=\"2\" class=\"scale-appear\">\n          <path d=\"M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.",
+    "isError": false,
+    "durationMs": 896,
+    "createdAt": "2026-03-02T03:56:56.483Z"
+  },
+  {
+    "id": "d36c2f61f9aa4903",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_b050c9559dee4427bbe71fa7"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:56:56.645Z"
+  },
+  {
+    "id": "cb4b20d82646f889",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html class=\"no-js glue-flexbox glue-app-ready keyword-blog\" lang=\"en-us\" data-locale=\"en-us\" data-version=\"pr20260219-1731\"><head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <title>Official Google AI news and updates | Google Blog</title>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0\">\n        <meta name=\"optimize_experiments\" content=\"[]\">\n\n        \n\n\n\n\n\n<!--Article Specific Metadata-->\n<meta name=\"description\" content=\"Explore the cutting-edge work Google is doing in AI and machine learning.\">\n\n<!--Open Graph Metadata-->\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:title\" content=\"AI\">\n\n<meta property=\"og:description\" content=\"Explore the cutting-edge work Google is doing in AI and machine learning.\">\n<meta property=\"og:image\" content=\"https://blog.google/static/blogv2/images/google-200x200.png?version=pr20260219-1731\">\n<meta property=\"og:site_name\" content=\"blog.google\">\n<meta property=\"og:url\" content=\"https://blog.google/innovation-and-ai/technology/ai/\">\n\n<!--Twitter Card Metadata-->\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:url\" content=\"https://blog.google/innovation-and-ai/technology/ai/\">\n<meta name=\"twitter:title\" content=\"AI\">\n<meta name=\"twitter:description\" content=\"Explore the cutting-edge work Google is doing in AI and machine learning.\">\n<meta name=\"twitter:image:src\" content=\"https://blog.google/static/blogv2/images/google-200x200.png?version=pr20260219-1731\">\n<meta name=\"twitter:site\" content=\"@google\">\n\n\n        \n  <meta name=\"page\" content=\"35370\">\n  <meta name=\"locale\" content=\"en-us\">\n  <meta name=\"published_time\" content=\"2018-06-07T18:13:42.706255+00:00\">\n  <meta name=\"content_type\" content=\"blogv2.subcategorypage\">\n  <meta name=\"tags\" content=\"AI\">\n  <meta name=\"authors\" content=\"\">\n\n\n\n        \n        \n\n        \n        \n  \n  \n  <style>@keyframes ",
+    "isError": false,
+    "durationMs": 1158,
+    "createdAt": "2026-03-02T03:56:57.211Z"
+  },
+  {
+    "id": "0c1dfb9526c9b37d",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<html lang=\"en\"><head><title>reuters.com</title><style>#cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}}</style><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></head><body style=\"margin:0\"><script data-cfasync=\"false\">var dd={'rt':'c','cid':'AHrlqAAAAAMAaPnMxW4CHqQAvP0FKw==','hsh':'2013457ADA70C67D6A4123E0A76873','t':'bv','qp':'','s':43909,'e':'cdbfc37e809bf20f5cc147e795cec4e8925f1eee29a68bc9e76b4fed4d8fd004b83b643f3a6596d5186be1069fb6ec68','host':'geo.captcha-delivery.com','cookie':'ZQ5IlT2QzusPno9tCipvuTWnHxjs_LJUBE5ZYx1OTJj2NLGuwOk1HkEpCGK~3esDDo4oJo78sTYF_aTZ_X1R28~wiBeeZlMO~khNRtgn65Y2OqvENmdr1H1r5rYQcCk7'}</script><script data-cfasync=\"false\" src=\"https://ct.captcha-delivery.com/c.js\"></script><iframe src=\"https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAaPnMxW4CHqQAvP0FKw%3D%3D&amp;hash=2013457ADA70C67D6A4123E0A76873&amp;cid=ZQ5IlT2QzusPno9tCipvuTWnHxjs_LJUBE5ZYx1OTJj2NLGuwOk1HkEpCGK~3esDDo4oJo78sTYF_aTZ_X1R28~wiBeeZlMO~khNRtgn65Y2OqvENmdr1H1r5rYQcCk7&amp;t=bv&amp;referer=https%3A%2F%2Fwww.reuters.com%2Ftechnology%2Fartificial-intelligence%2F&amp;s=43909&amp;e=cdbfc37e809bf20f5cc147e795cec4e8925f1eee29a68bc9e76b4fed4d8fd004b83b643f3a6596d5186be1069fb6ec68&amp;dm=cd\" sandbox=\"allow-scripts allow-same-origin allow-forms\" allow=\"accelerometer; gyroscope; magnetometer\" title=\"DataDome CAPTCHA\" width=\"100%\" height=\"100%\" style=\"height:100vh;\" frameborder=\"0\" border=\"0\" scrolling=\"yes\"></iframe></body></html>",
+    "isError": false,
+    "durationMs": 2099,
+    "createdAt": "2026-03-02T03:56:58.744Z"
+  },
+  {
+    "id": "28e032a2fdd98df5",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en\" class=\"anthropicsans_dce02d96-module__tEBbKW__variable anthropicserif_e7e46c4-module__uImRTq__variable anthropicmono_fae19af3-module__c5XAsG__variable copernicus_4da799c5-module__dijTSq__variable styrenea_f8492ab1-module__HimLXW__variable styreneb_278af5c6-module__wkOAdG__variable tiempostext_4eff4b4c-module__mpviCW__variable jetbrainsmono_7d7bdbc6-module__j_XgJq__variable\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/365eca5272a6c334.css\" nonce=\"\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/38fee8473f816a4a.css\" nonce=\"\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/ad266d0a6bc656af.css\" nonce=\"\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/5a4d5e0359c830f1.css\" nonce=\"\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/8a6120b17f1dd6ed.css\" nonce=\"\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/23b2053613b8b591.css\" nonce=\"\" data-precedence=\"next\"><link rel=\"preload\" as=\"script\" fetchpriority=\"low\" nonce=\"\" href=\"/_next/static/chunks/f4386f5ba7642880.js\"><script src=\"/_next/static/chunks/573c649abe04b34a.js\" async=\"\" nonce=\"\"></script><script src=\"/_next/static/chunks/d0300bffb79131f2.js\" async=\"\" nonce=\"\"></script><script src=\"/_next/static/chunks/08dcfc3b15383cd6.js\" async=\"\" nonce=\"\"></script><script src=\"/_next/static/chunks/turbopack-07052ba808d12dd9.js\" async=\"\" nonce=\"\"></script><script src=\"/_next/static/chunks/d96012bcfc98706a.js\" async=\"\" nonce=\"\"></script><script src=\"/_next/static/chunks/d80b3790a119a285.js\" async=\"\" nonce=\"\"></script><script src=\"/_next/static/chunks/1fb574e7be3f9a05.js\" async=\"\" nonce=\"\"></script><script src=\"/_next/static/chunks/93d7bff7ec3e47dd.js\" async=\"\" nonce=\"\"></script><script src=\"/_next/static/chunks/c1896c986be1a2e2.js\" async=\"\" nonce=\"\"></script><script src=\"/_",
+    "isError": false,
+    "durationMs": 4954,
+    "createdAt": "2026-03-02T03:57:01.189Z"
+  },
+  {
+    "id": "bf32529cbab6b735",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_e7f9b7864355431c876e9a33"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:10.792Z"
+  },
+  {
+    "id": "0dbf7aac708ed53e",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_9fc4198733ba47f7986352c0"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:11.010Z"
+  },
+  {
+    "id": "497e00bfee550198",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_6f641af5660e46a087562a0f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:11.357Z"
+  },
+  {
+    "id": "aaa3cfe3c6b96b89",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_e053997fa93146629191e1db"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:11.857Z"
+  },
+  {
+    "id": "221618414f710b3a",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en\"><head>\n            <meta charset=\"utf-8\">\n            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n            <title>Bloomberg - Are you a robot?</title> \n            <style rel=\"stylesheet\">\n                @font-face {\n                    font-family: BWHaasGroteskWeb;\n                    font-display: swap;\n                    font-weight: 400;\n                    font-style: normal;\n                    src: url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-55Roman-Web-7998fbcba8.eot');\n                    src: local('?'), url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-55Roman-Web-5cf5733cd9.woff2') format('woff2'), url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-55Roman-Web-a1ea4fd367.woff') format('woff')\n                }\n\n                @font-face {\n                    font-family: BWHaasGroteskWeb;\n                    font-display: swap;\n                    font-weight: 700;\n                    font-style: normal;\n                    src: url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-75Bold-Web-de8c77cce2.woff2') format('woff2'), url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-75Bold-Web-506363704e.woff') format('woff')\n                }\n            </style>\n            <style rel=\"stylesheet\">\n                html, body, div, span, applet, object, iframe,\n                h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n                a, abbr, acronym, address, big, cite, code,\n                del, dfn, em, img, ins, kbd, q, s, samp,\n                small, strike, strong, sub, sup, tt, var,\n                b, u, i, center,\n                dl, dt, dd, ol, ul, li,\n                fieldset, form, label, legend,\n                table, caption, tbody, tfoot, thead, tr, th, td,\n                article, aside, canvas, details, embed,\n                figure, figcaption, footer, header, hgroup,\n                menu, nav, output, ruby, secti",
+    "isError": false,
+    "durationMs": 1130,
+    "createdAt": "2026-03-02T03:57:12.987Z"
+  },
+  {
+    "id": "6730bc27eee5554c",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en\"><head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title></title>\n    <style>\n        body {\n            font-family: \"Arial\";\n        }\n    </style>\n    <script type=\"text/javascript\">\n    window.awsWafCookieDomainList = [];\n    window.gokuProps = {\n\"key\":\"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AGfpbHanyqhywhcKC30LCcUAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMbCklm7cPOtahA1CNAgEQgDtB+SkOcBEeW8T+2d5//+k6hxtQgo/mk4Xd25IpyUMCIxnH1UbIpBVDr+pwPAy4pc1zb91j6TFjwEHmUQ==\",\n          \"iv\":\"CgAEWDT7EAAAApvo\",\n          \"context\":\"gZlG28LPf4dJCod6fQqI0VwAhqkltOEqfZmVDmp+BhcWfrZQ8dkc1pCL/hJUfdrk51jP40IigzJkMsHdQ5WGohj5D1VWSRKtswvm07vrJg0Px36swra5yxROP5b6MP3RS39G4wpXeYAJBvfxxkWWbhgAN1WNG2rEXfCB8OOBk/GVVsca5JMk0LDH/HfLn6lxaYjPKWkTvOgCVbZNhnND3Og1+/TYrh+lqxjm2uofSPovNCfdJHlc3muPWPz706DreNm/W7g26w4taJfa88HY3kTRKXCh/L1oxl+7yr2BYX4tV/RFK0dDwoFSbhaVpZJ2i34qbwhLwfccFtfVqUZjArM9ufy3lWjOUr2diRY2LtkSo/tirPgAvQ==\"\n};\n    </script>\n    <script src=\"https://8eb60cfff851.d9a656b7.us-east-2.token.awswaf.com/8eb60cfff851/3d5d6f3ad3d5/90b6a275d9e0/challenge.js\"></script>\n</head>\n<body>\n    <div id=\"challenge-container\"></div>\n    <script type=\"text/javascript\">\n        AwsWafIntegration.saveReferrer();\n        AwsWafIntegration.checkForceRefresh().then((forceRefresh) => {\n            if (forceRefresh) {\n                AwsWafIntegration.forceRefreshToken().then(() => {\n                    window.location.reload(true);\n                });\n            } else {\n                AwsWafIntegration.getToken().then(() => {\n                    window.location.reload(true);\n                });\n            }\n        });\n    </script>\n    <noscript>\n        <h1>JavaScript is disabled</h1>\n        In order to continue, we need to verify that you're not a robot.\n        This requires JavaScript. Enable JavaScript and then reload the page.\n    </noscript>\n\n</body></html>",
+    "isError": false,
+    "durationMs": 3986,
+    "createdAt": "2026-03-02T03:57:14.778Z"
+  },
+  {
+    "id": "0a91a85db1ceee80",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en\" data-edition=\"us\" data-n-head=\"%7B%22lang%22:%7B%22ssr%22:%22en%22%7D,%22data-edition%22:%7B%22ssr%22:%22us%22%7D%7D\"><head><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/destination?id=G-1Q25KQB2WE&amp;cx=c&amp;gtm=4e62p1h1\" nonce=\"\"></script><script async=\"\" src=\"https://skullmagnets.com/public/js/7c30141/c0_f76c0a89e968f71ca4bb062649d.bundle.js\"></script><script async=\"\" src=\"//cdn.confiant-integrations.net/gptprebidnative/202601281034/wrap.js\"></script><script async=\"\" tag=\"script\" src=\"https://openads-cdn.adsrvr.org/openadsjs/build/v1.0/ziffdavis/openads.js\"></script><script async=\"\" tag=\"script\" src=\"https://pub.doubleverify.com/dvtag/33936767/DV1379166/pub.js\"></script><script async=\"\" tag=\"script\" src=\"https://cdn.ziffstatic.com/pg/zdnet.prebid.js\"></script><link tag=\"link\" rel=\"preload\" href=\"https://client.aps.amazon-adsystem.com/publisher.js\" as=\"script\"><script type=\"text/javascript\" async=\"\" src=\"https://cdn.confiant-integrations.net/J3UXFee1xclY-bfFlWh1mIZ_phU/gpt_and_prebid/config.js\"></script><script async=\"\" src=\"https://config.aps.amazon-adsystem.com/configs/3158\"></script><link tag=\"link\" rel=\"preconnect\" href=\"https://aax.amazon-adsystem.com\">\n    <!-- running tag = 'production-20260225191551-0850c86' date-timestamp: 1772422911977 -->\n    <meta data-n-head=\"ssr\" charset=\"utf-8\"><meta data-n-head=\"ssr\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"ssr\" data-hid=\"description\" name=\"description\" content=\"ZDNET news and advice keep professionals prepared to embrace innovation and ready to build a better future.\"><meta data-n-head=\"ssr\" data-hid=\"og:site_name\" property=\"og:site_name\" content=\"ZDNET\"><meta data-n-head=\"ssr\" data-hid=\"og:description\" property=\"og:description\" content=\"ZDNET news and advice keep professionals prepared to embrace innovation and ready to build a better future.\"><meta data-n-head=\"ssr\" data-hid=\"fb:app_id\" property=\"fb:app_",
+    "isError": false,
+    "durationMs": 5129,
+    "createdAt": "2026-03-02T03:57:16.486Z"
+  },
+  {
+    "id": "b3fdc518bfbe3de8",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en-US\" dir=\"ltr\"><head><title>The Artificial Intelligence Database | WIRED</title><meta charset=\"utf-8\"><meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\"><meta name=\"msapplication-tap-highlight\" content=\"no\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"author\" content=\"Condé Nast\"><meta name=\"copyright\" content=\"Copyright (c) Condé Nast 2026\"><meta name=\"description\" content=\"Explore the technology like never before with our new database, which collects all of our stories on artificial intelligence and filters them by sector, source data, end user, company, and more.\"><meta name=\"id\" content=\"605df38fea066c0470339dca\"><meta name=\"keywords\" content=\"web\"><meta name=\"news_keywords\" content=\"web\"><meta name=\"robots\" content=\"index, follow, max-image-preview:large\"><meta name=\"content-type\" content=\"bundle\"><meta name=\"parsely-post-id\" content=\"605df38fea066c0470339dca\"><meta name=\"parsely-metadata\" content=\"{&quot;description&quot;:&quot;Explore the technology like never before with our new database, which collects all of our stories on artificial intelligence and filters them by sector, source data, end user, company, and more.&quot;,&quot;image-16-9&quot;:&quot;https://media.wired.com/photos/60622a56204aaa18f97554c0/16:9/w_1000,c_limit/ai_database.jpg&quot;,&quot;image-1-1&quot;:&quot;https://media.wired.com/photos/60622a56204aaa18f97554c0/1:1/w_1000,c_limit/ai_database.jpg&quot;}\"><meta property=\"og:description\" content=\"Explore the technology like never before with our new database, which collects all of our stories on artificial intelligence and filters them by sector, source data, end user, company, and more.\"><meta property=\"og:image\" content=\"https://media.wired.com/photos/60622a56204aaa18f97554c0/16:9/w_1280,c_limit/ai_database.jpg\"><meta property=\"og:site_name\" content=\"WIRED\"><meta property=\"og:title\" content=\"The Artificial Intelligence Database\"><meta property=\"og:type\" content=\"website\"><met",
+    "isError": false,
+    "durationMs": 5927,
+    "createdAt": "2026-03-02T03:57:16.937Z"
+  },
+  {
+    "id": "6e65ef73531a4232",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_ce5d664b4350436baf27f569"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:50.854Z"
+  },
+  {
+    "id": "5ec835d3507e2b41",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_d600f3a2f6f64dcd8993a2b0"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:51.120Z"
+  },
+  {
+    "id": "9b305f2e4c730179",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_fadfcdd615d24a53aaf88bdd"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:51.260Z"
+  },
+  {
+    "id": "6fc070049be4ba99",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_c7827538d91146f1a8d9299d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:51.615Z"
+  },
+  {
+    "id": "dce0cfe67c73e81c",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "[{\"type\":\"text\",\"text\":\"\"}]",
+    "isError": false,
+    "durationMs": 1849,
+    "createdAt": "2026-03-02T03:57:53.109Z"
+  },
+  {
+    "id": "e2ad5dede002476c",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "Official Google AI news and updates | Google Blog\n\n[ Skip to main content ](#jump-content) \n\n[  The Keyword ](/) \n\nAI\n\nShare\n\n[ x.com ](https://twitter.com/intent/tweet?text=AI%20%40google&url=https://blog.google/innovation-and-ai/technology/ai/) [ Facebook ](https://www.facebook.com/sharer/sharer.php?caption=AI&u=https://blog.google/innovation-and-ai/technology/ai/) [ LinkedIn ](https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/innovation-and-ai/technology/ai/&title=AI) [ Mail ](mailto:?subject=AI&body=Check out this article on the Keyword:%0A%0AAI%0A%0Ahttps://blog.google/innovation-and-ai/technology/ai/) \n\nCopy link\n\n* [ Home](/)\n* Innovation & AI  \n Innovation & AI  \n   * Models & Research  \n         * [ Google DeepMind](/innovation-and-ai/models-and-research/google-deepmind/)  \n         * [ Google Research](/innovation-and-ai/models-and-research/google-research/)  \n         * [ Google Labs](/innovation-and-ai/models-and-research/google-labs/)  \n         * [ Gemini models](/innovation-and-ai/models-and-research/gemini-models/)  \n         * [ See all](/innovation-and-ai/models-and-research/)  \n   * Products  \n         * [ Developer tools](/innovation-and-ai/technology/developers-tools/)  \n         * [ Gemini app](/innovation-and-ai/products/gemini-app/)  \n         * [ See all](/innovation-and-ai/products/)  \n   * Infrastructure & cloud  \n         * [ Global network](/innovation-and-ai/infrastructure-and-cloud/global-network/)  \n         * [ Google Cloud](/innovation-and-ai/infrastructure-and-cloud/google-cloud/)  \n         * [ See all](/innovation-and-ai/infrastructure-and-cloud/)  \nLearn more:  \n   * [ Google DeepMind blog ](https://deepmind.google/blog/)  \n   * [ Google Research blog ](https://research.google/blog/)  \n   * [ Google Developers blog ](https://developers.googleblog.com/)  \n   * [ Google Cloud blog ](https://cloud.google.com/blog)  \n[ See all AI updates ](/innovation-and-ai/)  \n   * Models & Research  \n         * [ Google Deep",
+    "isError": false,
+    "durationMs": 1598,
+    "createdAt": "2026-03-02T03:57:53.213Z"
+  },
+  {
+    "id": "5eb2c7317de86394",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en-US\" class=\"\" style=\"--hero-ads-top: 68px;\"><head><meta http-equiv=\"origin-trial\" content=\"A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==\">\n\t<meta charset=\"UTF-8\">\n\t<script async=\"\" src=\"//connect.facebook.net/en_US/fbevents.js\"></script><script type=\"text/javascript\" async=\"\" charset=\"utf-8\" src=\"https://www.gstatic.com/recaptcha/releases/AWtrSI7lAmTAfV1rzWqEqz54/recaptcha__en.js\" crossorigin=\"anonymous\" integrity=\"sha384-DNsk1l2N8IJMT/1D2GaYe7/7wf4BKkES+NGns242eIkpk/PIUnpeVsUuno96AxVX\"></script><script async=\"\" type=\"text/javascript\" src=\"https://silo61.p7cloud.net/as1.js?uri=https://techcrunch.com/category/artificial-intelligence\"></script><script type=\"text/javascript\" async=\"\" src=\"https://snap.licdn.com/li.lms-analytics/insight.min.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://cdn.parsely.com/keys/techcrunch.com/p.js?gtm_ver=3.2\"></script><script type=\"text/javascript\" async=\"\" src=\"https://unpkg.com/web-vitals@4/dist/web-vitals.iife.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-KJR3C2ZQN6&amp;cx=c&amp;gtm=4e62p1\"></script><script async=\"\" src=\"https://goddesslamps.com/scripts/giwf4wd/zishe\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-M24PKK8\"></script><script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n\t\tconst successData = localStorage.getItem('turnstile_verified');\n\t\tconst failData = sessionStorage.getItem('turnstile_failed');\n\t\tconst isBot = failData ? 'true' : successData ? 'false' : null;\n\n\t\twindow.dataLayer = window.dataLayer || [];\n\t\twindow.dataLayer.push({ is_bot: isBot });\n\t</script>\n\t<meta nam",
+    "isError": false,
+    "durationMs": 3143,
+    "createdAt": "2026-03-02T03:57:53.997Z"
+  },
+  {
+    "id": "bdefbe1a3310aeba",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en-US\"><head><meta http-equiv=\"origin-trial\" content=\"A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==\"><meta name=\"bingbot\" content=\"nocache\"><meta charset=\"utf-8\"><meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"@verge\"><meta property=\"fb:app_id\" content=\"549923288395304\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:site_name\" content=\"The Verge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><meta name=\"apple-mobile-web-app-title\" content=\"Verge\"><meta name=\"google-site-verification\" content=\"IucFf_TKtbFFH8_YeFyEteQIwYPdANM1R46_U9DpAr4\"><link rel=\"alternate\" type=\"application/rss+xml\" title=\"The Verge\" href=\"/rss/index.xml\"><link rel=\"shortcut icon\" href=\"/static-assets/icons/favicon.ico\"><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static-assets/icons/apple-touch-icon.png\"><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/static-assets/icons/favicon-32x32.png\"><link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"/static-assets/icons/favicon-96x96.png\"><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/static-assets/icons/favicon-16x16.png\"><link rel=\"mask-icon\" href=\"/static-assets/icons/safari-pinned-tab.svg\"><link rel=\"icon\" type=\"image/png\" href=\"/static-assets/icons/android-chrome-192x192.png\" sizes=\"192x192\"><link rel=\"icon\" type=\"image/png\" href=\"/static-assets/icons/android-chrome-512x512.png\" sizes=\"512x512\"><title>Artificial Intelligence | The Verge</title><meta name=\"robots\" content=\"index,follow\"><meta name=\"description\" content=\"Artificial intelligence is more a part of our lives than ever before. While some might call it hype and compare it to NFTs or 3D TVs, AI is causi",
+    "isError": false,
+    "durationMs": 2894,
+    "createdAt": "2026-03-02T03:57:54.014Z"
+  },
+  {
+    "id": "73dc3b9416045689",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_3623622232294e1382435230"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:59.036Z"
+  },
+  {
+    "id": "f722b85a2aa7df6d",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_2264dc83582f4f4baea66aa0"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:57:59.037Z"
+  },
+  {
+    "id": "4fbc5630513495ab",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en\"><head>  <title>Artificial Intelligence  </title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/browse/0.3.4/images/icons/apple-touch-icon.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/static/browse/0.3.4/images/icons/favicon-32x32.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/static/browse/0.3.4/images/icons/favicon-16x16.png\">\n  <link rel=\"manifest\" href=\"/static/browse/0.3.4/images/icons/site.webmanifest\">\n  <link rel=\"mask-icon\" href=\"/static/browse/0.3.4/images/icons/safari-pinned-tab.svg\" color=\"#5bbad5\">\n  <meta name=\"msapplication-TileColor\" content=\"#da532c\">\n  <meta name=\"theme-color\" content=\"#ffffff\">\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/browse/0.3.4/css/arXiv.css?v=20241206\">\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"print\" href=\"/static/browse/0.3.4/css/arXiv-print.css?v=20200611\">\n  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"/static/browse/0.3.4/css/browse_search.css\">\n  <script language=\"javascript\" src=\"/static/browse/0.3.4/js/accordion.js\"></script>\n  <script language=\"javascript\" src=\"/static/browse/0.3.4/js/optin-modal.js?v=20250819\"></script>\n  \n  <script src=\"/static/browse/0.3.4/js/mathjaxToggle.min.js\" type=\"text/javascript\"></script>\n  <script type=\"text/javascript\" language=\"javascript\">mathjaxToggle();</script><script type=\"text/x-mathjax-config\">MathJax.Hub.Config({\n  messageStyle: 'none',\n  extensions: ['tex2jax.js'],\n  jax: ['input/TeX','output/HTML-CSS'],\n  tex2jax: {\n    inlineMath: [['$','$']],\n    processEscapes: true,\n    ignoreClass: '.*',\n    processClass: 'mathjax.*',\n  },\n  TeX: {\n    extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js'],\n    noErrors: {\n      inlineDelimiters: ['$','$'],\n      multiLine: false,\n      style: {\n        'font-size': 'normal',\n        'border': ''\n      }\n    }\n  }\n});</script><script type=",
+    "isError": false,
+    "durationMs": 568,
+    "createdAt": "2026-03-02T03:57:59.605Z"
+  },
+  {
+    "id": "fcc0d837424f0483",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en\" class=\"roboto_bbe4bf82-module__e3NsUq__variable merriweather_6d547f96-module__smryTW__variable inter_d8da4655-module__9CpicG__variable\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"preload\" href=\"/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/b15f2a2d1ae1d457-s.p.2afb807d.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/ce62453a442c7f35-s.p.124b2306.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=256&amp;q=50 256w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=384&amp;q=50 384w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=512&amp;q=50 512w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=640&amp;q=50 640w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=750&amp;q=50 750w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1%2F92e36733fd554e13692566a6f533d398%2Fupscalemedia-transformed.png%3Fw%3D1000%26q%3D100&amp;w=828&amp;q=50 828w, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F1XpGggdRdCiwlNHyu2qhW1",
+    "isError": false,
+    "durationMs": 670,
+    "createdAt": "2026-03-02T03:57:59.707Z"
+  },
+  {
+    "id": "54465a894f73e581",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_cacecb4b4a884a60b2d66a2d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:58:14.907Z"
+  },
+  {
+    "id": "b96de2c46508aede",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_e10029c4b8c8483e91329da1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:58:15.248Z"
+  },
+  {
+    "id": "5c61635b46a476a1",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "reuters.com",
+    "isError": false,
+    "durationMs": 825,
+    "createdAt": "2026-03-02T03:58:15.732Z"
+  },
+  {
+    "id": "f307c6865bab1459",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "  Bloomberg - Are you a robot?  \n\n## We've detected unusual activity from your computer network\n\nTo continue, please click the box below to let us know you're not a robot.\n\n### Why did this happen?\n\nPlease make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our [Terms of Service](/notices/tos) and [Cookie Policy](/notices/tos).\n\n### Need Help?\n\nFor inquiries related to this message please [contact our support team](/feedback) and provide the reference ID below.\n\nBlock reference ID:0a8afbda-15ec-11f1-bae7-02c7a0c83056\n\nGet the most important global markets news at your fingertips with a [Bloomberg.com](https://bloomberg.com) subscription.\n\n[SUBSCRIBE NOW](/subscription)",
+    "isError": false,
+    "durationMs": 756,
+    "createdAt": "2026-03-02T03:58:16.004Z"
+  },
+  {
+    "id": "bde61000c40abc49",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_5ba9e64a15dc44bba9cc0897"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:58:19.661Z"
+  },
+  {
+    "id": "81f955cef34fb0f5",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": {
+      "toolCallId": "call_863a3b3a821c4ff49a0f65ee"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:58:19.867Z"
+  },
+  {
+    "id": "f5fb5557b08bf374",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_36ac487060894d49ac469c54"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:58:20.117Z"
+  },
+  {
+    "id": "0b2eebeb9a398d81",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "[{\"type\":\"text\",\"text\":\"\"}]",
+    "isError": false,
+    "durationMs": 407,
+    "createdAt": "2026-03-02T03:58:20.274Z"
+  },
+  {
+    "id": "c1d24eab0af3a07e",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_d06b28d5cf4742fdbec95feb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:58:20.425Z"
+  },
+  {
+    "id": "227e1a072597608e",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": " \n\nEnable JavaScript and cookies to continue",
+    "isError": false,
+    "durationMs": 1063,
+    "createdAt": "2026-03-02T03:58:21.488Z"
+  },
+  {
+    "id": "a29d2acde80ee874",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_rendered_html",
+    "input": null,
+    "output": "<!DOCTYPE html><html lang=\"en-US\" dir=\"ltr\"><head><title>Artificial Intelligence | Latest News, Photos &amp; Videos | WIRED</title><meta charset=\"utf-8\"><meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\"><meta name=\"msapplication-tap-highlight\" content=\"no\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"author\" content=\"Condé Nast\"><meta name=\"copyright\" content=\"Copyright (c) Condé Nast 2026\"><meta name=\"description\" content=\"Find the latest Artificial Intelligence news from WIRED. See related science and technology articles, photos, slideshows and videos.\"><meta name=\"id\" content=\"642ae1a0f18a89510505df60\"><meta name=\"keywords\" content=\"web\"><meta name=\"news_keywords\" content=\"web\"><meta name=\"robots\" content=\"index, follow\"><meta name=\"content-type\" content=\"tagpage\"><meta name=\"parsely-post-id\" content=\"642ae1a0f18a89510505df60\"><meta name=\"parsely-metadata\" content=\"{&quot;description&quot;:&quot;Find the latest Artificial Intelligence news from WIRED. See related science and technology articles, photos, slideshows and videos.&quot;}\"><meta property=\"og:description\" content=\"Find the latest Artificial Intelligence news from WIRED. See related science and technology articles, photos, slideshows and videos.\"><meta property=\"og:image\" content=\"https://media.wired.com/photos/69a23b028618f79c55732aa9/191:100/w_1280,c_limit/Anthropic-Supply-Chain-Risk-Business-2261589216.jpg\"><meta property=\"og:site_name\" content=\"WIRED\"><meta property=\"og:title\" content=\"artificial intelligence\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:url\" content=\"https://www.wired.com/tag/artificial-intelligence/\"><meta property=\"article:content_tier\" content=\"free\"><meta http-equiv=\"content-language\" content=\"en-US\"><meta property=\"article:author\" content=\"Condé Nast\"><meta property=\"twitter:card\" content=\"summary_large_image\"><meta property=\"twitter:creator\" content=\"@wired\"><meta property=\"twitter:description\" content=\"Find the latest Art",
+    "isError": false,
+    "durationMs": 2156,
+    "createdAt": "2026-03-02T03:58:21.817Z"
+  },
+  {
+    "id": "26b9f02e9ca25702",
+    "type": "tool_call",
+    "taskId": "70161a1c8bdc713d",
+    "subtaskId": "b9c87d0bad2ebaac",
+    "employeeId": "10a7bd32c1bd6de4",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "# Newsroom\n\n*   Press inquires[press@anthropic.com](mailto:press@anthropic.com)\n*   Non-media inquiries[support@anthropic.com](mailto:support@anthropic.com)\n*   Media assets[Download press kit](https://anthropic.com/press-kit)\n\n![Statement on the comments from Secretary of War Pete Hegseth](https://www-cdn.anthropic.com/images/4zrzovbb/website/7379854a38414e07479303c4e77ef9a2064feef7-2400x1260.svg)\n\n[\n\n## Statement on the comments from Secretary of War Pete Hegseth\n\nAnnouncementsFeb 27, 2026\n\nAnthropic's response to the Secretary of War and advice to customers.\n\n\n\n\n\n](/news/statement-comments-secretary-war)\n\n[\n\nAnnouncementsFeb 26, 2026\n\n#### Statement from Dario Amodei on our discussions with the Department of War\n\nA statement from our CEO on national security uses of AI.\n\n](/news/statement-department-of-war)[\n\nProductFeb 17, 2026\n\n#### Introducing Claude Sonnet 4.6\n\nSonnet 4.6 delivers frontier performance across coding, agents, and professional work at scale.\n\n](/news/claude-sonnet-4-6)[\n\nAnnouncementsFeb 4, 2026\n\n#### Claude is a space to think\n\nWe’ve made a choice: Claude will remain ad-free. We explain why advertising incentives are incompatible with a genuinely helpful AI assistant, and how we plan to expand access without compromising user trust.\n\n](/news/claude-is-a-space-to-think)[\n\nAnnouncementsJan 30, 2026\n\n#### Claude on Mars\n\nThe first AI-assisted drive on another planet. Claude helped NASA’s Perseverance rover travel four hundred meters on Mars.\n\n](/mars)\n\n## News\n\nSearch\n\nDateCategoryTitle\n\n*   [\n    \n    Feb 27, 2026Announcements\n    \n    Statement on the comments from Secretary of War Pete Hegseth](/news/statement-comments-secretary-war)\n*   [\n    \n    Feb 26, 2026Announcements\n    \n    Statement from Dario Amodei on our discussions with the Department of War](/news/statement-department-of-war)\n*   [\n    \n    Feb 25, 2026Announcements\n    \n    Anthropic acquires Vercept to advance Claude's computer use capabilities](/news/acquires-vercept)\n*   [\n  ",
+    "isError": false,
+    "durationMs": 5566,
+    "createdAt": "2026-03-02T03:58:25.683Z"
+  }
+]

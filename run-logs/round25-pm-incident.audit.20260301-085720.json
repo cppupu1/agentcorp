@@ -1,0 +1,85 @@
+{
+  "label": "round25-pm-incident",
+  "sessionId": "round25-incident-20260301-085720",
+  "pmChatDurationMs": 54113,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "67d0bca19566efe9"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 54113
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 3
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "67d0bca19566efe9",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 12122,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 6
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n支付接口故障复盘任务已完成，输出了根因分析、止损动作和预防清单三部分内容，每部分列出了3-5条关键点。"
+    }
+  ]
+}

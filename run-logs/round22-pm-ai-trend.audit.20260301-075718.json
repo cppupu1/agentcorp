@@ -1,0 +1,83 @@
+{
+  "label": "round22-pm-ai-trend",
+  "sessionId": "round22-ai-20260301-075718",
+  "pmChatDurationMs": 20399,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "f5bdd4e5629a338a"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 20399
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "f5bdd4e5629a338a",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 102723,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 22
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 14,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n子任务状态异常，显示为 completed 但未获得最新执行结果。此前执行得到的结论日期超出近30天范围（2025-10-22 至 2025-11-21），需要后续重新核验并限定时间范围进行修正。现有交付物仅作为初步参考，不满足任务书要求。"
+    }
+  ]
+}

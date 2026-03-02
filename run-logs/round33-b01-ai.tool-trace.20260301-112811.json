@@ -1,0 +1,745 @@
+[
+  {
+    "id": "9bb4e643f72cb01f",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": {
+      "toolCallId": "call_function_gr8ac8uozk4q_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:29:01.674Z"
+  },
+  {
+    "id": "a1b445014ba538d4",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": null,
+    "output": "Echo: 当前时间",
+    "isError": false,
+    "durationMs": 5,
+    "createdAt": "2026-03-01T11:29:01.678Z"
+  },
+  {
+    "id": "9a025acc6082777d",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_up04csm029qh_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:29:08.781Z"
+  },
+  {
+    "id": "03d91ef4c6ab56c5",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 国星宇航披露“星算”计划进展:全球首次在轨部署通用大模型 - IT之家\nURL: https://www.ithome.com/0/916/576.htm\nDescription: 据IT之家了解,国星宇航“星算”计划的 01 组太空计算中心已于 2025 年5月成功发射并完成关键技术验证｡02 组和 03 组太空计算中心已投产,并计划在 2026 年实现轨道部署｡ 2025 年11 月,国星宇航将通义千问 Qwen3 大模型部署至“星算”计划 01 组太空计算中心, 这是全球首次将通用大模型从地面部署到在轨运行的卫星 ,并成功执行了多次端到端推理任务｡问题从地面上传至卫星,由大模型完成在轨推理,并将结果数据回传地面,全流程耗时不到 2 分钟｡\nPublished date: 2026-02-28T15:00:48+08:00\nSite name: IT之家\n\nTitle: “中国版OpenAI”智谱上市,中国AI大模型的含金量还在提高_澎湃号·湃客_澎湃新闻-The Paper\nURL: https://www.thepaper.cn/newsDetail_forward_32343111\nDescription: 2021年,发布中国首个专有预训练大模型框架GLM框架; 2022年,开源首个1000亿规模的模型GLM-130B; 2025年12月,智谱新一代基座模型GLM-4.7在模型综合能力榜单Artificial Analysis登顶全球开源模型与国产模型双料榜首｡ 另外,在全球百万用户盲测的Code Arena(代码竞技场)上,GLM-4.7位列全球开源第一､国内第一,超过了GPT-5.2｡ \nPublished date: 2026-02-27T00:25:22+08:00\nSite name: 澎湃新闻\n\nTitle: 阿里、百度、华为等入选首个大模型标准化专题组组长 - 电商派\nURL: https://www.dsb.cn/222013.html\nDescription: 7月7日消息,在2023世界人工智能大会(WAIC 2023)上,国家标准委指导的国家人工智能标准化总体组宣布我国首个大模型标准化专题组组长,由上海人工智能实验室与华为､阿里､百度､360等企业联合担任,现场进行了证书颁发并正式启动大模型测试国家标准制订｡ 公开资料显示,5月,国家启动大模型标准化工作,人工智能标准化总体组设立大模型专题组,启动大模型专题组组长､副组长申报和大模型标准化研究选题建议工作｡大模型专题组将承担大模型标准化制订工作,目的是推动大模型技术和标准化的实践结合,促进人工智能产业健康发展｡\nPublished date: 2026-02-22T16:16:20+08:00\nSite name: www.dsb.cn\n\nTitle: 智能转型 开辟AI新场景——二二五年世界科技发展回顾·人工智能篇\nURL: https://www.stdaily.com/web/gdxw/2026-01/06/content_457705.html\nDescription: 在科研突破与军事应用方面,青年科学家团队研发的Headless-AD模型显著优化了长文本处理能力｡军事领域,集成AI能力的“蜂群”无人机系统于5月开始高强度测试,其已具备自主地形匹配与目标分类功能｡6月,俄航天局计划将国产大模型GigaChat部署至国际空间站,旨在将卫星图像分辨率提升一倍｡ 在模型领域,科技公司推出了多款AI模型｡1月OpenAI推出首个AI智能体Operator,赋予AI直接操作图形界面的能力;随后xAI发布的Grok 3在推理与计算能力上创下新高｡下半年,OpenAI相继推出整合“Deep Research”等技术的ChatGPT Agent及性能巅峰的GPT-5;\nPublished date: 2026-02-05T14:51:04+08:00\nSite name: 中国科技网\n\nTitle: 2025年12个AI预测--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0107/3162464.shtml\nDescription: 随着生成式AI的快速普及,企业已开始广泛应用并获得投资回报｡预计到2025年,AI将在企业中大规模采用,推动效率和生产力提升｡小型语言模型､边缘计算､AI推理能力､proven use cases的大规模应用､敏捷开发的演进､法规监管加强､AI的无处不在､AI代理的兴起､多模态AI等将成为主要趋势,彻底改变企业运营方式和软件开发模式｡ \nPublished date: 2026-02-17T15:46:16+08:00\nSite name: ai.zhiding.cn\n\n",
+    "isError": false,
+    "durationMs": 1359,
+    "createdAt": "2026-03-01T11:29:10.140Z"
+  },
+  {
+    "id": "82913153afb737ca",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_880hmtyx23bi_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:29:12.630Z"
+  },
+  {
+    "id": "75102bbbf182979d",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphcxh3612916.shtml\nDescription: 技术方面,DeepSeek､通义千问等大模型实现突破,清华大学SALMONN音视频大模型在多项评测中超越GPT-4o等国际主流模型｡ 二､技术演进方向:从语言理解到物理认知的范式跃迁 (一)基础模型:世界模型成为AGI核心突破口 AI技术正经历从“预测下一个词”到“预测世界下一状态”的根本性转变｡2025年原生多模态技术实现关键突破,阿里､百度等企业推出的多模态大模型在训练初期即融合文本､图像､视频等数据,实现理解与生成一体化｡腾讯混元Voyager､昆仑万维Matrix-3D等世界模型在3D空间感知与物理推理领域表现突出,前者在斯坦福WorldScore基准测试中位居首位,后者可通过单张图生成可探索的3D世界｡\nPublished date: 2026-02-27T18:29:10+08:00\nSite name: 新浪财经\n\nTitle: 2025 年多模态 AI:从医疗保健到电子商务及更多领域的应用--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0107/3162454.shtml\nDescription: 多模态人工智能将在2025年重新定义企业如何利用AI｡它能同时处理文本､图像､音频等多种数据,为企业提供更全面的洞察｡在医疗领域,多模态AI可以帮助医生从海量数据中提取关键信息｡在电子商务领域,它将彻底改变搜索体验,让用户通过描述､图片等多种方式找到心仪商品｡多模态AI的应用将涉及各行各业,为企业带来无限可能｡ 多模态技术将在 2025 年重新定义企业如何利用 AI｡\nPublished date: 2026-02-21T03:39:28+08:00\nSite name: ai.zhiding.cn\n\nTitle: 智象未来入选「AI中国」机器之心2025年度「人工智能领军企业TOP 20」-CSDN.NET\nURL: https://www.csdn.net/article/2026-01-05/156597191\nDescription: 近日,机器之心正式发布2025年度｢AI中国｣权威榜单｡智象未来凭借其多模态生成式AI技术的创新突破与商业化成果,成功入选｢人工智能领军企业TOP 20｣｡作为多模态生成式AI领域的重要创新力量,智象未来依托自主研发的“智象多模态大模型”,构建了行业领先的技术壁垒｡该模型在全球多模态大模型中位于前列,拥有行业中最丰富的多模态版权语料库,同时是首批完成模型和算法双备案的多模态大模型｡2025年4月,智象未来自主研发的开源图像生成大模型HiDream-I1在国际权威榜单 Artificial Analysis中24小时内实现登顶,成为首个跻身全球第一梯队的中国自研生成式AI模型｡同年7月,开源图像编辑模型HiDream-E1.1凭借卓越的性能成功跻身Artificial Analysis图像编辑智能体榜单的第一梯队,并全面超越了Flux.1 Kontext等主流模型,持续以中国智力刷新国际标准｡\nPublished date: 2026-02-27T09:19:38+08:00\nSite name: CSDN技术社区\n\nTitle: 生成式 AI 如何在 2025 年改变生命科学--人工智能-至顶网\nURL: https://ai.zhiding.cn/2025/0108/3162518.shtml\nDescription: 人工智能技术将在2025年深刻改变生命科学行业｡多模态AI将加速药物研发和诊断,AI代理将优化工作流程,直观搜索将促进科研创新,AI驱动的客户体验将提升患者参与度｡这些技术将缩短药物开发周期,简化临床试验流程,推动个性化医疗发展,最终改善患者健康结果｡ 生命科学行业正处于一个前所未有的时期,有望通过引入生成式 AI (GenAI) 来造福人类｡ 1. 多模态 AI:释放更深层次的洞察力和新的创新 AI 模型的成功 - 尤其是在生命科学行业 - 在很大程度上取决于底层数据的丰富性和多样性｡这些模型必须能够处理庞大､复杂的数据集,包括图像､文本､图表､基因组信息和医疗记录的混合｡为了实现这一承诺,底层 AI 模型必须是多模态的 - 这意味着它们可以集成和分析来自多种格式的数据｡通过提供对科学数据更全面和细致入微的理解,多模态 AI 不仅可以加速药物发现,还可以增强诊断能力｡\nPublished date: 2026-02-18T07:43:03+08:00\nSite name: ai.z",
+    "isError": false,
+    "durationMs": 1095,
+    "createdAt": "2026-03-01T11:29:13.724Z"
+  },
+  {
+    "id": "838948a0444b2e36",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_m1zhup6m7f1h_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:29:17.062Z"
+  },
+  {
+    "id": "a37bfdab29c5bd34",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: AI应用井喷式爆发 美图7款产品入选2025年度图谱-证券日报网\nURL: http://m.zqrb.cn/gscy/qiyexinxi/2026-03-01/A1772332697278.html\nDescription: 2月26日,2025年AI应用的主要领域及代表产品图谱公布,效率办公和图像视频两大领域上榜产品最多,美图公司成为最大赢家｡     数据发布方认为,2025年AI应用井喷式爆发,市场进入规模化应用期,AI的应用能力正加速向图像视频､效率办公等高价值垂直领域纵深渗透｡     AI行业研究人士对记者表示,在AI的助力下,应用发展呈现新趋势:一是AI与创意场景的融合将更加深入,从基础的内容生成向全流程创意服务延伸;二是差异化竞争将成为核心主线,美图等企业应巩固自身的审美沉淀和需求洞察优势,在特定场景做深做实;三是商业模式将持续创新,AI将驱动创意软件实现从解决单点问题到场景化方案的跨越,推动创意软件行业实现价值跃升｡\nPublished date: 2026-03-01T00:00:00+08:00\nSite name: m.zqrb.cn\n\nTitle: 2025年AI行业洞察:企业如何通过AI创造价值-麦肯锡_应用_息税前利润_业务\nURL: https://www.sohu.com/a/990586988_121649899\nDescription: 2025年麦肯锡AI行业洞察报告显示,企业正通过组织架构调整､流程重构等方式挖掘生成式AI的商业价值,行业整体处于AI应用的早期发展阶段,大型企业在布局和落地中占据领先地位,超七成企业已在至少一个业务职能中应用AI,生成式AI的使用更是呈快速增长态势｡ 从应用落地来看,AI的应用场景不断拓展,平均渗透至企业三项业务职能,营销销售､产品开发､服务运营是生成式AI的核心应用领域,且应用呈现行业差异化特征｡\nPublished date: 2026-02-27T13:28:11+08:00\nSite name: 搜狐\n\nTitle: 2025-2030人工智能在医疗领域的应用现状与未来市场预测.docx-原创力文档\nURL: https://m.book118.com/html/2026/0122/8023063115010037.shtm\nDescription: \\o1-3\\h\\z\\u一､人工智能在医疗领域的应用现状 4 1､主要应用场景分析 4 医学影像识别与辅助诊断 4 智能问诊与虚拟健康助手 6 药物研发与基因数据分析 6 2､技术落地与临床实践进展 6 三甲医院试点项目实施情况 6 基层医疗机构普及程度 6 诊断系统准确率与医生协同效率 7 二､人工智能医疗市场竞争格局 9 1､主要企业与产品布局 9 互联网巨头(阿里健康､腾讯觅影､百度灵医) 9 专业AI医疗企业(依图科技､推想科技､数坤科技) 9 2､产业链竞争态势 11 上游算法与算力供应商格局 11 中游平台开发与系统集成商 11 下游医疗机构合作模式与采购机制 13 三､核心技术发展与数据支撑体系 15 1､关键技术突破方向 15 深度学习在病理识别中的优化 15 自然语言处理在电子病历挖掘的应用 16 联邦学习与医疗数据隐私保护融合 16 2､医疗数据资源建设 17 多中心临床数据库整合进展 17 标准化数据标注体系建设 19 数据确权与共享机制政策支持 20 四､政策环境与未来市场预测 22 1､国家战略与监管政策 22 十四五”数字健康规划相关政策 22 医疗器械审批路径与认证标准 22 医保支付对AI服务的覆盖探索 23 2､市场规模与增长趋势 24 年市场规模预测与复合增长率 24 区域市场差异(一线城市vs.偏远地区) 26 细分领域市场占比变化(影像､慢病管理､手术机器人) 27 3､投资风险与策略建议 29 技术成熟度与商业化落地风险 29 \nPublished date: 2026-02-25T16:20:20+08:00\nSite name: m.book118.com\n\nTitle: 七麦数据《2025全球移动互联网行业白皮书》重磅发布!AI步入规模化应用新阶段、游戏产业规模再创新高、中国应用出海驶入快车道_市场\nURL: https://www.sohu.com/a/990666801_121379383\nDescription: 白皮书指出,随着AI技术的加速落地,AI的应用能力正从图像视频､效率办公等热门赛道,加速向医疗等高价值场景以及更多垂直领域纵深渗透,各类AI产品井喷式爆发｡头部互联网大厂纷纷加速C端AI布局,智能助手逐渐演变成“超级入口”之争的核心战场｡同时,大厂也在加速向AI硬件延伸,全力抢占下一代人机交互入口｡\nPublished d",
+    "isError": false,
+    "durationMs": 1399,
+    "createdAt": "2026-03-01T11:29:18.461Z"
+  },
+  {
+    "id": "9a738ac55c2e2290",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_e53q57zwypw5_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:29:23.874Z"
+  },
+  {
+    "id": "23568c02c8de9ed6",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: ODI备案审核升级,AI、量子计算领域重监管_影城_识别_生物\nURL: https://www.sohu.com/a/990676652_122619571\nDescription: ODI备案敏感行业扩容了 2025年底起,发改委和商务部对AI基础设施､量子计算､6G､生物识别､战略矿产资源开发等领域实施重点监管,审慎备案/核准 房地产､酒店､影城等领域是持续严控 政策一变就很容易踩坑,大家要注意了 ODI备案新规,有问题可滴我\nPublished date: 2026-02-27T17:09:09+08:00\nSite name: 搜狐\n\nTitle: 2025 年如何应对数字化监管--商用办公频道-至顶网\nURL: http://biz.zhiding.cn/2025/0327/3164741.shtml\nDescription: 2025年将是数字监管实施的关键年份｡新的在线安全和竞争法规将生效,企业需要提前准备｡消费者保护､人工智能､云计算和数据共享等领域都将面临新的监管要求｡公司应采取积极主动的策略,评估风险,调整业务模式,以适应不断变化的监管环境｡数字监管将继续成为公众､政治和经济辩论的核心话题｡ 鉴于数字技术已经深深融入我们的生活､工作､交易和通信方式,英国和欧盟近期已经完成了前所未有的大量数字监管法规制定｡ \nPublished date: 2026-02-05T14:33:17+08:00\nSite name: biz.zhiding.cn\n\nTitle: 政策红利持续释放 AI制药发展提速-中新网\nURL: https://www.chinanews.com.cn/cj/2026/02-04/10565352.shtml\nDescription:  记者获悉,日前印发的《江苏省“人工智能+”行动方案》提出:增强生物医药研发创新能力;推动人工智能在药物靶标筛选､药物分子设计､医疗器械制造等场景中的推广应用; 在国家层面,覆盖AI制药全链条的政策支持体系正在形成｡“十五五”规划建议明确提出“全面实施‘人工智能+’行动”,为行业发展划定了清晰目标;2025年4月,工信部､国家卫生健康委等七部门联合发布《医药工业数智化转型实施方案(2025—2030年)》,提出到2027年建设10个以上医药大模型创新平台,打造100个以上医药工业数智技术应用典型场景;当年12月,工信部等八部门又联合印发《“人工智能+制造”专项行动实施意见》,将“提升医药智能研发”明确为AI赋能的重点攻坚领域｡ 专家表示,AI制药已被纳入“人工智能+”专项行动,随着政策支持不断完善,行业也将从自发探索进入政策引导的规范化发展阶段｡\nPublished date: 2026-02-28T02:31:19+08:00\nSite name: 中国新闻网\n\nTitle: 2025年中国AI解决方案行业分类、政策、产业链及下游分析\nURL: https://www.sohu.com/a/990250570_121717382\nDescription: 一､AI解决方案应用领域分类 AI解决方案是随时可用的自动化分析AI程序,能够产生准确和有意义的洞察,应对新的业务趋势和客户需求｡AI解决方案可以通过硬件､软件或云计算服务来部署｡ 二､AI解决方案行业主要产业政策 世界主要发达国家把发展人工智能作为提升国家竞争力､维护国家安全的重大战略,加紧出台规划和政策,围绕核心技术､顶尖人才､标准规范等强化部署,力图在新一轮国际科技竞争中掌握主导权｡\nPublished date: 2026-02-26T15:21:43+08:00\nSite name: 搜狐\n\nTitle: AI 专家预测:2025 年AI 泡沫或将破裂--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0121/3162964.shtml\nDescription: 专家预测,随着人工智能技术的迅速发展和广泛应用,2025 年可能成为 AI 泡沫破裂的关键一年｡尽管 AI 仍有望在多模态模型和自动机器学习等领域取得突破,但技术瓶颈､投资回报率下降､监管趋严以及环境和伦理问题等因素可能导致 AI 热潮降温｡未来 AI 发展将更注重平衡和可持续性｡ 人工智能在过去两年中一直是科技界的宠儿,吸引了数十亿美元的资金投入｡然而,随着 2025 \nPublished date: 2026-02-18T17:27:39+08:00\nSite name: ai.zhiding.cn\n\nTitle: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphc",
+    "isError": false,
+    "durationMs": 1245,
+    "createdAt": "2026-03-01T11:29:25.119Z"
+  },
+  {
+    "id": "4377adaba0782e68",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_rxiiya6t561q_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:29:43.672Z"
+  },
+  {
+    "id": "a7538a98a1ae64f5",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: DeepSeek爆火一周年的寂静_模型_应用_产品\nURL: https://www.sohu.com/a/990301726_250147\nDescription: 2025年2月底,R1石破天惊地打开了局面,创下了中国AI模型前所未有的高度｡2025年3月24日,DeepSeek-V3-0324发布;5月,旗舰模型R1完成迭代升级;9月29日,首个垂直领域专业模型DeepSeek-OCR发布;11月27日,推出第二代数学专业模型DeepSeekMath V2｡在顶级大模型竞赛中始终位于第一梯队,技术创新也没有停滞｡ \nPublished date: 2026-02-26T17:12:43+08:00\nSite name: 搜狐\n\nTitle: DeepSeek新模型缺席、声量归零:不是掉队,是主动选择的寂静\nURL: https://new.qq.com/rain/a/20260225A04YLN00\nDescription: 2025年2月底,DeepSeek-R1的发布堪称中国AI界的里程碑｡这款6710亿参数的MoE架构大模型,性能对标OpenAI o1正式版,在数学､代码推理上的表现惊艳全球,不仅创下消费级AI应用增长速度新纪录,还让英伟达､微软､亚马逊三大美国巨头主动接入,成为首个登上《自然》封面的主流大语言模型｡ 彼时的DeepSeek,是行业标杆,更是被各地争相研究的“样板”,风头无两｡ \nPublished date: 2026-02-25T00:00:00+08:00\nSite name: 腾讯网\n\nTitle: 报道:DeepSeek将于2月发布下一代AI模型V4,具备“强大”的编程能力\nURL: https://wallstreetcn.com/articles/3762982\nDescription: 报道称,DeepSeek内部的初步测试表明,V4在编程能力上超过了目前市场上的其他顶级模型,如Anthropic的Claude和OpenAI的GPT系列,这无疑是该公司在AI领域的又一重磅成果｡ 据科技媒体The Information周五报道,DeepSeek将于2月发布新一代旗舰AI模型DeepSeek V4,该模型具备强大的编程能力,预计将对当前的AI竞争格局产生重大影响｡ V4是DeepSeek继2024年12月发布的V3模型之后的最新版本｡报道援引两位知情人士称,DeepSeek内部的初步测试表明,V4在编程能力上超过了目前市场上的其他顶级模型,如Anthropic的Claude和OpenAI的GPT系列,这无疑是该公司在AI领域的又一重磅成果｡ DeepSeek计划在2025年春节前后发布V4版本,发布计划可能会根据实际情况进行调整｡\nPublished date: 2026-02-28T01:00:00+08:00\nSite name: 华尔街见闻\n\nTitle: 首页 • 大模型推理API\nURL: https://api.gpubook.ai/\nDescription: 英智大模型推理API DeepSeek 即开即用 按量付费 大模型推理API系列课程,B站,一天一课 规格 与 价格 2025 年2月17 日起,注册用户每日可免费请求 DeepSeek R1 模型 100 次 类型 模型 价格(按tokens收费) 更多模型需求请点击此处 API_KEY: 登录 cURL Python NodeJs 控制台 即日起,注册成为API新用户,即可获赠2000万Tokens 赠送Tokens不缩水,可用于DeepSeek系列模型 点击查看详情>> 马上邀请\nPublished date: 2026-02-23T14:00:09+08:00\nSite name: api.gpubook.ai\n\nTitle: DeepSeek大模型更新\nURL: https://new.qq.com/rain/a/20260211A07JCH00\nDescription: 2月11日,据媒体报道,DeepSeek新模型上线｡      报道称,新模型核心亮点(灰度测试):上下文能力跃升:从128K Token提升至1M Token,意味着一次可处理的信息量激增近10倍｡      此外,知识截止日期更新至2025年5月(原为2024年7月)｡      报道称,这不仅是一次微调,更可能意味着基于更近期数据训练的全新基础模型｡      \nPublished date: 2026-02-11T23:34:11+08:00\nSite name: 腾讯网\n\nTitle: 中国大模型一年狂飙421%,全球AI格局变天\nURL: https://new.qq.com/rain/a/20260228A07",
+    "isError": false,
+    "durationMs": 1341,
+    "createdAt": "2026-03-01T11:29:45.013Z"
+  },
+  {
+    "id": "2d4715bc29278d75",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_3yda7il5wyhd_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:29:52.907Z"
+  },
+  {
+    "id": "bdf483ff83731b0a",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025,AI这一年:从“卷参数“到“卷落地“的转折之年-CSDN博客\nURL: https://blog.csdn.net/mba16c35/article/details/158318445\nDescription:  OpenAI在1月底放了o3-mini,首次对免费用户开放推理模型,在STEM领域表现很强,响应速度比o1-mini快了24%｡紧接着2月底,发布了GPT-4.5(代号Orion),这是OpenAI最后一个\"纯预训练\"模型——从此以后,所有新模型都会内置推理能力｡ Anthropic这边2月24号放了Claude 3.7 Sonnet,号称\"第一个混合推理模型\"——它同时支持快速回答和深度思考两种模式,你可以选让它想多深｡ Google 2月初发了Gemini 2.0系列——Flash､Flash-Lite､Pro三个档位一起上｡2.0 Flash在发布时就让人眼前一亮,\nPublished date: 2026-02-23T20:35:37+08:00\nSite name: blog.csdn.net\n\nTitle: DeepSeek爆火一周年的寂静_模型_应用_产品\nURL: https://www.sohu.com/a/990301726_250147\nDescription: 2025年2月底,R1石破天惊地打开了局面,创下了中国AI模型前所未有的高度｡2025年3月24日,DeepSeek-V3-0324发布;5月,旗舰模型R1完成迭代升级;9月29日,首个垂直领域专业模型DeepSeek-OCR发布;11月27日,推出第二代数学专业模型DeepSeekMath V2｡在顶级大模型竞赛中始终位于第一梯队,技术创新也没有停滞｡ \nPublished date: 2026-02-26T17:12:43+08:00\nSite name: 搜狐\n\nTitle: 2026年2月AI大语言模型评测全景:GPT-5.2与Claude 4.5的巅峰对决及国产模型崛起之路_gpt5.2codex 和sonnet4.5-CSDN博客\nURL: https://blog.csdn.net/nmdbbzcl/article/details/157643376\nDescription: 在刚刚过去的2025年底,OpenAI发布了GPT-5.2系列,标志着其在经历Gemini 3冲击后的强势回归｡而Anthropic在2025年9月推出的Claude Sonnet 4.5和11月发布的Claude Opus 4.5,则凭借出色的编程能力和智能体(Agent)表现,在开发者社区中赢得了广泛认可｡ 与此同时,中国AI大模型也在快速追赶｡\nPublished date: 2026-02-02T08:35:25+08:00\nSite name: blog.csdn.net\n\nTitle: 中国大模型一年狂飙421%,全球AI格局变天界面新闻 · JMedia\nURL: https://www.jiemian.com/article/14051734.html\nDescription: 2025年初,DeepSeek-R1横空出世｡奠定了大模型新一轮军备竞赛的主旋律:即更低的成本､更强悍的性能､以及开源｡ 一年过去,全球大模型产业格局正由少数科技巨头依托算力､数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建｡中国大模型,陆续坐上牌桌｡ 全球头部大模型API聚合平台OpenRouter的数据显示,过去一年,中国大模型在全球市场的Token消耗占比增长了421%｡ \nPublished date: 2026-03-01T09:03:57+08:00\nSite name: 界面新闻\n\nTitle: OpenRouter:中国 AI 模型 2 月全球调用量首超美国\nURL: https://new.qq.com/rain/a/20260227A01OHI00\nDescription: IT之家 2 月 27 日消息,在线 AI 托管平台 OpenRouter 最新数据显示,由 MiniMax､月之暗面(Moonshot AI)､智谱领衔的中国开源人工智能模型,已登顶全球 Token 使用量榜单｡      IT之家注:OpenRouter 聚合了全球众多顶尖 AI 大模型,是一个“超级接口平台”｡开发者不需要挨个去注册各个 AI 公司的账号,只需通过 OpenRouter \nPublished date: 2026-02-27T07:00:14+08:00\nSite name: 腾讯网\n\nTitle: OpenAI:GPT-5.2/Codex 模型的速度现已提升 40% - IT之家\nURL: https://www.",
+    "isError": false,
+    "durationMs": 1255,
+    "createdAt": "2026-03-01T11:29:54.162Z"
+  },
+  {
+    "id": "a0a6d3cedb94afd0",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_77l4sphksbek_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:29:58.575Z"
+  },
+  {
+    "id": "2cf9342a86022f42",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年Agent创业实战指南:从0到1打造高增长AI智能体项目PI博客工具数据逻辑_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902p708.html?from=tech\nDescription:  一､Agent核心能力与技术架构 1. 与传统AI的本质差异 维度 传统AI工具 AI Agent 决策逻辑 基于预设规则(if-this-then-that) 动态规划+多步骤推理(如CoT思维链) 环境交互 被动响应指令 主动感知环境+调用外部工具(API/浏览器) 学习能力 需人工重新训练 通过用户反馈持续优化策略 典型案例 智能客服问答机器人 邮储银行债券交易Agent(自动询价+风控) 来源:《AI Agent与RPA的16个关键区别》(CSDN博客,2025.03) 2. 技术架构三要素 感知层 :多模态输入(文本/语音/图像),如智谱AutoGLM通过OCR识别网页元素(CSDN博客,2025.04) 决策层 :LLM大模型(如GPT-4/DeepSeek)+ 任务规划算法(ReAct/ToT) 执行层 :工具调用(API/插件)+ 动作执行(如浏览器操作/代码运行) 二､6大高潜力创业方向与实战案例 方向1:垂直行业AGENT解决方案 核心逻辑 :聚焦单一行业痛点,构建“数据+模型+工具”闭环 案例:汽车经销商AI语音Agent(Toma公司) 痛点 :汽车经销商45%电话漏接,客服流失率50%(人人都是产品经理,2025.06) 解决方案 :AI语音Agent自动处理咨询/预约,整合DMS系统数据 成果 :获a16z领投1700万美元,单店预约量提升6倍,BDC工作量减少40% 技术路径 : 基于LangChain构建对话流程 \nPublished date: 2026-02-28T08:11:02+08:00\nSite name: 新浪网\n\nTitle: AI赋能企业数字化全景图智能体企业服务智能体AI Agent 2025 参赛项目AI Agent 全球专项赛\nURL: https://aiagent2025.com/projects/0qnfso2df8rt\nDescription: 这款智能体聚焦企业全场景数字化需求,无需复杂技术对接,即可为企业提供一站式 AI 赋能｡从品牌视觉层面的智能设计(自动生成企业 LOGO､营销海报),到办公效率层面的智能辅助(实时会议记录整理､多语言翻译),再到交互体验层面的数字人应用(智能客服､虚拟宣讲),覆盖企业从前端品牌展示到后端办公协同的全流程｡小白友好型操作界面,支持通过自然语言下达需求,帮助企业快速降低数字化转型门槛,用AI 驱动各部门效率提升,加速业务升级｡\nPublished date: 2026-02-25T15:08:00+08:00\nSite name: aiagent2025.com\n\nTitle: 智慧政法与智能司法自然语言处理应用企业服务智能体AI Agent 2025 参赛项目AI Agent 全球专项赛\nURL: https://aiagent2025.com/projects/7j3qg2sq0ey0\nDescription: ToB 软件热度榜 · 第60名 当前段位: 黄金区 第 82 名 智能企业服务 太令,以人工智能赋能司法,打造智慧司法系统,共创智能司法未来! 【深耕技术融合】 自研模型10年数据积累,与司法实战深度结合,让AI真正懂法律｡ 最近7天积分 七天总积分 85 助力值 助力值热度 小红书 点赞数 每日总分 项目概览 项目简介 本项目由大连理工大学信息检索研究室(DUTIR)发起,致力于推动人工智能与司法业务的深度融合,服务于智慧政法与智能司法领域｡基于二十余年的自然语言处理(NLP)技术积累,项目开发了一系列智能辅助办案工具,核心功能包括电子卷宗智能分析､证据审查､法律文书校核及案情研判｡本项目的目标人群包括公检法司办案部门､律师事务所及其他司法从业者｡通过深度学习､大语言模型(LLM)及多模态数据处理技术,系统能够快速提取案件关键要素､生成可解释的分析报告,并提供高效的辅助决策支持｡本项目的技术亮点包括自主研发的司法智能大模型“太令”,在实体识别､量刑预测等任务上表现领先,填补了电子卷宗智能分析的市场空白｡系统支持私有化部署,确保数据安全,符合司法行业的严格合规要求｡本项目已与多家司法机关及行业龙头企业合作,未来将继续推动智能司法技术的普及,赋能法律行业数字化转型｡\nPublished date: 2026-02-25T15:07:48+08:00\nSite name: aiagent2025.com\n\nTitle: 重",
+    "isError": false,
+    "durationMs": 1002,
+    "createdAt": "2026-03-01T11:29:59.577Z"
+  },
+  {
+    "id": "eae470749518338d",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_e797cxj7rpis_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:30:03.867Z"
+  },
+  {
+    "id": "617ccd55a1d9774c",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphcxh3612916.shtml\nDescription: 策驱动与市场需求形成共振,中国产业优势凸显 政策方面,国务院2025年8月印发的《关于深入实施“人工智能+”行动的意见》构建了顶层设计框架,明确推动AI与实体经济深度融合的发展路径｡市场方面,生成式AI应用渗透率快速提升,截至2025年6月我国生成式AI用户规模达5.15亿人,普及率36.5%｡三重动力叠加下,中国AI产业正从技术跟跑向部分领跑转变,2025-2035年市场规模复合增长率预计达30.6%-47.1%｡\nPublished date: 2026-02-27T18:29:10+08:00\nSite name: 新浪财经\n\nTitle: 从“能思考”到“能实干” 中国AI产业规模与应用双提速人工智能_新浪财经_新浪网\nURL: https://finance.sina.com.cn/jjxw/2026-02-03/doc-inhkpvfa7220843.shtml\nDescription: 2026年2月2日,中国信息通信研究院发布的《人工智能产业发展研究报告(2025年)》(以下简称《报告》)显示,2024年我国人工智能核心产业规模已突破9000亿元,同比增长24%,2025年有望达到1.2万亿元｡2025年8月,国务院出台《关于深入实施“人工智能+”行动的意见》,明确提出要推动人工智能与经济社会各行业各领域广泛深度融合｡加快形成人机协同､跨界融合､共创分享的智能经济和智能社会新形态｡ 2026年1月7日,工业和信息化部､中央网信办､国家发展改革委等八部门联合发布的《“人工智能+制造”专项行动实施意见》提出,要一端抓技术供给,推动“智能产业化”;\nPublished date: 2026-02-03T17:32:51+08:00\nSite name: 新浪财经\n\nTitle: 国务院_基金速查网\nURL: https://www.dayfund.cn/tags/guowuyuan/\nDescription: 中信证券研报指出,10月以来,OpenAI､Xai､Google等陆续更新大模型能力,产业创新持续推进,持续利好AI应用落地,国产AI应用有望迎来拐点机遇｡政策端看,今年以来多项政策支持国产化､AI化,如2025年政府工作报告提出推进高水平科技自立自强､8月份国务院发布关于深入实施“人工智能+”行动的意见｡展望“十五五”,我们认为政策对于应用的国产化､AI化支持力度或将更加显著｡ \nPublished date: 2026-02-08T11:00:18+08:00\nSite name: www.dayfund.cn\n\nTitle: 未来 5 年(2026-2030) 十五五规划下高投资价值行业分析预测-CSDN博客\nURL: https://blog.csdn.net/HeartForever2025/article/details/158206384\nDescription: 基于国家 \"十五五\" 规划 (2026-2030) 与产业政策导向,结合行业数据与增长预测,以下八大行业具备明确的投资价值,核心结论速览: 行业核心驱动力5 年复合增长率2030 年市场规模确定性评级人工智能 (AI) 与算力政策 + AI + 行动 + 算力刚需 + 国产替代25%-30%核心产业 1.5 万亿元 + 应用 20 万亿元 +半导体 / 集成电路国产替代 + AI 算力芯片爆发 \nPublished date: 2026-02-19T10:35:37+08:00\nSite name: blog.csdn.net\n\nTitle: “十五五”规划将出炉,科技自立自强引关注 业界:AI开发将助科研效率倍数提升__财经头条__新浪财经\nURL: https://t.cj.sina.com.cn/articles/view/1643971635/m61fd0433033015o16?from=tech\nDescription: “十五五”规划将出炉,科技自立自强引关注 业界:#AI开发将助科研效率倍数提升#】“十五五”规划将会在今年3月全国两会召开期间出炉,面对新一轮的科技革命,中国政府早前提出,把“科技自立自强水平大幅提高”列入“十五五”主要目标｡在去年发布的“十五五”规划建议中,曾46次提到“科技”,61次提及“创新”,“新质生产力”则出现了6次｡业界表示,未来人形机器人的应用场景有望在政策引导下有所拓展｡\nPublished date: 2026-02-27T13:51:34+08:",
+    "isError": false,
+    "durationMs": 1377,
+    "createdAt": "2026-03-01T11:30:05.244Z"
+  },
+  {
+    "id": "6675b08d535e4f67",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_wc51dzs7se9a_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:30:10.572Z"
+  },
+  {
+    "id": "f6ddcec64a712443",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: AI 视频生成创企 Runway 以30 亿美元估值融资 3.08 亿美元--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0405/3165038.shtml\nDescription: AI视频生成公司Runway宣布完成3.08亿美元融资,由General Atlantic领投,估值超30亿美元｡公司刚发布新一代视频生成模型Gen-4,可生成长达10秒的视频片段｡Runway计划利用新资金加强AI开发,重点提升训练数据集质量和扩展扩散模型与大语言模型能力｡ 这轮投资的消息发布前一天,Runway 刚推出了其最新的视频生成模型 Gen-4｡用户只需提供一张参考图片和自然语言指令,该算法就能生成长达 10 秒的视频片段｡它同时还具备图像生成功能｡ 与Runway 之前的视频生成器相比,Gen-4 在保持视频帧间物体外观一致性方面有了显著提升｡即使物体的背景发生变化,它也能保持这种一致性｡\nPublished date: 2026-02-12T12:56:18+08:00\nSite name: ai.zhiding.cn\n\nTitle: PIKA - OpenI\nURL: https://openi.cn/sites/108346.html\nDescription: Pika是一家AI视频生成初创公司,不仅能根据文字､图片或视频风格生成视频,还能 对视频局部进行编辑 ｡ 2023年12月26日凌晨,Pika 团队在社交平台 X 上宣布 Pika 1.0 网页端访问权限将在今天内向所有用户开放｡ 11月29日 ,来自创业公司的Pika直接带着网页版发布正式版1.0, 叫板“老大哥”Runway ｡ 此次新发布的产品名为Pika 1.0｡不仅能根据文字､图片或视频风格生成视频,还能对视频局部进行编辑｡不仅画面大小任意扩展,从5:2､1:1画布,到9:16以及16:9的超大屏,4种选择无缝转换｡\nPublished date: 2026-02-19T13:00:36+08:00\nSite name: openi.cn\n\nTitle: 有戏AI vs Runway vs Pika:谁才是视频生成领域的“全能王”?_流程_工具_角色\nURL: https://www.sohu.com/a/990701655_122520484\nDescription:  Pika :快速运动镜头表现不错,但复杂动作容易出错｡ 胜出:有戏AI 可控性 Runway :主要靠提示词控制,支持图生视频,但不够精细｡ Pika :支持图生视频､视频编辑,可控性不错｡ 有戏AI :四模态输入(文本､图像､视频､音频),加上可逆流程,创作者可以精准控制每一个细节｡ 胜出:有戏AI 流程效率 Runway :工具型,需要自己串联不同功能,没有完整流程｡ Pika :同样偏工具,需要手动生成和剪辑｡ 有戏AI :从剧本到成片全流程自动化,支持批量生成,效率最高｡ 胜出:有戏AI 成本(1分钟视频) Runway :套餐制,平均约10-15元/分钟 Pika :套餐制,平均约8-12元/分钟 有戏AI :0.1元/秒,即6元/分钟(720P),2K稍贵但仍在7-8元 胜出:有戏AI 变现生态 Runway :纯工具,无变现渠道｡ Pika :纯工具,无变现渠道｡ 有戏AI :接单广场+爱奇艺+快手+红果+ReelShort,帮你赚钱｡\nPublished date: 2026-02-27T18:09:33+08:00\nSite name: 搜狐\n\nTitle: 音视频全都要!Pika不再是单纯的视频生成工具-生产力工具-商用办公频道-至顶网\nURL: https://biz.zhiding.cn/2024/0430/3157604.shtml\nDescription: “视频生成”的工作可不只是生成视频｡ 给猫咪戴上墨镜､让麦田圈变成甜甜圈､在沙滩上显示你的名字…… 三言两语就能让AI生成一段视频,从早期的Runway到Pika,再到前阵子引起热议的Sora,每款产品出现,舆论都直指好莱坞,视频制作的门槛立刻被拉了下来｡ 其实Pika Labs的成立到现在也不过一年时间,去年11月29日,Pika 1.\nPublished date: 2026-02-19T22:51:29+08:00\nSite name: biz.zhiding.cn\n\nTitle: AI 生成长视频:从分镜到成片的完整技术解析-CSDN博客\nURL: https://blog.csdn.net/lovely_yoshino/article/details/158178734\nDescription: 1. 为什么现在谈 AI 视频生成 2024 年初,O",
+    "isError": false,
+    "durationMs": 1287,
+    "createdAt": "2026-03-01T11:30:11.859Z"
+  },
+  {
+    "id": "05210c04b5a0a349",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": {
+      "toolCallId": "call_function_jkgaa43858yz_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:30:31.998Z"
+  },
+  {
+    "id": "f09519cca4d18153",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": null,
+    "output": "{\n  \"NODE\": \"/opt/homebrew/Cellar/node@22/22.16.0/bin/node\",\n  \"INIT_CWD\": \"/Users/chenpu/workspace/claude-code/YourTeam2/packages/server\",\n  \"TERM\": \"xterm-256color\",\n  \"SHELL\": \"/bin/zsh\",\n  \"npm_config_global_prefix\": \"/opt/homebrew\",\n  \"COLOR\": \"0\",\n  \"npm_config_noproxy\": \"\",\n  \"npm_config_local_prefix\": \"/Users/chenpu/workspace/claude-code/YourTeam2\",\n  \"USER\": \"chenpu\",\n  \"npm_config_globalconfig\": \"/opt/homebrew/etc/npmrc\",\n  \"__CF_USER_TEXT_ENCODING\": \"0x1F5:0:0\",\n  \"npm_execpath\": \"/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/bin/npm-cli.js\",\n  \"PATH\": \"/Users/chenpu/.npm-cache-new/_npx/5b2dd62b9d0bddd4/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bi",
+    "isError": false,
+    "durationMs": 4,
+    "createdAt": "2026-03-01T11:30:32.002Z"
+  },
+  {
+    "id": "56fb2f904c05a322",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_egk486tv0iwe_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:30:38.139Z"
+  },
+  {
+    "id": "980e1bb6bb1892f9",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphcxh3612916.shtml\nDescription: 技术方面,DeepSeek､通义千问等大模型实现突破,清华大学SALMONN音视频大模型在多项评测中超越GPT-4o等国际主流模型｡ 二､技术演进方向:从语言理解到物理认知的范式跃迁 (一)基础模型:世界模型成为AGI核心突破口 AI技术正经历从“预测下一个词”到“预测世界下一状态”的根本性转变｡2025年原生多模态技术实现关键突破,阿里､百度等企业推出的多模态大模型在训练初期即融合文本､图像､视频等数据,实现理解与生成一体化｡腾讯混元Voyager､昆仑万维Matrix-3D等世界模型在3D空间感知与物理推理领域表现突出,前者在斯坦福WorldScore基准测试中位居首位,后者可通过单张图生成可探索的3D世界｡ (二)智能形态:具身智能与多智能体系统双线突破 具身智能正从实验室走向产业应用,2025年具身智能领域超亿元融资达73笔,占AI领域融资总数的52%,累计融资257亿元｡\nPublished date: 2026-02-27T18:29:10+08:00\nSite name: 新浪财经\n\nTitle: 2025年AI大模型:技术革新、生态重构与全球治理新格局展望\nURL: https://www.sohu.com/a/988046616_121850782\nDescription: 2025年,全球AI大模型行业正经历一场前所未有的结构性变革｡竞争焦点从单纯的技术参数比拼转向可持续性发展,头部企业开始在极限能力与成本效率之间重新权衡｡技术､市场､开源和治理四大力量交织作用,推动行业从野蛮生长迈向成熟化､体系化发展阶段｡ 技术层面迎来多重突破性进展｡训练范式从RLHF升级为RLVR,通过客观可验证的奖励信号实现模型推理能力的质的飞跃｡多智能体自我博弈和合成数据微调技术成为主流,使模型摆脱对人类标注的依赖｡MoE架构重新受到重视,RAG技术成为标配,算力格局向云+端协同方向发展｡本地部署技术的突破让大模型从云端走向个人设备,呈现出\"锯齿状\"能力结构——在数学､编程等形式化智力领域取得突破性进展,但在常识推理方面仍存在明显短板｡ 市场格局发生深度调整｡谷歌Gemini3实现对OpenAI的反超,中国模型凭借成本优势实现弯道超车｡\"百模大战\"进入行业出清阶段,竞争核心从模型本身转向生态控制权｡巨头企业纷纷构筑芯片､模型､应用的全栈生态闭环｡开源浪潮成为关键变量,中国厂商成为全球开源生态的主力军,通义千问､DeepSeek等开源模型性能逼近闭源模型,形成开源蚕食长尾市场､闭源聚焦高端企业级市场的双轨竞争格局｡AI从通用聊天助手进化为深度集成工作流的专用工具和自主智能体,\"AI原生应用层\"崛起｡\"氛围编程\"重塑软件开发流程,开发者角色从编码者转向系统设计师｡2025年成为\"AI智能体元年\",但智能体的跨应用操作引发生态冲突｡\nPublished date: 2026-02-17T12:11:10+08:00\nSite name: 搜狐\n\nTitle: 中邮证券计算机行业2026春季投资策略:把握AI主线 重视新科技\nURL: https://new.qq.com/rain/a/20260225A04WAQ00\nDescription: 中邮证券发布研报称,2025年,中国AI大模型产品形态进入成熟期,成为市场爆发的直接推动力,模型的可用性与商业化潜力亦持续上升｡ 中邮证券主要观点如下: AI大模型 2025年,中国AI大模型产品形态进入成熟期,成为市场爆发的直接推动力,低成本､高性能的技术基础形成了从底层支撑市场高速增长的关键条件,为MaaS和企业大模型的广泛应用创造了可持续的商业化环境;多模态模型的快速迭代将AI应用从单一文本生成扩展至图像､视频､语音等复合场景,提升了模型的可用性与商业化潜力;同时,各大厂商通过推出通用基座模型､行业专属模型及低门槛API服务,构建了完整的产品矩阵,极大降低了企业和开发者的接入成本;\nPublished date: 2026-02-25T00:00:00+08:00\nSite name: 腾讯网\n\nTitle: 2025 年多模态 AI:从医疗保健到电子商务及更多领域的应用--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0107/3162454.shtml\nDescription: 多模态人工智能将在2025年重新定义企业如何利用AI｡它能同时处理文本､图像､音频等多种数据,为企业提供更全面的洞察｡在医疗领域,多模态",
+    "isError": false,
+    "durationMs": 1335,
+    "createdAt": "2026-03-01T11:30:39.474Z"
+  },
+  {
+    "id": "12bfdeb17b861b10",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_jgluovbq6cw2_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:30:44.947Z"
+  },
+  {
+    "id": "a77a3cb2a832ce34",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 57页2025年医疗人工智能年度报告_苹果应用商店_模型_DeepSeek-R\nURL: https://www.sohu.com/a/990731414_122346174\nDescription: 2025年1月,一家中国AI创业公司发布DeepSeek-R1模型,训练成本不足600万美元,性能接近OpenAI的o1｡七天后,该模型登顶美国苹果应用商店免费榜,下载量增长2000%｡这一事件引发市场震动,英伟达市值单日蒸发6000亿美元,被美国媒体称为“斯普特尼克时刻”｡DeepSeek证明,效率与算法创新可以打破算力竞赛｡\nPublished date: 2026-02-27T19:16:16+08:00\nSite name: 搜狐\n\nTitle: DeepSeek娘-萌娘百科 万物皆可萌的百科全书\nURL: https://mzh.moegirl.org.cn/DeepSeek%E5%A8%98\nDescription:  2023年10月28日,第一个大模型“DeepSeek-Coder”发布｡ 2024年11月20日,第一个推理模型“DeepSeek-R1-Lite”发布｡ 2025年1月20日, “DeepSeek-R1”模型发布并开源｡ 2025年8月21日,“DeepSeek-V3.1”发布｡[1 ] 衍生梗 相关条目 查  · 论  · 编 各种系统AI的萌娘化角色形象 萌娘百科的机器人 聊天机器人 \nPublished date: 2026-02-16T10:51:51+08:00\nSite name: mzh.moegirl.org.cn\n\nTitle: 中国大模型一年狂飙421%,全球AI格局变天界面新闻 · JMedia\nURL: https://www.jiemian.com/article/14051734.html\nDescription: 2025年初,DeepSeek-R1横空出世｡奠定了大模型新一轮军备竞赛的主旋律:即更低的成本､更强悍的性能､以及开源｡ 一年过去,全球大模型产业格局正由少数科技巨头依托算力､数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建｡中国大模型,陆续坐上牌桌｡ 全球头部大模型API聚合平台OpenRouter的数据显示,过去一年,中国大模型在全球市场的Token消耗占比增长了421%｡ \nPublished date: 2026-03-01T09:03:57+08:00\nSite name: 界面新闻\n\nTitle: 报道:DeepSeek将于2月发布下一代AI模型V4,具备“强大”的编程能力\nURL: https://wallstreetcn.com/articles/3762982\nDescription:  DeepSeek计划在2025年春节前后发布V4版本,发布计划可能会根据实际情况进行调整｡ 回顾去年的发布节奏,DeepSeek于2024年1月20日发布了R1模型,恰逢春节前夕,这一时机有效抓住了公众的关注,确保了R1的巨大热度｡R1是一款开源的“推理”模型,能够通过深度思考和推理来解决复杂问题｡即使DeepSeek在R1的训练投入上较为保守,但其卓越的表现依然引发了全球AI界的广泛关注｡ \nPublished date: 2026-02-28T01:00:00+08:00\nSite name: 华尔街见闻\n\nTitle: 创新谈丨过去一年,中国科技创新因何令世界瞩目?\nURL: https://www.stdaily.com/web/gdxw/2026-01/26/content_465930.html\nDescription: 一年前,恰是这个周一,深度求索(DeepSeek)公司R1大模型以高性能和低训练成本震撼世界,外媒称之为“DeepSeek时刻”｡ DeepSeek的横空出世,可谓2025年中国科技创新的“开场戏”｡随着DeepSeek-R1大模型和“昇腾”等国产芯片问世,美国战略界终于意识到,出口管制管不住中国,只会使中国加速建设一套独立的技术体系｡ 这倚赖高水平科研人才提供的核心支撑｡\nPublished date: 2026-02-25T16:40:59+08:00\nSite name: 中国科技网\n\nTitle: DeepSeek使用技巧,收藏这一篇就够了-CSDN博客\nURL: https://blog.csdn.net/Libra1313/article/details/157934924\nDescription: 如果回顾大语言模型发展历程的话,2025年1月20日DeepSeek R1的发布会是一个注定被记录的时间节点,2022年11月30日ChatGPT的发布让大模型进入了大众视野,而两年后的DeepS",
+    "isError": false,
+    "durationMs": 971,
+    "createdAt": "2026-03-01T11:30:45.918Z"
+  },
+  {
+    "id": "39add29c124950c7",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_djthqrimq8es_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:31:02.370Z"
+  },
+  {
+    "id": "1443eb4ced1e2ec6",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年最受欢迎API接口:重塑数字世界的核心力量-CSDN博客\nURL: https://blog.csdn.net/xfan_me/article/details/157941505\nDescription: 多模态AI能力API:智能交互的新前沿 2025年,人工智能已从单一文本处理扩展至多模态综合理解｡OpenAI的GPT-5､谷歌的Gemini Ultra以及 Anthropic的Claude 3.5等API不仅提供文本生成,更整合了图像识别､音频处理和视频分析能力｡这类API的最大突破在于跨模态理解——能够同时处理文字､图像和声音信息,创造出真正沉浸式的交互体验｡ \nPublished date: 2026-02-10T15:55:43+08:00\nSite name: blog.csdn.net\n\nTitle: AI 巨头 OpenAI 的GPT-5 路线图正式公布--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0218/3163520.shtml\nDescription: OpenAI 首席执行官 Sam Altman 宣布了公司发布 GPT-5 的路线图,这是对 2023 年GPT-4 AI 语言模型的期待已久的后续版本｡Altman 在X上表示,GPT-5 将在“几个月内”推出,预计在 2025 年晚些时候发布｡公司计划在“几周内”发布 GPT-4.5,作为最后一个非模拟推理模型｡GPT-5 将整合 OpenAI 当前 AI 模型的多种特性,并为不同用户提供不同的智能级别｡Altman 还提到,简化产品线是公司的目标之一｡GPT-5 是2023 年轰动全球科技和政策圈的 GPT-4 AI 语言模型的后续版本｡Altman 在X平台上回应提问时表示,GPT-5 将在\"数月内\"发布,暗示可能在 2025 年后期推出｡模拟推理 (SR) 模型 (如o3) 使用特殊技术来迭代处理用户提出的问题,但比传统的大语言模型 (如GPT-4o) 速度更慢,且并非适用于所有任务｡ 之后,GPT-5 将成为一个整合了 OpenAI 当前所有 AI 模型特性的系统,包括传统 AI 模型､SR 模型,以及专门用于网页搜索和研究的专业模型｡\nPublished date: 2026-02-17T22:45:21+08:00\nSite name: ai.zhiding.cn\n\nTitle: OpenAI 发布 GPT-5 企业版:多模态能力升级,令牌成本对标 Gemini 2.5 且幻觉率降 65% - 牛透社\nURL: https://www.niutoushe.com/lives/kskxqjoodj3260\nDescription: 牛透社 8 月14 日消息,OpenAI 发布 GPT-5,该产品具备企业级编码任务优化､多模态能力升级及扩展上下文窗口功能,主要应用于软件工程与跨模态整合场景｡ 关键升级包括语音与图像模态支持､工具调用优化及并发处理设计,需企业系统适配单会话多请求｡令牌成本与 Gemini 2.5 相当,低于 Claude Opus 45%｡幻觉率降低 65%,但强大多模态能力存在滥用风险,建议企业并行测试竞品并更新治理政策｡\nPublished date: 2026-02-27T16:28:10+08:00\nSite name: www.niutoushe.com\n\nTitle: OpenAI 有望在年中发布 GPT—5 - 牛透社\nURL: https://www.niutoushe.com/lives/openaiyouwangzainianzhongfabugpt5\nDescription: 牛透社 3 月20 日消息:据知情人士透露,OpenAI 有望在年中某个时候推出 GPT—5,可能是在夏季｡目前,OpenAI 仍在训练 GPT-5｡培训完成后,它将在内部进行安全测试｡\nPublished date: 2026-02-27T17:46:48+08:00\nSite name: www.niutoushe.com\n\nTitle: OpenAI 宣布 GPT-5 将整合多种模型,实现全新突破 - 牛透社\nURL: https://www.niutoushe.com/lives/hqgtreswfh3428\nDescription: 7日消息,OpenAI 再次确认将推出 GPT-5,并计划将多个强大的模型整合为一个更为统一的版本｡此外,OpenAI 还推出了 “O 系列” 模型,专注于推理能力,而4o 及其他模型则具备多模态功能｡ OpenAI 表示,GPT-5 的目标是将这两大系列的突破性技术合并,提供最佳的功能体验｡此外,OpenAI 还提到,GPT-",
+    "isError": false,
+    "durationMs": 1204,
+    "createdAt": "2026-03-01T11:31:03.574Z"
+  },
+  {
+    "id": "5c13115551675484",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_p2558fv2u2ih_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:31:10.083Z"
+  },
+  {
+    "id": "be182993372ed640",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年AI行业洞察:企业如何通过AI创造价值-麦肯锡_应用_职能_重构\nURL: https://www.sohu.com/a/990475304_121649707\nDescription: 2025年麦肯锡AI行业洞察报告显示,企业正通过组织架构调整､流程重构等方式挖掘生成式AI的商业价值,行业整体处于AI应用的早期探索阶段,但大型企业的推进速度显著快于中小企业,AI(含生成式AI与分析式AI)的应用渗透率和落地深度均持续提升,超七成企业已在至少一个业务职能中运用AI技术｡ 在风险管控与落地实践上,企业正加大对生成式AI相关风险的应对力度,对不准确性､网络安全､知识产权侵权等核心风险的管理投入显著增加,且大型企业的风险防控举措更为全面; 从应用落地与价值实现来看,生成式AI的应用场景向多职能､多模态延伸,营销销售､产品开发是核心应用领域,文本生成是最主要的应用形式,图像､代码生成的应用也逐步普及;\nPublished date: 2026-02-27T08:56:03+08:00\nSite name: 搜狐\n\nTitle: AI 发展五大趋势:2025 年ChatGPT 之外的新方向--人工智能-至顶网\nURL: http://ai.zhiding.cn/2024/1231/3162307.shtml\nDescription: 趋势一:无处不在的 AI 代理 \"代理式 AI\"(Agentic AI)将成为一个热门话题｡AI 代理是一种能够学习､创造行动并执行的软件,它结合了模式学习､内容生成和行动执行三大功能｡预计 2025 年,这一领域将迎来显著发展｡ 趋势二:教育体系的变革 AI 不仅影响学习方式,还将深刻改变学习内容｡面对 AI 驱动的就业市场变化,毕业生和教育机构都需要适应新的经济现实｡2025 年,我们可能会看到这些变革的开始｡ 趋势三:科学领域的 AI 应用 2023 年两项诺贝尔奖授予 AI 相关成果,标志着 AI 在科学领域的重要性｡尽管生成式 AI 备受关注,但科学应用领域的 AI 也在获得大量投资｡然而,AI 在药物研发等领域的成功率仍有待提高,这表明 AI 在科学领域的潜力尚未完全实现｡ 趋势四:易获取数据的短缺 高质量､符合伦理的数据将变得越来越难以获取｡2025 年,我们可能会看到更多努力来获取数据,包括商业合同､数据标注系统和传感器部署等｡这一趋势与 AI 在科学领域的应用相结合,可能会加速科学数据的利用｡ 趋势五:机器人技术的普及 AI 与物理自动化的结合将为制造业､外科手术､农业和太空探索等领域带来无限可能｡2025 年,我们将看到这一领域的现有趋势扩大,并引起更广泛的公众关注｡\nPublished date: 2026-02-17T19:46:54+08:00\nSite name: ai.zhiding.cn\n\nTitle: AI应用井喷式爆发 美图7款产品入选2025年度图谱-证券日报网\nURL: http://m.zqrb.cn/gscy/qiyexinxi/2026-03-01/A1772332697278.html\nDescription: 2月26日,2025年AI应用的主要领域及代表产品图谱公布,效率办公和图像视频两大领域上榜产品最多,美图公司成为最大赢家｡     数据发布方认为,2025年AI应用井喷式爆发,市场进入规模化应用期,AI的应用能力正加速向图像视频､效率办公等高价值垂直领域纵深渗透｡     AI行业研究人士对记者表示,在AI的助力下,应用发展呈现新趋势:一是AI与创意场景的融合将更加深入,从基础的内容生成向全流程创意服务延伸;二是差异化竞争将成为核心主线,美图等企业应巩固自身的审美沉淀和需求洞察优势,在特定场景做深做实;三是商业模式将持续创新,AI将驱动创意软件实现从解决单点问题到场景化方案的跨越,推动创意软件行业实现价值跃升｡\nPublished date: 2026-03-01T00:00:00+08:00\nSite name: m.zqrb.cn\n\nTitle: 2025年AI行业洞察:企业如何通过AI创造价值-麦肯锡_应用_息税前利润_业务\nURL: https://www.sohu.com/a/990586988_121649899\nDescription: 2025年麦肯锡AI行业洞察报告显示,企业正通过组织架构调整､流程重构等方式挖掘生成式AI的商业价值,行业整体处于AI应用的早期发展阶段,大型企业在布局和落地中占据领先地位,超七成企业已在至少一个业务职能中应用AI,生成式AI的使用更是呈快速增长态势｡ 从应用落地来看,AI的应用场景不断拓展,平均渗透至企业三项业务职能,营销销售､产品开发､服务运营是生成式AI的核心应用领域,且",
+    "isError": false,
+    "durationMs": 1619,
+    "createdAt": "2026-03-01T11:31:11.702Z"
+  },
+  {
+    "id": "1670aa0391bde515",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_azpd0kqry8pw_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:31:23.697Z"
+  },
+  {
+    "id": "4186ff111bd7eab2",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 企业AI治理中的风险管控技巧 数据来源、模型版本、推理过程、解释结果、审计体系、GDPR罚款、AI应用架构师、可靠AI系统-CSDN专栏\nURL: https://download.csdn.net/blog/column/12823103/150968162\nDescription: 2023年以来,全球AI监管进入“强约束时代”: 欧盟《人工智能法案》(AI Act)将AI分为“不可接受风险”“高风险”“中风险”“低风险”四级,要求高风险AI(如信贷审批､医疗诊断)必须满足 可解释性､公平性､鲁棒性 三大核心要求; 中国《生成式AI服务管理暂行办法》明确“生成内容应当真实准确,不得危害国家安全､公共利益”; 美国FDA发布《AI/ML医疗器械软件指南》,要求模型变更需“保持性能一致性”｡\nPublished date: 2026-02-28T03:43:18+08:00\nSite name: download.csdn.net\n\nTitle: 当国家安全需求撞上AI伦理红线,全球AI军备竞赛是否正滑向失控边缘?黄仁勋人类武器欧盟系统_手机新浪网\nURL: https://news.sina.cn/bignews/insight/2026-02-27/detail-inhpfhtu0906224.d.html?vt=4\nDescription: 美国推行技术霸权:加速AI军事部署,撤销监管规则,强化芯片出口管制; 欧盟强调伦理约束:实施《AI法案》,要求高风险系统分级备案,投资2000亿欧元建AI工厂; 中国倡导多边协商:提出“军事领域负责任使用AI”,反对军备竞赛,推动构建人类命运共同体｡ 治理框架推动有限公约 分层治理尝试:基础层各国自主政策(如中国将AI治理纳入“十五五”规划),全球层聚焦禁止自主杀戮等红线; \nPublished date: 2026-02-27T08:43:57+08:00\nSite name: 新浪新闻\n\nTitle: 全球首部AI监管法规——欧盟《人工智能法案》正式通过—中国钢铁新闻网\nURL: http://www.csteelnews.com/xwzx/znzz/202403/t20240328_86368.html\nDescription: 2024年3月13日,欧洲议会以523票赞成､46票反对和49票弃权审议通过《人工智能法案》,成为全球首部人工智能领域的全面监管法规｡该法案根据人工智能的潜在风险和影响程度规定了人工智能的义务,旨在保护基本权利､民主､法治和环境可持续性免受高风险人工智能的侵害,促进创新,并确立欧洲在该领域的领导者地位｡ 《人工智能法案》文本的草案最早由欧盟委员会在2021年4月提出,提出严格禁止“对人类安全造成不可接受风险的人工智能系统”,包括有目的地操纵技术,利用人性弱点或根据行为､社会地位和个人特征等进行评价的系统等｡ 该法案明确禁止某些威胁公民权利的人工智能应用程序,包括基于敏感特征的生物识别分类系统､从互联网或闭路电视录像中无针对性地抓取面部图像以创建面部识别数据库以及操纵人类行为或利用人性弱点的人工智能等｡对于其他高风险人工智能系统,该法案虽然没有禁止,但因其对健康､安全､基本权利､环境､民主和法治具有重大潜在危害,该法案也明确了相关方应承担的义务｡高风险人工智能用途的例子包括关键基础设施､教育和职业培训､就业､基本私人和公共服务(如医疗保健､银行)､执法中的某些系统､移民和边境管理､司法和民主程序(如影响选举)等｡公民将有权提交有关人工智能系统的投诉,并有权知晓有关影响其权利的高风险人工智能系统的决定｡ 对于GPAI(通用人工智能)系统及基于GPAI的模型,该法案明确要求其必须满足某些透明度要求,包括遵守欧盟版权法等｡\nPublished date: 2026-02-05T11:04:55+08:00\nSite name: www.csteelnews.com\n\nTitle: 2026全球与中国AI发展全景解读:市场规模、技术突破与行业应用深度解析-CSDN博客\nURL: https://blog.csdn.net/m0_74942241/article/details/158425479\nDescription: 全球 AI 治理已进入体系化与安全驱动阶段,监管从倡议导向转向落地实施,风险分级管理成为核心,主要经济体监管路径分化明显,欧盟趋严､美英侧重灵活监管､中国聚焦生成式 AI 安全评估与备案｡市场规模加速扩张,2024 年全球 AI 市场规模约 6157 亿美元,预计 2030 年将突破 2.6 万亿美元,中美形成双极主导格局,两国新增大模型数量占比从 2022 年的 72% 提升至 2024 年的 \nPublished date: ",
+    "isError": false,
+    "durationMs": 1392,
+    "createdAt": "2026-03-01T11:31:25.090Z"
+  },
+  {
+    "id": "860f2c4bbe2af124",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_oiz6c4c923ey_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:31:58.727Z"
+  },
+  {
+    "id": "f924b313dbc97e98",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 聊城市科学技术局\nURL: http://kjj.liaocheng.gov.cn/\nDescription: 李强主持召开国务院常务会议 对抓紧做好春节假期后政府工作作出部署 研究推进银发经济和养老服务发展有关工作 审议通过《关于加强基层消防工作的意见》 讨论《中华人民共和国水法(修订草案)》 [详细内容] 市科技局赴河南两市开展区域科技创新合作交流活动 聚海外智力 促创新发展 ——2025中国·聊城海外人才交流会暨高层次外国专家齐鲁行成功举办 聊城市科技局赴赤峰市开展区域科技创新合作活动 \nPublished date: 2026-02-28T09:56:08+08:00\nSite name: kjj.liaocheng.gov.cn\n\nTitle: 山东省农业农村厅-通知公告\nURL: http://nync.shandong.gov.cn/zwgk/tzgg/\nDescription: 厅发文件 更多 · 关于做好2026年度提产增效促发展“十百千万”农机推广大行动活动计划的通知 2026-02-25 · 关于印发《2026年主要农作物春耕春管机械化技术指导意见》的通知 2026-02-25 · 关于公布行政规范性文件清理结果的通知 2026-02-14 · 关于中国冶金地质总局山东局集团测试有限公司机构名称变更的通告 2026-02-13 · \nPublished date: 2026-02-25T19:59:40+08:00\nSite name: nync.shandong.gov.cn\n\nTitle: 南平市统计局\nURL: http://tjj.np.gov.cn/\nDescription: 喜报!南平市13个集体､28名个人入选福建省第五次全国经济普查表彰名单! @国务院 我来说 全市统计工作会议暨市统计局党建工作会议召开 新年绘新卷 农普入民心——南平市统计局工会春秋游暨农普宣传活动圆满举行 南平市统计局传达学习全市优化营商环境暨“开局争先､实干为民”工作会议精神 喜报!南平市13个集体､28名个人入选福建省第五次全国经济普查表彰名单! @国务院 我来说 最新消息 国务院信息 \nPublished date: 2026-02-28T09:53:29+08:00\nSite name: tjj.np.gov.cn\n\nTitle: 江苏机构编制网\nURL: http://www.jssbb.gov.cn/\nDescription: 信息公开 省委编委 省委编办 领导成员 内设机构 直属行政机构 直属事业单位 通知公告(预算等) 全省编办主任会议在宁召开 全省乡镇(街道)履职事项清单工作推进会召开 省委编办举办党纪学习教育专题读书班 全省编办主任会议召开 上级精神 工作动态 中央 省 习近平在广东考察时强调 深入学习... 2025-11-10 中共二十届四中全会在京举行 2025-10-24 深入贯彻中央八项规定精神学习教.\nPublished date: 2026-02-27T14:18:07+08:00\nSite name: www.jssbb.gov.cn\n\nTitle: 西藏头条-西藏新闻网\nURL: https://www.xzxw.com/xw/node_11025.html\nDescription: 走进日喀则仲康村 见证村民新房中的欢乐新年 2026-02-18 雪域欢歌过大年 2026-02-17 “万亿民生”绘就“幸福底色” 2026-02-16 自治区党委､政府向全区各族人民发出慰问信 2026-02-14 以改进作风之实 筑藏北健康之基 2026-02-13 【新时代奋斗者】春运里的“安全哨兵” 2026-02-12 \"十四五\"期间西藏货物贸易进出口总值406.98亿元 \nPublished date: 2026-02-19T16:43:44+08:00\nSite name: www.xzxw.com\n\nTitle: 医疗器械注册证代办-专业二三类医疗器械临床试验咨询代办公司-北京飞速度医疗科技\nURL: https://flyingspd.com/\nDescription: 网站导航 24小时服务热线: 19103801095 欢迎来到北京飞速度医疗科技有限公司【官网】 热门关键词: 临床试验机构备案 医疗器械注册人制度咨询 二类医疗器械注册证办理 三类医疗器械注册证办理 医疗器械临床试验服务 ONE-STOP SERVICE 一站式服务 精品服务 QUALITY SERVICE 医疗器械注册 一类产品备案 注册人咨询 二类产品注册 生产备案 三类产品注册 \nPublished date: 2026-02-12T17:29:43+08:00\nSite name: flyin",
+    "isError": false,
+    "durationMs": 1182,
+    "createdAt": "2026-03-01T11:31:59.909Z"
+  },
+  {
+    "id": "05757804c11abd38",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_bfwkmusukanc_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:32:07.049Z"
+  },
+  {
+    "id": "cb30f93f2ae33280",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 百度2025年财报:总营收1291亿元 AI业务营收400亿元百度_新浪财经_新浪网\nURL: https://finance.sina.com.cn/stock/t/2026-02-26/doc-inhpcusk4399590.shtml\nDescription: 财报数据显示,2025年百度总营收达到1291亿元,其中AI业务营收为400亿元｡值得注意的是,该季度AI业务收入占百度一般性业务收入的比例达到43%,超出市场预期｡ 在具体业务板块方面,AI云2025全年收入同比增长34%｡数据显示,四季度AI高性能计算设施的订阅收入同比增长143%,较三季度的128%进一步加速｡\nPublished date: 2026-02-26T17:36:04+08:00\nSite name: 新浪财经\n\nTitle: 百度发布最新财报:2025年营收1291亿元 四季度AI业务收入占比43%_中国经济网——国家经济门户\nURL: http://www.ce.cn/macro/more/202602/t20260227_2792900.shtml\nDescription: 2月26日,百度发布2025年第四季度及全年财报｡报告显示,2025年,百度总营收达1291亿元,AI业务营收达400亿元;四季度,百度总营收327亿元,AI业务收入占百度一般性业务收入的43%,超出市场预期｡ AI应用2025全年收入突破100亿元｡据IDC《中国无代码生成式应用开发平台实测报告》,无代码生成平台秒哒在平台功能和应用质量方面,表现出行业领先的性能｡\nPublished date: 2026-02-27T15:36:49+08:00\nSite name: 中国经济网\n\nTitle: 百度2025年财报显示AI业务营收达400亿元 李彦宏称AI已成新核心_热点播报_太平洋科技资讯中心\nURL: http://news.pconline.com.cn/2104/21046232.html\nDescription: 百度发布2025年第四季度及全年财报,显示2025年总营收达1291亿元,AI业务营收达400亿元｡四季度百度总营收327亿元,同比增长5%,AI业务收入占一般性业务收入的43%｡ 百度创始人李彦宏表示,2025年是AI成为百度新核心的关键一年｡AI云势头强劲,凭借全栈端到端AI能力赢得企业认可｡萝卜快跑巩固全球领先地位,加速国际扩张｡AI原生营销服务持续增长,为长期发展开启新可能性｡ \nPublished date: 2026-02-27T15:25:02+08:00\nSite name: news.pconline.com.cn\n\nTitle: 透视百度年报:AI赚了400亿,「新核心」驱动价值重估百度_新浪财经_新浪网\nURL: https://finance.sina.com.cn/stock/relnews/hk/2026-02-28/doc-inhpkhwh2854960.shtml\nDescription: 马年春节后的第一个工作周,百度发布了2025年第四季度及全年财报｡ 财报显示,2025年全年,百度总营收达1291亿元,AI业务营收达400亿元;2025年第四季度,百度总营收327亿元,AI业务收入占百度一般性业务收入的43%,超出市场预期｡ 财报显示,2025全年,百度AI云持续增长,收入同比增长34%｡其中,四季度AI高性能计算设施的订阅收入同比增长143%,较三季度的128%进一步加速｡\nPublished date: 2026-02-28T18:09:34+08:00\nSite name: 新浪财经\n\nTitle: 百度去年AI业务营收400亿 昆仑芯分拆独立上市稳步推进 _ 东方财富网\nURL: http://finance.eastmoney.com/a/202602263655679330.html\nDescription: 2月26日,百度发布2025年第四季度及全年财报｡2025年百度总营收达1291亿元,同比下降3%,AI业务营收达400亿元｡四季度,百度总营收327亿元,同比下降4.1%,AI业务收入占百度一般性业务收入的43%,超出市场预期｡四季度归属于百度的净利润为18亿元,同比下降191%｡ “2025年是AI成为百度新核心的关键一年｡\nPublished date: 2026-02-26T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: AI营收400亿:百度2025业绩出炉 - 今日头条\nURL: https://www.toutiao.com/article/7611135726335427110/\nDescription: 2月26日,百度发布20",
+    "isError": false,
+    "durationMs": 1369,
+    "createdAt": "2026-03-01T11:32:08.417Z"
+  },
+  {
+    "id": "883f87e9bf0f4e1f",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_5budnwj1f9lp_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:32:25.055Z"
+  },
+  {
+    "id": "de468ab2864b1cc6",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: GPT-5 正式发布  OpenAI\nURL: https://openai.com/gpt-5/\nDescription: OpenAI 夏季更新 GPT‑5 正式发布 迄今为止最智能､速度最快､最实用的模型,且内置了思考能力｡所有人均可使用｡ 由GPT-5 提供支持的 ChatGPT 专家智慧,人人可享 GPT‑5 在各方面都更加智能,能够在数学､科学､金融､法律等领域提供更具实用性的回复｡它就像拥有一支随时待命的专家团队,随时为您解答任何问题｡ 每次都能获得最佳回复 ChatGPT 新增更多功能 打造专属风格 \nPublished date: 2026-03-01T00:43:23+08:00\nSite name: openai.com\n\nTitle: 《GPT-5免费核爆全球AI!中国破局只剩一条死路:自主可控垂直硬刚》——OpenAI用“免费霸权”绞杀行业,我们如何绝地求生?一、行业核爆:收费...\nURL: https://www.toutiao.com/w/1857116816819527/\nDescription: 2026年2月14日,OpenAI扔出AI史上最狠炸弹——GPT-5全模态模型永久免费开放,无额度､无会员､无国界,文本/图像/语音/视频/3D/代码全场景打通,推理速度较前代飙升10倍,复杂任务处理能力直逼人类专家｡这不是技术升级,是行业规则的彻底改写: - 收费模型集体暴毙:谷歌Gemini､Anthropic Claude等付费大模型瞬间沦为“电子垃圾”,用户用脚投票涌入免费生态｡\nPublished date: 2026-03-01T12:39:08+08:00\nSite name: 今日头条\n\nTitle: 所有AI全军覆没!学者出2500道题,GPT-5得分25.3%,GPT-4o 2.7% - 今日头条\nURL: https://www.toutiao.com/article/7612225114763870755/\nDescription: (来源:DeepTech深科技) 2 月28 日,由全球近 1,000 名顶尖学者打造的 AI 新基准“人类最后一次考试”(HLE,Humanity's Last Exam)的相关论文发在 Nature｡这套新试卷覆盖数学､物理､化学､历史､语言､医学,每一道题都来自专家自己的研究领域,每一道题都有唯一正确的答案,每一道题也都经过 AI 的经验,如果哪个 AI 能够答对,这道题就会作废｡ \nPublished date: 2026-03-01T18:02:13+08:00\nSite name: 今日头条\n\nTitle: GPT-5、GPT-5.1与GPT-5.2:从对话助手到专业智能体的演进之路-CSDN博客\nURL: https://blog.csdn.net/u014177256/article/details/158103262\nDescription: 2025年至2026年初,OpenAI连续发布了GPT-5､GPT-5.1和GPT-5.2三个重要版本,这不仅是技术的迭代升级,更代表了OpenAI对AI模型发展方向的战略性调整｡从最初的\"全能型\"统一架构,到注重对话情商的改进,再到专注专业场景的攻坚,这三个版本共同构成了OpenAI在AI大模型领域的重要里程碑｡\nPublished date: 2026-02-16T08:56:51+08:00\nSite name: blog.csdn.net\n\nTitle: OpenAI 发布 GPT-5 企业版:多模态能力升级,令牌成本对标 Gemini 2.5 且幻觉率降 65% - 牛透社\nURL: https://www.niutoushe.com/lives/kskxqjoodj3260\nDescription: 牛透社 8 月14 日消息,OpenAI 发布 GPT-5,该产品具备企业级编码任务优化､多模态能力升级及扩展上下文窗口功能,主要应用于软件工程与跨模态整合场景｡ 关键升级包括语音与图像模态支持､工具调用优化及并发处理设计,需企业系统适配单会话多请求｡令牌成本与 Gemini 2.5 相当,低于 Claude Opus 45%｡幻觉率降低 65%,但强大多模态能力存在滥用风险,建议企业并行测试竞品并更新治理政策｡\nPublished date: 2026-02-27T16:28:10+08:00\nSite name: www.niutoushe.com\n\nTitle: OpenAI 有望在年中发布 GPT—5 - 牛透社\nURL: https://www.niutoushe.com/lives/openaiyouwangzainianzhongfabugpt5\nDes",
+    "isError": false,
+    "durationMs": 1402,
+    "createdAt": "2026-03-01T11:32:26.456Z"
+  },
+  {
+    "id": "3d5627be3dca2310",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": {
+      "toolCallId": "call_function_oov38adir1h2_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:32:41.442Z"
+  },
+  {
+    "id": "c3bb426e6548e376",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": {
+      "toolCallId": "call_function_pv7u2xjnvzr6_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:33:35.331Z"
+  },
+  {
+    "id": "958f2798d8ce81c8",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": null,
+    "output": "Echo: 当前时间查询",
+    "isError": false,
+    "durationMs": 3,
+    "createdAt": "2026-03-01T11:33:35.334Z"
+  },
+  {
+    "id": "e79d264fa3d0a538",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_7gh28q6jxaem_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:33:39.047Z"
+  },
+  {
+    "id": "5f46dbb4d3eaef99",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphcxh3612916.shtml\nDescription: 市场方面,生成式AI应用渗透率快速提升,截至2025年6月我国生成式AI用户规模达5.15亿人,普及率36.5%｡技术方面,DeepSeek､通义千问等大模型实现突破,清华大学SALMONN音视频大模型在多项评测中超越GPT-4o等国际主流模型｡2025年原生多模态技术实现关键突破,阿里､百度等企业推出的多模态大模型在训练初期即融合文本､图像､视频等数据,实现理解与生成一体化｡腾讯混元Voyager､昆仑万维Matrix-3D等世界模型在3D空间感知与物理推理领域表现突出,前者在斯坦福WorldScore基准测试中位居首位,后者可通过单张图生成可探索的3D世界｡\nPublished date: 2026-02-27T18:29:10+08:00\nSite name: 新浪财经\n\nTitle: AI发展趋势(世界模型、Next-State Prediction范式、具身智能机器人)-CSDN博客\nURL: https://blog.csdn.net/Autumn_horse/article/details/158468094\nDescription: 趋势:世界模型成为AGI共识方向,Next-State Prediction或成新范式 核心变革:从\"Next Token Prediction\"到\"Next-State Prediction\"｡NSP范式不仅是生成像素,更是像人类一样从多模态数据中自主学习世界的动态规律,包括物理动态､时空连续性､因果关系｡这是AI从\"感知\"进化为\"认知\"的核心标志｡ 关键进展: **海外:**WorldLabs推出RTFM实时生成式世界模型;OpenAI发布Sora 2 国内:智源研究院发布悟界·Emu3.5,将多模态数据统一编码为离散Token进行自回归训练;蚂蚁发布百灵大模型体系,Ring系列首创\"棒冰算法\" **王仲远(**智源研究院院长):“Emu3.5的意义在于,它可能开创了一个新的大模型赛道…能够理解基本的世界运行规律｡二､进展与案例:从视频生成到“现实模拟器” 1. 海外先锋:实时生成与物理模拟 WorldLabs 的RTFM (Real-Time Frame Model): 核心突破:在单张 H100 GPU 上实现交互帧率的实时3D世界生成与渲染｡NSP体现:模型不仅生成静态场景,更能通过“空间记忆”机制保持世界的持久性和连续性｡\nPublished date: 2026-02-27T17:40:27+08:00\nSite name: blog.csdn.net\n\nTitle: 2025 年多模态 AI:从医疗保健到电子商务及更多领域的应用--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0107/3162454.shtml\nDescription: 多模态人工智能将在2025年重新定义企业如何利用AI｡它能同时处理文本､图像､音频等多种数据,为企业提供更全面的洞察｡在医疗领域,多模态AI可以帮助医生从海量数据中提取关键信息｡在电子商务领域,它将彻底改变搜索体验,让用户通过描述､图片等多种方式找到心仪商品｡多模态AI的应用将涉及各行各业,为企业带来无限可能｡ 多模态技术将在 2025 年重新定义企业如何利用 AI｡\nPublished date: 2026-02-21T03:39:28+08:00\nSite name: ai.zhiding.cn\n\nTitle: 中国大模型一年狂飙421%,全球AI格局变天\nURL: https://new.qq.com/rain/a/20260228A07TNP00\nDescription: 2025年初,DeepSeek-R1横空出世｡奠定了大模型新一轮军备竞赛的主旋律:即更低的成本､更强悍的性能､以及开源｡      一年过去,全球大模型产业格局正由少数科技巨头依托算力､数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建｡中国大模型,陆续坐上牌桌｡      \nPublished date: 2026-02-28T22:32:14+08:00\nSite name: 腾讯网\n\nTitle: Google I/O 2025前瞻:AI眼镜原型亮相,Gemini多模态交互重塑无界面计算 - 映维网资讯\nURL: https://news.nweon.com/129722\nDescription: 谷歌在预热活动中暗示将在2025年I/O大会(5月20-21日)展示A",
+    "isError": false,
+    "durationMs": 1666,
+    "createdAt": "2026-03-01T11:33:40.713Z"
+  },
+  {
+    "id": "935c713ede0d4f36",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_gibjf22bl0r8_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:33:46.640Z"
+  },
+  {
+    "id": "f99e651e0fc68619",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025人工智能技术革新:多模态突破引领行业新变革\nURL: https://www.sohu.com/a/896384678_121924584\nDescription: 随着2025年人工智能(AI)技术的不断演进,全球科技行业迎来了前所未有的变革。作为AI领域的重要推动者,国内多家科技巨头在深度学习、神经网络等核心技术方面持续发力,推动多模态AI、行业应用落地等方面实现了关键性突破。特别是在多模态AI技术的快速发展和广泛应用背景下,行业正迎来一轮深刻的变革,彰显出强大的技术革新驱动力和广阔的市场潜力。 近年来,深度学习技术的不断突破成为推动AI创新的核心引擎。以神经网络为基础的深度学习模型在图像、语音、自然语言处理等多个领域取得了突破性进展。2025年,AI大模型的规模和复杂度显著提升,模型参数已突破百亿级别,训练所需的算力和存储资源持续攀升。据行业数据显示,训练一个具备数百亿参数的AI模型,通常需要数百至上千台高性能GPU服务器,耗费数千万人民币的计算成本。这一技术壁垒逐步由大型科技企业如阿里巴巴、华为、DeepSeek等攻克,他们在基础设施建设和算法优化方面不断创新,推动AI模型的规模化、智能化发展。 在此基础上,行业内逐渐形成了以微调和推理为核心的应用模式。企业和研究机构基于已有的基础模型,进行领域适配和微调,从而快速实现行业应用。例如,金融、医疗、制造等GDP密切相关行业纷纷引入多模态AI技术,用于风险评估、诊断辅助、智能制造等场景。这种“基础模型+微调”的架构,大大降低了企业的技术门槛和成本,推动AI在实际产业中的深度落地,展现出显著的经济效益和社会价值。 从产业链角度来看,AI大模型的生命周期主要包括五个关键环节:数据获取、预处理、模型训练、微调和推理。数据的多样性和质量成为模型性能的决定性因素。2025年,随着物联网、边缘计算的发展,海量多模态数据的获取变得更加便捷,为模型训练提供了丰富的原材料。同时,算法在训练效率和模型泛化能力方面持续优化,推动模型更快更好地适应不同应用场景。微调和推理阶段的技术创新,特别是在硬件加速和边\nPublished date: 2025-05-18T21:37:00+08:00\nSite name: 搜狐\n\nTitle: 2025年AI技术革新:大模型突破引领行业新变革\nURL: https://www.sohu.com/a/895396707_121924584\nDescription: 随着2025年人工智能(AI)技术的持续深化与突破,全球科技巨头和创新企业正迎来前所未有的变革浪潮。近年来,深度学习、自然语言处理和多模态模型的飞速发展,推动了AI在各行各业的广泛应用,尤其以大规模预训练模型的创新为核心,彰显出技术领先优势。此次行业的核心突破,源于对深度神经网络架构的持续优化与算法创新,尤其是在模型规模、训练效率和多模态融合能力方面取得了显著进展。以OpenAI的GPT-4为代表的多模态大模型,不仅实现了文本与图像的无缝融合,还在逻辑推理、代码生成和内容理解方面展现出“涌现能力”,成为引领AI创新的标杆。根据行业最新统计数据,到2025年,全球AI市场规模已突破1500亿美元,预计未来五年将以每年20%以上的复合增长率持续扩展。这一增长趋势得益于核心技术的不断突破,以及云计算和硬件加速的强力支撑,为大模型的训练和部署提供了坚实基础。值得关注的是,国内外科技公司纷纷加大在大模型研发上的投入,推动AI产业生态的繁荣。以百度的“文心一言”、阿里的“通义千问”、字节跳动的“豆包”等为代表的国产大模型,凭借高性价比和开放参数,逐步缩小与国际巨头的差距,展现出强劲的竞争潜力。同时,行业专家指出,深度学习算法的优化和硬件技术的革新,正共同推动AI模型向更高的效率和更强的智能水平迈进。未来,AI技术的融合将进一步深化,应用场景将由单一的内容生成、语义理解,扩展到自动驾驶、精准医疗、金融风控等多个高端领域,形成多维度、全产业链的智能生态系统。这一趋势也引发了关于AI伦理\nPublished date: 2025-05-15T14:37:00+08:00\nSite name: 搜狐\n\nTitle: AI的未来趋势:2025年展望-CSDN博客\nURL: https://blog.csdn.net/m0_61620400/article/details/148214880\nDescription: AI的未来趋势:2025年展望 在数字化浪潮的推动下,人工智能(AI)正以前所未有的速度重塑着我们的世界。2025年,随着技术的不断演进和应用场景的持续拓展,AI将在多个领域迎来重大突破,深刻影响着全球的经济、社会和文化格局。本文将从技术突破、行业应用、算力革命、伦理挑战等维度,深入剖析",
+    "isError": false,
+    "durationMs": 422,
+    "createdAt": "2026-03-01T11:33:47.062Z"
+  },
+  {
+    "id": "03e1527ce57a1bfa",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_ri1evs2lnin0_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:33:53.668Z"
+  },
+  {
+    "id": "102d4e33e077d1ff",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 我国及部分省市人工智能行业相关政策:深化人工智能赋能应用_观研报告网\nURL: https://www.chinabaogao.com/zhengce/202505/751003.html\nDescription: 人工智能(Artificial\nIntelligence),英文缩写为AI。是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新技术科学。人工智能是计算机科学的一个分支,它企图了解智能的实质,并生产出一种新的能以人类智能相似的方式做出反应的智能机器,该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。\n我国人工智能行业相关政策\n为推动人工智能行业的发展,我国陆续发布了许多政策,如2025年4月工业和信息化部等七部门发布的《医药工业数智化转型实施方案(2025—2030年)》提出深化人工智能赋能应用。支持相关单位建立医药大模型创新平台,协同开展医药大模型技术产品研发、监管科学研究等,强化标准规范、科技伦理、应用安全和风险管理等规则建设。\n我国人工智能行业部分相关政策情况\n发布时间\n发布部门\n政策名称\n主要内容\n2024年1月\n工业和信息化部等七部门\n关于推动未来产业创新发展的实施意见\n打造未来产业瞭望站,利用人工智能、先进计算等技术精准识别和培育高潜能未来产业。\n2024年2月\n工业和信息化部等七部门\n关于加快推动制造业绿色化发展的指导意见\n推动工业互联网、大数据、人工智能、5G等新兴技术与绿色低碳产业深度融合,探索形成技术先进、商业可行的应用模式,形成产业增长新动能。\n2024年3月\n工业和信息化部等七部门\n推动工业领域设备更新实施方案\n推广应用智能制造装备。以生产作业、仓储物流、质量管控等环节改造为重点,推动数控机床与基础制造装备、增材制造装备、工业机器人、工业控制装备、智能物流装备、传感与检测装备等通用智能制造装备更新。\n2024年3月\n市场监管总局、中央网信办等部门\n贯彻实施〈国家标准化发展纲要〉行动计划(2024—2025年)\n聚焦脑机接口、量子信息、生成式人工智能、元宇宙等领域,前瞻布局未来产业标准研究。\n2024年5月\nPublished date: 2025-05-07T09:29:00+08:00\nSite name: 行业数据网\n\nTitle: 5月网络安全圈值得关注的事  2025\nURL: http://safe.it168.com/a2025/0530/6888/000006888261.shtml\nDescription: 2025年5月份,网络与安全领域继续凸显AI安全、攻防演练和政策监管等热点。全球多份报告指出,人工智能和大模型对网络安全的影响日益显著:世界经济论坛报告称,66%的组织预计2025年AI将在网络安全中发挥关键作用。 与之对应,欧美安全机构相继发布AI数据安全指南,强调保护训练数据的完整性和来源可信度。同时,各国不断加强监管:中国网信办计划修订《网络安全法》,进一步强化关键信息基础设施保护与惩戒力度;国务院办公厅公布2025年立法计划,明确“预备制定网络安全等级保护条例”等重点内容。 政策层面,还包括个人信息保护合规审计新规于5月1日实施,以及各地教育系统和企事业单位组织的攻防实战演练(如四川教育系统开展全省级网络安全攻防演习)等,全力提升整体防护能力。 市场与政策动态: 国内政策动态: 5月份,中国继续完善网络安全法制,强调与数据安全、个人信息保护等法律的衔接。网信办公开征求《网络安全法》修正稿意见,拟细化处罚条款、强化CII保护等;国务院印发2025年度立法工作计划,将制定政务数据共享条例、预备制定网络安全等级保护条例等。技术监管方面,5月生效的《个人信息保护合规审计措施》进一步明确数据安全审计要求,促进企业自查合规。 5 月1日,国家互联网信息办公室等七部门联合发布的《终端设备直连卫星服务管理规定》正式施行,旨在落实相关法律法规,促进和规范该服务健康发展,维护国家安全等。5 月12 日,国家互联网信息办公室等七部门联合印发《网络数据安全三年行动计划(2025—2027 年)》,明确工作目标和重点,包括建立完善网络数据分类分级保护制度、提升网络数据安全保障能力等。 国际政策与监管: 美国方面,2025财年《国防授权法案》为军方网络安全投入约300亿美元,重点支持替换国产设备、保护移动终端安全、建立AI安全中心等举措。国会亦酝酿重新授权《网络安全信息共享法》,加强政府与私营\nPublished date: 2025-05-30T11:04:00+08:00\nSite name: T168网络安全频道\n\nTitle: 全网超全解读:我国人工智能行业相关政策\nURL: https://www.sohu.com/a/89",
+    "isError": false,
+    "durationMs": 381,
+    "createdAt": "2026-03-01T11:33:54.049Z"
+  },
+  {
+    "id": "6c0fcaca72fb40f1",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_emrumwsygn6p_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:34:15.702Z"
+  },
+  {
+    "id": "4bf3181141bcc15c",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: deepseek开源最新版本模型deepseek-r1-0528\nURL: https://view.inews.qq.com/a/20250529A06OP200?scene=qqsearch\nDescription: DeepSeek昨晚通过微信交流群通知,其DeepSeek R1模型完成小版本升级,并在今日凌晨开源了最新版本模型DeepSeek-R1-0528。代码测试平台Live CodeBench中显示,DeepSeek-R1-0528性能可以媲美OpenAI最新的o3(High)模型。\nPublished date: 2025-05-29T16:31:09+08:00\nSite name: 腾讯网\n\nTitle: 刚刚,Deepseek-R1-0528 开源!每逢佳节发模型!deepseek_网易订阅\nURL: https://www.163.com/dy/article/K0NIH4A70519EA27.html\nDescription: 刚刚,DeepSeek-R1 默默地小版本升级昨晚R1的升级版 DeepSeek -r1-0528 正式开源了,可以在Huggingface下载:huggingface.co/deepseek-ai/DeepSeek-R1-0528/tree/main同时除了官方渠道之外Openrouter也开始提供,而且依然有免费的版本,定价为$0.50/M 、$2.18/M 。另外 R1-0528 在livecodebench 上的表现几乎与 o3 (high) 相当。\nPublished date: 2025-05-29T10:32:35+08:00\nSite name: 网易\n\nTitle: DeepSeek开源最新版本模型DeepSeek-R1-0528\nURL: https://new.qq.com/rain/a/20250529A06OP200\nDescription: DeepSeek昨晚通过微信交流群通知,其DeepSeek R1模型完成小版本升级,并在今日凌晨开源了最新版本模型DeepSeek-R1-0528。代码测试平台Live CodeBench中显示,DeepSeek-R1-0528性能可以媲美OpenAI最新的o3(High)模型。\nPublished date: 2025-05-29T16:31:09+08:00\nSite name: 腾讯网\n\nTitle: DeepSeek开源最新版本模型DeepSeek-R1-0528_腾讯新闻\nURL: https://news.qq.com/rain/a/20250529A06OP200\nDescription: 经济观察网讯\nDeepSeek昨晚通过微信交流群通知,其DeepSeek\nR1模型完成小版本升级,并在今日凌晨开源了最新版本模型DeepSeek-R1-0528。代码测试平台Live\nCodeBench中显示,DeepSeek-R1-0528性能可以媲美OpenAI最新的o3(High)模型。\nPublished date: 2025-05-29T16:31:00+08:00\nSite name: 腾讯网\n\nTitle: deepseek-r1更新的官方说明来了:思考更深,推理更强\nURL: https://view.inews.qq.com/a/20250529A09BFI00?scene=qqsearch\nDescription: 5月29日消息,DeepSeek R1模型已完成小版本更新升级,当前版本为DeepSeek-R1-0528。在此次更新中,DeepSeek R1通过增加计算资源并在后训练阶段引入算法优化机制,显著提升了深度推理能力。      此外,在数学、编程和通用逻辑等多项基准测试中,DeepSeek-R1-0528均展现出卓越性能,整体表现已接近OpenAI o3和Gemini 2.5 Pro等领先模型水平。\nPublished date: 2025-05-29T20:47:54+08:00\nSite name: 腾讯网\n\nTitle: DeepSeek发布的新版本R1-0528 支持函数调用与JSON输出_腾讯新闻\nURL: https://news.qq.com/rain/a/20250529A094S700\nDescription: PANews\n5月29日消息,据DeepSeek官方消息,新模型版本DeepSeek-R1-0528已上线,带来基准性能提升、前端能力增强、幻觉率降低,并新增支持JSON输出与函数调用功能。API接口保持不变,模型权重已开源发布。用户可立即访问\nchat.deepseek.com\n体验。\nPublished date: 2025-05-29T",
+    "isError": false,
+    "durationMs": 383,
+    "createdAt": "2026-03-01T11:34:16.085Z"
+  },
+  {
+    "id": "16d6b39b65f997ec",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_hlaeeqyt7xqq_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:34:21.995Z"
+  },
+  {
+    "id": "853c9cfcd0518dc3",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 谷歌2025开发者大会AI产品速览:AI搜索、Gemini 2.5 Pro、Veo3、Imagen云存储veo知名企业网络浏览器geminiimagen_网易订阅\nURL: https://www.163.com/dy/article/K02QD1HI0519U3I5.html\nDescription: 2025大会上,谷歌公布了最新AI产品更新。谷歌轻量级模型Gemini 2.5 Flash将于6月推出谷歌宣布新一代人工智能模型Gemini 2.5系列的最新进展。谷歌将在6月推出Gemini 2.5 Flash,它是轻量级模型,而更强大的Gemini 2.5 Pro在之后发布。据介绍,Gemini 2.5 Pro是目前世界上最智能的AI模型之一,能够模拟整个城市,并在学习能力上处于领先地位。而Gemini 2.5 Flash则是一款注重效率和成本优化的轻量级模型。谷歌表示,Gemini 2.5 Pro将推出一种名为“Deep Think”的增强推理模式,进一步提升其在复杂问题上的分析能力。谷歌表示不会在今天发布 Gemini 2.5 Pro。而是计划在向公众发布之前进行额外的安全测试。谷歌发布新一代视频生成模型Veo3据介绍,Veo 3可以生成音效、背景噪音甚至对话来配合其创建的视频。此外,谷歌表示,Veo 3在生成视频的质量方面比其前身Veo 2有所提升。从周二开始,订阅谷歌每月249.99美元 AI Ultra 计划的用户可在Gemini聊天机器人应用中使用Veo 3,用户可以通过文本或图像进行提示。谷歌发布新一代文生图模型Imagen 4谷歌表示,Imagen 4的速度比Imagen 3更快。在不久的将来,谷歌计划发布一个比Imagen 3快10倍的Imagen 4变体。据谷歌介绍,Imagen 4能够渲染织物、水滴和动物皮毛等 “精细细节”,可以处理写实和抽象风格,生成各种纵横比、最高2K分辨率的图像。谷歌搜索推出AI模式谷歌搜索正式迎来AI模式,该功能从今日起逐步在美国市场推出。据介绍,这一实验性的谷歌搜索功能允许用户通过人工智能界面提出复杂的多部分问题。AI模式将支持在体育和金融查询中使用复杂数据,并为服装提供 “试穿” 选项。今年夏末推出的Search Li\nPublished date: 2025-05-21T09:06:06+08:00\nSite name: 网易\n\nTitle: 谷歌发布Gemini 2.5 Pro “I/O”模型\nURL: https://new.qq.com/rain/a/20250507A04VWY00\nDescription: 当地时间5月6日,谷歌DeepMind人工智能研究团队发布了Gemini 2.5 Pro “I/O” ,这是今年3月发布的多模态大语言模型Gemini 2.5 Pro的升级版本。在AI排行榜LMArena上,该模型在多个指标上登顶。目前该模型已向Google AI Studio的独立开发者、Vertex AI云平台的企业用户以及Gemini应用的普通用户开放。(界面)\nPublished date: 2025-05-07T14:10:06+08:00\nSite name: 腾讯网\n\nTitle: 谷歌发布Gemini 2.5 Pro “I/O”模型 _ 东方财富网\nURL: https://finance.eastmoney.com/a/202505073397985646.html\nDescription: 当地时间5月6日,谷歌DeepMind人工智能研究团队发布了Gemini 2.5 Pro “I/O” ,这是今年3月发布的多模态大语言模型Gemini 2.5 Pro的升级版本。在AI排行榜LMArena上,该模型在多个指标上登顶。目前该模型已向Google AI Studio的独立开发者、Vertex AI云平台的企业用户以及Gemini应用的普通用户开放。 (文章来源:界面新闻)\nPublished date: 2025-05-07T14:13:00+08:00\nSite name: 东方财富网财经频道\n\nTitle: 谷歌2025开发者大会AI产品速览:AI搜索、Gemini 2.5 Pro、Veo3、Imagen_模型_Ultra_模式\nURL: https://www.sohu.com/a/897201825_100117963\nDescription: 2025大会上,谷歌公布了最新AI产品更新。 谷歌轻量级模型Gemini 2.5 Flash将于6月推出 谷歌宣布新一代人工智能模型Gemini 2.5系列的最新进展。谷歌将在6月推出Gemini 2.5 Flash,它是轻量级模型,而更强大的Gemini 2.5 Pro在之后",
+    "isError": false,
+    "durationMs": 365,
+    "createdAt": "2026-03-01T11:34:22.360Z"
+  },
+  {
+    "id": "7a1027fed698b991",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_wrga93wlynbo_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:34:30.300Z"
+  },
+  {
+    "id": "2290177a5c1681fa",
+    "type": "tool_call",
+    "taskId": "89406856dfb1a4e3",
+    "subtaskId": "e6818e5202e2cea9",
+    "employeeId": "46f7ca260e5325e5",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 百度发布2025年首季财报:萝卜快跑服务超1100万次,在线营收下降6%  大鱼财经\nURL: https://new.qq.com/rain/a/20250522A0248H00\nDescription: 5月21日,百度(NASDAQ: BIDU, HKEX: 9888)盘后发布其截至2025年3月31日的第一季度财务报告,数据显示,该公司在人工智能领域的深度布局正持续转化为强劲的增长动力。整体营收324.52亿元人民币,同比温和增长3%,但其核心业务,特别是智能云和自动驾驶板块,展现出远超预期的发展势头和盈利能力。             财报数据显示,百度调整后营业利润达到53.3亿元,显著超越市场预估的48.9亿元。这一表现背后,百度智能云业务的贡献尤为突出。该业务板块不仅实现了经营利润的持续为正,其经营利润率更已突破10%大关。更引人注目的是,智能云业务第一季度营收同比飙升42%,其中AI相关收入更是实现了三位数的惊人同比增长,显示出AI技术与实体经济融合的巨大潜力。目前,人工智能云业务已占百度核心收入的26%,较去年同期的20%有显著提升。             在AI技术应用层面,百度创始人、董事长兼首席执行官李彦宏在财报电话会议上透露,AI正在重塑百度的核心搜索业务。截至今年4月,百度移动端搜索结果页面中约有35%已融合AI生成内容,较1月份的22%有显著提升。公司正积极推动搜索体验向多模态、智能化方向升级,优先展示图片、视频、智能代理乃至数字人直播等丰富内容形式,以适应用户日益复杂和多元化的信息获取需求。             除了云与搜索,百度的自动驾驶业务“萝卜快跑”同样成绩亮眼。截至2025年5月,“萝卜快跑”在全球累计提供的出行服务已突破1100万次。仅在第一季度,其出行服务量就超过140万次,同比增长高达75%,显示出商业化运营的加速态势。目前,“萝卜快跑”已在全球15座城市部署超过1000辆无人车,并积极\nPublished date: 2025-05-22T09:11:13+08:00\nSite name: 腾讯网\n\nTitle: 百度2025年一季度财报 萝卜快跑在全球提供超140万次出行服务_新车上市_汽车_中金在线\nURL: http://auto.cnfol.com/xincheshangshi/20250521/31329601.shtml\nDescription: 易车讯 5月21日,百度发布了2025年一季度财报,一季度总营收325亿元,百度核心收入255亿元,同比增长7%。萝卜快跑在全球提供超140万次出行服务,同比增长75%。截至2025年5月,萝卜快跑在全球累计提供超1100万次的出行服务。 此外,智能云业务表现强劲,同比增速达42%。百度智能云千帆大模型平台升级,增加扩展的模型库和更全面的工具链,支持多模态模型和深度思考模型的训练、精调,进一步促进AI应用的开发。 百度创始人李彦宏表示,智能云业务表现强劲,凸显市场对我们提供高性价比全栈AI产品及解决方案这一独特优势的认可度与日俱增。我们的无人驾驶出行服务也取得关键进展,萝卜快跑已拓展全球市场,进入迪拜和阿布扎比,彰显了我们为全球市场提供安全、舒适和便捷无人驾驶出行服务的决心。我们相信,Al-first战略使我们能保持领先地位在AI时代抓住长期增长机会。 : 许振宇\nPublished date: 2025-05-21T17:53:11+08:00\nSite name: 中金在线\n\nTitle: 百度2025年一季度财报 萝卜快跑在全球提供超140万次出行服务\nURL: https://new.qq.com/rain/a/20250521A086AA00\nDescription: 易车讯 5月21日,百度发布了2025年一季度财报,一季度总营收325亿元,百度核心收入255亿元,同比增长7%。萝卜快跑在全球提供超140万次出行服务,同比增长75%。截至2025年5月,萝卜快跑在全球累计提供超1100万次的出行服务。此外,智能云业务表现强劲,同比增速达42%。百度智能云千帆大模型平台升级,增加扩展的模型库和更全面的工具链,支持多模态模型和深度思考模型的训练、精调,进一步促进AI应用的开发。百度创始人李彦宏表示,智能云业务表现强劲,凸显市场对我们提供高性价比全栈AI产品及解决方案这一独特优势的认可度与日俱\nPublished date: 2025-05-21T18:00:14+08:00\nSite name: 腾讯网\n\nTitle: 百度2025Q1财报解读:AI战略全面爆发,云与自动驾驶领跑增长|百度|AI|财报_新浪新闻\nURL: https://k.sina.com.cn/article_5044281",
+    "isError": false,
+    "durationMs": 377,
+    "createdAt": "2026-03-01T11:34:30.678Z"
+  }
+]

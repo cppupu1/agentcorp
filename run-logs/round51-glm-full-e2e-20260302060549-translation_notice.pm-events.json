@@ -1,0 +1,1250 @@
+[
+  {
+    "event": "delta",
+    "data": {
+      "seq": 0,
+      "text": "好的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 1,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 2,
+      "text": "我来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 3,
+      "text": "帮"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 4,
+      "text": "您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 5,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 6,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 7,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 8,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 9,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 10,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 11,
+      "text": "首先"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 12,
+      "text": "让我"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 13,
+      "text": "查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 14,
+      "text": "可"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 15,
+      "text": "用的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 16,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 17,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 18,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 19,
+      "text": "工具"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 20,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 21,
+      "toolCallId": "call_9bbc5051c8984b1398c2719f",
+      "toolName": "list_templates",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 22,
+      "toolCallId": "call_9bbc5051c8984b1398c2719f",
+      "toolName": "list_templates",
+      "result": "[{\"id\":\"software-dev\",\"name\":\"软件开发\",\"description\":\"标准软件开发团队，包含项目经理、前端开发、后端开发和测试工程师，适用于Web应用、移动端等软件项目的全流程开发。\",\"icon\":\"💻\",\"employeeCount\":4},{\"id\":\"content-creation\",\"name\":\"内容创作\",\"description\":\"专业内容创作团队，包含项目经理、文案策划和视觉设计师，适用于品牌营销、自媒体运营、广告创意等内容生产场景。\",\"icon\":\"✍️\",\"employeeCount\":3},{\"id\":\"data-analysis\",\"name\":\"数据分析\",\"description\":\"专业数据分析团队，包含项目经理、数据分析师和数据工程师，适用于业务数据洞察、用户行为分析、数据驱动决策等场景。\",\"icon\":\"📊\",\"employeeCount\":3},{\"id\":\"research-report\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 23,
+      "usage": {
+        "inputTokens": 1157,
+        "outputTokens": 133
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 24,
+      "toolCallId": "call_8f356fc9271e4770bf5c6889",
+      "toolName": "list_tools",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 25,
+      "toolCallId": "call_8f356fc9271e4770bf5c6889",
+      "toolName": "list_tools",
+      "result": "[{\"id\":\"fc5f4c5bf43702d4\",\"name\":\"当前时间\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"740410911af25b5b\",\"name\":\"计算器\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"b931c6ca2b7ad17b\",\"name\":\"文件读取\",\"description\":\"文件系统访问工具，支持读取、列出目录等操作\",\"groupName\":null},{\"id\":\"a6d0277e32709254\",\"name\":\"搏查\",\"description\":\"搏查搜索服务\",\"groupName\":\"互联网\"},{\"id\":\"1791ada993a23a56\",\"name\":\"Web Fetch\",\"description\":\"抓取网页内容并转换为 Markdown，让 AI 能够阅读和处理网页信息。支持自定义 User-Agent 和代理设置。\",\"groupNam",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 26,
+      "usage": {
+        "inputTokens": 1493,
+        "outputTokens": 16
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 27,
+      "toolCallId": "call_064c5174ea7342f982cb7f4d",
+      "toolName": "quick_create_task",
+      "args": {
+        "templateId": "content-creation",
+        "title": "生成中英双语放假通知",
+        "description": "生成一版可直接发送给全员的中英双语放假通知，要求简洁正式，适合公司内部发布。",
+        "mode": "auto"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 28,
+      "toolCallId": "call_064c5174ea7342f982cb7f4d",
+      "toolName": "quick_create_task",
+      "result": "{\"success\":true,\"taskId\":\"d74efa7366d158ff\",\"teamId\":\"a5dbbf3de8b9f039\",\"title\":\"生成中英双语放假通知\"}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 29,
+      "usage": {
+        "inputTokens": 1917,
+        "outputTokens": 260
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 30,
+      "toolCallId": "call_b23b5fd435b342d1ba6eaef8",
+      "toolName": "assign_team_tools",
+      "args": {
+        "teamId": "a5dbbf3de8b9f039",
+        "toolIds": [
+          "a6d0277e32709254",
+          "ef64b3f65f2ab2a2"
+        ]
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 31,
+      "toolCallId": "call_b23b5fd435b342d1ba6eaef8",
+      "toolName": "assign_team_tools",
+      "result": "{\"success\":true,\"count\":2}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 32,
+      "usage": {
+        "inputTokens": 2022,
+        "outputTokens": 172
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 33,
+      "toolCallId": "call_d79758f8491a40c693af442e",
+      "toolName": "start_task",
+      "args": {
+        "taskId": "d74efa7366d158ff"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 34,
+      "toolCallId": "call_d79758f8491a40c693af442e",
+      "toolName": "start_task",
+      "result": "{\"success\":true,\"taskId\":\"d74efa7366d158ff\",\"message\":\"任务已启动\",\"autoAssignedTools\":{\"teamId\":\"a5dbbf3de8b9f039\",\"added\":0,\"recommended\":0}}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 35,
+      "usage": {
+        "inputTokens": 2093,
+        "outputTokens": 35
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 36,
+      "text": "✅"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 37,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 38,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 39,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 40,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 41,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 42,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 43,
+      "text": "成功"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 44,
+      "text": "！"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 45,
+      "text": "**\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 46,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 47,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 48,
+      "text": "详情"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 49,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 50,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 51,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 52,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 53,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 54,
+      "text": "标题"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 55,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 56,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 57,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 58,
+      "text": "生成"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 59,
+      "text": "中"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 60,
+      "text": "英"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 61,
+      "text": "双语"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 62,
+      "text": "放假"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 63,
+      "text": "通知"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 64,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 65,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 66,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 67,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 68,
+      "text": "ID"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 69,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 70,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 71,
+      "text": " d"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 72,
+      "text": "74"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 73,
+      "text": "efa"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 74,
+      "text": "7"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 75,
+      "text": "36"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 76,
+      "text": "6"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 77,
+      "text": "d"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 78,
+      "text": "158"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 79,
+      "text": "ff"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 80,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 81,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 82,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 83,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 84,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 85,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 86,
+      "text": " 内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 87,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 88,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 89,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 90,
+      "text": "文案"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 91,
+      "text": "策划"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 92,
+      "text": "）\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 93,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 94,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 95,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 96,
+      "text": "模式"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 97,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 98,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 99,
+      "text": " 自动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 100,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 101,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 102,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 103,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 104,
+      "text": "配置"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 105,
+      "text": "资源"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 106,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 107,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 108,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 109,
+      "text": " 分"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 110,
+      "text": "配"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 111,
+      "text": "工具"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 112,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 113,
+      "text": "搏"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 114,
+      "text": "查"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 115,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 116,
+      "text": "搜索"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 117,
+      "text": "参考"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 118,
+      "text": "案例"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 119,
+      "text": "）、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 120,
+      "text": "Memory"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 121,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 122,
+      "text": "知识"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 123,
+      "text": "记忆"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 124,
+      "text": "）\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 125,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 126,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 127,
+      "text": "团"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 128,
+      "text": "队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 129,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 130,
+      "text": "自动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 131,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 132,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 133,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 134,
+      "text": "流程"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 135,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 136,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 137,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 138,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 139,
+      "text": "正在"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 140,
+      "text": "为您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 141,
+      "text": "撰写"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 142,
+      "text": "这份"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 143,
+      "text": "简洁"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 144,
+      "text": "正式"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 145,
+      "text": "的中"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 146,
+      "text": "英"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 147,
+      "text": "双语"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 148,
+      "text": "放假"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 149,
+      "text": "通知"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 150,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 151,
+      "text": "完成后"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 152,
+      "text": "会"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 153,
+      "text": "直接"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 154,
+      "text": "提供"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 155,
+      "text": "可"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 156,
+      "text": "发布的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 157,
+      "text": "版本"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 158,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 159,
+      "text": "您可以"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 160,
+      "text": "稍"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 161,
+      "text": "后"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 162,
+      "text": "查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 163,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 164,
+      "text": "进度"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 165,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 166,
+      "text": "成果"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 167,
+      "text": "！"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 168,
+      "usage": {
+        "inputTokens": 2167,
+        "outputTokens": 147
+      }
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 169,
+      "text": "好的，我来帮您创建并启动这个任务。首先让我查看可用的场景模板和工具。✅ **任务已创建并启动成功！**\n\n**任务详情：**\n- **任务标题：** 生成中英双语放假通知\n- **任务ID：** d74efa7366d158ff\n- **团队：** 内容创作团队（文案策划）\n- **执行模式：** 自动执行\n\n**已配置资源：**\n- 分配工具：搏查（搜索参考案例）、Memory（知识记忆）\n- 团队已自动启动任务执行流程\n\n内容创作团队正在为您撰写这份简洁正式的中英双语放假通知，完成后会直接提供可发布的版本。您可以稍后查看任务进度和成果！",
+      "messageId": "3d856d8492584268",
+      "finishReason": "stop"
+    }
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "taskId": "c9ab52024e1a6c8d",
+  "title": "补齐深测-股票工具",
+  "status": "completed",
+  "timedOut": false,
+  "tokenUsage": 356519,
+  "toolCallsTotal": 46,
+  "tools": [
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 19
+    },
+    {
+      "tool": "tushare_mcp_001__daily",
+      "count": 8
+    },
+    {
+      "tool": "tushare_mcp_001__stock_basic",
+      "count": 6
+    },
+    {
+      "tool": "tushare_mcp_001__today",
+      "count": 6
+    },
+    {
+      "tool": "tushare_mcp_001__weekly",
+      "count": 5
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_ai_search",
+      "count": 2
+    }
+  ],
+  "decisionCount": 0,
+  "checks": {
+    "finance": true,
+    "search": true
+  },
+  "allChecksPassed": true,
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n辩论模式执行完成"
+}

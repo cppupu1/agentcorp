@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-02-28T23:30:23.632691Z",
+  "runLabel": "round7-20260228-233023",
+  "modelId": "8f1970aae082a631",
+  "validated_tasks": [
+    {
+      "label": "round7-software-dev",
+      "templateId": "software-dev",
+      "taskId": "902c1ec66c2e3302",
+      "status": "completed",
+      "timedOut": false,
+      "evidence": "run-logs/round7-software-dev.audit.20260228-233023.json"
+    },
+    {
+      "label": "round7-content-creation",
+      "templateId": "content-creation",
+      "taskId": "e1fbe8ebdf6794c1",
+      "status": "completed",
+      "timedOut": false,
+      "evidence": "run-logs/round7-content-creation.audit.20260228-233023.json"
+    },
+    {
+      "label": "round7-customer-service",
+      "templateId": "customer-service",
+      "taskId": "713f9b064b0c7b23",
+      "status": "completed",
+      "timedOut": false,
+      "evidence": "run-logs/round7-customer-service.audit.20260228-233023.json"
+    },
+    {
+      "label": "round7-devops-ops",
+      "templateId": "devops-ops",
+      "taskId": "cf8e3591a7bc82a2",
+      "status": "completed",
+      "timedOut": false,
+      "evidence": "run-logs/round7-devops-ops.audit.20260228-233023.json"
+    }
+  ]
+}

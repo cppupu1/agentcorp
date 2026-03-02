@@ -1,0 +1,81 @@
+{
+  "label": "round21-pm-stock-compare",
+  "sessionId": "round21-stock-20260301-071821",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "ae5b7018ed451b91"
+  ],
+  "autoAssign": {
+    "recommended": 3,
+    "added": 2
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 3,
+      "min": 1
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "ae5b7018ed451b91",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 29770,
+      "tools": [
+        {
+          "tool": "tushare_mcp_001__daily",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__today",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": true,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成茅台与宁德时代30天走势对比分析。数据分析师获取了近30个交易日的日K线和成交量数据，从股价涨跌幅走势、成交量变化趋势、关键价位突破情况和资金流向特征四个维度进行了深入对比，生成了完整的分析报告和可视化图表。"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "label": "round25-pm-translation",
+  "sessionId": "round25-translation-20260301-085720",
+  "pmChatDurationMs": 13937,
+  "pmChatError": null,
+  "pmTools": [],
+  "taskIds": [],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": false
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 13937
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": false,
+  "tasks": []
+}

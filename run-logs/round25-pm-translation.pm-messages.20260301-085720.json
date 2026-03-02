@@ -1,0 +1,18 @@
+[
+  {
+    "id": "f070a7fe084e1673",
+    "sessionId": "round25-translation-20260301-085720",
+    "role": "user",
+    "content": "请直接创建并启动一个任务：将一段企业公告模板同时输出中英双语版本（简版），保持语义一致。",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T08:57:20.361Z"
+  },
+  {
+    "id": "4f499af4ab260dc7",
+    "sessionId": "round25-translation-20260301-085720",
+    "role": "assistant",
+    "content": "",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T08:57:20.361Z"
+  }
+]

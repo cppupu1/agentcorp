@@ -1,0 +1,70 @@
+{
+  "label": "round33-b06-ai",
+  "sessionId": "round33-b06-ai-20260301-115524",
+  "kind": "ai",
+  "pmChatDurationMs": 32366,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "6efbf6ef348dbfc1"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 32366
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "6efbf6ef348dbfc1",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 254571,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务完成。研究团队整理了近30天（2025-08-25至2025-09-24）AI技术行业趋势，输出3条关键结论：1. 中国国务院发布\"人工智能+\"行动意见（2025-08-26），AI上升为国家战略2. 2025年成为\"AI智能体元年\"，Agent技术从概念走向规模化落地3. 原生多模态与世界模型成为技术演进新方向每条结论均附有具体日期与可核验的来源链接，涵盖政策、市场的AI技术发展趋势。"
+  }
+}

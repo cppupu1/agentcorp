@@ -1,0 +1,45 @@
+{
+  "taskId": "964dc993dc6086ff",
+  "title": "回归验证-auto-start烟雾测试",
+  "status": "completed",
+  "createdAt": "2026-02-28T16:15:22.332Z",
+  "updatedAt": "2026-02-28T16:15:41.568Z",
+  "tokenUsage": 2987,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 0,
+  "toolErrorsTotal": 0,
+  "tools": [],
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 1
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 1
+    }
+  ],
+  "resultSummary": "系统校验：子任务总数 1，已完成 1，失败 0。\n已完成\"回归验证-auto-start烟雾测试\"项目中文周报摘要的撰写任务。文案策划按照要求在100字内完成了包含进展、风险、下周计划三部分的周报摘要，内容简洁专业，符合周报写作规范。"
+}

@@ -4,6 +4,7 @@ import {
   listTasks, getTask, createTask, deleteTask,
   getTaskMessages, runTaskChat,
   approveBrief, approveTeam, approvePlan,
+  quickCreateTask, autoStartTask,
 } from '../services/tasks.js';
 import type { TaskChatCallbacks } from '../services/tasks.js';
 import { sseManager } from '../services/sse-manager.js';
@@ -34,6 +35,18 @@ export function registerTaskRoutes(app: FastifyInstance) {
   app.get<{ Querystring: { teamId?: string; status?: string } }>('/api/tasks', async (req) => {
     return { data: await listTasks(req.query.teamId, req.query.status) };
   });
+
+  // Quick create task (template-based) — must be before :id route
+  app.post<{ Body: { templateId: string; modelId: string; description: string; mode?: string; teamName?: string } }>(
+    '/api/tasks/quick-create', async (req, reply) => {
+      const { templateId, modelId, description } = req.body || {};
+      if (!templateId || !modelId || !description) {
+        throw new AppError('VALIDATION_ERROR', 'templateId, modelId, description 必填');
+      }
+      const data = await quickCreateTask(req.body as any);
+      return reply.status(201).send({ data });
+    },
+  );
 
   // Get task detail
   app.get<{ Params: { id: string } }>('/api/tasks/:id', async (req) => {
@@ -160,6 +173,12 @@ export function registerTaskRoutes(app: FastifyInstance) {
       return { data: await approvePlan(req.params.id, req.body) };
     },
   );
+
+  // Auto-start task (skip approval workflow, for testing)
+  app.post<{ Params: { id: string } }>('/api/tasks/:id/auto-start', async (req) => {
+    await autoStartTask(req.params.id);
+    return { data: await getTask(req.params.id) };
+  });
 
   // Retry failed task
   app.post<{ Params: { id: string } }>('/api/tasks/:id/retry', async (req) => {

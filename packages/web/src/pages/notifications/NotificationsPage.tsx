@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router';
 import { notificationsApi, type Notification } from '@/api/client';
+import MarkdownContent from '@/components/MarkdownContent';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/toast';
@@ -116,7 +117,7 @@ export default function NotificationsPage() {
                     <span className="font-medium text-sm">{item.title}</span>
                     {!item.read && <span className="h-2 w-2 rounded-full bg-blue-500 flex-shrink-0" />}
                   </div>
-                  <p className="text-sm text-muted-foreground mb-1">{item.content}</p>
+                  <MarkdownContent content={item.content} className="text-sm text-muted-foreground mb-1" />
                   <div className="flex items-center gap-3 text-xs text-muted-foreground">
                     <span>{new Date(item.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</span>
                     {item.taskId && (
@@ -125,6 +126,14 @@ export default function NotificationsPage() {
                         onClick={() => navigate(`/tasks/${item.taskId}`)}
                       >
                         {t('notifications.viewTask')}
+                      </button>
+                    )}
+                    {item.taskId && item.type === 'task_completed' && (
+                      <button
+                        className="text-primary hover:underline"
+                        onClick={() => navigate(`/tasks/${item.taskId}`, { state: { openTab: 'review' } })}
+                      >
+                        {t('notifications.viewReport')}
                       </button>
                     )}
                   </div>

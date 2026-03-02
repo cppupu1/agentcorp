@@ -1,0 +1,124 @@
+{
+  "label": "round30-mini-memory",
+  "sessionId": "round30-mini-memory-20260301-100230",
+  "pmChatDurationMs": 44941,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "5c8bcd10949c0463"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 44941
+    },
+    {
+      "name": "uses_minimax_model",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ],
+      "expected": "b9df4501c7f6f9a6"
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "5c8bcd10949c0463",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 152727,
+      "tools": [
+        {
+          "tool": "b931c6ca2b7ad17b__search_files",
+          "count": 4
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__search_nodes",
+          "count": 4
+        },
+        {
+          "tool": "b931c6ca2b7ad17b__list_allowed_directories",
+          "count": 2
+        },
+        {
+          "tool": "b931c6ca2b7ad17b__list_directory",
+          "count": 2
+        },
+        {
+          "tool": "b931c6ca2b7ad17b__read_multiple_files",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_relations",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__read_graph",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成售后投诉FAQ整理与知识沉淀任务。分析最近一个月投诉数据，梳理出TOP 5高频问题（客服服务质量、商品质量问题、退款困难、虚假发货、虚假宣传），形成简版FAQ文档并沉淀为知识库条目，方便客服团队后续参考使用。"
+    }
+  ]
+}

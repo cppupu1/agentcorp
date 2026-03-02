@@ -1,0 +1,71 @@
+{
+  "id": "2645e60ae1d435dc",
+  "teamId": "20cf6c65a264b17f",
+  "teamName": "内容创作",
+  "title": "新同学10分钟上手清单整理",
+  "description": "从当前项目文档中整理并输出'新同学10分钟上手清单'。需要：\n\n1. 梳理项目核心文档，提取关键信息\n2. 按步骤组织上手流程，确保10分钟内可以快速入门\n3. 包含关键命令（如git clone、npm install、启动服务等）\n4. 输出格式清晰，便于新同学快速查阅\n\n目标受众：新加入项目的开发人员\n输出要求：分步骤、带命令、简洁明了",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "ab3a8301a27721db",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "32d8d1ce91b9d582",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      },
+      {
+        "id": "6cf87aeb79d17953",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "新同学10分钟上手清单整理",
+        "description": "从当前项目文档中整理并输出'新同学10分钟上手清单'。需要：\n\n1. 梳理项目核心文档，提取关键信息\n2. 按步骤组织上手流程，确保10分钟内可以快速入门\n3. 包含关键命令（如git clone、npm install、启动服务等）\n4. 输出格式清晰，便于新同学快速查阅\n\n目标受众：新加入项目的开发人员\n输出要求：分步骤、带命令、简洁明了",
+        "assigneeId": "32d8d1ce91b9d582",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功整理新同学10分钟上手清单，包含环境准备、5个快速上手步骤、访问地址、首次使用流程、常用命令速查表、项目结构概览及注意事项，格式清晰步骤分明，便于新开发人员在10分钟内快速入门。",
+    "deliverables": "# 新同学10分钟上手清单\n\n## 📋 环境准备\n- **Node.js**: >= 22.0.0\n- **Git**: 已安装\n- **IDE**: 推荐 VSCode\n\n---\n\n## 🚀 快速上手步骤\n\n### 1️⃣ 克隆项目\n```bash\ngit clone git@github.com:cppupu1/agentcorp.git\ncd agentcorp\n```\n\n### 2️⃣ 安装依赖\n```bash\nnpm install\n```\n\n### 3️⃣ 构建项目\n```bash\nnpm run build\n```\n\n### 4️⃣ 数据库迁移\n```bash\nnpm run db:migrate\n```\n\n### 5️⃣ 启动服务\n```bash\n# 前后端同时启动\nnpm run dev\n\n# 或分别启动\nnpm run dev:server  # 后端（端口3000）\nnpm run dev:web     # 前端（端口5173）\n```\n\n---\n\n## 🔗 访问应用\n- 前端地址：http://localhost:5173\n- 后端API：http://localhost:3000\n\n---\n\n## ⚡ 首次使用流程\n\n1. **添加AI模型**：进入「模型」页面，配置 OpenAI 兼容的 API Key 和 Base URL\n2. **设置HR助手**：进入「设置」页面，配置 `hr_assistant_model_id` 指向刚添加的模型\n3. **创建员工**：进入「HR助手」，通过对话创建你的第一个AI员工\n\n---\n\n## 📦 常用命令速查\n\n| 命令 | 说明 |\n|------|------|\n| `npm run dev` | 启动前后端开发服务 |\n| `npm run dev:server` | 仅启动后端 |\n| `npm run dev:web` | 仅启动前端 |\n| `npm run build` | 构建所有包 |\n| `npm run db:generate` | 生成数据库迁移文件 |\n| `npm run db:migrate` | 执行数据库迁移 |\n\n---\n\n## 📁 项目结构概览\n\n```\npackages/\n├── web/          # 前端（React + TypeScript）\n├── server/       # 后端（Fastify + TypeScript）\n├── db/           # 数据库（SQLite + Drizzle）\n├── agent-core/   # AI Agent 运行时\n├── shared/       # 共享类型和常量\n└── data/         # SQLite 数据库文件\n```\n\n---\n\n## ⚠️ 注意事项\n- 首次启动会自动生成加密密钥（保存在 .env 文件）\n- 确保网络能访问 AI 模型 API\n- 数据库文件默认路径：`packages/data/agentcorp.db`\n\n---\n\n**预计耗时**：10分钟（含首次配置）",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-02T04:23:32.980Z"
+  },
+  "tokenUsage": 57759,
+  "createdAt": "2026-03-02T04:22:46.682Z",
+  "updatedAt": "2026-03-02T04:23:33.008Z",
+  "subtasks": [
+    {
+      "id": "a7a55c0c3792c4e2",
+      "title": "新同学10分钟上手清单整理",
+      "description": "从当前项目文档中整理并输出'新同学10分钟上手清单'。需要：\n\n1. 梳理项目核心文档，提取关键信息\n2. 按步骤组织上手流程，确保10分钟内可以快速入门\n3. 包含关键命令（如git clone、npm install、启动服务等）\n4. 输出格式清晰，便于新同学快速查阅\n\n目标受众：新加入项目的开发人员\n输出要求：分步骤、带命令、简洁明了",
+      "assigneeId": "32d8d1ce91b9d582",
+      "assigneeName": "视觉设计师",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "我来帮你整理新同学上手清单。首先让我查看项目结构和核心文档。# 新同学10分钟上手清单\n\n## 📋 环境准备\n- **Node.js**: >= 22.0.0\n- **Git**: 已安装\n- **IDE**: 推荐 VSCode\n\n---\n\n## 🚀 快速上手步骤\n\n### 1️⃣ 克隆项目\n```bash\ngit clone git@github.com:cppupu1/agentcorp.git\ncd agentcorp\n```\n\n### 2️⃣ 安装依赖\n```bash\nnpm install\n```\n\n### 3️⃣ 构建项目\n```bash\nnpm run build\n```\n\n### 4️⃣ 数据库迁移\n```bash\nnpm run db:migrate\n```\n\n### 5️⃣ 启动服务\n```bash\n# 前后端同时启动\nnpm run dev\n\n# 或分别启动\nnpm run dev:server  # 后端（端口3000）\nnpm run dev:web     # 前端（端口5173）\n```\n\n---\n\n## 🔗 访问应用\n- 前端地址：http://localhost:5173\n- 后端API：http://localhost:3000\n\n---\n\n## ⚡ 首次使用流程\n\n1. **添加AI模型**：进入「模型」页面，配置 OpenAI 兼容的 API Key 和 Base URL\n2. **设置HR助手**：进入「设置」页面，配置 `hr_assistant_model_id` 指向刚添加的模型\n3. **创建员工**：进入「HR助手」，通过对话创建你的第一个AI员工\n\n---\n\n## 📦 常用命令速查\n\n| 命令 | 说明 |\n|------|------|\n| `npm run dev` | 启动前后端开发服务 |\n| `npm run dev:server` | 仅启动后端 |\n| `npm run dev:web` | 仅启动前端 |\n| `npm run build` | 构建所有包 |\n| `npm run db:generate` | 生成数据库迁移文件 |\n| `npm run db:migrate` | 执行数据库迁移 |\n\n---\n\n## 📁 项目结构概览\n\n```\npackages/\n├── web/          # 前端（React + TypeScript）\n├── server/       # 后端（Fastify + TypeScript）\n├── db/           # 数据库（SQLite + Drizzle）\n├── agent-core/   # AI Agent 运行时\n├── shared/       # 共享类型和常量\n└── data/         # SQLite 数据库文件\n```\n\n---\n\n## ⚠️ 注意事项\n- 首次启动会自动生成加密密钥（保存在 .env 文件）\n- 确保网络能访问 AI 模型 API\n- 数据库文件默认路径：`packages/data/agentcorp.db`\n\n---\n\n**预计耗时**：10分钟（含首次配置）"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 57759,
+      "createdAt": "2026-03-02T04:22:51.488Z",
+      "updatedAt": "2026-03-02T04:23:24.048Z"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "taskId": "abd7be94c5944271",
+  "title": "深测-AI研究工具链-2026-03-01",
+  "status": "completed",
+  "timedOut": false,
+  "tokenUsage": 50123,
+  "toolCallsTotal": 6,
+  "tools": [
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 4
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_ai_search",
+      "count": 2
+    }
+  ],
+  "decisionCount": 6,
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 1
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 1
+    }
+  ],
+  "expectedToolChecks": {
+    "search_tool": true
+  },
+  "expectedToolsAllPassed": true,
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。AI Agent行业趋势简报已生成，包含行业概述、技术进展、市场格局、应用场景、未来趋势等五个维度，引用了5个来源链接，时间表达使用绝对日期（2026年3月1日）。报告涵盖政策动态、技术产品进展、市场规模数据、竞争格局分析及未来趋势预测。"
+}

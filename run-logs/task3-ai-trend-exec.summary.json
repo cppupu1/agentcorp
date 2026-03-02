@@ -1,0 +1,20 @@
+{
+  "taskId": "865f2343abedea7f",
+  "teamId": "73ae7b380bfd4db9",
+  "status": "failed",
+  "tokenUsage": 0,
+  "subtasks": 7,
+  "toolCalls": 0,
+  "tools": {},
+  "elapsedSec": 80,
+  "result": {
+    "summary": "任务执行失败：PM员工不存在",
+    "error": "PM员工不存在",
+    "subtaskSummary": {
+      "total": 7,
+      "completed": 0,
+      "failed": 0
+    },
+    "failedAt": "2026-02-28T15:34:03.738Z"
+  }
+}

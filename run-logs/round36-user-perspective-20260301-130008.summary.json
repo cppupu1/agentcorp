@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-03-01T13:00:08.468497Z",
+  "runLabel": "round36-user-perspective-20260301-130008",
+  "note": "User prompts avoid tool/model directives; tool use should be model-driven.",
+  "sessions": [
+    {
+      "label": "round36-stock",
+      "sessionId": "round36-stock-20260301-130008",
+      "kind": "stock",
+      "evidence": "run-logs/round36-stock.audit.20260301-130008.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round36-ai",
+      "sessionId": "round36-ai-20260301-130008",
+      "kind": "ai",
+      "evidence": "run-logs/round36-ai.audit.20260301-130008.json",
+      "allChecksPassed": false
+    },
+    {
+      "label": "round36-memory",
+      "sessionId": "round36-memory-20260301-130008",
+      "kind": "memory",
+      "evidence": "run-logs/round36-memory.audit.20260301-130008.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round36-translation",
+      "sessionId": "round36-translation-20260301-130008",
+      "kind": "translation",
+      "evidence": "run-logs/round36-translation.audit.20260301-130008.json",
+      "allChecksPassed": false
+    },
+    {
+      "label": "round36-legal",
+      "sessionId": "round36-legal-20260301-130008",
+      "kind": "legal",
+      "evidence": "run-logs/round36-legal.audit.20260301-130008.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round36-onboarding",
+      "sessionId": "round36-onboarding-20260301-130008",
+      "kind": "onboarding",
+      "evidence": "run-logs/round36-onboarding.audit.20260301-130008.json",
+      "allChecksPassed": true
+    }
+  ],
+  "totals": {
+    "sessions": 6,
+    "checksPassed": 4,
+    "checksFailed": 2
+  }
+}

@@ -1,0 +1,185 @@
+[
+  {
+    "id": "7e31aae91f24920b",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_bniajlcq6e21_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:01:55.891Z"
+  },
+  {
+    "id": "2dd4947e0d4ff17b",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: AI技术突破与行业竞争加剧,字节跳动等企业引领变革 - 经济观察网 - 专业财经新闻网站\nURL: https://www.eeo.com.cn/2026/0220/798524.shtml\nDescription:  近期事件 AI模型重大更新:字节跳动于2月12日发布视频生成大模型Seedance 2.0,物理真实感和多镜头叙事能力显著提升,但因预置迪士尼角色库遭侵权诉讼,已暂停用户上传真人图像功能;OpenAI同期推出GPT-5.3-Codex-Spark,推理速度较前代提升15倍,并正敲定1000亿美元融资轮(软银领投300亿美元);谷歌发布Gemini 3 Deep Think,ARC-AGI-2测试准确率达84.6%｡ 企业合作与融资:Anthropic完成300亿美元G轮融资,投后估值3800亿美元;谷歌与东南亚电商平台Shopee母公司Sea合作开发AI购物工具;斯坦福Simile智能体平台获1亿美元融资,李飞飞等加持｡ 硬件与基础设施进展:字节跳动自研AI芯片计划2026年3月底获样片,目标年产10万颗;三星全球首发HBM4内存,传输速率11.7Gbps｡ 机构观点 行业领袖指出AI技术正重塑产业格局: 技术影响:马斯克预测2026年底AI可直接生成优化二进制程序,无需人类编码;Google DeepMind CEO哈萨比斯认为AI将在15年内内化科学方法,推动个性化医疗等突破｡ 市场趋势:38位中国AI专家共识2026年为企业“多智能体上岗元年”,AI从工具转向协作伙伴;字节Seedance 2.0被评价为“地表最强视频生成模型”,但可能加剧假视频泛滥风险｡ 竞争态势:字节跳动通过Seedance 2.\nPublished date: 2026-02-25T06:09:35+08:00\nSite name: 经济观察网\n\nTitle: AI行业今日热点:2026年2月26日-今日头条\nURL: https://m.toutiao.com/a7611187168987382307/\nDescription: 全球AI大模型最新动态与行业趋势 一､Anthropic发布Claude 4.6系列:智能体能力再升级 2026年2月5日,Anthropic正式发布了最新一代旗舰模型Claude Opus 4.6,在智能体编码､计算机操作､工具调用､搜索和金融领域实现了行业领先的性能表现｡仅仅12天后,也就是2月17日,Anthropic又推出了Claude Sonnet 4.6,这是迄今为止最强大的Sonnet模型,在代码编写､计算机操作､长上下文推理和智能体规划等维度实现了全面跃升｡ Claude 4.6系列支持百万级Token上下文窗口,具备强大的代理协作能力,不仅在尽职调查等复杂任务中表现出色,更在推理分析､金融应用及网络安全三大领域实现了显著突破｡ 二､xAI推出Grok 4.2:马斯克的大模型新动作 2026年2月17日,xAI创始人埃隆·马斯克在X平台上正式宣布Grok 4.2发布候选版(公测)正式上线,用户现在可以直接体验这款最新的大模型产品｡ 此前,马斯克曾在2025年8月承诺开源Grok 3,并计划在2026年2月左右发布｡这一举措延续了xAI推动语言模型开源的战略方向,也标志着其在大模型领域与OpenAI､Google等竞争对手的进一步较量｡ 三､2026年2月:史上最强\"模型大爆发\"月 2026年2月,AI行业正在经历前所未有的\"模型大爆发\"(Model Rush)时刻｡七个主要AI模型计划在同一个月内发布,这是AI行业有史以来竞争最为激烈的一个月｡ \nPublished date: 2026-02-26T23:01:46+08:00\nSite name: 今日头条\n\nTitle: 2026AI行业动态汇总,截止2月24日一、国内模型与产品发布1. 智谱 AI(2.11):发布 GLM-5,Human... - 雪球\nURL: https://xueqiu.com/7599784338/376780036\nDescription: 2026AI行业动态汇总 , 截止2月24日 一 ､ 国内模型与产品发布 1.智谱AI ( 2.11 ) : 发布 GLM-5 , HumanEval代码通过率96.2% , 全球开源第一 ､ 总榜第四 ; 主打编程与智能体能力 ｡ 2. 字节跳动 ( 2.14 ) : 推出 豆包大模型2.0 ( Pro/Lite/Mini/Code ) , 数学/编程基准夺金 , 推理成本降一个量级 ; 同步上线 Seedance 2.0 , 60秒生成电影级多镜头音视频 , 成为春晚视觉创作主力 ｡ 3.阿里巴巴( 2.16除夕 ) : 开源 Qwen3.5-Plu",
+    "isError": false,
+    "durationMs": 1380,
+    "createdAt": "2026-03-02T07:01:57.271Z"
+  },
+  {
+    "id": "7648d5f3908e1106",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_0wwpy3u5gw1k_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:02:07.641Z"
+  },
+  {
+    "id": "a13ba7441d3344b2",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 飞络24小时前沿AI快报3月2日:蚂蚁集团发布Ling 2.5架构的百灵大模型_OpenAI_支持\nURL: https://www.sohu.com/a/991499037_122445228\nDescription: 全球AI最新资讯 1､蚂蚁集团:发布基于Ling 2.5架构的百灵大模型,采用混合线性注意力架构将长文本生成显存占用压缩至传统架构的十分之一｡新模型在数学推理等基准测试中达到金牌水平,展现了高效的算力利用能力｡ 2､深度求索:将于下周发布新一代多模态大语言模型V4,原生支持图片､视频与文本生成能力以填补国内开源市场空白｡该模型已与华为､寒武纪等国产芯片厂商完成深度硬件适配,旨在提升推理效率并推动产业链自主可控｡ 3､Amazon与OpenAI:正联合开发允许模型保留上下文并持续调用外部工具的新型AI运行框架,以解决AI应用“无状态”的工程瓶颈｡该框架旨在支持更复杂的企业级多步骤任务,标志着大型语言模型应用方式进入新阶段｡ 4､三星:发布了第三代AI手机Galaxy S26系列,主打主动智能并能根据用户情境精准推荐内容与处理多步骤任务｡其影像系统支持通过语音指令进行直观后期编辑,并全面加强了隐私安全机制｡创始人预计2026年全球人形机器人出货量将达到几万台,并强调机器人运动能力是智能化的先决条件｡\nPublished date: 2026-03-02T10:07:11+08:00\nSite name: 搜狐\n\nTitle: 企查查 - 查企业_查老板_查风险_企业信息查询系统\nURL: https://news.qcc.com/postnews/5a827ef1f7ed38d852ed660ba95b206f.html?pageSource=dynamic\nDescription:  中钨高新(000657.SZ) 章源钨业(002378.SZ) 2026年3月1日 22:53 我国发布首个宽温压域磁性材料AI原子基座模型,研发周期从“月”缩至“天” 3月1日,中国工程物理研究院研究生院､清华大学､沐曦股份联合北京科学智能研究院等正式发布首个宽温压域的“磁性材料·AI原子基座模型”｡经专家鉴定,该模型标志我国在磁性材料AI建模领域实现关键突破,将为新材料研发升级提供核心技术支撑｡该模型首次覆盖了47种元素､0-1000K､0-10GPa的超宽温度和压强区间,可在微纳米尺度精准模拟原子排布与磁矩转向｡在构建70万组宽温压域原子—磁矩双耦合结构数据集和模型训练过程中,沐曦GPU提供了算力供给,原本需要一个月才能完成的计算量,如今仅需一天即可高效达成,大幅缩短了磁性材料研发周期｡\nPublished date: 2026-03-02T07:32:09+08:00\nSite name: news.qcc.com\n\nTitle: 芝麻AI速递:今日财经热点要闻回顾2026年3月1日AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/headline/2026-03-01/doc-inhpnscn9014491.shtml\nDescription: 详情>>人民币汇率节后三连涨,央行出手防范超调 春节假期后,人民币对美元汇率延续偏强走势,离岸人民币一度大涨超600基点｡2月27日,央行决定自3月2日起,将远期售汇业务外汇风险准备金率从20%下调至0,以避免汇率大幅波动｡详情>>AI大模型Token需求激增,国产模型前景广阔 2026年人工智能大模型行业竞争激烈,Token消耗量显著增长,大模型服务面临算力考验｡国产大模型在OpenRouter平台表现出色,2月Token消耗量占比超50%｡摩根大通预计,中国AI推理Token消耗量到2030年将增近369倍｡国产模型在电力和算力方面具成本优势,Token出海或成趋势｡\nPublished date: 2026-03-01T19:05:54+08:00\nSite name: 新浪财经\n\nTitle: 【艾媒商舆情监测】《公开募集证券投资基金业绩比较基准指引》3月1日起正式施行,淘宝闪购开源食安治理AI大模型“白泽”,通用工业具身智能平台天元...\nURL: https://www.iimedia.cn/c1088/109887.html\nDescription:  【上市公司动态】 淘宝闪购开源食安治理AI大模型“白泽” 3月2日消息,淘宝闪购正式发布专为餐饮服务与零售门店打造的风控治理垂直领域开源大模型——“白泽”(Ostrakon-VL),并宣布相关技术能力向全行业免费开放｡ 借助“白泽”大模型,外卖平台､餐饮及零售企业等行业参与方在图像识别､后厨预警等方面,都能通过人工智能技术快速加强对不合规场景的识别和治理能力,大幅",
+    "isError": false,
+    "durationMs": 1510,
+    "createdAt": "2026-03-02T07:02:09.151Z"
+  },
+  {
+    "id": "4377ddcbd39ecf46",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "a6d0277e32709254__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_0a720hsa6rgr_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:02:26.539Z"
+  },
+  {
+    "id": "c6a1f3aee0f2f989",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_hbok7tnfjck6_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:02:29.676Z"
+  },
+  {
+    "id": "13517c6e6e838de5",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": " OpenRouter：中国 AI 模型 2 月全球 token 用量首超美国，MiniMax 等四款大模型霸榜前五 - IT之家                 \n\n[App](http://m.ruanmei.com/d/it/) [公众号](http://m.ruanmei.com/d/it/) [投稿](//dyn.ithome.com/tougao/) [评论](#post_comm) [顶部](javascript:; \"顶部\")\n\n![](//img.ithome.com/images/svg/app.svg)\n\n![](//img.ithome.com/images/svg/weixin.svg)\n\n[](https://www.ithome.com)[](https://img.ithome.com/app/songs/index.html)\n\n[首页](https://www.ithome.com)\n\n[IT圈](https://quan.ithome.com)\n\n[最会买](https://www.zuihuimai.com)\n\n[设置](###)\n\n*   日夜间\n    \n    随系统\n    \n    浅色\n    \n    深色\n    \n*   主题色\n    \n    黑色\n    \n\n[投稿](https://dyn.ithome.com/tougao/)\n\n[订阅](###)\n\n*   [RSS订阅](//www.ithome.com/rss/)\n*   [收藏IT之家](# \"IT之家\")\n\n[软媒应用](https://www.ruanmei.com)\n\n*   [App客户端](//m.ruanmei.com/)\n*   [要知App](//yaozhi.ruanmei.com/)\n*   [软媒魔方](//mofang.ruanmei.com/)\n\n[业界](//it.ithome.com) [手机](//mobile.ithome.com/) [电脑](//www.ithome.com/pc/) [测评](//www.ithome.com/labs/) [视频](//www.ithome.com/video/) [AI](//next.ithome.com/) [苹果](//www.ithome.com/apple/) [iPhone](//iphone.ithome.com/) [鸿蒙](//hmos.ithome.com/) [软件](//soft.ithome.com/)\n\n[智车](//auto.ithome.com) [数码](//digi.ithome.com/) [学院](//www.ithome.com/college/) [游戏](//game.ithome.com/) [直播](//www.ithome.com/live/) [5G](//www.ithome.com/5g/) [微软](//www.ithome.com/microsoft/) [Win10](//win10.ithome.com/) [Win11](//win11.ithome.com/) [专题](//www.ithome.com/zt/)\n\n搜索\n\n热搜：[小米](//www.ithome.com/search/%E5%B0%8F%E7%B1%B3.html)[华为](//www.ithome.com/search/%E5%8D%8E%E4%B8%BA.html)[荣耀](//www.ithome.com/search/%E8%8D%A3%E8%80%80.html)[比亚迪](//www.ithome.com/search/%E6%AF%94%E4%BA%9A%E8%BF%AA.html)[苹果](//www.ithome.com/search/%E8%8B%B9%E6%9E%9C.html)[三星](//www.ithome.com/search/%E4%B8%89%E6%98%9F.html)[oppo](//www.ithome.com/search/oppo.html)[魅族](//www.ithome.com/search/%E9%AD%85%E6%97%8F.html)[平板](//www.ithome.com/search/%E5%B9%B3%E6%9D%BF.html)[ROBOT PHONE](//www.ithome.com/search/ROBOT%20PHONE.html)\n\n[首页](//www.ithome.com) \\> [智能时代](https://next.ithome.com/)\\>[人工智能](https://next.ithome.com/ai",
+    "isError": false,
+    "durationMs": 2290,
+    "createdAt": "2026-03-02T07:02:31.966Z"
+  },
+  {
+    "id": "78929cfd4d664cbd",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_5zfjtwxj20er_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:02:42.340Z"
+  },
+  {
+    "id": "4d05193f8793eca7",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "               2月井喷！中国AI调用量首超美国，四款大模型霸榜全球前五，国产算力需求正经历指数级增长\\_南方网                 \n\n[![](//nfcms-mainsiteoss.southcn.com/nfw/__tpl_asset/1dc4fe9695.png)](http://www.southcn.com/)\n\n[|  经济](https://news.southcn.com/node_812903b83a)\n\n![](//nfcms-mainsiteoss.southcn.com/nfw/__tpl_asset/264fe44dc6.png)\n\n*   [要闻](http://www.southcn.com/pc2018/yw/node_384370.htm)\n*   [学习进行时](http://theory.southcn.com/c/node_317831.htm)\n*   [党建](https://gddj.southcn.com/)\n*   [经济](http://economy.southcn.com/)\n*   [直播](http://live.southcn.com/l/node_382932.htm?type=mobile)\n*   [融媒](http://www.southcn.com/pc2018/nfrmt/node_384365.htm)\n*   [网评](http://opinion.southcn.com/o/m/node_343852.htm)\n*   [理论](http://theory.southcn.com/lilun/node_399712.htm)\n*   [专题](http://news.southcn.com/zhuanti/)\n*   [文化](https://culture.southcn.com/m)\n*   [公告](http://news.southcn.com/g/node_74681.htm)\n*   [汽车](http://car.southcn.com/7/node_365692.htm)\n*   [教育](http://edu.southcn.com/e/node_117531.htm)\n*   [英文](https://goguangdong.southcn.com/)\n*   [视频](https://news.southcn.com/node_4538da31bd)\n*   [乡村](http://www.southcn.com/pc2018/xczx/node_384360.htm)\n*   [就业](https://www.southcn.com/node_dc9b52f452)\n*   [求证](https://news.southcn.com/node_13461c79b3)\n*   [法规](https://news.southcn.com/node_31a6efece4)\n*   [资讯](https://news.southcn.com/node_810c33d731)\n\n广东各地市\n\n*   [广州市](http://pc.nfapp.southcn.com/guangzhouyaowen)\n*   [深圳市](http://pc.nfapp.southcn.com/shenzhenyaowen)\n*   [佛山市](http://pc.nfapp.southcn.com/foshanyaowen)\n*   [珠海市](http://pc.nfapp.southcn.com/zhuhaiyaowen)\n*   [中山市](http://pc.nfapp.southcn.com/zhongshanyaowen)\n*   [东莞市](http://pc.nfapp.southcn.com/dongguanyaowen)\n*   [惠州市](http://pc.nfapp.southcn.com/huizhouyaowen)\n*   [汕头市](http://pc.nfapp.southcn.com/shantouyaowen)\n*   [揭阳市](http://pc.nfapp.southcn.com/jieyangyaowen)\n*   [潮州市](http://pc.nfapp.southcn.com/chaozhouyaowen)\n*   [汕尾市](http://pc.nfapp.southcn.com/shanweiyaowen)\n*   [韶关市](http://pc.nfapp.southcn.com/shaoguanyaowen)\n*   [肇庆市](http://pc.nfapp.s",
+    "isError": false,
+    "durationMs": 9229,
+    "createdAt": "2026-03-02T07:02:51.569Z"
+  },
+  {
+    "id": "c984161b4d332eaf",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_d5hpbn7mpe0t_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:03:00.935Z"
+  },
+  {
+    "id": "1ac48f7115d08c89",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "       蚂蚁集团AI业务月活超3000万，支付用户破1亿 - 经济观察网 － 专业财经新闻网站     \n\n![](https://img.eeo.com.cn/2024/images/logo.jpg)\n\n[](https://app.eeo.com.cn/?app=member&controller=panel&action=profile)退出 [激活卡](https://app.eeo.com.cn/?app=member&controller=index&action=card)| [电子版](https://www.eeo.com.cn/epaper/eeocover/1.shtml)| [![](https://img.eeo.com.cn/2024/images/card.png) 购物车](javascript:void\\(0\\);)| [注册](https://app.eeo.com.cn/?app=member&controller=index&action=register)| [登录](javascript:void\\(0\\);)\n\n![](https://img.eeo.com.cn/2024/images/top_qrcode.png)\n\n![](https://img.eeo.com.cn/2023/images/menu-button.png)\n\n![](https://img.eeo.com.cn/pc/images/logo.png)\n\n### \n\n用户名登录/手机号登录\n\n还没有账号？[免费注册](https://app.eeo.com.cn/?app=member&controller=index&action=register)\n\n [![](https://img.eeo.com.cn/pc/images/wx_login_icon.png) 微信注册或登录](http://app.eeo.com.cn/?app=member&controller=index&action=wxqrlogin)\n\n[忘记密码？](https://app.eeo.com.cn/?app=member&controller=index&action=resetpwd \"忘记密码？\")\n\n ![](http://app.eeo.com.cn/?app=system&controller=seccode&action=image)\n\n \n\n[忘记密码？](https://app.eeo.com.cn/?app=member&controller=index&action=resetpwd \"忘记密码？\")\n\n登 录\n\n [![](https://img.eeo.com.cn/pc/images/wx_login_icon.png) 微信注册或登录](https://app.eeo.com.cn/?app=member&controller=index&action=wxqrlogin)\n\n[关闭](javascript:void\\(0\\); \"关闭\")\n\n*   [推荐](https://www.eeo.com.cn)\n    \n     经济观察报\n     政策解读\n     全球品牌\n     上市公司\n     现代广告\n     历史地理\n     论坛活动\n     文化艺术\n     心理观察\n    \n*   |\n*   [快讯](https://www.eeo.com.cn/kuaixun/)\n*   |\n*   [科技+](https://www.eeo.com.cn/jg/keji/)\n*   |\n*   [金融](https://www.eeo.com.cn/jg/jinrong/)\n    \n     理财\n     银行\n     保险\n     基金\n     证券\n     信托\n    \n*   |\n*   [产业](https://www.eeo.com.cn/jg/chanye/)\n    \n     汽车\n     能源\n     交通\n     TMT\n     智家\n     低空\n     农业\n     城市\n     文旅\n     大医\n     教育\n     消费\n     时尚\n     文体\n    \n*   |\n*   [出海](https://www.eeo.com.cn/jg/chuhai/)\n*   |\n*   [观察家](https://www.eeo.com.cn/jg/guanchajia/)\n*   |\n*   [书评](https://www.eeo.com.cn/jg/shuping/)\n*   |\n*   [ESG](",
+    "isError": false,
+    "durationMs": 6352,
+    "createdAt": "2026-03-02T07:03:07.287Z"
+  },
+  {
+    "id": "b8695e1ac6271c38",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_g2jj0s3laioq_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:03:14.728Z"
+  },
+  {
+    "id": "dceda3ff0c6247f1",
+    "type": "tool_call",
+    "taskId": "2bf93d6a0a4a980f",
+    "subtaskId": "b33ec0b208692d40",
+    "employeeId": "62ab97dbd730ef7c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "飞络24小时前沿AI快报｜3月2日：蚂蚁集团发布Ling 2.5架构的百灵大模型\\_OpenAI\\_支持                                                                   \n\n# 飞络24小时前沿AI快报｜3月2日：蚂蚁集团发布Ling 2.5架构的百灵大模型\n\n2026-03-02 10:07 来源: [网智AI](https://www.sohu.com/a/991499037_122445228?spm=smpc.content-abroad.content.1.1772434995743iBV16Ws)\n\n[![](//statics.itc.cn/mptc-mpfe/img/article/icon_Wechat.png)\n\n](javascript:void\\(0\\))[![](//statics.itc.cn/mptc-mpfe/img/article/icon_Weibo.png)](http://service.weibo.com/share/share.php?url=https%3A%2F%2Fwww.sohu.com%2Fa%2F991499037_122445228&title=%E9%A3%9E%E7%BB%9C24%E5%B0%8F%E6%97%B6%E5%89%8D%E6%B2%BFAI%E5%BF%AB%E6%8A%A5%EF%BD%9C3%E6%9C%882%E6%97%A5%EF%BC%9A%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E5%8F%91%E5%B8%83Ling%202.5%E6%9E%B6%E6%9E%84%E7%9A%84%E7%99%BE%E7%81%B5%E5%A4%A7%E6%A8%A1%E5%9E%8B_OpenAI_%E6%94%AF%E6%8C%81&searchPic=true&pic=//q3.itc.cn/images01/20260302/803bde5656484f1c93c0c26f6cfdb5b9.jpeg&appkey=2890110694) [![](//statics.itc.cn/mptc-mpfe/img/article/icon_Space.png)](http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https%3A%2F%2Fwww.sohu.com%2Fa%2F991499037_122445228) [![](//statics.itc.cn/mptc-mpfe/img/article/icon_Link.png)](javascript:void\\(0\\))\n\n链接复制成功\n\n发布于：上海市\n\n同学们，今日飞络24小时前沿早报来啦，快来看看有没有你关注的吧～\n\n![](//q3.itc.cn/images01/20260302/803bde5656484f1c93c0c26f6cfdb5b9.jpeg)\n\n**全球AI最新资讯**\n\n1、蚂蚁集团：发布基于Ling 2.5架构的百灵大模型，采用混合线性注意力架构将长文本生成显存占用压缩至传统架构的十分之一。新模型在数学推理等基准测试中达到金牌水平，展现了高效的算力利用能力。\n\n2、深度求索：将于下周发布新一代多模态大语言模型V4，原生支持图片、视频与文本生成能力以填补国内开源市场空白。该模型已与华为、寒武纪等国产芯片厂商完成深度硬件适配，旨在提升推理效率并推动产业链自主可控。\n\n3、Amazon与OpenAI：正联合开发允许模型保留上下文并持续调用外部工具的新型AI运行框架，以解决AI应用“无状态”的工程瓶颈。该框架旨在支持更复杂的企业级多步骤任务，标志着大型语言模型应用方式进入新阶段。\n\n4、三星：发布了第三代AI手机Galaxy S26系列，主打主动智能并能根据用户情境精准推荐内容与处理多步骤任务。其影像系统支持通过语音指令进行直观后期编辑，并全面加强了隐私安全机制。\n\n5、宇树科技：2025年其人形机器人实际出货量超过5500台，已成为全球机器人行业的领头羊之一。创始人预计2026年全球人形机器人出货量将达到几万台，并强调机器人运动能力是智能化的先决条件。\n\n6、AIDC行业：受生成式AI需求驱动，AI数据中心行业景气度攀升，字节跳动、阿里巴巴等公司计划大幅增加相关投入。高功率密度特性催生了对高压直流供电、液冷系统运维等复合型人才的需求。\n\n**全球云服务最新资讯**\n\n1、AWS发布EC2 P14en实例，搭载英伟达B900 GPU实现AI训练效率跃升\n\n亚马逊云科技（AWS）3月2日推出EC2 P",
+    "isError": false,
+    "durationMs": 1156,
+    "createdAt": "2026-03-02T07:03:15.885Z"
+  }
+]

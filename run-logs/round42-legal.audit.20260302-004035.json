@@ -1,0 +1,91 @@
+{
+  "label": "round42-legal",
+  "sessionId": "round42-legal-20260302-004035",
+  "kind": "legal",
+  "userPrompt": "请直接创建并启动任务：审阅供应商服务合同草案，提炼3条高风险条款并给出改写建议。",
+  "pmChatDurationMs": 70070,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "2bc871cc0acc3d04"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_has_no_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 70070
+    },
+    {
+      "name": "pm_called_create_task_tool",
+      "ok": true
+    },
+    {
+      "name": "pm_called_start_task",
+      "ok": true
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "2bc871cc0acc3d04"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "2bc871cc0acc3d04",
+    "status": "completed",
+    "tokenUsage": 34087,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完供应商服务合同草案审阅任务，识别出3条高风险条款：1) 知识产权归属严重偏向乙方；2) 违约责任严重不对等；3) 终止与退款的单方面不利条款。针对每条高风险条款提供了具体的改写建议，并额外列出3条建议关注的条款。报告已完成，可交付使用。"
+  }
+}

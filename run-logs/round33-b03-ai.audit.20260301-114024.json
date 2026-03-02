@@ -1,0 +1,70 @@
+{
+  "label": "round33-b03-ai",
+  "sessionId": "round33-b03-ai-20260301-114024",
+  "kind": "ai",
+  "pmChatDurationMs": 36955,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "184ce368d1b3df73"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 36955
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "184ce368d1b3df73",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 119769,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。整理了近30天（2026年1月底至2月）AI技术行业趋势，输出3条关键结论：1) 中国AI模型全球调用量首超美国；2) AI Agent进入规模化商业落地阶段；3) AI监管趋严医疗等领域明确禁止AI自动生成处方。每条结论均附具体日期与来源链接，多条结论有多个独立来源交叉验证。"
+  }
+}

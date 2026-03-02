@@ -1,0 +1,39 @@
+{
+  "label": "round38-memory",
+  "sessionId": "round38-memory-20260301-140334",
+  "kind": "memory",
+  "userPrompt": "客服这边一直重复答同样问题，你直接发起处理：按最近一个月投诉整理5条FAQ，并沉淀到知识里。",
+  "pmChatDurationMs": 687,
+  "pmChatError": null,
+  "pmTools": [],
+  "taskIds": [],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 687
+    },
+    {
+      "name": "task_created",
+      "ok": false,
+      "taskIds": []
+    }
+  ],
+  "allChecksPassed": false,
+  "task": null
+}

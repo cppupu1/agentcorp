@@ -1,0 +1,66 @@
+{
+  "label": "round34-translation",
+  "sessionId": "round34-translation-20260301-120652",
+  "kind": "translation",
+  "pmChatDurationMs": 52165,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "9a784d3ba2a306bb"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 52165
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "9a784d3ba2a306bb",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 30360,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。企业公告模板中英双语简版已输出，包含4个常用公告模板（公司搬迁公告、重大事项公告、公司更名公告、组织架构调整公告），每个模板均提供中文简版和英文简版，语义一致，格式规范易读。同时提供了日期、公司名称、公告结尾等格式规范说明。"
+  }
+}

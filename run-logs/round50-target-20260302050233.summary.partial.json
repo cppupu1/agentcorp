@@ -1,0 +1,81 @@
+{
+  "round": "round50-target-20260302050233",
+  "startedAt": "2026-03-02T05:02:33.779Z",
+  "scenarios": [
+    {
+      "key": "stock_cn",
+      "sessionId": "round50-target-20260302050233-stock_cn",
+      "checks": [
+        {
+          "name": "task_id",
+          "ok": true
+        },
+        {
+          "name": "completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "stock_tool",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "4c930014b438887e",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "tushare_mcp_001__daily",
+          "tushare_mcp_001__today",
+          "tushare_mcp_001__plot_daily_candlestick_chart"
+        ],
+        "stock": true,
+        "fs": false
+      }
+    },
+    {
+      "key": "ops_weekly",
+      "sessionId": "round50-target-20260302050233-ops_weekly",
+      "checks": [
+        {
+          "name": "task_id",
+          "ok": true
+        },
+        {
+          "name": "completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "9caeecd4b6017293",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "01a07c2a149edad0__list_allowed_directories",
+          "01a07c2a149edad0__list_directory",
+          "01a07c2a149edad0__write_file"
+        ],
+        "stock": false,
+        "fs": true
+      }
+    }
+  ],
+  "allPassed": true
+}

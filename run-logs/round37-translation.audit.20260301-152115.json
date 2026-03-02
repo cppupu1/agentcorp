@@ -1,0 +1,80 @@
+{
+  "label": "round37-translation",
+  "sessionId": "round37-translation-20260301-152115",
+  "kind": "translation",
+  "userPrompt": "请直接创建并启动任务：输出一个企业公告模板的中英双语简版，语义一致，可直接复用。",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "7f8c8351fd8fa2b3"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 19982
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "7f8c8351fd8fa2b3"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "translation_bilingual",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "7f8c8351fd8fa2b3",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 2123,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告模板（中英双语）的制作任务。文案策划提交了一份高质量的模板，包含完整的中英双语版本，内容简洁且语义一致，格式规范且直接可复用，适用于通用企业公告场景。模板还附带了详细的使用说明和占位符清单，方便用户快速上手。"
+  }
+}

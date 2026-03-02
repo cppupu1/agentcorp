@@ -1,0 +1,18 @@
+[
+  {
+    "id": "6a7006eeb12a3b06",
+    "sessionId": "round38-ai-20260301-140334",
+    "role": "user",
+    "content": "老板今晚要看材料，麻烦你直接推进：近7天AI技术行业都发生了啥，提3条重点，每条要有日期和来源链接。",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:03:34.620Z"
+  },
+  {
+    "id": "5c6659a4388e4b81",
+    "sessionId": "round38-ai-20260301-140334",
+    "role": "assistant",
+    "content": "",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:03:34.620Z"
+  }
+]

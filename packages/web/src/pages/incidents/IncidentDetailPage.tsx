@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { incidentsApi, type IncidentReport } from '@/api/client';
+import MarkdownContent from '@/components/MarkdownContent';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/toast';
@@ -130,7 +131,7 @@ export default function IncidentDetailPage() {
                 <div key={i} className="relative">
                   <div className={`absolute -left-[25px] top-1.5 h-2.5 w-2.5 rounded-full ${typeColors[event.type] || 'bg-muted-foreground'}`} />
                   <div className="text-xs text-muted-foreground">{new Date(event.time).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</div>
-                  <div className="text-sm">{event.summary}</div>
+                  <div className="text-sm"><MarkdownContent content={event.summary} /></div>
                 </div>
               );
             })}
@@ -172,7 +173,7 @@ export default function IncidentDetailPage() {
           </Button>
         </div>
         {report.aiAnalysis ? (
-          <div className="rounded-md border bg-muted/30 p-4 text-sm whitespace-pre-wrap">{report.aiAnalysis}</div>
+          <MarkdownContent content={report.aiAnalysis} className="rounded-md border bg-muted/30 p-4 text-sm" />
         ) : (
           <div className="text-sm text-muted-foreground">{t('incidentDetail.noAnalysis')}</div>
         )}

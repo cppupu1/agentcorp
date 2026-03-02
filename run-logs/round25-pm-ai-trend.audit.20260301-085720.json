@@ -1,0 +1,89 @@
+{
+  "label": "round25-pm-ai-trend",
+  "sessionId": "round25-ai-20260301-085720",
+  "pmChatDurationMs": 37333,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "591e7c1459f9a827"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 37333
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "591e7c1459f9a827",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 230630,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 22
+        },
+        {
+          "tool": "a6d0277e32709254__bocha_ai_search",
+          "count": 6
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 10,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n本研究任务已圆满完成。研究员对近30天（2024年11月24日-2024年12月24日）AI技术行业发展趋势进行了深入调研，聚焦大模型技术进展、Agent智能体发展、企业落地应用案例三大方向，收集了多个权威来源的数据和信息，形成了结构完整、论证严谨的研究报告。每条关键结论均包含具体日期（YYYY-MM-DD格式）和可核验的官方来源链接，并实现了至少2个独立来源的交叉验证。"
+    }
+  ]
+}

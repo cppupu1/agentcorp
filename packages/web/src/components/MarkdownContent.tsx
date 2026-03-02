@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { EvidencePopover } from './ui/evidence-popover';
 import { Copy, Check, Download } from 'lucide-react';
 import { useI18n } from '@/i18n';
@@ -115,7 +116,7 @@ export default function MarkdownContent({ content, className = '', taskId }: Mar
 
   return (
     <div className={`prose prose-sm max-w-none dark:prose-invert prose-p:my-1 prose-pre:my-2 prose-ul:my-1 prose-ol:my-1 prose-li:my-0 prose-headings:my-2 prose-code:before:content-none prose-code:after:content-none prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm ${className}`}>
-      <ReactMarkdown components={renderers as any}>{content}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]} components={renderers as any}>{content}</ReactMarkdown>
     </div>
   );
 }

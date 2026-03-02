@@ -1,0 +1,85 @@
+{
+  "label": "round24-pm-content",
+  "sessionId": "round24-content-20260301-081121",
+  "pmChatDurationMs": 23475,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "b58f2b4cef5f2123"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 23475
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "b58f2b4cef5f2123",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 11975,
+      "tools": [
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 1
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 0,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n投票模式执行完成"
+    }
+  ]
+}

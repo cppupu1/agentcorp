@@ -1,0 +1,44 @@
+{
+  "taskId": "cf8e3591a7bc82a2",
+  "title": null,
+  "status": "completed",
+  "timedOut": false,
+  "tokenUsage": 8665,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 0,
+  "tools": [],
+  "decisionCount": 6,
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 1
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 1
+    }
+  ],
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成线上服务CPU突增应急排查流程制定，包含告警分级机制（P0-P3四级告警体系）、完整排查步骤（5阶段60分钟排查链路）、多层次回滚策略（L1-L5回滚方案）和复盘要点框架，文档由安全审计员（1aeeecc2879927cd）完成，内容详细可操作。"
+}

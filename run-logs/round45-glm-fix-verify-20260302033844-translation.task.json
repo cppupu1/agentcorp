@@ -1,0 +1,71 @@
+{
+  "id": "63f02f37c7aad243",
+  "teamId": "331291de004d8c5e",
+  "teamName": "内容创作",
+  "title": "五一放假通知（中英双语）",
+  "description": "创建一份可直接发送给全员的五一放假通知，要求：\n1. 中英双语版本\n2. 语言简洁、正式\n3. 包含放假日期安排\n4. 适合企业内部全员发布",
+  "status": "completed",
+  "mode": "suggest",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "3a6564955e808ab7",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "38be014c28fca1fb",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      },
+      {
+        "id": "44e0c8f7c354ee74",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "五一放假通知（中英双语）",
+        "description": "创建一份可直接发送给全员的五一放假通知，要求：\n1. 中英双语版本\n2. 语言简洁、正式\n3. 包含放假日期安排\n4. 适合企业内部全员发布",
+        "assigneeId": "38be014c28fca1fb",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n五一放假通知（中英双语）已成功创建，包含完整的放假日期安排（5月1日至5月5日，共5天）、温馨提醒4项内容，语言简洁正式，排版清晰，适合企业内部全员直接发送使用。",
+    "deliverables": "# 五一劳动节放假通知\n# Labor Day Holiday Notice\n\n---\n\n## 致全体员工\n## To All Employees\n\n---\n\n根据国家法定节假日安排，结合公司实际情况，现将2024年五一劳动节放假安排通知如下：\n\nIn accordance with the national public holiday schedule and company's actual operations, the Labor Day holiday arrangement for 2024 is hereby notified as follows:\n\n---\n\n### 📅 放假时间\n### 📅 Holiday Period\n\n**2024年5月1日（星期三）至5月5日（星期日）放假，共5天**\n\n**Wednesday, May 1, 2024 to Sunday, May 5, 2024. Total 5 days.**\n\n---\n\n### 📢 温馨提示\n### 📢 Important Reminders\n\n1. **节前收尾工作**\n   请各部门在放假前完成手头重要工作，做好文档备份与工作交接。\n\n   **Work Completion**\n   All departments are requested to complete important tasks, back up documents, and ensure proper work handover before the holiday.\n\n2. **安全注意事项**\n   离岗前请关闭电脑及办公设备，锁好个人物品，确保办公区域安全。\n\n   **Safety Precautions**\n   Please turn off computers and office equipment, secure personal belongings, and ensure office safety before leaving.\n\n3. **应急联系**\n   放假期间如有紧急事务，请联系部门负责人或值班人员。\n\n   **Emergency Contact**\n   For urgent matters during the holiday, please contact your department head or duty personnel.\n\n4. **返岗提醒**\n   5月6日（星期一）正常上班，请各位同事提前做好返岗准备。\n\n   **Return to Work**\n   Normal work schedule resumes on Monday, May 6. Please prepare accordingly.\n\n---\n\n祝全体员工劳动节快乐，度过一个愉快、安全的假期！\n\nWishing all employees a happy Labor Day and a pleasant, safe holiday!\n\n---\n\n**人力资源部 / Human Resources Department**  \n**日期 / Date：** 2024年4月【  】日\n\n---\n\n### 适用发布渠道：\n- 企业内部邮件\n- 企业微信/钉钉/飞书\n- 公司内部公告栏\n- 即时通讯群组",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-02T03:49:42.563Z"
+  },
+  "tokenUsage": 1497,
+  "createdAt": "2026-03-02T03:47:24.787Z",
+  "updatedAt": "2026-03-02T03:49:44.674Z",
+  "subtasks": [
+    {
+      "id": "40798155c70a6506",
+      "title": "五一放假通知（中英双语）",
+      "description": "创建一份可直接发送给全员的五一放假通知，要求：\n1. 中英双语版本\n2. 语言简洁、正式\n3. 包含放假日期安排\n4. 适合企业内部全员发布",
+      "assigneeId": "38be014c28fca1fb",
+      "assigneeName": "视觉设计师",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "# 五一劳动节放假通知\n# Labor Day Holiday Notice\n\n---\n\n## 致全体员工\n## To All Employees\n\n---\n\n根据国家法定节假日安排，结合公司实际情况，现将2024年五一劳动节放假安排通知如下：\n\nIn accordance with the national public holiday schedule and company's actual operations, the Labor Day holiday arrangement for 2024 is hereby notified as follows:\n\n---\n\n### 📅 放假时间\n### 📅 Holiday Period\n\n**2024年5月1日（星期三）至5月5日（星期日）放假，共5天**\n\n**Wednesday, May 1, 2024 to Sunday, May 5, 2024. Total 5 days.**\n\n---\n\n### 📢 温馨提示\n### 📢 Important Reminders\n\n1. **节前收尾工作**\n   请各部门在放假前完成手头重要工作，做好文档备份与工作交接。\n\n   **Work Completion**\n   All departments are requested to complete important tasks, back up documents, and ensure proper work handover before the holiday.\n\n2. **安全注意事项**\n   离岗前请关闭电脑及办公设备，锁好个人物品，确保办公区域安全。\n\n   **Safety Precautions**\n   Please turn off computers and office equipment, secure personal belongings, and ensure office safety before leaving.\n\n3. **应急联系**\n   放假期间如有紧急事务，请联系部门负责人或值班人员。\n\n   **Emergency Contact**\n   For urgent matters during the holiday, please contact your department head or duty personnel.\n\n4. **返岗提醒**\n   5月6日（星期一）正常上班，请各位同事提前做好返岗准备。\n\n   **Return to Work**\n   Normal work schedule resumes on Monday, May 6. Please prepare accordingly.\n\n---\n\n祝全体员工劳动节快乐，度过一个愉快、安全的假期！\n\nWishing all employees a happy Labor Day and a pleasant, safe holiday!\n\n---\n\n**人力资源部 / Human Resources Department**  \n**日期 / Date：** 2024年4月【  】日\n\n---\n\n### 设计说明：\n- **排版风格**：简洁商务，采用清晰的标题层级和图标点缀\n- **双语对照**：中英文分段对照，便于阅读和理解\n- **视觉元素**：使用表情符号（📅📢）增加亲和力，保持专业感\n- **信息层次**：重要信息（放假日期）加粗突出，提醒事项分条列示\n- **适用场景**：可直接复制至邮件、企业微信、钉钉等内部沟通平台发布"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 1497,
+      "createdAt": "2026-03-02T03:48:00.072Z",
+      "updatedAt": "2026-03-02T03:48:59.369Z"
+    }
+  ]
+}

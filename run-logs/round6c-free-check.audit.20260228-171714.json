@@ -1,0 +1,12 @@
+{
+  "taskId": "32f2d3e62d349f05",
+  "status": "completed",
+  "subtasks": [
+    {
+      "id": "685e0247de47f41e",
+      "status": "completed"
+    }
+  ],
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成，成功输出2条AI行业趋势判断及依据，并附带可核验来源链接。",
+  "tokenUsage": 24577
+}

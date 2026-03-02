@@ -1,0 +1,51 @@
+{
+  "label": "round11-pm-ai-autoassign",
+  "sessionId": "round11-ai-20260301-021258",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "f2f3fd91b617264a"
+  ],
+  "tasks": [
+    {
+      "taskId": "f2f3fd91b617264a",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 102860,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 18
+        }
+      ],
+      "hasFinanceTool": false,
+      "hasSearchTool": true,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n成功创建了一份全面的AI Agent行业趋势管理简报，涵盖技术发展现状、市场规模与投融资、竞争格局、应用场景、发展趋势、风险挑战及管理建议七大核心内容。报告数据详实，关键结论均有多源交叉验证，时间敏感信息标注了绝对日期和可验证来源链接，为管理层战略决策提供了有力支撑。"
+    }
+  ]
+}

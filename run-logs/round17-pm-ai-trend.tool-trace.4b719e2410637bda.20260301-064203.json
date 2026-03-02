@@ -1,0 +1,282 @@
+[
+  {
+    "id": "e9b6b2ac85d0f750",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_012ec16fad3d48c3a67a18d5"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:27.365Z"
+  },
+  {
+    "id": "a3ac50a6efb82374",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_7afb99a09a8b49d688a8feed"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:27.703Z"
+  },
+  {
+    "id": "b0ed9c91ebce844d",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025全球智能体发展进展、面临挑战与对策建议报告 - 远瞻慧库\nURL: https://www.baogaobox.com/reports/250707000066828.html\nDescription: 版权声明:报告来自互联网,仅供投资者学习和参考,在发布信息时,我们将尽最大努力标明出处,但因互联网的去中心、海量信息的特殊结构,可能有时会存在未指明作者的失误,我们诚挚的希望您能指出我们的工作失误,如果您(单位或个人)认为本站的内容有侵权嫌疑,烦请通知我们(kefu@baogaobox.com),我们将在第一时间处理核实,同时如果您的报告不愿在本站展示,请联系我们删除或更改,谢谢。本站仅提供用户检索、查询报告服务,以便快速找到报告的来源、作者等信息,不提供下载服务。如需下载,请前往社群。\n文章名称:《2025全球智能体发展进展、面临挑战与对策建议报告》\n文章链接:https://www.baogaobox.com/reports/250707000066828.html\nPublished date: 2025-06-15T00:00:00+08:00\nSite name: www.baogaobox.com\n\nTitle: 2025 年 6月 10 日 随笔档案 - 葡萄城技术团队 - 博客园\nURL: https://www.cnblogs.com/powertoolsteam/p/archive/2025/06/10\nDescription: 摘要:\n相比于传统软件,AI智能体是一个新兴事物,技术架构和解决方案仍处在高速迭代中。所以,本文章将重点放在理清AI智能体相关的技术脉络,而非具体技术实现。更多相关知识还需要读者通过第三方搜索等方式,保持与时俱进。\n一、架构总览\n在技术实现的视角看,智能体分为三层:交互层、智能决策层和系统连接层,如图1所示\n阅读全文\nPublished date: 2025-06-10T10:29:00+08:00\nSite name: 博客园\n\nTitle: 2025年医药企业市场与营销AI智能体应用实践报告 - 远瞻慧库\nURL: https://www.baogaobox.com/reports/250529000061753.html\nDescription: 版权声明:报告来自互联网,仅供投资者学习和参考,在发布信息时,我们将尽最大努力标明出处,但因互联网的去中心、海量信息的特殊结构,可能有时会存在未指明作者的失误,我们诚挚的希望您能指出我们的工作失误,如果您(单位或个人)认为本站的内容有侵权嫌疑,烦请通知我们(kefu@baogaobox.com),我们将在第一时间处理核实,同时如果您的报告不愿在本站展示,请联系我们删除或更改,谢谢。本站仅提供用户检索、查询报告服务,以便快速找到报告的来源、作者等信息,不提供下载服务。如需下载,请前往社群。\n文章名称:《2025年医药企业市场与营销AI智能体应用实践报告》\n文章链接:https://www.baogaobox.com/reports/250529000061753.html\nPublished date: 2025-05-22T00:00:00+08:00\nSite name: www.baogaobox.com\n\nTitle: 国脉科技:基于居家养老场景的AI智能体将在6月份发布_腾讯新闻\nURL: https://news.qq.com/rain/a/20250603A043K700\nDescription: 人民财讯6月3日电,国脉科技6月3日在互动平台上表示,公司基于居家养老场景的AI智能体将在6月份发布。\nPublished date: 2025-06-03T12:01:00+08:00\nSite name: 腾讯网\n\nTitle: 综合资讯\nURL: https://gxt.ln.gov.cn/gxt/zhzx/fa88630b-6.shtml\nDescription: 2025-05-26\n2025-05-23\n2025-05-23\n2025-05-21\n2025-05-20\n2025-05-14\n2025-05-13\n2025-05-13\n2025-05-12\n2025-05-12\n2025-05-09\n2025-05-08\n2025-05-07\n2025-05-07\n2025-05-06\n2025-04-30\n2025-04-30\n2025-04-30\n2025-04-29\n2025-04-28\nPublished date: 2025-05-26T00:00:00+08:00\nSite name: 辽宁省工业和信息化厅\n\nTitle: AI智能体的开发流程_AI智能体_北京木奇移动技术有限公司_",
+    "isError": false,
+    "durationMs": 462,
+    "createdAt": "2026-03-01T06:42:27.827Z"
+  },
+  {
+    "id": "825eef3e641ffe94",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_94a79f85e9e94d29966d680d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:28.040Z"
+  },
+  {
+    "id": "13df13d9f0992e55",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 智药局:2025年AI Agent+医疗行业研究报告.pdf - 文档下载 - 未来智库\nURL: https://www.vzkoo.com/document/20250603895846a13b2af4914654cd07.html\nDescription: 智药局:2025年AI\nAgent+医疗行业研究报告.pdf\n上传者:不***\n时间:2025/06/03\n热度:2391\n0人点赞\n举报\n智药局:2025年AI\nAgent+医疗行业研究报告。中国院内市场AI\nAgent框架通过整合多源异构医疗数据,基于大语言模型(LLMs)等模块处理,赋能辅\n助诊断、诊疗流程优化及医院管理等场景。\n“AI\nAgent+医疗”以大语言模型(LLMs)、多模态AI和强化学习为核心,支持\n智能决策与自主任务执行;除了在线挂号、远程问诊、电子病历共享等功能,“AI\nAgent+医疗”聚焦“智能”\n功能,涵盖个性化诊疗方案生成、自动化病历质控、多模态辅助诊断;“AI\nAgent+医疗”融合结构化与非结构化数据(医学文献、影像、语音),支持\n复杂推理;“AI\nAgent+医疗”以“自主代理”为主,能够解决医疗服务质量问题,减少误诊\n率、提升诊疗效率。\n格式:pdf\n大小:6M\n页数:22\n价格:\n5积分\n下载\n获取积分\n免责声明:本文\n/\n资料由用户个人上传,平台仅提供信息存储服务,如有侵权请联系删除。\nPublished date: 2025-06-03T00:00:00+08:00\nSite name: 未来智库\n\nTitle: 2025人工智能体(AI Agent)应用现状挑战及建议研究报告.pdf - 文档下载 - 未来智库\nURL: https://www.vzkoo.com/document/202505191429b93e1ed3a2034e3d1720.html\nDescription: 2025人工智能体(AI\nAgent)应用现状挑战及建议研究报告.pdf\n上传者:简****\n时间:2025/05/19\n热度:722\n0人点赞\n举报\n2025人工智能体(AI\nAgent)应用现状挑战及建议研究报告。人工智能体(AI\nAgent)是一\n种基于人工智能技术理解外部环境\n刺激并生成有意义的具身动作的交\n互系统。技术体系方面,人工智能\n体技术体系涵盖人工智能多个核心\n领域,主要包括环境感知、决策规\n划、自主学习、多模态交互以及任\n务执行等关键技术。人工智能体的应用形式丰富多样,主要产品包括\n虚拟助手、智能客服、自动驾驶系\n统、工业机器人以及智能投顾等。\n通过集成感知、推理与行动能力,\n人工智能体正加速应用于自动化生\n产、智能服务、个性化推荐、教育\n医疗等领域,推动了从信息处理到实际任务执行的技术转型。\n格式:pdf\n大小:1.5M\n页数:29\n价格:\n5积分\n下载\n获取积分\n免责声明:本文\n/\n资料由用户个人上传,平台仅提供信息存储服务,如有侵权请联系删除。\nPublished date: 2025-05-19T00:00:00+08:00\nSite name: 未来智库\n\nTitle: [2506.06576] Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce – arxiv\nURL: https://arxiv.org/abs/2506.06576\nDescription: Computer Science > Computers and Society\narXiv:2506.06576(cs)\n[Submitted on 6 Jun 2025 (v1), last revised 11 Jun 2025 (this version, v2)]\nTitle: Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce\nAuthors: Yijia Shao,Humishka Zope,Yucheng Jiang,Jiaxin Pei,David Nguyen,Erik Brynjolfsson,Diyi Yang\nAbstract: The rapid rise of compound AI systems (a.k.a., AI agents) is reshaping the labor market, raising concerns about job displacement, diminished h",
+    "isError": false,
+    "durationMs": 492,
+    "createdAt": "2026-03-01T06:42:28.194Z"
+  },
+  {
+    "id": "c431e84e129a9767",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI观察|AI发展时间表引发热议,Agent进入爆发“窗口期”_腾讯新闻\nURL: https://news.qq.com/rain/a/20250526A06OAH00\nDescription: 【环球网科技报道\n记者\n秦耳】近期,在AI领域热议的话题莫过于OpenAI\nCEO山姆·奥特曼在红杉资本的AI峰会的观点分享。会上,他轻描淡写地甩出惊人的AI发展时间表,成为业界讨论的重点。山姆·奥特曼认为:“2025年,AI将成为人类的超级助手,替人类工作;2026年,AI在科研领域不仅仅是人类助手,还会拥有独立做研究、发现新知识的能力;2027年,AI机器人将从新奇玩意儿,变成物理世界中真正的价值创造者。”且不提,还没到来的2026年和2027年单看已经近半的2025年,蓬勃发展的AI\nAgent(AI智能体)已经印证了奥特曼对于2025年的判断。从今年年初时的Manus,再到DeepMind发布的AlphaEvolve以及OpenAI近期65亿美元收购硬件设计公司io。一系列事件,都从不同角度证明、预示着AI业界期待已久的“杀手级”应用,在Agent的带动下即将出现。AI\nAgent(人工智能代理)\n是指具有自主决策能力、能够在特定环境中感知信息并通过执行动作实现目标的智能实体。2023年年初OpenAI针对其ChatGPT-4解决实际运算能力不足的问题,率先推出了“安装第三方插件”的功能,旨在让ChatGPT直接调用插件功能,以解决用户实际需求。而这种AI大模型自主调用第三方插件的行为所产生的“调用力”成为Agent早期形态。到了今年谷歌DeepMind正式发布AlphaEvolve,业界对于这款产品的形容,它是一个可以“自我进化”的编码智能体——不仅能自己写代码,还能自己发明和改进算法。就谷歌方面讲述,AlphaEvolve已经在计算机算法和数学领域取得了一系列突破。在计算机方面,它为谷歌庞大的数据中心设计了一种全新的调度算法已经在谷歌全球范围内实际运行了一年,成功多回收了平均0.7%的计算资源;在芯片设计领域,AlphaEvolve用硬件描述语言重写了谷歌自主研\nPublished date: 2025-05-26T17:31:00+08:00\nSite name: 腾讯网\n\nTitle: AI观察|AI发展时间表引发热议,Agent进入爆发“窗口期”_智能_的能力_领域\nURL: https://www.sohu.com/a/898834988_99900743?scm=10001.1437_13-100000-0_922.0-0.0.a2_5X162X1795\nDescription: 【环球网科技报道\n记者\n秦耳】近期,在AI领域热议的话题莫过于OpenAICEO山姆·奥特曼在红杉资本的AI峰会的观点分享。会上,他轻描淡写地甩出惊人的AI发展时间表,成为业界讨论的重点。山姆·奥特曼认为:“2025年,AI将成为人类的超级助手,替人类工作;2026年,AI在科研领域不仅仅是人类助手,还会拥有独立做研究、发现新知识的能力;2027年,AI机器人将从新奇玩意儿,变成物理世界中真正的价值创造者。”\n且不提,还没到来的2026年和2027年单看已经近半的2025年,蓬勃发展的AI\nAgent(AI智能体)已经印证了奥特曼对于2025年的判断。从今年年初时的Manus,再到DeepMind发布的AlphaEvolve以及OpenAI近期65亿美元收购硬件设计公司io。一系列事件,都从不同角度证明、预示着AI业界期待已久的“杀手级”应用,在Agent的带动下即将出现。\nAI\nAgent(人工智能代理)\n是指具有自主决策能力、能够在特定环境中感知信息并通过执行动作实现目标的智能实体。2023年年初OpenAI针对其ChatGPT-4解决实际运算能力不足的问题,率先推出了“安装第三方插件”的功能,旨在让ChatGPT直接调用插件功能,以解决用户实际需求。而这种AI大模型自主调用第三方插件的行为所产生的“调用力”成为Agent早期形态。\n到了今年谷歌DeepMind正式发布AlphaEvolve,业界对于这款产品的形容,它是一个可以“自我进化”的编码智能体——不仅能自己写代码,还能自己发明和改进算法。\n就谷歌方面讲述,AlphaEvolve已经在计算机算法和数学领域取得了一系列突破。在计算机方面,它为谷歌庞大的数据中心设计了一种全新的调度算法已经在谷歌全球范围内实际运行了一年,成功多回收了平均0.7%的计算资源;在芯片设计领域,AlphaEvolve用硬件描述语言重写了谷\nPublished date: 2025-05-26T17:34:00+08:00\nSite name: 搜狐\n\nTitle: 人工智能行业2025年",
+    "isError": false,
+    "durationMs": 365,
+    "createdAt": "2026-03-01T06:42:28.405Z"
+  },
+  {
+    "id": "8938c03b07cdce69",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_dfe2895ef5e3451fbe9a6c56"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:28.453Z"
+  },
+  {
+    "id": "dfa6a1a4e50eb42d",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年医药企业市场与营销AI智能体应用实践报告 - 远瞻慧库\nURL: https://www.baogaobox.com/reports/250529000061753.html\nDescription: 版权声明:报告来自互联网,仅供投资者学习和参考,在发布信息时,我们将尽最大努力标明出处,但因互联网的去中心、海量信息的特殊结构,可能有时会存在未指明作者的失误,我们诚挚的希望您能指出我们的工作失误,如果您(单位或个人)认为本站的内容有侵权嫌疑,烦请通知我们(kefu@baogaobox.com),我们将在第一时间处理核实,同时如果您的报告不愿在本站展示,请联系我们删除或更改,谢谢。本站仅提供用户检索、查询报告服务,以便快速找到报告的来源、作者等信息,不提供下载服务。如需下载,请前往社群。\n文章名称:《2025年医药企业市场与营销AI智能体应用实践报告》\n文章链接:https://www.baogaobox.com/reports/250529000061753.html\nPublished date: 2025-05-22T00:00:00+08:00\nSite name: www.baogaobox.com\n\nTitle: 2025全球智能体发展进展、面临挑战与对策建议报告 - 远瞻慧库\nURL: https://www.baogaobox.com/reports/250707000066828.html\nDescription: 版权声明:报告来自互联网,仅供投资者学习和参考,在发布信息时,我们将尽最大努力标明出处,但因互联网的去中心、海量信息的特殊结构,可能有时会存在未指明作者的失误,我们诚挚的希望您能指出我们的工作失误,如果您(单位或个人)认为本站的内容有侵权嫌疑,烦请通知我们(kefu@baogaobox.com),我们将在第一时间处理核实,同时如果您的报告不愿在本站展示,请联系我们删除或更改,谢谢。本站仅提供用户检索、查询报告服务,以便快速找到报告的来源、作者等信息,不提供下载服务。如需下载,请前往社群。\n文章名称:《2025全球智能体发展进展、面临挑战与对策建议报告》\n文章链接:https://www.baogaobox.com/reports/250707000066828.html\nPublished date: 2025-06-15T00:00:00+08:00\nSite name: www.baogaobox.com\n\nTitle: 以技术标准化为支点,投融界解析AI智能体产业变革__财经头条\nURL: https://t.cj.sina.com.cn/articles/view/7838248597/1d3322e9500101aihw?finpagefr=p_104\nDescription: 近日,中国信息通信研究院联合中国工商银行、百度、腾讯、阿里、华为等二十余家头部企业,正式发布《面向软件工程智能体的技术和应用要求第1部分:开发智能体》(标准编号AIIA/T0219-2025)。这一标准围绕技术能力与服务能力两大维度,为软件开发智能体建立全栈式技术规范,标志着我国在AI智能体领域的标准化进程迈出关键一步。AI智能体,从广义上来说,是一种能够执行复杂任务并与人类进行自然交流的AI系统。它能够从多种渠道获取大量数据,通过复杂推理、规划来自主解决多步骤问题,确定工作策略并执行,被视作新的数字劳动力,可协助甚至代替人类完成不同任务或重复劳动。(图片来源:千库网)在全球范围内,AI智能体市场正呈现出迅猛的增长态势。据国际著名市场研究机构Research\nand\nMarket发布报告指出,AI智能体的市场规模将从2024年的51亿美元增长到2030年的471亿美元,年均复合增长率为44.8%。2025年被视作AI智能体元年,这一年,AI智能体逐步突破传统辅助工具的限制,开启人类自主决策新时代,从“增强知识”迈向“增强执行”,极大地改变了企业生产力和人机交互模式。像微软智能体解析商业邮件、OpenAI的o1/o3模型完成复杂订单,都彰显出AI智能体自主决策与任务执行的能力。OpenAI发布的ChatGPT\nTasks,更是标志着AI智能体发展进入实质阶段。国内众多头部企业也纷纷布局智能体领域。腾讯宣布将大模型知识引擎升级为“腾讯云智能体开发平台(TCADP)”,用户能让智能体自主拆解任务、规划路径并调用工具,降低了智能体搭建门槛。京东的智能体已走向深度应用阶段,内部超1.4万个智能体在运行,京东云还通过JoyAgent智能体平台向行业输出AI生产力。国内破圈的通用AI\nAgent——Manus,自发布便引发广泛关注,也反映出市场对智能体的高度关注与期待。投融界CEO邹晴\nPublished",
+    "isError": false,
+    "durationMs": 241,
+    "createdAt": "2026-03-01T06:42:28.693Z"
+  },
+  {
+    "id": "a685d20926639d6d",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_d1c607806df7465c862ea998"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:35.369Z"
+  },
+  {
+    "id": "cfc1dd10d47411c8",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 微软Build 2025五大AI发布-CSDN博客\nURL: https://szzdzhp.blog.csdn.net/article/details/148213253\nDescription: Microsoft\nBuild\n2025大会五大AI发布\n2025年05月25日\n|\nAI日报\n![](https://i-blog.csdnimg.cn/direct/e7838b88f17f40c9a435f6dc48d26c59.jpeg#pic_center)\n欢迎各位人工智能爱好者\n微软本周以一系列AI发布为Build\n2025大会画上句号,这些发布都推进了其\"开放式智能代理网络\"的宏伟愿景。\n我们与微软合作,为您带来其五大AI发布的深度解析——从GitHub\nCopilot的自主编码代理到Copilot\nTuning的无代码AI定制等等。让我们开始探索吧!\n今日AI简报:\nGitHub自主AI编码代理问世在Windows上构建安全的智能代理未来Copilot\nTuning实现新型AI定制Azure\nAI\nFoundry推出高级代理工具微软在科学发现领域的突破CTO\nKevin\nScott谈微软的开放AI生态系统\n阅读时间:\n6分钟\nMICROSOFT\nBUILD\n2025\n要点速览:\n微软发布了GitHub\nCopilot编码代理,标志着Copilot从AI助手进化为可分配GitHub问题并创建拉取请求的自主团队成员。\n详细内容:\n当分配GitHub问题时,该代理开始工作,创建拉取请求草案并根据审查意见进行迭代。\n它通过启动安全开发环境异步运行,并使用高级推理分析代码。\n面向Copilot\nEnterprise和Copilot\nPro+客户,擅长添加功能、修复错误、重构代码和改进文档等任务。\n内置安全性:代理遵守分支保护,在运行CI/CD工作流前需要人工批准,并遵循自定义安全策略。\n重要意义:\n随着GitHub\nCopilot新型编码代理等AI编码代理的兴起,软件开发方式正在发生根本性转变。开发者正从编写每一行代码转变为代理的协调者,在专注于架构、战略和创造性\nPublished date: 2025-05-25T20:35:13+08:00\nSite name: CSDN\n\nTitle: Catch Up on Microsoft Build 2025: Essential Sessions for .NET Developers - .NET Blog\nURL: https://devblogs.microsoft.com/dotnet/catching-up-on-microsoft-build-2025-essential-sessions-for-dotnet-developers/\nDescription: Build\n2025\nis\na\nwrap!\nWe\npacked\nthis\nyear’s\nconference\nwith\ntons\nof\ncool\nstuff\naround\nAI-powered\ncoding,\ncloud-native\napps,\nand\nthe\nfuture\nof\n.NET.\nIf\nyou\nmissed\nthe\nlive\nevent\nor\njust\nwant\nto\nrevisit\nthe\ngood\nparts,\nhere’s\na\nroundup\nof\ncan’t-miss\ncontent\nyou’ll\nwant\nto\ncheck\nout.\nNoteAll\nsessions\nare\nnow\navailable\non-demand!\nThe\ncomplete\n.NET\nat\nBuild\n2025\nplaylist\nis\nready\nwhenever\nyou\nare.\nNo\nneed\nto\nbinge\nit\nall\nat\nonce\n–\nthough\nyou\nmight\nbe\ntempted!\n✨\nThe\nTL;DR\non\nBuild\n2025\nWhat\na\nweek!\nBuild\n2025\nwas\npacked\nwith\nexciting\nstuff\nfor\n.NET\ndevs.\nHere\nare\nthe\nbiggest\nthemes\nfrom\nthe\nconference:\n✨\n.NET\n+\nAI\n=\nAmazing\n–\nMicrosoft\nhas\ngone\nall-in\non\nmaking\nAI\ndevelopment\nin\n.NET\neasy\nand\npowerful\n(no\nsurprise\nhere,\nhopefully!).\nThe\ntooling\naround\nLLMs,\nMicrosoft\nExtensions\nfor\nAI\n(now\ngene\nPublishe",
+    "isError": false,
+    "durationMs": 418,
+    "createdAt": "2026-03-01T06:42:35.787Z"
+  },
+  {
+    "id": "3191ff04fd1f1459",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_800a35f086d148638f65d11b"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:36.129Z"
+  },
+  {
+    "id": "5283b4c87eb5d2fd",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 人工智能行业2025年中期投资策略报告:推理走向舞台中央,自主可控大势所趋,Agent及多模态加速 - 远瞻慧库\nURL: https://www.baogaobox.com/reports/250617000063921.html\nDescription: 版权声明:报告来自互联网,仅供投资者学习和参考,在发布信息时,我们将尽最大努力标明出处,但因互联网的去中心、海量信息的特殊结构,可能有时会存在未指明作者的失误,我们诚挚的希望您能指出我们的工作失误,如果您(单位或个人)认为本站的内容有侵权嫌疑,烦请通知我们(kefu@baogaobox.com),我们将在第一时间处理核实,同时如果您的报告不愿在本站展示,请联系我们删除或更改,谢谢。本站仅提供用户检索、查询报告服务,以便快速找到报告的来源、作者等信息,不提供下载服务。如需下载,请前往社群。\n文章名称:《人工智能行业2025年中期投资策略报告:推理走向舞台中央,自主可控大势所趋,Agent及多模态加速》\n文章链接:https://www.baogaobox.com/reports/250617000063921.html\nPublished date: 2025-06-16T00:00:00+08:00\nSite name: www.baogaobox.com\n\nTitle: AI智能体商业化与投融资热潮解析_人工智能_InterGPT-合肥城市开发者社区\nURL: https://devpress.csdn.net/hefei/68f5b3a38867235e1394630e.html\nDescription: 【摘要】2025年,AI智能体(AI\nAgent)商业化与投融资热潮席卷全球,技术突破、政策驱动、资本加持和垂直场景落地共同推动行业迈入爆发期。本文系统梳理AI智能体赛道的投融资现状、技术演进、政策环境、产业应用、头部项目、商业模式、风险挑战与未来趋势,深度解析其对产业格局和生产力变革的深远影响。\n引言\n2025年,AI智能体(AI\nAgent)成为全球科技与资本市场的焦点。随着大模型能力的飞跃、端侧智能体的普及、标准化协议的落地,以及政策与产业集群的协同推进,AI\nAgent正从“辅助工具”升级为“生产力主体”,深度赋能教育、医疗、工业、金融、零售等领域。与此同时,全球资本竞逐、头部项目吸金、垂直场景加速落地,推动AI智能体赛道迈入商业化爆发期。本文将以详实的数据、典型案例和前沿技术,系统梳理AI智能体商业化与投融资热潮的全景,深度剖析其技术演进、产业应用、商业模式、风险挑战与未来趋势,助力读者全面把握AI\nAgent重塑产业格局的历史机遇。\n一、全球资本竞逐:AI智能体赛道融资创新高\n1.1\n融资规模与增长趋势\n2025年被业界普遍视为“AI智能体商业化元年”,全球范围内AI\nAgent赛道迎来前所未有的投融资高峰。根据权威数据:\n2024年全球AI\nAgent赛道融资金额已突破665亿元人民币,人工智能领域整体投融资规模达1010亿美元,同比增长80%,占全球投融资总额的32%。\n美国AI初创公司2024年获970亿美元风投,创历史新高。\n中国市场2024年AI投融资事件达706起,规模495亿元,2025年进一步加速。\n1.1.1\n头部项目吸金效应\nOpenAI、Anthropic、xAI等国际巨头均获数十亿美元级投资。xAI\n2024年12月完成60亿美元融资。\n中国初创公司Manus\nAI(Monica.im团队)2025年4月获Benchmark领投750\nPublished date: 2025-06-11T12:00:00+08:00\nSite name: CSDN\n\nTitle: 西部TMT科技每周评议:AI Agent及算力依旧是最明确的投资方向|西部证券|执业|软件公司_新浪新闻\nURL: https://k.sina.com.cn/article_5953466437_162dab0450670814u4.html?from=tech\nDescription: 特别声明\n特别声明《证券期货投资者适当性管理办法》、《证券经营机构投资者适当性管理实施指引(试行)》于2017年7月1日起正式实施。通过新媒体形式制作的本公众号推送信息仅面向西部证券的专业投资者。若您并非西部证券的专业投资者。请取消关注本公众号,不再订阅、接收或使用本公众号中的任何推送信息。因本公众号受限于访问权限的设置,若给您造成不便,烦请谅解!感谢您给予的理解与配合。\n整体策略\n本周我们继续看好下半年AI\nAgent的商业化提速并维持MaaS带来软件公司价值重估机会的推荐,看好算力产业链中的科技自主内循环和上游芯片环节的国产替代加速,关注后续果链公司估值修复及新品",
+    "isError": false,
+    "durationMs": 268,
+    "createdAt": "2026-03-01T06:42:36.397Z"
+  },
+  {
+    "id": "85f986ed385e5a8c",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_1724cf0f51324ce6b4fd4e6f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:36.789Z"
+  },
+  {
+    "id": "f83bea920e924428",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 世界最强编程模型Claude4震撼登场!_腾讯新闻\nURL: https://news.qq.com/rain/a/20250523A027OW00\nDescription: 我的文笔还在升级打怪中,这篇文章召唤Claude4外援来助阵!背景:Anthropic\n于\n2025\n年\n5\n月\n23\n日正式推出\nClaude\nOpus\n4\n和\nClaude\nSonnet\n4\n两款全新大模型,进一步推动了\nAI\n在复杂编程、长时任务和多工具协作等领域的极限。这一代模型不仅在代码生成和理解上达到业界领先水平,还引入了更强的记忆力、并行工具使用和更精准的指令执行能力,标志着\nAI\n虚拟协作伙伴迈入了新阶段。江树:Claude4,给你自己写个介绍吧。Claude4:注:Claude4今天‘电量耗尽’,暂时没法提供提示词了,咱们下期再战!最后千呼万唤始出来,Claude4\n终于来了!最值得关注的还是编程能力,持续探索ing。接下来几天陆续分享更多有趣的\nClaude4\n玩法!\nPublished date: 2025-05-23T09:00:00+08:00\nSite name: 腾讯网\n\nTitle: Claude 4 & Claude Code 正式发布,Anthropic API 新增四项新功能-CSDN博客\nURL: https://szzdzhp.blog.csdn.net/article/details/148157314\nDescription: Claude\n4\n发布\nClaude\n4\n官方消息:\nhttps://www.anthropic.com/news/claude-4\nAnthropic\nAPI:\nhttps://www.anthropic.com/news/agent-capabilities-api\n今天,我们隆重推出下一代\nClaude\n模型:Claude\nOpus\n4\n和\nClaude\nSonnet\n4,它们为编码、高级推理和\nAI\n智能体树立了新标杆。\nClaude\nOpus\n4\n是全球顶级的编码模型,在复杂、长周期任务和智能体工作流方面表现出持续的卓越性能。Claude\nSonnet\n4\n是对\nClaude\nSonnet\n3.7\n的一次重大升级,提供了卓越的编码和推理能力,同时能更精确地响应您的指令。\n除模型之外,我们还宣布以下内容:\n扩展思考与工具使用\n(beta):两款模型均可在扩展思考过程中使用工具(如网络搜索),使\nClaude\n能够在推理和工具使用之间交替进行,以优化响应质量。全新模型能力:两款模型均可并行使用工具,更精确地遵循指令,并且——当开发者授予其访问本地文件的权限时——展现出显著增强的记忆能力,能够提取并保存关键事实,以保持连贯性并逐步积累隐性知识。Claude\nCode\n现已正式发布:在研究预览期间获得广泛积极反馈后,我们正在扩展开发者与\nClaude\n协作的方式。Claude\nCode\n现在支持通过\nGitHub\nActions\n执行后台任务,并与\nVS\nCode\n和\nJetBrains\n进行原生集成,可将编辑内容直接显示在您的文件中,实现无缝结对编程。全新\nAPI\n功能:我们在\nAnthropic\nAPI\n上发布了四项新功能,使开发者能够构建更强大的\nAI\n智能体:代码执行工具、MCP\n连接器、文件\nAPI\n以及长达一小时的提示词缓存能力。\nClaude\nOpus\n4\nPublished date: 2025-05-23T10:08:06+08:00\nSite name: CSDN\n\nTitle: Anthropic推出新一代Claude模型 用于推理和AI代理_腾讯新闻\nURL: https://news.qq.com/rain/a/20250523A02Z9Q00\nDescription: Anthropic推出新一代Claude模型\n用于推理和AI代理Anthropic推出了下一代Claude模型,名为Claude\nOpus\n4和Claude\nSonnet\n4,用于编码、高级推理和人工智能(AI)代理。本文源自:金融界\nPublished date: 2025-05-23T10:09:00+08:00\nSite name: 腾讯网\n\nTitle: Claude 4 核心成员:Agent RL,RLVR 新范式,Inference 算力瓶颈 | 人人都是产品经理\nURL: https://www.woshipm.com/ai/6223624.html\nDescription: Anthropic发布Claude\n4,实现连续7小时编程等突破。核心成员探讨Agent\nRL、RLVR新范式及Inference算力瓶颈,分析预训练到强化学习的转变等关键主题。\nAnthr",
+    "isError": false,
+    "durationMs": 253,
+    "createdAt": "2026-03-01T06:42:37.042Z"
+  },
+  {
+    "id": "64d82e748d1d0619",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_7cc41215bd87443dbc554fee"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:42.537Z"
+  },
+  {
+    "id": "7fab586e585740a8",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AIAgent让数字化再次伟大_腾讯新闻\nURL: https://news.qq.com/rain/a/20250601A05W1900\nDescription: 1.2025年4月,Google发布Agent2Agent(A2A)的多智能体通信协议,得到50多家技术合作伙伴的支持。2.微软Build\n2025上发布了50多个新产品/新服务,旨在构建AIAgent生态。3.国内大厂如字节、阿里、腾讯等也发布了AIAgent生态方案,确认AIAgent是当前大厂们在AI领域的方向。4.AIAgent将使AI代理能相互通信、安全地交换信息,并在各种企业平台或应用程序之上协调行动。5.有了AIAgent,数字化进程将得到进一步推进,但并不能解决那20%的问题,而是让不确定性的AIAgent面对不确定性的问题,改善了体感。\nPublished date: 2025-06-01T17:51:00+08:00\nSite name: 腾讯网\n\nTitle: AIAgent让数字化再次伟大(V2)_腾讯新闻\nURL: https://news.qq.com/rain/a/20250607A0272O00\nDescription: 1.2025年4月,Google发布Agent2Agent(A2A)多智能体通信协议,得到50多家技术合作伙伴的支持。2.微软Build\n2025上发布了50多个新产品/新服务,旨在构建AIAgent生态。3.国内大厂如字节、阿里、腾讯等也发布了AIAgent生态方案,确认AIAgent是当前大厂们在AI领域的方向。4.然而,AIAgent方案在降低成本、提高效率方面仍面临挑战,难以精确量化。5.未来,AIAgent+稳定币有望带来新的价值体系和流量交易机会。\nPublished date: 2025-06-07T08:30:00+08:00\nSite name: 腾讯网\n\nTitle: Google I/O 2025 开发者演讲高光回顾- DoNews\nURL: https://www.donews.com/news/detail/5/5263720.html\nDescription: 在2025年度的Google\nI/O开发者大会上,谷歌展示了其最新的AI成果。大会中提到超过700万开发者利用Gemini\nAPI开发应用,使用量增长显著。此次演讲强调了包括Gemini\nPersonal\nContext、Beam\nAI\n3D视频聊天等在内的多项新技术。此外,大会还涉及了AI模式下的购物体验和跨设备整合等方面的内容。演讲中透露了谷歌在AI领域的最新进展以及未来的发展方向。\nPublished date: 2025-05-27T10:49:23+08:00\nSite name: DoNews\n\nTitle: [2506.06576] Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce – arxiv\nURL: https://arxiv.org/abs/2506.06576\nDescription: Computer Science > Computers and Society\narXiv:2506.06576(cs)\n[Submitted on 6 Jun 2025 (v1), last revised 11 Jun 2025 (this version, v2)]\nTitle: Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce\nAuthors: Yijia Shao,Humishka Zope,Yucheng Jiang,Jiaxin Pei,David Nguyen,Erik Brynjolfsson,Diyi Yang\nAbstract: The rapid rise of compound AI systems (a.k.a., AI agents) is reshaping the labor market, raising concerns about job displacement, diminished human agency, and overreliance on automation. Yet, we lack a systematic understanding of the evolving landscape. In this paper, we addres",
+    "isError": false,
+    "durationMs": 367,
+    "createdAt": "2026-03-01T06:42:42.905Z"
+  },
+  {
+    "id": "2c27949ca918bc1a",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_966b8365d5e643038e6733d2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:43.004Z"
+  },
+  {
+    "id": "ba2f3aab9ebe8299",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_96dfe037d5094cabb0f75c45"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:42:43.250Z"
+  },
+  {
+    "id": "52792d810cd55a19",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 教师库-北京工业大学北京人工智能研究院\nURL: https://biai.bjut.edu.cn/jsk/3.htm\nDescription: 教师库\n于乃功\n2025-05-29\n左国玉\n2025-05-29\n齐娜\n2025-05-29\n张剑飞\n2025-05-29\n苏婷婷\n2025-05-29\n孙梦姝\n2025-05-29\n李笑颜\n2025-05-29\n朴星霖\n2025-05-29\n姜华杰\n2025-05-29\n王博岳\n2025-05-29\n牟伦田\n2025-05-29\n孔德慧\n2025-05-29\n施云惠\n2025-05-29\n孙艳丰\n2025-05-29\n胡永利\n2025-05-29\nPublished date: 2025-05-29T00:00:00+08:00\nSite name: biai.bjut.edu.cn\n\nTitle: 多证券机构看好 AI Agent,第一线DYXnet如何以算网捕捉智能体新风口?_腾讯新闻\nURL: https://news.qq.com/rain/a/20250530A0708B00\nDescription: 近期,多家券商发布研报看好\nAI\nAgent\n发展前景。民生证券认为\n2025\n年将是\nAI\nAgent\n元年与软件大革命起点,Agent\n或是软件价值重估重要催化剂;中信证券则称\n2025\n年有望成\nAI\n应用落地元年,AI\nAgent\n应用场景或迎快速爆发。从技术演进与产业实践来看,这一判断具备坚实基础。当前,大模型技术突破推动\nAI\nAgent\n从概念走向规模化应用,其自主决策、任务拆解及跨系统协作能力显著提升,已在智能客服、企业流程自动化、个性化服务等场景展现出降本增效的显著价值。随着算力支撑强化与行业解决方案不断成熟,AI\nAgent\n正加速向千行百业渗透,一场围绕软件定义与产业重塑的变革浪潮或将汹涌而至。随着\nAI\n大模型向\nAI\nAgent\n进化,企业迎来复杂任务自动化处理与场景化决策执行效能的显著提升。不过,这一进化进程也对算网融合提出严苛挑战。企业需深度整合计算、存储、网络等多域资源,构建智能算力调度体系,根据推理任务的负载、优先级等因素,灵活调配资源,才能为\nAI\nAgent\n推理及复杂任务执行筑牢坚实底座。在近期由华为与中国\nIDC\n圈联合主办的\n“2025\n智算行业峰会\n——\n算网融合与数据中心创新论坛”\n上,世纪互联高级副总裁/第一线总经理陈姵妏受邀出席,与华为共探算网融合生态发展方向。其间,第一线网络研发总经理张先国代表公司发表《新一代超互联城市算力底座:构建\nAI\n大模型训推新引擎》主题演讲,重点介绍了第一线算网融合创新成果\nAI\n原生超互联架构,以及依托此架构的未来新技术方向AI\nAgent自治域。强网融合承接全球化企业智算需求活动现场,陈姵妏接受中国\nIDC\n圈媒体独家采访,详述第一线服务\nAI\n化发展战略。记者围绕企业数智化趋势下,第一线算网融合布局等问题展开提问。(世纪互联高级副总裁/第一线总经理陈姵妏)陈姵妏表示,第一线紧密围绕企业\nPublished date: 2025-05-30T16:44:00+08:00\nSite name: 腾讯网\n\nTitle: Vistors - 北京国际数学研究中心\nURL: https://bicmr.pku.edu.cn/content/lists/14_Y2025_9.html\nDescription: Visitors\nPengzhi\nXie\nTime:\n2025-06-15\nTo\n2025-08-15\nAffiliation:\nFudan\nUniversity\nAmaury\nJoseph\nNoël\nHayat\nTime:\n2025-06-16\nTo\n2025-06-17\nAffiliation:\nEcole\nnationale\ndes\nPonts\net\nChaussées\nYang\nPei\nTime:\n2025-06-16\nTo\n2025-09-30\nAffiliation:\nSorbonne\nUniversité\nHesam\nRajabzadeh\nTime:\n2025-06-16\nTo\n2025-07-11\nAffiliation:\nIPM,Iran\nChenyang\nXu\nTime:\n2025-06-19\nTo\n2025-06-26\nAffiliation:\nPrinceton\nUniversity\nLandim\nClaudio\nTime:\n2025-06-19\nTo\n2025-06-30\nAffiliation:\nIMPA\n邬似珏\nTime:\n2025-06-19\nTo\n2025-06-29\nAffiliation:\nUniversity\nof\nMichigan\nSh",
+    "isError": false,
+    "durationMs": 271,
+    "createdAt": "2026-03-01T06:42:43.275Z"
+  },
+  {
+    "id": "f1e695040a29c8f7",
+    "type": "tool_call",
+    "taskId": "4b719e2410637bda",
+    "subtaskId": "949a6d8123451a0e",
+    "employeeId": "3eb0ba9359c9afa9",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: BIONNOVA医药速闻|FDA加速部署生成式AI;NMPA集中批准三款全球竞争力创新药;多项超亿元投融资并购行动......医药新闻-ByDrug-一站式医药资源共享中心-医药魔方\nURL: https://bydrug.pharmcube.com/news/detail/e1d28106e5a67d0c2a9308e710e86f1d\nDescription: 政策与监管动态\n近日,美国食品药品监督管理局(FDA)局长Martin\nA.\nMakary宣布一项计划:将在2025年6月30日前,在\nFDA所有下属中心内部全面部署生成式人工智能(Generative\nAI)工具\n。\n此举是在FDA针对科学审评人员的生成式人工智能试点项目完成后作出的决定。\n此后,FDA还将继续拓展应用场景、优化功能,并根据各中心不断变化的实际需求进行调整。\nPublished date: 2025-05-23T14:58:00+08:00\nSite name: ByDrug掰药\n\nTitle: 美国FDA:推AI工具Elsa,6月30日前全面整合-股票频道-和讯网\nURL: https://stock.hexun.com/2025-06-03/219381113.html\nDescription: 快讯摘要\n6月3日,FDA推出生成式AI工具Elsa提效营运,已用于审查等,6月30日前将全面整合AI系统。\n快讯正文\n【6月3日,美国FDA推出生成式AI工具Elsa提升营运效率】\n6月3日,美国食品药物管理局推出生成式AI工具Elsa,旨在提高含科学审查在内的各项营运效率。\n目前,FDA已用Elsa加快临床方案审查、缩短科学评估时间,还能找出高优先级稽查对象。\nFDA称,Elsa提供安全平台,员工可存取内部文件,信息留存在机构内。模型不用受监管产业资料训练,保护敏感研究与数据。\n该监管机构5月表示,试行阶段后,6月30日前将全面整合人工智能系统。本文由\nAI\n算法生成,仅作参考,不涉投资建议,使用风险自担\n(责任编辑:郭健东\n)\n【免责声明】本文仅代表作者本人观点,与和讯网无关。和讯网站对文中陈述、观点判断保持中立,不对所包含内容的准确性、可靠性或完整性提供任何明示或暗示的保证。请读者仅作参考,并请自行承担全部责任。邮箱:news_center@staff.hexun.com\nPublished date: 2025-06-03T15:12:00+08:00\nSite name: 和讯股票\n\nTitle: FDA提前推出生成式AI工具Elsa,加速新药审评流程,或为全球监管机构AI应用树立样板-MedSci.cn\nURL: https://www.medsci.cn/article/show_article.do?id=f1df88080660\nDescription: 2025年5月8日,美国食品药品监督管理局(FDA)局长Martin A. Makary宣布,将于6月30日前在全机构内部推广人工智能(AI)应用,重点支持各审评中心广泛使用生成式AI工具。作为前期准备,FDA已完成一项针对科学审查员的生成式AI试点项目,并于6月2日正式上线名为**“Elsa”**的AI系统。\nElsa:FDA加速审评现代化的核心工具\nElsa是一款基于大语言模型(LLM)的生成式AI工具,专为FDA员工设计,目标是提升科学审评、数据分析与文件处理的效率。当前,Elsa已在以下几个关键场景落地使用:\n审评加速:通过快速分析和总结临床试验方案、标签信息与不良事件数据,显著缩短科学审评周期;\n风控辅助:帮助识别具有高优先级的检查对象,提高风险监管的精准性;\n自动化支持:可自动生成代码,辅助非临床数据库开发,推动监管技术现代化;\n信息安全:构建于联邦政府云环境,保障内部数据不被外泄,同时严格限制模型训练来源,不使用受监管企业的提交数据。\nFDA首席AI官Jeremy Walsh指出,Elsa的推出是FDA迈入AI时代的关键节点,随着内部反馈不断积累,开发团队将继续扩展其功能,逐步在药品、医疗器械、食品等多条线监管中实现深度嵌入。\n梅斯医学认为,未来可能会有以下几大趋势。\n趋势一:监管机构从AI政策“观望”走向“部署”的拐点\n这一系列举措标志着FDA已从对AI的“政策探索”阶段,进入到“实用部署”阶段。与此前仅在文档生成或政策文件中提及AI不同,FDA此次真正将生成式AI嵌入核心审评流程,实质性地改变了新药从提交到批准的路径。尤其是在临床方案评估和标签一致性检查等“高密度文字处理场景”中,AI具备天然优势,有望将数周的工作压缩至数小时内完成。\n趋势二:为中国NMPA提供潜在“样板路径”\n中国国家药品监督管理局(NMPA)近年来已多次强调提升药\nPublish",
+    "isError": false,
+    "durationMs": 344,
+    "createdAt": "2026-03-01T06:42:43.594Z"
+  }
+]

@@ -1,0 +1,968 @@
+[
+  {
+    "event": "delta",
+    "data": {
+      "seq": 0,
+      "text": "我来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 1,
+      "text": "帮"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 2,
+      "text": "您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 3,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 4,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 5,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 6,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 7,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 8,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 9,
+      "text": "先"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 10,
+      "text": "让我"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 11,
+      "text": "查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 12,
+      "text": "可"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 13,
+      "text": "用的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 14,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 15,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 16,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 17,
+      "toolCallId": "call_f53290ef812e481d92afe0de",
+      "toolName": "list_templates",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 18,
+      "toolCallId": "call_f53290ef812e481d92afe0de",
+      "toolName": "list_templates",
+      "result": "[{\"id\":\"software-dev\",\"name\":\"软件开发\",\"description\":\"标准软件开发团队，包含项目经理、前端开发、后端开发和测试工程师，适用于Web应用、移动端等软件项目的全流程开发。\",\"icon\":\"💻\",\"employeeCount\":4},{\"id\":\"content-creation\",\"name\":\"内容创作\",\"description\":\"专业内容创作团队，包含项目经理、文案策划和视觉设计师，适用于品牌营销、自媒体运营、广告创意等内容生产场景。\",\"icon\":\"✍️\",\"employeeCount\":3},{\"id\":\"data-analysis\",\"name\":\"数据分析\",\"description\":\"专业数据分析团队，包含项目经理、数据分析师和数据工程师，适用于业务数据洞察、用户行为分析、数据驱动决策等场景。\",\"icon\":\"📊\",\"employeeCount\":3},{\"id\":\"research-report\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 19,
+      "usage": {
+        "inputTokens": 1158,
+        "outputTokens": 98
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 20,
+      "text": "我将"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 21,
+      "text": "使用"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 22,
+      "text": "\""
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 23,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 24,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 25,
+      "text": "\""
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 26,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 27,
+      "text": "为您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 28,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 29,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 30,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 31,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 32,
+      "toolCallId": "call_5d1f13ca4e9f40b088b3b8d1",
+      "toolName": "quick_create_task",
+      "args": {
+        "templateId": "content-creation",
+        "title": "制作企业公告模板（中英双语）",
+        "description": "请输出一个企业公告模板，要求：\n1. 提供中英双语版本\n2. 内容简洁，语义一致\n3. 格式规范，可直接复用\n4. 适用于通用企业场景发布公告使用"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 33,
+      "toolCallId": "call_5d1f13ca4e9f40b088b3b8d1",
+      "toolName": "quick_create_task",
+      "result": "{\"success\":true,\"taskId\":\"7f8c8351fd8fa2b3\",\"teamId\":\"a7ac487975e02e20\",\"title\":\"制作企业公告模板（中英双语）\"}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 34,
+      "usage": {
+        "inputTokens": 1490,
+        "outputTokens": 168
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 35,
+      "toolCallId": "call_60147b783c80469097a15e1a",
+      "toolName": "list_tools",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 36,
+      "toolCallId": "call_60147b783c80469097a15e1a",
+      "toolName": "list_tools",
+      "result": "[{\"id\":\"fc5f4c5bf43702d4\",\"name\":\"当前时间\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"740410911af25b5b\",\"name\":\"计算器\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"b931c6ca2b7ad17b\",\"name\":\"文件读取\",\"description\":\"文件系统访问工具，支持读取、列出目录等操作\",\"groupName\":null},{\"id\":\"a6d0277e32709254\",\"name\":\"搏查\",\"description\":\"搏查搜索服务\",\"groupName\":\"互联网\"},{\"id\":\"1791ada993a23a56\",\"name\":\"Web Fetch\",\"description\":\"抓取网页内容并转换为 Markdown，让 AI 能够阅读和处理网页信息。支持自定义 User-Agent 和代理设置。\",\"groupNam",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 37,
+      "usage": {
+        "inputTokens": 1634,
+        "outputTokens": 79
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 38,
+      "toolCallId": "call_a8bf14f461744d5fb52861ec",
+      "toolName": "assign_team_tools",
+      "args": {
+        "teamId": "a7ac487975e02e20",
+        "toolIds": [
+          "01a07c2a149edad0"
+        ]
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 39,
+      "toolCallId": "call_a8bf14f461744d5fb52861ec",
+      "toolName": "assign_team_tools",
+      "result": "{\"success\":true,\"count\":1}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 40,
+      "usage": {
+        "inputTokens": 2058,
+        "outputTokens": 70
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 41,
+      "toolCallId": "call_c36b6586002a4e95a80f7adc",
+      "toolName": "start_task",
+      "args": {
+        "taskId": "7f8c8351fd8fa2b3"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 42,
+      "toolCallId": "call_c36b6586002a4e95a80f7adc",
+      "toolName": "start_task",
+      "result": "{\"success\":true,\"taskId\":\"7f8c8351fd8fa2b3\",\"message\":\"任务已启动\",\"autoAssignedTools\":{\"teamId\":\"a7ac487975e02e20\",\"added\":0,\"recommended\":0}}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 43,
+      "usage": {
+        "inputTokens": 2111,
+        "outputTokens": 28
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 44,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 45,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 46,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 47,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 48,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 49,
+      "text": "：\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 50,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 51,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 52,
+      "text": "名称"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 53,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 54,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 55,
+      "text": "制作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 56,
+      "text": "企业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 57,
+      "text": "公告"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 58,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 59,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 60,
+      "text": "中"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 61,
+      "text": "英"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 62,
+      "text": "双语"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 63,
+      "text": "）\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 64,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 65,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 66,
+      "text": "描述"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 67,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 68,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 69,
+      "text": "输出"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 70,
+      "text": "一个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 71,
+      "text": "企业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 72,
+      "text": "公告"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 73,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 74,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 75,
+      "text": "要求"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 76,
+      "text": "提供"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 77,
+      "text": "中"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 78,
+      "text": "英"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 79,
+      "text": "双语"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 80,
+      "text": "版本"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 81,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 82,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 83,
+      "text": "简洁"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 84,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 85,
+      "text": "语义"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 86,
+      "text": "一致"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 87,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 88,
+      "text": "格式"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 89,
+      "text": "规范"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 90,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 91,
+      "text": "可直接"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 92,
+      "text": "复"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 93,
+      "text": "用"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 94,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 95,
+      "text": "适用于"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 96,
+      "text": "通用"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 97,
+      "text": "企业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 98,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 99,
+      "text": "发布公告"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 100,
+      "text": "使用"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 101,
+      "text": "。\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 102,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 103,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 104,
+      "text": "状态"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 105,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 106,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 107,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 108,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 109,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 110,
+      "text": "正在"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 111,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 112,
+      "text": "中"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 113,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 114,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 115,
+      "text": "将在"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 116,
+      "text": "完成后"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 117,
+      "text": "为您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 118,
+      "text": "交付"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 119,
+      "text": "可直接"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 120,
+      "text": "使用"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 121,
+      "text": "的中"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 122,
+      "text": "英"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 123,
+      "text": "双语"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 124,
+      "text": "企业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 125,
+      "text": "公告"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 126,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 127,
+      "text": "。"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 128,
+      "usage": {
+        "inputTokens": 2192,
+        "outputTokens": 99
+      }
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 129,
+      "text": "我来帮您创建并启动这个任务。先让我查看可用的场景模板。我将使用\"内容创作\"模板为您创建这个任务。已创建并启动任务：\n\n**任务名称**：制作企业公告模板（中英双语）\n\n**任务描述**：输出一个企业公告模板，要求提供中英双语版本，内容简洁，语义一致，格式规范，可直接复用，适用于通用企业场景发布公告使用。\n\n**任务状态**：已启动，正在执行中\n\n团队将在完成后为您交付可直接使用的中英双语企业公告模板。",
+      "messageId": "cecc2611d0675d49",
+      "finishReason": "stop"
+    }
+  }
+]

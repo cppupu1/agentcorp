@@ -1,0 +1,1691 @@
+[
+  {
+    "event": "delta",
+    "data": {
+      "seq": 0,
+      "text": "我来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 1,
+      "text": "帮"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 2,
+      "text": "您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 3,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 4,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 5,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 6,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 7,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 8,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 9,
+      "text": "首先"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 10,
+      "text": "让我"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 11,
+      "text": "查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 12,
+      "text": "可"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 13,
+      "text": "用的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 14,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 15,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 16,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 17,
+      "text": "选择"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 18,
+      "text": "最"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 19,
+      "text": "合适的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 20,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 21,
+      "text": "来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 22,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 23,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 24,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 25,
+      "toolCallId": "call_8be18119d1a34dc9956e670e",
+      "toolName": "list_templates",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 26,
+      "toolCallId": "call_8be18119d1a34dc9956e670e",
+      "toolName": "list_templates",
+      "result": "[{\"id\":\"software-dev\",\"name\":\"软件开发\",\"description\":\"标准软件开发团队，包含项目经理、前端开发、后端开发和测试工程师，适用于Web应用、移动端等软件项目的全流程开发。\",\"icon\":\"💻\",\"employeeCount\":4},{\"id\":\"content-creation\",\"name\":\"内容创作\",\"description\":\"专业内容创作团队，包含项目经理、文案策划和视觉设计师，适用于品牌营销、自媒体运营、广告创意等内容生产场景。\",\"icon\":\"✍️\",\"employeeCount\":3},{\"id\":\"data-analysis\",\"name\":\"数据分析\",\"description\":\"专业数据分析团队，包含项目经理、数据分析师和数据工程师，适用于业务数据洞察、用户行为分析、数据驱动决策等场景。\",\"icon\":\"📊\",\"employeeCount\":3},{\"id\":\"research-report\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 27,
+      "usage": {
+        "inputTokens": 1159,
+        "outputTokens": 151
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 28,
+      "toolCallId": "call_d56a080eb2d44163a4a5c0f2",
+      "toolName": "quick_create_task",
+      "args": {
+        "templateId": "data-analysis",
+        "title": "贵州茅台和宁德时代近30天走势对比分析",
+        "description": "分析贵州茅台（600519.SH）和宁德时代（300750.SZ）近30个交易日的股价走势，对比两只股票的涨跌幅、波动性、价格变化等指标，给出2条带具体日期的观察结论。",
+        "mode": "auto"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 29,
+      "toolCallId": "call_d56a080eb2d44163a4a5c0f2",
+      "toolName": "quick_create_task",
+      "result": "{\"success\":true,\"taskId\":\"d2c3eb93187b8d05\",\"teamId\":\"6eca1c6408e4ccc2\",\"title\":\"贵州茅台和宁德时代近30天走势对比分析\"}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 30,
+      "usage": {
+        "inputTokens": 1499,
+        "outputTokens": 202
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 31,
+      "toolCallId": "call_b58f4e4cbb4d41d295dcfd00",
+      "toolName": "list_tools",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 32,
+      "toolCallId": "call_b58f4e4cbb4d41d295dcfd00",
+      "toolName": "list_tools",
+      "result": "[{\"id\":\"fc5f4c5bf43702d4\",\"name\":\"当前时间\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"740410911af25b5b\",\"name\":\"计算器\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"b931c6ca2b7ad17b\",\"name\":\"文件读取\",\"description\":\"文件系统访问工具，支持读取、列出目录等操作\",\"groupName\":null},{\"id\":\"a6d0277e32709254\",\"name\":\"搏查\",\"description\":\"搏查搜索服务\",\"groupName\":\"互联网\"},{\"id\":\"1791ada993a23a56\",\"name\":\"Web Fetch\",\"description\":\"抓取网页内容并转换为 Markdown，让 AI 能够阅读和处理网页信息。支持自定义 User-Agent 和代理设置。\",\"groupNam",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 33,
+      "usage": {
+        "inputTokens": 1644,
+        "outputTokens": 90
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 34,
+      "toolCallId": "call_d879668b6ce74ac7b4fb33c1",
+      "toolName": "assign_team_tools",
+      "args": {
+        "teamId": "6eca1c6408e4ccc2",
+        "toolIds": [
+          "tushare_mcp_001",
+          "a6d0277e32709254"
+        ]
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 35,
+      "toolCallId": "call_d879668b6ce74ac7b4fb33c1",
+      "toolName": "assign_team_tools",
+      "result": "{\"success\":true,\"count\":2}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 36,
+      "usage": {
+        "inputTokens": 2068,
+        "outputTokens": 165
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 37,
+      "toolCallId": "call_655c8400bc5d4401958fe0e1",
+      "toolName": "start_task",
+      "args": {
+        "taskId": "d2c3eb93187b8d05"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 38,
+      "toolCallId": "call_655c8400bc5d4401958fe0e1",
+      "toolName": "start_task",
+      "result": "{\"success\":true,\"taskId\":\"d2c3eb93187b8d05\",\"message\":\"任务已启动\",\"autoAssignedTools\":{\"teamId\":\"6eca1c6408e4ccc2\",\"added\":2,\"recommended\":3}}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 39,
+      "usage": {
+        "inputTokens": 2133,
+        "outputTokens": 40
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 40,
+      "text": "✅"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 41,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 42,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 43,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 44,
+      "text": "成功"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 45,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 46,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 47,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 48,
+      "text": "！"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 49,
+      "text": "**\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 50,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 51,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 52,
+      "text": "信息"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 53,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 54,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 55,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 56,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 57,
+      "text": "📋"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 58,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 59,
+      "text": "标"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 60,
+      "text": "题"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 61,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 62,
+      "text": "贵州"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 63,
+      "text": "茅台"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 64,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 65,
+      "text": "宁德"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 66,
+      "text": "时代"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 67,
+      "text": "近"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 68,
+      "text": "30"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 69,
+      "text": "天"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 70,
+      "text": "走势"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 71,
+      "text": "对比"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 72,
+      "text": "分析"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 73,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 74,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 75,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 76,
+      "text": "🆔"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 77,
+      "text": " 任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 78,
+      "text": "ID"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 79,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 80,
+      "text": "d"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 81,
+      "text": "2"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 82,
+      "text": "c"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 83,
+      "text": "3"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 84,
+      "text": "eb"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 85,
+      "text": "9"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 86,
+      "text": "31"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 87,
+      "text": "87"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 88,
+      "text": "b"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 89,
+      "text": "8"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 90,
+      "text": "d"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 91,
+      "text": "05"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 92,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 93,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 94,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 95,
+      "text": "👥"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 96,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 97,
+      "text": "团"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 98,
+      "text": "队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 99,
+      "text": "ID"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 100,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 101,
+      "text": "6"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 102,
+      "text": "eca"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 103,
+      "text": "1"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 104,
+      "text": "c"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 105,
+      "text": "6"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 106,
+      "text": "40"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 107,
+      "text": "8"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 108,
+      "text": "e"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 109,
+      "text": "4"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 110,
+      "text": "ccc"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 111,
+      "text": "2"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 112,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 113,
+      "text": "数据分析"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 114,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 115,
+      "text": "）\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 116,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 117,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 118,
+      "text": "分配"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 119,
+      "text": "的工具"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 120,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 121,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 122,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 123,
+      "text": " T"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 124,
+      "text": "ush"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 125,
+      "text": "are"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 126,
+      "text": " Pro"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 127,
+      "text": " 金融"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 128,
+      "text": "数据"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 129,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 130,
+      "text": "获取"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 131,
+      "text": "A股"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 132,
+      "text": "行情"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 133,
+      "text": "数据"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 134,
+      "text": "）\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 135,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 136,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 137,
+      "text": "搏"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 138,
+      "text": "查"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 139,
+      "text": "搜索"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 140,
+      "text": "服务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 141,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 142,
+      "text": "辅助"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 143,
+      "text": "查询"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 144,
+      "text": "信息"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 145,
+      "text": "）\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 146,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 147,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 148,
+      "text": "描述"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 149,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 150,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 151,
+      "text": "分析"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 152,
+      "text": "贵州"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 153,
+      "text": "茅台"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 154,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 155,
+      "text": "600"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 156,
+      "text": "5"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 157,
+      "text": "19"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 158,
+      "text": ".SH"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 159,
+      "text": "）"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 160,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 161,
+      "text": "宁德"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 162,
+      "text": "时代"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 163,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 164,
+      "text": "300"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 165,
+      "text": "750"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 166,
+      "text": ".S"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 167,
+      "text": "Z"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 168,
+      "text": "）"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 169,
+      "text": "近"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 170,
+      "text": "30"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 171,
+      "text": "个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 172,
+      "text": "交易"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 173,
+      "text": "日的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 174,
+      "text": "股价"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 175,
+      "text": "走势"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 176,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 177,
+      "text": "对比"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 178,
+      "text": "涨"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 179,
+      "text": "跌幅"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 180,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 181,
+      "text": "波动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 182,
+      "text": "性"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 183,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 184,
+      "text": "价格"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 185,
+      "text": "变化"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 186,
+      "text": "等"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 187,
+      "text": "指标"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 188,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 189,
+      "text": "给出"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 190,
+      "text": "2"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 191,
+      "text": "条"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 192,
+      "text": "带"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 193,
+      "text": "具体"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 194,
+      "text": "日期"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 195,
+      "text": "的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 196,
+      "text": "观察"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 197,
+      "text": "结论"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 198,
+      "text": "。\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 199,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 200,
+      "text": "正在"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 201,
+      "text": "自动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 202,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 203,
+      "text": "中"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 204,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 205,
+      "text": "数据分析"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 206,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 207,
+      "text": "将"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 208,
+      "text": "开始"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 209,
+      "text": "收集"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 210,
+      "text": "数据"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 211,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 212,
+      "text": "进行分析"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 213,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 214,
+      "text": "完成后"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 215,
+      "text": "会"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 216,
+      "text": "给出"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 217,
+      "text": "带"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 218,
+      "text": "日期"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 219,
+      "text": "的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 220,
+      "text": "观察"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 221,
+      "text": "结论"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 222,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 223,
+      "text": "您可以"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 224,
+      "text": "随时"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 225,
+      "text": "查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 226,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 227,
+      "text": "进度"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 228,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 229,
+      "text": "结果"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 230,
+      "text": "。"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 231,
+      "usage": {
+        "inputTokens": 2212,
+        "outputTokens": 211
+      }
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 232,
+      "text": "我来帮您创建并启动这个任务。首先让我查看可用的场景模板，选择最合适的模板来创建任务。✅ **任务已成功创建并启动！**\n\n**任务信息：**\n- 📋 标题：贵州茅台和宁德时代近30天走势对比分析\n- 🆔 任务ID：d2c3eb93187b8d05\n- 👥 团队ID：6eca1c6408e4ccc2（数据分析团队）\n\n**已分配的工具：**\n- Tushare Pro 金融数据（获取A股行情数据）\n- 搏查搜索服务（辅助查询信息）\n\n**任务描述：**\n分析贵州茅台（600519.SH）和宁德时代（300750.SZ）近30个交易日的股价走势，对比涨跌幅、波动性、价格变化等指标，给出2条带具体日期的观察结论。\n\n任务正在自动执行中，数据分析团队将开始收集数据并进行分析，完成后会给出带日期的观察结论。您可以随时查看任务进度和结果。",
+      "messageId": "2efa45c51fcaa440",
+      "finishReason": "stop"
+    }
+  }
+]

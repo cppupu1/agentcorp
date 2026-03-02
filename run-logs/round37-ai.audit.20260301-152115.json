@@ -1,0 +1,94 @@
+{
+  "label": "round37-ai",
+  "sessionId": "round37-ai-20260301-152115",
+  "kind": "ai",
+  "userPrompt": "请直接创建并启动任务：整理近7天AI技术行业趋势，输出3条结论，每条附日期和来源链接。",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "76809df4472d090f"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": true,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 29832
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "76809df4472d090f"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    },
+    {
+      "name": "ai_has_dates",
+      "ok": true,
+      "dateHits": 30
+    },
+    {
+      "name": "ai_has_links",
+      "ok": true,
+      "linkHits": 20
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "76809df4472d090f",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 81780,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成AI技术行业近7天趋势整理，输出3条精炼结论，涵盖OpenAI技术路线图发布、学术研究突破、企业级AI投资与应用落地三个维度。所有结论均包含具体发布日期和可验证的来源链接，关键信息通过权威科技媒体、学术平台及知名研究机构交叉验证。"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "taskId": "838d62b7929680f6",
+  "title": "回归验证-股票分析(auto-start)",
+  "status": "completed",
+  "createdAt": "2026-02-28T15:58:43.298Z",
+  "updatedAt": "2026-02-28T16:04:37.668Z",
+  "tokenUsage": 253756,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 27,
+  "toolErrorsTotal": 0,
+  "tools": [
+    {
+      "tool": "1791ada993a23a56__get_markdown",
+      "count": 4,
+      "errors": 0
+    },
+    {
+      "tool": "1791ada993a23a56__get_raw_text",
+      "count": 1,
+      "errors": 0
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 22,
+      "errors": 0
+    }
+  ],
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 1
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 1
+    }
+  ],
+  "resultSummary": "系统校验：子任务总数 1，已完成 1，失败 0。\n已完成贵州茅台（600519.SH）与宁德时代（300750.SZ）近3个月趋势分析任务。数据分析师使用东方财富网真实行情数据源，获取了2024-11-27至2025-02-27期间的逐日行情数据，并与搜狐证券进行交叉验证。分析报告涵盖价格趋势、成交量、涨跌幅、波动率、相关性等关键指标，对比了两只股票的走势差异及影响因素，输出完整的中文Markdown格式报告。"
+}

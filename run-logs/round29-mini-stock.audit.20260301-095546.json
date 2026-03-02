@@ -1,0 +1,100 @@
+{
+  "label": "round29-mini-stock",
+  "sessionId": "round29-mini-stock-20260301-095546",
+  "pmChatDurationMs": 43433,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "51266d6d629fedf7"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 2
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 43433
+    },
+    {
+      "name": "uses_minimax_model",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ],
+      "expected": "b9df4501c7f6f9a6"
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "51266d6d629fedf7",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 15171,
+      "tools": [
+        {
+          "tool": "tushare_mcp_001__daily",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__today",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": true,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。数据分析师完成了贵州茅台与宁德时代近30天走势比较分析，给出了2条具体观察点（1月29日茅台V型反转、2月13日宁德时代高位回落拐点）并标注了日期和具体数据。分析显示两只股票走势明显分化，茅台累计上涨5.93%，宁德时代下跌2.17%。"
+    }
+  ]
+}

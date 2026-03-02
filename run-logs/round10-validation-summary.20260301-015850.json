@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-03-01T01:58:50.731989Z",
+  "runLabel": "round10-20260301-015850",
+  "validated_sessions": [
+    {
+      "label": "round10-pm-stock",
+      "sessionId": "round10-stock-20260301-015850",
+      "taskCount": 1,
+      "evidence": "run-logs/round10-pm-stock.audit.20260301-015850.json",
+      "allCompleted": true
+    },
+    {
+      "label": "round10-pm-ai-trend",
+      "sessionId": "round10-ai-20260301-015850",
+      "taskCount": 1,
+      "evidence": "run-logs/round10-pm-ai-trend.audit.20260301-015850.json",
+      "allCompleted": true
+    },
+    {
+      "label": "round10-pm-cs",
+      "sessionId": "round10-cs-20260301-015850",
+      "taskCount": 1,
+      "evidence": "run-logs/round10-pm-cs.audit.20260301-015850.json",
+      "allCompleted": true
+    }
+  ]
+}

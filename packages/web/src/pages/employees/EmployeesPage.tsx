@@ -11,7 +11,7 @@ import { useDebouncedValue } from '@/hooks/useDebouncedValue';
 import ImportEmployeeDialog from './ImportEmployeeDialog';
 import { Skeleton } from '@/components/ui/skeleton';
 import { EmptyState } from '@/components/ui/empty-state';
-import { Plus, Pencil, Trash2, Copy, MessageSquare, Search, Loader2, LayoutGrid, List, Download, Upload, CheckSquare, Square, Users } from 'lucide-react';
+import { Plus, Pencil, Trash2, Copy, MessageSquare, Search, Loader2, LayoutGrid, List, Download, Upload, CheckSquare, Square, Users, Wand2 } from 'lucide-react';
 
 type GrowthStat = { employeeId: string; overallScore: number | null; taskCount: number };
 
@@ -42,6 +42,7 @@ export default function EmployeesPage() {
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [showImport, setShowImport] = useState(false);
   const [statusMap, setStatusMap] = useState<Record<string, string>>({});
+  const [autoAssigning, setAutoAssigning] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
   const { t } = useI18n();
@@ -132,11 +133,37 @@ export default function EmployeesPage() {
     }
   };
 
+  const handleAutoAssignAll = async () => {
+    setAutoAssigning(true);
+    try {
+      const res = await employeesApi.autoAssignTools();
+      toast(t('employees.autoAssignSuccess', { count: res.data.employeeCount, total: res.data.totalAssigned }), 'success');
+      load();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
+    } finally {
+      setAutoAssigning(false);
+    }
+  };
+
+  const handleAutoAssignSingle = async (emp: Employee) => {
+    try {
+      const res = await employeesApi.autoAssignToolsSingle(emp.id);
+      toast(t('employees.autoAssignSingleSuccess', { count: res.data.count }), 'success');
+      load();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
+    }
+  };
+
   return (
     <div className="p-4 md:p-8 max-w-7xl mx-auto">
       <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/40">
         <h2 className="text-3xl font-heading font-medium tracking-tight text-foreground/90">{t('employees.title')}</h2>
         <div className="flex flex-wrap gap-2">
+          <Button variant="outline" size="sm" onClick={handleAutoAssignAll} disabled={autoAssigning}>
+            {autoAssigning ? <Loader2 className="h-4 w-4 animate-spin" /> : <Wand2 className="h-4 w-4" />} {t('employees.autoAssignTools')}
+          </Button>
           <Button variant="outline" size="sm" onClick={() => setShowImport(true)}>
             <Upload className="h-4 w-4" /> {t('common.import')}
           </Button>
@@ -195,13 +222,13 @@ export default function EmployeesPage() {
       ) : viewMode === 'card' ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {employees.map(emp => (
-            <EmployeeCard key={emp.id} emp={emp} growth={growthMap[emp.id]} status={statusMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
+            <EmployeeCard key={emp.id} emp={emp} growth={growthMap[emp.id]} status={statusMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} onAutoAssign={() => handleAutoAssignSingle(emp)} />
           ))}
         </div>
       ) : (
         <div className="space-y-2">
           {employees.map(emp => (
-            <EmployeeListItem key={emp.id} emp={emp} growth={growthMap[emp.id]} status={statusMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} />
+            <EmployeeListItem key={emp.id} emp={emp} growth={growthMap[emp.id]} status={statusMap[emp.id]} selectMode={selectMode} selected={selected.has(emp.id)} onToggle={() => toggleSelect(emp.id)} onEdit={() => navigate(`/employees/${emp.id}/edit`)} onCopy={() => handleCopy(emp)} onDelete={() => setDeleteTarget(emp)} onChat={() => navigate(`/employees/${emp.id}/chat`)} onAutoAssign={() => handleAutoAssignSingle(emp)} />
           ))}
         </div>
       )}
@@ -230,8 +257,8 @@ const STATUS_DOT: Record<string, string> = {
   idle: 'bg-gray-400',
 };
 
-function EmployeeCard({ emp, growth, status, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
-  emp: Employee; growth?: GrowthStat; status?: string; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
+function EmployeeCard({ emp, growth, status, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat, onAutoAssign }: {
+  emp: Employee; growth?: GrowthStat; status?: string; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void; onAutoAssign: () => void;
 }) {
   const { t } = useI18n();
   const level = getLevel(growth?.overallScore ?? null);
@@ -265,14 +292,15 @@ function EmployeeCard({ emp, growth, status, selectMode, selected, onToggle, onE
         <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); onEdit(); }}><Pencil className="h-3 w-3 mr-1" /> {t('common.edit')}</Button>
         <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); onCopy(); }}><Copy className="h-3 w-3 mr-1" /> {t('common.copy')}</Button>
         <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); onChat(); }}><MessageSquare className="h-3 w-3 mr-1" /> {t('employees.chat')}</Button>
+        <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); onAutoAssign(); }} title={t('employees.autoAssignToolsDesc')}><Wand2 className="h-3 w-3" /></Button>
         <Button variant="ghost" size="sm" onClick={e => { e.stopPropagation(); onDelete(); }} className="ml-auto"><Trash2 className="h-3 w-3 text-destructive" /></Button>
       </div>
     </div>
   );
 }
 
-function EmployeeListItem({ emp, growth, status, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat }: {
-  emp: Employee; growth?: GrowthStat; status?: string; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void;
+function EmployeeListItem({ emp, growth, status, selectMode, selected, onToggle, onEdit, onCopy, onDelete, onChat, onAutoAssign }: {
+  emp: Employee; growth?: GrowthStat; status?: string; selectMode: boolean; selected: boolean; onToggle: () => void; onEdit: () => void; onCopy: () => void; onDelete: () => void; onChat: () => void; onAutoAssign: () => void;
 }) {
   const { t } = useI18n();
   const level = getLevel(growth?.overallScore ?? null);
@@ -301,6 +329,7 @@ function EmployeeListItem({ emp, growth, status, selectMode, selected, onToggle,
         <Button variant="ghost" size="icon" onClick={onEdit}><Pencil className="h-4 w-4" /></Button>
         <Button variant="ghost" size="icon" onClick={onCopy}><Copy className="h-4 w-4" /></Button>
         <Button variant="ghost" size="icon" onClick={onChat}><MessageSquare className="h-4 w-4" /></Button>
+        <Button variant="ghost" size="icon" onClick={onAutoAssign} title={t('employees.autoAssignToolsDesc')}><Wand2 className="h-4 w-4" /></Button>
         <Button variant="ghost" size="icon" onClick={onDelete}><Trash2 className="h-4 w-4 text-destructive" /></Button>
       </div>
     </div>

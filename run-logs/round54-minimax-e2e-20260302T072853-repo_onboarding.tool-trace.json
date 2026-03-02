@@ -1,0 +1,618 @@
+[
+  {
+    "id": "3607bc7891aef1c8",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_allowed_directories",
+    "input": {
+      "toolCallId": "call_function_yno69jdjr325_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:05.787Z"
+  },
+  {
+    "id": "9153cba5f3470cfd",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_allowed_directories",
+    "input": null,
+    "output": "Allowed directories:\n/private/tmp\n/Users/chenpu/workspace/claude-code/YourTeam2",
+    "isError": false,
+    "durationMs": 4,
+    "createdAt": "2026-03-02T07:38:05.791Z"
+  },
+  {
+    "id": "f9faa259340877c4",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__directory_tree",
+    "input": {
+      "toolCallId": "call_function_6k80owmf3p51_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:08.038Z"
+  },
+  {
+    "id": "12de5c5772a13080",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__directory_tree",
+    "input": null,
+    "output": "[\n  {\n    \"name\": \".env.example\",\n    \"type\": \"file\"\n  },\n  {\n    \"name\": \".git\",\n    \"type\": \"directory\",\n    \"children\": [\n      {\n        \"name\": \"COMMIT_EDITMSG\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"HEAD\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"config\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"description\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"hooks\",\n        \"type\": \"directory\",\n        \"children\": [\n          {\n            \"name\": \"applypatch-msg.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"commit-msg.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"fsmonitor-watchman.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"post-update.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-applypatch.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-commit.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-merge-commit.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-push.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-rebase.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-receive.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"prepare-commit-msg.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"push-to-checkout.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"sendemail-validate.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"update.sample\",\n            \"type\": \"file\"\n          }\n        ]\n      },\n      {\n        \"name\": \"index\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"info\",\n        \"type\": \"directory\",\n        \"children\": [\n        ",
+    "isError": false,
+    "durationMs": 866,
+    "createdAt": "2026-03-02T07:38:08.904Z"
+  },
+  {
+    "id": "65acc1b5c30ced35",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__search_files",
+    "input": {
+      "toolCallId": "call_function_bb92hk9offok_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:13.848Z"
+  },
+  {
+    "id": "6cdc3e23b763eed9",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__search_files",
+    "input": null,
+    "output": "/Users/chenpu/workspace/claude-code/YourTeam2/CLAUDE.md\n/Users/chenpu/workspace/claude-code/YourTeam2/README.md\n/Users/chenpu/workspace/claude-code/YourTeam2/运维周报模板.md",
+    "isError": false,
+    "durationMs": 2486,
+    "createdAt": "2026-03-02T07:38:16.334Z"
+  },
+  {
+    "id": "1a9d3562df9305d8",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_multiple_files",
+    "input": {
+      "toolCallId": "call_function_rznyegel5m7p_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:18.967Z"
+  },
+  {
+    "id": "4bf9dafbae9d0132",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_multiple_files",
+    "input": null,
+    "output": "/Users/chenpu/workspace/claude-code/YourTeam2/README.md:\n# AgentCorp\n\nAI 员工管理平台 —— 像经营公司一样管理你的 AI 团队。\n\n## 简介\n\nAgentCorp 让你可以创建、配置和管理 AI \"员工\"，将它们组建成团队，通过多种协作模式完成复杂任务。内置 HR 助手支持对话式创建员工，无需手动填写表单。\n\n## 核心功能\n\n- **AI 员工管理** — 创建员工、配置模型、系统提示词和工具\n- **HR 助手** — 通过对话描述需求，AI 自动生成员工配置并创建\n- **团队协作** — 5 种协作模式：自由协作、流水线、辩论、投票、主从\n- **任务系统** — 任务创建、计划审批、自动执行、进度追踪（SSE 实时推送）\n- **工具集成** — MCP 协议工具接入（stdio/sse），员工可调用外部工具\n- **知识库** — 为员工提供领域知识上下文\n- **策略引擎** — 定义员工行为规范和约束\n- **魔法输入** — 自然语言描述需求，AI 自动解析并预填任务/团队创建表单\n- **执行动画** — 任务执行时实时展示工具调用状态，脉冲动画指示运行中子任务\n- **员工成长体系** — 基于能力评估自动计算等级（专家/高级/中级/初级），卡片展示成长徽章\n- **触发器** — 定时或事件驱动的自动任务\n- **事故管理** — 异常检测、事故记录与追踪\n- **紧急停止** — 一键冻结系统，暂停所有任务执行\n\n## 技术栈\n\n| 层 | 技术 |\n|---|------|\n| 前端 | React + TypeScript + Tailwind CSS + shadcn/ui |\n| 后端 | Fastify + TypeScript |\n| 数据库 | SQLite (better-sqlite3) + Drizzle ORM |\n| AI | Vercel AI SDK + OpenAI 兼容 API |\n| 工具协议 | Model Context Protocol (MCP) |\n| 构建 | npm workspaces monorepo |\n\n## 项目结构\n\n```\npackages/\n├── web/          # 前端 SPA\n├── server/       # 后端 API 服务\n├── db/           # 数据库 schema、迁移\n├── agent-core/   # AI Agent 运行时（AgentRunner、MCP 管理）\n├── shared/       # 共享常量和类型\n└── data/         # SQLite 数据库文件\n```\n\n## 快速开始\n\n### 环境要求\n\n- Node.js >= 22.0.0\n\n### 安装与启动\n\n```bash\n# 安装依赖\nnpm install\n\n# 构建所有包\nnpm run build\n\n# 数据库迁移\nnpm run db:migrate\n\n# 启动开发服务（前后端同时启动）\nnpm run dev\n```\n\n启动后访问 http://localhost:5173\n\n### 首次使用\n\n1. 进入「模型」页面，添加一个 AI 模型（需要 OpenAI 兼容的 API Key 和 Base URL）\n2. 进入「设置」页面，配置 `hr_assistant_model_id` 指向刚添加的模型\n3. 进入「HR助手」，通过对话创建你的第一个 AI 员工\n\n## 常用命令\n\n```bash\nnpm run dev           # 启动前后端开发服务\nnpm run dev:server    # 仅启动后端\nnpm run dev:web       # 仅启动前端\nnpm run build         # 构建所有包\nnpm run db:generate   # 生成数据库迁移文件\nnpm run db:migrate    # 执行数据库迁移\n```\n\n## 协作模式说明\n\n| 模式 | 适用场景 |\n|------|----------|\n| 自由协作 | 成员独立执行各自子任务，互不依赖 |\n| 流水线 | 子任务串行执行，前一步输出作为下一步输入 |\n| 辩论 | 全员分析 → 交叉审查 → PM 综合结论 |\n| 投票 | 全员独立出方案 → PM 统计投票选最佳 |\n| 主从 | PM 拆分计划 → 成员并行执行 → PM 汇总 |\n\n## 环境变量\n\n| 变量 | 说明 | 默认值 |\n|------|------|--------|\n| `AGENTCORP_DB_P",
+    "isError": false,
+    "durationMs": 5,
+    "createdAt": "2026-03-02T07:38:18.972Z"
+  },
+  {
+    "id": "b199213142773ad9",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__search_files",
+    "input": {
+      "toolCallId": "call_function_tp6iskz8nls9_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:23.472Z"
+  },
+  {
+    "id": "8d712536e0c96f0d",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__search_files",
+    "input": null,
+    "output": "/Users/chenpu/workspace/claude-code/YourTeam2/package.json",
+    "isError": false,
+    "durationMs": 2137,
+    "createdAt": "2026-03-02T07:38:25.609Z"
+  },
+  {
+    "id": "d9a55047551f5463",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_text_file",
+    "input": {
+      "toolCallId": "call_function_5xc2sjncvbd0_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:38.591Z"
+  },
+  {
+    "id": "e2e23c90200d1aab",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_text_file",
+    "input": null,
+    "output": "{\n  \"name\": \"agentcorp\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"workspaces\": [\n    \"packages/shared\",\n    \"packages/db\",\n    \"packages/agent-core\",\n    \"packages/server\",\n    \"packages/web\"\n  ],\n  \"scripts\": {\n    \"dev\": \"npm run dev --workspace=packages/server & npm run dev --workspace=packages/web\",\n    \"dev:server\": \"npm run dev --workspace=packages/server\",\n    \"dev:web\": \"npm run dev --workspace=packages/web\",\n    \"build\": \"npm run build --workspaces\",\n    \"db:generate\": \"npm run generate --workspace=packages/db\",\n    \"db:migrate\": \"npm run migrate --workspace=packages/db\"\n  },\n  \"engines\": {\n    \"node\": \">=22.0.0\"\n  }\n}\n",
+    "isError": false,
+    "durationMs": 5,
+    "createdAt": "2026-03-02T07:38:38.596Z"
+  },
+  {
+    "id": "42b2d35fe3787186",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": {
+      "toolCallId": "call_function_6njj141xwnba_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:42.964Z"
+  },
+  {
+    "id": "566ffad3da44a932",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": null,
+    "output": "[DIR] agent-core\n[DIR] data\n[DIR] db\n[DIR] server\n[DIR] shared\n[DIR] web",
+    "isError": false,
+    "durationMs": 3,
+    "createdAt": "2026-03-02T07:38:42.967Z"
+  },
+  {
+    "id": "87efbcdc3b158936",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__search_files",
+    "input": {
+      "toolCallId": "call_function_rjqoljc5jcuh_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:46.179Z"
+  },
+  {
+    "id": "4b402c6b5402b7d1",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__search_files",
+    "input": null,
+    "output": "No matches found",
+    "isError": false,
+    "durationMs": 2098,
+    "createdAt": "2026-03-02T07:38:48.277Z"
+  },
+  {
+    "id": "b179d76a92421cb2",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_text_file",
+    "input": {
+      "toolCallId": "call_function_snbml7wwsgyt_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:50.988Z"
+  },
+  {
+    "id": "6e5b9eceab002a5a",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_text_file",
+    "input": null,
+    "output": "# 首次启动时自动生成，用于 API Key 加密\n# ENCRYPTION_KEY=（32 bytes hex，自动生成）\n\n# 服务端口\nPORT=3000\n",
+    "isError": false,
+    "durationMs": 4,
+    "createdAt": "2026-03-02T07:38:50.992Z"
+  },
+  {
+    "id": "a284590867b31877",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": {
+      "toolCallId": "call_function_mfjx1ffaay07_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:38:54.200Z"
+  },
+  {
+    "id": "a7954ec10c48ed80",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": null,
+    "output": "[DIR] dist\n[FILE] package.json\n[DIR] src\n[FILE] test-mcp-tools.mjs\n[FILE] tsconfig.json\n[FILE] tsconfig.tsbuildinfo\n[FILE] vitest.config.ts\n[DIR] 运维周报模板\n[FILE] 运维周报模板-使用说明.md\n[FILE] 运维周报模板-示例填写版.md\n[FILE] 运维周报模板.md\n[FILE] 运维周报模板_2026年第9周.md",
+    "isError": false,
+    "durationMs": 2,
+    "createdAt": "2026-03-02T07:38:54.202Z"
+  },
+  {
+    "id": "67b94fc8e939d9a4",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_allowed_directories",
+    "input": {
+      "toolCallId": "call_function_nxq6g0jc1sej_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:13.689Z"
+  },
+  {
+    "id": "3c4ad87cc6480e78",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_allowed_directories",
+    "input": null,
+    "output": "Allowed directories:\n/private/tmp\n/Users/chenpu/workspace/claude-code/YourTeam2",
+    "isError": false,
+    "durationMs": 6,
+    "createdAt": "2026-03-02T07:39:13.695Z"
+  },
+  {
+    "id": "85e122732a730462",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__directory_tree",
+    "input": {
+      "toolCallId": "call_function_bgnvbydek59j_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:15.824Z"
+  },
+  {
+    "id": "ed8c847aabd2fc15",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__directory_tree",
+    "input": null,
+    "output": "[\n  {\n    \"name\": \".env.example\",\n    \"type\": \"file\"\n  },\n  {\n    \"name\": \".git\",\n    \"type\": \"directory\",\n    \"children\": [\n      {\n        \"name\": \"COMMIT_EDITMSG\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"HEAD\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"config\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"description\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"hooks\",\n        \"type\": \"directory\",\n        \"children\": [\n          {\n            \"name\": \"applypatch-msg.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"commit-msg.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"fsmonitor-watchman.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"post-update.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-applypatch.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-commit.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-merge-commit.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-push.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-rebase.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"pre-receive.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"prepare-commit-msg.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"push-to-checkout.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"sendemail-validate.sample\",\n            \"type\": \"file\"\n          },\n          {\n            \"name\": \"update.sample\",\n            \"type\": \"file\"\n          }\n        ]\n      },\n      {\n        \"name\": \"index\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"info\",\n        \"type\": \"directory\",\n        \"children\": [\n        ",
+    "isError": false,
+    "durationMs": 788,
+    "createdAt": "2026-03-02T07:39:16.612Z"
+  },
+  {
+    "id": "50bfbd5ea3700516",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": {
+      "toolCallId": "call_function_1p187avgxoju_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:19.459Z"
+  },
+  {
+    "id": "3baf93874086faef",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": null,
+    "output": "[FILE] .env.example\n[DIR] .git\n[FILE] .gitignore\n[FILE] .server.pid\n[FILE] CLAUDE.md\n[FILE] README.md\n[DIR] data\n[DIR] docs\n[DIR] e2e-screenshots\n[FILE] e2e-test.mjs\n[DIR] node_modules\n[FILE] package-lock.json\n[FILE] package.json\n[DIR] packages\n[DIR] run-logs\n[DIR] screenshots\n[FILE] server.log\n[DIR] test-results\n[FILE] tsconfig.base.json\n[FILE] visual-audit.mjs\n[FILE] 运维周报模板.md\n[DIR] 需求&问题",
+    "isError": false,
+    "durationMs": 4,
+    "createdAt": "2026-03-02T07:39:19.463Z"
+  },
+  {
+    "id": "17c6ee154a4090fa",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_multiple_files",
+    "input": {
+      "toolCallId": "call_function_m97yrehzxjhr_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:22.612Z"
+  },
+  {
+    "id": "0ae364b10cf9b015",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_multiple_files",
+    "input": null,
+    "output": "/Users/chenpu/workspace/claude-code/YourTeam2/README.md:\n# AgentCorp\n\nAI 员工管理平台 —— 像经营公司一样管理你的 AI 团队。\n\n## 简介\n\nAgentCorp 让你可以创建、配置和管理 AI \"员工\"，将它们组建成团队，通过多种协作模式完成复杂任务。内置 HR 助手支持对话式创建员工，无需手动填写表单。\n\n## 核心功能\n\n- **AI 员工管理** — 创建员工、配置模型、系统提示词和工具\n- **HR 助手** — 通过对话描述需求，AI 自动生成员工配置并创建\n- **团队协作** — 5 种协作模式：自由协作、流水线、辩论、投票、主从\n- **任务系统** — 任务创建、计划审批、自动执行、进度追踪（SSE 实时推送）\n- **工具集成** — MCP 协议工具接入（stdio/sse），员工可调用外部工具\n- **知识库** — 为员工提供领域知识上下文\n- **策略引擎** — 定义员工行为规范和约束\n- **魔法输入** — 自然语言描述需求，AI 自动解析并预填任务/团队创建表单\n- **执行动画** — 任务执行时实时展示工具调用状态，脉冲动画指示运行中子任务\n- **员工成长体系** — 基于能力评估自动计算等级（专家/高级/中级/初级），卡片展示成长徽章\n- **触发器** — 定时或事件驱动的自动任务\n- **事故管理** — 异常检测、事故记录与追踪\n- **紧急停止** — 一键冻结系统，暂停所有任务执行\n\n## 技术栈\n\n| 层 | 技术 |\n|---|------|\n| 前端 | React + TypeScript + Tailwind CSS + shadcn/ui |\n| 后端 | Fastify + TypeScript |\n| 数据库 | SQLite (better-sqlite3) + Drizzle ORM |\n| AI | Vercel AI SDK + OpenAI 兼容 API |\n| 工具协议 | Model Context Protocol (MCP) |\n| 构建 | npm workspaces monorepo |\n\n## 项目结构\n\n```\npackages/\n├── web/          # 前端 SPA\n├── server/       # 后端 API 服务\n├── db/           # 数据库 schema、迁移\n├── agent-core/   # AI Agent 运行时（AgentRunner、MCP 管理）\n├── shared/       # 共享常量和类型\n└── data/         # SQLite 数据库文件\n```\n\n## 快速开始\n\n### 环境要求\n\n- Node.js >= 22.0.0\n\n### 安装与启动\n\n```bash\n# 安装依赖\nnpm install\n\n# 构建所有包\nnpm run build\n\n# 数据库迁移\nnpm run db:migrate\n\n# 启动开发服务（前后端同时启动）\nnpm run dev\n```\n\n启动后访问 http://localhost:5173\n\n### 首次使用\n\n1. 进入「模型」页面，添加一个 AI 模型（需要 OpenAI 兼容的 API Key 和 Base URL）\n2. 进入「设置」页面，配置 `hr_assistant_model_id` 指向刚添加的模型\n3. 进入「HR助手」，通过对话创建你的第一个 AI 员工\n\n## 常用命令\n\n```bash\nnpm run dev           # 启动前后端开发服务\nnpm run dev:server    # 仅启动后端\nnpm run dev:web       # 仅启动前端\nnpm run build         # 构建所有包\nnpm run db:generate   # 生成数据库迁移文件\nnpm run db:migrate    # 执行数据库迁移\n```\n\n## 协作模式说明\n\n| 模式 | 适用场景 |\n|------|----------|\n| 自由协作 | 成员独立执行各自子任务，互不依赖 |\n| 流水线 | 子任务串行执行，前一步输出作为下一步输入 |\n| 辩论 | 全员分析 → 交叉审查 → PM 综合结论 |\n| 投票 | 全员独立出方案 → PM 统计投票选最佳 |\n| 主从 | PM 拆分计划 → 成员并行执行 → PM 汇总 |\n\n## 环境变量\n\n| 变量 | 说明 | 默认值 |\n|------|------|--------|\n| `AGENTCORP_DB_P",
+    "isError": false,
+    "durationMs": 7,
+    "createdAt": "2026-03-02T07:39:22.619Z"
+  },
+  {
+    "id": "fe4a4d29ab97c946",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": {
+      "toolCallId": "call_function_70ydziz08g5t_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:30.319Z"
+  },
+  {
+    "id": "ca0969db1d4aee6a",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": null,
+    "output": "[FILE] PRODUCT_ANALYSIS_AND_IMPROVEMENT_PLAN.md\n[FILE] PRODUCT_DESIGN.md\n[FILE] TECHNICAL_DESIGN.md\n[DIR] design",
+    "isError": false,
+    "durationMs": 3,
+    "createdAt": "2026-03-02T07:39:30.322Z"
+  },
+  {
+    "id": "3a2c4c7b74c570a4",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_multiple_files",
+    "input": {
+      "toolCallId": "call_function_tuqdubl4i0fd_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:33.381Z"
+  },
+  {
+    "id": "90e3567239c1ec3c",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_multiple_files",
+    "input": null,
+    "output": "/Users/chenpu/workspace/claude-code/YourTeam2/.env.example:\n# 首次启动时自动生成，用于 API Key 加密\n# ENCRYPTION_KEY=（32 bytes hex，自动生成）\n\n# 服务端口\nPORT=3000\n\n\n---\n/Users/chenpu/workspace/claude-code/YourTeam2/.gitignore:\nnode_modules/\ndist/\ndata/\n.env\n*.db\n*.db-journal\n.DS_Store\ne2e-screenshots/\nscreenshots/\ntest-results/\nvisual-audit.mjs\nCLAUDE.md\n\n",
+    "isError": false,
+    "durationMs": 5,
+    "createdAt": "2026-03-02T07:39:33.386Z"
+  },
+  {
+    "id": "20f7755eba87f72e",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": {
+      "toolCallId": "call_function_4v093vxy2vrc_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:36.302Z"
+  },
+  {
+    "id": "03256b440af88b84",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": null,
+    "output": "[DIR] agent-core\n[DIR] data\n[DIR] db\n[DIR] server\n[DIR] shared\n[DIR] web",
+    "isError": false,
+    "durationMs": 2,
+    "createdAt": "2026-03-02T07:39:36.304Z"
+  },
+  {
+    "id": "1499768a9b8153c7",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": {
+      "toolCallId": "call_function_tn1eveybvm5d_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:38.791Z"
+  },
+  {
+    "id": "b1b628d5abb254fa",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__list_directory",
+    "input": null,
+    "output": "[DIR] dist\n[FILE] package.json\n[DIR] src\n[FILE] tsconfig.json\n[FILE] tsconfig.tsbuildinfo",
+    "isError": false,
+    "durationMs": 4,
+    "createdAt": "2026-03-02T07:39:38.795Z"
+  },
+  {
+    "id": "53be9a84d04b1fc1",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_multiple_files",
+    "input": {
+      "toolCallId": "call_function_0wfkvts8ljap_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:43.503Z"
+  },
+  {
+    "id": "f7b34c92cc4e53f8",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_multiple_files",
+    "input": null,
+    "output": "/Users/chenpu/workspace/claude-code/YourTeam2/packages/shared/package.json:\n{\n  \"name\": \"@agentcorp/shared\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"main\": \"./dist/index.js\",\n  \"types\": \"./dist/index.d.ts\",\n  \"exports\": {\n    \".\": \"./dist/index.js\"\n  },\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"dev\": \"tsc --watch\"\n  },\n  \"devDependencies\": {\n    \"typescript\": \"^5.7.0\"\n  }\n}\n\n\n---\n/Users/chenpu/workspace/claude-code/YourTeam2/packages/db/package.json:\n{\n  \"name\": \"@agentcorp/db\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"main\": \"./dist/index.js\",\n  \"types\": \"./dist/index.d.ts\",\n  \"exports\": {\n    \".\": \"./dist/index.js\"\n  },\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"dev\": \"tsc --watch\",\n    \"generate\": \"drizzle-kit generate\",\n    \"migrate\": \"tsx src/migrate.ts\"\n  },\n  \"dependencies\": {\n    \"@agentcorp/shared\": \"*\",\n    \"better-sqlite3\": \"^11.8.0\",\n    \"drizzle-orm\": \"^0.38.0\"\n  },\n  \"devDependencies\": {\n    \"@types/better-sqlite3\": \"^7.6.12\",\n    \"drizzle-kit\": \"^0.31.9\",\n    \"tsx\": \"^4.19.0\",\n    \"typescript\": \"^5.7.0\"\n  }\n}\n\n\n---\n/Users/chenpu/workspace/claude-code/YourTeam2/packages/agent-core/package.json:\n{\n  \"name\": \"@agentcorp/agent-core\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"main\": \"./dist/index.js\",\n  \"types\": \"./dist/index.d.ts\",\n  \"exports\": {\n    \".\": \"./dist/index.js\"\n  },\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"dev\": \"tsc --watch\"\n  },\n  \"dependencies\": {\n    \"@ai-sdk/openai\": \"^3.0.29\",\n    \"@modelcontextprotocol/sdk\": \"^1.8.0\",\n    \"ai\": \"^6.0.90\",\n    \"zod\": \"^3.24.0\"\n  },\n  \"devDependencies\": {\n    \"typescript\": \"^5.7.0\"\n  }\n}\n\n\n---\n/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/package.json:\n{\n  \"name\": \"@agentcorp/server\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"dev\": \"tsx watch src/app.ts\",\n    \"test\": \"vitest run\"\n  },\n  \"dependencies\": {\n    \"@agentcorp/agent-core\": \"*\",\n    \"@agentcorp/db\": \"*\",\n    \"@",
+    "isError": false,
+    "durationMs": 7,
+    "createdAt": "2026-03-02T07:39:43.509Z"
+  },
+  {
+    "id": "efffb684b89afca6",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_text_file",
+    "input": {
+      "toolCallId": "call_function_wvy3z3ktiak8_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:39:53.372Z"
+  },
+  {
+    "id": "48c4d1dea8030cf2",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "08e64d6b12106761",
+    "toolName": "b931c6ca2b7ad17b__read_text_file",
+    "input": null,
+    "output": "# AgentCorp MVP 技术设计文档\n\n本文档为总览，各模块详细设计见 `docs/design/` 目录。\n\n## 一、技术选型\n\n| 层级 | 技术 | 说明 |\n|------|------|------|\n| 运行时 | Node.js v22 + TypeScript 5.x | 全栈统一语言 |\n| 包管理 | npm 10.9 + npm workspaces | monorepo 管理 |\n| 后端框架 | Fastify 5.x | 高性能，原生 TypeScript 支持 |\n| 数据库 | SQLite (better-sqlite3) | 零运维，单文件部署 |\n| ORM | Drizzle ORM | 类型安全，轻量，支持 SQLite |\n| 前端框架 | React 19 + Vite 6 | 快速开发，HMR |\n| UI组件 | shadcn/ui + Tailwind CSS 4 | 可定制，现代设计 |\n| 前端路由 | React Router 7 | SPA 路由 |\n| HTTP通信 | REST API (fetch) | 前端只负责展示，后端处理业务逻辑 |\n| 实时推送 | SSE (Server-Sent Events) | 任务状态、对话流式输出 |\n| LLM框架 | ai (Vercel AI SDK v5) + @ai-sdk/openai | 统一 Provider 抽象、内置 streaming + tool loop |\n| MCP通信 | @modelcontextprotocol/sdk | 官方 MCP SDK，stdio JSON-RPC |\n\n### LLM 框架选型说明\n\n选择 Vercel AI SDK (`ai` v5 + `@ai-sdk/openai`) 作为 LLM 框架：\n\n- 统一 Provider 抽象：通过 `@ai-sdk/openai` 兼容所有 OpenAI 格式 API，同时支持 `@ai-sdk/anthropic`、`@ai-sdk/google` 等原生 Provider\n- 内置 Agent 循环：`streamText` + `stopWhen: stepCountIs(N)` 自动处理\"LLM → tool call → 执行 → 继续\"的多轮循环，无需手动实现\n- 工具定义用 Zod：类型安全，参数自动推导\n- Streaming 结构化：`fullStream` 提供 `text-delta`、`tool-call`、`tool-result` 等结构化事件，无需手动拼接\n- `onStepFinish` 回调：每轮工具调用结束后触发，适合日志记录和监控\n- 框架无关：核心 `ai` 包不依赖 Next.js，可在 Fastify 中直接使用\n\n调用示例：\n```typescript\nimport { streamText, tool, stepCountIs } from 'ai';\nimport { createOpenAI } from '@ai-sdk/openai';\nimport { z } from 'zod';\n\nconst provider = createOpenAI({\n  apiKey: model.apiKey,\n  baseURL: model.baseUrl,  // 兼容任意 OpenAI 格式 API\n});\n\nconst result = streamText({\n  model: provider(model.modelId),\n  system: employee.systemPrompt,\n  messages,\n  tools: {\n    web_search: tool({\n      description: '搜索网页',\n      inputSchema: z.object({ query: z.string() }),\n      execute: async ({ query }) => { ... },\n    }),\n  },\n  stopWhen: stepCountIs(20),\n  onStepFinish: async ({ toolCalls, usage }) => {\n    // 记录工具调用日志、Token 消耗等\n  },\n});\n\n// 流式消费\nfor await (const chunk of result.fullStream) {\n  switch (chunk.type) {\n    case 'text-delta': /* 文本增量 */ break;\n    case 'tool-call': /*",
+    "isError": false,
+    "durationMs": 7,
+    "createdAt": "2026-03-02T07:39:53.379Z"
+  },
+  {
+    "id": "7907a25c0fc2df8b",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "1bd7e2b750e3c364",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_91inc1bx4sq6_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:40:24.605Z"
+  },
+  {
+    "id": "b872798eb2b302cf",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "1bd7e2b750e3c364",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: GitHub使用完全指南:从注册到上手的全流程解析_注册github地区选什么好-CSDN博客\nURL: https://blog.csdn.net/echoarts/article/details/147594709\nDescription: 一､注册与基础设置(超级重要) 1. 注册账号(3分钟搞定) 打开GitHub官网(要是打不开后面有解决方案),点击右上角的Sign up｡注意用户名最好英文+数字组合(比如coding-xiaoming2023),邮箱建议用常用邮箱(QQ/163都行)｡ 注册完成后记得去邮箱点验证链接!!!我见过好多人卡在这一步,结果第二天发现账号没激活(血泪教训)｡ 2. SSH密钥配置(必做操作) 很多新手push代码时遇到权限问题,90%都是没配SSH密钥｡打开终端(Windows用Git Bash)输入: ssh-keygen -t rsa -b 4096 -C \"你的邮箱\" AI写代码bash1连续按三次回车(不用设密码),然后执行: cat ~/.ssh/id_rsa.pub AI写代码bash1把显示的内容全选复制,到GitHub设置里的SSH keys页面粘贴保存｡测试连接: ssh -T git@github.com AI写代码bash1看到欢迎语就说明搞定了! 二､仓库管理核心操作 1. 创建第一个仓库 点击右上角➕号选New repository,注意这三个选项: Public/Private:公开库所有人都能看到(适合开源项目)Add README:强烈建议勾选(相当于项目说明书).gitignore:根据语言选择(比如Java/Python)创建完仓库后你会得到一个.git结尾的地址,这就是你的项目专属URL(比如git@github.\nPublished date: 2025-04-28T20:05:40+08:00\nSite name: blog.csdn.net\n\nTitle: GitHub从入门到上瘾指南(手把手真人教学版)_github快速上手-CSDN博客\nURL: https://blog.csdn.net/xiaolukanshijie/article/details/147412494\nDescription: 看到满屏的英文千万别慌(其实右上角可以切换中文)｡点击\"Sign up\"注册时,记住用户名要朗朗上口!比如我的\"code-master-007\"用了三年都不舍得换(才不是中二病呢😏) 创建第一个仓库时(Repository,简称repo),看到初始化选项直接勾\"Add a README file\"!这个操作相当于给你的项目贴门牌号,不然后续操作会各种报错(别问我怎么知道的😭) 🚀 本地与云端的神奇同步 安装好Git后,在项目文件夹右键选择\"Git Bash Here\",这三个命令必须刻进DNA: git add . # 捕捉所有改动(包括你偷偷改的bug) git commit -m \"拯救世界\" # 给这次修改起个狂拽的标题 git push origin main # 把成果发射到云端(记得替换main为你的分支名) 遇到permission denied报错?八成是SSH密钥没配置!(敲黑板!这个步骤超级重要)跟着官方教程生成密钥,把.pub文件内容粘贴到GitHub设置里就搞定~ 🤖 那些让人直呼卧槽的黑科技 1. Issues追踪系统 比微信聊天还好用的需求管理工具!试试/assign分配任务,@同事名精准召唤,表情包评论让技术讨论不再枯燥(老板看不见系列😎) 2. GitHub Desktop可视化神器 命令行恐惧症患者的福音!拖拽式操作､修改对比视图､一键回滚,用过的人都惊呼:“早用这个我能多活十年!” 3. Actions自动化流水线 \nPublished date: 2025-04-22T11:05:15+08:00\nSite name: blog.csdn.net\n\nTitle: GitHub从入门到上手指南(2024最新版)_github 玩法-CSDN博客\nURL: https://blog.csdn.net/bestbee888/article/details/147458613\nDescription: 前情提要一､注册账号的隐藏技巧1.1 起名玄学1.2 双重验证必开!二､第一个仓库的正确创建姿势2.1 初始化秘籍2.2 .gitignore的禁忌三､协作开发的骚操作3.1 提PR的正确姿势3.2 解决冲突的终极奥义四､高级玩家必备技能4.1 GitHub Actions自动化4.2 保护分支的正确姿势五､常见作死行为排行榜🔑 终极秘诀💣 血泪教训🚀 下一步行动 ⚡ 前情提要 作为全球最大",
+    "isError": false,
+    "durationMs": 1537,
+    "createdAt": "2026-03-02T07:40:26.142Z"
+  },
+  {
+    "id": "73df116a52f6f37d",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "1bd7e2b750e3c364",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_3edjq5g7h4cp_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:40:42.653Z"
+  },
+  {
+    "id": "9fe8f13764e68fed",
+    "type": "tool_call",
+    "taskId": "b3089d1fa675eca3",
+    "subtaskId": "c298aeac2e4fc6db",
+    "employeeId": "1bd7e2b750e3c364",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 如何写开源项目的readme文档\nURL: https://worktile.com/kb/p/3356428\nDescription: 写开源项目的README文档时,应该包含项目简介、安装步骤、使用指南、贡献方式、许可证信息 。详细描述可以这样展开:项目简介帮助用户快速了解项目的目标和功能;安装步骤详细描述如何配置和安装项目;使用指南提供具体操作和示例;贡献方式指导潜在贡献者如何参与项目;许可证信息明确项目的法律框架。以下内容将逐一详细介绍这些部分,并提供编写优质README文档的最佳实践。\n一、项目简介\n项目简介是README文档的开头部分,应该简明扼要地说明项目的目的和主要功能。一个好的项目简介可以吸引用户和开发者的注意,让他们快速了解项目的价值。\n项目简介的要点:\n项目的简要描述 :用一两句话概述项目的主要功能。 项目的背景和动机 :说明为什么创建这个项目,解决了什么问题。 主要功能和特性 :列出项目的主要功能和特性。\n示例:\n# 项目名称\n这是一个用于处理图像的开源工具,提供多种图像编辑和处理功能。项目的创建是为了简化图像处理的流程,支持多种格式的图像编辑和转换。\n项目简介不仅仅是简单的描述,它还应该包含一些项目的关键指标,例如项目的当前版本、编程语言以及项目的状态(如稳定版、开发版等)。\n二、安装步骤\n安装步骤是README文档中最重要的部分之一,因为它直接影响到用户是否能够顺利使用你的项目。安装步骤应该清晰、详细,并且尽可能简洁。\n安装步骤的要点:\n环境要求 :列出项目运行所需的环境和依赖项。 安装方法 :提供详细的安装步骤,可以包括通过包管理器安装、从源码编译安装等多种方法。 配置说明 :如果项目需要配置文件或环境变量,应该详细说明如何进行配置。\n示例:\n## 安装步骤\n### 环境要求\n- Python 3.6+\n- pip\n### 安装方法\n1. 克隆项目仓库:\n git clone  https://github.com/yourusername/yourproject.git\n2.\nPublished date: 2024-08-20T13:55:44+08:00\nSite name: Worktile\n\nTitle: github - 如何写好开源项目的README-自用Git仓库模板分享 - 个人文章 - SegmentFault 思否\nURL: https://segmentfault.com/a/1190000039680134?sort=newest\nDescription: 文章目录 <details> <summary>点我 打开/关闭 目录列表</summary> 1. README 部分 1.1 简介 1.2 效果展示 2. Issue/PR 模板 部分 2.1 简介 2.2 效果展示 3. Github Actions CI 部分 3.1 简介 3.2 效果展示 </details> 声明:我是 「米司特包」 ,本篇文章 首发 于「米司博客」 ,其他平台为同步推送,由于网站后续会升级重构,很有可能导致文章路径规则变动,所以就没贴详细链接,进到博客的可以根据标题查找 。 本来决定是要写一篇《如何写好开源项目的 README》的文章的,后来根据自己的一些项目的情况,就把 Issue、PR 和CI 部分也加了进来,各位看官姥爷可以根据自己的需要查看。 由于作者本人也是一个常逛 Github 的人,偶尔也会在上面找一些别人实现好的轮子,在这中间发现有的一些项目质量很好,但是有的没有提供文档或者 README 写的很简陋,使用者要用的话,就需要自己去阅读源码,才知道怎么使用,我想这可能是很多技术人员的通病——不喜欢写文档,因为我自己是个强迫症,我自己的项目一般都会有 README 或者专门的文档,因为这个原因,我新建了一个 Github 仓库模板库,里面提供了基础的 README 要素 和多语言范本,同时也提供了 Issue 和PR 模板,以及基于 Github Actions 的CI 脚本(目前只有 NodeJS 项目和 Hugo 项目的示例)。基本上将大部分开源项目需要的东西包含了进去。 代码仓库: https://github.com/misitebao/template-git-repository (Github) https://gitee.com/misitebao/template-git-repository (Gitee)\nPublished date: 2021-03-21T12:22:37+08:00\nSite name: SegmentFault 思否\n\nTitle: 自述文件样板:open开源项目的README.md模板_gitreadme模板,r",
+    "isError": false,
+    "durationMs": 329,
+    "createdAt": "2026-03-02T07:40:42.982Z"
+  }
+]

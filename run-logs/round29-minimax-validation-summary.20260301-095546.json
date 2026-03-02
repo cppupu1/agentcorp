@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-01T09:55:46.810812Z",
+  "runLabel": "round29-mini-20260301-095546",
+  "sessions": [
+    {
+      "label": "round29-mini-stock",
+      "sessionId": "round29-mini-stock-20260301-095546",
+      "evidence": "run-logs/round29-mini-stock.audit.20260301-095546.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round29-mini-ai",
+      "sessionId": "round29-mini-ai-20260301-095546",
+      "evidence": "run-logs/round29-mini-ai.audit.20260301-095546.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round29-mini-memory",
+      "sessionId": "round29-mini-memory-20260301-095546",
+      "evidence": "run-logs/round29-mini-memory.audit.20260301-095546.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round29-mini-content",
+      "sessionId": "round29-mini-content-20260301-095546",
+      "evidence": "run-logs/round29-mini-content.audit.20260301-095546.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round29-mini-translation",
+      "sessionId": "round29-mini-trans-20260301-095546",
+      "evidence": "run-logs/round29-mini-translation.audit.20260301-095546.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    }
+  ]
+}

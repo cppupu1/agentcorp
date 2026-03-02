@@ -1,0 +1,112 @@
+{
+  "taskId": "188ab7861942fd26",
+  "toolCallsTotal": 129,
+  "toolErrorsTotal": 0,
+  "tools": [
+    {
+      "tool": "01a07c2a149edad0__create_directory",
+      "count": 2,
+      "errors": 0
+    },
+    {
+      "tool": "01a07c2a149edad0__list_allowed_directories",
+      "count": 6,
+      "errors": 0
+    },
+    {
+      "tool": "01a07c2a149edad0__list_directory",
+      "count": 4,
+      "errors": 0
+    },
+    {
+      "tool": "01a07c2a149edad0__list_directory_with_sizes",
+      "count": 2,
+      "errors": 0
+    },
+    {
+      "tool": "01a07c2a149edad0__read_media_file",
+      "count": 4,
+      "errors": 0
+    },
+    {
+      "tool": "01a07c2a149edad0__read_multiple_files",
+      "count": 10,
+      "errors": 0
+    },
+    {
+      "tool": "01a07c2a149edad0__read_text_file",
+      "count": 10,
+      "errors": 0
+    },
+    {
+      "tool": "01a07c2a149edad0__write_file",
+      "count": 36,
+      "errors": 0
+    },
+    {
+      "tool": "list_allowed_directories",
+      "count": 1,
+      "errors": 0
+    },
+    {
+      "tool": "tushare_mcp_001__daily",
+      "count": 16,
+      "errors": 0
+    },
+    {
+      "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+      "count": 18,
+      "errors": 0
+    },
+    {
+      "tool": "tushare_mcp_001__stock_basic",
+      "count": 4,
+      "errors": 0
+    },
+    {
+      "tool": "tushare_mcp_001__today",
+      "count": 4,
+      "errors": 0
+    },
+    {
+      "tool": "tushare_mcp_001__weekly",
+      "count": 12,
+      "errors": 0
+    }
+  ],
+  "decisions": [
+    {
+      "action": "ask_user_decision",
+      "count": 1
+    },
+    {
+      "action": "ask_user_decision_result",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask",
+      "count": 32
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 32
+    },
+    {
+      "action": "complete_task",
+      "count": 6
+    },
+    {
+      "action": "complete_task_result",
+      "count": 6
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 31
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 31
+    }
+  ],
+  "askUserDecisionEvents": 1
+}

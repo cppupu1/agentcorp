@@ -1,0 +1,39 @@
+{
+  "label": "round38-translation",
+  "sessionId": "round38-translation-20260301-140533",
+  "kind": "translation",
+  "userPrompt": "我一会儿要给全员发通知，直接帮我落地一个可复用的企业公告中英双语模板版本。",
+  "pmChatDurationMs": 735,
+  "pmChatError": null,
+  "pmTools": [],
+  "taskIds": [],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 735
+    },
+    {
+      "name": "task_created",
+      "ok": false,
+      "taskIds": []
+    }
+  ],
+  "allChecksPassed": false,
+  "task": null
+}

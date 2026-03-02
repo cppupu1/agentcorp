@@ -4,6 +4,7 @@ import { existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import Fastify from 'fastify';
 import cors from '@fastify/cors';
+import multipart from '@fastify/multipart';
 import fastifyStatic from '@fastify/static';
 import { registerErrorHandler } from './errors.js';
 import { registerHealthRoute } from './routes/health.js';
@@ -35,9 +36,13 @@ import { registerRoiReviewRoutes } from './routes/roi-review.js';
 import { registerMemoryRoutes } from './routes/memory.js';
 import { registerSelfImprovementRoutes } from './routes/self-improvement.js';
 import { registerAiParseRoutes } from './routes/ai-parse.js';
+import { registerTaskReviewRoutes } from './routes/task-review.js';
+import { registerPmAssistantRoutes } from './routes/pm-assistant.js';
 import { sseManager } from './services/sse-manager.js';
 import { recoverStuckTasks, cancelAllExecutions } from './services/task-executor.js';
 import { seedBuiltinPolicies } from './services/policies.js';
+import { seedBuiltinTools } from './services/builtin-tools.js';
+import { seedBuiltinEmployees } from './services/builtin-employees.js';
 import { initCronScheduler, stopCronScheduler } from './services/triggers.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -47,6 +52,7 @@ const app = Fastify({ logger: true });
 // CORS - restrict to known origins
 const allowedOrigins = (process.env.CORS_ORIGINS || 'http://localhost:5173,http://localhost:3000').split(',');
 await app.register(cors, { origin: allowedOrigins });
+await app.register(multipart, { limits: { fileSize: 20 * 1024 * 1024 } });
 
 // Error handler
 registerErrorHandler(app);
@@ -81,6 +87,8 @@ registerRoiReviewRoutes(app);
 registerMemoryRoutes(app);
 registerSelfImprovementRoutes(app);
 registerAiParseRoutes(app);
+registerTaskReviewRoutes(app);
+registerPmAssistantRoutes(app);
 
 // Serve frontend static files (production mode)
 const webDistPath = resolve(__dirname, '../../web/dist');
@@ -116,7 +124,8 @@ process.on('SIGINT', shutdown);
 // Start
 const port = parseInt(process.env.PORT || '3000', 10);
 try {
-  await app.listen({ port, host: '0.0.0.0' });
+  const host = process.env.HOST || '127.0.0.1';
+  await app.listen({ port, host });
   console.log(`Server running on http://localhost:${port}`);
 
   // Recover tasks stuck in 'executing' from previous run (after server is ready)
@@ -127,6 +136,15 @@ try {
   // Seed built-in policy packages
   seedBuiltinPolicies().catch(err => {
     console.error('Failed to seed built-in policies:', err);
+  });
+
+  // Seed built-in tools first, then employees (employees need tool IDs for association)
+  seedBuiltinTools().then(() => {
+    seedBuiltinEmployees().catch(err => {
+      console.error('Failed to seed built-in employees:', err);
+    });
+  }).catch(err => {
+    console.error('Failed to seed built-in tools:', err);
   });
 
   // Start cron scheduler for triggers

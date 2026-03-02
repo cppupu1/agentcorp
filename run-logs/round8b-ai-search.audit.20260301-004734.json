@@ -1,0 +1,20 @@
+{
+  "taskId": "9699310848e736e0",
+  "title": "补齐深测-AI检索",
+  "status": "completed",
+  "timedOut": false,
+  "tokenUsage": 52131,
+  "toolCallsTotal": 6,
+  "tools": [
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 6
+    }
+  ],
+  "decisionCount": 6,
+  "checks": {
+    "search": true
+  },
+  "allChecksPassed": true,
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成AI Agent近一年趋势调研任务。子任务执行成功，输出了包含市场规模预测、技术演进路径、商业化落地应用及发展趋势的完整报告。提供了6条来源链接，包含绝对日期信息，符合任务要求。"
+}

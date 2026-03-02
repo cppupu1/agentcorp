@@ -1,0 +1,50 @@
+{
+  "taskId": "482fc877167fca27",
+  "title": "深测-股票工具链-2026-03-01",
+  "status": "completed",
+  "timedOut": false,
+  "tokenUsage": 437598,
+  "toolCallsTotal": 58,
+  "tools": [
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 32
+    },
+    {
+      "tool": "tushare_mcp_001__daily",
+      "count": 6
+    },
+    {
+      "tool": "tushare_mcp_001__today",
+      "count": 5
+    },
+    {
+      "tool": "tushare_mcp_001__weekly",
+      "count": 5
+    },
+    {
+      "tool": "tushare_mcp_001__stock_basic",
+      "count": 4
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_ai_search",
+      "count": 2
+    },
+    {
+      "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+      "count": 2
+    },
+    {
+      "tool": "tushare_mcp_001__plot_weekly_candlestick_chart",
+      "count": 2
+    }
+  ],
+  "decisionCount": 0,
+  "decisions": [],
+  "expectedToolChecks": {
+    "finance_tool": true,
+    "web_or_search": true
+  },
+  "expectedToolsAllPassed": true,
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n辩论模式执行完成"
+}

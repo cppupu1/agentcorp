@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-03-01T10:12:05.924759Z",
+  "runLabel": "round32-mini-20260301-101205",
+  "sessions": [
+    {
+      "label": "round32-mini-stock",
+      "sessionId": "round32-mini-stock-20260301-101205",
+      "evidence": "run-logs/round32-mini-stock.audit.20260301-101205.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round32-mini-ai",
+      "sessionId": "round32-mini-ai-20260301-101205",
+      "evidence": "run-logs/round32-mini-ai.audit.20260301-101205.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round32-mini-memory",
+      "sessionId": "round32-mini-memory-20260301-101205",
+      "evidence": "run-logs/round32-mini-memory.audit.20260301-101205.json",
+      "allChecksPassed": true
+    }
+  ]
+}

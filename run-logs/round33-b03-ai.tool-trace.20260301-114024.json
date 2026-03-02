@@ -1,0 +1,198 @@
+[
+  {
+    "id": "bc2f6cbc94dadc0c",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": {
+      "toolCallId": "call_function_mrw62wfveayo_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:41:12.568Z"
+  },
+  {
+    "id": "2fd96eb9168267db",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": null,
+    "output": "Echo: 当前时间查询",
+    "isError": false,
+    "durationMs": 6,
+    "createdAt": "2026-03-01T11:41:12.574Z"
+  },
+  {
+    "id": "bfae9b8a56c43396",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_9qt8od1g952y_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:41:16.565Z"
+  },
+  {
+    "id": "54c6fbeda1832a66",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 最新大模型技术架构深度解析:从GPT-5到Claude-4的演进路径 - 今日头条\nURL: https://www.toutiao.com/article/7603552809287516691/\nDescription:  二､三大巨头技术路径解析 1. GPT-5:统一系统与智能路由 OpenAI的GPT-5(代号Orion)最核心的创新在于构建了“三位一体”的统一模型系统: 实时路由器 :基于强化学习的任务复杂度评估器,通过128维特征向量实时计算任务熵值,在2.3ms内完成模型调度 双模型协同 :gpt-5-main处理常规问题(参数量120B),gpt-5-thinking应对复杂推理(参数量1.8T,MoE结构) 性能突破 :在AIME 2025数学竞赛中准确率达94.6%,SWE-bench Verified编程任务完成率74.9% 最关键的是,GPT-5的幻觉率大幅降低——相较于GPT-4o,事实错误率下降45%,在医疗健康领域更是低至1.6%(数据来源:OpenAI官方技术白皮书)｡ 2. Claude-4:编程领域的“定海神针” Anthropic的Claude-4系列坚持双模型战略,在编程能力上展现出“一骑绝尘”的优势: 旗舰对决 :Claude Opus 4在SWE-bench得分72.5%,Claude Sonnet 4反超至72.7% 扩展思考 :Beta功能允许模型在思考与工具使用间来回切换,形成“思考-执行-再思考”闭环 记忆革命 :通过“记忆文件”维持长期任务状态,实测连续12小时玩《宝可梦》游戏,完成64场战斗 更值\nPublished date: 2026-02-27T22:51:47+08:00\nSite name: 今日头条\n\nTitle: GPT-5、GPT-5.1与GPT-5.2:从对话助手到专业智能体的演进之路-CSDN博客\nURL: https://blog.csdn.net/u014177256/article/details/158103262\nDescription: 2025年至2026年初,OpenAI连续发布了GPT-5､GPT-5.1和GPT-5.2三个重要版本,这不仅是技术的迭代升级,更代表了OpenAI对AI模型发展方向的战略性调整｡ 一､发展历史与版本背景 GPT-5:统一智能系统的诞生(2025年8月)GPT-5于2025年8月8日正式发布,是OpenAI对基座模型的一次深度整合与优化｡在发布时,CEO Sam Altman表示:\"GPT-5是全球最佳模型｡\"这一版本取代了GPT-4时代的各种变体模型(如GPT-4o､o3等),标志着OpenAI从\"多模型并行\"向\"统一系统\"的战略转变｡ GPT-5的核心目标是打造一个\"智能的､分层的处理中心\",能够根据问题的复杂程度自动选择响应策略｡这一版本首次采用了内嵌式三位一体集成架构,整合了GPT系列(大语言模型)和o系列(推理模型),实现了\"快慢思考结合\"的统一智能体验｡OpenAI官方强调,用户不再需要在不同模型间手动切换,系统会自动决定使用快速响应还是深度推理模式｡ GPT-5.1:对话情商与自适应推理的突破(2025年11月)GPT-5.1于2025年11月13日发布,距离GPT-5仅三个月,是OpenAI对用户反馈的迅速回应｡此次升级的官方目标是\"打造一个既更智能､也更善对话的ChatGPT\",反映了OpenAI对模型交互体验的重视｡\nPublished date: 2026-02-16T08:56:51+08:00\nSite name: blog.csdn.net\n\nTitle: AI 巨头 OpenAI 的GPT-5 路线图正式公布--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0218/3163520.shtml\nDescription: OpenAI 首席执行官 Sam Altman 宣布了公司发布 GPT-5 的路线图,这是对 2023 年GPT-4 AI 语言模型的期待已久的后续版本｡Altman 在X上表示,GPT-5 将在“几个月内”推出,预计在 2025 年晚些时候发布｡公司计划在“几周内”发布 GPT-4.5,作为最后一个非模拟推理模型｡GPT-5 将整合 OpenAI 当前 AI 模型的多种特性,并为不同用户提供不同的智能级别｡Altman 还提到,简化产品线是公司的目标之一｡GPT-5 是2023 年轰动全球科技和政策圈的 GPT-4 AI 语言模型的后续版本｡Altman 在X平台上回应提问时表示,GPT-5 将在\"数月内\"发布,暗示可能在 2025 年后期推出｡ Altman 在X平台上详细解释,公司计划在\"数周内\"发布 GP",
+    "isError": false,
+    "durationMs": 1281,
+    "createdAt": "2026-03-01T11:41:17.846Z"
+  },
+  {
+    "id": "dfde1015a95559ae",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_9bnpthrtgiru_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:41:21.050Z"
+  },
+  {
+    "id": "e8182205e023c9dd",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年Agent创业实战指南:从0到1打造高增长AI智能体项目PI博客工具数据逻辑_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902p708.html?from=tech\nDescription: 2025年,AI Agent(智能体)正从技术概念走向商业落地,全球市场规模预计突破 2000亿美元 ,其中垂直行业解决方案占比达 44.5% (890亿美元),年复合增长率 46.3% (36氪《2025 AI Agent市场报告》)｡ 一､Agent核心能力与技术架构 1. 与传统AI的本质差异 维度 传统AI工具 AI Agent 决策逻辑 基于预设规则(if-this-then-that) 动态规划+多步骤推理(如CoT思维链) 环境交互 被动响应指令 主动感知环境+调用外部工具(API/浏览器) 学习能力 需人工重新训练 通过用户反馈持续优化策略 典型案例 智能客服问答机器人 邮储银行债券交易Agent(自动询价+风控) 来源:《AI Agent与RPA的16个关键区别》(CSDN博客,2025.03) 2. 技术架构三要素 感知层 :多模态输入(文本/语音/图像),如智谱AutoGLM通过OCR识别网页元素(CSDN博客,2025.04) 决策层 :LLM大模型(如GPT-4/DeepSeek)+ 任务规划算法(ReAct/ToT) 执行层 :工具调用(API/插件)+ 动作执行(如浏览器操作/代码运行) 二､6大高潜力创业方向与实战案例 方向1:垂直行业AGENT解决方案 核心逻辑 :聚焦单一行业痛点,构建“数据+模型+工具”闭环 案例:汽车经销商AI语音Agent(Toma公司) 痛点 :汽车经销商45%电话漏接,客服流失率50%(人人都是产品经理,2025.\nPublished date: 2026-02-28T08:11:02+08:00\nSite name: 新浪网\n\nTitle: 2025年Agent创业实战指南:从0到1打造高增长AI智能体项目\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902ookm.html?from=tech\nDescription: 2025年,AI Agent(智能体)正从技术概念走向商业落地,全球市场规模预计突破 2000亿美元 ,其中垂直行业解决方案占比达 44.5% (890亿美元),年复合增长率 46.3% (36氪《2025 AI Agent市场报告》)｡与传统AI工具不同,AGENT具备 自主决策､工具调用､持续学习 三大核心能力,可像“数字员工”一样独立完成复杂任务｡ 本文基于 30+真实商业案例 \nPublished date: 2026-02-28T01:04:01+08:00\nSite name: 新浪网\n\nTitle: 2026年Agentic AI十大关键趋势,技术、应用与治理三位一体\nURL: https://m.thepaper.cn/newsDetail_forward_32317179\nDescription:  自主操作能力实现质性进展,突破传统接口调用模式,GUI Agent路线走向成熟｡多模态融合与记忆机制持续优化,主流AI Agent已实现文本+图像的多模态交互覆盖,在语音识别､视觉理解等基础能力上显著提升｡自主决策与规划能力提升,AI Agent已具备明确的“感知-决策-执行”闭环能力,可应用于采购策略制定､贷款审批､工业设备操控等复杂场景｡ 这一年,AI Agent的企业部署速度显著加快｡ 普华永道于2025年5月发布的一份涵盖1000名美国商业领袖的调查显示,79%的组织表示他们在某种程度上已经采用了AI Agent｡Salesforce报告试数据显示,2025上半年AI agent创建与部署增长119%,完成的行动量环比增长约80%月增率｡ 麦肯锡于11月发布的2025 AI应用现状调研显示,全球78%的组织已在日常运营中使用某种AI工具,其中85%的组织已将AI Agent集成至至少一项工作流程,标志着其从实验性工具进入企业级实用阶段｡ 同时数据显示,23%的企业已在企业内部至少一个业务职能中规模化部署Agentic AI系统,另有39%的企业处于实验阶段,多数规模化部署仅覆盖1-2个职能,跨职能全面落地仍较少 AI Agent应用渗透率也在快速提升｡在金融､电商领域渗透率超30%,在落地速度相对较慢的制造业也快达到20%｡在医疗领域,聚焦影像识别､报告生成等辅助诊断场景,用户复购率超过40%｡ 在消费级场景,以AI原生应用与智能硬件为核心的超级入口之争是全年焦点",
+    "isError": false,
+    "durationMs": 1381,
+    "createdAt": "2026-03-01T11:41:22.431Z"
+  },
+  {
+    "id": "d39af04fa366c28b",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_6j6sebl9jxm1_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:41:26.665Z"
+  },
+  {
+    "id": "3c4a8d83f8abfda0",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 人工智能在药品检验中的应用与思考_数据_模型_海量\nURL: https://www.sohu.com/a/990369705_121123705\nDescription: 当前,全球政府及监管机构正积极构建AI应用支持政策框架｡例如2025年联合国发布了“2025年技术和创新报告:包容性AI促进发展”,呼吁各国加强基础设施､数据和技能建设,并制定包容性政策,确保AI惠及全人类｡我国发布了《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》(简称国家“十五五”规划)和《国务院关于深入实施“人工智能+”行动的意见》,将深入推进数字中国建设与全面实施“人工智能+”行动作为国家战略｡欧盟也发布了“应用AI战略”和“科学AI战略”,旨在推动公共部门与关键行业使用AI,并确保欧洲处于AI科学研究的前沿｡\nPublished date: 2026-02-26T18:06:33+08:00\nSite name: 搜狐\n\nTitle: 全球首部AI监管法规——欧盟《人工智能法案》正式通过—中国钢铁新闻网\nURL: http://www.csteelnews.com/xwzx/znzz/202403/t20240328_86368.html\nDescription: 2024年3月13日,欧洲议会以523票赞成､46票反对和49票弃权审议通过《人工智能法案》,成为全球首部人工智能领域的全面监管法规｡该法案根据人工智能的潜在风险和影响程度规定了人工智能的义务,旨在保护基本权利､民主､法治和环境可持续性免受高风险人工智能的侵害,促进创新,并确立欧洲在该领域的领导者地位｡ 《人工智能法案》文本的草案最早由欧盟委员会在2021年4月提出,提出严格禁止“对人类安全造成不可接受风险的人工智能系统”,包括有目的地操纵技术,利用人性弱点或根据行为､社会地位和个人特征等进行评价的系统等｡ 该法案明确禁止某些威胁公民权利的人工智能应用程序,包括基于敏感特征的生物识别分类系统､从互联网或闭路电视录像中无针对性地抓取面部图像以创建面部识别数据库以及操纵人类行为或利用人性弱点的人工智能等｡公民将有权提交有关人工智能系统的投诉,并有权知晓有关影响其权利的高风险人工智能系统的决定｡ 对于GPAI(通用人工智能)系统及基于GPAI的模型,该法案明确要求其必须满足某些透明度要求,包括遵守欧盟版权法等｡对于可能造成系统性风险的更强大的GPAI模型,则面临额外的要求,包括执行模型评估､评估和减轻系统性风险以及报告事件｡此外,人工操纵的图像､音频或视频内容(“深度伪造”)需要明确标记｡ 据悉,该法案将在走完所有审批程序后在欧盟公报上予以公布并于20天后生效,相关条款将分阶段实施｡\nPublished date: 2026-02-05T11:04:55+08:00\nSite name: www.csteelnews.com\n\nTitle: 2025 年全球 AI 市场发展预测\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902014q.html?from=tech\nDescription: 伦理与监管成焦点 欧盟《人工智能法案》正式生效,全球超50个国家制定AI治理框架;企业合规成本占比将提升至AI总投入的15%-20%｡ 4. 垂直领域深度定制化 医疗(AI辅助诊断准确率突破95%)､农业(精准种植节约成本20%)､能源(智能电网预测效率提升40%)等领域将出现规模化商用案例｡ 二､规模与分布 细分领域 2025年市场规模(亿美元) 生成式AI 800 48% 计算机视觉 650 \nPublished date: 2026-02-03T08:45:21+08:00\nSite name: 新浪网\n\nTitle: 2024:AI 演进的里程碑之年--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0128/3163129.shtml\nDescription: 欧洲备受期待的 AI 监管法规本应通过制定明确的使用指南来提供保障,但进展缓慢｡ 2024 年证明批评者是错的! 在实际应用方面,2024 年扭转了局势｡到年底,超过 90% 的企业积极鼓励使用生成式 AI,其中 29% 已经培训了超过四分之一的员工｡最好的是?58% 的企业常规用户报告每周至少节省 5 小时 - 而且不是普通的时间,而是最繁琐的工作时间! \nPublished date: 2026-02-17T13:09:37+08:00\nSite name: ai.zhiding.cn\n\nTitle: 香港参与发起全球联合声明:确立AI隐私保护四大基本原则_机构_内容_监管\nURL: https://www",
+    "isError": false,
+    "durationMs": 987,
+    "createdAt": "2026-03-01T11:41:27.652Z"
+  },
+  {
+    "id": "d0533f100b0d43c9",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_haaf3du1uza6_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:41:36.832Z"
+  },
+  {
+    "id": "6910285a1a0bb750",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 国家互联网信息办公室关于发布2025年生成式人工智能服务已备案信息的公告_中央网络安全和信息化委员会办公室\nURL: https://www.cac.gov.cn/2026-01/09/c_1769688009588554.htm\nDescription: 促进生成式人工智能服务创新发展和规范应用,网信部门会同有关部门按照《生成式人工智能服务管理暂行办法》要求,持续开展生成式人工智能服务备案工作｡2025年全年新增446款生成式人工智能服务在国家网信办完成备案,对于通过API接口或其他方式直接调用已备案模型能力的生成式人工智能应用或功能,由地方网信办开展登记,新增330款完成登记｡截至2025年12月31日,累计有748款生成式人工智能服务完成备案,435款生成式人工智能应用或功能完成登记｡ 提供具有舆论属性或者社会动员能力的生成式人工智能服务的,可通过属地网信部门履行备案或登记程序｡\nPublished date: 2026-03-01T01:31:36+08:00\nSite name: 国家互联网信息办公室\n\nTitle: 生成式人工智能时代如何筑牢个人信息保护防线人工智能_新浪财经_新浪网\nURL: http://finance.sina.com.cn/jjxw/2026-02-28/doc-inhphzas9582148.shtml\nDescription: 生成式人工智能开发依托大规模数据收集,易出现收集范围不明确或超限情况,如部分大型语言模型训练数据含未充分去标识化的个人文本信息｡应坚持并细化目的明确与最小必要原则,要求运营者披露数据收集类型与用途,建立独立机构定期评估机制审查收集相关性,依法纠正无关或冗余收集行为｡ 依据信息敏感度与使用场景实施差异化保护｡个人信息风险随内容､上下文及处理方式动态变化,当前法律分类可进一步细化以应对生成式人工智能组合信息生成新内容的情况｡ 重点规范与持续监督高风险处理活动｡针对生成式人工智能常见的大规模､自动化及可能跨境的数据处理活动,法律应设置具体要求:模型运行中监控输出是否泄露训练数据特征或产生有偏结果;为个人提供质疑自动化决策､申请人工复查的渠道｡监管需从单一事后处置拓展至全流程常态关注｡\nPublished date: 2026-02-28T03:48:25+08:00\nSite name: 新浪财经\n\nTitle: 监管难:AI生成视频 “狂飙”, 现存人工智能相关企业超500万家_新浪财经_新浪网\nURL: http://finance.sina.com.cn/jjxw/2026-02-27/doc-inhpfnzk9951812.shtml\nDescription: 专家呼吁,平台应从“事后删除”转向“事前审核”,建立更严格的过滤机制,遏制侵权视频传播｡ 天眼查专业版数据显示,截至目前我国现存在业､存续状态的人工智能相关企业超500万家｡其中,2025年新增注册相关企业超120.2万余家,从企业注册数量趋势来看,近五年间,人工智能相关企业的注册数量呈现出逐年增长的态势,并在2025年达到顶峰｡ 从区域分布来看,广东省人工智能相关企业数量位居首位,以超77.\nPublished date: 2026-02-27T10:27:47+08:00\nSite name: 新浪财经\n\nTitle: AI赋能智慧监管 第2版:综合 2025年03月10日 中国消费者报\nURL: https://zxb.ccn.com.cn/html/zxb/20250310/131281.html\nDescription: 近日,广西防城港市市场监管局搭建部署了基于DeepSeek和腾讯元宝大模型定制的“防城港市监AI”,在公众号链接上线公测,这一创新性举措标志着防城港市市场监管服务迈入智能化､精准化新阶段｡当前上线的1.0版本侧重智能客服功能,能够实时解答公众关于企业注册登记､食品药品安全､知识产权保护､消费维权等市场监管问题,可以提供24小时不间断服务｡明年的3.0版本还将在业务系统中整合AI功能模块,可以实现智能辅助审批､实时参考､文书生成､大数据分析等功能｡\nPublished date: 2026-02-12T19:01:07+08:00\nSite name: zxb.ccn.com.cn\n\nTitle: 搜狐医药  天津等多地要求严禁使用AI自动生成处方,AI自动处方风险有多大?_医保_患者_基金\nURL: http://www.sohu.com/a/990568028_359980\nDescription: 2026年2月,天津市卫健委发布公告《市卫生健康委关于印发天津市互联网诊疗监管实施办法(试行)的通知》要求:处方应由接诊医师本人开具,在线开具的处方必须有医师电子签",
+    "isError": false,
+    "durationMs": 1090,
+    "createdAt": "2026-03-01T11:41:37.922Z"
+  },
+  {
+    "id": "fcdbb3a5957bc006",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_jlieirjse49y_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:41:41.748Z"
+  },
+  {
+    "id": "5bb93517da444d58",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: GPT-5、GPT-5.1与GPT-5.2:从对话助手到专业智能体的演进之路-CSDN博客\nURL: https://blog.csdn.net/u014177256/article/details/158103262\nDescription: 2025年至2026年初,OpenAI连续发布了GPT-5､GPT-5.1和GPT-5.2三个重要版本,这不仅是技术的迭代升级,更代表了OpenAI对AI模型发展方向的战略性调整｡ 一､发展历史与版本背景 GPT-5:统一智能系统的诞生(2025年8月)GPT-5于2025年8月8日正式发布,是OpenAI对基座模型的一次深度整合与优化｡在发布时,CEO Sam Altman表示:\"GPT-5是全球最佳模型｡\"这一版本取代了GPT-4时代的各种变体模型(如GPT-4o､o3等),标志着OpenAI从\"多模型并行\"向\"统一系统\"的战略转变｡ GPT-5的核心目标是打造一个\"智能的､分层的处理中心\",能够根据问题的复杂程度自动选择响应策略｡这一版本首次采用了内嵌式三位一体集成架构,整合了GPT系列(大语言模型)和o系列(推理模型),实现了\"快慢思考结合\"的统一智能体验｡ GPT-5.1:对话情商与自适应推理的突破(2025年11月)GPT-5.1于2025年11月13日发布,距离GPT-5仅三个月,是OpenAI对用户反馈的迅速回应｡此次升级的官方目标是\"打造一个既更智能､也更善对话的ChatGPT\",反映了OpenAI对模型交互体验的重视｡\nPublished date: 2026-02-16T08:56:51+08:00\nSite name: blog.csdn.net\n\nTitle: AI 巨头 OpenAI 的GPT-5 路线图正式公布--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0218/3163520.shtml\nDescription: OpenAI 首席执行官 Sam Altman 宣布了公司发布 GPT-5 的路线图,这是对 2023 年GPT-4 AI 语言模型的期待已久的后续版本｡Altman 在X上表示,GPT-5 将在“几个月内”推出,预计在 2025 年晚些时候发布｡公司计划在“几周内”发布 GPT-4.5,作为最后一个非模拟推理模型｡GPT-5 是2023 年轰动全球科技和政策圈的 GPT-4 AI 语言模型的后续版本｡Altman 在X平台上回应提问时表示,GPT-5 将在\"数月内\"发布,暗示可能在 2025 年后期推出｡\nPublished date: 2026-02-17T22:45:21+08:00\nSite name: ai.zhiding.cn\n\nTitle: 为什么昇腾是DeepSeek的“最优解”?-人工智能-人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0214/3163476.shtml\nDescription:  作者 | 金旺 2月13日,OpenAI CEO Sam Altman公开表示,“GPT-5将会在未来几个月发布,并将对公众开放免费使用｡” 直接跳过OpenAI o3,迎来免费版GPT-5,这与最近一段时间DeepSeek火爆全球不无关系｡ 作为全球大模型领域主导者,OpenAI不能失去自己的铁王座,DeepSeek \nPublished date: 2026-02-17T16:59:26+08:00\nSite name: ai.zhiding.cn\n\nTitle: OpenAI 发布 GPT-5 企业版:多模态能力升级,令牌成本对标 Gemini 2.5 且幻觉率降 65% - 牛透社\nURL: https://www.niutoushe.com/lives/kskxqjoodj3260\nDescription: 牛透社 8 月14 日消息,OpenAI 发布 GPT-5,该产品具备企业级编码任务优化､多模态能力升级及扩展上下文窗口功能,主要应用于软件工程与跨模态整合场景｡ 关键升级包括语音与图像模态支持､工具调用优化及并发处理设计,需企业系统适配单会话多请求｡令牌成本与 Gemini 2.5 相当,低于 Claude Opus 45%｡幻觉率降低 65%,但强大多模态能力存在滥用风险,建议企业并行测试竞品并更新治理政策｡\nPublished date: 2026-02-27T16:28:10+08:00\nSite name: www.niutoushe.com\n\nTitle: OpenAI 宣布 GPT-5 将整合多种模型,实现全新突破 - 牛透社\nURL: https://www.niutoushe.com/lives/hqgtresw",
+    "isError": false,
+    "durationMs": 1059,
+    "createdAt": "2026-03-01T11:41:42.807Z"
+  },
+  {
+    "id": "05708375f6c91e78",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_m0z029hdh2sb_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:41:54.473Z"
+  },
+  {
+    "id": "e614393093c94d81",
+    "type": "tool_call",
+    "taskId": "184ce368d1b3df73",
+    "subtaskId": "dd6a9f26fa3dfa6d",
+    "employeeId": "07461653c24ebe14",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 春节期间,中国AI大模型领跑全球\nURL: http://stock.10jqka.com.cn/20260227/c674974407.shtml\nDescription: 今年春节期间,中国 人工智能(885728) (AI)厂商在全球市场表现抢眼｡ 据全球最大AI模型API聚合平台OpenRouter数据显示,2026年2月,中国AI模型调用量三周大涨127%,首次超越美国,且全球前五中占四席｡ Token正从“流量”变为AI时代“燃料”,而中国模型厂商,正凭借快速迭代和成本优势占领全球市场,国产算力需求正经历指数级增长｡ OpenRouter在2026年2月16日至22日的周榜单显示,平台调用量排名前五的模型中,有四款来自中国厂商,分别为MiniMax的M2.5､月之暗面的Kimi K2.5､ 智谱(HK2513) 的GLM-5以及DeepSeek的V3.2｡这四款模型合计贡献了Top5总调用量的85.7%｡ 其中, 联想控股(HK3396) 体系所投企业 智谱(HK2513) 在近日公布的新一代大模型 GLM-5,在智能体(Agent)､推理与编程(ARC)能力上实现突破,通过四大核心技术革新显著提升性能与效率: 稀疏注意力架构(DSA):动态筛选关键信息,将长序列(200K上下文)的注意力计算成本降低1.5-2倍,支持7440亿参数规模下高效推理;\nPublished date: 2026-02-27T00:00:00+08:00\nSite name: 同花顺财经\n\nTitle: OpenRouter:中国 AI 模型 2 月全球 token 用量首超美国,MiniMax 等四款大模型霸榜前五 - IT之家\nURL: https://www.ithome.com/0/924/039.htm\nDescription: 消息,在线 AI 托管平台 OpenRouter 最新数据显示, 由MiniMax､月之暗面(Moonshot AI)､智谱领衔的中国开源人工智能模型,已登顶全球 Token 使用量榜单｡ 在OpenRouter 本月(2026 年2月)的具体排名中,中国大模型表现极为抢眼｡发布仅两周的 MiniMax M2.5 模型斩获单月冠军,开发者通过该平台调用了高达 4.55 万亿个 Token(Token 是AI 处理输入数据的基本单元)｡ 紧随其后的是月之暗面上月发布的 Kimi K2.5 模型,以4.02 万亿的 Token 使用量位居第二｡榜单前五名中的其余席位由谷歌的 Gemini 3 Flash Preview､深度求索(DeepSeek)的V3.2 以及 Anthropic 的Claude Sonnet 4.5 占据｡\nPublished date: 2026-02-28T05:14:32+08:00\nSite name: IT之家\n\nTitle: 【前沿解析】2026年2月16日:AI大模型密集更新日,国产模型全面对标国际顶尖_现在2026年2月 哪个大模型是最便宜-CSDN博客\nURL: https://blog.csdn.net/shaobingj126/article/details/158262368\nDescription: 2026年2月16日,农历除夕当天,中国AI产业迎来了一场前所未有的技术盛宴｡字节跳动正式发布豆包大模型2.0系列,阿里巴巴开源千问Qwen3.5-Plus,两大国产模型在性能上全面对标GPT-5.2和Gemini 3 Pro等国际顶尖产品｡ 就在春晚热度未退的除夕当天,字节跳动和阿里巴巴两大科技巨头相继发布新一代大模型,形成了罕见的\"技术双响炮\": 字节跳动豆包大模型2.0:完成自2024年5月发布以来的首次大版本跨代升级,形成Pro､Light､Mini､Code四大版本矩阵 阿里巴巴千问Qwen3.5-Plus:以3970亿总参数､170亿激活参数的\"以小胜大\"架构,性能超越自家万亿参数的Qwen3-Max模型 1.2 国际背景:GPT-5.2与Gemini 3的\"阴影竞赛\" 国产模型的密集发布并非孤立事件｡\nPublished date: 2026-02-21T11:33:03+08:00\nSite name: blog.csdn.net\n\nTitle: 周末重点速递丨节后主线将更加清晰!券商关注四大主线;商业航天快速发展,火箭及卫星制造率先受益  每日经济新闻\nURL: https://m.nbd.com.cn/articles/2026-03-01/4273794.html\nDescription: 一､重磅消息 2月26日消息,全球最大AI模型API聚合平台OpenRouter数据显示,2026年2月,中国AI模型调用量三周大涨127%",
+    "isError": false,
+    "durationMs": 1433,
+    "createdAt": "2026-03-01T11:41:55.906Z"
+  }
+]

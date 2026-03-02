@@ -1,0 +1,70 @@
+{
+  "label": "round33-b02-memory",
+  "sessionId": "round33-b02-memory-20260301-113524",
+  "kind": "memory",
+  "pmChatDurationMs": 30517,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "8f034073a02ccc72"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 30517
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "8f034073a02ccc72",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 218711,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成售后投诉FAQ知识沉淀任务。分析最近一个月售后投诉数据，识别出TOP5高频问题，并在知识图谱中补充了缺失的FAQ条目（虚假发货、虚假宣传）。知识库已更新完成。"
+  }
+}

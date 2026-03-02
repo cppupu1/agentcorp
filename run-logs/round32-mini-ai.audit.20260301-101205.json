@@ -1,0 +1,73 @@
+{
+  "label": "round32-mini-ai",
+  "sessionId": "round32-mini-ai-20260301-101205",
+  "pmChatDurationMs": 25077,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "1b7f1971a4e81588"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 25077
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "modelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "1b7f1971a4e81588",
+      "status": "completed",
+      "flags": {
+        "stock": false,
+        "memory": false,
+        "search": true
+      },
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。研究员收集了近30天AI技术行业动态，输出3条关键结论：1. 具身智能进入产业应用阶段2. 全球AI监管框架加速落地3. 大模型商业化进程加速每条结论均附具体日期与可核验来源链接，符合一手来源与交叉验证要求。"
+    }
+  ]
+}

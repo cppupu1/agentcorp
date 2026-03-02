@@ -14,6 +14,22 @@ export async function validateSubtaskOutput(subtaskId: string, output: string): 
   if (output.includes('Error:') && output.length < 100) {
     return { valid: false, reason: '输出包含错误信息' };
   }
+  const normalized = output.replace(/\s+/g, ' ');
+  const unfinishedPatterns = [
+    /任务状态[：:]\s*部分完成/i,
+    /重试次数已达上限/i,
+    /执行过程中遇到(?:技术|系统).{0,8}(?:障碍|异常)/i,
+    /系统多次返回异常状态/i,
+    /未能(?:正常)?(?:获取|产出|完成|执行)/i,
+    /无法(?:获取|产出|完成|执行)/i,
+    /未产出符合要求/i,
+    /未收到(?:具体)?(?:项目)?(?:文档|素材|原文|输入)/i,
+    /由于(?:未|缺少).{0,10}(?:提供|收到).{0,12}(?:文档|素材|原文|输入)/i,
+    /以下为通用.{0,20}(?:模板|方案)/i,
+  ];
+  if (unfinishedPatterns.some(pattern => pattern.test(normalized))) {
+    return { valid: false, reason: '输出显示任务未完成或仅部分完成' };
+  }
   return { valid: true };
 }
 
@@ -26,9 +42,15 @@ export async function handleSubtaskFailure(
 ): Promise<{ action: 'retried' | 'reassigned' | 'skipped' | 'escalated'; message: string }> {
   const [st] = await db.select().from(subtasks).where(eq(subtasks.id, subtaskId));
   if (!st) return { action: 'escalated', message: '子任务不存在' };
+  const [taskState] = await db.select({ status: tasks.status, teamId: tasks.teamId }).from(tasks).where(eq(tasks.id, taskId));
+  if (!taskState || !['executing', 'paused'].includes(taskState.status ?? '')) {
+    return { action: 'skipped', message: '任务已结束，跳过重试与重分配' };
+  }
 
   const retryCount = st.retryCount ?? 0;
   const maxRetries = st.maxRetries ?? 2;
+  const hardStopPattern = /repeated tool loop|tool-call limit exceeded|token limit exceeded/i;
+  const shouldHardStop = hardStopPattern.test(error || '');
 
   // Record error trace
   const traceId = generateId();
@@ -45,8 +67,8 @@ export async function handleSubtaskFailure(
   // Fire-and-forget AI summary generation
   summarizeError(traceId, error);
 
-  // Retry if under limit
-  if (retryCount < maxRetries) {
+  // Retry if under limit (except hard-stop errors that are unlikely to recover by retrying)
+  if (!shouldHardStop && retryCount < maxRetries) {
     await db.update(subtasks).set({
       status: 'pending',
       retryCount: retryCount + 1,
@@ -68,8 +90,7 @@ export async function handleSubtaskFailure(
   }
 
   // Max retries exceeded - try reassignment
-  const [task] = await db.select({ teamId: tasks.teamId }).from(tasks).where(eq(tasks.id, taskId));
-  if (task?.teamId && st.assigneeId) {
+  if (taskState?.teamId && st.assigneeId) {
     // Check if we've already reassigned for this subtask (prevent infinite loop)
     const reassignTraces = await db.select({ id: errorTraces.id })
       .from(errorTraces)
@@ -85,7 +106,7 @@ export async function handleSubtaskFailure(
     const alternates = await db.select({ employeeId: teamMembers.employeeId })
       .from(teamMembers)
       .where(and(
-        eq(teamMembers.teamId, task.teamId),
+        eq(teamMembers.teamId, taskState.teamId),
         eq(teamMembers.role, 'member'),
       ));
 

@@ -1,0 +1,87 @@
+{
+  "label": "round29-mini-content",
+  "sessionId": "round29-mini-content-20260301-095546",
+  "pmChatDurationMs": 23252,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "43adb0319fe694ab"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 23252
+    },
+    {
+      "name": "uses_minimax_model",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ],
+      "expected": "b9df4501c7f6f9a6"
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "43adb0319fe694ab",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 3750,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n企业AI助手发布文案创作任务已完成。文案策划交付了完整的文案内容，包括：1）一篇正式风格的发布短文（约450字），适合官网或新闻稿使用，突出智源AI助手的核心价值、安全可靠性和行业应用成果；2）两条社媒文案，分别适配微信/微博和小红书平台，具有较强的传播力和社交属性。所有文案符合品牌调性要求，内容完整，可以直接投入使用。"
+    }
+  ]
+}

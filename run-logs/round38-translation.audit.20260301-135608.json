@@ -1,0 +1,91 @@
+{
+  "label": "round38-translation",
+  "sessionId": "round38-translation-20260301-135608",
+  "kind": "translation",
+  "userPrompt": "我一会儿要给全员发通知，直接帮我落地一个可复用的企业公告中英双语模板版本。",
+  "pmChatDurationMs": 31580,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "400423ad71f53d31"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 31580
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "400423ad71f53d31"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "output_not_too_short",
+      "ok": true,
+      "len": 10093
+    },
+    {
+      "name": "translation_has_cn_en",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "400423ad71f53d31",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 7977,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n所有子任务已完成（PM未显式调用complete_task，系统自动完成）"
+  }
+}

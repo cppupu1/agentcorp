@@ -1,0 +1,77 @@
+{
+  "label": "round12-pm-ai-trend-autoassign",
+  "sessionId": "round12-ai-20260301-022629",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "7ae4feeba2b1e0d6"
+  ],
+  "autoAssign": {
+    "recommended": 4,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_recommended",
+      "ok": true,
+      "recommended": 4,
+      "min": 1
+    },
+    {
+      "name": "search_tool_used",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "7ae4feeba2b1e0d6",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 79623,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 16
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasTimeTool": false,
+      "decisionCount": 16,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已按时完成AI智能体行业近30天趋势简报（简版）的编制。报告涵盖2026-01-01至2026-01-30的关键时间线、重大技术突破、企业动态、政策法规、市场数据与竞争格局，结构清晰、来源可核验。"
+    }
+  ]
+}

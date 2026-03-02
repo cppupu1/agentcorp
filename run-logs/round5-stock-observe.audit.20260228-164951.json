@@ -1,0 +1,52 @@
+{
+  "taskId": "603c8384bd2a5d43",
+  "title": "回归观测-股票分析-2026-02-28",
+  "status": "completed",
+  "tokenUsage": 484816,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "pending",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 56,
+  "tools": [
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 23
+    },
+    {
+      "tool": "tushare_mcp_001__daily",
+      "count": 7
+    },
+    {
+      "tool": "tushare_mcp_001__stock_basic",
+      "count": 5
+    },
+    {
+      "tool": "tushare_mcp_001__today",
+      "count": 5
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_ai_search",
+      "count": 4
+    },
+    {
+      "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+      "count": 4
+    },
+    {
+      "tool": "tushare_mcp_001__plot_weekly_candlestick_chart",
+      "count": 4
+    },
+    {
+      "tool": "tushare_mcp_001__weekly",
+      "count": 4
+    }
+  ],
+  "decisions": [],
+  "hasFinanceToolCall": true,
+  "hasWebToolCall": true,
+  "resultSummaryLinkCount": 0
+}

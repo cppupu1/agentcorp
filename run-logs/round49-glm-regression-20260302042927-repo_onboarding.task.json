@@ -1,0 +1,71 @@
+{
+  "id": "52bba10277170182",
+  "teamId": "962c0e146ebfc524",
+  "teamName": "文档整理团队",
+  "title": "整理新同学10分钟上手清单",
+  "description": "从当前项目文档中提取和整理关键信息，输出一份\"新同学10分钟上手清单\"。\n\n要求：\n1. 分步骤输出，每个步骤清晰明了\n2. 包含必要的命令行指令或操作命令\n3. 结构化呈现，方便新人快速上手\n4. 涵盖项目环境配置、基础操作、常用命令等核心内容\n\n输出格式：\n- 步骤编号\n- 步骤标题\n- 具体操作说明\n- 相关命令（如有）\n- 注意事项（如有）",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "6484d222da9a0619",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "64d67f1beb877ea8",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "c265f1f5c2b250c0",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "整理新同学10分钟上手清单",
+        "description": "从当前项目文档中提取和整理关键信息，输出一份\"新同学10分钟上手清单\"。\n\n要求：\n1. 分步骤输出，每个步骤清晰明了\n2. 包含必要的命令行指令或操作命令\n3. 结构化呈现，方便新人快速上手\n4. 涵盖项目环境配置、基础操作、常用命令等核心内容\n\n输出格式：\n- 步骤编号\n- 步骤标题\n- 具体操作说明\n- 相关命令（如有）\n- 注意事项（如有）",
+        "assigneeId": "64d67f1beb877ea8",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功整理完成\"新同学10分钟上手清单\"，涵盖从环境准备到创建第一个AI员工的8个核心步骤，包含必要的命令行指令、项目结构说明、常用命令速查表和核心功能概览，结构清晰、内容详实，方便新人快速上手。",
+    "deliverables": "# 新同学10分钟上手清单\n\n## 步骤 1：环境准备\n### 具体操作说明\n确认开发环境满足最低要求，准备必要的工具和依赖。\n\n### 相关命令\n```bash\n# 检查 Node.js 版本（要求 >= 22.0.0）\nnode --version\n\n# 如不满足要求，建议使用 nvm 安装\nnvm install 22\nnvm use 22\n```\n\n### 注意事项\n- 必须使用 Node.js 22.0.0 或更高版本\n- 建议使用 nvm 或 fnm 进行版本管理\n\n---\n\n## 步骤 2：安装项目依赖\n### 具体操作说明\n进入项目根目录，安装所有 npm 包的依赖。项目使用 npm workspaces monorepo 结构，会自动安装所有子包的依赖。\n\n### 相关命令\n```bash\n# 安装所有依赖\nnpm install\n```\n\n### 注意事项\n- 项目使用 npm workspaces，依赖安装在根目录的 node_modules 中\n- 首次安装可能需要几分钟时间\n\n---\n\n## 步骤 3：构建项目\n### 具体操作说明\n编译 TypeScript 代码，构建所有子包。\n\n### 相关命令\n```bash\n# 构建所有包\nnpm run build\n```\n\n### 注意事项\n- 构建后会在各包的 dist 目录生成编译后的 JavaScript 文件\n- 如遇到构建错误，请检查 TypeScript 配置\n\n---\n\n## 步骤 4：数据库迁移\n### 具体操作说明\n初始化或更新数据库结构，确保数据库与代码同步。\n\n### 相关命令\n```bash\n# 执行数据库迁移\nnpm run db:migrate\n\n# 如需生成新的迁移文件\nnpm run db:generate\n```\n\n### 注意事项\n- 数据库默认路径：`packages/data/agentcorp.db`\n- 确保在执行迁移前已成功构建项目\n- 首次运行会自动创建 SQLite 数据库文件\n\n---\n\n## 步骤 5：启动开发服务\n### 具体操作说明\n启动前后端开发服务器。根据需要选择启动模式。\n\n### 相关命令\n```bash\n# 同时启动前后端（推荐）\nnpm run dev\n\n# 仅启动后端服务\nnpm run dev:server\n\n# 仅启动前端服务\nnpm run dev:web\n```\n\n### 注意事项\n- 启动后访问前端：http://localhost:5173\n- 后端 API 默认端口：3000\n- 可通过环境变量 PORT 修改后端端口\n\n---\n\n## 步骤 6：配置 AI 模型（首次使用必做）\n### 具体操作说明\n配置 OpenAI 兼容的 AI 模型，让 AI 员工能够运行。\n\n### 具体步骤\n1. 访问 http://localhost:5173 进入应用\n2. 点击「模型」页面\n3. 添加一个 AI 模型（需要 API Key 和 Base URL）\n\n### 注意事项\n- 需要提供 OpenAI 兼容的 API Key\n- Base URL 根据使用的服务商填写\n\n---\n\n## 步骤 7：配置 HR 助手\n### 具体操作说明\n设置 HR 助手使用的模型，以便通过对话创建 AI 员工。\n\n### 具体步骤\n1. 进入「设置」页面\n2. 配置 `hr_assistant_model_id` 指向步骤 6 中添加的模型\n\n### 注意事项\n- HR 助手必须配置模型才能使用\n- 该配置是创建 AI 员工的关键\n\n---\n\n## 步骤 8：创建第一个 AI 员工\n### 具体操作说明\n通过 HR 助手对话式创建你的第一个 AI 员工。\n\n### 具体步骤\n1. 进入「HR助手」页面\n2. 通过对话描述你需要的员工（角色、能力、工具等）\n3. AI 会自动生成员工配置并创建\n\n### 注意事项\n- 支持自然语言描述需求\n- 创建成功后可在「员工」页面查看\n\n---\n\n## 项目结构快速了解\n\n```\npackages/\n├── web/          # 前端 SPA (React + TypeScript)\n├── server/       # 后端 API (Fastify + TypeScript)\n├── db/           # 数据库 schema 和迁移 (Drizzle ORM)\n├── agent-core/   # AI Agent 运行时核心\n├── shared/       # 共享类型和常量\n└── data/         # SQLite 数据库文件\n```\n\n---\n\n## 常用命令速查表\n\n| 命令 | 说明 |\n|------|------|\n| `npm install` | 安装所有依赖 |\n| `npm run build` | 构建所有包 |\n| `npm run dev` | 启动前后端开发服务 |\n| `npm run dev:server` | 仅启动后端 |\n| `npm run dev:web` | 仅启动前端 |\n| `npm run db:generate` | 生成数据库迁移文件 |\n| `npm run db:migrate` | 执行数据库迁移 |\n\n---\n\n## 核心功能概览\n\n- **AI 员工管理** - 创建、配置、管理 AI 员工\n- **HR 助手** - 对话式创建员工\n- **团队协作** - 5 种协作模式（自由协作、流水线、辩论、投票、主从）\n- **任务系统** - 任务创建、自动执行、SSE 实时进度推送\n- **工具集成** - MCP 协议工具接入\n- **知识库** - 为员工提供领域知识上下文\n- **触发器** - 定时或事件驱动的自动任务\n- **事故管理** - 异常检测与追踪\n\n---\n\n## 环境变量配置\n\n项目根目录 `.env.example` 文件中提供了环境变量示例：\n\n```bash\nPORT=3000                    # 服务端口\nAGENTCORP_DB_PATH=packages/data/agentcorp.db  # 数据库路径\nENCRYPTION_KEY=              # API Key 加密密钥（自动生成）\n```\n\n---\n\n## 下一步学习建议\n\n1. 探索「员工」页面，了解员工配置选项\n2. 尝试创建不同角色的 AI 员工\n3. 学习「团队」页面的 5 种协作模式\n4. 体验「任务」页面的任务执行流程\n5. 查看代码结构，深入理解项目架构\n\n---\n\n**文档版本**：基于 2026-03-02 项目文档整理\n**项目名称**：AgentCorp - AI 员工管理平台\n**技术栈**：React + Fastify + SQLite + Drizzle ORM + Vercel AI SDK",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-02T04:52:46.927Z"
+  },
+  "tokenUsage": 94004,
+  "createdAt": "2026-03-02T04:51:10.386Z",
+  "updatedAt": "2026-03-02T04:52:46.937Z",
+  "subtasks": [
+    {
+      "id": "5867e3bac8f51089",
+      "title": "整理新同学10分钟上手清单",
+      "description": "从当前项目文档中提取和整理关键信息，输出一份\"新同学10分钟上手清单\"。\n\n要求：\n1. 分步骤输出，每个步骤清晰明了\n2. 包含必要的命令行指令或操作命令\n3. 结构化呈现，方便新人快速上手\n4. 涵盖项目环境配置、基础操作、常用命令等核心内容\n\n输出格式：\n- 步骤编号\n- 步骤标题\n- 具体操作说明\n- 相关命令（如有）\n- 注意事项（如有）",
+      "assigneeId": "64d67f1beb877ea8",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "我来帮你提取项目文档信息，整理成新同学上手清单。首先让我探索项目结构。---\n\n# 新同学10分钟上手清单\n\n## 步骤 1：环境准备\n### 具体操作说明\n确认开发环境满足最低要求，准备必要的工具和依赖。\n\n### 相关命令\n```bash\n# 检查 Node.js 版本（要求 >= 22.0.0）\nnode --version\n\n# 如不满足要求，建议使用 nvm 安装\nnvm install 22\nnvm use 22\n```\n\n### 注意事项\n- 必须使用 Node.js 22.0.0 或更高版本\n- 建议使用 nvm 或 fnm 进行版本管理\n\n---\n\n## 步骤 2：安装项目依赖\n### 具体操作说明\n进入项目根目录，安装所有 npm 包的依赖。项目使用 npm workspaces monorepo 结构，会自动安装所有子包的依赖。\n\n### 相关命令\n```bash\n# 安装所有依赖\nnpm install\n```\n\n### 注意事项\n- 项目使用 npm workspaces，依赖安装在根目录的 node_modules 中\n- 首次安装可能需要几分钟时间\n\n---\n\n## 步骤 3：构建项目\n### 具体操作说明\n编译 TypeScript 代码，构建所有子包。\n\n### 相关命令\n```bash\n# 构建所有包\nnpm run build\n```\n\n### 注意事项\n- 构建后会在各包的 dist 目录生成编译后的 JavaScript 文件\n- 如遇到构建错误，请检查 TypeScript 配置\n\n---\n\n## 步骤 4：数据库迁移\n### 具体操作说明\n初始化或更新数据库结构，确保数据库与代码同步。\n\n### 相关命令\n```bash\n# 执行数据库迁移\nnpm run db:migrate\n\n# 如需生成新的迁移文件\nnpm run db:generate\n```\n\n### 注意事项\n- 数据库默认路径：`packages/data/agentcorp.db`\n- 确保在执行迁移前已成功构建项目\n- 首次运行会自动创建 SQLite 数据库文件\n\n---\n\n## 步骤 5：启动开发服务\n### 具体操作说明\n启动前后端开发服务器。根据需要选择启动模式。\n\n### 相关命令\n```bash\n# 同时启动前后端（推荐）\nnpm run dev\n\n# 仅启动后端服务\nnpm run dev:server\n\n# 仅启动前端服务\nnpm run dev:web\n```\n\n### 注意事项\n- 启动后访问前端：http://localhost:5173\n- 后端 API 默认端口：3000\n- 可通过环境变量 PORT 修改后端端口\n\n---\n\n## 步骤 6：配置 AI 模型（首次使用必做）\n### 具体操作说明\n配置 OpenAI 兼容的 AI 模型，让 AI 员工能够运行。\n\n### 具体步骤\n1. 访问 http://localhost:5173 进入应用\n2. 点击「模型」页面\n3. 添加一个 AI 模型（需要 API Key 和 Base URL）\n\n### 注意事项\n- 需要提供 OpenAI 兼容的 API Key\n- Base URL 根据使用的服务商填写\n\n---\n\n## 步骤 7：配置 HR 助手\n### 具体操作说明\n设置 HR 助手使用的模型，以便通过对话创建 AI 员工。\n\n### 具体步骤\n1. 进入「设置」页面\n2. 配置 `hr_assistant_model_id` 指向步骤 6 中添加的模型\n\n### 注意事项\n- HR 助手必须配置模型才能使用\n- 该配置是创建 AI 员工的关键\n\n---\n\n## 步骤 8：创建第一个 AI 员工\n### 具体操作说明\n通过 HR 助手对话式创建你的第一个 AI 员工。\n\n### 具体步骤\n1. 进入「HR助手」页面\n2. 通过对话描述你需要的员工（角色、能力、工具等）\n3. AI 会自动生成员工配置并创建\n\n### 注意事项\n- 支持自然语言描述需求\n- 创建成功后可在「员工」页面查看\n\n---\n\n## 项目结构快速了解\n\n```\npackages/\n├── web/          # 前端 SPA (React + TypeScript)\n├── server/       # 后端 API (Fastify + TypeScript)\n├── db/           # 数据库 schema 和迁移 (Drizzle ORM)\n├── agent-core/   # AI Agent 运行时核心\n├── shared/       # 共享类型和常量\n└── data/         # SQLite 数据库文件\n```\n\n---\n\n## 常用命令速查表\n\n| 命令 | 说明 |\n|------|------|\n| `npm install` | 安装所有依赖 |\n| `npm run build` | 构建所有包 |\n| `npm run dev` | 启动前后端开发服务 |\n| `npm run dev:server` | 仅启动后端 |\n| `npm run dev:web` | 仅启动前端 |\n| `npm run db:generate` | 生成数据库迁移文件 |\n| `npm run db:migrate` | 执行数据库迁移 |\n\n---\n\n## 核心功能概览\n\n- **AI 员工管理** - 创建、配置、管理 AI 员工\n- **HR 助手** - 对话式创建员工\n- **团队协作** - 5 种协作模式（自由协作、流水线、辩论、投票、主从）\n- **任务系统** - 任务创建、自动执行、SSE 实时进度推送\n- **工具集成** - MCP 协议工具接入\n- **知识库** - 为员工提供领域知识上下文\n- **触发器** - 定时或事件驱动的自动任务\n- **事故管理** - 异常检测与追踪\n\n---\n\n## 环境变量配置\n\n项目根目录 `.env.example` 文件中提供了环境变量示例：\n\n```bash\nPORT=3000                    # 服务端口\nAGENTCORP_DB_PATH=packages/data/agentcorp.db  # 数据库路径\nENCRYPTION_KEY=              # API Key 加密密钥（自动生成）\n```\n\n---\n\n## 下一步学习建议\n\n1. 探索「员工」页面，了解员工配置选项\n2. 尝试创建不同角色的 AI 员工\n3. 学习「团队」页面的 5 种协作模式\n4. 体验「任务」页面的任务执行流程\n5. 查看代码结构，深入理解项目架构\n\n---\n\n**文档版本**：基于 2026-03-02 项目文档整理\n**项目名称**：AgentCorp - AI 员工管理平台\n**技术栈**：React + Fastify + SQLite + Drizzle ORM + Vercel AI SDK"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 94004,
+      "createdAt": "2026-03-02T04:51:22.145Z",
+      "updatedAt": "2026-03-02T04:52:22.940Z"
+    }
+  ]
+}

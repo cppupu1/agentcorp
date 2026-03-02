@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-02-28T17:13:43.430852Z",
+  "runLabel": "round6b-20260228-171343",
+  "validated_tasks": [
+    {
+      "label": "round6b-vote-check",
+      "taskId": "843abecea91673a7",
+      "status": "completed",
+      "evidence": "run-logs/round6b-vote-check.audit.20260228-171343.json"
+    },
+    {
+      "label": "round6b-master-check",
+      "taskId": "0564e6c3f706e1e6",
+      "status": "completed",
+      "evidence": "run-logs/round6b-master-check.audit.20260228-171343.json"
+    }
+  ]
+}

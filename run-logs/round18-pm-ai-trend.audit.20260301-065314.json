@@ -1,0 +1,78 @@
+{
+  "label": "round18-pm-ai-trend",
+  "sessionId": "round18-ai-20260301-065314",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "d0ad8f58b1811368"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "d0ad8f58b1811368",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 270207,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 38
+        },
+        {
+          "tool": "1791ada993a23a56__get_markdown",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasTimeTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成近30天（2024-12-12至2025-01-11）AI技术行业趋势简报整理。简报涵盖模型技术趋势、Agent智能体发展、企业落地实践三个核心维度，包含谷歌Gemini 2.0、OpenAI o3与Sora Turbo等最新模型发布，微软Copilot、Salesforce Agentforce等企业落地案例，以及2025年AI Agent商业化元年等趋势洞察。关键信息均标注具体日期并附可靠来源链接，总字数约1400字，符合1000-1500字要求。"
+    }
+  ]
+}

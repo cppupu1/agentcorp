@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-03-02T00:40:35.870576Z",
+  "runLabel": "round42-glm-seq8-20260302-004035",
+  "sessions": [
+    {
+      "label": "round42-stock_a",
+      "sessionId": "round42-stock_a-20260302-004035",
+      "kind": "stock_a",
+      "evidence": "run-logs/round42-stock_a.audit.20260302-004035.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round42-ai_a",
+      "sessionId": "round42-ai_a-20260302-004035",
+      "kind": "ai_a",
+      "evidence": "run-logs/round42-ai_a.audit.20260302-004035.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round42-memory_a",
+      "sessionId": "round42-memory_a-20260302-004035",
+      "kind": "memory_a",
+      "evidence": "run-logs/round42-memory_a.audit.20260302-004035.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round42-translation",
+      "sessionId": "round42-translation-20260302-004035",
+      "kind": "translation",
+      "evidence": "run-logs/round42-translation.audit.20260302-004035.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round42-legal",
+      "sessionId": "round42-legal-20260302-004035",
+      "kind": "legal",
+      "evidence": "run-logs/round42-legal.audit.20260302-004035.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round42-onboarding",
+      "sessionId": "round42-onboarding-20260302-004035",
+      "kind": "onboarding",
+      "evidence": "run-logs/round42-onboarding.audit.20260302-004035.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round42-ai_b",
+      "sessionId": "round42-ai_b-20260302-004035",
+      "kind": "ai_b",
+      "evidence": "run-logs/round42-ai_b.audit.20260302-004035.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round42-memory_b",
+      "sessionId": "round42-memory_b-20260302-004035",
+      "kind": "memory_b",
+      "evidence": "run-logs/round42-memory_b.audit.20260302-004035.json",
+      "allChecksPassed": true
+    }
+  ],
+  "totals": {
+    "sessions": 8,
+    "checksPassed": 8,
+    "checksFailed": 0
+  }
+}

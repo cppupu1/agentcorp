@@ -2,7 +2,7 @@ import { db, tokenUsageLogs, tasks, subtasks, employees, models, testRuns, obser
 import { eq, and, gte, lte, lt, sql, desc } from 'drizzle-orm';
 import { createModel } from '@agentcorp/agent-core';
 import { generateText } from 'ai';
-import { getSetting } from './system.js';
+import { getModelIdForFeature } from './system.js';
 import { AppError } from '../errors.js';
 
 export async function getTaskCostReview(taskId: string) {
@@ -83,7 +83,7 @@ export async function generateRoiSummary() {
     return { summary: summaryCache.summary };
   }
 
-  const modelId = getSetting('hr_assistant_model_id');
+  const modelId = getModelIdForFeature('default_model_id');
   if (!modelId) return { summary: null };
 
   const [model] = await db.select().from(models).where(eq(models.id, modelId));

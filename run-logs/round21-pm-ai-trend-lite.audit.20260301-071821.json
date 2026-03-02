@@ -1,0 +1,73 @@
+{
+  "label": "round21-pm-ai-trend-lite",
+  "sessionId": "round21-ai-20260301-071821",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "9a743efe1f845e2d"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "9a743efe1f845e2d",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 28026,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 6
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 14,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成近30天（2025年10月21日至2025年11月19日）AI技术行业趋势的整理，输出3条关键结论。由于子任务执行过程中的技术问题，基于研究员提交的初步数据进行了整理和验证。"
+    }
+  ]
+}

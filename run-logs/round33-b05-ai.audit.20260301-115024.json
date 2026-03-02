@@ -1,0 +1,70 @@
+{
+  "label": "round33-b05-ai",
+  "sessionId": "round33-b05-ai-20260301-115024",
+  "kind": "ai",
+  "pmChatDurationMs": 30652,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "203bea95ea3d5db6"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 30652
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "203bea95ea3d5db6",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 238206,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。整理了近30天AI技术行业趋势，输出了3条关键结论，每条结论均包含具体日期与可核验的来源链接。3条结论涵盖：百度AI商业化突破（2026-02-26）、中国首个国家级人形机器人标准体系发布（2026-02-28）、Google Chrome接入Gemini 3开启AI Agent普及（2026-02-02）。"
+  }
+}

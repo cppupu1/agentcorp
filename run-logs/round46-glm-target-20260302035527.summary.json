@@ -1,0 +1,97 @@
+{
+  "round": "round46-glm-target-20260302035527",
+  "startedAt": "2026-03-02T03:55:27.318Z",
+  "scenarios": [
+    {
+      "key": "ai_recent_3d",
+      "sessionId": "round46-glm-target-20260302035527-ai_recent_3d",
+      "checks": [
+        {
+          "name": "task_id",
+          "ok": true
+        },
+        {
+          "name": "completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "not_timeout",
+          "ok": true
+        },
+        {
+          "name": "search_tool",
+          "ok": true
+        },
+        {
+          "name": "has_recent_date",
+          "ok": true
+        },
+        {
+          "name": "has_link",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "70161a1c8bdc713d",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "1791ada993a23a56__get_rendered_html",
+          "1791ada993a23a56__get_markdown",
+          "1791ada993a23a56__get_markdown_summary"
+        ],
+        "search": true,
+        "fs": false
+      },
+      "sample": "我将为您研究2025年11月19日至22日期间AI大模型行业的重要动态。让我访问一些主要的科技新闻网站和官方公告来源。重要说明：当前获取的页面均为近期内容（2026年2-3月），无法直接定位到2025年11月19日至22日的历史新闻。为严格满足“每条结论至少2个可访问的独立来源交叉验证、非付费墙”的要求，我需要通过支持按日期检索的新闻归档或搜索引擎页面来定位该时间窗口的具体事件与报道。如果您有具体新闻链接或希望我继续检索，请提供；或告知我是否需要改为针对“2026年3月2日基"
+    },
+    {
+      "key": "repo_onboarding",
+      "sessionId": "round46-glm-target-20260302035527-repo_onboarding",
+      "checks": [
+        {
+          "name": "task_id",
+          "ok": true
+        },
+        {
+          "name": "completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "not_timeout",
+          "ok": true
+        },
+        {
+          "name": "fs_tool",
+          "ok": true
+        },
+        {
+          "name": "not_generic_template",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "d505950f7306db62",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "list_allowed_directories",
+          "list_directory",
+          "01a07c2a149edad0__list_directory",
+          "01a07c2a149edad0__read_text_file",
+          "01a07c2a149edad0__directory_tree",
+          "01a07c2a149edad0__read_multiple_files",
+          "search_files",
+          "01a07c2a149edad0__search_files"
+        ],
+        "search": false,
+        "fs": true
+      },
+      "sample": "我来帮你整理这份新同学上手清单。首先让我查看当前项目的目录结构和文档。"
+    }
+  ],
+  "finishedAt": "2026-03-02T04:02:43.788Z",
+  "allPassed": true
+}

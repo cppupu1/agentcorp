@@ -1,0 +1,71 @@
+{
+  "id": "742aafb31bc667d8",
+  "teamId": "ed93969afe1f8c9c",
+  "teamName": "双语内容创作团队",
+  "title": "企业公告中英双语简版输出",
+  "description": "将以下企业公告模板内容输出为中英双语简版，保持语义一致：\n\n【企业公告示例】\n关于XX公司2024年度股东大会的通知\n各位股东：\n本公司定于2024年6月15日上午9:00在XX市XX路XX号总部会议室召开2024年度股东大会。会议将审议2023年度董事会工作报告、监事会工作报告、财务决算报告等议案。请各位股东准时出席。\n\n特此通知。\n\nXX股份有限公司\n2024年5月20日",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "fe2457d6ecb86926",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "717e9837d7b988b6",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "d938dec67230db8f",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版输出",
+        "description": "将以下企业公告模板内容输出为中英双语简版，保持语义一致：\n\n【企业公告示例】\n关于XX公司2024年度股东大会的通知\n各位股东：\n本公司定于2024年6月15日上午9:00在XX市XX路XX号总部会议室召开2024年度股东大会。会议将审议2023年度董事会工作报告、监事会工作报告、财务决算报告等议案。请各位股东准时出席。\n\n特此通知。\n\nXX股份有限公司\n2024年5月20日",
+        "assigneeId": "717e9837d7b988b6",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告中英双语简版输出任务。文案策划将原始公告内容转化为规范的中英双语版本，英文版采用国际通行的公告格式，中文版保持原有意向，内容涵盖会议时间、地点、议程等核心信息，语义一致，格式清晰。",
+    "deliverables": "## 2024 Annual General Meeting Notice\n\nDear Shareholders,\n\nXX Company hereby convenes the 2024 Annual General Meeting as follows:\n\n**Date & Time:** June 15, 2024, 9:00 AM\n\n**Venue:** Head Office Conference Room, XX Road XX, XX City\n\n**Agenda:**\n- 2023 Board of Directors Work Report\n- 2023 Supervisory Board Work Report\n- 2023 Financial Final Accounts Report\n- Other matters\n\nYour attendance is cordially requested.\n\n**XX Co., Ltd.**\n**May 20, 2024**\n\n---\n\n## 关于召开2024年度股东大会的通知\n\n各位股东：\n\n本公司定于2024年6月15日（周六）上午9:00，在XX市XX路XX号总部会议室召开2024年度股东大会。\n\n**会议议题：**\n- 审议2023年度董事会工作报告\n- 审议2023年度监事会工作报告\n- 审议2023年度财务决算报告\n- 其他事项\n\n敬请各位股东准时出席。\n\n**XX股份有限公司**\n**2024年5月20日**",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T11:41:40.892Z"
+  },
+  "tokenUsage": 4555,
+  "createdAt": "2026-03-01T11:40:49.353Z",
+  "updatedAt": "2026-03-01T11:41:44.541Z",
+  "subtasks": [
+    {
+      "id": "d7290bc0903a3f23",
+      "title": "企业公告中英双语简版输出",
+      "description": "将以下企业公告模板内容输出为中英双语简版，保持语义一致：\n\n【企业公告示例】\n关于XX公司2024年度股东大会的通知\n各位股东：\n本公司定于2024年6月15日上午9:00在XX市XX路XX号总部会议室召开2024年度股东大会。会议将审议2023年度董事会工作报告、监事会工作报告、财务决算报告等议案。请各位股东准时出席。\n\n特此通知。\n\nXX股份有限公司\n2024年5月20日",
+      "assigneeId": "717e9837d7b988b6",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "## 2024 Annual General Meeting Notice\n\nDear Shareholders,\n\nXX Company hereby convenes the 2024 Annual General Meeting as follows:\n\n**Date & Time:** June 15, 2024, 9:00 AM\n\n**Venue:** Head Office Conference Room, XX Road XX, XX City\n\n**Agenda:**\n- 2023 Board of Directors Work Report\n- 2023 Supervisory Board Work Report\n- 2023 Financial Final Accounts Report\n- Other matters\n\nYour attendance is cordially requested.\n\n**XX Co., Ltd.**\n**May 20, 2024**\n\n---\n\n## 关于召开2024年度股东大会的通知\n\n各位股东：\n\n本公司定于2024年6月15日（周六）上午9:00，在XX市XX路XX号总部会议室召开2024年度股东大会。\n\n**会议议题：**\n- 审议2023年度董事会工作报告\n- 审议2023年度监事会工作报告\n- 审议2023年度财务决算报告\n- 其他事项\n\n敬请各位股东准时出席。\n\n**XX股份有限公司**\n**2024年5月20日**"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 4555,
+      "createdAt": "2026-03-01T11:40:57.422Z",
+      "updatedAt": "2026-03-01T11:41:33.878Z"
+    }
+  ]
+}

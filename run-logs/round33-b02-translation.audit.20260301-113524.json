@@ -1,0 +1,62 @@
+{
+  "label": "round33-b02-translation",
+  "sessionId": "round33-b02-translation-20260301-113524",
+  "kind": "translation",
+  "pmChatDurationMs": 26903,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "70471882a48bf852"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 26903
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "70471882a48bf852",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 1572,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成企业公告中英双语简版的翻译与简化工作。中文版保留了原公告的核心要素：会议时间（2024年6月15日上午9:00）、地点（总部会议室）、四项主要议题（董事会工作报告、财务决算报告、财务预算方案、董事会选举）以及参会注意事项。英文版与中文版语义一致，议题顺序完全对应，格式简洁清晰，符合企业公告的正式规范。"
+  }
+}

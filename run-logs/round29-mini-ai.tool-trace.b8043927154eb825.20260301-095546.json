@@ -1,0 +1,198 @@
+[
+  {
+    "id": "b934cf8a98a301c0",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": {
+      "toolCallId": "call_function_uwxx9dep7ag1_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T09:56:44.439Z"
+  },
+  {
+    "id": "07c688ef903add75",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": null,
+    "output": "Echo: 当前时间确认",
+    "isError": false,
+    "durationMs": 3,
+    "createdAt": "2026-03-01T09:56:44.442Z"
+  },
+  {
+    "id": "f4237cef1559ae15",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_czsktv7yz4md_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T09:57:06.899Z"
+  },
+  {
+    "id": "4854b3be92974444",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年人工智能发展回顾:开辟AI新场景—新闻—科学网\nURL: https://news.sciencenet.cn/htmlnews/2026/1/558263.shtm\nDescription: 2025年AI市场规模预计达1万亿卢布,其中企业级解决方案占比首超消费级达52.3%｡ 在科研突破与军事应用方面,青年科学家团队研发的Headless-AD模型显著优化了长文本处理能力｡军事领域,集成AI能力的“蜂群”无人机系统于5月开始高强度测试,其已具备自主地形匹配与目标分类功能｡ 在行业场景落地方面,AI技术深入航天､医疗､金融等各个领域｡6月,俄航天局计划将国产大模型GigaChat部署至国际空间站,旨在将卫星图像分辨率提升一倍｡医疗领域,Yandex推出了首批儿科专用核磁共振影像分析AI工具｡\nPublished date: 2026-02-12T08:39:41+08:00\nSite name: 科学网\n\nTitle: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphcxh3612916.shtml\nDescription: 至2025年6月我国生成式AI用户规模达5.15亿人,普及率36.5%｡技术方面,DeepSeek､通义千问等大模型实现突破,清华大学SALMONN音视频大模型在多项评测中超越GPT-4o等国际主流模型｡2025年原生多模态技术实现关键突破,阿里､百度等企业推出的多模态大模型在训练初期即融合文本､图像､视频等数据,实现理解与生成一体化｡\nPublished date: 2026-02-27T18:29:10+08:00\nSite name: 新浪财经\n\nTitle: 中国AI为何再次令世界惊艳_中国经济网——国家经济门户\nURL: http://www.ce.cn/xwzx/gnsz/gdxw/202602/t20260227_2792320.shtml\nDescription: 中国人工智能(AI)视频创作模型Seedance 2.0近日发布后在全球网络上迅速走红｡各国用户大量分享该模型生成的超逼真视频,引发国际社会广泛关注与热议｡业界此前普遍认为该领域实现突破还需要两三年,但Seedance 2.0的发布意味着这一刻已提前来临｡美国企业家埃隆·马斯克在其X平台上评论Seedance 2.0时感叹:“发展得太快了｡” \nPublished date: 2026-02-27T08:38:31+08:00\nSite name: 中国经济网\n\nTitle: 2025 年我国人工智能企业数量超 6000 家-IT之家\nURL: https://www.ithome.com/0/915/017.htm\nDescription: 国内企业发布多款人工智能芯片产品,智能算力规模达 1590EFLOPS,行业高质量数据集加速涌现,国内大模型引领全球开源生态｡据有关机构测算, 2025 年我国人工智能企业数量超 6000 家,核心产业规模预计突破 1.2 万亿元 ｡ 此外,我国加强优质企业梯度培育, 累计培育专精特新中小企业超 14 万家 ,有效期内的高新技术企业达 50.4 万家｡2025 \nPublished date: 2026-02-28T01:43:19+08:00\nSite name: IT之家\n\nTitle: AI技术突破与行业竞争加剧,字节跳动等企业引领变革 - 经济观察网 - 专业财经新闻网站\nURL: https://www.eeo.com.cn/2026/0220/798524.shtml\nDescription: 近期事件 AI模型重大更新:字节跳动于2月12日发布视频生成大模型Seedance 2.0,物理真实感和多镜头叙事能力显著提升,但因预置迪士尼角色库遭侵权诉讼,已暂停用户上传真人图像功能;OpenAI同期推出GPT-5.3-Codex-Spark,推理速度较前代提升15倍,并正敲定1000亿美元融资轮(软银领投300亿美元);谷歌发布Gemini 3 Deep \nPublished date: 2026-02-25T06:09:35+08:00\nSite name: 经济观察网\n\nTitle: 尽管对生成式AI存疑 CIO们仍激流勇进以赢得优势-CIO-CIO与CTO频道-至顶网\nURL: http://cio.zhiding.cn/cio/2023/1101/3153409.shtml\nDescription: 在ChatGPT公开发布一周年即将到来之际,IT领导者们正在推动生成式AI试点,以及在生产环境中使用这项被视为重新定义行业且充满",
+    "isError": false,
+    "durationMs": 1498,
+    "createdAt": "2026-03-01T09:57:08.397Z"
+  },
+  {
+    "id": "0d49add0634906e4",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_71n02eisqbel_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T09:57:18.655Z"
+  },
+  {
+    "id": "9c98992bbc987725",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Best AI Stocks to Watch in May 2025\nURL: https://www.investopedia.com/the-best-ai-stocks-8782102\nDescription: April 2025 saw further advances in artificial intelligence (AI), with AI agents from Microsoft ( MSFT ) and OpenAI becoming increasingly capable of working independently, reshaping expectations for workplace productivity. On the hardware side, NVIDIA ( NVDA ) announced it’s partnering with manufacturers to build over one million square feet of facilities in Arizona and Texas to produce Blackwell chips and AI supercomputers entirely in the U.S. And despite reports of Amazon ( AMZN and Microsoft scaling back data center leasing, Amazon reaffirmed that the data center market remains strong, with McKinsey projecting 20% to 25% annual data center growth over the next five to seven years. These are the best AI stocks to watch for May 2025. All data as of April 25, 2025. Key Takeaways AI stocks c\nPublished date: 2025-05-01T17:08:16+08:00\nSite name: www.investopedia.com\n\nTitle: 纵览网丨OpenAI CEO表示:GPT-5 将在今年夏季发布__财经头条__新浪财经\nURL: https://t.cj.sina.com.cn/articles/view/6818315186/196673bb200101axe4\nDescription: 纵览网(www.zonglan.com)在当前人工智能的热潮中,OpenAI\n作为行业的领军者,正展现出愈发自信的姿态。除了与微软的合作外,OpenAI\n还在努力拓展与另一家重要人工智能公司\nPalantir\n的竞争领域。此外,OpenAI\n的\nCEO\nSam\nAltman\n近日透露,期待已久的\nGPT-5模型预计将在今年夏季正式发布,这将为行业带来新的发展机会。图源备注:图片由AI生成,图片授权服务商MidjourneyOpenAI\n独特的组织结构使其非营利部门能够对营利部门进行有效的控制。这家公司与微软的合作尤为引人注目,微软为\nOpenAI\n投资了130亿美元,作为回报,微软将分享\nOpenAI\n未来49%\n的利润,尽管这一比例有上限。除此之外,微软还将享有\nOpenAI20%\n的收入,并在2030年前保留对其知识产权的使用权。然而,最近有报道指出,OpenAI\n正在寻求与微软重新协商合作协议,希望能获得其盈利部门33%\n的股份,并希望微软放弃对未来利润和知识产权的控制权。这一举措显示出\nOpenAI\n正在增强自身的市场信心,并可能为未来的上市铺平道路。与此同时,为了增强竞争力,OpenAI\n还开始降低其\nAI\n产品套件的企业订阅价格。具体来说,OpenAI\n对购买额外产品的客户提供了\nChatGPT\nEnterprise\n的10%\n到20%\n的折扣,进一步压缩了对手微软的市场空间。在行业竞争加剧的背景下,OpenAI\n的主要竞争对手\nxAI\n正面临财务压力,其月度支出达到10亿美元,而预计今年收入仅为5亿美元。为了应对资金问题,xAI\n计划筹集93亿美元的新资金。另外,值得一提的是,美国首席数字和人工智能办公室\n(CDAO)\n与\nOpenAI\n签署了一份价值2亿美元的原型\nAI\n解决方案合同。这是\nOpenAI\n与美国国防部的首次重要合作,而\nPalantir\n曾\nPublished date: 2025-06-20T18:36:00+08:00\nSite name: 财经头条\n\nTitle: 消息称",
+    "isError": false,
+    "durationMs": 447,
+    "createdAt": "2026-03-01T09:57:19.102Z"
+  },
+  {
+    "id": "776fdc0e1127774c",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_pxmj3fxtksnj_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T09:57:24.171Z"
+  },
+  {
+    "id": "97ba40f1b4c641f4",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: AI Spring 2025: Major Updates Across Google, OpenAI, Microsoft, and More!  AI News\nURL: https://opentools.ai/news/ai-spring-2025-major-updates-across-google-openai-microsoft-and-more\nDescription: ai-spring-2025-major-updates-across-google-openai-microsoft-and-more AI Innovations Take Center Stage Last updated: This past week has been a rollercoaster of AI advancements. From Google's Gemini 2.\nPublished date: 2026-02-05T01:33:50+08:00\nSite name: opentools.ai\n\nTitle: OpenAI 2025 年开发者大会 (DevDay)  OpenAI\nURL: https://openai.com/devday/\nDescription: 这是历史上最适合构建者的时代｡今年我们推出了新一代工具与模型,助力开发人员加速编码､更可靠地构建智能体,并在 ChatGPT 中扩展应用规模｡ 400 万 开发人员已使用 OpenAI 进行开发 8 亿+ ChatGPT 每周活跃用户 60 亿 API 平台每分钟处理令牌量 产品公告 ChatGPT 中的应用 直接在 ChatGPT 内与应用对话,并通过预览版应用 SDK 进行开发｡ 阅读博客 \nPublished date: 2026-02-23T02:53:31+08:00\nSite name: openai.com\n\nTitle: AI companions: 10 Breakthrough Technologies 2026  MIT Technology Review\nURL: https://www.technologyreview.com/2026/01/12/1130018/ai-companions-chatbots-relationships-2026-breakthrough-technology/\nDescription: People are forging intimate relationships with chatbots—and maybe they shouldn’t. By January 12, 2026 WHO Anthropic, Character.AI, OpenAI, Replika WHEN Now VICHHIKA TEP/MIT TECHNOLOGY REVIEW | ADOBE \nPublished date: 2026-02-11T09:04:08+08:00\nSite name: www.technologyreview.com\n\nTitle: The backlash over OpenAI's decision to retire GPT-4o shows how dangerous AI companions can be  TechCrunch\nURL: https://techcrunch.com/2026/02/06/the-backlash-over-openais-decision-to-retire-gpt-4o-shows-how-dangerous-ai-companions-can-be/\nDescription: OpenAI announced last week that it will retire some older ChatGPT models by February 13. That includes GPT-4o, the model infamous for excessively flattering and affirming users. For thousands of \nPublished date: 2026-02-06T19:05:38+08:00\nSite name: techcrunch.com\n\nTitle: AI Breakthrough - AI Breakthrough Awards\nURL: http://aibreakthroughawards.com/\nDescription: AI Breakthrough Awards Recognizing the breakthrough compani",
+    "isError": false,
+    "durationMs": 1281,
+    "createdAt": "2026-03-01T09:57:25.452Z"
+  },
+  {
+    "id": "a7c0d3a9af5accf1",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_fob1nvh7uq5t_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T09:57:30.197Z"
+  },
+  {
+    "id": "8f57c5d42fb09166",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI GPT-5 或将于今年夏季发布\nURL: https://www.sohu.com/a/901258981_100117963\nDescription: 据报道,OpenAI 在墨西哥 AI 峰会上透露新一代模型 GPT-5 即将问世,性能远超 GPT-4,初步计划于今年 7 月推出,不过具体时间仍可能调整。GPT-5 的推出旨在与 Gemini 2.5 Pro 和Claude 4 等竞品展开激烈竞争,OpenAI 希望借此占据更大优势。\nPublished date: 2025-06-04T09:25:00+08:00\nSite name: 搜狐\n\nTitle: OpenAI GPT-5 或将于今年夏季发布_腾讯新闻\nURL: https://news.qq.com/rain/a/20250604A02D2V00\nDescription: 据报道,OpenAI\n在墨西哥\nAI\n峰会上透露新一代模型\nGPT-5\n即将问世,性能远超\nGPT-4,初步计划于今年\n7\n月推出,不过具体时间仍可能调整。GPT-5\n的推出旨在与\nGemini\n2.5\nPro\n和\nClaude\n4\n等竞品展开激烈竞争,OpenAI\n希望借此占据更大优势。\nPublished date: 2025-06-04T09:25:00+08:00\nSite name: 腾讯网\n\nTitle: OpenAI GPT-5 或将于今年夏季发布\nURL: https://new.qq.com/rain/a/20250604A02D2V00\nDescription: 据报道,OpenAI 在墨西哥 AI 峰会上透露新一代模型 GPT-5 即将问世,性能远超 GPT-4,初步计划于今年 7 月推出,不过具体时间仍可能调整。GPT-5 的推出旨在与 Gemini 2.5 Pro 和 Claude 4 等竞品展开激烈竞争,OpenAI 希望借此占据更大优势。\nPublished date: 2025-06-04T09:25:10+08:00\nSite name: 腾讯网\n\nTitle: 2025 年 6月 随笔档案 - ciaochao - 博客园\nURL: https://www.cnblogs.com/cheman/p/archive/2025/06\nDescription: 摘要:在当今人工智能技术快速发展的时代,OpenAI\n的\nGPT\n系列、Anthropic\n的\nClaude\n系列以及\nDeepseek\n等先进的\nAI\n大模型\nAPI\n为全球开发者提供了巨大的创新机会。然而,国内开发者在直接访问这些境外\nAPI\n服务时,常常会遭遇网络连接不稳定、响应延迟高以及访问受限等问题。在这种情况下,API\n中转站成为了国内开发者突破困境的有效解决方案。\n阅读全文\nPublished date: 2025-06-27T11:26:00+08:00\nSite name: 博客园\n\nTitle: OpenAI 2025 4月最新动态综述\nURL: https://m.blog.csdn.net/2501_90357013/article/details/147641633\nDescription: 2025年4月, OpenAI 在人工智能领域持续引领创新浪潮,发布了多项重磅新产品和技术,推动AI进入更加实用和智能的新阶段。以下是近期OpenAI的重点动态整理:\n1. GPT-5预览版发布,迈入通用AI工业化时代\n2025年4月15日,OpenAI于年度开发者大会正式发布了GPT-5的预览版。该模型采用“混合精度 计算架构 ”,参数规模达到10万亿级,相较于GPT-4推理速度提升3倍,并支持最多20万字的长文本理解。GPT-5的发布,标志着通用大模型进入工业化应用新阶段,将为各行各业的智能化升级提供坚实技术基础。\n2. 推理模型o3与o4-mini亮相\n4月16日,OpenAI发布了最新推理模型o3和o4-mini。这两款模型在解决复杂问题和Agent自主能力方面表现优异。o3模型首次实现了在思维链中使用图像进行推理,并展现出强大的工具自主调用能力,单次任务中最多可连续调用600次工具以解决难题。\n3. GPT-4.1与4o Image Generation开放API\nOpenAI还宣布了GPT-4.1 API的上线,并推出了4o Image Generation,进一步提升了文本与图像的多模态AI能力。全新的API接口为开发者和企业带来更高效的智能内容创作和生成体验。\n4. AI伦理与交互成本成为关注焦点\n随着AI技术在社会中的渗透加深,OpenAI也正积极回应外界对AI伦理、交互成本等问题的关注。在公司治理上,OpenAI成立了非营利顾问委员会,并持续",
+    "isError": false,
+    "durationMs": 650,
+    "createdAt": "2026-03-01T09:57:30.847Z"
+  },
+  {
+    "id": "087bece820a5c1da",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_kajhk5g6q9sq_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T09:57:40.326Z"
+  },
+  {
+    "id": "2a6944629d5bed8f",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Best AI Stocks to Watch in May 2025\nURL: https://www.investopedia.com/the-best-ai-stocks-8782102\nDescription: April 2025 saw further advances in artificial intelligence (AI), with AI agents from Microsoft ( MSFT ) and OpenAI becoming increasingly capable of working independently, reshaping expectations for workplace productivity. On the hardware side, NVIDIA ( NVDA ) announced it’s partnering with manufacturers to build over one million square feet of facilities in Arizona and Texas to produce Blackwell chips and AI supercomputers entirely in the U.S. And despite reports of Amazon ( AMZN and Microsoft scaling back data center leasing, Amazon reaffirmed that the data center market remains strong, with McKinsey projecting 20% to 25% annual data center growth over the next five to seven years. These are the best AI stocks to watch for May 2025. All data as of April 25, 2025. Key Takeaways AI stocks c\nPublished date: 2025-05-01T17:08:16+08:00\nSite name: www.investopedia.com\n\nTitle: AI一周大事盘点(2025年6月1日2025年6月7日)-CSDN博客\nURL: https://blog.csdn.net/yuntongliangda/article/details/148511885\nDescription: 【摘要】2025年6月第一周,全球及中国AI领域迎来多项重大进展,涵盖产品发布、技术突破、产业合作、政策动向及行业应用。本文为本周AI领域国际与国内重点事件回顾。 一、国际动态 1. OpenAI付费企业用户突破300万,ChatGPT功能持续升级 时间:2025年6月5日 事件要点:OpenAI宣布其付费企业用户(含企业版、团队版、教育版)突破300万,企业版营收占比达62%。ChatGPT新增“连接器”功能,支持GitHub、Google Drive等数据整合,并上线“记录模式”实现会议自动转录,进一步强化其“超级助手”定位。企业级市场成为AI竞争主战场,推动微软、谷歌等加速B端服务布局。 业界评论:权威媒体认为,OpenAI的企业市场渗透和产品创新将进一步巩固其在AI应用层的领先地位,API生态构建成为其护城河。专家指出,AI工具正从“效率助手”向“决策中枢”演进,企业AI支出将持续增长。 省心点评:OpenAI加速企业级布局,AI助手正重塑数字办公生态。 2. NVIDIA发布Blackwell架构AI芯片,算力效率革命性突破 时间:2025年6月5日 事件要点:NVIDIA推出新一代Blackwell架构AI芯片,在Llama 3.1 405B等大模型预训练中性能提升2.2倍,支持10万GPU协同训练,功耗比前代降低35%。Tomahawk 6交换机芯片使集群算力效率提升90%。芯片已在金融、自动驾驶等领域大规模部署,训练成本和时间大幅下降,推动AI大模型参数规模迈向“百万亿级”。 业界评论:分析师认为,Blackwell芯片将进一步巩固NVIDIA在AI硬件市场的主导地位。算力革命加速AI模型创新和行业落地,但能耗与供应链安全仍是关注焦点。 省心点评:NVIDIA新芯片引领算力革命,AI产业升级再提速。 3. 全球AI监管分化加剧,美国豁免AI监管十年 时间:2\nPublished date: 2025-06-08T18:00:00+08:00\nSite name: CSDN\n\nTitle: Nvidia 表示其 Black",
+    "isError": false,
+    "durationMs": 478,
+    "createdAt": "2026-03-01T09:57:40.804Z"
+  },
+  {
+    "id": "4a64cecaee1a6cba",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": {
+      "toolCallId": "call_function_88f0ijd3gfrc_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T09:57:50.265Z"
+  },
+  {
+    "id": "05dde43d64ee88e0",
+    "type": "tool_call",
+    "taskId": "b8043927154eb825",
+    "subtaskId": "d48610b17c962e89",
+    "employeeId": "9a52ac323aaf034d",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": null,
+    "output": "<!DOCTYPE html><html><head> <script src=\"/assets/yc_autologin.js\"></script><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><meta name=\"description\" content=\"AI 编程黑马Windsurf 遭 Anthropic断供；谷歌新模型2.5 Pro霸榜AI竞技场。\"><meta name=\"keywords\" content=\"OpenAI,Anthropic,大模型,AI,编程,商战,谷歌\"><script type=\"text/javascript\" src=\"/assets/jquery.min.js\"></script><script async src=\"https://www.googletagmanager.com/gtag/js?id=G-BW57C8STG3\"></script><script type=\"text/javascript\">var _pb = _pb || [];    var _hmt = _hmt || [];    window.dataLayer = window.dataLayer || [];    function gtag(){dataLayer.push(arguments);}    gtag('js', new Date());    gtag('config', 'G-BW57C8STG3');</script><script type=\"text/javascript\" src=\"/assets/crypto-js.min.js\"></script><script type=\"text/javascript\" src=\"/assets/Fingerprint2.js\"></script><script type=\"text/javascript\" src=\"https://o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js\"></script> <script src=\"/assets/gotoMurl.js\" type=\"text/javascript\"></script><title>AI周报 | OpenAI 最强模型 GPT-5 即将面世；Anthropic 年化收入突破30亿美元</title><link rel=\"stylesheet\" href=\"/assets/aliplayer/aliplayer-min_2.25.1.css\"><script charset=\"utf-8\" type=\"text/javascript\" src=\"/assets/aliplayer/aliplayer-min-2.25.1.js\"></script><script type=\"text/javascript\" src=\"/assets/vue.min.js\"></script><script type=\"text/javascript\" src=\"/js/alert.min.js\"></script><script type=\"text/javascript\">_pb = [['pchannel', 'webpc'],            ['ptype', 'detail'],            ['aaction', 'pageview'],            ['aid', '102652984'],            ['atitle', 'AI周报 | OpenAI 最强模型 GPT-5 即将面世；Anthropic 年化收入突破30亿美元'],            ['atype', '10'],            ['actime', '2025-06-08T10:32:04+08'],            ['autime', '2025-06-08T10:32:04+08'],            ['acategory', '39'],            ['acname', '产经部'],            ['acategory2', '58'],            ['ac2name', '科技'],            ['aoid','100600801'],            ['aocategory','7'], ",
+    "isError": false,
+    "durationMs": 327,
+    "createdAt": "2026-03-01T09:57:50.592Z"
+  }
+]

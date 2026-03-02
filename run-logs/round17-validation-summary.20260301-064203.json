@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-03-01T06:42:03.071554Z",
+  "runLabel": "round17-20260301-064203",
+  "sessions": [
+    {
+      "label": "round17-pm-ai-trend",
+      "sessionId": "round17-ai-20260301-064203",
+      "evidence": "run-logs/round17-pm-ai-trend.audit.20260301-064203.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round17-pm-customer-memory",
+      "sessionId": "round17-cs-20260301-064203",
+      "evidence": "run-logs/round17-pm-customer-memory.audit.20260301-064203.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round17-pm-content",
+      "sessionId": "round17-content-20260301-064203",
+      "evidence": "run-logs/round17-pm-content.audit.20260301-064203.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    }
+  ]
+}

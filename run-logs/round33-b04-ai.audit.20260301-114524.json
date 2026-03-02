@@ -1,0 +1,70 @@
+{
+  "label": "round33-b04-ai",
+  "sessionId": "round33-b04-ai-20260301-114524",
+  "kind": "ai",
+  "pmChatDurationMs": 26251,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "6ad4e027fb3c8f3f"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 26251
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "6ad4e027fb3c8f3f",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 259785,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。整理近30天AI技术行业趋势，输出3条关键结论：1. 中国AI大模型实现历史性突破，全球竞争力大幅提升（Token调用量首超美国）2. AI商业化进程加速，百度AI业务收入占比达43%3. 政策红利持续释放，北京大模型备案数量全国居首每条结论均附具体日期与来源链接。"
+  }
+}

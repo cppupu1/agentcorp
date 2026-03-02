@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-03-01T15:21:15.230358Z",
+  "runLabel": "round39-glm-user-e2e-20260301-152115",
+  "sessions": [
+    {
+      "label": "round37-stock",
+      "sessionId": "round37-stock-20260301-152115",
+      "kind": "stock",
+      "evidence": "run-logs/round37-stock.audit.20260301-152115.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round37-ai",
+      "sessionId": "round37-ai-20260301-152115",
+      "kind": "ai",
+      "evidence": "run-logs/round37-ai.audit.20260301-152115.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round37-memory",
+      "sessionId": "round37-memory-20260301-152115",
+      "kind": "memory",
+      "evidence": "run-logs/round37-memory.audit.20260301-152115.json",
+      "allChecksPassed": false
+    },
+    {
+      "label": "round37-translation",
+      "sessionId": "round37-translation-20260301-152115",
+      "kind": "translation",
+      "evidence": "run-logs/round37-translation.audit.20260301-152115.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round37-legal",
+      "sessionId": "round37-legal-20260301-152115",
+      "kind": "legal",
+      "evidence": "run-logs/round37-legal.audit.20260301-152115.json",
+      "allChecksPassed": false
+    },
+    {
+      "label": "round37-onboarding",
+      "sessionId": "round37-onboarding-20260301-152115",
+      "kind": "onboarding",
+      "evidence": "run-logs/round37-onboarding.audit.20260301-152115.json",
+      "allChecksPassed": true
+    }
+  ],
+  "totals": {
+    "sessions": 6,
+    "checksPassed": 4,
+    "checksFailed": 2
+  }
+}

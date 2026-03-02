@@ -1,0 +1,90 @@
+{
+  "label": "round36-onboarding",
+  "sessionId": "round36-onboarding-20260301-130659",
+  "kind": "onboarding",
+  "userPrompt": "我们要招新人了，请直接拉团队做：设计新员工入职前两周计划，按天列出关键动作和产出。",
+  "pmChatDurationMs": 38991,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "ffe2f9754dcc7440"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "user_prompt_without_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 38991
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "ffe2f9754dcc7440"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "not_waiting_for_user",
+      "ok": true
+    },
+    {
+      "name": "timeline_structure",
+      "ok": true,
+      "dayHits": 24
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "ffe2f9754dcc7440",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 3942,
+    "decisionRows": 6,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成新员工入职前两周计划的设计，按天列出了10天的关键动作和可交付产出。第一周侧重于熟悉环境、基础培训和制度了解（Day 1-5）；第二周侧重于深入工作、实战任务和跨部门沟通（Day 6-10）。每个关键动作都配有明确的产出物，便于追踪和评估新员工的学习进度。附加了4条实施建议以确保计划落地效果。"
+  }
+}

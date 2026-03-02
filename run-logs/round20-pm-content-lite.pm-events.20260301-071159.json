@@ -1,0 +1,2342 @@
+[
+  {
+    "event": "delta",
+    "data": {
+      "seq": 0,
+      "text": "好的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 1,
+      "text": "！"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 2,
+      "text": "我来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 3,
+      "text": "帮"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 4,
+      "text": "您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 5,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 6,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 7,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 8,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 9,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 10,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 11,
+      "text": "让我"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 12,
+      "text": "先"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 13,
+      "text": "查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 14,
+      "text": "可"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 15,
+      "text": "用的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 16,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 17,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 18,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 19,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 20,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 21,
+      "toolCallId": "call_5fb09d866d7b434ead6c0e9e",
+      "toolName": "list_templates",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 22,
+      "toolCallId": "call_5fb09d866d7b434ead6c0e9e",
+      "toolName": "list_templates",
+      "result": "[{\"id\":\"software-dev\",\"name\":\"软件开发\",\"description\":\"标准软件开发团队，包含项目经理、前端开发、后端开发和测试工程师，适用于Web应用、移动端等软件项目的全流程开发。\",\"icon\":\"💻\",\"employeeCount\":4},{\"id\":\"content-creation\",\"name\":\"内容创作\",\"description\":\"专业内容创作团队，包含项目经理、文案策划和视觉设计师，适用于品牌营销、自媒体运营、广告创意等内容生产场景。\",\"icon\":\"✍️\",\"employeeCount\":3},{\"id\":\"data-analysis\",\"name\":\"数据分析\",\"description\":\"专业数据分析团队，包含项目经理、数据分析师和数据工程师，适用于业务数据洞察、用户行为分析、数据驱动决策等场景。\",\"icon\":\"📊\",\"employeeCount\":3},{\"id\":\"research-report\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研",
+      "isError": false
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 23,
+      "toolCallId": "call_f8dfc2646a914969b7b4c228",
+      "toolName": "list_teams",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 24,
+      "toolCallId": "call_f8dfc2646a914969b7b4c228",
+      "toolName": "list_teams",
+      "result": "[{\"id\":\"ffd58f3dd15087fc\",\"name\":\"客户服务\",\"description\":\"客户服务团队，包含项目经理、客服专员和知识管理员，适用于客户支持、FAQ维护、服务流程优化等场景。\",\"scenario\":null,\"pmEmployeeId\":\"7c42505b4b964afa\",\"pmName\":\"客服主管\",\"pmAvatar\":null,\"collaborationMode\":\"free\",\"memberCount\":2,\"toolCount\":5,\"taskCount\":1,\"createdAt\":\"2026-03-01T07:14:30.769Z\",\"updatedAt\":\"2026-03-01T07:14:35.496Z\"},{\"id\":\"17bc37877dd8139a\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研究、竞品分析、市场调研等报告撰写场景。\",\"scenario\":null,\"pmEmployeeId\":\"ef94087d96a9fe9f\",\"pmName\":",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 25,
+      "usage": {
+        "inputTokens": 1083,
+        "outputTokens": 151
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 26,
+      "toolCallId": "call_199cdbb89f0d471cbeaf4b03",
+      "toolName": "list_models",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 27,
+      "toolCallId": "call_199cdbb89f0d471cbeaf4b03",
+      "toolName": "list_models",
+      "result": "[{\"id\":\"8f1970aae082a631\",\"name\":\"GLM-4.7\",\"modelId\":\"glm-4.7\"},{\"id\":\"b9df4501c7f6f9a6\",\"name\":\"MiniMax-M2.5\",\"modelId\":\"MiniMax-M2.5\"}]",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 28,
+      "usage": {
+        "inputTokens": 9352,
+        "outputTokens": 104
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 29,
+      "toolCallId": "call_8da76231b9dc4615907092a4",
+      "toolName": "list_tools",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 30,
+      "toolCallId": "call_8da76231b9dc4615907092a4",
+      "toolName": "list_tools",
+      "result": "[{\"id\":\"fc5f4c5bf43702d4\",\"name\":\"当前时间\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"740410911af25b5b\",\"name\":\"计算器\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"b931c6ca2b7ad17b\",\"name\":\"文件读取\",\"description\":\"文件系统访问工具，支持读取、列出目录等操作\",\"groupName\":null},{\"id\":\"a6d0277e32709254\",\"name\":\"搏查\",\"description\":\"搏查搜索服务\",\"groupName\":\"互联网\"},{\"id\":\"1791ada993a23a56\",\"name\":\"Web Fetch\",\"description\":\"抓取网页内容并转换为 Markdown，让 AI 能够阅读和处理网页信息。支持自定义 User-Agent 和代理设置。\",\"groupNam",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 31,
+      "usage": {
+        "inputTokens": 9432,
+        "outputTokens": 43
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 32,
+      "text": "完美"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 33,
+      "text": "！"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 34,
+      "text": "我看到"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 35,
+      "text": "您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 36,
+      "text": "有"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 37,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 38,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 39,
+      "text": "相关的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 40,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 41,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 42,
+      "text": "让我"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 43,
+      "text": "使用"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 44,
+      "text": "\""
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 45,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 46,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 47,
+      "text": "\""
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 48,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 49,
+      "text": "来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 50,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 51,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 52,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 53,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 54,
+      "text": "这样"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 55,
+      "text": "会"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 56,
+      "text": "组建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 57,
+      "text": "一个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 58,
+      "text": "专业的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 59,
+      "text": "文案"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 60,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 61,
+      "text": "来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 62,
+      "text": "为企业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 63,
+      "text": "AI"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 64,
+      "text": "助手"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 65,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 66,
+      "text": "发布"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 67,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 68,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 69,
+      "toolCallId": "call_9d0859cbe6134fd78773b46b",
+      "toolName": "quick_create_task",
+      "args": {
+        "templateId": "content-creation",
+        "modelId": "8f1970aae082a631",
+        "title": "企业AI助手发布内容创作",
+        "description": "为企业的AI助手产品创作发布内容，具体包括：\n\n1. **发布短文（1篇）**：介绍企业AI助手的核心价值、主要功能和应用场景，面向企业客户和合作伙伴，字数约800-1000字，需要体现专业性、可信度和产品亮点\n\n2. **社交媒体文案（2条）**：适合在微信公众号、微博、LinkedIn等平台发布的精简推广文案\n   - 第1条：侧重产品亮点介绍，突出AI助手的核心优势，约150-200字\n   - 第2条：侧重应用场景展示，结合具体业务场景说明价值，约150-200字\n\n内容要求：\n- 语言专业但不晦涩，适合企业级读者\n- 突出AI助手的差异化价值（如提升效率、降低成本、增强决策等）\n- 适当使用数字和案例增强说服力\n- 社媒文案需要简洁有力，便于传播",
+        "mode": "auto"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 70,
+      "toolCallId": "call_9d0859cbe6134fd78773b46b",
+      "toolName": "quick_create_task",
+      "result": "{\"success\":true,\"taskId\":\"3cdf3ed6531b788c\",\"teamId\":\"003a89a7a5933869\",\"title\":\"企业AI助手发布内容创作\"}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 71,
+      "usage": {
+        "inputTokens": 9856,
+        "outputTokens": 472
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 72,
+      "toolCallId": "call_066bb61a114c4d3eb6d7f556",
+      "toolName": "assign_team_tools",
+      "args": {
+        "teamId": "003a89a7a5933869",
+        "toolIds": [
+          "a6d0277e32709254",
+          "1791ada993a23a56"
+        ]
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 73,
+      "toolCallId": "call_066bb61a114c4d3eb6d7f556",
+      "toolName": "assign_team_tools",
+      "result": "{\"success\":true,\"count\":2}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 74,
+      "usage": {
+        "inputTokens": 10188,
+        "outputTokens": 254
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 75,
+      "toolCallId": "call_b16b9a8383f9498fa8dd1f9e",
+      "toolName": "start_task",
+      "args": {
+        "taskId": "3cdf3ed6531b788c"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 76,
+      "toolCallId": "call_b16b9a8383f9498fa8dd1f9e",
+      "toolName": "start_task",
+      "result": "{\"success\":true,\"taskId\":\"3cdf3ed6531b788c\",\"message\":\"任务已启动\",\"autoAssignedTools\":{\"teamId\":\"003a89a7a5933869\",\"added\":0,\"recommended\":0}}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 77,
+      "usage": {
+        "inputTokens": 10256,
+        "outputTokens": 32
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 78,
+      "text": "✅"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 79,
+      "text": " 任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 80,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 81,
+      "text": "成功"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 82,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 83,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 84,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 85,
+      "text": "！\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 86,
+      "text": "##"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 87,
+      "text": " 任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 88,
+      "text": "详情"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 89,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 90,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 91,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 92,
+      "text": "名称"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 93,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 94,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 95,
+      "text": "企业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 96,
+      "text": "AI"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 97,
+      "text": "助手"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 98,
+      "text": "发布"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 99,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 100,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 101,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 102,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 103,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 104,
+      "text": "ID"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 105,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 106,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 107,
+      "text": "3"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 108,
+      "text": "cdf"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 109,
+      "text": "3"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 110,
+      "text": "ed"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 111,
+      "text": "65"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 112,
+      "text": "3"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 113,
+      "text": "1"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 114,
+      "text": "b"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 115,
+      "text": "78"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 116,
+      "text": "8"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 117,
+      "text": "c"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 118,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 119,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 120,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 121,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 122,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 123,
+      "text": "专业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 124,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 125,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 126,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 127,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 128,
+      "text": "包含"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 129,
+      "text": "项目经理"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 130,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 131,
+      "text": "文案"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 132,
+      "text": "策划"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 133,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 134,
+      "text": "视觉"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 135,
+      "text": "设计师"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 136,
+      "text": "）\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 137,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 138,
+      "text": "AI"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 139,
+      "text": "模型"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 140,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 141,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 142,
+      "text": "GL"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 143,
+      "text": "M"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 144,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 145,
+      "text": "4"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 146,
+      "text": "."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 147,
+      "text": "7"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 148,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 149,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 150,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 151,
+      "text": "模式"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 152,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 153,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 154,
+      "text": "自动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 155,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 156,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 157,
+      "text": "##"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 158,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 159,
+      "text": "交付"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 160,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 161,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 162,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 163,
+      "text": "将"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 164,
+      "text": "为您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 165,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 166,
+      "text": "以下"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 167,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 168,
+      "text": "：\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 169,
+      "text": "1"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 170,
+      "text": "."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 171,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 172,
+      "text": "发布"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 173,
+      "text": "短"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 174,
+      "text": "文"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 175,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 176,
+      "text": "1"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 177,
+      "text": "篇"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 178,
+      "text": "）"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 179,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 180,
+      "text": "  "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 181,
+      "text": " -"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 182,
+      "text": " 字"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 183,
+      "text": "数"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 184,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 185,
+      "text": "约"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 186,
+      "text": "800"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 187,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 188,
+      "text": "100"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 189,
+      "text": "0"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 190,
+      "text": "字"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 191,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 192,
+      "text": "  "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 193,
+      "text": " -"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 194,
+      "text": " 内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 195,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 196,
+      "text": "介绍"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 197,
+      "text": "企业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 198,
+      "text": "AI"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 199,
+      "text": "助手"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 200,
+      "text": "的核心"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 201,
+      "text": "价值"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 202,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 203,
+      "text": "主要"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 204,
+      "text": "功能"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 205,
+      "text": "和应用"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 206,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 207,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 208,
+      "text": "  "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 209,
+      "text": " -"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 210,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 211,
+      "text": "风"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 212,
+      "text": "格"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 213,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 214,
+      "text": "专业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 215,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 216,
+      "text": "可信"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 217,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 218,
+      "text": "面向"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 219,
+      "text": "企业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 220,
+      "text": "客户"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 221,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 222,
+      "text": "合作伙伴"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 223,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 224,
+      "text": "2"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 225,
+      "text": "."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 226,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 227,
+      "text": "社交媒体"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 228,
+      "text": "文案"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 229,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 230,
+      "text": "2"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 231,
+      "text": "条"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 232,
+      "text": "）"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 233,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 234,
+      "text": "  "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 235,
+      "text": " -"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 236,
+      "text": " 第"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 237,
+      "text": "1"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 238,
+      "text": "条"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 239,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 240,
+      "text": "产品"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 241,
+      "text": "亮点"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 242,
+      "text": "介绍"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 243,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 244,
+      "text": "150"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 245,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 246,
+      "text": "200"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 247,
+      "text": "字"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 248,
+      "text": "）\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 249,
+      "text": "  "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 250,
+      "text": " -"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 251,
+      "text": " 第"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 252,
+      "text": "2"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 253,
+      "text": "条"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 254,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 255,
+      "text": "应用"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 256,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 257,
+      "text": "展示"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 258,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 259,
+      "text": "150"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 260,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 261,
+      "text": "200"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 262,
+      "text": "字"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 263,
+      "text": "）\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 264,
+      "text": "  "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 265,
+      "text": " -"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 266,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 267,
+      "text": "适用于"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 268,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 269,
+      "text": "微信公众号"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 270,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 271,
+      "text": "微博"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 272,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 273,
+      "text": "LinkedIn"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 274,
+      "text": "等"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 275,
+      "text": "平台"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 276,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 277,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 278,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 279,
+      "text": "分配"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 280,
+      "text": "工具"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 281,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 282,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 283,
+      "text": "搏"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 284,
+      "text": "查"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 285,
+      "text": "搜索"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 286,
+      "text": "服务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 287,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 288,
+      "text": "网页"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 289,
+      "text": "抓"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 290,
+      "text": "取"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 291,
+      "text": "工具"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 292,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 293,
+      "text": "用于"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 294,
+      "text": "获取"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 295,
+      "text": "相关"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 296,
+      "text": "行业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 297,
+      "text": "信息和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 298,
+      "text": "竞"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 299,
+      "text": "品"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 300,
+      "text": "参考"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 301,
+      "text": "）\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 302,
+      "text": "---\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 303,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 304,
+      "text": "已经在"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 305,
+      "text": "自动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 306,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 307,
+      "text": "中"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 308,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 309,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 310,
+      "text": "将"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 311,
+      "text": "开始"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 312,
+      "text": "为您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 313,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 314,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 315,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 316,
+      "text": "您可以"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 317,
+      "text": "随时"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 318,
+      "text": "关注"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 319,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 320,
+      "text": "进展"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 321,
+      "text": "！"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 322,
+      "usage": {
+        "inputTokens": 10334,
+        "outputTokens": 263
+      }
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 323,
+      "text": "好的！我来帮您创建并启动这个任务。让我先查看可用的场景模板和团队。完美！我看到您有内容创作相关的团队。让我使用\"内容创作\"模板来创建这个任务，这样会组建一个专业的文案团队来为企业AI助手创作发布内容。✅ 任务已成功创建并启动！\n\n## 任务详情\n\n**任务名称**：企业AI助手发布内容创作\n\n**任务ID**：3cdf3ed6531b788c\n\n**团队**：专业内容创作团队（包含项目经理、文案策划和视觉设计师）\n\n**AI模型**：GLM-4.7\n\n**执行模式**：自动执行\n\n## 交付内容\n\n团队将为您创作以下内容：\n\n1. **发布短文（1篇）**\n   - 字数：约800-1000字\n   - 内容：介绍企业AI助手的核心价值、主要功能和应用场景\n   - 风格：专业、可信，面向企业客户和合作伙伴\n\n2. **社交媒体文案（2条）**\n   - 第1条：产品亮点介绍（150-200字）\n   - 第2条：应用场景展示（150-200字）\n   - 适用于：微信公众号、微博、LinkedIn等平台\n\n**已分配工具**：搏查搜索服务、网页抓取工具（用于获取相关行业信息和竞品参考）\n\n---\n\n任务已经在自动执行中，团队将开始为您创作内容。您可以随时关注任务进展！",
+      "messageId": "6471fc21c9c4a672",
+      "finishReason": "stop"
+    }
+  }
+]

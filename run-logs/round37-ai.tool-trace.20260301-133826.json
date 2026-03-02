@@ -1,0 +1,226 @@
+[
+  {
+    "id": "b99cbdc47ccfd0bc",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": {
+      "toolCallId": "call_function_vwh47ph3tt4z_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:39:01.879Z"
+  },
+  {
+    "id": "c1437efddb2b0572",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": null,
+    "output": "Echo: 当前时间查询",
+    "isError": false,
+    "durationMs": 6,
+    "createdAt": "2026-03-01T13:39:01.884Z"
+  },
+  {
+    "id": "e36f6b7a31b24855",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_68wj8yrk6t2l_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:39:04.891Z"
+  },
+  {
+    "id": "a76ecad8a9fa39b5",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025 年我国人工智能企业数量超 6000 家-IT之家\nURL: https://www.ithome.com/0/915/017.htm\nDescription: IT之家 1 月21 日消息,据央视新闻报道,国务院新闻办公室今日(1 月21 日)举行新闻发布会｡ 相关负责人介绍,国内企业发布多款人工智能芯片产品,智能算力规模达 1590EFLOPS,行业高质量数据集加速涌现,国内大模型引领全球开源生态｡据有关机构测算, 2025 年我国人工智能企业数量超 6000 家,核心产业规模预计突破 1.2 万亿元 ｡ 此外,我国加强优质企业梯度培育, 累计培育专精特新中小企业超 14 万家 ,有效期内的高新技术企业达 50.4 万家｡2025 年规模以上工业专精特新“小巨人”企业增加值同比增长 9%,前11 个月规模以上工业高新技术企业利润总额同比增长 5.3%｡ 目前,AI 大模型已应用到金融､医疗､制造､交通､教育等多个行业｡ 据IT之家此前报道,胡润研究院发布的《2025 胡润中国人工智能企业 50 强》报告显示: AI 芯片企业寒武纪以 6300 亿元的价值位居榜首,比去年增长 165%; 国产 GPU 第一股摩尔线程排名第二,价值 3100 亿元; 中国首批实现全流程国产化的高端 GPU 企业沐曦排名第三,价值 2500 亿元; AI 芯片相关企业包揽榜单前 10 中的 7 席,包括地平线､瑞芯微､壁仞科技､芯原股份｡\nPublished date: 2026-02-28T01:43:19+08:00\nSite name: IT之家\n\nTitle: 【理响中国】AI浪潮下协同应对 探索实现稳就业--理论-中国共产党新闻网\nURL: http://theory.people.com.cn/n1/2026/0227/c40531-40671324.html\nDescription: 2025年,中国人工智能(以下简称AI)行业按下“加速键”,迎来了突破性发展的一年｡从年初DeepSeek(深度求索)横空出世､惊艳全球科技圈,到年末豆包手机助手“破圈”､走进千家万户,再到AI视频创作模型Seedance 2.0炸场､引爆行业热潮,AI技术褪去“高冷”的技术外衣,不再是炫目的“技术奇观”,而以肉眼可见的速度融入人们日常工作生活｡站在全球视角观察,我们更会发现,人工智能产业化推进的迅猛势头,正深刻改写当下的经济社会图景｡ 世界经济论坛《2025年未来就业报告》预测:到2030年,技术进步将为全球催生1.7亿个新岗位,但与此同时,也可能让9200万个现有岗位被替代｡ 无处不在,这些行业正被深度改写 制造业是AI应用的“前沿战场”｡工厂里的工业机器人早已不是新鲜事物,那些枯燥乏味､标准化程度高的生产岗位,正经历着“机器换人”的变革｡ 服务业的变化则更具层次感,呈现出“线上线下交融､人机携手协作”的鲜明特点｡在基础服务领域,智能客服已然成为“主力军”,应对了大部分的常规咨询;而在医疗､教育､创意设计等高端服务领域,则走出了一条“人机协同”的道路,各种智能体充当人的“秘书助手”,负责信息整理､决策辅助和繁琐的执行,而原始创意､情感传递和核心决策等工作,依然由人类牢牢掌握主动权｡ 值得关注的是,生成式AI让那些以流程管理､信息处理､规则执行为核心的中高技能岗位,也迎来了前所未有的重塑压力｡\nPublished date: 2026-02-27T13:55:43+08:00\nSite name: 人民网\n\nTitle: 人工智能成制造业升级关键变量-新华网\nURL: https://www.news.cn/tech/20260226/53c21acb1e24438c8a3ba728d0e0e29e/c.html\nDescription: 近日,工业和信息化部等8部门发布《“人工智能+制造”专项行动实施意见》(下称《实施意见》),加快推进人工智能技术在制造业中融合应用,培育新质生产力,全方位､深层次､高水平赋能新型工业化｡   专家认为,以大模型为代表的新一代人工智能技术加速突破,为制造业转型升级提供了前所未有的历史机遇｡   重塑产业竞争格局   “当前,人工智能技术正对制造业生产模式和经济形态产生深远影响｡”中国互联网络信息中心主任､党委书记刘郁林表示,《实施意见》的发布标志着我国人工智能在制造业的应用正从局部试点向全面赋能的新阶段迈进｡   据有关机构测算,2025年我国人工智能企业数量超过6000家,核心产业规模预计突破1.2万亿元｡AI手机､AI电脑､AI眼镜等人工智能终端产品加快走进千家万户｡人工智能应用已覆盖钢铁､有色､电力､通信等重点行业,逐渐深入产品研发､质量检测､客户服务等重点环节｡国家人工智能产业投资基金",
+    "isError": false,
+    "durationMs": 1566,
+    "createdAt": "2026-03-01T13:39:06.457Z"
+  },
+  {
+    "id": "14ed2aea79e8bb00",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_kppssu9vlz8z_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:39:13.286Z"
+  },
+  {
+    "id": "d8b8bb8e0c1263b8",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年计算机行业春季投资策略:把握AI主线,重视新科技 - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/4640686744209985536.html\nDescription: 人工智能迎来技术进化与场景落地双重变革\n大模型持续迭代,商业化落地可期\n大模型数量不断增加,能力快速增强:随着开源降低技术门槛,各国加快算力基础建设,拓展应用领域,竞争主体不断增多,全球大模\n型产业格局正由少数科技巨头依托算力、数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建。我国大模型技术持续突破,\n参数规模普遍已达千亿级,部分头部模型在文本和多模态内容理解与生成、深度推理等核心能力上已比肩全球顶尖水平。\n大模型技术进入规模商业化:AI在快速发展中逐渐成熟,尤其在文字、语音、图像、视频、代码等领域加速迭代,大模型能力快速增强,\n算力门槛与成本大幅降低,为大模型技术的商业化应用打下了坚实基础;其中,Agent具备学习、规划、记忆、工具使用和行动等能力,\n能够独立或半自主地完成任务,是大模型落地的重要手段。\n全球AI市场规模化增长已成高度确定的趋势:经过前几年的概念验证和市场培育,AI技术已经找到了清晰的商业化路径和广泛的应用场\n景,据IDC数据,全球在AI领域的IT总投资规模预计从2024年的3159亿美元增长到2029年的12619亿美元,年均复合增长率高达31.9%,\n标志着AI正从一个前沿技术领域逐步成长为驱动全球数字经济的核心引擎,一个万亿美元级的庞大产业赛道已然形成。\n中国市场是推动全球增长的关键力量:我国人工智能市场规模由2022年的937亿元增长至2024年的1607亿元,年均复合增长率为31%,\n预计到2030年我国人工智能市场规模将进一步增长至9930亿元,2024-2030年的年均复合增长率为35.5%。\n通用性带来大模型应用的广阔市场空间:目前大模型应用的主要赛道包括生产力、娱乐、视觉生成、音频生成和通用toB服务,用一套高\n度可拓展的模型撬动下游规模化与个性化并存的多元场景需求。\n大模型产业正从规模化扩张迈向体系化商业落地新阶段,构建价值闭\nPublished date: 2026-02-25T00:00:00+08:00\nSite name: 未来智库\n\nTitle: 中邮证券计算机行业2026春季投资策略:把握AI主线 重视新科技_腾讯新闻\nURL: https://news.qq.com/rain/a/20260225A04WAQ00\nDescription: 智通财经APP获悉,中邮证券发布研报称,2025年,中国AI大模型产品形态进入成熟期,成为市场爆发的直接推动力,模型的可用性与商业化潜力亦持续上升。AI应用在toB端与toC端均在持续增长。此外,多种新科技持续发展推进,商业航天市场空间广阔,脑机接口产业发展将进入加速期,量子计算国家战略引领下已形成千帆竞发的产业布局热潮,市场空间广阔。中邮证券主要观点如下:AI大模型2025年,中国AI大模型产品形态进入成熟期,成为市场爆发的直接推动力,低成本、高性能的技术基础形成了从底层支撑市场高速增长的关键条件,为MaaS和企业大模型的广泛应用创造了可持续的商业化环境;多模态模型的快速迭代将AI应用从单一文本生成扩展至图像、视频、语音等复合场景,提升了模型的可用性与商业化潜力;同时,各大厂商通过推出通用基座模型、行业专属模型及低门槛API服务,构建了完整的产品矩阵,极大降低了企业和开发者的接入成本;企业对AI价值的认知日益成熟,数字化和智能化转型需求持续增长,推动客户需求从概念验证阶段进入规模化生产阶段,企业对于大模型的调用频次和覆盖场景不断增加,从而带动MaaS平台和AI大模型解决方案市场进入了“结构性放量”周期。AI应用toB端,AIAgent是大模型重要的商业落地形式,已在客服、代码开发、营销、数据分析、金融服务等多行业、多场景实现服务落地;同时,智能体应用正加速从通用型向垂直领域专业化发展,随着边缘计算技术的成熟,边缘端越来越多部署智能体,能够在资源受限的环境中提供实时响应能力。toC端,依托互联网生态快速获客,据火山引擎Force原动力大会披露,截至2025年12月,豆包大模型日均使用量已突破50万亿tokens,排名中国第一、全球第三,仅次于OpenAI和Google\nCloud;同时,随着阿里启动AI\nto\nc计划,千问、阿福、灵光先后开启大力度推广,千问上线23天月活数\nPublished date: 2026-02-25T15:51:10+08:00\nSite name: 腾讯网\n\nTitle: 2026-2031年中国AI大模型产业运行态势及投资规划深度研究报告_报告大厅\nURL: ht",
+    "isError": false,
+    "durationMs": 390,
+    "createdAt": "2026-03-01T13:39:13.676Z"
+  },
+  {
+    "id": "582dd2a3d5a0b691",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_e844lenkcv6l_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:39:21.438Z"
+  },
+  {
+    "id": "21844ceb4a0e4c3b",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 中国大模型一年狂飙421%,全球AI格局变天\nURL: https://new.qq.com/rain/a/20260228A07TNP00\nDescription: 2025年初,DeepSeek-R1横空出世｡ 全球头部大模型API聚合平台OpenRouter的数据显示,过去一年,中国大模型在全球市场的Token消耗占比增长了421%｡ (图源:OpenRouter,对比日期:2025年2月8日/2026年2月10日) 可以看到,2025年初,大模型推理市场还是典型的“美系双寡头”结构:Anthropic一家的Token消耗占比就达到总量的42.2%,紧随其后的是Google,达25.8%,两家合计接近68%｡再往后,欧洲的Mistral消耗量占8.2%,DeepSeek 6.7%,OpenAI 4.9%,Meta Llama 4.5%,整体呈现出高度集中的金字塔格局｡Google虽为第一,但Token消耗占比只有18.8%,Anthropic下降至14.7%,两家合计仅约33%,头部企业的控制力几乎减半｡ 斯坦福大学“以人为本”人工智能研究院的一份报告显示,2025年9月,阿里巴巴的Qwen模型家族超越Llama,成为Hugging Face上下载量最高的LLM模型家族｡\nPublished date: 2026-02-28T00:00:00+08:00\nSite name: 腾讯网\n\nTitle: Anthropic收购,OpenAI抢人,“硅谷双强”打的什么算盘?\nURL: https://new.qq.com/rain/a/20260226A037JO00\nDescription: 京时间2月26日,美国AI头部公司Anthropic宣布收购视觉驱动计算机自动化AI初创公司Vercept ,补全Computer Use功能的视觉短板｡这是继2025年12月收购全栈工具链初创公司Bun后,Anthropic第二笔收购案｡             Computer Use是Anthropic为旗下大模型Claude打造的AI 直接操控电脑的核心能力,让Claude可以像人一样“看屏幕､动鼠标､敲键盘､操作软件”,完成多步骤､跨应用的复杂任务,于2024年10月随Claude 3.5 Sonnet一同发布｡             但由于模型早期在视觉理解精度､复杂界面识别､动态场景处理方面存在瓶颈,导致Computer Use操作成功率低､任务易失败｡\nPublished date: 2026-02-26T11:33:07+08:00\nSite name: 腾讯网\n\nTitle: 2026年大模型技术迭代与产业链解析:收藏这份全景参考指南-CSDN博客\nURL: https://blog.csdn.net/2301_76168381/article/details/158350655\nDescription: 不同于以往“文本+图像”的简单拼接,2026年顶尖大模型均采用多模态统一表示空间架构,实现文本､图像､音频､视频､3D信号的原生协同学习,可完成跨模态理解､生成与交互｡例如,谷歌Gemini 3.0 Ultra支持2000万Token千万级上下文窗口,多模态评分位居全球第一,能直接处理2小时长视频并生成结构化摘要,同时可将手绘草图转化为可运行的前端代码,还原度达92%以上型与实际场景的核心载体｡ OpenAI(美国)——AGI定义者,全球大模型绝对龙头:2026年2月完成由亚马逊､软银､英伟达领投的1000亿美元超级融资,投后估值达8500亿美元,稳居全球榜首｡核心模型包括GPT-5.2 Ultra/Pro､o3推理系列及商用主力GPT-4o,技术性能全球领先:LMSYS综合评分92.7分,MMLU评测得分95.1%,HumanEval编程得分95.3%,支持4.8万张英伟达H100/H200芯片集群,同时推进\nPublished date: 2026-02-24T15:33:10+08:00\nSite name: blog.csdn.net\n\nTitle: AI编程大战打响!OpenAI推出GPT-5.3-Codex,与Anthropic同步发布新模型\nURL: https://wallstreetcn.com/articles/3765099\nDescription: OpenAI周四发布GPT-5.3-Codex,称其为迄今最强编程代理,并将发布时间安排在Anthropic发布其旗舰升级模型Claude Opus 4.6的同一时刻｡新模型多项基准测试成绩大幅领先,并首次参与自身训练与部署｡业内认为,这标志着围绕企业级软件开发的AI编程大战正式打响｡ OpenAI周四发布GPT-5.3-Code",
+    "isError": false,
+    "durationMs": 1729,
+    "createdAt": "2026-03-01T13:39:23.167Z"
+  },
+  {
+    "id": "b49681200c7c576c",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_0j4utudmf6xi_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:39:27.360Z"
+  },
+  {
+    "id": "7155e1530e648b1b",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": " 2025 年我国人工智能企业数量超 6000 家 - IT之家                 \n\n[App](http://m.ruanmei.com/d/it/) [公众号](http://m.ruanmei.com/d/it/) [投稿](//dyn.ithome.com/tougao/) [评论](#post_comm) [顶部](javascript:; \"顶部\")\n\n![](//img.ithome.com/images/svg/app.svg)\n\n![](//img.ithome.com/images/svg/weixin.svg)\n\n[](https://www.ithome.com)[](https://img.ithome.com/app/songs/index.html)\n\n[首页](https://www.ithome.com)\n\n[IT圈](https://quan.ithome.com)\n\n[最会买](https://www.zuihuimai.com)\n\n[设置](###)\n\n*   日夜间\n    \n    随系统\n    \n    浅色\n    \n    深色\n    \n*   主题色\n    \n    黑色\n    \n\n[投稿](https://dyn.ithome.com/tougao/)\n\n[订阅](###)\n\n*   [RSS订阅](//www.ithome.com/rss/)\n*   [收藏IT之家](# \"IT之家\")\n\n[软媒应用](https://www.ruanmei.com)\n\n*   [App客户端](//m.ruanmei.com/)\n*   [要知App](//yaozhi.ruanmei.com/)\n*   [软媒魔方](//mofang.ruanmei.com/)\n\n[业界](//it.ithome.com) [手机](//mobile.ithome.com/) [电脑](//www.ithome.com/pc/) [测评](//www.ithome.com/labs/) [视频](//www.ithome.com/video/) [AI](//next.ithome.com/) [苹果](//www.ithome.com/apple/) [iPhone](//iphone.ithome.com/) [鸿蒙](//hmos.ithome.com/) [软件](//soft.ithome.com/)\n\n[智车](//auto.ithome.com) [数码](//digi.ithome.com/) [学院](//www.ithome.com/college/) [游戏](//game.ithome.com/) [直播](//www.ithome.com/live/) [5G](//www.ithome.com/5g/) [微软](//www.ithome.com/microsoft/) [Win10](//win10.ithome.com/) [Win11](//win11.ithome.com/) [专题](//www.ithome.com/zt/)\n\n搜索\n\n[首页](//www.ithome.com) \\> [智能时代](https://next.ithome.com/)\\>[人工智能](https://next.ithome.com/ai)\n\n# 2025 年我国人工智能企业数量超 6000 家\n\n2026/1/21 10:45:39 来源：[IT之家](https://www.ithome.com/0/915/017.htm) 作者：**汪淼** 责编：**汪淼**\n\n[评论：0](#post_comm)\n\n感谢IT之家网友 [斯文当不了饭吃](https://m.ithome.com/html/app/open.html?url=ithome%3A%2F%2Fuserpage%3Fid%3D2155441) 的线索投递！\n\n[IT之家](https://www.ithome.com/) 1 月 21 日消息，据央视新闻报道，国务院新闻办公室今日（1 月 21 日）举行新闻发布会。\n\n相关负责人介绍，国内企业发布多款人工智能芯片产品，智能算力规模达 1590EFLOPS，行业高质量数据集加速涌现，国内大模型引领全球开源生态。据有关机构测算，**2025 年我国人工智能企业数量超 6000 家，核心产业规模预计突破 1.2 万亿元**。\n\n此外，我国加强优质企业梯度培育，**累计培育专精特新中小企业超 14 万家**，有效期内的高新技术企业达 50.4 万家。2025 年规模以上工业专精特新“小巨人”企业增加值同比增长 9%，前 11 个月规模以上工业高新",
+    "isError": false,
+    "durationMs": 1106,
+    "createdAt": "2026-03-01T13:39:28.466Z"
+  },
+  {
+    "id": "cca0aa1829582fd0",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_ayunv9hktevl_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:39:41.625Z"
+  },
+  {
+    "id": "2a4302f499412f64",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": " 中国大模型一年狂飙421%，全球AI格局变天\\_腾讯新闻                              [](javascript:void\\(0\\))\n\n[](https://www.qq.com)\n\n*   更多\n\n正在浏览：中国大模型一年狂飙421%，全球AI格局变天\n\n壹览商业网\n\n搜索\n\n游戏\n\n无障碍\n\n登录\n\n点一点下载电脑版\n\n点一点下载电脑版\n\n关注\n\n0\n\n评论\n\n收藏\n\n分享\n\n复制链接\n\n微信好友\n\n![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAABxCAYAAADifkzQAAAImUlEQVR4Aeyai3bbOAxEc/v//7xbJlHm2iL0iJ1ETLmnrMbgYABhDnmcbP+8vLz89xXrv+K/qpbpZznONb7XqfYeiR/JrTj3/X32czPxb+78M/IEpokju/fe+zTxfRAjP1Ym/r2/Xz67jgyi0gZe4G2ZY0142wduejRnC0M/HxKv8s/2BOc0rX8Eu8+Vid6ceIwJTBPH8Gmzy00TIVcC9PGm+vsmnMuF8N8lXh++ZiAcCH4lHvgLzuXAPh/2OVVrkFzo4yp308QqacavNYGOiddqcHazP4FvN7G6Et2qOcbmGJsDuYrM2cLON65yoF/DucaVzrPi327isxqfOpnANDGzGBb9qInVlQO5rqCPq9wq3hzynnHb6y1I7SN8a0ByHf8K/KMmfsUL/Yua08Rf4Pqmib5CKvydM3AP8DXXFUTX9fyeVRz2c61jbM0Km2+8aaKJE193AsdMvG7/s7O/E1iZCLkS4Bz+q3fqD0TfV4hFHIc+HxJ37haGczmwz696rfqAaMI5bM2Vid6ceIwJTBPH8Gmzyz++Ap6JN6t2NiHXSWf7NeT+4By/5cK5HAi/5S8LEn9t7MRfi8Yzn/MknjDgqtRp4lWdOdHXH8jVANykAh//eAnOYQv56nDc2Bxj6Netch2H21zvGcMtD94+Vxz3Z2x+FYc3bTj/tL7xPImexqD40yYO+r6/su3Vt1O/ZXUlVBzzYf+6OMKvajkOqeW49Z+JXQNSG/axc93TkThE3/x5Ej2NQfE0cVDj3Pbq2yn0j6yTjCF8CD5yVcA+v6plfeOKD3jr5lu3N4CbPdj+7NyqD3OMIdrOhX68yp0n0ZMZFE8TBzXOba9M9LE20bjiOA65EpxbYQjfOhW2DiQXgs25x9aF/Rzzja0L0THnCIbkHtE0Z2WiNyceYwLPNHGMN/6FXW6aCOeOOIRfXSEQTjVPCAeCK34Vv+/hCK/iQPqAYPNdz3EIH/rY/CM65m+aaOLE153ANPG63hzubPW7U8hx97E2tjr0+RXH8UcwpG6lA+EAFe3mh/vqPR03rkSBD13zjZ37SHyeRE9yUDxNHNQ4t7363amPNeRKcJI5jsM+37nG1jE2B/b1q9ymA/185xi3nGU5XmHo60PiEGwdSByCzVl6aU/H50n0NAbFX2zioFMZrO1NE9uxXRbkiEPwsn//rOYAyYVg863l+FkM0Qdu0oGPb4/egMRhHzvX+JF3qHKh38+miW5q4utOYJp4XW8Od7b5wz7k+FZH3JUgfMcrbE1j8yGaZznmb2HXq3jmGFd86Pdd8R23PuzrzJPoiQ2Kp4mDGue2N3/YNxH6x9ocXwkQvjnGsM85omlOpQ946+ObKRyLO9n1gBstePtsjnPhbR/qp/nWgeSYM0+ipzEo/n4TBx3Uldve/Hbqo+yXgP6xhsSdC4lb5win4jsOfX1zGobwXLvtLauKL/vtCX2dI7kVp4q3er0F6WGexN6EBotNEwczrNfuNLE3lcFih3/EqO5syN1sDiRezQTCqXIhnErHueY43rD3oK8L/XjL7y0IH85h91NhiKbrmz9PoqcxKJ4mDmqc2179iOFNyFF2vMLQ5/saqLA1j3DMh35dSBxwyg2u6gHd38ZA4s61aBWvOBBNCK50HL/ESfSLTXx+AtPE8zO7XMbq2yn0jzL0434jH3HHH8GQupVOVdfxLVzpOu58x43NgfTtu",
+    "isError": false,
+    "durationMs": 1085,
+    "createdAt": "2026-03-01T13:39:42.710Z"
+  },
+  {
+    "id": "c3ea152294e7ac82",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_06hhh1b8r9su_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:40:11.666Z"
+  },
+  {
+    "id": "1bd7351d15b87fbe",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: AI业务营收达400亿元!百度发布财报 _ 东方财富网\nURL: http://finance.eastmoney.com/a/202602263655572972.html\nDescription: 财报显示,2025年 百度 实现总营收1291亿元,AI业务营收达400亿元;2025年第四季度, 百度 总营收327亿元,AI业务收入占一般性业务收入的43%,超出市场预期｡2025年,慧播星数字人开播规模同比增长202%,收入同比增长228%,已赋能30多个行业｡ 同时, AI应用 2025全年收入突破100亿元｡\nPublished date: 2026-02-26T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: 百度发布最新财报:2025年营收1291亿元 四季度AI业务收入占比43%_中国经济网——国家经济门户\nURL: http://www.ce.cn/macro/more/202602/t20260227_2792900.shtml\nDescription: 2月26日,百度发布2025年第四季度及全年财报｡报告显示,2025年,百度总营收达1291亿元,AI业务营收达400亿元;四季度,百度总营收327亿元,AI业务收入占百度一般性业务收入的43%,超出市场预期｡ AI应用2025全年收入突破100亿元｡据IDC《中国无代码生成式应用开发平台实测报告》,无代码生成平台秒哒在平台功能和应用质量方面,表现出行业领先的性能｡\nPublished date: 2026-02-27T15:36:49+08:00\nSite name: 中国经济网\n\nTitle: 百度2025财报:AI业务收入达400亿元,占比43%_总收入_同比增长_用户\nURL: https://www.sohu.com/a/990313310_121885030\nDescription: 百度于2026年2月26日发布了2025年第四季度及全年财报,显示公司总营收达到1291亿元,其中AI业务贡献了400亿元｡第四季度,百度实现总营收327亿元,同比增长5%,AI业务收入占总收入的43%,表现超出市场预期｡ 财报中指出,2025年AI云收入同比增长34%,AI应用的全年收入突破100亿元,AI原生营销服务收入则大幅增长301%｡\nPublished date: 2026-02-26T17:05:58+08:00\nSite name: 搜狐\n\nTitle: 百度2025年财报显示AI业务营收达400亿元 李彦宏称AI已成新核心_热点播报_太平洋科技资讯中心\nURL: http://news.pconline.com.cn/2104/21046232.html\nDescription: 百度发布2025年第四季度及全年财报,显示2025年总营收达1291亿元,AI业务营收达400亿元｡四季度百度总营收327亿元,同比增长5%,AI业务收入占一般性业务收入的43%｡ 百度创始人李彦宏表示,2025年是AI成为百度新核心的关键一年｡AI云势头强劲,凭借全栈端到端AI能力赢得企业认可｡萝卜快跑巩固全球领先地位,加速国际扩张｡AI原生营销服务持续增长,为长期发展开启新可能性｡ \nPublished date: 2026-02-27T15:25:02+08:00\nSite name: news.pconline.com.cn\n\nTitle: 2025年财报显示AI业务营收达400亿元 李彦宏称AI已成新核心百度AI百度收入服务自动驾驶_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902o71k.html\nDescription: 2025年财报显示AI业务营收达400亿元 李彦宏称AI已成新核心 百度发布2025年第四季度及全年财报,显示2025年总营收达1291亿元,AI业务营收达400亿元｡四季度百度总营收327亿元,同比增长5%,AI业务收入占一般性业务收入的43%｡ 2025全年百度AI云收入同比增长34%,四季度高性能计算设施订阅收入同比增长143%｡\nPublished date: 2026-02-27T19:48:40+08:00\nSite name: 新浪网\n\nTitle: 透视百度年报:AI赚了400亿,「新核心」驱动价值重估百度_新浪财经_新浪网\nURL: https://finance.sina.com.cn/stock/relnews/hk/2026-02-28/doc-inhpkhwh2854960.shtml\nDescription: 马年春节后的第一个工作周,百度发布了2025年第四季度及全年财报｡ 财报显示,2",
+    "isError": false,
+    "durationMs": 1229,
+    "createdAt": "2026-03-01T13:40:12.896Z"
+  },
+  {
+    "id": "153f6f9c7dec6f0f",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_aekriyr1lqgl_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:40:35.366Z"
+  },
+  {
+    "id": "e9d3075b6c062081",
+    "type": "tool_call",
+    "taskId": "8d03d9c29f16125d",
+    "subtaskId": "705cee30b8d2d439",
+    "employeeId": "bb8a4237e8c06677",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "       AI编程大战打响！OpenAI推出GPT-5.3-Codex，与Anthropic同步发布新模型\n\nOpenAI周四发布GPT-5.3-Codex，称其为迄今最强编程代理，并将发布时间安排在Anthropic发布其旗舰升级模型Claude Opus 4.6的同一时刻。新模型多项基准测试成绩大幅领先，并首次参与自身训练与部署。业内认为，这标志着围绕企业级软件开发的AI编程大战正式打响。\n\nOpenAI周四发布GPT-5.3-Codex。该公司称，这是迄今为止能力最强的编程代理。值得注意的是，此次发布的时间点被精准安排在Anthropic推出其旗舰模型升级版Claude Opus 4.6的同一时刻。**媒体称，两大模型同步亮相，被业内观察人士视为“AI编程大战”的第一枪——这是一场围绕企业级软件开发市场展开的高风险争夺战。**\n\nOpenAI首席执行官Sam Altman在模型发布几分钟后就在X上写道：\n\n> “我非常喜欢用这个模型来开发，它带来的进步感受，远远超过基准测试所显示的幅度。”\n> \n> “看着我们用5.3-Codex来开发5.3-Codex，从而把发布速度提升到这么快，真的令人震撼，这毫无疑问预示着未来的发展方向。”\n\n**媒体表示，模型本身参与了自身的构建，被视为AI发展中的一个重要里程碑。根据OpenAI的公告，Codex团队使用GPT-5.3-Codex的早期版本来调试自身的训练过程、管理部署基础设施，并诊断测试结果和评估情况。**OpenAI将其称为“我们首个在自身创建过程中发挥关键作用的模型”。\n\n## **GPT-5.3-Codex多项基准成绩领先Claude达到两位数**\n\nOpenAI表示，新模型在多项行业基准测试中实现了显著提升。GPT-5.3-Codex在SWE-Bench Pro上取得了57%的成绩。SWE-Bench Pro是一项极为严格的真实世界软件工程评测，涵盖四种编程语言，重点考察抗数据污染、具有工业相关性的挑战。\n\n![](https://wpimg-wscn.awtmt.com/cc5cc645-bc09-48f6-9051-1f42e33a1654.png?imageView2/2/w/680)\n\n该模型在Terminal-Bench 2.0上得分77.3%，这一基准主要衡量编程代理所必需的终端操作能力；在OSWorld上得分64%，该测试要求模型在可视化桌面环境中完成生产力任务，是一项强调“代理式”计算机使用能力的评估。\n\n其中，Terminal-Bench 2.0的结果尤为引人注目。根据周三公布的性能数据，GPT-5.3-Codex的得分为77.3%，而GPT-5.2-Codex为64.0%，基础版GPT-5.2模型为62.2%。也就是说，仅一代升级，成绩就提升了13个百分点。一位X平台用户指出，这一成绩“彻底碾压”了Anthropic的Opus 4.6，后者据称在同一基准上的得分为65.4%。\n\n![](https://wpimg-wscn.awtmt.com/690f874d-fa54-4935-b3f4-a61cc4d530dd.png?imageView2/2/w/680)\n\nOpenAI还表示，新模型是在效率大幅提升的情况下实现上述成绩的：在完成同等任务时，所需token数量不到上一代模型的一半，同时单个token的推理速度提升超过25%。\n\nOpenAI在公告中称：\n\n> “值得注意的是，GPT-5.3-Codex在使用的token数量上低于任何此前模型，这让用户能够做更多事情。”\n\n## **从编程助手到编程操作者**\n\n相比基准测试的提升，更重要的是OpenAI对GPT-5.3-Codex的定位。该公司明确表示：\n\n> “Codex正从一个只能编写和审查代码的代理，进化为一个几乎可以完成开发者和专业人士在电脑上所做任何事情的代理。”\n\n这一能力扩展涵盖了调试、部署、监控、撰写产品需求文档、编辑文案、开展用户研究、制作演示文稿，以及在电子表格应用中分析数据等。该模型在GDPVal评估中表现突出。GDPVal是OpenAI于2025年发布的一项评估，用于衡量模型在44种职业中、对定义明确的知识型工作任务的完成能力。\n\n**分析认为，这一扩展信号表明，OpenAI的目标不仅是开发者工具市场，还包括更广泛的企业生产力软件领域。**该市场的既有玩家包括Microsoft、Salesforce和ServiceNow，这些公司都在加速将AI代理嵌入自身平台。\n\n## **OpenAI首个“高能力”网络安全模型**\n\n向通用计算能力的转变，也带来了新的安全考量。OpenAI表示，GPT-5.3-Codex是其首个在“准备度框架”下，被归类为在网络安全相关任务上具备",
+    "isError": false,
+    "durationMs": 596,
+    "createdAt": "2026-03-01T13:40:35.962Z"
+  }
+]

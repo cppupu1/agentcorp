@@ -1,0 +1,84 @@
+{
+  "label": "round37-legal",
+  "sessionId": "round37-legal-20260301-133826",
+  "kind": "legal",
+  "userPrompt": "请直接创建并启动任务：审阅供应商服务合同草案，提炼3条高风险条款并给出改写建议。",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "f2c6a0aae63d2e75"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 38903
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "f2c6a0aae63d2e75"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "legal_risk_rewrite",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "f2c6a0aae63d2e75",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 29291,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成供应商服务合同草案审阅任务，提炼出3条高风险条款：1）知识产权归属条款（第五条）- 核心资产归属错误且责任倒置；2）甲方违约责任条款（第八条）- 50%违约金过高且已付款不退不合理；3）逾期违约金比例严重不对称（第四/七条）- 乙方逾期违约金是甲方的12.5倍。每条均给出详细改写建议，同时列出其他3个需关注的条款点。合同存在明显利益偏向乙方问题，建议重点谈判争取。"
+  }
+}

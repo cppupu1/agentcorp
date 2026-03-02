@@ -1,0 +1,618 @@
+[
+  {
+    "id": "c1d22cc38217f160",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_d4c1db26e8264d87bc0fabd1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:01.356Z"
+  },
+  {
+    "id": "07284cfc92af8d14",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 生成式 AI 医疗加速发展:数十家公司采用 Meta Llama 3 NIM | 电子创新网\nURL: https://www.eetrend.com/content/2024/100581663.html\nDescription: Meta\n的开放大语言模型(已优化并可作为\nNVIDIA\nNIM\n下载)为数字健康和生命科学工作流提供动力支持。Meta\nLlama\n3\n是\nMeta\n公开提供的最先进的大语言模型,使用\nNVIDIA\n加速计算进行训练和优化。该模型为医疗健康和生命科学工作流带来了显著改进,帮助交付旨在改善患者生活的应用。Llama\n3\n现已作为\nNVIDIA\nNIM\n推理微服务在\nai.nvidia.com\n上提供下载。它使医疗健康开发者、研究人员和公司能够在各种各样的应用中进行负责任的创新。该\nNIM\n带有一个标准应用程序编程接口,可以在任何地方部署。对于手术规划、数字助理、药物研发和临床试验优化等广泛的用例,开发者可以使用\nLlama\n3为\ncopilot、聊天机器人等轻松部署经过优化的生成式\nAI\n模型。NVIDIA\n于6月2日在\nCOMPUTEX(全球顶级技术盛会之一)上宣布,数百个\nAI\n生态系统合作伙伴正在将\nNIM\n嵌入他们的解决方案中。其中有超过\n40\n个合作伙伴是医疗健康和生命科学初创公司和企业,他们使用\nLlama\n3\nNIM\n来构建和运行可加速数字生物学、数字手术和数字健康的各种应用。推进数字生物学发展科技生物和制药公司以及生命科学平台提供商将\nNVIDIA\nNIM\n用于生成式生物学、化学和分子预测。借助用于智能助手的\nLlama\n3\nNIM\n和用于数字生物学的\nNVIDIA\nBioNeMo\nNIM\n微服务,研究人员可以构建并扩展用于药物发现和临床试验的端到端工作流。Deloitte\n正在借助其\nAtlas\nAI\n药物研发加速器(由\nNVIDIA\nBioNeMo、NeMo\n和\nLlama\n3\nNIM\n微服务提供支持),\n通过从基因到功能的数据驱动洞察提高效率,为研究\ncopilot、科学研究挖掘、化学性质预测和药物再利用提供支持。Transcripta\nBio\n利用\nPublished date: 2026-02-26T13:26:14+08:00\nSite name: 电子创新网\n\nTitle: Meta发布Llama 4系列AI模型,引入“混合专家架构”提升效率|Hugging Face|OpenAI|Scout|GP|推理_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902lo58.html?from=tech\nDescription: IT之家\n4月6日消息,Meta现已发布旗下最新Llama\n4系列AI模型,包含Llama\n4\nScout、Llama\n4\nMaverick\n和\nLlama\n4\nBehemoth,Meta透露相应模型都经过了“大量未标注的文本、图像和视频数据”的训练,以使它们具备“广泛的视觉理解能力”。\n目前,Meta已将系列模型中的Scout和Maverick上架到Hugging\nFace(点此访问),而\nBehemoth\n模型则还在训练中。其中Scout可以在单个英伟达H100\nGPU上运行,而\nMaverick\n则需要英伟达H100\nDGX\nAI平台或“同等性能的设备”。\nMeta表示,Llama\n4系列模型是该公司旗下首批采用混合专家(MoE)架构的模型,这种架构在训练和回答用户查询时的效率更高,所谓“混合专家架构”基本上是将数据处理任务分解为子任务,然后将它们委派给更小的、专门的“专家”模型。\n例如,Maverick总共有4000亿个参数,但在128个“专家”模型中只有170亿个活跃参数(参数数量大致与模型的问题解决能力相对应)。Scout有170亿个活跃参数、16个“专家”模型以及总计1090亿个参数。\n不过值得注意的是,Llama\n4系列中没有一个模型是像OpenAI的o1和o3-mini那样真正意义上的“推理模型”。作为比较,“推理模型”会对其答案进行事实核查,并且通常能更可靠地回答问题,但因此也比传统的“非推理”模型花费更长的时间来给出答案。\nMeta内部测试显示,Maverick模型最适合用于“通用AI助手和聊天”等应用场景,该模型在创意写作、代码生成、翻译、推理、长文本上下文总结和图像基准测试中表现超过了OpenAI的GPT-4o和谷歌的Gemini\n2.0等模型。然而Maverick与谷歌的Gemini\n2.5\nPro、Anthropic的Claude\n3.7\nS\nPublished date: 2026-02-25T19:59:41+08:00\nSi",
+    "isError": false,
+    "durationMs": 400,
+    "createdAt": "2026-03-02T00:56:01.757Z"
+  },
+  {
+    "id": "e9817a439adb158d",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_07fbc71f2f124f7b9ac74b9f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:01.986Z"
+  },
+  {
+    "id": "b52cfc3dac099dbc",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年第8周计算机行业周报:春节海内外大模型更新全梳理!壁仞科技深度发布! - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/4640200881109733376.html\nDescription: 国内外大模型纷至,AI\n加速迈向下一阶段\n事件:春节期间,国内外大模型厂商持续更新,在多模态、Agent\n能力以及传统的基\n准测试中均有所提升。除了能力的提升,成本优化、真实的复杂任务解决能力成为近期模\n型迭代的整体技术趋势。\n我们认为,2026\n年大模型货币化进程将加速推进,Agent、多模态为应用落地的重点\n方向。应用形态的改变意味着\nAI\n从\nChatbot、Copilot\n等对话式的交互模式进一步向未来形\n态演进,产生更加视觉化的用户体验和互动方式,降低用户的使用门槛。同时,单位时间\n内、单次\nAI\n任务消耗的算力将大幅提升,AI\n应用加速落地。\n1.1\n国内:推理效率、Agent\n能力、多模态并进\n事件:1)智谱发布开源大模型\nGLM-5,参数规模扩大,编程能力对齐\nOpus\n4.5;2)\nMinimax\n发布开源模型\nM2.5,编程、工具调用和搜索、办公等生产力场景达到/刷新行业\nSOTA;3)字节跳动发布视频大模型\nSeedance2.0,支持四模态输入,音频同步、镜头\n语言等多维度提升,实现“导演级”视频生成,更贴合工业级应用;4)字节跳动发布豆\n包大模型\n2.0,多模态能力持续增强,企业级\nAgent、Coding\n能力提升。5)阿里发布\nQwen-3.5\n系列模型,推理效率大幅提升。\n2\n月\n12\n日,智谱发布并开源新一代大模型\nGLM-5。模型参数从\nGLM-4.7\n的\n355B(激\n活\n32B)扩展至\n744B(激活\n40B),预训练数据从\n23T\n提升至\n28.5T,用更多算力提升\n通用智能基座。\n从代码向工程能力演进,GLM-5\n在\nCoding\n与\nAgent\n能力上取得开源\nSOTA\n。当前,\n大模型正在从写代码、写前端,进化到写工程、完成大任务,即从“Vibe\nCoding”变革\n为“Agentic\nEngineering”。在全球权威的\nPublished date: 2026-02-24T00:00:00+08:00\nSite name: 未来智库\n\nTitle: 2026年AI医疗行业2月月报:AI药物发现提速,国产医疗大模型彰显国际竞争力 - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/4640303610696044544.html\nDescription: 海\n外\nAI医\n疗\n产\n业\n进\n展\n监\n管\n:\nEMA\n×\nFDA\n联\n合\n发\n布\nGood\nAI\nPractice\n十\n项\n原\n则\n2026\n年\n1\n月\n,\nEuropean\nMedicines\nAgency\n与\nFDA\n联\n合\n发\n布\n《\n药\n物\n开\n发\n中\nGood\nAI\nPractice\n十\n项\n原\n则\n》\n,\n旨\n在\n为\n人\n工\n智\n能\n(\nAI)\n技\n术\n在药品及生物制品研发全生命周期\n中\n的\n应\n用\n提\n供\n核\n心\n准\n则\n与\n明\n确\n指\n引\n。\n这\n些\n原\n则\n适\n用\n于\n药\n品\n的\n早\n期\n研\n究\n、\n临\n床\n试\n验\n、\n生\n产\n制\n造\n及\n上\n市\n后\n安\n全\n监\n测\n等\n所\n有\n阶\n段\n,\n其\n核\n心\n目\n标\n是\n规范AI在证据生成与监控中的应用\n,\n确\n保\nAI赋\n能\n药\n物\n开\n发\n过\n程\n的\n安\n全\n性\n、\n有\n效\n性\n与\n可\n靠\n性\n,\n并\n为\n未\n来\n各\n司\n法\n管\n辖\n区\n的\n具\n体\nAI监\n管\n指\n南\n奠\n定\n基\n础\n,\n促\n进\n国\n际\n监\n管\n协\n作\n。\n医\n学\n影\n像\n诊\n断\n:\n腹\n部\nCT\n多\n病\n种\n一\n体\n化\nAI\n分\n诊\n系\n统\n获\nFDA批\n准\n,\nAI向\n全\n流\n程\n分\n诊升级\n2026年\n1月\n21日\n,\nAidoc\n公\n司\n宣\n布\n,\n其\n研\n发\n的\n医\n疗\n行\n业\n首\n款\n综\n合\n性\nAI\n分\n诊\n解\n决\n方\n案\n已\n获\n得\nFDA批\n准\n。\n这\n款\n基\n于\nAI\n基\n础\n模\n型\n“\nCARE”\n的\n解\n决\n方案将11项新获批适应症与3项\n既\n有\n获\n批\n适\n应\n症\n整\n合\n至\n统\n一\n工\n作\n流\n程\n中\n,\n可\n在\n急\n诊\n科\n拥\n挤\n、\n影\n像\n检\n查\n积\n压\n的\n情\n况\n下\n对\n多\n种\n急\n性\n病\n症\n进\n行\n分\n诊\n,\n标\n记\n出\n存\n在\n可\n疑\n发\n现\n的\n检\n查\n结\n果,提请放射科医生优先审核,进\n而\nPublished date: 2026-02-24T00:00:00+08:00\nSite name: 未来智库\n\nTitle: Nature|OpenSch",
+    "isError": false,
+    "durationMs": 197,
+    "createdAt": "2026-03-02T00:56:02.183Z"
+  },
+  {
+    "id": "90c6c52b7c2d5306",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_0da64dfb61da48a8bbc0aadb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:02.424Z"
+  },
+  {
+    "id": "e8925ec133638105",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 阿里通义千问开源家族再添新成员_腾讯新闻\nURL: https://news.qq.com/rain/a/20260225A02AF000\nDescription: AIPress.com.cn报道2月25日,通义团队宣布开源模型扩充,继旗舰模型Qwen3.5-397B-A17B后,开源矩阵新增了三款模型:本次发布的模型包括:1.Qwen3.5-122B-A10B:在需要进行多步推理、工具调用等复杂任务的评估中表现出色。2.Qwen3.5-35B-A3B:官方信息显示,其在多项性能评测中已超过其前代模型Qwen3-235B-A22B与Qwen3-VL-235B-A22B。3.Qwen3.5-27B\n(Dense):一款参数规模相对较小的模型,旨在降低使用门槛。上述模型均已开源,用户可在GitHub、Hugging\nFace及魔搭(ModelScope)社区获取。同时,与Qwen3.5-35B-A3B对齐的托管服务版本\nQwen3.5-Flash\n的API接口已在阿里云百炼平台上线。该服务默认支持100万tokens的上下文长度,并集成了官方工具链。开发者可通过阿里云百炼的模型广场进行体验。\nPublished date: 2026-02-25T10:03:14+08:00\nSite name: 腾讯网\n\nTitle: Qwen3.5开源家族扩容_腾讯新闻\nURL: https://news.qq.com/rain/a/20260225A04F5K00\nDescription: 据通义实验室官微消息,继旗舰模型Qwen3.5-397B-A17B首次开源后,现进一步开源Qwen3.5-122B-A10B、Qwen3.5-35B-A3B、Qwen3.5-27B(Dense)。同时,Qwen3.5-Flash\nAPI已正式上线阿里云百炼。\nPublished date: 2026-02-25T15:01:05+08:00\nSite name: 腾讯网\n\nTitle: 阿里千问宣布Qwen3.5开源家族扩容_7x24小时财经新闻_新浪网\nURL: https://finance.sina.com.cn/7x24/2026-02-25/doc-inhnyupw2434442.shtml\nDescription: 据通义实验室官微消息,继旗舰模型Qwen3.5-397B-A17B首次开源后,现进一步开源Qwen3.5-122B-A10B、Qwen3.5-35B-A3B、Qwen3.5-27B(Dense)。同时,Qwen3.5-Flash\nAPI已正式上线阿里云百炼。\nPublished date: 2026-02-25T10:05:20+08:00\nSite name: 新浪财经\n\nTitle: 千问三款中等规模模型正式开源\nURL: https://news.futunn.com/post/69202689/the-three-medium-sized-models-of-qwen-have-been-officially\nDescription: 阿里(09988.HK)旗下千问大模型官方微博宣布,正式开源千问3.5最新中等规模模型:Qwen3.5-35B-A3B\n、Qwen3.5-122B\n-A10B\n、Qwen3.5-27B。当中,Qwen3.5-35B-A3B的表现已超越前代更大规模模型Qwen3-235B-A22B-2507及Qwen3-VL-235B-A22B,而Qwen3.5-122B-A10B与27B版本进一步缩小中等规模模型与前沿模型的差距,尤其在复杂代理场景中表现优异。千问表示,上述情况表明性能超越规模,不再单纯依赖参数堆叠,而是通过架构优化、数据质量提升及强化学习推动智能发展。为了更好地帮助开源社区的深入研究,千问同步开源Qwen3.5-35B-A3B-Base。\nPublished date: 2026-02-25T14:55:32+08:00\nSite name: 财经新闻\n\nTitle: 通义千问生态下的品牌可见性策略:GEO优化初探 - 品牌2025 - 企业博客\nURL: https://www.cnblogs.com/bsoo/p/19630809\nDescription: 随着国产大模型技术的持续演进,AI平台正逐步成为企业获取高意向用户的重要渠道。其中,阿里云推出的通义千问(Qwen)凭借其在语义理解、多模态交互及企业场景集成方面的表现,吸引了大量用户关注。公开数据显示,截至2026年2月,通义千问月活跃用户已突破1亿,日活跃用户超7350万,“千问帮我”类指令累计\nPublished date: 2026-02-23T10:41:00+08:00\nSite name: 博客园\n\nTi",
+    "isError": false,
+    "durationMs": 219,
+    "createdAt": "2026-03-02T00:56:02.643Z"
+  },
+  {
+    "id": "e39192b1567e30ef",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_4f8d349174bd43248e11ee40"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:02.877Z"
+  },
+  {
+    "id": "d2cee50633aa72ad",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 曝DeepSeekV4下周发布_腾讯新闻\nURL: https://news.qq.com/rain/a/20260228A04L8Z00\nDescription: 据IT之家消息,《金融时报》报道,国产大模型公司深度求索(DeepSeek)将于下周正式发布DeepSeek-V4,这是其自2025年1月推出R1推理模型后的首个重大版本升级。V4为原生多模态大模型,支持文本、图像、视频的统一理解与生成,并计划在发布时同步公开技术简报,完整工程报告预计一个月后释出。\nPublished date: 2026-02-28T14:54:18+08:00\nSite name: 腾讯网\n\nTitle: 消息称DeepSeek多模态大模型V4将于下周发布_AI__IT采购网\nURL: https://www.itcaigou.com.cn/news/show-35108.html\nDescription: 凤凰网科技讯\n2月28日,据英国《金融时报》援引知情人士消息,DeepSeek计划于下周发布其最新的多模态大语言模型V4。该模型将全面支持图片、视频和文本的生成功能。这是该公司自2025年1月发布R1推理模型之后,时隔一年多推出的首个重大版本迭代。\nPublished date: 2026-03-01T00:00:00+08:00\nSite name: IT采购网\n\nTitle: DeepSeek将于下周发布V4模型 原生支持多模态_腾讯新闻\nURL: https://news.qq.com/rain/a/20260228A02NZ100\nDescription: 观点网讯:2月28日,市场消息确认,DeepSeek将于下周发布其最新的大型语言模型V4。据悉,这是一款具有图片、视频和文本生成功能的“多模态”模型目前,DeepSeek已开始对代号为“sealion-lite”的V4预览版进行闭门内测。相较于现有模型,V4将实现跨代际跨越,其上下文窗口提升至100万tokens,原生具备多模态推理能力,可一次性处理超长文本或代码库进行深度推理。免责声明:本文内容与数据由观点根据公开信息整理,不构成投资建议,使用前请核实。\nPublished date: 2026-02-28T10:39:11+08:00\nSite name: 腾讯网\n\nTitle: 报道:DeepSeek将于2月发布下一代AI模型V4,具备“强大”的编程能力|DeepSeek-V4|Anthropic|OpenAI|开源模型|月之暗面_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902mr0s.html\nDescription: 据科技媒体The\nInformation周五报道,DeepSeek将于2月发布新一代旗舰AI模型DeepSeek\nV4,该模型具备强大的编程能力,预计将对当前的AI竞争格局产生重大影响。\nV4是DeepSeek继2024年12月发布的V3模型之后的最新版本。报道援引两位知情人士称,DeepSeek内部的初步测试表明,V4在编程能力上超过了目前市场上的其他顶级模型,如Anthropic的Claude和OpenAI的GPT系列,这无疑是该公司在AI领域的又一重磅成果。\nDeepSeek计划在2025年春节前后发布V4版本,发布计划可能会根据实际情况进行调整。\n回顾去年的发布节奏,DeepSeek于2024年1月20日发布了R1模型,恰逢春节前夕,这一时机有效抓住了公众的关注,确保了R1的巨大热度。R1是一款开源的“推理”模型,能够通过深度思考和推理来解决复杂问题。即使DeepSeek在R1的训练投入上较为保守,但其卓越的表现依然引发了全球AI界的广泛关注。\nV3的发布让DeepSeek逐渐跻身全球AI领域的重要一员,而R1则进一步巩固了其在硅谷及华尔街的影响力,成为全球瞩目的AI公司。在国内,DeepSeek推出的结合R1与V3模型的聊天机器人迅速走红。\nDeepSeek的成功进一步激发了国内AI技术竞争,近年来,阿里、百度,以及众多初创公司如MiniMax、智谱、月之暗面等纷纷推出开源模型。DeepSeek作为中国本土AI企业,凭借创新能力与性价比优势,在国际竞争中占据了一席之地。\n2025年12月,DeepSeek发布了V3.2版本,该版本在多个基准测试中超过了OpenAI的GPT-5和Google的Gemini\n3.0\nPro,进一步证明了DeepSeek技术的领先性。然而,V4的即将推出,将为中国AI行业带来更具变革性的创新,成为业界关注的焦点。\n据悉,V4在处理极长\nPublished date: 2026-02-26T23:03:15+08:00\nS",
+    "isError": false,
+    "durationMs": 201,
+    "createdAt": "2026-03-02T00:56:03.078Z"
+  },
+  {
+    "id": "22d09b8e14a7913b",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_eae90fdad27e4b939ba3c7b3"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:08.318Z"
+  },
+  {
+    "id": "ddeea1c546a26ad0",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 《巫师4》技术细节曝光!动作战斗系统大幅优化 _ 游民星空 GamerSky.com\nURL: https://www.gamersky.com/news/202602/2098121.shtml\nDescription: 一波来自社区爆料与开发者的意外泄露的信息,让《巫师4》的更多细节浮出水面。\n在播客节目\nAnsweRED\nPodcast\n中透露,本作采用虚幻引擎5开发,动作捕捉系统全面升级,特别强调对希里情绪表达的呈现,与杰洛特偏冷峻的风格形成对比。动画团队正在构建包含80多种基础移动动画的“运动系统”,旨在解决《巫师3》中被部分玩家吐槽的动作“生硬”问题,让角色移动更具重量感与真实感。\n玩法层面也将明显进化。希里作为“源术士”,可以在行走或移动中施法,不再像前作那样必须站桩施法;新增独立跳跃按钮和水下游泳能力,意味着地图将更加立体和可探索。\n战斗系统同样迎来重构。动作捕捉数据在实际表演基础上提速约20%,保证打击更干脆利落;还有专门动画师负责Boss战设计,使其更具电影感与压迫感。\n开放世界方面,开发团队强调“NPC多样性”,力图避免大型RPG常见的模型重复问题,同时增强环境互动性与社会动态反应,让世界更“活着”。\n发布时间方面,《巫师4》预计最早也要到2027年之后。不过有传闻称,《巫师3:狂猎》可能在2026年5月推出一款最终DLC,作为两代之间的剧情桥梁,并纪念游戏发售11周年。\n此外,节目还暗示,2026年6月16日至18日举办的\nUnreal\nFest\n2026\n期间,官方或将正式启动本作宣传。值得一提的是,这次开发采取“主机优先”策略,力图避免此前作品在优化方面遭遇的问题(说的就是你2077)。\n总体来看,《巫师4》不仅是主角更替,更像是一次全面升级——技术、战斗、世界构建都在向更高规格迈进。\n各位游民老哥你觉得《巫师4》能战胜前作,创造IP新高度吗?\n本文由游民星空制作发布,未经允许禁止转载。\n更多相关资讯请关注:巫师4专区\nPublished date: 2026-02-28T08:48:00+08:00\nSite name: 游民星空\n\nTitle: 「アニメ化してほしいマンガランキング2026」授賞式 AnimeJapan 公式YouTubeにて3/4(水)14時~生配信決定! - MANTANWEB(まんたんウェブ)\nURL: https://mantan-web.jp/article/20260225prm00m020046000c.html\nDescription: プレスリリース詳細\nhttps://kyodonewsprwire.jp/release/202602254535\nあなたにオススメ\n葬送のフリーレン:テレビアニメ第2期\n新監督起用の経緯\n本プレスリリースは発表元が入力した原稿をそのまま掲載しております。詳細は上記URLを参照下さい。また、プレスリリースへのお問い合わせは発表元に直接お願いいたします。\n入場券・ファストチケットも販売スタート!\nコスプレステージ、Production\nWorks\nGallery詳細も解禁!\n「アニメ化してほしいマンガランキング2026」授賞式\n-\n広告\n-\nAnimeJapan\n公式YouTubeにて3/4(水)14時~生配信決定!\n入場券・ファストチケットも販売スタート!\nコスプレステージ、Production\nWorks\nGallery詳細も解禁!\n【画像:https://kyodonewsprwire.jp/img/202602254535-O6-ZQDo1wU7】\n世界最大級のアニメイベント「AnimeJapan\n2026」が2026年3月28日(土)、29日(日)に東京ビッグサイトにて開催いたします。\n2014年の初開催から13回目を迎える「AnimeJapan\n2026」は、前回15万人を超える来場者で熱気に包まれた会場と同じ、東京ビッグサイトの東展示棟に加え、南展示棟と屋上展示場を舞台に、過去最大級の開催面積と最大数の120社以上の出展でさらなる盛り上がりを目指して開催となります。\nまた、AnimeJapan\n2026アンバサダーとして2年連続で櫻坂46が就任!当日は会場内にアンバサダーのパネル展示も決定しました!櫻坂46と一緒にAnimeJapanを存分に楽しみましょう!\n【画像:https://kyodonewsprwire.jp/img/202602254535-O1-\nPublished date: 2026-02-25T17:00:00+08:00\nSite name: MANTANWEB\n\nTitle: 巫师4深度曝光:虚幻5引擎重构世界,希里动态施法与情感系统成核心突破_游戏网络游戏-中关村在线\nURL: ",
+    "isError": false,
+    "durationMs": 310,
+    "createdAt": "2026-03-02T00:56:08.628Z"
+  },
+  {
+    "id": "b5eb17b4be54e618",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_9e5e1413797d4daabf24553f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:08.856Z"
+  },
+  {
+    "id": "975118a394297d17",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "No results found.",
+    "isError": false,
+    "durationMs": 147,
+    "createdAt": "2026-03-02T00:56:09.003Z"
+  },
+  {
+    "id": "9c5cc1b18b9c1dff",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_99bca8f2a8a74e3887edb8bb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:09.333Z"
+  },
+  {
+    "id": "2db556d9a655ab3f",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "No results found.",
+    "isError": false,
+    "durationMs": 135,
+    "createdAt": "2026-03-02T00:56:09.468Z"
+  },
+  {
+    "id": "f19eb77a4b7a40f7",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_94f44bd18b32491fb06324a3"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:09.841Z"
+  },
+  {
+    "id": "7988dad9167c6282",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年第8周计算机行业周报:春节海内外大模型更新全梳理!壁仞科技深度发布! - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/4640200881109733376.html\nDescription: 国内外大模型纷至,AI\n加速迈向下一阶段\n事件:春节期间,国内外大模型厂商持续更新,在多模态、Agent\n能力以及传统的基\n准测试中均有所提升。除了能力的提升,成本优化、真实的复杂任务解决能力成为近期模\n型迭代的整体技术趋势。\n我们认为,2026\n年大模型货币化进程将加速推进,Agent、多模态为应用落地的重点\n方向。应用形态的改变意味着\nAI\n从\nChatbot、Copilot\n等对话式的交互模式进一步向未来形\n态演进,产生更加视觉化的用户体验和互动方式,降低用户的使用门槛。同时,单位时间\n内、单次\nAI\n任务消耗的算力将大幅提升,AI\n应用加速落地。\n1.1\n国内:推理效率、Agent\n能力、多模态并进\n事件:1)智谱发布开源大模型\nGLM-5,参数规模扩大,编程能力对齐\nOpus\n4.5;2)\nMinimax\n发布开源模型\nM2.5,编程、工具调用和搜索、办公等生产力场景达到/刷新行业\nSOTA;3)字节跳动发布视频大模型\nSeedance2.0,支持四模态输入,音频同步、镜头\n语言等多维度提升,实现“导演级”视频生成,更贴合工业级应用;4)字节跳动发布豆\n包大模型\n2.0,多模态能力持续增强,企业级\nAgent、Coding\n能力提升。5)阿里发布\nQwen-3.5\n系列模型,推理效率大幅提升。\n2\n月\n12\n日,智谱发布并开源新一代大模型\nGLM-5。模型参数从\nGLM-4.7\n的\n355B(激\n活\n32B)扩展至\n744B(激活\n40B),预训练数据从\n23T\n提升至\n28.5T,用更多算力提升\n通用智能基座。\n从代码向工程能力演进,GLM-5\n在\nCoding\n与\nAgent\n能力上取得开源\nSOTA\n。当前,\n大模型正在从写代码、写前端,进化到写工程、完成大任务,即从“Vibe\nCoding”变革\n为“Agentic\nEngineering”。在全球权威的\nPublished date: 2026-02-24T00:00:00+08:00\nSite name: 未来智库\n\nTitle: 2026年AI医疗行业2月月报:AI药物发现提速,国产医疗大模型彰显国际竞争力 - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/4640303610696044544.html\nDescription: 海\n外\nAI医\n疗\n产\n业\n进\n展\n监\n管\n:\nEMA\n×\nFDA\n联\n合\n发\n布\nGood\nAI\nPractice\n十\n项\n原\n则\n2026\n年\n1\n月\n,\nEuropean\nMedicines\nAgency\n与\nFDA\n联\n合\n发\n布\n《\n药\n物\n开\n发\n中\nGood\nAI\nPractice\n十\n项\n原\n则\n》\n,\n旨\n在\n为\n人\n工\n智\n能\n(\nAI)\n技\n术\n在药品及生物制品研发全生命周期\n中\n的\n应\n用\n提\n供\n核\n心\n准\n则\n与\n明\n确\n指\n引\n。\n这\n些\n原\n则\n适\n用\n于\n药\n品\n的\n早\n期\n研\n究\n、\n临\n床\n试\n验\n、\n生\n产\n制\n造\n及\n上\n市\n后\n安\n全\n监\n测\n等\n所\n有\n阶\n段\n,\n其\n核\n心\n目\n标\n是\n规范AI在证据生成与监控中的应用\n,\n确\n保\nAI赋\n能\n药\n物\n开\n发\n过\n程\n的\n安\n全\n性\n、\n有\n效\n性\n与\n可\n靠\n性\n,\n并\n为\n未\n来\n各\n司\n法\n管\n辖\n区\n的\n具\n体\nAI监\n管\n指\n南\n奠\n定\n基\n础\n,\n促\n进\n国\n际\n监\n管\n协\n作\n。\n医\n学\n影\n像\n诊\n断\n:\n腹\n部\nCT\n多\n病\n种\n一\n体\n化\nAI\n分\n诊\n系\n统\n获\nFDA批\n准\n,\nAI向\n全\n流\n程\n分\n诊升级\n2026年\n1月\n21日\n,\nAidoc\n公\n司\n宣\n布\n,\n其\n研\n发\n的\n医\n疗\n行\n业\n首\n款\n综\n合\n性\nAI\n分\n诊\n解\n决\n方\n案\n已\n获\n得\nFDA批\n准\n。\n这\n款\n基\n于\nAI\n基\n础\n模\n型\n“\nCARE”\n的\n解\n决\n方案将11项新获批适应症与3项\n既\n有\n获\n批\n适\n应\n症\n整\n合\n至\n统\n一\n工\n作\n流\n程\n中\n,\n可\n在\n急\n诊\n科\n拥\n挤\n、\n影\n像\n检\n查\n积\n压\n的\n情\n况\n下\n对\n多\n种\n急\n性\n病\n症\n进\n行\n分\n诊\n,\n标\n记\n出\n存\n在\n可\n疑\n发\n现\n的\n检\n查\n结\n果,提请放射科医生优先审核,进\n而\nPublished date: 2026-02-24T00:00:00+08:00\nSite name: 未来智库\n\nTitle: 春节 AI 模型大战,谁是最",
+    "isError": false,
+    "durationMs": 196,
+    "createdAt": "2026-03-02T00:56:10.037Z"
+  },
+  {
+    "id": "cead633d086bcf57",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_a214cd0b56c643eb9f4995d1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:12.282Z"
+  },
+  {
+    "id": "57fb2b0e7d409692",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_b52b7bc6fad842c09ae298bf"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:12.595Z"
+  },
+  {
+    "id": "b56b0c6813ec37e3",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_6d218b6dd26241648e8875fe"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:12.975Z"
+  },
+  {
+    "id": "d8c612172d9e619b",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: Llama 4重测竞技场排名大跳水,网友:社区很难再信任Meta了-CSDN博客\nURL: https://blog.csdn.net/qbitai/article/details/147185625\nDescription: 具体来说,根据竞技场官方消息,Llama 4首发时提交的是名为“实验版”､实为“针对人类偏好优化”的模型Llama-4-Maverick-03-26-Experimental｡修正后的模型为HuggingFace开源版同款Llama-4-Maverick-17B-128E-Instruct,名字代表有17B激活参数,128个MoE专家的指令微调模型｡\nPublished date: 2025-04-12T11:17:27+08:00\nSite name: blog.csdn.net\n\nTitle: Meta 开源大模型 Llama-4-Maverick 基准测试排名暴跌,此前被质疑刷榜作弊 - IT之家\nURL: https://www.ithome.com/0/845/134.htm\nDescription: LMArena 更新了 Meta 最新发布的开源大模型 Llama-4-Maverick 的排名,其从此前的第 2 名直线下降至第 32 名｡ 4 月6日,Meta 发布了最新的大模型 Llama 4,包含 Scout､Maverick 和Behemoth 三个版本｡根据 Chatbot Arena 官方消息,Meta 首次提交 LMArena 的 Llama-4-Maverick-03-26-Experimental 是一个实验性聊天优化版本,当时该版本的排名为第二｡修正后的模型为 HuggingFace 开源版同款 Llama-4-Maverick-17B-128E-Instruct ,是17B 激活参数､128 个MoE 专家的指令微调模型｡ IT之家注意到, 目前开源版同款 Llama-4-Maverick-17B-128E-Instruct 在LMArena 的排名为 32 名 ,远低于 Gemini 2.5 Pro(1)､GPT4o(2)､DeepSeek-V3-0324(5)､DeepSeek-R1(7)､Qwen2.5-Max(11),甚至连英伟达基于上一代 Llama 3.3 改造的 Llama-3.3-Nemotron-Super-49B-v1 (17)都不如｡\nPublished date: 2025-04-14T15:07:43+08:00\nSite name: IT之家\n\nTitle: Meta发布新一代旗舰AI模型Llama 4微软Meta AIChatGPTHugging FaceDeepSeek_手机新浪网\nURL: https://news.sina.cn/ai/2025-04-06/detail-ineseshz9054549.d.html?vt=4\nDescription:  总共有四种新模型:Llama 4 Scout､Llama 4 Maverick 和Llama 4 Behemoth｡ Scout 和Maverick 已在Llama.com和Meta 的合作伙伴处公开提供,包括 AI 开发平台 Hugging Face,而Behemoth 仍在训练中｡ Meta 表示,其跨 WhatsApp､Messenger 和Instagram 等应用的 AI 助手 \nPublished date: 2025-04-06T23:11:24+08:00\nSite name: 新浪新闻\n\nTitle: Linux/Unix Configuration \nURL: http://www.linuxconfig.net/\nDescription: Latest AI [How To] Hugging Face Linux Deployment: Deploy Transformers lc-root | February 24, 2026 The hugging face linux deployment process allows developers to serve powerful AI models for \nPublished date: 2026-02-28T19:09:14+08:00\nSite name: www.linuxconfig.net\n\nTitle: Llama4被图灵奖得主曝作弊刷榜,Meta开源AI帝国一夜倾覆-如虎傅翼网\nURL: http://www.chemsb.com/product/117034.html\nDescription:  Meta 前首席科学家杨立昆(Yann LeCun)近日在采访中证实,开源团队为优",
+    "isError": false,
+    "durationMs": 1047,
+    "createdAt": "2026-03-02T00:56:13.329Z"
+  },
+  {
+    "id": "e8a4765fe28f2ba4",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: Qwen3.5-397B-A17B-metax-FlagOS · 模型库\nURL: https://modelscope.cn/models/FlagRelease/Qwen3.5-397B-A17B-metax-FlagOS\nDescription: 2026年2月16日,阿里云正式发布并开源了全新多模态大模型 Qwen3.5(Qwen3.5-397B-A17B) ｡Qwen3.5 具备以下增强特性: 统一的视觉-语言基础 :通过在多模态 token 上进行早期融合训练,在推理､编码､智能体和视觉理解等基准测试中实现与 Qwen3 跨代同级的表现,并优于 Qwen3-VL 模型｡ 高效混合架构 :结合门控 Delta \nPublished date: 2025-07-21T15:09:44+08:00\nSite name: modelscope.cn\n\nTitle: 阿里 Qwen3.5 开源家族扩容,多尺寸 AI 模型上新 - IT之家\nURL: https://www.ithome.com/0/923/404.htm\nDescription: IT之家 2 月25 日消息,阿里在除夕夜炸场,发布了“开源旗舰”Qwen3.5 模型,登顶全球最强开源模型｡ 今日,阿里宣布 Qwen3.5 开源家族扩容 ,继旗舰模型 Qwen3.5-397B-A17B 首次开源后,进一步丰富了开源矩阵: Qwen3.5-122B-A10B: 与27B(Dense)持续拉近中小模型与顶尖闭源模型的差距,在复杂 Agent \nPublished date: 2026-02-28T23:26:26+08:00\nSite name: IT之家\n\nTitle: 华为昇腾 0 Day 适配阿里 Qwen3.5,MindSpeed MM 框架实现 \" 开箱即用、快速迭代 \" - IT之家\nURL: https://www.ithome.com/0/922/198.htm\nDescription: Qwen3.5 Plus 定位为 Qwen 3.5 系列最新大语言模型; Qwen3.5-397B-A17B 定位则是 Qwen3.5 开源系列旗舰大语言模型｡ IT之家注意到,华为计算官方昨晚宣布,Qwen3.5 模型一经开源发布, 昇腾 0 day 实现基于 MindSpeed MM 在Atlas 800 A3､Atlas 900 A3SuperPoD 上的训练复现 ,同时也支持基于 \nPublished date: 2026-03-01T02:34:08+08:00\nSite name: IT之家\n\nTitle: 阿里新一代模型Qwen3.5曝光\nURL: https://www.tmtpost.com/nictation/7872284.html\nDescription: 2月9日消息,在全球最大AI开源社区HuggingFace的开源项目页面中,最新出现Qwen3.5并入Transformers的新PR(提交代码合并申请)｡这意味着阿里千问新一代基座模型Qwen3.5或发布在即｡相关信息透露,千问3.5采用了全新的混合注意力机制,并且极有可能是原生可实现视觉理解的VLM类模型｡有开发者进一步挖掘出,Qwen3.5或将开源至少2B的密集模型和35B-A3B的MoE模型｡\nPublished date: 2026-02-25T14:51:46+08:00\nSite name: 钛媒体\n\nTitle: 阿里Qwen3.5马年首开源!35B性能逆袭235B,给开发者送省钱绝招编程模态维度智能体svg新论文阿里qwen阿里巴巴集团_网易订阅\nURL: https://www.163.com/dy/article/KMKUUQPI051180F7.html\nDescription: 今日,阿里推出马年首批新模型—— Qwen3.5中型模型系列 ,包括推出 Qwen3.5-122B-A10B､Qwen3.5-35B-A3B､Qwen3.5-27B(Dense) 三款开源模型,同时 Qwen3.5-Flash (Qwen3.5-35B-A3B生产版本)API已上线阿里云百炼｡ Qwen3.\nPublished date: 2019-02-25T00:57:57+08:00\nSite name: 网易\n\nTitle: 阿里新一代 AI 模型 Qwen3.5 现踪迹,有望近期开源 - IT之家\nURL: https://www.ithome.com/0/920/443.htm\nDescription: 9日消息,在HuggingFace 的GitHub 开源项目页面中,Qwen3.5 并入 Transformers 的新 PR(提交代码合并申请)于昨天首次公布",
+    "isError": false,
+    "durationMs": 1388,
+    "createdAt": "2026-03-02T00:56:13.983Z"
+  },
+  {
+    "id": "5bd664b7e00e2003",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: DeepSeek V4定档2月发布,编程能力要超GPT? - 今日头条\nURL: https://www.toutiao.com/article/7594113848316002826/\nDescription: 1月9日消息确认,DeepSeek(深度求索)计划在2026年2月中旬发布新一代旗舰级AI模型DeepSeek V4,内部测试显示其编程能力已全面对标甚至超越Claude和GPT系列!这款模型带着1万亿参数的架构革新和百万级token上下文窗口,还把使用成本压到了新低,直接改写AI编程领域的竞争格局! DeepSeek \nPublished date: 2026-01-22T04:03:18+08:00\nSite name: 今日头条\n\nTitle: DeepSeek V4即将发布:中国AI的破局之作,能否颠覆编程领域?_deepseek即将发布v4大模型-CSDN博客\nURL: https://blog.csdn.net/Trb701012/article/details/156835128\nDescription: = DeepSeek计划在2026年春节发布旗舰模型V4,这是一款针对编程能力深度优化的专业模型,目标超越OpenAI GPT和Anthropic Claude｡V4解决了大模型训练中的\"灾难性遗忘\"问题,可在保持原有能力的同时大幅提升编程能力｡同时,DeepSeek R1论文从22页更新至86页,公开了更多技术细节｡这标志着中国AI厂商正从\"追赶者\"转变为\"定义者\",在全球AI领域发起正面挑战｡\nPublished date: 2026-01-11T20:56:49+08:00\nSite name: blog.csdn.net\n\nTitle: deepseek高校版下载2026最新版-deepseek高校版下载官方正版v1.7.5手机版-西西软件下载\nURL: https://cr173.com/soft/882737.html\nDescription: 软件类型: 国产软件 / 免费软件 软件大小: 12.6M 更新时间: 2026-01-09 19:00 应用平台: Android 软件语言: 中文 软件等级: 应用备案: 浙ICP备2023025841号-3A 软件厂商: 杭州深度求索人工智能基础技术研究有限公司 官方网站: https://chat.deepseek.com 软件简介 软件截图 软件评论 软件推荐 deepseek高校版下载官方正版是一款优秀的高校版deepseek ai大模型软件,介入了高校模版的ai,为广大学生们提供优质且实用的ai大模型,提供丰富的ai工具合集,打造全新的ai互动体验,更多相关的优质问答模式都在这里,提供精彩的相关ai解决模式,非常精彩,欢迎来下载吧｡\nPublished date: 2026-01-09T19:00:54+08:00\nSite name: cr173.com\n\nTitle: DeepSeek应用电脑版下载2026最新电脑版-DeepSeek应用电脑版官方PC版免费下载-天极下载\nURL: https://mydown.yesky.com/pcsoft/283473.html\nDescription: 软件大小: 7.2MB 更新时间: 2026-01-14 用户评分: 软件版本: 1.4.3 软件语言: 简体中文 系统类型: 支持32/64位 软件授权: 免费 下载次数: 10697次 杀毒检测: 无插件 360通过 金山通过 运行系统: winall/win7/win10/win11 软件介绍 软件安装 软件日志 使用方法 软件图集 下载地址 软件简介 \nPublished date: 2025-12-29T00:03:46+08:00\nSite name: 天极网\n\nTitle: DeepSeekapp-官方正版软件2026最新版本免费下载-应用宝官网\nURL: https://sj.qq.com/appdetail/com.deepseek.chat\nDescription: DeepSeek 894.4万下载 AI聊天对话 安装 使用应用宝电脑版下载 DeepSeek为手机应用,需先安装腾讯应用宝提供电脑端启动能力,安全可靠,体验超越传统模拟器 配置要求 10 倍 加速 强强联合 极速引擎 与intel合作,比传统模拟器快10倍 腾讯安全加持,保护你的隐私 4K 240Hz 超清画质 超高帧率 极致视觉体验 腾讯独家智能音画调校技术 给你更高清､流畅的视觉享受 原生 \nPublished date: 2025-02-10T12:43:09+08:00\nSite name: 应用宝\n\nTitle: DeepSeek2",
+    "isError": false,
+    "durationMs": 1055,
+    "createdAt": "2026-03-02T00:56:14.031Z"
+  },
+  {
+    "id": "7164f46ddb4ecdf3",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_cd6a75332ac74d5eaaace92b"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:17.498Z"
+  },
+  {
+    "id": "9941f249271f4d58",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "No results found.",
+    "isError": false,
+    "durationMs": 231,
+    "createdAt": "2026-03-02T00:56:17.730Z"
+  },
+  {
+    "id": "d890e2ea42933d0e",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_bc5bc94a204640ada18a6707"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:17.909Z"
+  },
+  {
+    "id": "85b354c5c2f05152",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "No results found.",
+    "isError": false,
+    "durationMs": 147,
+    "createdAt": "2026-03-02T00:56:18.056Z"
+  },
+  {
+    "id": "34c590059f8e8418",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_a075af3b3dc14f48ad3758d9"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:18.415Z"
+  },
+  {
+    "id": "08ee0ab13fd0a4be",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "No results found.",
+    "isError": false,
+    "durationMs": 150,
+    "createdAt": "2026-03-02T00:56:18.565Z"
+  },
+  {
+    "id": "86bd8f1ed7b78a4e",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_01ba82d94f234f8dbec47ed2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:18.792Z"
+  },
+  {
+    "id": "3477e1f76ad361e8",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "No results found.",
+    "isError": false,
+    "durationMs": 129,
+    "createdAt": "2026-03-02T00:56:18.920Z"
+  },
+  {
+    "id": "0efaddaff74b78b9",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_3041ebe3e30f404eb2ef4b53"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:20.591Z"
+  },
+  {
+    "id": "f572d3bec47c8421",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_540e9c80d4b24af787446a2f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:20.810Z"
+  },
+  {
+    "id": "742d2d9d774dec13",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_26eeae1b0f5442f69fbd4ea2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:21.442Z"
+  },
+  {
+    "id": "1a598e17a4b57c59",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Qwen3.5系列模型包揽Hugging Face趋势榜TOP5其中4席_腾讯新闻\nURL: https://news.qq.com/rain/a/20260226A059OF00\nDescription: 2月26日,据千问大模型消息,Qwen3.5系列模型上线短短时间,包揽Hugging\nFace趋势榜TOP5中的4席,其中Qwen3.5-35B-A3B在不到发布24小时内就成功登顶。同时千问表示,在Hugging\nFace当前Top10开源模型中,还有3款模型是千问的衍生或量化版本模型。来源/千问大模型据悉,2月16日,千问正式发布Qwen3.5,并推出Qwen3.5系列的第一款模型\nQwen3.5-397B-A17B\n的开放权重版本。该模型采用创新的混合架构,将线性注意力(Gated\nDelta\nNetworks)与稀疏混合专家(MoE)相结合,实现出色的推理效率:总参数量达\n3970\n亿,每次前向传播仅激活\n170\n亿参数,在保持能力的同时优化速度与成本。\nPublished date: 2026-02-26T16:29:17+08:00\nSite name: 腾讯网\n\nTitle: Qwen3.5 122B-A10B来了:122B参数只激活10B,MoE架构正在重写本地AI的上限_腾讯新闻\nURL: https://news.qq.com/rain/a/20260225A01SPL00\nDescription: 快速阅读:\nQwen3.5系列新模型在Qwen\nChat上被发现,包括122B-A10B混合专家模型、27B密集模型和35B-A3B模型,全部支持多模态。这批模型在指令跟随、编程能力上有显著提升,硬件门槛又进一步压低。\n该图片可能由AI生成Qwen3.5系列模型在官方Chat界面被用户发现,随即引起广泛讨论。亮点是那个122B-A10B的MoE模型。表面看122B参数很唬人,但每次推理实际只激活10B参数。这意味着延迟接近一个20B的密集模型,内存占用却是稀疏架构的。有用户已经拿到Q4_K_XL量化版本测试,称其为“目前用过的最强本地模型”,并把一些其他模型从没答对过的编程题一次性答对了。有意思的是Unsloth报告这个模型对量化格外友好,甚至2-bit和3.5-bit版本在某些基准上超过了4-bit版本,这违反了一般直觉。有观点认为这与Qwen3.5采用的混合线性-二次注意力架构有关——长上下文的KV缓存压力大幅降低,量化损失自然更小。27B密集模型引发的讨论不亚于122B。有网友注意到Qwen故意选择27B这个尺寸而非26B或28B,与Gemma\n3规格直接对齐,这很难说是巧合。有观点认为Alibaba在通过这个选择同时向社区和Google传递一个信号:24GB显存的用户,不需要等Gemma\n4了。密集模型在微调和部署上的可预测性也是MoE替代不了的,有微调需求的用户对这个尺寸最为期待。对于运行门槛,硬件配置的讨论占了相当篇幅。122B的Q4量化约70GB,16GB显存+64GB内存的配置可以跑,但要做好速度和多任务的取舍。有用户在12GB显存+64GB内存的机器上跑出了255\ntoken/s的prompt处理速度,也有人在同等配置下只有14\nt/s,差距主要来自llama.cpp参数的设置,`--n-cpu-moe`和`--fit-ctx`这些参数的影响比硬件差距更大\nPublished date: 2026-02-25T09:19:08+08:00\nSite name: 腾讯网\n\nTitle: 阿里通义千问推出Qwen 3.5中型模型系列_7x24小时财经新闻_新浪网\nURL: https://finance.sina.com.cn/7x24/2026-02-25/doc-inhnxxkh2810680.shtml\nDescription: 阿里千问宣布Qwen\n3.5中型模型系列正式发布,包含Qwen3.5-Flash、Qwen3.5-35B-A3B、Qwen3.5-122B-A10B,以及Qwen3.5-27B。据介绍,新模型更强智能、更低算力。Qwen3.5-35B-A3B性能已超越Qwen3-235B-A22B-2507与Qwen3-VL-235B-A22B——证明架构、数据质量与强化学习才是智能进步的关键,而非单纯堆参数。Qwen3.5-122B-A10B与27B进一步缩小了中型模型与前沿模型的差距,尤其在复杂智能体任务中表现突出。Qwen3.5-Flash是基于35B-A3B的托管生产版本,默认支持100万tokens上下文长度,内置官方工具集。\nPublished date: 2026-02-25T01:09:44+08:00\nSite name: 新浪财经\n\nTitle",
+    "isError": false,
+    "durationMs": 190,
+    "createdAt": "2026-03-02T00:56:21.632Z"
+  },
+  {
+    "id": "75510fc573e40a2e",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_67a2dc3e72624ea3bcfb3806"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:21.929Z"
+  },
+  {
+    "id": "d3a552ebe37333f1",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 如何免费使用 GLM-5:智谱AI最新旗舰模型完整指南|Claude Opus 4.5|GLM-4.7|GLM4|开源模型|注意力机制_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902nuds.html\nDescription: GLM-5是智谱AI于2026年2月11日发布的最新旗舰模型,在AI社区引发了巨大反响。拥有前所未有的7450亿参数,在现实场景中媲美Claude\nOpus\n4.5的革命性性能,GLM-5代表了开源AI的新里程碑。本综合指南将向您展示如何通过合法渠道免费访问和使用GLM-5。\nGLM-5标志着开源AI发展的重大飞跃:超大规模:\n7450亿参数(约为GLM-4.7的2倍)SOTA性能:\n在开源模型中达到编程和代理能力的最先进水平卓越编程:\n在现实编程场景中达到Claude\nOpus\n4.5级别的性能先进架构:\n混合专家(MoE)架构,256个专家同时激活8个前沿技术:\n集成DeepSeek风格的稀疏注意力(DSA)机制多Token预测:\n采用MTP(多Token预测)技术提高效率\nGLM-5特别擅长代理工程和复杂系统编程任务,使其成为开发者和AI爱好者的理想选择。\n智谱AI为新用户提供免费试用额度来体验他们的AI模型,包括GLM-5。\n访问步骤:访问\nzhipuai.cn\n或\nz.ai创建免费账户新用户注册后自动获得免费试用额度通过网页界面或API访问GLM-5\n免费套餐优势:通过chat.zai直接网页访问GLM-5用于测试和开发的免费API额度初始试用无需信用卡试用期间可使用完整模型功能\n专业技巧:在仪表板中监控您的额度使用情况使用免费额度测试GLM-5的编程能力平台经常举办额外赠送token的促销活动\nBigModel平台为所有GLM模型提供全面的API访问,包括GLM-5。\n设置流程:访问\nopen.bigmodel.cn注册新账户进入个人中心生成API密钥查看官方文档了解GLM-5可用性使用提供的SDK轻松集成\n官方资源:快速入门指南:docs.bigmodel.cn/cn/guide/start/quick-startPython\nSDK:docs.bigmod\nPublished date: 2026-02-27T13:06:59+08:00\nSite name: 新浪网\n\nTitle: GLM-5技术报告全解读|a16z:“最好的开源模型”_腾讯新闻\nURL: https://news.qq.com/rain/a/20260222A06MG300\nDescription: a16z\n发了一张图,把\nGLM-5\n和\nClaude\nOpus\n4.6\n并排标注在\nArtificial\nAnalysis\nIntelligence\nIndex\n的时间线上https://www.a16z.news/p/charts-of-the-week-vertical-saas原文的说法是:A\nproprietary\nmodel\n(Claude\nOpus\n4.6)\nis\nstill\nthe\n'most\nintelligent,'\nbut\nthe\ngap\nbetween\nit\nand\nthe\nnext\nbest\nopen\nsource\nmodel\nhas\nclosed\nsubstantially.换句话说:a16z\n称智谱的\nGLM-5,是最好的开源模型22日,\nGLM-5放出了完整的技术报告,40\n页https://arxiv.org/pdf/2602.15763报告发出后,我看到许多开发者社区已经开始逐页学习其中被讨论最多的几个技术点:DSA\n稀疏注意力(20B\ntoken\n追平\nDeepSeek\n943.7B\ntoken\n的效果)、完全异步的\nAgent\nRL\n训练框架、自研的\nslime\nRL\n基础设施....还有...快夸我是预言家,早早的透露了财富密码:智谱+龙虾下面,让我们一起把这份技术报告逐块过一遍基座:744B\n参数,40B\n激活先说模型的基本面:仅次于海外最头部的闭源模型Artificial\nAnalysis\nIntelligence\nIndex\nv4.0:GLM-5\n得分\n50,开源第一GLM-5\n沿用\nMoE\n架构(Mixture\nof\nExperts,一种让模型在推理时只激活一小部分参数的设计),总参数\n744B,每次推理激活\n40B,256\n个专家,80\n层对比上一代\nGLM-4.5:总参数从\n355B\n翻到\n744B,激活参数从\n32B\nPublished date: 2026-02-23T08:15:08+08:00\nSite name: 腾讯网\n\nTitle: 智谱AI GLM-5 技",
+    "isError": false,
+    "durationMs": 209,
+    "createdAt": "2026-03-02T00:56:22.138Z"
+  },
+  {
+    "id": "7382adc50fc05518",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "Blog | Qwen\n\n## We have a new blog at [qwen.ai](https://qwen.ai/research)!\n\nThis page will automatically redirect in 5 seconds.\n\nIf you are not redirected automatically, please click the button below.\n\nGo Now\n\n[![](https://qwenlm.github.io/img/logo.png)](/ \"Qwen (Alt + H)\")\n\n* [Blog](/blog/ \"Blog\")\n* [Publication](/publication \"Publication\")\n* [About](/about \"About\")\n* [Try Qwen Chat ](https://chat.qwen.ai \"Try Qwen Chat\")\n\n# Blog \\[\n* [English](https://qwenlm.github.io/blog/)\n\\]\n\n## Qwen3Guard: 实时安全，逐词响应\n\nTech Report GitHub Hugging Face ModelScope DISCORD 介绍 我们隆重推出 Qwen3Guard —— Qwen 家族中首款专为安全防护设计的护栏模型。该模型基于强大的 Qwen3 基础架构打造，并针对安全分类任务进行了专项微调，旨在为人工智能交互提供精准、可靠的安全保障。无论是用户输入的提示，还是模型生成的回复，Qwen3Guard 均可高效识别潜在风险，输出细粒度的风险等级与分类标签，助力实现更负责任的 AI 应用。 在多项主流安全评测基准上，Qwen3Guard 表现卓越，稳居行业领先水平，全面覆盖英语、中文及多语言场景下的提示与回复安全检测任务。 Qwen3Guard 提供两大专业版本，满足不同应用场景需求： Qwen3Guard-Gen（生成式版） 支持对完整用户输入与模型输出进行安全分类，适用于离线数据集的安全标注、过滤，亦可作为强化学习中基于安全性的奖励信号源，是构建高质量训练数据的理想工具。 Qwen3Guard-Stream（流式检测版） 突破了传统的护栏模型架构，首次实现模型生成过程中的实时、流式安全检测，显著提升在线服务的安全响应效率与部署灵活性。 为适配多样化的部署环境与算力资源，两大版本均提供 0.6B、4B、8B 三种参数规模，兼顾性能与效率，满足从边缘设备到云端服务的全场景需求。 开源模型现已上线 Hugging Face 与 ModelScope 平台；您也可通过 阿里云 AI 安全护栏服务 一键接入企业级安全能力，享受由 Qwen3Guard 驱动的智能防护解决方案。 核心亮点 实时流式检测 Qwen3Guard-Stream 专为低延迟设计，可在模型逐词生成回复的过程中实时进行内容审核，确保安全性的同时不牺牲响应速度。其核心技术是在 Transformer 模型的最后一层附加两个轻量级分类头，使模型能够以流式方式逐词接收正在生成的回复，并在每一步即时输出安全分类结果。 三级风险等级分类 除传统的“安全”与“不安全”标签外，我们新增了 “争议性” 标签，以支持根据不同应用场景灵活调整安全策略。具体而言，用户可根据实际需求，动态将“争议性”内容重新归类为“安全”或“不安全”，从而按需调节审核的严格程度。 如下方评估所示，现有护栏模型受限于二元标签体系，难以同时适配不同数据集的标准。而 Qwen3Guard 凭借三级风险分类设计，可在“严格模式”与“宽松模式”间灵活切换，在多个数据集上均保持稳健的高性能表现。 多语言支持 Qwen3Guard 支持 119 种语言及方言，适用于全球部署与跨语言应用场景，并在各类语言中均能提供稳定、高质量的安全检测能力。 语系 语种&方言 印欧语系 英语、法语、葡萄牙语、德语、罗马尼亚语、瑞典语、丹麦语、保加利亚语、俄语、捷克语、希腊语、乌克兰语、西班牙语、荷兰语、斯洛伐克语、克罗地亚语、波兰语、立陶宛语、挪威语（博克马尔语）、挪威尼诺斯克语、波斯语、斯洛文尼亚语、古吉拉特语、拉脱维亚语、意大利语、奥克语、尼泊尔语、马拉地语、白俄罗斯语、塞尔维亚语、卢森堡语、威尼斯语、阿萨姆语、威尔士语、西里西亚语、阿斯图里亚语、恰蒂斯加尔语、阿瓦德语、迈蒂利语、博杰普尔语、信德语、爱尔兰语、法罗语、印地语、旁遮普语、孟加拉语、奥里雅语、塔吉克语、东意第绪语、伦巴第语、利古里亚语、西西里语、弗留利语、撒丁岛语、加利西亚语、加泰罗尼亚语、冰岛语、托斯克语、阿尔巴尼亚语、林堡语、罗马尼亚语、达里语、南非荷兰语、马其顿语僧伽罗语、乌尔都语",
+    "isError": false,
+    "durationMs": 2185,
+    "createdAt": "2026-03-02T00:56:22.776Z"
+  },
+  {
+    "id": "f7104c576c4c8d16",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "GitHub - QwenLM/Qwen3.5: Qwen3.5 is the large language model series developed by Qwen team, Alibaba Cloud.\n\n[Skip to content](#start-of-content) \n\n## Navigation Menu\n\nToggle navigation \n\n[ ](/) \n\n[ Sign in](/login?return%5Fto=https%3A%2F%2Fgithub.com%2FQwenLM%2FQwen3.5) \n\nAppearance settings \n\n* Platform  \n   * AI CODE CREATION  \n         * [GitHub CopilotWrite better code with AI](https://github.com/features/copilot)  \n         * [GitHub SparkBuild and deploy intelligent apps](https://github.com/features/spark)  \n         * [GitHub ModelsManage and compare prompts](https://github.com/features/models)  \n         * [MCP RegistryNewIntegrate external tools](https://github.com/mcp)  \n   * DEVELOPER WORKFLOWS  \n         * [ActionsAutomate any workflow](https://github.com/features/actions)  \n         * [CodespacesInstant dev environments](https://github.com/features/codespaces)  \n         * [IssuesPlan and track work](https://github.com/features/issues)  \n         * [Code ReviewManage code changes](https://github.com/features/code-review)  \n   * APPLICATION SECURITY  \n         * [GitHub Advanced SecurityFind and fix vulnerabilities](https://github.com/security/advanced-security)  \n         * [Code securitySecure your code as you build](https://github.com/security/advanced-security/code-security)  \n         * [Secret protectionStop leaks before they start](https://github.com/security/advanced-security/secret-protection)  \n   * EXPLORE  \n         * [Why GitHub](https://github.com/why-github)  \n         * [Documentation](https://docs.github.com)  \n         * [Blog](https://github.blog)  \n         * [Changelog](https://github.blog/changelog)  \n         * [Marketplace](https://github.com/marketplace)  \n[View all features](https://github.com/features)\n* Solutions  \n   * BY COMPANY SIZE  \n         * [Enterprises](https://github.com/enterprise)  \n         * [Small and medium teams](https://github.com/team)  \n         * [Startups](https://github.com/enterprise/startups)  \n       ",
+    "isError": false,
+    "durationMs": 3080,
+    "createdAt": "2026-03-02T00:56:23.890Z"
+  },
+  {
+    "id": "7ea3a656f31fb073",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_0604fcab3d564fd0ad2e9f5c"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:36.013Z"
+  },
+  {
+    "id": "087f22cc6ba272c0",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 国诚投顾:字节跳动发布Seedance 2.0_凤凰网区域_凤凰网\nURL: https://baby.ifeng.com/c/8r5gV4nxUV1\nDescription: 事件2026年2月12日,字节跳动正式发布了新一代音视频创作模型Seedance2.0,该模型采用统一的多模态音视频联合生成架构,支持文字、图片、音频、视频四大模态输入,集成了当前业界领先的多模态内容参考与逻辑理解能力。核心观点Seedance系列模型是字节跳动多模态音视频生成领域的核心战略布局,技术迭代清晰。2024年9月,火山引擎在深圳AI创新巡展发布PixelDance、Seaweed两款AI视频生成大模型。2025年5月完成两大模型深度融合,推出视频模型Seedance1.0lite,6月正式发布Seedance1.0系列模型,12月迭代至Seedance1.5Pro,采用原生音视频联合生成架构,提升复杂场景与专业镜头创作能力。2026年2月,Seedance2.0全量发布,强化公司多模态内容生成技术壁垒与商业化落地能力。Seedance2.0采用统一多模态音视频联合生成架构,支持多模态输入,具备领先的内容理解、参考与编辑能力。一是运动稳定性和物理还原能力出色,多主体交互及复杂运动场景下视频生成可用率达业界SOTA水平;二是指令遵循与一致性表现提升,支持混合模态输入,拓展创作素材边界;三是支持稳定可控的视频延长与编辑功能,降低创作门槛;四是可输出15秒高质量多镜头音视频,配备双声道音频,实现高度拟真视听效果。相较于主流产品,Seedance2.0在多方面优势明显。当前全球AI音视频大模型行业处于技术快速迭代、商业化加速落地的爆发期,海内外头部厂商密集发布旗舰产品,形成多元竞争格局。海外以OpenAI\nSora系列、Google\nDeepMind\nVeo3.1为标杆,Sora系列实现技术破局,Veo3.1在易用性与商业化适配性上突破。国内市场本土模型崛起,2026年2月上线的快手可灵Kling3.0升级音频生成能力,与Seedance2.0形成双强领跑格局,构建差异化\nPublished date: 2026-02-27T18:42:30+08:00\nSite name: 凤凰网\n\nTitle: 国诚投顾:字节跳动发布Seedance 2.0_中华网\nURL: https://mtz.china.com/touzi/2026/0227/219424.html\nDescription: 事件2026年2月12日,字节跳动正式发布了新一代音视频创作模型Seedance2.0,该模型采用统一的多模态音视频联合生成架构,支持文字、图片、音频、视频四大模态输入,集成了当前业界领先的多模态内容参考与逻辑理解能力。核心观点Seedance系列模型是字节跳动多模态音视频生成领域的核心战略布局,技术迭代清晰。2024年9月,火山引擎在深圳AI创新巡展发布PixelDance、Seaweed两款AI视频生成大模型。2025年5月完成两大模型深度融合,推出视频模型Seedance1.0lite,6月正式发布Seedance1.0系列模型,12月迭代至Seedance1.5Pro,采用原生音视频联合生成架构,提升复杂场景与专业镜头创作能力。2026年2月,Seedance2.0全量发布,强化公司多模态内容生成技术壁垒与商业化落地能力。Seedance2.0采用统一多模态音视频联合生成架构,支持多模态输入,具备领先的内容理解、参考与编辑能力。一是运动稳定性和物理还原能力出色,多主体交互及复杂运动场景下视频生成可用率达业界SOTA水平;二是指令遵循与一致性表现提升,支持混合模态输入,拓展创作素材边界;三是支持稳定可控的视频延长与编辑功能,降低创作门槛;四是可输出15秒高质量多镜头音视频,配备双声道音频,实现高度拟真视听效果。相较于主流产品,Seedance2.0在多方面优势明显。当前全球AI音视频大模型行业处于技术快速迭代、商业化加速落地的爆发期,海内外头部厂商密集发布旗舰产品,形成多元竞争格局。海外以OpenAI\nSora系列、Google\nDeepMind\nVeo3.1为标杆,Sora系列实现技术破局,Veo3.1在易用性与商业化适配性上突破。国内市场本土模型崛起,2026年2月上线的快手可灵Kling3.0升级音频生成能力,与Seedance2.0形成双强领跑格局,构建差异\nPublished date: 2026-02-27T20:31:57+08:00\nSite name: mtz.china.com\n\nTitle: 2026年传媒行业GenAI系列报告之69暨AI应用深度之四:Seedance2.0突破,AI视频竞争格局及产业链机遇 - 报告精读 ",
+    "isError": false,
+    "durationMs": 439,
+    "createdAt": "2026-03-02T00:56:36.453Z"
+  },
+  {
+    "id": "341bbf349950e232",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_a53e99083f6f48d6bd5220ef"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:36.492Z"
+  },
+  {
+    "id": "698c71dd6b765b55",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 20天赚一年的钱?Kimi收入暴增背后的转折|kimi|网络信息_网易订阅\nURL: https://www.163.com/dy/article/KMI3B62U05118I96.html\nDescription: 2026年初,月之暗面(Moonshot\nAI)旗下Kimi智能助手实现商业化突破:传K2.5大模型发布不足一个月,近20天累计收入已超过2025年全年总和。这一增长由全球付费用户激增及API调用量大幅上升共同驱动,其中海外收入首次超越国内市场,成为核心增长引擎。据公开数据,K2.5上线后数日内,全球付费用户规模环比增长达4倍,在OpenRouter等国际平台的API调用量跃居全球前列。与此同时,公司完成超12亿美元融资,估值突破100亿美元,成为国内最快晋级“十角兽”企业。这一爆发式增长,源于技术路径、商业化策略与全球市场接受度的多重共振。过去两年,国内大模型行业普遍陷入“参数军备竞赛”与“免费流量战”,多数企业依赖资本输血,缺乏可持续收入。而Kimi选择了一条差异化路径。2025年,Kimi战略性砍掉Ohai、Noisee等C端泛娱乐产品线,将资源集中于基座模型与Agent(智能体)研发。这一调整,使其避开了同质化竞争,为后续技术变现奠定基础。2026年1月发布的Kimi\nK2.5,成为关键转折点。该模型采用MIT开源协议,全面兼容OpenAI\nAPI接口,海外开发者无需重写代码,仅需替换一行URL即可无缝切换。这种“无感替代”策略,迅速赢得GitHub、Hugging\nFace等国际开发者社区的采纳。其API定价比OpenAI低6-10倍,同时通过原生INT4量化技术在保持精度的同时降低推理成本,形成“高性价比+低迁移门槛”的双重吸引力。春节期间推出的Kimi\nClaw工具支持“一键部署”,用户无需服务器与代码基础即可调用K2.5能力,进一步降低了中小企业、科研团队与独立开发者的使用门槛。从产品演进看,Kimi近一年的动作清晰指向“从聊天机器人到生产力工具”的转型。2025年7月开源中国首个万亿参数基座模型Kimi\nK2,11月推出专注复杂逻辑推理的Kimi\nK2\nPublished date: 2026-02-24T17:16:19+08:00\nSite name: 网易\n\nTitle: 月之暗面近20天收入超去年全年!阿里腾讯等联手再投7亿美元_凤凰网\nURL: https://tech.ifeng.com/c/8qzzJQvOrJm\nDescription: 快科技2月24日消息,据媒体报道,有多位知情人士透露,Kimi旗下K2.5大模型发布不到一个月,近20天累计收入已超过2025年全年总收入。增长主要由全球付费用户及API调用量大幅上涨驱动,其中海外收入已反超国内,海外付费用户增长尤为迅猛。数据显示,Kimi\nK2.5\n在OpenRouter平台调用量持续领先,并在\nOpenClaw\n模型调用榜中位居第一。春节期间上线的Kimi\nClaw\n支持一键部署,用户无需购买硬件、服务器,也无需编写代码,即可快速使用\nOpenClaw相关功能。作为大模型领域备受关注的初创企业,Kimi已成为资本市场重点追逐标的。创始人杨植麟在2025年12月31日内部信中透露,公司已完成5亿美元新一轮融资,100\n亿元现金储备规模,接近当时拟\nIPO\n的智谱与\nMiniMax\n两家之和。相比二级市场公开募资,Kimi\n更倾向于在一级市场持续融资,构建技术、商业与资本闭环。值得注意的是,仅在上一轮5亿美元融资完成一个多月后,2月17日有消息称,Kimi\n运营主体月之暗面即将完成新一轮超7亿美元融资,且再度实现超募。本轮融资由阿里、腾讯、五源、九安等联合领投。杨植麟此前在全员信中表示:“融资金额超过绝大部分IPO募资及上市公司的定向增发,还可以从一级市场募集更大量资金,主动权掌握在我们手中。”\nPublished date: 2026-02-24T08:50:45+08:00\nSite name: 凤凰网\n\nTitle: 月之暗面近20天收入超去年全年\nURL: https://c.m.163.com/news/a/KMH82IN805118I96.html\nDescription: 2月23日,记者从多个知情人士处获悉,大模型独角兽月之暗面(Kimi)旗下K2.5大模型发布不到一个月,Kimi近20天累计收入已超过2025年全年总收入,增长主要受全球付费用户及API调用量大涨共同驱动,特别是海外付费用户保持高速增长,Kimi海外收入已超国内。\nPublished date: 2026-02-24T09:19:00+08:00\nSite name: 网易新闻客户端\n\nTitle: 月之暗面完成7亿美元融资,CEO",
+    "isError": false,
+    "durationMs": 207,
+    "createdAt": "2026-03-02T00:56:36.699Z"
+  },
+  {
+    "id": "28435739bc4ceabe",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_99b4bd4ae98147b2a306ced6"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:56:36.890Z"
+  },
+  {
+    "id": "2a12ee2e4a9cfc5a",
+    "type": "tool_call",
+    "taskId": "8de7fd5e902aa34a",
+    "subtaskId": "e1bfe935082340d8",
+    "employeeId": "6da595fbbd42fa0a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: MiniMax M2.5大模型技术原理、性能测评与落地应用全解析|附教程 - 拓端\nURL: https://tecdat.cn/minimax-m2-5%e5%a4%a7%e6%a8%a1%e5%9e%8b%e6%8a%80%e6%9c%af%e5%8e%9f%e7%90%86%e3%80%81%e6%80%a7%e8%83%bd%e6%b5%8b%e8%af%84%e4%b8%8e%e8%90%bd%e5%9c%b0%e5%ba%94%e7%94%a8%e5%85%a8%e8%a7%a3%e6%9e%90/\nDescription: 过去,想要使用具备顶尖编码与智能体能力的大模型,只能依赖海外闭源API服务,不仅使用成本高昂,还存在核心数据出境的安全风险。而国内一众开源模型的崛起,正在彻底打破这一局面,MiniMax\nM2.5就是其中的代表性产品。我们在服务企业客户的过程中发现,多数企业在AI落地时面临着性能与成本难以平衡、闭源模型数据安全风险高、开源模型部署门槛高三大核心痛点。基于此,我们以MiniMax\nM2.5为核心,完成了从技术原理拆解、多维度性能测评到全场景落地应用的全流程研究,为各类企业选择与部署大模型提供了可直接复用的落地方案。本文覆盖了模型核心特性、实操应用案例、基准测试结果、主流模型横向对比及本地化部署方案,能够帮助技术人员与企业决策者快速掌握模型的应用价值与落地方法。本文内容改编自过往客户咨询项目的技术沉淀并且已通过实际业务校验,该项目完整内容已分享至交流社群。阅读原文进群,可与800+行业人士交流成长;还提供人工答疑,拆解核心原理、代码逻辑与业务适配思路,帮大家既懂\n怎么做,也懂\n为什么这么做;遇代码运行问题,更能享24小时调试支持。\n文章脉络流程图\n大语言模型的发展,已经从实验室里的技术突破,走向了企业生产场景的规模化落地。过去,想要用上具备顶尖开发与智能办公能力的大模型,企业往往需要承担极高的API调用成本,还要面对核心业务数据上传到第三方平台的安全隐患。而国内开源大模型的快速发展,正在为企业提供一条低成本、高安全、可自主掌控的AI落地路径,MiniMax\nM2.5正是这条路径上的标杆产品。\nMiniMax\nM2.5是由国内企业研发的开源权重大语言模型,于2026年2月正式发布。该模型从研发之初就完全瞄准企业真实生产场景的生产力需求,核心聚焦编码开发、智能体工具调用、网页信息检索、办公自动化四大高频企业场景,通过在超20万个复杂真实业务场景中进行强化学习训练,让模型具备了资深\nPublished date: 2026-02-24T00:00:00+08:00\nSite name: tecdat.cn\n\nTitle: M2.5登顶OpenRouter:如何做出大家最需要的那个模型_腾讯新闻\nURL: https://news.qq.com/rain/a/20260223A027Z500\nDescription: 作者|王兆洋邮箱|wangzhaoyang@pingwest.com先看一组数据:评估模型编程能力的主流榜单SWE-bench\nVerified上,Claude\nOpus\n4.6\n得分80.8%,Gemini\n3.1\nPro\n80.6%,MiniMax\n2.5\n80.2%,GLM-5\n77.8%,Kimi\nK2.5\n76.8%。最大分差也不超过4分,差距就这么点大。开发者今天其实已经很难只靠这些“考试分数”来选择要用的模型。但最近还有另一组很有意思的数据,来自最重要的模型调用平台之一OpenRouter:官方统计显示,最近其平台上的token调用激增,且其中很多需求来自100K-1M长文本任务,也就是agent工作流最典型消耗区间。刺激这些需求爆发的一个重要因素是一个新模型的发布——MiniMax\nM2.5。单是在OpenRouter上,它发布后七天的调用量就到了破纪录的\n3.07T\ntokens。这说明什么?今天公开的benchmark也就是打榜式的评测已经没那么重要了,因为差别不再明显。但与此同时,真实使用者的感受越来越关键,做好了,你就可以成为最受欢迎的那一个,因为用户们对模型的需求远远未被满足。所以,关键的问题变成,如何做出大家最需要的那个模型。可以先来看看这个备受欢迎的MiniMax\nM2.5是一个什么样的模型。1.模型部署上:10B激活参数,实战中总结的甜点位MiniMax\nM2.5,一个总参数\n230B,激活参数只有10b的模型。它不会叫自己端侧模型,但已经是私有化部署最友好的模型。这是一个实战中总结出来的性价比甜点位,也是头部模型里这种友好度里的唯一选择。2.价格:没有波动,这是开发者最在意的负担人们想尽可能多消耗token,但对价格变化又有负担,M2.5通过各",
+    "isError": false,
+    "durationMs": 219,
+    "createdAt": "2026-03-02T00:56:37.109Z"
+  }
+]

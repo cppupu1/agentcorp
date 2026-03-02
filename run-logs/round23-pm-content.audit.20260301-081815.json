@@ -1,0 +1,74 @@
+{
+  "label": "round23-pm-content",
+  "sessionId": "round23-content-20260301-081815",
+  "pmChatDurationMs": 24798,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "bdff69babbee2d10"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 24798
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "bdff69babbee2d10",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 3852,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n企业AI助手发布文案创作任务已圆满完成。文案策划（754d242a7b8fb5e3）按要求创作了三篇高质量文案：1）发布短文（约400字）- 正式专业风格，适合官网和新闻稿，突出AI助手核心价值、主要功能和应用场景；2）社媒文案一（约180字）- 功能性介绍，活泼吸引人，清晰展示三大核心功能；3）社媒文案二（约190字）- 情感化表达，从用户体验出发营造温暖陪伴感。所有文案符合目标受众定位（企业管理者、职场人士、科技爱好者），语言风格专业不晦涩、亲和有温度，达到预期质量标准。"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "label": "round42-ai_b",
+  "sessionId": "round42-ai_b-20260302-004035",
+  "kind": "ai_b",
+  "userPrompt": "请直接创建并启动任务：整理近7天开源大模型行业动态，输出3条带日期与来源链接的结论。",
+  "pmChatDurationMs": 17576,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "8de7fd5e902aa34a"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": true,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_has_no_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 17576
+    },
+    {
+      "name": "pm_called_create_task_tool",
+      "ok": true
+    },
+    {
+      "name": "pm_called_start_task",
+      "ok": true
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "8de7fd5e902aa34a"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "8de7fd5e902aa34a",
+    "status": "completed",
+    "tokenUsage": 242856,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已执行完毕。核心子任务\"整理近7天开源大模型行业动态\"在执行过程中遇到技术障碍，系统多次返回\"已跳过/状态为completed\"的异常状态，未能正常获取2026-02-23至2026-03-02期间的开源大模型行业动态。子任务重试次数已达上限，故未能产出符合要求的3条结论。"
+  }
+}

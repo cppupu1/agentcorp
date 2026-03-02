@@ -1,0 +1,93 @@
+{
+  "label": "round24-pm-stock-compare",
+  "sessionId": "round24-stock-20260301-083127",
+  "pmChatDurationMs": 31093,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "d2ccda086fcd9a02"
+  ],
+  "autoAssign": {
+    "recommended": 3,
+    "added": 2
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 31093
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 3,
+      "min": 1
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "d2ccda086fcd9a02",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 22296,
+      "tools": [
+        {
+          "tool": "tushare_mcp_001__daily",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__today",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": true,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成贵州茅台(600519)与宁德时代(300750)近30天股票走势对比分析。主要发现：1) 茅台整体上涨2.53%，宁德时代下跌7.37%，表现分化明显；2) 茅台波动相对稳定，宁德时代波动剧烈，成交量显著放大；3) 成交量异常时点包括茅台1月29日暴涨放量、宁德时代2月26日暴跌放量等；4) 两股分别代表防御性消费龙头和高波动新能源成长股，投资风格差异显著。分析报告已包含3条下周市场观察点及具体日期。"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "label": "round24-pm-customer-memory",
+  "sessionId": "round24-cs-20260301-081121",
+  "pmChatDurationMs": 31152,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "6c3776ae7d5e9826"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 31152
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": false
+    }
+  ],
+  "allChecksPassed": false,
+  "tasks": [
+    {
+      "taskId": "6c3776ae7d5e9826",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 90732,
+      "tools": [
+        {
+          "tool": "01a07c2a149edad0__list_allowed_directories",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__list_directory",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__read_multiple_files",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__write_file",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成售后投诉分析与知识沉淀任务。基于近30天156件投诉数据进行分析，输出：1）简版FAQ 5条（退款、订单延迟、商品质量、客服响应、七天退货）；2）SOP优化点3条（客服响应机制、退款流程简化、订单异常预警）；3）可复用知识条目8条，支持按问题类型/客户类型/紧急程度检索。预期可提升响应效率62.5%，降低投诉40%。"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "label": "round36-legal",
+  "sessionId": "round36-legal-20260301-130659",
+  "kind": "legal",
+  "userPrompt": "请你安排一个法务支持任务：审阅供应商服务合同草案，提炼3条高风险条款并给改写建议。",
+  "pmChatDurationMs": 49638,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "8ace962ea517f1e4"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "user_prompt_without_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 49638
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "8ace962ea517f1e4"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "not_waiting_for_user",
+      "ok": true
+    },
+    {
+      "name": "risk_and_rewrite",
+      "ok": true,
+      "riskHits": 32,
+      "sugHits": 27
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "8ace962ea517f1e4",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 36833,
+    "decisionRows": 6,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成供应商服务合同审阅任务，从合同中提炼出3条高风险条款并提供改写建议。识别的关键风险包括：(1)知识产权归属失衡 - 甲方支付全部合同价款却仅获得有限使用权；(2)开源软件责任倒置 - 乙方使用开源软件的风险由甲方承担；(3)违约金标准畸高 - 乙方逾期违约金高达1%/天（年化365%）。研究员已为每条风险条款提供了具体的改写建议及修改原因。"
+  }
+}

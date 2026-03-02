@@ -86,6 +86,14 @@ export function updateSetting(key: string, value: string): void {
     .run();
 }
 
+/**
+ * Get model ID for a feature, with fallback chain:
+ * feature-specific setting → default_model_id → null
+ */
+export function getModelIdForFeature(featureKey: string): string | null {
+  return getSetting(featureKey) || getSetting('default_model_id') || null;
+}
+
 // ---- Frozen Guard ----
 
 export function assertNotFrozen(): void {

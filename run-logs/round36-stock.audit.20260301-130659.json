@@ -1,0 +1,98 @@
+{
+  "label": "round36-stock",
+  "sessionId": "round36-stock-20260301-130659",
+  "kind": "stock",
+  "userPrompt": "我们在做投研晨会材料，麻烦你直接组织团队完成一个任务：比较贵州茅台和宁德时代近30天走势，给我两条带日期的观察结论。",
+  "pmChatDurationMs": 36093,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "2e4594f9cabe1d9a"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": true
+  },
+  "checks": [
+    {
+      "name": "user_prompt_without_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 36093
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "2e4594f9cabe1d9a"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "not_waiting_for_user",
+      "ok": true
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    },
+    {
+      "name": "mentions_two_stocks",
+      "ok": true
+    },
+    {
+      "name": "contains_dates",
+      "ok": true,
+      "dateHits": 3
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "2e4594f9cabe1d9a",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 195138,
+    "decisionRows": 0,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n辩论模式执行完成"
+  }
+}

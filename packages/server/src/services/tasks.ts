@@ -4,8 +4,9 @@ import { AppError } from '../errors.js';
 import { AgentRunner, createModel } from '@agentcorp/agent-core';
 import type { AgentStreamCallbacks } from '@agentcorp/agent-core';
 import { startTaskExecution } from './task-executor.js';
-import { assertNotFrozen } from './system.js';
+import { assertNotFrozen, getSetting } from './system.js';
 import { estimateTaskCost } from './cost-tracker.js';
+import { applyTemplate } from './templates.js';
 import { recordEvidence } from './evidence.js';
 import { tool, jsonSchema } from 'ai';
 import type { ToolSet } from 'ai';
@@ -119,6 +120,7 @@ export async function getTask(id: string) {
       dependsOn: subtasks.dependsOn,
       output: subtasks.output,
       sortOrder: subtasks.sortOrder,
+      tokenUsage: subtasks.tokenUsage,
       createdAt: subtasks.createdAt,
       updatedAt: subtasks.updatedAt,
     })
@@ -207,6 +209,137 @@ export async function createTask(input: { teamId?: string; pmEmployeeId?: string
   });
 
   return getTask(id);
+}
+
+// ---- Quick Create (template-based) ----
+
+export async function quickCreateTask(input: {
+  templateId: string;
+  modelId: string;
+  description: string;
+  mode?: string;
+  title?: string;
+  teamName?: string;
+}) {
+  assertNotFrozen();
+  const { teamId } = await applyTemplate(input.templateId, input.modelId);
+
+  if (input.teamName) {
+    await db.update(teams).set({ name: input.teamName }).where(eq(teams.id, teamId));
+  }
+
+  return createTask({
+    teamId,
+    description: input.description,
+    mode: input.mode,
+    title: input.title,
+  });
+}
+
+// ---- Auto Start ----
+
+export async function autoStartTask(taskId: string) {
+  assertNotFrozen();
+  const [task] = await db.select().from(tasks).where(eq(tasks.id, taskId));
+  if (!task) throw new AppError('NOT_FOUND', `任务 ${taskId} 不存在`);
+
+  if (task.status === 'executing') return;
+  if (task.status !== 'draft') {
+    throw new AppError('INVALID_STATE', `任务状态为 ${task.status}，无法直接启动`);
+  }
+
+  if (!task.teamId) throw new AppError('VALIDATION_ERROR', '任务未关联团队');
+  const [team] = await db.select({ pmEmployeeId: teams.pmEmployeeId }).from(teams).where(eq(teams.id, task.teamId));
+  if (!team?.pmEmployeeId) throw new AppError('VALIDATION_ERROR', '团队未配置PM');
+
+  const [pmEmp] = await db.select({ id: employees.id, name: employees.name }).from(employees).where(eq(employees.id, team.pmEmployeeId));
+  if (!pmEmp) throw new AppError('NOT_FOUND', 'PM员工不存在');
+
+  // Build/normalize teamConfig (auto-start bypasses approval workflow, so we must self-heal here)
+  const memberRows = await db
+    .select({ id: employees.id, name: employees.name, description: employees.description })
+    .from(teamMembers)
+    .innerJoin(employees, eq(teamMembers.employeeId, employees.id))
+    .where(and(eq(teamMembers.teamId, task.teamId), ne(teamMembers.employeeId, team.pmEmployeeId)));
+
+  const existingTeamConfig = safeJsonParse<any>(task.teamConfig, null);
+  const existingMembers = Array.isArray(existingTeamConfig?.members) ? existingTeamConfig.members : [];
+  const fallbackMembers = memberRows.map(m => ({ id: m.id, name: m.name, taskPrompt: m.description || '' }));
+  const mergedMembers = existingMembers.length > 0 ? existingMembers : fallbackMembers;
+  const normalizedMembers = mergedMembers.length > 0
+    ? mergedMembers
+    : [{ id: pmEmp.id, name: pmEmp.name, taskPrompt: '当团队成员为空时，暂由PM兼任执行。' }];
+  const teamConfig = {
+    pm: { id: pmEmp.id, name: pmEmp.name },
+    members: normalizedMembers,
+  };
+
+  await db.update(tasks).set({ teamConfig: JSON.stringify(teamConfig), updatedAt: now() }).where(eq(tasks.id, taskId));
+
+  // Ensure there is at least one subtask, otherwise execution will immediately fail with "没有子任务可执行".
+  const existingSubs = db.select({ id: subtasks.id }).from(subtasks).where(eq(subtasks.taskId, taskId)).all();
+  if (existingSubs.length === 0) {
+    const parsedPlan = safeJsonParse<{ subtasks?: any[] }>(task.plan, { subtasks: [] });
+    let validSubtasks = (parsedPlan.subtasks ?? [])
+      .filter((st: any) => st && typeof st.title === 'string' && st.title.length > 0);
+
+    if (validSubtasks.length === 0) {
+      validSubtasks = [{
+        id: 'sub_autostart_bootstrap',
+        title: task.title || '自动启动默认执行子任务',
+        description: task.description || '请基于任务描述完成交付物并输出总结。',
+        assigneeId: teamConfig.members[0]?.id ?? pmEmp.id,
+        dependsOn: [],
+      }];
+    }
+
+    const timestamp = now();
+    db.transaction((tx) => {
+      const idMap = new Map<string, string>();
+      const seenIds = new Set<string>();
+      for (const st of validSubtasks) {
+        let baseId = st.id || `_auto_${idMap.size}`;
+        while (seenIds.has(baseId)) baseId += '_dup';
+        seenIds.add(baseId);
+        st.id = baseId;
+        idMap.set(baseId, generateId());
+      }
+
+      for (let i = 0; i < validSubtasks.length; i++) {
+        const st = validSubtasks[i];
+        const realId = idMap.get(st.id)!;
+        const rawDeps = Array.isArray(st.dependsOn) ? st.dependsOn : [];
+        const remappedDeps = rawDeps.map((dep: string) => idMap.get(dep)).filter(Boolean);
+        tx.insert(subtasks).values({
+          id: realId,
+          taskId,
+          title: st.title,
+          description: st.description || null,
+          assigneeId: st.assigneeId || null,
+          status: 'pending',
+          dependsOn: remappedDeps.length > 0 ? JSON.stringify(remappedDeps) : null,
+          sortOrder: i,
+          createdAt: timestamp,
+          updatedAt: timestamp,
+        }).run();
+      }
+
+      if (!task.plan) {
+        tx.update(tasks).set({
+          plan: JSON.stringify({ subtasks: validSubtasks }),
+          updatedAt: timestamp,
+        }).where(eq(tasks.id, taskId)).run();
+      }
+    });
+  }
+
+  // Atomic conditional update to prevent duplicate execution
+  const result = db.update(tasks)
+    .set({ status: 'executing', updatedAt: now() })
+    .where(and(eq(tasks.id, taskId), eq(tasks.status, 'draft')))
+    .run();
+  if (result.changes === 0) return; // Already changed by another request
+  startTaskExecution(taskId);
 }
 
 // ---- Delete ----
@@ -374,6 +507,7 @@ export async function runTaskChat(
       }),
     };
 
+    const isAutoMode = task.mode === 'auto';
     const alignmentPrompt = `${pm.systemPrompt}
 
 你现在是项目经理，正在与用户对齐任务需求。
@@ -384,7 +518,9 @@ export async function runTaskChat(
 1. 理解用户的需求，通过提问澄清模糊点
 2. 当需求足够清晰时，调用 generate_brief 工具生成结构化任务书
 3. 任务书应包含：标题、目标、交付物、约束条件、验收标准
-4. 不要过早生成任务书，确保关键信息已确认
+${isAutoMode
+  ? `4. 当前是自动执行模式。如果任务描述已经足够明确（包含目标、范围等关键信息），请直接调用 generate_brief 生成任务书，不要反复提问。用户说"开始"或"执行"等指令时，立即生成任务书。`
+  : `4. 不要过早生成任务书，确保关键信息已确认`}
 
 请用中文与用户交流。`;
 
@@ -608,6 +744,17 @@ export async function approvePlan(taskId: string, input: { approved: boolean; fe
 
   // Validate and insert subtasks with ID remapping
   const validSubtasks = plan.subtasks.filter((st: any) => st && typeof st.title === 'string' && st.title.length > 0);
+  if (validSubtasks.length === 0) {
+    const teamConfig = safeJsonParse<any>(task.teamConfig, { members: [] });
+    const fallbackAssigneeId = teamConfig.members?.[0]?.id || null;
+    validSubtasks.push({
+      id: 'sub_fallback_autofix',
+      title: task.title || '自动补全执行子任务',
+      description: task.description || '请基于任务描述完成交付物并输出总结。',
+      assigneeId: fallbackAssigneeId,
+      dependsOn: [],
+    });
+  }
 
   db.transaction((tx) => {
     // Build ID mapping: LLM-generated id -> real DB id (deduplicate)
@@ -684,9 +831,11 @@ async function loadPMModel(teamId: string | null) {
   if (!team.pmEmployeeId) throw new AppError('VALIDATION_ERROR', '团队未配置PM');
 
   const [pm] = await db.select().from(employees).where(eq(employees.id, team.pmEmployeeId));
-  if (!pm || !pm.modelId) throw new AppError('VALIDATION_ERROR', 'PM未配置模型');
+  if (!pm) throw new AppError('VALIDATION_ERROR', 'PM员工不存在');
+  const pmModelId = pm.modelId || getSetting('default_model_id');
+  if (!pmModelId) throw new AppError('VALIDATION_ERROR', 'PM未配置模型且未设置默认模型');
 
-  const [model] = await db.select().from(models).where(eq(models.id, pm.modelId));
+  const [model] = await db.select().from(models).where(eq(models.id, pmModelId));
   if (!model) throw new AppError('NOT_FOUND', '模型不存在');
 
   const members = await db
@@ -760,7 +909,39 @@ ${memberList}
 
 只返回JSON，不要其他内容。`;
 
-  return callLLMWithRetry(aiModel as any, prompt);
+  const raw = await callLLMWithRetry(aiModel as any, prompt);
+
+  // Normalize to prevent hallucinated PM/member IDs from breaking execution.
+  const availableMembers = members.filter(m => m.id !== pm.id);
+  const byId = new Map(availableMembers.map(m => [m.id, m]));
+  const requestedMembers = Array.isArray(raw?.members) ? raw.members : [];
+  const normalizedMembers: Array<{ id: string; name: string; taskPrompt: string }> = [];
+  const seen = new Set<string>();
+
+  for (const m of requestedMembers) {
+    const id = typeof m?.id === 'string' ? m.id : '';
+    if (!id || seen.has(id) || !byId.has(id)) continue;
+    const base = byId.get(id)!;
+    normalizedMembers.push({
+      id,
+      name: base.name,
+      taskPrompt: typeof m?.taskPrompt === 'string' && m.taskPrompt.trim().length > 0
+        ? m.taskPrompt
+        : (base.description || ''),
+    });
+    seen.add(id);
+  }
+
+  if (normalizedMembers.length === 0) {
+    for (const m of availableMembers.slice(0, 3)) {
+      normalizedMembers.push({ id: m.id, name: m.name, taskPrompt: m.description || '' });
+    }
+  }
+
+  return {
+    pm: { id: pm.id, name: pm.name },
+    members: normalizedMembers,
+  };
 }
 
 async function pmGeneratePlan(task: typeof tasks.$inferSelect) {
@@ -800,5 +981,30 @@ ${memberList}
 
 只返回JSON，不要其他内容。`;
 
-  return callLLMWithRetry(aiModel as any, prompt);
+  const raw = await callLLMWithRetry(aiModel as any, prompt);
+  const memberIds = new Set((teamConfig.members || []).map((m: any) => m.id).filter(Boolean));
+  const defaultAssignee = teamConfig.members?.[0]?.id || null;
+  let normalized = Array.isArray(raw?.subtasks) ? raw.subtasks : [];
+
+  normalized = normalized
+    .filter((st: any) => st && typeof st.title === 'string' && st.title.trim().length > 0)
+    .map((st: any, i: number) => ({
+      id: typeof st.id === 'string' && st.id.trim().length > 0 ? st.id : `sub_${i + 1}`,
+      title: st.title.trim(),
+      description: typeof st.description === 'string' ? st.description : '',
+      assigneeId: memberIds.has(st.assigneeId) ? st.assigneeId : defaultAssignee,
+      dependsOn: Array.isArray(st.dependsOn) ? st.dependsOn.filter((d: unknown) => typeof d === 'string') : [],
+    }));
+
+  if (normalized.length === 0) {
+    normalized = [{
+      id: 'sub_fallback_1',
+      title: brief?.title || task.title || '自动补全执行子任务',
+      description: brief?.objective || task.description || '请基于任务描述完成交付物并输出总结。',
+      assigneeId: defaultAssignee,
+      dependsOn: [],
+    }];
+  }
+
+  return { subtasks: normalized };
 }

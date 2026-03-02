@@ -1,0 +1,18 @@
+[
+  {
+    "id": "74da154ba3b094d1",
+    "sessionId": "round38-legal-20260301-140242",
+    "role": "user",
+    "content": "供应商合同有点不放心，你直接安排审一遍：提3条高风险条款并给改写建议。",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:02:42.879Z"
+  },
+  {
+    "id": "5808d83bf7a73230",
+    "sessionId": "round38-legal-20260301-140242",
+    "role": "assistant",
+    "content": "",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:02:42.879Z"
+  }
+]

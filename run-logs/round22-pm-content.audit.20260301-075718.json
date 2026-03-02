@@ -1,0 +1,74 @@
+{
+  "label": "round22-pm-content",
+  "sessionId": "round22-content-20260301-075718",
+  "pmChatDurationMs": 19827,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "6df797929bb6abeb"
+  ],
+  "autoAssign": {
+    "recommended": 3,
+    "added": 3
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 19827
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": false,
+      "recommended": 3,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": false,
+  "tasks": [
+    {
+      "taskId": "6df797929bb6abeb",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 7951,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n企业AI助手发布文案创作任务已完成。文案策划成功创作了1篇正式发布短文（用于官网、公众号）和2条社交媒体文案（用于微博、朋友圈）。所有文案均符合要求：正式文案约250字，社媒文案每条约90字，突出AI助手的核心价值（智能问答、数据分析、内容生成、流程自动化、私有化部署、定制化知识库等），语言简洁有力，适合推广传播。"
+    }
+  ]
+}

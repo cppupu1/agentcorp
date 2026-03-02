@@ -1,0 +1,57 @@
+{
+  "label": "round40-memory",
+  "sessionId": "round40-memory-20260301-152427",
+  "kind": "memory",
+  "userPrompt": "请直接创建并启动任务：基于最近一个月售后投诉整理5条FAQ，并沉淀为知识条目。",
+  "pmChatDurationMs": 33908,
+  "pmChatError": null,
+  "taskIds": [
+    "e4389f85cfba3999"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": true,
+    "memory": true,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 33908
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "e4389f85cfba3999"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "e4389f85cfba3999",
+    "status": "completed",
+    "tokenUsage": 106656,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n售后投诉FAQ整理与知识沉淀任务已完成。基于最近一个月售后投诉数据分析，识别出5个最高频、最典型的投诉问题：退货退款流程延迟（35%）、商品质量问题投诉（25%）、虚假发货和物流异常（20%）、售后客服响应慢（12%）、商品信息不符纠纷（8%）。已将这5条FAQ结构化编写为标准知识条目，每条均包含问题标题、问题描述、适用场景、解决方案步骤、注意事项等完整要素，格式规范便于检索使用。"
+  }
+}

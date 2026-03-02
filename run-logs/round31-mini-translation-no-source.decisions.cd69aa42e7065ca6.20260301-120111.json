@@ -1,0 +1,87 @@
+[
+  {
+    "id": "44825da817204b94",
+    "type": "decision",
+    "taskId": "cd69aa42e7065ca6",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask",
+    "input": {
+      "employeeId": "4936ed03b2240fda",
+      "instruction": "请执行企业公告中英双语简版转换任务。请将提供的企业公告模板内容转换为中英双语简版，要求：\n1. 保留核心信息（公告目的、关键时间、相关事项等）\n2. 语言简洁明了\n3. 中英文语义保持一致\n4. 格式清晰，便于阅读\n\n请输出转换后的中英双语版本。",
+      "subtaskId": "4acabeecbce685ac"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T12:02:23.290Z"
+  },
+  {
+    "id": "66f319a6b8410a88",
+    "type": "decision",
+    "taskId": "cd69aa42e7065ca6",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask_result",
+    "input": null,
+    "output": "[已派发] 子任务「企业公告中英双语简版转换」(4acabeecbce685ac) 已分配给员工 4936ed03b2240fda 开始执行。请继续派发其他可执行的子任务，全部派发后调用 wait_subtasks 等待结果。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T12:02:23.292Z"
+  },
+  {
+    "id": "8e6c8992fa05feb6",
+    "type": "decision",
+    "taskId": "cd69aa42e7065ca6",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks",
+    "input": {},
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T12:02:26.247Z"
+  },
+  {
+    "id": "b6fc2d04c34ff84f",
+    "type": "decision",
+    "taskId": "cd69aa42e7065ca6",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks_result",
+    "input": null,
+    "output": "共 1 个子任务执行完毕：\n\n[4acabeecbce685ac]「企业公告中英双语简版转换」: 我注意到您没有提供具体的企业公告内容。让我先检查一下工作目录中是否有可用的模板文件。\n\n\n\n\n\n我发现了几个可能相关的公告模板文件。让我查看这些文件的内容：\n\n\n根据工作目录中已有的企业公告模板，我为您准备了以下**中英双语简版**转换示例。这是一份通用的组织架构调整公告模板，您可以根据实际需求替换相关内容：\n\n---\n\n# 企业公告中英双语简版\n## Corporate Announcement Bilingual Version (Simplified)\n\n---\n\n## 中文简版\n\n**关于[公司名称]组织架构调整的公告**\n\n各位同事：\n\n为优化公司治理结构、提升运营效率，经管理层研究决定，对公司组织架构进行调整，现公告如下：\n\n| 调整事项 | 具体内容 |\n|---------|---------|\n| 部门职能整合 | 部分部门职能进行整合优化 |\n| 核心管理层任命 | 任命新任核心管理层成员 |\n| 生效时间 | 调整自XXXX年XX月XX日起正式生效 |\n\n请各位同事知悉并配合执行相关调整工作。\n\n特此公告。\n\n[公司名称]  \nXXXX年XX月XX日\n\n---\n\n## English Version\n\n**Notice on Organizational Structure Adjustment**\n\nDear Colleagues,\n\nTo further optimize corporate governance structure and improve operational efficiency, the management has decided to adjust the company's organizational structure. The relevant matters are hereby announced as follows:\n\n| Adjustment Items | Details |\n|-----------------|---------|\n| Department Function Integration | Integration and optimization of certain departmental functions |\n| Key Management Appointments | Appointment of new key management members |\n| Effective Date | The adjustment will take effect from XX/XX/XXXX |\n\nPlease take note and cooperate with the implementation of the relevant adjustments.\n\nHereby notified.\n\n[Company Name]  \nXX/XX/XXXX\n\n---\n\n## 核心词汇对照 / Key Vocabulary\n\n| 中文 | English |\n|------|---------|\n| 组织架构调整 | Organizational Structure Adjustment |\n| 公司治理结构 | Corporate Governance Structure |\n| 运营效率 | Operational Efficiency |\n| 部门职能整合 | Department Function Integration |\n| 核心管理层任命 | Key Management Appointments |\n| 正式生效 | Take Effect |\n| 特此公告 | Hereby Notified / Hereby Announced |\n\n---\n\n**说明 / Note**：\n- 方括号 **[ ]** 中的内容为需替换项，请根据实际情况填写\n- 内容 in brackets **[ ]** are placeholders to be replaced with actual information\n\n---\n\n如您有具体的企业公告内容需要转换，请提供原文，我将为您进行精确翻译。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T12:03:02.547Z"
+  },
+  {
+    "id": "48ad98a30ce2a0e2",
+    "type": "decision",
+    "taskId": "cd69aa42e7065ca6",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task",
+    "input": {
+      "deliverables": "# 企业公告中英双语简版\n## Corporate Announcement Bilingual Version (Simplified)\n\n---\n\n### 中文简版\n\n**关于[公司名称]组织架构调整的公告**\n\n各位同事：\n\n为优化公司治理结构、提升运营效率，经管理层研究决定，对公司组织架构进行调整，现公告如下：\n\n| 调整事项 | 具体内容 |\n|---------|---------|\n| 部门职能整合 | 部分部门职能进行整合优化 |\n| 核心管理层任命 | 任命新任核心管理层成员 |\n| 生效时间 | 调整自XXXX年XX月XX日起正式生效 |\n\n请各位同事知悉并配合执行相关调整工作。\n\n特此公告。\n\n[公司名称]  \nXXXX年XX月XX日\n\n---\n\n### English Version\n\n**Notice on Organizational Structure Adjustment**\n\nDear Colleagues,\n\nTo further optimize corporate governance structure and improve operational efficiency, the management has decided to adjust the company's organizational structure. The relevant matters are hereby announced as follows:\n\n| Adjustment Items | Details |\n|-----------------|---------|\n| Department Function Integration | Integration and optimization of certain departmental functions |\n| Key Management Appointments | Appointment of new key management members |\n| Effective Date | The adjustment will take effect from XX/XX/XXXX |\n\nPlease take note and cooperate with the implementation of the relevant adjustments.\n\nHereby notified.\n\n[Company Name]  \nXX/XX/XXXX\n\n---\n\n### 核心词汇对照 / Key Vocabulary\n\n| 中文 | English |\n|------|---------|\n| 组织架构调整 | Organizational Structure Adjustment |\n| 公司治理结构 | Corporate Governance Structure |\n| 运营效率 | Operational Efficiency |\n| 部门职能整合 | Department Function Integration |\n| 核心管理层任命 | Key Management Appointments |\n| 正式生效 | Take Effect |\n| 特此公告 | Hereby Notified / Hereby Announced |\n\n---\n\n**说明 / Note**：\n- 方括号 **[ ]** 中的内容为需替换项，请根据实际情况填写\n- 内容 in brackets **[ ]** are placeholders to be replaced with actual information",
+      "summary": "任务已完成。企业公告中英双语简版已生成，保留核心信息（公告目的、关键时间、相关事项），语言简洁明了，中英文语义一致，格式清晰便于阅读。如需转换特定企业公告内容，请提供原文后可进行精确翻译。"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T12:03:25.081Z"
+  },
+  {
+    "id": "5e9cf573f2e3b68e",
+    "type": "decision",
+    "taskId": "cd69aa42e7065ca6",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task_result",
+    "input": null,
+    "output": "任务已完成。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T12:03:25.088Z"
+  }
+]

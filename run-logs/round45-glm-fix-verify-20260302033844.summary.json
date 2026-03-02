@@ -1,0 +1,143 @@
+{
+  "round": "round45-glm-fix-verify-20260302033844",
+  "startedAt": "2026-03-02T03:38:44.642Z",
+  "scenarios": [
+    {
+      "key": "ai_trend_7d",
+      "sessionId": "round45-glm-fix-verify-20260302033844-ai_trend_7d",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": false,
+          "status": "executing"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": false
+        },
+        {
+          "name": "no_partial_failure_words",
+          "ok": true
+        },
+        {
+          "name": "expect_search_tool",
+          "ok": true,
+          "got": true
+        },
+        {
+          "name": "trend_has_link",
+          "ok": false,
+          "links": 0
+        },
+        {
+          "name": "trend_has_date",
+          "ok": false
+        }
+      ],
+      "ok": false,
+      "taskId": "1739f1fbf54bbb42",
+      "status": "executing",
+      "tools": {
+        "uniqueNames": [
+          "a6d0277e32709254__bocha_web_search"
+        ],
+        "flags": {
+          "search": true,
+          "fs": false
+        }
+      },
+      "durationMs": 450421
+    },
+    {
+      "key": "translation",
+      "sessionId": "round45-glm-fix-verify-20260302033844-translation",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_partial_failure_words",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "63f02f37c7aad243",
+      "status": "completed",
+      "tools": {
+        "uniqueNames": [],
+        "flags": {
+          "search": false,
+          "fs": false
+        }
+      },
+      "durationMs": 195097
+    },
+    {
+      "key": "repo_onboarding",
+      "sessionId": "round45-glm-fix-verify-20260302033844-repo_onboarding",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_partial_failure_words",
+          "ok": true
+        },
+        {
+          "name": "expect_fs_tool",
+          "ok": false,
+          "got": false
+        }
+      ],
+      "ok": false,
+      "taskId": "d2c36f0280ed93de",
+      "status": "completed",
+      "tools": {
+        "uniqueNames": [],
+        "flags": {
+          "search": false,
+          "fs": false
+        }
+      },
+      "durationMs": 143515
+    }
+  ],
+  "allPassed": false,
+  "finishedAt": "2026-03-02T03:52:38.679Z"
+}

@@ -1,0 +1,95 @@
+{
+  "label": "round38-legal",
+  "sessionId": "round38-legal-20260301-135608",
+  "kind": "legal",
+  "userPrompt": "供应商合同有点不放心，你直接安排审一遍：提3条高风险条款并给改写建议。",
+  "pmChatDurationMs": 55863,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "d0d613774956c868"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 55863
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "d0d613774956c868"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "output_not_too_short",
+      "ok": true,
+      "len": 145
+    },
+    {
+      "name": "legal_has_risk_and_suggestion",
+      "ok": false
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "d0d613774956c868",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 3370,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n所有子任务已完成（PM未显式调用complete_task，系统自动完成）"
+  }
+}

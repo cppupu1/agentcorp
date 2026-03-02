@@ -1,0 +1,58 @@
+{
+  "label": "round12-pm-content-creation",
+  "sessionId": "round12-content-20260301-022629",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "18106dcbc4b8f23b"
+  ],
+  "autoAssign": {
+    "recommended": 5,
+    "added": 3
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "18106dcbc4b8f23b",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 11413,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasTimeTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成B2B AI客服产品发布内容创作任务。文案策划按时提交了高质量的创作内容，包括1篇专业新闻稿和3条社媒短帖，所有内容均符合目标受众定位、字数要求和风格规范，可直接投入使用。"
+    }
+  ]
+}

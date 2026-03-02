@@ -1,0 +1,76 @@
+{
+  "label": "round24-pm-onboarding",
+  "sessionId": "round24-onboarding-20260301-081121",
+  "pmChatDurationMs": 31802,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "33cd7b8f8a41fbd2"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 31802
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "33cd7b8f8a41fbd2",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 9012,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n新员工入职首周SOP模板编写任务已完成。该模板包含周一至周五的详细每日目标、工作任务清单及交付物，明确了与导师、团队、跨部门的沟通节奏，并提供了每日/每周交付清单和完整的进度跟踪与评估机制。模板结构清晰，具体可执行，具有普适性，便于各类新员工使用。"
+    }
+  ]
+}

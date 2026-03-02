@@ -1,0 +1,70 @@
+{
+  "label": "round34-ai",
+  "sessionId": "round34-ai-20260301-122135",
+  "kind": "ai",
+  "pmChatDurationMs": 33416,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "9b4831ef3e8ca940"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 33416
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "9b4831ef3e8ca940",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 243770,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。AI技术行业趋势分析报告整理了3条关键结论：1) AI智能体(Agent)成为产业发展核心方向，中国信通院2025年7月28日发布智能体十大关键词；2) AI在金融行业应用商业化进程加速，2025年金融行业大模型中标项目同比增长341%；3) 生成式AI用户规模爆发式增长，截至2025年底达6.02亿人，较2024年底增长141.7%。所有结论均附有日期与来源链接，并经过至少2个独立来源交叉验证。"
+  }
+}

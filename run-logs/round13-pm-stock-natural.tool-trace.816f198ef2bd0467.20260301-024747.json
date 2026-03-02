@@ -1,0 +1,226 @@
+[
+  {
+    "id": "c9d930975629551c",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__today",
+    "input": {
+      "toolCallId": "call_60df706836c44f299559e92b"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:48:06.064Z"
+  },
+  {
+    "id": "ae225ace7aa2cfd8",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__today",
+    "input": null,
+    "output": "20260301",
+    "isError": false,
+    "durationMs": 4,
+    "createdAt": "2026-03-01T02:48:06.068Z"
+  },
+  {
+    "id": "7be9c0de32f6c925",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__daily",
+    "input": {
+      "toolCallId": "call_9ce8709fce894f1ca303acf7"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:48:07.538Z"
+  },
+  {
+    "id": "bfae7e01a23d5a37",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__daily",
+    "input": null,
+    "output": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount\n300750.SZ,20260227,347.12,348.94,342.01,342.01,346.0,-3.99,-1.1532,254466.2,8775054.149\n300750.SZ,20260226,356.05,358.2,343.5,346.0,362.18,-16.18,-4.4674,435413.81,15108143.01\n300750.SZ,20260225,363.69,366.6,360.1,362.18,361.95,0.23,0.0635,187166.39,6802110.619\n300750.SZ,20260224,372.64,373.5,361.95,361.95,365.34,-3.39,-0.9279,226951.31,8316534.693\n300750.SZ,20260213,375.61,377.0,365.01,365.34,375.87,-10.53,-2.8015,223145.32,8229700.941\n300750.SZ,20260212,370.0,377.88,368.03,375.87,368.0,7.87,2.1386,277545.8,10410892.196\n300750.SZ,20260211,366.9,370.99,364.5,368.0,364.97,3.03,0.8302,196534.59,7239804.071\n300750.SZ,20260210,365.17,370.8,364.0,364.97,368.82,-3.85,-1.0439,185634.99,6798020.174\n300750.SZ,20260209,370.5,372.5,362.6,368.82,369.11,-0.29,-0.0786,274486.3,10080946.319\n300750.SZ,20260206,359.32,372.88,358.01,369.11,362.94,6.17,1.7,393726.18,14514523.059\n300750.SZ,20260205,365.77,366.75,356.02,362.94,365.03,-2.09,-0.5726,284271.57,10268243.283\n300750.SZ,20260204,350.96,366.65,347.51,365.03,347.91,17.12,4.9208,485316.85,17369398.062\n300750.SZ,20260203,349.0,352.8,343.5,347.91,348.98,-1.07,-0.3066,265163.25,9220045.792\n300750.SZ,20260202,357.0,357.99,344.13,348.98,350.0,-1.02,-0.2914,391917.47,13766144.458\n300750.SZ,20260130,348.4,353.76,344.1,350.0,341.89,8.11,2.3721,486501.15,17048600.0\n300750.SZ,20260129,340.5,345.16,338.16,341.89,339.99,1.9,0.5588,338444.19,11569006.794\n",
+    "isError": false,
+    "durationMs": 191,
+    "createdAt": "2026-03-01T02:48:07.729Z"
+  },
+  {
+    "id": "8f24d42b95434821",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__weekly",
+    "input": {
+      "toolCallId": "call_17021b40432b47a68fcc5b30"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:48:07.903Z"
+  },
+  {
+    "id": "3cf89b93594e7507",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__weekly",
+    "input": null,
+    "output": "ts_code,trade_date,close,open,high,low,pre_close,change,pct_chg,vol,amount\n300750.SZ,20260227,342.01,372.64,373.5,342.01,365.34,-23.33,-0.0639,110399771.0,39001842470.63\n300750.SZ,20260213,365.34,370.5,377.88,362.6,369.11,-3.77,-0.0102,115734700.0,42759363701.6\n300750.SZ,20260206,369.11,357.0,372.88,343.5,350.0,19.11,0.0546,182039532.0,65138354653.5\n300750.SZ,20260130,350.0,352.02,353.76,333.01,347.0,3.0,0.0086,194388976.0,66678330644.7\n",
+    "isError": false,
+    "durationMs": 163,
+    "createdAt": "2026-03-01T02:48:08.066Z"
+  },
+  {
+    "id": "b136f00e683ea6a4",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__stock_basic",
+    "input": {
+      "toolCallId": "call_bad708957fb74e1288c567e9"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:48:18.392Z"
+  },
+  {
+    "id": "1a7d41cdffefe241",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__today",
+    "input": {
+      "toolCallId": "call_73fe4cdc2dc44017a45003c0"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:48:18.394Z"
+  },
+  {
+    "id": "702a292318f219bb",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__stock_basic",
+    "input": null,
+    "output": "ts_code,symbol,name,area,industry,cnspell,market,list_date,act_name,act_ent_type,fullname,enname,exchange,curr_type,list_status,delist_date,is_hs\n300750.SZ,300750,宁德时代,福建,电气设备,NDSD,创业板,20180611,曾毓群,外资,宁德时代新能源科技股份有限公司,\"Contemporary Amperex Technology Co., Ltd.\",SZSE,CNY,L,,S\n",
+    "isError": false,
+    "durationMs": 43,
+    "createdAt": "2026-03-01T02:48:18.434Z"
+  },
+  {
+    "id": "3d457b1785a437f9",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__today",
+    "input": null,
+    "output": "20260301",
+    "isError": false,
+    "durationMs": 41,
+    "createdAt": "2026-03-01T02:48:18.435Z"
+  },
+  {
+    "id": "3bce7b024e4fa942",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__daily",
+    "input": {
+      "toolCallId": "call_20fafa88a2814aedb73bb76f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:48:20.104Z"
+  },
+  {
+    "id": "338f87d062053b78",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__daily",
+    "input": null,
+    "output": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount\n300750.SZ,20260227,347.12,348.94,342.01,342.01,346.0,-3.99,-1.1532,254466.2,8775054.149\n300750.SZ,20260226,356.05,358.2,343.5,346.0,362.18,-16.18,-4.4674,435413.81,15108143.01\n300750.SZ,20260225,363.69,366.6,360.1,362.18,361.95,0.23,0.0635,187166.39,6802110.619\n300750.SZ,20260224,372.64,373.5,361.95,361.95,365.34,-3.39,-0.9279,226951.31,8316534.693\n300750.SZ,20260213,375.61,377.0,365.01,365.34,375.87,-10.53,-2.8015,223145.32,8229700.941\n300750.SZ,20260212,370.0,377.88,368.03,375.87,368.0,7.87,2.1386,277545.8,10410892.196\n300750.SZ,20260211,366.9,370.99,364.5,368.0,364.97,3.03,0.8302,196534.59,7239804.071\n300750.SZ,20260210,365.17,370.8,364.0,364.97,368.82,-3.85,-1.0439,185634.99,6798020.174\n300750.SZ,20260209,370.5,372.5,362.6,368.82,369.11,-0.29,-0.0786,274486.3,10080946.319\n300750.SZ,20260206,359.32,372.88,358.01,369.11,362.94,6.17,1.7,393726.18,14514523.059\n300750.SZ,20260205,365.77,366.75,356.02,362.94,365.03,-2.09,-0.5726,284271.57,10268243.283\n300750.SZ,20260204,350.96,366.65,347.51,365.03,347.91,17.12,4.9208,485316.85,17369398.062\n300750.SZ,20260203,349.0,352.8,343.5,347.91,348.98,-1.07,-0.3066,265163.25,9220045.792\n300750.SZ,20260202,357.0,357.99,344.13,348.98,350.0,-1.02,-0.2914,391917.47,13766144.458\n300750.SZ,20260130,348.4,353.76,344.1,350.0,341.89,8.11,2.3721,486501.15,17048600.0\n300750.SZ,20260129,340.5,345.16,338.16,341.89,339.99,1.9,0.5588,338444.19,11569006.794\n300750.SZ,20260128,337.88,344.0,333.01,339.99,339.4,0.59,0.1738,463081.71,15638344.009\n300750.SZ,20260127,344.89,344.9,334.02,339.4,342.05,-2.65,-0.7747,322948.85,10953698.562\n300750.SZ,20260126,352.02,352.55,341.21,342.05,347.0,-4.95,-1.4265,332913.86,11468681.279\n300750.SZ,20260123,348.01,350.0,343.25,347.0,345.8,1.2,0.347,339761.27,11775914.386\n300750.SZ,20260122,351.03,353.73,339.5,345.8,349.81,-4.01,-1.1463,459948.18,15851213.229\n300750.SZ,20260121,351.94,357.69,349.0,349.81,349.6,0.21,0.0601,393935.73,13919426.40",
+    "isError": false,
+    "durationMs": 196,
+    "createdAt": "2026-03-01T02:48:20.300Z"
+  },
+  {
+    "id": "bc6e4abfb24e01f9",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__plot_daily_candlestick_chart",
+    "input": {
+      "toolCallId": "call_673197d5f28d4258a4c6e62d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:48:28.827Z"
+  },
+  {
+    "id": "48f328564f56baa7",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__plot_daily_candlestick_chart",
+    "input": null,
+    "output": "/tmp/tmphwz3u68z.png",
+    "isError": false,
+    "durationMs": 379,
+    "createdAt": "2026-03-01T02:48:29.206Z"
+  },
+  {
+    "id": "c5c7b2c3aa421bc6",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__weekly",
+    "input": {
+      "toolCallId": "call_a8c15d92b67243ffa9f43ab0"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:48:30.457Z"
+  },
+  {
+    "id": "c90c68ae5998ff15",
+    "type": "tool_call",
+    "taskId": "816f198ef2bd0467",
+    "subtaskId": "3f79a3afbd6859a4",
+    "employeeId": "0bd604a16355fe8b",
+    "toolName": "tushare_mcp_001__weekly",
+    "input": null,
+    "output": "ts_code,trade_date,close,open,high,low,pre_close,change,pct_chg,vol,amount\n300750.SZ,20260227,342.01,372.64,373.5,342.01,365.34,-23.33,-0.0639,110399771.0,39001842470.63\n300750.SZ,20260213,365.34,370.5,377.88,362.6,369.11,-3.77,-0.0102,115734700.0,42759363701.6\n300750.SZ,20260206,369.11,357.0,372.88,343.5,350.0,19.11,0.0546,182039532.0,65138354653.5\n300750.SZ,20260130,350.0,352.02,353.76,333.01,347.0,3.0,0.0086,194388976.0,66678330644.7\n",
+    "isError": false,
+    "durationMs": 157,
+    "createdAt": "2026-03-01T02:48:30.614Z"
+  }
+]

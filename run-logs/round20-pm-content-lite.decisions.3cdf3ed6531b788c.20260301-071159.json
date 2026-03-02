@@ -1,0 +1,45 @@
+[
+  {
+    "id": "8a91ea32087d2732",
+    "type": "decision",
+    "taskId": "3cdf3ed6531b788c",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask",
+    "input": {
+      "subtaskId": "531d7d5eca685b55",
+      "employeeId": "e57bc7828cc08d74",
+      "instruction": "请为企业的AI助手产品创作以下发布内容：\n\n1. **发布短文（1篇）**：介绍企业AI助手的核心价值、主要功能和应用场景\n   - 字数：800-1000字\n   - 目标受众：企业客户和合作伙伴\n   - 风格要求：体现专业性、可信度和产品亮点\n   - 内容要点：突出AI助手的差异化价值（提升效率、降低成本、增强决策等），适当使用数字和案例增强说服力，语言专业但不晦涩\n\n2. **社交媒体文案（2条）**：适合在微信公众号、微博、LinkedIn等平台发布\n   - 第1条：侧重产品亮点介绍，突出AI助手的核心优势，约150-200字\n   - 第2条：侧重应用场景展示，结合具体业务场景说明价值，约150-200字\n   - 风格要求：简洁有力，便于传播\n\n请确保所有内容符合企业级读者需求，逻辑清晰，具有说服力。"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:15:37.652Z"
+  },
+  {
+    "id": "71945dd77f293dc4",
+    "type": "decision",
+    "taskId": "3cdf3ed6531b788c",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask_result",
+    "input": null,
+    "output": "[已派发] 子任务「企业AI助手发布内容创作」(531d7d5eca685b55) 已分配给员工 e57bc7828cc08d74 开始执行。请继续派发其他可执行的子任务，全部派发后调用 wait_subtasks 等待结果。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:15:37.655Z"
+  },
+  {
+    "id": "c2abdb196a0ec218",
+    "type": "decision",
+    "taskId": "3cdf3ed6531b788c",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks",
+    "input": {},
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:15:38.371Z"
+  }
+]

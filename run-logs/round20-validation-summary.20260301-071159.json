@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-03-01T07:11:59.392454Z",
+  "runLabel": "round20-20260301-071159",
+  "sessions": [
+    {
+      "label": "round20-pm-stock-compare",
+      "sessionId": "round20-stock-20260301-071159",
+      "evidence": "run-logs/round20-pm-stock-compare.audit.20260301-071159.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round20-pm-ai-trend-lite",
+      "sessionId": "round20-ai-20260301-071159",
+      "evidence": "run-logs/round20-pm-ai-trend-lite.audit.20260301-071159.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round20-pm-customer-memory-lite",
+      "sessionId": "round20-cs-20260301-071159",
+      "evidence": "run-logs/round20-pm-customer-memory-lite.audit.20260301-071159.json",
+      "allCompleted": true,
+      "allChecksPassed": false
+    },
+    {
+      "label": "round20-pm-content-lite",
+      "sessionId": "round20-content-20260301-071159",
+      "evidence": "run-logs/round20-pm-content-lite.audit.20260301-071159.json",
+      "allCompleted": false,
+      "allChecksPassed": false
+    }
+  ]
+}

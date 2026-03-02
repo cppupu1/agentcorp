@@ -1,0 +1,2337 @@
+[
+  {
+    "event": "delta",
+    "data": {
+      "seq": 0,
+      "text": "好的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 1,
+      "text": "！"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 2,
+      "text": "我来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 3,
+      "text": "帮"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 4,
+      "text": "您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 5,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 6,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 7,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 8,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 9,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 10,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 11,
+      "text": "首先"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 12,
+      "text": "让我"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 13,
+      "text": "查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 14,
+      "text": "一下"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 15,
+      "text": "可"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 16,
+      "text": "用的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 17,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 18,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 19,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 20,
+      "text": "模型"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 21,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 22,
+      "toolCallId": "call_6e1bab91a84b4b5b872719bb",
+      "toolName": "list_templates",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 23,
+      "toolCallId": "call_6e1bab91a84b4b5b872719bb",
+      "toolName": "list_templates",
+      "result": "[{\"id\":\"software-dev\",\"name\":\"软件开发\",\"description\":\"标准软件开发团队，包含项目经理、前端开发、后端开发和测试工程师，适用于Web应用、移动端等软件项目的全流程开发。\",\"icon\":\"💻\",\"employeeCount\":4},{\"id\":\"content-creation\",\"name\":\"内容创作\",\"description\":\"专业内容创作团队，包含项目经理、文案策划和视觉设计师，适用于品牌营销、自媒体运营、广告创意等内容生产场景。\",\"icon\":\"✍️\",\"employeeCount\":3},{\"id\":\"data-analysis\",\"name\":\"数据分析\",\"description\":\"专业数据分析团队，包含项目经理、数据分析师和数据工程师，适用于业务数据洞察、用户行为分析、数据驱动决策等场景。\",\"icon\":\"📊\",\"employeeCount\":3},{\"id\":\"research-report\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研",
+      "isError": false
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 24,
+      "toolCallId": "call_d5508854d2214752b93f1857",
+      "toolName": "list_models",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 25,
+      "toolCallId": "call_d5508854d2214752b93f1857",
+      "toolName": "list_models",
+      "result": "[{\"id\":\"8f1970aae082a631\",\"name\":\"GLM-4.7\",\"modelId\":\"glm-4.7\"},{\"id\":\"b9df4501c7f6f9a6\",\"name\":\"MiniMax-M2.5\",\"modelId\":\"MiniMax-M2.5\"}]",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 26,
+      "usage": {
+        "inputTokens": 1056,
+        "outputTokens": 125
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 27,
+      "text": "完美"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 28,
+      "text": "！"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 29,
+      "text": "我"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 30,
+      "text": "找到了"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 31,
+      "text": "最适合"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 32,
+      "text": "的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 33,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 34,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 35,
+      "text": "现在"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 36,
+      "text": "我来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 37,
+      "text": "为您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 38,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 39,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 40,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 41,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 42,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 43,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 44,
+      "toolCallId": "call_4d5ee6e2dff2480e9e9fd297",
+      "toolName": "quick_create_task",
+      "args": {
+        "templateId": "research-report",
+        "modelId": "8f1970aae082a631",
+        "title": "AI Agent行业趋势管理简报",
+        "description": "面向管理层撰写一份AI Agent行业趋势简报，内容应包括：\n\n1. 行业现状概述：AI Agent技术发展水平、主要应用场景和市场规模\n2. 核心趋势分析：\n   - 技术趋势（多智能体协作、自主决策能力提升等）\n   - 商业趋势（企业级应用、行业垂直化等）\n   - 用户趋势（接受度、使用习惯变化等）\n3. 竞争格局分析：主要玩家、产品特点、竞争优势\n4. 商业机会与风险：行业发展机遇、潜在挑战和风险\n5. 战略建议：针对管理层的洞察和行动建议\n\n要求：\n- 内容简洁精炼，适合管理层快速阅读\n- 数据准确，观点鲜明\n- 结构清晰，重点突出\n- 预计篇幅：2000-3000字",
+        "mode": "auto",
+        "teamName": "AI Agent趋势研究团队"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 45,
+      "toolCallId": "call_4d5ee6e2dff2480e9e9fd297",
+      "toolName": "quick_create_task",
+      "result": "{\"success\":true,\"taskId\":\"1de7bbdf843b6387\",\"teamId\":\"32054ab82b670e93\",\"title\":\"AI Agent行业趋势管理简报\"}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 46,
+      "usage": {
+        "inputTokens": 1470,
+        "outputTokens": 377
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 47,
+      "toolCallId": "call_256c588e164449c2afe62027",
+      "toolName": "list_tools",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 48,
+      "toolCallId": "call_256c588e164449c2afe62027",
+      "toolName": "list_tools",
+      "result": "[{\"id\":\"fc5f4c5bf43702d4\",\"name\":\"当前时间\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"740410911af25b5b\",\"name\":\"计算器\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"b931c6ca2b7ad17b\",\"name\":\"文件读取\",\"description\":\"文件系统访问工具，支持读取、列出目录等操作\",\"groupName\":null},{\"id\":\"a6d0277e32709254\",\"name\":\"搏查\",\"description\":\"搏查搜索服务\",\"groupName\":\"互联网\"},{\"id\":\"1791ada993a23a56\",\"name\":\"Web Fetch\",\"description\":\"抓取网页内容并转换为 Markdown，让 AI 能够阅读和处理网页信息。支持自定义 User-Agent 和代理设置。\",\"groupNam",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 49,
+      "usage": {
+        "inputTokens": 1774,
+        "outputTokens": 45
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 50,
+      "toolCallId": "call_4c3e96df3dc142af9787a1b8",
+      "toolName": "assign_team_tools",
+      "args": {
+        "teamId": "32054ab82b670e93",
+        "toolIds": [
+          "a6d0277e32709254",
+          "1791ada993a23a56",
+          "ef64b3f65f2ab2a2",
+          "01a07c2a149edad0"
+        ]
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 51,
+      "toolCallId": "call_4c3e96df3dc142af9787a1b8",
+      "toolName": "assign_team_tools",
+      "result": "{\"success\":true,\"count\":4}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 52,
+      "usage": {
+        "inputTokens": 2198,
+        "outputTokens": 240
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 53,
+      "toolCallId": "call_b219a7e8ed0c4c989d6e33c2",
+      "toolName": "start_task",
+      "args": {
+        "taskId": "1de7bbdf843b6387"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 54,
+      "toolCallId": "call_b219a7e8ed0c4c989d6e33c2",
+      "toolName": "start_task",
+      "result": "{\"success\":true,\"taskId\":\"1de7bbdf843b6387\",\"message\":\"任务已启动\"}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 55,
+      "usage": {
+        "inputTokens": 2288,
+        "outputTokens": 31
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 56,
+      "text": "✅"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 57,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 58,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 59,
+      "text": "已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 60,
+      "text": "成功"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 61,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 62,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 63,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 64,
+      "text": "！"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 65,
+      "text": "**\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 66,
+      "text": "以下是"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 67,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 68,
+      "text": "详情"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 69,
+      "text": "：\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 70,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 71,
+      "text": "📋"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 72,
+      "text": " 任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 73,
+      "text": "信息"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 74,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 75,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 76,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 77,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 78,
+      "text": "标题"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 79,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 80,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 81,
+      "text": "AI"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 82,
+      "text": " Agent"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 83,
+      "text": "行业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 84,
+      "text": "趋势"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 85,
+      "text": "管理"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 86,
+      "text": "简"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 87,
+      "text": "报"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 88,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 89,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 90,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 91,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 92,
+      "text": "ID"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 93,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 94,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 95,
+      "text": "1"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 96,
+      "text": "de"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 97,
+      "text": "7"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 98,
+      "text": "bb"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 99,
+      "text": "df"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 100,
+      "text": "8"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 101,
+      "text": "43"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 102,
+      "text": "b"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 103,
+      "text": "6"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 104,
+      "text": "38"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 105,
+      "text": "7"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 106,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 107,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 108,
+      "text": " **"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 109,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 110,
+      "text": "名称"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 111,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 112,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 113,
+      "text": "AI"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 114,
+      "text": " Agent"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 115,
+      "text": "趋势"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 116,
+      "text": "研究"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 117,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 118,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 119,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 120,
+      "text": "👥"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 121,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 122,
+      "text": "团"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 123,
+      "text": "队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 124,
+      "text": "配置"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 125,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 126,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 127,
+      "text": " 使用"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 128,
+      "text": "了"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 129,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 130,
+      "text": "研究报告"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 131,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 132,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 133,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 134,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 135,
+      "text": "包含"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 136,
+      "text": "项目经理"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 137,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 138,
+      "text": "研究员"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 139,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 140,
+      "text": "撰稿"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 141,
+      "text": "人"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 142,
+      "text": "）\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 143,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 144,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 145,
+      "text": "模"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 146,
+      "text": "型"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 147,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 148,
+      "text": "GL"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 149,
+      "text": "M"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 150,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 151,
+      "text": "4"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 152,
+      "text": "."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 153,
+      "text": "7"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 154,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 155,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 156,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 157,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 158,
+      "text": "模式"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 159,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 160,
+      "text": "自动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 161,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 162,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 163,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 164,
+      "text": "🛠"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 165,
+      "text": "️"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 166,
+      "text": " 已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 167,
+      "text": "分配"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 168,
+      "text": "工具"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 169,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 170,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 171,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 172,
+      "text": "搏"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 173,
+      "text": "查"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 174,
+      "text": "搜索"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 175,
+      "text": "服务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 176,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 177,
+      "text": "用于"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 178,
+      "text": "搜集"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 179,
+      "text": "行业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 180,
+      "text": "资料"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 181,
+      "text": "和数据"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 182,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 183,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 184,
+      "text": " Web"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 185,
+      "text": " Fetch"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 186,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 187,
+      "text": "用于"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 188,
+      "text": "抓"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 189,
+      "text": "取"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 190,
+      "text": "和分析"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 191,
+      "text": "网页"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 192,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 193,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 194,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 195,
+      "text": " Memory"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 196,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 197,
+      "text": "用于"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 198,
+      "text": "记录"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 199,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 200,
+      "text": "整理"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 201,
+      "text": "研究"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 202,
+      "text": "过程中的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 203,
+      "text": "关键"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 204,
+      "text": "信息"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 205,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 206,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 207,
+      "text": " File"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 208,
+      "text": "system"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 209,
+      "text": "："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 210,
+      "text": "用于"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 211,
+      "text": "报告"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 212,
+      "text": "的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 213,
+      "text": "撰写"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 214,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 215,
+      "text": "文件"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 216,
+      "text": "管理"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 217,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 218,
+      "text": "**"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 219,
+      "text": "📄"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 220,
+      "text": " 任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 221,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 222,
+      "text": "**\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 223,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 224,
+      "text": "将"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 225,
+      "text": "为您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 226,
+      "text": "撰写"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 227,
+      "text": "一份"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 228,
+      "text": "面向"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 229,
+      "text": "管理"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 230,
+      "text": "层的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 231,
+      "text": "AI"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 232,
+      "text": " Agent"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 233,
+      "text": "行业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 234,
+      "text": "趋势"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 235,
+      "text": "简"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 236,
+      "text": "报"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 237,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 238,
+      "text": "涵盖"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 239,
+      "text": "：\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 240,
+      "text": "1"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 241,
+      "text": "."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 242,
+      "text": " 行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 243,
+      "text": "业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 244,
+      "text": "现状"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 245,
+      "text": "概述"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 246,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 247,
+      "text": "2"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 248,
+      "text": "."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 249,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 250,
+      "text": "核"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 251,
+      "text": "心"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 252,
+      "text": "趋势"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 253,
+      "text": "分析"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 254,
+      "text": "（"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 255,
+      "text": "技术"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 256,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 257,
+      "text": "商业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 258,
+      "text": "、"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 259,
+      "text": "用户"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 260,
+      "text": "）\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 261,
+      "text": "3"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 262,
+      "text": "."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 263,
+      "text": " "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 264,
+      "text": "竞"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 265,
+      "text": "争"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 266,
+      "text": "格局"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 267,
+      "text": "分析"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 268,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 269,
+      "text": "4"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 270,
+      "text": "."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 271,
+      "text": " 商"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 272,
+      "text": "业"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 273,
+      "text": "机会"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 274,
+      "text": "与"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 275,
+      "text": "风险"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 276,
+      "text": "\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 277,
+      "text": "5"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 278,
+      "text": "."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 279,
+      "text": " 战"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 280,
+      "text": "略"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 281,
+      "text": "建议"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 282,
+      "text": "\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 283,
+      "text": "预计"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 284,
+      "text": "篇幅"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 285,
+      "text": "200"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 286,
+      "text": "0"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 287,
+      "text": "-"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 288,
+      "text": "300"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 289,
+      "text": "0"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 290,
+      "text": "字"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 291,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 292,
+      "text": "内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 293,
+      "text": "简洁"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 294,
+      "text": "精"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 295,
+      "text": "炼"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 296,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 297,
+      "text": "适合"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 298,
+      "text": "管理层"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 299,
+      "text": "快速"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 300,
+      "text": "阅读"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 301,
+      "text": "。\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 302,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 303,
+      "text": "现在"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 304,
+      "text": "已经开始"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 305,
+      "text": "自动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 306,
+      "text": "执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 307,
+      "text": "，"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 308,
+      "text": "团队成员"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 309,
+      "text": "将"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 310,
+      "text": "协作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 311,
+      "text": "完成"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 312,
+      "text": "这份"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 313,
+      "text": "简"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 314,
+      "text": "报"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 315,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 316,
+      "text": "您可以"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 317,
+      "text": "随时"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 318,
+      "text": "关注"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 319,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 320,
+      "text": "进展"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 321,
+      "text": "！"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 322,
+      "usage": {
+        "inputTokens": 2338,
+        "outputTokens": 298
+      }
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 323,
+      "text": "好的！我来帮您创建并启动这个任务。首先让我查看一下可用的场景模板和模型。完美！我找到了最适合的模板。现在我来为您创建并启动这个任务。✅ **任务已成功创建并启动！**\n\n以下是任务详情：\n\n**📋 任务信息**\n- **任务标题**：AI Agent行业趋势管理简报\n- **任务ID**：1de7bbdf843b6387\n- **团队名称**：AI Agent趋势研究团队\n\n**👥 团队配置**\n- 使用了**研究报告**场景模板（包含项目经理、研究员、撰稿人）\n- 模型：GLM-4.7\n- 执行模式：自动执行\n\n**🛠️ 已分配工具**\n- 搏查搜索服务：用于搜集行业资料和数据\n- Web Fetch：用于抓取和分析网页内容\n- Memory：用于记录和整理研究过程中的关键信息\n- Filesystem：用于报告的撰写和文件管理\n\n**📄 任务内容**\n团队将为您撰写一份面向管理层的AI Agent行业趋势简报，涵盖：\n1. 行业现状概述\n2. 核心趋势分析（技术、商业、用户）\n3. 竞争格局分析\n4. 商业机会与风险\n5. 战略建议\n\n预计篇幅2000-3000字，内容简洁精炼，适合管理层快速阅读。\n\n任务现在已经开始自动执行，团队成员将协作完成这份简报。您可以随时关注任务进展！",
+      "messageId": "b963e9d3cdbeeeb4",
+      "finishReason": "stop"
+    }
+  }
+]

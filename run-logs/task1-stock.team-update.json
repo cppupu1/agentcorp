@@ -1,0 +1,46 @@
+{
+  "data": {
+    "id": "af6e2e3073351dc8",
+    "name": "数据分析",
+    "description": "专业数据分析团队，包含项目经理、数据分析师和数据工程师，适用于业务数据洞察、用户行为分析、数据驱动决策等场景。",
+    "scenario": null,
+    "pmEmployeeId": "98318f59f75497bf",
+    "pmName": "数据项目经理",
+    "pmAvatar": null,
+    "collaborationMode": "free",
+    "createdAt": "2026-02-28T15:06:14.637Z",
+    "updatedAt": "2026-02-28T15:07:01.652Z",
+    "members": [
+      {
+        "id": "11481a210e1b600e",
+        "name": "数据工程师",
+        "avatar": null,
+        "role": "member"
+      },
+      {
+        "id": "598866a6c96e3a2e",
+        "name": "数据分析师",
+        "avatar": null,
+        "role": "member"
+      }
+    ],
+    "tools": [
+      {
+        "id": "01a07c2a149edad0",
+        "name": "Filesystem"
+      },
+      {
+        "id": "1791ada993a23a56",
+        "name": "Web Fetch"
+      },
+      {
+        "id": "a6d0277e32709254",
+        "name": "搏查"
+      },
+      {
+        "id": "tushare_mcp_001",
+        "name": "Tushare Pro 金融数据"
+      }
+    ]
+  }
+}

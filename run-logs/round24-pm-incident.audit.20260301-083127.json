@@ -1,0 +1,76 @@
+{
+  "label": "round24-pm-incident",
+  "sessionId": "round24-incident-20260301-083127",
+  "pmChatDurationMs": 31866,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "61578f24780081f7"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 31866
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 3
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "61578f24780081f7",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 6146,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n支付接口故障复盘分析任务已完成。运维工程师模拟了一次P1级支付接口故障场景（第三方支付API变更导致全平台支付功能不可用144分钟），从技术原因、流程原因、人为因素三个维度进行了深入根因分析，详细记录了故障应急响应和止损时间线，并制定了技术、流程、监控三个层面的预防清单。报告内容精炼、条理清晰、包含可操作的具体改进措施和后续行动项。"
+    }
+  ]
+}

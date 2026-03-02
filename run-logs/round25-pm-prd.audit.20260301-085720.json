@@ -1,0 +1,81 @@
+{
+  "label": "round25-pm-prd",
+  "sessionId": "round25-prd-20260301-085720",
+  "pmChatDurationMs": 51435,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "a033e875cbd30483"
+  ],
+  "autoAssign": {
+    "recommended": 1,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 51435
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 1,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "a033e875cbd30483",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 24075,
+      "tools": [
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 10,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成企业知识库检索功能PRD提纲的输出任务。后端工程师成功交付了包含四个核心部分的完整PRD提纲：1）目标（业务目标和技术目标，含效率提升、智能检索等指标）；2）用户故事（覆盖普通员工、管理者、知识管理员三个角色的9个使用场景）；3）验收标准（涵盖检索准确性、响应时间、并发支持、结果质量等6个维度的量化指标）；4）风险识别（12项技术、业务、管理风险及缓解措施）。提纲结构清晰、内容完整，已保存至知识库，可作为后续设计和开发工作的基础。"
+    }
+  ]
+}

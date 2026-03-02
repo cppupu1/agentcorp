@@ -1,0 +1,210 @@
+{
+  "round": "round52-minimax-e2e-20260302064156",
+  "model": "MiniMax-M2.5",
+  "modelId": "b9df4501c7f6f9a6",
+  "startedAt": "2026-03-02T06:41:56.845Z",
+  "scenarios": [
+    {
+      "key": "stock_compare",
+      "sessionId": "round52-minimax-e2e-20260302064156-stock_compare",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "expect_stock_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "31ab88fa83c4ac42",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "tushare_mcp_001__daily",
+          "tushare_mcp_001__plot_daily_candlestick_chart"
+        ],
+        "stock": true,
+        "search": false,
+        "memory": false,
+        "fs": false
+      },
+      "durationMs": 144353
+    },
+    {
+      "key": "ai_industry_brief",
+      "sessionId": "round52-minimax-e2e-20260302064156-ai_industry_brief",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": false,
+          "status": "executing"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": false
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "expect_search_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": false,
+      "taskId": "d04fc249f018fe9a",
+      "status": "executing",
+      "tools": {
+        "names": [
+          "a6d0277e32709254__bocha_ai_search",
+          "a6d0277e32709254__bocha_web_search"
+        ],
+        "stock": false,
+        "search": true,
+        "memory": false,
+        "fs": false
+      },
+      "durationMs": 456193
+    },
+    {
+      "key": "customer_memory",
+      "sessionId": "round52-minimax-e2e-20260302064156-customer_memory",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "expect_memory_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "a31184054444c39d",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "ef64b3f65f2ab2a2__search_nodes",
+          "ef64b3f65f2ab2a2__read_graph"
+        ],
+        "stock": false,
+        "search": false,
+        "memory": true,
+        "fs": false
+      },
+      "durationMs": 106678
+    },
+    {
+      "key": "repo_onboarding",
+      "sessionId": "round52-minimax-e2e-20260302064156-repo_onboarding",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "expect_fs_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "39eb26f6760aa586",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "b931c6ca2b7ad17b__list_allowed_directories",
+          "b931c6ca2b7ad17b__directory_tree",
+          "b931c6ca2b7ad17b__list_directory",
+          "b931c6ca2b7ad17b__read_multiple_files",
+          "b931c6ca2b7ad17b__read_text_file"
+        ],
+        "stock": false,
+        "search": false,
+        "memory": false,
+        "fs": true
+      },
+      "durationMs": 134996
+    },
+    {
+      "key": "translation_notice",
+      "sessionId": "round52-minimax-e2e-20260302064156-translation_notice",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": false
+        }
+      ],
+      "ok": false,
+      "taskId": null,
+      "error": "PM未返回taskId: []"
+    }
+  ],
+  "allPassed": false,
+  "finishedAt": "2026-03-02T06:57:23.914Z"
+}

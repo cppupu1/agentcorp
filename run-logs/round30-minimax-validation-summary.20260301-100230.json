@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-03-01T10:02:30.896718Z",
+  "runLabel": "round30-mini-20260301-100230",
+  "sessions": [
+    {
+      "label": "round30-mini-stock",
+      "sessionId": "round30-mini-stock-20260301-100230",
+      "evidence": "run-logs/round30-mini-stock.audit.20260301-100230.json",
+      "allCompleted": true,
+      "allChecksPassed": false
+    },
+    {
+      "label": "round30-mini-ai-trend",
+      "sessionId": "round30-mini-ai-20260301-100230",
+      "evidence": "run-logs/round30-mini-ai-trend.audit.20260301-100230.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round30-mini-memory",
+      "sessionId": "round30-mini-memory-20260301-100230",
+      "evidence": "run-logs/round30-mini-memory.audit.20260301-100230.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round30-mini-content",
+      "sessionId": "round30-mini-content-20260301-100230",
+      "evidence": "run-logs/round30-mini-content.audit.20260301-100230.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round30-mini-translation-with-source",
+      "sessionId": "round30-mini-trans-src-20260301-100230",
+      "evidence": "run-logs/round30-mini-translation-with-source.audit.20260301-100230.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round30-mini-translation-no-source",
+      "sessionId": "round30-mini-trans-nosrc-20260301-100230",
+      "evidence": "run-logs/round30-mini-translation-no-source.audit.20260301-100230.json",
+      "allCompleted": false,
+      "allChecksPassed": false
+    }
+  ]
+}

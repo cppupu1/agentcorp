@@ -1,0 +1,34 @@
+{
+  "validated_tasks": [
+    {
+      "label": "round3-stock-chat-r1",
+      "taskId": "b9a248918ebccc8f",
+      "status": "completed",
+      "evidence": "run-logs/round3-stock-chat-r1.audit.20260301-001420.json"
+    },
+    {
+      "label": "round3-ai-trend-autostart-r1",
+      "taskId": "b62484cabde7eaf9",
+      "status": "completed",
+      "evidence": "run-logs/round3-ai-trend-autostart-r1.audit.20260301-001420.json"
+    },
+    {
+      "label": "round3-smoke-autostart-r2",
+      "taskId": "964dc993dc6086ff",
+      "status": "completed",
+      "evidence": "run-logs/round3-smoke-autostart-r2.audit.20260301-001522.json"
+    },
+    {
+      "label": "round4-stock-explicit-tushare",
+      "taskId": "0165b7038a3b4272",
+      "status": "completed",
+      "evidence": "run-logs/round4-stock-explicit-tushare.audit.20260301-003100.json"
+    },
+    {
+      "label": "round4-ai-source-quality-check",
+      "taskId": "a88cf30c0cc7b217",
+      "status": "completed",
+      "evidence": "run-logs/round4-ai-source-quality-check.audit.20260301-003700.json"
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 import type { CollaborationStrategy, CollaborationContext } from './types.js';
-import { runAgentOnce } from './utils.js';
+import { runAgentWithTools } from './utils.js';
 import { completeTask, failTask } from '../task-executor.js';
 import { sseManager } from '../sse-manager.js';
+import { recordEvidence } from '../evidence.js';
 
 export class VoteStrategy implements CollaborationStrategy {
   async execute(ctx: CollaborationContext): Promise<void> {
-    const { taskId, brief, teamConfig, signal } = ctx;
+    const { taskId, brief, teamConfig, signal, teamToolIds } = ctx;
 
     const memberIds: string[] = (teamConfig.members ?? []).map((m) => m.id);
     const pmId = teamConfig.pm?.id;
@@ -24,7 +25,10 @@ export class VoteStrategy implements CollaborationStrategy {
       const member = (teamConfig.members ?? []).find((m) => m.id === memberId);
       const prompt = `请独立分析以下任务并给出你的方案。在回答的最后一行，用 【方案标签: XXX】 的格式给出一个简短的方案标签（如"方案A"、"重构方案"等），以便投票统计。\n\n${briefText}\n\n你的角色: ${member?.taskPrompt || '团队成员'}`;
       try {
-        const result = await runAgentOnce(memberId, prompt, signal);
+        const result = await runAgentWithTools({
+          employeeId: memberId, prompt, signal, teamToolIds, taskId,
+          phaseLabel: 'voting', maxSteps: 20,
+        });
         // Extract vote label from last line
         const labelMatch = result.match(/【方案标签:\s*(.+?)】/);
         const label = labelMatch ? labelMatch[1].trim() : `${member?.name || memberId}的方案`;
@@ -36,6 +40,10 @@ export class VoteStrategy implements CollaborationStrategy {
 
     const votes = await Promise.all(votePromises);
     sseManager.emit(taskId, 'vote_phase', { phase: 'voting_done', count: votes.length });
+
+    for (const v of votes) {
+      recordEvidence({ taskId, type: 'output', title: `${v.name} 投票方案 (${v.label})`, content: v.solution, source: 'employee' }).catch(() => {});
+    }
 
     if (signal.aborted) { await failTask(taskId, '任务被取消'); return; }
 
@@ -49,7 +57,11 @@ export class VoteStrategy implements CollaborationStrategy {
     const tallyPrompt = `你是项目经理，以下是所有成员对任务的独立方案。请：\n1. 分析各方案的优劣\n2. 选出最佳方案（多数票优先，平票时由你决定）\n3. 基于获胜方案整合出最终交付物\n\n任务:\n${briefText}\n\n各成员方案:\n${allSolutionsText}`;
 
     try {
-      const finalResult = await runAgentOnce(pmId, tallyPrompt, signal);
+      const finalResult = await runAgentWithTools({
+        employeeId: pmId, prompt: tallyPrompt, signal, teamToolIds, taskId,
+        phaseLabel: 'tallying', maxSteps: 10,
+      });
+      recordEvidence({ taskId, type: 'decision', title: 'PM 投票统计结论', content: finalResult, source: 'pm' }).catch(() => {});
       await completeTask(taskId, '投票模式执行完成', finalResult);
     } catch (err) {
       await failTask(taskId, `PM统计投票失败: ${(err as Error).message}`);

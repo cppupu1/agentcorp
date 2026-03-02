@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { observerApi, type ObserverFinding } from '@/api/client';
+import MarkdownContent from '@/components/MarkdownContent';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/toast';
@@ -111,7 +112,7 @@ export default function ObserverPanel({ taskId }: { taskId: string }) {
                 {finding.observerName}
               </span>
             </div>
-            <p className="text-sm pl-6">{finding.description}</p>
+            <MarkdownContent content={finding.description} className="text-sm pl-6" />
             {!finding.resolution && (
               <div className="flex gap-2 pl-6">
                 <Button

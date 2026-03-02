@@ -1,0 +1,74 @@
+{
+  "label": "round23-pm-content",
+  "sessionId": "round23-content-20260301-080320",
+  "pmChatDurationMs": 22161,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "5b34a40618ff04a0"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 22161
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "5b34a40618ff04a0",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 2518,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n成功完成企业AI助手发布文案创作任务，共交付3篇内容：1篇正式发布短文（适用于官网、公众号等正式公告渠道），1条微博文案（简洁有力、适合社媒传播），1条小红书文案（生活化种草风格、贴近平台用户）。所有文案均突出AI助手的智能化、效率提升核心卖点，调性专业又不失亲和力，符合现代企业品牌形象。"
+    }
+  ]
+}

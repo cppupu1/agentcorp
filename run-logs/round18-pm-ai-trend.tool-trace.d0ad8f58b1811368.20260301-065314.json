@@ -1,0 +1,562 @@
+[
+  {
+    "id": "d5ee9c58ee2ad016",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_3ddb30aaaae44f26b5480d41"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:07.888Z"
+  },
+  {
+    "id": "ca8476f7da7bcb64",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_a831e577da554d98bd64f237"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:07.965Z"
+  },
+  {
+    "id": "849b1ba32f00e216",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_29de5c06192d4755b67f767e"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:08.311Z"
+  },
+  {
+    "id": "f2ab0f1484119d4a",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI将推新AI模型o3,2025年初亮相-icspec\nURL: https://www.icspec.com/news/article-details/2398367\nDescription: OpenAI即将推出一款名为「o3」的新AI模型,旨在加强其与Google等竞争对手的较量。 据彭博报道,o3模型在12月20日首次亮相,相较于OpenAI现有产品,它具备更先进的类似人类推理能力,并专注于解决复杂的多步骤问题。 OpenAI的CEO Sam Altman透露,他们计划在2025年1月底发布o3的简化版o3-mini,随后不久将推出完整的o3模型。 OpenAI还分享了o3在回答编码等复杂问题上的早期表现,展示了其相较于前代产品o1的优越性。\nPublished date: 2024-12-24T15:07:16+08:00\nSite name: icspec\n\nTitle: 2024人工智能专题Openai发布会梳理_ChatGPT_支持_模型\nURL: https://www.sohu.com/a/843938945_121948943\nDescription: 2024人工智能专题Openai发布会梳理 报告共计:35页 OpenAI在12月5日起连续12个工作日发布新应用或功能,推动人工智能领域发展。其推出o1完整版、Sora视频模型、o3模型提升性能,强化微调技术可定制模型,多款ai智能体升级优化用户体验,还发布多项新功能,如ChatGPT集成苹果生态、高级语音模式、Canvas协作平台等,这些对各行业影响深远。 1. 基础模型升级 -\nPublished date: 2024-12-31T17:42:00+08:00\nSite name: 搜狐\n\nTitle: OpenAI公布2025年将发布产品\nURL: https://m.d1ev.com/newsflash/258899\nDescription: 12月31日消息,OpenAI首席执行官萨姆·奥特曼(Sam Altman)31日凌晨公布了2025年即将发布的技术产品。分别是:AGI(通用人工智能)、Agents(智能体)、更好的GPT-4o升级版、更好的记忆存储、更好的上下文窗口、“Grow up mode”(成人模式)、深度研究特色功能、更好的Sora、更好的个性化定制。\nPublished date: 2024-12-31T23:08:00+08:00\nSite name: 第一电动网\n\nTitle: OpenAI公布2025年将发布的技术产品： AGI、Agents、GPT-4o升级版\nURL: https://news.sina.cn/ai/2024-12-31/detail-inecipuc2154035.d.html\nDescription: OpenAI公布2025年将发布的技术产品: AGI、Agents、GPT-4o升级版 #openai #GPT4o #openai奥特曼 #sora视频生成模型 #AGI \n大家都在看 查看完整热榜\nPublished date: 2024-12-31T19:01:24+08:00\nSite name: 新浪新闻触屏版\n\nTitle: OpenAI公布2025年将发布的技术产品\nURL: https://wap.eastmoney.com/a/202412313283852871.html\nDescription: 新京报 贝壳 财经讯(记者覃澈)12月31日,OpenAI首席执行官萨姆·奥特曼(Sam Altman)公布了2025年即将发布的技术产品。分别是:AGI(通用 人工智能 )、Agents(智能体)、更好的GPT-4o升级版、更好的记忆存储、更好的上下文窗口、“Grow up mode”(成人模式)、深度研究特色功能、更好的Sora、更好的个性化定制。 文章作者:覃澈 原标题:OpenAI公布2025年将发布的技术产品\nPublished date: 2024-12-31T20:16:00+08:00\nSite name: 手机东方财富网\n\nTitle: OpenAI 公布2025年新产品 包括AGI、Agents等agi上下文大模型人工智能openaiagents_网易订阅\nURL: https://www.163.com/dy/article/JKNOMB3U0519D45U.html\nDescription: 观点网讯:12月31日,OpenAI首席执行官Sam Altman在凌晨3点30分宣布了公司计划于2025年推出的一系列技术产品,包括通用人工智能(AGI)、智能体(Agents)、升级版的GPT-4o、改进的记忆存储功能、更大的上下文窗口、成人模式、",
+    "isError": false,
+    "durationMs": 560,
+    "createdAt": "2026-03-01T06:55:08.448Z"
+  },
+  {
+    "id": "8d2ba5359cc68ebc",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Googles 5 biggest AI innovations for 2024-AI toolset official website & AI News\nURL: https://www.diyseo.cn/news/7.html\nDescription: In 2024, Google significantly advanced artificial intelligence (AI), launching innovations that reshaped technology and user experience. Here are five of Google’s biggest AI advancements this year: 1. Gemini 2.0: Ushering in the Age of Agents In December 2024, Google launched Gemini 2.0, ushering in a new chapter in AI capabilities. This advanced model introduces agent capabilities, enabling AI to perform complex tasks autonomously and efficiently. Gemini 2.0’s multimodal reasoning enables it to seamlessly process and generate text, images, and audio, enhancing user interactions across platforms. Its integration with Google’s ecosystem, including Search, Maps, and Workspace, provides users with a unified, intuitive AI experience. 2. Veo2: Revolutionizing AI-generated video content Google’s\nPublished date: 2024-12-27T17:39:12+08:00\nSite name: www.diyseo.cn\n\nTitle: Google 的六大人工智能更新 – 2024 年综述-AI.x-AIGC专属社区-51CTO.COM\nURL: https://www.51cto.com/aigc/3522.html\nDescription: 发布于 2024-12-30 09:59 01、概述 随着2025年即将到来,Google继续稳居技术创新的前沿。2024年,Google再次推出了一系列引领潮流的创新工具,进一步推动了人工智能(AI)的应用和整合。无论是提升用户生产力、开拓创作的无限可能,还是彻底改变AI的应用方式,Google最新的技术更新都带来了许多值得关注的亮点。本文将深入探讨Google 2024年推出的几大重要更新,包括Gemini 2.0 Flash、Google AI Studio、Imagen 3和Veo 2等。 02、Gemini 2.0 Flash 2024年,Google推出的最大亮点之一便是Gemini 2.0系列模型,而Gemini 2.0 Flash是其中的首个亮相产品。这款新模型在AI能力上取得了突破,拥有更强大的即时数据处理、上下文理解和多模态能力,让AI的反应更加迅速、智能。 与前代版本相比,Gemini 2.0 Flash支持更长的上下文保留能力,使得它能够在长时间对话中生成更加连贯的回答。简单来说,Gemini 2.0比之前的模型更智能、更高效,更能够根据用户需求做出更精确的响应。 Gemini 2.0的核心特点 多模态能力 :Gemini 2.0能够同时处理文本、图像、音频和视频,意味着它可以生成和理解更丰富的内容。 自动化任务执行 :该模型能够执行自动化任务,如网上购物、日程安排等,减少人工干预,提高工作效率。 更高效的处理能力 :与前一代相比,Gemini 2.0的处理速度更快,推理能力更强,响应更准确。 Gemini 2.0的表现:超越同类竞争者 与OpenAI的GPT-4和Anthropic的Claude等模型相比,Gemini 2.0 Flash在多模态任务处理和处理速度上都具有显著优势。早期测试数据显示,它在生成准确且可操作的见解方面,比之前的版本提\nPublished date: 2024-12-30T09:59:00+08:00\nSite name: 51cto\n\nTitle: 探索人工智能未来:谷",
+    "isError": false,
+    "durationMs": 520,
+    "createdAt": "2026-03-01T06:55:08.484Z"
+  },
+  {
+    "id": "75d250b7790eca0a",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 群英荟萃:盘点2024年的大语言模型-电子工程专辑\nURL: https://www.eet-china.com/mp/a370129.html\nDescription: 陈芝麻 2024-12-18 14:49 随着人工智能技术的迅猛发展,大语言模型( LLM)已成为推动语言理解和生成能力进步的关键力量。2024年,无论是在学术研究还是商业应用领域,LLM都取得了显著的进展。大语言模型在2024年有哪些成功的案例?本文将对2024年国内外大语言模型的进展进行总结,并展望2025年的发展。2024年大语言模型(LLM)在多个领域的成功案例有以下内容。 2024的大语言模型汇总 国外大语言模型汇总 1. Open AI l o1 大模型 OpenAI在2024年9月13日公开了一系列全新AI大模型,旨在专门解决难题。这些新模型可以实现复杂推理,一个通用模型解决比此前的科学、代码和数学模型能做到的更难的问题。o1模型在一系列高难基准测试中展现出了超强实力,相比GPT-4o有巨大提升。 2. Meta l Llama 3.1 Meta发布了Llama 3.1,这是当时最大的开源AI模型,拥有4050亿参数。该模型在多个基准测试中的表现超过了GPT-4o和Anthropic的Claude 3.5 Sonnet。Llama 3.1主要处理文本任务,包括编程、回答基本数学问题以及用八种语言(英语、德语、法语、意大利语、葡萄牙语、印地语、西班牙语和泰语)总结文件。 l Llama 3.2 Meta发布了其首款能够处理图像和文本的开源模型Llama 3.2。Llama 3.2包括两个视觉模型(分别拥有110亿和900亿参数)和两个轻量级仅文本模型(分别拥有10亿和30亿参数),旨在在高通、联发科等Arm硬件上运行。 l MovieGen Meta推出了MovieGen,这是一个能够根据文本输入生成视频的AI模型,具备高达300亿个参数的能力,使其能够生成长达16秒的高质量视频。MovieGen的Audio版本则可以为视频提供同步的高保真音频,标志着M\nPublished date: 2024-12-18T14:49:00+08:00\nSite name: www.eet-china.com\n\nTitle: 2025年人工智能的十大预测:AI Agent方向将成为主流 - 今日头条\nURL: https://www.toutiao.com/article/7451427596854477338/\nDescription: ??2024年即将结束,来自Radical Ventures的风险投资家Rob Toews分享了他对2025年人工智能的10个预测:01.Meta将开始对Llama模型收费Meta是世界上开放式人工智能的标杆。\nPublished date: 2024-12-24T16:15:00+08:00\nSite name: 今日头条\n\nTitle: ICCI-NEWS 前沿动态｜2025年人工智能的十大预测：AI Agent方向将成为主流\nURL: https://www.bilibili.com/read/mobile?id=40298365\nDescription: 转载自元宇宙之心微信公众号\n2024年即将结束,来自Radical Ventures的风险投资家Rob Toews分享了他对2025年人工智能的10个预测:\n01.\nMeta将开始对Llama模型收费\nMeta是世界上开放式人工智能的标杆。在一个引人注目的企业战略案例研究中,当OpenAI和谷歌等竞争对手将其前沿模型封闭源代码并收取使用费时,Meta却选择免费提供其最先进的Llama模型。\n因此,明年Meta开始向使用Llama的公司收费这一消息,会让许多人感到意外。\n需要明确的是:我们并没有预测Meta会将Llama完全闭源,也不意味着任何使用Llama模型的用户都必须为此付费。\n相反,我们预测Meta将对Llama的开源许可条款做出更多限制,这样,在一定规模以上的商业环境中使用Llama的公司将需要开始付费才能使用模型。\n从技术上讲,Meta如今已经在有限的范围内做到了这一点。该公司不允许最大的公司——云超级计算机和其他月活跃用户超过7亿的公司,自由使用其Llama模型。\n早在2023年,Meta首席执行官Mark Zuckerberg就说过:“如果你是微软、亚马逊或谷歌这样的公司,而且你基本上会转售Llama,那么我们应该从中获得一部分收入。我不认为这在短期内会是一大笔收入,但从长远来看,希望这能成为一些收入。”\n明年,Meta将大幅扩大必须付费才能使用Llama的企业范围,将更多的大中型企业纳入其中。\n跟上大型语言模型(LLM)前沿是非常",
+    "isError": false,
+    "durationMs": 296,
+    "createdAt": "2026-03-01T06:55:08.606Z"
+  },
+  {
+    "id": "e503cab06dee9b42",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_e28f410d43df48dd8d912fd4"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:08.798Z"
+  },
+  {
+    "id": "69e61f079060c04b",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 大模型公司对标:Anthropic 2024年H2最新进展 - 人工智能 — C114(通信网)\nURL: https://www.c114.com.cn/ai/5339/a1281034.html\nDescription: 近半年 Anthropic最新进展 Anthropic 2024年年收入增长显著,相比2023年增幅高达900%,仍面临巨额亏损财务压力;持续升级Claude系列模型,新发布2个模型,最新Claude 3.5 Sonnet模型在多学科综合推理方面能力提升60.9%;新增Claude Android版应用、桌面客户端,布局美国国防市场,扩展Claude向加拿大、巴西开放;\nPublished date: 2024-12-30T08:11:00+08:00\nSite name: C114通信网\n\nTitle: Claude发布一套智能体构建指南 - 今日头条\nURL: https://www.toutiao.com/article/7455169179910406666/\nDescription: 上周五,2024年12月20日。Anthropic这家AI公司发布一份报告,题目是《Building effective agents》(构建高效的智能代理)。你可能没听过Anthropic,但他们的产品你可能知道,比如Claude系列的A\nPublished date: 2025-01-05T06:24:00+08:00\nSite name: 今日头条\n\nTitle: 大模型公司对标：Anthropic 2024年H2最新进展\nURL: https://m.c114.com.cn/w5339-1281034.html\nDescription: 近半年 Anthropic最新进展\nAnthropic 2024年年收入增长显著,相比2023年增幅高达900%,仍面临巨额亏损财务压力;持续升级Claude系列模型,新发布2个模型,最新Claude 3.5 Sonnet模型在多学科综合推理方面能力提升60.9%;新增Claude Android版应用、桌面客户端,布局美国国防市场,扩展Claude向加拿大、巴西开放;新增至少9名来自OpenAI、Meta的顶级人才,再获亚马逊40亿美元投资;2024年企业客户市场份额相比去年翻倍增长。\n表1 Anthropic近半年最新进展的主要指标表\n注:1)财务数据方面,除特别注释外,“当前进展”列为2024年整体预测数据,“变化幅度”列基于2023年相应数据进行计算,全部数据基于公开资料整理;2)除特别注释外,“变化幅度”列中定量变化指环比,定性变化指公司近半年进展对比上一阶段(截止到天翼智库团队所做第一轮企业对标)的显著变化;3)红色向上箭头表示增加。\n财务近况: 年收入增长显著但面临巨额亏损的财务压力,企业估值成倍增长\n2024年年收入显著增长,收入主要来自API服务。 根据艾瑞网2024年10月的披露数据,预计Anthropic的2024年年收入将达到10亿美元,相比2023年的约1亿美元,增长率高达900%。收入分布上,Anthropic收入主要来自API服务,其中通过第三方平台提供API的收入占比约70%,直接调用API的收入占比约为15%。 面临巨额亏损的财务压力,或因高额研发支出。 新智元报道指出,Anthropic在2024年预计亏损约20亿美元,考虑到收入主要来自API服务,且据知情人士称Anthropic公司的长期毛利率将在60%左右,推测亏损主要来自于模型研发、训练。 企业估值方面, 据The Information今年9月报道,Anthropic新一轮融资后\nPublished date: 2024-12-30T16:11:00+08:00\nSite name: C114通信网\n\nTitle: Claude发布一套智能体构建指南_代理_agents_工具\nURL: https://www.sohu.com/a/840817859_563669\nDescription: 上周五,2024年12月20日。 Anthropic这家AI公司发布一份报告,题目是《Building effective agents》(构建高效的智能代理)。 你可能没听过Anthropic,但他们的产品你可能知道,比如Claude系列的AI助手,有Claude 3.5 Haiku和Claude 3.5 Sonnet等等。 这份报告,是基于他们过去一年与数十个团队\nPublished date: 2024-12-23T13:07:00+08:00\nSite name: 搜狐\n\nTitle: 2024 年12月20 日 随笔档案 - 果冻人工智能 - 博客园\nURL: http",
+    "isError": false,
+    "durationMs": 227,
+    "createdAt": "2026-03-01T06:55:09.025Z"
+  },
+  {
+    "id": "df1c997d3f1e0a37",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_215046964c0b4699923c866f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:09.190Z"
+  },
+  {
+    "id": "f34fc81a27e11c79",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 微软2025年AI预测:AIAgents引领工作方式新变革_用户_未来_Copilot\nURL: https://www.sohu.com/a/845711237_121798711\nDescription: AI伴侣的日常支持 2025年,AI伴侣Copilot将成为我们生活中不可或缺的助手。这些AI工具不仅能帮助用户管理数据,还能在隐私和安全上提供保障。Copilot的日常功能将持续演进,提供天气和新闻摘要、为用户提供家居布置建议等。例如,Copilot Vision能够识别用户浏览内容并进行实时互动,从而更好地为用户解答问题。AI伴侣的出现,意味着我们的日常生活可以更加高效、简单。 4.\nPublished date: 2025-01-06T08:14:00+08:00\nSite name: 搜狐\n\nTitle: 2025年AI代理来袭:微软、英伟达等巨头助力企业智能化转型_AICopilot_用户_工作\nURL: https://www.sohu.com/a/842374349_121902920\nDescription: 在2024年,人工智能的聊天机器人开始普及,许多公司已经遍地开花。到了2025年,预计将迎来更为强大的AI代理工具,如微软的AICopilot,这在功能上将与现有的聊天机器人有所区别。AICopilot将作为用户与多种AI功能的中央界面。例如,当用户希望预订机票时,可以通过聊天机器人请求帮助,该机器人将调动不同的AI代理查询航班的可用性和费用,自动完成繁琐的过程。\nPublished date: 2024-12-27T10:08:00+08:00\nSite name: 搜狐\n\nTitle: Plan and prepare for Microsoft 365 Copilot for Service in 2024 release wave 2\nURL: https://learn.microsoft.com/zh-cn/dynamics365/release-plan/2024wave2/service/microsoft-copilot-service/\nDescription: 本文内容\nOverview Investment areas For application administrators Get the most out of Microsoft Copilot for Service\n 重要\nThe 2024 release wave 2 plan covers all new functionalities planned to be delivered to market from October 2024 to March 2025. In this article, you'll find the product overview and what's new and planned for  Microsoft 365 Copilot for Service .\nOverview\nMicrosoft Copilot for Service helps organizations quickly realize the benefits of generative AI by extending their existing investments in CRM and contact center solutions to enhance customer experiences and boost agent productivity. It unlocks an organization’s trusted knowledge to accelerate onboarding and case resolution, improve efficiency, and automate tasks for agents in their flow of work—spanning agent desktops of choi\nPublished date: 2024-12-20T08:00:00+08:00\nSite name: AWS Training and Certification\n\nTitle: 2025 到来之际 微软AI亚太区总裁张祺博士送出新年祝福\nURL: https://g.pconline.com.cn/x/1864/18643429.html\nDescription: 2024即将画上句号,在过去的一年里,微软 AI持续创新和突破,并取得了瞩目的成就。 \n 图注:微软全球资深副总裁、微软AI亚太区总裁张祺博士 \n 在这辞旧迎新的时刻,",
+    "isError": false,
+    "durationMs": 277,
+    "createdAt": "2026-03-01T06:55:09.467Z"
+  },
+  {
+    "id": "7f8a7249cd212f5b",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_2e522f7ea34d4768bea5f8fb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:11.666Z"
+  },
+  {
+    "id": "8aad47b94103013e",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Google DeepMind(GoogleDeepMind)：Gemini 2.0时代已经到来，我们对你开始使用它感到兴奋。我们刚刚发布了Gemini 2.0 Flash版本，具有低延迟和更好的性能\nURL: https://startup.aliyun.com/info/1090490.html\nDescription: Google DeepMind宣布推出Gemini 2.0,这一更新承诺为用户提供低延迟和改进的性能。这个新版本目前作为实验性功能在Gemini App网络平台上提供。这次更新的重要性在于它有望通过更快速和更高效的操作来增强用户体验。对于对网络应用性能的最新进展感兴趣的开发人员和技术爱好者来说,探索Gemini 2.0可能会为他们提供有关基于网络的工具和服务未来能力的宝贵见解。\nGoogle DeepMind宣布推出Gemini 2.0,这一更新承诺为用户提供低延迟和改进的性能。这个新版本目前作为实验性功能在Gemini App网络平台上提供。这次更新的重要性在于它有望通过更快速和更高效的操作来增强用户体验。对于对网络应用性能的最新进展感兴趣的开发人员和技术爱好者来说,探索Gemini 2.0可能会为他们提供有关基于网络的工具和服务未来能力的宝贵见解。- Gemini 2.0 Flash已发布,具有低延迟和改进的性能。 - Gemini 2.0的实验版本现在可以通过@GeminiApp在Web上访问。\nPublished date: 2024-12-13T08:00:00+08:00\nSite name: 阿里云\n\nTitle: 科普\"银河geg优越会\"科普资讯\nURL: http://www.cbjjw.gov.cn/sawqdbllink/uwrao-26487.html\nDescription: 当地时间12月11日,谷歌突然发布了Gemini 2.0,这款全新的AI模型不仅能够独立完成复杂任务,还首次支持原生图像生成和多语言音频功能。 (来源:谷歌博客、谷歌翻译 ) 谷歌DeepMind的CEO德米斯·哈萨比斯(Demis Hassabis)表示:“Gemini 2.0 实际上已经达到了目前 Gemini 1.5 Pro 的水平。这意味着在保持相同成本效率、性能效率和速度的同时,整体性能提升了一个档次。这个成果让我们非常满意。” 目前谷歌公布的是实验版Gemini 2.0 Flash。在官方数据对比中,新模型在编程、数学、推理、图像、视频等领域的处理能力均超越了Gemini 1.5 Pro,性能提升有目共睹。\nPublished date: 2024-12-17T12:17:19+08:00\nSite name: www.cbjjw.gov.cn\n\nTitle: Gemini-聚名知识门户-聚名网\nURL: https://www.juming.com/zx/tag/Gemini.html\nDescription: 12月12日消息,今天凌晨,谷歌正式发布了为新智能体时代构建的下一代模型Gemini 2.0。... 更多>>\nPublished date: 2024-12-12T09:12:45+08:00\nSite name: 聚名网\n\nTitle: 谷歌推出最新AI模型Gemini 2.0_澎湃号·媒体_澎湃新闻-The Paper\nURL: https://www.thepaper.cn/newsDetail_forward_29626503\nDescription: 谷歌当地时间12月11日宣布推出Gemini 2.0。即日起,谷歌将2.0开放给开发者以及受信任的测试人员,并正在积极推进将其整合到公司的产品中,率先从Gemini和Search开始。 Gemini 2.0 Flash体验版模型将对所有Gemini用户开放。同时,谷歌还推出了Deep Research的新功能,它运用高级推理和长上下文处理能力,承担研究助手的角色,帮助用户探索复杂的主题并撰写报告。该功能自今日起对Gemini Advanced用户开放。 继续滑动看下一个轻触阅读原文 财联社向上滑动看下一个 原标题:《谷歌推出最新AI模型Gemini 2.0》\nPublished date: 2024-12-12T09:20:00+08:00\nSite name: 澎湃新闻\n\nTitle: 谷歌推出最新AI模型Gemini 2.0 _ 东方财富网\nURL: https://finance.eastmoney.com/a/202412123266016523.html\nDescription: 南方财经12月12日电,谷歌当地时间12月11日宣布推出Gemini 2.0。即日起,谷歌将2.0开放给开发者以及受信任的测",
+    "isError": false,
+    "durationMs": 267,
+    "createdAt": "2026-03-01T06:55:11.933Z"
+  },
+  {
+    "id": "b5766666f3acba32",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_ad5c595928554dc99b59eea5"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:12.089Z"
+  },
+  {
+    "id": "d4e218b7d2678c7e",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI正式发布o3：迈向AGI的突破性进展\nURL: https://m.sohu.com/a/840201614_121798711/?pvid=000115_3w_a\nDescription: 2024年12月21日,OpenAI在经历了为期12天的直播活动后,终于发布了其最新的AI模型——o3。这一新模型标志着OpenAI在人工智能发展路线上的重大突破,令人期待其在人工智能通用性(AGI)方面的应用潜力与影响。\n与其前身o1相比,o3的能力提升显著,尤其在代码编写和数学推理等专业领域的表现令人惊叹。在软件工程考试(SWE-BenchVerified)中,o3的得分达到71.7%,明显领先于o1。而在全球知名的编码竞赛平台Codeforces中,o3的得分为2727,稳居前175名,超越了99.99%的人类参与者。这些成就无不证明o3已成为当前模型中的强者,进一步接近AGI的愿景。\no3在数学推理方面的表现同样引人注目。在FrontierMath这一由顶尖数学家联合开发的数学基准测试中,o3的成功率达到了25.2%。这一成就不仅标志着o3在复杂数学问题上的强大能力,也显示了人工智能在高级数学推理领域的巨大潜力。过去的几代模型在此基准测试中的表现普遍不佳,o3的成绩无疑为AI的发展指明了新方向。\n更为令人震惊的是,在新推出的ARC-AGI测试中,o3取得了87.5%的高分。这一测试于2019年首次提出,旨在评估AI系统在抽象推理和模式识别方面的能力。传统人工智能模型在这一领域的表现相对较差,o3的突破性结果无疑让我们看到了AI走向更高层次的希望。在过去五年里,帮助o3实现这一飞跃的技术进步,展示了OpenAI在推进通用人工智能方面的决心和能力。\n虽然o3的性能惊人,但其当前状态仍然被视作“期货”,仅对少数申请的安全测试合作伙伴开放。OpenAI计划在不久的将来推出小规模的o3衍生模型,以便于更广泛的用户参与。预计在2024年初,可能会发布o3-mimi,但仍旧会面向特定用户群体。\n在回顾这12天的直播活动时,尽管有部分日子没有亮点,但最终以o3的发布作为高潮,令人振\nPublished date: 2024-12-21T16:46:00+08:00\nSite name: 手机搜狐网\n\nTitle: AI大牛解析o3技术路线!改变游戏规则的AGI新突破已现端倪_模型_Chollet_-mini\nURL: https://www.sohu.com/a/840308375_121798711/?pvid=000115_3w_a\nDescription: 2024年12月21日,OpenAI在其为期12天的发布会活动的最后一天,正式发布了备受期待的o3系列模型,包括o3和o3-mini。这一里程碑式的突破让科技界再次聚焦于人工智能(AI)发展的新动态,尤其是在外界普遍认为AI发展速度趋缓之际,OpenAI却带来了“改变游戏规则”的一击。\nPublished date: 2024-12-21T16:00:00+08:00\nSite name: 搜狐\n\nTitle: OpenAI正式发布o3：AGI进程中的里程碑式突破\nURL: https://m.sohu.com/a/840241652_121798711/?pvid=000115_3w_a\nDescription: 2024年12月21日,OpenAI正式推出了其最新型号o3,标志着迈向通用人工智能(AGI)的重要一步,吸引了全球科技界的广泛关注。o3在性能上的飞跃不仅为开发者与研究者带来了更多可能性,也使得人工智能的未来更为充满希望。\no3的推出是在OpenAI连续12天的直播活动中完成的。这段时间里,OpenAI向外界展示了一系列与o1和其他新技术相关的更新,最终在圣诞气氛中揭开了o3的神秘面纱。官方指出,o3在处理复杂任务时的表现几乎可以被视为“降维打击”,特别是在编程和数学推理方面的出色表现。\n在多个标准测试中,o3的结果显著优于之前的版本。例如,在软件工程考试(SWE-BenchVerified)中,o3达到了71.7%的平均成绩,相较于o1有了显著提升。在全球知名编码竞赛平台Codeforces上,o3的得分达到了2727,超越了99.99%的人类选手,证明了其在编程能力上的领先地位。此外,在数学基准测试FrontierMath中,o3同样表现华丽,以25.2的得分刷新了AI在复杂数学推理方面的记录。\n其中,最引人注目的是o3在ARC-AGI基准测试中的表现。这一测试专注于评估AI的抽象推理能力,旨在激励AI系统向更通用的智能迈进。o3在这一测试中的得分达到了惊人的87.5%,与人类的85%阈值相当,显示出其出色的学习和推理能力。\nOpenAI之所以",
+    "isError": false,
+    "durationMs": 227,
+    "createdAt": "2026-03-01T06:55:12.316Z"
+  },
+  {
+    "id": "d508742f45911b22",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_c40aab755a704a01b28b5017"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:12.488Z"
+  },
+  {
+    "id": "59a009ee8fc0ce4e",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2024年AI Agent商业化进程、BC两端巨头布局及落地场景分析报告_应用_效率_服务\nURL: https://www.sohu.com/a/843988439_121776575\nDescription: 报告指出2025年有望成为AI Agent商业化应用的元年。AI Agent被定义为结合大语言模型、规划、记忆、工具和行动的系统,是实现通用人工智能的关键路径。报告强调,AI Agent在B端和C端的应用特性不同,B端强调专业性,C端强调自由度。在金融、医疗、法律等领域,AI Agent的应用前景广阔,能够显著提升效率和降低成本。 报告详细介绍了C端的AI\nPublished date: 2025-01-03T13:02:00+08:00\nSite name: 搜狐\n\nTitle: 2024年终探索: AI Agent未来展望——历史演进、应用落地与商业价值的深度剖析_ai agent发展趋势-CSDN博客\nURL: https://blog.csdn.net/GYN_enyaer/article/details/144757186\nDescription: 版权声明:本文为博主原创文章,遵循CC 4.0 BY-SA版权协议,转载请附上原文出处链接和本声明。 站在年末的时间节点回望2024年人工智能的发展历程,我们可能正在见证一个重要的技术变革时刻。 AI Agent(人工智能智能体)的崛起不仅标志着技术的进步,更预示着人类与机器交互方式的革命性转变。 作为一位人工智能领域的初学者,我想从历史演进、应用落地和商业价值等维度,与读者共同探讨AI\nPublished date: 2025-01-06T20:06:46+08:00\nSite name: CSDN\n\nTitle: 2024年AI Agent商业化进程、BC两端巨头布局及落地场景分析报告.docx - 人人文库\nURL: https://www.renrendoc.com/paper/375931818.html\nDescription: IP属地:山西 上传时间:2025-01-01 已阅读5页,还剩32页未读 , 继续免费阅读 版权说明:本文档由用户提供并上传,收益归属内容提供方,若内容存在侵权,请进行举报或认领 文档简介 2024年深度行业分析研究报告1、2025年有望成为AIAgent商业化应用元年 42、C端:AIAgent初显峥嵘,静待杀手级应用 2.1、智谱:AutoGLM快速迭代,Agent覆盖手机、PC、网页端 2.2、Anthropic:Claude3.5Sonnet重磅升级,具备电脑使用能力 3、B端:巨头加码布局,AIAgent商业化加速 3.1、微软:CopilotStudio支持定制Agent,宣布建立全球最大的企业级AIAgent生态 3.2、谷歌:推出AIAgentSpace,产品扩容可期 3.3、Salesforce:Agentforce商业化进展积极,人员扩张彰显信心 203.4、ServiceNow:NowAssist高增长,Xanadu赋能值得期待 223.5、AppLovin:AI驱动业绩高增,AI+营销前景光明 233.6、Shopify:电商为AIAgent重要落地场景 24图1:Agent=大语言模型(LLM)+规划(planning)+记忆(memory)+工具(tools)+行动(Action) 4图2:AIAgent是通往AGI的必由之路 5图3:Agent将显著提升大模型使用工具能力 5图4:Agent为AI未来重点技术趋势,B端为重要落地场景 6图5:AIAgent场景特性:B端强调专业性,C端强调自由度 6图6:生成式AI在金融领域应用广泛 7图7:AI智能体在金融领域降本增效前景广阔 7图8:AIAgent赋能医疗服务诊前、诊中和诊后众多环节 8图9:AIAgent助力医疗服务提质增效 8图10:AI广泛应用于法律材料起草、法律\nPublished date: 2025-01-01T22:14:19+08:00\nSite name: 人人文库\n\nTitle: 人工智能风险治理报告(2024年)——构建面向产业的人工智能安全治理实践_Agent_能力_应用\nURL: https://www.sohu.com/a/842086145_121740962\nDescription: 人工智能风险治理报告(2024年)——构建面向产业的人工智能安全治理实践方案 报告共计:37页 《计算机行业深度报告:AI Agent拐点已至,2B + 2C星辰大海》指出,2025年有望成为AI Agent商业化应用元年。AI Agent以大语言模型驱动,具备多种能力,是通往AGI的关键路径,",
+    "isError": false,
+    "durationMs": 258,
+    "createdAt": "2026-03-01T06:55:12.746Z"
+  },
+  {
+    "id": "82c31e667585461b",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_b43ccc60718044fd97a10625"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:13.073Z"
+  },
+  {
+    "id": "06892c4aff95892c",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI在2024年12月10日发布了Sora V2版本\nURL: https://k.sina.cn/article_1887312183_m707e1937033017c3y.html\nDescription: OpenAI在2024年12月10日发布了Sora V2版本\nOpenAI在2024年12月10日发布了Sora V2版本。用户测试Sora V2之后对于这个版本的发布被比作1984年的Mac重新定义影像创作。Sora V2版本不仅提升了视频生成技术,也证明了OpenAI在多模态生成能力上的技术突破,Sora V2的技术进步重点体现在了细节渲染和逻辑一致性能力上￼。Sora V2本次提供了文本转视频、文本+图像转视频以及文本+视频转视频￼三种生成模式。Sora V2支持长达1分钟的视频输出并支持多场景切换,角色一致性表现尤为突出￼。用户可以在制作过程中精确指定每一帧的输入,通过时间线上的拖动和间隔卡片、添加字幕和上传源媒体来控制节奏￼。Sora V2在动态视角与细节捕捉方面展现出色,能够将艺术家的想象转化为现实￼。OpenAI让Sora 彻底成为一个强大的视频生成工具,不仅能够提升视频创作的效率,还能够拓宽视频创作的边界,为用户提供更多的创意空间。不过在12月27日OpenAI宣布ChatGPT、Sora和API产生了重大错误,大部分已经宕机了几个小时。OpenAI声明已经确定了问题所在并已开始着手恢复。故障产生的原因是上游提供商引起的￼。#AI创造营#\nPublished date: 2024-12-28T06:46:00+08:00\nSite name: 新浪看点\n\nTitle: 对2025年AI趋势的一些预测 - 煎蛋\nURL: https://jandan.net/p/118913\nDescription: Rodney Brooks 一直在预测这一点。 * OpenAI 将继续发布尚未成熟的产品: OpenAI 会继续提前预览产品,可能几个月甚至几年后才能真正推出稳定版本并提供大众可负担的价格。Sora 在2023 年二月公布,但直到 2023 年十二月才有限度地发布,并且使用受到限制。Sal Khan 在2024 年五月份展示的 AI\nPublished date: 2025-01-06T07:05:00+08:00\nSite name: 煎蛋网\n\nTitle: OpenAI在2024年12月10日发布了Sora V2版本\nURL: http://t.cj.sina.cn/articles/view/1887312183/m707e1937033017c3y?finpagefr=p_104\nDescription: OpenAI在2024年12月10日发布了Sora V2版本。用户测试Sora V2之后对于这个版本的发布被比作1984年的Mac重新定义影像创作。Sora V2版本不仅提升了视频生成技术,也证明了OpenAI在多模态生成能力上的技术突破,Sora V2的技术进步重点体现在了细节渲染和逻辑一致性能力上￼。Sora V2本次提供了文本转视频、文本+图像转视频以及文本+视频转视频￼三种生成模式。Sora V2支持长达1分钟的视频输出并支持多场景切换,角色一致性表现尤为突出￼。用户可以在制作过程中精确指定每一帧的输入,通过时间线上的拖动和间隔卡片、添加字幕和上传源媒体来控制节奏￼。Sora V2在动态视角与细节捕捉方面展现出色,能够将艺术家的想象转化为现实￼。OpenAI让Sora 彻底成为一个强大的视频生成工具,不仅能够提升视频创作的效率,还能够拓宽视频创作的边界,为用户提供更多的创意空间。不过在12月27日OpenAI宣布ChatGPT、Sora和API产生了重大错误,大部分已经宕机了几个小时。OpenAI声明已经确定了问题所在并已开始着手恢复。故障产生的原因是上游提供商引起的￼。#AI创造营# \n2月1日 12:28 | 市场资讯 趣闻 3\n2月1日 11:38 | 热点聚焦 深度学习 开源 48\n三家企业同日宣布接入DeepSeek AI领域竞争进入新阶段\n2月2日 09:40 | 环球网 ai技术 英伟达 开源 49\n狂飙13天:开源DeepSeek如何撼动全球AI市场\n2月1日 14:59 | 每日经济新闻 开源 英伟达 263\n科技圈AI速递:昨夜今晨科技热点一览丨2025年2月3日\n今天 06:41 | 新浪新闻综合 ai技术 科技圈 15\n2月1日 21:57 | 市场资讯 深度学习 基准测试 开源 70\n苹果宣布开源Swift Build 拓展开发者生态建设\nPublished date: 2024-12-28T06:46:00+08:00\nSite name",
+    "isError": false,
+    "durationMs": 200,
+    "createdAt": "2026-03-01T06:55:13.273Z"
+  },
+  {
+    "id": "11d2c1db3a32b4c0",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_01a608df80dc4519ad2d2c4f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:13.529Z"
+  },
+  {
+    "id": "9b7d8184444744a8",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 大模型公司对标:Anthropic 2024年H2最新进展 - 人工智能 — C114(通信网)\nURL: https://www.c114.com.cn/ai/5339/a1281034.html\nDescription: 近半年 Anthropic最新进展 Anthropic 2024年年收入增长显著,相比2023年增幅高达900%,仍面临巨额亏损财务压力;持续升级Claude系列模型,新发布2个模型,最新Claude 3.5 Sonnet模型在多学科综合推理方面能力提升60.9%;新增Claude Android版应用、桌面客户端,布局美国国防市场,扩展Claude向加拿大、巴西开放;\nPublished date: 2024-12-30T08:11:00+08:00\nSite name: C114通信网\n\nTitle: 大模型公司对标：Anthropic 2024年H2最新进展\nURL: https://m.c114.com.cn/w5339-1281034.html\nDescription: 近半年 Anthropic最新进展\nAnthropic 2024年年收入增长显著,相比2023年增幅高达900%,仍面临巨额亏损财务压力;持续升级Claude系列模型,新发布2个模型,最新Claude 3.5 Sonnet模型在多学科综合推理方面能力提升60.9%;新增Claude Android版应用、桌面客户端,布局美国国防市场,扩展Claude向加拿大、巴西开放;新增至少9名来自OpenAI、Meta的顶级人才,再获亚马逊40亿美元投资;2024年企业客户市场份额相比去年翻倍增长。\n表1 Anthropic近半年最新进展的主要指标表\n注:1)财务数据方面,除特别注释外,“当前进展”列为2024年整体预测数据,“变化幅度”列基于2023年相应数据进行计算,全部数据基于公开资料整理;2)除特别注释外,“变化幅度”列中定量变化指环比,定性变化指公司近半年进展对比上一阶段(截止到天翼智库团队所做第一轮企业对标)的显著变化;3)红色向上箭头表示增加。\n财务近况: 年收入增长显著但面临巨额亏损的财务压力,企业估值成倍增长\n2024年年收入显著增长,收入主要来自API服务。 根据艾瑞网2024年10月的披露数据,预计Anthropic的2024年年收入将达到10亿美元,相比2023年的约1亿美元,增长率高达900%。收入分布上,Anthropic收入主要来自API服务,其中通过第三方平台提供API的收入占比约70%,直接调用API的收入占比约为15%。 面临巨额亏损的财务压力,或因高额研发支出。 新智元报道指出,Anthropic在2024年预计亏损约20亿美元,考虑到收入主要来自API服务,且据知情人士称Anthropic公司的长期毛利率将在60%左右,推测亏损主要来自于模型研发、训练。 企业估值方面, 据The Information今年9月报道,Anthropic新一轮融资后\nPublished date: 2024-12-30T16:11:00+08:00\nSite name: C114通信网\n\nTitle: Anthropic预测:2025是智能体系统年!年终总结分享最佳实践_人工智能产业链联盟-商业新知\nURL: https://www.shangyexinzhi.com/article/24025046.html\nDescription: 新知一下 海量新知 查看全文 点赞 收藏 分享至: 本文来自新知号自媒体,不代表商业新知观点和立场。 若有侵权嫌疑,请联系商业新知平台管理员。 联系方式:system@shangyexinzhi.com\nPublished date: 2024-12-26T20:36:00+08:00\nSite name: www.shangyexinzhi.com\n\nTitle: Anthropic预测:2025是智能体系统年!年终总结分享最佳实践-CSDN博客\nURL: https://blog.csdn.net/Z987421/article/details/144728034\nDescription: 近日,Anthropic开发者关系主管发推表示:万事俱备,2025年将是智能体系统之年!在年终总结的博文中,Anthropic分享了一年来与客户合作构建智能体系统的最佳实践。 模型到应用之间的距离,就是烧钱与搞钱之间的距离。 这条路上,Agent已经身经百战,万事俱备。 在这个2024的结尾,Anthropic开发者关系主管Alex Albert表示:2025年将是智能体系统之年!\nPublished date: 2024-12-25T20:52:45+08:00\nSite name",
+    "isError": false,
+    "durationMs": 227,
+    "createdAt": "2026-03-01T06:55:13.756Z"
+  },
+  {
+    "id": "5abf592c05da519f",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_a91fe20881ac414f8fa27a74"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:16.435Z"
+  },
+  {
+    "id": "60588b08274d6428",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title:  中央企业人工智能应用场景优秀案例白皮书(2024年版)-2024 - 道客巴巴 \nURL: https://www.doc88.com/p-98237877019256.html\nDescription: 中央企业人工智能应用场景优秀案例白皮书 中央企业 人工智能应用场景 优秀案例白皮书 (2024 年版) 中央企业人工智能协同创新平台 中国南方电网有限责任公司 2024 年12 月\nPublished date: 2025-01-06T15:43:33+08:00\nSite name: 道客巴巴\n\nTitle:  中央企业人工智能应用场景优秀案例白皮书(2024年版) - 道客巴巴 \nURL: https://www.doc88.com/p-38071813625443.html\nDescription: 中央企业人工智能应用场景优秀案例白皮书 中央企业 人工智能应用场景 优秀案例白皮书 (2024 年版) 中央企业人工智能协同创新平台 中国南方电网有限责任公司 2024 年12 月\nPublished date: 2025-01-03T14:08:03+08:00\nSite name: 道客巴巴\n\nTitle: 2025年,企业老板们该如何配置AI投入?-虎嗅网\nURL: https://www.huxiu.com/article/3799074.html\nDescription: 出品 | 虎嗅智库·大鲸项目组 头图 | AI生成 2024年,大模型的发展非常活跃。截至今年七月,已完成备案并上线、能为公众提供服务的生成式人工智能大模型数量已经高达190多个。 随着大模型应用场景的增多,客户初始满意度尚可。然而,随着AI新奇感减退,使用满意度开始下降,对AI在具体场景中适配效果的期待却日益提升。 真正要形成一批典型场景应用挑战颇大 。\nPublished date: 2024-12-16T16:53:00+08:00\nSite name: 虎嗅\n\nTitle: 中央企业人工智能应用场景优秀案例白皮书(2024年版)_技术_行业_报告\nURL: https://www.sohu.com/a/845340750_122139952\nDescription: 今日分享:中央企业人工智能应用场景优秀案例白皮书(2024年版) 报告共计133页 在2024年,人工智能的应用场景在中央企业中得到了广泛的探索和深入的实践。《中央企业人工智能应用场景优秀案例白皮书》为我们揭示了AI技术在不同行业中的应用现状和未来趋势,展现了AI技术如何助力企业实现数字化转型和智能化升级。 **AI赋能,推动行业创新**\nPublished date: 2025-01-05T14:00:00+08:00\nSite name: 搜狐\n\nTitle: 中央企业人工智能应用场景优秀案例白皮书(2024年版) 央企AI协同创新平台 2024-12_智能交通技术-商业新知\nURL: https://www.shangyexinzhi.com/article/24341924.html\nDescription: 发布机构: 智能交通技术 时间区间: 2024 报告性质: 非券商 人工智能技术理论和实践还在快速发展,白皮书中难免还有不当或错误之处,恳请读者给予批评指正。 点击文后阅读原文, 可获得下载资料的方法 。 查看全文 点赞 收藏 分享至: 本文来自新知号自媒体,不代表商业新知观点和立场。 若有侵权嫌疑,请联系商业新知平台管理员。 联系方式:system@shangyexinzhi.com\nPublished date: 2025-01-10T06:20:00+08:00\nSite name: www.shangyexinzhi.com\n\nTitle: 中央企业人工智能应用场景优秀案例白皮书(2024年版)_报告_城市_预测性\nURL: https://www.sohu.com/a/846039545_120732800\nDescription: 关于报告的所有内容,请于公众『市场分析报告』阅读原文 《中央企业人工智能应用场景优秀案例白皮书(2024年版)》 该白皮书汇总了2024年中国中央企业在人工智能应用中的典型案例,展现了AI技术在传统行业中的创新与赋能作用。报告主要涵盖以下领域: 1. 工业生产 :通过AI优化流程管理、提升设备预测性维护能力,实现智能制造的全面落地。 2. 能源行业 :AI助力新能源调度优化、煤矿智能化转型,以及油气勘探精准化。 3. 智慧城市 :AI在交通流量预测、智慧建筑及城市环境监控中的广泛应用。 4. 金融与物流 :通过AI风控模型优化金融风险管理,智能算法提升物流配送效率。\nPublished date: 202",
+    "isError": false,
+    "durationMs": 242,
+    "createdAt": "2026-03-01T06:55:16.677Z"
+  },
+  {
+    "id": "e61a2904191662a6",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_a5cb38f3835f47c58475f2e5"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:16.836Z"
+  },
+  {
+    "id": "fcfedadc8d833a20",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2024年Agentforce有望成为新增长点_销售_Data_数据\nURL: https://www.sohu.com/a/835841614_121823490\nDescription: 2024年Agentforce有望成为新增长点 报告共计:28页 赛富时 Agentforce:Salesforce 新增长点剖析 Salesforce 自1999 年创立并于 2004 年上市后,在企业服务领域成绩斐然。其FY2024 营收达 348.57 亿美元,营业利润 50.11 亿美元,GAAP 净利润 41.36 亿美元,尽管营收增速近年有所放缓,仍展现强大实力。产品体系以 Salesforce Platform 为基石,集成 Data Cloud、Customer 360 及Agentforce,各层级协同助企业管理客户全流程。财务层面,订阅与服务贡献超九成营收,美洲主导但欧洲增速突出,成本控制下 FY24 三费下降、利润攀升,FY25 营收指引乐观,彰显稳健发展态势。 Agentforce 于2024 年Dreamforce 大会亮相,定位独特。在产品架构里,处执行层核心,融合多元产品与 AI 模型优势。要素涵盖角色、数据、行动、保护机制与渠道,从任务定义、资源供给到行为准则、场景适配,构建完整框架。\nPublished date: 2024-12-12T14:36:00+08:00\nSite name: 搜狐\n\nTitle: salesforce自由侠部落 - 博客园\nURL: https://www.cnblogs.com/CDP1\nDescription: 摘要: 2024年12月17日,全球科技巨头Salesforce正式推出其全新平台——Agentforce 2.0。首席执行官马克·贝尼奥夫在发布会上宣布,Salesforce计划招聘2000名销售人员,以加速推广这一重大人工智能平台,并预计于2025年2月正式向全球企业提供服务。 Agentforce自今阅读全文阅读(79) 评论(0) 推荐(0) 编辑 2025年1月2日 2025大洗牌!\nPublished date: 2025-01-09T15:23:00+08:00\nSite name: 博客园\n\nTitle: 2024年Agentforce有望成为新增长点\nURL: https://m.sohu.com/a/835841614_121823490/?pvid=000115_3w_a\nDescription: 今天分享的是:2024年Agentforce有望成为新增长点\n报告共计:28页\n赛富时 Agentforce:Salesforce 新增长点剖析\nSalesforce 自 1999 年创立并于 2004 年上市后,在企业服务领域成绩斐然。其 FY2024 营收达 348.57 亿美元,营业利润 50.11 亿美元,GAAP 净利润 41.36 亿美元,尽管营收增速近年有所放缓,仍展现强大实力。产品体系以 Salesforce Platform 为基石,集成 Data Cloud、Customer 360 及 Agentforce,各层级协同助企业管理客户全流程。财务层面,订阅与服务贡献超九成营收,美洲主导但欧洲增速突出,成本控制下 FY24 三费下降、利润攀升,FY25 营收指引乐观,彰显稳健发展态势。\nAgentforce 于 2024 年 Dreamforce 大会亮相,定位独特。在产品架构里,处执行层核心,融合多元产品与 AI 模型优势。要素涵盖角色、数据、行动、保护机制与渠道,从任务定义、资源供给到行为准则、场景适配,构建完整框架。工作流程含数据输入、Prompts 生成、推理引擎处理及行动执行,借 Data Cloud 等丰富数据输入,prompts builder 灵活生成指令,Atlas Reasoning Engine 智能规划,多方式推动任务完成。核心差异显著,Workflow 与 Action Library 预制提升效率与精准度,用户借自然语言零代码创建 Agent,操作体验流畅便捷,重塑用户与系统交互模式。\n于销售场景,Sales Agent 功能卓越。细分销售开发与教练类型,自动化处理潜在客户培育、代表指导及咨询管理等关键任务,优化销售流程。界面友好,配置权限、定制流程轻松上手,依客户价值优先排序任务,提升销售效率与效益。同时,整合销售与 CRM\nPublished date: 2024-12-12T22:36:00+08:00\nSite name: 手机搜狐网\n\nTitle: 2024年Agentforce有望成为新增长点\nURL: https://m.sohu.com/a/835841614_121823",
+    "isError": false,
+    "durationMs": 294,
+    "createdAt": "2026-03-01T06:55:17.130Z"
+  },
+  {
+    "id": "406f1593b9b78666",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_cc349e646843426f8af64ecb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:17.298Z"
+  },
+  {
+    "id": "89e460de87c11d73",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 回顾2024年重磅AI发布汇总 - 今日头条\nURL: https://www.toutiao.com/article/7457889241540919835/\nDescription: 2025-01-09 20:22 · 柯林斯聊ai科技 2024年在人工智能领域出现了不少值得关注的发布和进展,以下是根据时间线索,对一些亮点突破进行了总结: 二月 Stability AI 宣布推出Stable Diffusion 3。 Google 升级了 Bard 中的人工智能聊天功能,基于新的Gemini Pro模型,支持所有可用语言。Google 将“Bard”替换为“Gemini”。 Google 宣布推出Gemini Pro 1.5多模态语言模型,该模型能够解析多达一百万个词,以及解析视频和图像。该模型正在逐步向等待名单上的开发人员发布。 OpenAI 宣布推出可制作长达一分钟的视频的Sora模型。该模型目前尚未向公众发布。 三月 X 公司宣布即将发布Grok 1.5开源模型。 Anthropic 宣布推出其大型语言模型的新版本Claude 3。该版本部署了 3 种不同大小的模型,其中最大的模型性能优于 GPT-4。 开发音乐创作模型的 Suno AI向公众发布了Suno v3 。 四月 Stability AI 发布音乐创作模型的全新更新——Stable Audio 2.0。 X 公司发布了其语言模型Grok-1.5V的升级版,该模型集成了高级图像识别功能。在该公司展示的测试中,该模型在图像识别和分析方面的表现优于其他模型。 Mistral 公司将其新模型Mixtral 8x22B开源。这是开源模型中最强大的模型,它包含 1410 亿个参数,但采用了一种更经济的方法。 Meta 开源了LLaMA 3模型,其参数规模分别为 8B 和70B。大型模型在多项指标上都比 Claude 3 Sonnet 和Gemini Pro 1.5 表现更好。Meta 预计随后会发布更大的模型,其参数规模将达到 4000 亿甚至更多。 微软开源了Phi-3-mini模型\nPublished date: 2025-01-09T20:22:00+08:00\nSite name: 今日头条\n\nTitle: 2024 年12月25 日 随笔档案 - 果冻人工智能 - 博客园\nURL: https://www.cnblogs.com/jellyai/p/archive/2024/12/25\nDescription: 摘要: 过去七天的 AI 新闻如狂风暴雨般涌来,AI 世界发生了许多重大变化。在这篇文章中,我们将深入探讨来自 Llama 3.3 70B、GPT-4o 和Claude 3.5 Sonnet 等主要参与者的最新 AI 动态。 12 月7日,Meta 将发布其年度最后一个 AI 模型。而就在昨天(12 阅读全文\nPublished date: 2024-12-25T13:19:33+08:00\nSite name: 博客园\n\nTitle: 2024年12月AI头条新闻：跨越界限与技术突破\nURL: https://m.blog.csdn.net/liu1983robin/article/details/144658988\nDescription: 分类专栏: AI 瞭望塔 文章标签: 人工智能\n10 篇文章 0 订阅\n2024年12月AI头条新闻:跨越界限与技术突破\n12月,人工智能领域继续以惊人的速度进展。从重磅合作到 前沿技术 突破,再到伦理和隐私问题的广泛讨论,本月的AI新闻丰富且深刻。让我们回顾一下12月最重要的AI新闻:\nMicrosoft推出 多模态 AI助理Copilot 2.0\n微软推出了 Copilot  2.0,这是其多模态AI助理的升级版本。Copilot 2.0不仅能够理解文字和语音,还能通过图像、视频等多种媒介与用户进行交互。这一版本的更新使Copilot 2.0更加智能,能够在工作场景中提供实时的创意支持,帮助用户更高效地处理复杂任务,特别是在编程、设计和数据分析等领域。\nGoogle Gemini 2.0发布,增强跨平台互动\nGoogle发布了Gemini 2.0,这一新版本增强了与第三方平台的互动能力,支持更加复杂的对话和更高质量的个性化推荐。Gemini 2.0的升级使其在医疗、教育和零售等行业的应用更加广泛,同时Google还宣布将在未来几个月内推出多个行业定制版本,帮助企业更精准地满足用户需求。\nMeta推出AI驱动的沉浸式虚拟体验\nMeta推出了基于AI的沉浸式虚拟现实体验,它结合了自然语言处理和深度学习技术,让用户能够与虚拟环境中的角色进行更加自然的互动。这项技术标志着虚拟现实在娱乐",
+    "isError": false,
+    "durationMs": 238,
+    "createdAt": "2026-03-01T06:55:17.536Z"
+  },
+  {
+    "id": "dadd83af5b70dafd",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_6f284f40b4804331972700d2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:21.696Z"
+  },
+  {
+    "id": "6cd060bdacb068d0",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_c9c74b0788ae4ec08927e65d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:22.080Z"
+  },
+  {
+    "id": "0fccf8771d0ec359",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Gemini - Google DeepMind\nURL: https://deepmind.google/technologies/gemini/\nDescription: Built for the agentic era Unlock a new era of agentic experiences with our most capable AI model yet. Introducing the 2.0 model family Experimental 2.0 Flash Our workhorse model with low latency and e.0 Flash Experimental introduces improved capabilities like native tool use and for the first time, Gemini can also natively create images and generate speech. Native image generation Create or edit images and seamlessly blend them with text. Native text-to-speech Easily steer Gemini’s speaking style to match any mood. Native tool use Build agents that use Google Search, code execution and more. One step closer to a universal AI assistant Gemini 2.0 unlocks new possibilities for AI agents - intelligent systems that can use memory, reasondge generative AI models and tools to make AI helpful for\nPublished date: 2024-12-17T12:47:20+08:00\nSite name: deepmind.google\n\nTitle: Google DeepMind’s latest research at ICML 2023 - Google DeepMind\nURL: https://deepmind.google/discover/blog/google-deepmind-research-at-icml-2023/\nDescription: Research Share Copy link Exploring AI safety, adaptability, and efficiency for the real world ICML brings together the artificial intelligence (AI) community to share new ideas, tools, and datasets, and make connections to advance the field. From computer vision to robotics, researchers from around the world will be presenting their latest advances. Our director for science, technology & society, Shakir Mohamed, will give a talk on machine learning with social purpose , tackling challenges from healthcare and climate, taking a sociotechnical view, and strengthening global communities. We’re proud to support the conference as a Platinum Sponsor and to continue working together with our long-term partners LatinX in AI , Queer in AI , and Women in Machine Learning . Google DeepMind researcher\nPublished date: 2024-12-17T20:10:34+08:00\nSite name: deepmind.goog",
+    "isError": false,
+    "durationMs": 386,
+    "createdAt": "2026-03-01T06:55:22.082Z"
+  },
+  {
+    "id": "d071a037083accdf",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_f497eee6855245d68ce21ec8"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:22.511Z"
+  },
+  {
+    "id": "dc8a7bf87282f2f2",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Deliberative alignment: reasoning enables safer language models  OpenAI\nURL: https://openai.com/index/deliberative-alignment/\nDescription: Introducing our new alignment strategy for o-series models, which are directly taught safety specifications and how to reason over them. We introduce deliberative alignment , a training paradigm that directly teaches reasoning LLMs the text of human-written and interpretable safety specifications, and trains them to reason explicitly about these specifications before answering. We used deliberative alignment to align OpenAI’s o-series models, enabling them to use chain-of-thought (CoT) reasoning to reflect on user prompts, identify relevant text from OpenAI’s internal policies, and draft safer responses. Our approach achieves highly precise adherence toring human-labeled CoTs or answers. We find that o1 dramatically outperforms GPT-4o and other state-of-the art LLMs across a range of inter\nPublished date: 2024-12-20T15:28:09+08:00\nSite name: openai.com\n\nTitle: Mechanical Product Engineer, Robotics  OpenAI  OpenAI\nURL: https://openai.com/careers/mechanical-product-engineer-robotics/\nDescription: About the Team Our Robotics team is focused on unlocking general-purpose robotics and pushing towards AGI-level intelligence in dynamic, real-world settings. Working across the entire model stack, we integrate cutting-edge hardware and software to explore a broad range of robotic form factors. We strive to seamlessly blend high-level AI capabilities with the physical constraints of physical robotic platforms. About the Role As a Hardware Engineer on the Robotics team, you will help shape the next generation of embodied AI. You’ll be involved in evaluating and refining new physical configurations—integrating novel sensors, actuators, and computational elements to bring our advanced models into the real world. This role offers the chance to influence how our AI scales beyond simulation, ensu\nPublished date: 2025-01-10T01:54:05+08:00\nS",
+    "isError": false,
+    "durationMs": 538,
+    "createdAt": "2026-03-01T06:55:22.619Z"
+  },
+  {
+    "id": "03ffa938ab5f64c3",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Engineering \\ Anthropic\nURL: https://www.anthropic.com/engineering\nDescription: Claude API Solutions Research Commitments The \"think\" tool: Enabling Claude to stop and think in complex tool use situations A new tool that improves Claude's complex problem-solving performance Want to help us build the  future of safe AI? Learning resources Help and security Terms and policies Privacy choices © 2025 Anthropic PBC\nPublished date: 2025-01-06T07:37:55+08:00\nSite name: www.anthropic.com",
+    "isError": false,
+    "durationMs": 283,
+    "createdAt": "2026-03-01T06:55:22.794Z"
+  },
+  {
+    "id": "6cf7a70ce332714f",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_6addd585e6e34c8aa6fa9c52"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:24.379Z"
+  },
+  {
+    "id": "384037d260bb76ef",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_5a5fd58fd0dd4578986b2e35"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:24.847Z"
+  },
+  {
+    "id": "8c5c26dee6c5e2fb",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI正式发布o3：AGI进程中的里程碑式突破\nURL: https://m.sohu.com/a/840241652_121798711/?pvid=000115_3w_a\nDescription: 2024年12月21日,OpenAI正式推出了其最新型号o3,标志着迈向通用人工智能(AGI)的重要一步,吸引了全球科技界的广泛关注。o3在性能上的飞跃不仅为开发者与研究者带来了更多可能性,也使得人工智能的未来更为充满希望。\no3的推出是在OpenAI连续12天的直播活动中完成的。这段时间里,OpenAI向外界展示了一系列与o1和其他新技术相关的更新,最终在圣诞气氛中揭开了o3的神秘面纱。官方指出,o3在处理复杂任务时的表现几乎可以被视为“降维打击”,特别是在编程和数学推理方面的出色表现。\n在多个标准测试中,o3的结果显著优于之前的版本。例如,在软件工程考试(SWE-BenchVerified)中,o3达到了71.7%的平均成绩,相较于o1有了显著提升。在全球知名编码竞赛平台Codeforces上,o3的得分达到了2727,超越了99.99%的人类选手,证明了其在编程能力上的领先地位。此外,在数学基准测试FrontierMath中,o3同样表现华丽,以25.2的得分刷新了AI在复杂数学推理方面的记录。\n其中,最引人注目的是o3在ARC-AGI基准测试中的表现。这一测试专注于评估AI的抽象推理能力,旨在激励AI系统向更通用的智能迈进。o3在这一测试中的得分达到了惊人的87.5%,与人类的85%阈值相当,显示出其出色的学习和推理能力。\nOpenAI之所以没有发布o2,主要是由于与某些商标的冲突,而直接跳到了o3,这一策略也凸显了其在产品命名上的灵活性和适应性。同时,o3目前只有少数合作伙伴可以访问,多个小型版本也计划在未来几个月推出,以便更广泛的用户获取这些先进的技术。\n随着o3的面世,OpenAI不仅加强了其在人工智能领域的领导地位,也引发了人们对未来技术发展的热烈讨论。许多AI专家认为,这一技术的突破将推动整个行业朝着AGI的目标前进,引发了对AI伦理、社会影响及未来应用的\nPublished date: 2024-12-21T19:22:00+08:00\nSite name: 手机搜狐网\n\nTitle: OpenAI正式发布o3：迈向AGI的突破性进展\nURL: https://m.sohu.com/a/840201614_121798711/?pvid=000115_3w_a\nDescription: 2024年12月21日,OpenAI在经历了为期12天的直播活动后,终于发布了其最新的AI模型——o3。这一新模型标志着OpenAI在人工智能发展路线上的重大突破,令人期待其在人工智能通用性(AGI)方面的应用潜力与影响。\n与其前身o1相比,o3的能力提升显著,尤其在代码编写和数学推理等专业领域的表现令人惊叹。在软件工程考试(SWE-BenchVerified)中,o3的得分达到71.7%,明显领先于o1。而在全球知名的编码竞赛平台Codeforces中,o3的得分为2727,稳居前175名,超越了99.99%的人类参与者。这些成就无不证明o3已成为当前模型中的强者,进一步接近AGI的愿景。\no3在数学推理方面的表现同样引人注目。在FrontierMath这一由顶尖数学家联合开发的数学基准测试中,o3的成功率达到了25.2%。这一成就不仅标志着o3在复杂数学问题上的强大能力,也显示了人工智能在高级数学推理领域的巨大潜力。过去的几代模型在此基准测试中的表现普遍不佳,o3的成绩无疑为AI的发展指明了新方向。\n更为令人震惊的是,在新推出的ARC-AGI测试中,o3取得了87.5%的高分。这一测试于2019年首次提出,旨在评估AI系统在抽象推理和模式识别方面的能力。传统人工智能模型在这一领域的表现相对较差,o3的突破性结果无疑让我们看到了AI走向更高层次的希望。在过去五年里,帮助o3实现这一飞跃的技术进步,展示了OpenAI在推进通用人工智能方面的决心和能力。\n虽然o3的性能惊人,但其当前状态仍然被视作“期货”,仅对少数申请的安全测试合作伙伴开放。OpenAI计划在不久的将来推出小规模的o3衍生模型,以便于更广泛的用户参与。预计在2024年初,可能会发布o3-mimi,但仍旧会面向特定用户群体。\n在回顾这12天的直播活动时,尽管有部分日子没有亮点,但最终以o3的发布作为高潮,令人振\nPublished date: 2024-12-21T16:46:00+08:00\nSite name: 手机搜狐网\n\nTitle: 2024年人工智能(AI)大事件时间线\nURL: https://www.aibase.com/zh/",
+    "isError": false,
+    "durationMs": 243,
+    "createdAt": "2026-03-01T06:55:25.090Z"
+  },
+  {
+    "id": "0510c92fd0677d80",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "[{\"type\":\"text\",\"text\":\"\"}]",
+    "isError": false,
+    "durationMs": 1618,
+    "createdAt": "2026-03-01T06:55:25.997Z"
+  },
+  {
+    "id": "82e6f3462e02dc56",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_f9c6723466a1475995942327"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:27.975Z"
+  },
+  {
+    "id": "1e052b7088d188a8",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 人工智能应用实践\nURL: http://www.huangfeng.org.cn/authors/yin-hu/index.html\nDescription: 【人工智能】2024年人工智能相关主题汇总\n十二月 27, 2024  人工智能\n【系统设计】14个案例研究:在一个月内掌握系统设计\n十二月 27, 2024  系统设计\n人工智能是当前中小企业脱困的绝佳机会\n九月 8, 2024  人工智能\n钉钉与新能源头部企业战略签约,共创统一办公和应用集成平台\n十二月 7, 2023\n 未成年人网络保护条例\n十二月 7, 2023\n 商用密码管理条例\n十二月 7, 2023\n中共中央 国务院印发《数字中国建设整体布局规划》\n十二月 7, 2023  数字中国\n中共中央 国务院关于构建数据基础制度更好发挥数据要素作用的意见\n五月 21, 2023  数据要素\n《中小企业数字化转型指南》政策解读\n五月 21, 2023\n中小企业数字化转型指南\n五月 21, 2023  数字化转型\nPublished date: 2024-12-28T14:41:43+08:00\nSite name: www.huangfeng.org.cn\n\nTitle: 对2025年AI领域的12个预测\nURL: https://m.d1net.com/ai/industry/582745.html\nDescription: 2024年见证了AI从试点迈向实际生产用例,预计2025年将实现企业级全面部署。\n今年,我们见证了AI从试点项目迈向实际生产用例。到2025年,AI将扩展至全面、企业级范围的部署。\nGenAI的采用速度比当今任何其他技术都要快,且应用更加广泛,许多公司已经看到了投资回报,并正在扩大用例以实现广泛应用。\n供应商正在将企业软件产品中全面融入GenAI,而AI开发者今年也没有闲着。我们还看到了具有代理能力的AI、多模态AI、推理AI以及可与最大商业供应商相媲美的开源AI项目的涌现。\n根据美国银行2024年9月发布的一项对全球研究分析师和战略家的调查,2024年是确定投资回报的一年,而2025年将是企业采用AI的一年。\n“在未来五到十年内,美国银行全球研究部(BofA Global Research)预计,GenAI将催化企业效率和生产力的进化,这可能改变全球经济以及我们的生活。”美国银行研究所内容战略师瓦妮莎·库克(Vanessa Cook)表示。\n小型语言模型与边缘计算\n去年和今年,大部分注意力都集中在了大型语言模型上——特别是ChatGPT的各种变体,以及Anthropic的Claude和Meta的Llama等竞争对手模型,但对于许多商业用例来说,大型语言模型(LLM)过于庞大、昂贵且在实际应用中速度太慢。\n“展望2025年,我预计小型语言模型,特别是定制模型,将成为许多企业更常见的解决方案。”Upwork的AI和机器学习(ML)负责人安德鲁·拉比诺维奇(Andrew Rabinovich)表示。他说,大型语言模型不仅昂贵,而且范围非常广泛,并不总是与特定行业相关。\n“另一方面,小型模型更具针对性,使企业能够创建精确、高效、稳健且围绕其独特需求构建的AI系统。”他补充道。此外,这些模型可以更容易地基于公司自身的数据进行训练,因此Upwork开始拥抱这一转变,在其平台上超过20\nPublished date: 2024-12-31T19:18:43+08:00\nSite name: m.d1net.com\n\nTitle: 对2025年AI领域的12个预测 - 今日头条\nURL: https://www.toutiao.com/article/7454439989267415561/\nDescription: 今年,我们见证了AI从试点项目迈向实际生产用例。到2025年,AI将扩展至全面、企业级范围的部署。 GenAI的采用速度比当今任何其他技术都要快,且应用更加广泛,许多公司已经看到了投资回报,并正在扩大用例以实现广泛应用。 供应商正在将企业软件产品中全面融入GenAI,而AI开发者今年也没有闲着。我们还看到了具有代理能力的AI、多模态AI、推理AI以及可与最大商业供应商相媲美的开源AI项目的涌现。 根据美国银行2024年9月发布的一项对全球研究分析师和战略家的调查,2024年是确定投资回报的一年,而2025年将是企业采用AI的一年。 “在未来五到十年内,美国银行全球研究部(BofA Global Research)预计,GenAI将催化企业效率和生产力的进化,这可能改变全球经济以及我们的生活。”美国银行研究所内容战略师瓦妮莎·库克(Vanessa Cook)表示。 小型语言模型与边缘计算 去年和今年,大部分注意力都集中在了—特别",
+    "isError": false,
+    "durationMs": 268,
+    "createdAt": "2026-03-01T06:55:28.243Z"
+  },
+  {
+    "id": "3200cfacf8dedec2",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_3a6dc024d09c4c80bd26a529"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T06:55:28.475Z"
+  },
+  {
+    "id": "d98811e8ebf0065f",
+    "type": "tool_call",
+    "taskId": "d0ad8f58b1811368",
+    "subtaskId": "19ac3b0f29c694b4",
+    "employeeId": "cc147032b3139b68",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Microsoft 365 Copilot GCC generally available starting December 13th  Microsoft Community Hub\nURL: https://techcommunity.microsoft.com/blog/publicsectorblog/microsoft-365-copilot-gcc-generally-available-starting-december-13th/4356680\nDescription: We’re excited to announce that Microsoft 365 Copilot GCC generally availability (GA) is Dec 13, 2024 , for qualifying GCC environment customers. Also at GA, the Microsoft 365 Copilot Service Description will be updated for GCC feature availability. Microsoft 365 Copilot combines large language models (LLMs) with your organization’s data to enhance productivity ng microsoft365.com. Service description will be updated prior to general availability here ( April 2025 ) Roadmap ID # 464984 - Microsoft Copilot general availability for GCC Microsoft Copilot with enterprise data protection for the GCC environment is available at no additional cost fa Product Documentation: Controls available to manage web search to learn more. More information on feature availability for Phase 1 and Phase 2 will b\nPublished date: 2024-12-12T15:19:49+08:00\nSite name: SAP Community\n\nTitle: 微软Microsoft 365应用下月更名Microsoft 365 Copilot - 今日头条\nURL: https://www.toutiao.com/article/7450016838152503817/\nDescription: 日消息,微软于 12 月17 日发布公告,宣布升级 Microsoft 365 应用,更名为 Microsoft 365 Copilot,将于 2025 年1月中旬生效。\nPublished date: 2024-12-19T23:10:00+08:00\nSite name: 今日头条\n\nTitle: 微软全新Microsoft 365 Copilot:引领AI办公新纪元_用户_应用_人工智能\nURL: https://www.sohu.com/a/842838582_121798711\nDescription: 365应用进行重大升级,将其更名为Microsoft 365 Copilot,此举将该产品的AI功能提升到品牌的核心地位。此项变革预计将于2025年1月中旬正式生效,标志着微软在人工智能与办公自动化领域的新一步。 随着Copilot的整合,Microsoft 365 Copilot不仅在名称上进行了更新,其应用程序图标和界面设计也进行了全方位的优化。\nPublished date: 2024-12-28T14:09:00+08:00\nSite name: 搜狐\n\nTitle: Microsoft 365 Copilot  Microsoft Community Hub\nURL: https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/bg-p/Microsoft365CopilotBlog\nDescription: Microsoft 365 Copilot Year In Review | 2024 In 2024, Microsoft 365 Copilot changed the wa",
+    "isError": false,
+    "durationMs": 265,
+    "createdAt": "2026-03-01T06:55:28.740Z"
+  }
+]

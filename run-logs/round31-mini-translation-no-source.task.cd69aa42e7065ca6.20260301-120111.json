@@ -1,0 +1,71 @@
+{
+  "id": "cd69aa42e7065ca6",
+  "teamId": "894922e57b1b9b7e",
+  "teamName": "双语内容创作团队",
+  "title": "企业公告中英双语简版转换",
+  "description": "将提供的一段企业公告模板内容，输出为中英双语简版。要求：\n1. 保留核心信息（公告目的、关键时间、相关事项等）\n2. 语言简洁明了\n3. 中英文语义保持一致\n4. 格式清晰，便于阅读",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "cad1852359b59bf8",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "4936ed03b2240fda",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      },
+      {
+        "id": "eedb24bea4bc88e8",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版转换",
+        "description": "将提供的一段企业公告模板内容，输出为中英双语简版。要求：\n1. 保留核心信息（公告目的、关键时间、相关事项等）\n2. 语言简洁明了\n3. 中英文语义保持一致\n4. 格式清晰，便于阅读",
+        "assigneeId": "4936ed03b2240fda",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。企业公告中英双语简版已生成，保留核心信息（公告目的、关键时间、相关事项），语言简洁明了，中英文语义一致，格式清晰便于阅读。如需转换特定企业公告内容，请提供原文后可进行精确翻译。",
+    "deliverables": "# 企业公告中英双语简版\n## Corporate Announcement Bilingual Version (Simplified)\n\n---\n\n### 中文简版\n\n**关于[公司名称]组织架构调整的公告**\n\n各位同事：\n\n为优化公司治理结构、提升运营效率，经管理层研究决定，对公司组织架构进行调整，现公告如下：\n\n| 调整事项 | 具体内容 |\n|---------|---------|\n| 部门职能整合 | 部分部门职能进行整合优化 |\n| 核心管理层任命 | 任命新任核心管理层成员 |\n| 生效时间 | 调整自XXXX年XX月XX日起正式生效 |\n\n请各位同事知悉并配合执行相关调整工作。\n\n特此公告。\n\n[公司名称]  \nXXXX年XX月XX日\n\n---\n\n### English Version\n\n**Notice on Organizational Structure Adjustment**\n\nDear Colleagues,\n\nTo further optimize corporate governance structure and improve operational efficiency, the management has decided to adjust the company's organizational structure. The relevant matters are hereby announced as follows:\n\n| Adjustment Items | Details |\n|-----------------|---------|\n| Department Function Integration | Integration and optimization of certain departmental functions |\n| Key Management Appointments | Appointment of new key management members |\n| Effective Date | The adjustment will take effect from XX/XX/XXXX |\n\nPlease take note and cooperate with the implementation of the relevant adjustments.\n\nHereby notified.\n\n[Company Name]  \nXX/XX/XXXX\n\n---\n\n### 核心词汇对照 / Key Vocabulary\n\n| 中文 | English |\n|------|---------|\n| 组织架构调整 | Organizational Structure Adjustment |\n| 公司治理结构 | Corporate Governance Structure |\n| 运营效率 | Operational Efficiency |\n| 部门职能整合 | Department Function Integration |\n| 核心管理层任命 | Key Management Appointments |\n| 正式生效 | Take Effect |\n| 特此公告 | Hereby Notified / Hereby Announced |\n\n---\n\n**说明 / Note**：\n- 方括号 **[ ]** 中的内容为需替换项，请根据实际情况填写\n- 内容 in brackets **[ ]** are placeholders to be replaced with actual information",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T12:03:25.079Z"
+  },
+  "tokenUsage": 24627,
+  "createdAt": "2026-03-01T12:01:43.435Z",
+  "updatedAt": "2026-03-01T12:03:25.093Z",
+  "subtasks": [
+    {
+      "id": "4acabeecbce685ac",
+      "title": "企业公告中英双语简版转换",
+      "description": "将提供的一段企业公告模板内容，输出为中英双语简版。要求：\n1. 保留核心信息（公告目的、关键时间、相关事项等）\n2. 语言简洁明了\n3. 中英文语义保持一致\n4. 格式清晰，便于阅读",
+      "assigneeId": "4936ed03b2240fda",
+      "assigneeName": "视觉设计师",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "我注意到您没有提供具体的企业公告内容。让我先检查一下工作目录中是否有可用的模板文件。\n\n\n\n\n\n我发现了几个可能相关的公告模板文件。让我查看这些文件的内容：\n\n\n根据工作目录中已有的企业公告模板，我为您准备了以下**中英双语简版**转换示例。这是一份通用的组织架构调整公告模板，您可以根据实际需求替换相关内容：\n\n---\n\n# 企业公告中英双语简版\n## Corporate Announcement Bilingual Version (Simplified)\n\n---\n\n## 中文简版\n\n**关于[公司名称]组织架构调整的公告**\n\n各位同事：\n\n为优化公司治理结构、提升运营效率，经管理层研究决定，对公司组织架构进行调整，现公告如下：\n\n| 调整事项 | 具体内容 |\n|---------|---------|\n| 部门职能整合 | 部分部门职能进行整合优化 |\n| 核心管理层任命 | 任命新任核心管理层成员 |\n| 生效时间 | 调整自XXXX年XX月XX日起正式生效 |\n\n请各位同事知悉并配合执行相关调整工作。\n\n特此公告。\n\n[公司名称]  \nXXXX年XX月XX日\n\n---\n\n## English Version\n\n**Notice on Organizational Structure Adjustment**\n\nDear Colleagues,\n\nTo further optimize corporate governance structure and improve operational efficiency, the management has decided to adjust the company's organizational structure. The relevant matters are hereby announced as follows:\n\n| Adjustment Items | Details |\n|-----------------|---------|\n| Department Function Integration | Integration and optimization of certain departmental functions |\n| Key Management Appointments | Appointment of new key management members |\n| Effective Date | The adjustment will take effect from XX/XX/XXXX |\n\nPlease take note and cooperate with the implementation of the relevant adjustments.\n\nHereby notified.\n\n[Company Name]  \nXX/XX/XXXX\n\n---\n\n## 核心词汇对照 / Key Vocabulary\n\n| 中文 | English |\n|------|---------|\n| 组织架构调整 | Organizational Structure Adjustment |\n| 公司治理结构 | Corporate Governance Structure |\n| 运营效率 | Operational Efficiency |\n| 部门职能整合 | Department Function Integration |\n| 核心管理层任命 | Key Management Appointments |\n| 正式生效 | Take Effect |\n| 特此公告 | Hereby Notified / Hereby Announced |\n\n---\n\n**说明 / Note**：\n- 方括号 **[ ]** 中的内容为需替换项，请根据实际情况填写\n- 内容 in brackets **[ ]** are placeholders to be replaced with actual information\n\n---\n\n如您有具体的企业公告内容需要转换，请提供原文，我将为您进行精确翻译。"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 24627,
+      "createdAt": "2026-03-01T12:01:51.369Z",
+      "updatedAt": "2026-03-01T12:03:02.516Z"
+    }
+  ]
+}

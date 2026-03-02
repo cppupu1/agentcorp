@@ -1,0 +1,115 @@
+{
+  "label": "round10-pm-stock",
+  "sessionId": "round10-stock-20260301-015850",
+  "pm": {
+    "sseEvents": [
+      {
+        "event": "delta",
+        "count": 433
+      },
+      {
+        "event": "step_finish",
+        "count": 6
+      },
+      {
+        "event": "tool_call",
+        "count": 6
+      },
+      {
+        "event": "tool_result",
+        "count": 6
+      },
+      {
+        "event": "done",
+        "count": 1
+      }
+    ],
+    "pmTools": [
+      {
+        "tool": "assign_team_tools",
+        "count": 1
+      },
+      {
+        "tool": "list_models",
+        "count": 1
+      },
+      {
+        "tool": "list_templates",
+        "count": 1
+      },
+      {
+        "tool": "list_tools",
+        "count": 1
+      },
+      {
+        "tool": "quick_create_task",
+        "count": 1
+      },
+      {
+        "tool": "start_task",
+        "count": 1
+      }
+    ],
+    "taskIds": [
+      "089c48cc53463971"
+    ]
+  },
+  "tasks": [
+    {
+      "taskId": "089c48cc53463971",
+      "title": "比亚迪近期投资分析报告",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 128334,
+      "subtaskStatus": [
+        {
+          "id": "e41533f9ab6a5604",
+          "status": "completed"
+        }
+      ],
+      "toolCallsTotal": 45,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 24
+        },
+        {
+          "tool": "a6d0277e32709254__bocha_ai_search",
+          "count": 20
+        },
+        {
+          "tool": "1791ada993a23a56__get_raw_text",
+          "count": 1
+        }
+      ],
+      "decisionCount": 14,
+      "decisions": [
+        {
+          "action": "assign_subtask",
+          "count": 3
+        },
+        {
+          "action": "assign_subtask_result",
+          "count": 3
+        },
+        {
+          "action": "wait_subtasks",
+          "count": 3
+        },
+        {
+          "action": "wait_subtasks_result",
+          "count": 3
+        },
+        {
+          "action": "complete_task",
+          "count": 1
+        },
+        {
+          "action": "complete_task_result",
+          "count": 1
+        }
+      ],
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成比亚迪近期投资分析报告的收集、分析与撰写工作。报告包含九大核心章节：公司概况与业务结构、近期财务数据分析（2024年营收7771.02亿元，同比增长29.02%；净利润402.54亿元，同比增长34.00%）、主营业务分析（新能源汽车销量427.21万辆，电池装机量194.7GWh）、技术创新与研发投入（研发费用542亿元）、市场地位与竞争格局（全球新能源车市占率33.2%）、宏观环境与政策影响、风险因素识别、投资价值分析及总结展望。所有数据均提供可核验来源链接，关键结论有多源交叉验证。"
+    }
+  ]
+}

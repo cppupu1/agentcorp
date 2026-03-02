@@ -1,0 +1,25 @@
+{
+  "taskId": "a88cf30c0cc7b217",
+  "status": "completed",
+  "tokenUsage": 114737,
+  "toolCallsTotal": 24,
+  "tools": [
+    {
+      "tool": "1791ada993a23a56__get_markdown",
+      "count": 2
+    },
+    {
+      "tool": "1791ada993a23a56__get_raw_text",
+      "count": 2
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_ai_search",
+      "count": 8
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 12
+    }
+  ],
+  "resultSummary": "系统校验：子任务总数 1，已完成 1，失败 0。\n已完成AI技术行业趋势快报（2025-2026）的撰写工作。报告基于官方一手来源与权威市场研究报告，全面分析了2025-2026年AI行业在技术发展、市场应用、政策监管三个维度的关键趋势。核心发现包括：AI推理与Agents市场保持高速增长（CAGR 17.5%-49.6%），模型迭代进入高频期（如Gemini 3.1 Pro发布），企业应用从试点走向运营化，全球监管框架加速落地。报告包含执行摘要、趋势概述、重点领域分析、未来展望、数据支撑、可视化建议及完整来源清单"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "d1d017d966b8cbb4",
+  "teamId": "38c5f1158348edb8",
+  "teamName": "研究报告",
+  "title": "AI技术行业趋势简报",
+  "description": "总结近30天AI技术行业趋势，给3条结论，每条带日期和来源链接。面向管理层简报，需要内容精准、数据可靠、结论明确。",
+  "status": "executing",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "f37f075ef048f712",
+      "name": "研究主管"
+    },
+    "members": [
+      {
+        "id": "c31cf124d2f279b8",
+        "name": "撰稿人",
+        "taskPrompt": "负责研究报告撰写与可视化呈现"
+      },
+      {
+        "id": "fc62d75d5496cb0e",
+        "name": "研究员",
+        "taskPrompt": "负责信息收集、数据分析与研究洞察"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "AI技术行业趋势简报",
+        "description": "总结近30天AI技术行业趋势，给3条结论，每条带日期和来源链接。面向管理层简报，需要内容精准、数据可靠、结论明确。",
+        "assigneeId": "c31cf124d2f279b8",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": null,
+  "tokenUsage": 83071,
+  "createdAt": "2026-03-01T13:07:16.925Z",
+  "updatedAt": "2026-03-01T13:19:42.223Z",
+  "subtasks": [
+    {
+      "id": "4d77c902ad584336",
+      "title": "AI技术行业趋势简报",
+      "description": "总结近30天AI技术行业趋势，给3条结论，每条带日期和来源链接。面向管理层简报，需要内容精准、数据可靠、结论明确。",
+      "assigneeId": "fc62d75d5496cb0e",
+      "assigneeName": "研究员",
+      "status": "running",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-01T13:07:30.387Z",
+      "updatedAt": "2026-03-01T13:19:30.177Z"
+    }
+  ]
+}

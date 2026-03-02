@@ -1,0 +1,66 @@
+{
+  "label": "round33-b01-translation",
+  "sessionId": "round33-b01-translation-20260301-112811",
+  "kind": "translation",
+  "pmChatDurationMs": 24277,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "e94a6b76d673e3bb"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 24277
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "e94a6b76d673e3bb",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 15912,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成为企业公告创建中英双语简版模板的任务。提供了三类常见企业公告（搬迁、重大事项、更名）的双语对照版本，确保中英文语义一致，格式规范，可直接套用。"
+  }
+}

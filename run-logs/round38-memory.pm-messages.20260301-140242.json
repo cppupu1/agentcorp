@@ -1,0 +1,18 @@
+[
+  {
+    "id": "14e610ce5e94d3bf",
+    "sessionId": "round38-memory-20260301-140242",
+    "role": "user",
+    "content": "客服这边一直重复答同样问题，你直接发起处理：按最近一个月投诉整理5条FAQ，并沉淀到知识里。",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:02:42.870Z"
+  },
+  {
+    "id": "825f7db6c30a73f6",
+    "sessionId": "round38-memory-20260301-140242",
+    "role": "assistant",
+    "content": "",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:02:42.870Z"
+  }
+]

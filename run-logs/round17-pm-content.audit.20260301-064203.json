@@ -1,0 +1,64 @@
+{
+  "label": "round17-pm-content",
+  "sessionId": "round17-content-20260301-064203",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "d038e3066a20de2d"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "d038e3066a20de2d",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 7143,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasTimeTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\nB2B AI客服产品发布内容创作任务已全部完成。文案策划成功产出了：1）产品新闻稿（正式版）约1000字，包含产品介绍、核心功能、目标客户、价值主张、公司愿景及产品负责人引语；2）3条社交媒体短帖，分别聚焦解决痛点、产品亮点和行动号召，内容简洁有力且适配B2B平台。内容专业、创新，符合品牌调性和目标受众需求。"
+    }
+  ]
+}

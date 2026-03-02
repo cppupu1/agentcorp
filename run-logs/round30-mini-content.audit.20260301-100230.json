@@ -1,0 +1,83 @@
+{
+  "label": "round30-mini-content",
+  "sessionId": "round30-mini-content-20260301-100230",
+  "pmChatDurationMs": 38863,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "64ffb3101b2a466a"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 38863
+    },
+    {
+      "name": "uses_minimax_model",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ],
+      "expected": "b9df4501c7f6f9a6"
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "64ffb3101b2a466a",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 1358,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成企业AI助手发布文案创作任务，包括：1. 发布短文（260字）：正式宣布企业AI助手上线，突出智能、高效、易用三大核心价值2. 微博文案（80字）：简洁有力的官宣文案，带话题标签和行动引导3. 小红书文案（100字）：种草风格文案，使用网络流行语，突出易用性和效率提升所有文案均符合字数要求，核心价值点突出，可直接用于发布。"
+    }
+  ]
+}

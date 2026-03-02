@@ -1,0 +1,44 @@
+{
+  "taskId": "713f9b064b0c7b23",
+  "title": null,
+  "status": "completed",
+  "timedOut": false,
+  "tokenUsage": 4502,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 0,
+  "tools": [],
+  "decisionCount": 6,
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 1
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 1
+    }
+  ],
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n订单延迟场景客服处理SOP已成功设计完成。文档包含4级延迟分级响应机制（L1-L4级，对应不同延迟天数和客户情绪），15套标准话术模板（覆盖各延迟级别及特殊场景），明确的升级条件与流程，以及补偿标准、质量监控等配套内容。SOP完整实用，可直接用于客服团队培训和日常工作。"
+}

@@ -1,0 +1,168 @@
+[
+  {
+    "event": "delta",
+    "data": {
+      "seq": 0,
+      "text": "<think>\n用户想要"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 1,
+      "text": "快速创建一个企业公告模板的中英双语简版。我需要先了解有什么可用的模板，然后帮助用户创建任务。\n\n但用户说"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 2,
+      "text": "\"先给可直接用的版本\"，意思是希望我先提供一个可以直接使用的模板内容，而不是先创建任务。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 3,
+      "text": "让我先提供一个简洁的中英双语公告模板。\n\n不过作为PM助手，我应该按照工作流程来：\n1. 了解用户目标"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 4,
+      "text": " - 用户想要企业公告的中英双语模板\n2. 推荐合适的场景模板\n3. 创建任务\n\n但用户明确"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 5,
+      "text": "说\"先给可直接用的版本\"，所以我应该先给出一个可以直接用的模板，然后再问用户是否需要创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 6,
+      "text": "正式的任务来执行。\n\n让我先提供一个企业公告的中英双语模板：\n</think>\n\n好的，我先给您一个**直接可"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 7,
+      "text": "用的企业公告中英双语简版模板**：\n\n---\n\n## 📢 企业公告模板（中英双语）\n\n**【中文版】**\n\n> **关于["
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 8,
+      "text": "事项名称]的通知**\n>\n> 各位同事：\n>\n> [简要说明事项内容，如： 为提升"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 9,
+      "text": "公司信息化建设水平，现定于XX月XX日进行系统升级维护。]\n>\n> 注意事项：\n>"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 10,
+      "text": " 1. [要点1]\n> 2. [要点2]\n>\n> 如有疑问，请联系：[联系人/部门]\n>\n> [发布"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 11,
+      "text": "部门]\n> [发布日期]\n\n---\n\n**【English Version】**\n\n> **Notice Regarding [Subject]**\n>\n> Dear All,\n>\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 12,
+      "text": "> [Brief description of the matter, e.g., To enhance our company's information technology infrastructure, a system upgrade is scheduled"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 13,
+      "text": " for XX/XX.]\n>\n> Notes:\n> 1. [Point 1]\n> 2. [Point 2]\n>\n> Should you have any questions"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 14,
+      "text": ", please contact: [Contact Person/Department]\n>\n> [Issuing Department]\n> [Date]\n\n---\n\n### 💡 使用说明"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 15,
+      "text": "\n\n| 占位符 | 替换内容 |\n|--------|----------|\n| [事项名称] | 通知主题 |\n| [简要说明]"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 16,
+      "text": " | 核心内容（1-2句话） |\n| [要点1/2] | 需注意的事项 |\n| ["
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 17,
+      "text": "联系人/部门] | 咨询窗口 |\n| [发布部门] | 人力资源部/行政部等 |\n\n---\n\n请问您需要我帮您基于"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 18,
+      "text": "这个模板**创建一个正式的任务**来批量生成多种场景的公告模板吗？比如：\n\n- 🎉 "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 19,
+      "text": "节假日放假通知\n- 📋 制度变更通知\n- 🏢 办公地点"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 20,
+      "text": "变更通知\n- 💰 薪资/福利调整通知\n\n需要的话告诉我具体需求，我来帮您创建任务！"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 21,
+      "usage": {
+        "inputTokens": 1067,
+        "outputTokens": 521
+      }
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 22,
+      "text": "<think>\n用户想要快速创建一个企业公告模板的中英双语简版。我需要先了解有什么可用的模板，然后帮助用户创建任务。\n\n但用户说\"先给可直接用的版本\"，意思是希望我先提供一个可以直接使用的模板内容，而不是先创建任务。让我先提供一个简洁的中英双语公告模板。\n\n不过作为PM助手，我应该按照工作流程来：\n1. 了解用户目标 - 用户想要企业公告的中英双语模板\n2. 推荐合适的场景模板\n3. 创建任务\n\n但用户明确说\"先给可直接用的版本\"，所以我应该先给出一个可以直接用的模板，然后再问用户是否需要创建正式的任务来执行。\n\n让我先提供一个企业公告的中英双语模板：\n</think>\n\n好的，我先给您一个**直接可用的企业公告中英双语简版模板**：\n\n---\n\n## 📢 企业公告模板（中英双语）\n\n**【中文版】**\n\n> **关于[事项名称]的通知**\n>\n> 各位同事：\n>\n> [简要说明事项内容，如： 为提升公司信息化建设水平，现定于XX月XX日进行系统升级维护。]\n>\n> 注意事项：\n> 1. [要点1]\n> 2. [要点2]\n>\n> 如有疑问，请联系：[联系人/部门]\n>\n> [发布部门]\n> [发布日期]\n\n---\n\n**【English Version】**\n\n> **Notice Regarding [Subject]**\n>\n> Dear All,\n>\n> [Brief description of the matter, e.g., To enhance our company's information technology infrastructure, a system upgrade is scheduled for XX/XX.]\n>\n> Notes:\n> 1. [Point 1]\n> 2. [Point 2]\n>\n> Should you have any questions, please contact: [Contact Person/Department]\n>\n> [Issuing Department]\n> [Date]\n\n---\n\n### 💡 使用说明\n\n| 占位符 | 替换内容 |\n|--------|----------|\n| [事项名称] | 通知主题 |\n| [简要说明] | 核心内容（1-2句话） |\n| [要点1/2] | 需注意的事项 |\n| [联系人/部门] | 咨询窗口 |\n| [发布部门] | 人力资源部/行政部等 |\n\n---\n\n请问您需要我帮您基于这个模板**创建一个正式的任务**来批量生成多种场景的公告模板吗？比如：\n\n- 🎉 节假日放假通知\n- 📋 制度变更通知\n- 🏢 办公地点变更通知\n- 💰 薪资/福利调整通知\n\n需要的话告诉我具体需求，我来帮您创建任务！",
+      "messageId": "c83a3eab662250da",
+      "finishReason": "stop"
+    }
+  }
+]

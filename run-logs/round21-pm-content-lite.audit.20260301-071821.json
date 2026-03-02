@@ -1,0 +1,64 @@
+{
+  "label": "round21-pm-content-lite",
+  "sessionId": "round21-content-20260301-071821",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "0686ce2d8f5be19a"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "0686ce2d8f5be19a",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 3782,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业AI助手发布文案创作任务。产出了1篇发布短文（约500-800字）和2条社媒文案。发布短文结构清晰，包含引言、核心功能、应用场景和商业价值四大板块，全面展示了AI助手的技术优势和企业价值；两条社媒文案简洁有力，使用emoji和话题标签，适合社交媒体传播，能够有效吸引目标用户关注。文案内容专业、有吸引力，符合企业级产品的调性要求。"
+    }
+  ]
+}

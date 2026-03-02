@@ -1,0 +1,80 @@
+{
+  "label": "round24-pm-ops-weekly",
+  "sessionId": "round24-ops-20260301-082235",
+  "pmChatDurationMs": 32380,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "39f719ca036a7f56"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 32380
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "39f719ca036a7f56",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 8483,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n运营周会简报模板设计已完成，包含风险项、行动项、负责人、截止日期四个核心字段，输出模板格式与详细使用说明。"
+    }
+  ]
+}

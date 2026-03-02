@@ -2,12 +2,13 @@ import { db, models } from '@agentcorp/db';
 import { eq } from 'drizzle-orm';
 import { createModel } from '@agentcorp/agent-core';
 import { generateText } from 'ai';
-import { getSetting } from './system.js';
+import { getModelIdForFeature } from './system.js';
 import { AppError } from '../errors.js';
+import { listTemplates, getTemplate } from './templates.js';
 
 export async function parseIntent(text: string, type: 'task' | 'team') {
-  const modelId = getSetting('hr_assistant_model_id');
-  if (!modelId) throw new AppError('VALIDATION_ERROR', 'HR assistant model not configured');
+  const modelId = getModelIdForFeature('ai_parse_model_id');
+  if (!modelId) throw new AppError('VALIDATION_ERROR', 'AI parse model not configured');
 
   const [model] = await db.select().from(models).where(eq(models.id, modelId));
   if (!model) throw new AppError('NOT_FOUND', `Model ${modelId} not found`);
@@ -18,9 +19,20 @@ export async function parseIntent(text: string, type: 'task' | 'team') {
     modelId: model.modelId,
   });
 
-  const prompt = type === 'task'
-    ? `Parse the following natural language into a task creation form. Return JSON only: {"description": "...", "mode": "suggest"|"auto"}.\nUser input: ${text}`
-    : `Parse the following natural language into a team creation form. Return JSON only: {"name": "...", "description": "...", "scenario": "...", "collaborationMode": "free"|"pipeline"|"debate"|"vote"|"master_slave"}.\nUser input: ${text}`;
+  let prompt: string;
+  if (type === 'task') {
+    const templates = listTemplates();
+    const tplList = templates.map(t => `- id: "${t.id}", name: "${t.name}", desc: "${t.description}"`).join('\n');
+    prompt = `Parse the following natural language into a task creation form.
+Available team templates:
+${tplList}
+
+Return JSON only: {"description": "...", "mode": "suggest"|"auto", "templateId": "<best matching template id or null>", "teamName": "<suggested team name or null>"}.
+If the user's intent clearly matches a template scenario, set templateId to that template's id. Otherwise set templateId to null.
+User input: ${text}`;
+  } else {
+    prompt = `Parse the following natural language into a team creation form. Return JSON only: {"name": "...", "description": "...", "scenario": "...", "collaborationMode": "free"|"pipeline"|"debate"|"vote"|"master_slave"}.\nUser input: ${text}`;
+  }
 
   const result = await generateText({
     model: aiModel as any,
@@ -36,9 +48,21 @@ export async function parseIntent(text: string, type: 'task' | 'team') {
   }
 
   if (type === 'task') {
+    // Validate templateId if provided
+    let templateId: string | null = null;
+    if (typeof parsed.templateId === 'string' && parsed.templateId) {
+      try {
+        getTemplate(parsed.templateId);
+        templateId = parsed.templateId;
+      } catch {
+        templateId = null;
+      }
+    }
     return {
       description: typeof parsed.description === 'string' ? parsed.description : '',
       mode: ['suggest', 'auto'].includes(parsed.mode as string) ? parsed.mode : 'suggest',
+      templateId,
+      teamName: typeof parsed.teamName === 'string' ? parsed.teamName : null,
     };
   }
   return {

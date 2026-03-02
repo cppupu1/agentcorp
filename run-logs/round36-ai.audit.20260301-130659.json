@@ -1,0 +1,95 @@
+{
+  "label": "round36-ai",
+  "sessionId": "round36-ai-20260301-130659",
+  "kind": "ai",
+  "userPrompt": "我们要给管理层准备简报，请直接安排完成：总结近30天AI技术行业趋势，给3条结论，每条带日期和来源链接。",
+  "pmChatDurationMs": 35611,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "d1d017d966b8cbb4"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": true,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "user_prompt_without_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 35611
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "d1d017d966b8cbb4"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": false
+    },
+    {
+      "name": "not_waiting_for_user",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    },
+    {
+      "name": "contains_dates",
+      "ok": false,
+      "dateHits": 0
+    },
+    {
+      "name": "contains_links",
+      "ok": false,
+      "linkHits": 0
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "d1d017d966b8cbb4",
+    "status": "executing",
+    "timedOut": true,
+    "tokenUsage": 83071,
+    "decisionRows": 35,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": ""
+  }
+}

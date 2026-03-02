@@ -2,7 +2,7 @@ import { db, errorTraces, models } from '@agentcorp/db';
 import { eq } from 'drizzle-orm';
 import { createModel } from '@agentcorp/agent-core';
 import { generateText } from 'ai';
-import { getSetting } from './system.js';
+import { getModelIdForFeature } from './system.js';
 
 /**
  * Fire-and-forget: generate a human-readable AI summary for an error trace.
@@ -10,7 +10,7 @@ import { getSetting } from './system.js';
  */
 export async function summarizeError(traceId: string, errorMessage: string): Promise<void> {
   try {
-    const modelId = getSetting('hr_assistant_model_id');
+    const modelId = getModelIdForFeature('default_model_id');
     if (!modelId) return;
 
     const [model] = await db.select().from(models).where(eq(models.id, modelId));

@@ -1,0 +1,71 @@
+{
+  "id": "8bfe71b859adb17c",
+  "teamId": "9f879006280efd63",
+  "teamName": "双语公告创作团队",
+  "title": "企业公告中英双语简版输出",
+  "description": "将企业公告模板输出中英双语简版，保持语义一致。请提供具体的公告内容，任务将生成中文和英文两个版本的简明公告，确保语义准确且语言简洁。",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "a55536a7304cdc0a",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "91efb3182d55e71d",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "c19e6941b003244d",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版输出",
+        "description": "将企业公告模板输出中英双语简版，保持语义一致。请提供具体的公告内容，任务将生成中文和英文两个版本的简明公告，确保语义准确且语言简洁。",
+        "assigneeId": "91efb3182d55e71d",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告中英双语简版输出任务。生成了3种常见企业公告的中英双语模板，包括：组织架构调整公告、产品发布公告、办公室搬迁公告。每个模板都包含中文版和英文版，保持语义一致，语言简洁专业。",
+    "deliverables": "# 企业公告中英双语简版输出\n\n## 模板一：组织架构调整公告\n\n**【中文版】**\n> 关于公司组织架构调整的公告\n>\n> 各位同事：\n>\n> 为进一步提升运营效率，优化资源配置，经公司管理层研究决定，自即日起对公司组织架构进行调整，现将相关内容公告如下：\n>\n> 一、组织架构调整方案\n> 二、人事任免决定\n> 三、相关业务调整安排\n>\n> 请各部门相互配合，妥善安排工作交接，确保业务平稳过渡。如有疑问，请联系HR部门。\n>\n> 特此公告。\n>\n> [公司名称]\n> [发布日期]\n\n**【英文版】**\n> Announcement on Organizational Restructuring\n>\n>> To further improve operational efficiency and optimize resource allocation, the Dear All,\n>\n management has decided to adjust the company's organizational structure, effective immediately. The relevant details are hereby announced as follows:\n>\n> 1. Organizational Restructuring Plan\n> 2. Personnel Appointments and Removals\n> 3. Business Adjustment Arrangements\n>\n> All departments are requested to cooperate and arrange proper work handover to ensure smooth business transition. Should you have any questions, please contact the HR department.\n>\n> Sincerely,\n> [Company Name]\n> [Date]\n\n---\n\n## 模板二：产品发布公告\n\n**【中文版】**\n> 新品发布公告\n>\n> 尊敬的客户及合作伙伴：\n>\n> 感谢您一直以来的支持与信任！我司正式宣布，全新产品/服务将于[发布日期]正式上线。\n>\n> 产品/服务名称：[产品名称]\n> 产品/服务亮点：\n> • [亮点1]\n> • [亮点2]\n> • [亮点3]\n>\n> 了解更多详情，请访问：[官网链接] 或致电：[客服热线]\n>\n> 期待与您共同开启全新体验！\n>\n> [公司名称]\n> [发布日期]\n\n**【英文版】**\n> Product Launch Announcement\n>\n> Dear Valued Customers and Partners,\n>\n> Thank you for your continued support and trust! We are pleased to announce that our brand new product/service will officially launch on [Date].\n>\n> Product/Service Name: [Product Name]\n> Key Features:\n> • [Feature 1]\n> • [Feature 2]\n> • [Feature 3]\n>\n> For more information, please visit: [Website] or call: [Hotline]\n>\n> We look forward to embarking on this new journey with you!\n>\n> Sincerely,\n> [Company Name]\n> [Date]\n\n---\n\n## 模板三：办公室搬迁公告\n\n**【中文版】**\n> 关于公司搬迁新址的公告\n>\n> 各位员工、客户及合作伙伴：\n>\n> 因公司业务发展需要，我司将于[日期]正式搬迁至新办公地址，现将相关事项公告如下：\n>\n> 新办公地址：[详细地址]\n> 联系电话：[电话号码]\n> 生效日期：[日期]\n>\n> 搬迁期间给您带来的不便，敬请谅解。期待在新址与您继续携手合作！\n>\n> [公司名称]\n> [发布日期]\n\n**【英文版】**\n> Announcement of Office Relocation\n>\n> Dear Employees, Customers and Partners,\n>\n> Due to business development needs, our company will relocate to a new office address on [Date]. The relevant information is hereby announced as follows:\n>\n> New Address: [Detailed Address]\n> Contact Number: [Phone Number]\n> Effective Date: [Date]\n>\n> We apologize for any inconvenience caused during the relocation. We look forward to continuing our cooperation with you at our new location!\n>\n> Sincerely,\n> [Company Name]\n> [Date]\n\n---\n\n**使用说明：**\n- 方括号内容请根据实际情况替换\n- 语气：正式、简洁、专业\n- 简版建议篇幅：150-300字\n- 中英文段落结构保持一致",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T10:09:49.827Z"
+  },
+  "tokenUsage": 12035,
+  "createdAt": "2026-03-01T10:08:38.700Z",
+  "updatedAt": "2026-03-01T10:09:49.841Z",
+  "subtasks": [
+    {
+      "id": "8d273d2fdd614424",
+      "title": "企业公告中英双语简版输出",
+      "description": "将企业公告模板输出中英双语简版，保持语义一致。请提供具体的公告内容，任务将生成中文和英文两个版本的简明公告，确保语义准确且语言简洁。",
+      "assigneeId": "91efb3182d55e71d",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "我注意到当前目录中没有现成的企业公告模板文件。基于任务要求，我将创建一个**通用企业公告模板**的中英双语简版，涵盖几种常见公告类型供您参考使用：\n\n---\n\n# 🏢 企业公告模板 / Corporate Announcement Template\n\n## 模板一：组织架构调整公告 / Organizational Restructuring Announcement\n\n**【中文版】**\n\n> **关于公司组织架构调整的公告**\n>\n> 各位同事：\n>\n> 为进一步提升运营效率，优化资源配置，经公司管理层研究决定，自即日起对公司组织架构进行调整，现将相关内容公告如下：\n>\n> 一、组织架构调整方案\n> [具体调整内容]\n>\n> 二、人事任免决定\n> [相关人员调整信息]\n>\n> 三、相关业务调整安排\n> [业务部门变动说明]\n>\n> 请各部门相互配合，妥善安排工作交接，确保业务平稳过渡。如有疑问，请联系HR部门。\n>\n> 特此公告。\n>\n> [公司名称]\n> [发布日期]\n\n**【英文版】**\n\n> **Announcement on Organizational Restructuring**\n>\n> Dear All,\n>\n> To further improve operational efficiency and optimize resource allocation, the management has decided to adjust the company's organizational structure, effective immediately. The relevant details are hereby announced as follows:\n>\n> 1. Organizational Restructuring Plan\n> [Specific adjustment details]\n>\n> 2. Personnel Appointments and Removals\n> [Relevant personnel changes]\n>\n> 3. Business Adjustment Arrangements\n> [Business department changes]\n>\n> All departments are requested to cooperate and arrange proper work handover to ensure smooth business transition. Should you have any questions, please contact the HR department.\n>\n>Sincerely,\n> [Company Name]\n> [Date]\n\n---\n\n## 模板二：产品发布公告 / Product Launch Announcement\n\n**【中文版】**\n\n> **新品发布公告**\n>\n> 尊敬的客户及合作伙伴：\n>\n> 感谢您一直以来的支持与信任！我司正式宣布，全新产品/服务将于[发布日期]正式上线。\n>\n> 产品/服务名称：[产品名称]\n> 产品/服务亮点：\n> • [亮点1]\n> • [亮点2]\n> • [亮点3]\n>\n> 了解更多详情，请访问：[官网链接] 或致电：[客服热线]\n>\n> 期待与您共同开启全新体验！\n>\n> [公司名称]\n> [发布日期]\n\n**【英文版】**\n\n> **Product Launch Announcement**\n>\n> Dear Valued Customers and Partners,\n>\n> Thank you for your continued support and trust! We are pleased to announce that our brand new product/service will officially launch on [Date].\n>\n> Product/Service Name: [Product Name]\n> Key Features:\n> • [Feature 1]\n> • [Feature 2]\n> • [Feature 3]\n>\n> For more information, please visit: [Website] or call: [Hotline]\n>\n> We look forward to embarking on this new journey with you!\n>\n> Sincerely,\n> [Company Name]\n> [Date]\n\n---\n\n## 模板三：办公室搬迁公告 / Office Relocation Announcement\n\n**【中文版】**\n\n> **关于公司搬迁新址的公告**\n>\n> 各位员工、客户及合作伙伴：\n>\n> 因公司业务发展需要，我司将于[日期]正式搬迁至新办公地址，现将相关事项公告如下：\n>\n> 新办公地址：[详细地址]\n> 联系电话：[电话号码]\n> 生效日期：[日期]\n>\n> 搬迁期间给您带来的不便，敬请谅解。期待在新址与您继续携手合作！\n>\n> [公司名称]\n> [发布日期]\n\n**【English Version】**\n\n> **Announcement of Office Relocation**\n>\n> Dear Employees, Customers and Partners,\n>\n> Due to business development needs, our company will relocate to a new office address on [Date]. The relevant information is hereby announced as follows:\n>\n> New Address: [Detailed Address]\n> Contact Number: [Phone Number]\n> Effective Date: [Date]\n>\n> We apologize for any inconvenience caused during the relocation. We look forward to continuing our cooperation with you at our new location!\n>\n> Sincerely,\n> [Company Name]\n> [Date]\n\n---\n\n## 使用说明 / Usage Notes\n\n| 项目 | 说明 |\n|------|------|\n| 方括号内容 | 请根据实际情况替换 |\n| 语气 | 正式、简洁、专业 |\n| 篇幅 | 简版建议 150-300 字 |\n| 格式 | 保持中英文段落结构一致 |\n\n---\n\n如果您需要**特定类型**的公告模板（如融资公告、高管任命、公司更名等），请告知具体需求，我可以为您定制相关内容。"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 12035,
+      "createdAt": "2026-03-01T10:08:48.187Z",
+      "updatedAt": "2026-03-01T10:09:27.148Z"
+    }
+  ]
+}

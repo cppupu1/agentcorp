@@ -1,0 +1,69 @@
+{
+  "id": "0e1b0d08ffdd6c82",
+  "teamId": "b494d819e2177ce9",
+  "teamName": "合同审阅团队",
+  "title": "供应商服务合同草案审阅",
+  "description": "审阅供应商服务合同草案,提炼3条高风险条款并给出改写建议。需要仔细分析合同条款,识别可能存在法律风险、财务风险或操作风险的条款,并提出具体的改写建议以降低风险。",
+  "status": "failed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "0b803eb78d6b0a51",
+      "name": "研究主管"
+    },
+    "members": [
+      {
+        "id": "2f3ba6b9ddb0b602",
+        "name": "研究员",
+        "taskPrompt": "负责信息收集、数据分析与研究洞察"
+      },
+      {
+        "id": "f5a9376d37956508",
+        "name": "撰稿人",
+        "taskPrompt": "负责研究报告撰写与可视化呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "供应商服务合同草案审阅",
+        "description": "审阅供应商服务合同草案,提炼3条高风险条款并给出改写建议。需要仔细分析合同条款,识别可能存在法律风险、财务风险或操作风险的条款,并提出具体的改写建议以降低风险。",
+        "assigneeId": "2f3ba6b9ddb0b602",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "任务执行失败：PM执行异常: usage limit exceeded (2056)",
+    "error": "PM执行异常: usage limit exceeded (2056)",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 0,
+      "failed": 0,
+      "pending": 1
+    },
+    "failedAt": "2026-03-01T15:21:38.356Z"
+  },
+  "tokenUsage": 0,
+  "createdAt": "2026-03-01T15:21:28.887Z",
+  "updatedAt": "2026-03-01T15:21:38.356Z",
+  "subtasks": [
+    {
+      "id": "f1d27b9a2ac1d1ad",
+      "title": "供应商服务合同草案审阅",
+      "description": "审阅供应商服务合同草案,提炼3条高风险条款并给出改写建议。需要仔细分析合同条款,识别可能存在法律风险、财务风险或操作风险的条款,并提出具体的改写建议以降低风险。",
+      "assigneeId": "2f3ba6b9ddb0b602",
+      "assigneeName": "研究员",
+      "status": "pending",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-01T15:21:37.805Z",
+      "updatedAt": "2026-03-01T15:21:37.805Z"
+    }
+  ]
+}

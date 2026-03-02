@@ -17,6 +17,7 @@ import SlashCommandMenu from '@/components/SlashCommandMenu';
 import ObserverPanel from './ObserverPanel';
 import EvidencePanel from './EvidencePanel';
 import TaskDAG from './TaskDAG';
+import ReviewPanel from './ReviewPanel';
 import { useI18n } from '@/i18n';
 import { useIMEComposing } from '@/hooks/useIMEComposing';
 
@@ -36,7 +37,7 @@ export default function TaskDetailPage() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [approving, setApproving] = useState(false);
   const [searchParams] = useSearchParams();
-  const validTabs = ['execution', 'timeline', 'tool-trace', 'evidence', 'dag'] as const;
+  const validTabs = ['execution', 'timeline', 'tool-trace', 'evidence', 'dag', 'review'] as const;
   type TabValue = typeof validTabs[number];
   const getDefaultTab = (s: string): TabValue => {
     if (s === 'executing' || s === 'paused') return 'dag';
@@ -129,6 +130,21 @@ export default function TaskDetailPage() {
         </div>
       )}
 
+      {/* Team info (always visible when teamConfig exists) */}
+      {task.teamConfig && status !== 'team_review' && (
+        <div className="mb-6 p-4 bg-muted/30 rounded-2xl shadow-[var(--shadow-sm)]">
+          <p className="text-sm text-muted-foreground mb-2">{t('taskDetail.teamConfig')}</p>
+          <div className="flex flex-wrap gap-2">
+            {task.teamConfig.pm && (
+              <Badge variant="secondary">{t('taskDetail.projectManager')}: {task.teamConfig.pm.name}</Badge>
+            )}
+            {task.teamConfig.members.map(m => (
+              <Badge key={m.id} variant="outline">{m.name}</Badge>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Chat section for draft/aligning */}
       {(status === 'draft' || status === 'aligning') && (
         <div data-testid="task-aligning-panel">
@@ -205,6 +221,7 @@ export default function TaskDetailPage() {
             <TabsTrigger value="tool-trace">{t('taskDetail.tabToolTrace')}</TabsTrigger>
             <TabsTrigger value="evidence">{t('taskDetail.tabEvidence')}</TabsTrigger>
             <TabsTrigger value="dag">{t('taskDetail.tabVisualization')}</TabsTrigger>
+            <TabsTrigger value="review">{t('taskDetail.tabReview')}</TabsTrigger>
           </TabsList>
 
           <TabsContent value="execution">
@@ -243,6 +260,7 @@ export default function TaskDetailPage() {
           <TabsContent value="tool-trace"><ToolTracePanel taskId={task.id} /></TabsContent>
           <TabsContent value="evidence"><EvidencePanel taskId={task.id} /></TabsContent>
           <TabsContent value="dag"><TaskDAG taskId={task.id} /></TabsContent>
+          <TabsContent value="review"><ReviewPanel taskId={task.id} /></TabsContent>
 
           {/* Cost Panel */}
           <div className="mt-6">
@@ -695,6 +713,8 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
     }))
   );
   const [toolActivity, setToolActivity] = useState<Record<string, string>>({});
+  const [debatePhase, setDebatePhase] = useState<string | null>(null);
+  const [debateAgents, setDebateAgents] = useState<Record<string, { name: string; text: string; tool?: string }>>({});
   const [logs, setLogs] = useState<Array<{ time: string; text: string }>>([]);
   const onStatusChangeRef = useRef(onStatusChange);
   onStatusChangeRef.current = onStatusChange;
@@ -762,6 +782,46 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
     es.addEventListener('subtask_tool_result', (e) => {
       const data = JSON.parse(e.data);
       setToolActivity(prev => { const next = { ...prev }; delete next[data.subtaskId]; return next; });
+    });
+
+    // Debate mode events
+    es.addEventListener('debate_phase', (e) => {
+      try {
+        const data = JSON.parse(e.data);
+        setDebatePhase(data.phase);
+        setDebateAgents({});
+        addLog(new Date().toISOString(), data.message || t('taskDetail.debatePhaseLog').replace('{phase}', data.phase));
+      } catch { /* ignore malformed SSE */ }
+    });
+
+    es.addEventListener('debate_agent_progress', (e) => {
+      try {
+        const data = JSON.parse(e.data);
+        setDebateAgents(prev => {
+          const existing = prev[data.employeeId] || { name: data.employeeName, text: '' };
+          return { ...prev, [data.employeeId]: { ...existing, text: existing.text + data.content } };
+        });
+      } catch { /* ignore */ }
+    });
+
+    es.addEventListener('debate_agent_tool', (e) => {
+      try {
+        const data = JSON.parse(e.data);
+        setDebateAgents(prev => {
+          const existing = prev[data.employeeId] || { name: data.employeeName, text: '' };
+          return { ...prev, [data.employeeId]: { ...existing, tool: data.toolName } };
+        });
+      } catch { /* ignore */ }
+    });
+
+    es.addEventListener('debate_agent_tool_result', (e) => {
+      try {
+        const data = JSON.parse(e.data);
+        setDebateAgents(prev => {
+          const existing = prev[data.employeeId] || { name: data.employeeName, text: '' };
+          return { ...prev, [data.employeeId]: { ...existing, tool: undefined } };
+        });
+      } catch { /* ignore */ }
     });
 
     es.addEventListener('waiting_user_decision', (e) => {
@@ -842,6 +902,11 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
         </div>
         <span className="text-sm text-muted-foreground">{completed}/{total}</span>
       </div>
+
+      {debatePhase && (
+        <DebatePanel phase={debatePhase} agents={debateAgents} />
+      )}
+
       <div className="space-y-2">
         {subs.map(st => (
           <div key={st.id} data-testid={`subtask-item-${st.id}`} className={`rounded-2xl bg-muted/40 p-4 border border-border/40 flex items-center gap-3${st.status === 'running' ? ' animate-subtask-pulse glow-executing' : ''}`}>
@@ -869,6 +934,85 @@ function ExecutingSection({ task, onStatusChange }: { task: TaskDetail; onStatus
               <span className="text-muted-foreground/60">{new Date(log.time).toLocaleTimeString()}</span> {log.text}
             </p>
           ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ---- Debate Panel ----
+
+const DEBATE_PHASE_I18N_KEYS: Record<string, string> = {
+  analysis: 'taskDetail.debatePhaseAnalysis',
+  analysis_done: 'taskDetail.debatePhaseAnalysisDone',
+  cross_review: 'taskDetail.debatePhaseCrossReview',
+  cross_review_done: 'taskDetail.debatePhaseCrossReviewDone',
+  synthesis: 'taskDetail.debatePhaseSynthesis',
+};
+
+function DebatePanel({ phase, agents }: {
+  phase: string;
+  agents: Record<string, { name: string; text: string; tool?: string }>;
+}) {
+  const { t } = useI18n();
+  const agentEntries = Object.entries(agents);
+  const i18nKey = DEBATE_PHASE_I18N_KEYS[phase];
+  const phaseName = i18nKey ? t(i18nKey) : phase;
+  const isActive = !phase.endsWith('_done');
+
+  return (
+    <div className="rounded-2xl border border-primary/20 bg-primary/5 p-4 space-y-3">
+      <div className="flex items-center gap-2">
+        {isActive && <Loader2 className="h-4 w-4 animate-spin text-primary" />}
+        {!isActive && <Check className="h-4 w-4 text-primary" />}
+        <span className="text-sm font-medium">{t('taskDetail.debateMode')}</span>
+        <Badge variant="secondary" className="text-xs">{phaseName}</Badge>
+      </div>
+      {agentEntries.length > 0 && (
+        <div className="grid gap-2">
+          {agentEntries.map(([id, agent]) => (
+            <DebateAgentCard key={id} agent={agent} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function DebateAgentCard({ agent }: { agent: { name: string; text: string; tool?: string } }) {
+  const { t } = useI18n();
+  const [expanded, setExpanded] = useState(false);
+  const preview = agent.text.length > 120 ? agent.text.slice(0, 120) + '...' : agent.text;
+
+  return (
+    <div className="rounded-xl bg-background/80 border border-border/40 p-3">
+      <div className="flex items-center gap-2 mb-1">
+        <span className="text-xs font-medium">{agent.name}</span>
+        {agent.tool && (
+          <span className="text-xs text-primary animate-pulse">
+            {t('taskDetail.usingTool').replace('{tool}', agent.tool)}
+          </span>
+        )}
+      </div>
+      {agent.text && (
+        <div className="text-xs text-muted-foreground">
+          {expanded ? (
+            <>
+              <MarkdownContent content={agent.text} className="text-xs" />
+              <button onClick={() => setExpanded(false)} className="text-primary hover:underline mt-1">
+                {t('taskDetail.debateCollapse')}
+              </button>
+            </>
+          ) : (
+            <>
+              <p className="line-clamp-3">{preview}</p>
+              {agent.text.length > 120 && (
+                <button onClick={() => setExpanded(true)} className="text-primary hover:underline mt-1">
+                  {t('taskDetail.debateExpand')}
+                </button>
+              )}
+            </>
+          )}
         </div>
       )}
     </div>

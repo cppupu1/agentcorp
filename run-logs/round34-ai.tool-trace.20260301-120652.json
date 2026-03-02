@@ -1,0 +1,142 @@
+[
+  {
+    "id": "03245cc722402127",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": {
+      "toolCallId": "call_function_9wr0f6oyz4ke_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:07:37.722Z"
+  },
+  {
+    "id": "f064a769e323b676",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": null,
+    "output": "{\n  \"NODE\": \"/opt/homebrew/Cellar/node@22/22.16.0/bin/node\",\n  \"INIT_CWD\": \"/Users/chenpu/workspace/claude-code/YourTeam2/packages/server\",\n  \"TERM\": \"xterm-256color\",\n  \"SHELL\": \"/bin/zsh\",\n  \"npm_config_global_prefix\": \"/opt/homebrew\",\n  \"COLOR\": \"0\",\n  \"npm_config_noproxy\": \"\",\n  \"npm_config_local_prefix\": \"/Users/chenpu/workspace/claude-code/YourTeam2\",\n  \"USER\": \"chenpu\",\n  \"npm_config_globalconfig\": \"/opt/homebrew/etc/npmrc\",\n  \"__CF_USER_TEXT_ENCODING\": \"0x1F5:0:0\",\n  \"npm_execpath\": \"/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/bin/npm-cli.js\",\n  \"PATH\": \"/Users/chenpu/.npm-cache-new/_npx/5b2dd62b9d0bddd4/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bi",
+    "isError": false,
+    "durationMs": 3,
+    "createdAt": "2026-03-01T12:07:37.725Z"
+  },
+  {
+    "id": "175d446c3fb0af98",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_xdwyhbm6lzhd_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:07:49.252Z"
+  },
+  {
+    "id": "440f6008a94ee529",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年中国生成式人工智能市场现状及发展前景预测分析(图)-中商情报网\nURL: https://www.askci.com/news/chanye/20260227/091410277215484856111158.shtml\nDescription: 中商情报网讯:目前,国产AI大模型技术已进入全球第一梯队,形成了以百度、阿里、DeepSeek等领军企业为主导的多元化发展格局。这些企业在通用大模型、多模态理解、推理能力等方面持续创新,并通过开源策略大幅降低技术应用门槛。\n市场现状\n1.用户规模\n基于人工智能领域的深度学习模型,AI大模型能够处理大规模数据并具有更加精准地预测和决策能力,是实现人工智能商业化的关键,应用前景广阔。中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,截至2025年12月,我国生成式人工智能用户规模达6.02亿人,较2024年底增长141.7%。中商产业研究院分析师预测,到2026年,中国生成式人工智能用户规模有望超过9亿人。\n数据来源:中商产业研究院整理\n2.普及率\nAI大模型用户规模的持续扩张与备案制度带来的市场信任度提升,中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,截至2025年12月,我国生成式人工智能普及率达42.8%,同比大幅提高25.2个百分点。中商产业研究院分析师预测,到2026年,普及率有望继续增长,超过50%。\n数据来源:中商产业研究院整理\n发展前景\n1.技术从通用到专用的精细化突破帮助行业构建核心竞争力\n中国AI大模型行业正从追求参数规模的“军备竞赛”转向探索更高效、更精巧的架构创新。稀疏注意力机制等技术的应用,使模型能够像在万人会场中精准捕捉关键发言一样,优先处理信息密度高的内容,从而在保持高性能的同时大幅降低对算力资源的依赖。这种以“智力密度”提升为导向的技术路径,推动大模型从“广谱通用”向“精专兼备”转型,特别是在科学发现等复杂推理场景中,通专融合的AGI技术架构正成为攻克专业领域瓶颈的关键。这种精细化发展帮助行业摆脱对算力堆砌的盲目追逐,通过算法创新构建可持续的技术壁垒,为\nPublished date: 2026-02-27T09:14:00+08:00\nSite name: 中商情报网\n\nTitle: 2026年中国AI大模型行业市场前景预测研究报告(简版)-中商情报网\nURL: https://www.askci.com/news/chanye/20260211/085306277077118602741087_2.shtml\nDescription: 2.普及率\nAI大模型用户规模的持续扩张与备案制度带来的市场信任度提升,中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,截至2025年12月,我国生成式人工智能普及率达42.8%,同比大幅提高25.2个百分点。中商产业研究院分析师预测,到2026年,普及率有望继续增长,超过50%。\n数据来源:中商产业研究院整理\n3.备案情况\n中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,2025年全年新增446款生成式人工智能服务在国家网信办完成备案,对于通过API接口或其他方式直接调用已备案模型能力的生成式人工智能应用或功能。中商产业研究院分析预测,到2026年,新增备案数量将达651款。\n数据来源:中商产业研究院整理\n4.年龄结构\n从生成式人工智能用户的年龄结构来看,中低龄用户是生成式人工智能的主要使用群体。其中,19岁及以下用户占比最高,达33.8%;20-29岁用户占比为21.0%;30-39岁用户占比为19.8%;40岁以上用户占比合计25.4%。年龄结构从“集中于年轻群体”向“全年龄段覆盖、中老年增速领跑”的转变,标志着生成式AI已从“小众技术”迈入“大众应用”阶段,技术成熟度、产品易用性与市场信任度均达到规模化普及的基础,同时也为行业后续的场景深化、功能优化提供了清晰的用户导向。\n数据来源:中商产业研究院整理\nPublished date: 2026-02-11T08:53:00+08:00\nSite name: 中商情报网\n\nTitle: 2026年中国生成式人工智能市场现状及发展前景预测分析(图)|DeepSeek|AI大模型|百度|注意力机制|中商产业研究院_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902ojk0.html\nDescription: 中商情报网讯:目前,国产AI大模型技术已进入全球第一梯队,形成了以百度、阿里、D",
+    "isError": false,
+    "durationMs": 435,
+    "createdAt": "2026-03-01T12:07:49.687Z"
+  },
+  {
+    "id": "bc57e7bd8b0da3a0",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_49mwiksywvy2_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:07:54.939Z"
+  },
+  {
+    "id": "daa7566998af4345",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年计算机行业DeepSeek:加速迭代的开源大模型引领者 - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/4636651143907250176.html\nDescription: DeepSeek:长期主义,引领开源模型生态\n1.1、引领开源模型生态,重塑\nAI\n产业格局\nDeepSeek:引领开源大模型发展,重塑全球\nAI\n发展格局。深度求索\n(DeepSeek)\n于\n2023\n年\n7\n月正式成立,由梁文锋旗下的量化投资机构幻方量化设立,专注于\nAI\n大语言模型的开发。2025\n年\n1\n月\n20\n日,推理模型\nDeepSeek-R1\n凭借更低的\n训练成本以及领先的模型能力,深刻影响了全球\nAI\n产业发展,R1\n发布后\n1\n周内\nDeepSeek\nApp\n实现用户数增长超\n1\n亿。DeepSeek\n持续以算法优化和工程创新\n加速\nAI\n技术平权,基于\nOpenRouter\n平台数据,2024\n年\n11\n月至\n2025\n年\n11\n月\n期间,DeepSeek\n的累计调用量为\n14.37\n万亿\nToken,位居全球开源大模型榜首。\nDeepSeek\nV\n系列注重成本效率,R\n系列注重推理性能。DeepSeek\nV\n系列模型\n为基础模型,注重成本及推理效率的优化;R\n系列为推理模型,基于\nV\n系列基础\n模型进行后训练,显著提升了模型在数学、代码生成、复杂逻辑推理等任务中的\n表现。\n1)模型方面:2024\n年\n1\n月,公司发布首个大模型\nDeepSeek\nLLM\n67B\n通用大\n语言模型。2024\n年\n5\n月,公司推出\nDeepSeek-V2,基于\nMoE\n架构,大幅提\n升模型训推效率,API\n定价下降至\nGPT-4\nTurbo\n的百分之一。2024\n年\n12\n月,\n公司推出\nDeepSeek-V3,训练成本仅\n557\n万美元,性能表现比肩\nGPT-4。\n2025\n年\n1\n月,公司发布推理模型\nDeepSeek-R1\n正式版,推理性能比肩\nGPTo1。2025\n年以来,DeepSeek\n推出多个迭代版本,数学、推理、长上下文、\n多模态等方面的能力持续提升。\nPublished date: 2026-02-14T00:00:00+08:00\nSite name: 未来智库\n\nTitle: 国产人工智能大模型DeepSeek引发全球关注----2025年年终科技成果盘点|DeepSeek-R1|深度求索|推理|训练|数学_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902csxy.html\nDescription: 今年1月,中国人工智能企业“深度求索”(DeepSeek)正式发布开源大模型DeepSeek-R1。其凭借极低的训练成本,以及在数学推理、代码生成等任务中比肩国际领先水平的突出表现,引发全球AI领域震动,为全球人工智能大模型发展提供了一条低成本、高效能的“中国路径”。\nDeepSeek-R1的核心竞争力源于其对算力效率的系统性革新。其通过纯强化学习的训练方式,首次证明无需海量标注数据也可实现顶尖推理能力,使训练成本大幅下降。同时,DeepSeek-R1还能够自主生成和验证推理步骤,实现自我反思和校正,展现出强大的智能水平。\n此外,DeepSeek以开源姿态主动打破技术垄断,开放模型架构、训练工具及数据处理全流程,允许开发者自由调用与二次开发,吸引全球数十万开发者参与生态共建。今年9月,DeepSeek-R1相关成果登上《自然》杂志封面,成为全球首个经过权威同行评议的主流大语言模型。\nDeepSeek的成功证明,通过算法优化与工程创新,即使在有限的算力条件下,模型同样可达到顶尖性能。DeepSeek的发展道路不仅为全球贡献了全新的技术路径,更有望推动全球AI竞争从“算力竞赛”转向“效率革命”,重塑以技术创新为核心驱动力的AI产业生态。\n特别声明:以上文章内容仅代表作者本人观点,不代表新浪网观点或立场。如有关于作品内容、版权或其它问题请于作品发表后的30日内与新浪网联系。\nPublished date: 2026-02-13T05:37:35+08:00\nSite name: 新浪网\n\nTitle: 计算机行业DeepSeek:加速迭代的开源大模型引领者.pdf - 文档下载 - 未来智库\nURL: https://www.vzkoo.com/document/4636647438063505408.html\nDescription: 计算机行业DeepSeek:加速迭代的开源大模型引领者.pdf\n上传者:y****\n时间:2026/02/14\n热度:13\n0人点赞\n举报\n计算机行业De",
+    "isError": false,
+    "durationMs": 457,
+    "createdAt": "2026-03-01T12:07:55.396Z"
+  },
+  {
+    "id": "8285947daaef1455",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_um98dozyeqxd_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:08:02.287Z"
+  },
+  {
+    "id": "b9754fd1532e1fb1",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 42页|全球人工智能技术应用洞察报告_场景_预测市场_动态平衡\nURL: https://www.sohu.com/a/979869636_122346174?scm=10001.8085_13-8085_13.0.0-0-0-0-0.0\nDescription: 人工智能技术正逐步渗透至多个行业领域,成为推动产业变革的重要力量。2025年,AI在多个关键应用场景中实现显著突破,其应用范围和影响力持续扩大。AI相关技术在企业中的部署比例已超过55%,并预计在2029年达到更高水平。随着算法优化与算力提升,AI在效率提升、成本控制及创新服务等方面展现出强大潜力。\n在具体应用层面,AI已在智能制造、医疗健康、金融服务等场景中发挥核心作用。通过数据驱动的决策支持系统,企业能够更精准地预测市场趋势,优化资源配置,并提升运营效率。同时,AI技术也在推动产品与服务的智能化升级,为用户提供更高效、个性化的体验。\nAI的发展将更加注重与实际业务场景的深度融合,强调技术落地的可行性和可持续性。在这一过程中,技术迭代与行业需求之间的动态平衡将成为关键。AI在提升生产力的同时,也对人才结构、工作模式及社会经济产生深远影响,需在技术创新与社会责任之间寻求协调。\n来源:亿欧智库\n返回搜狐,查看更多\nPublished date: 2026-02-17T09:22:00+08:00\nSite name: 搜狐\n\nTitle: AI应用商业化提速 与制造业融合愈发深入|粤传媒|证券相关基金|AI音频生成|人工智能|传媒_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c0019021dv8.html\nDescription: 步入2026年,AI应用迎来规模化落地,AI技术正加速嵌入各类终端产品和产业场景。在此背景下,截至1月15日,开年以来A股AI应用板块指数累计涨幅达18.30%。\n业内预测,AI产业正站在从技术探索迈向规模商业化的临界点,2026年将是AI在应用端商业化加速的关键年,产业链即将迎来加速发展期。\n从“概念验证”走向“应用实训”\n与以往AI技术的部署路径多聚焦“云端集中式”不同,随着大模型压缩、异构芯片、存内计算等核心技术突破,这一路径正加速向“端侧分布式”演进。在手机、PC、可穿戴、汽车、机器人乃至玩具等终端中,AI技术正从“概念验证”走向“应用实训”。\n人形机器人产业的商业化进程加速就是重要体现。2025年以来,人形机器人迎来商业化拐点,全球处于具身智能大爆发的“前夜”,业界认为,人形机器人有望成为继手机和汽车之后的“下一代海量智能终端”。\n此外,随着AI大模型在传媒行业的应用和创新,“AI+传媒”概念近期也受到资本的青睐,不少上市公司对此进行了积极回应。例如,广东广州日报传媒股份有限公司(证券简称“粤传媒”)相关负责人在互动平台透露,公司已完成广报AI数字人平台封装上线、妙音AI音乐大模型备案,AI技术已赋能广告全案营销,在视频制作、脚本生成等环节实现降本增效,还打造了多款AI制作广告短片,并通过AIGC培训课程实现知识变现,“传媒+AI营销”的业务模式持续落地。\n国金证券研报认为,2026年是AI在应用端从技术验证阶段迈向大规模商业推广的关键之年,大模型作为流量入口与商业化落地双重枢纽的核心逻辑已完全跑通。\nAI在应用端的快速落地为产业链带来巨大的市场空间。据中信建投估算,2026年,手机、PC的AI渗透率有望分别达到45%和62%,端侧AI市场规模预计从2025年的3219亿元跃升至2029年的1.22万亿元,年复合增长率将达40%。\nAI业务逐渐进入价值兑现新阶段\nPublished date: 2026-02-04T07:47:11+08:00\nSite name: 新浪网\n\nTitle: 2026年计算机行业全球AI系列报告:双极进化与算力重构,2026 AI行业深度展望(国内篇) - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/4633677134752124928.html\nDescription: AI\n落地元年:从“技术追赶”走向“场景重构”\n站在\n2026\n年的时点回望,如果说过去三年是全球大模型能力的“军备竞赛期”,那\n么今年则标志着中国\nAI\n正式全面进入\n“规模化落地元年”。长期以来,业界习惯\n于以底层算力与基础模型的参数量来衡量\nAI\n的进展,但在中国独特的市场生态下,\n另一种力量正在重塑竞争格局——即“规模应用”的场景牵引力。依托全球最大的\n统一市场与极其敏捷的工程化能力,国内\nAI\n应用已不再是技术的简单附庸,而是\n成为了驱动底层技术精进与供需匹配的核心引擎。\n从行业发展的角度",
+    "isError": false,
+    "durationMs": 389,
+    "createdAt": "2026-03-01T12:08:02.676Z"
+  },
+  {
+    "id": "1f5164122581e1c6",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_x9pa0jlnwrh8_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:08:10.583Z"
+  },
+  {
+    "id": "38e656020e6239ba",
+    "type": "tool_call",
+    "taskId": "758298bd60b522c1",
+    "subtaskId": "b7fe97b5e8782018",
+    "employeeId": "0a2efa7eda6f5d7e",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年中国AI大模型普及率及备案情况预测分析(图)-中商情报网\nURL: https://m.askci.com/news/chanye/20260226/150345277208942318711247.shtml\nDescription: 2026年中国AI大模型普及率及备案情况预测分析(图)\n中商产业研究院\n2026-02-26\n15:03\n中商情报网讯:目前,国产AI大模型技术已进入全球第一梯队,形成了以百度、阿里、DeepSeek等领军企业为主导的多元化发展格局。这些企业在通用大模型、多模态理解、推理能力等方面持续创新,并通过开源策略大幅降低技术应用门槛。\n普及率\nAI大模型用户规模的持续扩张与备案制度带来的市场信任度提升,中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,截至2025年12月,我国生成式人工智能普及率达42.8%,同比大幅提高25.2个百分点。中商产业研究院分析师预测,到2026年,普及率有望继续增长,超过50%。\n数据来源:中商产业研究院整理\n备案情况\n中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,2025年全年新增446款生成式人工智能服务在国家网信办完成备案,对于通过API接口或其他方式直接调用已备案模型能力的生成式人工智能应用或功能。中商产业研究院分析预测,到2026年,新增备案数量将达651款。\n数据来源:中商产业研究院整理\n更多资料请参考中商产业研究院发布的《大模型系列之中国AI大模型行业前景与市场趋势洞察专题研究报告》,同时中商产业研究院还提供产业大数据、产业情报、行业研究报告、行业白皮书、行业地位证明、可行性研究报告、产业规划、产业链招商图谱、产业招商指引、产业链招商考察&推介会、“十五五”规划等咨询服务。\nPublished date: 2026-02-26T15:03:00+08:00\nSite name: 中商情报网\n\nTitle: 2026年中国AI大模型普及率及备案情况预测分析(图)-中商情报网\nURL: https://www.askci.com/news/chanye/20260226/150345277208942318711247.shtml\nDescription: 中商情报网讯:目前,国产AI大模型技术已进入全球第一梯队,形成了以百度、阿里、DeepSeek等领军企业为主导的多元化发展格局。这些企业在通用大模型、多模态理解、推理能力等方面持续创新,并通过开源策略大幅降低技术应用门槛。\n普及率\nAI大模型用户规模的持续扩张与备案制度带来的市场信任度提升,中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,截至2025年12月,我国生成式人工智能普及率达42.8%,同比大幅提高25.2个百分点。中商产业研究院分析师预测,到2026年,普及率有望继续增长,超过50%。\n数据来源:中商产业研究院整理\n备案情况\n中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,2025年全年新增446款生成式人工智能服务在国家网信办完成备案,对于通过API接口或其他方式直接调用已备案模型能力的生成式人工智能应用或功能。中商产业研究院分析预测,到2026年,新增备案数量将达651款。\n数据来源:中商产业研究院整理\n更多资料请参考中商产业研究院发布的《大模型系列之中国AI大模型行业前景与市场趋势洞察专题研究报告》,同时中商产业研究院还提供产业大数据、产业情报、行业研究报告、行业白皮书、行业地位证明、可行性研究报告、产业规划、产业链招商图谱、产业招商指引、产业链招商考察&推介会、“十五五”规划等咨询服务。\nPublished date: 2026-02-26T15:03:00+08:00\nSite name: 中商情报网\n\nTitle: 2026年中国AI大模型行业市场前景预测研究报告(简版)-中商情报网\nURL: https://www.askci.com/news/chanye/20260211/085306277077118602741087_2.shtml\nDescription: 2.普及率\nAI大模型用户规模的持续扩张与备案制度带来的市场信任度提升,中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,截至2025年12月,我国生成式人工智能普及率达42.8%,同比大幅提高25.2个百分点。中商产业研究院分析师预测,到2026年,普及率有望继续增长,超过50%。\n数据来源:中商产业研究院整理\n3.备案情况\n中商产业研究院发布的《2025-2030年中",
+    "isError": false,
+    "durationMs": 413,
+    "createdAt": "2026-03-01T12:08:10.996Z"
+  }
+]

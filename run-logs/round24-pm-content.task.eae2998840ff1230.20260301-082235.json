@@ -1,0 +1,69 @@
+{
+  "id": "eae2998840ff1230",
+  "teamId": "a0a001c8ac62de94",
+  "teamName": "内容创作",
+  "title": "企业AI助手发布短文与社媒文案创作",
+  "description": "为企业AI助手创作一篇发布短文和两条社媒文案（简版）。发布短文需要突出AI助手的核心功能和价值主张；社媒文案要简洁有力，适合在微博/小红书等平台传播，吸引目标用户关注。",
+  "status": "failed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "89485b0933738871",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "20886380cd6c57d2",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "578992c726df64ff",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业AI助手发布短文与社媒文案创作",
+        "description": "为企业AI助手创作一篇发布短文和两条社媒文案（简版）。发布短文需要突出AI助手的核心功能和价值主张；社媒文案要简洁有力，适合在微博/小红书等平台传播，吸引目标用户关注。",
+        "assigneeId": "20886380cd6c57d2",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "任务执行失败：PM执行异常: No output generated. Check the stream for errors.",
+    "error": "PM执行异常: No output generated. Check the stream for errors.",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 0,
+      "failed": 0,
+      "pending": 1
+    },
+    "failedAt": "2026-03-01T08:22:58.848Z"
+  },
+  "tokenUsage": 0,
+  "createdAt": "2026-03-01T08:22:46.794Z",
+  "updatedAt": "2026-03-01T08:22:58.848Z",
+  "subtasks": [
+    {
+      "id": "921dc02161da3c1c",
+      "title": "企业AI助手发布短文与社媒文案创作",
+      "description": "为企业AI助手创作一篇发布短文和两条社媒文案（简版）。发布短文需要突出AI助手的核心功能和价值主张；社媒文案要简洁有力，适合在微博/小红书等平台传播，吸引目标用户关注。",
+      "assigneeId": "20886380cd6c57d2",
+      "assigneeName": "文案策划",
+      "status": "pending",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-01T08:22:51.778Z",
+      "updatedAt": "2026-03-01T08:22:51.778Z"
+    }
+  ]
+}

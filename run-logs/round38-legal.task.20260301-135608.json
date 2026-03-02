@@ -1,0 +1,71 @@
+{
+  "id": "d0d613774956c868",
+  "teamId": "b494d819e2177ce9",
+  "teamName": "合同审阅团队",
+  "title": "供应商合同风险审查",
+  "description": "请审查供应商合同，识别并提取3条高风险条款，每条需说明风险点并提供改写建议。",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "0b803eb78d6b0a51",
+      "name": "研究主管"
+    },
+    "members": [
+      {
+        "id": "2f3ba6b9ddb0b602",
+        "name": "研究员",
+        "taskPrompt": "负责信息收集、数据分析与研究洞察"
+      },
+      {
+        "id": "f5a9376d37956508",
+        "name": "撰稿人",
+        "taskPrompt": "负责研究报告撰写与可视化呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "供应商合同风险审查",
+        "description": "请审查供应商合同，识别并提取3条高风险条款，每条需说明风险点并提供改写建议。",
+        "assigneeId": "2f3ba6b9ddb0b602",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n所有子任务已完成（PM未显式调用complete_task，系统自动完成）",
+    "deliverables": "我需要先确认合同文件的位置。让我检查可访问的目录。",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T13:57:17.641Z"
+  },
+  "tokenUsage": 3370,
+  "createdAt": "2026-03-01T13:56:32.696Z",
+  "updatedAt": "2026-03-01T13:57:17.641Z",
+  "subtasks": [
+    {
+      "id": "38d823f0379c3c93",
+      "title": "供应商合同风险审查",
+      "description": "请审查供应商合同，识别并提取3条高风险条款，每条需说明风险点并提供改写建议。",
+      "assigneeId": "2f3ba6b9ddb0b602",
+      "assigneeName": "研究员",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "我需要先确认合同文件的位置。让我检查可访问的目录。"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 3370,
+      "createdAt": "2026-03-01T13:56:59.468Z",
+      "updatedAt": "2026-03-01T13:57:17.396Z"
+    }
+  ]
+}

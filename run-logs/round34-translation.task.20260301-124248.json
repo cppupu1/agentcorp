@@ -1,0 +1,71 @@
+{
+  "id": "7e9b2376c7746267",
+  "teamId": "7426cabc6bb1acf0",
+  "teamName": "双语公告翻译团队",
+  "title": "企业公告中英双语简版输出",
+  "description": "将企业提供的中英双语公告模板内容进行简化处理，保持语义一致，输出中英双语的简版企业公告",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "62d41dce65c5b64d",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "0bda8a86764b5456",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "2ef0504f159678ed",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版输出",
+        "description": "将企业提供的中英双语公告模板内容进行简化处理，保持语义一致，输出中英双语的简版企业公告",
+        "assigneeId": "0bda8a86764b5456",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告中英双语简版输出任务。将原有的中英双语公告模板（包括搬迁公告、重大事项公告、更名公告）进行简化处理，删除了冗长的客套语和感谢语句，精简了表格信息为核心内容，保留了关键信息（日期、事项、联系方式），并保持中英双语对照结构。",
+    "deliverables": "# 简版企业公告 / Simplified Corporate Announcement\n\n---\n\n## 一、搬迁公告 / Relocation Notice\n\n**【公司搬迁公告】**\n\n尊敬的客户及合作伙伴：\n\n因业务发展需要，我司将于**2024年12月30日**搬迁至新地址：**北京市朝阳区建国路88号SOHO现代城A。搬迁期间业务座15层**正常运营。\n\n如有疑问，请致电：010-12345678\n\n**XX有限公司**\n**2024年12月15日**\n\n---\n\n**【Relocation Notice】**\n\nDear Customers and Partners,\n\nDue to business development, our company will relocate to **Floor 15, Building A, SOHO Modern City, No. 88 Jianguo Road, Chaoyang District, Beijing** effective **December 30, 2024**. Business operations will continue normally during the relocation.\n\nFor inquiries, please contact: 010-12345678\n\n**XX Co., Ltd.**\n**December 15, 2024**\n\n---\n\n## 二、重大事项公告 / Major Event Notice\n\n**【重大事项公告】**\n\n各位股东及投资者：\n\n公司拟与XX集团实施战略重组，整合资源优势，提升竞争力。重组方案将另行公告，需经董事会及股东大会审批，存在不确定性，请注意投资风险。\n\n联系电话：010-12345678\n\n**XX股份有限公司**\n**2024年12月15日**\n\n---\n\n**【Major Event Notice】**\n\nDear Shareholders and Investors,\n\nThe Company plans to implement a strategic restructuring with XX Group to integrate resources and enhance competitiveness. Specific plans will be further announced. The restructuring requires approval from the Board and Shareholders' Meeting, with uncertainty involved. Please note investment risks.\n\nTel: 010-12345678\n\n**XX Co., Ltd.**\n**December 15, 2024**\n\n---\n\n## 三、更名公告 / Name Change Notice\n\n**【公司更名公告】**\n\n尊敬的客户及合作伙伴：\n\n为提升品牌形象，我司自**2025年1月1日**起正式更名为**\"YY创新科技股份有限公司\"**。更名后公司法律主体、业务及联系方式保持不变。\n\n联系电话：010-12345678\n\n**XX科技有限公司**\n**2024年12月15日**\n\n---\n\n**【Name Change Notice】**\n\nDear Customers and Partners,\n\nTo enhance our brand image, our company will officially change its name to **\"YY Innovative Technology Co., Ltd.\"** effective **January 1, 2025**. After the name change, the legal entity, business operations, and contact information remain unchanged.\n\nTel: 010-12345678\n\n**XX Technology Co., Ltd.**\n**December 15, 2024**",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T12:44:03.863Z"
+  },
+  "tokenUsage": 29532,
+  "createdAt": "2026-03-01T12:43:04.283Z",
+  "updatedAt": "2026-03-01T12:44:07.072Z",
+  "subtasks": [
+    {
+      "id": "5a05231c2a3aa324",
+      "title": "企业公告中英双语简版输出",
+      "description": "将企业提供的中英双语公告模板内容进行简化处理，保持语义一致，输出中英双语的简版企业公告",
+      "assigneeId": "0bda8a86764b5456",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "已找到现有的中英双语公告模板文件。以下是简化处理后的简版企业公告：\n\n---\n\n# 简版企业公告 / Simplified Corporate Announcement\n\n---\n\n## 一、搬迁公告 / Relocation Notice\n\n**【公司搬迁公告】**\n\n尊敬的客户及合作伙伴：\n\n因业务发展需要，我司将于**2024年12月30日**搬迁至新地址：**北京市朝阳区建国路88号SOHO现代城A座15层**。搬迁期间业务正常运营。\n\n如有疑问，请致电：010-12345678\n\n**XX有限公司**\n**2024年12月15日**\n\n---\n\n**【Relocation Notice】**\n\nDear Customers and Partners,\n\nDue to business development, our company will relocate to **Floor 15, Building A, SOHO Modern City, No. 88 Jianguo Road, Chaoyang District, Beijing** effective **December 30, 2024**. Business operations will continue normally during the relocation.\n\nFor inquiries, please contact: 010-12345678\n\n**XX Co., Ltd.**\n**December 15, 2024**\n\n---\n\n## 二、重大事项公告 / Major Event Notice\n\n**【重大事项公告】**\n\n各位股东及投资者：\n\n公司拟与XX集团实施战略重组，整合资源优势，提升竞争力。重组方案将另行公告，需经董事会及股东大会审批，存在不确定性，请注意投资风险。\n\n联系电话：010-12345678\n\n**XX股份有限公司**\n**2024年12月15日**\n\n---\n\n**【Major Event Notice】**\n\nDear Shareholders and Investors,\n\nThe Company plans to implement a strategic restructuring with XX Group to integrate resources and enhance competitiveness. Specific plans will be further announced. The restructuring requires approval from the Board and Shareholders' Meeting, with uncertainty involved. Please note investment risks.\n\nTel: 010-12345678\n\n**XX Co., Ltd.**\n**December 15, 2024**\n\n---\n\n## 三、更名公告 / Name Change Notice\n\n**【公司更名公告】**\n\n尊敬的客户及合作伙伴：\n\n为提升品牌形象，我司自**2025年1月1日**起正式更名为**\"YY创新科技股份有限公司\"**。更名后公司法律主体、业务及联系方式保持不变。\n\n联系电话：010-12345678\n\n**XX科技有限公司**\n**2024年12月15日**\n\n---\n\n**【Name Change Notice】**\n\nDear Customers and Partners,\n\nTo enhance our brand image, our company will officially change its name to **\"YY Innovative Technology Co., Ltd.\"** effective **January 1, 2025**. After the name change, the legal entity, business operations, and contact information remain unchanged.\n\nTel: 010-12345678\n\n**XX Technology Co., Ltd.**\n**December 15, 2024**\n\n---\n\n**简化说明：**\n- 删除了冗长的客套语和感谢语句\n- 精简了表格信息为核心内容\n- 保留了关键信息：日期、事项、联系方式\n- 保持了中英双语对照结构\n\n如需进一步调整具体内容（如替换公司名称、日期、地址等），请告知具体需求。"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 29532,
+      "createdAt": "2026-03-01T12:43:14.262Z",
+      "updatedAt": "2026-03-01T12:43:50.609Z"
+    }
+  ]
+}

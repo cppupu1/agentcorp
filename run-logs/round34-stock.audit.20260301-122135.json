@@ -1,0 +1,70 @@
+{
+  "label": "round34-stock",
+  "sessionId": "round34-stock-20260301-122135",
+  "kind": "stock",
+  "pmChatDurationMs": 27834,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "83e3fef0030b25f2"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 27834
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "83e3fef0030b25f2",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 16344,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。成功获取贵州茅台与宁德时代近30个交易日收盘价数据，完成走势对比分析。分析识别出两个关键观察点：1）1月30日为走势分化拐点，茅台提前见底反弹；2）2月4日宁德时代放量大涨但随后回落，茅台稳步上涨。茅台累计涨2.04%，宁德时代累计跌9.40%，两者走势明显分化。"
+  }
+}

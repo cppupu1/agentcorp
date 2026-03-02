@@ -1,0 +1,254 @@
+[
+  {
+    "id": "8bfc721ba305cc67",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_aab18d219ec44eefbfb05ef9"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:17:16.554Z"
+  },
+  {
+    "id": "6162e67261f9934f",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_f17a368bc42e4a1c9b5c7ae1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:17:16.876Z"
+  },
+  {
+    "id": "0bbf88b3b6a57678",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI Agent市场前景与发展趋势分析_ai agent市场规模-CSDN博客\nURL: https://blog.csdn.net/weixin_44705554/article/details/146507186\nDescription: AI Agent市场前景与发展趋势分析 市场规模与增长预测 根据多家权威机构的预测,AI Agent市场在未来几年将呈现爆发式增长: Markets and Markets预测:全球AI Agent市场规模将从2024年的51亿美元增至2030年的471亿美元,年复合增长率达44.8%。 Rootanalysis预测:全球AI Agent市场规模将从2024年的52.9亿美元增长到2035年的2168亿美元,2024-2035年预测期内的复合年增长率为40.15%。 IDC预测:到2026年,将有50%的中国500强数据团队使用AI Agent来实现数据准备和分析,并成为重要组织者和协调者。 Gartner预测:到2028年,至少15%的日常工作决策将通过Agentic AI自主做出,33%的企业软件应用程序也将包含Agentic AI。 德勤预测:到2025年,25%使用生成式AI的企业将部署AI Agent,到2027年将增长到50%。 Capgemini报告:大多数组织(82%)计划到2026年集成AI Agent,主要用于电子邮件生成、编码和数据分析等任务。 值得注意的是,在Gartner发布的《2025年十大技术趋势》报告中,\"Agentic AI\"被列为首位,凸显了其在企业数字化转型中的核心地位。 技术演进路径与突破点预测 AI A\nPublished date: 2025-03-25T16:50:25+08:00\nSite name: CSDN\n\nTitle: 【人工智能】Agent未来市场与技术潜力分析\nURL: https://m.blog.csdn.net/meisongqing/article/details/147372815\nDescription: Agent作为连接大模型与具体场景的桥梁,正在成为AI技术落地的核心载体。结合2025年的市场动态与技术趋势,其未来潜力可从以下多个维度展开分析:\n一、市场前景:爆发式增长与多层级需求\n市场规模与增速\n 全球AI Agent市场规模预计从2024年的51亿美元增至2030年的471亿美元(年复合增长率44.8%),而中国市场的增速更为显著,2025年软件市场规模突破50亿元,未来四年年复合增长率超60%。\n 企业级市场占据主导地位,政企客户的高预算项目(数百万至千万元级)与中小企业的长尾需求共同推动市场分层发展。\n商业模式创新\n 订阅制与项目制并行,头部厂商通过“大模型+Agent+云服务”的一揽子解决方案提升客单价,而中小厂商通过标准化SaaS工具覆盖高频、低成本的通用需求。例如,LinkAI通过零代码平台实现200万ARR的订阅收入,并与百度等大厂合作拓展生态。\n二、技术演进:从工具到自主决策的跨越\n能力分层与进阶\n Agent技术正从“任务自动化”(L3)向“半自主决策”(\nPublished date: 2025-04-21T01:28:58+08:00\nSite name: CSDN\n\nTitle: AI Agent市场前景与发展趋势分析\nURL: https://m.blog.csdn.net/weixin_44705554/article/details/146507186\nDescription: AI Agent市场前景与发展趋势分析\n市场规模与增长预测\n根据多家权威机构的预测,AI Agent市场在未来几年将呈现爆发式增长:\nMarkets and Markets预测 :全球AI Agent市场规模将从2024年的51亿美元增至2030年的471亿美元,年复合增长率达44.8%。\nRootanalysis预测 :全球AI Agent市场规模将从2024年的52.9亿美元增长到2035年的2168亿美元,2024-2035年预测期内的复合年增长率为40.15%。\nIDC预测 :到2026年,将有50%的中国500强数据团队使用AI Agent来实现数据准备和分析,并成为重要组织者和协调者。\nGartner预测 :到2028年,至少15%的日常工作决策将通过Agentic AI自主做出,33%的企业软件应用程序也将包含Agentic AI。\n德勤预测 :到2025年,25%使用生成式AI的企业将部署AI Agent,到2027年将增长到50%。\nCapgemini报告 :大多数组织(82%)计划到2026年集成AI Agent,主要用于电子邮件生成、编码和数据分析等任务。\n值得注意的是",
+    "isError": false,
+    "durationMs": 412,
+    "createdAt": "2026-03-01T02:17:17.288Z"
+  },
+  {
+    "id": "92d36c10cf49c16e",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 人工智能大语言模型发展技术研究_能力_Agent_推理\nURL: https://www.sohu.com/a/794371099_121827579?scm=10001.8085_13-8085_13.0.0.0\nDescription: 人工智能大语言模型发展技术研究报告共计:49页《人工智能大语言模型技术发展研究报告(2024年)》由中国软件评测中心发布,对大语言模型的发展进行了全面分析。大语言模型发展的基石包括软硬协同提升算力、丰富高质量数据塑造知识深度与广度以及算法优化与创新。目前,大语言模型在训练推理效率、中文生成与推理能力、应用生态、数据处理基础能力以及多模型结合应用等方面取得了进展,其核心能力在深层语境分析与知识融合、精确内容生成与增强搜索融合、符号逻辑与神经网络融合、上下文记忆能力以及内容安全与智能应答机制等方面不断进阶。智能体(AI\nAgent)是大模型的重要研发方向,大模型能力为其带来全面能力提升,如语言理解、复杂推理等。典型的AI\nAgent案例包括RoboAgent、Coze、Auto\n-\nGPT等。未来,大语言模型将更加注重多模态数据融合、提升自适应和迁移学习能力、采用可解释性算法提高模型透明度、结合行业深度定制垂直大模型、妥善处理隐私保护与数据安全问题以及注重能效比与绿色计算。总之,大语言模型技术不断发展,在各领域的应用前景广阔,但也面临诸多挑战,需要产业界共同努力,推动其健康发展。以下为报告节选内容返回搜狐,查看更多\nPublished date: 2025-11-17T07:39:00+08:00\nSite name: 搜狐\n\nTitle: 2024年人工智能商业化应用研究:AI Agent崛起与多领域突破 - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/20250303516e94009725b759b5f36b5b.html\nDescription: 来源:其他 相关深度报告 REPORTS AI应用行业专题报告:商业化初露锋芒。23年11月,我们发布《AI应用:从生产力工具到交互体验升级——生成式AI2024年投资策略》全景梳理展望了AI应用的关键场景,本篇报告聚焦近一年AI应用有重大突破的场景。大模型及AI应用进展:Agents时代到来,多个美股软件24年10月来上涨,编程、企业服务、网络安全、陪伴、广告等多领域初步商业化。(1)大模型:RL推动性能提升,算法优化带动价格下降,大模型正从推理进入AIAgent爆发阶段,有助于AI应用爆发。24年底至25年初新一代大模型及AIAgent密集发布期将至。(2)AI应用:过去一年变化较多。初创公司看:AI创意工... 随着人工智能技术的飞速发展,AI应用已从实验室走向商业化落地,成为推动全球科技变革的重要力量。2024年,AI技术在多个领域取得重大突破,尤其是AI Agent的崛起,标志着人工智能从单纯的推理工具向具备复杂交互能力的智能体转变。本文将深入分析人工智能商业化应用的现状、市场规模、未来趋势以及竞争格局,探讨AI技术如何重塑各行业的未来。 一:AI Agent的崛起与大模型技术的迭代 AI Agent的崛起是2024年人工智能领域最重要的技术突破之一。与传统的推理模型相比,AI Agent能够更好地理解复杂指令,并在多任务环境中自主决策和灵活应对。这一能力的提升,得益于大模型技术的持续迭代和强化学习的广泛应用。 近年来,大模型的参数规模和性能不断提升。从GPT-1的1.17亿参数到GPT-4的万亿级参数,模型能力实现了质的飞跃。同时,强化学习(RL)的应用进一步优化了模型的推理能力,使其能够更好地适应复杂任务。例如,OpenAI的GPT-4o通过强化学习实现了音频和视觉的实时推理,API价格也大幅下降,响应速度显著提升。 此外,大模型的商业化应用也在加速推进。\nPublished date: 2025-03-03T02:28:00+08:00\nSite name: 未来智库\n\nTitle: 前端的 AI 应用开发系列四:智能体Agent的发展历程大语言模型智能体是基于先进语言模型构建的系统,能够理解指令并自主 - 掘金\nURL: https://juejin.cn/post/7490434181773017125\nDescription: 什么是大语言模型智能体(Agent)? 大语言模型智能体是基于先进语言模型构建的系统,能够理解指令并自主完成任务。与普通语言模型相比,Agent能够做更多事情: 更好地理解你真正想要什么(不只是字面意思) 把复杂问题拆解成小步骤来解决 会用各种工具和资源来帮你完成任务 从反馈中学习,越用越懂你 在信息不完整时也能做出合理判断 能记住长期",
+    "isError": false,
+    "durationMs": 806,
+    "createdAt": "2026-03-01T02:17:17.361Z"
+  },
+  {
+    "id": "e7180f714f0b601d",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_287c96ca8fa140388105912c"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:17:17.400Z"
+  },
+  {
+    "id": "414cd79e3fce9306",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 推荐给朋友: 组队竞争成为趋势?微软+OpenAI、谷歌+Gemini、亚马逊+Anthropic - OFweek云计算网\nURL: https://cloud.ofweek.com/recommendfriends-30612660.html\nDescription: 上周亚马逊宣布投资Anthropic\n(OpenAI的最大竞争者之一,通用大模型Claude的开发者)。此前微软斥巨资数十亿元入股与\nAnthropic\n竞争的初创公司\nOpenAI。亚\nPublished date: 2026-01-17T19:20:10+08:00\nSite name: OFweek云计算网\n\nTitle: AI云加速走向Agent 落地,百度、阿里双雄格局显现__财经头条__新浪财经\nURL: https://t.cj.sina.com.cn/articles/view/2117086213/7e302c05001017rdw?finpagefr=p_103\nDescription: 大厂对于AI\nAgent的眼红,已经跃然纸上。12月18日,ChatGPT\n版应用商店正式上线。OpenAI按“精选/生活方式/工作效率”等分类列出多款应用,如PS、Apple\nMusic、Canva等等。此前,OpenAI已经融合ChatGPT、Deep\nResearch、Operator“三剑客”,试图打造ChatGPT“统一智能体”,Agent已经成为OpenAI的重中之重。这一趋势并非孤例。今年,微软发布多项工具含\nGitHub\nCopilot代理、Azure\nSRE代理,助力开发及运维,试图构建企业级\nAI\n模型与智能体全生命周期管理体系。谷歌依托\nAIStudio兼顾B/C端多场景,目前形成了业务活动层、数据综合层、数据控制层、数据层等基础设施体系。亚马逊/Anthropic依托AWS,服务中小企业,侧重算力销售与便捷部署,通过Claude模型提供实用性极强的工具。在国内,百度智能云在今年对Agent\nInfra进行了全面升级,正式发布百度千帆4.0全新版本,通过构建模型服务、工具服务、Agent开发服务、数据服务以及Agent运行环境等,全面驱动企业智能体进化。可以看到,Agent\n已从概念阶段,进入到各大厂商真刀真枪的基础设施竞争。百度、阿里冲到领导者象限CBINSIGHTS预计,2032年,AI\nAgent营收有望达1036亿美元,年复合增长率为44.9%。Gartner与IDC也在多份预测中指出,2035年后,Agent将成为认知共生的人类助手、智能体即应用将成主流。这一变化,正在倒逼云服务商进行底层逻辑的重构。在传统模式下,云计算更多遵循“租卡思维”,经营模式是粗放状态,普遍是买来GPU装进机柜,对外提供AI算力服务。但从生成式AI开始,发生了几个显著变化。首先,大模型训练与推理对算力的需求呈指数级增长,GPU\n价格飙升,单纯依靠租卡已难以承受成本与\nPublished date: 2025-12-19T16:32:00+08:00\nSite name: 财经头条\n\nTitle: 中关村科金得助智能 - 个人中心 - 腾讯云开发者社区-腾讯云\nURL: https://cloud.tencent.com/developer/user/11735959/articles\nDescription: 不只OpenAI!2025年AI大模型公司排名一览表\n字节、中关村科金得助智能、百度、腾讯、阿里强势登榜!其实目前没有官网权威的AI大模型公司排名一览表,都是一些组织或者个人收集的资料整理的,今天我也整理了国内外知名度高具有一定影响力的公司,国内的有深度求索、字节跳...\nPublished date: 2025-07-07T04:08:12+08:00\nSite name: 腾讯云\n\nTitle: AI Agent元年:大厂争锋,人与AI共生的时代开启\nURL: http://stock.10jqka.com.cn/20250416/c667517854.shtml\nDescription: 2025年,AI Agent成为全球科技巨头的必争之地。 巨头卡位 生态入口争夺战 年初,OpenAI的Operator智能体引爆市场,凭“类人操作”能力完成订票、编程等复杂任务。 微软的AI Copilot、谷歌的Project Mariner、苹果的Apple Intelligence、英伟达的NVIDIA AI Blueprint紧随其后,全面展现了Agent在多场景下的主动执行能力。 国内厂商不甘示弱。阿里推出Qwen2.5-Max模型,其视觉Agent可自动完成查询、预订等任务;智谱AI的AutoGLM更是以“全球首个免费深度操",
+    "isError": false,
+    "durationMs": 255,
+    "createdAt": "2026-03-01T02:17:17.655Z"
+  },
+  {
+    "id": "288f43477a432af5",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_7119bbcdb5374f3180b5dbc7"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:17:19.988Z"
+  },
+  {
+    "id": "b2672ec24fcab519",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI Agent(9):企业应用场景_agent企业应用-CSDN博客\nURL: https://blog.csdn.net/npl2580/article/details/147877580\nDescription: 引言 企业是AI Agent技术最重要的应用领域之一。随着技术的成熟和商业化进程的加速,越来越多的企业开始将AI Agent应用于各种业务场景,从客户服务到业务流程自动化,从数据分析到知识管理。这些应用不仅提高了效率,降低了成本,还创造了新的业务模式和竞争优势。 客户服务与支持场景 客户服务与支持是AI Agent在企业中最广泛应用的场景之一,它直接影响客户体验和满意度,是企业竞争力的重要组成部分。 1. 智能客服Agent 智能客服Agent是企业客户服务的数字化前线,能够全天候提供即时响应和个性化服务。 1.1 核心功能与特点 现代智能客服Agent具备多种功能和特点: 多渠道集成: 网站聊天窗口 移动应用内对话 社交媒体平台 电子邮件 短信/即时通讯 语音交互系统 自然语言理解: 意图识别 实体提取 情感分析 多语言支持 上下文理解 模糊查询处理 个性化服务: 客户历史记忆 偏好学习 个性化推荐 交互风格适应 客户细分响应 问题解决能力: 常见问题自动回答 故障排除指导 产品使用建议 政策解释 复杂查询处理 1.2 实现架构与技术 智能客服Agent的典型实现架构包括: 前端交互层: 对话界面设计 多模态输入处理 响应呈现 用户体验优化 核心处理层: 大语言模型(LLM) 意图分类器 对话管理系统 知识检索系统 业务规则引擎 集成与连接层: CRM系统集成 订单系统连接 知识库接口 人工坐席交接 分析与报告系统 数据与学习层: 对话日志存储 性能分析 持续学习 模型微调 A/B测试框架 实现智能客服Agent的关键技术包括: 检索增强生成(RAG):结合企业知识库提供准确回答 多轮对话管理:维护对话状态和上下文 混合架构:结合规则和AI的混合系统 人机协作模式:智能路由和无缝交接 多语言支持:跨语言理解和生成 个性化引擎:基于用户画像的个性化 1.3 应用案例与效果\nPublished date: 2025-05-11T19:31:29+08:00\nSite name: CSDN\n\nTitle: AI Agent在客户服务中的应用\nURL: https://m.blog.csdn.net/universsky2015/article/details/146582270\nDescription: AI Agent在客户服务中的应用\n关键词:AI Agent、客户服务、 自然语言处理 、智能交互、机器学习\n摘要:本文深入探讨了AI Agent在客户服务领域的应用。详细介绍了AI Agent的核心概念、工作原理和架构,通过Python代码阐述了 相关算法 。同时,结合数学模型和公式对其原理进行剖析,并给出了项目实战案例,包括开发环境搭建、代码实现和解读。还分析了AI Agent在客户服务中的实际应用场景,推荐了学习资源、开发工具和相关论文。最后总结了其未来发展趋势与挑战,解答了常见问题,并提供了扩展阅读和参考资料。\n1. 背景介绍\n1.1 目的和范围\n本文章旨在全面介绍AI Agent在客户服务中的应用,涵盖AI Agent的基本概念、核心算法、数学模型、实际应用案例等方面。通过详细的阐述,让读者深入了解AI Agent如何在客户服务中发挥作用,以及如何进行相关的开发和应用。范围包括AI Agent在不同类型客户服务场景中的应用,如在线客服、电话客服等,同时涉及到相关技术的原理和实现细节。\n1.2 预期读者\n本文预期读者包括从事客户服务行业的专业人员,如客服经理、客服代表\nPublished date: 2025-03-28T11:06:02+08:00\nSite name: CSDN\n\nTitle: 100个AI Agent应用场景合集丨来看看Agent能在你的行业做什么\nURL: https://m.blog.csdn.net/gaga246/article/details/146094362\nDescription: AI Agent 在 11 个行业中常见的 100 个应用场景\n人工智能代理(AI Agent)的发展正在以前所未有的速度改变我们的生活和工作方式。从日常生活的小事到企业级的复杂决策,AI Agent 的应用场景广泛且多样。\n以下是 100 个 AI Agent 的创新应用场景,它们展示了 AI 技术如何渗透到我们生活的方方面面。\n电商\n1. 个性化推荐系统\nAI Agent 能够根据用户的购物历史、浏览行为和偏好,提供个性化的产品推荐。这种推荐不仅能够提高用户的满意度,还能增",
+    "isError": false,
+    "durationMs": 369,
+    "createdAt": "2026-03-01T02:17:20.357Z"
+  },
+  {
+    "id": "f4022148c4c74970",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_f9ab0bfd090e42599de42c6a"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:17:20.447Z"
+  },
+  {
+    "id": "713e1735ab51fe10",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI Agent市场前景与发展趋势分析\nURL: https://m.blog.csdn.net/weixin_44705554/article/details/146507186\nDescription: AI Agent市场前景与发展趋势分析\n市场规模与增长预测\n根据多家权威机构的预测,AI Agent市场在未来几年将呈现爆发式增长:\nMarkets and Markets预测 :全球AI Agent市场规模将从2024年的51亿美元增至2030年的471亿美元,年复合增长率达44.8%。\nRootanalysis预测 :全球AI Agent市场规模将从2024年的52.9亿美元增长到2035年的2168亿美元,2024-2035年预测期内的复合年增长率为40.15%。\nIDC预测 :到2026年,将有50%的中国500强数据团队使用AI Agent来实现数据准备和分析,并成为重要组织者和协调者。\nGartner预测 :到2028年,至少15%的日常工作决策将通过Agentic AI自主做出,33%的企业软件应用程序也将包含Agentic AI。\n德勤预测 :到2025年,25%使用生成式AI的企业将部署AI Agent,到2027年将增长到50%。\nCapgemini报告 :大多数组织(82%)计划到2026年集成AI Agent,主要用于电子邮件生成、编码和数据分析等任务。\n值得注意的是,在Gartner发布的《2025年十大技术趋势》报告中,\"Agentic AI\"被列为首位,凸显了其在企业数字化转型中的核心地位。\n技术演进路径与突破点预测\nAI Agent的技术演进经历了从规则系统到多模态智能体的发展历程,未来的技术演进路径和突破点主要体现在以下几个方面:\n1. 认知能力的突破\n多模态理解能力 :2024-2025年,以OpenAI GPT-4v、Google Gemini等为代表的多模态大语言模型在视觉理解、上下文推理和任务规划等方面取得显著进展,能够理解复杂的视觉场景并基于视觉输入制定详细的行动计划。\n元认知能力 :AI Agent开始展现出初步的\"元认知\"能力\nPublished date: 2025-03-26T00:50:25+08:00\nSite name: CSDN\n\nTitle: 【人工智能】Agent未来市场与技术潜力分析\nURL: https://m.blog.csdn.net/meisongqing/article/details/147372815\nDescription: Agent作为连接大模型与具体场景的桥梁,正在成为AI技术落地的核心载体。结合2025年的市场动态与技术趋势,其未来潜力可从以下多个维度展开分析:\n一、市场前景:爆发式增长与多层级需求\n市场规模与增速\n 全球AI Agent市场规模预计从2024年的51亿美元增至2030年的471亿美元(年复合增长率44.8%),而中国市场的增速更为显著,2025年软件市场规模突破50亿元,未来四年年复合增长率超60%。\n 企业级市场占据主导地位,政企客户的高预算项目(数百万至千万元级)与中小企业的长尾需求共同推动市场分层发展。\n商业模式创新\n 订阅制与项目制并行,头部厂商通过“大模型+Agent+云服务”的一揽子解决方案提升客单价,而中小厂商通过标准化SaaS工具覆盖高频、低成本的通用需求。例如,LinkAI通过零代码平台实现200万ARR的订阅收入,并与百度等大厂合作拓展生态。\n二、技术演进:从工具到自主决策的跨越\n能力分层与进阶\n Agent技术正从“任务自动化”(L3)向“半自主决策”(\nPublished date: 2025-04-21T01:28:58+08:00\nSite name: CSDN\n\nTitle: 2025年AI Agent智能体深度分析报告_人工智能_尼古拉斯-大雄-讯飞AI开发者社区\nURL: https://xfyun.csdn.net/68c7cf6b4b11580edf9ea2e3.html\nDescription: 报告摘要\n2025年标志着人工智能(AI)发展的一个关键拐点,AI\nAgent(智能体)正从前几年的实验性原型(如AutoGPT)演变为企业战略与核心产品\nofferings\n的基石。本报告旨在全面剖析截至2025年上半年AI\nAgent的最新现状、技术进展、市场格局及未来趋势。\n分析显示,当前AI\nAgent的发展呈现四大核心主题:\n市场动能强劲:全球AI\nAgent市场正经历爆炸式增长,预测将从2024年的约50亿美元增长至2030年的近500亿美元。这一增长的核心驱动力源于企业战略的重大转变——从部署效益分散的水平通用型生成式AI工具,转向投资回报率(ROI)更高、",
+    "isError": false,
+    "durationMs": 274,
+    "createdAt": "2026-03-01T02:17:20.721Z"
+  },
+  {
+    "id": "bf6c4cd1a828a5d0",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_96bdd97196604503b1ac162c"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:17:20.970Z"
+  },
+  {
+    "id": "d2e757c48574e117",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025 年 4月 22 日 随笔档案 - dalifornia-cream - 博客园\nURL: https://www.cnblogs.com/dalifornia-cream/p/archive/2025/04/22\nDescription: AI Agent是一种智能自动化工具,可以由个AI协作完成复杂任务,是工业界最新的AI应用方式。 AI Agent存在一些技术风险,本文探讨并尝试给出解决方法 一、幻觉 AI Agent是一种智能自动化工具,一般由用户请求分析,任务执行,结果提取,流程编排等几个环节组成。几乎全部环节都有AI参与。为\nPublished date: 2025-04-22T16:19:29+08:00\nSite name: 博客园\n\nTitle: AI Agent在复杂决策系统中的应用与优化\nURL: https://m.blog.csdn.net/m0_62554628/article/details/146097880\nDescription: 1.1.1 问题背景\n在当今快速发展的信息技术时代,人工智能(AI)已经深入到各行各业,成为推动社会进步的重要力量。随着数据量的爆炸性增长和计算能力的不断提升,AI技术尤其是AI Agent的应用愈发广泛。AI Agent,作为一种智能实体,能够模拟人类的感知、决策和执行过程,自主地应对复杂环境中的各种任务。这种智能体的出现,为解决复杂决策问题提供了新的思路和工具。\n然而,随着复杂决策系统的规模和复杂度的增加,传统的人工决策方法已经难以满足需求。在许多领域,如金融、医疗、交通管理等,决策过程涉及到大量的变量和不确定因素,这需要高度智能化的决策支持系统。AI Agent的引入,能够在一定程度上弥补人类决策的不足,提供更加精准和高效的决策支持。\n但是,AI Agent在实际应用中面临着诸多挑战。首先,算法性能的优化问题。复杂决策系统中的问题通常具有高度的复杂性和不确定性,需要AI Agent能够快速、准确地处理海量数据,并生成最优决策。其次,系统稳定性问题。在复杂环境中,AI Agent需要具备良好的鲁棒性,能够在各种异常情况下保持稳定运行。此外,可解释性问题也是一大挑战。由于AI Agent的决策过程通常是基于复杂的算法模型,其内部逻辑难以被人类理解,这给系统的可信度和可解释性带来了挑战。\n因此,\nPublished date: 2025-03-07T23:54:14+08:00\nSite name: CSDN\n\nTitle: AI Agent 开发易好用难,技术瓶颈藏在何处? - 今日头条\nURL: https://www.toutiao.com/article/7490892242987663898/\nDescription: 2025-04-10 11:17 · 小焱 AI Agent 开发易好用难,技术瓶颈藏在何处? 在当下这个人工智能飞速发展的时代,AI Agent(智能代理)作为连接人类与数字世界的桥梁,正逐渐渗透到我们生活的各个角落。从智能家居到智能客服,从自动驾驶到科学研究,AI Agent以其强大的自主性和学习能力,为我们带来了前所未有的便捷与高效。然而,尽管AI Agent的开发看似并不复杂,但要让它真正变得“好用”,却并非易事。那么,AI Agent开发过程中的技术瓶颈究竟藏在何处呢? 一、模型依赖性与生成不稳定性 AI Agent的开发往往依赖于现有的大语言模型(LLM),如OpenAI的GPT系列。然而,这些模型并非完美无缺,它们在不同的任务场景下表现各异,甚至可能出现幻觉、逻辑跳跃等问题。此外,即便是相同的Prompt(提示词)和思考框架,每次调用的结果也可能不尽相同,这种生成的不稳定性给AI Agent的实用性带来了挑战。 二、工具局限与协同能力不足 AI Agent在执行任务时,往往需要调用各种外部工具,如搜索引擎、数据库、API接口等。然而,当前大部分AI Agent在工具调用方面存在局限,只能调用特定的某个或某几个工具,而无法实现更为广泛、灵活的多工具协作。这种工具局限和协同能力不足,限制了AI Agent的应用范围和功能拓展。 三、上下文理解与记忆能力 AI Agent在执行复杂任务时,需要理解和记忆大量的上下文信息。然而,当前的大语言模型在上下文理解和记忆方面仍存在不足,容易出现信息遗忘或混淆的情况。这导致AI Agent在处理多轮对话、复杂任务链等场景时表现不佳,难以满足用户的需求。 四、实时性与性能优化 随着AI Agent应用场景的不断拓展,对其实时性和性能的要求也越来越高。然而,当前的大语言模型在处理复杂任务时,往往需要消耗大量的计算资源和时\nPublished date: 2025-",
+    "isError": false,
+    "durationMs": 244,
+    "createdAt": "2026-03-01T02:17:21.214Z"
+  },
+  {
+    "id": "00fc5eeb78edc7c5",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_cb070abbbb74411e8db757a2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:17:23.621Z"
+  },
+  {
+    "id": "55690b5aa2bdf439",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 国泰君安:OpenAI开放工具包 智能体落地加速\nURL: https://new.qq.com/rain/a/20250314A071X600\nDescription: 智通财经APP获悉,国泰君安发布研报称,OpenAI继第三方开源产品Deepseek和Manus面世后推出新API和开发工具,其中包含Agents SDK等多款开源工具,这既是对谷歌、微软和阿里等竞争者迅速扩AI agent行业版图的回应,又是其巩固和加强在该领域凭借首个AI agent产品Operator所建立的竞争力和影响力的表现。Open AI新工具的发布加速了agent多样化应用的快速落地。国泰君安主要观点如下:搜索和操作两类内置工具强化agent与真实世界的互动能力Responses API具有网络搜索和文件搜索两项工具,其网络搜索工具准确度得分超过同类产品,文件搜索工具在多文件种类、元数据过滤和自定义排序等方面实现升级,能覆盖企业文档管理、市场研究等广泛应用场景,可以显著降低人工检索成本。Responses API的计算机操作工具由CUA模型支持,可根据代码循环执行点击、输入和滚动等任务,从而促进浏览器或操作系统流程的自动化,该功能提高了agent与外部世界交互的能力,agent独立执行任务成为可能。Agents SDK提高agent的协同性能开源Agents SDK可设置agent所采用的LLM模型、内置工具和指令,促进agent智能转换控制权,提供可修改安检机制和可视化跟踪监督流程,适用于自动化客户服务、分步骤研究和潜在客户跟进等场景,令多模型协作趋于简\nPublished date: 2025-03-14T17:31:17+08:00\nSite name: 腾讯网\n\nTitle: OpenAI发布全新Agent:内置三大工具--快科技--科技改变未来\nURL: https://news.mydrivers.com/1/1035/1035263.htm\nDescription: 报道,OpenAI发布了专为构建AI Agents设计的新工具和API。 OpenAI此次发布的核心产品包括Responses API和Agents SDK。 Responses API 融合了Chat Completions API的简洁性和Assistants API的工具使用能力,为开发者提供了一个强大的基础架构。通过单次API调用,开发者就能使用多种工具和模型轮次解决复杂任务,极大地简化了开发流程。 Agents SDK 是一个开源的多智能体工作流编排框架。它让开发者能够轻松定义智能体角色和工具,实现智能体之间的无缝交接任务,还提供了安全检查机制和实时监控功能,让智能体的协作更加高效、可控。这就像给智能体配备了一个实时更新的知识库,让它们能够随时掌握最新的动态。 文件搜索工具支持向量存储与元数据过滤,能够快速、准确地从大量文档中检索相关信息。对于企业来说,这无疑是一个高效的知识检索利器。 计算机使用工具则相当于在API中内置了Operator, 可以自动控制计算机,实现点击、输入、拖动等复杂操作。这对于需要与传统系统交互的场景来说,是一个巨大的突破。\nPublished date: 2025-03-12T09:03:25+08:00\nSite name: 快科技\n\nTitle: 国泰君安：OpenAI开放工具包 智能体落地加速\nURL: https://www.zhitongcaijing.com/content/detail/1262033.html\nDescription: Open AI新工具的发布加速了agent多样化应用的快速落地。 \n智通财经APP获悉,国泰君安发布研报称,OpenAI继第三方开源产品Deepseek和Manus面世后推出新API和开发工具,其中包含Agents SDK等多款开源工具,这既是对谷歌、微软和阿里等竞争者迅速扩AI agent行业版图的回应,又是其巩固和加强在该领域凭借首个AI agent产品Operator所建立的竞争力和影响力的表现。Open AI新工具的发布加速了agent多样化应用的快速落地。\n国泰君安主要观点如下:\n搜索和操作两类内置工具强化agent与真实世界的互动能力\nResponses API具有网络搜索和文件搜索两项工具,其网络搜索工具准确度得分超过同类产品,文件搜索工具在多文件种类、元数据过滤和自定义排序等方面实现升级,能覆盖企业文档管理、市场研究等广泛应用场景,可以显著降低人工检索成本。Responses API的计算机操作工具由CUA模型支持,可根据代码循环执行点击、输入和滚动等任务,从而促进浏览器或操作系统流程的自动化,该功能提高了agent与外部世界交互的能力,agent独立执行",
+    "isError": false,
+    "durationMs": 349,
+    "createdAt": "2026-03-01T02:17:23.970Z"
+  },
+  {
+    "id": "c414f822b2697408",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_fe71834d1a4f4e808a417996"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:17:24.075Z"
+  },
+  {
+    "id": "ed95cef0f0c0b881",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 微软宣布接入Claude模型_Copilot_Opus_OpenAI\nURL: https://www.sohu.com/a/939544590_99900743?scm=10001.676_13-100000-0_922.0-0.0.a2_5X162X1655\nDescription: 【环球网科技综合报道】9月28日消息,微软官方宣布,Microsoft\n365\nCopilot\n将接入\nAnthropic\n的\nClaude\n模型。另外,Microsoft\n365\nCopilot\n将继续由\nOpenAI\n的最新模型\nGPT-5\n提供支持,现在用户也可以灵活地使用\nAnthropic\n的\nClaude\nSonnet\n4\n和\nClaude\nOpus\n4.1\n模型。(青云)返回搜狐,查看更多\nPublished date: 2025-09-28T16:54:00+08:00\nSite name: 搜狐\n\nTitle: 微软宣布接入Claude模型_腾讯新闻\nURL: https://news.qq.com/rain/a/20250928A05J5200\nDescription: 【环球网科技综合报道】9月28日消息,微软官方宣布,Microsoft\n365\nCopilot\n将接入\nAnthropic\n的\nClaude\n模型。另外,Microsoft\n365\nCopilot\n将继续由\nOpenAI\n的最新模型\nGPT-5\n提供支持,现在用户也可以灵活地使用\nAnthropic\n的\nClaude\nSonnet\n4\n和\nClaude\nOpus\n4.1\n模型。(青云)\nPublished date: 2025-09-28T16:51:05+08:00\nSite name: 腾讯网\n\nTitle: Anthropic正式发布最新的模型Claude Opus 4.5-市场参考-金十数据\nURL: https://xnews.jin10.com/details/flash/102525090\nDescription: 金十数据11月25日讯,Anthropic正式发布最新的模型Claude\nOpus\n4.5。微软宣布在Microsoft\nFoundry、GitHub\nCopilot付费计划及Microsoft\nCopilot\nStudio中引入Claude\nOpus\n4.5。\n风险提示及免责条款:市场有风险,投资需谨慎。本文不构成个人投资建议,也未考虑到个别用户特殊的投资目标、财务状况或需要。用户应考虑本文中的任何意见、观点或结论是否符合其特定状况。据此投资,责任自负。\nPublished date: 2025-11-25T12:58:06+08:00\nSite name: 金十数据\n\nTitle: 不再“独宠”OpenAI,微软宣布 Microsoft 365 Copilot 引入 Claude 模型_数智频道_中华网\nURL: https://ai5g.china.com/ai/13004828/20250925/48854349.html\nDescription: 微软宣布从今天开始在Microsoft\n365\nCopilot中引入Anthropic的Claude\nSonnet\n4和Claude\nOpus\n4.1\nAI模型。这意味着Copilot的用户不再局限于使用OpenAI的模型,还可以在Researcher和Microsoft\nCopilot\nStudio中直接选择Anthropic的模型。\n微软业务与行业Copilot团队总裁Charles\nLamanna表示,Copilot将继续由OpenAI的最新模型提供支持,但现在客户可以选择使用Anthropic的模型。无论是通过Researcher还是在Copilot\nStudio构建智能体时,加入Claude\nSonnet\n4和Claude\nOpus\n4.1是将最先进的人工智能技术带入Microsoft\n365\nCopilot的重要步骤,这些模型特别针对办公场景和企业需求进行了优化。\n在Researcher工具中,用户可以根据需要选择使用OpenAI的深度推理模型或Anthropic的Claude\nOpus\n4.1。Microsoft\n365\nCopilot应用顶部会出现“Try\nClaude”按钮,方便用户切换到Opus\n4.1。Lamanna提到,用户可以轻松地在Researcher中切换不同的模型。\n对于Copilot\nStudio用户而言,Claude\nSonnet\n4和Claude\nOpus\n4.1同样成为可选项之一。此次更新让用户能够构建、管理和协调由Anthropic模型驱动的智能体,适用于深度推理、自动化工作流程等多样化任务。此外,用户还可以根据具体任务需",
+    "isError": false,
+    "durationMs": 268,
+    "createdAt": "2026-03-01T02:17:24.342Z"
+  },
+  {
+    "id": "cea2d4e491c56df0",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_95fb371c1bcf46ee9b3e0ea5"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:17:24.700Z"
+  },
+  {
+    "id": "56fede7ae855edf8",
+    "type": "tool_call",
+    "taskId": "f2f3fd91b617264a",
+    "subtaskId": "fe1e797bc8151200",
+    "employeeId": "35127a82c1864893",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI Agent 在企业的实施策略及解决方案_普通公司如何使用ai agent-CSDN博客\nURL: https://blog.csdn.net/jason_dct/article/details/145995523\nDescription: 在企业中的实施步骤 1. 确定业务需求 识别企业的关键痛点,如客服成本高、数据分析慢等。确定 AI Agent 的目标,如自动化客服、智能预测销售趋势。2. 选择 AI 技术 自然语言处理(NLP):用于客服、文档处理(如ChatGPT)。计算机视觉(CV):用于质量检测、安防监控。强化学习(RL):用于优化供应链、动态定价。自动化工作流(RPA+AI):用于财务、HR 事务处理。3. 数据准备 数据收集:整理企业历史数据,如客户交互记录、供应链数据。数据清洗:去除冗余数据,提升 AI 训练效果。数据标注:对AI 进行训练,确保其理解企业业务。4. AI Agent 开发与集成 模型训练:使用企业数据微调预训练模型(如GPT、BERT)。API 集成:连接现有 CRM、ERP、HR 系统。前端界面:设计用户友好的交互界面(如AI 助手面板)。5. 试点运行 小规模测试:在特定业务场景测试 AI Agent,如仅用于 VIP 客户服务。收集反馈:监测 AI 运行效果,优化算法。调整优化:根据业务需求微调 AI 逻辑,提升准确度。6. 全面推广 扩展应用范围:从客服扩展到销售、财务、供应链等领域。持续优化:结合用户反馈迭代模型,提升 AI 适应性。监控与维护:建立 AI 监控机制,防止偏见、错误决策。施AI Agent 的困难及解决方案 挑战原因解决方案数据质量不足业务数据缺乏、数据格式不统一采用数据治理策略,搭建数据清洗与管理流程AI 理解业务场景较弱现有 AI 通用性强,但不懂企业特定流程进行领域微调(Fine-tuning),增强业务理解系统集成复杂企业已有系统(ERP、CRM)较老,难以对接 AI采用 API 方式集成,或使用 RPA+AI 逐步替换旧系统员工抗拒 AI担心 AI 取代工作,缺乏信任感进行 AI 培训,强调 AI 是“辅助”而非“取代”AI 决策透明度低\nPublished date: 2025-03-03T18:14:25+08:00\nSite name: CSDN\n\nTitle: AI Agents 的开发实践经验\nURL: https://cloud.tencent.com/developer/article/2507783\nDescription: 随着 人工智能 技术的快速发展,AI Agent(智能代理)已经成为企业提升效率、优化流程的重要工具。AI Agent 不仅能够自动化执行任务,还能通过自主决策和工具调用,完成复杂的业务流程。本文将详细探讨 AI Agent 的开发实践经验,涵盖需求分析、技术选型、数据准备、模型训练、开发与集成、测试与优化、部署与推广等多个环节,并结合实际案例,分享从零到一打造商用 AI Agent 的全过程。\n一、需求分析\n明确业务目标\n在开发 AI Agent 之前,首先需要明确业务目标和用户需求。通过与业务部门的深入沟通,了解他们想要解决的实际问题,例如提高客户服务效率、优化销售流程等。同时,收集潜在用户的反馈,确保 AI Agent 的功能符合他们的使用习惯和期望。\n应用场景定义\n明确 AI Agent 将在哪些具体场景中发挥作用,这是确定 Agent 方向的关键。例如,在客服场景中,AI Agent 应能够快速响应用户咨询,解决常见问题;在 数据分析 场景中,AI Agent 应能够自动生成报告,提供决策支持。\n功能需求梳理\n根据业务需求,梳理 AI Agent 需要具备的功能,例如自然语言理解、问题回答、任务调度、数据检索等。同时,考虑用户群体的特点,设计出符合用户习惯和期望的界面和交互方式。\n二、技术选型\n选择 AI 框架\n根据需求选择合适的人工智能框架,如 OpenAI 的 GPT 系列、Google 的 BERT 等。这些框架提供了强大的语言处理能力,可以为 AI Agent 的开发提供基础。\n确定开发语言和工具\n选择适合的编程语言(如  Python 、 Java  等)和开发工具,以提高开发效率。例如,使用 Python 进行开发时,可能需要安装  langchain 、 uuid 、 pydantic  等库。\n考虑 数据库 和存储\n根据应用的需求,选择合适的数据库\nPublished date: 2025-03-25T22:27:47+08:00\nSite name: 腾讯云\n\nTitle: AI Agent企业应用:智能代理与多系统集成的7个最佳实践 - CSDN文库\nURL: http",
+    "isError": false,
+    "durationMs": 289,
+    "createdAt": "2026-03-01T02:17:24.989Z"
+  }
+]

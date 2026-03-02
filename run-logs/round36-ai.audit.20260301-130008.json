@@ -1,0 +1,112 @@
+{
+  "label": "round36-ai",
+  "sessionId": "round36-ai-20260301-130008",
+  "kind": "ai",
+  "userPrompt": "我们要给管理层准备简报，请直接安排完成：总结近30天AI技术行业趋势，给3条结论，每条带日期和来源链接。",
+  "pmChatDurationMs": 69157,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "6e099c9d5b79493e"
+  ],
+  "selectedModelIds": [
+    "8f1970aae082a631"
+  ],
+  "toolFlags": {
+    "search": true,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "user_prompt_without_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 69157
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "6e099c9d5b79493e"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "not_waiting_for_user",
+      "ok": true
+    },
+    {
+      "name": "uses_minimax_if_explicit",
+      "ok": false,
+      "selectedModelIds": [
+        "8f1970aae082a631"
+      ]
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    },
+    {
+      "name": "contains_dates",
+      "ok": true,
+      "dateHits": 31
+    },
+    {
+      "name": "contains_links",
+      "ok": true,
+      "linkHits": 14
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "6e099c9d5b79493e",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 132877,
+    "decisionRows": 6,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成AI技术行业趋势简报，涵盖近30天（2025-01-08至2025-02-06）的3条关键趋势结论，每条均包含绝对日期、可核验来源链接及多来源交叉验证，适合管理层决策参考。"
+  }
+}

@@ -24,6 +24,7 @@ export const tools = sqliteTable('tools', {
   envVars: text('env_vars'),    // JSON object (plaintext, MVP scope)
   groupName: text('group_name'),
   accessLevel: text('access_level').default('read'), // 'read' | 'write' | 'admin'
+  enabled: integer('enabled').default(1),
   status: text('status').default('untested'),
   createdAt: text('created_at').notNull(),
   updatedAt: text('updated_at').notNull(),
@@ -158,6 +159,18 @@ export const hrChatMessages = sqliteTable('hr_chat_messages', {
   createdAt: text('created_at').notNull(),
 }, (table) => [
   index('idx_hr_chat_session').on(table.sessionId, table.createdAt),
+]);
+
+// ============ pm_chat_messages ============
+export const pmChatMessages = sqliteTable('pm_chat_messages', {
+  id: text('id').primaryKey(),
+  sessionId: text('session_id').notNull(),
+  role: text('role').notNull(),
+  content: text('content').notNull(),
+  toolCalls: text('tool_calls'),   // JSON
+  createdAt: text('created_at').notNull(),
+}, (table) => [
+  index('idx_pm_chat_session').on(table.sessionId, table.createdAt),
 ]);
 
 // ============ system_settings ============
@@ -556,6 +569,38 @@ export const improvementProposals = sqliteTable('improvement_proposals', {
   createdAt: text('created_at').notNull(),
   updatedAt: text('updated_at').notNull(),
 });
+
+// ============ task_reviews ============
+export const taskReviews = sqliteTable('task_reviews', {
+  id: text('id').primaryKey(),
+  taskId: text('task_id').notNull().references(() => tasks.id, { onDelete: 'cascade' }),
+  status: text('status').notNull().default('pending'), // 'pending'|'analyzing'|'completed'|'failed'
+  summary: text('summary'), // markdown
+  totalFindings: integer('total_findings').default(0),
+  triggeredBy: text('triggered_by').notNull().default('manual'), // 'auto'|'manual'
+  createdAt: text('created_at').notNull(),
+  updatedAt: text('updated_at').notNull(),
+}, (table) => [
+  index('idx_task_reviews_task').on(table.taskId),
+]);
+
+// ============ task_review_findings ============
+export const taskReviewFindings = sqliteTable('task_review_findings', {
+  id: text('id').primaryKey(),
+  reviewId: text('review_id').notNull().references(() => taskReviews.id, { onDelete: 'cascade' }),
+  taskId: text('task_id').notNull().references(() => tasks.id, { onDelete: 'cascade' }),
+  category: text('category').notNull(), // 'model_issue'|'prompt_issue'|'tool_issue'|'config_issue'|'collaboration_issue'|'efficiency_issue'|'other'
+  severity: text('severity').notNull(), // 'info'|'warning'|'critical'
+  title: text('title').notNull(),
+  description: text('description').notNull(),
+  suggestion: text('suggestion'),
+  relatedSubtaskId: text('related_subtask_id').references(() => subtasks.id),
+  createdAt: text('created_at').notNull(),
+}, (table) => [
+  index('idx_task_review_findings_review').on(table.reviewId),
+  index('idx_task_review_findings_task').on(table.taskId),
+  index('idx_task_review_findings_category').on(table.category),
+]);
 
 // ============ employee_competency_scores (Phase3-F4) ============
 export const employeeCompetencyScores = sqliteTable('employee_competency_scores', {

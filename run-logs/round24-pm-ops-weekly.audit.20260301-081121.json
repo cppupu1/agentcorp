@@ -1,0 +1,89 @@
+{
+  "label": "round24-pm-ops-weekly",
+  "sessionId": "round24-ops-20260301-081121",
+  "pmChatDurationMs": 41492,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "c5280c872c78fd08"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 41492
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "c5280c872c78fd08",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 39717,
+      "tools": [
+        {
+          "tool": "01a07c2a149edad0__write_file",
+          "count": 4
+        },
+        {
+          "tool": "write_file",
+          "count": 1
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功为运营团队设计完成周会简报模板。模板完整包含任务要求的四个核心字段：1) 风险项（包含风险描述、等级、影响范围、应对措施、负责人、状态、更新时间）2) 行动项（包含任务描述、任务类型、负责人、协作人、截止日期、优先级、状态、完成进度）3) 负责人（每项任务明确指定负责人）4) 截止日期（统一格式为YYYY-MM-DD）。模板采用表格化结构，使用颜色图标区分优先级，支持进度追踪和闭环管理，结构清晰、易于填写，已保存至指定文件路径。"
+    }
+  ]
+}

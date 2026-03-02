@@ -1,0 +1,93 @@
+{
+  "label": "round24-pm-stock-compare",
+  "sessionId": "round24-stock-20260301-082235",
+  "pmChatDurationMs": 19960,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "fd8e21764dffcb15"
+  ],
+  "autoAssign": {
+    "recommended": 3,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 19960
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 3,
+      "min": 1
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "fd8e21764dffcb15",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 83789,
+      "tools": [
+        {
+          "tool": "tushare_mcp_001__daily",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__today",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": true,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成贵州茅台(600519)与宁德时代(300750)近30天走势与成交变化分析。报告包含：1) 价格走势对比：茅台期间涨+3.12%，波动幅度17.48%；宁德时代跌-4.71%，波动幅度9.90%；2) 成交量分析：茅台日均成交4.8万手，1月29日出现18.95万手峰值；宁德时代日均成交27.8万手，量能相对稳定；3) 下周观察点：3月3日关注茅台1,455元支撑位、3月4日观察宁德时代342元支撑与量能配合、3月5日分析两股相对强弱转换与板块轮动。所有结论均有量化数据支撑。"
+    }
+  ]
+}

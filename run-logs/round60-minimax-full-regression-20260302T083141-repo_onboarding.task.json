@@ -1,0 +1,76 @@
+{
+  "id": "487da347b9e6dc26",
+  "teamId": "4b0bd7a0640bc79e",
+  "teamName": "软件开发",
+  "title": "整理新同学10分钟上手清单",
+  "description": "从当前项目文档中整理一份\"新同学10分钟上手清单\"，要求：\n1. 分步骤输出，每个步骤清晰明了\n2. 包含关键命令（安装、运行、调试等）\n3. 控制在10分钟内可以完成的内容\n4. 涵盖环境准备、依赖安装、启动项目、验证运行等基础环节\n5. 如有需要可列出常见问题及解决方式\n\n请先阅读项目中的README、docs文档、package.json等文件，梳理出对新同学最关键的上手步骤。",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "cced73212c191a32",
+      "name": "项目经理"
+    },
+    "members": [
+      {
+        "id": "27877cc28bf85108",
+        "name": "测试工程师",
+        "taskPrompt": "负责软件质量保障与自动化测试"
+      },
+      {
+        "id": "420f2aaf1f50e53c",
+        "name": "后端开发工程师",
+        "taskPrompt": "负责服务端逻辑开发与数据库设计"
+      },
+      {
+        "id": "e0f30fcc32798211",
+        "name": "前端开发工程师",
+        "taskPrompt": "负责用户界面开发与交互体验实现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "整理新同学10分钟上手清单",
+        "description": "从当前项目文档中整理一份\"新同学10分钟上手清单\"，要求：\n1. 分步骤输出，每个步骤清晰明了\n2. 包含关键命令（安装、运行、调试等）\n3. 控制在10分钟内可以完成的内容\n4. 涵盖环境准备、依赖安装、启动项目、验证运行等基础环节\n5. 如有需要可列出常见问题及解决方式\n\n请先阅读项目中的README、docs文档、package.json等文件，梳理出对新同学最关键的上手步骤。",
+        "assigneeId": "27877cc28bf85108",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成\"新同学10分钟上手清单\"的整理工作。测试工程师(27877cc28bf85108)通过阅读项目的README.md、package.json、CLAUDE.md、.env.example、docs/PRODUCT_DESIGN.md、docs/TECHNICAL_DESIGN.md等关键文件，梳理出6个核心上手步骤：检查环境、克隆项目、配置环境变量、安装依赖、启动开发服务器、验证运行。清单同时包含常用命令速查、项目结构说明、常见问题解答和进阶阅读建议。新同学按此清单可在10分钟内完成环境准备并启动项目进行开发。",
+    "deliverables": "# 🎯 新同学10分钟上手清单\n\n## 项目概览\n**AgentCorp** - AI团队协作平台，一个让用户能够创建和管理拟人化AI团队的平台。\n\n### 技术栈\n| 层级 | 技术 |\n|------|------|\n| 运行时 | Node.js v22 + TypeScript 5.x |\n| 后端 | Fastify |\n| 前端 | React 19 + Vite + Tailwind CSS v4 |\n| 数据库 | SQLite (better-sqlite3) + Drizzle ORM |\n| 包管理 | npm workspaces (monorepo) |\n\n---\n\n## 📋 上手步骤\n\n### 步骤1️⃣：检查环境\n```bash\n# 确认 Node.js 版本（需要 >= 22.0.0）\nnode --version\n```\n> ⚠️ 如果版本低于22.0.0，请先升级 Node.js\n\n### 步骤2️⃣：克隆并进入项目\n```bash\ngit clone <项目仓库地址>\ncd AgentCorp2\n```\n\n### 步骤3️⃣：配置环境变量\n```bash\n# 复制环境变量示例文件\ncp .env.example .env\n```\n> 📝 `.env` 中 `PORT=3000`，`ENCRYPTION_KEY` 会在首次启动时自动生成\n\n### 步骤4️⃣：安装依赖\n```bash\nnpm install\n```\n> ⏱️ 约需1-2分钟（monorepo结构，会安装所有workspace）\n\n### 步骤5️⃣：启动开发服务器\n```bash\nnpm run dev\n```\n> ⏱️ 启动成功后会同时运行：\n> - 后端服务：http://localhost:3000\n> - 前端服务：http://localhost:5173（Vite热加载）\n\n### 步骤6️⃣：验证运行\n打开浏览器访问：\n- **前端页面**: http://localhost:5173\n- **后端API**: http://localhost:3000/api/health\n\n> ✅ 看到前端页面即表示启动成功！\n\n---\n\n## 🔧 常用命令速查\n\n| 命令 | 说明 |\n|------|------|\n| `npm run dev` | 启动前后端开发服务器 |\n| `npm run dev:server` | 仅启动后端 (localhost:3000) |\n| `npm run dev:web` | 仅启动前端 (localhost:5173) |\n| `npm run build` | 构建所有 packages |\n| `npm run db:migrate` | 运行数据库迁移 |\n| `npm run db:generate` | 生成数据库类型 |\n\n---\n\n## 📁 项目结构\n\n```\nAgentCorp2/\n├── packages/\n│   ├── server/        # Fastify 后端服务\n│   ├── web/           # React 前端应用\n│   ├── db/            # Drizzle ORM 数据库层\n│   ├── shared/        # 共享类型与工具\n│   └── agent-core/    # Agent 核心框架\n├── docs/              # 设计文档\n├── data/              # SQLite 数据库文件 (运行时生成)\n└── screenshots/      # 截图\n```\n\n---\n\n## ❓ 常见问题\n\n### Q1: 启动时报 `ENCRYPTION_KEY` 错误\n**解决**: 删除 `.env` 文件，重新执行 `cp .env.example .env`，系统会自动生成新的加密密钥\n\n### Q2: 端口被占用\n**解决**: \n```bash\n# 查找占用端口的进程\nlsof -i :3000  # 后端\nlsof -i :5173  # 前端\n\n# 或者修改 .env 中的 PORT\n```\n\n### Q3: Node.js 版本不符合要求\n**解决**: 使用 nvm 管理 Node.js 版本\n```bash\nnvm install 22\nnvm use 22\n```\n\n### Q4: 数据库报错\n**解决**: 运行数据库迁移\n```bash\nnpm run db:migrate\n```\n\n---\n\n## 📚 进阶阅读\n\n- 📖 **CLAUDE.md** - 开发规范和约定（必读）\n- 📖 **docs/TECHNICAL_DESIGN.md** - 完整技术设计文档\n- 📖 **docs/PRODUCT_DESIGN.md** - 产品设计文档\n\n---\n\n**完成以上6步，你就可以开始开发了！** 🚀",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-02T08:40:16.825Z"
+  },
+  "tokenUsage": 162867,
+  "createdAt": "2026-03-02T08:37:48.013Z",
+  "updatedAt": "2026-03-02T08:40:16.839Z",
+  "subtasks": [
+    {
+      "id": "c8b2b2fdd5e54b18",
+      "title": "整理新同学10分钟上手清单",
+      "description": "从当前项目文档中整理一份\"新同学10分钟上手清单\"，要求：\n1. 分步骤输出，每个步骤清晰明了\n2. 包含关键命令（安装、运行、调试等）\n3. 控制在10分钟内可以完成的内容\n4. 涵盖环境准备、依赖安装、启动项目、验证运行等基础环节\n5. 如有需要可列出常见问题及解决方式\n\n请先阅读项目中的README、docs文档、package.json等文件，梳理出对新同学最关键的上手步骤。",
+      "assigneeId": "27877cc28bf85108",
+      "assigneeName": "测试工程师",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "现在让我再查看一下package.json中定义的scripts以及项目的根目录配置：\n\n\n\n\n\n我已读取了以下关键文件：\n- `README.md` - 项目README\n- `package.json` - npm配置和脚本命令\n- `CLAUDE.md` - 项目开发指南\n- `.env.example` - 环境变量示例\n- `docs/PRODUCT_DESIGN.md` - 产品设计文档\n- `docs/TECHNICAL_DESIGN.md` - 技术设计文档\n\n---\n\n# 🎯 新同学10分钟上手清单\n\n## 项目概览\n\n**AgentCorp** - AI团队协作平台，一个让用户能够创建和管理拟人化AI团队的平台。\n\n### 技术栈\n| 层级 | 技术 |\n|------|------|\n| 运行时 | Node.js v22 + TypeScript 5.x |\n| 后端 | Fastify |\n| 前端 | React 19 + Vite + Tailwind CSS v4 |\n| 数据库 | SQLite (better-sqlite3) + Drizzle ORM |\n| 包管理 | npm workspaces (monorepo) |\n\n---\n\n## 📋 上手步骤\n\n### 步骤1️⃣：检查环境\n```bash\n# 确认 Node.js 版本（需要 >= 22.0.0）\nnode --version\n```\n> ⚠️ 如果版本低于22.0.0，请先升级 Node.js\n\n### 步骤2️⃣：克隆并进入项目\n```bash\ngit clone <项目仓库地址>\ncd AgentCorp2\n```\n\n### 步骤3️⃣：配置环境变量\n```bash\n# 复制环境变量示例文件\ncp .env.example .env\n```\n> 📝 `.env` 中 `PORT=3000`，`ENCRYPTION_KEY` 会在首次启动时自动生成\n\n### 步骤4️⃣：安装依赖\n```bash\nnpm install\n```\n> ⏱️ 约需1-2分钟（monorepo结构，会安装所有workspace）\n\n### 步骤5️⃣：启动开发服务器\n```bash\nnpm run dev\n```\n> ⏱️ 启动成功后会同时运行：\n> - 后端服务：http://localhost:3000\n> - 前端服务：http://localhost:5173（Vite热加载）\n\n### 步骤6️⃣：验证运行\n打开浏览器访问：\n- **前端页面**: http://localhost:5173\n- **后端API**: http://localhost:3000/api/health\n\n> ✅ 看到前端页面即表示启动成功！\n\n---\n\n## 🔧 常用命令速查\n\n| 命令 | 说明 |\n|------|------|\n| `npm run dev` | 启动前后端开发服务器 |\n| `npm run dev:server` | 仅启动后端 (localhost:3000) |\n| `npm run dev:web` | 仅启动前端 (localhost:5173) |\n| `npm run build` | 构建所有 packages |\n| `npm run db:migrate` | 运行数据库迁移 |\n| `npm run db:generate` | 生成数据库类型 |\n\n---\n\n## 📁 项目结构\n\n```\nAgentCorp2/\n├── packages/\n│   ├── server/        # Fastify 后端服务\n│   ├── web/           # React 前端应用\n│   ├── db/            # Drizzle ORM 数据库层\n│   ├── shared/        # 共享类型与工具\n│   └── agent-core/    # Agent 核心框架\n├── docs/              # 设计文档\n├── data/              # SQLite 数据库文件 (运行时生成)\n└── screenshots/      # 截图\n```\n\n---\n\n## ❓ 常见问题\n\n### Q1: 启动时报 `ENCRYPTION_KEY` 错误\n**解决**: 删除 `.env` 文件，重新执行 `cp .env.example .env`，系统会自动生成新的加密密钥\n\n### Q2: 端口被占用\n**解决**: \n```bash\n# 查找占用端口的进程\nlsof -i :3000  # 后端\nlsof -i :5173  # 前端\n\n# 或者修改 .env 中的 PORT\n```\n\n### Q3: Node.js 版本不符合要求\n**解决**: 使用 nvm 管理 Node.js 版本\n```bash\nnvm install 22\nnvm use 22\n```\n\n### Q4: 数据库报错\n**解决**: 运行数据库迁移\n```bash\nnpm run db:migrate\n```\n\n---\n\n## 📚 进阶阅读\n\n- 📖 **CLAUDE.md** - 开发规范和约定（必读）\n- 📖 **docs/TECHNICAL_DESIGN.md** - 完整技术设计文档\n- 📖 **docs/PRODUCT_DESIGN.md** - 产品设计文档\n\n---\n\n**完成以上6步，你就可以开始开发了！** 🚀"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 162867,
+      "createdAt": "2026-03-02T08:37:58.110Z",
+      "updatedAt": "2026-03-02T08:39:57.041Z"
+    }
+  ]
+}

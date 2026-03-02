@@ -1,0 +1,70 @@
+{
+  "label": "round33-b02-ai",
+  "sessionId": "round33-b02-ai-20260301-113524",
+  "kind": "ai",
+  "pmChatDurationMs": 26281,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "ab70456a64ad1d65"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 26281
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "ab70456a64ad1d65",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 328382,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成AI技术行业趋势分析任务，整理近30天（2025年5月4日至6月5日）AI技术行业趋势，输出3条关键结论。每条结论均包含具体内容、具体日期（YYYY-MM-DD格式）及可核验的来源链接，并经过至少2个独立来源交叉验证。"
+  }
+}

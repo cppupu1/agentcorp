@@ -1,0 +1,221 @@
+{
+  "generatedAt": "2026-03-01T11:28:11.823402Z",
+  "runLabel": "round33-minimax-soak-20260301-112811",
+  "batches": [
+    {
+      "batch": 1,
+      "startedAt": "2026-03-01T11:28:11.823412Z",
+      "sessions": [
+        {
+          "label": "round33-b01-stock",
+          "sessionId": "round33-b01-stock-20260301-112811",
+          "kind": "stock",
+          "evidence": "run-logs/round33-b01-stock.audit.20260301-112811.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b01-ai",
+          "sessionId": "round33-b01-ai-20260301-112811",
+          "kind": "ai",
+          "evidence": "run-logs/round33-b01-ai.audit.20260301-112811.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b01-memory",
+          "sessionId": "round33-b01-memory-20260301-112811",
+          "kind": "memory",
+          "evidence": "run-logs/round33-b01-memory.audit.20260301-112811.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b01-translation",
+          "sessionId": "round33-b01-translation-20260301-112811",
+          "kind": "translation",
+          "evidence": "run-logs/round33-b01-translation.audit.20260301-112811.json",
+          "allChecksPassed": true
+        }
+      ],
+      "endedAt": "2026-03-01T11:35:24.468068Z"
+    },
+    {
+      "batch": 2,
+      "startedAt": "2026-03-01T11:35:24.468274Z",
+      "sessions": [
+        {
+          "label": "round33-b02-stock",
+          "sessionId": "round33-b02-stock-20260301-113524",
+          "kind": "stock",
+          "evidence": "run-logs/round33-b02-stock.audit.20260301-113524.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b02-ai",
+          "sessionId": "round33-b02-ai-20260301-113524",
+          "kind": "ai",
+          "evidence": "run-logs/round33-b02-ai.audit.20260301-113524.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b02-memory",
+          "sessionId": "round33-b02-memory-20260301-113524",
+          "kind": "memory",
+          "evidence": "run-logs/round33-b02-memory.audit.20260301-113524.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b02-translation",
+          "sessionId": "round33-b02-translation-20260301-113524",
+          "kind": "translation",
+          "evidence": "run-logs/round33-b02-translation.audit.20260301-113524.json",
+          "allChecksPassed": true
+        }
+      ],
+      "endedAt": "2026-03-01T11:40:15.605012Z"
+    },
+    {
+      "batch": 3,
+      "startedAt": "2026-03-01T11:40:24.468538Z",
+      "sessions": [
+        {
+          "label": "round33-b03-stock",
+          "sessionId": "round33-b03-stock-20260301-114024",
+          "kind": "stock",
+          "evidence": "run-logs/round33-b03-stock.audit.20260301-114024.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b03-ai",
+          "sessionId": "round33-b03-ai-20260301-114024",
+          "kind": "ai",
+          "evidence": "run-logs/round33-b03-ai.audit.20260301-114024.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b03-memory",
+          "sessionId": "round33-b03-memory-20260301-114024",
+          "kind": "memory",
+          "evidence": "run-logs/round33-b03-memory.audit.20260301-114024.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b03-translation",
+          "sessionId": "round33-b03-translation-20260301-114024",
+          "kind": "translation",
+          "evidence": "run-logs/round33-b03-translation.audit.20260301-114024.json",
+          "allChecksPassed": true
+        }
+      ],
+      "endedAt": "2026-03-01T11:43:06.049146Z"
+    },
+    {
+      "batch": 4,
+      "startedAt": "2026-03-01T11:45:24.478660Z",
+      "sessions": [
+        {
+          "label": "round33-b04-stock",
+          "sessionId": "round33-b04-stock-20260301-114524",
+          "kind": "stock",
+          "evidence": "run-logs/round33-b04-stock.audit.20260301-114524.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b04-ai",
+          "sessionId": "round33-b04-ai-20260301-114524",
+          "kind": "ai",
+          "evidence": "run-logs/round33-b04-ai.audit.20260301-114524.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b04-memory",
+          "sessionId": "round33-b04-memory-20260301-114524",
+          "kind": "memory",
+          "evidence": "run-logs/round33-b04-memory.audit.20260301-114524.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b04-translation",
+          "sessionId": "round33-b04-translation-20260301-114524",
+          "kind": "translation",
+          "evidence": "run-logs/round33-b04-translation.audit.20260301-114524.json",
+          "allChecksPassed": true
+        }
+      ],
+      "endedAt": "2026-03-01T11:47:56.893992Z"
+    },
+    {
+      "batch": 5,
+      "startedAt": "2026-03-01T11:50:24.488783Z",
+      "sessions": [
+        {
+          "label": "round33-b05-stock",
+          "sessionId": "round33-b05-stock-20260301-115024",
+          "kind": "stock",
+          "evidence": "run-logs/round33-b05-stock.audit.20260301-115024.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b05-ai",
+          "sessionId": "round33-b05-ai-20260301-115024",
+          "kind": "ai",
+          "evidence": "run-logs/round33-b05-ai.audit.20260301-115024.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b05-memory",
+          "sessionId": "round33-b05-memory-20260301-115024",
+          "kind": "memory",
+          "evidence": "run-logs/round33-b05-memory.audit.20260301-115024.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b05-translation",
+          "sessionId": "round33-b05-translation-20260301-115024",
+          "kind": "translation",
+          "evidence": "run-logs/round33-b05-translation.audit.20260301-115024.json",
+          "allChecksPassed": false
+        }
+      ],
+      "endedAt": "2026-03-01T11:54:25.388597Z"
+    },
+    {
+      "batch": 6,
+      "startedAt": "2026-03-01T11:55:24.498860Z",
+      "sessions": [
+        {
+          "label": "round33-b06-stock",
+          "sessionId": "round33-b06-stock-20260301-115524",
+          "kind": "stock",
+          "evidence": "run-logs/round33-b06-stock.audit.20260301-115524.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b06-ai",
+          "sessionId": "round33-b06-ai-20260301-115524",
+          "kind": "ai",
+          "evidence": "run-logs/round33-b06-ai.audit.20260301-115524.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b06-memory",
+          "sessionId": "round33-b06-memory-20260301-115524",
+          "kind": "memory",
+          "evidence": "run-logs/round33-b06-memory.audit.20260301-115524.json",
+          "allChecksPassed": true
+        },
+        {
+          "label": "round33-b06-translation",
+          "sessionId": "round33-b06-translation-20260301-115524",
+          "kind": "translation",
+          "evidence": "run-logs/round33-b06-translation.audit.20260301-115524.json",
+          "allChecksPassed": true
+        }
+      ],
+      "endedAt": "2026-03-01T11:58:45.463885Z"
+    }
+  ],
+  "totals": {
+    "sessions": 24,
+    "checksPassed": 23,
+    "checksFailed": 1
+  }
+}

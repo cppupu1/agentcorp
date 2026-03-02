@@ -1,0 +1,59 @@
+{
+  "id": "2da2697272606365",
+  "teamId": "336e287c969b22ae",
+  "teamName": "双语内容创作团队",
+  "title": "企业公告中英双语简版转换",
+  "description": "将企业提供的中文公告模板内容转换为中英双语简版。要求：1）保留原文核心信息；2）英文翻译保持语义一致；3）格式简洁清晰。请先确认需要翻译的具体公告内容，然后输出双语版本。",
+  "status": "waiting",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "f1873cf019da313d",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "765cb86f77c6c2f4",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "a5f856548fc58854",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版转换",
+        "description": "将企业提供的中文公告模板内容转换为中英双语简版。要求：1）保留原文核心信息；2）英文翻译保持语义一致；3）格式简洁清晰。请先确认需要翻译的具体公告内容，然后输出双语版本。",
+        "assigneeId": "765cb86f77c6c2f4",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": null,
+  "tokenUsage": 0,
+  "createdAt": "2026-03-01T11:50:39.453Z",
+  "updatedAt": "2026-03-01T11:50:56.617Z",
+  "subtasks": [
+    {
+      "id": "898a657f8bc873f8",
+      "title": "企业公告中英双语简版转换",
+      "description": "将企业提供的中文公告模板内容转换为中英双语简版。要求：1）保留原文核心信息；2）英文翻译保持语义一致；3）格式简洁清晰。请先确认需要翻译的具体公告内容，然后输出双语版本。",
+      "assigneeId": "765cb86f77c6c2f4",
+      "assigneeName": "文案策划",
+      "status": "pending",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-01T11:50:45.021Z",
+      "updatedAt": "2026-03-01T11:50:45.021Z"
+    }
+  ]
+}

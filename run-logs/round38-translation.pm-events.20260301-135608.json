@@ -1,0 +1,382 @@
+[
+  {
+    "event": "delta",
+    "data": {
+      "seq": 0,
+      "text": "<think>\n用户想要"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 1,
+      "text": "创建一个企业公告的中英双语模板，用于全员通知。这是一个创建任务的需求，我需要"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 2,
+      "text": "帮用户落地。\n\n首先，我需要了解可用的场景模板，然后创建相应的任务。让我先查看可用的模板。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 3,
+      "text": "\n</think>\n\n好的，我来帮您落地一个企业公告的中英双语模板。首先让我查看一下可用的场景模板。\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 4,
+      "toolCallId": "call_function_owr2jj9971mr_1",
+      "toolName": "list_templates",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 5,
+      "toolCallId": "call_function_owr2jj9971mr_1",
+      "toolName": "list_templates",
+      "result": "[{\"id\":\"software-dev\",\"name\":\"软件开发\",\"description\":\"标准软件开发团队，包含项目经理、前端开发、后端开发和测试工程师，适用于Web应用、移动端等软件项目的全流程开发。\",\"icon\":\"💻\",\"employeeCount\":4},{\"id\":\"content-creation\",\"name\":\"内容创作\",\"description\":\"专业内容创作团队，包含项目经理、文案策划和视觉设计师，适用于品牌营销、自媒体运营、广告创意等内容生产场景。\",\"icon\":\"✍️\",\"employeeCount\":3},{\"id\":\"data-analysis\",\"name\":\"数据分析\",\"description\":\"专业数据分析团队，包含项目经理、数据分析师和数据工程师，适用于业务数据洞察、用户行为分析、数据驱动决策等场景。\",\"icon\":\"📊\",\"employeeCount\":3},{\"id\":\"research-report\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 6,
+      "usage": {
+        "inputTokens": 1130,
+        "outputTokens": 81
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 7,
+      "text": "<think>\n用户需要一个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 8,
+      "text": "企业公告的中英双语模板，这不属于上述模板中的任何一个专业场景。这更像是一个内容创作类的任务，但"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 9,
+      "text": "现有模板都是针对团队协作的。\n\n实际上，用户的需求是\"创建一个可复用的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 10,
+      "text": "企业公告中英双语模板版本\"，这是一个比较简单的任务，可能更适合用内容创作团队来处理。\n\n让我先创建一个任务，使用内容创作模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 11,
+      "text": "来帮用户生成这个双语模板。我需要：\n1. 使用 quick_create_task 基于内容创作模板创建任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 12,
+      "text": "\n2. 任务标题：企业公告中英双语模板创建\n3. 任务描述：创建一个可复用的企业公告模板，支持"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 13,
+      "text": "中英双语，适用于全员通知场景\n\n让我创建任务。\n</think>\n\n我看到现有模板主要是针对专业团队协作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 14,
+      "text": "的。您需要的\"企业公告中英双语模板\"是一个内容创作类的任务，我用**内容创作**模板帮您创建这个任务。\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 15,
+      "toolCallId": "call_function_2cvfr7ojrsdy_1",
+      "toolName": "quick_create_task",
+      "args": {
+        "description": "创建一个可复用的企业公告模板，要求：\n1. 支持中英双语对照格式\n2. 适用于全员通知场景（如政策通知、活动公告、系统更新等）\n3. 包含固定的模板框架和可填写的内容占位符\n4. 格式规范、专业，适合对外企业通知",
+        "mode": "auto",
+        "templateId": "content-creation",
+        "title": "企业公告中英双语模板创建"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 16,
+      "toolCallId": "call_function_2cvfr7ojrsdy_1",
+      "toolName": "quick_create_task",
+      "result": "{\"success\":true,\"taskId\":\"400423ad71f53d31\",\"teamId\":\"998a7fbdd30b4f6a\",\"title\":\"企业公告中英双语模板创建\"}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 17,
+      "usage": {
+        "inputTokens": 1511,
+        "outputTokens": 294
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 18,
+      "text": "<think>\n任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 19,
+      "text": "创建成功，taskId 是 400423ad71f53d31，teamId 是 998a7fbdd30b4f6a。现在我"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 20,
+      "text": "需要：\n1. 查看可用的工具\n2. 为团队分配合适的工具\n3. 启动任务\n\n让我先查看可用工具。\n</think>\n\n任务已"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 21,
+      "text": "创建，现在让我查看可用工具并为团队分配。\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 22,
+      "toolCallId": "call_function_qedq5dqdzwiw_1",
+      "toolName": "list_tools",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 23,
+      "toolCallId": "call_function_qedq5dqdzwiw_1",
+      "toolName": "list_tools",
+      "result": "[{\"id\":\"fc5f4c5bf43702d4\",\"name\":\"当前时间\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"740410911af25b5b\",\"name\":\"计算器\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"b931c6ca2b7ad17b\",\"name\":\"文件读取\",\"description\":\"文件系统访问工具，支持读取、列出目录等操作\",\"groupName\":null},{\"id\":\"a6d0277e32709254\",\"name\":\"搏查\",\"description\":\"搏查搜索服务\",\"groupName\":\"互联网\"},{\"id\":\"1791ada993a23a56\",\"name\":\"Web Fetch\",\"description\":\"抓取网页内容并转换为 Markdown，让 AI 能够阅读和处理网页信息。支持自定义 User-Agent 和代理设置。\",\"groupNam",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 24,
+      "usage": {
+        "inputTokens": 1863,
+        "outputTokens": 93
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 25,
+      "text": "<think>\n工具"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 26,
+      "text": "列表中有一些工具。对于内容创作任务，我可能需要：\n- 文件系统工具（Filesystem）来保存模板\n- 可能需要"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 27,
+      "text": " Web Fetch 来参考一些优秀的企业公告模板\n\n让我分配相关工具，然后启动任务。\n</think>\n\n现在为团队分配合适的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 28,
+      "text": "工具并启动任务执行：\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 29,
+      "toolCallId": "call_function_9bn4xw59w34t_1",
+      "toolName": "assign_team_tools",
+      "args": {
+        "teamId": "998a7fbdd30b4f6a",
+        "toolIds": [
+          "01a07c2a149edad0",
+          "1791ada993a23a56"
+        ]
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 30,
+      "toolCallId": "call_function_9bn4xw59w34t_1",
+      "toolName": "assign_team_tools",
+      "result": "{\"success\":true,\"count\":2}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 31,
+      "usage": {
+        "inputTokens": 2377,
+        "outputTokens": 127
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 32,
+      "text": "<think>\n工具"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 33,
+      "text": "分配成功，现在启动任务执行。\n</think>\n\n\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 34,
+      "toolCallId": "call_function_f7ia159gn73v_1",
+      "toolName": "start_task",
+      "args": {
+        "taskId": "400423ad71f53d31"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 35,
+      "toolCallId": "call_function_f7ia159gn73v_1",
+      "toolName": "start_task",
+      "result": "{\"success\":true,\"taskId\":\"400423ad71f53d31\",\"message\":\"任务已启动\",\"autoAssignedTools\":{\"teamId\":\"998a7fbdd30b4f6a\",\"added\":1,\"recommended\":2}}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 36,
+      "usage": {
+        "inputTokens": 2529,
+        "outputTokens": 43
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 37,
+      "text": "<think>\n任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 38,
+      "text": "已成功创建并启动。任务正在执行中，会自动生成企业公告的中英双语模板。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 39,
+      "text": "\n</think>\n\n✅ **任务已成功创建并启动！**\n\n| 项目 | 详情 |\n|------|------|\n| 任务ID | 400423ad71f53d31 |\n| "
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 40,
+      "text": "任务名称 | 企业公告中英双语模板创建 |\n| 执行模式 | auto |\n| 团队 | 内容创作团队 |\n\n内容创作团队正在为您生成一份"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 41,
+      "text": "专业的**企业公告中英双语模板**，涵盖：\n- 中英双语对照格式\n- 通用型全员"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 42,
+      "text": "通知框架\n- 固定的占位符设计，方便快速替换内容\n\n📎 **稍后您将收到"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 43,
+      "text": "完整的模板成果**，可直接用于全员通知发布。"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 44,
+      "usage": {
+        "inputTokens": 2637,
+        "outputTokens": 151
+      }
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 45,
+      "text": "<think>\n用户想要创建一个企业公告的中英双语模板，用于全员通知。这是一个创建任务的需求，我需要帮用户落地。\n\n首先，我需要了解可用的场景模板，然后创建相应的任务。让我先查看可用的模板。\n</think>\n\n好的，我来帮您落地一个企业公告的中英双语模板。首先让我查看一下可用的场景模板。\n<think>\n用户需要一个企业公告的中英双语模板，这不属于上述模板中的任何一个专业场景。这更像是一个内容创作类的任务，但现有模板都是针对团队协作的。\n\n实际上，用户的需求是\"创建一个可复用的企业公告中英双语模板版本\"，这是一个比较简单的任务，可能更适合用内容创作团队来处理。\n\n让我先创建一个任务，使用内容创作模板来帮用户生成这个双语模板。我需要：\n1. 使用 quick_create_task 基于内容创作模板创建任务\n2. 任务标题：企业公告中英双语模板创建\n3. 任务描述：创建一个可复用的企业公告模板，支持中英双语，适用于全员通知场景\n\n让我创建任务。\n</think>\n\n我看到现有模板主要是针对专业团队协作的。您需要的\"企业公告中英双语模板\"是一个内容创作类的任务，我用**内容创作**模板帮您创建这个任务。\n<think>\n任务创建成功，taskId 是 400423ad71f53d31，teamId 是 998a7fbdd30b4f6a。现在我需要：\n1. 查看可用的工具\n2. 为团队分配合适的工具\n3. 启动任务\n\n让我先查看可用工具。\n</think>\n\n任务已创建，现在让我查看可用工具并为团队分配。\n<think>\n工具列表中有一些工具。对于内容创作任务，我可能需要：\n- 文件系统工具（Filesystem）来保存模板\n- 可能需要 Web Fetch 来参考一些优秀的企业公告模板\n\n让我分配相关工具，然后启动任务。\n</think>\n\n现在为团队分配合适的工具并启动任务执行：\n<think>\n工具分配成功，现在启动任务执行。\n</think>\n\n\n<think>\n任务已成功创建并启动。任务正在执行中，会自动生成企业公告的中英双语模板。\n</think>\n\n✅ **任务已成功创建并启动！**\n\n| 项目 | 详情 |\n|------|------|\n| 任务ID | 400423ad71f53d31 |\n| 任务名称 | 企业公告中英双语模板创建 |\n| 执行模式 | auto |\n| 团队 | 内容创作团队 |\n\n内容创作团队正在为您生成一份专业的**企业公告中英双语模板**，涵盖：\n- 中英双语对照格式\n- 通用型全员通知框架\n- 固定的占位符设计，方便快速替换内容\n\n📎 **稍后您将收到完整的模板成果**，可直接用于全员通知发布。",
+      "messageId": "5d02a1814a433057",
+      "finishReason": "stop"
+    }
+  }
+]

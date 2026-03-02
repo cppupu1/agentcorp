@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-01T07:57:18.722841Z",
+  "runLabel": "round22-20260301-075718",
+  "sessions": [
+    {
+      "label": "round22-pm-stock-compare",
+      "sessionId": "round22-stock-20260301-075718",
+      "evidence": "run-logs/round22-pm-stock-compare.audit.20260301-075718.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round22-pm-ai-trend",
+      "sessionId": "round22-ai-20260301-075718",
+      "evidence": "run-logs/round22-pm-ai-trend.audit.20260301-075718.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round22-pm-customer-memory",
+      "sessionId": "round22-cs-20260301-075718",
+      "evidence": "run-logs/round22-pm-customer-memory.audit.20260301-075718.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round22-pm-content",
+      "sessionId": "round22-content-20260301-075718",
+      "evidence": "run-logs/round22-pm-content.audit.20260301-075718.json",
+      "allCompleted": true,
+      "allChecksPassed": false
+    },
+    {
+      "label": "round22-pm-incident",
+      "sessionId": "round22-incident-20260301-075718",
+      "evidence": "run-logs/round22-pm-incident.audit.20260301-075718.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    }
+  ]
+}

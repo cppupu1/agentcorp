@@ -1,0 +1,80 @@
+{
+  "label": "round37-translation",
+  "sessionId": "round37-translation-20260301-133826",
+  "kind": "translation",
+  "userPrompt": "请直接创建并启动任务：输出一个企业公告模板的中英双语简版，语义一致，可直接复用。",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "5b8c9cc048a0474f"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 57354
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "5b8c9cc048a0474f"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "translation_bilingual",
+      "ok": false
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "5b8c9cc048a0474f",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 39051,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n企业公告中英双语模板已成功创建，包含8种常见公告类型（人事变动、产品发布、政策通知、业绩公告、合作公告、股权变动、办公地址变更、重大事项），共11则中英双语模板。模板格式规范，语义一致，关键信息以占位符呈现，可直接套用。文件已保存至 /private/tmp/企业公告中英双语模板.md"
+  }
+}

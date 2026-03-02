@@ -1,0 +1,71 @@
+{
+  "id": "8ac6c3d67c05b116",
+  "teamId": "43255151b4bb9ef5",
+  "teamName": "内容创作",
+  "title": "生成中英双语放假通知",
+  "description": "生成一版可直接发送给全员的中英双语放假通知，要求简洁正式。\n\n假设说明：\n- 假期：春节假期\n- 日期：2025年1月28日（除夕）至2月3日（初六），共7天\n- 调休：1月26日（周日）、2月4日（周一）上班\n\n请生成正式的通知文案，包含：\n1. 放假时间安排\n2. 调休安排\n3. 节日祝福\n4. 注意事项（如有）\n\n格式要求：\n- 中英双语对照\n- 语言简洁、专业\n- 可直接群发",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "2ae1c7572a8ed95d",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "06b2392ea8e89646",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "d71844bff24d81b7",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "生成中英双语放假通知",
+        "description": "生成一版可直接发送给全员的中英双语放假通知，要求简洁正式。\n\n假设说明：\n- 假期：春节假期\n- 日期：2025年1月28日（除夕）至2月3日（初六），共7天\n- 调休：1月26日（周日）、2月4日（周一）上班\n\n请生成正式的通知文案，包含：\n1. 放假时间安排\n2. 调休安排\n3. 节日祝福\n4. 注意事项（如有）\n\n格式要求：\n- 中英双语对照\n- 语言简洁、专业\n- 可直接群发",
+        "assigneeId": "06b2392ea8e89646",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功生成中英双语春节放假通知，包含放假时间安排、调休安排、节日祝福及注意事项，语言简洁专业，可直接群发。",
+    "deliverables": "# 春节放假通知 | Spring Festival Holiday Notice\n\n---\n\n## 放假时间 | Holiday Schedule\n\n**2025年1月28日（除夕）至2月3日（初六），共7天。**\n\nJanuary 28 (Chinese New Year's Eve) to February 3, 2025 — 7 days in total.\n\n---\n\n## 调休安排 | Work Schedule Adjustment\n\n**1月26日（周日）、2月4日（周一）正常上班。**\n\nPlease note that we will be working on **January 26 (Sunday)** and **February 4 (Monday)**.\n\n---\n\n## 节日祝福 | Holiday Greetings\n\n恭祝全体员工新春快乐，阖家幸福，万事如意！\n\nWishing all staff a happy Spring Festival, a harmonious family, and all the best in the new year!\n\n---\n\n## 注意事项 | Notes\n\n- 请各部门在放假前妥善安排工作，确保业务正常运行。\n- Please ensure all departments arrange work properly before the holiday to maintain normal operations.\n\n- 放假期间请保持通讯畅通，如有紧急事务可联系值班人员。\n- Please keep communication channels open during the holiday. Contact on-call staff for urgent matters.\n\n---\n\n> **祝大家新春快乐！Happy Chinese New Year!**\n\n---\n\n*（如需添加公司Logo或具体联系方式，可自行补充）*",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-02T07:42:27.510Z"
+  },
+  "tokenUsage": 1335,
+  "createdAt": "2026-03-02T07:41:29.370Z",
+  "updatedAt": "2026-03-02T07:42:27.598Z",
+  "subtasks": [
+    {
+      "id": "bf297464e8315732",
+      "title": "生成中英双语放假通知",
+      "description": "生成一版可直接发送给全员的中英双语放假通知，要求简洁正式。\n\n假设说明：\n- 假期：春节假期\n- 日期：2025年1月28日（除夕）至2月3日（初六），共7天\n- 调休：1月26日（周日）、2月4日（周一）上班\n\n请生成正式的通知文案，包含：\n1. 放假时间安排\n2. 调休安排\n3. 节日祝福\n4. 注意事项（如有）\n\n格式要求：\n- 中英双语对照\n- 语言简洁、专业\n- 可直接群发",
+      "assigneeId": "06b2392ea8e89646",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "# 春节放假通知 | Spring Festival Holiday Notice\n\n---\n\n## 放假时间 | Holiday Schedule\n\n**2025年1月28日（除夕）至2月3日（初六），共7天。**\n\nJanuary 28 (Chinese New Year's Eve) to February 3, 2025 — 7 days in total.\n\n---\n\n## 调休安排 | Work Schedule Adjustment\n\n**1月26日（周日）、2月4日（周一）正常上班。**\n\nPlease note that we will be working on **January 26 (Sunday)** and **February 4 (Monday)**.\n\n---\n\n## 节日祝福 | Holiday Greetings\n\n恭祝全体员工新春快乐，阖家幸福，万事如意！\n\nWishing all staff a happy Spring Festival, a harmonious family, and all the best in the new year!\n\n---\n\n## 注意事项 | Notes\n\n- 请各部门在放假前妥善安排工作，确保业务正常运行。\n- Please ensure all departments arrange work properly before the holiday to maintain normal operations.\n\n- 放假期间请保持通讯畅通，如有紧急事务可联系值班人员。\n- Please keep communication channels open during the holiday. Contact on-call staff for urgent matters.\n\n---\n\n> **祝大家新春快乐！Happy Chinese New Year!**\n\n---\n\n*（如需添加公司Logo或具体联系方式，可自行补充）*"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 1335,
+      "createdAt": "2026-03-02T07:41:41.778Z",
+      "updatedAt": "2026-03-02T07:42:19.341Z"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import { AgentRunner, createModel } from '@agentcorp/agent-core';
 import type { AgentStreamCallbacks } from '@agentcorp/agent-core';
 import { tool, jsonSchema } from 'ai';
 import type { ToolSet } from 'ai';
-import { getSetting } from './system.js';
+import { getModelIdForFeature } from './system.js';
 import { createEmployee } from './employees.js';
 
 function safeJsonParse<T>(raw: string | null, fallback: T): T {
@@ -154,8 +154,8 @@ export async function runHrChat(params: HrChatParams, callbacks: AgentStreamCall
 
   try {
     // Get HR assistant model from settings
-    const modelId = getSetting('hr_assistant_model_id');
-    if (!modelId) throw new AppError('VALIDATION_ERROR', '未配置HR助手模型，请在系统设置中配置 hr_assistant_model_id');
+    const modelId = getModelIdForFeature('hr_assistant_model_id');
+    if (!modelId) throw new AppError('VALIDATION_ERROR', '未配置HR助手模型，请在模型管理中设置默认模型或HR专用模型');
 
     const [model] = await db.select().from(models).where(eq(models.id, modelId));
     if (!model) throw new AppError('NOT_FOUND', `模型 ${modelId} 不存在`);
@@ -217,7 +217,11 @@ export async function runHrChat(params: HrChatParams, callbacks: AgentStreamCall
         toolCallsAccum.push({ id, toolName, args });
         callbacks.onToolCall(id, toolName, args);
       },
-      onToolResult: callbacks.onToolResult,
+      onToolResult: (id, toolName, result, isError) => {
+        const tc = toolCallsAccum.find((entry: any) => entry.id === id) as any;
+        if (tc) { tc.result = result; tc.isError = isError; }
+        callbacks.onToolResult(id, toolName, result, isError);
+      },
       onStepFinish: callbacks.onStepFinish,
       onError: callbacks.onError,
       onFinish: async (info) => {

@@ -1,0 +1,36 @@
+{
+  "data": {
+    "id": "a4f9083de56df8b8",
+    "teamId": "af6e2e3073351dc8",
+    "teamName": "数据分析",
+    "title": "A股双标的量化分析（茅台/宁德时代）",
+    "description": "请对贵州茅台（600519.SH）与宁德时代（300750.SZ）进行近3个月行情与基本面分析：1) 提取日线/周线价格、涨跌幅、成交量并做对比表；2) 汇总关键风险与机会；3) 给出短期（1个月）与中期（3-6个月）观察指标。必须优先使用金融数据工具获取真实数据，并注明数据日期。最终输出中文Markdown报告。",
+    "status": "executing",
+    "mode": "auto",
+    "brief": null,
+    "teamConfig": {
+      "pm": {
+        "id": "98318f59f75497bf",
+        "name": "数据项目经理"
+      },
+      "members": [
+        {
+          "id": "11481a210e1b600e",
+          "name": "数据工程师",
+          "taskPrompt": "负责数据管道建设与数据基础设施维护"
+        },
+        {
+          "id": "598866a6c96e3a2e",
+          "name": "数据分析师",
+          "taskPrompt": "负责数据探索分析与业务洞察输出"
+        }
+      ]
+    },
+    "plan": null,
+    "result": null,
+    "tokenUsage": 0,
+    "createdAt": "2026-02-28T15:06:14.638Z",
+    "updatedAt": "2026-02-28T15:07:01.656Z",
+    "subtasks": []
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "label": "round22-pm-stock-compare",
+  "sessionId": "round22-stock-20260301-075718",
+  "pmChatDurationMs": 20909,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "faf7ad2ebde78912"
+  ],
+  "autoAssign": {
+    "recommended": 3,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 20909
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 3,
+      "min": 1
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "faf7ad2ebde78912",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 233161,
+      "tools": [
+        {
+          "tool": "tushare_mcp_001__daily",
+          "count": 16
+        },
+        {
+          "tool": "tushare_mcp_001__stock_basic",
+          "count": 8
+        },
+        {
+          "tool": "tushare_mcp_001__today",
+          "count": 5
+        },
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 3
+        },
+        {
+          "tool": "a6d0277e32709254__bocha_ai_search",
+          "count": 2
+        },
+        {
+          "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": true,
+      "decisionCount": 0,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n辩论模式执行完成"
+    }
+  ]
+}

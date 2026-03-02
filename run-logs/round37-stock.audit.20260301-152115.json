@@ -1,0 +1,85 @@
+{
+  "label": "round37-stock",
+  "sessionId": "round37-stock-20260301-152115",
+  "kind": "stock",
+  "userPrompt": "请直接创建并启动任务：比较贵州茅台和宁德时代近30天走势，给出2条带日期的观察结论。",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "f388c3089a75ac98"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": true
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 25454
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "f388c3089a75ac98"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    },
+    {
+      "name": "stock_has_dates",
+      "ok": true,
+      "dateHits": 57
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "f388c3089a75ac98",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 48888,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成贵州茅台与宁德时代近30天走势比较分析。通过获取两只股票近30个交易日的收盘价数据，对比了涨跌幅和波动幅度，输出2条带具体日期的观察结论。分析显示：茅台区间微涨0.97%，宁德时代区间下跌1.10%；宁德时代的日度波动率（CV≈3.15%）高于茅台（CV≈1.95%）。两条观察结论分别聚焦2026-02-04同日拉升差异和2026-01-30高位后的走势分化。"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "label": "round28-pm-memory",
+  "sessionId": "round28-memory-20260301-091345",
+  "pmChatDurationMs": 34003,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "35c6ef0eac47cd29"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 34003
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "35c6ef0eac47cd29",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 258634,
+      "tools": [
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 4
+        },
+        {
+          "tool": "b931c6ca2b7ad17b__list_allowed_directories",
+          "count": 2
+        },
+        {
+          "tool": "b931c6ca2b7ad17b__list_directory",
+          "count": 2
+        },
+        {
+          "tool": "b931c6ca2b7ad17b__read_multiple_files",
+          "count": 2
+        },
+        {
+          "tool": "b931c6ca2b7ad17b__write_file",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_relations",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__read_graph",
+          "count": 2
+        }
+      ],
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成售后投诉FAQ生成与知识沉淀任务。知识管理员基于最近一个月的售后投诉数据分析，归纳出TOP 5问题类别（客服服务质量40%、商品质量问题22%、退款困难、虚假发货、虚假宣传），为每个类别编写了简版FAQ，并整理为结构化的知识条目录入知识图谱系统。知识库已创建7个实体和10条关系，便于客服团队快速查阅和应用。"
+    }
+  ]
+}

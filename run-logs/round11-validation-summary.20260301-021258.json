@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-03-01T02:12:58.091394Z",
+  "runLabel": "round11-20260301-021258",
+  "sessions": [
+    {
+      "label": "round11-pm-stock-autoassign",
+      "sessionId": "round11-stock-20260301-021258",
+      "evidence": "run-logs/round11-pm-stock-autoassign.audit.20260301-021258.json",
+      "allCompleted": true
+    },
+    {
+      "label": "round11-pm-ai-autoassign",
+      "sessionId": "round11-ai-20260301-021258",
+      "evidence": "run-logs/round11-pm-ai-autoassign.audit.20260301-021258.json",
+      "allCompleted": true
+    }
+  ]
+}

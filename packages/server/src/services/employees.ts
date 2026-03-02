@@ -1,5 +1,8 @@
 import { db, employees, employeeTools, models, tools, teamMembers, teams, subtasks, tasks, generateId, now } from '@agentcorp/db';
 import { eq, and, sql, inArray } from 'drizzle-orm';
+import { createModel } from '@agentcorp/agent-core';
+import { generateText } from 'ai';
+import { getModelIdForFeature } from './system.js';
 import { AppError } from '../errors.js';
 
 // Single-query list with model name and tool count (fixes N+1)
@@ -314,6 +317,169 @@ export async function getEmployeeStatuses() {
       : waitingSet.has(emp.id) ? 'waiting' as const
       : 'idle' as const,
   }));
+}
+
+// ---- Auto Assign Tools (AI-powered) ----
+
+/** Use AI to analyze employee profile and recommend suitable tools */
+async function aiMatchToolsForEmployee(
+  empName: string,
+  empPrompt: string,
+  empTags: string[],
+  empDesc: string,
+  availableTools: Array<{ name: string; description: string }>,
+): Promise<string[]> {
+  const modelId = getModelIdForFeature('tool_assign_model_id');
+  if (!modelId) throw new AppError('VALIDATION_ERROR', '未配置工具装载模型，请在模型管理中设置默认模型');
+
+  const [model] = await db.select().from(models).where(eq(models.id, modelId));
+  if (!model) throw new AppError('NOT_FOUND', `模型 ${modelId} 不存在`);
+
+  const aiModel = createModel({
+    apiKey: model.apiKey,
+    baseURL: model.baseUrl,
+    modelId: model.modelId,
+  });
+
+  const toolList = availableTools.map(t => `- "${t.name}": ${t.description}`).join('\n');
+
+  const result = await generateText({
+    model: aiModel as any,
+    system: 'You are a tool assignment assistant. Analyze the employee profile and select the most suitable tools. Return ONLY a JSON array of tool names, e.g. ["Tool A", "Tool B"]. No markdown, no explanation.',
+    prompt: `Employee: ${empName}
+Description: ${empDesc || 'N/A'}
+Tags: ${empTags.join(', ') || 'N/A'}
+System Prompt (excerpt): ${empPrompt.slice(0, 500)}
+
+Available tools:
+${toolList}
+
+Which tools should this employee have access to? Consider their role, responsibilities, and what tools would help them work effectively.`,
+  });
+
+  try {
+    const parsed = JSON.parse(result.text.replace(/```json?\n?/g, '').replace(/```/g, '').trim());
+    if (Array.isArray(parsed)) return parsed.filter((n): n is string => typeof n === 'string');
+  } catch { /* fall through */ }
+  return [];
+}
+
+/** Auto-assign tools to a single employee via AI analysis */
+export async function autoAssignToolsForEmployee(employeeId: string) {
+  const [emp] = await db.select().from(employees).where(eq(employees.id, employeeId));
+  if (!emp) throw new AppError('NOT_FOUND', `员工 ${employeeId} 不存在`);
+
+  const allTools = await db.select({ id: tools.id, name: tools.name, description: tools.description }).from(tools);
+  const toolNameToId = new Map(allTools.map(t => [t.name, t.id]));
+
+  const empTags = emp.tags ? JSON.parse(emp.tags) : [];
+  const matchedNames = await aiMatchToolsForEmployee(
+    emp.name, emp.systemPrompt ?? '', empTags, emp.description ?? '',
+    allTools.map(t => ({ name: t.name, description: t.description ?? '' })),
+  );
+
+  const toolIds: string[] = [];
+  const assignedTools: string[] = [];
+  for (const name of matchedNames) {
+    const id = toolNameToId.get(name);
+    if (id) { toolIds.push(id); assignedTools.push(name); }
+  }
+
+  // Replace existing tools
+  await db.delete(employeeTools).where(eq(employeeTools.employeeId, employeeId));
+  if (toolIds.length > 0) {
+    await db.insert(employeeTools).values(toolIds.map(toolId => ({ employeeId, toolId })));
+  }
+
+  return { employeeId, assignedTools, count: toolIds.length };
+}
+
+/** Batch AI: match tools for ALL employees in a single LLM call */
+async function aiBatchMatchTools(
+  emps: Array<{ name: string; description: string; tags: string[]; systemPrompt: string }>,
+  availableTools: Array<{ name: string; description: string }>,
+): Promise<Record<string, string[]>> {
+  const modelId = getModelIdForFeature('tool_assign_model_id');
+  if (!modelId) throw new AppError('VALIDATION_ERROR', '未配置工具装载模型，请在模型管理中设置默认模型');
+
+  const [model] = await db.select().from(models).where(eq(models.id, modelId));
+  if (!model) throw new AppError('NOT_FOUND', `模型 ${modelId} 不存在`);
+
+  const aiModel = createModel({
+    apiKey: model.apiKey,
+    baseURL: model.baseUrl,
+    modelId: model.modelId,
+  });
+
+  const toolList = availableTools.map(t => `- "${t.name}": ${t.description}`).join('\n');
+  const empList = emps.map(e =>
+    `- "${e.name}": ${e.description || 'N/A'} (tags: ${e.tags.join(', ') || 'N/A'}, prompt excerpt: ${(e.systemPrompt || '').slice(0, 200)})`
+  ).join('\n');
+
+  const result = await generateText({
+    model: aiModel as any,
+    system: 'You are a tool assignment assistant. For each employee, select the most suitable tools based on their role. Return ONLY a JSON object mapping employee names to arrays of tool names. No markdown, no explanation.',
+    prompt: `Employees:\n${empList}\n\nAvailable tools:\n${toolList}\n\nReturn a JSON object like: {"Employee A": ["Tool1", "Tool2"], "Employee B": ["Tool3"]}`,
+  });
+
+  try {
+    const parsed = JSON.parse(result.text.replace(/```json?\n?/g, '').replace(/```/g, '').trim());
+    if (typeof parsed === 'object' && !Array.isArray(parsed)) return parsed;
+  } catch { /* fall through */ }
+  return {};
+}
+
+/** Auto-assign tools to ALL employees via AI analysis (single batched LLM call) */
+export async function autoAssignToolsForAll() {
+  const allEmps = await db.select({
+    id: employees.id,
+    name: employees.name,
+    systemPrompt: employees.systemPrompt,
+    tags: employees.tags,
+    description: employees.description,
+  }).from(employees);
+
+  const allTools = await db.select({ id: tools.id, name: tools.name, description: tools.description }).from(tools);
+  const toolNameToId = new Map(allTools.map(t => [t.name, t.id]));
+
+  // Single LLM call for all employees
+  const empInfos = allEmps.map(e => ({
+    name: e.name,
+    description: e.description ?? '',
+    tags: e.tags ? JSON.parse(e.tags) : [],
+    systemPrompt: e.systemPrompt ?? '',
+  }));
+
+  const mapping = await aiBatchMatchTools(
+    empInfos,
+    allTools.map(t => ({ name: t.name, description: t.description ?? '' })),
+  );
+
+  let totalAssigned = 0;
+  const results: Array<{ employeeId: string; tools: string[]; count: number }> = [];
+
+  for (const emp of allEmps) {
+    const matchedNames: string[] = (mapping[emp.name] || []).filter(
+      (n: unknown): n is string => typeof n === 'string',
+    );
+
+    const toolIds: string[] = [];
+    const assignedTools: string[] = [];
+    for (const name of matchedNames) {
+      const id = toolNameToId.get(name);
+      if (id) { toolIds.push(id); assignedTools.push(name); }
+    }
+
+    await db.delete(employeeTools).where(eq(employeeTools.employeeId, emp.id));
+    if (toolIds.length > 0) {
+      await db.insert(employeeTools).values(toolIds.map(toolId => ({ employeeId: emp.id, toolId })));
+    }
+
+    totalAssigned += toolIds.length;
+    results.push({ employeeId: emp.id, tools: assignedTools, count: toolIds.length });
+  }
+
+  return { employeeCount: allEmps.length, totalAssigned, results };
 }
 
 // ---- Export ----

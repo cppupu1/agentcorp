@@ -1,0 +1,71 @@
+{
+  "id": "400423ad71f53d31",
+  "teamId": "998a7fbdd30b4f6a",
+  "teamName": "内容创作",
+  "title": "企业公告中英双语模板创建",
+  "description": "创建一个可复用的企业公告模板，要求：\n1. 支持中英双语对照格式\n2. 适用于全员通知场景（如政策通知、活动公告、系统更新等）\n3. 包含固定的模板框架和可填写的内容占位符\n4. 格式规范、专业，适合对外企业通知",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "5245b1d3f72b41ff",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "192707b37e83ecdb",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "4216d2a75a80424e",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语模板创建",
+        "description": "创建一个可复用的企业公告模板，要求：\n1. 支持中英双语对照格式\n2. 适用于全员通知场景（如政策通知、活动公告、系统更新等）\n3. 包含固定的模板框架和可填写的内容占位符\n4. 格式规范、专业，适合对外企业通知",
+        "assigneeId": "192707b37e83ecdb",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n所有子任务已完成（PM未显式调用complete_task，系统自动完成）",
+    "deliverables": "# 企业公告中英双语模板\n\n---\n\n## 一、模板使用说明\n\n### 1.1 适用场景\n本模板适用于企业各类全员通知场景，包括但不限于：\n- **政策通知**（人事政策、财务制度、福利调整等）\n- **活动公告**（年会、团建、培训、发布会等）\n- **系统更新**（OA系统、ERP系统、官网维护等）\n- **重要提醒**（安全提示、节假日安排、流程变更等）\n\n### 1.2 使用规范\n- **语言顺序**：中文在上，英文在下，左右对照或上下排列\n- **标题格式**：中文标题加粗，英文标题可使用斜体或同样加粗\n- **日期格式**：中文使用\"XXXX年XX月XX日\"，英文使用\"Month DD, YYYY\"\n- **标点规范**：中文使用全角符号，英文使用半角符号，两者分开使用\n\n---\n\n## 二、模板框架\n\n```\n┌─────────────────────────────────────────────────────┐\n│                    [公司Logo/标志]                   │\n├─────────────────────────────────────────────────────┤\n│                    公告编号：XXX-XXXX-XXXX            │\n│                    Notice No.: XXX-XXXX-XXXX        │\n├─────────────────────────────────────────────────────┤\n│                                                     │\n│              【中文标题 - 加粗居中】                  │\n│              [English Title - Bold Centered]        │\n│                                                     │\n├─────────────────────────────────────────────────────┤\n│  发布部门：XXX部 / Department: XXX Department       │\n│  发布日期：XXXX年XX月XX日 / Date: Month DD, YYYY     │\n│  有效期至：XXXX年XX月XX日 / Valid Until: Month DD    │\n│  密级：普通 / Classification: Internal              │\n├─────────────────────────────────────────────────────┤\n│                                                     │\n│  【正文内容 - 中文】                                  │\n│  [English Body Content]                             │\n│                                                     │\n│  一、事项说明                                        │\n│     （一）具体情况说明...                            │\n│                                                     │\n│  二、相关安排                                        │\n│     （一）时间安排...                                │\n│                                                     │\n│  三、操作指引                                        │\n│     （一）步骤一...                                  │\n│                                                     │\n├─────────────────────────────────────────────────────┤\n│  【注意事项 - 中文】                                  │\n│  [Important Notes - English]                        │\n│                                                     │\n│  1. 注意事项一                                       │\n│  2. 注意事项二                                       │\n│                                                     │\n├─────────────────────────────────────────────────────┤\n│  附件：                                             │\n│  Attachments:                                       │\n│  1. 附件名称1                                        │\n│  2. 附件名称2                                        │\n│                                                     │\n├─────────────────────────────────────────────────────┤\n│                                                     │\n│  发布部门（签章）              发布日期              │\n│  Department (Seal)            Publication Date     │\n│                                                     │\n│  [此处加盖部门章]              XXXX年XX月XX日        │\n│                              Month DD, YYYY         │\n│                                                     │\n└─────────────────────────────────────────────────────┘\n```\n\n---\n\n## 三、可变内容占位符说明\n\n| 占位符 | 含义 | 填写说明 |\n|--------|------|----------|\n| `[公司Logo/标志]` | 企业标识 | 放置公司Logo或部门标识 |\n| `XXX-XXXX-XXXX` | 公告编号 | 按企业编号规则填写，如：HR-2024-001 |\n| `【中文标题】` | 通知标题 | 简洁明确，不超过30字 |\n| `[English Title]` | 英文标题 | 与中文标题含义一致 |\n| `XXX部` | 发布部门 | 填写全称，如：人力资源部 |\n| `XXXX年XX月XX日` | 发布日期 | 中文日期格式 |\n| `Month DD, YYYY` | 英文日期 | 如：January 15, 2025 |\n| `XXXX年XX月XX日` | 有效期 | 如无截止日期可写\"长期有效\" |\n| `普通/内部` | 密级 | 根据内容敏感性选择 |\n| `正文内容` | 主体信息 | 按条理分层次书写 |\n| `注意事项` | 提醒事项 | 重要提示或补充说明 |\n| `附件名称` | 关联文档 | 如无附件可写\"无\" |\n\n---\n\n## 四、示例内容\n\n### 示例一：政策通知\n\n---\n\n**公告编号：HR-2025-008**\n**Notice No.: HR-2025-008**\n\n---\n\n# 关于实施新版员工考勤管理制度的通知\n\n## Notice on Implementation of Revised Employee Attendance Management Policy\n\n**发布部门：人力资源部**\n**Department: Human Resources Department**\n\n**发布日期：2025年1月20日**\n**Date: January 20, 2025**\n\n**有效期至：2025年12月31日**\n**Valid Until: December 31, 2025**\n\n**密级：普通**\n**Classification: Internal**\n\n---\n\n各位同事：\n\nDear All Employees,\n\n为进一步完善公司考勤管理，规范员工出勤行为，提升工作效率，根据《中华人民共和国劳动法》相关规定及公司实际情况，人力资源部对原《员工考勤管理制度》进行了修订，现予以发布，自2025年2月1日起正式实施。\n\nTo further improve the company's attendance management, standardize employee attendance behavior, and enhance work efficiency, in accordance with the relevant provisions of the Labor Law of the People's Republic of China and the actual circumstances of the company, the Human Resources Department has revised the original \"Employee Attendance Management Policy,\" which is hereby issued and will officially take effect on February 1, 2025.\n\n### 一、主要修订内容 | Key Revisions\n\n**（一）调整上班时间**\n**(a) Adjusted Working Hours**\n\n| 季节 / Season | 上午上班时间 / AM Start下班时间 / AM End | 下午 | 上午上班时间 / PM Start | 下午下班时间 / PM End |\n|---------------|------------------------|---------------------|----------------------|---------------------|\n| 夏季 (4月-9月) / Summer (Apr-Sep) | 08:30 | 12:00 | 13:30 | 18:00 |\n| 冬季 (10月-3月) / Winter (Oct-Mar) | 08:30 | 12:00 | 13:00 | 17:30 |\n\n",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T13:58:10.964Z"
+  },
+  "tokenUsage": 7977,
+  "createdAt": "2026-03-01T13:56:26.614Z",
+  "updatedAt": "2026-03-01T13:58:10.964Z",
+  "subtasks": [
+    {
+      "id": "12036f87ea50c614",
+      "title": "企业公告中英双语模板创建",
+      "description": "创建一个可复用的企业公告模板，要求：\n1. 支持中英双语对照格式\n2. 适用于全员通知场景（如政策通知、活动公告、系统更新等）\n3. 包含固定的模板框架和可填写的内容占位符\n4. 格式规范、专业，适合对外企业通知",
+      "assigneeId": "192707b37e83ecdb",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "# 企业公告中英双语模板\n\n---\n\n## 一、模板使用说明\n\n### 1.1 适用场景\n本模板适用于企业各类全员通知场景，包括但不限于：\n- **政策通知**（人事政策、财务制度、福利调整等）\n- **活动公告**（年会、团建、培训、发布会等）\n- **系统更新**（OA系统、ERP系统、官网维护等）\n- **重要提醒**（安全提示、节假日安排、流程变更等）\n\n### 1.2 使用规范\n- **语言顺序**：中文在上，英文在下，左右对照或上下排列\n- **标题格式**：中文标题加粗，英文标题可使用斜体或同样加粗\n- **日期格式**：中文使用\"XXXX年XX月XX日\"，英文使用\"Month DD, YYYY\"\n- **标点规范**：中文使用全角符号，英文使用半角符号，两者分开使用\n\n---\n\n## 二、模板框架\n\n```\n┌─────────────────────────────────────────────────────┐\n│                    [公司Logo/标志]                   │\n├─────────────────────────────────────────────────────┤\n│                    公告编号：XXX-XXXX-XXXX            │\n│                    Notice No.: XXX-XXXX-XXXX        │\n├─────────────────────────────────────────────────────┤\n│                                                     │\n│              【中文标题 - 加粗居中】                  │\n│              [English Title - Bold Centered]        │\n│                                                     │\n├─────────────────────────────────────────────────────┤\n│  发布部门：XXX部 / Department: XXX Department       │\n│  发布日期：XXXX年XX月XX日 / Date: Month DD, YYYY     │\n│  有效期至：XXXX年XX月XX日 / Valid Until: Month DD    │\n│  密级：普通 / Classification: Internal              │\n├─────────────────────────────────────────────────────┤\n│                                                     │\n│  【正文内容 - 中文】                                  │\n│  [English Body Content]                             │\n│                                                     │\n│  一、事项说明                                        │\n│     （一）具体情况说明...                            │\n│                                                     │\n│  二、相关安排                                        │\n│     （一）时间安排...                                │\n│                                                     │\n│  三、操作指引                                        │\n│     （一）步骤一...                                  │\n│                                                     │\n├─────────────────────────────────────────────────────┤\n│  【注意事项 - 中文】                                  │\n│  [Important Notes - English]                        │\n│                                                     │\n│  1. 注意事项一                                       │\n│  2. 注意事项二                                       │\n│                                                     │\n├─────────────────────────────────────────────────────┤\n│  附件：                                             │\n│  Attachments:                                       │\n│  1. 附件名称1                                        │\n│  2. 附件名称2                                        │\n│                                                     │\n├─────────────────────────────────────────────────────┤\n│                                                     │\n│  发布部门（签章）              发布日期              │\n│  Department (Seal)            Publication Date     │\n│                                                     │\n│  [此处加盖部门章]              XXXX年XX月XX日        │\n│                              Month DD, YYYY         │\n│                                                     │\n└─────────────────────────────────────────────────────┘\n```\n\n---\n\n## 三、可变内容占位符说明\n\n| 占位符 | 含义 | 填写说明 |\n|--------|------|----------|\n| `[公司Logo/标志]` | 企业标识 | 放置公司Logo或部门标识 |\n| `XXX-XXXX-XXXX` | 公告编号 | 按企业编号规则填写，如：HR-2024-001 |\n| `【中文标题】` | 通知标题 | 简洁明确，不超过30字 |\n| `[English Title]` | 英文标题 | 与中文标题含义一致 |\n| `XXX部` | 发布部门 | 填写全称，如：人力资源部 |\n| `XXXX年XX月XX日` | 发布日期 | 中文日期格式 |\n| `Month DD, YYYY` | 英文日期 | 如：January 15, 2025 |\n| `XXXX年XX月XX日` | 有效期 | 如无截止日期可写\"长期有效\" |\n| `普通/内部` | 密级 | 根据内容敏感性选择 |\n| `正文内容` | 主体信息 | 按条理分层次书写 |\n| `注意事项` | 提醒事项 | 重要提示或补充说明 |\n| `附件名称` | 关联文档 | 如无附件可写\"无\" |\n\n---\n\n## 四、示例内容\n\n### 示例一：政策通知\n\n---\n\n**公告编号：HR-2025-008**\n**Notice No.: HR-2025-008**\n\n---\n\n# 关于实施新版员工考勤管理制度的通知\n\n## Notice on Implementation of Revised Employee Attendance Management Policy\n\n**发布部门：人力资源部**\n**Department: Human Resources Department**\n\n**发布日期：2025年1月20日**\n**Date: January 20, 2025**\n\n**有效期至：2025年12月31日**\n**Valid Until: December 31, 2025**\n\n**密级：普通**\n**Classification: Internal**\n\n---\n\n各位同事：\n\nDear All Employees,\n\n为进一步完善公司考勤管理，规范员工出勤行为，提升工作效率，根据《中华人民共和国劳动法》相关规定及公司实际情况，人力资源部对原《员工考勤管理制度》进行了修订，现予以发布，自2025年2月1日起正式实施。\n\nTo further improve the company's attendance management, standardize employee attendance behavior, and enhance work efficiency, in accordance with the relevant provisions of the Labor Law of the People's Republic of China and the actual circumstances of the company, the Human Resources Department has revised the original \"Employee Attendance Management Policy,\" which is hereby issued and will officially take effect on February 1, 2025.\n\n### 一、主要修订内容 | Key Revisions\n\n**（一）调整上班时间**\n**(a) Adjusted Working Hours**\n\n| 季节 / Season | 上午上班时间 / AM Start下班时间 / AM End | 下午 | 上午上班时间 / PM Start | 下午下班时间 / PM End |\n|---------------|------------------------|---------------------|----------------------|---------------------|\n| 夏季 (4月-9月) / Summer (Apr-Sep) | 08:30 | 12:00 | 13:30 | 18:00 |\n| 冬季 (10月-3月) / Winter (Oct-Mar) | 08:30 | 12:00 | 13:00 | 17:30 |\n\n"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 7977,
+      "createdAt": "2026-03-01T13:56:35.050Z",
+      "updatedAt": "2026-03-01T13:58:10.565Z"
+    }
+  ]
+}

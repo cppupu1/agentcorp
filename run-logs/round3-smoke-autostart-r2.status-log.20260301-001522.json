@@ -1,0 +1,32 @@
+[
+  {
+    "ts": "2026-03-01T00:15:22.339757",
+    "status": "executing",
+    "tokenUsage": 0
+  },
+  {
+    "ts": "2026-03-01T00:15:26.348100",
+    "status": "executing",
+    "tokenUsage": 0
+  },
+  {
+    "ts": "2026-03-01T00:15:30.354438",
+    "status": "executing",
+    "tokenUsage": 0
+  },
+  {
+    "ts": "2026-03-01T00:15:34.366356",
+    "status": "executing",
+    "tokenUsage": 0
+  },
+  {
+    "ts": "2026-03-01T00:15:38.379146",
+    "status": "executing",
+    "tokenUsage": 0
+  },
+  {
+    "ts": "2026-03-01T00:15:42.391284",
+    "status": "completed",
+    "tokenUsage": 2987
+  }
+]

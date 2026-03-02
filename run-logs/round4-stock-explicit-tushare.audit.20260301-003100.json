@@ -1,0 +1,51 @@
+{
+  "taskId": "0165b7038a3b4272",
+  "title": "回归验证-金融工具ID显式",
+  "status": "completed",
+  "tokenUsage": 25414,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 6,
+  "tools": [
+    {
+      "tool": "tushare_mcp_001__daily",
+      "count": 4
+    },
+    {
+      "tool": "tushare_mcp_001__today",
+      "count": 2
+    }
+  ],
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 1
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 1
+    }
+  ],
+  "hasTushareCall": true
+}

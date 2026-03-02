@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-03-01T10:08:19.215871Z",
+  "runLabel": "round31-mini-20260301-100819",
+  "sessions": [
+    {
+      "label": "round31-mini-translation-no-source",
+      "sessionId": "round31-mini-trans-nosrc-20260301-100819",
+      "evidence": "run-logs/round31-mini-translation-no-source.audit.20260301-100819.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round31-mini-stock",
+      "sessionId": "round31-mini-stock-20260301-100819",
+      "evidence": "run-logs/round31-mini-stock.audit.20260301-100819.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round31-mini-memory",
+      "sessionId": "round31-mini-memory-20260301-100819",
+      "evidence": "run-logs/round31-mini-memory.audit.20260301-100819.json",
+      "allCompleted": true,
+      "allChecksPassed": false
+    }
+  ]
+}

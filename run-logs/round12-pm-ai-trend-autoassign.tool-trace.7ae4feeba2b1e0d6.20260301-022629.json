@@ -1,0 +1,226 @@
+[
+  {
+    "id": "e03133bfae25a45e",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_8d219a5c74674377a2838205"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:32:36.150Z"
+  },
+  {
+    "id": "75400273d054bf55",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI Agent(智能体)技术白皮书(Google,2024) - petercao - 博客园\nURL: https://www.cnblogs.com/bluestorm/p/19600977\nDescription: AI\nAgent(智能体)技术白皮书(Google,2024)\nAI\nAgent(智能体)技术白皮书(Google,2024)\nPublished date: 2026-02-10T18:04:00+08:00\nSite name: 博客园\n\nTitle: 2026年如何挑选靠谱的Agent智能体公司?五家实力厂商深度解析 - 2026年企业推荐榜 - 企业博客\nURL: https://www.cnblogs.com/hynews/p/19597742\nDescription: 一、行业背景与市场趋势\n进入2026年,人工智能Agent(智能体)技术已从概念探索迈入规模化商业应用的关键阶段。随着大模型能力的持续进化与多模态技术的成熟,Agent不再仅仅是执行简单指令的“自动化工具”,而是进化为能够自主感知、规划、决策并执行复杂任务的“数字员工”。从智能客服、营销内容生成,到\nPublished date: 2026-02-10T06:50:00+08:00\nSite name: 博客园\n\nTitle: AI Agent如何实现商业化?_新浪财经_新浪网\nURL: https://finance.sina.com.cn/stock/marketresearch/2026-02-14/doc-inhmupeh8166261.shtml\nDescription: 炒股就看金麒麟分析师研报,权威,专业,及时,全面,助您挖掘潜力主题机会!\n来源:清科研究\nAI\nAgent作为AI大模型商业化落地的重要应用形式,正从技术工具逐渐升级成为新型生产要素,行业发展进入规模化落地的关键期,赛道投资热度高涨。2025年8月,国务院《关于深入实施“人工智能+”行动的意见》提出,目标到2030年,我国新一代智能体应用普及率超90%。2026年2月,工信部、网信办、国家发改委等八部门联合发布《“人工智能+制造”专项行动实施意见》,提出目标到2027年推动3-5个通用大模型在制造业深度应用,推出1000个高水平工业智能体。\n01\nAI\nAgent强调自主性、目标导向性,是大模型商业化落地的重要应用\nAI\nAgent(AI智能体)主要是指能够感知环境、自主规划、进行决策和执行动作以实现目标的智能体。根据国际标准化组织(ISO),AI\nAgent可使用传感器感知环境并通过效应器响应,具有自主性和权限。根据Gartner界定,AI\nAgent是指一个自主或半自主的软件实体,利用人工智能技术感知、做出决策、采取行动,并且在数字和物理环境中实现企业或者个人的业务目标。相较于传统AI工具,AI\nAgent强调自主性、交互性、反应性、适应性等特征,具有高度自主、强行动力、处理复杂任务、持续学习、实时交互能力等优势。\n在Agent“感知-决策-行动”闭环系统中,AI大模型将赋能AI\nAgent的核心推理与知识中枢环节,提供对话、逻辑推理、内容生成、代码理解等通用能力,是驱动Agent智能化的关键技术,但其本身不具备自主行动能力。企业现有的CRM等业务系统则会为AI\nAgent系统提供具体的应用场景与执行对象,提供感知数据和效果价值反馈闭环。未来三者将更深度的融合,AI大模型作为“智能底座”持续进化,AI\nAgent将成为企业新的“数字员工”,串联起各个业务子系统,而企业\nPublished date: 2026-02-14T16:25:35+08:00\nSite name: 新浪财经\n\nTitle: AI Agent如何实现商业化?|AI大模型|智能体|网信办|Manus|Copilot_新浪新闻\nURL: https://k.sina.com.cn/article_5953466437_162dab0450670a2x82.html\nDescription: 来源:清科研究\nAI\nAgent作为AI大模型商业化落地的重要应用形式,正从技术工具逐渐升级成为新型生产要素,行业发展进入规模化落地的关键期,赛道投资热度高涨。2025年8月,国务院《关于深入实施“人工智能+”行动的意见》提出,目标到2030年,我国新一代智能体应用普及率超90%。2026年2月,工信部、网信办、国家发改委等八部门联合发布《“人工智能+制造”专项行动实施意见》,提出目标到2027年推动3-5个通用大模型在制造业深度应用,推出1000个高水平工业智能体。\n01\nAI\nAgent强调自主性、目标导向性,是大模型商业化落地的重要应用\nAI\nAgent(AI智能体)主要是",
+    "isError": false,
+    "durationMs": 405,
+    "createdAt": "2026-03-01T02:32:36.555Z"
+  },
+  {
+    "id": "82cf391ea2d030b7",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_d3aee9f5e0ff4b73896062b2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:32:36.618Z"
+  },
+  {
+    "id": "d5d18490b68fbd11",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI Agent 协议全景:A2A、AP2、x402 如何拼出智能体经济的完整拼图 - warm3snow - 博客园\nURL: https://www.cnblogs.com/informatics/p/19632890\nDescription: AI\nAgent\n协议全景:A2A、AP2、x402\n如何拼出智能体经济的完整拼图\n导语\n2025\n年,AI\nAgent\n领域发生了三件标志性事件:\n4\n月,Google\n在\nCloud\nNext\n大会上开源了\nA2A(Agent-to-Agent)协议,50+\n家企业联合签署支持;5\n月,Coin\n转载声明\n本文版权归作者和博客园共有,欢迎转载,但未经作者同意必须在文章页面给出原文连接,否则保留追究法律责任的权利。\nPublished date: 2026-02-24T11:26:00+08:00\nSite name: 博客园\n\nTitle: AI Agent如何实现商业化?_新浪财经_新浪网\nURL: https://finance.sina.com.cn/stock/marketresearch/2026-02-14/doc-inhmupeh8166261.shtml\nDescription: 炒股就看金麒麟分析师研报,权威,专业,及时,全面,助您挖掘潜力主题机会!\n来源:清科研究\nAI\nAgent作为AI大模型商业化落地的重要应用形式,正从技术工具逐渐升级成为新型生产要素,行业发展进入规模化落地的关键期,赛道投资热度高涨。2025年8月,国务院《关于深入实施“人工智能+”行动的意见》提出,目标到2030年,我国新一代智能体应用普及率超90%。2026年2月,工信部、网信办、国家发改委等八部门联合发布《“人工智能+制造”专项行动实施意见》,提出目标到2027年推动3-5个通用大模型在制造业深度应用,推出1000个高水平工业智能体。\n01\nAI\nAgent强调自主性、目标导向性,是大模型商业化落地的重要应用\nAI\nAgent(AI智能体)主要是指能够感知环境、自主规划、进行决策和执行动作以实现目标的智能体。根据国际标准化组织(ISO),AI\nAgent可使用传感器感知环境并通过效应器响应,具有自主性和权限。根据Gartner界定,AI\nAgent是指一个自主或半自主的软件实体,利用人工智能技术感知、做出决策、采取行动,并且在数字和物理环境中实现企业或者个人的业务目标。相较于传统AI工具,AI\nAgent强调自主性、交互性、反应性、适应性等特征,具有高度自主、强行动力、处理复杂任务、持续学习、实时交互能力等优势。\n在Agent“感知-决策-行动”闭环系统中,AI大模型将赋能AI\nAgent的核心推理与知识中枢环节,提供对话、逻辑推理、内容生成、代码理解等通用能力,是驱动Agent智能化的关键技术,但其本身不具备自主行动能力。企业现有的CRM等业务系统则会为AI\nAgent系统提供具体的应用场景与执行对象,提供感知数据和效果价值反馈闭环。未来三者将更深度的融合,AI大模型作为“智能底座”持续进化,AI\nAgent将成为企业新的“数字员工”,串联起各个业务子系统,而企业\nPublished date: 2026-02-14T16:25:35+08:00\nSite name: 新浪财经\n\nTitle: AI Agent平台PallasAI宣布完成数千万人民币融资_腾讯新闻\nURL: https://news.qq.com/rain/a/20260206A03U4900\nDescription: 【AI\nAgent平台PallasAI宣布完成数千万人民币融资】《科创板日报》6日讯,专注于答案引擎优化(AEO)的AI\nAgent平台PallasAI宣布完成数千万人民币融资。这是该公司三个月内获得的第二笔投资,此前曾获得极客公园旗下变量资本和Founder\nPark联合发起的社区早期基金的孵化投资。PallasAI成立于2025年5月,创始人曾担任蚂蚁大模型首席架构师。\nPublished date: 2026-02-06T12:42:09+08:00\nSite name: 腾讯网\n\nTitle: 2025年Agent创业实战指南:从0到1打造高增长AI智能体项目|工具|数据|机器人|债券|浏览器_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902ookm.html\nDescription: 数据来源说明:本文所有案例与数据均来自权威媒体报道(36氪/财联社)、行业报告(头豹/Gartner)及企业官网,具体来源已标注。\n2025年,AI\nAgent(智能体)正从技术概念走向商业落地,全球市场规模预",
+    "isError": false,
+    "durationMs": 240,
+    "createdAt": "2026-03-01T02:32:36.858Z"
+  },
+  {
+    "id": "a31f19279dc8f66e",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_a191eb3f21df45edba39ed2c"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:32:37.041Z"
+  },
+  {
+    "id": "157f92f88eb4acaa",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 数据驱动,安全可控:2026年企业智能BI私有化部署实力厂商推荐指南 - 品牌2025 - 企业博客\nURL: https://www.cnblogs.com/bsoo/p/19575116\nDescription: 随着人工智能技术从“感知智能”迈向“认知智能”,AI智能体(AI\nAgent)正成为推动各行业智能化升级的核心引擎。区别于传统AI工具,智能体具备自主决策、持续学习与多模态协同能力,已在物流调度、政务服务、能源管理、文娱创作及互联网运营等场景中展现强大潜力。本文将系统梳理当前智能体技术体系,并重点介\nPublished date: 2026-02-04T16:21:00+08:00\nSite name: 博客园\n\nTitle: 许可|AI智能体的私法构造与行为边界|ai智能|人工智能|法律|概念|豆包_新浪新闻\nURL: https://k.sina.com.cn/article_5952915720_162d2490806703b8me.html\nDescription: (来源:上观新闻)\n从生成合成内容的生成式人工智能,到由用户设定目标、自主使用第三方工具执行任务并与环境交互输出结果的ai智能体,人工智能正经历着根本变革,亦引发了行业激荡与法律讼争。ai智能体并非法律主体,以此为中心却可衍生出用户—提供者—第三方的三面主体结构,进而形成用户与提供者之间的内部法律关系和提供者(用户)与第三方之间的外部法律关系。在内部法律关系中,ai智能体的行为边界具体化为提供者在数字内容与服务合同下的适约性义务和个人信息保护义务,以及数字委托关系下的忠实、勤勉义务;在外部法律关系中,ai智能体的行为边界被代理权授予和行使的有效性与合法性所划定。\n2025年被称为ai智能体(ai\nagent)元年。这一自主、感知、决策和执行任务的智能体肩负着人工智能真正迈入现实世界的使命。2025年8月,《国务院关于深入实施“人工智能+”行动的意见》明确提出我国人工智能的发展目标:到2027年,新一代智能体等应用普及率超70%,到2030年,新一代智能体等应用普及率超90%。新的生产方式变革带来的智能经济和智能社会形态变迁,必然与既有法律规则相互激荡。2025年12月,字节跳动公司发布豆包手机助手,这一ai智能体仅凭识屏与模拟触控,即可径入微信代复讯息,通达电商比价下单,乃至自动收取蚂蚁森林能量,全程无需第三方app应用适配。不出所料,此举引发行业震动,淘宝、微信及多家银行app已相继设限,拒绝豆包手机助手的登录。无独有偶,在大洋彼岸,ai智能体亦引发了法律讼争。2025年11月,美国亚马逊公司在加州法院起诉ai初创公司perplexity,指控其旗下ai浏览器comet的代理购物功能,违反了《计算机欺诈和滥用法案》《加州综合计算机数据访问与欺诈法案》和《加州刑法典》。值此ai智能体发展的关键时刻,本文试图立足技术、法律、产业互动视角,辨明ai智能体的法律概念,在ai智能\nPublished date: 2026-02-11T10:21:23+08:00\nSite name: 新浪网\n\nTitle: AI智能体研究报告_2026-2030年中国AI智能体行业竞争格局及发展趋势预测报告_中国行业研究网\nURL: https://www.chinairn.com/report/20260213/150927605.html\nDescription: ﻿\n﻿第一章\nai智能体行业发展概述第一节\n行业界定一、ai智能体行业定义及分类二、ai智能体行业经济特性三、ai智能体产业链模型介绍及ai智能体产业链图分析第二节\nai智能体行业发展成熟度一、ai智能体行业发展周期分析二、与国外市场成熟度对比第三节\nai智能体行业相关产业动态第二章\n2025年中国ai智能体行业发展环境分析第一节\n中国经济环境分析一、宏观经济运行情况1、gdp历史变动轨迹分析2、固定资产投资历史变动轨迹分析二、2026-2030年中国经济发展预测分析第二节\nai智能体行业相关政策一、国家“十四五”产业政策二、其他相关政策(标准、技术)第三节\n2025年中国ai智能体行业发展社会环境分析第三章\n2025年全球ai智能体行业市场运行形势分析第一节\n全球ai智能体行业市场运行环境分析第二节\n全球ai智能体行业市场发展情况分析一、全球ai智能体行业市场供需分析二、全球ai智能体行业市场规模分析三、全球ai智能体行业主要国家发展情况分析第三节\n全球ai智能体行业重点企业分析第四节\n2026-2030年全球ai智能体行业市场规模趋势预测分析第四章\n中国ai智能体行业发展分析第一节\n2025年中国ai智能体行业发展状况一、2025年ai智能体行业发展状况分析二、2025年中国ai智能",
+    "isError": false,
+    "durationMs": 317,
+    "createdAt": "2026-03-01T02:32:37.358Z"
+  },
+  {
+    "id": "59b68fff368bda55",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_2fc5c8ea55184b66bf1651ec"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:32:37.527Z"
+  },
+  {
+    "id": "1cc060ba3a5d5105",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年Agent创业实战指南:从0到1打造高增长AI智能体项目|工具|数据|机器人|债券|浏览器_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902ookm.html\nDescription: 数据来源说明:本文所有案例与数据均来自权威媒体报道(36氪/财联社)、行业报告(头豹/Gartner)及企业官网,具体来源已标注。\n2025年,AI\nAgent(智能体)正从技术概念走向商业落地,全球市场规模预计突破2000亿美元,其中垂直行业解决方案占比达44.5%(890亿美元),年复合增长率46.3%(36氪《2025\nAI\nAgent市场报告》)。与传统AI工具不同,AGENT具备自主决策、工具调用、持续学习三大核心能力,可像“数字员工”一样独立完成复杂任务。\n本文基于30+真实商业案例(涵盖金融、医疗、零售等12个行业)、15份权威行业报告,提炼出6个高可行性创业方向,附具体技术路径、成本结构与风险规避策略,助你抓住AGENT时代的“造富机遇”。维度传统AI工具AI\nAgent决策逻辑基于预设规则(if-this-then-that)动态规划+多步骤推理(如CoT思维链)环境交互被动响应指令主动感知环境+调用外部工具(API/浏览器)学习能力需人工重新训练通过用户反馈持续优化策略典型案例智能客服问答机器人邮储银行债券交易Agent(自动询价+风控)领域2025年市场规模2030年预测CAGR通用AGENT78.4亿美元526.2亿美元46.3%垂直行业AGENT890亿美元4710亿美元39.8%AGENT开发平台900亿美元5120亿美元41.2%成本项金额(年)说明人力成本150-300万元AI工程师月薪2-4万元算力/云服务50-100万元GPU服务器/API调用(如GPT-4)数据采购20-50万元行业数据集(如医疗影像/金融数据)营销/运营30-80万元内容营销+客户成功团队\n特别声明:以上文章内容仅代表作者本人观点,不代表新浪网观点或立场。如有关于作品内容、版权或其它问题请于作品发表后的30日内与新浪网联系。\nPublished date: 2026-02-28T01:04:01+08:00\nSite name: 新浪网\n\nTitle: AI Agent如何实现商业化?_新浪财经_新浪网\nURL: https://finance.sina.com.cn/stock/marketresearch/2026-02-14/doc-inhmupeh8166261.shtml\nDescription: 炒股就看金麒麟分析师研报,权威,专业,及时,全面,助您挖掘潜力主题机会!\n来源:清科研究\nAI\nAgent作为AI大模型商业化落地的重要应用形式,正从技术工具逐渐升级成为新型生产要素,行业发展进入规模化落地的关键期,赛道投资热度高涨。2025年8月,国务院《关于深入实施“人工智能+”行动的意见》提出,目标到2030年,我国新一代智能体应用普及率超90%。2026年2月,工信部、网信办、国家发改委等八部门联合发布《“人工智能+制造”专项行动实施意见》,提出目标到2027年推动3-5个通用大模型在制造业深度应用,推出1000个高水平工业智能体。\n01\nAI\nAgent强调自主性、目标导向性,是大模型商业化落地的重要应用\nAI\nAgent(AI智能体)主要是指能够感知环境、自主规划、进行决策和执行动作以实现目标的智能体。根据国际标准化组织(ISO),AI\nAgent可使用传感器感知环境并通过效应器响应,具有自主性和权限。根据Gartner界定,AI\nAgent是指一个自主或半自主的软件实体,利用人工智能技术感知、做出决策、采取行动,并且在数字和物理环境中实现企业或者个人的业务目标。相较于传统AI工具,AI\nAgent强调自主性、交互性、反应性、适应性等特征,具有高度自主、强行动力、处理复杂任务、持续学习、实时交互能力等优势。\n在Agent“感知-决策-行动”闭环系统中,AI大模型将赋能AI\nAgent的核心推理与知识中枢环节,提供对话、逻辑推理、内容生成、代码理解等通用能力,是驱动Agent智能化的关键技术,但其本身不具备自主行动能力。企业现有的CRM等业务系统则会为AI\nAgent系统提供具体的应用场景与执行对象,提供感知数据和效果价值反馈闭环。未来三者将更深度的融合,AI大模型作为“智能底座”持续进化,AI\nAgent将成为企业新的“数字员工”,串联起各个业务子系统,而企业\nPublished date: 2026-02-14T16:25:35+08:00\nSite name: 新浪财经\n\nTitle: AI Agent如何实现商业",
+    "isError": false,
+    "durationMs": 286,
+    "createdAt": "2026-03-01T02:32:37.813Z"
+  },
+  {
+    "id": "162f7ae41dfd1384",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_9c5ddbac126748d8af237ca4"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:32:46.717Z"
+  },
+  {
+    "id": "acec8920753afbeb",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 【claude】最新Claude Opus 4.6 深度评测:AI编程工具的新王者诞生! - 甲枫 - 博客园\nURL: https://www.cnblogs.com/jiafeng1323/p/19596875\nDescription: \n最后更新:2026年2月9日\n作者:小枫\n\n摘要\n2026年2月6日,Anthropic\n\n最后更新:2026年2月9日\n作者:小枫\n\n摘要\n2026年2月6日,Anthropic\nPublished date: 2026-02-09T20:29:00+08:00\nSite name: 博客园\n\nTitle: Anthropic发布新AI模型Claude Sonnet 4.6|上下文|计算机|新论文|ai模型|claude|anthropic_网易订阅\nURL: https://www.163.com/dy/article/KM2OLLTB0534A4SC.html\nDescription: 当地时间2月17日,Anthropic宣布推出人工智能模型Claude\nSonnet\n4.6,称该模型在编码能力、计算机操作、长上下文推理、代理规划、知识工作及设计领域实现了全面升级。测试版还包含100万token的上下文窗口。\nPublished date: 2026-02-18T18:21:13+08:00\nSite name: 网易\n\nTitle: Anthropic发布新AI模型Claude Sonnet 4.6|界面新闻 · 快讯\nURL: https://www.jiemian.com/article/14022719.html\nDescription: 当地时间2月17日,Anthropic宣布推出人工智能模型Claude\nSonnet\n4.6,称该模型在编码能力、计算机操作、长上下文推理、代理规划、知识工作及设计领域实现了全面升级。测试版还包含100万token的上下文窗口。\nPublished date: 2026-02-18T18:20:11+08:00\nSite name: 界面新闻\n\nTitle: Anthropic 新模型 Claude 5 发布在即,或凭低价高性能改写编程模型格局-太平洋科技\nURL: https://www.pconline.com.cn/ai/2085/20851852.html\nDescription: Anthropic\n下一代大模型\nClaude\nSonnet5(代号\nFennec)部署于谷歌基础设施,发布在即。它虽是中端\nSonnet\n系列,多项测试表现却超旗舰\nClaude\nOpus4.5。推理成本降,定价或为\nOpus4.5\n的\n50%,有\n100\n万\ntoken\n上下文窗口,SWE\n-\nBench\n成绩超\n80.9%。还具备“蜂群”架构的\nDev\nTeam\n功能。这背后,其通过价格战和“蜂群”开发模式实现性能突破。它意在阻击\nOpenAI\n的\nCodex\n全家桶,而\nAnthropic\n在企业市场占有率达\n40%,Claude\nCode\n半年年化收入破\n10\n亿美元,或改变编程模型市场格局。\nPublished date: 2026-02-03T17:28:00+08:00\nSite name: 太平洋科技\n\nTitle: Anthropic发布新AI模型Claude Sonnet 4.6|人工智能|推理|测试版|上下文|知识_新浪新闻\nURL: https://k.sina.com.cn/article_6192937794_17120bb4202002nxck.html\nDescription: 当地时间2月17日,Anthropic宣布推出人工智能模型Claude\nSonnet\n4.6,称该模型在编码能力、计算机操作、长上下文推理、代理规划、知识工作及设计领域实现了全面升级。测试版还包含100万token的上下文窗口。\n特别声明:以上文章内容仅代表作者本人观点,不代表新浪网观点或立场。如有关于作品内容、版权或其它问题请于作品发表后的30日内与新浪网联系。\nPublished date: 2026-02-18T18:30:21+08:00\nSite name: 新浪网\n\nTitle: Anthropic发布新AI模型Claude Sonnet 4.6|ai模型|anthropic|claude|上下文|新论文|计算机_手机网易网\nURL: https://m.163.com/dy/article/KM2OLLTB0534A4SC.html\nDescription: Anthropic发布新AI模型Claude\nSonnet\n4.6\n界面新闻\n2026-02-18\n18:21\n·上海\n·界面新闻官方网易号\n当地时间",
+    "isError": false,
+    "durationMs": 362,
+    "createdAt": "2026-03-01T02:32:47.079Z"
+  },
+  {
+    "id": "0c63b33f59d9b298",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_247aad9403254f089e0d0e6a"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:32:47.451Z"
+  },
+  {
+    "id": "dc2bc473944ee5b4",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI智能体协同的核心协议标准是什么? - 今日头条\nURL: https://www.toutiao.com/article/7610800154254082606/\nDescription: AI智能体协同的核心协议标准是模型上下文协议(MCP)和智能体到智能体协议(A2A)。这两套协议就像智能体世界的“USB接口”和“通用语言”,让原本孤立的AI能安全连接外部工具、高效相互协作,从“单兵作战”升级为“团队作业”。MCP:智能体的“万能插座”MCP解决的是智能体如何连接外部工具和数据的问题。想象一下,如果没有统一接口,每个智能体都得为不同的工具(比如CRM系统、数据库或API)定制代码,费时费力。MCP就像给AI装上了“万能插座”,让智能体能以标准化方式安全访问各种服务,实现“即插即用”。这个协议由Anthropic在2024年底提出,2025年获得了OpenAI、谷歌、微软等巨头的响应,并在同年捐赠给Linux基金会旗下的智能体AI基金会(AAIF),成为全球中立标准。它的核心价值在于大幅降低集成成本——过去企业部署智能体时,73%在整合异构系统时遭遇通信瓶颈,而MCP通过统一接口,能将新服务接入耗时从3-5人日缩短至2小时,代码维护量减少90%。更关键的是,MCP让智能体调用工具变得简单可靠。例如,财务智能体可以直接通过MCP调用企业报销系统,无需重新开发接口;交通管理中的“路口智能助手”也能通过MCP快速接入潮汐车道方案生成工具,提升效率。A2A:智能体的“协作语言”如果说MCP是智能体的“手”,那么A2A就是它们的“语言”。A2A协议专注于智能体之间的横向协同,让来自不同厂商、基于不同框架的智能体能像人类团队一样分工合作。谷歌在2025年4月推出了A2A,并随后捐赠给Linux基金会。它的设计围绕两个核心组件:智能体卡片:类似于智能体的“简历”,详细描述其能力、认证要求和输入输出格式,帮助智能体快速识别彼此的价值。任务对象:管理跨智能体任务的全生命周期,从提交、执行到完成,支持长达数小时甚至数天的异步协作。通过A2A,智能体之间可以高效委托任务。例如,市\nPublished date: 2026-02-25T21:51:00+08:00\nSite name: 今日头条\n\nTitle: 深入解析:【万文超详A2A 协议】从个体赋能到群体智能,智能体间的“TCP/IP协议“ - yangykaifa - 博客园\nURL: https://www.cnblogs.com/yangykaifa/p/19616632\nDescription: 一、核心认知:A2A\n协议到底解决什么问题? ̊ᝰ.ᐟ在\nA2A\n出现前,智能体协作面临三大核心痛点:框架不兼容:LangGraph、CrewAI、Google\nADK\n等框架各自为战,智能体间缺乏统一通信接口;框架锁定:LangChain\n开发的\nAgent\n无法与\nLlamaIndex\n开发的\nA\nPublished date: 2026-02-14T21:11:00+08:00\nSite name: 博客园\n\nTitle: 多智能体协商协议实现 (Multi-Agent Negotiation Protocol): 基于FIPA-Contract-Net | EvoMap\nURL: https://evomap.ai/bounty/cme85b74dd4bac83e93bdf43f\nDescription: Bounty Detail\n多智能体协商协议实现 (Multi-Agent Negotiation Protocol): 基于FIPA-Contract-Net\nView bounty details, signals, and matched solutions.\nTotal Reward 0 credits\nStatus open Waiting for solution\nSignals 5 Matching keywords\n多智能体协商协议实现 (Multi-Agent Negotiation Protocol): 基于FIPA-Contract-Net\nopen\nMulti-agent competition verified\n2026/2/20 20:15:01\nExpires 2026/3/21 14:26:56\n0 credits\nSignals FIPA-Contract-Net, negotiation, Python, implementation, libraries\nSubmitted Answers(0)\nPublished date: 2026-02-20T20:15:01+08:00\nSite name: evomap.ai\n\nTi",
+    "isError": false,
+    "durationMs": 293,
+    "createdAt": "2026-03-01T02:32:47.744Z"
+  },
+  {
+    "id": "872c9b69a6edb63b",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_4bd2a9a24ff8421d8da4e7f4"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:32:47.967Z"
+  },
+  {
+    "id": "5183cd84d8427d8c",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026智能体如何在企业落地:10大路径解析与产品选型指南 - 博客湾 - 企业博客\nURL: https://www.cnblogs.com/bokewan/p/19652533\nDescription: 2026年初,IDC发布《IDC\nFutureScape:全球Agentic\nAI\n2026年预测——中国启示》指出,建立了成熟AI或智能体卓越中心(CoE)的企业,其创新、速度和服务质量将比竞争对手高出20%。\n企业智能体迎来规模化落地拐点,政策推动、技术成熟与市场需求同频共振,市场规模再创新高。\nPublished date: 2026-02-28T15:15:00+08:00\nSite name: 博客园\n\nTitle: 2026年AI智能体平台终极评测(IDC+Gartner双重背书)| 企业选型避坑全指南 - 品牌推荐 - 企业博客\nURL: https://www.cnblogs.com/pinpaituijan/p/19602701\nDescription: 随着生成式AI技术从探索走向深度融合,AI智能体平台已成为企业构建核心AI能力、实现业务智能化的关键基础设施。Gartner在《2026年十大战略技术趋势》中预测,智能体将作为新型工作伙伴重塑业务流程,而IDC最新报告则指出,2026年中国AI智能体平台市场规模预计将突破500亿元,年复合增长率超过\n品牌推荐官,推荐不一样的品牌\nPublished date: 2026-02-11T09:32:00+08:00\nSite name: 博客园\n\nTitle: 2026年智能体AI核心指南-构建自主化未来的竞争方略 - 远瞻慧库\nURL: https://www.baogaobox.com/reports/260204000093235.html\nDescription: 版权声明:报告来自互联网,仅供投资者学习和参考,在发布信息时,我们将尽最大努力标明出处,但因互联网的去中心、海量信息的特殊结构,可能有时会存在未指明作者的失误,我们诚挚的希望您能指出我们的工作失误,如果您(单位或个人)认为本站的内容有侵权嫌疑,烦请通知我们(kefu@baogaobox.com),我们将在第一时间处理核实,同时如果您的报告不愿在本站展示,请联系我们删除或更改,谢谢。本站仅提供用户检索、查询报告服务,以便快速找到报告的来源、作者等信息,不提供下载服务。如需下载,请前往社群。\n文章名称:《2026年智能体AI核心指南-构建自主化未来的竞争方略》\n文章链接:https://www.baogaobox.com/reports/260204000093235.html\nPublished date: 2026-02-04T00:00:00+08:00\nSite name: www.baogaobox.com\n\nTitle: 金融智能体_标签_网易出品\nURL: https://news.163.com/keywords/9/d/91d1878d667a80fd4f53/1.html\nDescription: 相关内容\n网易号\n中关村互联网金融研究院\n2025-11-11\n网易号\n中关村互联网金融研究院\n2025-07-25\n无障碍浏览\n进入关怀版\nPublished date: 2026-02-21T20:46:37+08:00\nSite name: 凤凰网\n\nTitle: 新风口来了!2026年深圳AI智能体培训启动:教你如何搭建智能体(Agent)、智能体工具变现!小白也能学_腾讯新闻\nURL: https://news.qq.com/rain/a/20260202A04UFV00\nDescription: 2025年,人工智能的发展正以前所未有的速度和深度席卷全球。据赛迪顾问报告显示,未来5年,全球人工智能体市场规模将以超过40%的年均复合增长率保持增长。在2026年,将有50%的中国500强数据团队使用AI\nAgent来实现数据准备和分析。(数据来源IDC调研数据)技术上,随着GPT-5、Gemini\n3等新一代大模型的出现,让AI智能体实现从“自动化工具”升级成为能够自主思考、主动协助的“智能数字伙伴”\n;多个智能体的互助协同成为主流,市场正在快速扩大,预计2030年AI智能体规模有望达471亿美元。(数据来源研究机构MarketsandMarkets预测)与此同时,AI领域人才缺口已达500万。(来源:《2025\n人工智能行业人才供需趋势报告》)因此,学习AI知识,掌握智能体技能、将成为抓住AI风口,布局未来发展的关键。2026年AI智能体培训启动学AI知识,发展副业,增加收入报名条件、学习及考试费用咨询老师培训项目:AI智能体应用工程师(高级)培训方式:线",
+    "isError": false,
+    "durationMs": 255,
+    "createdAt": "2026-03-01T02:32:48.222Z"
+  },
+  {
+    "id": "9971f0123eb41406",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_153c33c1e22349d29b2e8650"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T02:32:48.483Z"
+  },
+  {
+    "id": "894da32f3b3ee04c",
+    "type": "tool_call",
+    "taskId": "7ae4feeba2b1e0d6",
+    "subtaskId": "3e96320847eca3a0",
+    "employeeId": "443ba8bfe04052ac",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 欧盟《人工智能法案》进入合规准备关键期_经贸资讯_ 中国国际贸易促进委员会南京市分会\nURL: https://ccpit.nanjing.gov.cn/jmzx/202602/t20260210_5790628.html\nDescription: 欧盟《人工智能法案》进入合规准备关键期\n责任编辑:信息部\n文章来源:厦门技术性贸易措施信息网\n发布时间:2026-02-10\n10:05\n阅读次数:显示稿件总访问量\n欧盟《人工智能法案》(AI\nAct)正稳步推进落地,核心条款将于2026年8月2日全面生效,目前已进入合规准备关键阶段,为欧盟境内AI应用划定安全与合规底线。来源:江苏省技术性贸易措施信息平台\nPublished date: 2026-02-10T10:05:00+08:00\nSite name: 中国国际贸易促进委员会南京市分会\n\nTitle: 欧盟发布CBAM注册机制修订法规\nURL: http://chinawto.mofcom.gov.cn/article/jsbl/zcfg/202602/20260203618832.shtml\nDescription: 2025年12月10日,欧盟发布实施法规,对\n2024年12月18日发布的(EU)2024/3210号实施法规进行补充与修订,重点完善碳边境调节机制(CBAM)注册系统的相关规则。该法规旨在使CBAM注册机制与最新政策要求保持一致,优化跨系统协同效能,为CBAM的全面落地提供更坚实的制度保障。\n此前,欧盟(EU)2023/956号法规经(EU)2025/2083号法规修订后,新增了授权CBAM申报人委托他人代为提交申报、核查机构注册规则、单一质量阈值设定及监测要求等内容。为确保相关新规有效落地,亟需对原注册机制法规中的术语定义、操作流程等条款进行同步更新。同时,原法规中引用的(EU)2023/1070号实施法规已被(EU)2025/512实施法规废止替代,此次修订也完成了技术支撑文件的引用更新,保障电子系统协同的合法性与有效性。\n修订法规在多个关键领域实现制度完善。在注册系统功能方面,明确CBAM注册系统作为标准化安全电子数据库,涵盖CBAM账户信息、申报文件、授权申请、委托代理人注册、核查机构信息、排放报告等多类核心数据,同时搭建起欧盟委员会、主管当局、海关部门与相关主体间的信息沟通与交换渠道。技术协同层面,规范了注册系统与统一用户管理和数字签名(UUM&DS)系统、经济经营者注册和识别(EORI)系统、海关风险管理系统(CRMS2)等电子系统的对接规则,明确海关部门可通过该系统验证授权资质、共享海关数据,提升监管精准度。\n针对不同主体的操作需求,法规细化了注册与访问管理规则。独立核查人员需在获得认证后两个月内提交注册申请(不早于2026年12月1日),注册信息应包含认证标识、业务范围、设立国别等关键内容,主管当局负责信息登记、更新及注销管理。授权CBAM申报人、申请人及被撤销授权者可委托他人访问系统,受托人通过UUM&DS系统进行身份认证,且可随时申请注销注册。同时,\nPublished date: 2026-02-12T08:24:28+08:00\nSite name: 中华人民共和国商务部\n\nTitle: 全球人工智能立法动态与治理趋势:2026年政策全景扫描-36氪\nURL: https://www.36kr.com/p/3678814524338697\nDescription: 编者按\n当前全球人工智能治理呈现三组矛盾统一的发展趋势:一方面,欧盟《人工智能法案》的延期提案与美英等国的放松监管导向形成张力,反映立法者对技术创新速度的适应性挑战;另一方面,韩国、巴西等国通过“立法+基建+投资”组合拳争夺AI高地,凸显政策竞争已从规则制定延伸至生态构建。值得关注的是,标准制定与司法判例正成为柔性监管工具——加拿大、澳大利亚通过自愿标准平衡安全与创新,美国、以色列对训练数据的合理使用认定,为产业化解版权困境提供新思路。\n这些动态提示企业:需同步关注硬法软法、国内国际的多层规则交互,在合规中寻找战略机遇。\n争夺人工智能所需数据和基础设施的竞赛,与制定有利于控制这场技术革命的法律和政策的竞赛并存。欧盟于\n2024\n年通过的《人工智能法案》标志着人工智能综合立法的一个里程碑,但近年来,以促进竞争和创新为名,放松对该技术的监管限制已成为一种趋势。\n正如国际隐私专业协会(IAPP)\n最新《全球人工智能法律和政策追踪报告》所示,许多国家仍在就影响深远的政策展开辩论,并随着人工智能投资的风险和回报日益显现,不断尝试新的治理模式。\n尽管放松管制的趋势日益明显,但人工智能相关的法律和政策仍在不断涌现,只是形式更加新颖独特。一些地区仍在讨论制定全面的法律,另一",
+    "isError": false,
+    "durationMs": 259,
+    "createdAt": "2026-03-01T02:32:48.742Z"
+  }
+]

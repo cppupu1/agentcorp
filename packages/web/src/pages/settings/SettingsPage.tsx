@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from 'react';
-import { systemApi, webhookConfigsApi, type WebhookConfig } from '@/api/client';
+import { systemApi, modelsApi, webhookConfigsApi, type WebhookConfig, type Model } from '@/api/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { useI18n } from '@/i18n';
-import { Loader2, Save, Plus, Pencil, Trash2, Bell } from 'lucide-react';
+import { Loader2, Save, Plus, Pencil, Trash2, Bell, RotateCcw, AlertTriangle } from 'lucide-react';
 import { EmptyState } from '@/components/ui/empty-state';
 
 const SETTING_DEFS = [
@@ -91,7 +91,141 @@ export default function SettingsPage() {
         ))}
       </div>
 
+      <HrModelSelector settings={settings} setSettings={setSettings} saving={saving} onSave={handleSave} />
+      <PmModelSelector settings={settings} setSettings={setSettings} saving={saving} onSave={handleSave} />
+      <AiParseModelSelector settings={settings} setSettings={setSettings} saving={saving} onSave={handleSave} />
+
       <WebhookSection />
+      <ResetSection />
+    </div>
+  );
+}
+
+function HrModelSelector({ settings, setSettings, saving, onSave }: {
+  settings: Record<string, string>;
+  setSettings: React.Dispatch<React.SetStateAction<Record<string, string>>>;
+  saving: string | null;
+  onSave: (key: string) => Promise<void>;
+}) {
+  const [modelsList, setModelsList] = useState<Model[]>([]);
+  const { t } = useI18n();
+
+  useEffect(() => {
+    modelsApi.list().then(res => setModelsList(res.data)).catch(() => {});
+  }, []);
+
+  const KEY = 'hr_assistant_model_id';
+
+  return (
+    <div className="mt-6 bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)]">
+      <label className="block text-sm font-medium mb-1">{t('settings.hrModel')}</label>
+      <p className="text-xs text-muted-foreground mb-3">{t('settings.hrModelDesc')}</p>
+      <div className="flex items-center gap-2">
+        <select
+          className="max-w-[300px] h-9 rounded-md border border-input bg-background px-3 text-sm"
+          value={settings[KEY] ?? ''}
+          onChange={e => setSettings(prev => ({ ...prev, [KEY]: e.target.value }))}
+        >
+          <option value="">{t('settings.hrModelNone')}</option>
+          {modelsList.map(m => (
+            <option key={m.id} value={m.id}>{m.name}</option>
+          ))}
+        </select>
+        <Button
+          size="sm"
+          variant="outline"
+          disabled={saving === KEY}
+          onClick={() => onSave(KEY)}
+        >
+          {saving === KEY ? <Loader2 className="h-3 w-3 animate-spin" /> : <Save className="h-3 w-3" />}
+        </Button>
+      </div>
+    </div>
+  );
+}
+
+function PmModelSelector({ settings, setSettings, saving, onSave }: {
+  settings: Record<string, string>;
+  setSettings: React.Dispatch<React.SetStateAction<Record<string, string>>>;
+  saving: string | null;
+  onSave: (key: string) => Promise<void>;
+}) {
+  const [modelsList, setModelsList] = useState<Model[]>([]);
+  const { t } = useI18n();
+
+  useEffect(() => {
+    modelsApi.list().then(res => setModelsList(res.data)).catch(() => {});
+  }, []);
+
+  const KEY = 'pm_assistant_model_id';
+
+  return (
+    <div className="mt-6 bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)]">
+      <label className="block text-sm font-medium mb-1">{t('settings.pmModel')}</label>
+      <p className="text-xs text-muted-foreground mb-3">{t('settings.pmModelDesc')}</p>
+      <div className="flex items-center gap-2">
+        <select
+          className="max-w-[300px] h-9 rounded-md border border-input bg-background px-3 text-sm"
+          value={settings[KEY] ?? ''}
+          onChange={e => setSettings(prev => ({ ...prev, [KEY]: e.target.value }))}
+        >
+          <option value="">{t('settings.pmModelFallback')}</option>
+          {modelsList.map(m => (
+            <option key={m.id} value={m.id}>{m.name}</option>
+          ))}
+        </select>
+        <Button
+          size="sm"
+          variant="outline"
+          disabled={saving === KEY}
+          onClick={() => onSave(KEY)}
+        >
+          {saving === KEY ? <Loader2 className="h-3 w-3 animate-spin" /> : <Save className="h-3 w-3" />}
+        </Button>
+      </div>
+    </div>
+  );
+}
+
+function AiParseModelSelector({ settings, setSettings, saving, onSave }: {
+  settings: Record<string, string>;
+  setSettings: React.Dispatch<React.SetStateAction<Record<string, string>>>;
+  saving: string | null;
+  onSave: (key: string) => Promise<void>;
+}) {
+  const [modelsList, setModelsList] = useState<Model[]>([]);
+  const { t } = useI18n();
+
+  useEffect(() => {
+    modelsApi.list().then(res => setModelsList(res.data)).catch(() => {});
+  }, []);
+
+  const KEY = 'ai_parse_model_id';
+
+  return (
+    <div className="mt-6 bg-card rounded-3xl p-6 border border-border/40 shadow-[var(--shadow-sm)]">
+      <label className="block text-sm font-medium mb-1">{t('settings.aiParseModel')}</label>
+      <p className="text-xs text-muted-foreground mb-3">{t('settings.aiParseModelDesc')}</p>
+      <div className="flex items-center gap-2">
+        <select
+          className="max-w-[300px] h-9 rounded-md border border-input bg-background px-3 text-sm"
+          value={settings[KEY] ?? ''}
+          onChange={e => setSettings(prev => ({ ...prev, [KEY]: e.target.value }))}
+        >
+          <option value="">{t('settings.aiParseModelFallback')}</option>
+          {modelsList.map(m => (
+            <option key={m.id} value={m.id}>{m.name}</option>
+          ))}
+        </select>
+        <Button
+          size="sm"
+          variant="outline"
+          disabled={saving === KEY}
+          onClick={() => onSave(KEY)}
+        >
+          {saving === KEY ? <Loader2 className="h-3 w-3 animate-spin" /> : <Save className="h-3 w-3" />}
+        </Button>
+      </div>
     </div>
   );
 }
@@ -314,6 +448,89 @@ function WebhookForm({ editing, onClose, onSaved }: {
           </Button>
         </div>
       </form>
+    </div>
+  );
+}
+
+function ResetSection() {
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [confirmText, setConfirmText] = useState('');
+  const [resetting, setResetting] = useState(false);
+  const { toast } = useToast();
+  const { t } = useI18n();
+
+  const handleReset = async () => {
+    if (confirmText !== 'RESET') return;
+    setResetting(true);
+    try {
+      const res = await systemApi.resetEmployees();
+      const msg = t('settings.resetSuccess')
+        .replace('{employees}', String(res.data.employees))
+        .replace('{teams}', String(res.data.teams));
+      toast(msg, 'success');
+      setShowConfirm(false);
+      setConfirmText('');
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
+    } finally {
+      setResetting(false);
+    }
+  };
+
+  return (
+    <div className="mt-10">
+      <h3 className="text-lg font-semibold mb-4">{t('settings.resetTitle')}</h3>
+      <div className="bg-card rounded-3xl p-6 border border-destructive/30 shadow-[var(--shadow-sm)]">
+        <div className="flex items-start gap-3">
+          <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
+          <div className="flex-1">
+            <p className="text-sm text-muted-foreground mb-4">{t('settings.resetDesc')}</p>
+            {!showConfirm ? (
+              <Button
+                variant="outline"
+                size="sm"
+                className="border-destructive/50 text-destructive hover:bg-destructive/10"
+                onClick={() => setShowConfirm(true)}
+              >
+                <RotateCcw className="h-3.5 w-3.5 mr-1.5" />
+                {t('settings.resetButton')}
+              </Button>
+            ) : (
+              <div className="space-y-3">
+                <p className="text-sm font-medium">{t('settings.resetConfirmDesc')}</p>
+                <div className="space-y-1">
+                  <Label>{t('settings.resetConfirmInput')}</Label>
+                  <Input
+                    className="max-w-[200px]"
+                    placeholder={t('settings.resetConfirmPlaceholder')}
+                    value={confirmText}
+                    onChange={e => setConfirmText(e.target.value)}
+                  />
+                </div>
+                <div className="flex gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => { setShowConfirm(false); setConfirmText(''); }}
+                  >
+                    {t('common.cancel')}
+                  </Button>
+                  <Button
+                    variant="destructive"
+                    size="sm"
+                    disabled={confirmText !== 'RESET' || resetting}
+                    onClick={handleReset}
+                  >
+                    {resetting
+                      ? <><Loader2 className="h-3 w-3 animate-spin mr-1" />{t('settings.resetting')}</>
+                      : t('settings.resetButton')}
+                  </Button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

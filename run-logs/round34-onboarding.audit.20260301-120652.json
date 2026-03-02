@@ -1,0 +1,66 @@
+{
+  "label": "round34-onboarding",
+  "sessionId": "round34-onboarding-20260301-120652",
+  "kind": "onboarding",
+  "pmChatDurationMs": 55908,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "e640ad73f76cd23e"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 55908
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "e640ad73f76cd23e",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 6369,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n新员工入职前两周计划已完成。本计划按照\"引导-学习-实践-独立\"的渐进式设计，将14天分为四个阶段：Day1-2熟悉环境、Day3-5岗位培训、Day6-10实战任务、Day11-14独立承担。每阶段都包含详细的时间段划分、关键动作和预期产出清单，并配套提供资源清单和实施建议，便于HR和部门负责人直接执行。"
+  }
+}

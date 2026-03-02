@@ -1,0 +1,47 @@
+{
+  "label": "round36-translation",
+  "sessionId": "round36-translation-20260301-130008",
+  "kind": "translation",
+  "userPrompt": "我今天要快速发通知，你直接安排做一个企业公告模板的中英双语简版，语义保持一致，先给可直接用的版本。",
+  "pmChatDurationMs": 30079,
+  "pmChatError": null,
+  "pmTools": [],
+  "taskIds": [],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "user_prompt_without_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 30079
+    },
+    {
+      "name": "task_created",
+      "ok": false,
+      "taskIds": []
+    },
+    {
+      "name": "task_completed",
+      "ok": false
+    },
+    {
+      "name": "not_waiting_for_user",
+      "ok": false
+    }
+  ],
+  "allChecksPassed": false,
+  "task": null
+}

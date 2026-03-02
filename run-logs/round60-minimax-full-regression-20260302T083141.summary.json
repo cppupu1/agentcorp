@@ -1,0 +1,190 @@
+{
+  "round": "round60-minimax-full-regression-20260302T083141",
+  "model": "MiniMax-M2.5",
+  "modelId": "b9df4501c7f6f9a6",
+  "startedAt": "2026-03-02T08:31:41.931Z",
+  "scenarios": [
+    {
+      "key": "stock_compare",
+      "sessionId": "round60-minimax-full-regression-20260302T083141-stock_compare",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "assistant_no_followup",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_waiting",
+          "ok": true
+        },
+        {
+          "name": "expect_stock_tool",
+          "ok": true,
+          "toolCount": 4
+        }
+      ],
+      "ok": true,
+      "taskId": "eb389efc5b5f6231",
+      "status": "completed",
+      "durationMs": 117639
+    },
+    {
+      "key": "ai_industry_brief",
+      "sessionId": "round60-minimax-full-regression-20260302T083141-ai_industry_brief",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "assistant_no_followup",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_waiting",
+          "ok": true
+        },
+        {
+          "name": "expect_search_tool",
+          "ok": true,
+          "toolCount": 6
+        }
+      ],
+      "ok": true,
+      "taskId": "710216b9a253b146",
+      "status": "completed",
+      "durationMs": 121857
+    },
+    {
+      "key": "customer_memory",
+      "sessionId": "round60-minimax-full-regression-20260302T083141-customer_memory",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "assistant_no_followup",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_waiting",
+          "ok": true
+        },
+        {
+          "name": "expect_memory_tool",
+          "ok": true,
+          "toolCount": 4
+        }
+      ],
+      "ok": true,
+      "taskId": "91822d0b2efa40cd",
+      "status": "completed",
+      "durationMs": 109922
+    },
+    {
+      "key": "repo_onboarding",
+      "sessionId": "round60-minimax-full-regression-20260302T083141-repo_onboarding",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "assistant_no_followup",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_waiting",
+          "ok": true
+        },
+        {
+          "name": "expect_fs_tool",
+          "ok": true,
+          "toolCount": 16
+        }
+      ],
+      "ok": true,
+      "taskId": "487da347b9e6dc26",
+      "status": "completed",
+      "durationMs": 167676
+    },
+    {
+      "key": "translation_notice",
+      "sessionId": "round60-minimax-full-regression-20260302T083141-translation_notice",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "assistant_no_followup",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_waiting",
+          "ok": true
+        },
+        {
+          "name": "expect_none_tool",
+          "ok": true,
+          "toolCount": 0
+        }
+      ],
+      "ok": true,
+      "taskId": "cd57cf4869a22cbc",
+      "status": "completed",
+      "durationMs": 85383
+    }
+  ],
+  "allPassed": true,
+  "finishedAt": "2026-03-02T08:41:44.409Z"
+}

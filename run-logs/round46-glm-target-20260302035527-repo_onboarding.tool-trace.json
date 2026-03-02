@@ -1,0 +1,230 @@
+[
+  {
+    "id": "2b0ee58108825829",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "list_allowed_directories",
+    "input": {
+      "toolCallId": "call_30151cbe3992429c8c4693cb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:00:50.887Z"
+  },
+  {
+    "id": "f156b9daaf6329bf",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "list_allowed_directories",
+    "input": {
+      "toolCallId": "call_3619b5c0d695438fb1039734"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:00:51.949Z"
+  },
+  {
+    "id": "ac4cc818a1202fe6",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "list_directory",
+    "input": {
+      "toolCallId": "call_afb7cdb4c6b1473897f64aea"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:00:54.473Z"
+  },
+  {
+    "id": "064c2c8471409d8f",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__list_directory",
+    "input": {
+      "toolCallId": "call_2703eab0600b4db4b42700aa"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:01:07.385Z"
+  },
+  {
+    "id": "0faf2db5312a1dbc",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__list_directory",
+    "input": null,
+    "output": "[DIR] dist\n[FILE] package.json\n[DIR] src\n[FILE] test-mcp-tools.mjs\n[FILE] tsconfig.json\n[FILE] tsconfig.tsbuildinfo\n[FILE] vitest.config.ts",
+    "isError": false,
+    "durationMs": 5,
+    "createdAt": "2026-03-02T04:01:07.390Z"
+  },
+  {
+    "id": "73f9de2e3e2f2594",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__read_text_file",
+    "input": {
+      "toolCallId": "call_cb44687212be4a3d9befe488"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:01:09.139Z"
+  },
+  {
+    "id": "3aa36a50db7bd748",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__read_text_file",
+    "input": null,
+    "output": "{\n  \"name\": \"@agentcorp/server\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"dev\": \"tsx watch src/app.ts\",\n    \"test\": \"vitest run\"\n  },\n  \"dependencies\": {\n    \"@agentcorp/agent-core\": \"*\",\n    \"@agentcorp/db\": \"*\",\n    \"@agentcorp/shared\": \"*\",\n    \"@ai-sdk/openai\": \"^3.0.29\",\n    \"@fastify/cors\": \"^11.0.0\",\n    \"@fastify/multipart\": \"^9.4.0\",\n    \"@fastify/static\": \"^9.0.0\",\n    \"@modelcontextprotocol/sdk\": \"^1.8.0\",\n    \"ai\": \"^6.0.90\",\n    \"docx\": \"^9.5.3\",\n    \"dotenv\": \"^16.4.0\",\n    \"exceljs\": \"^4.4.0\",\n    \"fastify\": \"^5.2.0\",\n    \"jszip\": \"^3.10.1\",\n    \"mammoth\": \"^1.11.0\",\n    \"marked\": \"^15.0.0\",\n    \"pdf-parse\": \"^2.4.5\",\n    \"pdfkit\": \"^0.17.2\"\n  },\n  \"devDependencies\": {\n    \"@types/pdfkit\": \"^0.17.5\",\n    \"tsx\": \"^4.19.0\",\n    \"typescript\": \"^5.7.0\",\n    \"vitest\": \"^4.0.18\"\n  }\n}\n",
+    "isError": false,
+    "durationMs": 4,
+    "createdAt": "2026-03-02T04:01:09.143Z"
+  },
+  {
+    "id": "2f50bf9fd87cacb4",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__directory_tree",
+    "input": {
+      "toolCallId": "call_7e8a20500cce494ca41a0bdf"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:01:11.026Z"
+  },
+  {
+    "id": "3ba969de2ce32463",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__directory_tree",
+    "input": null,
+    "output": "[\n  {\n    \"name\": \"app.ts\",\n    \"type\": \"file\"\n  },\n  {\n    \"name\": \"errors.ts\",\n    \"type\": \"file\"\n  },\n  {\n    \"name\": \"node_modules\",\n    \"type\": \"directory\",\n    \"children\": [\n      {\n        \"name\": \".vite\",\n        \"type\": \"directory\",\n        \"children\": [\n          {\n            \"name\": \"vitest\",\n            \"type\": \"directory\",\n            \"children\": [\n              {\n                \"name\": \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n                \"type\": \"directory\",\n                \"children\": [\n                  {\n                    \"name\": \"results.json\",\n                    \"type\": \"file\"\n                  }\n                ]\n              }\n            ]\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"name\": \"routes\",\n    \"type\": \"directory\",\n    \"children\": [\n      {\n        \"name\": \"ai-parse.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"change-testing.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"chat.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"cost.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"deployment.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"employees.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"evidence.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"health.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"hr-assistant.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"incidents.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"knowledge.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"memory.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"models.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"notifications.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"observability.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"observer.ts\",\n        \"type\": \"file\"\n      },\n      {\n        \"name\": \"pm-assistant.ts\",\n        \"type\": \"",
+    "isError": false,
+    "durationMs": 7,
+    "createdAt": "2026-03-02T04:01:11.033Z"
+  },
+  {
+    "id": "f999a5cf470395e3",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__read_multiple_files",
+    "input": {
+      "toolCallId": "call_02099552d82b4cf89d47f51a"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:01:13.171Z"
+  },
+  {
+    "id": "af9a1bd07c1bb511",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__read_multiple_files",
+    "input": null,
+    "output": "src/app.ts:\nimport 'dotenv/config';\nimport { resolve, dirname } from 'path';\nimport { existsSync } from 'fs';\nimport { fileURLToPath } from 'url';\nimport Fastify from 'fastify';\nimport cors from '@fastify/cors';\nimport multipart from '@fastify/multipart';\nimport fastifyStatic from '@fastify/static';\nimport { registerErrorHandler } from './errors.js';\nimport { registerHealthRoute } from './routes/health.js';\nimport { registerModelRoutes } from './routes/models.js';\nimport { registerToolRoutes } from './routes/tools.js';\nimport { registerEmployeeRoutes } from './routes/employees.js';\nimport { registerChatRoutes } from './routes/chat.js';\nimport { registerTeamRoutes } from './routes/teams.js';\nimport { registerTaskRoutes } from './routes/tasks.js';\nimport { registerTemplateRoutes } from './routes/templates.js';\nimport { registerSystemRoutes } from './routes/system.js';\nimport { registerNotificationRoutes } from './routes/notifications.js';\nimport { registerWebhookConfigRoutes } from './routes/webhook-configs.js';\nimport { registerCostRoutes } from './routes/cost.js';\nimport { registerObservabilityRoutes } from './routes/observability.js';\nimport { registerObserverRoutes } from './routes/observer.js';\nimport { registerIncidentRoutes } from './routes/incidents.js';\nimport { registerPolicyRoutes } from './routes/policies.js';\nimport { registerKnowledgeRoutes } from './routes/knowledge.js';\nimport { registerTriggerRoutes } from './routes/triggers.js';\nimport { registerEvidenceRoutes } from './routes/evidence.js';\nimport { registerDeploymentRoutes } from './routes/deployment.js';\nimport { registerVisualizationRoutes } from './routes/visualization.js';\nimport { registerChangeTestingRoutes } from './routes/change-testing.js';\nimport { registerTestingRoutes } from './routes/testing.js';\nimport { registerHrAssistantRoutes } from './routes/hr-assistant.js';\nimport { registerQualityDashboardRoutes } from './routes/quality-dashboard.js';\nimport { registerRoiReviewRoutes } from './",
+    "isError": false,
+    "durationMs": 5,
+    "createdAt": "2026-03-02T04:01:13.176Z"
+  },
+  {
+    "id": "3daa19e5b84e1e8c",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "search_files",
+    "input": {
+      "toolCallId": "call_8f1aa34c15424e229fe0795d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:01:15.328Z"
+  },
+  {
+    "id": "b666ede18eb0c007",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__search_files",
+    "input": {
+      "toolCallId": "call_c832e3a2f3b0441495185f22"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:01:17.917Z"
+  },
+  {
+    "id": "21bda8a87ed2ab86",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__search_files",
+    "input": null,
+    "output": "No matches found",
+    "isError": false,
+    "durationMs": 41,
+    "createdAt": "2026-03-02T04:01:17.958Z"
+  },
+  {
+    "id": "52d3e01e0c15f4dc",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__read_multiple_files",
+    "input": {
+      "toolCallId": "call_2d1ada5a6ed24111a65ba5c9"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:01:38.441Z"
+  },
+  {
+    "id": "b0825ef048f365c2",
+    "type": "tool_call",
+    "taskId": "d505950f7306db62",
+    "subtaskId": "672e06e3bf345b77",
+    "employeeId": "64d67f1beb877ea8",
+    "toolName": "01a07c2a149edad0__read_multiple_files",
+    "input": null,
+    "output": "src/routes/tasks.ts:\nimport type { FastifyInstance } from 'fastify';\nimport { AppError } from '../errors.js';\nimport {\n  listTasks, getTask, createTask, deleteTask,\n  getTaskMessages, runTaskChat,\n  approveBrief, approveTeam, approvePlan,\n  quickCreateTask, autoStartTask,\n} from '../services/tasks.js';\nimport type { TaskChatCallbacks } from '../services/tasks.js';\nimport { sseManager } from '../services/sse-manager.js';\nimport { getErrorTrace } from '../services/error-protection.js';\nimport { exportTask } from '../services/task-export.js';\nimport { retryTask, pauseTask, pendingDecisions } from '../services/task-executor.js';\n\nfunction validateCreate(body: Record<string, unknown>) {\n  const errors: Array<{ field: string; rule: string; message: string }> = [];\n  const hasTeamId = body.teamId && typeof body.teamId === 'string';\n  const hasPmEmployeeId = body.pmEmployeeId && typeof body.pmEmployeeId === 'string';\n  if (!hasTeamId && !hasPmEmployeeId) {\n    errors.push({ field: 'teamId', rule: 'required', message: 'teamId 或 pmEmployeeId 必须提供其一' });\n  }\n  if (!body.description || typeof body.description !== 'string' || (body.description as string).length < 1 || (body.description as string).length > 5000) {\n    errors.push({ field: 'description', rule: 'required', message: 'description 必填，1-5000 字符' });\n  }\n  if (body.mode !== undefined && body.mode !== 'suggest' && body.mode !== 'auto') {\n    errors.push({ field: 'mode', rule: 'enum', message: 'mode 必须是 suggest 或 auto' });\n  }\n  if (errors.length > 0) {\n    throw new AppError('VALIDATION_ERROR', '请求参数校验失败', { details: errors });\n  }\n}\n\nexport function registerTaskRoutes(app: FastifyInstance) {\n  // List tasks\n  app.get<{ Querystring: { teamId?: string; status?: string } }>('/api/tasks', async (req) => {\n    return { data: await listTasks(req.query.teamId, req.query.status) };\n  });\n\n  // Quick create task (template-based) — must be before :id route\n  app.post<{ Body: { templateId: string; modelId: string; description: str",
+    "isError": false,
+    "durationMs": 7,
+    "createdAt": "2026-03-02T04:01:38.448Z"
+  }
+]

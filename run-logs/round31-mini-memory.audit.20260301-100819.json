@@ -1,0 +1,96 @@
+{
+  "label": "round31-mini-memory",
+  "sessionId": "round31-mini-memory-20260301-100819",
+  "pmChatDurationMs": 63114,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "quick_create_task",
+      "count": 3
+    },
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "1e6f5fab435ce868"
+  ],
+  "selectedModelIds": [
+    "MiniMax-M2.5",
+    "glm-4.7",
+    "8f1970aae082a631"
+  ],
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 63114
+    },
+    {
+      "name": "uses_minimax_model",
+      "ok": false,
+      "selectedModelIds": [
+        "MiniMax-M2.5",
+        "glm-4.7",
+        "8f1970aae082a631"
+      ]
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": false,
+  "tasks": [
+    {
+      "taskId": "1e6f5fab435ce868",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 59017,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 4
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 4
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_relations",
+          "count": 2
+        }
+      ],
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成售后投诉FAQ整理任务。知识管理员针对最近一个月的售后投诉数据，整理出5条常见问题的简版FAQ，包括客服态度问题、商品质量问题、退款困难问题、售后服务衔接问题和价格优惠争议，每条FAQ均包含问题分析、标准应对方案、关键话术和预防措施，已完整沉淀为知识条目供客服团队使用。"
+    }
+  ]
+}

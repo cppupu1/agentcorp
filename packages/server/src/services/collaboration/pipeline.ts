@@ -50,7 +50,7 @@ export class PipelineStrategy implements CollaborationStrategy {
           });
         }
 
-        result = await executeSubtask(taskId, st.id, assigneeId, instruction, teamToolIds, signal);
+        result = await executeSubtask(taskId, st.id, assigneeId, instruction, teamToolIds, signal, undefined, { skipDependencyCheck: true });
 
         if (!result.startsWith('[子任务执行失败]')) {
           succeeded = true;

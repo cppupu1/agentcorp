@@ -1,0 +1,71 @@
+{
+  "id": "c591b3155b3640c2",
+  "teamId": "5868201efdf710ca",
+  "teamName": "内容创作",
+  "title": "新同学10分钟上手清单",
+  "description": "从当前项目文档中整理一份\"新同学10分钟上手清单\"，要求：\n\n1. 读取并分析当前项目的文档资料（README、开发文档、指南等）\n2. 提炼新同学最需要了解的核心信息和上手要点\n3. 按步骤清晰输出清单，确保10分钟内能快速理解\n4. 内容应包括但不限于：项目简介、环境配置、快速启动、核心概念、常用命令、关键资源链接等\n\n输出格式要求：\n- 步骤编号清晰\n- 每个步骤简洁明了\n- 包含必要的命令或操作示例\n- 适合新手快速理解",
+  "status": "failed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "f649f64cd9e73345",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "367c1f03f5014cd3",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "c81f89e1bc787d7a",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "新同学10分钟上手清单",
+        "description": "从当前项目文档中整理一份\"新同学10分钟上手清单\"，要求：\n\n1. 读取并分析当前项目的文档资料（README、开发文档、指南等）\n2. 提炼新同学最需要了解的核心信息和上手要点\n3. 按步骤清晰输出清单，确保10分钟内能快速理解\n4. 内容应包括但不限于：项目简介、环境配置、快速启动、核心概念、常用命令、关键资源链接等\n\n输出格式要求：\n- 步骤编号清晰\n- 每个步骤简洁明了\n- 包含必要的命令或操作示例\n- 适合新手快速理解",
+        "assigneeId": "367c1f03f5014cd3",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "任务执行失败：PM执行异常: No output generated. Check the stream for errors.",
+    "error": "PM执行异常: No output generated. Check the stream for errors.",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 0,
+      "failed": 1,
+      "pending": 0
+    },
+    "failedAt": "2026-03-02T03:32:45.877Z"
+  },
+  "tokenUsage": 46723,
+  "createdAt": "2026-03-02T03:29:10.174Z",
+  "updatedAt": "2026-03-02T03:32:45.877Z",
+  "subtasks": [
+    {
+      "id": "c923e71cb1f7c8de",
+      "title": "新同学10分钟上手清单",
+      "description": "从当前项目文档中整理一份\"新同学10分钟上手清单\"，要求：\n\n1. 读取并分析当前项目的文档资料（README、开发文档、指南等）\n2. 提炼新同学最需要了解的核心信息和上手要点\n3. 按步骤清晰输出清单，确保10分钟内能快速理解\n4. 内容应包括但不限于：项目简介、环境配置、快速启动、核心概念、常用命令、关键资源链接等\n\n输出格式要求：\n- 步骤编号清晰\n- 每个步骤简洁明了\n- 包含必要的命令或操作示例\n- 适合新手快速理解",
+      "assigneeId": "367c1f03f5014cd3",
+      "assigneeName": "文案策划",
+      "status": "failed",
+      "dependsOn": [],
+      "output": {
+        "error": "任务终止：PM执行异常: No output generated. Check the stream for errors."
+      },
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-02T03:29:15.547Z",
+      "updatedAt": "2026-03-02T03:32:45.876Z"
+    }
+  ]
+}

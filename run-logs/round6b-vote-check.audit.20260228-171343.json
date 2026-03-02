@@ -1,0 +1,15 @@
+{
+  "taskId": "843abecea91673a7",
+  "title": "回归观测-投票模式一致性",
+  "status": "completed",
+  "tokenUsage": 4524,
+  "subtasks": [
+    {
+      "id": "55e2b7cd4a65a541",
+      "status": "completed"
+    }
+  ],
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n投票模式执行完成",
+  "decisionCount": 0,
+  "toolCallCount": 0
+}

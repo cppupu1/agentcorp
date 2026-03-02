@@ -1,0 +1,63 @@
+{
+  "round": "round57-minimax-verify-20260302T075436",
+  "model": "MiniMax-M2.5",
+  "modelId": "b9df4501c7f6f9a6",
+  "startedAt": "2026-03-02T07:54:36.904Z",
+  "scenarios": [
+    {
+      "key": "ai_industry_brief",
+      "sessionId": "round57-minimax-verify-20260302T075436-ai_industry_brief",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "assistant_no_followup",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "expect_search_tool",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "fcb02c0bc0483518",
+      "status": "completed",
+      "durationMs": 121941
+    },
+    {
+      "key": "translation_notice",
+      "sessionId": "round57-minimax-verify-20260302T075436-translation_notice",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "assistant_no_followup",
+          "ok": true
+        }
+      ],
+      "ok": false,
+      "taskId": "d164feb25d2ec113",
+      "error": "fetch failed",
+      "durationMs": 292158
+    }
+  ],
+  "allPassed": false,
+  "finishedAt": "2026-03-02T08:01:31.004Z"
+}

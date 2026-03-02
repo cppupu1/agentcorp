@@ -94,12 +94,14 @@ export async function updateTool(id: string, input: UpdateToolInput) {
   if (input.transportType !== undefined) updates.transportType = input.transportType;
   if (input.command !== undefined) updates.command = input.command;
   if (input.args !== undefined) updates.args = JSON.stringify(input.args);
-  // envVars: merge with existing, empty string = delete key
+  // envVars: merge with existing
+  // empty string = unchanged (skip), '__DELETE__' = remove key, other = update value
   if (input.envVars !== undefined) {
     const existing = raw.envVars ? safeParseObj(raw.envVars) : {};
     for (const [k, v] of Object.entries(input.envVars)) {
-      if (v === '') delete existing[k];
-      else existing[k] = v;
+      if (v === '__DELETE__') delete existing[k];
+      else if (v !== '') existing[k] = v;
+      // v === '' means unchanged, skip
     }
     updates.envVars = JSON.stringify(existing);
   }
@@ -153,6 +155,12 @@ export async function deleteTool(id: string) {
 
 export async function updateToolStatus(id: string, status: string) {
   await db.update(tools).set({ status, updatedAt: now() }).where(eq(tools.id, id));
+}
+
+export async function toggleToolEnabled(id: string, enabled: boolean) {
+  await getTool(id); // ensure exists
+  await db.update(tools).set({ enabled: enabled ? 1 : 0, updatedAt: now() }).where(eq(tools.id, id));
+  return getTool(id);
 }
 
 export async function listGroups() {

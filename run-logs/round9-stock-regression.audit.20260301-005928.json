@@ -1,0 +1,47 @@
+{
+  "taskId": "fb751a0971152c78",
+  "status": "completed",
+  "timedOut": false,
+  "tools": [
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 13
+    },
+    {
+      "tool": "tushare_mcp_001__daily",
+      "count": 7
+    },
+    {
+      "tool": "tushare_mcp_001__stock_basic",
+      "count": 6
+    },
+    {
+      "tool": "tushare_mcp_001__today",
+      "count": 6
+    },
+    {
+      "tool": "tushare_mcp_001__weekly",
+      "count": 6
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_ai_search",
+      "count": 4
+    },
+    {
+      "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+      "count": 3
+    },
+    {
+      "tool": "tushare_mcp_001__plot_weekly_candlestick_chart",
+      "count": 1
+    }
+  ],
+  "decisionCount": 0,
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n辩论模式执行完成",
+  "subtasks": [
+    {
+      "id": "827c913541388ae6",
+      "status": "completed"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "cd57cf4869a22cbc",
+  "teamId": "fac7ed32e584cf2a",
+  "teamName": "内容创作",
+  "title": "生成中英双语放假通知",
+  "description": "生成一版可直接发送给全员的中英双语放假通知，要求简洁正式。包括放假时间、注意事项、联系方式等必要信息。",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "bcf400340053e9b2",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "0233751f280e2404",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      },
+      {
+        "id": "e574f6dfb7bd4ce1",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "生成中英双语放假通知",
+        "description": "生成一版可直接发送给全员的中英双语放假通知，要求简洁正式。包括放假时间、注意事项、联系方式等必要信息。",
+        "assigneeId": "0233751f280e2404",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已生成中英双语放假通知，包含完整的放假时间、注意事项、联系方式等信息。通知采用清明节假期示例，可直接替换具体公司信息和假期日期后发送给全员。英文版本已修正原版中的日期错误。",
+    "deliverables": "# 中英双语放假通知 | Holiday Notice\n\n---\n\n## 【中文版本】\n\n**关于2026年清明节放假的通知**\n\n各位同事：\n\n根据国家法定节假日安排，结合公司实际情况，现将2026年清明节放假安排通知如下：\n\n### 一、放假时间\n\n- **放假日期**：2026年4月4日（星期六）至4月6日（星期一），共3天\n- **调休上班**：4月3日（星期五）正常上班\n- **返岗时间**：2026年4月7日（星期二）正常上班\n\n### 二、注意事项\n\n1. **请假的同事**：请提前完成请假审批流程，并于放假前妥善安排好本职工作\n2. **安全检查**：离开办公室前请确保切断电源、锁好门窗\n3. **值班安排**：如需加班或值班，请提前与部门负责人沟通确认\n4. **紧急联络**：假期期间如遇紧急事务，请联系部门负责人或公司值班人员\n\n### 三、联系方式\n\n- **公司总机**：+86 XXX-XXXXXXXX\n- **行政部**：+86 XXX-XXXXXXXX\n- **紧急联系人**：[姓名] - +86 XXX-XXXXXXXX\n\n祝大家清明节安康，假期愉快！\n\n---\n\n**[公司名称]**\n**2026年3月2日**\n\n---\n\n## 【English Version】\n\n**Notice on 2026 Qingming Festival Holiday**\n\nDear All Employees,\n\nIn accordance with the national statutory holiday regulations and considering the company's actual situation, the Qingming Festival holiday arrangement for 2026 is hereby notified as follows:\n\n### I. Holiday Period\n\n- **Holiday Dates**: April 4, 2026 (Saturday) to April 6, 2026 (Monday), 3 days in total\n- **Workday**: April 3, 2026 (Friday) - Normal working day\n- **Resume Work**: April 7, 2026 (Tuesday) - Normal working day\n\n### II. Important Notes\n\n1. **Leave Requests**: Employees taking leave must complete the approval process in advance and ensure all work is properly arranged before the holiday\n2. **Security Check**: Please ensure all electrical equipment is turned off and offices are locked before leaving\n3. **On-duty Arrangement**: If overtime or on-duty work is required, please confirm with your department head in advance\n4. **Emergency Contact**: In case of urgent matters during the holiday, please contact your department head or the company's duty personnel\n\n### III. Contact Information\n\n- **Company Hotline**: +86 XXX-XXXXXXXX\n- **Administration Department**: +86 XXX-XXXXXXXX\n- **Emergency Contact**: [Name] - +86 XXX-XXXXXXXX\n\nWishing you all a safe and pleasant Qingming Festival holiday!\n\n---\n\n**[Company Name]**\n**March 2, 2026**\n\n---\n\n> **使用说明**：请将方括号 `[ ]` 内的占位符内容替换为实际公司信息即可直接使用。",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-02T08:41:43.958Z"
+  },
+  "tokenUsage": 4962,
+  "createdAt": "2026-03-02T08:40:32.244Z",
+  "updatedAt": "2026-03-02T08:41:43.967Z",
+  "subtasks": [
+    {
+      "id": "e212e2a5254527d9",
+      "title": "生成中英双语放假通知",
+      "description": "生成一版可直接发送给全员的中英双语放假通知，要求简洁正式。包括放假时间、注意事项、联系方式等必要信息。",
+      "assigneeId": "0233751f280e2404",
+      "assigneeName": "视觉设计师",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "# 中英双语放假通知 | Holiday Notice\n\n---\n\n## 【中文版本】\n\n**关于2026年清明节放假的通知**\n\n各位同事：\n\n根据国家法定节假日安排，结合公司实际情况，现将2026年清明节放假安排通知如下：\n\n### 一、放假时间\n\n- **放假日期**：2026年4月4日（星期六）至4月6日（星期一），共3天\n- **调休上班**：4月3日（星期五）正常上班\n- **返岗时间**：2026年4月7日（星期二）正常上班\n\n### 二、注意事项\n\n1. **请假的同事**：请提前完成请假审批流程，并于放假前妥善安排好本职工作\n2. **安全检查**：离开办公室前请确保切断电源、锁好门窗\n3. **值班安排**：如需加班或值班，请提前与部门负责人沟通确认\n4. **紧急联络**：假期期间如遇紧急事务，请联系部门负责人或公司值班人员\n\n### 三、联系方式\n\n- **公司总机**：+86 XXX-XXXXXXXX\n- **行政部**：+86 XXX-XXXXXXXX\n- **紧急联系人**：[姓名] - +86 XXX-XXXXXXXX\n\n祝大家清明节安康，假期愉快！\n\n---\n\n**[公司名称]**\n**2026年3月2日**\n\n---\n\n## 【English Version】\n\n**Notice on 2026 Qingming Festival Holiday**\n\nDear All Employees,\n\nIn accordance with the national statutory holiday regulations and considering the company's actual situation, the Qingming Festival holiday arrangement for 2026 is hereby notified as follows:\n\n### I. Holiday Period\n\n- **Holiday Dates**: April 4, 2026 (Saturday) to April 6, 2026 (Monday), 3 days in total\n- **Workday**: April 3, 2025 (Friday) - Normal working day\n- **Resume Work**: April 7, 2026 (Tuesday) - Normal working day\n\n### II. Important Notes\n\n1. **Leave Requests**: Employees taking leave must complete the approval process in advance and ensure all work is properly arranged before the holiday\n2. **Security Check**: Please ensure all electrical equipment is turned off and offices are locked before leaving\n3. **On-duty Arrangement**: If overtime or on-duty work is required, please confirm with your department head in advance\n4. **Emergency Contact**: In case of urgent matters during the holiday, please contact your department head or the company's duty personnel\n\n### III. Contact Information\n\n- **Company Hotline**: +86 XXX-XXXXXXXX\n- **Administration Department**: +86 XXX-XXXXXXXX\n- **Emergency Contact**: [Name] - +86 XXX-XXXXXXXX\n\nWishing you all a safe and pleasant Qingming Festival holiday!\n\n---\n\n**[Company Name]**\n**March 2, 2026**\n\n---\n\n> **使用说明**：请将方括号 `[ ]` 内的内容替换为实际信息即可直接使用。如需调整假期日期，请同步修改中英文对应内容。"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 4962,
+      "createdAt": "2026-03-02T08:40:44.056Z",
+      "updatedAt": "2026-03-02T08:41:28.697Z"
+    }
+  ]
+}

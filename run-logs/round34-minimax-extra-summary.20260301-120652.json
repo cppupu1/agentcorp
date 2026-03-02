@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-03-01T12:06:52.244292Z",
+  "runLabel": "round34-minimax-extra-20260301-120652",
+  "sessions": [
+    {
+      "label": "round34-stock",
+      "sessionId": "round34-stock-20260301-120652",
+      "kind": "stock",
+      "evidence": "run-logs/round34-stock.audit.20260301-120652.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round34-ai",
+      "sessionId": "round34-ai-20260301-120652",
+      "kind": "ai",
+      "evidence": "run-logs/round34-ai.audit.20260301-120652.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round34-memory",
+      "sessionId": "round34-memory-20260301-120652",
+      "kind": "memory",
+      "evidence": "run-logs/round34-memory.audit.20260301-120652.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round34-translation",
+      "sessionId": "round34-translation-20260301-120652",
+      "kind": "translation",
+      "evidence": "run-logs/round34-translation.audit.20260301-120652.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round34-legal",
+      "sessionId": "round34-legal-20260301-120652",
+      "kind": "legal",
+      "evidence": "run-logs/round34-legal.audit.20260301-120652.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round34-onboarding",
+      "sessionId": "round34-onboarding-20260301-120652",
+      "kind": "onboarding",
+      "evidence": "run-logs/round34-onboarding.audit.20260301-120652.json",
+      "allChecksPassed": true
+    }
+  ],
+  "totals": {
+    "sessions": 6,
+    "checksPassed": 6,
+    "checksFailed": 0
+  }
+}

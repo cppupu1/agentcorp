@@ -1,0 +1,226 @@
+[
+  {
+    "id": "5c1676e3eac5d8ff",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": {
+      "toolCallId": "call_function_xvwib2g2cvwm_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:51:05.397Z"
+  },
+  {
+    "id": "ecbdce9d821f1a6d",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": null,
+    "output": "Echo: current_time",
+    "isError": false,
+    "durationMs": 5,
+    "createdAt": "2026-03-01T11:51:05.402Z"
+  },
+  {
+    "id": "9c38c3824b07d312",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_nt5spqzpydc0_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:51:09.392Z"
+  },
+  {
+    "id": "28a9fe6782c0314b",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年人工智能行业市场现状发展趋势及未来前景展望_中研普华_中研网\nURL: https://www.chinairn.com/news/20260211/14014492.shtml\nDescription: 2026年人工智能行业市场现状发展趋势及未来前景展望一、人工智能行业市场现状发展趋势当前,人工智能已从技术萌芽期迈入规模化应用阶段,全球产业格局呈现“北美技术引领、亚太市场驱动、欧洲监管先行”的三极分化特征。中国凭借政策红利、场景优势与产业链协同,正从技术追赶者向生态构建者转型。在政策层面,国家将“人工智能+”行动提升至战略高度,推动技术渗透至制造业、医疗、金融等核心领域,形成“顶层设计+地方试点”的协同推进模式。市场层面,生成式AI的爆发催生万亿级应用市场,企业级解决方案与消费端超级应用双线并进,头部企业通过开源生态与垂直场景深耕构建壁垒,初创公司则在细分赛道寻求突破。技术层面,大模型竞争进入“效率与场景”双轮驱动阶段。开源模型通过社区协作降低创新门槛,闭源模型则依托算力优势深耕高价值场景。国产大模型在多模态理解、推理能力等维度实现突破,部分模型在医疗诊断、工业质检等领域的准确率已超越人类专家。但需警惕的是,高质量数据枯竭、算力成本高企等问题正制约技术迭代速度,模型架构革新与稀疏计算技术成为破局关键。二、发展趋势:从“感知智能”到“认知智能”的范式跃迁1.\n技术架构:世界模型与具身智能的融合创新未来三年,AI技术将突破“预测下一个词”的局限,向“理解物理世界”演进。世界模型通过融合视觉、三维空间数据与物理规律,为自动驾驶、人形机器人等实体交互场景提供决策支撑。例如,某国产世界模型已实现单张图片生成可探索的3D场景,在工业仿真领域降低70%的研发成本。具身智能则从实验室走向产业化,消费级人形机器人价格下探至万元区间,在家庭服务、工业装配等场景实现小批量应用。2.\n应用形态:智能体(AI\nAgent)的全面渗透智能体正从“辅助工具”升级为“数字员工”,其自主规划、多任务协同能力重塑工作流程。在金融领域,智能体实现财富管理全流程自动化,风险识别效率提升数倍;在制造业,智能体与\nPublished date: 2026-02-11T00:00:00+08:00\nSite name: 中研网\n\nTitle: 2026年人工智能行业市场现状发展趋势及未来前景展望--手机中研网\nURL: https://m.chinairn.com/news/20260211/14014492.shtml\nDescription: 2026年人工智能行业市场现状发展趋势及未来前景展望一、人工智能行业市场现状发展趋势当前,人工智能已从技术萌芽期迈入规模化应用阶段,全球产业格局呈现“北美技术引领、亚太市场驱动、欧洲监管先行”的三极分化特征。中国凭借政策红利、场景优势与产业链协同,正从技术追赶者向生态构建者转型。在政策层面,国家将“人工智能+”行动提升至战略高度,推动技术渗透至制造业、医疗、金融等核心领域,形成“顶层设计+地方试点”的协同推进模式。市场层面,生成式AI的爆发催生万亿级应用市场,企业级解决方案与消费端超级应用双线并进,头部企业通过开源生态与垂直场景深耕构建壁垒,初创公司则在细分赛道寻求突破。技术层面,大模型竞争进入“效率与场景”双轮驱动阶段。开源模型通过社区协作降低创新门槛,闭源模型则依托算力优势深耕高价值场景。国产大模型在多模态理解、推理能力等维度实现突破,部分模型在医疗诊断、工业质检等领域的准确率已超越人类专家。但需警惕的是,高质量数据枯竭、算力成本高企等问题正制约技术迭代速度,模型架构革新与稀疏计算技术成为破局关键。二、发展趋势:从“感知智能”到“认知智能”的范式跃迁1.\n技术架构:世界模型与具身智能的融合创新未来三年,AI技术将突破“预测下一个词”的局限,向“理解物理世界”演进。世界模型通过融合视觉、三维空间数据与物理规律,为自动驾驶、人形机器人等实体交互场景提供决策支撑。例如,某国产世界模型已实现单张图片生成可探索的3D场景,在工业仿真领域降低70%的研发成本。具身智能则从实验室走向产业化,消费级人形机器人价格下探至万元区间,在家庭服务、工业装配等场景实现小批量应用。2.\n应用形态:智能体(AI\nAgent)的全面渗透智能体正从“辅助工具”升级为“数字员工”,其自主规划、多任务协同能力重塑工作流程。在金融领域,智能体实现财富管理全流程自动化,风险识别效率提升数倍;在制造业,智能体与\nPublished date: 2026-02-11T00:00:00+08:00\nSite name: 中研网\n\nTitle: 技术趋势2026.pdf - 文档下载 - 未来智库\nURL: https://www.vzkoo.c",
+    "isError": false,
+    "durationMs": 388,
+    "createdAt": "2026-03-01T11:51:09.780Z"
+  },
+  {
+    "id": "0d72f56b20b5b2c4",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_2sjwarr5cppz_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:51:16.422Z"
+  },
+  {
+    "id": "f3e44b27579d0fe8",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年人工智能发展回顾:开辟AI新场景—新闻—科学网\nURL: https://news.sciencenet.cn/htmlnews/2026/1/558263.shtm\nDescription: 俄罗斯 Russia 技术主权驱动军工民用并进 本报驻俄罗斯记者张浩 2025年俄罗斯人工智能(AI)发展呈现“政策驱动场景落地､军工与民用双线并进､自主技术生态初步成型”的特征｡ 俄罗斯政府高度重视AI发展,普京总统11月在“人工智能之旅”会议上明确要求,在生成式AI领域要掌握全套自主技术,强调其关乎“国家主权和技术主权”｡为支撑算力需求,俄计划未来20年新建38座核电机组｡2025年AI市场规模预计达1万亿卢布,其中企业级解决方案占比首超消费级达52.3%｡军事领域,集成AI能力的“蜂群”无人机系统于5月开始高强度测试,其已具备自主地形匹配与目标分类功能｡ 在行业场景落地方面,AI技术深入航天､医疗､金融等各个领域｡6月,俄航天局计划将国产大模型GigaChat部署至国际空间站,旨在将卫星图像分辨率提升一倍｡医疗领域,Yandex推出了首批儿科专用核磁共振影像分析AI工具｡截至2025年11月底,莫斯科数字医疗平台已覆盖全国近2000家机构,医生可通过该系统使用AI技术分析放射学影像及其他医疗数据｡此外,金融行业AI投入持续加码,2025年全年投入规模预计突破1200亿卢布,占全行业数字化预算的34%,较2023年增长近两倍｡\nPublished date: 2026-02-12T08:39:41+08:00\nSite name: 科学网\n\nTitle: 云石资本\nURL: http://www.yunzb.cn/\nDescription:  2025-10-20 查看详情 AI浪潮下的中国机遇:政策红利与投资前景深度解析 【摘要】近期,中国密集出台人工智能(AI)相关政策,为产业发展提供了前所未有的政策红利｡例如,2025年8月国务院发布《关于深入实施“人工智能+”行动的意见》,明确提出到2027年实现人工智能在科技､产业､消费､民生､治理､全球合作六大重点领域广泛深度融合,到2030年使智能经济成为经济重要增长极｡该政策强调强化基础研究和技术创新,推动“人工智能+”在各行各业的应用落地,培育智能经济新形态｡与此同时,各地政府也积极响应:北京市发布促进通用人工智能创新发展的若干措施,在算力供给､数据开放､场景应用等方面给予支持;上海市发布大模型创新发展行动方案,聚焦智能算力､算法平台和产业应用等领域;\nPublished date: 2026-02-28T18:59:13+08:00\nSite name: www.yunzb.cn\n\nTitle: 中国人形机器人频频“破圈” 具身智能迈入应用时代_中国经济网——国家经济门户\nURL: http://www.ce.cn/xwzx/gnsz/gdxw/202602/t20260227_2792315.shtml\nDescription: 中国人形机器人频频“破圈” 具身智能迈入应用时代 2026-02-27 08:25 来源:新华网 新华社记者郭爽 2026年伊始,从美国拉斯维加斯消费电子展(CES)到中国春晚,中国自主研发的人形机器人频频“破圈”,多家中国企业的产品和应用不仅在海外业界引发热议,更是在全球社交媒体平台和国际媒体不断“刷屏”｡ \nPublished date: 2026-02-27T08:25:42+08:00\nSite name: 中国经济网\n\nTitle: 2025 年我国人工智能企业数量超 6000 家-IT之家\nURL: https://www.ithome.com/0/915/017.htm\nDescription: 国内企业发布多款人工智能芯片产品,智能算力规模达 1590EFLOPS,行业高质量数据集加速涌现,国内大模型引领全球开源生态｡据有关机构测算, 2025 年我国人工智能企业数量超 6000 家,核心产业规模预计突破 1.2 万亿元 ｡ 此外,我国加强优质企业梯度培育, 累计培育专精特新中小企业超 14 万家 ,有效期内的高新技术企业达 50.4 万家｡2025 \nPublished date: 2026-02-28T01:43:19+08:00\nSite name: IT之家\n\nTitle: 2025-2031年中国人工智能行业市场竞争状况及市场盈利预测报告_制冷家电_市场调研在线\nURL: http://www.cninfo360.com/yjbg/jdhy/zljd/20211001/1559019.html\nDescription: 北京博研智尚信息咨询有限公司-市场调研在线 2025-2031年中国人工智能行业市场",
+    "isError": false,
+    "durationMs": 1253,
+    "createdAt": "2026-03-01T11:51:17.675Z"
+  },
+  {
+    "id": "5f5c59122de6dd25",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_jwcm5gdkpiu9_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:51:22.638Z"
+  },
+  {
+    "id": "bef9e637ac12d111",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 信息详情\nURL: http://sjj.qinghai.gov.cn/ywdt/002009/20260226/8169b21d-e9a9-4ab5-810a-9a6b37492448.html\nDescription: 人工智能产业发展研究报告\n(2025\n年)\n【发布时间】:2026-02-26\n阅读次数:\n次\n【来源】:中国信息通信研究院\nPublished date: 2026-02-26T00:00:00+08:00\nSite name: sjj.qinghai.gov.cn\n\nTitle: The 2026-27 Budget - Budget Speech\nURL: https://www.budget.gov.hk/2026/eng/budget07.html\nDescription: Artificial\nIntelligence\n+\n34.\nWe\nare\npressing\nahead\nwith\nthe\nindustrialisation\nof\nAI\nand\ndeepening\nits\nintegration\nacross\nvarious\nindustries,\nwhile\nencouraging\nwider\nAI\napplication,\nthereby\nachieving\nthe\ntarget\nof\nadoption\nand\nutilisation\nby\nall.\nCommittee\non\nAI+\nand\nIndustry\nDevelopment\nStrategy\n35.\nThe\napplication\nof\nAI\ntechnology\nis\nswiftly\ndriving\nthe\nprocess\nof\nindustrial\ntransformation.\nNew\ntechnologies,\nnew\nindustries\nand\nnew\nproducts\nare\nquickly\nemerging.\nI\nwill\nestablish\nand\nchair\nthe\nCommittee\non\nAI+\nand\nIndustry\nDevelopment\nStrategy\nto\nformulate\nstrategies\nand\ncreate\nfavourable\nconditions\nfor\nAI\nto\nempower\nthe\ntransformation\nand\ndevelopment\nof\nindustries.\nThe\ncommittee\nwill\ncomprise\nexperts,\nacademics,\nenterprises\nand\nindustry\npark\ncompanies\nwith\nan\ninitial\nfocus\non\nlife\nand\nhe\nPublished date: 2026-02-25T23:38:11+08:00\nSite name: GovHK\n\nTitle: 商业化落地 - 拓端\nURL: https://tecdat.cn/tag/%e5%95%86%e4%b8%9a%e5%8c%96%e8%90%bd%e5%9c%b0/\nDescription: By\ntecdat2月\n24,\n2026人工智能AI,\n大数据部落,\n教育,\n行业报告2026,\nAI,\n人工智能,\n元宇宙,\n商业化落地,\n教育,\n智能体\n人工智能已从实验室的技术迭代,成长为重塑全球产业格局、国家竞争力与社会生产生活方式的核心引擎,2025年更是成为AI行业从「技术验证」迈向「规模化产业落地」的关键拐点。\nPublished date: 2026-02-25T01:57:30+08:00\nSite name: tecdat.cn\n\nTitle: 【理响中国】AI浪潮下协同应对 探索实现稳就业--理论-中国共产党新闻网\nURL: http://theory.people.com.cn/n1/2026/0227/c40531-40671324.html\nDescription: 2025年,中国人工智能(以下简称AI)行业按下“加速键”,迎来了突破性发展的一年。从年初DeepSeek(深度求索)横空出世、惊艳全球科技圈,到年末豆包手机助手“破圈”、走进千家万户,再到AI视频创作模型Seedance\n2.0炸场、引爆行业热潮,AI技术褪去“高冷”的技术外衣,不再是炫目的“技术奇观”,而以肉眼可见的速度融入人们日常工作生活。站在全球视角观察,我们更会发现,人工智能产业化推进的迅猛势头,正深刻改写当下的经济社会图景。\n世界经济论坛《2025年未来就业报告》预测:到2030年,技术进步将为全球催生1.7亿个新岗位,但与此同时,也可能让9200万个现有岗位被替代。这波技术变革的核心主角,正是人工智能。客观理性地看待",
+    "isError": false,
+    "durationMs": 382,
+    "createdAt": "2026-03-01T11:51:23.020Z"
+  },
+  {
+    "id": "9c67e10d41749243",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_f9jd1dpu2bbo_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:51:29.765Z"
+  },
+  {
+    "id": "7cde1b3b1cf07863",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2026 AI真正元年:从一人公司到AI自治社交 - 其他 - 亿邦动力\nURL: https://m.ebrun.com/639206.html\nDescription: 2026年开年,两件发生在硅谷的小事件,像两颗石子投入平静的技术湖面,涟漪迅速席卷全球科技产业:一端是OpenClaw等AI原生云平台持续迭代,让单人开发者仅凭AI辅助即可完成全栈开发､产品运营､客户服务,“一人公司颠覆垂直行业”从口号变成现实,传统SaaS厂商股价集体重挫;另一端是程序员推出纯AI Agent社交网络MoltBook,人类仅能围观､AI自主发帖互动､形成社群与舆论生态,48小时涌入十万级智能体,千万级用户围观,成为全球首个AI自治的数字公共空间｡ 这不是孤立的产品实验,而是人工智能从“工具辅助”走向“自主主体”､从“产业赋能”走向“生态重构”的标志性信号｡当AI不再只是回答问题､执行指令,而是能独立生产､协作､社交､决策,2026年不再是概念上的AI元年,而是应用爆发､产业洗牌､权力转移､伦理重构的真实起点｡\nPublished date: 2026-02-27T13:56:31+08:00\nSite name: 亿邦动力网\n\nTitle: 电厂  AI收入占比近半,百度大模型迎来兑现期百度_新浪财经_新浪网\nURL: http://finance.sina.com.cn/jjxw/2026-02-27/doc-inhphcxa9866848.shtml\nDescription: 2026年2月26日,百度公布2025年业绩报告,“AI”成为当之无愧的高频词｡ 对全年经营成果,百度创始人､CEO李彦宏总结道:“2025年是AI成为百度新核心的一年｡”“新核心”指的是智能云基础设施､AI应用､Robotaxi,及AI原生营销服务,从四季度开始与搜索､信息流等传统业务区分计算｡ 体现在数据中,2025年,百度总营收达1291亿元,其中AI业务营收达400亿元;\nPublished date: 2026-02-27T18:15:41+08:00\nSite name: 新浪财经\n\nTitle: 新浪AI热点小时报丨2026年02月28日17时_今日实时AI热点速递具身智能松延动力宇树科技MinimaxChatGPT_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902poaw.html\nDescription: 1､我国首个国家级人形机器人与具身智能标准体系发布 今天(2月28日),人形机器人与具身智能标准化(HEIS)年会在北京召开｡作为工业和信息化部人形机器人与具身智能标准化技术委员会(以下简称“标委会”)2025年12月成立后的首届年会,政､企､研､资等多方齐聚,共同探讨产业标准化工作｡会上正式发布《人形机器人与具身智能标准体系(2026版)》(以下简称“体系”)｡这是我国首个覆盖人形机器人全产业链､全生命周期的标准顶层设计,标志着相关产业进入规范化发展新阶段｡据央视新闻报道,今天(2月28日),人形机器人与具身智能标准化(HEIS)年会在北京召开｡作为工业和信息化部人形机器人与具身智能标准化技术委员会(以下简称“标委会”)2025年12月成立后的首届年会,政､企､研､资等多方齐聚,共同探讨产业标准化工作｡会上正式发布《人形机器人与具身智能标准体系(202\nPublished date: 2026-02-28T17:00:10+08:00\nSite name: 新浪网\n\nTitle: 马斯克称通用人工智能2026年将实现;国家网信办起草新规禁止应用程序偷听偷拍数智早参 _ 东方财富网\nURL: https://wap.eastmoney.com/a/202601123615160956.html\nDescription: 小 中 大 丨2026年1月12日星期一丨 NO.1 马斯克称通用人工智能今年就将实现 在最近一次深度访谈中,科技富豪马斯克再次抛出系列颠覆性预言｡他认为,人工智能的“奇点”已经降临,随着人工智能和机器人技术的发展,所有人都将轻而易举拥有任何物质,货币的价值和体现也将发生根本变化,这让存钱没有意义｡马斯克预言,通用人工智能2026年就会实现;到2030年,人工智能将超过所有人类智能的总和｡目前,大部分主流机构预测通用人工智能将发生在2030年后,马斯克的判断更为激进｡真正的临界点不是AI(人工智能)超过人类总和,而是我们能否在AI全面接管之前,完成一次对生产关系､财富逻辑和治理框架的“硬更新”｡\nPublished date: 2026-02-27T15:41:40+08:00\nSite name: 东方财富网\n\nTitle: 20",
+    "isError": false,
+    "durationMs": 1544,
+    "createdAt": "2026-03-01T11:51:31.309Z"
+  },
+  {
+    "id": "fcd094b50bdf881d",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": {
+      "toolCallId": "call_function_340j84d12c06_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:51:52.411Z"
+  },
+  {
+    "id": "49f6c447075ce662",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": null,
+    "output": "\n<!DOCTYPE html>\n<!-- [ published at 2026-02-28 10:01:57 ] -->\n\n<html>\n<head>\n    <meta charset=\"utf-8\"/>\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n\t<meta content=\"always\" name=\"referrer\">\n\t<meta property=\"bytedance:published_time\" content=\"2026-02-27T18:10:00+08:00\" />\n<meta property=\"bytedance:lrDate_time\" content=\"2026-02-28T10:01:47+08:00\" />\n<meta property=\"bytedance:updated_time\" content=\"2026-02-28T10:01:47+08:00\" />\n   \t\n<meta name=\"sudameta\" content=\"urlpath:o/; allCIDs:261584,257,51894,51070,258,240707,266405,405394\">\n<title>电厂 | AI收入占比近半，百度大模型迎来兑现期|百度_新浪财经_新浪网</title>\n<meta name=\"keywords\" content=\"百度,AI业务,业绩报告,大模型,商业化,智能云,AI应用,营销服务,自动驾驶,股份回购\" />\n<meta name=\"tags\" content=\"百度,AI,文心\" />\n<meta name=\"description\" content=\"2026年2月26日百度公布2025年业绩报告，“AI”成高频词。2025年百度总营收1291亿元，AI业务营收400亿元；四季度总营收327亿元，AI业务收入占一般性业务收入的43%。AI云全年营收300亿，AI应用全年超100亿，AI原生营销服务四季度同比增110%。萝卜快跑四季度出行服务340万次，累计超2000万次。文心5.0上线，参数2.4万亿。百度还整合业务、推动昆仑芯上市，董事会授权50亿美元股份回购计划，彰显AI战略定力与增长信心。 (AI生成)\" />\n\n<meta property=\"og:type\" content=\"news\" />\n<meta property=\"og:title\" content=\"电厂 | AI收入占比近半，百度大模型迎来兑现期\" />\n<meta property=\"og:description\" content=\"电厂 | AI收入占比近半，百度大模型迎来兑现期\" />\n<meta property=\"og:url\" content=\"https://finance.sina.com.cn/jjxw/2026-02-27/doc-inhphcxa9866848.shtml\" />\n<meta property=\"og:image\" content=\"//n.sinaimg.cn/spider20260227/248/w792h1056/20260227/7ba1-19190576b7ab405bb8374dea1ac07739.jpg\" />\n<meta name=\"weibo: article:create_at\" content=\"2026-02-27 18:10:00\" />\n<meta name=\"weibo: article:update_at\" content=\"2026-02-28 10:01:47\" />\n\n<!--news_web_article_v2017_meta -->\n\n\n<meta name=\"stencil\" content=\"PGLS000526\" />\n<meta name=\"publishid\" content=\"nhphcxa9866848\" />\n<meta name=\"comment\" content=\"cj:comos-nhphcxa9866848\" />\n<meta name=\"sudameta\" content=\"comment_channel:cj;comment_id:comos-nhphcxa9866848\" />\n\n\n\n<meta name=\"mediaid\" content=\"界面新闻\">\n<meta name=\"sudameta\" content=\"sinaog:0\" />\n<!-- web_article_v2015_mobile_agent_meta begin-->\n<meta name=\"mobile-agent\" conte",
+    "isError": false,
+    "durationMs": 213,
+    "createdAt": "2026-03-01T11:51:52.624Z"
+  },
+  {
+    "id": "fbc93a35ea16e0bf",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": {
+      "toolCallId": "call_function_0nxx1qfr2pf7_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:51:57.858Z"
+  },
+  {
+    "id": "b6091968b94b7ed0",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": null,
+    "output": "<!DOCTYPE html>\n<!-- [ published at 2026-03-01 19:51:58 ] -->\n<!-- LLTJ_MT:name =\"每日新闻摘录\" -->\n\n<html\nlang=\"zh-CN\" \ndata-publishtime=\"2026-02-28 17:00:10\"\ndata-id=\"nhpkhwh2841610\"\ndata-keys=\"机器人,AI,智能,新浪,蔡明\"\ndata-category=\"科技\"\ndata-tid=\"187175\"\ndata-rec-category=\"科技/机器学习\"\n>\n<head>\n<meta charset=\"utf-8\"/>\n<meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n<meta name=\"sudameta\" content=\"allCIDs:187175,258,171240,223658,171239,257\">\n\n<title>新浪AI热点小时报丨2026年02月28日17时_今日实时AI热点速递|具身智能|松延动力|宇树科技|Minimax|ChatGPT_新浪新闻</title>\n<meta name=\"keywords\" content=\"具身智能,松延动力,宇树科技,Minimax,ChatGPT,机器人,AI,html,新浪,智能,蔡明,谷歌,产业,百度,游戏,春晚,体系,热点,标准\" />\n<meta name=\"tags\" content=\"机器人,AI,智能,新浪,蔡明\" />\n<meta name=\"description\" content=\"1、我国首个国家级人形机器人与具身智能标准体系发布今天（2月28日），人形机器人与具身智能标准化（HEIS）年会在北京召..._新浪网\" />\n<link rel=\"mask-icon\" sizes=\"any\" href=\"//www.sina.com.cn/favicon.svg\" color=\"red\">\n<meta name=\"bytedance-verification-code\" content=\"AbPpBnubCvNNDQBICbx6\" />\n<meta property=\"og:type\" content=\"news\" />\n<meta property=\"og:title\" content=\"新浪AI热点小时报丨2026年02月28日17时_今日实时AI热点速递\" />\n<meta property=\"og:description\" content=\"1、我国首个国家级人形机器人与具身智能标准体系发布今天（2月28日），人形机器人与具身智能标准化（HEIS）年会在北京召开。作为工业和信息化部人形机器人与具身智能标准化技术委员会（以下简称“标委会”）2025年12月成立后的首届年会，政、企、研、资等多方齐聚，...\" />\n<meta property=\"og:url\" content=\"https://k.sina.com.cn/article_7857201856_1d45362c001902poaw.html\" />\n<meta property=\"og:image\" content=\"\" />\n<meta property=\"og:author\" content=\"每日新闻摘录\" />\n<meta property=\"og:time\" content=\"2026-02-28 17:00:10\" />\n<meta property=\"og:published_time\" content=\"2026-02-28 17:00:10\" />\n<meta property=\"og:updated_time\" content=\"2026-02-28 17:00:10\" />\n<meta property=\"og:category\" content=\"科技\" />\n<meta property=\"og:site_name\" content=\"新浪网\" />\n<meta property=\"og:contentid\" content=\"comos:nhpkhwh2841610\" />\n<meta property=\"og:locale\" content=\"zh_CN\" />\n<meta name=\"weibo: article:create_at\" content=\"2026-02-28 17:00:10\" />\n<meta name=\"weibo: article:upda",
+    "isError": false,
+    "durationMs": 267,
+    "createdAt": "2026-03-01T11:51:58.125Z"
+  },
+  {
+    "id": "a2a3a3adfe9242ae",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_ndsykfj1qiqj_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:52:03.841Z"
+  },
+  {
+    "id": "d16bbc851c7e9a73",
+    "type": "tool_call",
+    "taskId": "203bea95ea3d5db6",
+    "subtaskId": "e18ab6bbbb501c31",
+    "employeeId": "004924b06a781534",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Chrome浏览器原生Gemini AI 功能开启指南(2026年实测) - patton88 - 博客园\nURL: https://www.cnblogs.com/ybmj/p/19589999\nDescription: Chrome浏览器现已原生集成Gemini\nAI助手,无需安装第三方插件即可通过侧边栏直接调用。它不仅支持智能问答,更具备\nAuto\nBrowse(自动浏览)\n功能,可自动化处理网页任务,显著提升工作效率。目前该功能处于测试阶段,仅向美区谷歌账号开放。以下为在中国大陆环境下成功开启此功能的详细步骤。\nPublished date: 2026-02-07T23:35:00+08:00\nSite name: 博客园\n\nTitle: Gemini cli - Google 推出的 AI Coding Agent CLI。 - 产品详情|观猹\nURL: https://watcha.cn/products/gemini-cli\nDescription: 【产品介绍】Gemini\nCLI\n是一款基于\nGemini\n3\n模型的命令行智能工具,旨在赋能开发者在终端环境中高效构建、调试和部署应用。它将先进的\nAI\n能力深度集成至开发工作流,通过简单的指令即可处理复杂的编程任务,提升开发效率与自动化水平。【产品功能】代码库查询与编辑:支持直接对大型代码库进行智能查询与自动化编辑。多模态应用生成:能够根据图像或\nPDF\n文档直接生成应用程序代码。工作流自动化:在终端内即可自动执行复杂的开发工作流,简化操作步骤。\nPublished date: 2026-02-15T21:48:18+08:00\nSite name: watcha.cn\n\nTitle: Gemini 3住进谷歌Chrome:AI终于开始“替你上网”了 - OFweek 人工智能网\nURL: https://www.ofweek.com/ai/2026-02/ART-201700-8420-30680499.html\nDescription: 当Gemini\n3能自动浏览、比价、下单,浏览器不再只是入口,而是执行层。真正被冲击的,可能不是AI同行,而是大量工具型App。\n撰文/海月\n编辑/祝余\n过去两年,AI产品最常见的叙事是“更聪明了”:更大参数、更强多模态、更会写更会画。但用户的体感经常停留在另一层——“更会聊了”,离“更能办事”还有一段距离。于是市场开始追问一个更具体的问题:到底要把AI放在哪里,才会让它从“功能”变成“习惯”?答案越来越像同一个方向:浏览器。\n原因也很直接。浏览器是人类在线生活的默认工作台:打开它,信息流、购物、表单、订票、报销、文档、邮箱、日历都在里面。谁控制浏览器,谁就离“代办一切”更近一步。Perplexity先做了Comet,OpenAI做了Atlas,都是在给同一个命题下注:未来的交互,不是点开哪个App,而是把一句话交给一个能操作网页的智能体。\n这时候Google动手,意义就不只是“跟进”,而是“改写分发”。Chrome的优势不是模型有多惊艳,而是它天然把AI变成出厂设置:侧边栏常驻、网页上下文可见、账号体系可调用。\n于是AI不再需要用户“想起它”,它在用户每一次打开标签页的时候都在场。类似的逻辑,在另一条赛道上已经被验证过:舞台能把新物种推到聚光灯下,但真正决定它能走多远的,是它什么时候能在真实场景里稳定干活。\n入口不是位置,是“权限”\n把Gemini放进Chrome侧边栏,看上去像一次产品形态升级:少了复制粘贴、少了跳转页面、多了随时待命的助手。真正更狠的,是它把“入口”从流量概念,升级成能跨应用取信息,所谓入口就不再是“把用户导到哪里”,而是“允许谁替用户动手”。\n这轮更新里最具分水岭意味的是“Auto\nBrowse(自动浏览)”。它不是总结网页、也不是帮忙比价那么简单,而是开始承担多步骤工作流:找机票酒店、挑日期、对比价格、把合适的选项加入行程;或者在网页里跑一遍报销\nPublished date: 2026-02-02T17:43:00+08:00\nSite name: OFweek维科网\n\nTitle: Gemini 3住进谷歌Chrome:AI终于开始“替你上网”了_风闻\nURL: https://user.guancha.cn/main/content?id=1594738&s=fwzwyzzwzbt\nDescription: 当Gemini\n3能自动浏览、比价、下单,浏览器不再只是入口,而是执行层。真正被冲击的,可能不是AI同行,而是大量工具型App。撰文/海月编辑/祝余过去两年,AI产品最常见的叙事是“更聪明了”:更大参数、更强多模态、更会写更会画。但用户的体感经常停留在另一层——“更会聊了”,",
+    "isError": false,
+    "durationMs": 452,
+    "createdAt": "2026-03-01T11:52:04.293Z"
+  }
+]

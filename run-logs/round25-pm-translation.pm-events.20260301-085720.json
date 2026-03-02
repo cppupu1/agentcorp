@@ -1,0 +1,39 @@
+[
+  {
+    "event": "error",
+    "data": {
+      "seq": 0,
+      "message": "AI_RetryError: Failed after 3 attempts. Last error: Too Many Requests"
+    }
+  },
+  {
+    "event": "error",
+    "data": {
+      "seq": 1,
+      "message": "模型未返回有效输出，自动重试第 1 次"
+    }
+  },
+  {
+    "event": "error",
+    "data": {
+      "seq": 2,
+      "message": "AI_RetryError: Failed after 3 attempts. Last error: Too Many Requests"
+    }
+  },
+  {
+    "event": "error",
+    "data": {
+      "seq": 3,
+      "message": "No output generated. Check the stream for errors."
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 4,
+      "text": "",
+      "messageId": null,
+      "finishReason": "error"
+    }
+  }
+]

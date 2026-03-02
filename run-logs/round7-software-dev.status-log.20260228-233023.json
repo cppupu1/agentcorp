@@ -1,0 +1,101 @@
+[
+  {
+    "ts": "2026-02-28T23:30:23.672920Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "ef6fe7474cc852af",
+        "status": "pending",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:30:28.677529Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "ef6fe7474cc852af",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:30:33.685816Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "ef6fe7474cc852af",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:30:38.694025Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "ef6fe7474cc852af",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:30:43.701794Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "ef6fe7474cc852af",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:30:48.708383Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "ef6fe7474cc852af",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:30:53.719707Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "ef6fe7474cc852af",
+        "status": "completed",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:30:58.726213Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "ef6fe7474cc852af",
+        "status": "completed",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:31:03.737743Z",
+    "status": "completed",
+    "subtasks": [
+      {
+        "id": "ef6fe7474cc852af",
+        "status": "completed",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  }
+]

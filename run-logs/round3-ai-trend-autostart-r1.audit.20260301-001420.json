@@ -1,0 +1,56 @@
+{
+  "taskId": "b62484cabde7eaf9",
+  "title": "回归验证-AI趋势研究(auto-start)",
+  "status": "completed",
+  "createdAt": "2026-02-28T16:05:52.753Z",
+  "updatedAt": "2026-02-28T16:14:04.631Z",
+  "tokenUsage": 149349,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 26,
+  "toolErrorsTotal": 0,
+  "tools": [
+    {
+      "tool": "1791ada993a23a56__get_raw_text",
+      "count": 6,
+      "errors": 0
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 20,
+      "errors": 0
+    }
+  ],
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 1
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 1
+    }
+  ],
+  "resultSummary": "系统校验：子任务总数 1，已完成 1，失败 0。\nAI技术行业趋势快报（2025-2026）已完成，覆盖大模型、多模态、Agent、开源生态与AI芯片五大领域，包含具体日期、官方来源链接及交叉验证。"
+}

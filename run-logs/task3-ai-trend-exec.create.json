@@ -1,0 +1,19 @@
+{
+  "data": {
+    "id": "865f2343abedea7f",
+    "teamId": "73ae7b380bfd4db9",
+    "teamName": "研究报告",
+    "title": "2026年AI技术行业趋势分析与机会研判",
+    "description": "请分析2025-2026全球AI技术行业趋势，重点覆盖：大模型、多模态、Agent、开源生态、AI芯片与推理成本。要求：1）基于网络最新资料给出关键事件时间线；2）列出代表公司与产品动态；3）总结机会与风险。输出结构化中文Markdown报告并附主要来源链接。",
+    "status": "draft",
+    "mode": "auto",
+    "brief": null,
+    "teamConfig": null,
+    "plan": null,
+    "result": null,
+    "tokenUsage": 0,
+    "createdAt": "2026-02-28T15:29:54.123Z",
+    "updatedAt": "2026-02-28T15:29:54.123Z",
+    "subtasks": []
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "label": "round25-pm-stock-compare",
+  "sessionId": "round25-stock-20260301-085720",
+  "pmChatDurationMs": 36518,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "16e5e0e540d42db7"
+  ],
+  "autoAssign": {
+    "recommended": 3,
+    "added": 2
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 36518
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 3,
+      "min": 1
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "16e5e0e540d42db7",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 94970,
+      "tools": [
+        {
+          "tool": "tushare_mcp_001__daily",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__today",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": true,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成贵州茅台(600519)与宁德时代(300750)近30天走势与成交对比分析。数据工程师通过Tushare Pro获取了2026-01-14至2026-02-27期间的两只股票交易数据，完成了股价走势、成交量趋势、表现差异对比分析，并输出了包含3个下周观察点（2026-03-03、2026-03-05、2026-03-07）的完整结构化报告。报告显示茅台近30天累计涨跌幅+7.46%，宁德时代-5.43%，两者表现差异显著。"
+    }
+  ]
+}

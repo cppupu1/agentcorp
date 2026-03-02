@@ -1,0 +1,73 @@
+{
+  "label": "round32-mini-stock",
+  "sessionId": "round32-mini-stock-20260301-101205",
+  "pmChatDurationMs": 27882,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "1c0e85223b25b68b"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 27882
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "modelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "1c0e85223b25b68b",
+      "status": "completed",
+      "flags": {
+        "stock": true,
+        "memory": false,
+        "search": false
+      },
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成贵州茅台(600519)与宁德时代(300750)近30个交易日走势对比分析。茅台上涨2.04%，宁德时代下跌9.40%，两者走势分化明显。发现2条关键观察点并标注了具体日期。"
+    }
+  ]
+}

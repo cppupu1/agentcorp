@@ -1,0 +1,59 @@
+{
+  "id": "1739f1fbf54bbb42",
+  "teamId": "4e3ae66b756e4395",
+  "teamName": "研究报告",
+  "title": "AI大模型行业最近7天动态研究",
+  "description": "研究最近7天AI大模型行业的重要动态，要求：\n\n1. 收集最近7天（从今天往前推7天）内AI大模型行业的重要新闻、发布、进展等动态\n2. 筛选出至少3条最重要的动态\n3. 每条结论必须包含：\n   - 具体发生的日期\n   - 事件概述\n   - 可靠的来源链接\n\n4. 最终输出格式要求清晰、易读，每条动态独立呈现\n\n重点关注领域：\n- 各大AI公司（OpenAI、Google、Anthropic、Meta、百度、阿里等）的新模型发布\n- 重要的技术突破或更新\n- 行业政策变化\n- 重大合作或投资事件",
+  "status": "executing",
+  "mode": "suggest",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "c63f13a3b7a35515",
+      "name": "研究主管"
+    },
+    "members": [
+      {
+        "id": "73c3958a8e12a1a2",
+        "name": "研究员",
+        "taskPrompt": "负责信息收集、数据分析与研究洞察"
+      },
+      {
+        "id": "b7a5b02c9d08d046",
+        "name": "撰稿人",
+        "taskPrompt": "负责研究报告撰写与可视化呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "AI大模型行业最近7天动态研究",
+        "description": "研究最近7天AI大模型行业的重要动态，要求：\n\n1. 收集最近7天（从今天往前推7天）内AI大模型行业的重要新闻、发布、进展等动态\n2. 筛选出至少3条最重要的动态\n3. 每条结论必须包含：\n   - 具体发生的日期\n   - 事件概述\n   - 可靠的来源链接\n\n4. 最终输出格式要求清晰、易读，每条动态独立呈现\n\n重点关注领域：\n- 各大AI公司（OpenAI、Google、Anthropic、Meta、百度、阿里等）的新模型发布\n- 重要的技术突破或更新\n- 行业政策变化\n- 重大合作或投资事件",
+        "assigneeId": "73c3958a8e12a1a2",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": null,
+  "tokenUsage": 7193,
+  "createdAt": "2026-03-02T03:39:55.468Z",
+  "updatedAt": "2026-03-02T03:46:09.831Z",
+  "subtasks": [
+    {
+      "id": "816e0d9ead6c82f9",
+      "title": "AI大模型行业最近7天动态研究",
+      "description": "研究最近7天AI大模型行业的重要动态，要求：\n\n1. 收集最近7天（从今天往前推7天）内AI大模型行业的重要新闻、发布、进展等动态\n2. 筛选出至少3条最重要的动态\n3. 每条结论必须包含：\n   - 具体发生的日期\n   - 事件概述\n   - 可靠的来源链接\n\n4. 最终输出格式要求清晰、易读，每条动态独立呈现\n\n重点关注领域：\n- 各大AI公司（OpenAI、Google、Anthropic、Meta、百度、阿里等）的新模型发布\n- 重要的技术突破或更新\n- 行业政策变化\n- 重大合作或投资事件",
+      "assigneeId": "73c3958a8e12a1a2",
+      "assigneeName": "研究员",
+      "status": "running",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-02T03:40:14.702Z",
+      "updatedAt": "2026-03-02T03:44:55.560Z"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "label": "round40-translation",
+  "sessionId": "round40-translation-20260301-152427",
+  "kind": "translation",
+  "userPrompt": "请直接创建并启动任务：输出企业公告模板中英双语简版，可直接复用。",
+  "pmChatDurationMs": 16338,
+  "pmChatError": null,
+  "taskIds": [
+    "c76230ad0fc1517f"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 16338
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "c76230ad0fc1517f"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "c76230ad0fc1517f",
+    "status": "completed",
+    "tokenUsage": 6721,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成企业公告模板中英双语简版的创建。模板结构清晰，包含公告标题、发布日期、正文内容、落款等标准要素；中英文内容对应准确，语言正式规范；版式简洁便于快速填写修改；适用于人事变动、政策通知、活动通知等各类企业公告场景。额外提供了使用指南、常见应用场景示例、使用检查清单和专业写作建议，方便用户快速上手。"
+  }
+}

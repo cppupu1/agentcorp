@@ -1,0 +1,107 @@
+{
+  "label": "round10-pm-ai-trend",
+  "sessionId": "round10-ai-20260301-015850",
+  "pm": {
+    "sseEvents": [
+      {
+        "event": "delta",
+        "count": 305
+      },
+      {
+        "event": "step_finish",
+        "count": 6
+      },
+      {
+        "event": "tool_call",
+        "count": 6
+      },
+      {
+        "event": "tool_result",
+        "count": 6
+      },
+      {
+        "event": "done",
+        "count": 1
+      }
+    ],
+    "pmTools": [
+      {
+        "tool": "assign_team_tools",
+        "count": 1
+      },
+      {
+        "tool": "list_models",
+        "count": 1
+      },
+      {
+        "tool": "list_templates",
+        "count": 1
+      },
+      {
+        "tool": "list_tools",
+        "count": 1
+      },
+      {
+        "tool": "quick_create_task",
+        "count": 1
+      },
+      {
+        "tool": "start_task",
+        "count": 1
+      }
+    ],
+    "taskIds": [
+      "1de7bbdf843b6387"
+    ]
+  },
+  "tasks": [
+    {
+      "taskId": "1de7bbdf843b6387",
+      "title": "AI Agent行业趋势管理简报",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 53384,
+      "subtaskStatus": [
+        {
+          "id": "bfbdde257dc4bf59",
+          "status": "completed"
+        }
+      ],
+      "toolCallsTotal": 18,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 18
+        }
+      ],
+      "decisionCount": 14,
+      "decisions": [
+        {
+          "action": "assign_subtask",
+          "count": 3
+        },
+        {
+          "action": "assign_subtask_result",
+          "count": 3
+        },
+        {
+          "action": "wait_subtasks",
+          "count": 3
+        },
+        {
+          "action": "wait_subtasks_result",
+          "count": 3
+        },
+        {
+          "action": "complete_task",
+          "count": 1
+        },
+        {
+          "action": "complete_task_result",
+          "count": 1
+        }
+      ],
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\nAI Agent行业趋势管理简报已完成，包含行业现状概述、核心趋势分析、竞争格局分析、商业机会与风险以及战略建议五个核心部分，共约2800字，适合管理层快速阅读。"
+    }
+  ]
+}

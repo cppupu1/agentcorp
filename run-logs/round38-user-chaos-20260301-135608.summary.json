@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-03-01T13:56:08.356442Z",
+  "runLabel": "round38-user-chaos-20260301-135608",
+  "note": "Natural user prompts without tool directives; verify model-initiated tooling and E2E correctness.",
+  "sessions": [
+    {
+      "label": "round38-stock",
+      "sessionId": "round38-stock-20260301-135608",
+      "kind": "stock",
+      "evidence": "run-logs/round38-stock.audit.20260301-135608.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round38-ai",
+      "sessionId": "round38-ai-20260301-135608",
+      "kind": "ai",
+      "evidence": "run-logs/round38-ai.audit.20260301-135608.json",
+      "allChecksPassed": false
+    },
+    {
+      "label": "round38-memory",
+      "sessionId": "round38-memory-20260301-135608",
+      "kind": "memory",
+      "evidence": "run-logs/round38-memory.audit.20260301-135608.json",
+      "allChecksPassed": false
+    },
+    {
+      "label": "round38-translation",
+      "sessionId": "round38-translation-20260301-135608",
+      "kind": "translation",
+      "evidence": "run-logs/round38-translation.audit.20260301-135608.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round38-legal",
+      "sessionId": "round38-legal-20260301-135608",
+      "kind": "legal",
+      "evidence": "run-logs/round38-legal.audit.20260301-135608.json",
+      "allChecksPassed": false
+    },
+    {
+      "label": "round38-onboarding",
+      "sessionId": "round38-onboarding-20260301-135608",
+      "kind": "onboarding",
+      "evidence": "run-logs/round38-onboarding.audit.20260301-135608.json",
+      "allChecksPassed": false
+    }
+  ],
+  "totals": {
+    "sessions": 6,
+    "checksPassed": 2,
+    "checksFailed": 4
+  }
+}

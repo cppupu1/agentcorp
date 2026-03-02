@@ -1,0 +1,35 @@
+[
+  {
+    "event": "error",
+    "data": {
+      "seq": 0,
+      "message": "usage limit exceeded (2056)"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 1,
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      }
+    }
+  },
+  {
+    "event": "error",
+    "data": {
+      "seq": 2,
+      "message": "usage limit exceeded (2056)"
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 3,
+      "text": "",
+      "messageId": null,
+      "finishReason": "error"
+    }
+  }
+]

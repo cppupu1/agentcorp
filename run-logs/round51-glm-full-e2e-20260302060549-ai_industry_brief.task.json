@@ -1,0 +1,59 @@
+{
+  "id": "d8833f5b0fe646f5",
+  "teamId": "4e9e9d3b6efe09e9",
+  "teamName": "研究报告",
+  "title": "最近3天AI大模型行业动态简报",
+  "description": "调研最近3天（从今天起往前推3天）AI大模型行业的重要动态和新闻。\n\n输出要求：\n1. 汇总最近3天内AI大模型行业的重要动态\n2. 提炼出2条关键结论\n3. 每条结论必须包含：具体日期、事件摘要、来源链接\n4. 确保信息来源可靠，链接可访问",
+  "status": "executing",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "7df475420732410d",
+      "name": "研究主管"
+    },
+    "members": [
+      {
+        "id": "0ac158599b38c47f",
+        "name": "研究员",
+        "taskPrompt": "负责信息收集、数据分析与研究洞察"
+      },
+      {
+        "id": "3866671a2eebb1bc",
+        "name": "撰稿人",
+        "taskPrompt": "负责研究报告撰写与可视化呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "最近3天AI大模型行业动态简报",
+        "description": "调研最近3天（从今天起往前推3天）AI大模型行业的重要动态和新闻。\n\n输出要求：\n1. 汇总最近3天内AI大模型行业的重要动态\n2. 提炼出2条关键结论\n3. 每条结论必须包含：具体日期、事件摘要、来源链接\n4. 确保信息来源可靠，链接可访问",
+        "assigneeId": "0ac158599b38c47f",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": null,
+  "tokenUsage": 0,
+  "createdAt": "2026-03-02T06:15:43.452Z",
+  "updatedAt": "2026-03-02T06:22:44.936Z",
+  "subtasks": [
+    {
+      "id": "235b056b7f61d68f",
+      "title": "最近3天AI大模型行业动态简报",
+      "description": "调研最近3天（从今天起往前推3天）AI大模型行业的重要动态和新闻。\n\n输出要求：\n1. 汇总最近3天内AI大模型行业的重要动态\n2. 提炼出2条关键结论\n3. 每条结论必须包含：具体日期、事件摘要、来源链接\n4. 确保信息来源可靠，链接可访问",
+      "assigneeId": "0ac158599b38c47f",
+      "assigneeName": "研究员",
+      "status": "running",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-02T06:15:51.061Z",
+      "updatedAt": "2026-03-02T06:21:32.244Z"
+    }
+  ]
+}

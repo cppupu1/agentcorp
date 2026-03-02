@@ -1,0 +1,13 @@
+{
+  "round": "round56-minimax-stale-window-20260302T074939",
+  "key": "ai_recent3d_stale_hint",
+  "sessionId": "round56-minimax-stale-window-20260302T074939-ai_recent3d_stale_hint",
+  "prompt": "请直接创建并启动任务：做一份最近3天（2025年1月17日-19日）AI大模型行业动态简报，给2条结论，每条都包含具体日期和来源链接。",
+  "taskId": "356de5d026fa1671",
+  "status": "completed",
+  "assistantText": "已按你的要求创建并启动任务：AI大模型行业动态简报（2025.1.17-19）（任务ID: 356de5d026fa1671）。任务正在执行，可在任务面板查看进度与结果。",
+  "assignInstructionSamples": [
+    "请收集2025年1月17日-19日期间AI大模型行业的最新动态和新闻，整理成行业简报。要求包含2条结论，每条结论都要有具体日期和可验证的来源链接（必须是官方发布、权威媒体报道或可查证的来源）。重点关注：模型发布、行业合作、技术突破、市场动态等重要信息。请确保所有日期使用YYYY-MM-DD格式，并提供可核验的来源链接。"
+  ],
+  "finishedAt": "2026-03-02T07:51:46.229Z"
+}

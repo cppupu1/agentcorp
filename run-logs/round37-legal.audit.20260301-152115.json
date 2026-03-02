@@ -1,0 +1,84 @@
+{
+  "label": "round37-legal",
+  "sessionId": "round37-legal-20260301-152115",
+  "kind": "legal",
+  "userPrompt": "请直接创建并启动任务：审阅供应商服务合同草案，提炼3条高风险条款并给出改写建议。",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "0e1b0d08ffdd6c82"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 26611
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "0e1b0d08ffdd6c82"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": false,
+      "status": "failed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "legal_risk_rewrite",
+      "ok": false
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "0e1b0d08ffdd6c82",
+    "status": "failed",
+    "timedOut": false,
+    "tokenUsage": 0,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "任务执行失败：PM执行异常: usage limit exceeded (2056)"
+  }
+}

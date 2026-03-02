@@ -1,0 +1,71 @@
+{
+  "id": "7cd0ce35c51fc42e",
+  "teamId": "813bfe1fd74bd267",
+  "teamName": "企业公告翻译团队",
+  "title": "企业公告中英双语简版输出",
+  "description": "将一段企业公告模板输出中英双语简版，保持语义一致。请先确认需要翻译的企业公告内容，然后输出中文和英文两个版本的简版公告。中文版本控制在100-150字，英文版本保持相同语义和信息量。",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "7b9f7076f08d4633",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "548a746fdfdc4b2c",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "e5befbeef2f8dbbe",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版输出",
+        "description": "将一段企业公告模板输出中英双语简版，保持语义一致。请先确认需要翻译的企业公告内容，然后输出中文和英文两个版本的简版公告。中文版本控制在100-150字，英文版本保持相同语义和信息量。",
+        "assigneeId": "548a746fdfdc4b2c",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成为企业公告模板的中英双语简版输出。中文版130字，英文版130词，语义一致，信息量相当。内容为年度业绩预告公告模板，包含业绩预告数据及主要原因说明。",
+    "deliverables": "## 企业公告中英双语简版\n\n### 中文版（130字）\n\n**关于[公司名称]2024年度业绩预告的公告**\n\n[公司名称]（以下简称\"本公司\"）根据《企业会计准则》及中国证监会相关规定，经初步测算，预计2024年度实现归属于上市公司股东的净利润为[金额]亿元，同比增长约[比例]%。\n\n主要原因：1）主营业务稳健增长，市场份额持续扩大；2）降本增效措施成效显著；3）汇率变动带来正面影响。\n\n具体财务数据以公司正式披露的年度报告为准，敬请投资者注意投资风险。\n\n特此公告。\n\n[公司名称]\n2025年1月15日\n\n---\n\n### English Version (130 words)\n\n**Announcement on 2024 Annual Performance Forecast by [Company Name]**\n\n[Company Name] (hereinafter referred to as \"the Company\"), in accordance with the Accounting Standards for Business Enterprises and relevant regulations of the China Securities Regulatory Commission, hereby announces that, based on preliminary estimates, the Company expects to achieve a net profit attributable to shareholders of listed companies of approximately [Amount] billion yuan in 2024, representing a year-on-year growth of approximately [Percentage]%.\n\nMain contributing factors: 1) Steady growth in core business with continued market share expansion; 2) Significant results from cost reduction and efficiency improvement measures; 3) Positive impact from foreign exchange rate fluctuations.\n\nSpecific financial data shall be subject to the officially disclosed annual report. Investors are advised to note investment risks.\n\nBy Order of the Board\n\n[Company Name]\nJanuary 15, 2025",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T11:46:49.175Z"
+  },
+  "tokenUsage": 3466,
+  "createdAt": "2026-03-01T11:45:38.627Z",
+  "updatedAt": "2026-03-01T11:46:52.565Z",
+  "subtasks": [
+    {
+      "id": "e6111bc3e6897afd",
+      "title": "企业公告中英双语简版输出",
+      "description": "将一段企业公告模板输出中英双语简版，保持语义一致。请先确认需要翻译的企业公告内容，然后输出中文和英文两个版本的简版公告。中文版本控制在100-150字，英文版本保持相同语义和信息量。",
+      "assigneeId": "548a746fdfdc4b2c",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "根据任务要求，我需要先确认企业公告的具体内容。由于您未提供原文，我将基于典型企业公告场景构造一个通用模板样例进行翻译。\n\n---\n\n## 📋 企业公告模板（中英双语简版）\n\n### 中文版（130字）\n\n**关于[公司名称]2024年度业绩预告的公告**\n\n[公司名称]（以下简称\"本公司\"）根据《企业会计准则》及中国证监会相关规定，经初步测算，预计2024年度实现归属于上市公司股东的净利润为[金额]亿元，同比增长约[比例]%。\n\n主要原因：1）主营业务稳健增长，市场份额持续扩大；2）降本增效措施成效显著；3）汇率变动带来正面影响。\n\n具体财务数据以公司正式披露的年度报告为准，敬请投资者注意投资风险。\n\n特此公告。\n\n[公司名称]\n2025年1月15日\n\n---\n\n### English Version (130 words)\n\n**Announcement on 2024 Annual Performance Forecast by [Company Name]**\n\n[Company Name] (hereinafter referred to as \"the Company\"), in accordance with the Accounting Standards for Business Enterprises and relevant regulations of the China Securities Regulatory Commission, hereby announces that, based on preliminary estimates, the Company expects to achieve a net profit attributable to shareholders of listed companies of approximately [Amount] billion yuan in 2024, representing a year-on-year growth of approximately [Percentage]%.\n\nMain contributing factors: 1) Steady growth in core business with continued market share expansion; 2) Significant results from cost reduction and efficiency improvement measures; 3) Positive impact from foreign exchange rate fluctuations.\n\nSpecific financial data shall be subject to the officially disclosed annual report. Investors are advised to note investment risks.\n\nBy Order of the Board\n\n[Company Name]\nJanuary 15, 2025\n\n---\n\n> **假设说明**：以上模板基于\"年度业绩预告公告\"的典型企业公告场景构建。如需翻译其他类型的公告（如产品发布、重大资产重组、高管任命等），请提供具体内容，我将重新生成对应版本。"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 3466,
+      "createdAt": "2026-03-01T11:45:48.913Z",
+      "updatedAt": "2026-03-01T11:46:26.717Z"
+    }
+  ]
+}

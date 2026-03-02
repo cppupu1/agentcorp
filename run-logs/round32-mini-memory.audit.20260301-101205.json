@@ -1,0 +1,73 @@
+{
+  "label": "round32-mini-memory",
+  "sessionId": "round32-mini-memory-20260301-101205",
+  "pmChatDurationMs": 26880,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "91e5a12556087cfc"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 26880
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "modelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "91e5a12556087cfc",
+      "status": "completed",
+      "flags": {
+        "stock": false,
+        "memory": true,
+        "search": false
+      },
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已针对最近一个月售后投诉数据，提取5条高频问题整理为FAQ，并沉淀为5个知识库条目。投诉榜首为退款困难（41.13%），其次是订单延迟发货和人工客服响应问题。数据来源为黑猫投诉2024年度报告等。"
+    }
+  ]
+}

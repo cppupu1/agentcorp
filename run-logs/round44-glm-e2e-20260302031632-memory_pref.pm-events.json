@@ -1,0 +1,482 @@
+[
+  {
+    "event": "error",
+    "data": {
+      "seq": 0,
+      "message": "Failed after 3 attempts. Last error: Too Many Requests"
+    }
+  },
+  {
+    "event": "error",
+    "data": {
+      "seq": 1,
+      "message": "模型未返回有效输出，自动重试第 1 次"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 2,
+      "text": "我来"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 3,
+      "text": "帮"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 4,
+      "text": "您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 5,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 6,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 7,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 8,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 9,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 10,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 11,
+      "text": "首先"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 12,
+      "text": "让我"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 13,
+      "text": "查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 14,
+      "text": "一下"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 15,
+      "text": "可"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 16,
+      "text": "用的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 17,
+      "text": "场景"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 18,
+      "text": "模板"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 19,
+      "text": "和"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 20,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 21,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 22,
+      "toolCallId": "call_eedbad48aaac492787f0360a",
+      "toolName": "list_templates",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 23,
+      "toolCallId": "call_eedbad48aaac492787f0360a",
+      "toolName": "list_templates",
+      "result": "[{\"id\":\"software-dev\",\"name\":\"软件开发\",\"description\":\"标准软件开发团队，包含项目经理、前端开发、后端开发和测试工程师，适用于Web应用、移动端等软件项目的全流程开发。\",\"icon\":\"💻\",\"employeeCount\":4},{\"id\":\"content-creation\",\"name\":\"内容创作\",\"description\":\"专业内容创作团队，包含项目经理、文案策划和视觉设计师，适用于品牌营销、自媒体运营、广告创意等内容生产场景。\",\"icon\":\"✍️\",\"employeeCount\":3},{\"id\":\"data-analysis\",\"name\":\"数据分析\",\"description\":\"专业数据分析团队，包含项目经理、数据分析师和数据工程师，适用于业务数据洞察、用户行为分析、数据驱动决策等场景。\",\"icon\":\"📊\",\"employeeCount\":3},{\"id\":\"research-report\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研",
+      "isError": false
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 24,
+      "toolCallId": "call_a6774e4a481b4eef8324809a",
+      "toolName": "list_teams",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 25,
+      "toolCallId": "call_a6774e4a481b4eef8324809a",
+      "toolName": "list_teams",
+      "result": "[{\"id\":\"a1d5184f1b7c002c\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研究、竞品分析、市场调研等报告撰写场景。\",\"scenario\":null,\"pmEmployeeId\":\"62257571c7e7aabe\",\"pmName\":\"研究主管\",\"pmAvatar\":null,\"collaborationMode\":\"free\",\"memberCount\":2,\"toolCount\":3,\"taskCount\":1,\"createdAt\":\"2026-03-02T03:18:50.588Z\",\"updatedAt\":\"2026-03-02T03:18:55.057Z\"},{\"id\":\"316689fc414a4676\",\"name\":\"内容创作\",\"description\":\"专业内容创作团队，包含项目经理、文案策划和视觉设计师，适用于品牌营销、自媒体运营、广告创意等内容生产场景。\",\"scenario\":null,\"pmEmployeeId\":\"9474f13bf2b89232\",\"pmNa",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 26,
+      "usage": {
+        "inputTokens": 1167,
+        "outputTokens": 123
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 27,
+      "text": "我将"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 28,
+      "text": "为您"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 29,
+      "text": "创建"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 30,
+      "text": "并"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 31,
+      "text": "启动"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 32,
+      "text": "这个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 33,
+      "text": "任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 34,
+      "text": "。"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 35,
+      "text": "我会"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 36,
+      "text": "选择"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 37,
+      "text": "一个"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 38,
+      "text": "合适"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 39,
+      "text": "的内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 40,
+      "text": "创作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 41,
+      "text": "团队"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 42,
+      "text": "来完成"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 43,
+      "text": "这项"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 44,
+      "text": "工作"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 45,
+      "text": "。"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 46,
+      "toolCallId": "call_06750e6e4462402ebcdceb67",
+      "toolName": "create_task",
+      "args": {
+        "teamId": "316689fc414a4676",
+        "title": "王总周报风格分析与周报草稿生成",
+        "description": "基于系统已有历史记忆，完成以下两项工作：\n\n1. 总结\"王总\"偏好的周报写作风格，包括但不限于：\n   - 语言风格特点（正式/非正式、简洁/详尽等）\n   - 结构习惯（章节划分、重点突出方式等）\n   - 内容偏好（数据导向/成果导向/问题导向等）\n   - 常用表达方式和词汇\n   - 其他独特的写作习惯\n\n2. 基于上述风格分析，生成本周的周报草稿，要求：\n   - 完全符合\"王总\"的写作风格偏好\n   - 内容结构合理，重点突出\n   - 语言表达自然流畅\n   - 具备可交付性，稍作修改即可直接使用\n\n请确保所有分析和生成都基于系统历史记忆中的真实信息。",
+        "mode": "auto"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 47,
+      "toolCallId": "call_06750e6e4462402ebcdceb67",
+      "toolName": "create_task",
+      "result": "{\"success\":true,\"taskId\":\"2d622c873fd8c885\",\"teamId\":\"316689fc414a4676\",\"title\":\"王总周报风格分析与周报草稿生成\"}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 48,
+      "usage": {
+        "inputTokens": 36034,
+        "outputTokens": 534
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 49,
+      "toolCallId": "call_5fc7ae4dcc0c4daf81ef2faf",
+      "toolName": "list_tools",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 50,
+      "toolCallId": "call_5fc7ae4dcc0c4daf81ef2faf",
+      "toolName": "list_tools",
+      "result": "[{\"id\":\"fc5f4c5bf43702d4\",\"name\":\"当前时间\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"740410911af25b5b\",\"name\":\"计算器\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"b931c6ca2b7ad17b\",\"name\":\"文件读取\",\"description\":\"文件系统访问工具，支持读取、列出目录等操作\",\"groupName\":null},{\"id\":\"a6d0277e32709254\",\"name\":\"搏查\",\"description\":\"搏查搜索服务\",\"groupName\":\"互联网\"},{\"id\":\"1791ada993a23a56\",\"name\":\"Web Fetch\",\"description\":\"抓取网页内容并转换为 Markdown，让 AI 能够阅读和处理网页信息。支持自定义 User-Agent 和代理设置。\",\"groupNam",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 51,
+      "usage": {
+        "inputTokens": 36327,
+        "outputTokens": 109
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 52,
+      "toolCallId": "call_3e6e349f21e14a2181d50696",
+      "toolName": "assign_team_tools",
+      "args": {
+        "teamId": "316689fc414a4676",
+        "toolIds": [
+          "ef64b3f65f2ab2a2",
+          "a6d0277e32709254"
+        ]
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 53,
+      "toolCallId": "call_3e6e349f21e14a2181d50696",
+      "toolName": "assign_team_tools",
+      "result": "{\"success\":true,\"count\":2}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 54,
+      "usage": {
+        "inputTokens": 36751,
+        "outputTokens": 191
+      }
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 55,
+      "toolCallId": "call_0c447e3896aa4fb5a0fa4335",
+      "toolName": "start_task",
+      "args": {
+        "taskId": "2d622c873fd8c885"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 56,
+      "toolCallId": "call_0c447e3896aa4fb5a0fa4335",
+      "toolName": "start_task",
+      "result": "{\"success\":true,\"taskId\":\"2d622c873fd8c885\",\"message\":\"任务已启动\",\"autoAssignedTools\":{\"teamId\":\"316689fc414a4676\",\"added\":2,\"recommended\":3}}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 57,
+      "usage": {
+        "inputTokens": 36821,
+        "outputTokens": 32
+      }
+    }
+  },
+  {
+    "event": "error",
+    "data": {
+      "seq": 58,
+      "message": "Failed after 3 attempts. Last error: Too Many Requests"
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 59,
+      "text": "我来帮您创建并启动这个任务。首先让我查看一下可用的场景模板和团队。我将为您创建并启动这个任务。我会选择一个合适的内容创作团队来完成这项工作。",
+      "messageId": "2662519e1d46d006",
+      "finishReason": "other"
+    }
+  }
+]

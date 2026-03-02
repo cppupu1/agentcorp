@@ -71,6 +71,27 @@
       "when": 1771941256133,
       "tag": "0009_skinny_warhawk",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1772062664000,
+      "tag": "0010_tool_enabled",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1772092357000,
+      "tag": "0011_task_reviews",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "6",
+      "when": 1772178000000,
+      "tag": "0012_pm_chat_messages",
+      "breakpoints": true
     }
   ]
 }

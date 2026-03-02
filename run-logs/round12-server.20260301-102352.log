@@ -1,0 +1,32 @@
+
+> agentcorp@1.0.0 dev:server
+> npm run dev --workspace=packages/server
+
+
+> @agentcorp/server@1.0.0 dev
+> tsx watch src/app.ts
+
+{"level":30,"time":1772331835066,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","msg":"Server listening at http://127.0.0.1:3000"}
+Server running on http://localhost:3000
+Cron scheduler started (60s interval)
+{"level":30,"time":1772331835952,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1","req":{"method":"GET","url":"/api/health","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":50700},"msg":"incoming request"}
+{"level":30,"time":1772331835956,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1","res":{"statusCode":200},"responseTime":3.5048329830169678,"msg":"request completed"}
+{"level":30,"time":1772331836989,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-2","req":{"method":"GET","url":"/api/health","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":50702},"msg":"incoming request"}
+{"level":30,"time":1772331836990,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-2","res":{"statusCode":200},"responseTime":0.4234161376953125,"msg":"request completed"}
+{"level":30,"time":1772331836991,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-3","req":{"method":"POST","url":"/api/pm-assistant/chat","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":50702},"msg":"incoming request"}
+{"level":30,"time":1772331852385,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-3","res":{"statusCode":200},"responseTime":15393.20108294487,"msg":"request completed"}
+{"level":30,"time":1772331852386,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-4","req":{"method":"GET","url":"/api/pm-assistant/round12-pm-cs-autoassign-20260301-102352/messages","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":50711},"msg":"incoming request"}
+{"level":30,"time":1772331852387,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-4","res":{"statusCode":200},"responseTime":0.7517080307006836,"msg":"request completed"}
+{"level":30,"time":1772331852389,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-5","req":{"method":"GET","url":"/api/tasks/5aa0c7d52a9653c9","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":50711},"msg":"incoming request"}
+{"level":30,"time":1772331852390,"pid":70563,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-5","res":{"statusCode":404},"responseTime":0.9147078990936279,"msg":"request completed"}
+Task 7c6d92c340228d60 execution failed: Error: Task execution aborted
+    at AbortSignal.signal.addEventListener.signal (/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/src/services/task-executor.ts:245:14)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:486:10)
+    at abortSignal (node:internal/abort_controller:457:3)
+    at AbortController.abort (node:internal/abort_controller:505:5)
+    at cancelAllExecutions (/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/src/services/task-executor.ts:183:8)
+    at process.shutdown (/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/src/app.ts:115:9)
+    at process.emit (node:events:530:35)
+    at process.emit (/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/tsx/dist/suppress-warnings.cjs:1:472)

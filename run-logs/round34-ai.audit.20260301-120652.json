@@ -1,0 +1,70 @@
+{
+  "label": "round34-ai",
+  "sessionId": "round34-ai-20260301-120652",
+  "kind": "ai",
+  "pmChatDurationMs": 28333,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "758298bd60b522c1"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 28333
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "758298bd60b522c1",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 96373,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。本报告整理了近30天AI技术行业趋势，输出3条关键结论：1. **中国生成式AI用户规模爆发式增长**：截至2025年12月达6.02亿人，普及率42.8%，同比增长141.7%2. **大模型密集落地推动应用场景扩展**：2025年新增446款生成式AI服务备案，累计748款，超八成新应用集中在图像处理、办公、教育场景3. **开源模型生态重塑竞争格局**：DeepSeek引领算法效率创新路径，推动行业从\"算力军备竞赛\"转向\"效率革命\"每条"
+  }
+}

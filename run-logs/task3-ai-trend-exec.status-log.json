@@ -1,0 +1,121 @@
+[
+  {
+    "t": "23:32:43",
+    "status": "brief_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:32:48",
+    "status": "brief_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:32:53",
+    "status": "brief_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:32:58",
+    "status": "brief_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:03",
+    "status": "brief_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:08",
+    "status": "brief_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:13",
+    "status": "brief_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:18",
+    "status": "team_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:23",
+    "status": "team_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:28",
+    "status": "team_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:33",
+    "status": "team_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:38",
+    "status": "team_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:43",
+    "status": "team_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:48",
+    "status": "team_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:53",
+    "status": "team_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:33:58",
+    "status": "team_review",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 0
+  },
+  {
+    "t": "23:34:03",
+    "status": "failed",
+    "tokenUsage": 0,
+    "done": 0,
+    "total": 7
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "id": "544d24f667440e39",
+  "teamId": "ad31507af4d711d5",
+  "teamName": "研究报告",
+  "title": "近7天AI技术行业新闻要点",
+  "description": "搜索近7天（2025年1月）AI技术行业的重大新闻事件，整理3条重点新闻，每条包含：日期、事件概述、来源链接。聚焦行业重大突破、政策动态、主要企业进展等。",
+  "status": "failed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "75a3deb3e3bcba95",
+      "name": "研究主管"
+    },
+    "members": [
+      {
+        "id": "131a9d8885ba46da",
+        "name": "研究员",
+        "taskPrompt": "负责信息收集、数据分析与研究洞察"
+      },
+      {
+        "id": "773ac9e8985aaa03",
+        "name": "撰稿人",
+        "taskPrompt": "负责研究报告撰写与可视化呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "近7天AI技术行业新闻要点",
+        "description": "搜索近7天（2025年1月）AI技术行业的重大新闻事件，整理3条重点新闻，每条包含：日期、事件概述、来源链接。聚焦行业重大突破、政策动态、主要企业进展等。",
+        "assigneeId": "131a9d8885ba46da",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "任务执行失败：PM经过 3 次重试仍未完成所有子任务（剩余 1 个）",
+    "error": "PM经过 3 次重试仍未完成所有子任务（剩余 1 个）",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 0,
+      "failed": 0,
+      "pending": 1
+    },
+    "failedAt": "2026-03-01T13:57:20.681Z"
+  },
+  "tokenUsage": 0,
+  "createdAt": "2026-03-01T13:56:49.686Z",
+  "updatedAt": "2026-03-01T13:57:20.681Z",
+  "subtasks": [
+    {
+      "id": "66e271cec0ee89e6",
+      "title": "近7天AI技术行业新闻要点",
+      "description": "搜索近7天（2025年1月）AI技术行业的重大新闻事件，整理3条重点新闻，每条包含：日期、事件概述、来源链接。聚焦行业重大突破、政策动态、主要企业进展等。",
+      "assigneeId": "131a9d8885ba46da",
+      "assigneeName": "研究员",
+      "status": "pending",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-01T13:56:55.019Z",
+      "updatedAt": "2026-03-01T13:57:19.566Z"
+    }
+  ]
+}

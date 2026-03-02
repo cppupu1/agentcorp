@@ -1,0 +1,69 @@
+{
+  "id": "ff2a9ffb249015bb",
+  "teamId": "e6dce788f458cdd0",
+  "teamName": "客户服务",
+  "title": "客服FAQ整理与知识沉淀",
+  "description": "分析最近一个月的客户投诉数据，统计高频问题，整理出5条最常见的FAQ，并沉淀到知识库中。任务包括：1)调取/分析最近30天投诉记录；2)识别重复性问题；3)提炼高频FAQ；4)规范化答案并存储到知识库。",
+  "status": "failed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "ebaabf80396eae2f",
+      "name": "客服主管"
+    },
+    "members": [
+      {
+        "id": "6441f2529a52e595",
+        "name": "知识管理员",
+        "taskPrompt": "负责知识库建设与FAQ维护"
+      },
+      {
+        "id": "823cf0924bf1c4fa",
+        "name": "客服专员",
+        "taskPrompt": "负责客户问题解答与服务支持"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "客服FAQ整理与知识沉淀",
+        "description": "分析最近一个月的客户投诉数据，统计高频问题，整理出5条最常见的FAQ，并沉淀到知识库中。任务包括：1)调取/分析最近30天投诉记录；2)识别重复性问题；3)提炼高频FAQ；4)规范化答案并存储到知识库。",
+        "assigneeId": "6441f2529a52e595",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "任务执行失败：PM经过 3 次重试仍未完成所有子任务（剩余 1 个）",
+    "error": "PM经过 3 次重试仍未完成所有子任务（剩余 1 个）",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 0,
+      "failed": 0,
+      "pending": 1
+    },
+    "failedAt": "2026-03-01T13:57:15.032Z"
+  },
+  "tokenUsage": 0,
+  "createdAt": "2026-03-01T13:56:40.483Z",
+  "updatedAt": "2026-03-01T13:57:15.032Z",
+  "subtasks": [
+    {
+      "id": "7feaa8b3d051fdf5",
+      "title": "客服FAQ整理与知识沉淀",
+      "description": "分析最近一个月的客户投诉数据，统计高频问题，整理出5条最常见的FAQ，并沉淀到知识库中。任务包括：1)调取/分析最近30天投诉记录；2)识别重复性问题；3)提炼高频FAQ；4)规范化答案并存储到知识库。",
+      "assigneeId": "6441f2529a52e595",
+      "assigneeName": "知识管理员",
+      "status": "pending",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-01T13:56:46.781Z",
+      "updatedAt": "2026-03-01T13:57:13.443Z"
+    }
+  ]
+}

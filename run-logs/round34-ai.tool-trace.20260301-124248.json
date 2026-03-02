@@ -1,0 +1,241 @@
+[
+  {
+    "id": "c51401b3c03b5c39",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": {
+      "toolCallId": "call_function_hdd2owyphtmi_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:43:27.369Z"
+  },
+  {
+    "id": "5a04073c39d47385",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": null,
+    "output": "Echo: 当前时间查询",
+    "isError": false,
+    "durationMs": 4,
+    "createdAt": "2026-03-01T12:43:27.373Z"
+  },
+  {
+    "id": "3b1ce5ed78379d97",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_cn9cyfxbrzke_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:43:30.166Z"
+  },
+  {
+    "id": "e8056862fa730bde",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年人工智能发展回顾:开辟AI新场景—新闻—科学网\nURL: https://news.sciencenet.cn/htmlnews/2026/1/558263.shtm\nDescription: 2025年AI市场规模预计达1万亿卢布,其中企业级解决方案占比首超消费级达52.3%｡ 在科研突破与军事应用方面,青年科学家团队研发的Headless-AD模型显著优化了长文本处理能力｡军事领域,集成AI能力的“蜂群”无人机系统于5月开始高强度测试,其已具备自主地形匹配与目标分类功能｡ 在行业场景落地方面,AI技术深入航天､医疗､金融等各个领域｡6月,俄航天局计划将国产大模型GigaChat部署至国际空间站,旨在将卫星图像分辨率提升一倍｡医疗领域,Yandex推出了首批儿科专用核磁共振影像分析AI工具｡截至2025年11月底,莫斯科数字医疗平台已覆盖全国近2000家机构,医生可通过该系统使用AI技术分析放射学影像及其他医疗数据｡\nPublished date: 2026-02-12T08:39:41+08:00\nSite name: 科学网\n\nTitle: AI技术突破与行业竞争加剧,字节跳动等企业引领变革 - 经济观察网 - 专业财经新闻网站\nURL: https://www.eeo.com.cn/2026/0220/798524.shtml\nDescription:  近期事件 AI模型重大更新:字节跳动于2月12日发布视频生成大模型Seedance 2.0,物理真实感和多镜头叙事能力显著提升,但因预置迪士尼角色库遭侵权诉讼,已暂停用户上传真人图像功能;OpenAI同期推出GPT-5.3-Codex-Spark,推理速度较前代提升15倍,并正敲定1000亿美元融资轮(软银领投300亿美元); 企业合作与融资:Anthropic完成300亿美元G轮融资,投后估值3800亿美元;谷歌与东南亚电商平台Shopee母公司Sea合作开发AI购物工具;斯坦福Simile智能体平台获1亿美元融资,李飞飞等加持｡\nPublished date: 2026-02-25T06:09:35+08:00\nSite name: 经济观察网\n\nTitle: 海豚知道官方网站\nURL: https://htknow.com/\nDescription: 2025年5月 海豚知道凭借其基于DeepSeek研发的产业垂直AI大模型,斩获“AI卓智奖—年度AI+营销解决方案”大奖｡该大模型深度赋能短视频/直播创作全流程｡在短视频生产环节,通过实时热点捕捉与智能脚本生成,将单条视频创作周期从8小时压缩至1小时;在直播场景中,优化内容结构及话术策略,使直播转化率快速提升;释放了核心生产力｡标志着海豚知道智能服务体系完成了生产力升级的战略跃迁｡ 点击查看 \nPublished date: 2026-02-28T18:43:14+08:00\nSite name: htknow.com\n\nTitle: 2025年第四届AIGC中国开发者大会在北京圆满举行,发布2025年AI十大颠覆式行业发展趋势--人工智能-至顶网\nURL: https://ai.zhiding.cn/2025/0114/3162729.shtml\nDescription: 2025 年 AI 十大颠覆式行业发展趋势 1､world model元年:25年将是world model元年,从卷1D､2D类模型进入到卷理解物理世界规律的3D类world model时代,李飞飞主导的lwm也会在2025年发布 2､仿真数据蒸馏:2025年将是仿真数据蒸馏的元年,制约机器人､工业､自动驾驶､飞行器等各种场景的仿真数据集问题解决,借助cosmos即可完成生成,犹如大模型训练需要用gpt蒸馏数据,而不需要从头去构建数据集 3､AI孪生的GPT时刻:英伟达提出的groot+ominiverse+cosmos提供了新的AI孪生引擎,成为了仿真领域AI应用的GPT时刻 4､空间智能元年:AGI+DGI+OMINIVERSE结合cosmos=空间智能的技术架构,链接了推理､边缘设备､仿真三大物理AI的新架构,为空间智能的爆发提供了框架基础 5､产业落地方向:工业领域､自动驾驶､具身机器人仿真与ai深入结合的时代到来,实际应用也会进入现实 6､替代工种:AI落地应用从办公室替代信息工作者的agent,进入替代蓝领的实际工业\nPublished date: 2026-02-17T16:00:12+08:00\nSite name: ai.zhiding.cn\n\nTitle: 2025-2026年中国优秀AI企业全景解析(全产业链权威版)自主可控榜单胡润模型基础层_手机新浪网\nURL: https://news.si",
+    "isError": false,
+    "durationMs": 1410,
+    "createdAt": "2026-03-01T12:43:31.576Z"
+  },
+  {
+    "id": "6fa188103c9788cf",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_tfj7w5tsihm9_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:43:42.560Z"
+  },
+  {
+    "id": "90ac785ee0cd75a2",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年人工智能发展回顾:开辟AI新场景—新闻—科学网\nURL: https://news.sciencenet.cn/htmlnews/2026/1/558263.shtm\nDescription:  在科研突破与军事应用方面,青年科学家团队研发的Headless-AD模型显著优化了长文本处理能力｡军事领域,集成AI能力的“蜂群”无人机系统于5月开始高强度测试,其已具备自主地形匹配与目标分类功能｡ 在行业场景落地方面,AI技术深入航天､医疗､金融等各个领域｡6月,俄航天局计划将国产大模型GigaChat部署至国际空间站,旨在将卫星图像分辨率提升一倍｡医疗领域,Yandex推出了首批儿科专用核磁共振影像分析AI工具｡ 在模型领域,科技公司推出了多款AI模型｡1月OpenAI推出首个AI智能体Operator,赋予AI直接操作图形界面的能力;随后xAI发布的Grok 3在推理与计算能力上创下新高｡下半年,OpenAI相继推出整合“Deep Research”等技术的ChatGPT Agent及性能巅峰的GPT-5;\nPublished date: 2026-02-12T08:39:41+08:00\nSite name: 科学网\n\nTitle: 【电子行业跟踪报告】字节跳动发布Seedance 2.0快手AIOpenAI注意力机制即梦AI_新浪新闻\nURL: https://k.sina.com.cn/article_5953189932_162d6782c06703u99g.html?cre=tianyi&mod=pcpager_news&loc=36&r=0&rfunc=43&tj=cxvertical_pc_pager_news&tr=174\nDescription: 字节跳动发布Seedance 2.0 -电子行业跟踪报告- 本报告发布于2026年2月24日 投资要点: 事件: 2026年2月12日,字节跳动正式发布了新一代音视频创作模型Seedance 2.0,该模型采用统一的多模态音视频联合生成架构,支持文字､图片､音频､视频四大模态输入,集成了当前业界领先的多模态内容参考与逻辑理解能力｡ Seedance系列模型是字节跳动在多模态音视频生成领域的核心战略布局,技术迭代脉络清晰｡ 2024年9月,字节跳动旗下火山引擎在深圳AI创新巡展上,正式发布PixelDance､Seaweed两款AI视频生成大模型｡2025年5月,字节跳动完成PixelDance与Seaweed两大模型的深度技术融合,推出视频模型Seedance 1.0 lite｡2025年6月公司正式发布Seedance 1.0系列模型｡同年12月,迭代至Seedance 1.5 Pro版本,采用原生音视频联合生成架构,显著提升复杂场景与专业镜头的创作能力｡2026年2月,Seedance 2.0全量发布,进一步强化了公司在多模态内容生成领域的技术壁垒与商业化落地能力｡\nPublished date: 2026-02-25T11:31:14+08:00\nSite name: 新浪网\n\nTitle: AI技术突破与行业竞争加剧,字节跳动等企业引领变革 - 经济观察网 - 专业财经新闻网站\nURL: https://www.eeo.com.cn/2026/0220/798524.shtml\nDescription: 近期事件 AI模型重大更新:字节跳动于2月12日发布视频生成大模型Seedance 2.0,物理真实感和多镜头叙事能力显著提升,但因预置迪士尼角色库遭侵权诉讼,已暂停用户上传真人图像功能;OpenAI同期推出GPT-5.3-Codex-Spark,推理速度较前代提升15倍,并正敲定1000亿美元融资轮(软银领投300亿美元);谷歌发布Gemini 3 Deep Think,ARC-AGI-2测试准确率达84.6%｡\nPublished date: 2026-02-25T06:09:35+08:00\nSite name: 经济观察网\n\nTitle: 海豚知道官方网站\nURL: https://htknow.com/\nDescription: 2025年5月 海豚知道凭借其基于DeepSeek研发的产业垂直AI大模型,斩获“AI卓智奖—年度AI+营销解决方案”大奖｡该大模型深度赋能短视频/直播创作全流程｡在短视频生产环节,通过实时热点捕捉与智能脚本生成,将单条视频创作周期从8小时压缩至1小时;在直播场景中,优化内容结构及话术策略,使直播转化率快速提升;释放了核心生产力｡标志着海豚知道智能服务体系完成了生产力升级的战略跃迁｡ 点击查看 \nPublished date: 2026-02-28T18:43:14+08:00\nSite name: ",
+    "isError": false,
+    "durationMs": 1465,
+    "createdAt": "2026-03-01T12:43:44.025Z"
+  },
+  {
+    "id": "6c3fd4642eda4f1b",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_ytt0079gwvy5_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:43:52.016Z"
+  },
+  {
+    "id": "f031e7acdb39359f",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: AI周报:OpenAI获千亿美元融资 台积电市值突破2万亿美元 _ 东方财富网\nURL: http://finance.eastmoney.com/a/202603013657644889.html\nDescription: OpenAI获千亿美元融资 北京时间2月27日晚间,OpenAI宣布获得新融资1100亿美元,其中300亿美元来自软银,300亿美元来自英伟达,500亿美元来自亚马逊,投前估值7300亿美元(约人民币5万亿元)｡ 英伟达最新季度营收创新高 当地时间2月25日,英伟达发布截至2026年1月25日的2026财年第四季度财报｡该季度英伟达营收681亿美元,同比增长73%,创历史新高;GAAP净利润429.6亿美元,同比增长94%;毛利率75%,同比增长2个百分点｡\nPublished date: 2026-03-01T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: OpenAI正努力推进1000亿美元融资,预计2月中旬至月底期间完成\nURL: https://www.tmtpost.com/nictation/7877973.html\nDescription: 2月12日消息,据最新消息,OpenAI正在努力完成一轮可能高达1000亿美元的融资计划｡此次融资预计将在2026年2月中旬至月底期间完成,主要投资方包括 微软 ､ 英伟达 以及 亚马逊 等科技巨头｡融资资金将主要用于支持OpenAI正在推进的“Stargate”超级计算项目,该项目计划投入5000亿美元,建设一个拥有数百万处理器､耗电量达10吉瓦的计算基础设施,目标是实现通用人工智能(AGI)的突破｡融资完成后,OpenAI的估值预计将达到约8300亿美元,超过许多国家的GDP总量｡\nPublished date: 2026-02-25T16:19:59+08:00\nSite name: 钛媒体\n\nTitle: 英伟达业绩打破AI焦虑:上财季营收增超七成,黄仁勋发声\nURL: https://new.qq.com/rain/a/20260226A01YKR00\nDescription: 当地时间2月25日美股盘后,英伟达(Nasdaq:NVDA)发布了截至1月25日的2026财年第四财季财报,期内实现营收681.27亿美元,同比增长73%,高于市场预期的658亿美元;美国通用会计准则(GAAP)下净利润429.60亿美元,同比增长94%;整个2026财年,英伟达营收达到2159.38亿美元,同比增长65%;GAAP下净利润1200.67亿美元,同比增长65%;\nPublished date: 2026-02-26T09:14:04+08:00\nSite name: 腾讯网\n\nTitle: AI周观察:OpenAI开启1100亿美元融资,英伟达财报表现良好-研究报告正文 _ 数据中心 _ 东方财富网\nURL: http://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202603011820161820\nDescription: OpenAI开启创纪录1100亿美元融资,投前估值7300亿美元,获亚马逊､软银及英伟达注资并达成基础设施与算力合作｡阿里宣布首款千问AI眼镜将于2026年MWC揭晓并于3月2日预售,预计整合淘宝支付宝等生态｡谷歌发布基于Gemini3.1Flash Image架构的Nano Banana2生图模型,画质升至4K,重点修复中文乱码并大幅提升多角色一致性与复杂场景融合能力｡ \nPublished date: 2026-03-01T19:49:27+08:00\nSite name: 东方财富网\n\nTitle: OpenAI再获千亿美元融资,估值冲击5万亿元 _ 东方财富网\nURL: http://finance.eastmoney.com/a/202602273657078420.html\nDescription: 北京时间2月27日晚间,OpenAI宣布获得1100亿美元融资,投资者包括英伟达､亚马逊和软银｡与此同时,OpenAI披露公司投前估值达到7300亿美元(近5万亿元人民币)｡ 这意味着,英伟达向OpenAI投资最多1000亿美元的计划已开始落地｡\nPublished date: 2026-02-27T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: 英伟达大跌!财报超预期 市场为啥不买账?_天天基金网\nURL: http://fund.eastmoney.com/a/202602283657574911.html\nDescription:  北京时间2月27日晚,OpenAI宣布",
+    "isError": false,
+    "durationMs": 1054,
+    "createdAt": "2026-03-01T12:43:53.070Z"
+  },
+  {
+    "id": "db877f9410af2adc",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_oxsf4ur1xck5_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:43:57.150Z"
+  },
+  {
+    "id": "fdaa73daf0bb2002",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 港股异动  AI大模型概念股表现亮眼 MINIMAX-WP暴涨15% 智谱涨近7%\nURL: https://new.qq.com/rain/a/20260202A02DWS00\nDescription: AI大模型概念股表现亮眼｡截至发稿,MINIMAX-WP(00100)涨15.22%,报545港元;智谱(02513)涨6.1%,报240港元｡ 消息面上,近期,MiniMax推出桌面端及“专家智能体”,打通Agent和本地工作环境闭环｡此外,AI Agent领域迎来“工具化”爆发,月之暗面发布Kimi 2.5,通过Agent集群实现高阶办公自动化;\nPublished date: 2026-02-05T09:52:54+08:00\nSite name: 腾讯网\n\nTitle: 市值2500亿港元,从清华实验室走出来个AI独角兽港交所公司京东股票刘振股价智谱华章_新浪新闻\nURL: http://k.sina.com.cn/article_5952915705_162d248f906702ji0q.html\nDescription: 在中国,有一家独立通用大模型开发商,仅短短七年时间便成长为科技巨头｡它就是“全球大模型第一股”智谱｡ 2026年1月8日,智谱正式在港交所主板挂牌上市,股票代码“2513”｡这个数字被市场戏称为“AI 我一生”的谐音｡智谱的营收目前只有数亿元且尚未盈利,但凭借AI叙事+技术优势+商业化预期等因素共振,在资本市场获得资金的追捧｡ 截至2026年2月27日,公司上市不到2个月时间,智谱的股价累计涨幅超过300%,总市值超过2500亿港元,也曾短暂超过京东､快手等互联网公司｡\nPublished date: 2026-02-27T17:30:05+08:00\nSite name: 新浪网\n\nTitle: “中国版OpenAI”智谱上市,中国AI大模型的含金量还在提高_澎湃号·湃客_澎湃新闻-The Paper\nURL: https://www.thepaper.cn/newsDetail_forward_32343111\nDescription: 1月8日,作为“全球大模型第一股”的智谱,正式登陆港交所,首日开盘报120港元/股,截至发稿,最高涨超16%至135港元/股,市值近600亿港元｡1月9日,另一家国产AI大模型公司MiniMax,也将紧锣密鼓登陆港交所｡ 连续两天,两家中国AI大模型公司密集敲钟｡这不仅是中国AI公司之间的竞速,也是全球AI资本大潮的缩影｡ 因为在大洋彼岸,激流涌动得更加波澜壮阔｡ \nPublished date: 2026-02-27T00:25:22+08:00\nSite name: 澎湃新闻\n\nTitle: 港股AI热潮:MiniMax、智谱领跑海外Token应用 投资新周期开启_财富号_东方财富网\nURL: https://caifuhao.eastmoney.com/news/20260227130946719205510\nDescription: 为海外Token应用的直接受益者,港股上市的智谱和MINIMAX-WP自上市以来累计涨幅已超过400%,成为市场公认的AI模型双雄｡ 在此背景下,进入2026年,港交所迎来了中国AI公司的密集挂牌:在硬件领域,GPU企业壁仞科技与天数智芯相继上市,为港股核心算力布局填补空白;在软件领域,大模型企业智谱与MiniMax表现强劲｡\nPublished date: 2026-02-27T13:13:57+08:00\nSite name: 财富号东方财富网\n\nTitle: 6200亿!AI大厂们杀疯了中科创星大厂模型科研产业_新浪新闻\nURL: https://k.sina.com.cn/article_5952915720_162d2490806703dpd0.html\nDescription: 2026 年 2 月 20 日,丙午马年首个交易日,港股迎来了“国产 AI 大模型”时刻｡ 智谱( 02513.HK )与 Minimax ( 00100.HK )市值双双突破 3000 亿港元关口,不仅超越了快手､京东､携程等老牌互联网大厂,更是赶超了去年爆红的 “GPU 第一股 ” 摩尔线程,强势跻身港股 TMT 板块市值第一梯队｡ Minimax 同步走高 14.52% ,收报 970 港元,市值达 3042 亿港元,两大 AI 龙头合计市值超 6200 亿港元｡ 智谱, 3000 亿市值 智谱在 2026 年 2 月全新开源的最新旗舰大模型 GLM-5 成为了本次市值暴涨的核心推手｡\nPublished date: 2026-02-27T12:21:44+08:00\nSite name: 新浪网\n\nTitle: ",
+    "isError": false,
+    "durationMs": 1392,
+    "createdAt": "2026-03-01T12:43:58.542Z"
+  },
+  {
+    "id": "8112753deeac77dc",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_qa0cfft26707_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:44:02.920Z"
+  },
+  {
+    "id": "ae4d0d5db2acb7a1",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 百度2025年AI业务营收达400亿元,AI原生营销服务收入增长301%_昆仑_公告_同比增长\nURL: https://www.sohu.com/a/990469979_122014422\nDescription: 财报显示,2025年第四季度,百度总收入为人民币327亿元,环比增长5%,主要是由于百度核心AI新业务的增长｡ 百度AI业务､传统业务及其他的收入分别为113亿元､123亿元及25亿元｡ 而2025年,百度总营收达1291亿元;百度核心AI新业务总营收400亿元,同比增长48%｡ 在经营摘要中,百度特别列出了各项AI业务的营收情况｡ (图源:《2025年第四季度及全年业绩公告》) \nPublished date: 2026-02-27T08:21:36+08:00\nSite name: 搜狐\n\nTitle: 百度2025年财报显示AI业务营收达400亿元 李彦宏称AI已成新核心_热点播报_太平洋科技资讯中心\nURL: http://news.pconline.com.cn/2104/21046232.html\nDescription: 百度发布2025年第四季度及全年财报,显示2025年总营收达1291亿元,AI业务营收达400亿元｡四季度百度总营收327亿元,同比增长5%,AI业务收入占一般性业务收入的43%｡ 百度创始人李彦宏表示,2025年是AI成为百度新核心的关键一年｡AI云势头强劲,凭借全栈端到端AI能力赢得企业认可｡萝卜快跑巩固全球领先地位,加速国际扩张｡AI原生营销服务持续增长,为长期发展开启新可能性｡ \nPublished date: 2026-02-27T15:25:02+08:00\nSite name: news.pconline.com.cn\n\nTitle: AI业务营收达400亿元!百度发布财报 _ 东方财富网\nURL: http://finance.eastmoney.com/a/202602263655572972.html\nDescription: 百度2月26日发布2025年第四季度及全年财报｡财报显示,2025年 百度 实现总营收1291亿元,AI业务营收达400亿元;2025年第四季度, 百度 总营收327亿元,AI业务收入占一般性业务收入的43%,超出市场预期｡2025年,慧播星数字人开播规模同比增长202%,收入同比增长228%,已赋能30多个行业｡ 同时, AI应用 2025全年收入突破100亿元｡\nPublished date: 2026-02-26T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: 百度2025年营收1291亿元,AI新业务增长48%,广告业务连续两个季度下滑 _ 东方财富网\nURL: http://finance.eastmoney.com/a/202602273656970577.html\nDescription:  AI新业务占比达39% 业绩显示,百度AI新业务表现亮眼｡2025年第四季度,AI新业务总收入达113亿元,环比增长18%,占百度核心业务收入比例达43%｡2025年全年来看,AI新业务对百度营收贡献达400亿元,同比增长48%,占核心业务收入比重达39%｡在财报中,百度也将2025年定义为“AI成为百度新核心的关键一年”｡ 截图自百度2025年第四季度及全年业绩公告 \nPublished date: 2026-02-27T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: 百度2025年总营收1291亿元,AI业务营收达400亿元\nURL: https://new.qq.com/rain/a/20260226A05PAR00\nDescription: 2月26日,百度发布2025年第四季度及全年财报,显示2025年总营收达1291亿元,AI业务营收达400亿元;四季度,百度总营收327亿元,AI业务收入占百度一般性业务收入的43%｡2025年,AI云收入同比增长34%,AI应用全年收入突破100亿元,AI原生营销服务收入同比增长301%｡12月,文心助手月活用户数达2.02亿;春节红包活动启动以来,文心助手月活跃用户同比增长4倍｡      \nPublished date: 2026-02-26T17:14:11+08:00\nSite name: 腾讯网\n\nTitle: 李彦宏:2025年是AI成为百度新核心的关键一年\nURL: https://new.qq.com/rain/a/20260226A05SDH00\nDescription: 新浪科技讯 2月26日下午消息,百度发布2025年第四季度及全年财报,显示2025年总营收达1291亿元,AI业务营收达40",
+    "isError": false,
+    "durationMs": 1626,
+    "createdAt": "2026-03-01T12:44:04.546Z"
+  },
+  {
+    "id": "80bf204a9c4793cc",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_a7dwcqzsnsoh_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:44:10.666Z"
+  },
+  {
+    "id": "ec3a83b42ccda967",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 中国AI模型全球调用量首超美国美国中国AI_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902oh12.html?from=tech\nDescription: 据每经网报道,全球最大的AI模型API聚合平台OpenRouter最新数据显示,2026年2月9日至15日当周,中国大模型Token调用量达4.12万亿,首次超越同期美国模型的2.94万亿｡ 随后一周(16日至22日),中国模型调用量进一步攀升至5.16万亿,三周累计增长127%;同期美国模型调用量则回落至2.7万亿｡ 在全球调用量排名前五的模型中,中国厂商占据四席,彰显其集群式崛起态势｡\nPublished date: 2026-02-27T22:32:49+08:00\nSite name: 新浪网\n\nTitle: 中国AI大模型调用量首超美国,三周累计增长127%,国产算力产业链迎来变局产业链模型美国中国爆发式_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902nn24.html\nDescription: 2026年2月,中国AI大模型的全球调用量迎来爆发式增长,首次超越美国｡ 全球最大的AI模型API聚合平台OpenRouter最新数据显示,2月9日至15日当周,中国模型以4.12万亿Token的调用量,首次超过同期美国模型的2.94万亿Token｡紧接着的2月16日至22日当周,中国模型周调用量进一步攀升至5.16万亿Token,三周累计增长127%,而同期美国模型调用量则回落至2.7万亿Token｡\nPublished date: 2026-02-27T09:45:13+08:00\nSite name: 新浪网\n\nTitle: 中国AI模型调用量首超美国中国AI美国AI_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902p0wy.html\nDescription: 中国AI模型调用量首超美国 全球最大的AI模型API聚合平台OpenRouter数据显示,2026年2月9日至15日当周,中国模型的调用量为4.12万亿Token,首次超过美国模型(2.94万亿Token)｡到2月16日当周,中国模型的周调用量更是冲高至5.16万亿Token,将领先优势进一步扩大｡ 全球调用量排名前五的模型中,中国模型占据四席,分别为MiniMax的M2.5､月之暗面的Kimi K2.5､智谱的GLM-5以及DeepSeek的V3.2｡\nPublished date: 2026-02-28T05:38:55+08:00\nSite name: 新浪网\n\nTitle: 2月井喷!中国AI模型调用量首超美国 四款大模型霸榜全球前五  每经网\nURL: https://www.nbd.com.cn/articles/2026-03-01/4274087.html\nDescription: 2月,中国AI(人工智能)的模型调用量爆发式增长,首次超过美国｡ 全球最大的AI模型API聚合平台OpenRouter数据显示,2月9日~15日这周,中国模型以4.12万亿Token(词元)的调用量,首次超过同期美国模型的2.94万亿Token｡2月16日~22日这周,中国模型的周调用量进一步冲高至5.16万亿Token,三周大涨127%,而同期美国模型调用量跌至2.7万亿Token｡2025年3月3日至9日当周,该平台前十大模型的周调用量仅为1.24万亿Token｡而到2026年2月中旬,这一数字已飙升至13.95万亿Token,短短不到一年时间增长超过10倍｡ 数据显示,2026年2月第一周(2日至8日),中国模型的周调用量已跃升至2.27万亿Token,发出强烈的追击信号｡ 仅仅一周后,2月9日至15日当周,中国模型便以4.12万亿Token的惊人调用量,正式超越同期美国模型的2.94万亿\nPublished date: 2026-03-01T20:28:07+08:00\nSite name: 每经网\n\nTitle: OpenRouter数据显示2026年2月中国AI模型调用量首次超越美国月之暗面DeepSeekMinimaxTokPI_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902neai.html\nDescription: 超,三周内涨幅显著 全球最大的AI模型API聚合平台OpenRouter的数据显示,2026年2月9日至15日当周,中国AI模型的API调用量",
+    "isError": false,
+    "durationMs": 1251,
+    "createdAt": "2026-03-01T12:44:11.917Z"
+  },
+  {
+    "id": "28385eb94291de57",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": {
+      "toolCallId": "call_function_8q9qng46vvku_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:44:22.681Z"
+  },
+  {
+    "id": "e486ea6b01d901b3",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": {
+      "toolCallId": "call_function_66jie0txalne_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:44:26.725Z"
+  },
+  {
+    "id": "de011d1a8b20b1fa",
+    "type": "tool_call",
+    "taskId": "0f259b3f9c4f4f8d",
+    "subtaskId": "385e1c6bc0a72562",
+    "employeeId": "5560539a692af29f",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": null,
+    "output": "\r\n<!doctype html>\r\n<html lang=\"zh-cn\" >\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title>OpenRouter：中国 AI 模型 2 月全球 token 用量首超美国，MiniMax 等四款大模型霸榜前五 - IT之家</title>\r\n    <meta name=\"description\" content=\"在线 AI 托管平台 OpenRouter 最新数据显示，由 MiniMax、月之暗面（Moonshot AI）、智谱领衔的中国开源人工智能模型，已登顶全球 Token 使用量榜单。\" />\r\n    <meta name=\"keywords\" content=\"MiniMax,智谱,DeepSeek,OpenRouter\" />\r\n    <meta http-equiv=\"pragma\" content=\"no-cache\">\r\n    <meta http-equiv=\"Cache-Control\" content=\"no-cache, must-revalidate\">\r\n    <meta http-equiv=\"expires\" content=\"0\">\r\n    <meta name=\"format-detection\" content=\"telephone=no\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\">\r\n    \r\n    <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS 2.0\" href=\"https://www.ithome.com/rss/\" />\r\n            <link href=\"//www.ithome.com/css/site.min.css?v=2.26.23021315\" rel=\"stylesheet\" type=\"text/css\" />\r\n    <link rel=\"icon\" href=\"//www.ithome.com/favicon.ico\" mce_href=\"//www.ithome.com/favicon.ico\" type=\"image/x-icon\" />\r\n    <link rel=\"shortcut icon\" href=\"//www.ithome.com/favicon.ico\" />\r\n    <link rel=\"apple-touch-icon\" href=\"/img/t.png\" />\r\n    \r\n    <link rel=\"canonical\" href=\"https://www.ithome.com/0/924/039.htm\" />\r\n        <link href=\"//img.ithome.com/file/css/card/1.css?v=2.3.25021801\" rel=\"stylesheet\" type=\"text/css\" />\r\n        <link href=\"//www.ithome.com/css/detail.min.css?v=2.3.202512201503\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <link href=\"//dat.ruanmei.com/lib/login.min.css\" type=\"text/css\" rel=\"stylesheet\">\r\n        <script src=\"//img.ithome.com/file/js/ua.min.js?v=2.2.25101501\" type=\"text/javascript\"></script>\r\n    <script src=\"https://s3.pstatp.com/cdn/expire-1-w/jquery/3.4.0/jquery.min.js\"></script>\r\n    <script>(window.jQuery || document.write(\"<script src='https:\\/\\/img.ruanmei.com\\/btd\\/cdn\\/expire-1-w\\/jquery\\/3.4.0\\/jquery.min.js'><\\/script>\"));</script>\r\n\r\n</head>\r\n<body class=\"next \">\r\n    <div id=\"top\">\r\n        <div class=\"bb\">\r\n            <a href=\"htt",
+    "isError": false,
+    "durationMs": 144,
+    "createdAt": "2026-03-01T12:44:26.869Z"
+  }
+]

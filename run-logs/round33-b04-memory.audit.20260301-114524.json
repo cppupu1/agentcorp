@@ -1,0 +1,70 @@
+{
+  "label": "round33-b04-memory",
+  "sessionId": "round33-b04-memory-20260301-114524",
+  "kind": "memory",
+  "pmChatDurationMs": 33887,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "66240d308bbb7f84"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 33887
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "66240d308bbb7f84",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 78476,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。知识管理员（162965356d244f45）针对最近一个月的售后投诉数据进行分析，整理输出了5条简版FAQ，包括：订单延迟发货处理、退款申请被拒处理、人工客服接入困难、商品质量与描述不符、预付卡充值退费难。这些知识条目已成功沉淀到知识库中。"
+  }
+}

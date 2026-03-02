@@ -1,0 +1,71 @@
+{
+  "id": "70471882a48bf852",
+  "teamId": "10c656a820b4748a",
+  "teamName": "企业公告翻译团队",
+  "title": "企业公告中英双语简版",
+  "description": "将一段企业公告模板输出中英双语简版，保持语义一致。请先将以下企业公告模板进行中英双语翻译，并简化为简洁版本，确保中英文语义一致。公告内容：关于召开2024年度股东大会的通知 - 各位股东：本公司定于2024年6月15日上午9:00在总部会议室召开2024年度股东大会。会议主要议题包括：审议2023年度董事会工作报告、审议2023年度财务决算报告、审议2024年度财务预算方案、选举新一届董事会成员。请各位股东准时参加，如需委托代理参加，请提前办理委托手续。",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "c619641362e810d3",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "4d5083589339670b",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      },
+      {
+        "id": "c0e85aaf31de56f1",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版",
+        "description": "将一段企业公告模板输出中英双语简版，保持语义一致。请先将以下企业公告模板进行中英双语翻译，并简化为简洁版本，确保中英文语义一致。公告内容：关于召开2024年度股东大会的通知 - 各位股东：本公司定于2024年6月15日上午9:00在总部会议室召开2024年度股东大会。会议主要议题包括：审议2023年度董事会工作报告、审议2023年度财务决算报告、审议2024年度财务预算方案、选举新一届董事会成员。请各位股东准时参加，如需委托代理参加，请提前办理委托手续。",
+        "assigneeId": "4d5083589339670b",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成企业公告中英双语简版的翻译与简化工作。中文版保留了原公告的核心要素：会议时间（2024年6月15日上午9:00）、地点（总部会议室）、四项主要议题（董事会工作报告、财务决算报告、财务预算方案、董事会选举）以及参会注意事项。英文版与中文版语义一致，议题顺序完全对应，格式简洁清晰，符合企业公告的正式规范。",
+    "deliverables": "# 企业公告中英双语简版\n\n---\n\n## 中文版\n\n**关于召开2024年度股东大会的通知**\n\n各位股东：\n\n本公司定于2024年6月15日上午9:00在总部会议室召开2024年度股东大会。\n\n**会议主要议题：**\n\n1. 审议2023年度董事会工作报告\n2. 审议2023年度财务决算报告\n3. 审议2024年度财务预算方案\n4. 选举新一届董事会成员\n\n请准时参加。如需委托代理参加，请提前办理委托手续。\n\n---\n\n## English Version\n\n**Notice on Convening the 2024 Annual Shareholders' Meeting**\n\nDear Shareholders,\n\nThe 2024 Annual Shareholders' Meeting will be held at 9:00 AM on June 15, 2024, in the Headquarters Conference Room.\n\n**Meeting Agenda:**\n\n1. Review of the 2023 Board of Directors' Work Report\n2. Review of the 2023 Financial Final Accounts Report\n3. Review of the 2024 Financial Budget Plan\n4. Election of New Board Members\n\nYour attendance is requested. If a proxy is required, please complete the proxy procedures in advance.",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T11:36:29.735Z"
+  },
+  "tokenUsage": 1572,
+  "createdAt": "2026-03-01T11:35:37.700Z",
+  "updatedAt": "2026-03-01T11:36:33.797Z",
+  "subtasks": [
+    {
+      "id": "b764e394bfd1696c",
+      "title": "企业公告中英双语简版",
+      "description": "将一段企业公告模板输出中英双语简版，保持语义一致。请先将以下企业公告模板进行中英双语翻译，并简化为简洁版本，确保中英文语义一致。公告内容：关于召开2024年度股东大会的通知 - 各位股东：本公司定于2024年6月15日上午9:00在总部会议室召开2024年度股东大会。会议主要议题包括：审议2023年度董事会工作报告、审议2023年度财务决算报告、审议2024年度财务预算方案、选举新一届董事会成员。请各位股东准时参加，如需委托代理参加，请提前办理委托手续。",
+      "assigneeId": "4d5083589339670b",
+      "assigneeName": "视觉设计师",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "# 中英双语简化版公告\n\n---\n\n## 中文版\n\n**关于召开2024年度股东大会的通知**\n\n各位股东：\n\n本公司定于2024年6月15日上午9:00在总部会议室召开2024年度股东大会。\n\n**会议主要议题：**\n\n1. 审议2023年度董事会工作报告\n2. 审议2023年度财务决算报告\n3. 审议2024年度财务预算方案\n4. 选举新一届董事会成员\n\n请准时参加。如需委托代理参加，请提前办理委托手续。\n\n---\n\n## English Version\n\n**Notice on Convening the 2024 Annual Shareholders' Meeting**\n\nDear Shareholders,\n\nThe 2024 Annual Shareholders' Meeting will be held at 9:00 AM on June 15, 2024, in the Headquarters Conference Room.\n\n**Meeting Agenda:**\n\n1. Review of the 2023 Board of Directors' Work Report\n2. Review of the 2023 Financial Final Accounts Report\n3. Review of the 2024 Financial Budget Plan\n4. Election of New Board Members\n\nYour attendance is requested. If a proxy is required, please complete the proxy procedures in advance.\n\n---\n\n### 设计说明\n\n- **精简结构**：将冗长的原文拆分为清晰的标题+要点式布局\n- **语义一致**：中英文议题顺序完全对应\n- **核心信息突出**：时间、地点、议题一目了然"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 1572,
+      "createdAt": "2026-03-01T11:35:45.749Z",
+      "updatedAt": "2026-03-01T11:36:17.791Z"
+    }
+  ]
+}

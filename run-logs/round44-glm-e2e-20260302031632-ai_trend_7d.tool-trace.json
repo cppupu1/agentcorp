@@ -1,0 +1,562 @@
+[
+  {
+    "id": "b249f51d46fe1d04",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_5d524765e76843eca4caf463"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:19:34.104Z"
+  },
+  {
+    "id": "b5a5657ea9b6f946",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_aaed0a367be7419f83b928f2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:19:35.081Z"
+  },
+  {
+    "id": "bd99bd4142d62bbf",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: WeatherNext 2:谷歌发布新一代AI天气预报模型,开启高时效、高精度、多情景气象决策新时代_AI·未来-CSDN专栏\nURL: https://download.csdn.net/blog/column/12876673/155205412\nDescription: 2025年11月18日,谷歌DeepMind与谷歌研究院联合推出其最新一代人工智能天气预报系统—— WeatherNext 2 ｡该模型在预报速度､时间分辨率､预测范围及系统复杂性建模能力上实现全面突破,标志着AI驱动的数值天气预报正式迈入“近实时､高概率､可操作”新阶段｡ 核心性能突破:快､准､全 速度提升8倍 :相较于前代 WeatherNext,WeatherNext 2 在单个张量处理单元(TPU)上完成一次覆盖全球､跨度0–15天的完整预报仅需 不到1分钟 ,而传统基于物理方程的数值模式通常需数小时乃至更久｡ 时间分辨率达1小时级 :模型输出的时间粒度精细至每小时,显著优于传统业务预报中常见的6–24小时间隔,为短临预警和动态调度提供关键支撑｡ 支持数百种概率情景生成 :从单一初始状态出发,WeatherNext 2 可同步生成 数百条可能的天气演化路径 ,包括台风轨迹､强对流爆发､极端降水等低概率高影响事件｡这种“集合预报”能力极大增强了用户对不确定性的量化认知｡ 覆盖99.9%气象变量,全面超越前代 :在温度､湿度､风速､气压､降水量等核心变量上,WeatherNext 2 在0–15天预报窗口内均显著优于 WeatherNext,尤其在极端天气边缘事件的捕捉上表现突出｡\nPublished date: 2026-02-15T08:42:43+08:00\nSite name: download.csdn.net\n\nTitle: 2025年最好用的AI大模型汇总 - AIBetas\nURL: https://www.aibetas.com.cn/p/4372.html\nDescription:  01|AI绘画 1. 图像生成 – Flux Pro ultra 官网: https://blackforestlabs.ai/ultra-home/ 母公司:Black Forest Labs 发布时间:2024年11月 最新版本:Flux 1.1 Pro Ultra 价格:$0.06/张 Flux Pro Ultra 是由 Black Forest Labs 公司开发的高性能AI图像生成模型,其最新版本 Flux 1.1 Pro Ultra 于 2024年11月 正式发布,并在2025年2月进一步升级支持更高分辨率生成功能｡该模型以 超高分辨率(4兆像素,即2048×2048)为核心亮点,提供两种生成模式 : Ultra模式:生成速度比同类高分辨率模型快2.5倍,10秒内完成4兆像素图像,且能精准响应提示词,适合广告设计､电商展示等需要细节的场景; Raw模式:侧重自然真实感,优化人像和自然摄影的细腻细节,减少“合成感”,适用于艺术创作和摄影后期｡ 添加图片注释,不超过 140 字(可选) 2. 中文文字生成 – 即梦AI 官网: https://jimeng.jianying.com/ai-tool/image/generate 母公司:字节 最新版本:即梦AI 图片2.1 发布时间:2024年5月 价格:¥0.1/张 \nPublished date: 2026-02-16T11:02:31+08:00\nSite name: www.aibetas.com.cn\n\nTitle: 一文掌握2025年大模型发展趋势:从架构到应用,值得珍藏-CSDN博客\nURL: https://blog.csdn.net/aolan123/article/details/157801604\nDescription: 文基于Sebastian Raschka年终盘点,分析了2025年大模型七大趋势:推理模型与RLVR/GRPO技术崛起､GRPO成为研究热点､架构向MoE和效率优化发展､推理扩展与工具调用的重要性､\"刷榜\"现象挑战､AI在编程写作中的应用价值以及私有数据优势｡大模型进步依靠多条路径并行发展,包括架构调整､数据质量改进､推理训练与扩展等,同时评估标准仍不完善｡他的书被翻译成 9种 语言,被多所大学用作教材 以下这些,是他对 2025 年大模型领域的观察和判断,在这里我做了一些重写&删改 推理模型､RLVR 与GRPO 之年 2025 年1月,DeepSeek R1 发布,带来两个简单但重要的发现: • 模型先说思路再给答案,准确率更高• 这种习惯,可以用强化学习养成 短回答 vs. 包含中间推理步骤的长回答 DeepSeek 时刻 R1 引",
+    "isError": false,
+    "durationMs": 1413,
+    "createdAt": "2026-03-02T03:19:35.517Z"
+  },
+  {
+    "id": "ef1752231c1bb58b",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 中文大模型基准测评2025年年度报告:2026开年特别版,含1月底重磅模型动态评测.pdf - 文档下载 - 未来智库\nURL: https://www.vzkoo.com/document/4633409651361189888.html\nDescription: 中文大模型基准测评2025年年度报告:2026开年特别版,含1月底重磅模型动态评测.pdf\n上传者:J***\n时间:2026/02/05\n热度:16\n0人点赞\n举报\n中文大模型基准测评2025年年度报告:2026开年特别版,含1月底重磅模型动态评测。自2022年1\n1月30日ChatGPT发布以来,AI大模型在全球范围内掀起了有史以来规模最大的人工智能浪潮。国内外AI机构在过去3年里有了实质性的突破。具体可分为三个时期:百模大战与多模态萌芽、多模态爆发与推理突破、智能体崛起与生态重构。\n格式:pdf\n大小:6.8M\n页数:74\n价格:\n6积分\n下载\n获取积分\n免责声明:本文\n/\n资料由用户个人上传,平台仅提供信息存储服务,如有侵权请联系删除。\nPublished date: 2026-02-05T00:00:00+08:00\nSite name: 未来智库\n\nTitle: 中银国际:AI大模型演进路径逐渐清晰 算力或供不应求\nURL: https://news.futunn.com/post/69200881/boci-the-evolution-path-of-large-ai-models-is-becoming\nDescription: 2026年春节前后,大模型行业发生较大变革,在新模型发布、AI应用深化与模型定价都发生了事件级变化。预计算力产业链有望带来迎来新一轮增长动能。\n智通财经APP获悉,中银国际发布研报称,2026年春节前后,国内外主要AI模型纷纷完成重大升级。随着大模型能力提升,智能体与多模态两条演进路径逐步清晰。与此同时,智谱(02513)节前发布GLM\nCoding\nPlan价格调整函,这一涨价预示着优秀的大模型企业不缺需求,有望推动算力硬件的需求持续增长。算力涨价成为新迹象,凸显算力供应瓶颈,预计算力产业链有望带来迎来新一轮增长动能。中银国际主要观点如下:春节前后,国内外主要AI模型纷纷完成重大升级国内方面,国产AI模型密集更新:1月27日,月之暗面发布K2.5模型;2月12日,智谱发布GLM-5模型;2月13日,MiniMax(00100)发布MiniMax\nM2.5模型;2月14日,字节跳动发布豆包2.0模型;2月16日,阿里发布千问3.5模型。海外方面,大模型厂商同期也完成重要模型更新,OpenAI于2月发布首个专为实时编程设计的GPT-5.3-Codex,每秒生成超过1000个token;Anthropic于2月发布Claude\nOpus\n4.6/Claude\nSonnet\n4.6模型,支持100万token上下文,能更好执行智能体规划等任务;谷歌于2月发布Gemini3.1\nPro模型,推理性能翻倍。随着模型能力提升,智能体(Agent)与多模态应用进入深水区智能体方面,2026年初,名为OpenClaw的开源智能体工具在开发者社区和各大技术论坛引起较大轰动,它不再是过去那个只会陪聊的聊天机器人,而是进化成了能够接管电脑、协助人类完成具体办公任务的“办公搭子”,初步展示了生产力大变革的形象。多模态方面,字节发布的SeeDance2.0让大模型具有了影视行业的生产力,从此前“生\nPublished date: 2026-02-25T14:02:00+08:00\nSite name: 财经新闻\n\nTitle: 中银国际:AI大模型演进路径逐渐清晰 算力或供不应求_腾讯新闻\nURL: https://news.qq.com/rain/a/20260225A0419O00\nDescription: 智通财经APP获悉,中银国际发布研报称,2026年春节前后,国内外主要AI模型纷纷完成重大升级。随着大模型能力提升,智能体与多模态两条演进路径逐步清晰。与此同时,智谱(02513)节前发布GLM\nCoding\nPlan价格调整函,这一涨价预示着优秀的大模型企业不缺需求,有望推动算力硬件的需求持续增长。算力涨价成为新迹象,凸显算力供应瓶颈,预计算力产业链有望带来迎来新一轮增长动能。中银国际主要观点如下:春节前后,国内外主要AI模型纷纷完成重大升级国内方面,国产AI模型密集更新:1月27日,月之暗面发布K2.5模型;2月12日,智谱发布GLM-5模型;2月13日,MiniMax(00100)发布MiniMax\nM2.5模型;2月14日,字节跳动发布豆包2.0模型;2月16日,阿里发布千问3.5模型。海外方面,大模型厂商同期也完成重要",
+    "isError": false,
+    "durationMs": 488,
+    "createdAt": "2026-03-02T03:19:35.569Z"
+  },
+  {
+    "id": "523f2a39bc04b8e4",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_426b2f0f9ce341cba75788c0"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:19:45.565Z"
+  },
+  {
+    "id": "3d7e5530d9079175",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 规模达数百亿美元!谷歌将向OpenAI劲敌Anthropic供应100万颗专用AI芯片|Google|anthropic|ai芯片|TPU|英伟达_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902qvhu.html\nDescription: 10月24日,人工智能领域再爆重磅交易,谷歌宣布与AI独角兽Anthropic达成数百亿美元算力合作,并将在2026年向其供应多达100万颗自主设计的TPU专用AI芯片,部署后可形成超过1吉瓦的算力规模,足以支撑数十个万亿参数级大模型的并行训练与推理运算,这笔交易也成为当前AI硬件竞赛中规模最大的交易之一。\n根据双方披露的合作框架,谷歌供应的TPU芯片将优先用于Anthropic下一代大模型的训练与商业化落地,覆盖Claude系列模型的持续迭代与企业级智能体开发。Anthropic首席财务官Krishna\nRao在声明中表示,此次合作将解决公司在前沿AI研发中的算力瓶颈,尤其是支撑Claude\nOpus\n4模型实现的\n\"小时级持续专注能力\"\n向更复杂场景延伸。谷歌云CEO托马斯・库里安强调,\"TPU与Anthropic技术的结合,将重新定义企业级AI应用的性能边界\"。\n作为OpenAI最强劲的竞争对手,Anthropic公司2021年由OpenAI前研究副总裁达里奥・阿莫迪与前安全政策副总裁丹妮拉・阿莫迪兄妹创立,凭借核心创业团队参与GPT-2、GPT-3研发的技术积累,Anthropic在四年内完成9轮融资,2025年F轮融资更是斩获130亿美元,投后估值飙升至1830亿美元,跻身全球第三大AI独角兽,仅次于字节跳动与OpenAI。\nAnthropic核心产品是Claude系列大模型,其2023年推出的Claude\n2首次实现20万token上下文窗口,2024年的Claude\n3.5\nSonnet在编程、数学等12项权威测试中超越GPT-4o与谷歌Gemini\n1.5\nPro,而2025年发布的Claude\nOpus\n4更实现7小时持续专注代码重构的突破,在SWE-bench软件工程测试中以72.5%的得分大幅领先OpenAI\nGPT-4.1。\n长期以来,Anthro\nPublished date: 2026-03-01T13:36:17+08:00\nSite name: 新浪网\n\nTitle: Anthropic 和 OpenAI 在 AI 竞争加速背景下调整安全规则表述 - Odaily\nURL: https://www.odaily.news/zh-CN/newsflash/469693\nDescription: Odaily星球日报讯\nAnthropic\n已从其负责任扩展政策中移除一项核心安全承诺,不再承诺在风险缓解措施未完全到位时暂停训练。Anthropic\n首席科学官\nJared\nKaplan\n对\nTIME\n表示,在\nAI\n快速发展的背景下,若竞争对手持续推进,单方面作出停训承诺并无实际意义。OpenAI\n同样修改了其使命声明,在\n2024\n年\nIRS\n文件中删除了“safely”一词,此前表述为构建“safely\nbenefits\nhumanity”的通用\nAI,现改为“确保通用\nAI\n惠及全人类”。RAND\nCorporation\n高级政策研究员\nEdward\nGeist\n表示,早期\nAI\n安全倡导者所设想的高级\nAI\n与当前大语言模型存在本质差异,术语变化也反映出企业希望向投资者和政策制定者传递其不会因安全顾虑而在经济竞争中退缩的信号。Anthropic\n近期完成\n300\n亿美元融资,估值约\n3800\n亿美元;OpenAI\n正推进一轮由\nAmazon、Microsoft\n和\nNvidia\n支持的最高达\n1000\n亿美元的融资。与此同时,Anthropic\n因拒绝向五角大楼全面开放\nClaude\n访问权限,与美国国防部长\nPete\nHegseth\n产生公开分歧,其国防合同面临不确定性。(Decrypt)\nPublished date: 2026-02-26T01:45:00+08:00\nSite name: ODAILY\n\nTitle: Anthropic发布新AI模型 可操控计算机执行复杂任务-新华网\nURL: https://www.news.cn/liangzi/20260225/72219f77d84445f582887b9ca1e09084/c.html\nDescription: 参考消息网2月20日报道\n据彭博新闻社网站2月17日报道,美国Anthropic公司正在推出一款新的人工智能(AI)模型,旨在更高效地利用人类计算机执行日益复杂的任务。\n该公司表示,定于1",
+    "isError": false,
+    "durationMs": 452,
+    "createdAt": "2026-03-02T03:19:46.017Z"
+  },
+  {
+    "id": "35e5550f0e14a982",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_72a2f60321f34c6db5e7901b"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:19:46.760Z"
+  },
+  {
+    "id": "745adea52226cafc",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 智谱 AI 推出国产大模型 GLM-4 - 牛透社\nURL: https://www.niutoushe.com/lives/zhipuaituichuguochandamoxingglm4\nDescription: 牛透社消息:1 月16 日,智谱 AI 首届技术开放日在北京中关村国家自主创新示范区展示中心成功举办｡智谱 AI 团队发布了新一代基座大模型 GLM-4｡GLM-4 大幅提升了智能体能力,GLM-4 All Tools 实现自主根据用户意图,自动理解､规划复杂指令,自由调用网页浏览器､Code Interpreter 代码解释器和多模态文生图大模型以完成复杂任务｡\nPublished date: 2026-02-27T14:40:32+08:00\nSite name: www.niutoushe.com\n\nTitle: AI大模型过年抢着给你发红包,图啥? - 今日头条\nURL: https://www.toutiao.com/article/7610711649091142144/\nDescription: DeepSeek､智谱､MiniMax等一众国产模型厂商也密集更新产品｡其中,字节跳动旗下视频生成模型Seedance更是火爆出圈,席卷影视行业｡ 为何各家AI选择在春节假期活动不断､扎堆上新?今年的更新又有何不同? 春节成AI“兵家必争之地” 过去两年,春节AI界都只存在一个主角｡2024年春节,OpenAI多模态大模型成为话题中心;2025年,DeepSeek则凭借低成本深度思考模型备受瞩目｡\nPublished date: 2026-03-02T01:20:54+08:00\nSite name: 今日头条\n\nTitle: 市值2500亿港元,从清华实验室走出来个AI独角兽港交所公司京东股票刘振股价智谱华章_新浪新闻\nURL: https://k.sina.com.cn/article_5952915705_162d248f906702ji0q.html?cre=tianyi&mod=pcpager_news&loc=11&r=0&rfunc=4&tj=cxvertical_pc_pager_news&tr=174\nDescription: 在中国,有一家独立通用大模型开发商,仅短短七年时间便成长为科技巨头｡它就是“全球大模型第一股”智谱｡ 2024年,智谱在中国大语言模型市场的份额为6.6%,排名第二｡而在十九年前,智谱的雏形还只是一个研发项目｡ 2006年,清华大学知识工程实验室(KEG)发布了一款名为AMiner系统的科研情报挖掘产品,用人工智能挖掘自然科学或技术发展的客观规律｡ 当系统走向成熟,便迎来了商业化的良机｡\nPublished date: 2026-02-27T17:30:05+08:00\nSite name: 新浪网\n\nTitle: 开局即冲刺,谁都怕掉队!AI卷出新高度,申城大模型能否一路“飞驰”?DeepSeek豆包大模型字节跳动面壁智能Minimax_新浪新闻\nURL: https://k.sina.com.cn/article_5953466437_162dab0450670a3ubu.html?cre=tianyi&mod=pcpager_news&loc=28&r=0&rfunc=95&tj=cxvertical_pc_pager_news&tr=340\nDescription: 字节跳动宣布推出豆包大模型2.0(Doubao-Seed-2.0)系列 《飞驰AI》来了 大家都说,2026年开年,国内AI大模型是真的卷｡ 这种高频脉冲式的更新,密度之大,强度之高,似乎让人代入了《飞驰人生3》里张弛的选择,发车就使用涡轮增压,势必抢个“领先车位”—— 1月5日,零一万物打响2026头炮,发布面向企业场景的万智2.5多智能体;十天后,阿里发布Qwen3-Max,大模型推理能力进一步升级;再过一周,百川智能和百度双发模型;11日,智谱GLM-5登场,被视为国内阵营在推理能力上的一次关键迭代; 字节跳动正式上线新一代视频生成模型Seedance 2.0,这款视频生成模型发布后,凭借逼真的画面效果与简易的创作方式迅速走红 2月12日和13日,字节跳动先后发布了视频生成模型Seedance 2.0和豆包大模型2.0…… 当然不容忽视的是,大洋彼岸显然不会“隔岸观火”,Meta､Google､OpenAI亦纷纷“亮剑”｡\nPublished date: 2026-02-26T14:29:55+08:00\nSite name: 新浪网\n\nTitle: “全球大模型第一股”智谱与滴滴达成战略合作,探索出行 Agent 场景落地 - IT之家\nURL: https://www.i",
+    "isError": false,
+    "durationMs": 1155,
+    "createdAt": "2026-03-02T03:19:47.915Z"
+  },
+  {
+    "id": "b1738a06d91cf587",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_4b38a8122dec47fa89a88fc5"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:20:31.117Z"
+  },
+  {
+    "id": "8506dc8ddf670c4b",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI 被曝本月将发“博士级”超级 AI 智能体\nURL: https://new.qq.com/rain/a/20250120A04GE000\nDescription: 1 月 20 日消息,科技媒体 axios 昨日(1 月 19 日)发布博文,报道称 OpenAI 公司有望在 2025 年 1 月发布具备“博士级别”的超级 AI 智能体,用于执行复杂的人类任务。消息称 OpenAI CEO 山姆・阿尔特曼(Sam Altman)将于 1 月 30 日在华盛顿与美国政府官员会面,此次会议将展示 OpenAI 在 AI\nPublished date: 2025-01-20T12:30:18+08:00\nSite name: 腾讯网\n\nTitle: OpenAI 被曝本月将发“博士级”超级 AI 智能体AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2025-01-20/doc-inefqwaa0402071.shtml\nDescription: 日消息,科技媒体 axios 昨日(1 月19 日)发布博文,报道称 OpenAI 公司有望在 2025 年1月发布 具备“博士级别”的超级 AI 智能体,用于执行复杂的人类任务。 消息称 OpenAI CEO 山姆・阿尔特曼(Sam Altman)将于 1 月30 日在 华盛顿 与美国政府官员会面,此次会议将展示 OpenAI 在AI 技术方面的重大进展,核心是“博士级超级智能体”。 超级智能体的突破可能将生成式 AI 从一个有趣、酷炫的工具,转变为真正的人类劳动替代者。美国政府和领先 AI 公司的消息人士透露,近几个月来,领先的 AI 公司在 AI 发展方面已经超出了预期。 这些“超级智能体”能够处理大量数据、分析不同选项并交付最终产品,同时致力于实现特定目标,阿尔特曼还将基于 OpenAI 近期发布的美国 AI 经济蓝图,讨论 AI 对经济增长的潜在影响。 IT之家援引消息源报道,有猜测称 OpenAI 将在 1 月份推出一款名为“Operator”的智能体,但一些业内人士对其可靠性表示怀疑。 海量资讯、精准解读,尽在新浪财经APP\nPublished date: 2025-01-20T20:31:00+08:00\nSite name: 新浪财经\n\nTitle: OpenAI计划2025年推出“博士级”超级AI智能体- DoNews\nURL: https://www.donews.com/news/detail/4/4712549.html\nDescription: 科技媒体axios近日报道,OpenAI有望在2025年1月发布一款具备“博士级别”能力的超级AI智能体,该智能体将能够执行复杂的人类任务。OpenAI CEO山姆・阿尔特曼计划于1月30日在华盛顿与美国政府官员会面,展示公司在AI技术方面的重大进展,特别是“博士级超级智能体”的开发成果。 这一突破性进展可能将生成式AI从一种有趣的技术工具转变为真正的人类劳动替代者。消息人士透露,近几个月来,领先的AI公司在技术发展方面已超出预期。这些超级智能体能够处理大量数据、分析不同选项并交付最终产品,同时致力于实现特定目标。阿尔特曼还将基于OpenAI近期发布的美国AI经济蓝图,讨论AI对经济增长的潜在影响。 此外,有猜测称OpenAI可能在1月份推出一款名为“Operator”的智能体,但部分业内人士对其可靠性表示怀疑。\nPublished date: 2025-01-20T12:19:02+08:00\nSite name: DoNews\n\nTitle: OpenAI计划2025年推出“博士级”超级AI智能体\nURL: http://t.cj.sina.cn/articles/view/1654203637/629924f50200133d2\nDescription: 科技媒体axios近日报道,OpenAI有望在2025年1月发布一款具备“博士级别”能力的超级AI智能体,该智能体将能够执行复杂的人类任务。OpenAI CEO山姆・阿尔特曼计划于1月30日在华盛顿与美国政府官员会面,展示公司在AI技术方面的重大进展,特别是“博士级超级智能体”的开发成果。\n这一突破性进展可能将生成式AI从一种有趣的技术工具转变为真正的人类劳动替代者。消息人士透露,近几个月来,领先的AI公司在技术发展方面已超出预期。这些超级智能体能够处理大量数据、分析不同选项并交付最终产品,同时致力于实现特定目标。阿尔特曼还将基于OpenAI近期发布的美国AI经济蓝图,讨论AI对经济增长的潜在影响。\n此外,有猜测称OpenAI可能在1月份推出一款名为“Operator”的智能体,但部分业",
+    "isError": false,
+    "durationMs": 768,
+    "createdAt": "2026-03-02T03:20:31.885Z"
+  },
+  {
+    "id": "b0e94384994c98c1",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_1db3b4d3ac0e4b37b8ada822"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:20:33.106Z"
+  },
+  {
+    "id": "36f6ef7a89a92ea7",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年AI大模型发展现状、商业化关键及未来应用前景分析报告_数据局\nURL: http://www.shujuju.cn/lecture/detail/33452\nDescription: 关注数据局微信公众号,击数据局公众号“ 报告下载 ”菜单,获取网盘链接下载。 或者加入 数据局知识星球 ,获取更加优质的服务: 附件下载\nPublished date: 2025-01-14T16:28:34+08:00\nSite name: www.shujuju.cn\n\nTitle: 2025年AI大模型发展现状、商业化关键及未来应用前景分析报告-CSDN博客\nURL: https://blog.csdn.net/kymdidicom/article/details/145195289\nDescription: 互联互通社区 于2025-01-16 08:17:07 发布 尽管2024年以来,全球可获取的训练数据有限,OpenAI GPT-5发布延期等事件引发了业内对大模型性能迭代放缓的质疑,但AI大模型的性能仍在持续提升。根据Scaling Law,大模型的性能与计算量、参数规模和数据量密切相关。虽然训练数据端的边际效益逐渐放缓,但通过合成数据和推理阶段的创新,大模型的性能增长潜力依然强劲。 OpenAI、Anthropic和Meta等大模型厂商正在积极探索合成数据方向。OpenAI的o1模型通过高质量的合成数据降低模型错误率,Anthropic的Claude 3.5 Sonnet在多个测试中表现优于GPT-4o。Meta的Llama 3.1 405B模型在约15万亿tokens的公开数据上进行训练,微调数据涵盖了超过2500万个合成数据示例。 关注公众号:【互联互通社区】,回复【AI542】获取全部报告内容。 以下是报告部分内容 人工智能 关注互联互通社区公众号,回复以下编号,可快速下载相关专题报告合辑。 AI001:人工智能核心技术产业白皮书 AI002:2021爱分析人工智能应用趋势报告 AI003:人工智能数据安全风险与治理 AI004:2020年人工智能十大技术进展 AI005:2020中国人工智能厂商全景报告 AI006:2020年中国人工智能商业落地 AI007:新一代人工智能白皮书 AI008:人工智能未来制胜之道 AI009:人工智能新基建发展白皮书 AI010:腾讯人工智能白皮书 AI011:5GAI典型案例 AI012:AI+高等教育发展与应用白皮书 AI013:中国AI+零售行业发展研究报告 AI014:百度大脑AI技术成果白皮书 AI015:AI产业全景图 AI016:2020中国AI中台应用趋势报告 AI017:2021AI智能制造研究报告 A\nPublished date: 2025-01-16T08:17:07+08:00\nSite name: CSDN\n\nTitle: Website:www.aigovernancereview.com\nURL: https://www.siss.sh.cn/cms/contentcore/resource/download?ID=95639\nDescription: June, 2021 Shanghai Institute for Science of Science Website:www.aigovernancereview.com The report editor can be reached at globalaigovernance@gmail.com We welcome any comments on this report and any communication related to AI governance.\nPublished date: 2025-01-18T15:33:43+08:00\nSite name: www.siss.sh.cn\n\nTitle: 付费ai大模型网站,rpa,机器人,自动化\nURL: https://www.wdlinux.cn/html/aiwangzhan/20250120/63580.html\nDescription: 时间:2025-01-20 12:36:08 来源:互联网 作者: AI导航网,AI网站大全,AI工具大全,AI软件大全,AI工具集合,AI编程,AI绘画,AI写作,AI视频生成,AI对话聊天等更多内容请查看https://aiaiv.cn/aigcrank.cn国内外AI大语言模型API价格对比 | AI排行榜官网我们为您提供最新的大语言模型(LLM)的价格数据,以及一些免费的AI大模型API。 通过我们的平台,您可以轻松查找和比较OpenAI、Claude",
+    "isError": false,
+    "durationMs": 427,
+    "createdAt": "2026-03-02T03:20:33.533Z"
+  },
+  {
+    "id": "a1fec05798bde4ea",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_fef8e2dcf8424059aeae52a3"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:20:35.353Z"
+  },
+  {
+    "id": "35f66f5453b88640",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 科大讯飞发布全国产算力大模型X1,引领人工智能新思考_领域_深度_力在\nURL: https://www.sohu.com/a/849902548_122006510\nDescription: 科大讯飞于2025年1月7日和15日连续举办发布会,推出多款新产品｡其中,基于全国产算力平台训练的深度推理模型X1尤为引人注目｡X1的发布标志着国产算力在人工智能领域的突破,打破了国外算力在高端模型训练领域的垄断｡此外,科大讯飞还提出了“慢思考”的理念,强调深度推理模型在解题过程中的理性与深度｡这一理念与理想汽车的自动驾驶能力相似,通过快慢思考的配合,实现更高效的解题过程｡\nPublished date: 2025-01-17T03:26:00+08:00\nSite name: 搜狐\n\nTitle: 2025年开年开源社区热闹非凡:国产大模型接力“秀肌肉”工作流_网易订阅\nURL: https://www.163.com/dy/article/JMEOTJKF05199NPP.html?spss=dy_author\nDescription: 2025年的第一个月,国产大模型在开源社区“热了”起来｡ 几天前,MiniMax发布并开源了全新系列模型MiniMax-01,包括基础语言大模型MiniMax-Text-01和视觉多模态大模型MiniMax-VL-01｡ 1月20日,DeepSeek发布DeepSeek-R1,并同步开源模型权重｡仅隔一天,腾讯混元宣布开源3D生成大模型2.0版本｡ \nPublished date: 2025-01-21T17:54:07+08:00\nSite name: 网易\n\nTitle: 国产大模型进入验收期 模型能力将在2025年突破爆发临界点_市场测评_市场_中金在线\nURL: http://sc.stock.cnfol.com/shichangceping/20250121/31121627.shtml\nDescription: 近期,国产大模型迎来一波密集更新｡豆包实时语音大模型正式在豆包APP(7.2.0新春版)全量开放;DeepSeek正式发布DeepSeek-R1,并同步开源模型权重;Kimi全新SOTA模型——k1.5多模态思考模型上线;MiniMax发布全新开源模型系列Minimax-01｡银河证券表示,国内头部科技公司持续加码AI,大模型逐渐兑现商业价值;中信证券指出,当前是模型能力全面爆发的前夜,预计将在2025年突破爆发临界点;\nPublished date: 2025-01-21T16:36:21+08:00\nSite name: 中金在线\n\nTitle: 2025年1月15日,讯飞星火大模型升级发布,... 来自凤凰网科技 - 微博\nURL: https://weibo.com/1856404484/P9EDq3Drj\nDescription: 2025年1月15日,讯飞星火大模型升级发布,正式发布星火深度推理模型X1,讯飞星火4.0 Turbo底座能力迎来全新升级,同时首发星火语音同传大模型O凤凰网科技的微博直播  以下为博主精选评论 同时转发到我的微博 正在加载,请稍候... 凤凰网科技频道官方微博 3 公司 凤凰网科技频道 Ü 简介: 凤凰科技,聚焦最新科技资讯和产品,提供深入独到趋势分析,欢迎关注微信账号:凤凰网科技(ifeng_tech) 1682 关注 4599310 粉丝 122756 微博 \nPublished date: 2025-01-15T09:30:30+08:00\nSite name: 微博\n\nTitle: 2025年,绝对是人工智能大模型的井喷之年,科大讯飞准备接管行业,行使定价权、话语权。我这么说,可不是空穴来风,1月15日,2025年刚开年,科大...\nURL: https://www.toutiao.com/w/1821322416147530/\nDescription: 2025年,绝对是人工智能大模型的井喷之年,科大讯飞准备接管行业,行使定价权､话语权｡ 我这么说,可不是空穴来风,1月15日,2025年刚开年,科大讯飞就整了个王炸,发布了唯一基于全国产算力的深度推理大模型X1,中文数学能力国内第一｡目前已经应用于教育､医疗等刚需场景｡ 我说人工智能大模型井喷,绝不仅仅是算力的提升,核心应该是应用的落地｡ \nPublished date: 2025-01-15T21:40:00+08:00\nSite name: 今日头条\n\nTitle: 中国信通院发布高质量大模型基础设施研... 来自中国信息通信研究院 - 微博\nURL: https://weibo.com/2618726865/Pa0Fhv2oX?from=page_1001062",
+    "isError": false,
+    "durationMs": 1087,
+    "createdAt": "2026-03-02T03:20:36.440Z"
+  },
+  {
+    "id": "cedae0efa48b9257",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_e3fc500f957a46b5bd0a5031"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:20:37.178Z"
+  },
+  {
+    "id": "c08e17bcf0c5d0c7",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title:  2025年AI大模型发展现状、商业化关键及未来应用前景分析报告 - 道客巴巴 \nURL: https://www.doc88.com/p-99720507294942.html\nDescription: 图案背景 纯色背景 下载 打印 视图 标记 批注 批注本地保存成功,开通会员云端永久保存 去开通 粉丝量:1 知识研报,活动策划 下载此文档 相关 目录 笔记 书签 暂无目录 点击鼠标右键菜单,创建目录 暂无笔记 选择文本,点击鼠标右键菜单,添加笔记 暂无书签 在左侧文档中,点击鼠标右键,添加书签 下载积分: 1500 内容提示: 2025 年深度行业分析研究报告 2025 年深度行业分析研究报告\nPublished date: 2025-01-14T05:28:23+08:00\nSite name: 道客巴巴\n\nTitle: 2025年AI大模型发展现状、商业化关键及未来应用前景分析报告_数据局\nURL: http://www.shujuju.cn/lecture/detail/33452\nDescription: 关注数据局微信公众号,击数据局公众号“ 报告下载 ”菜单,获取网盘链接下载。 或者加入 数据局知识星球 ,获取更加优质的服务: 附件下载\nPublished date: 2025-01-14T16:28:34+08:00\nSite name: www.shujuju.cn\n\nTitle: 2025年打造大模型技术产业生态策略方案.pdf\nURL: https://m.book118.com/html/2025/0117/8071053106007022.shtm\nDescription: 1/ 9 页\n2/ 9 页\n预览加载中,请您耐心等待几秒...\n3/ 9 页\n预览加载中,请您耐心等待几秒...\n4/ 9 页\n预览加载中,请您耐心等待几秒...\n5/ 9 页\nPublished date: 2025-01-18T08:00:00+08:00\nSite name: 原创力文档\n\nTitle: 2025年AI大模型发展现状、商业化关键及未来应用前景分析报告_Scaling_白皮书_Law\nURL: https://www.sohu.com/a/849198205_121094725\nDescription: 2025年深度行业分析研究报告详细探讨了AI大模型在多个领域的应用和发展趋势。首先,报告指出,AI大模型的性能提升并未遇到真正的瓶颈。尽管Scaling Law在数据有限的情况下遇到了挑战,但通过合成数据和推理阶段的创新,模型性能仍在持续提升。推理成本的下降也为AI应用的普及提供了有力支持,硬件和算法的优化使得模型效率显著提升。 每日精选报告,公众号:参一江湖 公众号:参一江湖 近期分享: 2025AIGC产业发展及应用白皮书 2025年中国白酒行业消费白皮书 2025中国乡村数字化发展研究报告 2025年12大兴趣消费趋势 2025中国新消费趋势白皮书 2025抖音趋势赛道风向标 返回搜狐,查看更多\nPublished date: 2025-01-15T11:36:00+08:00\nSite name: 搜狐\n\nTitle: 2025年AI大模型发展现状、商业化关键及未来应用前景分析报告\nURL: https://m.sohu.com/a/849198205_121094725/?pvid=000115_3w_a\nDescription: 2025年深度行业分析研究报告详细探讨了AI大模型在多个领域的应用和发展趋势。首先,报告指出,AI大模型的性能提升并未遇到真正的瓶颈。尽管Scaling Law在数据有限的情况下遇到了挑战,但通过合成数据和推理阶段的创新,模型性能仍在持续提升。推理成本的下降也为AI应用的普及提供了有力支持,硬件和算法的优化使得模型效率显著提升。 每日精选报告,公众号:参一江湖 公众号:参一江湖 近期分享: 2025AIGC产业发展及应用白皮书 2025年中国白酒行业消费白皮书 2025中国乡村数字化发展研究报告 2025年12大兴趣消费趋势 2025中国新消费趋势白皮书 2025抖音趋势赛道风向标\nPublished date: 2025-01-15T19:36:00+08:00\nSite name: 手机搜狐网\n\nTitle: 2025年中国人工智能大模型行业市场运行态势、市场规模及发展趋势研究报告.docx - 人人文库\nURL: https://www.renrendoc.com/paper/382055772.html\nDescription: 全文预览已结束 下载本文档 版权说明:本文档由用户提供并上传,收益归属内容提供方,若内容存在侵权,请进行举报或认领 文档",
+    "isError": false,
+    "durationMs": 327,
+    "createdAt": "2026-03-02T03:20:37.505Z"
+  },
+  {
+    "id": "3be5e6a97ac761c9",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_967483a3b34b49a398097555"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:21:52.063Z"
+  },
+  {
+    "id": "0eddadd9d14f13ee",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 中文大模型基准测评2025年年度报告:2026开年特别版,含1月底重磅模型动态评测.pdf - 文档下载 - 未来智库\nURL: https://www.vzkoo.com/document/4633409651361189888.html\nDescription: 中文大模型基准测评2025年年度报告:2026开年特别版,含1月底重磅模型动态评测.pdf\n上传者:J***\n时间:2026/02/05\n热度:16\n0人点赞\n举报\n中文大模型基准测评2025年年度报告:2026开年特别版,含1月底重磅模型动态评测。自2022年1\n1月30日ChatGPT发布以来,AI大模型在全球范围内掀起了有史以来规模最大的人工智能浪潮。国内外AI机构在过去3年里有了实质性的突破。具体可分为三个时期:百模大战与多模态萌芽、多模态爆发与推理突破、智能体崛起与生态重构。\n格式:pdf\n大小:6.8M\n页数:74\n价格:\n6积分\n下载\n获取积分\n免责声明:本文\n/\n资料由用户个人上传,平台仅提供信息存储服务,如有侵权请联系删除。\nPublished date: 2026-02-05T00:00:00+08:00\nSite name: 未来智库\n\nTitle: AI-day1 - xhylwq - 博客园\nURL: https://www.cnblogs.com/xhybk/p/19563323\nDescription: 大模型核心知识点梳理(通俗版+实例)\n一、大模型发展史与核心基础\n1.\n发展历程(关键时间节点)\n大模型的发展核心是“架构突破+模型迭代”,关键节点清晰:2017年Google提出Transformer架构(相当于给大模型搭好了“骨架”)→2022年OpenAI发布GPT-4(大模型能力迎来质变,能\nPublished date: 2026-02-02T11:26:00+08:00\nSite name: 博客园\n\nTitle: OpenAI计划本周推出升级版对话模型_腾讯新闻\nURL: https://news.qq.com/rain/a/20260210A016E500\nDescription: 一则内部Slack消息显示,奥特曼上周五告知OpenAI员工,旗下热门人工智能聊天机器人ChatGPT的月度增速“重回10%以上”。奥特曼还透露,OpenAI将于本周推出“升级版对话模型”。(新浪财经)\nPublished date: 2026-02-10T07:05:09+08:00\nSite name: 腾讯网\n\nTitle: 中信建投:OpenAI落地广告变现,大模型商业化加速中\nURL: https://www.stcn.com/article/detail/3628694.html\nDescription: 人民财讯2月4日电,中信建投指出,ChatGPT首批广告将在2026年2月初上线,仅面向免费及Go订阅层用户,初期按CPM(展示次数)收费。中信建投认为OpenAI广告变现较克制,且回答不给予广告权重,较好平衡了用户体验;异于移动互联网时代,大模型边际成本不会随用户增长而降低,算力等成本反而随用户增长、对话量增加而增长,挖掘免费用户商业价值是打通商业闭环的必经之路,广告等多元变现方式是To\nC属性较强的大模型公司的必选。\n声明:证券时报力求信息真实、准确,文章提及内容仅供参考,不构成实质性投资建议,据此操作风险自担\n下载“证券时报”官方APP,或关注官方微信公众号,即可随时了解股市动态,洞察政策信息,把握财富机会。\nPublished date: 2026-02-04T07:50:00+08:00\nSite name: 证券时报\n\nTitle: OpenAI发布GPT-5.1 智商与情商深度融合-爱科技\nURL: http://news.imobile.com.cn/articles/2025/1113/232623.shtml\nDescription: OpenAI正式推出GPT-5.1模型,此次更新以“智商与情商深度融合”为核心,在推理能力优化的同时,强化情绪价值供给与个性化交互体验,回应了此前用户对AI“工具感过强”的反馈。目前该模型正逐步向全球用户推送,付费用户可在3个月内保留旧版GPT-5模型过渡。GPT-5.1包含Instant与Thinking两大核心模型,均实现针对性优化。作为最常被调用的GPT-5.1\nInstant模型,首次引入“自适应推理”功能——面对数学题、编程等复杂任务时会主动延长思考时间以提升准确率,简单问题则保持极速响应,在AIME\n2025数学测试与Codeforces编程评估中表现显著提升。\n高阶模型GPT-5.1\nThinking则聚焦效率与易懂性,能智能分配思考时长,复杂任务",
+    "isError": false,
+    "durationMs": 458,
+    "createdAt": "2026-03-02T03:21:52.521Z"
+  },
+  {
+    "id": "6db8722c7598c21f",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_673f6dcefa9945e3b5cc44ee"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:21:53.125Z"
+  },
+  {
+    "id": "1eb22668e03194d2",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Anthropic 新模型 Claude 5 发布在即,或凭低价高性能改写编程模型格局-太平洋科技\nURL: https://www.pconline.com.cn/ai/2085/20851852.html\nDescription: Anthropic\n下一代大模型\nClaude\nSonnet5(代号\nFennec)部署于谷歌基础设施,发布在即。它虽是中端\nSonnet\n系列,多项测试表现却超旗舰\nClaude\nOpus4.5。推理成本降,定价或为\nOpus4.5\n的\n50%,有\n100\n万\ntoken\n上下文窗口,SWE\n-\nBench\n成绩超\n80.9%。还具备“蜂群”架构的\nDev\nTeam\n功能。这背后,其通过价格战和“蜂群”开发模式实现性能突破。它意在阻击\nOpenAI\n的\nCodex\n全家桶,而\nAnthropic\n在企业市场占有率达\n40%,Claude\nCode\n半年年化收入破\n10\n亿美元,或改变编程模型市场格局。\nPublished date: 2026-02-03T17:28:00+08:00\nSite name: 太平洋科技\n\nTitle: AI日报:谷歌发布Gemini3.1Pro;Qwen3.5开源家族新增多款模型;Claude Code远程控制功能上线_腾讯新闻\nURL: https://news.qq.com/rain/a/20260225A05FEB00\nDescription: 1、推理性能翻倍!谷歌发布\nGemini\n3.1\nPro,多项基准测试超越\nGPT-5.22、Anthropic重磅更新!Claude\nCode“远程控制”功能上线,手机秒变电脑终端神器3、全线开放!OpenAI\n发布\nGPT-5.3-Codex:深度融合推理能力的“最强编程智能体”4、通义千问Qwen3.5开源家族新增多款模型,并上线托管服务5、拒绝AI训练“哑火”!Meta\n开源\nGPU\n集群监控利器\nGCM,精准捕捉硬件“隐形杀手”6、告别复制粘贴!Anthropic\n发布企业级插件,Claude\n深度植入\nOffice\n办公全家桶7、打破语言孤岛!谷歌AI虚拟形象支持\n24\n种语言:跨时空、跨文化,“数字人”沟通进入无障碍时代8、Agent\n成本炸穿?阿里云\nCoding\nPlan\n祭出“7.9元全家桶”破局1.\n推理性能翻倍!谷歌发布\nGemini\n3.1\nPro,多项基准测试超越\nGPT-5.2谷歌发布了新一代大语言模型Gemini3.1Pro,在核心推理能力和多模态处理上取得重大突破,其表现远超当前市场上的竞争对手,展现了强大的技术实力和应用潜力。亮点提要:易\n推理性能跃升:Gemini3.1Pro在核心推理测试中得分较前代提升逾两倍,并在HLE测试中超越了GPT-5.2。易\n全新架构支持:首次采用“.1”版本命名,基于Core\nIntelligence架构,重点强化了模型解决复杂问题的逻辑能力。\n多模态与长文本:支持百万级Token上下文输入,并具备将复杂概念直接生成图表或SVG动画的创新功能。2.\nAnthropic重磅更新!Claude\nCode“远程控制”功能上线,手机秒变电脑终端神器Anthropic为Claude\nCode用户带来了全新的‘Remote\nControl’功能,使开发者能够通过手机或平板无缝接管电脑上的编码任务,实现随时随地的\nPublished date: 2026-02-25T16:45:11+08:00\nSite name: 腾讯网\n\nTitle: 深入解析:Claude vs ChatGPT vs Gemini: 기능 비교, 사용 경험, 적합 인군 - yangykaifa - 博客园\nURL: https://www.cnblogs.com/yangykaifa/p/19567187\nDescription: Claude\nvs\nChatGPT\nvs\nGemini:\n기능\n비교,\n사용\n경험,\n적합\n인군2025년\nAI\n시대에서\nClaude(Anthropic\n개발),\nChatGPT(OpenAI의\n플래그십\n제품)\n및\nGemini(Google의\nAI\n모델)는\n가장\n인기\n있는\n대형\n언어\n모\nPublished date: 2026-02-03T08:12:00+08:00\nSite name: 博客园\n\nTitle: Claude Sonnet 5泄漏,因API故障延迟发布?|服务器|claude_网易订阅\nURL: https://www.163.com/dy/article/KKU11BI705566ZHB.html\nDescription: Anthropic的新版模型Claude\nSonnet\n5\n似乎被泄漏。综合目前流出",
+    "isError": false,
+    "durationMs": 239,
+    "createdAt": "2026-03-02T03:21:53.364Z"
+  },
+  {
+    "id": "84d0cfad43af4f12",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_3ff6b799d0a548bbb7106757"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:22:10.123Z"
+  },
+  {
+    "id": "bd1ba40ac2501f73",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年中国AI大模型普及率及备案情况预测分析(图)-中商情报网\nURL: https://www.askci.com/news/chanye/20260226/150345277208942318711247.shtml\nDescription: 中商情报网讯:目前,国产AI大模型技术已进入全球第一梯队,形成了以百度、阿里、DeepSeek等领军企业为主导的多元化发展格局。这些企业在通用大模型、多模态理解、推理能力等方面持续创新,并通过开源策略大幅降低技术应用门槛。\n普及率\nAI大模型用户规模的持续扩张与备案制度带来的市场信任度提升,中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,截至2025年12月,我国生成式人工智能普及率达42.8%,同比大幅提高25.2个百分点。中商产业研究院分析师预测,到2026年,普及率有望继续增长,超过50%。\n数据来源:中商产业研究院整理\n备案情况\n中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,2025年全年新增446款生成式人工智能服务在国家网信办完成备案,对于通过API接口或其他方式直接调用已备案模型能力的生成式人工智能应用或功能。中商产业研究院分析预测,到2026年,新增备案数量将达651款。\n数据来源:中商产业研究院整理\n更多资料请参考中商产业研究院发布的《大模型系列之中国AI大模型行业前景与市场趋势洞察专题研究报告》,同时中商产业研究院还提供产业大数据、产业情报、行业研究报告、行业白皮书、行业地位证明、可行性研究报告、产业规划、产业链招商图谱、产业招商指引、产业链招商考察&推介会、“十五五”规划等咨询服务。\nPublished date: 2026-02-26T15:03:00+08:00\nSite name: 中商情报网\n\nTitle: 中文大模型基准测评2025年年度报告:2026开年特别版,含1月底重磅模型动态评测.pdf - 文档下载 - 未来智库\nURL: https://www.vzkoo.com/document/4633409651361189888.html\nDescription: 中文大模型基准测评2025年年度报告:2026开年特别版,含1月底重磅模型动态评测.pdf\n上传者:J***\n时间:2026/02/05\n热度:16\n0人点赞\n举报\n中文大模型基准测评2025年年度报告:2026开年特别版,含1月底重磅模型动态评测。自2022年1\n1月30日ChatGPT发布以来,AI大模型在全球范围内掀起了有史以来规模最大的人工智能浪潮。国内外AI机构在过去3年里有了实质性的突破。具体可分为三个时期:百模大战与多模态萌芽、多模态爆发与推理突破、智能体崛起与生态重构。\n格式:pdf\n大小:6.8M\n页数:74\n价格:\n6积分\n下载\n获取积分\n免责声明:本文\n/\n资料由用户个人上传,平台仅提供信息存储服务,如有侵权请联系删除。\nPublished date: 2026-02-05T00:00:00+08:00\nSite name: 未来智库\n\nTitle: 2026年中国AI大模型行业市场前景预测研究报告(简版)-中商情报网\nURL: https://m.askci.com/news/chanye/20260211/085306277077118602741087.shtml\nDescription: 2026年中国AI大模型行业市场前景预测研究报告(简版)\n中商产业研究院\n2026-02-11\n08:53\n中商情报网讯:目前,国产AI大模型技术已进入全球第一梯队,形成了以百度、阿里、DeepSeek等领军企业为主导的多元化发展格局。这些企业在通用大模型、多模态理解、推理能力等方面持续创新,并通过开源策略大幅降低技术应用门槛。\n一、AI大模型定义\nAI大模型是通过深度学习算法和人工神经网络训练出的具有庞大规模参数的人工智能模型。AI大模型具有强大的计算和学习能力,能够处理大量的数据,适应不同的业务场景和语言环境,并通过学习和推理来完成各种任务,实现更高效、更准确地语义理解和应用。\n目前,AI大模型具有参数规模庞大、结构复杂、通用性强、多模态处理能力等特点。\n资料来源:中商产业研究院整理\n二、AI大模型行业发展政策\n近年来,中国AI大模型行业受到各级政府的高度重视和国家产业政策的重点支持。国家陆续出台了多项政策,鼓励AI大模型行业发展与创新,《信息化标准建设行动计划(2024—2027年)》《关于深化智慧城市发展推进城市全域数字化转型的指导意见》《加快数字人才培育支撑数字经济发展行动方案(2024-2026年)》等产业政策为AI大模型行业的发展提供了明确、广阔的市",
+    "isError": false,
+    "durationMs": 450,
+    "createdAt": "2026-03-02T03:22:10.573Z"
+  },
+  {
+    "id": "91d22395ceba0cb9",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_0b86a67c6b6d49a588a1f8b2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:22:17.993Z"
+  },
+  {
+    "id": "fe972603bcd7f07a",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025 - Welcome\nURL: http://liumh.iccas.ac.cn/web/guest/home?_8_day=30&_8_month=2&_8_struts_action=/calendar/view&_8_year=2025&p_p_id=8&p_p_mode=view&p_p_state=maximized&tabs1=year\nDescription: 一月 \n 日 \n 一 \n 二 \n 三 \n 四 \n 五 \n 六 \n21 22 23 24 25\n27 28 29 30 31 1\n 日 \n 一 \n 二 \n 三 \n 四\nPublished date: 2025-03-13T20:30:49+08:00\nSite name: liumh.iccas.ac.cn\n\nTitle: 2025 - Welcome\nURL: http://jianglei.iccas.ac.cn/web/guest/home?_8_day=15&_8_month=2&_8_struts_action=/calendar/view&_8_year=2025&p_p_id=8&p_p_mode=view&p_p_state=maximized&tabs1=year\nDescription: 一月 \n 日 \n 一 \n 二 \n 三 \n 四 \n 五 \n 六 \n29 30 31 1 \n5 6 7 8 9 10 11\n12 13 14 17 18\n4 5 6 7 8\n 二月 \n 日 \n 一 \n 二 \n 三 \n 四 \n 五 \n 六 \n26 27 28 29 30 31 1\n2 3 4 5 6 7 8\n9 10 11 12 13 14 15\n16 17 18 19 20 21 22\n23 24 25 26 27 28 1\n2 3 4 5 6 7 8\n 三月 \n 日 \n 一 \n 二 \n 三 \n 四 \n 五 \n 六 \n23 24 25 26 27 28 1\n2 3 4 5 6 7 8\n9 10 11 12 13 14 15\n16 17 18 19 20 21 22\n23 24 25 26 27 28 29\n30 31 1 2 3 4 5\n 四月 \n 日 \n 一 \n 二 \n 三 \n 四 \n 五 \n 六 \n30 31 1 2 3 4 5\n6 7 8 9 10 11 12\n13 14 15 16 17 18 19\n20 21 23 25 26\n5 7 8 9 10\n 五月 \n 日 \n 一 \n 二 \n 三 \n 四 \n 五 \n 六 \n27 28 29 30 1 2 3\n4 5 6 7 8 9 10\n11 12 13 14 15 16 17\n18 19 20 21 22 23 24\n25 26 27 28 29 30 31\n1 2 3 4 5 6 7\n 六月 \n 日 \n 一 \n 二 \n 三 \n 四 \n 五 \n 六 \n1 2 3 4 5 6 7\n8 9 10 11 12 13 14\n15 16 17 18 19 20 21\n22 23 24 25 26 27 28\n29 30 1 2 3 4 5\n6 7 8 9 10 11 12\n 七月 \n 日 \n 一 \n 二 \n 三 \n 四 \n 五 \n 六\nPublished date: 2025-03-02T14:30:48+08:00\nSite name: jianglei.iccas.ac.cn\n\nTitle: 2025 - Welcome\nURL: http://jianglei.iccas.ac.cn/web/guest/home?_8_day=27&_8_eventType=&_8_month=8&_8_struts_action=/calendar/view&_8_tabs1=year&_8_year=2025&p_p_col_id=column-1&p_p_id=8&p_p_state=maximized\nDescription: 一月 \n 日 \n 一 \n 二 \n 三 \n 四 \n 五 \n 六 \n24 25\n31 \n 日 \n 一 \n 二 \n 三 \n 四\nPublished date: 2025-03-24T08:30:51+08:00\nSite name: jianglei.iccas.ac.cn\n\nTitle: 2025 - Welcome\nURL: http://jczhao.iccas.ac.cn/web/guest/home?_8_day=17&_8_eventType=&_8_month=8&_8_struts_action=/calendar/view&_8_tabs1=year&_8_year=2025&p_p_col_id=column-1&p_p_id=8&p_p_state=max",
+    "isError": false,
+    "durationMs": 517,
+    "createdAt": "2026-03-02T03:22:18.510Z"
+  },
+  {
+    "id": "b53081b221435893",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_9d1732b1507247f0ab1121b9"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:22:34.596Z"
+  },
+  {
+    "id": "06ebd6ae83166cd5",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年2月人工智能前沿发展总结_2025 年2月3日,谷歌与 openai 强强 联手推出 deep research-CSDN博客\nURL: https://blog.csdn.net/hanmo22357/article/details/145410292\nDescription: 文章目录 2月1日OpenAI 发布 o3-mini【重要】2月3日OpenAI 发布 Deep Research【重要】2月4日Qwen2.5-Max 进入大模型竞技场前十2月6日Gemini 2.0 系列模型大更新【重要】ChatGPT Search 全面开放2月7日o3-mini 推理思维链公开2月9日谷歌发布 AlphaGeometry-2【重要】2月10日Meta 发布新视频生成框架2月13日百度宣布文心一言将免费【重要】2月14日DeepSeek 官方发布部署设置【重要】苹果发现模型蒸馏 Scaling Law昆仑万维发布国内首个自研空间智能AI2月15日Perplexity 推出免费 Deep Research【重要】2月16日微信接入满血版 DeepSeek-R1【重要】2月17日扩散语言模型LLaDA发布百度搜索全面接入 DeekSeek群核智能成为全球空间智能第一股2月18日阶跃发布全球最大开源视频模型Grok-3 系列模型正式发布【重要】2月19日超强大模型后训练工具箱发布2月20日微软发布全球首个拓扑量子芯片【重要】iPhone-16e 正式上线2月21日FigureAI 发布具身大模型 Helix【重要】2月23日月之暗面开源改进版 Muon 优化器2月24日DeepSeek 开源 FlashMLA【重要】2月25日Claude-3.7-Sonnet 发布【重要】阿里发布旗舰推理模型 QwQ-Max2月25日何恺明开辟生成模型全新范式阿里开源最强视频生成模型2月26日GPT-4.5 正式发布【重要】 2月1日OpenAI 发布 o3-mini【重要】 OpenAI发布了新的模型 o3-mini,该模型在此次发布中包含 low、medium 和high 三个版本。OpenAI表示,o3-mini 模型是其推理模型系列中最新、最具成本效益的模型。该模型\nPublished date: 2025-03-30T17:24:29+08:00\nSite name: CSDN\n\nTitle: 2025年人工智能行业研究报告:OpenAI引领AGI“泛化”与商业化加速 - 远瞻慧库\nURL: https://www.baogaobox.com/insights/250301000007819.html\nDescription: 本篇文章的部分核心观点、图表及数据,出自甬兴证券于2025年2月18日发布的报告《AI行业专题报告:OpenAI\n12天发布会总结——向AGI“泛化”》,如需获得原文,请前往文末下载。\n2025年,人工智能(AI)行业迎来了前所未有的发展机遇,其中OpenAI作为行业的领军者,通过一系列重大更新和战略布局,正在加速推动从底层工具向通用人工智能(AGI)的“泛化”进程。本文将深入分析OpenAI在技术迭代、用户体验提升、商业闭环构建等方面的核心进展,并探讨其对未来AI行业发展的深远影响。\n关键词:人工智能、OpenAI、AGI、技术迭代、用户体验、商业化、行业趋势\n一、技术迭代加速,AGI能力显著提升\nOpenAI在2025年2月的12天发布会中,展示了其在技术迭代方面的强大实力。其中,o3模型的发布成为本次发布会的亮点之一。o3模型在ARC-AGI基准测试中的表现尤为突出,高计算设置下得分高达87.5%,远超前代o1系列的25%。这一成绩不仅证明了o3模型在推理能力上的显著提升,也标志着OpenAI在AGI领域的技术突破。\no3模型的另一大创新在于其训练端的新范式——deliberative\nalignment。这种新范式通过减少对人工标注训练内容的依赖,极大地提升了模型的训练效率和泛化能力。与传统的监督学习相比,deliberative\nalignment通过强化学习的方式,让模型在面对复杂任务时能够自主调整推理路径,从而更好地适应多样化的应用场景。\nOpenAI在底座模型的持续迭代中,也展现了其对技术细节的深度打磨。从Day1发布的完整版o1模型,到Day12的o3模型完整版和mini版,OpenAI通过不断优化模型架构和训练算法,逐步构建起一个更为强大、灵活的AI技术底座。这一技术底座不仅为OpenAI自身的应用开发提供了坚实支撑,也为整个AI行业的发展树立了新的标\nPublished date: 2025-03-02T21:26:00+08:00\nSite name: www.baog",
+    "isError": false,
+    "durationMs": 406,
+    "createdAt": "2026-03-02T03:22:35.002Z"
+  },
+  {
+    "id": "2ede66203789ff4e",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_3031a757cfaf48fe8dfaaf8b"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:22:35.778Z"
+  },
+  {
+    "id": "621a614e10b95865",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 报告丨2025年Deepseek技术全景解析:重塑全球AI生态的中国力量-电子工程专辑\nURL: https://www.eet-china.com/mp/a391204.html\nDescription: ·聚焦:人工智能、芯片等行业 欢迎各位客官关注、转发 前言 : 在 “大模型+大数据+大算力”的加持下, deepseek 能够通过自然语言交互完成多种任务,具备了多场景、多用途、跨学科的任务处理能力。 大模型被认为很可能像 PC时代的操作系统一样,成为未来人工智能领域的关键基础设施,引发了大模型的发展热潮。 作者  | 方文三 图片来源  |    网络  回顾其发展历史,2024年1月,发布第一版大模型—-DeepSeek LLM,这个版本使用传统的Transformer架构,但在训练方面,已经明显体现出DeepSeek团队通过不断优化训练策略,达到节约成本,提高效率的思想,这点也在后续的模型迭代中被发扬光大。 2024年5月,DeepSeek-V2发布,从这一代开始,DeepSeek模型开始使用混合专家(MoE)架构,这是传统Transformer架构的一种改进和扩展,该架构使DeepSeek模型能以更低的计算成本进行更复杂的推理,极大提升了模型的性能。 2024年12月,DeepSeek-V3上线并开源,V3版本对MoE架构进行了进一步优化,在维持低训练成本的同时,稳定性与多方面性能表现都达到了与领先闭源模型相当的水平。 2025年1月,DeepSeek-R1正式发布,R1模型的推理能力得到极大加强,与OpenAl-o1模型不相上下,且推理过程完全透明,因此在全球范围备受关注。 从低成本的DeepSeekV2,到超低价格的DeepSeek-V3,再到引起世界广泛关注的DeepSeek-R1,DeepSeek的成功主要依赖于DeepSeek自身深厚的技术积累和持续的技术创新突破。 DeepSeek通过创新的训练方法,如在预训练阶段加入强化学习,用较少的计算资源就达到了接近 GPT-01的性能,这使业界开始反思大算力在AI发展尤其是大模型训练过程中的必要性,部分企业预计\nPublished date: 2025-03-23T20:30:00+08:00\nSite name: www.eet-china.com\n\nTitle: 报告丨2025年Deepseek技术全景解析:重塑全球AI生态的中国力量\nURL: https://new.qq.com/rain/a/20250323A0677J00\nDescription: ·聚焦:人工智能、芯片等行业      欢迎各位客官关注、转发      前言:      在“大模型+大数据+大算力”的加持下,deepseek能够通过自然语言交互完成多种任务,具备了多场景、多用途、跨学科的任务处理能力。      大模型被认为很可能像PC时代的操作系统一样,成为未来人工智能领域的关键基础设施,引发了大模型的发展热潮。      作者| 方文三      图片来源 |网 络      回顾其发展历史,2024年1月,发布第一版大模型—-DeepSeek LLM,这个版本使用传统的Transformer架构,但在训练方面,已经明显体现出DeepSeek团队通过不断优化训练策略,达到节约成本,提高效率的思想,这点也在后续的模型迭代中被发扬光大。      2024年5月,DeepSeek-V2发布,从这一代开始,DeepSeek模型开始使用混合专家(MoE)架构,这是传统Transformer架构的一种改进和扩展,该架构使DeepSeek模型能以更低的计算成本进行更复杂的推理,极大提升了模型的性能。      2024年12月,DeepSeek-V3上线并开源,V3版本对MoE架构进行了进一步优化,在维持低训练成本的同时,稳定性与多方面性能表现都达到了与领先闭源模型相当的水平。      2025年1月,DeepSeek-R1正式发布,R1模型的推理能力得到极大加强,与OpenAl-o1模型不相上下,且推理过程完全透明,因此在全球范围备受关注。      从低成本的DeepSeekV2,到超低价格的DeepSeek-V3,再到引起世界广泛关注的DeepSeek-R1,DeepSeek的成功主要依赖于DeepSeek自身深厚的技术积累和持续的技术创新突破。      DeepSeek通过创新的训练方法,如在预训练阶段加入强化学习,用较少的计算资源就达到了接近\nPublished date: 2025-03-23T20:30:00+08:00\nSite name: 腾讯网\n\nTitle: 2025年DeepSeek洞察与大模型应用-人工智能技术发展与应用实践\nURL: https",
+    "isError": false,
+    "durationMs": 310,
+    "createdAt": "2026-03-02T03:22:36.087Z"
+  },
+  {
+    "id": "f69604ffccde32bc",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_7f348db1a7454528b35afbd4"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:23:19.570Z"
+  },
+  {
+    "id": "3b4a3e02cb5d829a",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI发布全新推理模型o3与o4-mini,提升智能与工具应用能力_技术_图像\nURL: https://www.sohu.com/a/885448770_121956424\nDescription: 在人工智能的激烈竞争格局中,OpenAI于2025年4月16日正式发布了其最新的推理模型o3和o4-mini。此次发布被OpenAI称为其迄今为止最具智能和实用性的模型,标志着推理与智能性的新标准。随着全球AI市场的快速发展,各大科技公司纷纷推出自己的AI解决方案,OpenAI的这一举动引发了市场的广泛关注和讨论。 OpenAI的o3模型是它所推出的最强大推理模型,能在数学、编码、科学及视觉感知等多个领域超越它前代的o1与o2-mini模型。根据OpenAI的说法,这一模型特别适合处理那些需要综合多方面信息的复杂查询,挑战传统的简单问题解决方式。与此同时,o4-mini模型是一款经过优化的轻量级模型,适合那些时间紧迫、经济效益要求高的应用场景。 在o3模型的发展过程中,OpenAI团队发现在大规模的强化学习中,计算量的增大直接带来了性能的显著提升。这一点从o3的训练计算量和推理过程中的思考能力的提升中得到了验证。通过强化学习方式,OpenAI成功训练出这两个新模型,使其具备了更强的工具使用能力。 值得一提的是,这两个新模型能够结合使用ChatGPT中的所有工具,包括网页搜索、图像生成功能,甚至能使用Python进行数据分析。在OpenAI提供的实例中,当用户问及电池技术突破对电力汽车的影响时,o1模型在推理五秒后,仅能返回文字和代码片段;而o3经过四十秒的推理,便可多次利用搜索工具,并直接生成相关的图像和图表。这样的速度与效率无疑提高了AI在实际应用中的价值。 在视觉推理方面,o3与o4-mini实现了新的突破。二者不仅可以直接“看见”图像,更能利用图像进行思维分析。例如,当用户上传一张颠倒的手写笔记照片时,这些模型能够在推理过程中,使用工具对图像进行缩放、旋转或裁剪,最终提取出笔记内容。这样的能力彰显了AI在“视觉理解”上的进一步发展。 自OpenAI去年9月推出o1模型\nPublished date: 2025-04-17T08:58:00+08:00\nSite name: 搜狐\n\nTitle: OpenAI 的 o3 正式登场，我们总结了这 7 个最关键的信息点\nURL: https://m.163.com/dy/article/JTBPQ19505566UKH.html\nDescription: 在 ChatGPT 问世近一年半后,OpenAI 再次迈出关键一步。\n2025 年 4 月 16 日,OpenAI 正式发布新一代推理模型 o3 及轻量版 o4-mini,这是继 GPT-4 Turbo 之后,首次从底层架构、训练策略到能力定位全面重构的模型更新。相比以往,这一次的关键词不再是“更强的生成能力”,而是“更清晰的推理路径、更主动的工具调度、更真实的问题感知”。\n官方没有过多渲染“AGI 临近”这样的宏大叙事,却实实在在交付了一个“能读图、能思考、能动手”的智能体雏形——它能看懂你上传的手写公式,也能自己查资料、调用工具链、重构任务解法,真正从“助手”迈向“代理者”(Agent)。\n如果我们将视野从参数跃迁拉回到结构演化,o3 的出现,标志着一个重要趋势:训练范式的极限已现,推理结构的重塑正在成为 AI 进化的主战场。\nOpenAI 在这个关键节点推出 o3 系列,不止是一次模型升级,更像是一种范式上的声明,也是一种技术坐标系的重新标定。\n2025 年 4 月 16 日,OpenAI 正式发布新一代推理模型 o3 及轻量版 o4-mini。它们不仅性能领先,更在“结构”与“能力”上开启了范式转折:不再仅仅强调上下文长度和生成流畅度,而是从根本上强调推理路径的清晰性、工具调用的主动性,以及图文信息的融合处理能力。\n为更好理解这一变革,我们系统梳理了 OpenAI 官方发布的产品博客内容,并结合团队在 X 平台 AMA 中的回应与解读,从七个方面提炼出 o3 系列模型在推理方式、结构策略与实际应用中的关键进展,辅以我们对趋势脉络的观察,供开发者与关注 AI 基础设施演进的读者参考。\nOpenAI 团队在 X 平台上举办的 AMA 总结\n发布和路线图\n- 强化微调(GA)将很快对公开微调或具有推理模型的强化学习(RL)可用\n- OpenAI 计划在未来几个月发布一个优\nPublished date: 2025-04-17T22:01:48+08:00\nSite name: 网易\n\nTitle: OpenAI 发布 o3-mini 推理模型供公众使用--人工智能-至顶网\nURL: http://ai.zh",
+    "isError": false,
+    "durationMs": 466,
+    "createdAt": "2026-03-02T03:23:20.036Z"
+  },
+  {
+    "id": "86eed6a5ffac87a3",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_9e524a3bcb2642eabb642615"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:23:20.770Z"
+  },
+  {
+    "id": "ecfc25c0cd86cc65",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Announcement - Category | Semantic Kernel\nURL: https://devblogs.microsoft.com/semantic-kernel/category/announcement/page/2/\nDescription: OpenAI’s\no3-mini\nis\na\nnewly\nreleased\nsmall\nreasoning\nmodel\n(launched\nJanuary\n2025)\nthat\ndelivers\nadvanced\nproblem-solving\ncapabilities\nat\na\nfraction\nof\nthe\ncost\nof\nprevious\nmodels.\nIt\nexcels\nin\nSTEM\ndomains\n(science,\nmath,\ncoding)\nwhile\nmaintaining\nlow\nlatency\nand\ncost\nsimilar\nto\nthe\nearlier\no1-mini\nmodel.\nThis\nmodel\nis\nalso\navailable\nas\nAzure...\nGlobal\nExpansion\n–\n\"G3J\nLearn\nSemantic\nKernel\"\nShow\n–\nA\nDeep\nDive\nin\nKorean!\nLocalization\nIncreases\nDemand\nFollowing\nthe\nsuccess\nof\nthis\nmulti-language\ndelivery,\nwe\nquickly\nnoticed\na\nsurge\nin\ndemand\nfor\nlocalized\ncontent.\nDevelopers\nfrom\ndifferent\nparts\nof\nthe\nworld\nhave\nexpressed\ninterest\nin\ndiving\ndeeper\ninto\nSemantic\nKernel,\nand\nwe\ncouldn’t\n...\nWe\nare\nthrilled\nto\nannounce\nthe\nGeneral\nAvailability\n(GA)\nof\nour\nMemory\npackages\nfor\n.NET,\nJava,\nand\nPublished date: 2025-11-07T04:25:00+08:00\nSite name: Microsoft Learn\n\nTitle: 2025年OpenAI o3-mini报告_数据局\nURL: http://www.shujuju.cn/lecture/detail/35049\nDescription: 关注数据局微信公众号,击数据局公众号“ 报告下载 ”菜单,获取网盘链接下载。 或者加入 数据局知识星球 ,获取更加优质的服务: 附件下载\nPublished date: 2025-03-17T16:28:14+08:00\nSite name: www.shujuju.cn\n\nTitle: bylander 个人主页\nURL: https://devpress.csdn.net/user/bylander\nDescription: 【AI学习】OpenAI推出o3,向AGI迈出关键一步\n2024年12月21日,OpenAI在其为期12天发布会活动的最后一天,正式发布了备受期待的o3系列模型,包括o3和o3-mini。o3\n是一个非常强大的模型,在编码、数学以及\nARC-AGI\n基准测试等多个基准上超过了\nOpenAI\n此前的\no1\n模型(o1得分25%,o3得分87.5%)。o3-mini\n是\no3\n更经济高效且性能导向的版本,在成本和延迟方面比\no1-mini\n低得多,同时提供\nPublished date: 2025-08-27T00:00:01+08:00\nSite name: CSDN\n\nTitle: OpenAI 的 o3 正式登场，我们总结了这 7 个最关键的信息点\nURL: https://m.163.com/dy/article/JTBPQ19505566UKH.html\nDescription: 在 ChatGPT 问世近一年半后,OpenAI 再次迈出关键一步。\n2025 年 4 月 16 日,OpenAI 正式发布新一代推理模型 o3 及轻量版 o4-mini,这是继 GPT-4 Turbo 之后,首次从底层架构、训练策略到能力定位全面重构的模型更新。相比以往,这一次的关键词不再是“更强的生成能力”,而是“更清晰的推理路径、更主动的工具调度、更真实的问题感知”。\n官方没有过多渲染“AGI 临近”这样的宏大叙事,却实实在在交付了一个“能读图、能思考、能动手”的智能体雏形——它能看懂你上传的手写公式,也能自己查资料、调用工具链、重构任务解",
+    "isError": false,
+    "durationMs": 279,
+    "createdAt": "2026-03-02T03:23:21.049Z"
+  },
+  {
+    "id": "06db9a09475893b1",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_b03f7dcfcf4b4e81b7a26b08"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:23:21.663Z"
+  },
+  {
+    "id": "bdd61760b2bb85a8",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI日报 - 2025年3月2日-推特版-CSDN博客\nURL: https://blog.csdn.net/qq_29689343/article/details/145971745\nDescription: 最新推荐文章于 2025-04-13 18:13:40 发布 版权声明:本文为博主原创文章,遵循CC 4.0 BY-SA版权协议,转载请附上原文出处链接和本声明。 https://blog.csdn.net/qq_29689343/article/details/145971745  今日概览(60秒速览) 烙 AGI突破 | Anthropic预测AGI将于2027年实现  Sholto Douglas加入团队,开源社区推动AGI竞赛加速  商业动向 | 腾讯发布Hunyuan Turbo S挑战DeepSeek-R1  模型性能提升30%,抢占中文大模型市场份额  政策追踪 | 全球多国呼吁加大AI技术投资与监管协同  欧盟拟推出AI伦理框架,中国推进开源生态建设  一、今日热点 (Hot Topic) 1.1 Google Gemini登顶OpenRouterAI月度排名 #模型评测 #技术竞争 | 影响指数:  核心进展 :Gemini 2.0首次超越Claude 3.7,在编程领域评测排名第二 ⚡ 支持多模态输入,推理速度提升40%  行业影响 : ▸ 推动谷歌在LLM市场的技术话语权 ▸ 加速企业级AI服务的商业化进程 “评测结果反映了模型通用能力的突破” - OpenAI技术总监  评测覆盖12项任务,涉及10万+数据样本 1.2 Anthropic发布Claude 4命名策略 #算法突破 #战略布局 | 影响指数:  核心进展 :Claude 4将采用模块化架构,支持动态知识库更新 ⚡ 推理成本降低50%,长文本处理能力提升3倍  行业影响 : ▸ 推动个性化AI代理的商业化应用 ▸ 加剧与OpenAI、DeepSeek的模型竞争 “模块化设计是下一代AI系统的核心方向” - Anthropic CEO Dario Amode\nPublished date: 2025-03-02T22:25:24+08:00\nSite name: CSDN\n\nTitle: google\nURL: https://deepmind.google/\nDescription: Experiment with Gemini 2.0 Flash native image generation 12 March 2025 Introducing Gemma 3 12 March 2025\n View Discover   Blog   —  Discover our latest AI breakthroughs, projects, and updates   Events   —  Meet our team and learn more about our research   The Podcast   —  Uncover the extraordinary ways AI is transforming our world \nLatest posts\nGemini Robotics brings AI into the physical world 12 March 2025 Experiment with Gemini 2.0 Flash native image generation 12 March 2025\nGemini Robotics\nOur advanced Gemini 2.0-based models designed for the next generation of helpful robots\nLearn more\nPause video Play video\nLatest news\nDiscover our latest AI breakthroughs and updates from the lab\nView all posts\nResearch\nGemini Robotics brings AI into the physical world\nIntroducing Gemini Robotics and\nPublished date: 2025-03-19T15:50:51+08:00\nSite name: deepmind.google\n\nTitle: Gemini 3发布与小试牛刀 - PetterLiu - 博客园\nURL: https://www.cnblogs.com/wintersun/p/19244057\nDescripti",
+    "isError": false,
+    "durationMs": 254,
+    "createdAt": "2026-03-02T03:23:21.917Z"
+  },
+  {
+    "id": "dc7a4db1bcac8ba9",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_92c2c8349cd040c5af8eb935"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:23:31.834Z"
+  },
+  {
+    "id": "3d1238cf180b79e7",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: bylander 个人主页\nURL: https://devpress.csdn.net/user/bylander\nDescription: 【AI学习】OpenAI推出o3,向AGI迈出关键一步\n2024年12月21日,OpenAI在其为期12天发布会活动的最后一天,正式发布了备受期待的o3系列模型,包括o3和o3-mini。o3\n是一个非常强大的模型,在编码、数学以及\nARC-AGI\n基准测试等多个基准上超过了\nOpenAI\n此前的\no1\n模型(o1得分25%,o3得分87.5%)。o3-mini\n是\no3\n更经济高效且性能导向的版本,在成本和延迟方面比\no1-mini\n低得多,同时提供\nPublished date: 2025-08-27T00:00:01+08:00\nSite name: CSDN\n\nTitle: OpenAI 宣布本月发布o3 和o4-mini，几个月后发布GPT-5！\nURL: https://m.163.com/dy/article/JSBAJP2A0556703U.html?spss=dy_author\nDescription: OpenAI 宣布将发布 o3 模型,并推迟 GPT-5 的发布时间。\n此前 OpenAI 曾取消 o3 的消费级发布,但如今计划在几周内推出 o3 和其下一代版本 o4-mini。CEO Sam Altman 表示,GPT-5 将在几个月后推出,比预期晚,且将具备语音、搜索等功能。\nPublished date: 2025-04-05T07:20:32+08:00\nSite name: 网易\n\nTitle: Announcement - Category | Semantic Kernel\nURL: https://devblogs.microsoft.com/semantic-kernel/category/announcement/page/2/\nDescription: OpenAI’s\no3-mini\nis\na\nnewly\nreleased\nsmall\nreasoning\nmodel\n(launched\nJanuary\n2025)\nthat\ndelivers\nadvanced\nproblem-solving\ncapabilities\nat\na\nfraction\nof\nthe\ncost\nof\nprevious\nmodels.\nIt\nexcels\nin\nSTEM\ndomains\n(science,\nmath,\ncoding)\nwhile\nmaintaining\nlow\nlatency\nand\ncost\nsimilar\nto\nthe\nearlier\no1-mini\nmodel.\nThis\nmodel\nis\nalso\navailable\nas\nAzure...\nGlobal\nExpansion\n–\n\"G3J\nLearn\nSemantic\nKernel\"\nShow\n–\nA\nDeep\nDive\nin\nKorean!\nLocalization\nIncreases\nDemand\nFollowing\nthe\nsuccess\nof\nthis\nmulti-language\ndelivery,\nwe\nquickly\nnoticed\na\nsurge\nin\ndemand\nfor\nlocalized\ncontent.\nDevelopers\nfrom\ndifferent\nparts\nof\nthe\nworld\nhave\nexpressed\ninterest\nin\ndiving\ndeeper\ninto\nSemantic\nKernel,\nand\nwe\ncouldn’t\n...\nWe\nare\nthrilled\nto\nannounce\nthe\nGeneral\nAvailability\n(GA)\nof\nour\nMemory\npackages\nfor\n.NET,\nJava,\nand\nPublished date: 2025-11-07T04:25:00+08:00\nSite name: Microsoft Learn\n\nTitle: 2025年OpenAI o3-mini报告_数据局\nURL: http://www.shujuju.cn/lecture/detail/35049\nDescription: 关注数据局微信公众号,击数据局公众号“ 报告下载 ”菜单,获取网盘链接下载。 或者加入 数据局知识星球 ,获取更加优质的服务: 附件下载\nPublished date: 2025-03-17T16:28:14+08:00\nSite name: www.shujuju.cn\n\nTitle: OpenAI发布新款AI模型o3和o4-mini\nURL: https://news.sina.cn/",
+    "isError": false,
+    "durationMs": 451,
+    "createdAt": "2026-03-02T03:23:32.285Z"
+  },
+  {
+    "id": "1ca973e7ef5d154f",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_60afb550d3c94d64950e57a1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:23:32.637Z"
+  },
+  {
+    "id": "26740e4a8c68d4e4",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Introducing GPT-4.1 in the API\nURL: https://openai.com/index/gpt-4-1/\nDescription: A new series of GPT models featuring major improvements on coding, instruction following, and long context—plus our first-ever nano model.\nTry in Playground\nListen to article\n18:12\nShare\nToday, we’re launching three new models in the API: GPT‐4.1, GPT‐4.1 mini, and GPT‐4.1 nano. These models outperform GPT‐4o and GPT‐4o mini across the board, with major gains in coding and instruction following. They also have larger context windows—supporting up to 1 million tokens of context—and are able to better use that context with improved long-context comprehension. They feature a refreshed knowledge cutoff of June 2024.\nGPT‐4.1 excels at the following industry standard measures: \nCoding: GPT‐4.1 scores 54.6% on SWE-bench Verified, improving by 21.4%abs over GPT‐4o and 26.6%abs over GPT‐4.5—mak\nPublished date: 2025-04-01T00:00:00+08:00\nSite name: openai\n\nTitle: About\nURL: https://openai.com/about/\nDescription: OpenAI\nCompany\nAbout\nOpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity.\nOur vision for the future of AGI\nOur mission is to ensure that artificial general intelligence—AI systems that are generally smarter than humans—benefits all of humanity.\nOur plan for AGI Our Charter\nIllustration: Justin Jay Wang × DALL·E\nWe are building safe and beneficial AGI, but will also consider our mission fulfilled if our work aids others to achieve this outcome.\nOur research\nThinking with images\nRelease Apr 16, 2025\nBrowseComp: a benchmark for browsing agents\nPublication Apr 10, 2025\nPaperBench: Evaluating AI’s Ability to Replicate AI Research\nPublication Apr 2, 2025\nEarly methods for studying affective use and emotional well\nPublished date: 2025-04-16T08:00:00+08:00\nSite name: openai.com\n\nTitle: GPT-5.3-Codex 正式登场 | OpenAI\nURL: https://openai.com/zh-Hans-CN/index/introducing-gpt-5-3-codex/\nDescription: 我们使用 Cookie我们",
+    "isError": false,
+    "durationMs": 272,
+    "createdAt": "2026-03-02T03:23:32.910Z"
+  },
+  {
+    "id": "73664942f69ad7d5",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_34158608458d44438e57d6e2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T03:23:34.053Z"
+  },
+  {
+    "id": "fe4da9a0872f6b27",
+    "type": "tool_call",
+    "taskId": "8405e6933239e847",
+    "subtaskId": "6905be19ce0d6eb6",
+    "employeeId": "3109385c718424d8",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 中国人工智能大模型行业发展趋势分析与未来前景预测报告(2026-2033年)_观研报告网\nURL: https://www.chinabaogao.com/baogao/202512/772435.html\nDescription: 人工智能大模型指由人工神经网络构建的一类具有大量参数的人工智能模型,主要类别包括大语言模型、视觉大模型、多模态大模型以及基础科学大模型等。\n我国人工智能大模型行业相关政策\n为促进人工智能大模型行业高质量发展,我国陆续发布了多项政策,如2025年10月国家卫生健康委办公厅、国家发展改革委办公厅等部门发布《关于促进和规范“人工智能+医疗卫生”应用发展的实施意见》选择高水平医院开展高质量医学影像数据汇聚和开发应用研究,支持人工智能大模型研发和迭代升级。\n我国人工智能大模型行业部分相关政策情况\n发布时间\n发布部门\n政策名称\n主要内容\n2025年11月\n国务院办公厅\n关于加快场景培育和开放推动新场景大规模应用的实施意见\n聚焦智能制造、绿色制造、服务型制造、工业生物、工业智能等核心技术应用,创新柔性生产线、智能工厂、绿色工厂、高标准数字园区、零碳园区等应用场景,支持重点制造业企业向自主基础软件、工业软件等产品开放应用场景,遴选培育工业领域垂直大模型典型应用场景。\n2025年10月\n国家卫生健康委办公厅、国家发展改革委办公厅等部门\n关于促进和规范“人工智能+医疗卫生”应用发展的实施意见\n选择高水平医院开展高质量医学影像数据汇聚和开发应用研究,支持人工智能大模型研发和迭代升级。\n2025年9月\n商务部等8部门\n关于大力发展数字消费共创数字时代美好生活的指导意见\n鼓励运用元宇宙、文生和图生视频大模型等技术创新表现形态,推出更多融入博物馆藏、非遗元素的数字文创。\n2025年9月\n国家发展改革委、国家能源局\n关于推进“人工智能+”能源高质量发展的实施意见\n推动五个以上专业大模型在电网、发电、煤炭、油气等行业深度应用,挖掘十个以上可复制、易推广、有竞争力的重点示范项目,探索百个典型应用场景赋能路径,培育一批能源行业人工智能技术应用研发创新平台,制定完善百项技术标准,培养一批能源与人工智能复合型人\nPublished date: 2025-08-01T00:00:00+08:00\nSite name: 行业数据网\n\nTitle: 政策汇总历年来AI大模型政策汇总 (干货,点关注,持续更新!)\nURL: https://www.toutiao.com/article/7511620421759107634/\nDescription: 前言 近年来,国家层面与各重点省市关于人工智能的政策文件密集出台,力度空前。这些政策不仅勾勒出中国发展AI的战略决心,更清晰地描绘了技术攻坚、产业落地和生态构建的实施路径。纵观国家、地方政策, “大模型突破、算力网络优化、应用场景开放” 成为贯穿始终的三大关键词,共同推动AI从技术概念走向千行百业的深度融合。 本篇文章深入梳理了从2023年至2025年国家层面与各地方发布的一系列重要人工智能相关政策,为相关从业者、研究者及关注者提供了极具价值的政策参考与趋势洞察。 国家政策 工信部:《人工智能生成合成内容标识办法》 发布时间:2025年3月7日 主要内容:要求平台严格审核AI生成内容标识;市场监管总局发布《网络安全技术人工智能生成合成内容标识方法》国家标准,规范显隐双标识管理,《办法》将在2025年9月1日实施。 工信部、财政部、金融股监管局:《中小企业数字化赋能专项行动方案(2025—2027 年)》 发布时间:2024年12月12日 主要内容:鼓励龙头企业、交易机构、平台企业、数据服务企业等经营主体建设公共数据集、行业数据集,为中小企业提供用于人工智能模型训练的高质量数据。建设一批适用于中小企业的垂直行业大模型,强化中小企业大模型技术产品供给。 工信部:《国家人工智能产业综合标准化体系建设指南(2024 版)》 发布时间:2024年6月5日 主要内容:指南强调了人工智能在科技革命和产业变革中的基础性和战略性作用,提出到2026年制定50项以上国家标准和行业标准,促进人工智能产业全球化发展,并加强国际合作。 国务院:《关于进一步优化政务服务提升行政效能推动高效办成一件事的指导意见》 发布时间:2024年1月16日 主要内容:持续加强新技术全流程应用。探索应用自然语言大模型等技术,提升线上智能客服的意图识别和精准回答能力,优化智能问答、智能搜索、智能导办等服务,更好引导企业\nPublished date: 2025-06-03T17:30:00+08:00\nSite name: 今日头条\n\nTitle: 我国及部分省市人工智能大模型行业相关政策:支持人工智能大模型研发和迭代升级_观",
+    "isError": false,
+    "durationMs": 303,
+    "createdAt": "2026-03-02T03:23:34.356Z"
+  }
+]

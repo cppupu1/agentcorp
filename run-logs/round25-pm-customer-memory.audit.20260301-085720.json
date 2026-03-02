@@ -1,0 +1,109 @@
+{
+  "label": "round25-pm-customer-memory",
+  "sessionId": "round25-cs-20260301-085720",
+  "pmChatDurationMs": 56952,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "157bfa77c80963c1"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 56952
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "157bfa77c80963c1",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 169720,
+      "tools": [
+        {
+          "tool": "01a07c2a149edad0__write_file",
+          "count": 4
+        },
+        {
+          "tool": "01a07c2a149edad0__list_allowed_directories",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__list_directory",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__read_multiple_files",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_relations",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n售后投诉FAQ整理与知识沉淀任务已完成。基于近30天售后投诉数据分析，识别出TOP 5高频问题：退款困难/退款延迟（24.4%）、订单延迟发货（18.6%）、商品质量问题（16.7%）、客服响应慢（13.5%）、违反七天无理由退货规定（11.5%），TOP 5覆盖率84.7%。已输出简版FAQ文档（每条答案控制在100字以内），并将5条FAQ转化为结构化知识条目，包含问题标签、问题描述、标准答案、适用场景、处理流程、补偿标准、升级标准等完整字段，同时建立了知识图谱关联关系便于客服检索复用。"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "c3c2970ab2fcbbe7",
+    "sessionId": "round38-translation-20260301-140242",
+    "role": "user",
+    "content": "我一会儿要给全员发通知，直接帮我落地一个可复用的企业公告中英双语模板版本。",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:02:42.883Z"
+  },
+  {
+    "id": "6a8083a45e2f120f",
+    "sessionId": "round38-translation-20260301-140242",
+    "role": "assistant",
+    "content": "",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:02:42.883Z"
+  }
+]

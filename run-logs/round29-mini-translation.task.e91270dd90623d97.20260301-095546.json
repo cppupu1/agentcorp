@@ -1,0 +1,71 @@
+{
+  "id": "e91270dd90623d97",
+  "teamId": "b458b2f217e5578d",
+  "teamName": "双语公告翻译团队",
+  "title": "企业公告中英双语翻译",
+  "description": "将以下企业公告模板输出中英双语简版，保持语义一致。原文：尊敬的客户，我们将于下周二22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解。",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "1c0a2f3b12fd65d7",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "033e2a7a9a6c6e2f",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "8d2f8f03ee9cea8e",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语翻译",
+        "description": "将以下企业公告模板输出中英双语简版，保持语义一致。原文：尊敬的客户，我们将于下周二22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解。",
+        "assigneeId": "033e2a7a9a6c6e2f",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已成功完成。企业公告中英双语翻译已完成，中文版保持原意，英文版准确传达了系统维护时间及可能的服务波动信息，措辞专业得体，符合企业公告规范。",
+    "deliverables": "## 企业公告中英双语简版\n\n**中文版：**\n> 尊敬的客户，我们将于下周二22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解。\n\n---\n\n**English Version:**\n> Dear Valued Customer, we will perform system maintenance next Tuesday from 22:00 to 23:00. During this period, services may experience temporary fluctuations. Thank you for your understanding.",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T09:56:45.156Z"
+  },
+  "tokenUsage": 5148,
+  "createdAt": "2026-03-01T09:55:59.455Z",
+  "updatedAt": "2026-03-01T09:56:45.167Z",
+  "subtasks": [
+    {
+      "id": "27eb16ca728ea700",
+      "title": "企业公告中英双语翻译",
+      "description": "将以下企业公告模板输出中英双语简版，保持语义一致。原文：尊敬的客户，我们将于下周二22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解。",
+      "assigneeId": "033e2a7a9a6c6e2f",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "## 中英双语简版\n\n**中文版：**\n> 尊敬的客户，我们将于下周二22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解。\n\n---\n\n**English Version:**\n> Dear Valued Customer, we will perform system maintenance next Tuesday from 22:00 to 23:00. During this period, services may experience temporary fluctuations. Thank you for your understanding."
+      },
+      "sortOrder": 0,
+      "tokenUsage": 5148,
+      "createdAt": "2026-03-01T09:56:19.150Z",
+      "updatedAt": "2026-03-01T09:56:39.014Z"
+    }
+  ]
+}

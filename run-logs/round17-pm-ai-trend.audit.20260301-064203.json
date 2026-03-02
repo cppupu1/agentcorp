@@ -1,0 +1,73 @@
+{
+  "label": "round17-pm-ai-trend",
+  "sessionId": "round17-ai-20260301-064203",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "4b719e2410637bda"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "4b719e2410637bda",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 113044,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 20
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasTimeTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成AI智能体行业近30天（2025-05-19至2025-06-18）趋势简报，涵盖六大核心领域：技术突破（大模型能力跃升）、标准与生态（A2A/信通院标准/MCP）、投资与市场（665亿融资，44.8%年复合增长）、垂直应用（FDA部署Elsa、保险、养老、人力资源）、学术研究（劳动力审计与行为科学）、挑战与风险（安全、伦理、ROI量化）。报告包含关键结论与战略建议，所有时间敏感信息使用绝对日期标注，关键结论均有至少2个独立来源交叉验证，优先使用一手来源（官方公告/监管文件/学术论文）。"
+    }
+  ]
+}

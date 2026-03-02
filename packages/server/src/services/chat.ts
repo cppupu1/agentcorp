@@ -107,12 +107,13 @@ export async function runChat(params: ChatParams, callbacks: AgentStreamCallback
         command: tools.command,
         args: tools.args,
         envVars: tools.envVars,
+        enabled: tools.enabled,
       })
       .from(employeeTools)
       .innerJoin(tools, eq(employeeTools.toolId, tools.id))
       .where(eq(employeeTools.employeeId, employeeId));
 
-    const mcpToolConfigs: MCPToolConfig[] = empTools.map(t => ({
+    const mcpToolConfigs: MCPToolConfig[] = empTools.filter(t => t.enabled !== 0).map(t => ({
       id: t.id,
       name: t.name,
       transportType: (t.transportType ?? 'stdio') as 'stdio' | 'sse',

@@ -1,0 +1,85 @@
+{
+  "taskId": "349a53e26cd7036b",
+  "totalDomains": 9,
+  "topDomains": [
+    {
+      "domain": "www.sohu.com",
+      "count": 12,
+      "example": "https://www.sohu.com/a/872894848_122004016"
+    },
+    {
+      "domain": "blog.csdn.net",
+      "count": 8,
+      "example": "https://blog.csdn.net/Android_XG/article/details/156563779"
+    },
+    {
+      "domain": "www.toutiao.com",
+      "count": 6,
+      "example": "https://www.toutiao.com/article/7478863322805305856/"
+    },
+    {
+      "domain": "ai.zhiding.cn",
+      "count": 2,
+      "example": "http://ai.zhiding.cn/2025/0218/3163520.shtml"
+    },
+    {
+      "domain": "www.163.com",
+      "count": 2,
+      "example": "https://www.163.com/dy/article/JR1I2HVI0511DG68.html"
+    },
+    {
+      "domain": "finance.sina.com.cn",
+      "count": 1,
+      "example": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2025-03-19/doc-ineqehup1703203.shtml"
+    },
+    {
+      "domain": "m.chinairn.com",
+      "count": 1,
+      "example": "https://m.chinairn.com/news/20250307/17581485.shtml"
+    },
+    {
+      "domain": "www.chinabgao.com",
+      "count": 1,
+      "example": "https://www.chinabgao.com/freereport/99458.html"
+    },
+    {
+      "domain": "k.sina.com.cn",
+      "count": 1,
+      "example": "https://k.sina.com.cn/article_7857201856_1d45362c001902014q.html?from=tech"
+    }
+  ],
+  "topSiteNames": [
+    {
+      "site": "blog.csdn.net",
+      "count": 7
+    },
+    {
+      "site": "搜狐",
+      "count": 7
+    },
+    {
+      "site": "今日头条",
+      "count": 5
+    },
+    {
+      "site": "ai.zhiding.cn",
+      "count": 2
+    },
+    {
+      "site": "网易",
+      "count": 2
+    },
+    {
+      "site": "新浪财经",
+      "count": 1
+    },
+    {
+      "site": "www.chinabgao.com",
+      "count": 1
+    },
+    {
+      "site": "新浪网",
+      "count": 1
+    }
+  ]
+}

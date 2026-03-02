@@ -1,8 +1,18 @@
 import type { FastifyInstance } from 'fastify';
 import { listSessions, getMessages, deleteSession, runHrChat } from '../services/hr-assistant.js';
 import type { AgentStreamCallbacks } from '@agentcorp/agent-core';
+import { getModelIdForFeature } from '../services/system.js';
+import { db, models } from '@agentcorp/db';
+import { eq } from 'drizzle-orm';
 
 export function registerHrAssistantRoutes(app: FastifyInstance) {
+  app.get('/api/hr-assistant/status', async () => {
+    const modelId = getModelIdForFeature('hr_assistant_model_id');
+    if (!modelId) return { data: { configured: false } };
+    const [model] = await db.select({ id: models.id, name: models.name }).from(models).where(eq(models.id, modelId));
+    return { data: { configured: !!model, modelId, modelName: model?.name || null } };
+  });
+
   app.get('/api/hr-assistant/sessions', async () => {
     return listSessions();
   });

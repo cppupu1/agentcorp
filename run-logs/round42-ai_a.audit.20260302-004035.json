@@ -1,0 +1,91 @@
+{
+  "label": "round42-ai_a",
+  "sessionId": "round42-ai_a-20260302-004035",
+  "kind": "ai_a",
+  "userPrompt": "请直接创建并启动任务：整理近7天AI技术行业趋势，输出3条结论，每条附日期和来源链接。",
+  "pmChatDurationMs": 14050,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "510f3dc50fd35739"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": true,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_has_no_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 14050
+    },
+    {
+      "name": "pm_called_create_task_tool",
+      "ok": true
+    },
+    {
+      "name": "pm_called_start_task",
+      "ok": true
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "510f3dc50fd35739"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "510f3dc50fd35739",
+    "status": "completed",
+    "tokenUsage": 83632,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成2025年1月12日-1月18日AI技术行业趋势调研，共收集到3条核心结论，涵盖政策、技术创新和应用趋势，所有信息均标注具体日期和可核验的权威来源链接。"
+  }
+}

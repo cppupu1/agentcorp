@@ -1,0 +1,66 @@
+{
+  "label": "round33-b05-translation",
+  "sessionId": "round33-b05-translation-20260301-115024",
+  "kind": "translation",
+  "pmChatDurationMs": 26894,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "2da2697272606365"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 26894
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": false
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "2da2697272606365",
+    "status": "waiting",
+    "timedOut": false,
+    "tokenUsage": 0,
+    "summary": ""
+  }
+}

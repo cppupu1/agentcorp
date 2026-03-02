@@ -1,0 +1,177 @@
+
+> agentcorp@1.0.0 dev:server
+> npm run dev --workspace=packages/server
+
+
+> @agentcorp/server@1.0.0 dev
+> tsx watch src/app.ts
+
+{"level":30,"time":1772352199175,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","msg":"Server listening at http://127.0.0.1:3000"}
+Server running on http://localhost:3000
+Cron scheduler started (60s interval)
+{"level":30,"time":1772352200117,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1","req":{"method":"GET","url":"/api/health","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":64955},"msg":"incoming request"}
+{"level":30,"time":1772352200120,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1","res":{"statusCode":200},"responseTime":2.82308292388916,"msg":"request completed"}
+{"level":30,"time":1772352200209,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-2","req":{"method":"PUT","url":"/api/system/settings/subtask_timeout_minutes","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":64956},"msg":"incoming request"}
+{"level":30,"time":1772352200211,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-2","res":{"statusCode":200},"responseTime":2.791041135787964,"msg":"request completed"}
+{"level":30,"time":1772352200212,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-3","req":{"method":"POST","url":"/api/pm-assistant/chat","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":64957},"msg":"incoming request"}
+{"level":30,"time":1772352222380,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-3","res":{"statusCode":200},"responseTime":22167.657915830612,"msg":"request completed"}
+{"level":30,"time":1772352222381,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-4","req":{"method":"GET","url":"/api/pm-assistant/round23-content-20260301-080320/messages","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":64984},"msg":"incoming request"}
+{"level":30,"time":1772352222382,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-4","res":{"statusCode":200},"responseTime":0.47937512397766113,"msg":"request completed"}
+{"level":30,"time":1772352222382,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-5","req":{"method":"GET","url":"/api/tasks/5b34a40618ff04a0","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":64985},"msg":"incoming request"}
+{"level":30,"time":1772352222383,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-5","res":{"statusCode":200},"responseTime":0.7322089672088623,"msg":"request completed"}
+{"level":30,"time":1772352227389,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-6","req":{"method":"GET","url":"/api/tasks/5b34a40618ff04a0","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":64991},"msg":"incoming request"}
+{"level":30,"time":1772352227391,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-6","res":{"statusCode":200},"responseTime":2.246166944503784,"msg":"request completed"}
+{"level":30,"time":1772352232403,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-7","req":{"method":"GET","url":"/api/tasks/5b34a40618ff04a0","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":64994},"msg":"incoming request"}
+{"level":30,"time":1772352232405,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-7","res":{"statusCode":200},"responseTime":2.0316669940948486,"msg":"request completed"}
+{"level":30,"time":1772352237416,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-8","req":{"method":"GET","url":"/api/tasks/5b34a40618ff04a0","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65005},"msg":"incoming request"}
+{"level":30,"time":1772352237418,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-8","res":{"statusCode":200},"responseTime":2.213249921798706,"msg":"request completed"}
+{"level":30,"time":1772352242422,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-9","req":{"method":"GET","url":"/api/tasks/5b34a40618ff04a0","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65008},"msg":"incoming request"}
+{"level":30,"time":1772352242425,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-9","res":{"statusCode":200},"responseTime":3.2083749771118164,"msg":"request completed"}
+{"level":30,"time":1772352247437,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-a","req":{"method":"GET","url":"/api/tasks/5b34a40618ff04a0","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65016},"msg":"incoming request"}
+{"level":30,"time":1772352247441,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-a","res":{"statusCode":200},"responseTime":4.094958066940308,"msg":"request completed"}
+{"level":30,"time":1772352247444,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-b","req":{"method":"GET","url":"/api/tasks/5b34a40618ff04a0/tool-trace","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65017},"msg":"incoming request"}
+{"level":30,"time":1772352247446,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-b","res":{"statusCode":200},"responseTime":1.495957851409912,"msg":"request completed"}
+{"level":30,"time":1772352247448,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-c","req":{"method":"GET","url":"/api/tasks/5b34a40618ff04a0/decisions","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65018},"msg":"incoming request"}
+{"level":30,"time":1772352247450,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-c","res":{"statusCode":200},"responseTime":1.838792085647583,"msg":"request completed"}
+{"level":30,"time":1772352247451,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-d","req":{"method":"GET","url":"/api/tasks/5b34a40618ff04a0/timeline","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65019},"msg":"incoming request"}
+{"level":30,"time":1772352247466,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-d","res":{"statusCode":200},"responseTime":14.424665927886963,"msg":"request completed"}
+{"level":30,"time":1772352247471,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-e","req":{"method":"POST","url":"/api/pm-assistant/chat","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65020},"msg":"incoming request"}
+{"level":30,"time":1772352265379,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-e","res":{"statusCode":200},"responseTime":17907.710124969482,"msg":"request completed"}
+{"level":30,"time":1772352265380,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-f","req":{"method":"GET","url":"/api/pm-assistant/round23-stock-20260301-080320/messages","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65040},"msg":"incoming request"}
+{"level":30,"time":1772352265381,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-f","res":{"statusCode":200},"responseTime":1.2461249828338623,"msg":"request completed"}
+{"level":30,"time":1772352265383,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-g","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65041},"msg":"incoming request"}
+{"level":30,"time":1772352265384,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-g","res":{"statusCode":200},"responseTime":1.255500078201294,"msg":"request completed"}
+{"level":30,"time":1772352270396,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-h","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65047},"msg":"incoming request"}
+{"level":30,"time":1772352270397,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-h","res":{"statusCode":200},"responseTime":0.8346669673919678,"msg":"request completed"}
+Processing request of type ListToolsRequest
+Processing request of type CallToolRequest
+{"level":30,"time":1772352275409,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-i","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65050},"msg":"incoming request"}
+{"level":30,"time":1772352275411,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-i","res":{"statusCode":200},"responseTime":1.9393749237060547,"msg":"request completed"}
+Processing request of type CallToolRequest
+{"level":30,"time":1772352280416,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-j","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65056},"msg":"incoming request"}
+{"level":30,"time":1772352280418,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-j","res":{"statusCode":200},"responseTime":1.7958331108093262,"msg":"request completed"}
+Processing request of type CallToolRequest
+Warning: UserWarning: 
+
+ ================================================================= 
+
+   WARNING: YOU ARE PLOTTING SO MUCH DATA THAT IT MAY NOT BE
+            POSSIBLE TO SEE DETAILS (Candles, Ohlc-Bars, Etc.)
+   For more information see:
+   - https://github.com/matplotlib/mplfinance/wiki/Plotting-Too-Much-Data
+   
+   TO SILENCE THIS WARNING, set `type='line'` in `mpf.plot()`
+   OR set kwarg `warn_too_much_data=N` where N is an integer 
+   LARGER than the number of data points you want to plot.
+
+ ================================================================ 
+Processing request of type CallToolRequest
+Warning: UserWarning: 
+
+ ================================================================= 
+
+   WARNING: YOU ARE PLOTTING SO MUCH DATA THAT IT MAY NOT BE
+            POSSIBLE TO SEE DETAILS (Candles, Ohlc-Bars, Etc.)
+   For more information see:
+   - https://github.com/matplotlib/mplfinance/wiki/Plotting-Too-Much-Data
+   
+   TO SILENCE THIS WARNING, set `type='line'` in `mpf.plot()`
+   OR set kwarg `warn_too_much_data=N` where N is an integer 
+   LARGER than the number of data points you want to plot.
+
+ ================================================================ 
+{"level":30,"time":1772352285429,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-k","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65059},"msg":"incoming request"}
+{"level":30,"time":1772352285431,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-k","res":{"statusCode":200},"responseTime":1.6320838928222656,"msg":"request completed"}
+{"level":30,"time":1772352290438,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-l","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65061},"msg":"incoming request"}
+{"level":30,"time":1772352290441,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-l","res":{"statusCode":200},"responseTime":3.2602920532226562,"msg":"request completed"}
+{"level":30,"time":1772352295451,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-m","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65072},"msg":"incoming request"}
+{"level":30,"time":1772352295453,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-m","res":{"statusCode":200},"responseTime":2.455166816711426,"msg":"request completed"}
+{"level":30,"time":1772352300463,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-n","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65076},"msg":"incoming request"}
+{"level":30,"time":1772352300465,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-n","res":{"statusCode":200},"responseTime":1.7446670532226562,"msg":"request completed"}
+{"level":30,"time":1772352305477,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-o","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65078},"msg":"incoming request"}
+{"level":30,"time":1772352305480,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-o","res":{"statusCode":200},"responseTime":2.0884170532226562,"msg":"request completed"}
+{"level":30,"time":1772352310482,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-p","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65081},"msg":"incoming request"}
+{"level":30,"time":1772352310484,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-p","res":{"statusCode":200},"responseTime":2.1209590435028076,"msg":"request completed"}
+{"level":30,"time":1772352315492,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-q","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65084},"msg":"incoming request"}
+{"level":30,"time":1772352315495,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-q","res":{"statusCode":200},"responseTime":2.4017910957336426,"msg":"request completed"}
+{"level":30,"time":1772352320504,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-r","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65086},"msg":"incoming request"}
+{"level":30,"time":1772352320506,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-r","res":{"statusCode":200},"responseTime":1.9958751201629639,"msg":"request completed"}
+{"level":30,"time":1772352325516,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-s","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65100},"msg":"incoming request"}
+{"level":30,"time":1772352325517,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-s","res":{"statusCode":200},"responseTime":0.8693749904632568,"msg":"request completed"}
+{"level":30,"time":1772352330520,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-t","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65111},"msg":"incoming request"}
+{"level":30,"time":1772352330522,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-t","res":{"statusCode":200},"responseTime":1.6309168338775635,"msg":"request completed"}
+{"level":30,"time":1772352335531,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-u","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65117},"msg":"incoming request"}
+{"level":30,"time":1772352335534,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-u","res":{"statusCode":200},"responseTime":2.123542070388794,"msg":"request completed"}
+{"level":30,"time":1772352340546,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-v","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65121},"msg":"incoming request"}
+{"level":30,"time":1772352340548,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-v","res":{"statusCode":200},"responseTime":2.093416929244995,"msg":"request completed"}
+{"level":30,"time":1772352345551,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-w","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65122},"msg":"incoming request"}
+{"level":30,"time":1772352345552,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-w","res":{"statusCode":200},"responseTime":1.4202499389648438,"msg":"request completed"}
+{"level":30,"time":1772352350564,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-x","req":{"method":"GET","url":"/api/tasks/1db376466de02814","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65129},"msg":"incoming request"}
+{"level":30,"time":1772352350566,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-x","res":{"statusCode":200},"responseTime":2.505208969116211,"msg":"request completed"}
+{"level":30,"time":1772352350567,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-y","req":{"method":"GET","url":"/api/tasks/1db376466de02814/tool-trace","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65130},"msg":"incoming request"}
+{"level":30,"time":1772352350568,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-y","res":{"statusCode":200},"responseTime":1.0501251220703125,"msg":"request completed"}
+{"level":30,"time":1772352350569,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-z","req":{"method":"GET","url":"/api/tasks/1db376466de02814/decisions","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65131},"msg":"incoming request"}
+{"level":30,"time":1772352350570,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-z","res":{"statusCode":200},"responseTime":0.7588751316070557,"msg":"request completed"}
+{"level":30,"time":1772352350571,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-10","req":{"method":"GET","url":"/api/tasks/1db376466de02814/timeline","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65132},"msg":"incoming request"}
+{"level":30,"time":1772352350572,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-10","res":{"statusCode":200},"responseTime":1.1357080936431885,"msg":"request completed"}
+{"level":30,"time":1772352350580,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-11","req":{"method":"POST","url":"/api/pm-assistant/chat","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65133},"msg":"incoming request"}
+{"level":30,"time":1772352370031,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-11","res":{"statusCode":200},"responseTime":19451.008833885193,"msg":"request completed"}
+{"level":30,"time":1772352370031,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-12","req":{"method":"GET","url":"/api/pm-assistant/round23-cs-20260301-080320/messages","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65148},"msg":"incoming request"}
+{"level":30,"time":1772352370032,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-12","res":{"statusCode":200},"responseTime":0.6747920513153076,"msg":"request completed"}
+{"level":30,"time":1772352370033,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-13","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65149},"msg":"incoming request"}
+{"level":30,"time":1772352370034,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-13","res":{"statusCode":200},"responseTime":0.5700838565826416,"msg":"request completed"}
+Knowledge Graph MCP Server running on stdio
+{"level":30,"time":1772352375052,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-14","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65157},"msg":"incoming request"}
+{"level":30,"time":1772352375053,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-14","res":{"statusCode":200},"responseTime":0.734874963760376,"msg":"request completed"}
+Starting default (STDIO) server...
+{"level":30,"time":1772352380055,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-15","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65164},"msg":"incoming request"}
+{"level":30,"time":1772352380057,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-15","res":{"statusCode":200},"responseTime":1.0764579772949219,"msg":"request completed"}
+{"level":30,"time":1772352385068,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-16","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65175},"msg":"incoming request"}
+{"level":30,"time":1772352385070,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-16","res":{"statusCode":200},"responseTime":1.8838748931884766,"msg":"request completed"}
+{"level":30,"time":1772352390076,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-17","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65179},"msg":"incoming request"}
+{"level":30,"time":1772352390078,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-17","res":{"statusCode":200},"responseTime":1.5806670188903809,"msg":"request completed"}
+{"level":30,"time":1772352395090,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-18","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65182},"msg":"incoming request"}
+{"level":30,"time":1772352395093,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-18","res":{"statusCode":200},"responseTime":2.200291872024536,"msg":"request completed"}
+{"level":30,"time":1772352400097,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-19","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65185},"msg":"incoming request"}
+{"level":30,"time":1772352400099,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-19","res":{"statusCode":200},"responseTime":1.838083028793335,"msg":"request completed"}
+{"level":30,"time":1772352405111,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1a","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65187},"msg":"incoming request"}
+{"level":30,"time":1772352405113,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1a","res":{"statusCode":200},"responseTime":1.8681659698486328,"msg":"request completed"}
+{"level":30,"time":1772352410124,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1b","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65189},"msg":"incoming request"}
+{"level":30,"time":1772352410125,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1b","res":{"statusCode":200},"responseTime":1.0195410251617432,"msg":"request completed"}
+{"level":30,"time":1772352415137,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1c","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65201},"msg":"incoming request"}
+{"level":30,"time":1772352415139,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1c","res":{"statusCode":200},"responseTime":2.1589579582214355,"msg":"request completed"}
+{"level":30,"time":1772352418791,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1d","req":{"method":"GET","url":"/api/health","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65202},"msg":"incoming request"}
+{"level":30,"time":1772352418791,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1d","res":{"statusCode":200},"responseTime":0.4654581546783447,"msg":"request completed"}
+{"level":30,"time":1772352420151,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1e","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65204},"msg":"incoming request"}
+{"level":30,"time":1772352420153,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1e","res":{"statusCode":200},"responseTime":2.233874797821045,"msg":"request completed"}
+{"level":30,"time":1772352425165,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1f","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65208},"msg":"incoming request"}
+{"level":30,"time":1772352425167,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1f","res":{"statusCode":200},"responseTime":1.9994168281555176,"msg":"request completed"}
+{"level":30,"time":1772352430176,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1g","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65216},"msg":"incoming request"}
+{"level":30,"time":1772352430178,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1g","res":{"statusCode":200},"responseTime":1.7025001049041748,"msg":"request completed"}
+{"level":30,"time":1772352431843,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1h","req":{"method":"PUT","url":"/api/system/settings/subtask_timeout_minutes","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65217},"msg":"incoming request"}
+{"level":30,"time":1772352431844,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1h","res":{"statusCode":200},"responseTime":1.1781251430511475,"msg":"request completed"}
+{"level":30,"time":1772352431845,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1i","req":{"method":"POST","url":"/api/pm-assistant/chat","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65218},"msg":"incoming request"}
+{"level":30,"time":1772352431848,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1j","req":{"method":"POST","url":"/api/pm-assistant/chat","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65219},"msg":"incoming request"}
+{"level":30,"time":1772352431849,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1k","req":{"method":"POST","url":"/api/pm-assistant/chat","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65220},"msg":"incoming request"}
+{"level":30,"time":1772352431851,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1l","req":{"method":"POST","url":"/api/pm-assistant/chat","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65221},"msg":"incoming request"}
+{"level":30,"time":1772352431853,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1m","req":{"method":"POST","url":"/api/pm-assistant/chat","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65222},"msg":"incoming request"}
+{"level":30,"time":1772352435190,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1n","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65237},"msg":"incoming request"}
+{"level":30,"time":1772352435192,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1n","res":{"statusCode":200},"responseTime":2.249875068664551,"msg":"request completed"}
+{"level":30,"time":1772352435194,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1o","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789/tool-trace","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65238},"msg":"incoming request"}
+{"level":30,"time":1772352435195,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1o","res":{"statusCode":200},"responseTime":0.9747090339660645,"msg":"request completed"}
+{"level":30,"time":1772352435195,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1p","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789/decisions","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65239},"msg":"incoming request"}
+{"level":30,"time":1772352435196,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1p","res":{"statusCode":200},"responseTime":0.618833065032959,"msg":"request completed"}
+{"level":30,"time":1772352435197,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1q","req":{"method":"GET","url":"/api/tasks/88931040ba8a6789/timeline","host":"127.0.0.1:3000","remoteAddress":"127.0.0.1","remotePort":65240},"msg":"incoming request"}
+{"level":30,"time":1772352435198,"pid":4739,"hostname":"chenpudeMacBook-Pro.local","reqId":"req-1q","res":{"statusCode":200},"responseTime":1.1972079277038574,"msg":"request completed"}
+Task 88931040ba8a6789 execution failed: Error: Task execution aborted
+    at AbortSignal.signal.addEventListener.signal (/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/src/services/task-executor.ts:245:14)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:486:10)
+    at abortSignal (node:internal/abort_controller:457:3)
+    at AbortController.abort (node:internal/abort_controller:505:5)
+    at cancelAllExecutions (/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/src/services/task-executor.ts:183:8)
+    at process.shutdown (/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/src/app.ts:115:9)
+    at process.emit (node:events:530:35)
+    at process.emit (/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/tsx/dist/suppress-warnings.cjs:1:472)
+4:07:20 PM [tsx] Process didn't exit in 5s. Force killing...

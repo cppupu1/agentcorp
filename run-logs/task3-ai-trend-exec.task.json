@@ -1,0 +1,226 @@
+{
+  "data": {
+    "id": "865f2343abedea7f",
+    "teamId": "73ae7b380bfd4db9",
+    "teamName": "研究报告",
+    "title": "2025-2026全球AI技术行业趋势研究报告",
+    "description": "请分析2025-2026全球AI技术行业趋势，重点覆盖：大模型、多模态、Agent、开源生态、AI芯片与推理成本。要求：1）基于网络最新资料给出关键事件时间线；2）列出代表公司与产品动态；3）总结机会与风险。输出结构化中文Markdown报告并附主要来源链接。",
+    "status": "failed",
+    "mode": "auto",
+    "brief": {
+      "title": "2025-2026全球AI技术行业趋势研究报告",
+      "objective": "深入分析2025-2026年全球人工智能技术发展态势，覆盖大模型、多模态AI、智能Agent、开源生态系统及AI芯片与推理成本等五大核心领域，为决策层提供前瞻性的行业洞察和战略建议。",
+      "deliverables": "1. 完整的中文Markdown格式研究报告\n2. 2025-2026关键事件时间线（按领域分类）\n3. 代表公司及产品动态清单（覆盖国内外主要玩家）\n4. 机会与风险综合分析矩阵\n5. 主要数据来源及参考链接清单（不少于20个权威来源）",
+      "constraints": "1. 时间范围：2025-2026年（可根据实际情况延伸至2027年初预测）\n2. 语言：中文报告\n3. 数据来源：需引用2024年后的最新公开资料、行业报告、公司公告等\n4. 格式：结构化Markdown，包含表格、时间线图表等可视化元素\n5. 客观性：区分已确认事实与预测分析",
+      "acceptanceCriteria": "1. 五大重点领域均有独立章节分析\n2. 时间线事件不少于30条，涵盖技术突破、产品发布、融资并购等\n3. 公司动态至少包含15家代表性企业（中美欧等地区平衡）\n4. 机会与风险分析均有具体案例和数据支撑\n5. 所有引用均标注来源链接，且来源链接可访问、权威可靠\n6. 报告逻辑清晰、结构完整、建议具备可操作性"
+    },
+    "teamConfig": {
+      "pm": {
+        "id": "pm_001",
+        "name": "项目经理"
+      },
+      "members": [
+        {
+          "id": "92bcfda35feeaf73",
+          "name": "研究员",
+          "taskPrompt": "负责《2025-2026全球AI技术行业趋势研究报告》的数据收集与深度分析。请重点覆盖大模型、多模态AI、智能Agent、开源生态系统及AI芯片与推理成本五大领域。你需要搜集2024年后的权威资料（不少于20个），整理中美欧等地区至少15家代表性公司的动态，构建包含30条以上关键事件（技术突破、产品发布、融资并购等）的时间线。此外，请基于具体数据支撑分析机会与风险，明确区分已确认事实与预测分析，为报告撰写提供详实可靠的数据基础和行业洞察。"
+        },
+        {
+          "id": "4e8e5f21c386b71c",
+          "name": "撰稿人",
+          "taskPrompt": "负责撰写《2025-2026全球AI技术行业趋势研究报告》的最终中文Markdown文档。请利用研究员提供的数据，为五大核心领域各撰写独立章节，确保逻辑清晰、结构完整。报告中需包含结构化的时间线图表、公司动态表格及机会与风险综合分析矩阵。你需要将研究成果转化为具备可操作性的战略建议，供决策层参考。请严格遵守客观性原则，区分事实与预测，并确保所有引用均标注来源链接且格式规范。"
+        }
+      ]
+    },
+    "plan": {
+      "subtasks": [
+        {
+          "id": "sub_x1k9m2p5",
+          "title": "基础数据与权威资料搜集",
+          "description": "搜集2024年后的最新公开资料、行业报告及公司公告，建立包含不少于20个权威来源的数据库。重点覆盖大模型、多模态AI、智能Agent、开源生态系统及AI芯片与推理成本五大领域的基础数据。",
+          "assigneeId": "92bcfda35feeaf73",
+          "dependsOn": []
+        },
+        {
+          "id": "sub_l7q3w9r4",
+          "title": "行业动态与关键事件梳理",
+          "description": "整理中美欧等地区至少15家代表性公司（如OpenAI, Google, 百度, 阿里等）的动态，构建包含30条以上关键事件（技术突破、产品发布、融资并购等）的2025-2026时间线草案。",
+          "assigneeId": "92bcfda35feeaf73",
+          "dependsOn": []
+        },
+        {
+          "id": "sub_t8b2n6v1",
+          "title": "五大领域深度分析与机会风险研判",
+          "description": "基于搜集的数据，对五大核心领域进行深度分析，明确区分已确认事实与预测分析。构建机会与风险综合分析矩阵，确保分析结果有具体案例和数据支撑。",
+          "assigneeId": "92bcfda35feeaf73",
+          "dependsOn": [
+            "sub_x1k9m2p5",
+            "sub_l7q3w9r4"
+          ]
+        },
+        {
+          "id": "sub_c5d1f8g3",
+          "title": "报告框架搭建与Markdown模板设计",
+          "description": "设计最终报告的Markdown文档结构，规划目录体系，确立五大重点领域独立章节的篇幅与逻辑流向，并为可视化元素预留位置。",
+          "assigneeId": "4e8e5f21c386b71c",
+          "dependsOn": []
+        },
+        {
+          "id": "sub_h4j7k2l9",
+          "title": "核心章节内容撰写",
+          "description": "利用研究员提供的分析数据，撰写五大核心领域的独立章节内容。确保语言流畅、逻辑清晰，并严格遵守客观性原则，将事实与预测进行区分。",
+          "assigneeId": "4e8e5f21c386b71c",
+          "dependsOn": [
+            "sub_t8b2n6v1",
+            "sub_c5d1f8g3"
+          ]
+        },
+        {
+          "id": "sub_z3x6c9v2",
+          "title": "可视化图表与清单制作",
+          "description": "制作2025-2026关键事件时间线图表（按领域分类）、代表公司及产品动态清单表格，以及机会与风险综合分析矩阵的可视化呈现。",
+          "assigneeId": "4e8e5f21c386b71c",
+          "dependsOn": [
+            "sub_l7q3w9r4",
+            "sub_t8b2n6v1"
+          ]
+        },
+        {
+          "id": "sub_m5n8p1q4",
+          "title": "战略建议、总结与引用规范校验",
+          "description": "基于研究成果撰写具备可操作性的战略建议和报告总结。同时，检查全文引用来源，确保所有链接均可访问、权威可靠，并符合Markdown格式规范。",
+          "assigneeId": "4e8e5f21c386b71c",
+          "dependsOn": [
+            "sub_h4j7k2l9",
+            "sub_z3x6c9v2"
+          ]
+        }
+      ]
+    },
+    "result": {
+      "summary": "任务执行失败：PM员工不存在",
+      "error": "PM员工不存在",
+      "subtaskSummary": {
+        "total": 7,
+        "completed": 0,
+        "failed": 0
+      },
+      "failedAt": "2026-02-28T15:34:03.738Z"
+    },
+    "tokenUsage": 0,
+    "createdAt": "2026-02-28T15:29:54.123Z",
+    "updatedAt": "2026-02-28T15:34:03.738Z",
+    "subtasks": [
+      {
+        "id": "083451486991b0a2",
+        "title": "基础数据与权威资料搜集",
+        "description": "搜集2024年后的最新公开资料、行业报告及公司公告，建立包含不少于20个权威来源的数据库。重点覆盖大模型、多模态AI、智能Agent、开源生态系统及AI芯片与推理成本五大领域的基础数据。",
+        "assigneeId": "92bcfda35feeaf73",
+        "assigneeName": "研究员",
+        "status": "pending",
+        "dependsOn": [],
+        "output": null,
+        "sortOrder": 0,
+        "tokenUsage": 0,
+        "createdAt": "2026-02-28T15:34:03.733Z",
+        "updatedAt": "2026-02-28T15:34:03.733Z"
+      },
+      {
+        "id": "a33329e3707ef540",
+        "title": "行业动态与关键事件梳理",
+        "description": "整理中美欧等地区至少15家代表性公司（如OpenAI, Google, 百度, 阿里等）的动态，构建包含30条以上关键事件（技术突破、产品发布、融资并购等）的2025-2026时间线草案。",
+        "assigneeId": "92bcfda35feeaf73",
+        "assigneeName": "研究员",
+        "status": "pending",
+        "dependsOn": [],
+        "output": null,
+        "sortOrder": 1,
+        "tokenUsage": 0,
+        "createdAt": "2026-02-28T15:34:03.733Z",
+        "updatedAt": "2026-02-28T15:34:03.733Z"
+      },
+      {
+        "id": "acd5915f188083f9",
+        "title": "五大领域深度分析与机会风险研判",
+        "description": "基于搜集的数据，对五大核心领域进行深度分析，明确区分已确认事实与预测分析。构建机会与风险综合分析矩阵，确保分析结果有具体案例和数据支撑。",
+        "assigneeId": "92bcfda35feeaf73",
+        "assigneeName": "研究员",
+        "status": "pending",
+        "dependsOn": [
+          "083451486991b0a2",
+          "a33329e3707ef540"
+        ],
+        "output": null,
+        "sortOrder": 2,
+        "tokenUsage": 0,
+        "createdAt": "2026-02-28T15:34:03.733Z",
+        "updatedAt": "2026-02-28T15:34:03.733Z"
+      },
+      {
+        "id": "901311273e5f625f",
+        "title": "报告框架搭建与Markdown模板设计",
+        "description": "设计最终报告的Markdown文档结构，规划目录体系，确立五大重点领域独立章节的篇幅与逻辑流向，并为可视化元素预留位置。",
+        "assigneeId": "4e8e5f21c386b71c",
+        "assigneeName": "撰稿人",
+        "status": "pending",
+        "dependsOn": [],
+        "output": null,
+        "sortOrder": 3,
+        "tokenUsage": 0,
+        "createdAt": "2026-02-28T15:34:03.733Z",
+        "updatedAt": "2026-02-28T15:34:03.733Z"
+      },
+      {
+        "id": "36601b479424cfb5",
+        "title": "核心章节内容撰写",
+        "description": "利用研究员提供的分析数据，撰写五大核心领域的独立章节内容。确保语言流畅、逻辑清晰，并严格遵守客观性原则，将事实与预测进行区分。",
+        "assigneeId": "4e8e5f21c386b71c",
+        "assigneeName": "撰稿人",
+        "status": "pending",
+        "dependsOn": [
+          "acd5915f188083f9",
+          "901311273e5f625f"
+        ],
+        "output": null,
+        "sortOrder": 4,
+        "tokenUsage": 0,
+        "createdAt": "2026-02-28T15:34:03.733Z",
+        "updatedAt": "2026-02-28T15:34:03.733Z"
+      },
+      {
+        "id": "f765a3dc84191f2a",
+        "title": "可视化图表与清单制作",
+        "description": "制作2025-2026关键事件时间线图表（按领域分类）、代表公司及产品动态清单表格，以及机会与风险综合分析矩阵的可视化呈现。",
+        "assigneeId": "4e8e5f21c386b71c",
+        "assigneeName": "撰稿人",
+        "status": "pending",
+        "dependsOn": [
+          "a33329e3707ef540",
+          "acd5915f188083f9"
+        ],
+        "output": null,
+        "sortOrder": 5,
+        "tokenUsage": 0,
+        "createdAt": "2026-02-28T15:34:03.733Z",
+        "updatedAt": "2026-02-28T15:34:03.733Z"
+      },
+      {
+        "id": "515545040cac6ae2",
+        "title": "战略建议、总结与引用规范校验",
+        "description": "基于研究成果撰写具备可操作性的战略建议和报告总结。同时，检查全文引用来源，确保所有链接均可访问、权威可靠，并符合Markdown格式规范。",
+        "assigneeId": "4e8e5f21c386b71c",
+        "assigneeName": "撰稿人",
+        "status": "pending",
+        "dependsOn": [
+          "36601b479424cfb5",
+          "f765a3dc84191f2a"
+        ],
+        "output": null,
+        "sortOrder": 6,
+        "tokenUsage": 0,
+        "createdAt": "2026-02-28T15:34:03.733Z",
+        "updatedAt": "2026-02-28T15:34:03.733Z"
+      }
+    ]
+  }
+}

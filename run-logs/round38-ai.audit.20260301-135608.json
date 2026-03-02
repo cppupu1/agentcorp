@@ -1,0 +1,113 @@
+{
+  "label": "round38-ai",
+  "sessionId": "round38-ai-20260301-135608",
+  "kind": "ai",
+  "userPrompt": "老板今晚要看材料，麻烦你直接推进：近7天AI技术行业都发生了啥，提3条重点，每条要有日期和来源链接。",
+  "pmChatDurationMs": 70917,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "a6d0277e32709254",
+      "count": 2
+    },
+    {
+      "tool": "list_tools",
+      "count": 2
+    },
+    {
+      "tool": "1791ada993a23a56",
+      "count": 1
+    },
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "544d24f667440e39"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 70917
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "544d24f667440e39"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": false,
+      "status": "failed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": false
+    },
+    {
+      "name": "output_not_too_short",
+      "ok": false,
+      "len": 87
+    },
+    {
+      "name": "ai_has_date",
+      "ok": false,
+      "dateHits": 1
+    },
+    {
+      "name": "ai_has_links",
+      "ok": false,
+      "linkHits": 0
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "544d24f667440e39",
+    "status": "failed",
+    "timedOut": false,
+    "tokenUsage": 0,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "任务执行失败：PM经过 3 次重试仍未完成所有子任务（剩余 1 个）"
+  }
+}

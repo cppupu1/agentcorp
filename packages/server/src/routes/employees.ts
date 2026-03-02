@@ -102,6 +102,11 @@ export function registerEmployeeRoutes(app: FastifyInstance) {
     return reply.status(201).send({ data: result });
   });
 
+  // Auto-assign tools to ALL employees (before /:id to avoid conflict)
+  app.post('/api/employees/auto-assign-tools', async () => {
+    return { data: await employeeService.autoAssignToolsForAll() };
+  });
+
   // Get by ID
   app.get<{ Params: { id: string } }>('/api/employees/:id', async (req) => {
     return { data: await employeeService.getEmployee(req.params.id) };
@@ -135,4 +140,10 @@ export function registerEmployeeRoutes(app: FastifyInstance) {
     const emp = await employeeService.copyEmployee(req.params.id);
     return reply.status(201).send({ data: emp });
   });
+
+  // Auto-assign tools to a single employee
+  app.post<{ Params: { id: string } }>('/api/employees/:id/auto-assign-tools', async (req) => {
+    return { data: await employeeService.autoAssignToolsForEmployee(req.params.id) };
+  });
+
 }

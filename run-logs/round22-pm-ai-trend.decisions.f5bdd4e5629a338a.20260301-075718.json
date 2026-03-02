@@ -1,0 +1,199 @@
+[
+  {
+    "id": "87848d6ef00a390e",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask",
+    "input": {
+      "subtaskId": "f97670651bb98279",
+      "employeeId": "2187e3c8b95a477c",
+      "instruction": "收集并分析近30天内AI技术行业的最新趋势，重点关注三个方向：1）大模型技术进展 2）Agent智能体发展 3）企业落地应用案例。要求：提炼3条关键结论，每条结论需包含具体日期（YYYY-MM-DD格式）和可验证的信息来源链接；关键结论必须至少有2个独立来源交叉验证，优先使用一手来源（官方公告/官方博客/监管文件/论文/财报）。"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:57:40.885Z"
+  },
+  {
+    "id": "f3be72e9b8a36263",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask_result",
+    "input": null,
+    "output": "[已派发] 子任务「整理近30天AI技术行业趋势报告」(f97670651bb98279) 已分配给员工 2187e3c8b95a477c 开始执行。请继续派发其他可执行的子任务，全部派发后调用 wait_subtasks 等待结果。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:57:40.887Z"
+  },
+  {
+    "id": "0ef633bd4f00b0b3",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks",
+    "input": {},
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:57:40.968Z"
+  },
+  {
+    "id": "df46ddb4e4eabeae",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks_result",
+    "input": null,
+    "output": "共 1 个子任务执行完毕：\n\n[f97670651bb98279]「整理近30天AI技术行业趋势报告」: 我将帮您收集并分析近30天内AI技术行业的最新趋势。让我先搜索三个重点方向的相关信息。关键结论一：2025年企业AI部署加速，超九成企业启动AI模型应用，重心转向性能优化与安全整合。\n- 具体日期：2025-05-22\n- 来源链接1：https://net.zol.com.cn/986/9863524.html\n- 来源链接2：https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2025/art_79550fe6ff5f4c9e9d8f73bfb57b8d4e.html\n\n关键结论二：AI智能体从个人工具向企业级数字员工演进，协作与多任务执行能力显著增强。\n- 具体日期：2025-06-19\n- 来源链接1：https://xie.infoq.cn/article/27977e2cedce6eb71a94dc722\n- 来源链接2：https://xie.infoq.cn/article/4bd44b213108ff4ddc498bf35\n\n关键结论三：企业应用落地呈现规模化趋势，典型场景覆盖制造、能源、通信等关键行业，央企AI+应用场景超过1000个。\n- 具体日期：2025-01-17；2025-01-24\n- 来源链接1：https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2025/art_79550fe6ff5f4c9e9d8f73bfb57b8d4e.html\n- 来源链接2：https://net.zol.com.cn/986/9863524.html",
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:26.444Z"
+  },
+  {
+    "id": "8a9b77e2bf457600",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask",
+    "input": {
+      "employeeId": "2187e3c8b95a477c",
+      "instruction": "重新收集并分析近30天内AI技术行业的最新趋势。重要提醒：当前日期是2025-11-21，\"近30天\"指2025-10-22至2025-11-21期间的信息，必须严格在此时间范围内收集。重点关注三个方向：1）大模型技术进展 2）Agent智能体发展 3）企业落地应用案例。要求：提炼3条关键结论，每条结论需包含具体日期（YYYY-MM-DD格式，必须在2025-10-22至2025-11-21之间）和可验证的信息来源链接；关键结论必须至少有2个独立来源交叉验证，优先使用一手来源（官方公告/官方博客/监管文件/论文/财报）。",
+      "subtaskId": "f97670651bb98279"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:32.178Z"
+  },
+  {
+    "id": "9ec70a4a281c7f27",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask_result",
+    "input": null,
+    "output": "[已派发] 子任务「整理近30天AI技术行业趋势报告」(f97670651bb98279) 已分配给员工 2187e3c8b95a477c 开始执行。请继续派发其他可执行的子任务，全部派发后调用 wait_subtasks 等待结果。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:32.180Z"
+  },
+  {
+    "id": "3e7b3fbfa400aa6f",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks",
+    "input": {},
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:32.181Z"
+  },
+  {
+    "id": "96a16673079e0be4",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks_result",
+    "input": null,
+    "output": "共 1 个子任务执行完毕：\n\n[f97670651bb98279]「整理近30天AI技术行业趋势报告」: [跳过] 子任务 f97670651bb98279 状态为 completed，无需执行",
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:32.181Z"
+  },
+  {
+    "id": "48a558c975003977",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask",
+    "input": {
+      "employeeId": "3d80d199d14b6072",
+      "instruction": "你作为研究员，请收集并分析2025年10月22日至2025年11月21日（近30天）内AI技术行业的最新趋势。重点关注：1）大模型技术进展 2）Agent智能体发展 3）企业落地应用案例。要求：提炼3条关键结论，每条必须包含具体日期（必须在2025-10-22至2025-11-21之间，格式YYYY-MM-DD）和可验证的来源链接；每条关键结论需至少2个独立来源交叉验证；优先使用官方公告、官方博客、监管文件、论文、财报等一手来源。请先进行信息搜索和数据收集工作。",
+      "subtaskId": "f97670651bb98279"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:36.239Z"
+  },
+  {
+    "id": "404837f01e7e8ff7",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask_result",
+    "input": null,
+    "output": "[已派发] 子任务「整理近30天AI技术行业趋势报告」(f97670651bb98279) 已分配给员工 3d80d199d14b6072 开始执行。请继续派发其他可执行的子任务，全部派发后调用 wait_subtasks 等待结果。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:36.240Z"
+  },
+  {
+    "id": "32bc5d4fec83a0f8",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks",
+    "input": {},
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:36.338Z"
+  },
+  {
+    "id": "5caecf642787602c",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks_result",
+    "input": null,
+    "output": "共 1 个子任务执行完毕：\n\n[f97670651bb98279]「整理近30天AI技术行业趋势报告」: [跳过] 子任务 f97670651bb98279 状态为 completed，无需执行",
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:36.340Z"
+  },
+  {
+    "id": "3b7ed66ac6603780",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task",
+    "input": {
+      "summary": "子任务状态异常，显示为 completed 但未获得最新执行结果。此前执行得到的结论日期超出近30天范围（2025-10-22 至 2025-11-21），需要后续重新核验并限定时间范围进行修正。现有交付物仅作为初步参考，不满足任务书要求。",
+      "deliverables": "# 近30天AI技术行业趋势报告（初始版本-待修正时间范围）\n\n## 关键结论\n\n### 结论一：企业AI部署加速\n- **具体日期**：2025-05-22\n- **内容**：超九成企业启动AI模型应用，重心转向性能优化与安全整合\n- **来源链接1**：https://net.zol.com.cn/986/9863524.html\n- **来源链接2**：https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2025/art_79550fe6ff5f4c9e9d8f73bfb57b8d4e.html\n\n### 结论二：AI智能体演进\n- **具体日期**：2025-06-19\n- **内容**：从个人工具向企业级数字员工演进，协作与多任务执行能力增强\n- **来源链接1**：https://xie.infoq.cn/article/27977e2cedce6eb71a94dc722\n- **来源链接2**：https://xie.infoq.cn/article/4bd44b213108ff4ddc498bf35\n\n### 结论三：企业应用规模化\n- **具体日期**：2025-01-17；2025-01-24\n- **内容**：典型场景覆盖制造、能源、通信等关键行业，央企AI+应用场景超过1000个\n- **来源链接1**：https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2025/art_79550fe6ff5f4c9e9d8f73bfb57b8d4e.html\n- **来源链接2**：https://net.zol.com.cn/986/9863524.html\n\n## 待修正事项\n1. 时间范围需要严格限定为2025-10-22至2025-11-21（近30天）\n2. 需重新搜索并补充该时间范围内的权威来源\n3. 关键结论需用至少2个独立来源交叉验证，并优先使用官方公告、官方博客、监管文件、论文、财报等一手来源"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:43.723Z"
+  },
+  {
+    "id": "9e6ba7ad28be9d9a",
+    "type": "decision",
+    "taskId": "f5bdd4e5629a338a",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task_result",
+    "input": null,
+    "output": "任务已完成。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T07:58:43.726Z"
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "id": "1263ef58964b73af",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": {
+      "toolCallId": "call_function_fl47x06f4emc_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T10:03:24.293Z"
+  },
+  {
+    "id": "489d1a9b60514207",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": null,
+    "output": "{\n  \"NODE\": \"/opt/homebrew/Cellar/node@22/22.16.0/bin/node\",\n  \"INIT_CWD\": \"/Users/chenpu/workspace/claude-code/YourTeam2/packages/server\",\n  \"TERM\": \"xterm-256color\",\n  \"SHELL\": \"/bin/zsh\",\n  \"npm_config_global_prefix\": \"/opt/homebrew\",\n  \"COLOR\": \"0\",\n  \"npm_config_noproxy\": \"\",\n  \"npm_config_local_prefix\": \"/Users/chenpu/workspace/claude-code/YourTeam2\",\n  \"USER\": \"chenpu\",\n  \"npm_config_globalconfig\": \"/opt/homebrew/etc/npmrc\",\n  \"__CF_USER_TEXT_ENCODING\": \"0x1F5:0:0\",\n  \"npm_execpath\": \"/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/bin/npm-cli.js\",\n  \"PATH\": \"/Users/chenpu/.npm-cache-new/_npx/5b2dd62b9d0bddd4/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bi",
+    "isError": false,
+    "durationMs": 2,
+    "createdAt": "2026-03-01T10:03:24.295Z"
+  },
+  {
+    "id": "6196bf586f592e3d",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_z5p68ymo9qu0_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T10:03:46.301Z"
+  },
+  {
+    "id": "bd8649278869c9cd",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年AI大模型资料汇编\nURL: http://www.sohu.com/a/987995144_121649707\nDescription: 2025年AI大模型行业迎来全方位结构性变革,竞争从单纯的能力与参数比拼转向可持续性之战,头部玩家在极限能力､成本效率等维度重新取舍,技术､市场､开源､治理四大力量交织,推动行业从野蛮生长走向成熟化､体系化发展｡ 技术层面迎来多重革命,训练范式从RLHF升级为RLVR,依托客观可验证的奖励信号实现模型推理能力飞跃,多智能体自我博弈､合成数据微调也成为模型进化主流方式,让模型摆脱对人类标注的依赖｡同时,模型呈现出“锯齿状”能力结构,在数学､编程等形式化智力领域实现突破性进展,却在常识推理上存在明显短板,传统评测基准因模型“应试”失效,行业转向贴近真实应用的综合评测体系｡此外,MoE架构回潮､RAG成为标配,算力格局走向云+端协同,本地部署技术的突破让大模型从云端走向个人设备｡ 市场与生态格局深度洗牌,谷歌Gemini3实现对OpenAI的反超,中国模型凭借成本效益实现弯道超车,“百模大战”走向行业出清,竞争核心从模型本身转向生态控制权,巨头纷纷构筑芯片､模型､应用的全栈生态闭环｡开源浪潮成为关键变量,中国厂商成为全球开源生态主力军,通义千问､DeepSeek等开源模型性能逼近闭源模型,形成开源蚕食长尾市场､闭源聚焦高端企业级市场的双轨竞争格局,技术民主化让中小企业和个人开发者获得更多创新机会｡ 应用范式发生根本性转移,AI从通用聊天助手进化为深度集成工作流的专用工具与自主智能体,“AI原生应用层”崛起,“氛围编程”重塑软件开发流程,开发者角色从编码者转向系统设计师｡\nPublished date: 2026-02-17T08:44:40+08:00\nSite name: 搜狐\n\nTitle: 中国大模型一年狂飙421%,全球AI格局变天\nURL: https://new.qq.com/rain/a/20260228A07TNP00\nDescription: 2025年初,DeepSeek-R1横空出世｡奠定了大模型新一轮军备竞赛的主旋律:即更低的成本､更强悍的性能､以及开源｡      一年过去,全球大模型产业格局正由少数科技巨头依托算力､数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建｡中国大模型,陆续坐上牌桌｡      全球头部大模型API聚合平台OpenRouter的数据显示,过去一年,中国大模型在全球市场的Token消耗占比增长了421%｡      (图源:OpenRouter,对比日期:2025年2月8日/2026年2月10日)      可以看到,2025年初,大模型推理市场还是典型的“美系双寡头”结构:Anthropic一家的Token消耗占比就达到总量的42.2%,紧随其后的是Google,达25.8%,两家合计接近68%｡再往后,欧洲的Mistral消耗量占8.2%,DeepSeek 6.7%,OpenAI 4.9%,Meta Llama 4.5%,整体呈现出高度集中的金字塔格局｡      但到2026年初,这一市场格局被颠覆｡Google虽为第一,但Token消耗占比只有18.8%,Anthropic下降至14.7%,两家合计仅约33%,头部企业的控制力几乎减半｡与此同时,中国大模型Token消耗份额逼近三成:月之暗面的MoonshotAI达到14.5%,DeepSeek 9.0%,MiniMax 4.2%,Qwen也提升至2.6%｡      \nPublished date: 2026-02-28T22:32:14+08:00\nSite name: 腾讯网\n\nTitle: 2025年人工智能发展回顾:开辟AI新场景—新闻—科学网\nURL: https://news.sciencenet.cn/htmlnews/2026/1/558263.shtm\nDescription: 2025年俄罗斯人工智能(AI)发展呈现“政策驱动场景落地､军工与民用双线并进､自主技术生态初步成型”的特征｡2025年AI市场规模预计达1万亿卢布,其中企业级解决方案占比首超消费级达52.3%｡ 在科研突破与军事应用方面,青年科学家团队研发的Headless-AD模型显著优化了长文本处理能力｡军事领域,集成AI能力的“蜂群”无人机系统于5月开始高强度测试,其已具备自主地形匹配与目标分类功能｡ 在行业场景落地方面,AI技术深入航天､医疗､金融等各个领域｡6月,俄航天局计划将国产大模型GigaChat部署至国际空间站,旨在将卫星图像分辨率提升一倍｡医疗领域,Yandex推出了首批儿科专用核磁共振影像分析AI工具｡ 在模型领域,科技公司推出了多款AI模型｡1月Open",
+    "isError": false,
+    "durationMs": 1475,
+    "createdAt": "2026-03-01T10:03:47.776Z"
+  },
+  {
+    "id": "497f81b795b40c0e",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_z5p68ymo9qu0_2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T10:03:48.610Z"
+  },
+  {
+    "id": "602af09f6337c7a7",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_z5p68ymo9qu0_3"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T10:03:49.519Z"
+  },
+  {
+    "id": "1adc0615fae8f8f9",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: OpenAI 2025产品战略:超级助手、AI代理与模型升级的全面布局_AI·未来-CSDN专栏\nURL: https://download.csdn.net/blog/column/12876673/148435582\nDescription:  一､超级助手:从工具到“T型技能”的跃迁 1. 技术升级:o2/o3/o4模型的突破 OpenAI计划在2025年上半年将ChatGPT升级为“超级助手”,其核心驱动力是新一代模型(如o2/o3/o4)的发布｡这些模型预计具备以下能力: 代理性任务处理 :从简单的日常事务(如日程安排､邮件撰写)到复杂的编程､数据分析等专业任务,均能实现端到端自动化｡ 多模态交互 :整合文本､语音､图像等多种输入输出方式,提升交互效率｡ 深度推理能力 :通过强化学习和大规模预训练,解决需要长期规划或跨领域知识的问题｡ 2. T型技能:广度与深度的平衡 超级助手将具备“T型技能”: 横向广度 :覆盖广泛的基础任务,如信息检索､内容生成､语言翻译等｡ 纵向深度 :在特定领域(如法律､医学､工程)中,提供专业级解决方案,甚至超越人类专家水平｡ 3. 商业化路径:从需求创造到高价值模型\nPublished date: 2026-02-23T08:21:17+08:00\nSite name: download.csdn.net\n\nTitle: OpenAI 通过新开发者 API 提升 AI 代理能力--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0312/3164241.shtml\nDescription: 包括谷歌在内的多家科技公司最近强调了代理功能,OpenAI 首席执行官山姆·阿尔特曼在一月份表示,2025 年将是 AI 代理“加入劳动力”的一年｡包括 Google 在内的多家科技公司最近都在强调代理特性,今年 1 月,OpenAI 首席执行官 Sam Altman 表示,2025 年将是 AI 代理\"加入劳动力大军\"的一年｡ OpenAI 正在努力将这一承诺变为现实｡周二,OpenAI 推出了新的\"Responses API\",旨在帮助软件开发者创建能够使用该公司 AI 模型独立执行任务的 AI 代理｡Responses API 最终将取代当前的 Assistants API,OpenAI 计划在 2026 年上半年停用后者｡ 通过这项新服务,用户可以开发自定义 AI 代理,使用文件搜索工具快速检索公司数据库(OpenAI 承诺不会用这些文件训练其模型),并浏览网站——这类似于 OpenAI 的Operator 代理所提供的功能｡开发者还可以访问其底层的计算机使用代理 (CUA) 模型,以实现数据录入等任务的自动化｡\nPublished date: 2026-02-07T16:56:42+08:00\nSite name: ai.zhiding.cn\n\nTitle: 2024,AI这一年-技术平台-商用办公频道-至顶网\nURL: http://biz.zhiding.cn/2024/1227/3162238.shtml\nDescription: OpenAI的技术布局已经全面超越ChatGPT 这家可说以一己之力开启生成式AI新时代的公司,今年也没有错过任何重要机会｡尽管来自后起之秀和传统技术大厂的竞争冲击愈演愈烈,甚至投资合作伙伴乃至微软都只能算是竞合关系,但OpenAI仍然牢牢把握着这一年中AI生态体系中的C位｡ o1模型:OpenAI发布了其GPT家族之外的首个大型通用模型家族,即o1“推理”系列｡该系列将更多时间用于处理复杂提示词,从而提高了响应准确性｡其在科学､编程和推理类任务中表现尤其突出｡ o3模型:继今年9月发布的o1模型之后,OpenAI在年底又推出了一款更为先进的o3模型｡虽然这款模型要到2025年初才会向公众开放,甚至不会供任何第三方使用,但仍体现出OpenAI不断探索､突破自我的雄心｡ ChatGPT搜索:这项功能的最初形态其实是仅限受邀用户体验的独立产品SearchGPT,后被整合进ChatGPT当中,支持在ChatGPT内以高度实时的方式检索网络信息,并更精确地交付搜索结果｡\nPublished date: 2026-02-18T02:57:16+08:00\nSite name: biz.zhiding.cn\n\nTitle: 研究  OpenAI\nURL: https://www.openai.com/research/\nDescription: 研究 通往 AGI 之路的开创性研究 我们相信,我们的研究最终将带来通用人工智能,一种可以解决人类问题的系统｡ 重点领域 我们运用深度学习技术,通过海量数据和高级推理来训练人工智能系",
+    "isError": false,
+    "durationMs": 1002,
+    "createdAt": "2026-03-01T10:03:49.612Z"
+  },
+  {
+    "id": "7f7f88c55ecc2837",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年AI制药融资超67亿元同比暴增130%,头部企业拿走近半资金-金融界\nURL: https://finance.jrj.com.cn/2026/02/27125156108165.shtml\nDescription: 2025年,国内AI制药领域累计融资总额超67亿元,同比大幅增长130.5%,资本加速涌入这一赛道｡但在热潮之下,行业仍面临临床转化瓶颈与商业化验证的双重考验｡ 数据显示,2025年国内AI制药领域共发生融资事件32起｡多家头部企业相继斩获大额融资:剂泰科技于2025年8月完成4亿元D轮融资;深势科技同年12月完成总额超8亿元C轮融资;被称为\"AI制药四小龙\"之一的深度智耀更是在不到两个月内连续完成近5000万美元D轮融资和6000万美元新一轮融资｡二级市场方面,英矽智能于2025年底登陆港交所,以22.77亿港元的募资总额成为当年港股 生物医药 领域最大IPO｡ 截至2025年12月,全球AI制药企业已超350家,其中国内企业不少于100家,但步入成长期与成熟期的仅10余家｡从资金流向看,行业呈现\"交易数量微降､融资金额大幅反弹\"的结构性分化特征,头部企业集中度持续走高,行业前五名融资占比已逼近50%｡\nPublished date: 2026-02-27T12:51:54+08:00\nSite name: 金融界\n\nTitle: AI 创企融资报告:2025年美国9家AI初创公司已完成亿元级融资--商用办公频道-至顶网\nURL: http://biz.zhiding.cn/2025/0311/3164188.shtml\nDescription: 2025年伊始,美国AI行业融资热潮延续｡迄今已有9家AI初创公司完成超1亿美元融资,其中一家更突破10亿美元大关｡这些公司涉及AI研究､基础设施､法律科技等多个领域,融资规模和估值均创新高,彰显了投资者对AI技术和市场前景的持续看好｡ 根据 TechCrunch 的统计,2024年有49家初创公司完成了价值1亿美元或以上的融资轮｡虽然年初刚过,但美国 AI 公司完成超过1亿美元融资的数量已接近两位数,并且已经出现了一轮超过10亿美元的融资｡ AI 研究和大语言模型公司 Anthropic 完成了35亿美元的 E 轮融资,公司估值达到615亿美元｡ 专注于开源生成式 AI 和AI 模型开发基础设施的 Together AI 完成了3.05亿美元的 B 轮融资,公司估值达到33亿美元｡\nPublished date: 2026-02-18T19:20:01+08:00\nSite name: biz.zhiding.cn\n\nTitle: 百度2025年营收达1291亿元 第四季度AI业务收入占比43% _ 东方财富网\nURL: http://finance.eastmoney.com/a/202602263655603046.html\nDescription: 2月26日,百度集团股份有限公司(以下简称“百度”)发布2025年第四季度及全年财报｡2025年,百度总营收达1291亿元,AI业务营收达400亿元;第四季度,百度总营收327亿元,AI业务收入占百度一般性业务收入的43%｡” AI重构百度的增长模型 带来高质量收入 从具体业务来看,百度AI云2025全年收入同比增长34%｡其中,第四季度AI高性能计算设施的订阅收入同比增长143%,较第三季度的128%进一步加速｡智能超参数的数据显示,百度智能云以109个中标项目和9亿元中标金额,连续两年成为中标项目数和中标金额最多的云厂商｡ AI原生营销服务方面,2025全年收入同比增长301%,第四季度,AI原生营销服务收入达到27亿元,同比增长110%｡ 在AI应用方面,2025年百度AI应用全年收入突破100亿元｡\nPublished date: 2026-02-26T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: 2025年AI投资回报报告\nURL: https://www.sohu.com/a/989531515_121101099\nDescription: 2025 年AI 领域与中国乘用车市场均迎来结构性发展新阶段｡AI 行业步入智能体时代,技术从辅助性向自主执行任务演进,超半数使用生成式 AI 的企业已落地 AI 智能体,各行业各地区加速布局,客户服务､营销为核心用例｡AI 智能体早期采用者收获显著回报,超八成在生成式 AI 用例实现正向收益,生产力､客户体验等五大领域成为价值核心,高管支持与资金投入是落地关键,数据隐私安全为首要考量｡中国乘用车市场呈现结构分化､增量提质特征,狭义乘用车销量同比增长 6.1%,消费季节性特征淡化｡自主品牌与新能源成增长双核,",
+    "isError": false,
+    "durationMs": 1230,
+    "createdAt": "2026-03-01T10:03:50.749Z"
+  },
+  {
+    "id": "723001f93fa9f853",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_o97ra7eibquz_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T10:03:57.034Z"
+  },
+  {
+    "id": "40ecb52790d85a86",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_o97ra7eibquz_2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T10:03:57.874Z"
+  },
+  {
+    "id": "6b8966a704804038",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 筑牢人工智能的安全堤坝-防范AI风险的现实路径与可行方案 - 今日头条\nURL: https://www.toutiao.com/article/7611439609855214086/\nDescription: 浏览器安全平台正成为防范AI风险的前沿阵地——通过在浏览器中实时扫描用户与AI模型的交互,可以在敏感数据被输入AI前进行识别和拦截｡一些先进工具已经能够对提示信息中的特定敏感词进行屏蔽,而不是简单粗暴地封锁整个应用｡ 政策法规层面,我国已迈出坚实步伐｡2026年1月1日,新修订的网络安全法正式生效,将总体国家安全观内嵌于人工智能治理的规范框架｡国家网信办等部门联合印发的《生成式人工智能服务管理暂行办法》明确将“生成式人工智能服务提供者”作为维护网络安全的法律责任主体｡地方层面也在积极行动——上海市委网信办会同市公安局网安总队近期集中开展“整治AI涉企虚假不实信息”专项行动,重点打击利用AI技术生成传播涉企谣言､误导公众认知等问题｡ 法律构建层面,需要建立“功能性主体”的归责机制｡\nPublished date: 2026-02-28T11:42:29+08:00\nSite name: 今日头条\n\nTitle: 搜狐医药  天津等多地要求严禁使用AI自动生成处方,AI自动处方风险有多大?_医保_患者_基金\nURL: http://www.sohu.com/a/990568028_359980\nDescription:  另外,我们还看到2023年8月北京市卫健委牵头制定的《北京市互联网诊疗监管实施办法(试行)》中明确强调,严禁使用人工智能等自动生成处方;2025年2月湖南省医疗保障局发布《关于进一步加强基本医疗保障定点零售药店管理的通知》明确规定,互联网医院须接入省医保电子处方中心进行电子处方流转,严禁使用人工智能等自动生成处方…… AI自动生成处方,风险有多大? 2025年北京青年报一份报道评论指出,AI虽然能够快速分析数据,但它无法像人类医生一样,凭借丰富的临床经验和敏锐的洞察力,对患者的病情进行全面细致的判断｡尤其是对于慢性病患者的个性化用药,AI更是难以满足其复杂的需求｡以糖尿病患者为例,病情往往会受到饮食､运动､情绪等多种因素的影响,用药剂量需要根据具体情况不断调整,而AI很难做到如此精准的把控｡ 法律责任层面,由于AI不是独立的医疗行为主体,没有处方权,也无法承担法律责任,按照“谁开处方谁负责”的原则,当AI开处方时很难界定是AI研发方､使用方还是其他相关方的责任,一旦AI自动生成的处方,出现医疗事故,责任认定成为难题,就会使得后续的责任追溯和赔偿机制难以有效运行,患者权益无法得到充分保障｡\nPublished date: 2026-02-27T13:17:59+08:00\nSite name: 搜狐\n\nTitle: AI 专家预测:2025 年AI 泡沫或将破裂--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0121/3162964.shtml\nDescription: \" Chaudhry 还预测,针对 AI 社会影响的监管将更加严格,特别是对生成式 AI｡他说:\"2025 年将是 AI 安全的关键一年\",并补充说\"我们将看到技术和政策层面的努力来降低其风险｡\" 同时,Cerniauskas 指出,讨论正在转向负责任和可持续的 AI 实践｡他说:\"支撑 AI 发展的服务器给环境带来压力,人们也越来越关注 AI 运作的透明度｡AI \nPublished date: 2026-02-18T17:27:39+08:00\nSite name: ai.zhiding.cn\n\nTitle: 2025 年如何应对数字化监管--商用办公频道-至顶网\nURL: http://biz.zhiding.cn/2025/0327/3164741.shtml\nDescription: 2025年将是数字监管实施的关键年份｡新的在线安全和竞争法规将生效,企业需要提前准备｡消费者保护､人工智能､云计算和数据共享等领域都将面临新的监管要求｡公司应采取积极主动的策略,评估风险,调整业务模式,以适应不断变化的监管环境｡数字监管将继续成为公众､政治和经济辩论的核心话题｡ 鉴于数字技术已经深深融入我们的生活､工作､交易和通信方式,英国和欧盟近期已经完成了前所未有的大量数字监管法规制定｡ \nPublished date: 2026-02-05T14:33:17+08:00\nSite name: biz.zhiding.cn\n\nTitle: AI治理当道,企业如何筑牢合规与风控防火墙?_合规风险_算法_管理\nURL: https://www.sohu.com/a/990415940_1225471",
+    "isError": false,
+    "durationMs": 1378,
+    "createdAt": "2026-03-01T10:03:58.412Z"
+  },
+  {
+    "id": "792abbcdd1200826",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年Agent创业实战指南:从0到1打造高增长AI智能体项目PI博客工具数据逻辑_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902p708.html?from=tech\nDescription: 2025年,AI Agent(智能体)正从技术概念走向商业落地,全球市场规模预计突破 2000亿美元 ,其中垂直行业解决方案占比达 44.5% (890亿美元),年复合增长率 46.3% (36氪《2025 AI Agent市场报告》)｡ 一､Agent核心能力与技术架构 1. 与传统AI的本质差异 维度 传统AI工具 AI Agent 决策逻辑 基于预设规则(if-this-then-that) 动态规划+多步骤推理(如CoT思维链) 环境交互 被动响应指令 主动感知环境+调用外部工具(API/浏览器) 学习能力 需人工重新训练 通过用户反馈持续优化策略 典型案例 智能客服问答机器人 邮储银行债券交易Agent(自动询价+风控) 来源:《AI Agent与RPA的16个关键区别》(CSDN博客,2025.03) 2. 技术架构三要素 感知层 :多模态输入(文本/语音/图像),如智谱AutoGLM通过OCR识别网页元素(CSDN博客,2025.04) 决策层 :LLM大模型(如GPT-4/DeepSeek)+ 任务规划算法(ReAct/ToT) 执行层 :工具调用(API/插件)+ 动作执行(如浏览器操作/代码运行) 二､6大高潜力创业方向与实战案例 方向1:垂直行业AGENT解决方案 核心逻辑 :聚焦单一行业痛点,构建“数据+模型+工具”闭环 案例:汽车经销商AI语音Agent(Toma公司) 痛点 :汽车经销商45%电话漏接,客服流失率50%(人人都是产品经理,2025.\nPublished date: 2026-02-28T08:11:02+08:00\nSite name: 新浪网\n\nTitle: 重庆AI Agent技术发展观察:多智能体编排如何赋能企业数字化转型_模型_项目_the\nURL: https://www.sohu.com/a/991153689_122605043\nDescription: 据信通院《2025年中国AI Agent产业发展白皮书》数据,2025年国内AI Agent市场规模同比增长超60%,多智能体协作编排成为企业级AI应用的核心技术方向｡重庆作为国家数字经济创新发展试验区,其AI Agent技术生态正在加速成型｡与传统的单一对话式AI不同,Agent具备任务拆解､工具调用､上下文记忆和自主决策能力｡当多个Agent协同工作时,形成的\"多智能体编排\"架构可以处理复杂的企业级任务——从代码生成到数据分析,从客户服务到供应链优化｡ 根据Gartner预测,到2027年,超过40%的企业AI应用将采用多智能体架构,比2024年的不足5%实现跨越式增长｡这一趋势背后的核心逻辑是:单一大模型难以覆盖企业全场景需求,而多个专业化Agent协作可以实现\"1+1>2\"的效果｡ 重庆AI Agent技术实践:开源项目驱动的技术验证 在重庆的AI Agent技术生态中,星纬智联科技有限公司(StellarLink)是一个值得关注的技术实践者｡该公司在GitHub上开源的多智能体编排项目myclaude,累计获得超过2300颗Star,支持Claude､Gemini､OpenAI等主流大模型的统一编排调度｡这一数据在重庆本地AI企业的开源项目中处于较高水平｡ 从技术架构来看,该项目采用Go语言开发,具备以下技术特征: • 多模型统一调度 :支持Anthropic Claude､Google \nPublished date: 2026-03-01T01:13:05+08:00\nSite name: 搜狐\n\nTitle: 2025年Agent创业实战指南:从0到1打造高增长AI智能体项目\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902ookm.html?from=tech\nDescription: 2025年,AI Agent(智能体)正从技术概念走向商业落地,全球市场规模预计突破 2000亿美元 ,其中垂直行业解决方案占比达 44.5% (890亿美元),年复合增长率 46.3% (36氪《2025 AI Agent市场报告》)｡与传统AI工具不同,AGENT具备 自主决策､工具调用､持续学习 三大核心能力,可像“数字员工”一样独立完成复杂任务｡ 本文基于 30+真实商业案例 \nPublished date: 2026-02-28T01:04:01",
+    "isError": false,
+    "durationMs": 1192,
+    "createdAt": "2026-03-01T10:03:59.066Z"
+  },
+  {
+    "id": "8479399a19ca5fb2",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_3gavzvsho5qg_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T10:04:07.293Z"
+  },
+  {
+    "id": "0c938f3bc3b394f2",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_3gavzvsho5qg_2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T10:04:07.598Z"
+  },
+  {
+    "id": "0105b3364fadaf12",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "       百度2025年营收达1291亿元 第四季度AI业务收入占比43% \\_ 东方财富网                     \n\n*   [财经](http://finance.eastmoney.com/)\n*   [焦点](http://finance.eastmoney.com/yaowen.html)\n*   [股票](http://stock.eastmoney.com/)\n*   [新股](http://stock.eastmoney.com/newstock.html)\n*   [期指](http://stock.eastmoney.com/gzqh.html)\n*   [期权](http://option.eastmoney.com/)\n*   [行情](http://quote.eastmoney.com/flash/sz300059.html)\n*   [数据](http://data.eastmoney.com/)\n*   [全球](http://stock.eastmoney.com/global.html)\n*   [美股](http://stock.eastmoney.com/america.html)\n*   [港股](http://hk.eastmoney.com/)\n*   [期货](http://futures.eastmoney.com/)\n*   [外汇](http://forex.eastmoney.com/)\n*   [银行](http://bank.eastmoney.com/)\n*   [基金](http://www.1234567.com.cn/)\n*   [理财](http://money.eastmoney.com/)\n*   [债券](http://bond.eastmoney.com/)\n*   [直播]( https://roadshow.eastmoney.com/)\n*   [股吧](http://guba.eastmoney.com/)\n*   [基金吧](http://guba.eastmoney.com/jj.html)\n*   [博客](http://blog.eastmoney.com/)\n*   [财富号](http://caifuhao.eastmoney.com/)\n*   [搜索](http://so.eastmoney.com/)\n\n行情中心\n\n[指数](http://quote.eastmoney.com/center/hszs.html) [期指](http://quote.eastmoney.com/center/gridlist.html#futures_cffex) [期权](http://quote.eastmoney.com/center/qqsc.html) [个股](http://quote.eastmoney.com/) [板块](http://quote.eastmoney.com/center/hsbk.html) [排行](http://quote.eastmoney.com/center/gridlist.html#hs_a_board) [新股](http://quote.eastmoney.com/center/gridlist.html#newshares) [基金](http://quote.eastmoney.com/center/jjsc.html) [港股](http://quote.eastmoney.com/center/ggsc.html) [美股](http://quote.eastmoney.com/center/mgsc.html) [期货](http://quote.eastmoney.com/center/futures.html) [外汇](http://quote.eastmoney.com/center/whsc.html) [黄金](http://quote.eastmoney.com/center/hjsc.html) [自选股](http://quote.eastmoney.com/zixuan/) [自选基金](http://favor.fund.eastmoney.com/)\n\n \n\n数据中心\n\n[资金流向](https://acttg.eastmoney.com/pub/web_dfcfsy_wzl_dhl_03_01_01_0) [主力排名](https://acttg.eastmoney.com/pub/web_dfcfsy_wzl_dhl_03_01_02_0) [板块资金](https://acttg.eastmoney.com/pub/web_df",
+    "isError": false,
+    "durationMs": 1340,
+    "createdAt": "2026-03-01T10:04:08.633Z"
+  },
+  {
+    "id": "fae6be5758bb29b9",
+    "type": "tool_call",
+    "taskId": "a263cd9cdb9359e6",
+    "subtaskId": "b04256826122aee5",
+    "employeeId": "8c5eb3c8ff0c8d83",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": " 中国大模型一年狂飙421%，全球AI格局变天\\_腾讯新闻                              [](javascript:void\\(0\\))\n\n[](https://www.qq.com)\n\n*   更多\n\n正在浏览：中国大模型一年狂飙421%，全球AI格局变天\n\n壹览商业网\n\n搜索\n\n游戏\n\n无障碍\n\n登录\n\n点一点下载电脑版\n\n点一点下载电脑版\n\n关注\n\n0\n\n评论\n\n收藏\n\n分享\n\n复制链接\n\n微信好友\n\n![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAABxCAYAAADifkzQAAAImUlEQVR4Aeyai3bbOAxEc/v//7xbJlHm2iL0iJ1ETLmnrMbgYABhDnmcbP+8vLz89xXrv+K/qpbpZznONb7XqfYeiR/JrTj3/X32czPxb+78M/IEpokju/fe+zTxfRAjP1Ym/r2/Xz67jgyi0gZe4G2ZY0142wduejRnC0M/HxKv8s/2BOc0rX8Eu8+Vid6ceIwJTBPH8Gmzy00TIVcC9PGm+vsmnMuF8N8lXh++ZiAcCH4lHvgLzuXAPh/2OVVrkFzo4yp308QqacavNYGOiddqcHazP4FvN7G6Et2qOcbmGJsDuYrM2cLON65yoF/DucaVzrPi327isxqfOpnANDGzGBb9qInVlQO5rqCPq9wq3hzynnHb6y1I7SN8a0ByHf8K/KMmfsUL/Yua08Rf4Pqmib5CKvydM3AP8DXXFUTX9fyeVRz2c61jbM0Km2+8aaKJE193AsdMvG7/s7O/E1iZCLkS4Bz+q3fqD0TfV4hFHIc+HxJ37haGczmwz696rfqAaMI5bM2Vid6ceIwJTBPH8Gmzyz++Ap6JN6t2NiHXSWf7NeT+4By/5cK5HAi/5S8LEn9t7MRfi8Yzn/MknjDgqtRp4lWdOdHXH8jVANykAh//eAnOYQv56nDc2Bxj6Netch2H21zvGcMtD94+Vxz3Z2x+FYc3bTj/tL7xPImexqD40yYO+r6/su3Vt1O/ZXUlVBzzYf+6OMKvajkOqeW49Z+JXQNSG/axc93TkThE3/x5Ej2NQfE0cVDj3Pbq2yn0j6yTjCF8CD5yVcA+v6plfeOKD3jr5lu3N4CbPdj+7NyqD3OMIdrOhX68yp0n0ZMZFE8TBzXOba9M9LE20bjiOA65EpxbYQjfOhW2DiQXgs25x9aF/Rzzja0L0THnCIbkHtE0Z2WiNyceYwLPNHGMN/6FXW6aCOeOOIRfXSEQTjVPCAeCK34Vv+/hCK/iQPqAYPNdz3EIH/rY/CM65m+aaOLE153ANPG63hzubPW7U8hx97E2tjr0+RXH8UcwpG6lA+EAFe3mh/vqPR03rkSBD13zjZ37SHyeRE9yUDxNHNQ4t7363amPNeRKcJI5jsM+37nG1jE2B/b1q9ymA/185xi3nGU5XmHo60PiEGwdSByCzVl6aU/H50n0NAbFX2zioFMZrO1NE9uxXRbkiEPwsn//rOYAyYVg863l+FkM0Qdu0oGPb4/egMRhHzvX+JF3qHKh38+miW5q4utOYJp4XW8Od7b5wz7k+FZH3JUgfMcrbE1j8yGaZznmb2HXq3jmGFd86Pdd8R23PuzrzJPoiQ2Kp4mDGue2N3/YNxH6x9ocXwkQvjnGsM85omlOpQ946+ObKRyLO9n1gBstePtsjnPhbR/qp/nWgeSYM0+ipzEo/n4TBx3Uldve/Hbqo+yXgP6xhsSdC4lb5win4jsOfX1zGobwXLvtLauKL/vtCX2dI7kVp4q3er0F6WGexN6EBotNEwczrNfuNLE3lcFih3/EqO5syN1sDiRezQTCqXIhnErHueY43rD3oK8L/XjL7y0IH85h91NhiKbrmz9PoqcxKJ4mDmqc2179iOFNyFF2vMLQ5/saqLA1j3DMh35dSBxwyg2u6gHd38ZA4s61aBWvOBBNCK50HL/ESfSLTXx+AtPE8zO7XMbq2yn0jzL0434jH3HHH8GQupVOVdfxLVzpOu58x43NgfTtu",
+    "isError": false,
+    "durationMs": 1094,
+    "createdAt": "2026-03-01T10:04:08.692Z"
+  }
+]

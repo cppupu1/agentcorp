@@ -1,0 +1,70 @@
+{
+  "label": "round34-ai",
+  "sessionId": "round34-ai-20260301-124248",
+  "kind": "ai",
+  "pmChatDurationMs": 32689,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "0f259b3f9c4f4f8d"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 32689
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "0f259b3f9c4f4f8d",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 265808,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。本报告整理了近30天内AI技术行业的关键发展趋势，输出了3条关键结论：1. **OpenAI完成历史最大规模融资**（2026-02-27）：1100亿美元融资由软银、英伟达、亚马逊联合注资，投前估值达7300亿美元，AI行业资本竞争加剧。2. **中国AI大模型全球调用量首超美国**（2026-02-09至2026-02-22）：OpenRouter数据显示中国模型周调用量首次超越美国，三周累计增长127%，四款中国模型霸榜全球前五。3. "
+  }
+}

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useI18n } from '@/i18n';
-import { modelsApi, costApi, type Model, type ModelInput } from '@/api/client';
+import { modelsApi, costApi, systemApi, type Model, type ModelInput } from '@/api/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -9,7 +9,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
-import { Plus, Pencil, Trash2, Zap, Loader2, Brain } from 'lucide-react';
+import { Plus, Pencil, Trash2, Zap, Loader2, Brain, Settings2, Save } from 'lucide-react';
 import { EmptyState } from '@/components/ui/empty-state';
 
 const statusVariant: Record<string, 'secondary' | 'success' | 'destructive'> = {
@@ -174,6 +174,131 @@ export default function ModelsPage() {
         onConfirm={handleDelete}
         loading={deleting}
       />
+
+      {!loading && models.length > 0 && <ModelSettings models={models} />}
+    </div>
+  );
+}
+
+const FEATURE_MODEL_KEYS = [
+  { key: 'default_model_id', labelKey: 'models.defaultModel', descKey: 'models.defaultModelDesc', isDefault: true },
+  { key: 'hr_assistant_model_id', labelKey: 'models.hrModel' },
+  { key: 'pm_assistant_model_id', labelKey: 'models.pmModel' },
+  { key: 'ai_parse_model_id', labelKey: 'models.aiParseModel' },
+  { key: 'task_review_model_id', labelKey: 'models.taskReviewModel' },
+  { key: 'tool_assign_model_id', labelKey: 'models.toolAssignModel' },
+] as const;
+
+function ModelSettings({ models }: { models: Model[] }) {
+  const { t } = useI18n();
+  const { toast } = useToast();
+  const [settings, setSettings] = useState<Record<string, string>>({});
+  const [loading, setLoading] = useState(true);
+  const [savingKey, setSavingKey] = useState<string | null>(null);
+
+  useEffect(() => {
+    systemApi.getSettings()
+      .then(res => setSettings(res.data))
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
+
+  const handleSave = async (key: string) => {
+    setSavingKey(key);
+    try {
+      const value = settings[key] || '';
+      await systemApi.updateSetting(key, value);
+      toast(t('models.settingsSaved'), 'success');
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : t('common.saveFailed'), 'error');
+    } finally {
+      setSavingKey(null);
+    }
+  };
+
+  const defaultModelName = models.find(m => m.id === settings['default_model_id'])?.name;
+
+  return (
+    <div className="mt-10">
+      <div className="flex items-center gap-2 mb-4 pb-3 border-b border-border/40">
+        <Settings2 className="h-5 w-5 text-muted-foreground" />
+        <div>
+          <h3 className="text-lg font-heading font-medium text-foreground/90">{t('models.settingsTitle')}</h3>
+          <p className="text-[13px] text-muted-foreground">{t('models.settingsDesc')}</p>
+        </div>
+      </div>
+
+      {loading ? (
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+          {Array.from({ length: 6 }, (_, i) => <Skeleton key={i} className="h-20 rounded-2xl" />)}
+        </div>
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+          {FEATURE_MODEL_KEYS.map(feat => (
+            <FeatureModelCard
+              key={feat.key}
+              settingKey={feat.key}
+              label={t(feat.labelKey)}
+              desc={'descKey' in feat ? t(feat.descKey!) : undefined}
+              isDefault={'isDefault' in feat}
+              models={models}
+              value={settings[feat.key] || ''}
+              defaultModelName={defaultModelName}
+              saving={savingKey === feat.key}
+              onChange={(val) => setSettings(prev => ({ ...prev, [feat.key]: val }))}
+              onSave={() => handleSave(feat.key)}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function FeatureModelCard({ settingKey, label, desc, isDefault, models, value, defaultModelName, saving, onChange, onSave }: {
+  settingKey: string;
+  label: string;
+  desc?: string;
+  isDefault?: boolean;
+  models: Model[];
+  value: string;
+  defaultModelName?: string;
+  saving: boolean;
+  onChange: (val: string) => void;
+  onSave: () => void;
+}) {
+  const { t } = useI18n();
+
+  return (
+    <div className="bg-card rounded-2xl p-4 border border-border/40 shadow-[var(--shadow-sm)] flex flex-col gap-2">
+      <div>
+        <div className="text-sm font-medium text-foreground/90">{label}</div>
+        {desc && <div className="text-xs text-muted-foreground">{desc}</div>}
+      </div>
+      <div className="flex items-center gap-2 mt-auto">
+        <select
+          className="flex-1 h-8 rounded-lg border border-input bg-background px-2 text-sm truncate"
+          value={value}
+          onChange={e => onChange(e.target.value)}
+        >
+          {isDefault
+            ? <option value="">{t('models.noDefault')}</option>
+            : <option value="">{defaultModelName ? `${t('models.useDefault')} (${defaultModelName})` : t('models.useDefault')}</option>
+          }
+          {models.map(m => (
+            <option key={m.id} value={m.id}>{m.name}</option>
+          ))}
+        </select>
+        <Button
+          size="icon"
+          variant="outline"
+          className="h-8 w-8 shrink-0 rounded-lg"
+          disabled={saving}
+          onClick={onSave}
+        >
+          {saving ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Save className="h-3.5 w-3.5" />}
+        </Button>
+      </div>
     </div>
   );
 }
@@ -203,8 +328,8 @@ function ModelFormDialog({
       setModelId(editing?.modelId ?? '');
       setApiKey('');
       setNotes(editing?.notes ?? '');
-      setInputPrice('');
-      setOutputPrice('');
+      setInputPrice(editing?.inputPricePerMToken != null ? String(editing.inputPricePerMToken / 100) : '');
+      setOutputPrice(editing?.outputPricePerMToken != null ? String(editing.outputPricePerMToken / 100) : '');
     }
   }, [open, editing]);
 

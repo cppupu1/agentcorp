@@ -1,0 +1,42 @@
+{
+  "data": {
+    "id": "73ae7b380bfd4db9",
+    "name": "研究报告",
+    "description": "研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研究、竞品分析、市场调研等报告撰写场景。",
+    "scenario": null,
+    "pmEmployeeId": "5cf46e80e50b3c35",
+    "pmName": "研究主管",
+    "pmAvatar": null,
+    "collaborationMode": "free",
+    "createdAt": "2026-02-28T15:29:54.122Z",
+    "updatedAt": "2026-02-28T15:29:54.126Z",
+    "members": [
+      {
+        "id": "4e8e5f21c386b71c",
+        "name": "撰稿人",
+        "avatar": null,
+        "role": "member"
+      },
+      {
+        "id": "92bcfda35feeaf73",
+        "name": "研究员",
+        "avatar": null,
+        "role": "member"
+      }
+    ],
+    "tools": [
+      {
+        "id": "01a07c2a149edad0",
+        "name": "Filesystem"
+      },
+      {
+        "id": "1791ada993a23a56",
+        "name": "Web Fetch"
+      },
+      {
+        "id": "a6d0277e32709254",
+        "name": "搏查"
+      }
+    ]
+  }
+}

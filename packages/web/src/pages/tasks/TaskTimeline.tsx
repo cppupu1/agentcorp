@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { observabilityApi, type TimelineEvent } from '@/api/client';
+import MarkdownContent from '@/components/MarkdownContent';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useI18n } from '@/i18n';
@@ -80,7 +81,7 @@ function TimelineItem({ event }: { event: TimelineEvent }) {
       {expanded && (
         <div className="mt-2 space-y-2 pl-7">
           {event.reasoning && (
-            <div><p className="text-xs text-muted-foreground">{t('timeline.reasoning')}</p><p className="text-xs bg-muted rounded p-2">{event.reasoning}</p></div>
+            <div><p className="text-xs text-muted-foreground">{t('timeline.reasoning')}</p><MarkdownContent content={event.reasoning} className="text-xs bg-muted rounded p-2" /></div>
           )}
           {event.input != null && (
             <div><p className="text-xs text-muted-foreground">{t('timeline.input')}</p><pre className="text-xs bg-muted rounded p-2 overflow-auto max-h-40">{JSON.stringify(event.input, null, 2)}</pre></div>

@@ -1,0 +1,71 @@
+{
+  "id": "87b2ddf0d35a4ea5",
+  "teamId": "0fd2d3637c7d44e7",
+  "teamName": "内容创作",
+  "title": "企业公告中英双语翻译",
+  "description": "将以下企业公告翻译为中英双语简版,保持语义一致:\n\n原文:尊敬的客户,我们将于下周二晚22:00-23:00进行系统维护,期间服务可能短暂波动,感谢理解与支持。\n\n要求:\n1. 输出中文简版和英文简版两个版本\n2. 保持原意准确,用词专业简洁\n3. 保持企业公告的正式语气\n4. 确保中英文表达流畅自然",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "ec72922df7a6e931",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "60eb72dd2e106912",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "7c1687cbc29c47af",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语翻译",
+        "description": "将以下企业公告翻译为中英双语简版,保持语义一致:\n\n原文:尊敬的客户,我们将于下周二晚22:00-23:00进行系统维护,期间服务可能短暂波动,感谢理解与支持。\n\n要求:\n1. 输出中文简版和英文简版两个版本\n2. 保持原意准确,用词专业简洁\n3. 保持企业公告的正式语气\n4. 确保中英文表达流畅自然",
+        "assigneeId": "60eb72dd2e106912",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成企业公告的中英双语翻译任务。文案策划提供了专业的简体中文和英文两个版本，保持了原意准确、用词专业简洁、正式语气和流畅自然的表达。",
+    "deliverables": "## 中文简版\n\n**尊敬的客户：**\n\n我司将于下周二晚22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解与支持。\n\n---\n\n## 英文简版\n\n**Dear Customers:**\n\nWe will conduct system maintenance from 10:00 PM to 11:00 PM next Tuesday, during which services may experience brief interruptions. Thank you for your understanding and support.",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T09:14:27.451Z"
+  },
+  "tokenUsage": 3372,
+  "createdAt": "2026-03-01T09:13:59.274Z",
+  "updatedAt": "2026-03-01T09:14:29.567Z",
+  "subtasks": [
+    {
+      "id": "8d3150ad955f8311",
+      "title": "企业公告中英双语翻译",
+      "description": "将以下企业公告翻译为中英双语简版,保持语义一致:\n\n原文:尊敬的客户,我们将于下周二晚22:00-23:00进行系统维护,期间服务可能短暂波动,感谢理解与支持。\n\n要求:\n1. 输出中文简版和英文简版两个版本\n2. 保持原意准确,用词专业简洁\n3. 保持企业公告的正式语气\n4. 确保中英文表达流畅自然",
+      "assigneeId": "60eb72dd2e106912",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "## 中文简版\n\n**尊敬的客户：**\n\n我司将于下周二晚22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解与支持。\n\n---\n\n## 英文简版\n\n**Dear Customers:**\n\nWe will conduct system maintenance from 10:00 PM to 11:00 PM next Tuesday, during which services may experience brief interruptions. Thank you for your understanding and support."
+      },
+      "sortOrder": 0,
+      "tokenUsage": 3372,
+      "createdAt": "2026-03-01T09:14:05.524Z",
+      "updatedAt": "2026-03-01T09:14:20.083Z"
+    }
+  ]
+}

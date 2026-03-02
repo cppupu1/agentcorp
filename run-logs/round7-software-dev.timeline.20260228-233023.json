@@ -1,0 +1,87 @@
+[
+  {
+    "id": "e55fe3a75701cf96",
+    "type": "decision",
+    "taskId": "902c1ec66c2e3302",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask",
+    "input": {
+      "subtaskId": "ef6fe7474cc852af",
+      "employeeId": "44e560c804dc2b20",
+      "instruction": "请设计一个待办事项系统后端 API 的最小可交付方案，要求包含：1）完整的接口清单（含路径、方法、参数、返回值说明）；2）数据表设计（表结构、字段说明、关系）；3）关键测试要点（功能测试、边界测试、性能测试）。这是MVP版本，聚焦核心功能。"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-02-28T23:30:26.999Z"
+  },
+  {
+    "id": "100c8adba3a97062",
+    "type": "decision",
+    "taskId": "902c1ec66c2e3302",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask_result",
+    "input": null,
+    "output": "[已派发] 子任务「自动启动默认执行子任务」(ef6fe7474cc852af) 已分配给员工 44e560c804dc2b20 开始执行。请继续派发其他可执行的子任务，全部派发后调用 wait_subtasks 等待结果。",
+    "reasoning": null,
+    "createdAt": "2026-02-28T23:30:27.002Z"
+  },
+  {
+    "id": "a52f36757ddc7651",
+    "type": "decision",
+    "taskId": "902c1ec66c2e3302",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks",
+    "input": {},
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-02-28T23:30:27.016Z"
+  },
+  {
+    "id": "8576719fd8cbca68",
+    "type": "decision",
+    "taskId": "902c1ec66c2e3302",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks_result",
+    "input": null,
+    "output": "共 1 个子任务执行完毕：\n\n[ef6fe7474cc852af]「自动启动默认执行子任务」: # 待办事项系统后端 API MVP 设计方案\n\n## 一、技术栈选择\n\n| 技术类型 | 选择方案 | 理由 |\n|---------|---------|------|\n| 后端框架 | Node.js + Express | 轻量级，快速开发，适合 MVP |\n| 数据库 | PostgreSQL | 支持复杂查询，JSON 字段，事务完整 |\n| 缓存 | Redis | 支持过期时间，适合会话管理 |\n| 认证 | JWT | 无状态，易于扩展 |\n\n---\n\n## 二、数据库设计\n\n### 2.1 ER 图\n\n```\n┌─────────────┐         ┌─────────────┐\n│   users     │         │   todos     │\n├─────────────┤         ├─────────────┤\n│ id (PK)     │         │ id (PK)     │\n│ username    │◄────────│ user_id (FK)│\n│ email       │         │ title       │\n│ password    │         │ description │\n│ created_at  │         │ status      │\n│ updated_at  │         │ priority    │\n└─────────────┘         │ due_date    │\n                        │ created_at  │\n                        │ updated_at  │\n                        │ completed_at│\n                        └─────────────┘\n```\n\n### 2.2 表结构设计\n\n#### **users 表**\n\n| 字段名 | 类型 | 约束 | 说明 |\n|--------|------|------|------|\n| id | BIGINT | PRIMARY KEY, SERIAL | 用户唯一标识 |\n| username | VARCHAR(50) | UNIQUE, NOT NULL | 用户名 |\n| email | VARCHAR(255) | UNIQUE, NOT NULL | 邮箱 |\n| password_hash | VARCHAR(255) | NOT NULL | 密码哈希（bcrypt） |\n| created_at | TIMESTAMP | DEFAULT NOW() | 创建时间 |\n| updated_at | TIMESTAMP | DEFAULT NOW() | 更新时间 |\n\n```sql\nCREATE TABLE users (\n    id BIGSERIAL PRIMARY KEY,\n    username VARCHAR(50) UNIQUE NOT NULL,\n    email VARCHAR(255) UNIQUE NOT NULL,\n    password_hash VARCHAR(255) NOT NULL,\n    created_at TIMESTAMP DEFAULT NOW(),\n    updated_at TIMESTAMP DEFAULT NOW()\n);\n\nCREATE INDEX idx_users_email ON users(email);\nCREATE INDEX idx_users_username ON users(username);\n```\n\n#### **todos 表**\n\n| 字段名 | 类型 | 约束 | 说明 |\n|--------|------|------|------|\n| id | BIGINT | PRIMARY KEY, SERIAL | 待办事项唯一标识 |\n| user_id | BIGINT | NOT NULL, FK → users.id | 所属用户 |\n| title | VARCHAR(200) | NOT NULL | 标题 |\n| description | TEXT | | 描述 |\n| status | VARCHAR(20) | DEFAULT 'pending' | 状态: pending/completed |\n| priority | VARCHAR(10) | DEFAULT 'medi",
+    "reasoning": null,
+    "createdAt": "2026-02-28T23:30:51.544Z"
+  },
+  {
+    "id": "1859caf1a693d87d",
+    "type": "decision",
+    "taskId": "902c1ec66c2e3302",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task",
+    "input": {
+      "summary": "已完成待办事项系统后端 API 最小可交付方案设计。方案包含：1）技术栈选择（Node.js + Express + PostgreSQL + Redis + JWT）；2）完整数据库设计（users和todos两张表，含ER图和建表SQL）；3）8个核心API接口（2个认证接口、6个待办事项CRUD接口），含详细请求响应示例和统一错误码；4）关键测试要点覆盖功能测试、边界测试和性能测试。方案聚焦MVP核心功能，满足最小可交付要求。",
+      "deliverables": "# 待办事项系统后端 API MVP 设计方案\n\n## 一、技术栈选择\n- 后端框架：Node.js + Express（轻量级，快速开发）\n- 数据库：PostgreSQL（支持复杂查询、JSON字段、事务）\n- 缓存：Redis（会话管理）\n- 认证：JWT（无状态，易于扩展）\n\n## 二、数据库设计\n\n### 2.1 ER 关系\n```\nusers (1) ←─→ (N) todos\n```\n\n### 2.2 users 表\n| 字段 | 类型 | 约束 | 说明 |\n|------|------|------|------|\n| id | BIGINT | PK, SERIAL | 用户唯一标识 |\n| username | VARCHAR(50) | UNIQUE, NOT NULL | 用户名 |\n| email | VARCHAR(255) | UNIQUE, NOT NULL | 邮箱 |\n| password_hash | VARCHAR(255) | NOT NULL | 密码哈希 |\n| created_at | TIMESTAMP | DEFAULT NOW() | 创建时间 |\n| updated_at | TIMESTAMP | DEFAULT NOW() | 更新时间 |\n\n### 2.3 todos 表\n| 字段 | 类型 | 约束 | 说明 |\n|------|------|------|------|\n| id | BIGINT | PK, SERIAL | 待办唯一标识 |\n| user_id | BIGINT | FK → users.id, NOT NULL | 所属用户 |\n| title | VARCHAR(200) | NOT NULL | 标题 |\n| description | TEXT | | 描述 |\n| status | VARCHAR(20) | DEFAULT 'pending' | 状态：pending/completed |\n| priority | VARCHAR(10) | DEFAULT 'medium' | 优先级：low/medium/high |\n| due_date | TIMESTAMP | | 截止日期 |\n| completed_at | TIMESTAMP | | 完成时间 |\n| created_at | TIMESTAMP | DEFAULT NOW() | 创建时间 |\n| updated_at | TIMESTAMP | DEFAULT NOW() | 更新时间 |\n\n## 三、API 接口清单\n\n### 认证模块\n| 接口 | 方法 | 路径 | 说明 |\n|------|------|------|------|\n| 用户注册 | POST | /api/auth/register | 新用户注册 |\n| 用户登录 | POST | /api/auth/login | 获取JWT令牌 |\n\n### 待办事项模块\n| 接口 | 方法 | 路径 | 说明 |\n|------|------|------|------|\n| 创建待办 | POST | /api/todos | 创建新待办 |\n| 获取列表 | GET | /api/todos | 支持筛选、分页、排序 |\n| 获取详情 | GET | /api/todos/:id | 根据ID获取 |\n| 更新待办 | PUT | /api/todos/:id | 更新待办信息 |\n| 删除待办 | DELETE | /api/todos/:id | 删除待办 |\n| 状态切换 | PATCH | /api/todos/:id/status | 标记完成/未完成 |\n\n### 统一响应格式\n```json\n{\n  \"code\": 0,\n  \"message\": \"操作成功\",\n  \"data\": {},\n  \"timestamp\": \"2024-01-16T10:30:00Z\"\n}\n```\n\n### 错误码定义\n| 错误码 | 说明 |\n|--------|------|\n| 0 | 成功 |\n| 400 | 请求参数错误 |\n| 401 | 未授权 |\n| 403 | 禁止访问 |\n| 404 | 资源不存在 |\n| 409 | 资源冲突 |\n| 422 | 业务校验失败 |\n| 500 | 服务器内部错误 |\n\n## 四、关键测试要点\n\n### 功能测试\n- 用户注册/登录：正常流程、重复数据校验、密码强度校验\n- 待办CRUD：创建、查询、更新、删除、状态切换\n- 权限控制：无token、过期token、越权访问\n\n### 边界测试\n- 标题长度：1字符（最小）、200字符（最大）、201字符（拒绝）\n- 分页参数：page=0、limit=1、limit=100、limit=101（拒绝）\n- 日期处理：过去时间、null、时区处理\n- 并发：同时创建/更新同一资源\n\n### 性能测试\n- 接口响应时间：列表查询 < 200ms，CRUD < 100ms\n- 并发能力：支持100+ QPS，响应时间稳定\n\n---\n方案已完成，可作为MVP版本的开发基准。"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-02-28T23:31:00.330Z"
+  },
+  {
+    "id": "231afdff7758545b",
+    "type": "decision",
+    "taskId": "902c1ec66c2e3302",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task_result",
+    "input": null,
+    "output": "任务已完成。",
+    "reasoning": null,
+    "createdAt": "2026-02-28T23:31:00.345Z"
+  }
+]

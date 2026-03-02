@@ -1,0 +1,70 @@
+{
+  "label": "round34-memory",
+  "sessionId": "round34-memory-20260301-122135",
+  "kind": "memory",
+  "pmChatDurationMs": 29115,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "97e1af8018a427b1"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 29115
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "97e1af8018a427b1",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 160343,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。客服专员完成了最近一个月售后投诉数据的分析，整理输出5条高频问题FAQ及标准回复话术，包括：客服服务质量问题（占比超40%）、商品质量问题（22%）、退款困难、虚假发货、虚假宣传。每条FAQ均包含问题描述、标准回答和处理方案。知识条目已成功沉淀到知识库，创建相关实体和关系共10条。"
+  }
+}

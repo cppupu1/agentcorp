@@ -1,0 +1,77 @@
+{
+  "label": "round20-pm-ai-trend-lite",
+  "sessionId": "round20-ai-20260301-071159",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "e0c4bad69199234e"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "e0c4bad69199234e",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 99397,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 12
+        },
+        {
+          "tool": "1791ada993a23a56__get_markdown_summary",
+          "count": 6
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 10,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已整理2025年1月至2月AI技术行业3条关键结论，涵盖国家AI基础研究重大计划、OpenAI产品愿景、OpenAI达沃斯路线图等重要趋势，每条结论均有具体日期和至少2个独立来源交叉验证。"
+    }
+  ]
+}

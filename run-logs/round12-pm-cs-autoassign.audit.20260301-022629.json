@@ -1,0 +1,97 @@
+{
+  "label": "round12-pm-cs-autoassign",
+  "sessionId": "round12-cs-20260301-022629",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "8633136273d8934c"
+  ],
+  "autoAssign": {
+    "recommended": 4,
+    "added": 2
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_recommended",
+      "ok": true,
+      "recommended": 4,
+      "min": 1
+    },
+    {
+      "name": "search_tool_used",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "8633136273d8934c",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 118986,
+      "tools": [
+        {
+          "tool": "01a07c2a149edad0__search_files",
+          "count": 6
+        },
+        {
+          "tool": "a6d0277e32709254__bocha_ai_search",
+          "count": 4
+        },
+        {
+          "tool": "01a07c2a149edad0__list_allowed_directories",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__list_directory",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__write_file",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_relations",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": true,
+      "hasTimeTool": false,
+      "decisionCount": 20,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成客服FAQ与SOP改进清单任务，包括数据分析、FAQ梳理、SOP改进建议和知识沉淀四项工作。"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "b13cdde1f5f1b8c7",
+    "type": "decision",
+    "taskId": "5deeca4e77568595",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask",
+    "input": {
+      "employeeId": "771046648727ec27",
+      "instruction": "产出一个企业公告模板的中英双语简版，要求语义保持一致，提供可直接使用的版本。包括常见的通知类型如公司政策调整、业务变更、重要通知等。请确保模板格式规范、内容完整、可直接使用。",
+      "subtaskId": "830472f9259bbf71"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T13:07:42.038Z"
+  },
+  {
+    "id": "51c3442e8874f418",
+    "type": "decision",
+    "taskId": "5deeca4e77568595",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask_result",
+    "input": null,
+    "output": "[已派发] 子任务「企业公告模板中英双语版」(830472f9259bbf71) 已分配给员工 771046648727ec27 开始执行。请继续派发其他可执行的子任务，全部派发后调用 wait_subtasks 等待结果。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T13:07:42.039Z"
+  },
+  {
+    "id": "153e9904b0c70277",
+    "type": "decision",
+    "taskId": "5deeca4e77568595",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks",
+    "input": {},
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T13:07:43.925Z"
+  },
+  {
+    "id": "1fe6d4210d3854fb",
+    "type": "decision",
+    "taskId": "5deeca4e77568595",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks_result",
+    "input": null,
+    "output": "共 1 个子任务执行完毕：\n\n[830472f9259bbf71]「企业公告模板中英双语版」: 我将为您创建一份完整的企业公告中英双语模板，直接可用。\n\n---\n\n# 企业公告模板 / Corporate Announcement Templates\n## 中英双语简版 / Bilingual Edition\n\n---\n\n## 一、政策调整公告 / Policy Adjustment Notice\n\n### 【模板一：常规政策调整】\n\n**【中文版】**\n\n> **关于[政策名称]调整的通知**\n>\n> 尊敬的各位同事/客户：\n>\n> 为进一步提升[管理效率/服务质量/用户体验]，现对我司[相关政策]进行调整，具体变更内容如下：\n>\n> **一、调整内容**\n> 1. [第一条调整内容]\n> 2. [第二条调整内容]\n> 3. [第三条调整内容]\n>\n> **二、生效时间**\n> 自[YYYY年MM月DD日]起正式生效。\n>\n> **三、补充说明**\n> [如有其他说明事项]\n>\n> 如有疑问，请联系：[联系人] / [联系方式]\n>\n> 感谢您的理解与支持！\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Notice on Adjustment of [Policy Name]**\n>\n> Dear All / Dear Valued Customers:\n>\n> To further improve [management efficiency/service quality/user experience], we have made adjustments to our [relevant policy]. The specific changes are as follows:\n>\n> **I. Adjustment Details**\n> 1. [First adjustment]\n> 2. [Second adjustment]\n> 3. [Third adjustment]\n>\n> **II. Effective Date**\n> Effective from [YYYY-MM-DD].\n>\n> **III. Additional Notes**\n> [Other relevant information if any]\n>\n> Should you have any questions, please contact: [Contact Person] / [Contact Information]\n>\n> Thank you for your understanding and support!\n>\n> [Company Name]\n> [Date]\n\n---\n\n### 【模板二：福利/制度政策调整】\n\n**【中文版】**\n\n> **关于[假期制度/福利政策/考勤规定]优化的公告**\n>\n> 各位同事：\n>\n> 为更好地保障员工权益，提升企业文化关怀，现对公司[现行制度]进行优化升级，具体如下：\n>\n> **调整要点：**\n> - [调整项1：具体内容]\n> - [调整项2：具体内容]\n> - [调整项3：具体内容]\n>\n> **执行时间：** [YYYY年MM月DD日]\n>\n> 详情请查阅公司内部网[相关链接]或咨询HR部门。\n>\n> 特此通知。\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Notice on Optimization of [Leave Policy/Benefit/Attendance Rules]**\n>\n> Dear Colleagues:\n>\n> To better protect employee rights and enhance corporate culture care, we have optimized and upgraded our [current policy] as follows:\n>\n> **Key Changes:**\n> - [Change 1: Details]\n> - [Change 2: Details]\n> - [Change 3: Details]\n>\n> **Implementation Date:** [YYYY-MM-DD]\n>\n> For details, please visit the company intranet [link] or contact the HR department.\n>\n> Please be advised accordingly.\n>\n> [Company Name]\n> [Date]\n\n---\n\n## 二、业务变更公告 / Business Change Noti",
+    "reasoning": null,
+    "createdAt": "2026-03-01T13:09:06.135Z"
+  },
+  {
+    "id": "c67d45d39a051b94",
+    "type": "decision",
+    "taskId": "5deeca4e77568595",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task",
+    "input": {
+      "deliverables": "# 企业公告模板中英双语版 / Corporate Announcement Templates (Bilingual Edition)\n\n---\n\n## 一、政策调整公告 / Policy Adjustment Notice\n\n### 模板一：常规政策调整\n\n**【中文版】**\n> **关于[政策名称]调整的通知**\n>\n> 尊敬的各位同事/客户：\n>\n> 为进一步提升[管理效率/服务质量/用户体验]，现对我司[相关政策]进行调整，具体变更内容如下：\n>\n> **一、调整内容**\n> 1. [第一条调整内容]\n> 2. [第二条调整内容]\n> 3. [第三条调整内容]\n>\n> **二、生效时间**\n> 自[YYYY年MM月DD日]起正式生效。\n>\n> **三、补充说明**\n> [如有其他说明事项]\n>\n> 如有疑问，请联系：[联系人] / [联系方式]\n>\n> 感谢您的理解与支持！\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Notice on Adjustment of [Policy Name]**\n>\n> Dear All / Dear Valued Customers:\n>\n> To further improve [management efficiency/service quality/user experience], we have made adjustments to our [relevant policy]. The specific changes are as follows:\n>\n> **I. Adjustment Details**\n> 1. [First adjustment]\n> 2. [Second adjustment]\n> 3. [Third adjustment]\n>\n> **II. Effective Date**\n> Effective from [YYYY-MM-DD].\n>\n> **III. Additional Notes**\n> [Other relevant information if any]\n>\n> Should you have any questions, please contact: [Contact Person] / [Contact Information]\n>\n> Thank you for your understanding and support!\n>\n> [Company Name]\n> [Date]\n\n---\n\n### 模板二：福利/制度政策调整\n\n**【中文版】**\n> **关于[假期制度/福利政策/考勤规定]优化的公告**\n>\n> 各位同事：\n>\n> 为更好地保障员工权益，提升企业文化关怀，现对公司[现行制度]进行优化升级，具体如下：\n>\n> **调整要点：**\n> - [调整项1：具体内容]\n> - [调整项2：具体内容]\n> - [调整项3：具体内容]\n>\n> **执行时间：** [YYYY年MM月DD日]\n>\n> 详情请查阅公司内部网[相关链接]或咨询HR部门。\n>\n> 特此通知。\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Notice on Optimization of [Leave Policy/Benefit/Attendance Rules]**\n>\n> Dear Colleagues:\n>\n> To better protect employee rights and enhance corporate culture care, we have optimized and upgraded our [current policy] as follows:\n>\n> **Key Changes:**\n> - [Change 1: Details]\n> - [Change 2: Details]\n> - [Change 3: Details]\n>\n> **Implementation Date:** [YYYY-MM-DD]\n>\n> For details, please visit the company intranet [link] or contact the HR department.\n>\n> Please be advised accordingly.\n>\n> [Company Name]\n> [Date]\n\n---\n\n## 二、业务变更公告 / Business Change Notice\n\n### 模板一：业务调整/产品变更\n\n**【中文版】**\n> **关于[产品/服务]变更的通知**\n>\n> 尊敬的[客户/用户]：\n>\n> 感谢您一直以来对[公司/产品]的支持与信任。基于业务发展需要，我司将对[相关业务]进行调整，具体如下：\n>\n> **一、变更内容**\n> 1. **服务调整：** [具体调整内容]\n> 2. **功能更新：** [新增/优化功能]\n> 3. **价格调整：** [如有价格变动]\n>\n> **二、时间安排**\n> - 变更生效日期：[YYYY年MM月DD日]\n> - 过渡期安排：[如有]\n>\n> **三、影响说明**\n> [说明对用户的影响及应对措施]\n>\n> 如您对上述变更有任何疑问，欢迎致电[服务热线]或咨询在线客服。\n>\n> 再次感谢您的理解与支持！\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Notice on Changes to [Product/Service]**\n>\n> Dear [Customers/Users]:\n>\n> Thank you for your continuous support and trust in [Company/Product]. Due to business development needs, we will make the following adjustments to our [relevant business]:\n>\n> **I. Change Details**\n> 1. **Service Adjustment:** [Specific adjustment]\n> 2. **Feature Update:** [New/Enhanced features]\n> 3. **Price Adjustment:** [If applicable]\n>\n> **II. Timeline**\n> - Effective Date: [YYYY-MM-DD]\n> - Transition Period: [If any]\n>\n> **III. Impact**\n> [Explanation of impact on users and countermeasures]\n>\n> Should you have any questions, please call our service hotline [number] or contact our online customer service.\n>\n> Thank you once again for your understanding and support!\n>\n> [Company Name]\n> [Date]\n\n---\n\n### 模板二：业务暂停/终止\n\n**【中文版】**\n> **关于暂停[某项业务]服务的公告**\n>\n> 尊敬的客户：\n>\n> 因[原因：系统升级/战略调整/合作变更等]，我司将于[时间]起暂停[具体业务]服务。现将相关事项通知如下：\n>\n> **一、暂停时间**\n> 自[YYYY年MM月DD日]起，恢复时间将另行通知。\n>\n> **二、影响范围**\n> [说明受影响的服务内容]\n>\n> **三、客户权益保障**\n> - [已购产品/服务处理方案]\n> - [退款/补偿安排]\n>\n> 如有紧急需求，请联系[联系方式]。\n>\n> 对于给您带来的不便，我们深表歉意，敬请谅解。\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Notice on Suspension of [Specific Business] Service**\n>\n> Dear Customers:\n>\n> Due to [reasons: system upgrade/strategic adjustment/partner change, etc.], we will suspend [specific business] service from [date]. The relevant matters are hereby notified as follows:\n>\n> **I. Suspension Period**\n> From [YYYY-MM-DD] until further notice.\n>\n> **II. Affected Scope**\n> [Description of affected services]\n>\n> **III. Customer Rights Protection**\n> - [Handling of purchased products/services]\n> - [Refund/Compensation arrangements]\n>\n> For urgent needs, please contact [contact information].\n>\n> We sincerely apologize for any inconvenience caused and ask for your understanding.\n>\n> [Company Name]\n> [Date]\n\n---\n\n## 三、重要通知 / Important Notice\n\n### 模板一：通用重要通知\n\n**【中文版】**\n> **重要通知**\n>\n> 全体员工/各位客户：\n>\n> 现将重要事项通知如下：\n>\n> **一、通知事项**\n> [具体通知内容]\n>\n> **二、执行要求**\n> 1. [要求一]\n> 2. [要求二]\n>\n> **三、时间要求**\n> 请于[YYYY年MM月DD日][时间]前完成[具体事项]。\n>\n> **四、联系人**\n> 姓名：[XXX]\n> 电话：[XXX]\n> 邮箱：[XXX]\n>\n> 请高度重视，相互转告。\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Important Notice**\n>\n> All Employees / Dear Customers:\n>\n> The following important matters are hereby notified:\n>\n> **I. Notice Details**\n> [Specific content]\n>\n> **II. Requirements**\n> 1. [Requirement 1]\n> 2. [Requirement 2]\n>\n> **III. Timeline**\n> Please complete [specific task] before [YYYY-MM-DD] [time].\n>\n> **IV. Contact Person**\n> Name: [XXX]\n> Phone: [XXX]\n> Email: [XXX]\n>\n> Please treat this matter with high priority and spread the word.\n>\n> [Company Name]\n> [Date]\n\n---\n\n### 模板二：紧急通知\n\n**【中文版】**\n> **紧急通知**\n>\n> 各位同事/客户：\n>\n> [紧急事项描述]，请立即响应：\n>\n> **[具体行动要求]**\n>\n> **生效时间：** 立即生效 / [具体时间]\n>\n> **联系方式：** [紧急联系人及方式]\n>\n> 如有疑问，请随时联系[负责人]。\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Urgent Notice**\n>\n> Dear Colleagues / Customers:\n>\n> [Description of urgent matter], your immediate response is required:\n>\n> **[Specific Action Required]**\n>\n> **Effective Time:** Immediately / [Specific time]\n>\n> **Contact:** [Emergency contact and method]\n>\n> Should you have any questions, please contact [person in charge] at any time.\n>\n> [Company Name]\n> [Date]\n\n---\n\n## 四、放假通知 / Holiday Notice\n\n**【中文版】**\n> **关于[节假日]放假安排的通知**\n>\n> 各位同事：\n>\n> 根据国家法定假日相关规定，结合公司实际情况，现将[20XX年][节假日]放假安排通知如下：\n>\n> **一、放假时间**\n> [YYYY年MM月DD日]至[YYYY年MM月DD日]，共[XX]天。\n>\n> **二、返岗时间**\n> [YYYY年MM月DD日]（星期X）正常上班。\n>\n> **三、注意事项**\n> 1. 请各部门在放假前完成[相关工作安排]\n> 2. 值班安排：[如有]\n> 3. 紧急联系人：[XXX联系方式]\n>\n> 祝大家[节假日快乐/阖家幸福]！\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Holiday Notice for [Holiday Name]**\n>\n> Dear Colleagues:\n>\n> According to the national holiday regulations and our company's actual situation, the holiday arrangement for [20XX] [Holiday] is hereby notified as follows:\n>\n> **I. Holiday Period**\n> From [YYYY-MM-DD] to [YYYY-MM-DD], totaling [XX] days.\n>\n> **II. Return to Work**\n> Normal work resumes on [YYYY-MM-DD] ([Day of Week]).\n>\n> **III. Notes**\n> 1. Please complete [relevant work arrangements] before the holiday\n> 2. On-duty arrangement: [If any]\n> 3. Emergency contact: [XXX]\n>\n> Wish you all a happy holiday!\n>\n> [Company Name]\n> [Date]\n\n---\n\n## 五、人事变动公告 / Personnel Change Notice\n\n**【中文版】**\n> **人事变动公告**\n>\n> 全体员工：\n>\n> 经公司研究决定，现对以下人员进行人事调整：\n>\n> **一、任命/调整**\n> - [姓名] 任[部门][职位]，免去其原[职位]\n> - [姓名] 调任[部门][职位]\n>\n> **二、生效日期**\n> 自[YYYY年MM月DD日]起执行。\n>\n> **三、职责说明**\n> [新增岗位职责描述]\n>\n> 请相关部门和人员配合做好工作交接，确保业务平稳过渡。\n>\n> 特此通知。\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Personnel Change Notice**\n>\n> All Employees:\n>\n> Upon the company's decision, the following personnel adjustments are hereby announced:\n>\n> **I. Appointment/Adjustment**\n> - [Name] is appointed as [Position] in [Department], and removed from the original position\n> - [Name] is transferred to [Position] in [Department]\n>\n> **II. Effective Date**\n> Effective from [YYYY-MM-DD].\n>\n> **III. Responsibilities**\n> [Description of new job responsibilities]\n>\n> Relevant departments and personnel are requested to cooperate in work handover to ensure smooth business transition.\n>\n> Please be advised accordingly.\n>\n> [Company Name]\n> [Date]\n\n---\n\n## 六、办公地址变更 / Office Relocation Notice\n\n**【中文版】**\n> **关于公司办公地址变更的通知**\n>\n> 尊敬的客户、合作伙伴及各界朋友：\n>\n> 因公司业务发展需要，我司将于[日期]起搬迁至新址办公，现将有关事宜通知如下：\n>\n> **一、新办公地址**\n> [详细地址，含省市区路名及门牌号]\n>\n> **二、联系方式**\n> - 电话：[XXX-XXXXXXXX]\n> - 传真：[XXX-XXXXXXXX]\n> - 邮编：[XXXXXX]\n>\n> **三、搬迁时间**\n> [YYYY年MM月DD日]至[YYYY年MM月DD日]\n>\n> **四、注意事项**\n> 搬迁期间[可能存在的服务影响及应对措施]\n>\n> 因搬迁给您带来的不便，敬请谅解。我们将继续为您提供优质的服务！\n>\n> [公司名称]\n> [发布日期]\n\n---\n\n> **Notice on Office Relocation**\n>\n> Dear Customers, Partners and Friends:\n>\n> Due to our business development needs, we will relocate to a new office on [date]. The relevant matters are hereby notified as follows:\n>\n> **I. New Office Address**\n> [Full address including province, city, district, street name and building number]\n>\n> **II. Contact Information**\n> - Tel: [XXX-XXXXXXXX]\n> - Fax: [XXX-XXXXXXXX]\n> - Postal Code: [XXXXXX]\n>\n> **III. Relocation Timeline**\n> From [YYYY-MM-DD] to [YYYY-MM-DD]\n>\n> **IV. Notes**\n> [Potential service impact during relocation and countermeasures]\n>\n> We sincerely apologize for any inconvenience caused by the relocation. We will continue to provide you with quality service!\n>\n> [Company Name]\n> [Date]\n\n---\n\n**使用说明：** 模板中方括号\"[ ]\"内容为可替换字段，请根据实际情况填写后使用。",
+      "summary": "已成功完成企业公告模板中英双语版的制作。交付物包含6大类企业公告模板：政策调整公告、业务变更公告、重要通知、放假通知、人事变动公告、办公地址变更通知。每个模板均提供中文和英文版本，语义保持一致，格式规范，可直接使用。"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T13:10:17.051Z"
+  },
+  {
+    "id": "bd87644545cf97dc",
+    "type": "decision",
+    "taskId": "5deeca4e77568595",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task_result",
+    "input": null,
+    "output": "任务已完成。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T13:10:17.056Z"
+  }
+]

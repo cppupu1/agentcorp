@@ -1,0 +1,71 @@
+{
+  "id": "e94a6b76d673e3bb",
+  "teamId": "c65537ef88335a1b",
+  "teamName": "内容创作",
+  "title": "企业公告中英双语简版输出",
+  "description": "将一段企业公告模板输出中英双语简版，保持语义一致",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "41036b72fc646561",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "93336c4f6dcab51f",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      },
+      {
+        "id": "d73e4b25f7e0ca5b",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版输出",
+        "description": "将一段企业公告模板输出中英双语简版，保持语义一致",
+        "assigneeId": "93336c4f6dcab51f",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成为企业公告创建中英双语简版模板的任务。提供了三类常见企业公告（搬迁、重大事项、更名）的双语对照版本，确保中英文语义一致，格式规范，可直接套用。",
+    "deliverables": "企业公告中英双语简版模板已生成，包含三类常见公告类型：\n\n**模板一：公司搬迁公告 (Company Relocation Notice)**\n- 新旧地址信息表格对照\n- 搬迁时间及联系方式\n- 业务正常运营声明\n\n**模板二：重大事项公告 (Major Event Notice)**\n- 事项概述与影响分析\n- 风险提示条款\n- 符合监管要求的信息披露\n\n**模板三：公司更名公告 (Name Change Notice)**\n- 更名生效日期\n- 权利义务延续声明\n- 业务服务不变承诺\n\n**模板特点：**\n- 语义对仗：中英文结构对应，信息完整一致\n- 格式规范：日期、表格、编号等要素齐全\n- 即插即用：只需替换公司名称、日期、地址等关键信息即可使用\n\n文件保存路径：`/private/tmp/corporate_announcement_bilingual_template.md`",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T11:29:34.455Z"
+  },
+  "tokenUsage": 15912,
+  "createdAt": "2026-03-01T11:28:21.947Z",
+  "updatedAt": "2026-03-01T11:29:37.567Z",
+  "subtasks": [
+    {
+      "id": "6246e0237acb7656",
+      "title": "企业公告中英双语简版输出",
+      "description": "将一段企业公告模板输出中英双语简版，保持语义一致",
+      "assigneeId": "93336c4f6dcab51f",
+      "assigneeName": "视觉设计师",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "已为您创建企业公告中英双语简版模板，文件已保存至 `/private/tmp/corporate_announcement_bilingual_template.md`\n\n---\n\n## 模板包含以下三类常见企业公告：\n\n### 📌 模板一：公司搬迁公告 (Company Relocation Notice)\n- 新旧地址信息表格对照\n- 搬迁时间及联系方式\n- 业务正常运营声明\n\n### 📌 模板二：重大事项公告 (Major Event Notice)  \n- 事项概述与影响分析\n- 风险提示条款\n- 符合监管要求的信息披露\n\n### 📌 模板三：公司更名公告 (Name Change Notice)\n- 更名生效日期\n- 权利义务延续声明\n- 业务服务不变承诺\n\n---\n\n## 模板特点：\n\n| 特性 | 说明 |\n|------|------|\n| **语义对仗** | 中英文结构对应，信息完整一致 |\n| **格式规范** | 日期、表格、编号等要素齐全 |\n| **即插即用** | 只需替换公司名称、日期、地址等关键信息即可使用 |\n| **多场景覆盖** | 涵盖企业最常用的三类公告类型 |\n\n您可以直接使用此模板，或根据具体公告类型调整内容。"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 15912,
+      "createdAt": "2026-03-01T11:28:32.079Z",
+      "updatedAt": "2026-03-01T11:29:27.878Z"
+    }
+  ]
+}

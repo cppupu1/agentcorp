@@ -1,0 +1,98 @@
+{
+  "label": "round36-stock",
+  "sessionId": "round36-stock-20260301-130008",
+  "kind": "stock",
+  "userPrompt": "我们在做投研晨会材料，麻烦你直接组织团队完成一个任务：比较贵州茅台和宁德时代近30天走势，给我两条带日期的观察结论。",
+  "pmChatDurationMs": 42789,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "44aaa571d36ea5e6"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": true
+  },
+  "checks": [
+    {
+      "name": "user_prompt_without_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 42789
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "44aaa571d36ea5e6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "not_waiting_for_user",
+      "ok": true
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    },
+    {
+      "name": "mentions_two_stocks",
+      "ok": true
+    },
+    {
+      "name": "contains_dates",
+      "ok": true,
+      "dateHits": 11
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "44aaa571d36ea5e6",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 14020,
+    "decisionRows": 6,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n贵州茅台vs宁德时代近30天走势对比分析已完成。分析显示：1)茅台期间涨跌+2.04%，宁德时代-9.38%，两者涨跌同步性极低(相关系数0.097)；2)茅台相对宁德时代持续走强，相对强度累计提升11.42个百分点；3)两条关键观察结论：01-29茅台单日暴涨8.61%拉开相对差距，02-26宁德时代单日暴跌4.47%创本轮周期最大单日跌幅。分析报告已整理为投研晨会材料格式。"
+  }
+}

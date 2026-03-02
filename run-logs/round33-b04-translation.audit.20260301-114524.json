@@ -1,0 +1,70 @@
+{
+  "label": "round33-b04-translation",
+  "sessionId": "round33-b04-translation-20260301-114524",
+  "kind": "translation",
+  "pmChatDurationMs": 27984,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "7cd0ce35c51fc42e"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 27984
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "7cd0ce35c51fc42e",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 3466,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成为企业公告模板的中英双语简版输出。中文版130字，英文版130词，语义一致，信息量相当。内容为年度业绩预告公告模板，包含业绩预告数据及主要原因说明。"
+  }
+}

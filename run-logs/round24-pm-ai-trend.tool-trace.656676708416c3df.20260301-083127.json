@@ -1,0 +1,366 @@
+[
+  {
+    "id": "e4b8987b752fcbe2",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_ab13ebe323f44fc8a9dc4505"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:23.893Z"
+  },
+  {
+    "id": "fa506d8c4a90d810",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI计划于本周发布一款升级版对话模型。_新浪新闻\nURL: https://k.sina.com.cn/article_5953740931_162dee08306702pana.html\nDescription: OpenAI计划于本周发布一款升级版对话模型。\n特别声明:以上文章内容仅代表作者本人观点,不代表新浪网观点或立场。如有关于作品内容、版权或其它问题请于作品发表后的30日内与新浪网联系。\nPublished date: 2026-02-09T21:07:42+08:00\nSite name: 新浪网\n\nTitle: 计算机行业2026年度投资策略:两仪生四象,超级时代_Gemini_模型_Scaling\nURL: https://www.sohu.com/a/983237361_122259177?scm=10001.8085_13-8085_13.0.0-0-0-0-0.0\nDescription: 本文为节选内容,更多报告请关注公众号:绿蚁红泥一、AI\n演绎路径更加清晰1.1\n全球顶尖模型模型快速迭代2025\n年\n11\n月\n19\n日谷歌\nGemini\n3\n发布,跃进式的得分提升、强大的多模态理解力、更加多样化的\nUI、惊艳的前端能力,让大模型的进展迈出显著一步。基础思考能力上,Humanity's\nLast\nExam\n是衡量\nAI\n能否解决人类顶尖难题的终极试金石。在Gemini\n3\n之前,Gemini\n2.5\nPro\n的得分是\n21.6%,Claude\nSonnet\n4.5\n仅为\n13.7%。Gemini\n3\nPro\n交出的答卷是\n37.5%(无工具)和\n45.8%(带工具)。ARC-AGI-2\n测试,旨在衡量模型处理从未见过的新颖推理任务的能力,而非死记硬背。Gemini\n3\nPro\n拿下了\n31.1%的分数,而\nGPT-5.1\n仅为\n17.6%,Gemini\n2.5\nPro\n甚至只有\n4.9%。这意味着它开始展现出一种接近人类的流体智力,能够在没有大量训练数据覆盖的领域进行抽象推理。在多模态领域\nGemini\n3\n尤其惊艳,MMMU-Pro\n的\n81.0%,CharXiv\nReasoning\n的\n81.4%都超越了对手。而在理解截图的测试\nScreenSpot-Pro\n的\n72.7%中,Gemini\n3\n的得分是\nClaudeSonnet\n4.5\n的两倍,GPT-5.1\n的二十倍。这对于构建能够真正理解和操作图形界面的\nAI\n代理至关重要。1.2\n字节\nAI\n手机发布,AI\n超级载体出现手机本身是人们工作与生活信息流的集大成者,全能的\nAI\n手机助手出现将全面重构所有人的工作与生活。2025\n年\n12\n月字节跳动在和中兴合作的工程样机\nnubia\nM153\n上发布了豆包手机助手技术预览版。目前该版本已面向开发者和科技爱好者少量发售,售价\n3499\n元。用户不仅\nPublished date: 2026-02-08T05:34:00+08:00\nSite name: 搜狐\n\nTitle: DeepSeek大模型更新_财经频道_证券之星\nURL: https://finance.stockstar.com/IG2026021100031812.shtml\nDescription: (原标题:DeepSeek大模型更新)\n观点网讯:2月11日,据媒体报道,DeepSeek新模型上线。报道称,新模型核心亮点(灰度测试):上下文能力跃升:从128K\nToken提升至1M\nToken,意味着一次可处理的信息量激增近10倍。此外,知识截止日期更新至2025年5月(原为2024年7月)。报道称,这不仅是一次微调,更可能意味着基于更近期数据训练的全新基础模型。\n免责声明:本文内容与数据由观点根据公开信息整理,不构成投资建议,使用前请核实。\nPublished date: 2026-02-11T18:44:00+08:00\nSite name: 证券之星财经频道\n\nTitle: 中银国际:AI大模型演进路径逐渐清晰 算力或供不应求_腾讯新闻\nURL: https://news.qq.com/rain/a/20260225A0419O00\nDescription: 智通财经APP获悉,中银国际发布研报称,2026年春节前后,国内外主要AI模型纷纷完成重大升级。随着大模型能力提升,智能体与多模态两条演进路径逐步清晰。与此同时,智谱(02513)节前发布GLM\nCoding\nPlan价格调整函,这一涨价预示着优秀的大模型企业不缺需求,有望推动算力硬件的需求持续增长。算力涨价成为新迹象,凸显算力供应瓶颈,预计算力产业链有望带来迎来新一轮增长动能。中银国际主要观点如下:春节前后,国内外主要AI模型纷纷完成重大升级国",
+    "isError": false,
+    "durationMs": 480,
+    "createdAt": "2026-03-01T08:32:24.373Z"
+  },
+  {
+    "id": "b5b031da05a07d57",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_f68f0c8fc50c4f38ad047d41"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:24.437Z"
+  },
+  {
+    "id": "6de9b46d6e46e208",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年人工智能行业从即时到目的:用代理AI解锁商业价值报告 - 远瞻慧库\nURL: https://www.baogaobox.com/reports/260209000093679.html\nDescription: 版权声明:报告来自互联网,仅供投资者学习和参考,在发布信息时,我们将尽最大努力标明出处,但因互联网的去中心、海量信息的特殊结构,可能有时会存在未指明作者的失误,我们诚挚的希望您能指出我们的工作失误,如果您(单位或个人)认为本站的内容有侵权嫌疑,烦请通知我们(kefu@baogaobox.com),我们将在第一时间处理核实,同时如果您的报告不愿在本站展示,请联系我们删除或更改,谢谢。本站仅提供用户检索、查询报告服务,以便快速找到报告的来源、作者等信息,不提供下载服务。如需下载,请前往社群。\n文章名称:《2026年人工智能行业从即时到目的:用代理AI解锁商业价值报告》\n文章链接:https://www.baogaobox.com/reports/260209000093679.html\nPublished date: 2026-02-09T00:00:00+08:00\nSite name: www.baogaobox.com\n\nTitle: AI Agent(智能体)技术白皮书(Google,2024) - petercao - 博客园\nURL: https://www.cnblogs.com/bluestorm/p/19600977\nDescription: AI\nAgent(智能体)技术白皮书(Google,2024)\nAI\nAgent(智能体)技术白皮书(Google,2024)\nPublished date: 2026-02-10T18:04:00+08:00\nSite name: 博客园\n\nTitle: 2026年如何挑选靠谱的Agent智能体公司?五家实力厂商深度解析 - 2026年企业推荐榜 - 企业博客\nURL: https://www.cnblogs.com/hynews/p/19597742\nDescription: 一、行业背景与市场趋势\n进入2026年,人工智能Agent(智能体)技术已从概念探索迈入规模化商业应用的关键阶段。随着大模型能力的持续进化与多模态技术的成熟,Agent不再仅仅是执行简单指令的“自动化工具”,而是进化为能够自主感知、规划、决策并执行复杂任务的“数字员工”。从智能客服、营销内容生成,到\nPublished date: 2026-02-10T06:50:00+08:00\nSite name: 博客园\n\nTitle: 埃森哲:2026年人工智能行业从即时到目的:用代理AI解锁商业价值报告.pdf - 文档下载 - 未来智库\nURL: https://www.vzkoo.com/document/4635140999285313536.html\nDescription: 埃森哲:2026年人工智能行业从即时到目的:用代理AI解锁商业价值报告.pdf\n上传者:m****\n时间:2026/02/10\n热度:21\n0人点赞\n举报\n埃森哲:2026年人工智能行业从即时到目的:用代理AI解锁商业价值报告。在企业AI的讨论中,大部分的注意力——以及炒作——都集中在生成\n式AI和大型语言模型(LLM):以ChatGPT为代表的AI,以及它的文\n本写作能力、图像创建能力、代码生成能力、音乐创作能力等等。\n自主型人工智能是一种能够自行设定目标、做出决策并采取行动以实现\n目标,而不需要任何特定指令说明的系统。它由多种不同类型的智能体\n协同工作,以收集、理解和处理信息。它还能通过自身的行动进行学习\n,以改进其响应,无需人工干预。\n智能代理可以包括机器人流程自动化(RPA)、机器学习模型,以及能\n够生成、验证和总结内容的生成式AI代理,作为更广泛任务的组成部分\n。例如,Snowflake\nCortex\nAgents是生成式AI代理,通过分解复杂查询\n、检索相关数据以及生成精确答案,帮助从复杂的结构化和非结构化数\n据集中检索数据洞察。\n格式:pdf\n大小:2M\n页数:15\n价格:\n3积分\n下载\n获取积分\n免责声明:本文\n/\n资料由用户个人上传,平台仅提供信息存储服务,如有侵权请联系删除。\nPublished date: 2026-02-10T00:00:00+08:00\nSite name: 未来智库\n\nTitle: AI Agent如何实现商业化?_新浪财经_新浪网\nURL: https://finance.sina.com.cn/stock/marketresearch/2026-02-14/doc-inhmupeh8166261.shtml\nDescription: 炒股就看",
+    "isError": false,
+    "durationMs": 222,
+    "createdAt": "2026-03-01T08:32:24.659Z"
+  },
+  {
+    "id": "93f7ada28189cbb8",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_97142b87d6384f5884afb76c"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:25.075Z"
+  },
+  {
+    "id": "2c1eb8c2ecf85d8d",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 商业化落地 - 拓端\nURL: https://tecdat.cn/tag/%e5%95%86%e4%b8%9a%e5%8c%96%e8%90%bd%e5%9c%b0/\nDescription: By\ntecdat2月\n24,\n2026人工智能AI,\n大数据部落,\n教育,\n行业报告2026,\nAI,\n人工智能,\n元宇宙,\n商业化落地,\n教育,\n智能体\n人工智能已从实验室的技术迭代,成长为重塑全球产业格局、国家竞争力与社会生产生活方式的核心引擎,2025年更是成为AI行业从「技术验证」迈向「规模化产业落地」的关键拐点。\nPublished date: 2026-02-25T01:57:30+08:00\nSite name: tecdat.cn\n\nTitle: AI应用商业化提速 与制造业融合愈发深入|粤传媒|证券相关基金|AI音频生成|人工智能|传媒_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c0019021dv8.html\nDescription: 步入2026年,AI应用迎来规模化落地,AI技术正加速嵌入各类终端产品和产业场景。在此背景下,截至1月15日,开年以来A股AI应用板块指数累计涨幅达18.30%。\n业内预测,AI产业正站在从技术探索迈向规模商业化的临界点,2026年将是AI在应用端商业化加速的关键年,产业链即将迎来加速发展期。\n从“概念验证”走向“应用实训”\n与以往AI技术的部署路径多聚焦“云端集中式”不同,随着大模型压缩、异构芯片、存内计算等核心技术突破,这一路径正加速向“端侧分布式”演进。在手机、PC、可穿戴、汽车、机器人乃至玩具等终端中,AI技术正从“概念验证”走向“应用实训”。\n人形机器人产业的商业化进程加速就是重要体现。2025年以来,人形机器人迎来商业化拐点,全球处于具身智能大爆发的“前夜”,业界认为,人形机器人有望成为继手机和汽车之后的“下一代海量智能终端”。\n此外,随着AI大模型在传媒行业的应用和创新,“AI+传媒”概念近期也受到资本的青睐,不少上市公司对此进行了积极回应。例如,广东广州日报传媒股份有限公司(证券简称“粤传媒”)相关负责人在互动平台透露,公司已完成广报AI数字人平台封装上线、妙音AI音乐大模型备案,AI技术已赋能广告全案营销,在视频制作、脚本生成等环节实现降本增效,还打造了多款AI制作广告短片,并通过AIGC培训课程实现知识变现,“传媒+AI营销”的业务模式持续落地。\n国金证券研报认为,2026年是AI在应用端从技术验证阶段迈向大规模商业推广的关键之年,大模型作为流量入口与商业化落地双重枢纽的核心逻辑已完全跑通。\nAI在应用端的快速落地为产业链带来巨大的市场空间。据中信建投估算,2026年,手机、PC的AI渗透率有望分别达到45%和62%,端侧AI市场规模预计从2025年的3219亿元跃升至2029年的1.22万亿元,年复合增长率将达40%。\nAI业务逐渐进入价值兑现新阶段\nPublished date: 2026-02-04T07:47:11+08:00\nSite name: 新浪网\n\nTitle: 被客户认可后,我发现企业AI正在进入深水区|翻译|工业互联网平台_网易订阅\nURL: https://www.163.com/dy/article/KLIV4DGT055694X8.html\nDescription: 特别开心自己的工作获得了客户认可,说明过去一段时间的陪跑、共创和方案讨论,是被真正吸收和验证过的。在我服务的客户中,海亮集团是在AI落地上最坚定、最稳健、也最有成效的客户。2025年他们主要专注的是培养AI人才、搭建AI示范项目。而26年则是希望能进入到全员用AI解决问题的阶段,并在复杂业务场景下引入外部专家,建立AI解决方案资源池。这其实是个非常典型的企业应用AI成熟路径。第一阶段,是让大家会用;第二阶段,是让管理层理解AI的边界与价值;第三阶段,是建立组织级的需求识别与解决机制。很多企业现在只停留在在第一阶段:培训做了不少,工具也装了不少,但真正嵌入到业务流程的还不多,而找到AI和业务结构融合的高价值场景,才是真正的难点。从海亮26年规划中,我得到一个判断:当一家企业开始关注组织的AI需求识别能力、AI解决方案设计能力,并计划设置资源池机制时,他们就已经开始从尝鲜走向体系化建设了。如果你的企业2026年也有类似规划,我建议你提前思考三件事:第一,是否已经建立起统一的AI人才分层培养机制。第二,是否有人专门负责把业务问题翻译成AI需求。第三,是否设计了外部专家参与的窗口,而不是出问题临时找人救火。这三件事并不复杂,但需要方法和节奏。我现在的工作,就是在陪着企业在这些关键节点上做判断、",
+    "isError": false,
+    "durationMs": 274,
+    "createdAt": "2026-03-01T08:32:25.349Z"
+  },
+  {
+    "id": "26699968dc99557e",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": {
+      "toolCallId": "call_714ec856160c434aa7219014"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:27.500Z"
+  },
+  {
+    "id": "30567054699776ad",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "fc5f4c5bf43702d4__echo",
+    "input": null,
+    "output": "Echo: 获取当前时间以确定研究窗口",
+    "isError": false,
+    "durationMs": 5,
+    "createdAt": "2026-03-01T08:32:27.505Z"
+  },
+  {
+    "id": "7dd614cdc102b70c",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_5c270acbf08848b99a7dc0f2"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:32.148Z"
+  },
+  {
+    "id": "9ad553609d24fc7b",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 深入解析:Claude vs ChatGPT vs Gemini: 기능 비교, 사용 경험, 적합 인군 - yangykaifa - 博客园\nURL: https://www.cnblogs.com/yangykaifa/p/19567187\nDescription: Claude\nvs\nChatGPT\nvs\nGemini:\n기능\n비교,\n사용\n경험,\n적합\n인군2025년\nAI\n시대에서\nClaude(Anthropic\n개발),\nChatGPT(OpenAI의\n플래그십\n제품)\n및\nGemini(Google의\nAI\n모델)는\n가장\n인기\n있는\n대형\n언어\n모\nPublished date: 2026-02-03T08:12:00+08:00\nSite name: 博客园\n\nTitle: Opus 4.6、GPT-5.3-Codex、Gemini 3.1 Pro 三个模型的 API 怎么选? - 147API - 企业博客\nURL: https://www.cnblogs.com/147api/p/19642282\nDescription: 2\n月份三家同时出牌。Anthropic\n发了\nOpus\n4.6,OpenAI\n发了\nGPT-5.3-Codex,Google\n发了\nGemini\n3.1\nPro。\n之前分别写过\nOpus\n4.6\n的\neffort\n参数分档\n和\nGemini\n3.1\nPro\n的\nthinking_level\n选择,\nPublished date: 2026-02-26T15:38:00+08:00\nSite name: 博客园\n\nTitle: 谷歌、Anthropic和OpenAI齐陷“僵局”,AI模型开发瓶颈如何破?\nURL: https://news.futunn.com/post/41149434/record-tr4cking-news-strong-us-non-farm-payroll-data-surprises-will-the-fed\nDescription: 来源:智通财经\n据知情人士透露,与OpenAI一样,\n$谷歌-A\n(GOOGL.US)$\n/\n$谷歌-C\n(GOOG.US)$\n和\n$亚马逊\n(AMZN.US)$\n支持的Anthropic的大语言模型性能也进入了停滞不前的瓶颈期。三名知情人士称,即将推出的Gemini未达内部预期。此外,Anthropic已经推迟了其Claude模型的下一个版本,即3.5\nOpus。公司们表示,目前仍缺乏用于训练模型的人工数据。\n正处于一个里程碑关键时刻的OpenAI在9月完成了一个大型新人工智能模型的首轮训练,希望该模型能够大大超越ChatGPT背后的先前技术版本,并向超越人类的强大人工智能的目标更近一步。但据两名知情人士透露,这款内部称为“猎户座”(Orion)的模型并未达到公司预期的性能。\n知情人士说,例如,截至夏末,Orion在试图回答未接受过训练的编程问题时表现不佳。总体而言,到目前为止,Orion对OpenAI现有模型的提升并不像从GPT-3.5到GPT-4的提升那么大。GPT-3.5最初是OpenAI旗舰聊天机器人的动力系统。\nOpenAI并不是最近唯一遇到障碍的公司。在多年来以极快的速度推出愈加复杂的人工智能产品之后,三家领先的人工智能巨头目前却发现,为开发新模型而付出的高昂代价产生的回报正在减少。\nAnthropic上个月发布了一款名为Claude\n3.5\nHaiku的新版本,以及Claude\n3.5\nSonnet的升级版本。今年9月,OpenAI公司推出了一系列新人工智能模型,名为o1和o1-mini,可对复杂任务进行推理,并解决比以前的科学、编程和数学模型更难的问题。\n但据三位知情人士透露,Alphabet旗下谷歌即将推出的Gemini软件版本未达到内部预期。与此同时,Anthropic期待已久的Claude模型3.5\nOpus的发布时间表也已推迟,而且未提供具体发布\nPublished date: 2026-02-11T22:26:07+08:00\nSite name: 财经新闻\n\nTitle: AI日报:谷歌发布Gemini3.1Pro;Qwen3.5开源家族新增多款模型;Claude Code远程控制功能上线_腾讯新闻\nURL: https://news.qq.com/rain/a/20260225A05FEB00\nDescription: 1、推理性能翻倍!谷歌发布\nGemini\n3.1\nPro,多项基准测试超越\nGPT-5.22、Anthropic重磅更新!Claude\nCode“远程控制”功能上线,手机秒变电脑终端神器3、全线开放!OpenAI\n发布\nGPT-5.3-Codex:深度融合推理能",
+    "isError": false,
+    "durationMs": 468,
+    "createdAt": "2026-03-01T08:32:32.616Z"
+  },
+  {
+    "id": "c87ba90b9bf6a6e5",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_7afbb537d4d04ede97d2a06d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:32.689Z"
+  },
+  {
+    "id": "71e87fd31f5a18cb",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: DeepSeek大模型更新_财经频道_证券之星\nURL: https://finance.stockstar.com/IG2026021100031812.shtml\nDescription: (原标题:DeepSeek大模型更新)\n观点网讯:2月11日,据媒体报道,DeepSeek新模型上线。报道称,新模型核心亮点(灰度测试):上下文能力跃升:从128K\nToken提升至1M\nToken,意味着一次可处理的信息量激增近10倍。此外,知识截止日期更新至2025年5月(原为2024年7月)。报道称,这不仅是一次微调,更可能意味着基于更近期数据训练的全新基础模型。\n免责声明:本文内容与数据由观点根据公开信息整理,不构成投资建议,使用前请核实。\nPublished date: 2026-02-11T18:44:00+08:00\nSite name: 证券之星财经频道\n\nTitle: 2026年计算机行业DeepSeek:加速迭代的开源大模型引领者 - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/4636651143907250176.html\nDescription: DeepSeek:长期主义,引领开源模型生态\n1.1、引领开源模型生态,重塑\nAI\n产业格局\nDeepSeek:引领开源大模型发展,重塑全球\nAI\n发展格局。深度求索\n(DeepSeek)\n于\n2023\n年\n7\n月正式成立,由梁文锋旗下的量化投资机构幻方量化设立,专注于\nAI\n大语言模型的开发。2025\n年\n1\n月\n20\n日,推理模型\nDeepSeek-R1\n凭借更低的\n训练成本以及领先的模型能力,深刻影响了全球\nAI\n产业发展,R1\n发布后\n1\n周内\nDeepSeek\nApp\n实现用户数增长超\n1\n亿。DeepSeek\n持续以算法优化和工程创新\n加速\nAI\n技术平权,基于\nOpenRouter\n平台数据,2024\n年\n11\n月至\n2025\n年\n11\n月\n期间,DeepSeek\n的累计调用量为\n14.37\n万亿\nToken,位居全球开源大模型榜首。\nDeepSeek\nV\n系列注重成本效率,R\n系列注重推理性能。DeepSeek\nV\n系列模型\n为基础模型,注重成本及推理效率的优化;R\n系列为推理模型,基于\nV\n系列基础\n模型进行后训练,显著提升了模型在数学、代码生成、复杂逻辑推理等任务中的\n表现。\n1)模型方面:2024\n年\n1\n月,公司发布首个大模型\nDeepSeek\nLLM\n67B\n通用大\n语言模型。2024\n年\n5\n月,公司推出\nDeepSeek-V2,基于\nMoE\n架构,大幅提\n升模型训推效率,API\n定价下降至\nGPT-4\nTurbo\n的百分之一。2024\n年\n12\n月,\n公司推出\nDeepSeek-V3,训练成本仅\n557\n万美元,性能表现比肩\nGPT-4。\n2025\n年\n1\n月,公司发布推理模型\nDeepSeek-R1\n正式版,推理性能比肩\nGPTo1。2025\n年以来,DeepSeek\n推出多个迭代版本,数学、推理、长上下文、\n多模态等方面的能力持续提升。\nPublished date: 2026-02-14T00:00:00+08:00\nSite name: 未来智库\n\nTitle: DeepSeek大模型更新_腾讯新闻\nURL: https://news.qq.com/rain/a/20260211A07JCH00\nDescription: 观点网讯:2月11日,据媒体报道,DeepSeek新模型上线。报道称,新模型核心亮点(灰度测试):上下文能力跃升:从128K\nToken提升至1M\nToken,意味着一次可处理的信息量激增近10倍。此外,知识截止日期更新至2025年5月(原为2024年7月)。报道称,这不仅是一次微调,更可能意味着基于更近期数据训练的全新基础模型。免责声明:本文内容与数据由观点根据公开信息整理,不构成投资建议,使用前请核实。\nPublished date: 2026-02-11T23:34:11+08:00\nSite name: 腾讯网\n\nTitle: DeepSeek大模型更新|灰度|微调|上下文|信息量|正式版模型|deepseek_网易订阅\nURL: https://www.163.com/dy/article/KLH2KQ0F0519D45U.html\nDescription: 观点网讯:2月11日,据媒体报道,DeepSeek新模型上线。报道称,新模型核心亮点(灰度测试):上下文能力跃升:从128K\nToken提升至1M\nToken,意味着一次可处理的信息量激增近10倍。此外,知识截止日期更新至2025年5月(原为2024年7月)。报道称,这不仅是一次微调,更可能",
+    "isError": false,
+    "durationMs": 233,
+    "createdAt": "2026-03-01T08:32:32.922Z"
+  },
+  {
+    "id": "5d06bc846e72423f",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_cd202e2506514c3f81d7edb9"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:33.158Z"
+  },
+  {
+    "id": "a5e613184406e31c",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 智谱公司研究报告:从清华实验室到港股AI新贵,关注模型迭代与生态飞轮(附下载)|开源模型|OpenAI|Hugging Face|清华大学|通用_新浪新闻\nURL: https://k.sina.com.cn/article_7879848900_1d5acf3c401902qa1w.html\nDescription: 2025\n年\n12\n月\n23\n日,智谱\nAI\n发布并开源新一代旗舰模型\nGLM-4.7。该模型专注编\n程场景,强化编码能力、长程任务规划和工具协同。在多项国际基准测试中,GLM-4.7\n取得开源模型领先成绩:在\nCode\nArena\n盲测平台位列开源第一、国产第一,超越\nGPT5.2;在\nLiveCodeBench\nV6\n达到\n84.8\n分,开源\nSOTA;在\nSWE-bench-Verified\n也获国产\n领先。模型支持\n200K\n输入上下文和\n128K\n输出长度,采用混合专家架构。\n发布后,GLM-4.7\n迅速登顶\nHugging\nFace\n趋势榜第一,多家国际\nAI\n平台如\nVercel、\nCline、Roo\nCode\n宣布接入。这反映智谱开源策略的有效性:通过高性能开源权重吸引全\n球开发者,同时带动\nAPI\n调用和企业服务增长。公司内部已将\nGLM-4.7\n用于日常开发,\n验证其工程实用性。\n在多模态方面,公司推出了\nCogView、CogVideoX\n等模型,实现文本、图像、视频、\n语音的跨模态生成与理解;在智能体领域,公司开发了全球首个可自主操作智能手机的\n智能体\nAutoGLM,将\nAI\n从“对话”扩展到“行动”。\n智谱的主营业务是向企业和开发者提供通用大模型能力服务,商业模式以\nMaaS\n(Model-as-a-Service,大模型即服务)为核心,通过\nAPI\n调用和本地部署为客户输出通\n用智能解决方案。凭借此模式,智谱自\n2021\n年起迅速实现商业化落地,收入连续三年\n翻番以上增长。\n根据弗若斯特沙利文的数据,以\n2024\n年收入计,智谱在中国独立通用大模型开发\n商中位列第一,在所有通用大模型开发商中排名第二,市场份额达\n6.6%。这一业绩使智谱成为国内通用大模型领域的领军者,仅次于科大讯飞等传统科技企业。在客户基础方\n面,截至\n2025\n年\n9\n月,\nPublished date: 2026-02-10T04:24:22+08:00\nSite name: 新浪网\n\nTitle: “全球大模型第一股”,公开技术细节_腾讯新闻\nURL: https://news.qq.com/rain/a/20260223A03HBJ00\nDescription: 2月22日,智谱发布技术报告,全面解读GLM-5的技术细节。从技术导向而言,此前AI编程范式属于“Vibe\nCoding”(氛围编程),即程序员手动提示AI生成代码,较为依赖人力,效率有瓶颈。GLM-5瞄准的是Agentic\nEngineering(智能体工程),要求AI不再只是辅助工具,而是一个可以自主规划、执行、迭代的“虚拟工程师”。为了实现这一目标,GLM-5在技术上实现了四大突破:第一,更高效的模型“大脑”。GLM-5引入DSA稀疏注意力机制(DeepSeek\nSparse\nAttention,DSA),可以理解为,模型在处理长文本时,不再对每个词都投入同等注意力,而是智能地聚焦在关键信息上。这大幅降低了计算成本,使得模型能用更少的资源处理更长的上下文。得益于此,智谱将模型参数规模扩展至744B(7440亿),同时将训练token规模提升至28.5T(28.5万亿)。第二,更快的“学习”方式。GLM-5构建并完善了一套名为“slime”的异步强化学习基础设施,这是其训练效率取得突破的核心。传统的强化学习训练效率相对较低,slime将“生成任务轨迹”和“模型参数更新”解耦,即将这两个过程分开后同时进行。这就像一边让AI在实践中不断尝试,一边后台同步总结经验教训,极大提升了训练效率。第三,更聪明的“决策”算法。GLM-5提出了全新的异步Agent\nRL算法。这一算法针对动态环境下的规划与自我纠错能力进行了深度优化,这使得模型能够从海量的、多步骤的交互中持续学习,优化其在动态环境中的规划、执行和自我纠错能力。第四,全面拥抱国产算力生态。从模型发布伊始,GLM-5就全面兼容七大主流国产芯片平台:华为昇腾、摩尔线程、海光、寒武纪、昆仑芯、沐曦与燧原,完成从底层内核到上层推理框架的深度优化。GLM-5发布后,获得了开发者社区的用脚投票。发布之初,智谱以代号“Pony\nAlpha\nPublished date: 2026-02-23T13:54:12+08:00\nSite name: 腾讯网\n\nTitle: “全球大模型第一股”,公开技术细",
+    "isError": false,
+    "durationMs": 250,
+    "createdAt": "2026-03-01T08:32:33.408Z"
+  },
+  {
+    "id": "175f4a00368317cd",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_b307c18614274a49bc689467"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:36.386Z"
+  },
+  {
+    "id": "b1dfef3243adfb39",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 谷歌被曝正使用 Anthropic 的Claude 模型来改进其 Gemini AI - 今日头条\nURL: https://www.toutiao.com/article/7452553341244064296/\nDescription: 12 月25 日消息,据TechCrunch 获得的内部通信内容显示,参与改进谷歌 Gemini 人工智能模型的承包商正在将其答案与 Anthropic 的竞品模型 Claude 的输出进行比较。\nPublished date: 2024-12-26T11:13:00+08:00\nSite name: 今日头条\n\nTitle: 谷歌运用Anthropic Claude大模型改进自家Gemini AI - 今日头条\nURL: https://www.toutiao.com/article/7452641652268745250/\nDescription: 根据TechCrunch获得的内部聊天资料,负责改进谷歌Gemini AI的外包人员正将其输出的答案与竞争对手Anthropic的Claude模型输出进行比对。随着科技企业竞相构建更强大的AI模型,他们往往会将自家模型的性能与竞争对手进行比\nPublished date: 2024-12-26T16:56:00+08:00\nSite name: 今日头条\n\nTitle: Anthropic:2025年AI进化更剧烈,运算成本激增_Clark_OpenAI_模型\nURL: https://www.sohu.com/a/842175491_506163\nDescription: 背后有Google撑腰的AI创业公司商Anthropic共同创办人Jack Clark相信,OpenAI最近成功推出AI模型“o3”,暗示AI发展并未变慢,速度反倒加快了。不过,他警告,最新AI系统的运算成本是重大挑战。 The Decoder 25日报道,Clark在自己的新闻报《Import\nPublished date: 2024-12-26T18:14:00+08:00\nSite name: 搜狐\n\nTitle: 谷歌被曝正使用Anthropic的Claude模型来改进其Gemini AI_快讯_i黑马\nURL: http://www.iheima.com/article-381107.html\nDescription: 据TechCrunch获得的内部通信内容显示,参与改进谷歌Gemini人工智能模型的承包商正在将其答案与Anthropic的竞品模型Claude的输出进行比较。此举引发了谷歌是否获得Anthropic授权使用Claude进行测试的合规性质疑。谷歌DeepMind(负责Gemini)发言人McNamara表示,DeepMind确实会“比较模型输出”以进行评估,但并未在Anthropic模型上训练 Gemini。“然而,任何关于我们使用Anthropic模型训练Gemini的说法都是不准确的。”\nPublished date: 2024-12-26T17:17:00+08:00\nSite name: i黑马\n\nTitle: OpenAI发布更先进的推理模型与谷歌竞争\nURL: https://k.sina.cn/article_1654140974_6298302e02001e3y6.html\nDescription: OpenAI正准备推出一种新的人工智能模型,并称该模型比其现有产品能够进行更先进的类人推理,这意味着其与Alphabet Inc.旗下谷歌(192.96, 3.26, 1.72%)等对手的竞争更为激烈。\n  全新的o3模型在12月20日的直播活动中亮相,它在回答用户询问之前会花更多时间计算答案,以解决更复杂的多步骤问题。该公司还将推出小型版本o3-mini。\n  在直播中,OpenAI分享了一些初步细节来展示o3在回答与编码等主题相关的复杂问题时,如何优于其9月份推出的推理模型o1。OpenAI还要求研究人员申请测试这些模型,作为新软件上线前的流程之一。OpenAI首席执行官Sam Altman在活动中表示,公司计划在1月底上线o3-mini模型,之后不久推出o3模型。\n  OpenAI在两年前发布的ChatGPT拉开了人工智能竞赛的序幕,该聊天机器人最初由一个名为GPT-3.5的大型语言模型驱动。OpenAI 在2023年推出了GPT-4,并称其更加准确、更具创造性;最近又推出了首个推理模型o1。发言人说,OpenAI决定不把新模型命名为o2,是出于对英国一个名为o2的电信品牌的尊重。\nPublished date: 2024-12-23T15:02:00+08:00\nSite name: 新浪看点\n\nTitle: ",
+    "isError": false,
+    "durationMs": 256,
+    "createdAt": "2026-03-01T08:32:36.642Z"
+  },
+  {
+    "id": "21c3d71df21e4d58",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_5490e0ebc7544f509f3b8b90"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:37.362Z"
+  },
+  {
+    "id": "838d26f03ff8b485",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI 智能体(AI Agent)的应用_AI应用_北京木奇移动技术有限公司_InfoQ写作社区\nURL: https://xie.infoq.cn/article/aa45d3580e07d33138ee32fd4\nDescription: AI\n智能体(AI\nAgent)的应用非常广泛,几乎涵盖了我们生活的方方面面。它们能够自主地感知环境、做出决策并执行行动,从而完成各种复杂的任务。以下是一些\nAI\n智能体的典型应用场景。1.\n客户服务:2.\n商业与金融:自动化交易:\n能够根据市场数据和预设策略进行自动化的股票、外汇等交易,提高交易效率和盈利能力。风险评估:\n能够分析大量的金融数据,识别潜在的风险和欺诈行为。投顾顾问:\n根据用户的财务状况和投资目标,提供个性化的投资建议。3.\n医疗健康:疾病诊断:\n能够分析医学影像、病历等数据,辅助医生进行疾病诊断,提高诊断的准确性和效率。药物研发:\n能够加速药物研发过程,例如通过模拟分子相互作用来预测药物的疗效。个性化治疗:\n根据患者的基因信息和病情,制定个性化的治疗方案。4.\n工业制造:机器人控制:\n控制工业机器人执行各种生产任务,例如装配、焊接、喷涂等,提高生产效率和自动化程度。质量检测:\n利用计算机视觉技术检测产品缺陷,提高产品质量。预测性维护:\n预测设备故障,并提前进行维护,减少停机时间。5.\n交通运输:自动驾驶汽车:\n通过感知周围环境并做出决策,实现车辆的自动驾驶,提高交通安全性和效率。交通流量优化:\n分析交通数据,优化交通信号灯的配时,缓解交通拥堵。物流优化:\n优化物流路线和配送计划,降低物流成本。6.\n教育:智能辅导系统:\n根据学生的学习情况,提供个性化的学习内容和辅导。语言学习:\n提供语言学习工具,例如口语练习、语法纠错等。虚拟实验室:\n提供虚拟的实验环境,方便学生进行科学实验。7.\n娱乐:8.\n其他领域:智能家居:\n控制家电设备,例如灯光、空调、电视等,提高生活便利性。安防监控:\n监控安全摄像头,识别异常行为,提高安全性。环境监测:\n监测空气质量、水质等环境指标,提供环境预警。一些具体的例子:谷歌\nDeepMind\n的\nAlphaGo:\n击败了人类围棋冠军\nPublished date: 2024-12-23T00:00:00+08:00\nSite name: InfoQ\n\nTitle: AI 智能体（AI Agent）的应用\nURL: https://www.jianshu.com/p/1e6df56836c6\nDescription: AI 智能体(AI Agent)的应用非常广泛,几乎涵盖了我们生活的方方面面。它们能够自主地感知环境、做出决策并执行行动,从而完成各种复杂的任务。以下是一些 AI 智能体的典型应用场景。\n1. 客户服务:\n智能客服机器人: 能够 24/7 回答客户的常见问题、处理订单、提供技术支持等,提高客户服务效率和满意度。例如,银行、电商平台的在线客服。\n虚拟助手: 能够理解用户的自然语言指令,并执行相应的操作,例如预订机票、安排日程、查找信息等。例如,Siri、Google Assistant、小爱同学。\n2. 商业与金融:\n自动化交易: 能够根据市场数据和预设策略进行自动化的股票、外汇等交易,提高交易效率和盈利能力。\n风险评估: 能够分析大量的金融数据,识别潜在的风险和欺诈行为。\n投顾顾问: 根据用户的财务状况和投资目标,提供个性化的投资建议。\n3. 医疗健康:\n疾病诊断: 能够分析医学影像、病历等数据,辅助医生进行疾病诊断,提高诊断的准确性和效率。\n药物研发: 能够加速药物研发过程,例如通过模拟分子相互作用来预测药物的疗效。\n个性化治疗: 根据患者的基因信息和病情,制定个性化的治疗方案。\n4. 工业制造:\n机器人控制: 控制工业机器人执行各种生产任务,例如装配、焊接、喷涂等,提高生产效率和自动化程度。\n质量检测: 利用计算机视觉技术检测产品缺陷,提高产品质量。\n预测性维护: 预测设备故障,并提前进行维护,减少停机时间。\n5. 交通运输:\n自动驾驶汽车: 通过感知周围环境并做出决策,实现车辆的自动驾驶,提高交通安全性和效率。\n交通流量优化: 分析交通数据,优化交通信号灯的配时,缓解交通拥堵。\n物流优化: 优化物流路线和配送计划,降低物流成本。\n6. 教育:\n智能辅导系统: 根据学生的学习情况,提供个性化的学习内容和辅导。\n语言学习: 提供语言学习工具,例如口语练习、语法纠错等。\n虚\nPublished date: 2024-12-23T19:30:24+08:00\nSite name: 简书\n\nTitle: 政府信息公开\nURL: http://wap.deyang.gov.cn/gk/fjbm/gzw/fadingnarong/",
+    "isError": false,
+    "durationMs": 243,
+    "createdAt": "2026-03-01T08:32:37.605Z"
+  },
+  {
+    "id": "3279716c1515ab8f",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_b6beaba90ed641118921c900"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:37.887Z"
+  },
+  {
+    "id": "b2eb96660e21f6fc",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI落地解决方案_AI解决方案_ai解决方案品牌\nURL: https://www.chinaz.com/tags/846403.shtml\nDescription: 在数字化转型浪潮中,企业亟需将人工智能技术实际落地,以提升运营效率和业务创新能力。尽管生成式AI展现出了巨大的潜力和灵活性,企业在实际应用过程中依然面临诸多挑战。3.辅助决策,增强法务决策判断。... 特别声明: 本页面标签名称与页面内容,系网站系统为资讯内容分类自动生成,仅提供资讯内容索引使用,旨在方便用户索引相关资讯报道。\nPublished date: 2024-12-10T00:00:00+08:00\nSite name: 站长之家\n\nTitle: AI应用场景 - 飞书云文档\nURL: https://ai.feishu.cn/wiki/GLOiwa8iri9i3kkVzXgcv4EMn2g\nDescription: 生成式\nAI\n可以用于自动化迄今只有人类能够完成的创造性任务,这样可以为个人和公司节省时间和金钱。如果你能向生成式\nAI\n描述你的任务,它很可能为你完成任务或者为你提供一个良好的起点。以下是我们喜爱的几个生成式\nAI\n应用示例:​\nPublished date: 2024-12-10T00:00:00+08:00\nSite name: 飞书官网\n\nTitle: 凯捷研究所:生成式人工智能价值挖掘:跨行业顶级用例(第二版) - 今日头条\nURL: https://www.toutiao.com/article/7448545005754450483/\nDescription: 核心结论投资与采纳态势:组织积极拥抱生成式 AI,投资攀升,多数企业增加投入,大型企业引领整合潮流,各行业实施加速,如零售实施率从 2023 年17% 激增至 40%。\nPublished date: 2024-12-15T16:02:00+08:00\nSite name: 今日头条\n\nTitle: 火山引擎&ampampRollingAI&ampampInfoQ:2024生成式AI商业落地白皮书-给CXO的AI转型战术指南(119页).pdf-在线下载-三个皮匠报告\nURL: https://www.sgpjbg.com/bgdown/169841.html\nDescription: 1、生成式 AI商业落地白皮书给 CXO 的AI 转型战术指南生成式 AI 商业落地现状生成式 AI 正席卷我们的生活中国企业的生成式 AI应用逐渐进入全面发展期01场景案例大全Gen-AI 240 应用全场景地图消费零售金融汽车医药大健康智能终端教育和科研制造企业服务案例 01 飞鹤“3+3+2”战略蓝图 AI 能力中台建设案例 05 汽车销售顾问的强大助手“SalesCopilot”案例 02 海底捞 x 豆包大模型智慧洞察用户需求案例 03 海尔消金携手火山引擎,共建消费金融大模型案例 04 捷途汽2、gent 研发智能运维助手和 HIS 指南针案例 08 OPPO 火山引擎通过大模型强化手机终端识别、理解和响应用户需求的能力案例 10 面向生物医学领域打造一站式、智能化 AI 操作系统 Bio-OS案例 09 华硕与火山引擎合作将大模型集成至“豆叮 AI 助手”案例 11 火山引擎助力南开大学打造“AI+教育”新生态案例 12 大模型改善企业信息搜索体验案例 13 豆包大模型助力晓多科技“AI 训练场”与“全渠道智能知识库”智能化案例 14 G7 易流联合豆包大模型打造“智能接单”机器人案例 07 方舟健客 x 豆包大模型的医学科普短视频生产实践02生成式 AI 的落地挑战与应对策略挑战 3、06 如何形成自下而上的全民创新环境挑战 01 如何评估创新价值,获取项目资源挑战 02 场景选择难,失败率高挑战 03 AI 基础设施构建慢,如何完成快速启动挑战 04 怎样做好 AI 项目的落地准备工作挑战 05 要有规划,也要速赢,如何快速补齐能力差距0304企业 AI 转型的趋势展望AI 成熟度框架企业智能化转型发展路径这一代人的科技范式革命:从信息平权到智能平权生成式 AI 技术落地最佳实践大模型接入不是一蹴而就8 步实施大模型接入完善的大模型架构为企业 AI 落地保\nPublished date: 2024-12-10T00:00:00+08:00\nSite name: 三个皮匠报告\n\nTitle: AI应用场景\nURL: https://hka70cvw3i.feishu.cn/wiki/GLOiwa8iri9i3kkVzXgcv4EMn2g\nDescription: ​\nAI有哪些应用场景? ​\n实际工作中,AI有着非常广泛的应用场景。 ​\n生成式 AI 可以",
+    "isError": false,
+    "durationMs": 256,
+    "createdAt": "2026-03-01T08:32:38.143Z"
+  },
+  {
+    "id": "d4db900c1f7595bb",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_63cae3d0b33c4f799865220f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:45.556Z"
+  },
+  {
+    "id": "887210ce21fc954b",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 谷歌Gemini 2.0正式发布:AI Agent新时代的到来,市场反应亮眼!_应用_用户_技术\nURL: https://www.sohu.com/a/836309320_121798711\nDescription: 势 Gemini 2.0被谷歌称为“为智能体时代设计”的模型,其最大的亮点在于首次实现了原生多模态输入输出。这意味着用户可以通过文字、图像、声音等多种形式与AI进行交互,从而提升了用户体验。此外,Gemini 2.0也在深度学习、神经网络等技术上进行了全方位的优化,进一步增强了其在复杂推理和决策上的能力。因为它们能够根据用户的需求,提供个性化的信息和建议,甚至能进行复杂的任务处理。 AI技术的现实应用场景 随着Gemini 2.0的发布,AI Agent的应用场景将会越来越多。以下是几个值得关注的实际应用案例: 智能助理应用 :Project Astra可以作为用户的日常助手,提供行程安排、信息查询等服务,从而提升工作效率和生活质量。 编程辅助 :编程助手Jules通过理解用户输入的自然语言,能够生成相应的代码片段,从而大大降低学习成本和开发时间。 增强浏览体验 :Project Mariner可以分析用户的浏览\nPublished date: 2024-12-13T10:00:00+08:00\nSite name: 搜狐\n\nTitle: 谷歌Gemini 2.0发布:重塑AI智能体的未来,挑战OpenAI的统治_Agent_用户_功能\nURL: https://www.sohu.com/a/835652198_121798711\nDescription: 在全球人工智能领域的竞争愈发激烈之际,谷歌于12月11日深夜正式发布了其新一代AI模型——Gemini 2.0。这一发布不仅是谷歌对OpenAI近期动态的战略回应,更标志着AI智能体技术的一次重大进步。 Project Astra允许用户在Gemini应用中直接调用Google Lens和地图功能,帮助用户解决实际问题。这种实用性使得Gemini 2.0能够在更大程度上融入用户的日常生活。其次,Project Mariner则是一个实验性Chrome浏览器功能,用户只需简单的提示,AI便能在网页中执行信息搜索和表单填写等任务。Jules则是针对编程的Agent,用户可以用自然语言提出问题,Jules将自动生成适用于GitHub项目的代码。最后,游戏Agent则能实时解读屏幕信息,为玩家提供战术支持。与此同时,Gemini 2.0也在技术上实现了诸多突破。新的模型支持原生多模态输入输出,并且在速度上比其前版本1.5 Pro快了两倍。性能上的提升使得Gemini 2.0在处理多种数据格式(包括文本、图像、音频等)时,展现出更强的能力。 在AI的多模态理解方面,Gemini 2.0新构建的Spatial Understanding功能尤其引人关注。\nPublished date: 2024-12-12T08:12:00+08:00\nSite name: 搜狐\n\nTitle: 原来这才是真正的Agent智能体,坐稳扶好,AI加速了-CSDN博客\nURL: https://blog.csdn.net/aolan123/article/details/144562045\nDescription: 点赞数 8 版权声明:本文为博主原创文章,遵循CC 4.0 BY-SA版权协议,转载请附上原文出处链接和本声明。 版权 最近谷歌发布 Gemini 2.0 大模型,除了老生常谈的更高、更快、更强外,最大的亮点就是支持 多模态理解 。 前排提示,文末有大模型AGI-CSDN独家资料包哦! 以前大模型也支持多模态,但仅仅局限在图片。这次 Gemini 2.0 可以支持音频、视频等等。 最重磅的是基于Gemini 2.0 的多模态理解能力,谷歌发布了4个 AI Agent智能体 项目,我看了之后,直呼卧槽,估计AI圈又要迎来新一轮“军备竞赛”。 下面给朋友们分享一下。 第一个项目是 Project Astra 可以通过手机摄像头或智能眼镜跟大模型实时视频通话,支持多种语言交流。通话过程中还可以调用Google搜索、地图等工具。 巧合的是 OpenAI 在为期12天的产品直播活动中也发布了同样的功能。 大家最近刷短视频应该能看到很多博主都在玩这个功能,花样也越来越多,妥妥的一波流量红利期。 以前我们跟大模型交流只能通过文字,把我们看到的东西通过文字转述给大模型,这种方式不但效率低而且信息有损失。 现在有了音视频 多模态 能力,相当于大模型有了眼睛和耳朵,可以自己“ 看和听 ”。人机交互有了质的提升,必然加速AI发展。 第二个项目是 Project Mariner,一个可以",
+    "isError": false,
+    "durationMs": 354,
+    "createdAt": "2026-03-01T08:32:45.910Z"
+  },
+  {
+    "id": "ed0ac37569b7ee1e",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_26a075130a63469f875efa1d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:45.962Z"
+  },
+  {
+    "id": "558475a7706ca9fb",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 百度:文心智能体平台已汇聚15万企业 - 观点网\nURL: https://www.guandian.cn/article/20241205/454565.html\nDescription: 智能体是AI重构百度搜索的重要举措之一,目前智能体为搜索带来多轮对话、超级外脑、创意升级、拟人体验和多元推荐五项能力。 观点网讯: 12月5日,百度副总裁、百度搜索总经理赵世奇表示,百度文心智能体平台已汇聚15万企业,分发量相较年初增长16倍。 据悉,智能体是AI重构百度搜索的重要举措之一,目前智能体为搜索带来多轮对话、超级外脑、创意升级、拟人体验和多元推荐五项能力。 审校:徐耀辉 相关话题讨论\nPublished date: 2024-12-05T16:37:00+08:00\nSite name: 观点网\n\nTitle: 文心智能体平台智能体分发量较年初上涨16倍\nURL: https://www.tmtpost.com/nictation/7367866.html\nDescription: 12月5日消息, 百度 副总裁、 百度 搜索总经理赵世奇在2024 百度 热AI营销大会表示, 百度 文心智能体平台已汇聚15万企业,分发量相较年初增长16倍。\nPublished date: 2024-12-05T16:24:00+08:00\nSite name: 钛媒体官方网站\n\nTitle: 百度:文心智能体平台已汇聚15万企业_搜索_赵世奇_拟人\nURL: https://www.sohu.com/a/833529058_114984\nDescription: 观点网讯:12月5日,百度副总裁、百度搜索总经理赵世奇表示,百度文心智能体平台已汇聚15万企业,分发量相较年初增长16倍。 据悉,智能体是AI重构百度搜索的重要举措之一,目前智能体为搜索带来多轮对话、超级外脑、创意升级、拟人体验和多元推荐五项能力。\nPublished date: 2024-12-05T16:37:00+08:00\nSite name: 搜狐\n\nTitle: 百度赵世奇:文心智能体平台已汇聚15万家企业,分发量较年初增长16倍百度_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2024-12-05/doc-incymcmq9700932.shtml\nDescription: 每经成都12月5日电(记者 赵雯琪)百度副总裁、百度搜索总经理赵世奇12月5日在“2024百度热AI营销大会”上表示,百度文心智能体平台已汇聚15万家企业,分发量相较年初增长16倍。智能体是AI重构百度搜索的重要举措之一。赵世奇认为,搜索能为智能体提供天然的用户土壤,而智能体能为搜索带来多轮对话、超级外脑、创意升级、拟人体验、多元推荐五大新能力。 海量资讯、精准解读,尽在新浪财经APP\nPublished date: 2024-12-05T16:41:00+08:00\nSite name: 新浪财经\n\nTitle: 百度赵世奇:文心智能体平台已汇聚15万家企业 分发量较年初增长16倍_东方财富网\nURL: https://finance.eastmoney.com/a/202412053260287788.html\nDescription: 百度副总裁、 百度 搜索总经理赵世奇12月5日在“2024 百度 热AI营销大会”上表示,百度文心智能体平台已汇聚15万家企业,分发量相较年初增长16倍。智能体是AI重构百度搜索的重要举措之一。赵世奇认为,搜索能为智能体提供天然的用户土壤,而智能体能为搜索带来多轮对话、超级外脑、创意升级、拟人体验、多元推荐五大新能力。 (文章来源:每日经济新闻)\nPublished date: 2024-12-05T16:43:00+08:00\nSite name: 东方财富网财经频道\n\nTitle: 文心智能体平台已汇聚15万企业,智能体分发量上涨16倍_搜索_赵世奇_拟人\nURL: https://www.sohu.com/a/833558182_130887\nDescription: 百度副总裁、百度搜索总经理赵世奇在2024百度热AI营销大会表示,百度文心智能体平台已汇聚15万企业,分发量相较年初增长16倍,成为AI时代商业发展的原动力。据悉,智能体也是AI重构百度搜索的重要举措之一。赵世奇认为,搜索能为智能体提供天然的用户土壤,而智能体能为搜索带来多轮对话、超级外脑、创意升级、拟人体验和多元推荐五大新能力。(全天候科技)\nPublished date: 2024-12-05T18:02:00+08:00\nSite name: 搜狐\n\nTitle: 百度文心智能体分发量相较年初增长16倍\nURL: http",
+    "isError": false,
+    "durationMs": 245,
+    "createdAt": "2026-03-01T08:32:46.207Z"
+  },
+  {
+    "id": "4eb8d38742ab0d14",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_c14d7deafffc4da981161dfb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T08:32:46.756Z"
+  },
+  {
+    "id": "16f38b3a01216f56",
+    "type": "tool_call",
+    "taskId": "656676708416c3df",
+    "subtaskId": "94cd71340f6a9dab",
+    "employeeId": "79ec644fb539f34a",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI发布新一代的推理模型系列o3_腾讯新闻\nURL: https://new.qq.com/rain/a/20241221A02AF400\nDescription: 周六凌晨,OpenAI发布下一代的推理模型系列o3,共有o3和o3-mini两个版本,后者是一款更小的精简版模型,针对特定任务进行了微调。 OpenAI 声称,在某些条件下,o3模型可以接近实现AGI,计划在1月底前正式推出o3 mini,之后推出完整版的o3。(财联社)\nPublished date: 2024-12-21T17:10:00+08:00\nSite name: 腾讯网\n\nTitle: OpenAI发布新一代的推理模型系列o3 - 今日头条\nURL: https://www.toutiao.com/article/7450664916056326693\nDescription: 周六凌晨,OpenAI发布下一代的推理模型系列o3,共有o3和o3-mini两个版本,后者是一款更小的精简版模型,针对特定任务进行了微调。OpenAI声称,在某些条件下,o3模型可以接近实现AGI,计划在1月底前正式推出o3 mini,之后推出完整版的o3。(财联社)\nPublished date: 2024-12-21T09:05:00+08:00\nSite name: 今日头条\n\nTitle: OpenAI发布了下一代推理模型o3... - 今日头条\nURL: https://www.toutiao.com/article/7450841855878693412/\nDescription: 来源:天极网#OpenAI发布高级推理模型o3# OpenAI发布了下一代推理模型o3,这是今年早些时候发布的o1“推理”模型的最新版本。就像o1一样,o3是一个模型家族,o3-mini是一款更小的精简版模型,专门针对特定任务进行了微调。\nPublished date: 2024-12-21T20:32:00+08:00\nSite name: 今日头条\n\nTitle: OpenAI重磅产品发布——推理模型o3,可以接近实现AGI-贤集微头条\nURL: http://wtt.xianjichina.com/forum/details_549747\nDescription: OpenAI将其最为重要的尖端产品,放在了为期12天的技术分享直播活动的最后一天!周五,OpenAI发布了下一代的推理模型o3,这是今年早些时候发布的o1推理模型的升级版本。更准确地说,o3是一个模型系列——就像o1一样,同时有o3和o3-mini两个版本,后者是一款更小的精简版模型,针对特定任务进行了微调。OpenAI声称,至少在某些条件下,o3模型可以接近实现AGI。\nPublished date: 2024-12-23T09:08:50+08:00\nSite name: 贤集网\n\nTitle: OpenAI发布新一代的推理系列模型o3-36氪\nURL: https://36kr.com/newsflashes/3087910864075145\nDescription: 12月21日凌晨,OpenAI发布下一代的推理模型系列o3,共有o3和o3-mini两个版本,后者是一款更小的精简版模型,针对特定任务进行了微调。OpenAI声称,在某些条件下,o3模型可以接近实现AGI,计划在1月底前正式推出o3 mini,之后推出完整版的o3。(财联社)\nPublished date: 2024-12-21T09:05:00+08:00\nSite name: 36氪\n\nTitle: OpenAI 推出 o3 和o3 Mini 推理模型 - 软餐\nURL: https://www.ruancan.com/p/149619.html\nDescription: OpenAI 日前展示了即将推出的 o3 系列推理模型。 与现有的 o1 系列类似,o3 系列将包括 o3 和o3 mini 模型。从今天开始,它已开始共享 o3 模型,用于安全和保安测试。感兴趣的安全和保安研究人员也可以申请在公开发布前使用 o3 模型。o3 模型预计将于 2025 年向公众开放。 ARC Prize 官方高度评价新版模型: “OpenAI 的新 o3 模型代表了人工智能适应新任务能力的重大飞跃。这不仅仅是渐进式的改进,而是真正意义上的突破,与LLMs 之前的局限性相比,标志着人工智能能力的质变。o3 是一个能够适应从未遇到过的任务的系统,可以说在 ARC-AGI 领域接近人类水平的表现。\nPublished date: 2024-12-21T17:00:00+08:00\nSite name: www.ruancan.com\n\nTitl",
+    "isError": false,
+    "durationMs": 271,
+    "createdAt": "2026-03-01T08:32:47.027Z"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "label": "round11-pm-stock-autoassign",
+  "sessionId": "round11-stock-20260301-021258",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "538007511bcfb966"
+  ],
+  "tasks": [
+    {
+      "taskId": "538007511bcfb966",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 671186,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 21
+        },
+        {
+          "tool": "tushare_mcp_001__daily",
+          "count": 8
+        },
+        {
+          "tool": "tushare_mcp_001__stock_basic",
+          "count": 7
+        },
+        {
+          "tool": "tushare_mcp_001__today",
+          "count": 5
+        },
+        {
+          "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+          "count": 2
+        },
+        {
+          "tool": "tushare_mcp_001__weekly",
+          "count": 1
+        }
+      ],
+      "hasFinanceTool": true,
+      "hasSearchTool": true,
+      "decisionCount": 0,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n辩论模式执行完成"
+    }
+  ]
+}

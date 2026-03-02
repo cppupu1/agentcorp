@@ -1,0 +1,142 @@
+[
+  {
+    "id": "0df9854d245d0f84",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_ys5rp2t8hzed_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:33:02.505Z"
+  },
+  {
+    "id": "b4961ede63cce70c",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 计算机2026年3月研究观点:中国模型领跑全球调用量 软件吞噬情绪缓和__新浪财经_新浪网\nURL: http://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/lastest/rptid/825760676053/index.phtml\nDescription: 2 月,中国模型调用量首超美国站至第一;模型应用层面,Grok 与谷歌多模态模型加速迭代,Claude Cowork 插件体系扩容,企业级Agent 向职能场景纵深落地,软件吞噬情绪缓和｡ 投资要点: 投资建议:2 月份,中国大模型周调用量首超美国,大厂 C 端入口争夺正酣,阿里､字节验证\"对话到行动\"闭环;OpenClaw､Cowor k定义\"数字员工\"新标准,国产模型Kimi､GLM-5､MiniMax M2.5 等多路径突破工程化瓶颈,海外模型中,Grok 与谷歌多模态模型正面交锋,视频与图像生成能力双线跃迁｡ 中国模型厂商正快速占领全球AI 市场｡据OpenRouter 数据,2 月9-15 日当周中国模型Token 调用量4.12 万亿,首次超过美国模型的2.94 万亿;16-22 日当周进一步升至5.16 万亿,三周内大涨127%,同期美国模型回落至2.7 万亿,全球调用量前五模型里中国占据四席｡同时产业链自主化进程加速,据金融时报报道,DeepSeek 将于下周发布其最新的大型语言模型,DeepSeek 打破行业惯例,未向英伟达､AMD 等美系芯片厂商开放早期权限,转而提前与华为等国产算力平台深度适配,国产大模型与国产算力正形成协同领先格局｡\nPublished date: 2026-03-02T12:43:33+08:00\nSite name: 新浪\n\nTitle: AI 大模型选型星链4SAPI一站式服务破解行业痛点_企业_成本_技术\nURL: https://www.sohu.com/a/991516981_122525024\nDescription: 广州,2026年3月1日电 —— 随着生成式AI技术从探索阶段迈向规模化商业落地,企业对大模型API服务的需求呈现爆发式增长｡面对“百模大战”下的多模型适配难､服务稳定性差､成本居高不下等核心痛点,国内领先的AI技术服务平台 星链引擎 推出的 星链4SAPI ,凭借全维度产品能力与行业独有的4S级服务体系,成为政企及行业企业AI大模型选型的标杆级方案,为千行百业的数字化转型注入强劲动能｡ \nPublished date: 2026-03-02T10:49:37+08:00\nSite name: 搜狐\n\nTitle: 算力需求攀升、智能体价值兑现 2026年AI产业全面提速-广西新闻网\nURL: http://www.gxnews.com.cn/staticpages/20260301/newgx69a3e62b-21913978.shtml\nDescription:  某人工智能公司智算中心副总经理 蒋钦: 今年春节期间,整个行业大模型的发布迎来了一个新的高峰期｡对于AI基础设施的需求,保持持续高速上涨的状态｡大装置业务也从三年前的几千P(千万亿次每秒)快速增长到几万P的算力规模｡ 在这个“创编一体”的视频创作智能体上,一个人便可完成漫剧､短剧的制作,显著降低了视频制作门槛,同时大幅缩短制作周期､降低制作成本｡ 上海某AI视频创作智能体产品应用方案经理 \nPublished date: 2026-03-01T15:09:07+08:00\nSite name: 广西新闻网\n\nTitle: 2026AI行业动态汇总,截止2月24日一、国内模型与产品发布1. 智谱 AI(2.11):发布 GLM-5,Human... - 雪球\nURL: https://xueqiu.com/7599784338/376780036\nDescription: 2026AI行业动态汇总 , 截止2月24日 一 ､ 国内模型与产品发布 1.智谱AI ( 2.11 ) : 发布 GLM-5 , HumanEval代码通过率96.2% , 全球开源第一 ､ 总榜第四 ; 主打编程与智能体能力 ｡ 2. 字节跳动 ( 2.14 ) : 推出 豆包大模型2.0 ( Pro/Lite/Mini/Code ) , 数学/编程基准夺金 , 推理成本降一个量级 ; 同步上线 Seedance 2.0 , 60秒生成电影级多镜头音视频 , 成为春晚视觉创作主力 ｡ 3.阿里巴巴( 2.16除夕 ) : 开源 Qwen3.5-Plus , 总参3970亿 ､ 激活仅170亿 , 显存降60% ､ 推理提效19倍 ; API价0.8元/百万Token ( Gemin",
+    "isError": false,
+    "durationMs": 1452,
+    "createdAt": "2026-03-02T07:33:03.957Z"
+  },
+  {
+    "id": "600ce8c6f0fa6ff2",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_d1e5iddmvyhw_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:33:10.693Z"
+  },
+  {
+    "id": "33d4fbfbbe72bc91",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 中国AI大模型周度Tokens调用量首次超越美国,软件ETF(159852)聚焦AI软件投资机遇美国_新浪财经_新浪网\nURL: https://finance.sina.com.cn/jjxw/2026-03-02/doc-inhpqkns8333316.shtml\nDescription:  2026年2月16日—22日,OpenRouter平台数据显示中国AI大模型周度Tokens调用量达5.16万亿,首次超越美国的2.7万亿;其中GLM-5､Kimi K2.5､MiniMax M2.5､DeepSeek V3.2四款国产模型合计贡献Top5总调用量的85.7%｡ 中信建投 \nPublished date: 2026-03-02T13:08:33+08:00\nSite name: 新浪财经\n\nTitle: 2月井喷!中国AI模型调用量首超美国 四款大模型霸榜全球前五AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/jjxw/2026-03-01/doc-inhpnwmk8906070.shtml\nDescription: 2月,中国AI(人工智能)的模型调用量爆发式增长,首次超过美国｡ 全球最大的AI模型API聚合平台OpenRouter数据显示,2月9日~15日这周,中国模型以4.12万亿Token(词元)的调用量,首次超过同期美国模型的2.94万亿Token｡2月16日~22日这周,中国模型的周调用量进一步冲高至5.16万亿Token,三周大涨127%,而同期美国模型调用量跌至2.7万亿Token｡ 数据显示,2026年2月第一周(2日至8日),中国模型的周调用量已跃升至2.27万亿Token,发出强烈的追击信号｡ 仅仅一周后,2月9日至15日当周,中国模型便以4.12万亿Token的惊人调用量,正式超越同期\nPublished date: 2026-03-01T20:32:51+08:00\nSite name: 新浪财经\n\nTitle: 华源证券:我国AI调用量于2026年2月首超美国 北交所AI产业链28家企业全景扫描_中值_科技_市值\nURL: https://www.sohu.com/a/991493293_122021998\nDescription: 根据消息,全球最大的AI模型API聚合平台OpenRouter数据显示,2026年2月9日-15日,中国模型以4.12万亿Token的调用量,首次超过同期美国模型的2.94万亿Token;2026年2月16日-22日,中国模型周调用量进一步冲高至5.16万亿Token,三周大涨127%,而同期美国模型调用量跌至2.7万亿Token｡参考快科技消息,2026年巴塞罗那世界移动通信大会(MWC \nPublished date: 2026-03-02T09:53:08+08:00\nSite name: 搜狐\n\nTitle: 中国AI模型全球调用量首超美国美国中国AI_新浪新闻\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902oh12.html?from=tech\nDescription: 中国AI模型全球调用量首超美国 品玩2月27日讯,据每经网报道,全球最大的AI模型API聚合平台OpenRouter最新数据显示,2026年2月9日至15日当周,中国大模型Token调用量达4.12万亿,首次超越同期美国模型的2.94万亿｡ 随后一周(16日至22日),中国模型调用量进一步攀升至5.16万亿,三周累计增长127%;同期美国模型调用量则回落至2.7万亿｡ \nPublished date: 2026-02-27T22:32:49+08:00\nSite name: 新浪网\n\nTitle: OpenRouter:中国 AI 模型 2 月全球 token 用量首超美国,MiniMax 等四款大模型霸榜前五 - IT之家\nURL: https://www.ithome.com/0/924/039.htm\nDescription:  基于该平台的最新数据,在全球 Token 使用量上,中国开源 AI 模型实现了全面反超｡这一激增的国际需求,直接终结了过去一年来美国 AI 开发者在该平台的统治地位｡ 2 月9日~15 日这周,中国模型以 4.12 万亿 Token 的调用量, 首次超过同期美国模型的 2.94 万亿 Token ｡16 日~22 日这周,中国模型的周调用量进一步冲高至 5.16 万亿 Token,三周大涨 127%,而同期美国模型调用量跌至 2.7 万亿 Token｡ 在OpenRouter 本月(2026 年2月)的具体排名中,中国大模型表",
+    "isError": false,
+    "durationMs": 1383,
+    "createdAt": "2026-03-02T07:33:12.076Z"
+  },
+  {
+    "id": "03ec92fc4ec404e7",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_xv468osnfujy_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:33:18.224Z"
+  },
+  {
+    "id": "506ff605ce593051",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2026年3月投资组合报告:两会时刻 把握三月结构性机遇__新浪财经_新浪网\nURL: http://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/search/rptid/825693750340/index.phtml\nDescription: 其一,2 月上旬,以Deepseek､人形机器人为代表的题材股和AI 应用端表现活跃,春节后,以智谱､MiniMax 为代表的港股AI 大模型经历了过山车行情,智谱在首个交易日大涨后由于产品透明度和技术落地次日股价大跌,表明市场开始依据技术落地和经营实绩进行重新理性估值｡与此同时,以恒生科技和科创50 为代表的指数权重股下跌,主要受投资者对科技股AI 投资回报的疑虑出现价值调整｡其二,2 \nPublished date: 2026-03-01T16:19:30+08:00\nSite name: 新浪\n\nTitle: 港股AI应用股走低,MINIMAX跌近8%\nURL: https://www.tmtpost.com/nictation/7895485.html\nDescription: 钛媒体App 3月2日消息,港股AI应用股走低,截至发稿, MINIMAX-WP (00100.HK)跌7.86%､ 海致科技集团 (02706.HK)跌7.10%､ 小马智行-W (02026.HK)跌5.49%､ 美图公司 (01357.HK)跌4.59%｡\nPublished date: 2026-03-02T09:32:28+08:00\nSite name: 钛媒体\n\nTitle: 大模型受追捧或加速AI应用端商业化 _ 东方财富网\nURL: http://finance.eastmoney.com/a/202603013657664056.html\nDescription: 2月27日,“全球大模型第一股”智谱(02513.HK)强势依旧,早盘低开放量大跌13%仍能反转翻红收涨3.32%,收报于575港元,较116.2港元的发行价上涨了395%,市值高达2564亿港元｡ 数据显示,上市不到两个月的智谱,倍受资本市场追捧,继1月份大涨96%后,2月份以来,又涨幅超154%｡成为了近年来港股市场最受欢迎的科技股之一｡ 除了智谱,大模型“双雄”之一的MiniMax(00100.HK),27日股价报收于763.5港元,较165港元的发行价上涨了363%;2月份以来,该公司股价累计涨超61%,市值2395亿港元｡\nPublished date: 2026-03-01T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: 6200亿,AI大厂们杀疯了 - 今日头条\nURL: https://www.toutiao.com/article/7610259544308007470/\nDescription: 2026年2月20日,丙午马年首个交易日,港股迎来了“国产AI大模型”时刻｡ 智谱(02513.HK)与Minimax(00100.HK)市值双双突破3000亿港元关口,不仅超越了快手､京东､携程等老牌互联网大厂,更是赶超了去年爆红的“GPU第一股”摩尔线程,强势跻身港股TMT板块市值第一梯队｡ 截至2月21日收盘,智谱股价冲高至725港元,单日暴涨42.72%,市值定格3232亿港元(约2950亿元人民币);Minimax同步走高14.52%,收报970港元,市值达3042亿港元,两大AI龙头合计市值超6200亿港元｡ 智谱,3000亿市值 智谱在2026年2月全新开源的最新旗舰大模型GLM-5成为了本次市值暴涨的核心推手｡该模型在编程和智能体能力上达到开源SOTA水平,同时在多模态交互､算力适配优化､行业定制化能力上实现关键突破,进一步夯实智谱核心技术壁垒;\nPublished date: 2026-03-02T01:22:27+08:00\nSite name: 今日头条\n\nTitle: 果然,港股投资者比A股更理性!今天智谱AI正式在港交所主板挂牌上市,但作为全球大模型第一股的智谱,开盘首日差点破发!智谱AI本次IPO定价116港...\nURL: https://www.toutiao.com/w/1853712812239884/\nDescription: 今天智谱AI正式在港交所主板挂牌上市, 但作为全球大模型第一股的智谱,开盘首日差点破发! 智谱AI本次IPO定价116港元,上市市值仅有500亿,但股价上市首日仅仅高开到118港元便快速回落,甚至早盘还差点破发｡如果智谱在A股上市,恐怕开盘就要翻倍了!果然港股投资者还是要比咱们大A股民要更理性一些｡\nPublished date: 2",
+    "isError": false,
+    "durationMs": 1431,
+    "createdAt": "2026-03-02T07:33:19.656Z"
+  },
+  {
+    "id": "e28816b15651024b",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_4ndtddlcmiq3_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:33:26.777Z"
+  },
+  {
+    "id": "2b4248bd6e609e96",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: DeepSeek V4多模态大模型将首发适配国产硬件,英伟达AMD缺席预测试_人工智能-中关村在线\nURL: https://ai.zol.com.cn/1139/11398479.html\nDescription: 2026年3月1日,DeepSeek宣布将于下周正式推出全新多模态大语言模型V4版本｡该模型原生支持文本､图像与视频的联合理解与生成,是继今年1月发布R1推理模型后,DeepSeek在技术路线上的首次重大升级,有望进一步满足国内市场对高性能､低成本开源模型的迫切需求｡据相关渠道确认,DeepSeek已向包括华为在内的多家国内硬件企业开放模型测试权限｡\nPublished date: 2026-03-01T06:40:04+08:00\nSite name: ai.zol.com.cn\n\nTitle: 中国模型领跑全球调用量,软件吞噬情绪缓和【国泰海通计算机】计算机2026年3月研究观点\nURL: https://new.qq.com/rain/a/20260301A06RJ000\nDescription: 报报道,DeepSeek将于下周发布其最新的大型语言模型,DeepSeek打破行业惯例,未向英伟达､AMD等美系芯片厂商开放早期权限,转而提前与华为等国产算力平台深度适配,国产大模型与国产算力正形成协同领先格局｡ Grok 视频模型登顶Arena,谷歌 Nano Banana 2 发布,多模态生成能力加速进化｡xAI推出Grok Imagine 1.\nPublished date: 2026-03-01T00:00:00+08:00\nSite name: 腾讯网\n\nTitle: 消息称DeepSeek V4模型下周发布,原生支持图片、视频与文本生成_热点播报_太平洋科技资讯中心\nURL: http://news.pconline.com.cn/2106/21063372.html\nDescription: 2月28日消息,据《金融时报》报道,深度求索(DeepSeek)将于下周发布全新多模态大语言模型 V4｡ 报道提到,DeepSeek 将在V4发布时提供简短的技术说明,并于一个月后公开详尽的工程报告｡ 在底层生态方面,该模型深度适配国产算力,已联合华为､寒武纪优化V4面模型的硬件适配,预计带动本土半导体需求,加速AI推理环节向国产芯片靠拢｡ \nPublished date: 2026-03-01T09:25:01+08:00\nSite name: news.pconline.com.cn\n\nTitle: DeepSeek V4下周上线?原生多模态架构 技术报告同步开放 _ 东方财富网\nURL: http://finance.eastmoney.com/a/202603023658447220.html\nDescription: 当地时间2月28日,据金融时报报道,DeepSeek将于下周发布其最新的大模型V4｡ 据两位知情人士透露,这是一款具备图片､视频和文本生成功能的多模态模型｡在硬件适配方面,DeepSeek为国产算力提供深度支持,DeepSeek致力于优化V4模型以适配中国制造的芯片,此举有望提振中国市场对其半导体产品的需求,并加速AI模型“推理”环节靠拢本土芯片｡ \nPublished date: 2026-03-02T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: 华为算力链爆发:Deepseek V4 模型驱动下的国产算力产业链投资机遇deepseek相关基金英伟达DeepSeek-V4DeepSeek液冷_新浪新闻\nURL: http://k.sina.com.cn/article_5953740931_162dee08306702rj6u.html\nDescription: 核心事件:Deepseek V4 打破行业惯例,国产算力战略跃迁 2026 年2月26 日,AI 大模型厂商 Deepseek 宣布其万亿参数旗舰模型 V4 将独家允许华为提前访问并进行适配优化,暂未向英伟达､AMD 开放｡这一决策打破了 AI 行业延续多年的惯例 —— 此前重大模型发布前,开发者通常优先与英伟达等国际芯片巨头合作优化硬件兼容性｡此次转向标志着国产算力产业链正从 “辅助角色” 向 \nPublished date: 2026-03-01T16:43:44+08:00\nSite name: 新浪网\n\nTitle: 小米 VisionGT 超跑亮相;DeepSeek V4 或下周亮相;宝可梦 30 周年玩偶引发抢购潮  极客早知道\nURL: https://new.qq.com/rain/a/20260301A021V600\nDescription:  值得关注的是,D",
+    "isError": false,
+    "durationMs": 1273,
+    "createdAt": "2026-03-02T07:33:28.050Z"
+  },
+  {
+    "id": "a8152da01919be26",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_okx8rs29tru9_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:33:32.809Z"
+  },
+  {
+    "id": "e97c35f43d656ed5",
+    "type": "tool_call",
+    "taskId": "c60acefb9b6b93aa",
+    "subtaskId": "d133787554a305ee",
+    "employeeId": "9d3a128de6654e52",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 第四届北京人工智能产业创新发展大会在京开幕-新华网\nURL: http://www.bj.xinhuanet.com/20260301/b8c918adae2c4706a9131c4a772f199f/c.html\nDescription: 新华网北京2月28日电(记者王艳刚)2月28日至3月1日,2026中关村论坛系列活动——第四届北京人工智能产业创新发展大会在北京举行｡大会上,“永定河AI原生创作者社区”成功点亮,标志着北京市门头沟区正式构建起以“AI原生”为内核､以“京西剧谷”为载体,紧抓“AI+微短剧”等赛道新机遇｡   在大会会场,主办方设置了三大沉浸式互动体验区,让人工智能以可感､可触的方式,全景式呈现其重塑社会生产与生活的图景｡体验区半数企业源自北京,彰显出北京人工智能第一城的产业集聚优势｡AI+行业体验区集聚政务､金融､医疗等纵深场景,集中演示全产业链解决方案｡\nPublished date: 2026-03-01T09:39:41+08:00\nSite name: 新华网\n\nTitle: 机器人员工尽显其才,北京人工智能产业创新发展大会开幕华为技术有限公司北京市数据刘洋央视_手机新浪网\nURL: https://news.sina.cn/znl/2026-03-01/detail-inhpnwmk8918155.d.html?vt=4\nDescription: 2月28日,2026中关村论坛系列活动——第四届北京人工智能产业创新发展大会在国家会议中心二期开幕｡大会以设置“1场开幕式(主论坛)+16场分论坛”的总体构架,内容覆盖人工智能前沿领域和细分赛道,吸引了15000余名业界精英､专家学者和企业代表出席｡在互动区,从事不同职业的机器人员工尽显其才,全面融入日常生活｡ 本届大会由北京市科学技术委员会､中关村科技园区管理委员会,北京市经济和信息化局,北京市广播电视局,北京市政务服务和数据管理局,北京市门头沟区人民政府,华为技术有限公司联合主办｡ 目前,北京人工智能产业创新发展大会已成为全国最具影响力的人工智能领域的重要产业活动之一｡ 作为大会的主办方之一,门头沟区近年来凭借独特的区位优势和坚定的产业转型决心,在北京人工智能产业发展版图中展现出重要担当｡该区是全市人工智能重点布局区,也是重点建设的E级智能算力京西“一极”,同时被纳入北京数据基础制度先行示范区,并入选全市首批10家未来产业育新基地创新名单｡\nPublished date: 2026-03-01T21:15:08+08:00\nSite name: 新浪新闻\n\nTitle: 门头沟点亮“永定河AI原生创作者社区”_产业_京西_门头沟区\nURL: https://www.sohu.com/a/991121756_163278\nDescription: 2月28日,2026中关村论坛系列活动——第四届北京人工智能产业创新发展大会在国家会议中心二期开幕｡大会上,门头沟区点亮“永定河AI原生创作者社区”｡ 据介绍,“永定河AI原生创作者社区”成功点亮标志着门头沟区正式构建起以“AI原生”为内核､以“京西剧谷”为载体,重塑“创意为王”的微短剧产业新格局,重磅推出全要素的保障体系｡ 目前,门头沟区正瞄准“AI+精品微短剧”新赛道,全力打造“京西剧谷”产业品牌｡通过整合区域人工智能､计算视听产业资源,致力于构建从技术支撑､场景提供到产业孵化的全链条生态,提供包括虚拟拍摄和特色实景场地在内的数字基础设施与物理空间｡ “永定河AI原生创作者社区”成功点亮后,门头沟将依托“央视界”项目超高清演播平台､精品内容创制标准及国家级传播渠道,红果短剧的平台流量优势与“果燃计划”的精品扶持机制,助力“京西剧谷”引入Seedance 2.0视频创作平台｡社区将开放优质IP资源与历史素材库,吸引全国创作者入驻,共同探索重大题材微短剧的“史料变剧本”创新路径,让“京西剧谷”成为国家级超高清视听内容创新的策源地与试验场｡\nPublished date: 2026-02-28T21:12:08+08:00\nSite name: 搜狐\n\nTitle: 机器人员工尽显其才,北京人工智能产业创新发展大会开幕人工智能机器人北京市_新浪新闻\nURL: http://news.sina.com.cn/zx/gj/2026-03-01/doc-inhpnwmk8918155.shtml\nDescription: 2月28日,2026中关村论坛系列活动——第四届北京人工智能产业创新发展大会在国家会议中心二期开幕｡大会以设置“1场开幕式(主论坛)+16场分论坛”的总体构架,内容覆盖人工智能前沿领域和细分赛道,吸引了15000余名业界精英､专家学者和企业代表出席｡ 本届大会由北京市科学技术委员会､",
+    "isError": false,
+    "durationMs": 1440,
+    "createdAt": "2026-03-02T07:33:34.249Z"
+  }
+]

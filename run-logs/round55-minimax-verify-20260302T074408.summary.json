@@ -1,0 +1,73 @@
+{
+  "round": "round55-minimax-verify-20260302T074408",
+  "model": "MiniMax-M2.5",
+  "modelId": "b9df4501c7f6f9a6",
+  "startedAt": "2026-03-02T07:44:08.235Z",
+  "scenarios": [
+    {
+      "key": "ai_industry_brief",
+      "sessionId": "round55-minimax-verify-20260302T074408-ai_industry_brief",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "assistant_no_followup",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "expect_search_tool",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "8d01bfab9ca785e6",
+      "status": "completed",
+      "tools": [
+        "a6d0277e32709254__bocha_ai_search",
+        "a6d0277e32709254__bocha_web_search"
+      ],
+      "durationMs": 169501
+    },
+    {
+      "key": "translation_notice",
+      "sessionId": "round55-minimax-verify-20260302T074408-translation_notice",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "assistant_no_followup",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        }
+      ],
+      "ok": true,
+      "taskId": "44d16744cb23f1a2",
+      "status": "completed",
+      "tools": [],
+      "durationMs": 89110
+    }
+  ],
+  "allPassed": true,
+  "finishedAt": "2026-03-02T07:48:26.847Z"
+}

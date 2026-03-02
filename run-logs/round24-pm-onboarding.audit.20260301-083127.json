@@ -1,0 +1,89 @@
+{
+  "label": "round24-pm-onboarding",
+  "sessionId": "round24-onboarding-20260301-083127",
+  "pmChatDurationMs": 28880,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "8d5ca924fa341a1c"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 28880
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "8d5ca924fa341a1c",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 56547,
+      "tools": [
+        {
+          "tool": "01a07c2a149edad0__write_file",
+          "count": 4
+        },
+        {
+          "tool": "list_allowed_directories",
+          "count": 1
+        },
+        {
+          "tool": "write_file",
+          "count": 1
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n新员工入职首周SOP模板已编写完成，包含周一至周五每日目标设定、与导师及团队成员的沟通节奏安排、每日交付物清单，以及快速融入团队和掌握基础技能的保障措施。文档结构清晰、实用性强，可直接用于实际入职管理。"
+    }
+  ]
+}

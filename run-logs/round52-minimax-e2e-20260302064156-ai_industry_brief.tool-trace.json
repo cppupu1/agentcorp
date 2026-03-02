@@ -1,0 +1,422 @@
+[
+  {
+    "id": "37d17063e8b9727c",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_gfbk84h12oxa_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:45:32.157Z"
+  },
+  {
+    "id": "c013d4daf26a5354",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 中国大模型一年狂飙421%,全球AI格局变天\nURL: https://new.qq.com/rain/a/20260228A07TNP00\nDescription: 2025年初,DeepSeek-R1横空出世｡奠定了大模型新一轮军备竞赛的主旋律:即更低的成本､更强悍的性能､以及开源｡      一年过去,全球大模型产业格局正由少数科技巨头依托算力､数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建｡中国大模型,陆续坐上牌桌｡      全球头部大模型API聚合平台OpenRouter的数据显示,过去一年,中国大模型在全球市场的Token消耗占比增长了421%｡\nPublished date: 2026-02-28T22:32:14+08:00\nSite name: 腾讯网\n\nTitle: 2025年人工智能发展回顾:开辟AI新场景—新闻—科学网\nURL: https://news.sciencenet.cn/htmlnews/2026/1/558263.shtm\nDescription: 2025年俄罗斯人工智能(AI)发展呈现“政策驱动场景落地､军工与民用双线并进､自主技术生态初步成型”的特征｡2025年AI市场规模预计达1万亿卢布,其中企业级解决方案占比首超消费级达52.3%｡ 在行业场景落地方面,AI技术深入航天､医疗､金融等各个领域｡ 在模型领域,科技公司推出了多款AI模型｡1月OpenAI推出首个AI智能体Operator,赋予AI直接操作图形界面的能力;随后xAI发布的Grok 3在推理与计算能力上创下新高｡下半年,OpenAI相继推出整合“Deep Research”等技术的ChatGPT Agent及性能巅峰的GPT-5;\nPublished date: 2026-02-12T08:39:41+08:00\nSite name: 科学网\n\nTitle: 全球大模型技术能力向前演进,软件ETF布局AI软件投资机遇\nURL: https://new.qq.com/rain/a/20260205A0312K00\nDescription: 消息面方面,开源AI智能体Clawdbot(现名OpenClaw)上线后迅速走红,GitHub星标数于2月1日突破13.6万,成为2026年初增长最快的开源项目之一;其不仅支持WhatsApp､Telegram等日常通讯工具交互,更能调用大模型API并执行终端命令､控制浏览器､管理邮件等复杂任务,具备长期本地记忆能力｡      中金指出,回顾2025年,全球大模型技术能力向前演进,逐步攻克生产力场景,在推理､编程､Agentic以及多模态等能力方向取得明显进步,但模型通用能力在稳定性､幻觉率等方面仍存在短板｡\nPublished date: 2026-02-05T11:19:13+08:00\nSite name: 腾讯网\n\nTitle: “中国版OpenAI”智谱上市,中国AI大模型的含金量还在提高_澎湃号·湃客_澎湃新闻-The Paper\nURL: https://www.thepaper.cn/newsDetail_forward_32343111\nDescription:  【“第一股”首秀】 1月8日,作为“全球大模型第一股”的智谱,正式登陆港交所,首日开盘报120港元/股,截至发稿,最高涨超16%至135港元/股,市值近600亿港元｡1月9日,另一家国产AI大模型公司MiniMax,也将紧锣密鼓登陆港交所｡ 而智谱的底气,也藏在一连串“第一”的技术成绩单里: 2021年,发布中国首个专有预训练大模型框架GLM框架; 2022年,开源首个1000亿规模的模型GLM-130B; 2025年12月,智谱新一代基座模型GLM-4.7在模型综合能力榜单Artificial Analysis登顶全球开源模型与国产模型双料榜首｡\nPublished date: 2026-02-27T00:25:22+08:00\nSite name: 澎湃新闻\n\nTitle: AICC2025人工智能计算大会\nURL: http://aicconf.net/\nDescription: 2025,以DeepSeek为代表的领先大模型开启智能平权,激发千行百业智能化转型竞速,AI基础设施正在成为新时代的生产力｡在模型精度持续提升､能力边界不断拓展的背后,大模型的创新路径同样也在发生变革,从粗放式的算力堆叠到全局性的系统优化｡开源大模型的意义已超越模型技术本身,正在深刻重塑AI产业格局和发展路径｡\nPublished date: 2026-03-01T18:08:20+08:00\nSite name: aicconf.net\n\nTitle: 2025年第四届AIGC中国开发者大会在北京",
+    "isError": false,
+    "durationMs": 1720,
+    "createdAt": "2026-03-02T06:45:33.878Z"
+  },
+  {
+    "id": "dc9a972689530310",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_gzsifkifcuj0_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:45:41.038Z"
+  },
+  {
+    "id": "4f5cb0df07179480",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 《2024年中国AI大模型产业发展与应用研究报告》\nURL: https://new.qq.com/rain/a/20250117A02H4E00\nDescription: 文 | 第一新声2018年,OpenAI发布第一个生成式预训练模型GPT-1,模型参数量达到1.17亿, 开启了AI大模型的训练热潮;2022年底,ChatGPT的火爆,吸引了全世界对大模型的广泛关注,也激发了中国AI大模型发展热潮。2023年3月中旬,百度发布大语言模型产品文心一言,拉开了国内AI大模型产业\nPublished date: 2025-01-17T10:06:11+08:00\nSite name: 腾讯网\n\nTitle: 新年首次批量上新 !九家大模型公司狂卷48小时\nURL: https://new.qq.com/rain/a/20250117A09QRL00\nDescription: 2025年的第一波更新有以下特点:80%的更新聚焦于底层模型能力。在这80%中,多模态、推理是重点——延续了2024年底的趋势。应用侧,Agent是主力方向。「Tasks」演示,来源 OpenAI XSam Altman 2025年1月1日在 “X” 上发布了公司的新年目标,其中就有智能体(Agents)的内容,「Tasks」也被外界视为OpenAI 智能体的第一步。目前,Tasks\nPublished date: 2025-01-17T22:52:05+08:00\nSite name: 腾讯网\n\nTitle: 2025年开篇AI Agent 与多模态大模型:智能革命的新纪元-CSDN博客\nURL: https://blog.csdn.net/m_aigc2022/article/details/145141952\nDescription: 点赞数 34 版权声明:本文为博主原创文章,遵循CC 4.0 BY-SA版权协议,转载请附上原文出处链接和本声明。 20 篇文章 0 订阅 订阅专栏 多模态大模型 4 篇文章 0 订阅 订阅专栏 〔更多精彩AI内容,尽在  「魔方AI空间」  ,引领AIGC科技时代〕 本文作者:猫先生 回首2024年 2024年,AI能力不断进化,各类AI应用也遍地开花,理解语义、生成高质量文本内容已成常态,AI情感陪伴与人类“共情”,AI助手为几百页英文判决做摘要,视频生成模型的高歌猛进使得AI闯入电影制作领域......如果说2023年是百模大战、千模大战,那2024年则是应用之战,新一代的AI技术正在开始进入普通人的工作与生活。 下面这张图回顾了2024年主要的AI大事纪!如需高清原图,请后台私信“ 2024 ”!! 本图片引用自 @AI研究室-帆哥 转载或商业用途需注明来源\nPublished date: 2025-01-17T11:53:36+08:00\nSite name: CSDN\n\nTitle: 《2024年中国AI大模型产业发展与应用研究报告》重磅发布第一新声研究院- DoNews专栏\nURL: https://www.donews.com/article/detail/5213/80558.html\nDescription: 2018年,OpenAI发布第一个生成式预训练模型GPT-1,模型参数量达到1.17亿, 开启了AI大模型的训练热潮;2022年底,ChatGPT的火爆,吸引了全世界对大模型的广泛关注,也激发了中国AI大模型发展热潮。2023年3月中旬,百度发布大语言模型产品文心一言,拉开了国内AI大模型产业 “百模大战”的序幕,之后通义千问、盘古大模型、星火认知大模型、360智脑、豆包等纷纷问世。2024年中国AI大模型产业落地明显加速,AI大模型产品化、商业化和产业化的发展脉络基本形成。 AI大模型是指拥有亿级以上参数的深度学习模型,从应用场景角度可分为通用大模型和垂直大模型,其中垂直大模型又可以分为行业大模型和垂直场景大模型。通用大模型,聚焦基础层和技术攻关;垂直大模型,聚焦垂直领域解决方案,在通用大模型基础上开发行业和场景专用模型,面向政务、金融、医疗、教育、交通等垂直行业和营销、客服、运营等通用场景。 2024年以来,我国AI大模型的产业应用已经迅速展开,本报告通过调研中国AI大模型产业发展和市场应用,梳理AI大模型的发展历程、产业生态、商业模式、行业应用、市场规模、发展趋势等,并对典型垂类行业和场景应用案例进行剖析,以期达到以下目的:   通过研究AI大模型产业的发展历程、产业生态、商业模式、行业和场景应用等,帮助企业了解AI大模型产业的发展脉络和发展方向; 重点分析AI大模型产业的市场规模、发展驱动、市场应用、发展趋势,帮助AI大模型企业把握市场需求动向和发展趋势; 深入调研AI大",
+    "isError": false,
+    "durationMs": 585,
+    "createdAt": "2026-03-02T06:45:41.623Z"
+  },
+  {
+    "id": "5cd18706ed45d79f",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_18l9lajxxgnv_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:45:53.413Z"
+  },
+  {
+    "id": "0819e114575d7ca7",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI头号竞争对手：大模型训练成本最多三年将升至百亿美元\nURL: http://www.jwview.com/jingwei/html/m/07-08/599347.shtml\nDescription: OpenAI头号竞争对手:大模型训练成本最多三年将升至百亿美元\n  澎湃新闻记者 胡含嫣\n  AI初创企业Anthropic的CEO称百亿美元量级AI(人工智能)模型的训练可能在明年开始。\n  近日,Anthropic的CEO兼总裁达里奥·阿莫代(Dario Amodei)在播客节目In Good Company中表示,目前公司正在开发的AI模型训练成本高达10亿美元,他预计,AI模型的训练成本将在2027年之前提升到100亿美元,甚至是1000亿美元。\n  被视为OpenAI头号竞争对手的Anthropic由一群OpenAI前员工创立。阿莫代在OpenAI工作了五年,在离开时,他已经做到了OpenAI副总裁的位置。Anthropic旗下最知名的模型是在2023年3月发布的Claude模型,今年3月,Claude 3系列正式发布。\n  在采访中,阿莫代谈到了自己对于AGI(通用人工智能)的看法,称自己不认为AGI会在某一个时间点突然出现,而是会以循序渐进的方式逐渐现身:“我认为,这就像一个能够学习和成长的人类孩子一样,他们会变得越来越好、越来越聪明,知识越来越丰富。”\n  为了让模型越变越好,就需要越来越多的资金投入。据报道,GPT-4o的训练“仅”花费了不到1亿美元,谷歌Gemini Ultra模型的训练成本则为1.91亿美元。阿莫代预计,100亿美元量级模型的训练可能会在2025年的某个时候开始,一个充满活力的下游生态系统也会随之出现。目前,公司已经筹集了超过80亿美元的资金。\n  阿莫代指出,模型推出的速度和模型的成本与质量之间存在一定关系,可以把它想象成一条“权衡曲线”。公司正在努力推动这条曲线“向外移动”,以同时实现模型的快速推出、高质量和低成本:“曲线在变化,我们可以用更少的资源做更多的事情,也可以用更多的资源做更多的事情。我认为这两种趋势是共同存在的。”\nPublished date: 2025-01-18T02:42:10+08:00\nSite name: 中新经纬\n\nTitle: 未来 10 年人类平均寿命可能达到 150 岁-今日头条\nURL: https://www.toutiao.com/article/7460880866651406889/\nDescription: 2025-01-18 00:01 · 做一本日历 根据 Anthropic 公司创始人达里奥・阿莫迪的预测, 未来 10 年 人类平均寿命可能达到 150 岁。 以下是对这一预测的分析和逻辑理由: 疾病诊断与治疗方面 精准诊断 :CES 2025 上展示的各类先进可穿戴设备和健康监测仪器,如雅培公司的 Lingo 可穿戴设备、Withings 的bpmvision 血压监测仪等,结合 AI 技术,能够实时、精准地获取人体健康数据,并进行深入分析。AI 系统凭借强大的算法与深度学习能力,可对海量的医疗数据以及这些设备收集到的实时数据进行高速且精准的分析处理,从而实现早期癌症、心血管疾病以及神经退行性疾病等重大疾病的精准筛查与早期诊断,为患者赢得宝贵的治疗时间,显著提高疾病的治愈率与生存率。 个性化治疗方案 :达里奥・阿莫迪提到强大 AI 可以模拟生物实验、分析数据并提出创新的科学理论。未来,AI 将能够根据每个患者的具体病情、基因特征、病史等因素,为患者量身定制个性化的治疗方案,提高治疗效果,减少治疗过程中的副作用和并发症,从而延长患者的寿命。 药物研发方面 研发周期缩短 :AI 在药物研发进程中发挥着革命性的突破作用。如AI 工具 AlphaFold 能以前所未有的精确度预测蛋白质三维结构,极大缩短药物设计的时间。通过对庞大的生物信息数据库进行深度挖掘与分析,AI 能够精准地预测药物分子与靶点之间的相互作用,筛选出具有潜在治疗效果的药物候选分子,并对其安全性与有效性进行模拟评估,使得新药研发周期从传统的几十年缩短至几年甚至更短,更多针对疑难病症的特效药物能够及时问世,为患者提供更为有效的治疗手段,有力地推动人类寿命的延长。 药物创新 :借助 AI 的强大计算能力和数据分析能力,研究人员可以更快速地发现新的药物靶点和药物分子,开发出更具创新性的药物。例如,在抗衰老\nPublished date: 2025-01-18T00:01:00+08:00\nSite name: 今日头条\n\nTitle: 美国观察美国人工智能产业发展的最新图景:融资、技术和基建\nURL: https://fddi.fudan.edu",
+    "isError": false,
+    "durationMs": 484,
+    "createdAt": "2026-03-02T06:45:53.897Z"
+  },
+  {
+    "id": "224efd9c61e11d9c",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_fkcyr8w302ff_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:46:57.925Z"
+  },
+  {
+    "id": "0d09dcff1fcb2f91",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 中国大模型一年狂飙421%,全球AI格局变天\nURL: https://new.qq.com/rain/a/20260228A07TNP00\nDescription: 2025年初,DeepSeek-R1横空出世｡奠定了大模型新一轮军备竞赛的主旋律:即更低的成本､更强悍的性能､以及开源｡      一年过去,全球大模型产业格局正由少数科技巨头依托算力､数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建｡中国大模型,陆续坐上牌桌｡      全球头部大模型API聚合平台OpenRouter的数据显示,过去一年,中国大模型在全球市场的Token消耗占比增长了421%｡      (图源:OpenRouter,对比日期:2025年2月8日/2026年2月10日)      可以看到,2025年初,大模型推理市场还是典型的“美系双寡头”结构:Anthropic一家的Token消耗占比就达到总量的42.2%,紧随其后的是Google,达25.8%,两家合计接近68%｡\nPublished date: 2026-02-28T22:32:14+08:00\nSite name: 腾讯网\n\nTitle: 2025 年我国人工智能企业数量超 6000 家-IT之家\nURL: https://www.ithome.com/0/915/017.htm\nDescription: 芯片产品,智能算力规模达 1590EFLOPS,行业高质量数据集加速涌现,国内大模型引领全球开源生态｡ 目前,AI 大模型已应用到金融､医疗､制造､交通､教育等多个行业｡据中国电子信息产业发展研究院人工智能研究室主任钟新龙介绍,大模型已经把传统经验决策升级为“数据 + 模型”驱动的智能决策,改变研发方式､运维模式和风险管理｡ 据IT之家此前报道,胡润研究院发布的《2025 胡润中国人工智能企业 \nPublished date: 2026-02-28T01:43:19+08:00\nSite name: IT之家\n\nTitle: “中国版OpenAI”智谱上市,中国AI大模型的含金量还在提高_澎湃号·湃客_澎湃新闻-The Paper\nURL: https://www.thepaper.cn/newsDetail_forward_32343111\nDescription:  而智谱的底气,也藏在一连串“第一”的技术成绩单里: 2021年,发布中国首个专有预训练大模型框架GLM框架; 2022年,开源首个1000亿规模的模型GLM-130B; 2025年12月,智谱新一代基座模型GLM-4.7在模型综合能力榜单Artificial Analysis登顶全球开源模型与国产模型双料榜首｡ 另外,在全球百万用户盲测的Code Arena(代码竞技场)上,GLM-4.\nPublished date: 2026-02-27T00:25:22+08:00\nSite name: 澎湃新闻\n\nTitle: AI技术推动客服行业变革 专家称大模型将助力客服升级为增长引擎_热点播报_太平洋科技资讯中心\nURL: https://news.pconline.com.cn/2075/20755113.html\nDescription: 1月23日,2026首届客户服务领袖峰会举行｡阿里云通义大模型业务总经理徐栋指出,大模型技术正引领技术变革,从语言理解到辅助决策,生成式AI正在改变人机交互方式,影响各行业发展路径｡在客户服务领域,大模型推动客服从被动应答向主动服务､智能决策升级｡ \nPublished date: 2026-02-26T15:51:25+08:00\nSite name: news.pconline.com.cn\n\nTitle: 2026年中国生成式人工智能市场现状及发展前景预测分析(图)DeepSeekAI大模型百度注意力机制中商产业研究院_新浪新闻\nURL: http://k.sina.com.cn/article_7857201856_1d45362c001902ojk0.html\nDescription: 目前,国产AI大模型技术已进入全球第一梯队,形成了以百度､阿里､DeepSeek等领军企业为主导的多元化发展格局｡ 市场现状 1.用户规模 基于人工智能领域的深度学习模型,AI大模型能够处理大规模数据并具有更加精准地预测和决策能力,是实现人工智能商业化的关键,应用前景广阔｡中商产业研究院发布的《2025-2030年中国AI大模型深度分析及投资前景研究预测报告》显示,截至2025年12月,我国生成式人工智能用户规模达6.02亿人,较2024年底增长141.7%｡中商产业研究院分析师预测,到2026年,中国生成式人工智能用户规模有望超过9亿人｡\nPublished d",
+    "isError": false,
+    "durationMs": 1333,
+    "createdAt": "2026-03-02T06:46:59.258Z"
+  },
+  {
+    "id": "6f5c21d88219b104",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_rbq7ggm559n7_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:47:04.201Z"
+  },
+  {
+    "id": "7ec661363b2c6902",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年人工智能发展回顾:开辟AI新场景—新闻—科学网\nURL: https://news.sciencenet.cn/htmlnews/2026/1/558263.shtm\nDescription: 为支撑算力需求,俄计划未来20年新建38座核电机组｡2025年AI市场规模预计达1万亿卢布,其中企业级解决方案占比首超消费级达52.3%｡ 在科研突破与军事应用方面,青年科学家团队研发的Headless-AD模型显著优化了长文本处理能力｡军事领域,集成AI能力的“蜂群”无人机系统于5月开始高强度测试,其已具备自主地形匹配与目标分类功能｡ 在行业场景落地方面,AI技术深入航天､医疗､金融等各个领域｡6月,俄航天局计划将国产大模型GigaChat部署至国际空间站,旨在将卫星图像分辨率提升一倍｡医疗领域,Yandex推出了首批儿科专用核磁共振影像分析AI工具｡ 在模型领域,科技公司推出了多款AI模型｡1月OpenAI推出首个AI智能体Operator,赋予AI直接操作图形界面的能力;随后xAI发布的Grok 3在推理与计算能力上创下新高｡下半年,OpenAI相继推出整合“Deep Research”等技术的ChatGPT Agent及性能巅峰的GPT-5;\nPublished date: 2026-02-12T08:39:41+08:00\nSite name: 科学网\n\nTitle: 中国大模型一年狂飙421%,全球AI格局变天\nURL: https://new.qq.com/rain/a/20260228A07TNP00\nDescription: 2025年初,DeepSeek-R1横空出世｡奠定了大模型新一轮军备竞赛的主旋律:即更低的成本､更强悍的性能､以及开源｡      一年过去,全球大模型产业格局正由少数科技巨头依托算力､数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建｡中国大模型,陆续坐上牌桌｡      全球头部大模型API聚合平台OpenRouter的数据显示,过去一年,中国大模型在全球市场的Token消耗占比增长了421%｡\nPublished date: 2026-02-28T22:32:14+08:00\nSite name: 腾讯网\n\nTitle: “中国版OpenAI”智谱上市,中国AI大模型的含金量还在提高_澎湃号·湃客_澎湃新闻-The Paper\nURL: https://www.thepaper.cn/newsDetail_forward_32343111\nDescription: 全球AI大模型迎来“资本首秀”｡ 【“第一股”首秀】 1月8日,作为“全球大模型第一股”的智谱,正式登陆港交所,首日开盘报120港元/股,截至发稿,最高涨超16%至135港元/股,市值近600亿港元｡ 这场“AI资本首秀”,并不是孤例｡1月9日,另一家国产AI大模型公司MiniMax,也将紧锣密鼓登陆港交所｡ 连续两天,两家中国AI大模型公司密集敲钟｡这不仅是中国AI公司之间的竞速,也是全球AI资本大潮的缩影｡ OpenAI正筹划一场史诗级IPO,市场传言,其估值将突破万亿美元｡ 另一家大模型独角兽Anthropic,在完成130亿美元(约928亿人民币)F轮融资后,也被曝加速上市,估值剑指3000亿美元(约2万亿人民币)｡\nPublished date: 2026-02-27T00:25:22+08:00\nSite name: 澎湃新闻\n\nTitle: AI技术推动客服行业变革 专家称大模型将助力客服升级为增长引擎_热点播报_太平洋科技资讯中心\nURL: https://news.pconline.com.cn/2075/20755113.html\nDescription: 1月23日,2026首届客户服务领袖峰会举行｡阿里云通义大模型业务总经理徐栋指出,大模型技术正引领技术变革,从语言理解到辅助决策,生成式AI正在改变人机交互方式,影响各行业发展路径｡在客户服务领域,大模型推动客服从被动应答向主动服务､智能决策升级｡ \nPublished date: 2026-02-26T15:51:25+08:00\nSite name: news.pconline.com.cn\n\nTitle: 长三角一体化大模型发布,AI将为区域发展提供决策支撑\nURL: https://m.thepaper.cn/newsDetail_forward_32359319\nDescription: 1月10日,长三角一体化大模型发布与场景应用链接大会在上海召开｡会上,由中国区域经济50人论坛成员､上海财经大学长三角与长江经济带发展研究院执行院长张学良教授团队牵头建设的长三角一体化大模型(YRD-P1)正式发布｡ 1月10日,长三",
+    "isError": false,
+    "durationMs": 1442,
+    "createdAt": "2026-03-02T06:47:05.643Z"
+  },
+  {
+    "id": "9e16f462c6c12c34",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_qb8lm4vzxiuh_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:47:10.806Z"
+  },
+  {
+    "id": "22afa30d216b5bb7",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年大模型如何进化？超40位AI大咖展望\nURL: https://wap.eastmoney.com/a/202501163299431353.html\nDescription: 全新妙想投研助理,立即体验\n   《科创板日报》1月16日讯  刚刚过去的2024年,中外AI及大模型在技术与产业落地上取得了令人瞩目的进展。在新的2025年,AI有望继续成为推动各行业变革的关键力量。\n  在2025万象更新之际,财联社携手旗下《科创板日报》,推出“AI领先者心声·2025”新年特别报道,43位 人工智能 领军者与行业精英一同回顾和展望AI领域突破与挑战。**包括李开复、杨植麟、姜大昕、闫俊杰、周鸿祎、王小川、徐立、何征宇等多名AI领军从业人士表示,从具身智能、AI智能体到视频生成,大模型的各色应用引人遐想,正逐步在各行各业落地。但高质量数据缺乏,模型的训练成本和使用成本仍是阻碍AI发展的瓶颈所在。 \n  “AGI的尽头是生命科学和具身智能。我们将了解生命的奥秘,治愈大多数疾病,获得健康自由。再远一点,AI也会帮助我们实现人类和机器的融合,帮助我们繁荣和延续人类文明。”百川智能创始人王小川的观点,或许代表了2025年新年之际大多数AI从业者的心声与乐观。\n   ▍AI Agent将迎来爆发式增长\n   零一万物CEO、创新工场董事长李开复 判断,2025 年是 AI-First 应用迎来爆发之际,也是大模型行业面临商业化拷问之时。当前,性能足够好、推理足够快、价格足够低的模型层出不穷,为 AI-First 应用的爆发提供了坚实基础。\n  复盘过往的数次技术革命,李开复表示,在“价值链金字塔”中贡献最大的均是应用层,AI 2.0 将延续这样的发展轨迹,大模型从黑科技发明期迈向落地为王的阶段,穿透各行各业赋能企业数智化转型,创造巨大的商业价值,成为驱动实体经济增长的新质生产力。\n   阶跃星辰创始人、CEO姜大昕 介绍,2024年, 人工智能 在基座模型技术和应用落地上都实现了重大跃迁。在通用 人工智能 (AGI)技术探索上,以Sora为代表的多模态模型\nPublished date: 2025-01-17T02:37:00+08:00\nSite name: 手机东方财富网\n\nTitle: 《2024年中国AI大模型产业发展与应用研究报告》-钛媒体官方网站\nURL: https://www.tmtpost.com/7425002.html\nDescription: 第一新声研究院经过深入调研后,正式发布《2024年中国AI大模型产业发展与应用研究报告》。本报告由第一新声研究院合伙人、Gartner前高管方向尧牵头指导,第一新声创始人兼CEO姚毅统筹组织,多位AI大模型厂商高管共同研讨,最终由第一新声研究分析师团队撰写完成。 文|第一新声 2018年,OpenAI发布第一个生成式预训练模型GPT-1,模型参数量达到1.17亿, 开启了AI大模型的训练热潮;2022年底,ChatGPT的火爆,吸引了全世界对大模型的广泛关注,也激发了中国AI大模型发展热潮。2023年3月中旬,百度发布大语言模型产品文心一言,拉开了国内AI大模型产业 “百模大战”的序幕,之后通义千问、盘古大模型、星火认知大模型、360智脑、豆包等纷纷问世。2024年中国AI大模型产业落地明显加速,AI大模型产品化、商业化和产业化的发展脉络基本形成。 AI大模型是指拥有亿级以上参数的深度学习模型,从应用场景角度可分为通用大模型和垂直大模型,其中垂直大模型又可以分为行业大模型和垂直场景大模型。通用大模型,聚焦基础层和技术攻关;垂直大模型,聚焦垂直领域解决方案,在通用大模型基础上开发行业和场景专用模型,面向政务、金融、医疗、教育、交通等垂直行业和营销、客服、运营等通用场景。 2024年以来,我国AI大模型的产业应用已经迅速展开,本报告通过调研中国AI大模型产业发展和市场应用,梳理AI大模型的发展历程、产业生态、商业模式、行业应用、市场规模、发展趋势等,并对典型垂类行业和场景应用案例进行剖析,以期达到以下目的: 通过研究AI大模型产业的发展历程、产业生态、商业模式、行业和场景应用等,帮助企业了解AI大模型产业的发展脉络和发展方向; 重点分析AI大模型产业的市场规模、发展驱动、市场应用、发展趋势,帮助AI大模型企业把握市场需求动向和发展趋势; 深入调研AI大模型的典型行业和场景应用,\nPublished date: 2025-01-17T10:00:00+08:00\nSite name: 钛媒体官方网站\n\nTitle: 2024年中国AI大模型产业发展与应用研究报告\nURL: https://xueqiu.com/5899108858/320810168\nDesc",
+    "isError": false,
+    "durationMs": 533,
+    "createdAt": "2026-03-02T06:47:11.339Z"
+  },
+  {
+    "id": "e860aacec22648cf",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_x0xadsndmygx_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:47:26.701Z"
+  },
+  {
+    "id": "b6d50abafa1be694",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2024年中国AI大模型产业发展与应用研究报告-第一新声.docx-原创力文档\nURL: https://max.book118.com/html/2025/0117/7136113152010024.shtm\nDescription: 研究范畴及目的 2018年,OpenAI发布第一个生成式预训练模型GPT-1,模型参数量达到1.17亿,开启了AI大模型的训练热潮;2022年底,ChatGPT的火爆,吸引了全世界对大模型的广泛关注,也激发了中国AI大模型发展热潮。2023年3月中旬,百度发布大语言模型产品文心一言,拉开了国内AI大模型产业“百模大战”的序幕,之后通义千问、盘古大模型、星火认知大模型、360智脑、豆包等纷纷问世。2024年中国AI大模型产业落地明显加速,AI大模型产品化、商业化和产业化的发展脉络基本形成。 AI大模型是指拥有亿级以上参数的深度学习模型,从应用场景角度可分为通用大模型和垂直大模型,其中垂直大模型又可以分为行业大模型和垂直场景大模型。通用大模型,聚焦基础层和技术攻关;垂直大模型,聚焦垂直领域解决方案,在通用大模型基础上开发行业和场景专用模型,面向政务、金融、医疗、教育、交通等垂直行业和营销、客服、运营等通用场景。 2024年以来,我国AI大模型的产业应用已经迅速展开,本报告通过调研中国AI大模型产业发展和市场应用,梳理AI大模型的发展历程、产业生态、商业模式、行业应用、市场规模、发展趋势等,并对典型垂类行业和场景应用案例进行剖析,以期达到以下目的: 通过研究AI大模型产业的发展历程、产业生态、商业模式、行业和场景应用等,帮助企业了解AI大模型产业的发展脉络和发展方向;重点分析AI大模型产业的市场规模、发展驱动、市场应用、发展趋势,帮助AI大模型企业把握市场需求动向和发展趋势; 深入调研AI大模型的典型行业和场景应用,挖掘行业里应用相对成熟、落地价值度高、市场反馈良好的优秀服务商与实践案例,为客户产品选择提供参考。 2 目录CONTENTS 01研究背景 1.AI大模型可按照应用领域和输入数据类型进行分类 2.至2024年中国AI大模型产业发展加速进入商用阶段 03应用场景及案例\nPublished date: 2025-01-18T20:13:25+08:00\nSite name: 原创力文档\n\nTitle: 2024年中国AI大模型产业发展与应用研究报告-第一新声\nURL: https://m.sohu.com/a/850375383_121864835/?pvid=000115_3w_a\nDescription: 今天分享的是:2024年中国AI大模型产业发展与应用研究报告-第一新声\n报告共计:28页\n2018 年以来,AI 大模型在全球迅速发展,中国自 2023 年起进入“百模大战”阶段,2024 年产业落地加速。AI 大模型按应用领域分为通用、行业、垂直大模型,按输入数据类型分为语言、视觉、多模态大模型等。其发展历经技术萌芽到加速商用,截至 2024 年 11 月,中国已有 309 个大模型备案,垂类大模型在多行业广泛渗透,语言大模型数量居多且创新聚焦跨模态能力。\n在产品方面,国产大模型通过提升性能或优化架构实现降价,为商业化奠定基础,多家厂商推出代表性产品且价格不断降低。产业图谱涵盖众多领域企业,商业化模式主要有定制化(55%,适用于大型政企)、API 及订阅(40% - 45%,适合中小企业)、广告(<5%,用于智能终端 ToC 场景)三种,应用落地分需求评估、部署建设、应用部署和运营管理四个阶段,有直接调用等五种部署方式。2024 年应用市场规模约 157 亿元,2022 - 2027 年复合增长率 148%,主要商用通路包括厂商直供、通过集成商和 API 接口提供服务。\n在应用场景上,互联网、政务、金融等行业应用丰富,如金融行业在营销、风控等方面利用大模型解决痛点;医疗行业缓解就医、诊疗效率低等问题;教育、政务、零售、制造等行业也分别针对客服、市场监管、客户洞察、知识管理等场景应用大模型并取得成效。技术发展呈现四大趋势,市场应用主要有融合应用软件、智能助手和 AI Agent 三个方向,但目前缺乏高质量数据集是商业落地的关键挑战。 \n以下为报告节选内容\nPublished date: 2025-01-18T20:17:00+08:00\nSite name: 手机搜狐网\n\nTitle: 2024年中国AI大模型产业发展与应用研究报告\nURL: https://m.sohu.com/a/850207049_121948649/?pvid=000115_3w_a\nDescription: 今天分享的是:2024年中国AI大模型产业发展与应用研究报告\n报告共计:28页\n《202",
+    "isError": false,
+    "durationMs": 516,
+    "createdAt": "2026-03-02T06:47:27.218Z"
+  },
+  {
+    "id": "5d6ec8d08657c50e",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_ol6ommeeuaju_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:47:46.347Z"
+  },
+  {
+    "id": "eda452964e6ad867",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 上海AI独角兽MiniMax发布新一代开源模型\nURL: https://new.qq.com/rain/a/20250117A07PHX00\nDescription: IT时报记者 毛宇      日月开新元,万象启新篇。      1月15日,MiniMax发布并开源新一代01系列模型,包含基础语言大模型MiniMax-Text-01和视觉多模态大模型MiniMax-VL-01。该系列模型使用多项突破性创新,以大规模应用线性注意力机制打破Transformer传统架构记忆瓶颈,在综合性能比肩GPT-4o、Claude-3.\nPublished date: 2025-01-17T18:16:59+08:00\nSite name: 腾讯网\n\nTitle: 只有模仿没有创新?国产 AI 用行动打破质疑\nURL: https://new.qq.com/rain/a/20250117A03VEO00\nDescription: 2025 年开年,令人欣喜的是,我们看到了一向在人们印象中是「低调做产品」的 MiniMax 公司,也加入了开源行列,将最先进的底层技术直接与社区和行业分享。1 月 15 日,大模型公司 MiniMax 正式发布了 MiniMax-01 系列模型。它包括基础语言大模型 MiniMax-Text-01,和在其上集成了一个轻量级 ViT 模型而开发的视觉多模态大模型 MiniMax-VL-01。开源会提升创新效率,越来越好的基座模型之上,才搭建越来越有用的应用,进入千家万户,帮人们解放生产力。\nPublished date: 2025-01-17T11:47:57+08:00\nSite name: 腾讯网\n\nTitle: MiniMax开源报告精读：规模化验证替代传统Transformer的新架构\nURL: https://m.thepaper.cn/newsDetail_forward_29935185\nDescription: 原创 赵健 甲子光年\n线性注意力机制的Scaling Law。 \n 作者|赵健 \n 今天,国产大模型市场掀起巨浪。 \n MiniMax今天发布并开源了新模型MiniMax-01,并断言:“传统Transformer架构不再是唯一选择。” \n MiniMax-01包含两个模型:基础大语言模型MiniMax-Text-01和视觉多模态大模型MiniMax-VL-01。在大部分的学术集上,MiniMax-01都取得了比肩海外第一梯队的成绩,基本超越Qwen2.5-72B与Llama 3.1-405B,与DeepSeek V3相比互有胜负。\n这不仅是MiniMax首次将模型开源,也是MiniMax首次公开其技术细节。在此之前,MiniMax一直以闭源模型的身份示人,外界对其底层模型细节知之甚少。 \n MiniMax发布了MiniMax-01的技术报告。技术报告中透露了MiniMax基础大模型的大胆创新:一是线性注意力机制(Linear Attention)的大规模训练,二是400万Token的超长上下文。 \n 之所以说“大胆创新”,是因为研究一个新的架构风险极大,有去无回。 \n MiniMax创始人、CEO闫俊杰曾表示,MiniMax在2023年夏天开始研发MoE混合专家架构,投入了80%的算力与研发资源,经历了两次失败才成功。2024年4月,MiniMax开始钻研Linear Attention,并将其与MoE架构融合,成功研发出新一代的基于MoE+Linear Attention的模型,并达到了可以比肩GPT-4o的水平。 \n 将如此核心的技术开源,MiniMax给出的原因是:“一是因为我们认为这有可能启发更多长上下文的研究和应用,从而更快促进Agent时代的到来,二是开源也能促使我们努力做更多创新,更高质量地开展后续的模型研发工作。” \n 「甲子光年」认真阅读了MiniMax\nPublished date: 2025-01-17T01:41:00+08:00\nSite name: 澎湃新闻\n\nTitle: 国产AI大模型,王炸开源!2025开门红!_人工智能_m0_48891301-讯飞AI开发者社区\nURL: https://xfyun.csdn.net/68ad795607a3a04fa4007aa2.html\nDescription: 在人工智能飞速发展的今天,大模型已经成为推动技术进步的核心引擎。从自然语言处理到多模态理解,AI\n的能力边界不断被突破,而每一次突破都离不开底层技术的创新。\n然而玩玩没想到,2025\n开年惊喜是\nMiniMax\n给的,就是海螺\nAI\n背后的中国大模型\nAI\n创业公司。\n近日,MiniMax宣布开源两款全新的大模型:MiniMax-Text",
+    "isError": false,
+    "durationMs": 557,
+    "createdAt": "2026-03-02T06:47:46.904Z"
+  },
+  {
+    "id": "ef4a902a3012e1ce",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_qugk8p7m978k_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:49:43.379Z"
+  },
+  {
+    "id": "4e879c778b73b463",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 《2024年中国AI大模型产业发展与应用研究报告》\nURL: https://new.qq.com/rain/a/20250117A02H4E00\nDescription: 文 | 第一新声2018年,OpenAI发布第一个生成式预训练模型GPT-1,模型参数量达到1.17亿, 开启了AI大模型的训练热潮;2022年底,ChatGPT的火爆,吸引了全世界对大模型的广泛关注,也激发了中国AI大模型发展热潮。2023年3月中旬,百度发布大语言模型产品文心一言,拉开了国内AI大模型产业\nPublished date: 2025-01-17T10:06:11+08:00\nSite name: 腾讯网\n\nTitle: 干货!中国人工智能大模型技术白皮书-CSDN博客\nURL: https://blog.csdn.net/weixin_49895216/article/details/145223805\nDescription: 最新推荐文章于 2025-01-27 05:00:00 发布 版权声明:本文为博主原创文章,遵循CC 4.0 BY-SA版权协议,转载请附上原文出处链接和本声明。 版权 近期,中国人工智能协会发布了《中国人工智能大模型技术白皮书》,涵盖了大模型发展历程、关键技术、困难及挑战以及未来发展的展望。 大模型发展历程 自2006年Geoffrey Hinton提出通过逐层无监督预训练解决深层网络训练难题以来,深度学习在多个领域取得突破,经历了从标注数据监督学习到预训练模型,再到大模型的转变。2022年底,OpenAI发布的ChatGPT引发了广泛关注,展现了大模型在多场景、多用途、跨学科任务处理的能力。大模型被认为是未来人工智能领域的关键基础设施。 语言大模型作为此次热潮的引领者,通过大规模预训练学习大量语言知识与世界知识,具备面向多任务的通用求解能力。其发展经历了**统计语言模型、神经语言模型、预训练语言模型到语言大模型(探索阶段)**的四个阶段。 统计语言模型基于马尔可夫假设,但受到数据稀疏问题影响; 神经语言模型通过神经网络建模语义共现关系,能够捕获复杂语义依赖; 预训练语言模型采用“预训练+微调”范式,通过自监督学习适配下游任务; 大模型则基于扩展定律,随着模型参数和预训练数据规模的增加,模型能力与任务效果不断改善, 还展示出了一些小规模模型所不具备的“涌现能力”。 大模型应用 大模型时代正逐步到来,以ChatGPT为代表的大模型技术将在经济、法律、社会等领域发挥重要作用。OpenAI研发了GPT-1(1.1亿参数)、GPT-2(15亿参数)和GPT-3(1750亿参数)等不同规模的语言模型,谷歌则推出了5400亿参数的PaLM模型。当模型参数规模达到千亿量级,语言大模型展现出多方面能力跃升。例如,GPT-3通过提示词或少数样例即可完成多种任务。 OpenAI在Tran\nPublished date: 2025-01-18T10:59:15+08:00\nSite name: CSDN\n\nTitle: 【人工智能】ChatGPT 是 OpenAI 开发的一款基于 GPT架构的语言模型，这款产品迅速在全球范围内获得了广泛关注，标志着围绕大模型的人工智能商业化进程进入了快车道。\nURL: https://m.blog.csdn.net/wstever/article/details/142404759\nDescription: 一、OpenAI的介绍\nOpenAI 是一家专注于研究和部署安全的通用人工智能(AGI)的组织,成立于2015年12月11日。它由一群知名的技术专家和投资者共同创立,包括埃隆·马斯克(Elon Musk)、萨姆·奥特曼(Sam Altman)等。尽管最初是一个非营利组织,但为了更好地支持其长期使命并确保可持续发展,OpenAI 在2019年转变为一种混合结构,即由营利性公司OpenAI LP及非营利性母公司OpenAI Inc组成。\n二、ChatGPT的介绍\nChatGPT 是 OpenAI 开发的一款基于 GPT(Generative Pre-trained Transformer,生成式预训练转换器)架构的语言模型。GPT 系列模型代表了一类先进的自然语言处理(NLP)系统,它们通过在大量文本数据上进行预训练来学习语言模式,并能够生成连贯的文本,回答问题,撰写文章,甚至进行简单的对话。随着技术的进步,GPT 模型经历了多次迭代升级,从最初的 GPT-1 到后来的 GPT-3,再到更新版本如 GPT-4 和 GPT-4o mini,每一次更新都带来了性能上的显著提升。\n具体来说,ChatGPT 特指一个专门为对话交互设计的模型,它可以用来构建聊天机器人或虚拟助手等应用。用户可",
+    "isError": false,
+    "durationMs": 534,
+    "createdAt": "2026-03-02T06:49:43.913Z"
+  },
+  {
+    "id": "50291ac454971ea5",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_hb2zelin4wpv_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:49:51.446Z"
+  },
+  {
+    "id": "4d9db7e6b2bd3e73",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI计划未来几周发布新AI模型o3 mini,将同时包含API和ChatGPT\nURL: https://new.qq.com/rain/a/20250119A03AXW00\nDescription: ,据 TechinAsia 报道,OpenAI 计划在未来几周内发布其新的 AI 模型 o3 mini。首席执行官 Sam Altman 宣布,此次发布将同时包含 API 和 ChatGPT,并整合用户反馈。该公司之前的目标是在 2025 年 1 月推出 o3 mini,随后预计会推出完整的 o3 模型。\nPublished date: 2025-01-19T11:53:11+08:00\nSite name: 腾讯网\n\nTitle: OpenAI计划未来几周发布新AI模型o3 mini,将同时包含API和ChatGPT\nURL: https://new.qq.com/rain/a/20250119A03CB900\nDescription: 金色财经报道,OpenAI计划在未来几周内发布其新的AI模型o3 mini。首席执行官Sam Altman宣布,此次发布将同时包含API和ChatGPT,并整合用户反馈。该公司之前的目标是在2025年1月推出o3 mini,随后预计会推出完整的o3模型。\nPublished date: 2025-01-19T11:59:16+08:00\nSite name: 腾讯网\n\nTitle: OpenAI完成“o3 mini”推理AI模型版本,即将推出 - 今日头条\nURL: https://www.toutiao.com/article/7461294495104074267/\nDescription: 文心大模型 生成的文章摘要 前文介绍了ChatGPT制造商OpenAI推出新推理 ChatGPT制造商OpenAI首席执行官Sam Altman表示公司已经完成新推理AI模型o3 mini开发,并将在几周内推出。 去年12月,OpenAI宣布正在测试推理AI模型o3和o3 mini ,这表明其与谷歌等竞争对手的竞争日益激烈,以创建能够解决复杂问题的更智能模型。 这家人工智能初创公司原计划在1月底推出o3 mini,随后推出完整版o3,因为更强大的大型语言模型可以胜过现有模型并吸引新的投资和用户。 2024年9月,OpenAI发布了o1 AI模型,旨在花更多时间处理查询以解决更难的问题。OpenAI表示o1模型能够通过复杂的任务进行推理,并能解决比以前的科学、编码和数学模型更具挑战性的问题。 该公司此前曾表示,新款o3和o3 mini模型将比之前推出的o1模型功能更强大。 本周早些时候,OpenAI表示ChatGPT推出了一项名为Tasks的测试版功能,标志着进军了虚拟助手领域,以与苹果展开竞争。 ChatGPT于2022年底发布,引发了资本对人工智能公司的投资狂潮,其日益增长的人气和新产品的发布帮助OpenAI在去年10月份完成了66亿美元融资。\nPublished date: 2025-01-19T00:35:00+08:00\nSite name: 今日头条\n\nTitle: OpenAI推出o3 mini:下一个推理AI模型引爆期待_应用_ChatGPT_用户\nURL: https://www.sohu.com/a/850312412_121798711\nDescription: 此次发布,OpenAI不仅计划推出应用编程接口(API),还将对外发布更新版的ChatGPT,提高用户的使用便捷性。 根据OpenAI的介绍,o3 mini既能处理简单的问答,也能应对更为复杂的计算、科学及编码问题,具备相当强大的推理能力。相比于去年发布的o1模型,o3 mini在算法效率和任务处理上将有明显提升。在众多竞争对手中,如谷歌的AI产品,o3\nPublished date: 2025-01-18T08:01:00+08:00\nSite name: 搜狐\n\nTitle: OpenAI“o3 mini”推理AI模型完成!将于几周内面世_个股资讯_市场_中金在线\nURL: http://sc.stock.cnfol.com/ggzixun/20250118/31117440.shtml\nDescription: 智通财经APP获悉,ChatGPT制造商OpenAI的首席执行官萨姆·奥特曼(Sam Altman)于美东时间周五宣布,OpenAI已经完成了其新型推理人工智能模型o3 mini的一个版本,并计划在接下来的几周内正式推出。 Altman在社交媒体平台X上写道,这家微软支持的公司考虑了用户的反馈,因此计划同时发布应用程序编程接口(API)和ChatGPT。 去年12月,OpenAI表示正在",
+    "isError": false,
+    "durationMs": 560,
+    "createdAt": "2026-03-02T06:49:52.006Z"
+  },
+  {
+    "id": "c4eafc0d005ce74a",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_umrq4b4nrgv1_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:49:56.626Z"
+  },
+  {
+    "id": "1679ae2b10bae78b",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 谷歌 Gemini 2.0 闪念模型挑战 OpenAI – 前途科技\nURL: https://accesspath.com/ai/5948130/\nDescription: 谷歌 Gemini 2.0 Flash Thinking:AI 推理的新纪元 在不断重塑 AI 领域格局的步伐中,谷歌近日发布了 Gemini 2.0 Flash Thinking,这款多模态推理模型以其快速且透明的复杂问题解决能力,引领着 AI 推理的新纪元。 谷歌 CEO 桑达尔·皮查伊在社交平台 X 上表示:“这是我们迄今为止最具思考力的模型。” 在开发者文档中,谷歌解释道:“思考模式能够在响应中展现出比基础 Gemini 2.0 Flash 模型更强大的推理能力。” 值得注意的是,基础模型仅仅在八天前才发布。 新模型支持高达 32,000 个输入词元(相当于 50-60 页文本),并能生成 8,000 个词元输出。在Google AI Studio 的侧边栏中,谷歌宣称该模型最适合“多模态理解、推理”和“编码”。 模型的训练过程、架构、许可和成本等详细信息尚未公布。目前,在Google AI Studio 中,每个词元的成本显示为零。 与OpenAI 的竞争对手推理模型 o1 和o1 mini 不同,Gemini 2.0 允许用户通过下拉菜单访问其逐步推理过程,为用户提供更清晰、更透明的模型得出结论的方式。 通过让用户了解决策过程,Gemini 2.0 打破了 AI 作为“黑箱”运作的长期疑虑,并使其与竞争对手推出的其他开源模型在许可条款方面(目前尚不清楚)达到同等水平。 我早期对该模型进行的简单测试表明,它能够快速准确地(在一到三秒内)回答一些对其他 AI 模型来说 notoriously tricky 的问题,例如计算单词“Strawberry”中字母 R 的数量(见上图)。 在另一个测试中,当比较两个小数(9.9 和9.11)时,该模型系统地将问题分解成更小的步骤,从分析整数到比较小数位。 这些结果得到了第三方独立分析机构 LM Arena 的支持,该机构将 \nPublished date: 2025-01-19T14:52:00+08:00\nSite name: accesspath.com\n\nTitle: 2025年1月16日人工智能与科技新闻速递-CSDN博客\nURL: https://blog.csdn.net/liu1983robin/article/details/145214051\nDescription: 点赞数 22 版权声明:本文为博主原创文章,遵循CC 4.0 BY-SA版权协议,转载请附上原文出处链接和本声明。 45 篇文章 0 订阅 订阅专栏 2025年已经来临,全球人工智能领域正在经历一场前所未有的技术浪潮。在这一年初,众多科技巨头纷纷发布新一轮的AI布局,展现出它们在人工智能领域的雄心和战略规划。从Google在英国市场推出AI概览功能,到Adobe的创新工具,再到Earth Species Project的突破性生态保护应用,人工智能正在推动社会各领域的巨大变革。本文将带你一览2025年1月16日人工智能与科技领域的最新发展,并探讨AI技术的未来展望。 全球科技巨头的AI布局动态 Google扩展AI概览功能至英国市场 作为全球科技巨头之一,Google持续推动其AI应用的广泛应用。最近,Google宣布将其AI概览功能扩展到英国市场。这个升级不仅是Google在全球AI市场布局的重要一步,也标志着该公司在提高搜索引擎精准度和本地化服务方面的又一次创新尝试。 Google的AI概览功能能够根据用户的搜索需求,在搜索结果中提供更精确的信息摘要。这一功能的引入使得用户无需花费过多时间去浏览繁杂的信息,而是可以直接从概览中获得所需的关键信息。对于英国市场而言,AI概览功能的本地化服务尤其重要,Google通过结合当地语言习惯和文化背景,优化了搜索结果展示,提升了用户的搜索体验。 关键亮点 : 优化搜索结果展示 :通过AI对网页内容的智能分析,Google能够为用户提供更加精准和定制化的搜索结果。 提供更精准的信息概览 :AI将信息浓缩成简短而有用的摘要,帮助用户快速抓取核心信息。 本地化服务适配 :Google针对英国用户的语言和文化特点进行了优化,使得AI概览功能在当地更加实用。 随着AI概览功能的全球推广,Google将进一步巩固其在AI搜索引擎领域的领导地位。\nPublished date: 2025-01-17T20:22:34+08:00\nSite name: CSDN\n\nTitle: 谷歌CEO皮查伊：Gemini AI技术领先，2025年将是关键之年\nURL: https://m.soh",
+    "isError": false,
+    "durationMs": 428,
+    "createdAt": "2026-03-02T06:49:57.054Z"
+  },
+  {
+    "id": "4e78a77c5621344c",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_9l124od8ktx0_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:50:02.748Z"
+  },
+  {
+    "id": "5ab101bc740ddfea",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 盘点2024年行业AI大模型(200个)_国内开源ai大模型具体商业应用-CSDN博客\nURL: https://blog.csdn.net/bestpasu/article/details/145198966\nDescription: 点赞数 13 版权声明:本文为博主原创文章,遵循CC 4.0 BY-SA版权协议,转载请附上原文出处链接和本声明。 13 篇文章 1 订阅 订阅专栏 杂谈 6 篇文章 0 订阅 订阅专栏 序号 公司 大模型 省市 类别 官网 说明 1 百度 文心一言 北京 通用 ✔ 有APP 2 智谱华章 清言 北京 通用 ✔ 有APP,开源模型ChatGLM3-6B, ChatGLM-6B和ChatGLM2-6B 3 百川智能 百川 北京 通用 ✔ 开源小模型baichuan-7B和Baichuan-13B,baichuan-2 4 阿里云 通义千问 浙江杭州 通用 ✔ 开源模型Qwen-1.8B,7B,14B,72B、Qwen-VL和Qwen-Audio 5 上海人工智能实验室 书生 上海 通用 ✔ 开源模型书生·浦语-7B,20B 6 达观数据 曹植 上海 工业 ✔ 试用需账号 7 深度求索 Deepseek Coder 浙江杭州 代码 ✔ 8 科大讯飞 星火 安徽合肥 通用 ✔ 有APP 9 春田知韵(抖音) 豆包 北京 通用 ✔ 开源多模态7B模型BuboGPT,豆包是云雀的聊天机器人 10 中国科学院自动化研究所 紫东·太初 北京 通用 ✔ 紫东太初2.0号称100B参数,全模态 11 商汤科技 商量 上海 通用 ✔ 12 华为 盘古,盘古气象,盘古-Σ 广东深圳 工业 ✔ 华为+鹏城,华为云盘古 13 复旦大学 MOSS 上海 科研 ✔ 试用需账号 14 智源人工智能研究院 悟道·天鹰,悟道·EMU 北京 通用 ✔ 悟道3.0,视界视觉,AQUILA天鹰座,Aquila-7B,AquilaChat-7B,AquilaCode-7B-NV,AquilaCod9 网易有道 子曰 北京 教育 ✔ 推荐有道速读,读论文的利器 50 智媒开源研究院 智媒 广东深圳 媒体 ✔ 基于LLa\nPublished date: 2025-01-17T09:49:25+08:00\nSite name: CSDN\n\nTitle: star AI-阿里云\nURL: https://www.aliyun.com/sswb/1755358.html\nDescription: ❤️ 如果你也关注 AI 的发展现状,且对 AI 应用开发非常感兴趣,我会每日分享大模型与 AI 领域的最新开源项目和应用,提供运行实例和实用教程,帮助你快速上手AI技术,欢迎关注我哦! 微信公众号|搜一搜:蚝油菜花 快速阅读 功能丰富:支持多源知识整合、语义搜索、个性化图像生成等功能。 灵活扩展:支持在线与本地模型,模块化架构易于扩展。 多平台支持:提供桌面应用、浏览器、Obs... 文章\nPublished date: 2025-01-17T04:14:59+08:00\nSite name: 阿里云\n\nTitle: 阶跃星辰 - 网站百科\nURL: https://www.80wzbk.com/siteinfo/6516.html\nDescription: 阶跃星辰于2023年4月成立,以“智能阶跃,十倍每一个人的可能”为使命。阶跃星辰坚定自研超级模型,积极布局算力、数据等关键资源,发挥算法和人才优势,已完成Step-1千亿参数语言大模型和Step-1V千亿多模态大模型的研发,在图像理解、多轮指令跟随、数学能力、逻辑推理、文本创作等方面性能达到业界领先水平。中文名称 阶跃星辰 网站备案 沪ICP备2023019222号-3 所属分类 人工智能 360权重 预估流量 348 ~ 386 网站排名 暂无排名或相关数据不充分 百度评分 搜狗评级\nPublished date: 2025-01-18T13:13:46+08:00\nSite name: 80网站百科\n\nTitle: 星辰AI——一个解决你所有AI需求的智慧平台_智慧星辰ai-CSDN博客\nURL: https://blog.csdn.net/hbbhji/article/details/139250326\nDescription: 版权 星辰AI平台集合了市面上几乎所有的AI大模型,无论是你想要却舍不得花钱的ChatGPT4.0,还是你有需求却不知道怎么去找的AI,在我们这里都可以得到解决!!! 易庞大的AI储备易:ChatGPT4.0  文心一言4.0,讯飞星火,通义千问,Midjourney,Snno,微软Bing模型,微软Azure模型,清华智谱,腾讯混元大模型,SD",
+    "isError": false,
+    "durationMs": 489,
+    "createdAt": "2026-03-02T06:50:03.237Z"
+  },
+  {
+    "id": "e6e7babe27fe3042",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_jn2nv5tlenz2_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:50:08.250Z"
+  },
+  {
+    "id": "d5de06ecc52dff2a",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Anthropic创始人眼中的AI智能体进化:工具、上下文、代码与安全编程大模型anthropic_网易订阅\nURL: https://www.163.com/dy/article/JM9TCO3G05119734.html\nDescription: (来源:MIT Technology Review)AI 智能体目前是科技领域的热门话题。从Google DeepMind、OpenAI 到Anthropic,各大顶尖公司正竞相为 LLM 赋予自主完成任务的能力。这类系统在行业内被称为 Agentic AI(代理式人工智能),是硅谷新的热议焦点。从英伟达到 Salesforce,各家公司都在探讨如何利用这项技术颠覆行业格局。Sam Altman 在上周的一篇博客文章中表示:“我们相信,2025 年第一批 AI 智能体可能会加入职场,并实质性地改变企业的产出。”广义上看,AI 智能体是一种能够自主执行任务的软件系统,通常只需极少甚至完全不需要监督。任务的复杂程度越高,智能体所需的智能水平也越高。对于许多人来说,如今的 LLM 已经足够智能,可以驱动智能体完成一系列实用任务,例如填写表格、查找食谱并将所需食材添加到线上购物车,或者在会议前通过搜索引擎快速完成最后的研究并生成简明的要点总结。2023 年10 月,Anthropic 展示了一款先进的 AI 智能体:Claude 的一项扩展功能“Computer Use”。顾名思义,这项功能使用户能够像指挥人类一样指导 Claude 操作电脑,包括移动光标、点击按钮和输入文本。用户不仅可以与 Claude 对话,还可以要求它直接在屏幕上完成任务。Anthropic 指出,这项功能目前仍然存在繁冗和容易出错等问题,但已向一小部分测试人员开放,包括来自 DoorDash、Canva 和Asana 等公司的第三方开发者。这个项目展现了 AI 智能体未来发展的一个缩影。为进一步探讨趋势,MIT Technology Review 采访了 Anthropic 的联合创始人兼首席科学家 Jared Kaplan,他分享了 AI 智能体在 2025 年可能发展的四个方向。(Kaplan 的回答经\nPublished date: 2025-01-19T20:36:07+08:00\nSite name: 网易\n\nTitle: 亚马逊云科技与 Anthropic 加深合作,Amazon Bedrock 再添 Claude 3 模型 - 牛透社\nURL: https://www.niutoushe.com/lives/yamaxunyunkejiyuanthropicjiashenhezuoamazonbedrockzaitianclaude3moxing\nDescription: 牛透社消息:亚马逊云科技宣布,致力于 AI 安全和研究的公司 Anthropic 的领先模型 Claude 3 系列将基于 Amazon Bedrock 提供服务。 客户将可以通过 Amazon Bedrock 访问 Claude 3 系列的三个支持视觉功能的模型:Claude 3 Opus、Claude 3 Sonnet 和Claude 3 Haiku。其中 Sonnet 模型现已在美东(北弗吉尼亚州)和美西(俄勒冈州)区域正式可用,Opus 模型和 Haiku 模型将在未来数周内推出。\nPublished date: 2025-01-17T02:04:29+08:00\nSite name: 牛透社\n\nTitle: 美国人工智能产业发展的最新图景:融资、技术和基建微软机器人云计算黄仁勋英伟达知名企业世界人工智能大会_网易订阅\nURL: https://www.163.com/dy/article/JM79T7PV0521RRCK.html\nDescription: * “中美友好互信合作计划”是由复旦发展研究院和丰实集团共同打造的中美关系研究的学术平台 从初创企业的 迅猛融资到科技巨头的战略布局,从创新产品的广泛应用到基础设施的不断升级,美国人工智能(AI)产业正在融资估值、产品应用、基础设施三个 层面加速发展。 图源:路透社 0 1 Anthropic融资和OpenAI 的“经济蓝图”: 美国AI巨头加速“内卷” 近日,人工智能领域的新秀Anthropic正积极筹备一笔高达20亿美元的融资。这一轮融资由由光速创投(Lightspeed Venture Partners)领投。据悉,这笔交易将使这家成立四年的初创公司的估值跃升到600亿美元相较于一年前的180亿美元,实现了三倍多的增长,跻身美国估值最高的五大创业公司之列,仅次于SpaceX、OpenAI、Stripe和Databricks。 Anthropic在2",
+    "isError": false,
+    "durationMs": 417,
+    "createdAt": "2026-03-02T06:50:08.667Z"
+  },
+  {
+    "id": "69a6d5170057ed81",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_xozo6bzjfuak_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:50:23.939Z"
+  },
+  {
+    "id": "db7ab6640f4ad304",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "93f06217494a8ef0",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: OpenAI CEO宣布,o3 mini将会在数周内上线_腾讯新闻\nURL: https://new.qq.com/rain/a/20250119A05CAF00\nDescription: 当地时间1月17日,OpenAI CEO萨姆･阿尔特曼在社交平台发文称,感谢外部安全研究人员对o3 mini模型的测试,目前该模型的最终版本已经确定,并进入发布流程,预计将在几周内正式推出｡而且他还透露,o3 mini的API和ChatGPT版本将同步上线｡OpenAI方面此前曾透露,计划在2025年1月底之前正式推出o3 mini,并在后续推出完整版的o3模型｡ \nPublished date: 2025-01-19T17:31:00+08:00\nSite name: 腾讯网\n\nTitle: OpenAI几周内发布 o3-mini,性能略逊于 o1-pro-CSDN博客\nURL: https://blog.csdn.net/weixin_41446370/article/details/145245638\nDescription: 近日,OpenAI 的CEO 山姆･奥特曼在社交媒体上透露,备受期待的 o3-mini 将在几周内正式发布｡ 对于 o3-mini 的发布,奥特曼早在去年就曾提到过相关计划,指出将在2025年一月底推出｡此外,o3-mini 的使用额度将会比 o1系列更高,并且将向所有 ChatGPT Plus 订阅者提供,这使得更多用户可以享受到这一新模型的优越性能｡ 在讨论 \nPublished date: 2025-01-19T18:23:56+08:00\nSite name: blog.csdn.net\n\nTitle: 猛料来了:超快推理模型o3-mini或几周内上线,GPT系列或与o系列合并_腾讯新闻\nURL: https://new.qq.com/rain/a/20250118A06FAI00\nDescription: 当地时间1月17日,OpenAI CEO阿尔特曼又在X上放出旗下产品的最新消息｡ 据他透露, 最新的o3-mini推理模型预计将在几周内正式推出｡他强调,o3-mini的表现“非常出色”｡ 也许,一个结合GPT系列的强大语言理解能力和o系列的快速推理能力的强大AI模型将在2025年诞生｡ 阿尔特曼爆猛料:最新o3-mini模型将于几周内推出,GPT系列或与o系列合并 当地时间1月17日,阿尔特曼在X上透露了一系列关于OpenAI新模型开发和发布的消息｡ 阿尔特曼在推文中感谢了外部安全研究人员对最新o3-mini模型的测试,然后称, o3-mini的最终版本已经确定,并进入发布流程,计划将在几周内正式推出｡而且,据他透露,OpenAI也在计划推出更智能的o3模型,o3 pro的订阅费为一个月200美元｡\nPublished date: 2025-01-19T09:00:00+08:00\nSite name: 腾讯网\n\nTitle: OpenAI计划未来几周内推出o3miniAI模型 - 币界网\nURL: https://m.528btc.com/kx/1151083116.html\nDescription: : OpenAI 计划在未来几周内发布其新的 AI 模型 o3 mini｡首席执行官 Sam Altman 宣布,此次发布将同时包含 API 和ChatGPT,并整合用户反馈｡ 该公司之前的目标是在 2025 年1月推出 o3 mini,随后预计会推出完整的 o3 模型｡这些模型旨在增强 OpenAI 解决科学､编码和数学等领域复杂任务的能力｡\nPublished date: 2025-01-19T11:44:13+08:00\nSite name: 币界网\n\nTitle: OpenAI CEO宣布,o3 mini将会在数周内上线—互联网—三易生活—E生活·E科技\nURL: https://www.3elife.net/Art/internet/202501/19/100439.html\nDescription: OpenAI CEO萨姆･阿尔特曼在社交平台发文称,感谢外部安全研究人员对o3 mini模型的测试,目前该模型的最终版本已经确定,并进入发布流程,预计将在几周内正式推出｡OpenAI方面此前曾透露,计划在2025年1月底之前正式推出o3 mini,并在后续推出完整版的o3模型｡ 据OpenAI方面此前公布的相关信息显示,o3 mini在性能与成本平衡方面表现出色,能够以较低的成本提供更高效的服务｡\nPublished date: 2025-01-19T01:15:16+08:00\nSite name: www.3elife.net\n\nTitle: OpenAI推出o3 min",
+    "isError": false,
+    "durationMs": 1222,
+    "createdAt": "2026-03-02T06:50:25.161Z"
+  },
+  {
+    "id": "432d91a300b256bd",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "a1994366d02b486f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_bcmjjvxhtoe3_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T06:52:00.912Z"
+  },
+  {
+    "id": "4c12b0fdef72bd7f",
+    "type": "tool_call",
+    "taskId": "d04fc249f018fe9a",
+    "subtaskId": "58a5375dd4a063f2",
+    "employeeId": "a1994366d02b486f",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 智能转型 开辟AI新场景——二二五年世界科技发展回顾·人工智能篇\nURL: https://www.stdaily.com/web/gdxw/2026-01/06/content_457705.html\nDescription:  在科研突破与军事应用方面,青年科学家团队研发的Headless-AD模型显著优化了长文本处理能力｡军事领域,集成AI能力的“蜂群”无人机系统于5月开始高强度测试,其已具备自主地形匹配与目标分类功能｡6月,俄航天局计划将国产大模型GigaChat部署至国际空间站,旨在将卫星图像分辨率提升一倍｡ 美国 The US 智能体快速演进 科研范式再重构 科技日报记者 刘霞 2025年,美国AI技术在智能体演进与科学范式重构上实现了双重跨越｡ 在模型领域,科技公司推出了多款AI模型｡1月OpenAI推出首个AI智能体Operator,赋予AI直接操作图形界面的能力;随后xAI发布的Grok 3在推理与计算能力上创下新高｡下半年,OpenAI相继推出整合“Deep Research”等技术的ChatGPT Agent及性能巅峰的GPT-5;谷歌则在11月发布Gemini 3系列,凭借卓越的事实准确性与应用转化能力,在年底的行业竞争中表现抢眼｡此外,谷歌与OpenAI的模型在国际数学奥赛中双双夺金,展现了AI逻辑推理的质变｡ 芯片硬件的革新为这些\nPublished date: 2026-02-05T14:51:04+08:00\nSite name: 中国科技网\n\nTitle: AI每日快讯 - 每日AI新闻动态  人工智能最新资讯  Aiadmin\nURL: https://www.aiadmin.com/dailynews/\nDescription: AI快讯 1.伊利诺伊大学香槟分校与Amazon AWS提出SAR方法,解决大模型过度思考问题,推理长度平均缩短30% 2.Claude-Mem系统通过三层检索架构常规节省90%Token,“无尽模式”达95%,工具调用上限提升20倍 3.微软亚洲研究院与清华大学团队提出BiPS方法,通过“拉推”机制提升视觉-语言模型理解精准度 4.Waymo与Google DeepMind利用Genie 3构建超逼真模拟器,测试机器人出租车应对龙卷风等极端场景 5.微软､谷歌等重金签约网红推广AI服务,单条报价最高10万美元,2025年美国生成式AI广告开支超10亿元 6.魔法原子､宇树科技等机器人公司将亮相2026年春晚,展示家庭服务等实用功能 7.0penClaw构建全球首家AI运营公司VoxYz,6个智能体实现市场研究､文案等全年无休运作 8.豆包App与火山引擎合作作为核心Al助手参与2026央视春晚互动,争夺新一代流量入口 2026-02-06 星期五 AI快讯 1.美团宣布将以约7.17亿美元收购叮咚买菜中国业务100%股权,加码即时零售 2.蚂蚁阿福App完成重要升级:上线专为老年用户设计的“长辈模式”,支持十几种方言提问 3.面壁智能开源新一代全模态旗舰模型MiniCPM-o4.5:为行业首个即时自由对话大模型,支持6款国产芯片部署 4.Soul App开源实时数字人生成模型SoulX-FlashTalk:为首个能够实现0.\nPublished date: 2026-02-25T18:04:36+08:00\nSite name: www.aiadmin.com\n\nTitle: 中国大模型一年狂飙421%,全球AI格局变天\nURL: https://new.qq.com/rain/a/20260228A07TNP00\nDescription: 2025年初,DeepSeek-R1横空出世｡奠定了大模型新一轮军备竞赛的主旋律:即更低的成本､更强悍的性能､以及开源｡      一年过去,全球大模型产业格局正由少数科技巨头依托算力､数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建｡中国大模型,陆续坐上牌桌｡      全球头部大模型API聚合平台OpenRouter的数据显示,过去一年,中国大模型在全球市场的Token消耗占比增长了421%｡\nPublished date: 2026-02-28T22:32:14+08:00\nSite name: 腾讯网\n\nTitle: AI大模型产业化落地将发挥巨大作用 ——访百度智能云智慧工业行业解决方案总监曹凯—中国钢铁新闻网\nURL: http://www.csteelnews.com/xwzx/djbd/202505/t20250515_99848.html\nDescription: ”近日,在第二届(2025)钢铁工业数字化发展高端论坛暨2025全国第三十届自动化应用技术学术交流会期间,百度智能云智慧工",
+    "isError": false,
+    "durationMs": 1282,
+    "createdAt": "2026-03-02T06:52:02.194Z"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "id": "9082751feb007177",
+  "teamId": "de88a26e3b2fa0e8",
+  "teamName": "双语公告创作团队",
+  "title": "企业公告中英双语简版输出",
+  "description": "将一段企业公告模板输出中英双语简版，保持语义一致。请先将以下公告内容翻译成英文简版，确保中英文版本语义一致、语言简洁明了。",
+  "status": "waiting",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "295ca505c71c4ebd",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "2d52460f1d65b2bb",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      },
+      {
+        "id": "5e940b7bedd5e4af",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版输出",
+        "description": "将一段企业公告模板输出中英双语简版，保持语义一致。请先将以下公告内容翻译成英文简版，确保中英文版本语义一致、语言简洁明了。",
+        "assigneeId": "2d52460f1d65b2bb",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": null,
+  "tokenUsage": 17308,
+  "createdAt": "2026-03-01T10:02:42.187Z",
+  "updatedAt": "2026-03-01T10:04:03.425Z",
+  "subtasks": [
+    {
+      "id": "ac091a9b5d7c262d",
+      "title": "企业公告中英双语简版输出",
+      "description": "将一段企业公告模板输出中英双语简版，保持语义一致。请先将以下公告内容翻译成英文简版，确保中英文版本语义一致、语言简洁明了。",
+      "assigneeId": "2d52460f1d65b2bb",
+      "assigneeName": "视觉设计师",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "我注意到您提到了企业公告内容需要翻译，但我目前还没有看到具体的内容文本。让我先检查一下工作目录中是否有相关文件。\n\n\n\n\n\n我在工作目录中没有找到明确的企业公告内容文件。为了完成翻译任务，请您提供需要翻译的企业公告中文内容。您可以直接粘贴公告文本，或者告知我文件的具体位置。"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 17308,
+      "createdAt": "2026-03-01T10:02:58.995Z",
+      "updatedAt": "2026-03-01T10:03:47.001Z"
+    }
+  ]
+}

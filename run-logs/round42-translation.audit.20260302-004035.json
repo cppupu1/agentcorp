@@ -1,0 +1,91 @@
+{
+  "label": "round42-translation",
+  "sessionId": "round42-translation-20260302-004035",
+  "kind": "translation",
+  "userPrompt": "请直接创建并启动任务：输出企业公告模板中英双语简版，可直接复用。",
+  "pmChatDurationMs": 70197,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "fcc05a63b5725343"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_has_no_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 70197
+    },
+    {
+      "name": "pm_called_create_task_tool",
+      "ok": true
+    },
+    {
+      "name": "pm_called_start_task",
+      "ok": true
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "fcc05a63b5725343"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "fcc05a63b5725343",
+    "status": "completed",
+    "tokenUsage": 6528,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。企业公告模板（中英双语版）已创建，包含4个适用不同场景的模板：通用企业公告、业务调整公告、人事任免公告、服务维护公告。所有模板均包含标题、日期、发布部门、正文、联系方式等标准字段，结构清晰，语言正式简洁，可直接复用。"
+  }
+}

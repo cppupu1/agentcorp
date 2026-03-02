@@ -1,0 +1,39 @@
+{
+  "label": "round38-legal",
+  "sessionId": "round38-legal-20260301-140533",
+  "kind": "legal",
+  "userPrompt": "供应商合同有点不放心，你直接安排审一遍：提3条高风险条款并给改写建议。",
+  "pmChatDurationMs": 781,
+  "pmChatError": null,
+  "pmTools": [],
+  "taskIds": [],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 781
+    },
+    {
+      "name": "task_created",
+      "ok": false,
+      "taskIds": []
+    }
+  ],
+  "allChecksPassed": false,
+  "task": null
+}

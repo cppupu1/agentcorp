@@ -1,0 +1,272 @@
+{
+  "startedAt": "2026-03-02T08:43:29.173Z",
+  "initialWaiting": [
+    {
+      "id": "d164feb25d2ec113",
+      "title": "生成中英双语放假通知",
+      "status": "waiting"
+    },
+    {
+      "id": "26f029aabb9a6da1",
+      "title": "企业公告中英双语简版输出",
+      "status": "waiting"
+    },
+    {
+      "id": "2da2697272606365",
+      "title": "企业公告中英双语简版转换",
+      "status": "waiting"
+    },
+    {
+      "id": "9082751feb007177",
+      "title": "企业公告中英双语简版输出",
+      "status": "waiting"
+    },
+    {
+      "id": "169b604830704ce9",
+      "title": "企业公告中英双语翻译",
+      "status": "waiting"
+    },
+    {
+      "id": "b6ff1e2555705937",
+      "title": "售后投诉FAQ与SOP优化及知识沉淀",
+      "status": "waiting"
+    },
+    {
+      "id": "72d4cdc68fb53ba5",
+      "title": "AI智能体行业近30天趋势简报",
+      "status": "waiting"
+    },
+    {
+      "id": "cbcfb8fbf3b829b5",
+      "title": "[验证] Free模式tokenUsage测试",
+      "status": "waiting"
+    },
+    {
+      "id": "df9a15f6a40164d0",
+      "title": "主流AI Agent开发框架技术选型调研",
+      "status": "waiting"
+    }
+  ],
+  "decisionAttempts": [
+    {
+      "taskId": "d164feb25d2ec113",
+      "title": "生成中英双语放假通知",
+      "action": "post_decision",
+      "ok": false,
+      "decision": "我先提供一个模板示例，确认格式后再填充具体信息",
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "当前任务未在等待用户决策"
+        }
+      }
+    },
+    {
+      "taskId": "26f029aabb9a6da1",
+      "title": "企业公告中英双语简版输出",
+      "action": "post_decision",
+      "ok": false,
+      "decision": "提供一个测试示例来展示工作流程",
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "当前任务未在等待用户决策"
+        }
+      }
+    },
+    {
+      "taskId": "2da2697272606365",
+      "title": "企业公告中英双语简版转换",
+      "action": "post_decision",
+      "ok": false,
+      "decision": "使用通用企业公告模板示例（如搬迁通知、节假日安排等）进行转换演示",
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "当前任务未在等待用户决策"
+        }
+      }
+    },
+    {
+      "taskId": "9082751feb007177",
+      "title": "企业公告中英双语简版输出",
+      "action": "post_decision",
+      "ok": false,
+      "decision": "直接粘贴公告内容文本",
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "当前任务未在等待用户决策"
+        }
+      }
+    },
+    {
+      "taskId": "169b604830704ce9",
+      "title": "企业公告中英双语翻译",
+      "action": "post_decision",
+      "ok": false,
+      "decision": "提供具体的公告模板文本",
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "当前任务未在等待用户决策"
+        }
+      }
+    },
+    {
+      "taskId": "b6ff1e2555705937",
+      "title": "售后投诉FAQ与SOP优化及知识沉淀",
+      "action": "post_decision",
+      "ok": false,
+      "decision": "再次重试执行完整任务",
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "当前任务未在等待用户决策"
+        }
+      }
+    },
+    {
+      "taskId": "72d4cdc68fb53ba5",
+      "title": "AI智能体行业近30天趋势简报",
+      "action": "post_decision",
+      "ok": false,
+      "decision": "跳过此任务，在最终报告中说明技术障碍原因",
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "当前任务未在等待用户决策"
+        }
+      }
+    },
+    {
+      "taskId": "cbcfb8fbf3b829b5",
+      "title": "[验证] Free模式tokenUsage测试",
+      "action": "post_decision",
+      "ok": false,
+      "decision": "直接执行性能测试脚本",
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "当前任务未在等待用户决策"
+        }
+      }
+    },
+    {
+      "taskId": "df9a15f6a40164d0",
+      "title": "主流AI Agent开发框架技术选型调研",
+      "action": "post_decision",
+      "ok": false,
+      "decision": "基于LangChain和AutoGen两个框架生成技术选型报告（报告中说明局限性）",
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "当前任务未在等待用户决策"
+        }
+      }
+    }
+  ],
+  "deletions": [
+    {
+      "taskId": "d164feb25d2ec113",
+      "title": "生成中英双语放假通知",
+      "ok": true,
+      "status": 200,
+      "response": {
+        "data": {
+          "id": "d164feb25d2ec113"
+        }
+      }
+    },
+    {
+      "taskId": "26f029aabb9a6da1",
+      "title": "企业公告中英双语简版输出",
+      "ok": true,
+      "status": 200,
+      "response": {
+        "data": {
+          "id": "26f029aabb9a6da1"
+        }
+      }
+    },
+    {
+      "taskId": "2da2697272606365",
+      "title": "企业公告中英双语简版转换",
+      "ok": true,
+      "status": 200,
+      "response": {
+        "data": {
+          "id": "2da2697272606365"
+        }
+      }
+    },
+    {
+      "taskId": "9082751feb007177",
+      "title": "企业公告中英双语简版输出",
+      "ok": true,
+      "status": 200,
+      "response": {
+        "data": {
+          "id": "9082751feb007177"
+        }
+      }
+    },
+    {
+      "taskId": "169b604830704ce9",
+      "title": "企业公告中英双语翻译",
+      "ok": true,
+      "status": 200,
+      "response": {
+        "data": {
+          "id": "169b604830704ce9"
+        }
+      }
+    },
+    {
+      "taskId": "b6ff1e2555705937",
+      "title": "售后投诉FAQ与SOP优化及知识沉淀",
+      "ok": true,
+      "status": 200,
+      "response": {
+        "data": {
+          "id": "b6ff1e2555705937"
+        }
+      }
+    },
+    {
+      "taskId": "72d4cdc68fb53ba5",
+      "title": "AI智能体行业近30天趋势简报",
+      "ok": true,
+      "status": 200,
+      "response": {
+        "data": {
+          "id": "72d4cdc68fb53ba5"
+        }
+      }
+    },
+    {
+      "taskId": "cbcfb8fbf3b829b5",
+      "title": "[验证] Free模式tokenUsage测试",
+      "ok": true,
+      "status": 200,
+      "response": {
+        "data": {
+          "id": "cbcfb8fbf3b829b5"
+        }
+      }
+    },
+    {
+      "taskId": "df9a15f6a40164d0",
+      "title": "主流AI Agent开发框架技术选型调研",
+      "ok": true,
+      "status": 200,
+      "response": {
+        "data": {
+          "id": "df9a15f6a40164d0"
+        }
+      }
+    }
+  ],
+  "finalWaiting": [],
+  "finishedAt": "2026-03-02T08:43:29.476Z"
+}

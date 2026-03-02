@@ -1,0 +1,86 @@
+[
+  {
+    "id": "9df0c172c5aa54c7",
+    "type": "tool_call",
+    "taskId": "9699310848e736e0",
+    "subtaskId": "6d344a84a847e411",
+    "employeeId": "041b9fbf937b6a03",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_awb55l5m2ate_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T00:51:07.253Z"
+  },
+  {
+    "id": "a0d07b623047b6af",
+    "type": "tool_call",
+    "taskId": "9699310848e736e0",
+    "subtaskId": "6d344a84a847e411",
+    "employeeId": "041b9fbf937b6a03",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: AI Agents 24 年回顾-五大发展趋势-飞书云文档\nURL: https://aigcreative.feishu.cn/wiki/S8eywixjFiVBmdkluWycXAA2nUf?table=tblMQNZR7ZqmYXaM&view=vewJE2cAnD\nDescription: 本文讨论了 2024 年 AI Agents 的发展情况,涵盖企业应用、基础模型、应用领域、复杂任务应对、基准测试等方面,并对 2025 年进行了展望。关键要点包括: ​\n1.\n企业采用 AI Agents :众多企业和初创公司在产品中使用 Agent,关键在于部署方式,多将 LLM 当作 Wrapper/Orchestrator,虽有效但确保可靠工具仍具挑战。 ​\n2.\nAgent-Native 基础模型 :许多团队建立专为 Agent 设计的基础模型,Agent 能力融入生成模型,模型功能不断进步,如多模态输出等。 ​\n3.\nInterface Agents 成主流 :2024 年 Interface Agents 主导商业 Agent 部署,通过驱动界面完成任务,直接操作用户界面成为主要行动方法。 ​\n4.\n向复杂任务转变与框架兴起 :2024 年从简单 Agent 应用向复杂场景过渡,为应对挑战出现多个 AI 框架,AutoGen 重点是让 Multi-Agent 模式表达更易。 ​\n5.\n端到端的 Agents Benchmarks :2024 年推出基准测试了解自主多 Agent 系统性能,虽有缺陷但仍是重要参考,通用 Agent 应对复杂任务仍有困难。 ​\n6.\n2025 年展望 - 模型能力提升 :更多功能融入模型,如擅长适应性/个性化、高效使用记忆的模型可能出现。 ​\n7.\n2025 年展望 - Agent 架构与市场 :Agent 架构更可靠,分阶段演进;可复用 Agent 和 Agent 市场将兴起 。  ​\n展开\n​\n    \n原文链接:  https://mp.weixin.qq.com/s/xofn2zwg... ​\n公众号: 特工宇宙  ​\n​\n​\n​\n​\n​\n​\n​\n​\n​\nPublished date: 2025-04-16T23:47:25+08:00\nSite name: 飞书官网\n\nTitle: AI Agent市场前景与发展趋势分析\nURL: https://m.blog.csdn.net/weixin_44705554/article/details/146507186\nDescription: AI Agent市场前景与发展趋势分析\n市场规模与增长预测\n根据多家权威机构的预测,AI Agent市场在未来几年将呈现爆发式增长:\nMarkets and Markets预测 :全球AI Agent市场规模将从2024年的51亿美元增至2030年的471亿美元,年复合增长率达44.8%。\nRootanalysis预测 :全球AI Agent市场规模将从2024年的52.9亿美元增长到2035年的2168亿美元,2024-2035年预测期内的复合年增长率为40.15%。\nIDC预测 :到2026年,将有50%的中国500强数据团队使用AI Agent来实现数据准备和分析,并成为重要组织者和协调者。\nGartner预测 :到2028年,至少15%的日常工作决策将通过Agentic AI自主做出,33%的企业软件应用程序也将包含Agentic AI。\n德勤预测 :到2025年,25%使用生成式AI的企业将部署AI Agent,到2027年将增长到50%。\nCapgemini报告 :大多数组织(82%)计划到2026年集成AI Agent,主要用于电子邮件生成、编码和数据分析等任务。\n值得注意的是,在Gartner发布的《2025年十大技术趋势》报告中,\"Agentic AI\"被列为首位,凸显了其在企业数字化转型中的核心地位。\n技术演进路径与突破点预测\nAI Agent的技术演进经历了从规则系统到多模态智能体的发展历程,未来的技术演进路径和突破点主要体现在以下几个方面:\n1. 认知能力的突破\n多模态理解能力 :2024-2025年,以OpenAI GPT-4v、Google Gemini等为代表的多模态大语言模型在视觉理解、上下文推理和任务规划等方面取得显著进展,能够理解复杂的视觉场景并基于视觉输入制定详细的行动计划。\n元认知能力 :AI Agent开始展现出初步的\"元认知\"能力\nPublished date: 2025-03-26T00:50:25+08:00\nSite name: CSDN\n\nTitle: 2025年AI Agent智能体深度分析报告_人工智能_尼古拉斯-大雄-讯飞AI",
+    "isError": false,
+    "durationMs": 433,
+    "createdAt": "2026-03-01T00:51:07.686Z"
+  },
+  {
+    "id": "dfb18d6c6803c0f5",
+    "type": "tool_call",
+    "taskId": "9699310848e736e0",
+    "subtaskId": "6d344a84a847e411",
+    "employeeId": "041b9fbf937b6a03",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_4j3czg66opqd_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T00:51:12.103Z"
+  },
+  {
+    "id": "f494d31d309772cd",
+    "type": "tool_call",
+    "taskId": "9699310848e736e0",
+    "subtaskId": "6d344a84a847e411",
+    "employeeId": "041b9fbf937b6a03",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: Gartner 发布 2025 年十大战略技术趋势.docx\nURL: https://www.modb.pro/doc/143855\nDescription: 3页\n0次\n2025-04-03\n2025 \nGartner\n发布\n2025\nGartner\n研究 副总 裁高 挺(\nArnold Gao\n)表 示: “今 年的 重要 战略 技术 趋势 涵盖 了\nAI\n的必 要事 项和 风险 ,\n以及 计算 技术 和人 机协 同等 前沿 趋势 。追 踪这 些趋 势将 帮助\nIT\n领导 者以 负责 任、 和合 乎道 德的 创新 方式\n塑造企业机构的未来。”\n以下是\n2025\n年重要战略技术趋势。\n代理型\nAI\n(\nAgentic AI\n)\n代理型\nAI\n通过自主规划 和采取行动实 现用户定义的 目标。代理型\nAI\n为实现能够 分担和补充人 类工作的虚\n拟劳动力带 来了希望。\nGartner \n预测,到\n2028\n年,至少\n15%\n的日常工作决 策将由代理型\nAI\n自主做出,\n而\n2024\n年这一比例 为\n0%\n。这项技术的 目标导向型功 能将实现适应 性更强、能够完成 各种任务的软 件系\n统。\n代理 型\nAI\n有望 实 现企 业 首席 信 息官 (\nCIO\n)提 高 生产 力 的愿 望 。这 一 动机 促 使企 业 与厂 商 探 索、 开 创和\n建立能够提供稳健、安全和可信的代理型\nAI\n所需的技术和实践。\nAI\n治理平台(\nAI Governance Platforms\n)\nAI\n治理 平台 是\nGartner\n不断 发展 的\nAI\n信任 、风 险和 安全 管理 (\nTRiSM\n)框 架的 一部 分。\nAI TRiSM\n使企\n业能够管理 其\nAI\n系统的法律 、道德和运营 绩效。这种技 术解决方案能够创 建、管理和执 行负责任的\nAI\n使\n用策略、解释\nAI\n系统的工作原理并提供透明度以建立信任和问责制。\nGartner\n预测 , 到\n2028\n年, 采 用综 合\nAI\n治理 平 台的 企 业将 比 没有 这 类系 统 的企 业 减少\n4\nPublished date: 2025-04-03T08:00:00+08:00\nSite name: 墨天轮\n\nTitle: 《君创资本刘帅：Agentic AI如何重塑2025年科技未来？》\nURL: http://m.sohu.com/a/869104243_121997940/?pvid=000115_3w_a\nDescription: 2025年,全球科技领域将迎来一个关键转折点,Gartner 最近将 Agentic AI 列为 2025 年十大技术趋势之一,并预测到 2028 年,至少有 15% 的日常工作决策将由 Agentic AI 独立完成,而这一比例在 2024 年仍为0。君创资本创始人刘帅表示,Agentic AI的崛起将深刻改变产业格局和人类生活方式,成为未来科技发展的核心推动力。 \nAgentic AI指的是具备自主性和目标导向的人工智能系统,能够在复杂环境中独立完成决策与任务。这种技术突破了传统人工智能的辅助性质,赋予机器“主动性”和“适应性”。例如,在自动驾驶、智能制造、精准医疗等领域,Agentic AI可以根据实时数据优化资源配置,降低成本并提升效率。这不仅推动了技术本身的进化,也为企业创造了巨大的商业价值。 \n近年来,刘帅带领君创资本专注于AI领域的核心技术与前沿应用,投资了包括Tenstorrent、Glean和Arize AI在内的多家新兴企业,这些布局展现了刘帅对AI技术与市场趋势的深刻洞察。 \nTenstorrent 专注高性能AI芯片研发,与AMD、LG、三星等科技巨头建立了战略合作,推动AI芯片在智能设备、云计算和自动驾驶领域的应用,其算力平台为Agentic AI开发提供了重要支持。Glean 是全球领先的AI企业知识搜索平台,将生成式AI与Google Drive、Slack、Salesforce等企业知识库结合,通过检索增强生成技术(RAG)为员工提供精准的自然语言查询结果。Arize AI 成立于2020年,专注AI运行监测,为企业提供AI性能跟踪与故障排查的全流程支持,已获包括红杉资本在内的超过6000万美元融资。 \nAgentic AI的兴起有其深刻的技术与市场逻辑。一方面,数据规模的爆发式增长和算力成本的降低,为这一技术提供了肥沃的土壤;另一方面,企业\nPublished date: 2025-03-11T00:16:00+08:00\nSite name: 手机搜狐网\n\nTitle: 君创资本刘帅:Agentic AI如何定义2025年科技新格局?__商业资讯\nURL: http://www.syzxnews.com/",
+    "isError": false,
+    "durationMs": 382,
+    "createdAt": "2026-03-01T00:51:12.485Z"
+  },
+  {
+    "id": "e26f7ab4a26a45af",
+    "type": "tool_call",
+    "taskId": "9699310848e736e0",
+    "subtaskId": "6d344a84a847e411",
+    "employeeId": "041b9fbf937b6a03",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_bn5icpbfhwr1_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T00:51:19.998Z"
+  },
+  {
+    "id": "2fef0639f56d3704",
+    "type": "tool_call",
+    "taskId": "9699310848e736e0",
+    "subtaskId": "6d344a84a847e411",
+    "employeeId": "041b9fbf937b6a03",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI透露2025年新产品:AGI、Agents、GPT-4o升级版界面新闻 · 快讯\nURL: https://www.jiemian.com/article/12190342.html\nDescription: 12月31日,OpenAI首席执行官山姆·奥特曼公布了2025年OpenAI即将发布的技术产品。分别是:AGI(通用人工智能)、Agents(智能体)、更好的GPT-4o升级版、更好的记忆存储、更好的上下文窗口、成人模式、深度研究特色功能、更好的Sora、更好的个性化定制。\nPublished date: 2025-03-21T19:14:46+08:00\nSite name: 界面新闻\n\nTitle: 深度解析:微软谷歌AI Agent技术革新引领2025行业突破_模型_应用_人工智能\nURL: https://www.sohu.com/a/898344549_121924584\nDescription: 2025-05-24 16:58 在当今人工智能(AI)技术高速发展的背景下,全球科技巨头不断突破创新,推动AI Agent的商业应用迈入新阶段。2025年,微软“Build2025”开发者大会与谷歌I/O2025两大盛会集中展示了AI Agent的最新技术革新,彰显其在深度学习、自然语言处理(NLP)等核心领域的深厚实力与行业领先优势。这些技术的突破不仅深刻改变了传统软件开发范式,更预示着AI在产业中的广泛渗透和深远变革。 微软提出的OpenAgenticWeb愿景,旨在打造一个开放、互联的智能体网络生态系统,推动应用程序由被动执行转向主动交互。这一战略核心在于结合深度学习与强化学习,优化模型训练与推理效率,实现智能体自主学习与适应能力的显著提升。微软的技术架构通过引入超大规模预训练模型(如GPT-5及以上版本),结合多模态数据融合,显著提高了AI Agent在复杂场景中的表现能力。谷歌方面,则宣布其Gemini系列模型全面融入搜索引擎与应用场景,强化自然语言理解与生成能力,提升用户体验的同时,为行业带来深层次的变革。 这些创新技术的背后,是对深度学习算法的不断优化与突破。具体而言,微软与谷歌在模型结构上不断追求参数规模的扩展,从而增强模型的表达能力;在算法层面,通过引入稀疏激活与量化技术,有效降低模型推理成本,满足大规模应用的实时性需求。同时,边缘计算与云端协同的架构设计,确保AI Agent在不同场景下的高效部署与运行,极大地推动了软件即服务(SaaS)向模型即服务(MaaS)的转型升级。 在行业应用层面,AI Agent的落地已开始展现出强大的商业潜力。以企业级市场为例,金蝶国际、用友网络等企业正加快AI驱动的财务、供应链管理系统的部署,提升企业运营效率。与此同时,深信服、鼎捷数智等公司利用AI Agent优化工业自动化、智能制造,获得了显著的成本节约和效率提升\nPublished date: 2025-05-24T16:58:00+08:00\nSite name: 搜狐\n\nTitle: 25年什么样的 Agent 会脱颖而出:简单胜于复杂_agent 将复杂问题简单化-CSDN博客\nURL: https://blog.csdn.net/2401_84204413/article/details/147732207\nDescription: 前言 2025年被视为AI Agent元年,多家科技巨头已明确表态: OpenAI CEO奥特曼预测:\"2025年,第一批AI Agent将加入劳动力大军”微软在2025年AI六大趋势中强调:\"Agent将改变工作形态\"谷歌2025年发布Agent白皮书本文将从四个维度探讨AI Agent的发展: 前沿Agent实例分析 - 深入解析OpenAI两款代表性Agent产品Agent的本质与定义 - 基于Anthropic《Building Effective AI Agents》研究,探讨Agent与工作流(Workflow)的根本区别Agent的核心竞争力 - 以Manus为例,分析Agent领域的技术护城河对算法工程师的启示 - 这波Agent浪潮算法工程师应该要关注哪些方面OpenAI 25 年发布的两款agent 产品 随着各类Agent产品迅速涌入市场,让人目不暇接。看不过来怎么办?很简单,最直接的做法就是关注全球最top的AI公司 OpenAI 的发布动态,通过其发布的产品来洞察Agent未来的发展方向。 一月份 Open AI Operator Operator是openai 发布的第一款 agent 产品。 Operator是一款能够自主操作浏览器完成任务的AI智能代理。它基于名为“计算机使用代理”(Computer-Using",
+    "isError": false,
+    "durationMs": 385,
+    "createdAt": "2026-03-01T00:51:20.383Z"
+  }
+]

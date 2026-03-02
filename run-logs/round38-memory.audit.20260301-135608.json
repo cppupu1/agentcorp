@@ -1,0 +1,100 @@
+{
+  "label": "round38-memory",
+  "sessionId": "round38-memory-20260301-135608",
+  "kind": "memory",
+  "userPrompt": "客服这边一直重复答同样问题，你直接发起处理：按最近一个月投诉整理5条FAQ，并沉淀到知识里。",
+  "pmChatDurationMs": 42395,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "ff2a9ffb249015bb"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 42395
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "ff2a9ffb249015bb"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": false,
+      "status": "failed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": false
+    },
+    {
+      "name": "output_not_too_short",
+      "ok": false,
+      "len": 87
+    },
+    {
+      "name": "memory_faq_shape",
+      "ok": false,
+      "faqHits": 0
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "ff2a9ffb249015bb",
+    "status": "failed",
+    "timedOut": false,
+    "tokenUsage": 0,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "任务执行失败：PM经过 3 次重试仍未完成所有子任务（剩余 1 个）"
+  }
+}

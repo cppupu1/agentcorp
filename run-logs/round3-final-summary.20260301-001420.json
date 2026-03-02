@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-01T00:16:15.832055",
+  "tasks": [
+    {
+      "label": "round3-stock-autostart-r1",
+      "taskId": "838d62b7929680f6",
+      "status": "completed",
+      "tokenUsage": 253756,
+      "subtaskTotal": 1,
+      "toolCallsTotal": 27,
+      "toolErrorsTotal": 0
+    },
+    {
+      "label": "round3-stock-chat-r1",
+      "taskId": "b9a248918ebccc8f",
+      "status": "completed",
+      "tokenUsage": 414420,
+      "subtaskTotal": 4,
+      "toolCallsTotal": 73,
+      "toolErrorsTotal": 0
+    },
+    {
+      "label": "round3-ai-trend-autostart-r1",
+      "taskId": "b62484cabde7eaf9",
+      "status": "completed",
+      "tokenUsage": 149349,
+      "subtaskTotal": 1,
+      "toolCallsTotal": 26,
+      "toolErrorsTotal": 0
+    },
+    {
+      "label": "round3-smoke-autostart-r2",
+      "taskId": "964dc993dc6086ff",
+      "status": "completed",
+      "tokenUsage": 2987,
+      "subtaskTotal": 1,
+      "toolCallsTotal": 0,
+      "toolErrorsTotal": 0
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "e001aa51dd173bdd",
+  "teamId": "59eb9955a6eb3a7c",
+  "teamName": "双语公告创作团队",
+  "title": "企业公告中英双语简版",
+  "description": "将以下企业公告模板输出中英双语简版，保持语义一致：\n\n【企业公告模板】\n致各位尊敬的客户与合作伙伴：\n感谢您长期以来对本公司的信任与支持！为更好地提升服务品质，我司将于2024年12月1日起进行系统升级维护。期间，部分业务可能受到影响，请提前做好安排。如有紧急需求，请联系专属客服。我们将竭诚为您提供不间断服务，对此给您带来的不便深表歉意，敬请谅解。\n\n特此公告。",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "c226595cf7609542",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "08d51a59a6cd0c32",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      },
+      {
+        "id": "12be6b14d8c97d2c",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版",
+        "description": "将以下企业公告模板输出中英双语简版，保持语义一致：\n\n【企业公告模板】\n致各位尊敬的客户与合作伙伴：\n感谢您长期以来对本公司的信任与支持！为更好地提升服务品质，我司将于2024年12月1日起进行系统升级维护。期间，部分业务可能受到影响，请提前做好安排。如有紧急需求，请联系专属客服。我们将竭诚为您提供不间断服务，对此给您带来的不便深表歉意，敬请谅解。\n\n特此公告。",
+        "assigneeId": "08d51a59a6cd0c32",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告中英双语简版的输出任务。子任务[e13eab6637317788]已由视觉设计师执行完毕，输出内容保持了原文语义一致性，中英文版本语气正式规范，符合企业公告文体要求。",
+    "deliverables": "## 企业公告中英双语简版\n\n---\n\n**【中文版】**\n\n致各位尊敬的客户与合作伙伴：\n\n感谢您长期以来对本公司的信任与支持！为更好地提升服务品质，我司将于2024年12月1日起进行系统升级维护。期间，部分业务可能受到影响，请提前做好安排。如有紧急需求，请联系专属客服。我们将竭诚为您提供不间断服务，对此给您带来的不便深表歉意，敬请谅解。\n\n特此公告。\n\n---\n\n**【English Version】**\n\nTo our valued customers and partners:\n\nThank you for your continued trust and support! To better enhance our service quality, our company will be conducting system upgrades and maintenance starting from December 1, 2024. During this period, some business operations may be affected. Please make necessary arrangements in advance. For urgent requests, please contact your dedicated customer service representative. We will continue to provide you with uninterrupted services and sincerely apologize for any inconvenience this may cause. Your understanding is greatly appreciated.\n\nHereby announced.",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T12:22:48.552Z"
+  },
+  "tokenUsage": 7330,
+  "createdAt": "2026-03-01T12:21:46.595Z",
+  "updatedAt": "2026-03-01T12:22:51.322Z",
+  "subtasks": [
+    {
+      "id": "e13eab6637317788",
+      "title": "企业公告中英双语简版",
+      "description": "将以下企业公告模板输出中英双语简版，保持语义一致：\n\n【企业公告模板】\n致各位尊敬的客户与合作伙伴：\n感谢您长期以来对本公司的信任与支持！为更好地提升服务品质，我司将于2024年12月1日起进行系统升级维护。期间，部分业务可能受到影响，请提前做好安排。如有紧急需求，请联系专属客服。我们将竭诚为您提供不间断服务，对此给您带来的不便深表歉意，敬请谅解。\n\n特此公告。",
+      "assigneeId": "08d51a59a6cd0c32",
+      "assigneeName": "视觉设计师",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "## 中英双语企业公告\n\n---\n\n**【中文版】**\n\n致各位尊敬的客户与合作伙伴：\n\n感谢您长期以来对本公司的信任与支持！为更好地提升服务品质，我司将于2024年12月1日起进行系统升级维护。期间，部分业务可能受到影响，请提前做好安排。如有紧急需求，请联系专属客服。我们将竭诚为您提供不间断服务，对此给您带来的不便深表歉意，敬请谅解。\n\n特此公告。\n\n---\n\n**【English Version】**\n\nTo our valued customers and partners:\n\nThank you for your continued trust and support! To better enhance our service quality, our company will be conducting system upgrades and maintenance starting from December 1, 2024. During this period, some business operations may be affected. Please make necessary arrangements in advance. For urgent requests, please contact your dedicated customer service representative. We will continue to provide you with uninterrupted services and sincerely apologize for any inconvenience this may cause. Your understanding is greatly appreciated.\n\nHereby announced.\n\n---\n\n*注：本翻译保持语义一致，语气正式规范，符合企业公告文体要求。*"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 7330,
+      "createdAt": "2026-03-01T12:21:54.633Z",
+      "updatedAt": "2026-03-01T12:22:35.502Z"
+    }
+  ]
+}

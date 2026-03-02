@@ -1,0 +1,85 @@
+{
+  "label": "round24-pm-ai-trend",
+  "sessionId": "round24-ai-20260301-082235",
+  "pmChatDurationMs": 28263,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "d87233e6a0ecf4a1"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 28263
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "d87233e6a0ecf4a1",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 295631,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 28
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 14,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务执行过程中发现严重问题：提交的AI技术行业趋势研究报告时间范围严重偏离任务要求。任务要求整理\"近30天\"（2025年10月22日至2025年11月21日）的AI技术行业趋势，但报告所有数据均为2026年1-2月内容，不符合\"近30天\"的时间要求。经2次尝试重新分配任务修正，但因系统显示任务状态为completed而无法重新执行。未能获得符合任务要求的交付物。"
+    }
+  ]
+}

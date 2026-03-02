@@ -5,11 +5,11 @@ import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { SystemStatusProvider, useSystemStatus } from '@/contexts/SystemStatusContext';
 import { systemApi, notificationsApi } from '@/api/client';
 import {
-  Bell, Languages, Home, Brain, Wrench, Bot, Users, UsersRound,
+  Bell, Languages, Home, Brain, Wrench, Bot, Users, UsersRound, MessageSquarePlus,
   ClipboardList, Timer, ShieldCheck, BookOpen, BarChart3, DollarSign,
   Microscope, AlertTriangle, Rocket, FlaskConical, RefreshCw,
   Settings, HelpCircle, Search, PanelLeftClose, PanelLeft, ChevronDown,
-  Sun, Moon, Monitor,
+  Sun, Moon, Monitor, ClipboardCheck,
 } from 'lucide-react';
 import { useI18n, type TranslationKeys } from '@/i18n';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -36,9 +36,11 @@ import ChangeTestConfigsPage from '@/pages/testing/ChangeTestConfigsPage';
 import TestingPage from '@/pages/testing/TestingPage';
 import HelpPage from '@/pages/help/HelpPage';
 import HrAssistantPage from '@/pages/hr/HrAssistantPage';
+import PmAssistantPage from '@/pages/pm/PmAssistantPage';
 import QualityDashboardPage from '@/pages/quality/QualityDashboardPage';
 import RoiReviewPage from '@/pages/roi/RoiReviewPage';
 import ImprovementPage from '@/pages/improvement/ImprovementPage';
+import ReviewDashboardPage from '@/pages/review/ReviewDashboardPage';
 import PageLayout from '@/components/PageLayout';
 import CommandPalette from '@/components/CommandPalette';
 import ChatDrawer from '@/components/ChatDrawer';
@@ -54,6 +56,7 @@ const navGroups: NavGroup[] = [
     items: [
       { path: '/', labelKey: 'nav.home', icon: Home },
       { path: '/hr', labelKey: 'nav.hr', icon: Bot },
+      { path: '/pm', labelKey: 'nav.pm', icon: MessageSquarePlus },
       { path: '/tasks', labelKey: 'nav.tasks', icon: ClipboardList },
     ],
   },
@@ -81,6 +84,7 @@ const navGroups: NavGroup[] = [
       { path: '/roi', labelKey: 'nav.roi', icon: DollarSign },
       { path: '/improvement', labelKey: 'nav.improvement', icon: Microscope },
       { path: '/incidents', labelKey: 'nav.incidents', icon: AlertTriangle },
+      { path: '/reviews', labelKey: 'nav.reviews', icon: ClipboardCheck },
       { path: '/deployment', labelKey: 'nav.deployment', icon: Rocket },
       { path: '/testing', labelKey: 'nav.testing', icon: FlaskConical },
       { path: '/change-tests', labelKey: 'nav.changeTests', icon: RefreshCw },
@@ -157,17 +161,36 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
 
 function NotificationBell() {
   const [count, setCount] = useState(0);
+  const [prevCount, setPrevCount] = useState(0);
   const navigate = useNavigate();
   const { t } = useI18n();
 
+  // Request browser notification permission on mount
+  useEffect(() => {
+    if ('Notification' in window && Notification.permission === 'default') {
+      Notification.requestPermission().catch(() => {});
+    }
+  }, []);
+
   useEffect(() => {
     const fetchCount = () => {
-      notificationsApi.unreadCount().then(res => setCount(res.data.count)).catch(() => {});
+      notificationsApi.unreadCount().then(res => {
+        const newCount = res.data.count;
+        // Trigger browser notification when unread count increases
+        if (newCount > prevCount && prevCount >= 0 && 'Notification' in window && Notification.permission === 'granted') {
+          new Notification(t('notifications.newNotification'), {
+            body: t('notifications.title'),
+            icon: '/favicon.ico',
+          });
+        }
+        setPrevCount(count);
+        setCount(newCount);
+      }).catch(() => {});
     };
     fetchCount();
     const timer = setInterval(fetchCount, 30000);
     return () => clearInterval(timer);
-  }, []);
+  }, [prevCount, count]);
 
   return (
     <button
@@ -356,12 +379,14 @@ export default function App() {
                   <Route path="/models" element={<ModelsPage />} />
                   <Route path="/tools" element={<ToolsPage />} />
                   <Route path="/hr" element={<HrAssistantPage />} />
+                  <Route path="/pm" element={<PmAssistantPage />} />
                   <Route path="/employees" element={<EmployeesPage />} />
                   <Route path="/employees/new" element={<EmployeeFormPage />} />
                   <Route path="/employees/:id/edit" element={<EmployeeFormPage />} />
                   <Route path="/employees/:id/chat" element={<EmployeeChatPage />} />
                   <Route path="/teams" element={<TeamsPage />} />
                   <Route path="/teams/new" element={<TeamFormPage />} />
+                  <Route path="/teams/:id" element={<TeamFormPage />} />
                   <Route path="/teams/:id/edit" element={<TeamFormPage />} />
                   <Route path="/tasks" element={<TasksPage />} />
                   <Route path="/tasks/new" element={<TaskCreatePage />} />
@@ -370,6 +395,7 @@ export default function App() {
                   <Route path="/quality" element={<QualityDashboardPage />} />
                   <Route path="/roi" element={<RoiReviewPage />} />
                   <Route path="/improvement" element={<ImprovementPage />} />
+                  <Route path="/reviews" element={<ReviewDashboardPage />} />
                   <Route path="/incidents" element={<IncidentsPage />} />
                   <Route path="/incidents/:id" element={<IncidentDetailPage />} />
                   <Route path="/policies" element={<PoliciesPage />} />

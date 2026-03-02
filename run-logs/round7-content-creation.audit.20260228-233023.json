@@ -1,0 +1,44 @@
+{
+  "taskId": "e1fbe8ebdf6794c1",
+  "title": null,
+  "status": "completed",
+  "timedOut": false,
+  "tokenUsage": 3156,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 0,
+  "tools": [],
+  "decisionCount": 6,
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 1
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 1
+    }
+  ],
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成AI会议纪要产品发布文案方案，包含3个吸引力标题、完整结构化大纲以及多渠道发布策略建议。文案突出了产品的核心价值（效率提升80%、智能自动纪要、零遗漏记录），结构化大纲涵盖了从痛点引入到行动召唤的完整营销逻辑，渠道发布建议覆盖了微信、知乎、短视频、B站等多个平台，并提供了各平台内容调整策略和最佳发布时间。方案专业、逻辑清晰、可执行性强。"
+}

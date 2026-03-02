@@ -1,6 +1,7 @@
 import type { FastifyInstance } from 'fastify';
 import { AppError } from '../errors.js';
 import * as systemService from '../services/system.js';
+import { resetBuiltinEmployees } from '../services/builtin-employees.js';
 
 export function registerSystemRoutes(app: FastifyInstance) {
   // Get system status
@@ -42,5 +43,15 @@ export function registerSystemRoutes(app: FastifyInstance) {
     }
     systemService.updateSetting(req.params.key, String(value));
     return { data: { key: req.params.key, value: String(value) } };
+  });
+
+  // Reset employees and teams to factory defaults
+  app.post<{ Body: { confirm: string } }>('/api/system/reset-employees', async (req) => {
+    const { confirm } = req.body ?? {};
+    if (confirm !== 'RESET') {
+      throw new AppError('VALIDATION_ERROR', '请传入 confirm: "RESET" 以确认操作');
+    }
+    const result = await resetBuiltinEmployees();
+    return { data: result };
   });
 }

@@ -236,6 +236,18 @@ function renderMarkdownToDocx(markdown: string): (Paragraph | Table)[] {
       case 'hr':
         els.push(new Paragraph({ border: { bottom: { style: BorderStyle.SINGLE, size: 1, color: '999999' } }, text: '' }));
         break;
+      case 'blockquote': {
+        const inner = (tok as Tokens.Blockquote).tokens;
+        for (const child of inner) {
+          if ('tokens' in child) {
+            els.push(new Paragraph({
+              children: [new TextRun({ text: '│ ', color: '999999' }), ...docxRunsFromInline((child as any).tokens)],
+              indent: { left: 400 },
+            }));
+          }
+        }
+        break;
+      }
       case 'space':
         els.push(new Paragraph({ text: '' }));
         break;
@@ -336,10 +348,22 @@ async function generateDocx(task: TaskData) {
   if (task.brief) {
     const b = task.brief as any;
     children.push(new Paragraph({ text: 'Task Brief', heading: HeadingLevel.HEADING_1 }));
-    if (b.objective) children.push(new Paragraph({ children: [new TextRun({ text: 'Objective: ', bold: true }), new TextRun(b.objective)] }));
-    if (b.deliverables) children.push(new Paragraph({ children: [new TextRun({ text: 'Deliverables: ', bold: true }), new TextRun(b.deliverables)] }));
-    if (b.constraints) children.push(new Paragraph({ children: [new TextRun({ text: 'Constraints: ', bold: true }), new TextRun(b.constraints)] }));
-    if (b.acceptanceCriteria) children.push(new Paragraph({ children: [new TextRun({ text: 'Acceptance Criteria: ', bold: true }), new TextRun(b.acceptanceCriteria)] }));
+    if (b.objective) {
+      children.push(new Paragraph({ children: [new TextRun({ text: 'Objective', bold: true })] }));
+      children.push(...renderMarkdownToDocx(b.objective));
+    }
+    if (b.deliverables) {
+      children.push(new Paragraph({ children: [new TextRun({ text: 'Deliverables', bold: true })] }));
+      children.push(...renderMarkdownToDocx(b.deliverables));
+    }
+    if (b.constraints) {
+      children.push(new Paragraph({ children: [new TextRun({ text: 'Constraints', bold: true })] }));
+      children.push(...renderMarkdownToDocx(b.constraints));
+    }
+    if (b.acceptanceCriteria) {
+      children.push(new Paragraph({ children: [new TextRun({ text: 'Acceptance Criteria', bold: true })] }));
+      children.push(...renderMarkdownToDocx(b.acceptanceCriteria));
+    }
     children.push(new Paragraph({ text: '' }));
   }
 
@@ -347,8 +371,14 @@ async function generateDocx(task: TaskData) {
   const result = task.result as any;
   if (result) {
     children.push(new Paragraph({ text: 'Task Result', heading: HeadingLevel.HEADING_1 }));
-    if (result.summary) children.push(new Paragraph({ children: [new TextRun({ text: 'Summary: ', bold: true }), new TextRun(result.summary)] }));
-    if (result.deliverables) children.push(...renderMarkdownToDocx(result.deliverables));
+    if (result.summary) {
+      children.push(new Paragraph({ children: [new TextRun({ text: 'Summary', bold: true })] }));
+      children.push(...renderMarkdownToDocx(result.summary));
+    }
+    if (result.deliverables) {
+      children.push(new Paragraph({ children: [new TextRun({ text: 'Deliverables', bold: true })] }));
+      children.push(...renderMarkdownToDocx(result.deliverables));
+    }
     if (result.completedAt) children.push(new Paragraph({ children: [new TextRun({ text: 'Completed: ', bold: true }), new TextRun(fmtDate(result.completedAt))] }));
     children.push(new Paragraph({ text: '' }));
   }
@@ -361,10 +391,13 @@ async function generateDocx(task: TaskData) {
       children.push(new Paragraph({
         children: [
           new TextRun({ text: `${st.title}`, bold: true }),
-          new TextRun(`  [${statusText(st.status)}]  ${st.assigneeName || '-'}${out ? '  — ' + out : ''}`),
+          new TextRun({ text: `  [${statusText(st.status)}]  ${st.assigneeName || '-'}`, color: '666666' }),
         ],
         bullet: { level: 0 },
       }));
+      if (out) {
+        children.push(...renderMarkdownToDocx(out));
+      }
     }
   }
 

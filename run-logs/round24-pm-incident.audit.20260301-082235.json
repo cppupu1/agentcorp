@@ -1,0 +1,81 @@
+{
+  "label": "round24-pm-incident",
+  "sessionId": "round24-incident-20260301-082235",
+  "pmChatDurationMs": 23140,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "d49c774ca7769185"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 23140
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 3
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "d49c774ca7769185",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 43969,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_ai_search",
+          "count": 10
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n支付接口故障复盘分析已完成。安全审计员针对支付接口故障进行了全面深入的分析，输出了包含根因分析、止损动作和预防清单三个核心部分的详细报告。报告涵盖了网络、数据库、第三方渠道、代码逻辑、配置、安全等多个技术维度，并提供了具体的应急响应措施和可落地的预防方案，内容条理清晰、实用性强，便于技术团队参考执行。"
+    }
+  ]
+}

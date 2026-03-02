@@ -1,0 +1,70 @@
+{
+  "label": "round33-b01-memory",
+  "sessionId": "round33-b01-memory-20260301-112811",
+  "kind": "memory",
+  "pmChatDurationMs": 27063,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "00237fb9e74cba13"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 27063
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "00237fb9e74cba13",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 150437,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。客服专员已完成最近一个月售后投诉问题的分析整理，输出5条常见问题FAQ（简版），并成功沉淀为知识条目。投诉TOP5问题类型为：退款问题(33.1%)、发货延迟(24.9%)、商品质量(20.0%)、客服服务(14.9%)、物流配送(7.1%)。知识库已更新8个实体。"
+  }
+}

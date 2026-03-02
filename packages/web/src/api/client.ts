@@ -55,6 +55,10 @@ export const toolsApi = {
   delete: (id: string) => request<{ data: { id: string } }>(`/tools/${id}`, { method: 'DELETE' }),
   test: (id: string) => request<ToolTestResult>(`/tools/${id}/test`, { method: 'POST' }),
   groups: () => request<{ data: string[] }>('/tools/groups'),
+  toggle: (id: string, enabled: boolean) =>
+    request<{ data: Tool }>(`/tools/${id}/toggle`, { method: 'POST', body: JSON.stringify({ enabled }) }),
+  probe: (body: { url: string; transportType?: string; envVars?: Record<string, string> }) =>
+    request<{ success: boolean; tools: Array<{ name: string; description: string }>; message?: string }>('/tools/probe', { method: 'POST', body: JSON.stringify(body) }),
 };
 
 // Employees
@@ -80,6 +84,8 @@ export const employeesApi = {
     }),
   growthStats: () => request<{ data: Array<{ employeeId: string; overallScore: number | null; taskCount: number }> }>('/employees/growth-stats'),
   statuses: () => request<{ data: Array<{ employeeId: string; status: 'idle' | 'working' | 'waiting' }> }>('/employees/statuses'),
+  autoAssignTools: () => request<{ data: { employeeCount: number; totalAssigned: number; results: Array<{ employeeId: string; tools: string[]; count: number }> } }>('/employees/auto-assign-tools', { method: 'POST' }),
+  autoAssignToolsSingle: (id: string) => request<{ data: { employeeId: string; assignedTools: string[]; count: number } }>(`/employees/${id}/auto-assign-tools`, { method: 'POST' }),
 };
 
 // Types
@@ -90,6 +96,8 @@ export interface Model {
   modelId: string;
   notes: string;
   status: string;
+  inputPricePerMToken?: number | null;
+  outputPricePerMToken?: number | null;
   createdAt: string;
   updatedAt: string;
 }
@@ -117,6 +125,7 @@ export interface Tool {
   args: string[];
   groupName: string | null;
   accessLevel: string;
+  enabled: boolean;
   status: string;
   createdAt: string;
   updatedAt: string;
@@ -374,6 +383,8 @@ export const tasksApi = {
     request<{ data: TaskDetail }>(`/tasks/${id}/pause`, { method: 'POST', body: JSON.stringify({ reason }) }),
   submitDecision: (id: string, decision: string, subtaskId?: string) =>
     request<{ data: { success: boolean } }>(`/tasks/${id}/decision`, { method: 'POST', body: JSON.stringify({ decision, subtaskId }) }),
+  quickCreate: (body: { templateId: string; modelId: string; description: string; mode?: string; teamName?: string }) =>
+    request<{ data: TaskDetail }>('/tasks/quick-create', { method: 'POST', body: JSON.stringify(body) }),
 };
 
 // Notifications
@@ -426,6 +437,8 @@ export const systemApi = {
       method: 'PUT',
       body: JSON.stringify({ value }),
     }),
+  resetEmployees: () =>
+    request<{ data: { employees: number; teams: number } }>('/system/reset-employees', { method: 'POST', body: JSON.stringify({ confirm: 'RESET' }) }),
 };
 
 // Cost
@@ -700,6 +713,16 @@ export const knowledgeApi = {
     request<{ data: { id: string } }>(`/knowledge-bases/${id}`, { method: 'DELETE' }),
   addDocument: (kbId: string, body: { title: string; content: string }) =>
     request<{ data: KnowledgeDocument }>(`/knowledge-bases/${kbId}/documents`, { method: 'POST', body: JSON.stringify(body) }),
+  uploadDocument: async (kbId: string, file: File) => {
+    const formData = new FormData();
+    formData.append('file', file);
+    const res = await fetch(`${BASE}/knowledge-bases/${kbId}/upload`, { method: 'POST', body: formData });
+    const text = await res.text();
+    let json: any;
+    try { json = JSON.parse(text); } catch { throw new ApiError({ code: 'NETWORK_ERROR', message: `Server error (${res.status})` }); }
+    if (!res.ok) { const err = json.error || { code: 'INTERNAL_ERROR', message: res.statusText }; throw new ApiError(err); }
+    return json as { data: KnowledgeDocument };
+  },
   getDocument: (kbId: string, docId: string) =>
     request<{ data: KnowledgeDocument }>(`/knowledge-bases/${kbId}/documents/${docId}`),
   deleteDocument: (kbId: string, docId: string) =>
@@ -992,6 +1015,7 @@ export interface HrChatMessage {
 }
 
 export const hrAssistantApi = {
+  status: () => request<{ data: { configured: boolean; modelId?: string; modelName?: string | null } }>('/hr-assistant/status'),
   listSessions: () => request<ChatSession[]>('/hr-assistant/sessions'),
   getMessages: (sessionId: string) => request<HrChatMessage[]>(`/hr-assistant/${sessionId}/messages`),
   deleteSession: (sessionId: string) => request<{ sessionId: string }>(`/hr-assistant/${sessionId}`, { method: 'DELETE' }),
@@ -1169,4 +1193,58 @@ export const improvementApi = {
     request<{ data: { id: string; status: string } }>(`/improvement-proposals/${id}/reject`, { method: 'POST' }),
   apply: (id: string) =>
     request<{ data: { id: string; status: string } }>(`/improvement-proposals/${id}/apply`, { method: 'POST' }),
+};
+
+// PM Assistant
+export const pmAssistantApi = {
+  status: () => request<{ data: { configured: boolean; modelId?: string; modelName?: string | null } }>('/pm-assistant/status'),
+  listSessions: () => request<ChatSession[]>('/pm-assistant/sessions'),
+  getMessages: (sessionId: string) => request<HrChatMessage[]>(`/pm-assistant/${sessionId}/messages`),
+  deleteSession: (sessionId: string) => request<{ sessionId: string }>(`/pm-assistant/${sessionId}`, { method: 'DELETE' }),
+};
+
+// Task Review
+export interface TaskReviewFinding {
+  id: string;
+  reviewId: string;
+  taskId?: string;
+  taskTitle?: string;
+  title: string;
+  description: string;
+  category: string;
+  severity: string;
+  suggestion: string | null;
+  createdAt: string;
+}
+
+export interface TaskReview {
+  id: string;
+  taskId: string;
+  status: string;
+  summary: string | null;
+  findings: TaskReviewFinding[];
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface ReviewStats {
+  totalReviews: number;
+  totalFindings: number;
+  bySeverity: Array<{ severity: string; count: number }>;
+  byCategory: Array<{ category: string; count: number }>;
+}
+
+export const taskReviewApi = {
+  getByTask: (taskId: string) => request<{ data: TaskReview }>(`/tasks/${taskId}/review`),
+  trigger: (taskId: string) => request<{ data: TaskReview }>(`/tasks/${taskId}/review`, { method: 'POST' }),
+  listFindings: (opts?: { category?: string; severity?: string; limit?: number; offset?: number }) => {
+    const qs = new URLSearchParams();
+    if (opts?.category) qs.set('category', opts.category);
+    if (opts?.severity) qs.set('severity', opts.severity);
+    if (opts?.limit) qs.set('limit', String(opts.limit));
+    if (opts?.offset) qs.set('offset', String(opts.offset));
+    const q = qs.toString();
+    return request<{ data: { findings: TaskReviewFinding[]; total: number } }>(`/reviews/findings${q ? `?${q}` : ''}`);
+  },
+  getStats: () => request<{ data: ReviewStats }>('/reviews/stats'),
 };

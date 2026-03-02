@@ -1,0 +1,105 @@
+{
+  "taskId": "a88cf30c0cc7b217",
+  "topDomains": [
+    {
+      "domain": "www.cnblogs.com",
+      "count": 3,
+      "example": "https://www.cnblogs.com/dc-s/p/19581944"
+    },
+    {
+      "domain": "www.sohu.com",
+      "count": 2,
+      "example": "https://www.sohu.com/a/990135880_178408"
+    },
+    {
+      "domain": "k.sina.com.cn",
+      "count": 2,
+      "example": "https://k.sina.com.cn/article_7879848900_1d5acf3c401902r22w.html"
+    },
+    {
+      "domain": "www.163.com",
+      "count": 2,
+      "example": "https://www.163.com/tech/article/KL2Q9O0M00097U7T.html"
+    },
+    {
+      "domain": "paper.medlive.cn",
+      "count": 2,
+      "example": "https://paper.medlive.cn/literature/4224849"
+    },
+    {
+      "domain": "csai.org",
+      "count": 1,
+      "example": "https://csai.org/cal-for-papers.html"
+    },
+    {
+      "domain": "natlawreview.com",
+      "count": 1,
+      "example": "https://natlawreview.com/article/state-funding-market-ai-companies-2024-2025-outlook"
+    },
+    {
+      "domain": "edtechasia.com",
+      "count": 1,
+      "example": "https://edtechasia.com/"
+    },
+    {
+      "domain": "www.wccct.org",
+      "count": 1,
+      "example": "https://www.wccct.org/"
+    },
+    {
+      "domain": "www.euaiact.com",
+      "count": 1,
+      "example": "https://www.euaiact.com/"
+    },
+    {
+      "domain": "www.statestreet.com",
+      "count": 1,
+      "example": "https://www.statestreet.com/us/en/insights/digital-digest-march-2025-digital-assets-ai-regulation"
+    },
+    {
+      "domain": "www.lasso.security",
+      "count": 1,
+      "example": "https://www.lasso.security/blog/enterprise-ai-security-predictions-2026"
+    },
+    {
+      "domain": "www.grandviewresearch.com",
+      "count": 1,
+      "example": "https://www.grandviewresearch.com/industry-analysis/artificial-intelligence-ai-inference-market-report"
+    },
+    {
+      "domain": "report.iimedia.cn",
+      "count": 1,
+      "example": "https://report.iimedia.cn/repo3-0/73637.html?acPlatCode=imw&acFrom=recomBar&iimediaId=109827"
+    },
+    {
+      "domain": "www.statista.com",
+      "count": 1,
+      "example": "https://www.statista.com/forecasts/1474143/global-ai-market-size"
+    },
+    {
+      "domain": "www.marketsandmarkets.com",
+      "count": 1,
+      "example": "https://www.marketsandmarkets.com/Market-Reports/extracorporeal-membrane-oxygenation-systems-market-255167654.html"
+    },
+    {
+      "domain": "github.com",
+      "count": 1,
+      "example": "https://github.com/Osilly/dynamic_llava"
+    },
+    {
+      "domain": "blog.csdn.net",
+      "count": 1,
+      "example": "https://blog.csdn.net/c_cpp_csharp/article/details/158008292"
+    },
+    {
+      "domain": "arxiv.org",
+      "count": 1,
+      "example": "https://arxiv.org/pdf/2311.07594.pdf"
+    },
+    {
+      "domain": "news.qq.com",
+      "count": 1,
+      "example": "https://news.qq.com/rain/a/20260206A01LUM00"
+    }
+  ]
+}

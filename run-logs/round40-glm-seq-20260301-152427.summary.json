@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-03-01T15:24:27.437132Z",
+  "runLabel": "round40-glm-seq-20260301-152427",
+  "sessions": [
+    {
+      "label": "round40-stock",
+      "sessionId": "round40-stock-20260301-152427",
+      "kind": "stock",
+      "evidence": "run-logs/round40-stock.audit.20260301-152427.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round40-ai",
+      "sessionId": "round40-ai-20260301-152427",
+      "kind": "ai",
+      "evidence": "run-logs/round40-ai.audit.20260301-152427.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round40-memory",
+      "sessionId": "round40-memory-20260301-152427",
+      "kind": "memory",
+      "evidence": "run-logs/round40-memory.audit.20260301-152427.json",
+      "allChecksPassed": true
+    },
+    {
+      "label": "round40-translation",
+      "sessionId": "round40-translation-20260301-152427",
+      "kind": "translation",
+      "evidence": "run-logs/round40-translation.audit.20260301-152427.json",
+      "allChecksPassed": true
+    }
+  ],
+  "totals": {
+    "sessions": 4,
+    "checksPassed": 4,
+    "checksFailed": 0
+  }
+}

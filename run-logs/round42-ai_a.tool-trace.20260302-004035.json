@@ -1,0 +1,310 @@
+[
+  {
+    "id": "33ebbd98d67ee1e8",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_68608261928b4a428d219a37"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:45:49.994Z"
+  },
+  {
+    "id": "84fc2dcc0f0f3649",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年AI大模型发展现状、商业化关键及未来应用前景分析报告_数据局\nURL: http://www.shujuju.cn/lecture/detail/33452\nDescription: 关注数据局微信公众号,击数据局公众号“ 报告下载 ”菜单,获取网盘链接下载。 或者加入 数据局知识星球 ,获取更加优质的服务: 附件下载\nPublished date: 2025-01-14T16:28:34+08:00\nSite name: www.shujuju.cn\n\nTitle: 2025年AI大模型发展现状、商业化关键及未来应用前景分析报告-CSDN博客\nURL: https://blog.csdn.net/kymdidicom/article/details/145195289\nDescription: 互联互通社区 于2025-01-16 08:17:07 发布 尽管2024年以来,全球可获取的训练数据有限,OpenAI GPT-5发布延期等事件引发了业内对大模型性能迭代放缓的质疑,但AI大模型的性能仍在持续提升。根据Scaling Law,大模型的性能与计算量、参数规模和数据量密切相关。虽然训练数据端的边际效益逐渐放缓,但通过合成数据和推理阶段的创新,大模型的性能增长潜力依然强劲。 OpenAI、Anthropic和Meta等大模型厂商正在积极探索合成数据方向。OpenAI的o1模型通过高质量的合成数据降低模型错误率,Anthropic的Claude 3.5 Sonnet在多个测试中表现优于GPT-4o。Meta的Llama 3.1 405B模型在约15万亿tokens的公开数据上进行训练,微调数据涵盖了超过2500万个合成数据示例。 关注公众号:【互联互通社区】,回复【AI542】获取全部报告内容。 以下是报告部分内容 人工智能 关注互联互通社区公众号,回复以下编号,可快速下载相关专题报告合辑。 AI001:人工智能核心技术产业白皮书 AI002:2021爱分析人工智能应用趋势报告 AI003:人工智能数据安全风险与治理 AI004:2020年人工智能十大技术进展 AI005:2020中国人工智能厂商全景报告 AI006:2020年中国人工智能商业落地 AI007:新一代人工智能白皮书 AI008:人工智能未来制胜之道 AI009:人工智能新基建发展白皮书 AI010:腾讯人工智能白皮书 AI011:5GAI典型案例 AI012:AI+高等教育发展与应用白皮书 AI013:中国AI+零售行业发展研究报告 AI014:百度大脑AI技术成果白皮书 AI015:AI产业全景图 AI016:2020中国AI中台应用趋势报告 AI017:2021AI智能制造研究报告 A\nPublished date: 2025-01-16T08:17:07+08:00\nSite name: CSDN\n\nTitle: AI 大模型 2025 年行业展望及重点公司介绍\nURL: https://xueqiu.com/6820181813/320252939\nDescription: 一 2025 年 AI 大模型行业展望\n1 技术方面 技术创新将持续推进 原生统一多模态 强化学习等技术将得到更多关注和应用 模型性能和泛化能力有望进一步提升\nPublished date: 2025-01-13T16:28:00+08:00\nSite name: 雪球\n\nTitle: OpenAI 12 Days,人类距离 AGI 再近一步2024.pdf-原创力文档\nURL: https://max.book118.com/html/2025/0111/7033104026010022.shtm\nDescription: 一、综述 1、大模型技术进展与应用前景 杂的数学测试中取得了重大突破。GTCO则致力于探索多模态融 合的大一统模型,旨在提高大模型的治理水平,尽管其应用场景 仍受限制。 文,为用户提供精准反馈,尤其适用于编写代码时的即时帮助。 Sauer通过Al辅助视频制作,大幅提升了创作效率和技术要求。 度,还增强了视频内容的准确性和灵活性。这些进展共同推动了 AGI的发展,预示着人类距离实现AGI更近一步。 2、OpenR平台的技术革新与市场展望 成、对话模型、代码编程辅助、推理逻辑强化及高级视频语音模 限视频生成。 高亮显示和执行编程任务。强化微调方面,通过引入专业数据对 模型进行优化,提升了推理能力。此外,平台还具备实时视频动 1 工具和应用,并在多个领域如办公、网络、医疗、电商等提供创 新解决方案。市场前景乐观,预计将在明年带来显著的性能提升 和功能扩展。 二、QA Q:如何评估大模型在认知能力提升方面的瓶颈? A:大模型在认知能力",
+    "isError": false,
+    "durationMs": 892,
+    "createdAt": "2026-03-02T00:45:50.887Z"
+  },
+  {
+    "id": "b7943ecc0e494937",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_dc8aa0da8da04880bf6195bb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:45:56.863Z"
+  },
+  {
+    "id": "348b47e796cdb3d7",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 最新公告\nURL: https://gs.jnu.edu.cn/4118/list1.psp\nDescription: 关于2025年国家公派研究生出国留学项目材料提交的补充说明 2025-01-17 关于2024-2025学年度第2学期研究生选课相关事项的指引 2025-01-15 关于做好2025年春季学期研究生开学注册工作的通知 2025-01-14 关于做好2025年国家公派研究生出国留学项目选派工作的通知 2025-01-07 AI赋能研究生科研能力提升系列讲座(三)—— Web of Science RA研究助手在科研探索中的价值及应用 2025-01-05 AI赋能研究生科研能力提升系列讲座第二期 ——如何用 AIGC 为你的科研提效? 2024-12-19 AI赋能研究生科研能力提升系列讲座的意向报名通知 2024-12-13 关于2024-2025学年第2学期申请公共课免修(免考)的工作通知 2024-12-04 关于加强研究生培养过程管理工作的通知 2024-12-03 关于公布2024年暨南大学博士研究生拔尖创新人才培养项目立项名单的通知 2024-12-03\nPublished date: 2025-01-17T08:00:00+08:00\nSite name: 暨南大学\n\nTitle: AI新品发布报告.pptx - 人人文库\nURL: https://www.renrendoc.com/paper/379512308.html\nDescription: IP属地:四川 上传时间:2025-01-12 已阅读5页,还剩28页未读 , 继续免费阅读 版权说明:本文档由用户提供并上传,收益归属内容提供方,若内容存在侵权,请进行举报或认领 文档简介 AI新品 发布报告展望未来,体验智能生活日期:20XX.XX汇报人:XXX目录AI技术的发展与趋势AI技术发展回顾01AI领域的公司研发AI研发实力展示02新产品的详细介绍新产品性能参数介绍03新产品的核心优势新产品核心优势剖析04发展前景和合作邀请未来发展前景展望0501.AI技术的发展与趋势AI技术发展回顾AI的发展历史机器学习通过训练模型实现智能决策和预测自然语言处理使机器能够理解和处理人类语言深度学习模仿人脑神经网络结构,实现更高级的智能任务计算能力提升硬件技术的进步为AI的发展提供强有力的支持从机器学习到深度学习,AI技术不断演进,推动智能化生活。大数据驱动海量数据为AI提供更准确的学习和分析基础AI的历史回顾AI发展概况与趋势介绍AI技术的发展现状和未来趋势AI技术未来趋势AI将从\"智能化\"向\"感知化\"、\"认知化\"发展AI应用探索AI正在广泛应用于各个领域现阶段AI的发展从探索到应用,AI发展进入快速阶段现阶段AI的发展AI系统将能够自主学习和提升自主学习AI技术将与人类合作,实现更高效的工作人机融合AI技术将在各行各业引发颠覆性的变革行业颠覆AI技术的未来趋势了解AI技术的未来发展趋势AI技术的未来趋势-未来已来AI技术应用广泛,改变人们生活AI技术的应用前景医疗健康AI技术在医疗诊断、个性化治疗等方面的应用,提升了医疗水平和患者体验。01智能交通AI技术在交通领域的应用可以实现交通流量优化、智能驾驶等,提高交通效率和安全性。02金融服务AI技术在金融领域的应用可以提供智能风险评估、个性化理财等服务,为用户提供更好的金融体验。03教育领域AI技术在教育\nPublished date: 2025-01-12T12:04:24+08:00\nSite name: 人人文库\n\nTitle: 创新品牌网\nURL: https://old.kjcxpp.com/3g/list.asp?id=1863\nDescription: 首页 看点 人物 视觉 活动 品牌展示 品牌展示 创新成果 科技人才 奇思妙想 专利推荐 期刊 2024年 2023年 2022年 2021年 2020年 2019年 2018年 2017年 2016年 2015年 2014年 2013年 2012年 2011年 2010年 2009年 2008年 2007年 电子杂志 2024年 2023年 2022年 2021年 2020年 2019年 2018年 2017年 2016年 2015年 2014年 2013年 2012年 企业科协 关于我们 搜索\nPublished date: 2025-01-18T14:02:01+08:00\nSite name: old.kjcxpp.com\n\nTitle: Profile-AI-EXPO\nURL: https://en.ai-expo.org.cn/?about/38\nDescription: In respons",
+    "isError": false,
+    "durationMs": 451,
+    "createdAt": "2026-03-02T00:45:57.314Z"
+  },
+  {
+    "id": "d2eb426b9dfea57a",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_09a339200e1d4cd1867d0300"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:45:57.526Z"
+  },
+  {
+    "id": "061241b7eeff7f80",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年1月17日发布的政策法规_政策法规_食品法规中心_食品伙伴网\nURL: http://law.foodmate.net/rule/pub-2025-1-17.html\nDescription: 按发布年份浏览 按发布月份浏览 2025 年 1月 2月 3月 4月 5月 6月 按发布日期浏览 << >> 2025 年 8 月 日 一 二 三 四 五 六\nPublished date: 2025-01-17T15:07:52+08:00\nSite name: 食品伙伴网\n\nTitle: 资讯服务\nURL: https://www.b-chem.com/chem-info-web/InfomationExhibition/nametoSection?type=1\nDescription: 2025-01-16 2025-01-14 2025-01-10 2025-01-09 2021-12-21 2020-08-17 2020-04-22 2019-02-12 2018-12-03 2018-10-10 2018-10-09 2018-01-08 2017-12-13 2017-12-04 2018-10-10 2018-10-10 2018-10-09 2017-12-11 2017-11-30 2025-01-14 2025-01-02 2024-12-25 2024-11-25 2024-10-25 2020-08-18 2018-12-13 2018-12-13 2018-11-27 2018-11-01 2017-11-21 2017-11-08 2017-11-07 2017-11-03 2017-11-02 2018-05-15 2018-01-08 2017-12-11 2017-12-04 2017-11-30 2024-12-26 2024-11-27 2024-10-28 2024-08-28 2024-07-26 2019-01-04 2018-12-13 2018-11-01 2018-11-01 2018-10-09 2017-11-21 2017-11-14 2017-11-08 2017-11-03 2017-11-02 2018-01-08 2017-12-11 2017-12-04 2017-11-28 2017-11-27 2025-01-16 2024-12-26 2024-12-25 2024-12-25 2024-12-25 2018-12-13 2018-08-13 2018-08-13 2018-08-13 2018-08-02 2023-07-25 2023-07-25 2023-06-27 2023-06-\nPublished date: 2025-01-16T08:25:51+08:00\nSite name: www.b-chem.com\n\nTitle: 无标题\nURL: http://www.sas.com/fi_fi/news/media-coverage/_jcr_content/par/tabwrapper_e2f3/tabwrapperpar/tab_12b4/tabpar/styledcontainer_9f8e/par/listgroup_f335.ajaxlist.html\nDescription: The Top Information Management Trends for 2025 DBTA 9. tammikuuta 2025 In 2025, AI Winners Will Focus on These Three Trends Techstrong.ai 9. tammikuuta 2025 The Top 2025 Generative AI Predictions BigDATAwire 9. tammikuuta 2025 Digital transformation 2025: What’s in, what’s out CIO 7. tammikuuta 2025 Trendspotting: Predictions for Bio-IT World in 2025 BioIT World 7. tammikuuta 2025 Healthcare AI Tools – 2025 Health IT Predictions Healthcare IT Today 7. tammikuuta 2025 Quantum AI 2025: Industry Leaders Weigh in on the Year Ahead AI Business 6. tammikuuta 2025 Get Going With Gi",
+    "isError": false,
+    "durationMs": 263,
+    "createdAt": "2026-03-02T00:45:57.789Z"
+  },
+  {
+    "id": "fc3e9ec6ce8194ee",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_a2a856caa25c4f9292a346fc"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:46:00.411Z"
+  },
+  {
+    "id": "e968bf5bac8a3b22",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI 据悉正在开发“操作员”智能体,有望在 2025 年1月正式推出;_openai2025年1月-CSDN博客\nURL: https://blog.csdn.net/weixin_41429382/article/details/145084833\nDescription: OpenAI 确实正在开发名为“操作员”(Operator)的智能体,并计划在2025年1月正式推出。这款智能体具备独立控制计算机并执行多样化任务的能力,标志着人工智能技术向主动接触...\nPublished date: 2025-01-12T02:24:47+08:00\nSite name: CSDN\n\nTitle: AI军备竞赛下的技术创新与市场机遇:2025年全球科技动态分析_OpenAI_创作_工具\nURL: https://www.sohu.com/a/848676514_121902920\nDescription: 2025年1月14日,国际科技界又一次经历了引人注目的动态,特别是在人工智能(AI)领域的最新发展上。OpenAI发布了一份名为“OpenAI经济蓝图”的重要文件,详细阐述了如何确保美国在全球AI“军备竞赛”中保持领先地位,同时其他科技巨头如英伟达却面临技术挑战。本文将系统分析这些信息,探讨AI工具如何优化创作过程,以及如何把握AI带来的新机遇。\nPublished date: 2025-01-14T07:54:00+08:00\nSite name: 搜狐\n\nTitle: 科技前沿  2025年,人工智能如何进化\nURL: http://www.ruijingcnc.com/article/2/89.html\nDescription: 人工智能(AI)近两年的发展具有“大”和“多”的鲜明特征,大模型的参数规模越来越大,文图视等方面的多模态能力也越来越强。2025年,它又将如何进化? 从全球业界发展趋(qū)势(shì)看(kàn),AI将(jiāng)具(jù)备(bèi)更(gèng)强(qiáng)的(de)推(tuī)理(lǐ)能(néng)力(lì),各(gè)形(xíng)态(tài)智(zhì)能(néng)体(tǐxíng)不(bù)再(zài)简(jiǎn)单(dān)竞(jìng)争(zhēng)参(cān)数(shù)规(guī)模(mó),而是将兼具文字图片视频等不同能力的多模态作为重要发力点。美国开放人工(gōng)智(zhì)能(néng)研究(jiū)中(zhōng)心(xīn)(OpenAI)的(de)文生(shēng)(shēng)视(shì)(shì)频(pín)(pín)大(dà)(dà)模(mó)型(xíng)Sora在(zài)2024年2月面世就惊艳世界,正式版已于12月向用户开放。 美国谷歌公司近期发布的《2025年AI商业趋(qū)势(shì)报(bào)告(gào)》预(yù)测(cè),2025年(nián)多(duō)模(mó)态(tài)AI将(jiāng)成(chéng)为企业采用AI的(de)主要(yào)驱(qū)动(dòng)力(lì),助力改善客户体验,提高运营(yíng)效(xiào)率(lǜ),开(kāi)发新的商业模(mó)式(shì)。例(lì)如(rúgè)性(xìng)化(huà)医(yī)疗(liáo);在(zài)零(líng)售(shòu)、金(jīn)融(róng)服(fú)务、制造业等领域的应用也将不断扩展。有专家认为,通(tōng)用人工智能正渐行渐近。 AI的(de)逻(luó)辑(ji)推(tuī)理(lǐ)能(n\nPublished date: 2025-01-13T10:24:27+08:00\nSite name: www.ruijingcnc.com\n\nTitle: 微软Azure OpenAI企业账户:开启AI应用新纪元_服务_用户_人工智能\nURL: https://www.sohu.com/a/849438512_121924584\nDescription: 在人工智能迅速发展的今天,微软与OpenAI联合推出的Azure OpenAI服务正在成为一项引人注目的技术,正在改变企业如何利用人工智能解决方案。通过将OpenAI的先进模型与微软Azure云平台的强大算力结合,该服务使全球开发者和企业能够更轻松地采用前沿技术,特别是在智能应用和创新解决方案的构建方面。该服务的推出不仅为企业提供了智能化的工具,也标志着AI应用正在进入一个新的时代。\nPublished date: 2025-01-15T23:30:00+08:00\nSite name: 搜狐\n\nTitle: 新年首次批量上新 !九家大模型公司狂卷48",
+    "isError": false,
+    "durationMs": 437,
+    "createdAt": "2026-03-02T00:46:00.848Z"
+  },
+  {
+    "id": "16598d5b8138dd0a",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_d1a9150b8c4c4dc39e4f15ae"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:46:01.137Z"
+  },
+  {
+    "id": "7228fb827b8ddfdc",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年AI新突破,未来科技无限可能! - 今日头条\nURL: https://www.toutiao.com/article/7458941372553462323/\nDescription: 2025年AI领域的新突破令人瞩目。 2025年AI领域的新突破令人瞩目,三大焦点技术引发广泛讨论与关注。超级智能的概念随着技术进步愈发受到热议,其潜在风险让人们对未来的AI发展感到担忧。为防范风险,科技界与政策制定者正积极寻求建立完善的技术治理体制。 与此同时,具身智能正逐步将AI与物理实体相融合,通过感知与学习,AI得以与环境进行更加动态的交互,但学习效率、适应性等仍是该领域面临的主要挑战。 另外,李飞飞团队开发的大世界模型能从图片或文字中精准提取物体并重建三维空间,极大提升了AI对现实世界的理解和认知能力。这些技术的发展不仅拓宽了AI的边界,也预示着一场深刻的社会经济与伦理变革正在到来。如何确保这些技术安全可控,成为全球科技界与政策制定者共同面临的考验。 举报 评论 0 请先 登录 后发表评论~ 评论\nPublished date: 2025-01-12T16:22:00+08:00\nSite name: 今日头条\n\nTitle: AI新突破：2025年智能飞跃四大发展趋势\nURL: https://www.showapi.com/news/article/6789d6644ddd79f11a000eb3\nDescription: 摘要\n随着2024年的落幕,人工智能(AI)领域实现了显著的飞跃。展望2025年,AI行业预计将出现四大发展趋势:首先是AI技术在医疗、金融等领域的深度应用;其次是AI算法的持续优化,提升数据处理效率;第三是AI与物联网(IoT)的融合,推动智能家居和智慧城市的发展;最后是AI伦理和法规的进一步完善,确保技术健康发展。这些趋势将引领AI进入新的发展阶段,为社会带来更多创新和变革。\n关键词\nAI新突破, 2025展望, 智能飞跃, 未来趋势, 技术发展\n一、AI新突破的背景与意义\n1.1 AI技术的演进:从2024到2025年的里程碑\n随着2024年的落幕,人工智能(AI)领域迎来了前所未有的突破。这一年,AI不仅在算法优化、数据处理效率等方面取得了显著进展,还在多个实际应用场景中展现了其强大的潜力。展望2025年,AI技术将继续演进,迎来新的里程碑。\n首先,AI算法的持续优化是2025年的重要趋势之一。根据最新的研究报告,2024年AI算法的计算效率提升了约30%,而这一数字预计将在2025年进一步提升至40%。这意味着AI系统能够更快、更准确地处理海量数据,从而为各行各业提供更加精准的决策支持。例如,在金融领域,AI可以通过实时分析市场动态和客户行为,帮助金融机构制定更为科学的投资策略,降低风险并提高收益。\n其次,AI与物联网(IoT)的深度融合将成为2025年的另一大亮点。据预测,到2025年底,全球将有超过750亿台设备接入物联网,这为AI的应用提供了广阔的舞台。智能家居、智慧城市等领域的快速发展,使得AI能够在日常生活中扮演更重要的角色。通过AI与IoT的结合,家庭中的智能设备可以实现互联互通,自动调整环境参数以满足用户需求;城市管理者则可以利用AI进行交通流量优化、能源管理等,提升城市的运行效率和居民的生活质量。\n此外,AI伦理和法规的完善也是2025年不可忽视的\nPublished date: 2025-01-17T23:12:07+08:00\nSite name: 万维易源\n\nTitle: 2024年人工智能技术突破\nURL: https://max.book118.com/try_down/148125122011006024.pptx\nDescription: 汇报人:XX XX,a click to unlimited possibilities 2024年人工智能技术突破 目录 01 添加 目录标题 02 人工智能技术突破概况 03 自然语言处理技术的突破 04 计算机视觉技术的突破 05 机器学习技术的突破 06 机器人技术的突破 PART ONE 添加章节标题 PART TWO 人工智能技术突破概况 技术突破背景 添加标题 添加标题 添加标题 添加标题 2024年技术突破的关键因素 人工智能技术发展历程 当前技术瓶颈与挑战 未来技术发展趋势与展望 技术突破的主要领域 自然语言处理:人工智能在理解和生成自然语言方面的技术突破,使得人机交互更加自然流畅。 计算机视觉:人工智能在图像识别、目标检测等方面的技术突破,使得计算机能够更好地理解和分析视觉信息。 机器学习:人工智能在深度学习、强化学习等方面的技术突破,使得机器能够自我学习和优化,进一步提高智能水平。 语音识",
+    "isError": false,
+    "durationMs": 371,
+    "createdAt": "2026-03-02T00:46:01.508Z"
+  },
+  {
+    "id": "e87d56d8396a2533",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_fb2b10f9c104446c97d3d886"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:46:01.643Z"
+  },
+  {
+    "id": "d6f3fd719fe5c2b2",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 国家及31省市如何提及AI的研发、应用、监管_ZAKER新闻\nURL: http://app.myzaker.com/news/article.php?m=1737237510&pk=678a39a68e9f09521d2c801a\nDescription: 国家级 20220324: 关于加强科技伦理治理的意见 20190319: 关于促进人工智能和实体经济深度融合的指导意见 20170720: 新一代人工智能发展规划 20161215: 国务院关于印发 \" 十三五 \" 国家信息化规划的通知 20150704: 关于积极推进互联网 + 行动的指导意见 国家发改委 20240605: 四部门关于印发国家人工智能产业综合标准化体系建设指南(2024 版)的通知 20230710: 生成式人工智能服务管理暂行办法 20210524: 全国一体化大数据中心协同创新体系算力枢纽实施方案 20200727: 五部门关于印发《国家新一代人工智能标准体系建设指南》的通知 教育部 20241118: 关于加强中小学人工智能教育的通知 20240225: 教育部办公厅关于公布中小学人工智能教育基地名单的通知 20220224: 关于双一流建设高效促进学科融合加快人工智能领域研究生培养的若干意见 20210907: 教育部关于实施第二批人工智能助推教师队伍建设行动试点工作的通知 20180402: 教育部关于印发《高等学校人工智能创新行动计划》的通知 药监局 20240613: 国家药监局综合司关于印发药品监管人工智能典型应用场景清单的通知 科技部 20220812: 科技部关于支持建设新一代人工智能示范应用场景的通知 20220719: 关于加快场景创新以人工智能高水平应用促进经济高质量发展的指导意见 20200929: 国家新一代人工智能创新发展试验区建设工作指引(修订版) 20190801: 国家新一代人工智能开放创新平台建设工作指引 工业和信息化部 20240702: 国家人工智能产业综合标准化体系建设指南(2024 版) 20240118: 关于推动未来产业创新发展的实施意见 20240117: 国家人工智能产业综合标准化体系建设指南(征\nPublished date: 2025-01-17T18:48:47+08:00\nSite name: ZAKER\n\nTitle: 明日炒什么：国产AI芯片2025年产业化加速落地,机构正在密集调研!\nURL: https://www.9fzt.com/detail/sz_002843_1_527670944.html\nDescription: 今日盘中热点汇总:\n事件逻辑:\n2025年1月13日盘后消息,白宫公布对英伟达人工智能芯片出口的新限制措施,英伟达官方声明炮轰拜登政府\n点评:\n随着市场越来越朝着产业化炒作,更多自主可控的政策即将发布,市场激烈博弈国内出牌,随着市场越来越多的资金聚焦炒作产业方向,所以这里机构方向随着机构不断介入,市场更多聚焦炒作为能够实在出业绩的方向\n最近行情情绪开始转暖,但部分机构活跃方向频繁异动,能洞察机构方向的是您必不可少的 , 机构宝发现人形机器人机构调仓动向\n主要功能有参与度排行、机构资金诊断、机构资金信号池(点此即刻享用!)\n一: 量化机构参与度,找到机构控盘点\n以 率先启动的兆易创新 为例,近期芯片与自主可控板块越来越强,机构和量化主攻芯片方向,通过机构宝我们可以发现兆易创新就已经出现 量 化机构控盘的指标 ,且出现在启动之前,后续机构成功在整个板块里面反复活跃,从而带动整个芯片与半导体产业链起涨, 不仅能看个股,还能观测潜在机构板块整体异动方向, 我们的产品就是致力于为各位投资人用心服务!\n⇨点击查看机构参与度,把握机构趋势起涨点⇦\n二: 机构资金诊断,自选股看机构如何演绎行情!\n先看机构宝的资金诊断功能,搭配市场行情看资金如何演绎\n以机器人趋势股中兴通讯为例, 近期市场出现自主可控板块反复活跃的走势,但是实际上通过机构宝的控盘力度就可以看出是否有趋势机会,先通过“ 搜索 ”找到个股,再看控盘力度是否一直活跃, 针对自选股也能一键看到自选股动向 :\n怎么样,明确自己的预期,搭配主力宝使用,我都摩拳擦掌要试试了!那就点击下方试试吧!\n⇨点击查看自选股机构控盘力度,犀利分析资金潜在做多方向⇦\n三:机构资金股票池滚动更新,市场脉络一看便知\n机构股池每日更新,相关个股一网打尽,通过对机构力度的量化测算,生成系统股票池,进而为您的决策添砖加瓦!同时还有上线精品教学视频,帮助您一键直达\nPublished date: 2025-01-14T19:18:00+08:00\nSite name: 九方智投\n\nTitle: 英公布AI行动计划 促进十年国家复兴\nU",
+    "isError": false,
+    "durationMs": 274,
+    "createdAt": "2026-03-02T00:46:01.917Z"
+  },
+  {
+    "id": "8c1de54027137f82",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_faf3766bfcf841538097dd7d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:46:02.097Z"
+  },
+  {
+    "id": "bb295de4343e9b24",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 大模型\nURL: https://www.hrssit.cn/application/index/p/11.html\nDescription: · 国家发展改革委 国家数据局 工业和信息化部 关于印发《国家数据基础设施建设指引》的通知(发改数据〔2024〕1853号) 2025-01-13 · 网络数据安全管理条例 2025-01-06 · 广东江门人社AI数字人正式上线,人社政策宣传有了“代言人” 2024-12-20 · 深圳市工业和信息化局关于印发《深圳市打造人工智能先锋城市的若干措施》的通知 2024-12-18 · 人工智能发展报告(2024年) 2024-12-17 · 广东珠海市政府与金山云签署战略合作协议 共同推进政务大模型应用建设 2024-12-04 · 人工智能应用系统内生安全蓝皮书(2024年) 2024-12-02 · 生成式人工智能应用发展报告(2024) 2024-12-02 · 报告显示我国生成式人工智能产品用户规模达2.3亿人 2024-12-02 · 密云区建成北京市首个“大模型智能政策文件库” 2024-11-26 · 广东深圳罗湖AI政务问答平台上线 2024-11-14 · 北京市首座大模型“超级工厂”落户石景山 2024-11-08\nPublished date: 2025-01-13T08:00:00+08:00\nSite name: www.hrssit.cn\n\nTitle: 2025年打造大模型技术产业生态策略方案.pdf\nURL: https://m.book118.com/html/2025/0117/8071053106007022.shtm\nDescription: 1/ 9 页\n2/ 9 页\n预览加载中,请您耐心等待几秒...\n3/ 9 页\n预览加载中,请您耐心等待几秒...\n4/ 9 页\n预览加载中,请您耐心等待几秒...\n5/ 9 页\nPublished date: 2025-01-18T08:00:00+08:00\nSite name: 原创力文档\n\nTitle: 2025年AI大模型发展现状、商业化关键及未来应用前景分析报告_数据局\nURL: http://www.shujuju.cn/lecture/detail/33452\nDescription: 关注数据局微信公众号,击数据局公众号“ 报告下载 ”菜单,获取网盘链接下载。 或者加入 数据局知识星球 ,获取更加优质的服务: 附件下载\nPublished date: 2025-01-14T16:28:34+08:00\nSite name: www.shujuju.cn\n\nTitle:  2025年AI大模型发展现状、商业化关键及未来应用前景分析报告 - 道客巴巴 \nURL: https://www.doc88.com/p-99720507294942.html\nDescription: 图案背景 纯色背景 下载 打印 视图 标记 批注 批注本地保存成功,开通会员云端永久保存 去开通 粉丝量:1 知识研报,活动策划 下载此文档 相关 目录 笔记 书签 暂无目录 点击鼠标右键菜单,创建目录 暂无笔记 选择文本,点击鼠标右键菜单,添加笔记 暂无书签 在左侧文档中,点击鼠标右键,添加书签 下载积分: 1500 内容提示: 2025 年深度行业分析研究报告 2025 年深度行业分析研究报告\nPublished date: 2025-01-14T05:28:23+08:00\nSite name: 道客巴巴\n\nTitle: 2025年AI大模型发展现状、商业化关键及未来应用前景分析报告-CSDN博客\nURL: https://blog.csdn.net/kymdidicom/article/details/145195289\nDescription: 互联互通社区 于2025-01-16 08:17:07 发布 尽管2024年以来,全球可获取的训练数据有限,OpenAI GPT-5发布延期等事件引发了业内对大模型性能迭代放缓的质疑,但AI大模型的性能仍在持续提升。根据Scaling Law,大模型的性能与计算量、参数规模和数据量密切相关。虽然训练数据端的边际效益逐渐放缓,但通过合成数据和推理阶段的创新,大模型的性能增长潜力依然强劲。 OpenAI、Anthropic和Meta等大模型厂商正在积极探索合成数据方向。OpenAI的o1模型通过高质量的合成数据降低模型错误率,Anthropic的Claude 3.5 Sonnet在多个测试中表现优于GPT-4o。Meta的Llama 3.1 405B模型在约15万亿tokens的公开数据上进行训练,微调数据涵盖了超过2500万个合成数据示例。 关注公众号:",
+    "isError": false,
+    "durationMs": 367,
+    "createdAt": "2026-03-02T00:46:02.464Z"
+  },
+  {
+    "id": "4f8ebab09de7dd66",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_f0090da26b924a0f9fc395f5"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:46:05.846Z"
+  },
+  {
+    "id": "4a5204d3b146b0b5",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_b43d0295b1d04c46a22110fd"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:46:06.144Z"
+  },
+  {
+    "id": "b7ae2c9670e02479",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 科大讯飞(iFLYTEK)数码产品科大讯飞 X1 Pro 报价_参数_图片_视频_怎么样_问答-苏宁易购\nURL: https://www.suning.com/item/0000000000/12250621474.html\nDescription: 科大讯飞 X1 Pro 学习机 儿童家教机 点读机 早教机10.1英寸单个装主要参数 品牌: 科大讯飞(iFLYTEK) 型号:科大讯飞 X1 Pro 颜色:黑色 屏幕尺寸:4英寸 显示屏分辨率:1920*1200\nPublished date: 2025-01-18T08:50:00+08:00\nSite name: 苏宁易购\n\nTitle: Contact-iFLYTEK\nURL: https://www.iflytek.com/en/contact.html\nDescription: Welcome to the iFLYTEK booth. iFLYTEK is a Chinese leading AI company, especially strong in smart voice and language technology. In this AI era led by large models, we’ve launched a range of smart products for both consumers and businesses to improve your work efficiency and quality of life. Contact Us * Prefix Ms Mr * First Name * Last Name * Email Phone Number * Company/Organization Please complete this required field. * What iFLYTEK Products Might You Be Interested in Knowing More About? Spark GuideX Smart Space Spark Trans Smart TransScreen Smart Recorder Smart Note Air2 Smart Dictionary Pen Smart Translator AIBOT Platform Spark GenX Mia Island Spark Desk Spark Slides Further Service Selections Receive product emails from iFLYTEK Make further contacts during the Gitex Other * Verificat\nPublished date: 2025-01-17T17:59:17+08:00\nSite name: 科大讯飞\n\nTitle: 讯飞星火X1:国产深度推理模型的崛起-CSDN博客\nURL: https://blog.csdn.net/2403_89593802/article/details/145204225\nDescription: 2025年1月15日,科大讯飞正式发布了讯飞星火深度推理模型X1,这款模型不仅在国内算力平台上训练,还在多个考试中取得了优异的成绩,尤其是在中文数学能力方面表现突出。...\nPublished date: 2025-01-18T23:54:50+08:00\nSite name: CSDN\n\nTitle: 科大讯飞(iFLYTEK)电子书报价_参数_图片_视频_怎么样_问答-苏宁易购\nURL: https://www.suning.com/item/0000000000/12417346767.html\nDescription: 好评率 大家印象 [重磅]科大讯飞智能办公本X3星火认知大模型 语音转写电子书阅读器 墨水屏电纸书主要参数 品牌: 科大讯飞(iFLYTEK) 类型:电子书 产品型号:XF-DX-T310E 颜色:黑色 整机质保年限:1年 上市时间(月):2023-08 支持内容格式:JPEG,PNG,EPUB,PDF,TXT 电池容量:4200mAh 续航时间:9小时以上 充电时间:5H以上 内存:64GB 外形尺寸(长*宽*高):243*174*5.8毫米 产品重量:380克 屏幕尺寸:10.3英寸 V2 包装不错,非常简约便携,用于会议记录很合适,语音转写功能很强大,非常实用。 V2 尺寸大,语音识别、手写识别还可以。 V1 **次买这款办公本,听人推荐在苏宁上下了单,**又快又好,包装无破损,产品外观设计上档次,支持国货,力挺苏宁易购! V2 办公本非常",
+    "isError": false,
+    "durationMs": 455,
+    "createdAt": "2026-03-02T00:46:06.301Z"
+  },
+  {
+    "id": "12a95e56d0eeabad",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025人工智能新机遇:英国发布AI行动计划及全球AI发展动态_创作_工具_技术\nURL: https://www.sohu.com/a/849102685_121902920\nDescription: 2025年1月,英国政府正式公布了“人工智能机遇行动计划”,旨在通过推动人工智能技术的广泛应用,促进经济增长、创造新的就业机会,并提升公共服务的水平。这项具有前瞻性的计划涵盖多个领域,包括建设多个人工智能增长区、将公共计算能力提高20倍、创建新的国家数据库,以安全可靠地释放公共数据的价值。此外,计划还包括成立专门的人工智能能源委员会等重要举措,旨在推动英国的数字经济和创新发展。\nPublished date: 2025-01-15T06:16:00+08:00\nSite name: 搜狐\n\nTitle: 英公布AI行动计划 促进十年国家复兴\nURL: https://ecas.cas.cn/xxkw/kbcd/201115_146615/ml/xxhzlyzc/202501/t20250117_5045365.html\nDescription: 2025 年 1 月 13 日,英国公布了《 AI 机会行动计划》,旨在通过政策支持、资金投入和国际合作,全面释放 AI 发展潜能,助力经济增长,提升公共服务和改善公民福祉,确保其在全球 AI 领域的领导地位。\n1.  支持 AI 发展\n( 1 )构建充足、安全和可持续的 AI 基础设施,具体措施主要包括:制定 AI 基础设施长期计划,并承诺 提供 10 年的投资支持;到 2030 年将 AI 研究资源容量扩大至少 20 倍;任命 AI 研究资源项目主管,战略性进行算力分配;建立 AI 增长区,加速 AI 数据中心建设;与私营部门合作,保障 AI 基础设施安全;建立国际计算合作伙伴关系。\n( 2 )数据开放与利用,具体措施主要包括:构建公共部门数据收集基础设施;开放至少 5 个高影响力公共数据集;促进战略领域数据利用;制定可用于 AI 的开放政府数据使用指南和最佳实践;鼓励私有数据集的开放和利用;构建有版权许可的英国媒体训练数据集。\n( 3 ) AI 人才培养与吸引,具体措施主要包括:评估英国 AI 和数字技能需求及现实差距;加强高校对 AI 人才的培养;发布 AI 奖学金计划;通过与顶级猎头公司合作、移民制定等方式,吸引顶尖国际人才;扩大图灵 AI 奖学金的规模。\n( 4 ) AI 安全保障,具体措施主要包括:支持 AI 安全研究所的发展;改进英国文本和数据挖掘制度,以促进创新;为 AI 监管机构提供资金支持,并建立监管部门问责制;实施监管沙盒等有利于 AI 创新的举措;投资开发保障工具,并对 AI 系统进行评估。\n2.  推动 AI 在关键行业的应用\n( 1 )在政府中采用 “ Scan>Pilot>Scale ” 方法,即通过识别潜在机会( Scan )、快速试点验证( Pilot )、大规模推广( Scale )成功项目的方式,来促进 AI 技术应用,提升公共服务效\nPublished date: 2025-01-17T08:00:00+08:00\nSite name: 中国科学院网信工作网\n\nTitle: 英国政府公布“人工智能机遇行动计划”\nURL: https://new.qq.com/rain/a/20250117A0118700\nDescription: 英国政府1月13日公布“人工智能机遇行动计划”,旨在大力推广人工智能,以促进经济增长、创造就业机会并提升公共服务水平。  这项计划指出,人工智能的能力正以惊人的速度发展,照这一趋势,人工智能将成为英国政府实现推动经济增长等重要使命的主要动力。\nPublished date: 2025-01-17T06:07:11+08:00\nSite name: 腾讯网\n\nTitle: 英国政府公布“人工智能机遇行动计划”\nURL: https://new.qq.com/rain/a/20250117A011I700\nDescription: 新华社伦敦电  (记者郭爽)英国政府1月13日公布“人工智能机遇行动计划”,旨在大力推广人工智能,以促进经济增长、创造就业机会并提升公共服务水平。这项计划指出,人工智能的能力正以惊人的速度发展,照这一趋势,人工智能将成为英国政府实现推动经济增长等重要使命的主要动力。\nPublished date: 2025-01-17T06:10:07+08:00\nSite name: 腾讯网\n\nTitle: 英国政府公布“人工智能机遇行动计划” _中国经济网——国家经济门户\nURL: http://intl.ce.cn/sjjj/qy/202501/17/t20250117_39269381.",
+    "isError": false,
+    "durationMs": 277,
+    "createdAt": "2026-03-02T00:46:06.421Z"
+  },
+  {
+    "id": "50ea559d5ce922e1",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_2289b2e6ea02461289cb1929"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:46:06.580Z"
+  },
+  {
+    "id": "bf6e879794b5795a",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI 据悉正在开发“操作员”智能体,有望在 2025 年1月正式推出;_openai2025年1月-CSDN博客\nURL: https://blog.csdn.net/weixin_41429382/article/details/145084833\nDescription: OpenAI 确实正在开发名为“操作员”(Operator)的智能体,并计划在2025年1月正式推出。这款智能体具备独立控制计算机并执行多样化任务的能力,标志着人工智能技术向主动接触...\nPublished date: 2025-01-12T02:24:47+08:00\nSite name: CSDN\n\nTitle: 提前剧透!OpenAI最强代理“Operator”即将上线,子域名已被发现 - 今日头条\nURL: https://www.toutiao.com/article/7460334487033889290/\nDescription: OpenAI最强AI代理可能已经在来的路上了。 今天,OpenAI通过官方社交平台推出新AI助理功能Tasks之后,引起广泛关注,其联创Greg Brockman在社交媒体表示:2025年将是属于Agents的一年。 而就在Tasks上线不久,有厉害的网友已经发现传闻中更强AI代理Operator的域名已经能搜到了,可能是能够碾压Tasks的存在。 目前Tasks能做到什么?OpenAI官方表示目前只是测试版,Tasks是一种让ChatGPT在未来为你做事的新方法。 用户在聊天中或通过个人资料菜单下的任务页面,可以安排你希望ChatGPT执行的任务,例如向你发送每周全球新闻简报,获得每日15分钟的个性化锻炼,或为未来事件设置提醒。无论是一次性提醒还是重复操作,告诉ChatGPT您何时需要什么,它就会自动处理。 即日起该功能会向Plus、Pro和Teams测试版用户推出,并最终向所有拥有ChatGPT账户的用户推出。 而据彭博社援引两位知情人士消息透露,OpenAI正准备推出一款代号为 “Operator” 的新型人工智能代理。 其中一位因讨论内部事务而要求匿名的人士称,在周三的一次员工会议上,OpenAI的领导层宣布计划在1月以研究预览版的形式发布该工具,并通过公司的应用程序编程接口(API)供开发者使用。 尽管OpenAI没有立即回应置评请求,但Operator子域名已经被网友扒到: “operator.chatgpt.com”。 2025年,行业向AI代理广泛推进可能会迎来一波热潮,AI代理能在极少监督的情况下为用户完成多步骤任务。 今天,Deepmind的研究科学家Swaroop Mishra也表示2025年通过代理实现虚拟员工将成为必需。 在OpenAI之前,其竞争对手Anthropic推出了一款类似的代理,它可以实时处理用户计算机上发生的情况并代表用户采取行动。O\nPublished date: 2025-01-16T10:29:00+08:00\nSite name: 今日头条\n\nTitle: 提前剧透！OpenAI最强AI代理“Operator”或即将上线，子域名已被发现\nURL: https://m.sohu.com/a/849569059_120607343/?pvid=000115_3w_a\nDescription: 文丨丁灵波\nOpenAI最强AI代理可能已经在来的路上了。\n今天,OpenAI通过官方社交平台推出新AI助理功能Tasks之后,引起广泛关注,其联创Greg Brockman在社交媒体表示:2025年将是属于Agents的一年。\n而就在Tasks上线不久,有厉害的网友已经发现传闻中更强AI代理Operator的域名已经能搜到了,可能是能够碾压Tasks的存在。\n目前Tasks能做到什么?OpenAI官方表示目前只是测试版,Tasks是一种让ChatGPT在未来为你做事的新方法。\n用户在聊天中或通过个人资料菜单下的任务页面,可以安排你希望ChatGPT执行的任务,例如向你发送每周全球新闻简报,获得每日15分钟的个性化锻炼,或为未来事件设置提醒。无论是一次性提醒还是重复操作,告诉ChatGPT您何时需要什么,它就会自动处理。\n即日起该功能会向Plus、Pro和Teams测试版用户推出,并最终向所有拥有ChatGPT账户的用户推出。\n而据彭博社援引两位知情人士消息透露,OpenAI正准备推出一款代号为 “Operator” 的新型人工智能代理。\n其中一位因讨论内部事务而要求匿名的人士称,在周三的一次员工会议上,OpenAI的领导层宣布计划在1月以研究预览版的形式发布该工具,并通过公司的应用程序编程接口(API)供开发者使用。\n尽管OpenAI没有立即回应置评请求,",
+    "isError": false,
+    "durationMs": 367,
+    "createdAt": "2026-03-02T00:46:06.946Z"
+  },
+  {
+    "id": "b2963937b796151d",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_b8aad5e743384a429f666337"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T00:46:07.056Z"
+  },
+  {
+    "id": "cdeaadda6ceb738a",
+    "type": "tool_call",
+    "taskId": "510f3dc50fd35739",
+    "subtaskId": "f268993ef32537d7",
+    "employeeId": "6059a357a3864505",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年重点工作安排-北京市发展和改革委员会\nURL: https://fgw.beijing.gov.cn/fzggzl/2025lh/bgjd/2025jd/202501/t20250114_3988251.html\nDescription: 2025年重点工作安排:打造“人工智能+”标杆示范应用场景10个以上\n日期:\n2025-01-14\n来源:北京市发展和改革委员会\n我在听,请说话(10s)\n抱歉,没听清,请再说一遍吧\nPublished date: 2025-01-14T00:00:00+08:00\nSite name: 北京市发展和改革委员会\n\nTitle: Website:www.aigovernancereview.com\nURL: https://www.siss.sh.cn/cms/contentcore/resource/download?ID=95639\nDescription: June, 2021 Shanghai Institute for Science of Science Website:www.aigovernancereview.com The report editor can be reached at globalaigovernance@gmail.com We welcome any comments on this report and any communication related to AI governance.\nPublished date: 2025-01-18T15:33:43+08:00\nSite name: www.siss.sh.cn\n\nTitle: 包头市政府门户网站\nURL: https://mgl.baotou.gov.cn/am/2025/1/17/44609_1127640.html?pid=8857\nDescription:     +       AI   AI             1   7   2025       +       AI   AI                                                           \nPublished date: 2025-01-17T09:33:27+08:00\nSite name: 包头市人民政府\n\nTitle: News\nURL: http://hsc.beijing.gov.cn/hsc/english/news/index.shtml\nDescription: 2025 Share your views on traveling in China 2025 Share your views on traveling in China New Version of International Web Portal of Beijing Officially Launched The upgraded version of the International Web Portal of Beijing (h",
+    "isError": false,
+    "durationMs": 362,
+    "createdAt": "2026-03-02T00:46:07.418Z"
+  }
+]

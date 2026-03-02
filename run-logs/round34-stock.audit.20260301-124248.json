@@ -1,0 +1,70 @@
+{
+  "label": "round34-stock",
+  "sessionId": "round34-stock-20260301-124248",
+  "kind": "stock",
+  "pmChatDurationMs": 48958,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "24969bd7e640a8e9"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 48958
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "24969bd7e640a8e9",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 15472,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n完成贵州茅台与宁德时代近30天走势对比分析。基于2026年1月20日至2月27日数据，茅台区间涨幅+5.93%，宁德时代-2.17%。识别出2个关键观察点：(1)1月29日走势分化最剧烈，分化幅度8.05个百分点；(2)2月26日宁德时代加速下跌，跌幅为茅台的2.6倍。茅台跑赢宁德时代8.1个百分点，反映市场风格从新能源轮动至消费龙头。"
+  }
+}

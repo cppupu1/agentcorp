@@ -1,0 +1,18 @@
+[
+  {
+    "id": "c19efcb02bad0d2d",
+    "sessionId": "round44-glm-e2e-20260302031632-translation",
+    "role": "user",
+    "content": "请直接创建并启动任务：给我一版可直接发送给全员的中英双语‘五一放假通知’，要求简洁、正式。",
+    "toolCalls": null,
+    "createdAt": "2026-03-02T03:23:38.386Z"
+  },
+  {
+    "id": "97462a42eeb06922",
+    "sessionId": "round44-glm-e2e-20260302031632-translation",
+    "role": "assistant",
+    "content": "",
+    "toolCalls": null,
+    "createdAt": "2026-03-02T03:23:38.386Z"
+  }
+]

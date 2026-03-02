@@ -1,0 +1,254 @@
+[
+  {
+    "id": "93980b2c792838a2",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_561zwa16xngb_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:56:10.883Z"
+  },
+  {
+    "id": "46a18af184b704e5",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年第四届AIGC中国开发者大会在北京圆满举行,发布2025年AI十大颠覆式行业发展趋势--人工智能-至顶网\nURL: https://ai.zhiding.cn/2025/0114/3162729.shtml\nDescription: 一､ 2025 年 AI 十大颠覆式行业发展趋势 1､world model元年:25年将是world model元年,从卷1D､2D类模型进入到卷理解物理世界规律的3D类world model时代,李飞飞主导的lwm也会在2025年发布 2､仿真数据蒸馏:2025年将是仿真数据蒸馏的元年,制约机器人､工业､自动驾驶､飞行器等各种场景的仿真数据集问题解决,借助cosmos即可完成生成,犹如大模型训练需要用gpt蒸馏数据,而不需要从头去构建数据集 3､AI孪生的GPT时刻:英伟达提出的groot+ominiverse+cosmos提供了新的AI孪生引擎,成为了仿真领域AI应用的GPT时刻 4､空间智能元年:AGI+DGI+OMINIVERSE结合cosmos=空间智能的技术架构,链接了推理､边缘设备､仿真三大物理AI的新架构,为空间智能的爆发提供了框架基础 5､产业落地方向:工业领域､自动驾驶､具身机器人仿真与ai深入结合的时代到来,实际应用也会进入现实 6､替代工种:AI落地应用从办公室替代信息工作者的agent,进入替代蓝领的实际工业\nPublished date: 2026-02-17T16:00:12+08:00\nSite name: ai.zhiding.cn\n\nTitle: AI 发展五大趋势:2025 年ChatGPT 之外的新方向--人工智能-至顶网\nURL: http://ai.zhiding.cn/2024/1231/3162307.shtml\nDescription: 趋势一:无处不在的 AI 代理 \"代理式 AI\"(Agentic AI)将成为一个热门话题｡AI 代理是一种能够学习､创造行动并执行的软件,它结合了模式学习､内容生成和行动执行三大功能｡预计 2025 年,这一领域将迎来显著发展｡ 趋势二:教育体系的变革 AI 不仅影响学习方式,还将深刻改变学习内容｡面对 AI 驱动的就业市场变化,毕业生和教育机构都需要适应新的经济现实｡2025 年,我们可能会看到这些变革的开始｡ 趋势三:科学领域的 AI 应用 2023 年两项诺贝尔奖授予 AI 相关成果,标志着 AI 在科学领域的重要性｡尽管生成式 AI 备受关注,但科学应用领域的 AI 也在获得大量投资｡然而,AI 在药物研发等领域的成功率仍有待提高,这表明 AI 在科学领域的潜力尚未完全实现｡ 趋势四:易获取数据的短缺 高质量､符合伦理的数据将变得越来越难以获取｡2025 年,我们可能会看到更多努力来获取数据,包括商业合同､数据标注系统和传感器部署等｡这一趋势与 AI 在科学领域的应用相结合,可能会加速科学数据的利用｡ 趋势五:机器人技术的普及 AI 与物理自动化的结合将为制造业､外科手术､农业和太空探索等领域带来无限可能｡2025 年,我们将看到这一领域的现有趋势扩大,并引起更广泛的公众关注｡\nPublished date: 2026-02-17T19:46:54+08:00\nSite name: ai.zhiding.cn\n\nTitle: 2025年12个AI预测--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0107/3162464.shtml\nDescription: 随着生成式AI的快速普及,企业已开始广泛应用并获得投资回报｡预计到2025年,AI将在企业中大规模采用,推动效率和生产力提升｡小型语言模型､边缘计算､AI推理能力､proven use cases的大规模应用､敏捷开发的演进､法规监管加强､AI的无处不在､AI代理的兴起､多模态AI等将成为主要趋势,彻底改变企业运营方式和软件开发模式｡ \nPublished date: 2026-02-17T15:46:16+08:00\nSite name: ai.zhiding.cn\n\nTitle: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphcxh3612916.shtml\nDescription: 一､产业发展格局:全球竞合与中国领跑的双轨态势 (一)全球市场规模持续扩张,亚太成为增长引擎 人工智能产业已进入爆发式增长期,成为全球经济复苏的核心动力｡2025年全球AI市场规模达7575.8亿美元,同比增长18.7%,预计2026年将突破9000亿美元关口｡区域竞争呈现显著分化",
+    "isError": false,
+    "durationMs": 1464,
+    "createdAt": "2026-03-01T11:56:12.347Z"
+  },
+  {
+    "id": "18e801f7eabd329f",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_f1yr6b3gd8e0_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:56:17.297Z"
+  },
+  {
+    "id": "3549f84fe15bbe31",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 人工智能的未来:2025年上半年行业发展回顾(英文) - 远瞻慧库\nURL: https://www.baogaobox.com/reports/250922000077239.html\nDescription: 版权声明:报告来自互联网,仅供投资者学习和参考,在发布信息时,我们将尽最大努力标明出处,但因互联网的去中心、海量信息的特殊结构,可能有时会存在未指明作者的失误,我们诚挚的希望您能指出我们的工作失误,如果您(单位或个人)认为本站的内容有侵权嫌疑,烦请通知我们(kefu@baogaobox.com),我们将在第一时间处理核实,同时如果您的报告不愿在本站展示,请联系我们删除或更改,谢谢。本站仅提供用户检索、查询报告服务,以便快速找到报告的来源、作者等信息,不提供下载服务。如需下载,请前往社群。\n文章名称:《人工智能的未来:2025年上半年行业发展回顾(英文)》\n文章链接:https://www.baogaobox.com/reports/250922000077239.html\nPublished date: 2025-09-19T00:00:00+08:00\nSite name: www.baogaobox.com\n\nTitle: 2025年人工智能(AI)领域五大趋势研究报告(英文) - 远瞻慧库\nURL: https://www.baogaobox.com/reports/250906000075155.html\nDescription: 版权声明:报告来自互联网,仅供投资者学习和参考,在发布信息时,我们将尽最大努力标明出处,但因互联网的去中心、海量信息的特殊结构,可能有时会存在未指明作者的失误,我们诚挚的希望您能指出我们的工作失误,如果您(单位或个人)认为本站的内容有侵权嫌疑,烦请通知我们(kefu@baogaobox.com),我们将在第一时间处理核实,同时如果您的报告不愿在本站展示,请联系我们删除或更改,谢谢。本站仅提供用户检索、查询报告服务,以便快速找到报告的来源、作者等信息,不提供下载服务。如需下载,请前往社群。\n文章名称:《2025年人工智能(AI)领域五大趋势研究报告(英文)》\n文章链接:https://www.baogaobox.com/reports/250906000075155.html\nPublished date: 2025-09-03T00:00:00+08:00\nSite name: www.baogaobox.com\n\nTitle: 2025年人工智能发展趋势_标签大全_报告大厅\nURL: https://m.chinabgao.com/tag/tendency/rengongzhinen.html\nDescription: 人工智能行业趋势研究报告是通过对影响人工智能行业市场运行的诸多因素所进行的调查分析,掌握人工智能行业市场运行规律,从而对人工智能行业的未来的发展趋势特点、市场容量、竞争趋势、细分下游市场需求趋势等进行预测。\n人工智能行业趋势研究报告主要分析要点包括:\n1)人工智能行业发展趋势特点分析。通过对人工智能行业发展影响因素分析,总结出未来人工智能行业总体运行趋势特点;\n2)预测人工智能行业生产发展及其变化趋势。对生产发展及其变化趋势的预测,这是对市场中商品供给量及其变化趋势的预测;\n3)预测人工智能行业市场容量及变化。综合分析预测期内人工智能行业生产技术、产品结构的调整,预测人工智能行业的需求结构、数量及其变化趋势。4)预测人工智能行业市场价格的变化。企业生产中投入品的价格和产品的销售价格直接关系到企业盈利水平。在商品价格的预测中,要充分研究劳动生产率、生产成本、利润的变化,市场供求关系的发展趋势,货币价值和货币流通量变化以及国家经济政策对商品价格的影响。\n人工智能行业趋势研究报告主要依据了国家统计局、国家海关总署、国家发改委、国家商务部、国家工业和信息化部、行业协会、国内外相关刊物杂志等的基础信息,结合人工智能行业历年供需关系变化规律,对人工智能行业内的企业群体进行了深入的调查与研究,对人工智能行业环境、人工智能市场供需、人工智能行业经济运行、人工智能市场格局、人工智能生产企业等的详尽分析。在对以上分析的基础上,对人工智能行业未来发展趋势和市场前景进行科学、严谨的分析与预测。\n延伸阅读\n人工智能主题依然是基金公司布局的重点。随着景顺长城、中金上报中证科创创业人工智能ETF,“双创”人工智能ETF这一新产品的上报家数增至10家。自8月19日以来,包括华泰柏瑞、易方达、华安、工银瑞信、国联安、富国、永赢以及泰康等8家基金公司陆续上报“双创”人工智能ETF。该指数是中证指数公司于今年\nPublished date: 2025-09-12T16:03:06+08:",
+    "isError": false,
+    "durationMs": 411,
+    "createdAt": "2026-03-01T11:56:17.708Z"
+  },
+  {
+    "id": "ab3007dc882d90dd",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_xmcda3vfl5r7_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:56:23.523Z"
+  },
+  {
+    "id": "22098686d2893c21",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 同花顺财经__让投资变得更简单\nURL: https://m.10jqka.com.cn/20260227/c674967961.shtml\nDescription: 同年10月,工业和信息化部等六部门联合发布《算力基础设施高质量发展行动计划》,明确到2025年打造一批覆盖工业､金融､医疗等领域的算力应用标杆;2024年5月,《关于深化 智慧城市(885378) 发展推进城市全域数字化转型的指导意见》进一步提出统筹建设城市算力网,实现算力供需高效匹配｡ 2025年《政府工作报告》提出,要持续推进“ 人工智能(885728) +”行动;同年8月,国务院发布《关于深入实施“ 人工智能(885728) +”行动的意见》,推动 人工智能(885728) 与经济社会各行业､各领域广泛深度融合｡\nPublished date: 2026-02-27T07:48:39+08:00\nSite name: 同花顺财经\n\nTitle: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphcxh3612916.shtml\nDescription: 策驱动与市场需求形成共振,中国产业优势凸显 政策方面,国务院2025年8月印发的《关于深入实施“人工智能+”行动的意见》构建了顶层设计框架,明确推动AI与实体经济深度融合的发展路径｡市场方面,生成式AI应用渗透率快速提升,截至2025年6月我国生成式AI用户规模达5.15亿人,普及率36.5%｡\nPublished date: 2026-02-27T18:29:10+08:00\nSite name: 新浪财经\n\nTitle: 2025年Q4移动互联网行业数据研究报告经济增长人工智能AI_新浪新闻\nURL: https://news.sina.com.cn/sx/2026-02-28/detail-inhpiryq3022788.shtml\nDescription:  “人工智能+”上升为国家战略:2025年10月,《“十五五”规划建议》审议通过,明确将人工智能作为科技自立自强和新质生产力发展的关键支撑,全面实施“人工智能+”行动,推动其与千行百业深度融合｡ \nPublished date: 2026-02-28T09:14:00+08:00\nSite name: 新浪网\n\nTitle: 57页2025年医疗人工智能年度报告_苹果应用商店_模型_DeepSeek-R\nURL: https://www.sohu.com/a/990731414_122346174\nDescription: 政策环境也在变化,2025年8月国务院发布《深入实施“AI+”行动的意见》,要求在辅助诊疗､健康管理等场景推进AI应用｡11月,五部门联合发布文件,提出到2030年二级以上医院普遍开展医学影像智能辅助诊断,基层诊疗智能辅助实现全覆盖｡截至2025年底,已有超过四百个医疗AI模型完成备案,数字持续增长｡ 监管框架从“限制”转向“赋能”,从“观望”转向“分类管理”｡\nPublished date: 2026-02-27T19:16:16+08:00\nSite name: 搜狐\n\nTitle: 国务院_基金速查网\nURL: https://www.dayfund.cn/tags/guowuyuan/\nDescription: 政策端看,今年以来多项政策支持国产化､AI化,如2025年政府工作报告提出推进高水平科技自立自强､8月份国务院发布关于深入实施“人工智能+”行动的意见｡展望“十五五”,我们认为政策对于应用的国产化､AI化支持力度或将更加显著｡ (2025-10-13 08:14:00) 标签: 应用 国产 国产化 支持 市场 创新 机遇 能力 5月23日,国务院总理李强主持召开国务院常务会议｡\nPublished date: 2026-02-08T11:00:18+08:00\nSite name: www.dayfund.cn\n\nTitle: 用好人工智能这把“钥匙”两会回声⑤人工智能_新浪财经_新浪网\nURL: http://finance.sina.com.cn/wm/2026-03-01/doc-inhpmzfr5622338.shtml\nDescription:  2025年4月,全国两会闭幕不久,《教育部等九部门关于加快推进教育数字化的意见》即公开发布｡ \nPublished date: 2026-03-01T10:49:05+08:00\nSite name: 新浪财经\n\nTitle: 朗玛信息(SZ300288)操盘必读-PC_HSF10资料\nURL: https://emweb.",
+    "isError": false,
+    "durationMs": 1390,
+    "createdAt": "2026-03-01T11:56:24.913Z"
+  },
+  {
+    "id": "19cd1cf25e900e99",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_5wsiglejh1x1_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:56:29.491Z"
+  },
+  {
+    "id": "ae3b3ccecfb2ed79",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025 年 8月 随笔档案 - JXY_AI - 博客园\nURL: https://www.cnblogs.com/jxyai/p/archive/2025/08\nDescription: 摘要:近年来,大模型(LLM)的发展让\nAI\n的应用场景不断扩展,从聊天助手到绘图、写作,再到代码生成。尤其是在\n2024\n年之后,一个新的概念逐渐被创业者和投资人频繁提起——AI\nAgent(智能体)。\n那么,AI\nAgent\n是否会成为下一个创业机会?本文从定义、现状、机会与挑战几个角度来分析。\n一、\n阅读全文\nPublished date: 2025-08-28T10:24:00+08:00\nSite name: 博客园\n\nTitle: 2025年企业级AI Agent(智能体)价值及应用报告|附77页PDF文件下载_人工智能_EnjoyEDU-武汉城市开发者社区\nURL: https://devpress.csdn.net/wuhan/68b50523a6db534ba2c98428.html\nDescription: 一个全新的时代正以前所未有的速度向我们奔来。随着AIGC(生成式人工智能)的浪潮席卷全球,我们观察到,技术的演进正从单纯的内容生成,迈向更深层次的“智能体”(AI\nAgent)革命。这不仅是技术的迭代,更是生产力范式的颠覆性变革。当AI不再仅仅是工具,而是能自主理解、规划、并执行复杂任务的智能伙伴时,企业的每一个流程、每一次决策、每一个创想,都将被重新定义。\n然而,机遇与迷思共存。2025年被视为“Agent元年”,但围绕AI\nAgent的讨论仍充满了诸多困惑:它的确切概念是什么?在中国独特的数字化土壤中,它将如何落地生根?从喧嚣的概念到切实的价值,中间的路径又该如何铺就?\n正是带着这些深刻的思索与探问,我们深度访谈了行业先行者,剖析了众多实践案例,最终汇聚成了这份70页+的报告——《企业级AI\nAgent(智能体)价值及应用报告》。\n以下为报告节选:\n这份完整版的《企业级AI\nAgent(智能体)价值及应用报告》以及大模型\nAI\n学习资料已经上传CSDN,朋友们如果需要可以微信扫描下方CSDN官方认证二维码免费领取【保证100%免费】\n如何学习大模型\nAI\n?\n由于新岗位的生产效率,要优于被取代岗位的生产效率,所以实际上整个社会的生产效率是提升的。\n但是具体到个人,只能说是:\n“最先掌握AI的人,将会比较晚掌握AI的人有竞争优势”。\n这句话,放在计算机、互联网、移动互联网的开局时期,都是一样的道理。\n我在一线互联网企业工作十余年里,指导过不少同行后辈。帮助很多人得到了学习和成长。\n我意识到有很多经验和知识值得分享给大家,也可以通过我们的能力和经验解答大家在人工智能学习中的很多困惑,所以在工作繁忙的情况下还是坚持各种整理和分享。但苦于知识传播途径有限,很多互联网行业朋友无法获得正确的资料得到学习提升,故此将并将重要的AI大模型资料包括AI大模型入门学习思维导图、精品AI大模\nPublished date: 2025-09-01T10:29:48+08:00\nSite name: CSDN\n\nTitle: AI Agent:开创新质生产力新篇章|agent|人工智能|大模型|智能体|算法_手机网易网\nURL: https://m.163.com/dy/article/K7T8SVS605118O92.html\nDescription: 文\n|\n融中财经核心观点:时至2025年,随着Manus、GenSpark以及其他海内外大厂C端&B端Agent产品的持续涌现,行业对于AI\nAgent在技术架构和产品形态层面正在逐步成型,2025年正在成为所谓的“AI\nAgent元年”。AI\nAgent核心理念是让大模型自主调用各类工具去执行更加复杂的任务。作为生成式AI的高级形态,AI\nAgent覆盖技术体系、算力资源、数据治理及生态建设等多个维度,准入门槛显著高于一般大语言模型应用。根据IDC发布的预测,2024年AI\nAgent全球市场规模约52.9亿美元。中国企业级AI\nAgent应用市场在2028年的保守规模将超过270亿美元,预计到2030年可增长至471亿美元。到2028年,约33%的企业级软件应用将内置具备自主功能的AI\nAgent系统,远高于2024年时不足1%的渗透率,这表明在未来数年内AI\nAgent从辅助工具向业务决策层面的演变成为重大趋势。行业概述(1)定义AI\nAgent(智能体)是一种基于大模型实现控制流决策的应用系统,其核心理念是让大模型自主调用各类工具去执行更加复杂的任务。目前单一的LLM(大语言模型)并不能很好地执行一些长链条任务,在很多场景中也需要调用各类工具。因此,AI\nAgen",
+    "isError": false,
+    "durationMs": 401,
+    "createdAt": "2026-03-01T11:56:29.892Z"
+  },
+  {
+    "id": "e0f7aa7e85433425",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_z7sng8506wdq_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:56:49.353Z"
+  },
+  {
+    "id": "f999294fe7b0f0cc",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: AI编程大战打响!OpenAI推出GPT-5.3-Codex,与Anthropic同步发布新模型\nURL: https://wallstreetcn.com/articles/3765099\nDescription: OpenAI周四发布GPT-5.3-Codex,称其为迄今最强编程代理,并将发布时间安排在Anthropic发布其旗舰升级模型Claude Opus 4.6的同一时刻｡新模型多项基准测试成绩大幅领先,并首次参与自身训练与部署｡业内认为,这标志着围绕企业级软件开发的AI编程大战正式打响｡ OpenAI周四发布GPT-5.3-Codex｡该公司称,这是迄今为止能力最强的编程代理｡\nPublished date: 2026-02-26T02:00:00+08:00\nSite name: 华尔街见闻\n\nTitle: 2026年2月AI大语言模型评测全景:GPT-5.2与Claude 4.5的巅峰对决及国产模型崛起之路_gpt5.2codex 和sonnet4.5-CSDN博客\nURL: https://blog.csdn.net/nmdbbzcl/article/details/157643376\nDescription: 在刚刚过去的2025年底,OpenAI发布了GPT-5.2系列,标志着其在经历Gemini 3冲击后的强势回归｡而Anthropic在2025年9月推出的Claude Sonnet 4.5和11月发布的Claude Opus 4.5,则凭借出色的编程能力和智能体(Agent)表现,在开发者社区中赢得了广泛认可｡ 与此同时,中国AI大模型也在快速追赶｡\nPublished date: 2026-02-02T08:35:25+08:00\nSite name: blog.csdn.net\n\nTitle: Anthropic 为Claude 模型内置 RAG 功能并推出全新引用 API--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0219/3163555.shtml\nDescription: Anthropic 推出新的引用 API 功能,将检索增强生成(RAG)技术直接集成到 Claude 模型中｡该功能可自动引用源文档中的具体段落,有助于减少模型产生的虚假信息,提高回答准确性｡这一创新吸引了 AI 研究人员的关注,有望在法律､金融等领域得到广泛应用｡该功能允许开发者向 Claude 的上下文窗口添加文档,使模型能够自动引用生成答案时所使用的具体段落｡ Anthropic \nPublished date: 2026-02-20T08:35:48+08:00\nSite name: ai.zhiding.cn\n\nTitle: Claude vs ChatGPT vs Gemini:三大AI模型全方位深度对比 - Claude中文网\nURL: https://www.liehuxinghuo.com/claude_category-1/514.html\nDescription: Claude 3.5(Sonnet/Opus) 擅长逻辑推理､多轮对话､长文本处理(上下文长度超百万字),语言风格稳重自然,堪称“学霸型AI”｡ ChatGPT(基于GPT-4/4o) 全能选手,文艺､逻辑､代码､翻译都不差,GPT-4o还支持多模态(语音､图像､视频识别),简直是“全才AI”｡ Gemini 1.5 系列 来自谷歌DeepMind,最强特点是 与Google生态深度融合 ｡\nPublished date: 2026-02-17T00:02:21+08:00\nSite name: www.liehuxinghuo.com\n\nTitle: AI 部署中的隐性成本:为何在企业应用中 Claude 模型可能比 GPT 贵20-30%--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0508/3166206.shtml\nDescription: 本文对比分析了 OpenAI 的GPT-4o 与Anthropic 的Claude 3.5 Sonnet 分词方式的差异,揭示其在企业应用中隐藏的额外费用问题｡ 众所周知,不同的模型家族可能采用不同的 Tokenizer(分词器)｡然而,目前对于这些分词器的“分词”过程本身存在何种差异的分析还相当有限｡所有分词器是否都会对相同的输入文本产生相同数量的 Token?如果不会,那么生成的 Token \nPublished date: 2026-02-17T16:00:56+08:00\nSite name: ai.zhiding.cn\n\nTitle: Anthropic 新版 Claude 模型可实现快速与深度",
+    "isError": false,
+    "durationMs": 1289,
+    "createdAt": "2026-03-01T11:56:50.642Z"
+  },
+  {
+    "id": "5b9b6da14c0e6a70",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_sh321lc07v6h_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:57:00.614Z"
+  },
+  {
+    "id": "a12d28aebd105106",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2026人工智能发展趋势深度解析_数据_模型_突破\nURL: https://www.sohu.com/a/991062971_121106842\nDescription: 政策方面,国务院2025年8月印发的《关于深入实施“人工智能+”行动的意见》构建了顶层设计框架,明确推动AI与实体经济深度融合的发展路径｡市场方面,生成式AI应用渗透率快速提升,截至2025年6月我国生成式AI用户规模达5.15亿人,普及率36.5%｡技术方面,DeepSeek､通义千问等大模型实现突破,清华大学SALMONN音视频大模型在多项评测中超越GPT-4o等国际主流模型｡\nPublished date: 2026-02-28T16:43:09+08:00\nSite name: 搜狐\n\nTitle: 智能IP广域网:人工智能时代的网络新基座_发展_建设_力网\nURL: https://www.sohu.com/a/990555868_128075\nDescription: 2025年《政府工作报告》提出,要持续推进“ 人工智能 +”行动;同年8月,国务院发布《关于深入实施“人工智能+”行动的意见》,推动人工智能与经济社会各行业､各领域广泛深度融合｡ 2024年, 北京 ､ 四川 ､ 宁夏 ､ 河南 等地纷纷开工或投用智算中心,其中天府智算西南算力中心成为 成渝 枢纽重要节点,北京则通过专项方案集中建设一批智算单一大集群,破解“小､散”建设难题｡\nPublished date: 2026-02-27T11:17:02+08:00\nSite name: 搜狐\n\nTitle: 算力底座之争:谁在构建AI时代的“水电煤”-砍柴网\nURL: https://news.ikanchai.com/2026/0228/650562.shtml?app=member&controller=index&action=register\nDescription: 年8月《关于深入实施“人工智能+”行动的意见》发布后,顶层设计对“人工智能+”的又一次系统性部署｡从“行动”到“深化”,从“赋能”到“全链条突破､全场景落地”,此次专题学习为人工智能的产业化进程划出了清晰的路线图｡ 在基础设施建设层面,算力不再是简单的硬件堆砌,而是需要系统级的架构设计与能力交付｡\nPublished date: 2026-02-28T00:00:00+08:00\nSite name: news.ikanchai.com\n\nTitle: 关于重庆市2025年预算执行情况和2026年预算草案的报告_光明网\nURL: https://difang.gmw.cn/cq/2026-02/27/content_38613578.htm\nDescription: 受市人民政府委托,现将重庆市2025年预算执行情况和2026年预算草案的报告提请大会审查,并请各位政协委员提出意见。 一、2025年预算执行情况 2025年是“十四五”决胜收官之年,也是很不平凡的一年。面对外部冲击和内部风险挑战叠加的复杂严峻形势,在以习近平同志为核心的党中央坚强领导下,在市委直接领导下,在市人大监督指导和市政协支持帮助下,我们坚持以习近平新时代中国特色社会主义思想为指导,深入学习贯彻党的二十大和二十届历次全会精神,全面落实习近平总书记视察重庆重要讲话重要指示精神,认真落实市委六届历次全会部署,严格执行市六届人大三次会议有关决议,紧扣做实“两大定位”、发挥“三个作用”,支持加快建设“代化重庆篇章提供坚强财政保障。 (一)一般公共预算执行情况 1.全市 ——全市一般公共预算收入2736亿元,增长5.4%,完成预算的100.9%。其中,税收收入1556亿元,增长2.3%。非税收入1180亿元,增长9.9%。加上中央补助2420亿元、政府一般债务收入931亿元,以及动用预算稳定调节基金、调入资金、上年结转等1567亿元后,收入总量为7654亿元。 主要税种收入情况为:增值税收入613亿元,增长2.1%。企业所得税收入237亿元,增长8.6%。个人所得税收入84亿元,增长9.1%。城市维护建设税收入94亿元,下降0.8%。房产税收入126亿元,增长13%。土地增值税收入106亿元,下降18.9%。 ——全市一般公共预算支出5691亿元,增长1.2%,完成预算的94.5%。加上上解中央61亿元、政府一般债务还本支出876亿元,以及安排预算稳定调节基金、结转下年等1026亿元后,支出总量为7654亿元。收支相抵,全市一般公共预算收支平衡。 重点支出执行情况为:公共安全支出263亿元,增长0.8%。教育支出879亿元,增长2.4%。科学技术支出108亿元,增长1.9%。文化旅游体育与传媒支出58亿元,下降6.6%,主要是受上年国企注资",
+    "isError": false,
+    "durationMs": 1318,
+    "createdAt": "2026-03-01T11:57:01.933Z"
+  },
+  {
+    "id": "cf77086281512a36",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_mjxz5v0rlwzf_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:57:13.550Z"
+  },
+  {
+    "id": "a48c9ecef6fcacc8",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 政策红利持续释放 AI制药发展提速-中新网\nURL: https://www.chinanews.com.cn/cj/2026/02-04/10565352.shtml\nDescription: 2025年4月,工信部､国家卫生健康委等七部门联合发布《医药工业数智化转型实施方案(2025—2030年)》,提出到2027年建设10个以上医药大模型创新平台,打造100个以上医药工业数智技术应用典型场景;当年12月,工信部等八部门又联合印发《“人工智能+制造”专项行动实施意见》,将“提升医药智能研发”明确为AI赋能的重点攻坚领域｡ 专家表示,AI制药已被纳入“人工智能+”专项行动,随着政策支持不断完善,行业也将从自发探索进入政策引导的规范化发展阶段｡\nPublished date: 2026-02-28T02:31:19+08:00\nSite name: 中国新闻网\n\nTitle: 为中国制造增智赋能_中央网络安全和信息化委员会办公室\nURL: https://www.cac.gov.cn/2026-01/27/c_1771245693448168.htm\nDescription:  工业和信息化部等8部门日前联合印发《“人工智能+制造”专项行动实施意见》,为人工智能技术深度融入制造业按下“快进键”｡在美国,2026国际消费电子展火热开幕,各类人工智能设备取代大模型跻身“C位”｡ 大洋两岸的两幅图景,清晰指向同一趋势:人工智能已深度融入生产制造｡ 人工智能与制造业的“双向奔赴”实属必然｡从技术端看,作为新一轮科技革命的核心技术,人工智能蓄势已久,迫切需要一个强有力的突破口｡\nPublished date: 2026-02-28T05:18:37+08:00\nSite name: 国家互联网信息办公室\n\nTitle: 1月国资国企改革政策与实践动态:《“人工智能制造”专项行动实施意见》印发、2026央企重组首单落地、国家人工智能应用中试基地启动..._工作_企业_...\nURL: https://www.sohu.com/a/990875595_394513\nDescription: 本月,国资委等八部门印发《“人工智能+制造”专项行动实施意见》,目标到2027年推动我国人工智能与制造业深度融合达到世界前列,将通过推广大模型应用､打造数据集等举措,强化技术､算力和数据支撑,并建立部门联动与资金支持机制加快政策落地实施;2026年央企重组首单落地,中国石化与中国航油实施重组,将整合双方技术与市场优势,打造全链条可持续航空燃料产业生态,保障航空能源安全并抢占绿色航空新赛道;\nPublished date: 2026-02-28T10:20:13+08:00\nSite name: 搜狐\n\nTitle: 两会前瞻  代表聚焦人工智能赋能制造业高质量发展,工信部专项意见推动\nURL: https://new.qq.com/rain/a/20260228A01GQO00\nDescription: 十四届全国人大三次会议期间,人大代表提出的涉及推动高质量发展的建议占比近三成,其中近60件建议聚焦人工智能赋能制造业高质量发展｡      近日,全国人大常委会代表工委举行高质量办理代表建议典型案例吹风会｡全国人大常委会代表工委负责人介绍,十四届全国人大三次会议期间,代表们依照法定程序提出对各方面工作的建议､批评和意见共计9160件,其中,涉及推动高质量发展的建议共计2481件,占比27%｡   \nPublished date: 2026-02-28T07:40:27+08:00\nSite name: 腾讯网\n\nTitle: 人工智能成制造业升级关键变量 - 名品汇 - 新乡网-新乡重点新闻网站\nURL: https://www.xxrb.com.cn/html/2026/mph_0227/44034.html\nDescription: (左上)在武汉,人形机器人现场表演踢足球。新华社记者 肖艺九 摄 (右下)在位于京津中关村科技城的天津新松智能科技有限公司,工作人员正操控一台矿井巡查机器人。新华社记者 孙凡越 摄 本报记者 赖奇春 黄鑫 全球人工智能技术迭代创新按下“快进键”,与各行业各领域的融合应用持续拓展深化。近日,工业和信息化部等8部门发布《“人工智能+制造”专项行动实施意见》(下称《实施意见》),加快推进人工智能技术在制造业中融合应用,培育新质生产力,全方位、深层次、高水平赋能新型工业化。 专家认为,以大模型为代表的新一代人工智能技术加速突破,为制造业转型升级提供了前所未有的历史机遇。推动人工智能与制造业深度融合,是重塑制造业竞争优势、加快建设制造强国的关键一招,更是培育新质生产力、构建现代化产业体系的战略举措。 重塑产业竞争格局",
+    "isError": false,
+    "durationMs": 1391,
+    "createdAt": "2026-03-01T11:57:14.941Z"
+  },
+  {
+    "id": "9f53f42642c64b4a",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_a5wn08py525m_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:57:20.427Z"
+  },
+  {
+    "id": "effac2283f023e4a",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 国务院印发《关于深入实施“人工智能+”行动的意见》--人民视频--人民网\nURL: http://tv.people.com.cn/n1/2025/0826/c61600-40550621.html\nDescription: 国务院印发《关于深入实施“人工智能+”行动的意见》\n2025年08月26日20:35\n来源:央视网\n人\n民\n网\n股\n份\n有\n限\n公\n司\n版\n权\n所\n有\n,未\n经\n书\n面\n授\n权\n禁\n止\n使\n用\nCopyright\n©\n1997-2025\nby\nwww.people.com.cn.\nall\nrights\nreserved\nPublished date: 2025-08-26T00:00:00+08:00\nSite name: 人民视频\n\nTitle: 国务院关于深入实施“人工智能+”行动的意见_财新数据通频道_财新网\nURL: https://database.caixin.com/2025-08-26/102355539.html\nDescription: 【财新网】\n发布机构:中国政府网\n发布日期:2025年08月26日\n国务院关于深入实施“人工智能+”行动的意见\n国发〔2025〕11号\n各省、自治区、直辖市人民政府,国务院各部委、各直属机构:\n为深入实施“人工智能+”行动,推动人工智能与经济社会各行业各领域广泛深度融合,重塑人类生产生活范式,促进生产力革命性跃迁和生产关系深层次变革,加快形成人机协同、跨界融合、共创分享的智能经济和智能社会新形态,现提出如下意见。\nPublished date: 2025-08-26T00:00:00+08:00\nSite name: 财新网数据频道\n\nTitle: 国务院印发《关于深入实施“人工智能+”行动的意见》\nURL: https://www.akss.gov.cn/qwfb/gwyxx/20250826/i1322876.html\nDescription: 索\n引\n号:000014349/2025-00070主题分类:科技、教育\\科技发文机关:国务院成文日期:2025年08月21日标\n题:国务院关于深入实施“人工智能+”行动的意见发文字号:国发〔2025〕11号发布日期:2025年08月26日国务院关于深入实施“人工智能+”行动的意见国发〔2025〕11号各省、自治区、直辖市人民政府,国务院各部委、各直属机构:为深入实施“人工智能+”行动,推动人工智能与经济社会各行业各领域广泛深度融合,重塑人类生产生活范式,促进生产力革命性跃迁和生产关系深层次变革,加快形成人机协同、跨界融合、共创分享的智能经济和智能社会新形态,现提出如下意见。一、总体要求以习近平新时代中国特色社会主义思想为指导,完整准确全面贯彻新发展理念,坚持以人民为中心的发展思想,充分发挥我国数据资源丰富、产业体系完备、应用场景广阔等优势,强化前瞻谋划、系统布局、分业施策、开放共享、安全可控,以科技、产业、消费、民生、治理、全球合作等领域为重点,深入实施“人工智能+”行动,涌现一批新基础设施、新技术体系、新产业生态、新就业岗位等,加快培育发展新质生产力,使全体人民共享人工智能发展成果,更好服务中国式现代化建设。到2027年,率先实现人工智能与6大重点领域广泛深度融合,新一代智能终端、智能体等应用普及率超70%,智能经济核心产业规模快速增长,人工智能在公共治理中的作用明显增强,人工智能开放合作体系不断完善。到2030年,我国人工智能全面赋能高质量发展,新一代智能终端、智能体等应用普及率超90%,智能经济成为我国经济发展的重要增长极,推动技术普惠和成果共享。到2035年,我国全面步入智能经济和智能社会发展新阶段,为基本实现社会主义现代化提供有力支撑。二、加快实施重点行动(一)“人工智能+”科学技术1.加速科学发现进程。加快探索人工智能驱动的新型科研范式,加速“从0到1”重大科\nPublished date: 2025-08-26T18:47:00+08:00\nSite name: 阿克苏市人民政府\n\nTitle: 国务院关于深入实施“人工智能+”行动的意见_政策法规_附属学校 - 南昌航空大学\nURL: https://fuxiao.nchu.edu.cn/djgz/content_184207\nDescription: 2025年8月21日,国务院发布《国务院关于深入实施“人工智能+”行动的意见》,全文如下:国务院关于深入实施“人工智能+”行动的意见国发〔2025〕11号各省、自治区、直辖市人民政府,国务院各部委、各直属机构:\n为深入实施“人工智能+”行动,推动人工智能与经济社会各行业各领域广泛深度融合,重塑人类生产生活范式,促进生产力革命性跃迁和生产关系深层次变革,加快形成人机协同、跨界融合",
+    "isError": false,
+    "durationMs": 361,
+    "createdAt": "2026-03-01T11:57:20.788Z"
+  },
+  {
+    "id": "a5dec8480c39e95a",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_6jea0xx5ndmw_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:57:29.983Z"
+  },
+  {
+    "id": "373d20ed07cd3abf",
+    "type": "tool_call",
+    "taskId": "6efbf6ef348dbfc1",
+    "subtaskId": "3933e6afa8673d23",
+    "employeeId": "a16f1d2830fbe7f4",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: DeepSeek再扔王炸?官方披露正测试新模型结构—新闻—科学网\nURL: https://news.sciencenet.cn/htmlnews/2026/2/560251.shtm\nDescription: 2月13日,澎湃新闻记者获悉,DeepSeek网页/APP正在测试新的长文本模型结构,支持1M上下文｡其API服务不变,仍为V3.2,仅支持128K上下文｡ 这也被外界认为,DeepSeek或将在今年春节再次“炸场”发布新模型,复刻去年春节现象级轰动｡ 今年1月12日,DeepSeek曾发布一篇新论文《Conditional Memory via Scalable Lookup:A New \nPublished date: 2026-02-23T01:35:03+08:00\nSite name: 科学网\n\nTitle: 全球人工智能趋势追踪报告_DeepSeek-V_模型_市场震动\nURL: https://www.sohu.com/a/986829000_121776575\nDescription:  报告表明,DeepSeek-V4预估会在2026年2月中旬进行发布,有可能在编程､超长代码处理以及推理可靠性等方面达成突破｡然而,和一年前V3/R1所引发的市场震动不一样,全球主要云服务商,也就是CSP,已然加快朝着通用人工智能,即AGI的方面迈进,不间断的算力投入致使市场对于新模型的冲击具备更强的韧性｡所以,V4更大概率会促使中国AI产业链创新周期加快,而不是去颠覆全球AI基础设施市场的格局｡\nPublished date: 2026-02-28T20:48:05+08:00\nSite name: 搜狐\n\nTitle: 2026 AI Agent时代:DeepSeek引领自主智能体革命,实现复杂工作流自动化闭环-CSDN博客\nURL: https://blog.csdn.net/qinzhenyan/article/details/157912924\nDescription: 2026 AI Agent时代:DeepSeek引领自主智能体革命,实现复杂工作流自动化闭环 引言 我们正站在人工智能发展的一个关键节点上｡曾经科幻小说中的想象——能够独立感知､思考､决策并执行复杂任务的智能体(Agent),正以前所未有的速度从实验室走向现实应用｡展望2026年,一个由 自主智能体 主导的时代轮廓已日渐清晰｡\nPublished date: 2026-02-09T23:44:47+08:00\nSite name: blog.csdn.net\n\nTitle: 收藏级从零开始实现AI Agent框架(理论实践,小白/程序员必看)-CSDN博客\nURL: https://blog.csdn.net/2301_76168381/article/details/158502915\nDescription: 年初爆火至今热度不减的OpenClaw,为AI Agent领域打开了全新想象空间｡若说2025年是AI Agent智能体的元年,那么2026年必将成为其真正走向商用化的关键节点——而商用化的核心前提,是AI Agent能够深度落地到各行各业的实际商业场景中｡ 作为程序员/工程师,我们更关注的是“如何落地实现”:工程框架是AI Agent落地的基石,框架选型更是架构师设计､实现智能体的首要环节｡\nPublished date: 2026-02-28T14:38:13+08:00\nSite name: blog.csdn.net\n\nTitle: DeepSeek  深度求索\nURL: http://deepseek.com/\nDescription: DeepSeek-V3.2 正式版发布,强化 Agent 能力,融入思考推理,在网页端､APP 和API 全面上线,点击查看详情｡ 探索未至之境 开始对话 与DeepSeek-V3.2 免费对话 体验全新旗舰模型 API 开放平台 调用 DeepSeek 最新模型 快速集成､流畅体验 获取手机 AppEnglish© 2026 杭州深度求索人工智能基础技术研究有限公司 版权所有 \nPublished date: 2026-02-02T20:54:14+08:00\nSite name: deepseek.com\n\nTitle: 报道:DeepSeek将于2月发布下一代AI模型V4,具备“强大”的编程能力\nURL: https://wallstreetcn.com/articles/3762982\nDescription: 报道称,DeepSeek内部的初步测试表明,V4在编程能力上超过了目前市场上的其他顶级模型,如Anthropic的Claude和OpenAI的GPT系列,这无疑",
+    "isError": false,
+    "durationMs": 1099,
+    "createdAt": "2026-03-01T11:57:31.082Z"
+  }
+]

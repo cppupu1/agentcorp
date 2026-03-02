@@ -1,0 +1,74 @@
+{
+  "label": "round22-pm-incident",
+  "sessionId": "round22-incident-20260301-075718",
+  "pmChatDurationMs": 29249,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "5b3f9713dd275cca"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 2
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 29249
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 3
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "5b3f9713dd275cca",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 7863,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n支付接口故障复盘任务已完成，运维工程师提交了详细的复盘报告，包含根因分析、止损动作和预防清单三个核心部分。报告识别出数据库连接池配置不足与高并发处理逻辑缺陷为根本原因，记录了完整的应急处理时间线，并提出了分级优先级的改进措施。"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-03-01T09:13:45.713000Z",
+  "runLabel": "round28-20260301-091345",
+  "sessions": [
+    {
+      "label": "round28-pm-translation",
+      "sessionId": "round28-translation-20260301-091345",
+      "evidence": "run-logs/round28-pm-translation.audit.20260301-091345.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round28-pm-content",
+      "sessionId": "round28-content-20260301-091345",
+      "evidence": "run-logs/round28-pm-content.audit.20260301-091345.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round28-pm-stock",
+      "sessionId": "round28-stock-20260301-091345",
+      "evidence": "run-logs/round28-pm-stock.audit.20260301-091345.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round28-pm-memory",
+      "sessionId": "round28-memory-20260301-091345",
+      "evidence": "run-logs/round28-pm-memory.audit.20260301-091345.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    }
+  ]
+}

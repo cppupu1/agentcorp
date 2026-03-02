@@ -1,0 +1,250 @@
+{
+  "round": "round48-glm-biz-e2e-20260302041044",
+  "startedAt": "2026-03-02T04:10:44.809Z",
+  "scenarios": [
+    {
+      "key": "stock_core",
+      "sessionId": "round48-glm-biz-e2e-20260302041044-stock_core",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": false,
+          "status": "failed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_partial_failure_words",
+          "ok": false
+        },
+        {
+          "name": "expect_stock_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": false,
+      "taskId": "7ec273c719acc4e4",
+      "status": "failed",
+      "tools": {
+        "uniqueNames": [
+          "tushare_mcp_001__today",
+          "tushare_mcp_001__daily",
+          "ask_user_decision"
+        ],
+        "flags": {
+          "stock": true,
+          "search": false,
+          "memory": false,
+          "fs": false
+        }
+      },
+      "durationMs": 227877
+    },
+    {
+      "key": "legal_ai_compliance",
+      "sessionId": "round48-glm-biz-e2e-20260302041044-legal_ai_compliance",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_partial_failure_words",
+          "ok": true
+        },
+        {
+          "name": "expect_search_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "9b2aed204c1d7ad6",
+      "status": "completed",
+      "tools": {
+        "uniqueNames": [
+          "a6d0277e32709254__bocha_web_search",
+          "a6d0277e32709254__bocha_ai_search",
+          "1791ada993a23a56__get_rendered_html",
+          "1791ada993a23a56__get_markdown_summary"
+        ],
+        "flags": {
+          "stock": false,
+          "search": true,
+          "memory": false,
+          "fs": false
+        }
+      },
+      "durationMs": 306502
+    },
+    {
+      "key": "customer_memory",
+      "sessionId": "round48-glm-biz-e2e-20260302041044-customer_memory",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_partial_failure_words",
+          "ok": true
+        },
+        {
+          "name": "expect_memory_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "4e893ac53c7e5fed",
+      "status": "completed",
+      "tools": {
+        "uniqueNames": [
+          "ef64b3f65f2ab2a2__read_graph",
+          "ef64b3f65f2ab2a2__search_nodes",
+          "ef64b3f65f2ab2a2__create_entities",
+          "ef64b3f65f2ab2a2__add_observations"
+        ],
+        "flags": {
+          "stock": false,
+          "search": false,
+          "memory": true,
+          "fs": false
+        }
+      },
+      "durationMs": 146250
+    },
+    {
+      "key": "repo_onboarding",
+      "sessionId": "round48-glm-biz-e2e-20260302041044-repo_onboarding",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_partial_failure_words",
+          "ok": true
+        },
+        {
+          "name": "expect_fs_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "2645e60ae1d435dc",
+      "status": "completed",
+      "tools": {
+        "uniqueNames": [
+          "01a07c2a149edad0__list_allowed_directories",
+          "b931c6ca2b7ad17b__directory_tree",
+          "b931c6ca2b7ad17b__read_multiple_files",
+          "b931c6ca2b7ad17b__read_text_file"
+        ],
+        "flags": {
+          "stock": false,
+          "search": false,
+          "memory": false,
+          "fs": true
+        }
+      },
+      "durationMs": 60885
+    },
+    {
+      "key": "ops_weekly",
+      "sessionId": "round48-glm-biz-e2e-20260302041044-ops_weekly",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_partial_failure_words",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "a70cef779a4a4c29",
+      "status": "completed",
+      "tools": {
+        "uniqueNames": [
+          "write_file",
+          "01a07c2a149edad0__write_file"
+        ],
+        "flags": {
+          "stock": false,
+          "search": false,
+          "memory": false,
+          "fs": false
+        }
+      },
+      "durationMs": 140412
+    }
+  ],
+  "allPassed": false,
+  "finishedAt": "2026-03-02T04:26:16.740Z"
+}

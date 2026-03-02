@@ -1,0 +1,94 @@
+{
+  "label": "round36-memory",
+  "sessionId": "round36-memory-20260301-130008",
+  "kind": "memory",
+  "userPrompt": "客服团队这周要复盘，请你发起任务：基于最近一个月售后投诉整理5条FAQ，并沉淀成知识条目。",
+  "pmChatDurationMs": 54941,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "86f855a208fc94a5"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": true,
+    "memory": true,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "user_prompt_without_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 54941
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "86f855a208fc94a5"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "not_waiting_for_user",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    },
+    {
+      "name": "faq_structure",
+      "ok": true,
+      "faqHits": 12
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "86f855a208fc94a5",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 232599,
+    "decisionRows": 10,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成2026年2月售后投诉FAQ整理与知识沉淀工作。分析归纳了5类高频问题（物流配送、商品质量、售后服务响应、退换货流程、赔偿争议），筛选出5条最具代表性的问题并整理成FAQ格式，同时将FAQ内容沉淀为标准知识条目（包含ID、分类、问题、答案、标签），并输出了可直接录入知识库的结构化JSON文档。"
+  }
+}

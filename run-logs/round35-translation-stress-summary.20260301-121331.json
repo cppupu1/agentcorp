@@ -1,0 +1,50 @@
+{
+  "stamp": "20260301-121331",
+  "total": 8,
+  "statusCount": {
+    "completed": 7,
+    "waiting": 1
+  },
+  "rows": [
+    {
+      "session": "round35-trans-1-20260301-121331",
+      "taskId": "344e1e9b013fc603",
+      "status": "waiting"
+    },
+    {
+      "session": "round35-trans-2-20260301-121331",
+      "taskId": "a38491c13b3ebc6d",
+      "status": "completed"
+    },
+    {
+      "session": "round35-trans-3-20260301-121331",
+      "taskId": "b1734cd0e66f2c08",
+      "status": "completed"
+    },
+    {
+      "session": "round35-trans-4-20260301-121331",
+      "taskId": "35506e9c8f215370",
+      "status": "completed"
+    },
+    {
+      "session": "round35-trans-5-20260301-121331",
+      "taskId": "bd1e39b807223896",
+      "status": "completed"
+    },
+    {
+      "session": "round35-trans-6-20260301-121331",
+      "taskId": "f935d6292e475bce",
+      "status": "completed"
+    },
+    {
+      "session": "round35-trans-7-20260301-121331",
+      "taskId": "762695dbb99c257b",
+      "status": "completed"
+    },
+    {
+      "session": "round35-trans-8-20260301-121331",
+      "taskId": "5ef782b1a0926495",
+      "status": "completed"
+    }
+  ]
+}

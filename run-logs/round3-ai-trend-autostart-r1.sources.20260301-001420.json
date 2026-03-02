@@ -1,0 +1,106 @@
+{
+  "taskId": "b62484cabde7eaf9",
+  "totalDomains": 22,
+  "topDomains": [
+    {
+      "domain": "new.qq.com",
+      "count": 4,
+      "example": "https://new.qq.com/rain/a/20250608A036T000"
+    },
+    {
+      "domain": "m.blog.csdn.net",
+      "count": 3,
+      "example": "https://m.blog.csdn.net/zhz5214/article/details/146269011"
+    },
+    {
+      "domain": "news.qq.com",
+      "count": 3,
+      "example": "https://news.qq.com/rain/a/20250507A02QNV00"
+    },
+    {
+      "domain": "www.sohu.com",
+      "count": 2,
+      "example": "https://www.sohu.com/a/873882963_121124365"
+    },
+    {
+      "domain": "www.cnblogs.com",
+      "count": 2,
+      "example": "https://www.cnblogs.com/MeteorSeed/p/archive/2025/08/22"
+    },
+    {
+      "domain": "letian.blog.csdn.net",
+      "count": 1,
+      "example": "https://letian.blog.csdn.net/article/details/150107929"
+    },
+    {
+      "domain": "www.toutiao.com",
+      "count": 1,
+      "example": "https://www.toutiao.com/article/7483003801171952154/"
+    },
+    {
+      "domain": "cm-rx.com",
+      "count": 1,
+      "example": "http://cm-rx.com/news-detail/id/239.html"
+    },
+    {
+      "domain": "devpress.csdn.net",
+      "count": 1,
+      "example": "https://devpress.csdn.net/user/weixin_43737299"
+    },
+    {
+      "domain": "blog.csdn.net",
+      "count": 1,
+      "example": "https://blog.csdn.net/mng123/article/details/146191861"
+    },
+    {
+      "domain": "www.trendforce.com",
+      "count": 1,
+      "example": "http://www.trendforce.com/presscenter/news/20240321-12090.html"
+    },
+    {
+      "domain": "k.sina.com.cn",
+      "count": 1,
+      "example": "https://k.sina.com.cn/article_7857201856_1d45362c001901scha.html"
+    },
+    {
+      "domain": "www.zhitongcaijing.com",
+      "count": 1,
+      "example": "https://www.zhitongcaijing.com/content/detail/1263843.html"
+    },
+    {
+      "domain": "news.zol.com.cn",
+      "count": 1,
+      "example": "https://news.zol.com.cn/more/3_3959.shtml"
+    },
+    {
+      "domain": "www.eeo.com.cn",
+      "count": 1,
+      "example": "https://www.eeo.com.cn/2025/0808/743702.shtml"
+    },
+    {
+      "domain": "tech.caijing.com.cn",
+      "count": 1,
+      "example": "http://tech.caijing.com.cn/20250507/5088507.shtml"
+    },
+    {
+      "domain": "finance.sina.com.cn",
+      "count": 1,
+      "example": "https://finance.sina.com.cn/tech/roll/2025-05-07/doc-inevtcea9763372.shtml"
+    },
+    {
+      "domain": "m.sohu.com",
+      "count": 1,
+      "example": "https://m.sohu.com/a/880902409_121924583/?pvid=000115_3w_a"
+    },
+    {
+      "domain": "finance.sina.cn",
+      "count": 1,
+      "example": "https://finance.sina.cn/hkstock/gsxw/2025-03-19/detail-ineqeanr1781977.d.html"
+    },
+    {
+      "domain": "www.jiemian.com",
+      "count": 1,
+      "example": "https://www.jiemian.com/article/13676599.html"
+    }
+  ]
+}

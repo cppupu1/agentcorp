@@ -1,0 +1,108 @@
+{
+  "label": "round29-mini-ai",
+  "sessionId": "round29-mini-ai-20260301-095546",
+  "pmChatDurationMs": 46469,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "b8043927154eb825"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 46469
+    },
+    {
+      "name": "uses_minimax_model",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ],
+      "expected": "b9df4501c7f6f9a6"
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "b8043927154eb825",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 192775,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 6
+        },
+        {
+          "tool": "a6d0277e32709254__bocha_ai_search",
+          "count": 4
+        },
+        {
+          "tool": "1791ada993a23a56__get_raw_text",
+          "count": 2
+        },
+        {
+          "tool": "fc5f4c5bf43702d4__echo",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成AI技术行业趋势分析任务，整理近30天AI领域重要信息，输出3条关键结论并附带具体日期和权威来源链接。关键结论涵盖：(1)OpenAI GPT-5将于2025年夏季发布；(2)Anthropic年化收入突破30亿美元；(3)NVIDIA Blackwell芯片训练效率提升2.2倍。所有结论均附有可核验的来源链接，信息来源于第一财经、IT之家、腾讯网等权威科技媒体。"
+    }
+  ]
+}

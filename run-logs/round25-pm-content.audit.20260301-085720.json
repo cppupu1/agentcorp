@@ -1,0 +1,80 @@
+{
+  "label": "round25-pm-content",
+  "sessionId": "round25-content-20260301-085720",
+  "pmChatDurationMs": 48441,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "f1d0b3faf7d1ae44"
+  ],
+  "autoAssign": {
+    "recommended": 1,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 48441
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 1,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "f1d0b3faf7d1ae44",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 2571,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n企业AI助手发布内容创作任务已圆满完成。文案策划团队共创作了1篇发布短文和2条社媒文案，所有内容均符合B2B企业定位，突出AI智能和效率提升核心关键词。内容专业简洁，具有较强说服力，可直接用于官方公众号、新闻稿及LinkedIn等社媒平台发布。"
+    }
+  ]
+}

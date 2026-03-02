@@ -1,0 +1,85 @@
+{
+  "label": "round21-pm-customer-memory-lite",
+  "sessionId": "round21-cs-20260301-071821",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "52c3bba3e996f574"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "52c3bba3e996f574",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 114804,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 8
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_relations",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成售后投诉分析与知识沉淀任务，基于最近一个月的售后投诉数据完成了全面的分析，识别了客服服务、商品质量、退款困难等5大高频投诉问题，输出了5条可操作性强、通俗易懂的FAQ，提炼了智能客服转人工流程、退款审核流程、预付式消费风险管控3个SOP优化建议，并将所有内容沉淀为结构化知识条目。"
+    }
+  ]
+}

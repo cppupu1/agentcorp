@@ -1,0 +1,71 @@
+{
+  "id": "7f8c8351fd8fa2b3",
+  "teamId": "a7ac487975e02e20",
+  "teamName": "内容创作",
+  "title": "制作企业公告模板（中英双语）",
+  "description": "请输出一个企业公告模板，要求：\n1. 提供中英双语版本\n2. 内容简洁，语义一致\n3. 格式规范，可直接复用\n4. 适用于通用企业场景发布公告使用",
+  "status": "completed",
+  "mode": "suggest",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "9ac61bf7174b63c8",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "2874f42218310cf1",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "52faf4689b34363c",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "制作企业公告模板（中英双语）",
+        "description": "请输出一个企业公告模板，要求：\n1. 提供中英双语版本\n2. 内容简洁，语义一致\n3. 格式规范，可直接复用\n4. 适用于通用企业场景发布公告使用",
+        "assigneeId": "2874f42218310cf1",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告模板（中英双语）的制作任务。文案策划提交了一份高质量的模板，包含完整的中英双语版本，内容简洁且语义一致，格式规范且直接可复用，适用于通用企业公告场景。模板还附带了详细的使用说明和占位符清单，方便用户快速上手。",
+    "deliverables": "# 企业公告模板（中英双语）\n\n---\n\n## 【中文版本】\n\n**[公司名称]公告**\n\n**公告编号：** [编号-YYYY-XXX]\n\n**发布日期：** [YYYY年MM月DD日]\n\n**适用范围：** [全体员工/相关部门/特定人员]\n\n---\n\n**关于[公告主题]的通知**\n\n尊敬的各位同事：\n\n根据[相关背景/原因]，经公司研究决定，现就[公告主题]事项通知如下：\n\n**一、主要内容**\n\n[请在此处填写公告的主要内容，可使用列表形式]\n\n1. [要点一]\n2. [要点二]\n3. [要点三]\n\n**二、执行安排**\n\n- **生效时间：** [YYYY年MM月DD日]起生效\n- **执行部门：** [负责部门名称]\n- **配合部门：** [相关部门名称]\n\n**三、注意事项**\n\n请各部门/各位同事认真阅读本公告内容，严格按照要求执行。执行过程中如有疑问，请及时与[负责部门/联系人]联系。\n\n**四、补充说明**\n\n[如有其他需要说明的事项，请在此处补充]\n\n本公告最终解释权归[公司名称]所有。\n\n特此通知。\n\n---\n\n**[公司名称]**\n**[发布部门名称]**\n\n**联系方式：**\n- 联系人：[姓名]\n- 电话：[电话号码]\n- 邮箱：[邮箱地址]\n\n---\n\n## 【English Version】\n\n**Announcement of [Company Name]**\n\n**Announcement No.:** [No.-YYYY-XXX]\n\n**Date:** [DD/MM/YYYY]\n\n**Scope:** [All Employees / Relevant Departments / Specific Personnel]\n\n---\n\n**Notice Regarding [Announcement Topic]**\n\nDear Colleagues,\n\nPursuant to [relevant background/reason], it is hereby decided by the Company that the following matters regarding [announcement topic] are hereby notified:\n\n**I. Main Content**\n\n[Please fill in the main content of the announcement here, list format can be used]\n\n1. [Point 1]\n2. [Point 2]\n3. [Point 3]\n\n**II. Implementation Arrangements**\n\n- **Effective Date:** Effective from [DD/MM/YYYY]\n- **Responsible Department:** [Name of responsible department]\n- **Coordinating Departments:** [Names of relevant departments]\n\n**III. Important Notes**\n\nPlease read this announcement carefully and strictly implement it as required. Should you have any questions during implementation, please contact [responsible department/contact person] in a timely manner.\n\n**IV. Supplementary Information**\n\n[If there are other matters requiring explanation, please supplement them here]\n\nThe Company reserves the right of final interpretation of this announcement.\n\nThis is hereby notified.\n\n---\n\n**[Company Name]**\n**[Name of Issuing Department]**\n\n**Contact Information:**\n- Contact Person: [Name]\n- Phone: [Phone Number]\n- Email: [Email Address]\n\n---\n\n## 使用说明\n\n### 中文说明\n1. **替换占位符**：将方括号 `[]` 中的内容替换为实际信息\n2. **内容调整**：根据实际公告需求，可增删\"主要内容\"条目\n3. **日期格式**：建议使用 YYYY年MM月DD日 格式\n4. **适用范围**：根据实际情况选择或修改适用对象\n5. **发布部门**：明确公告的发布主体，便于追溯\n\n### English Instructions\n1. **Replace Placeholders**: Replace the content within square brackets `[]` with actual information\n2. **Content Adjustment**: You may add or delete items under \"Main Content\" based on actual announcement needs\n3. **Date Format**: It is recommended to use DD/MM/YYYY format\n4. **Scope**: Select or modify the applicable parties based on actual circumstances\n5. **Issuing Department**: Clearly specify the issuing entity of the announcement for traceability\n\n---\n\n## 占位符清单\n\n| 中文占位符 | English Placeholder | 说明 |\n|-----------|---------------------|------|\n| [公司名称] | [Company Name] | 企业全称 |\n| [编号-YYYY-XXX] | [No.-YYYY-XXX] | 公告编号格式 |\n| [YYYY年MM月DD日] | [DD/MM/YYYY] | 发布日期 |\n| [全体员工/相关部门/特定人员] | [All Employees/Relevant Departments/Specific Personnel] | 适用范围 |\n| [公告主题] | [Announcement Topic] | 公告核心内容 |\n| [相关背景/原因] | [relevant background/reason] | 公告背景 |\n| [负责部门名称] | [Name of responsible department] | 责任部门 |\n| [相关部门名称] | [Names of relevant departments] | 配合部门 |\n| [负责部门/联系人] | [responsible department/contact person] | 咨询对象 |\n| [发布部门名称] | [Name of Issuing Department] | 发布部门 |\n| [姓名] | [Name] | 联系人姓名 |\n| [电话号码] | [Phone Number] | 联系电话 |\n| [邮箱地址] | [Email Address] | 联系邮箱 |\n\n---\n\n**模板版本：** V1.0  \n**创建日期：** 2025-01-15  \n**适用场景：** 人事变动、制度更新、活动通知、重要事项告知等通用企业公告场景",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T15:22:23.126Z"
+  },
+  "tokenUsage": 2123,
+  "createdAt": "2026-03-01T15:21:26.909Z",
+  "updatedAt": "2026-03-01T15:22:24.672Z",
+  "subtasks": [
+    {
+      "id": "9f9e4841b4934db3",
+      "title": "制作企业公告模板（中英双语）",
+      "description": "请输出一个企业公告模板，要求：\n1. 提供中英双语版本\n2. 内容简洁，语义一致\n3. 格式规范，可直接复用\n4. 适用于通用企业场景发布公告使用",
+      "assigneeId": "2874f42218310cf1",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "# 企业公告模板\n## Company Announcement Template\n\n---\n\n### 【中文版本】\n\n---\n\n**[公司名称]公告**\n\n**公告编号：** [编号-YYYY-XXX]\n\n**发布日期：** [YYYY年MM月DD日]\n\n**适用范围：** [全体员工/相关部门/特定人员]\n\n---\n\n**关于[公告主题]的通知**\n\n尊敬的各位同事：\n\n根据[相关背景/原因]，经公司研究决定，现就[公告主题]事项通知如下：\n\n**一、主要内容**\n\n[请在此处填写公告的主要内容，可使用列表形式]\n\n1. [要点一]\n2. [要点二]\n3. [要点三]\n\n**二、执行安排**\n\n- **生效时间：** [YYYY年MM月DD日]起生效\n- **执行部门：** [负责部门名称]\n- **配合部门：** [相关部门名称]\n\n**三、注意事项**\n\n请各部门/各位同事认真阅读本公告内容，严格按照要求执行。执行过程中如有疑问，请及时与[负责部门/联系人]联系。\n\n**四、补充说明**\n\n[如有其他需要说明的事项，请在此处补充]\n\n本公告最终解释权归[公司名称]所有。\n\n特此通知。\n\n---\n\n**[公司名称]**\n**[发布部门名称]**\n\n**联系方式：**\n- 联系人：[姓名]\n- 电话：[电话号码]\n- 邮箱：[邮箱地址]\n\n---\n\n---\n\n### 【English Version】\n\n---\n\n**Announcement of [Company Name]**\n\n**Announcement No.:** [No.-YYYY-XXX]\n\n**Date:** [DD/MM/YYYY]\n\n**Scope:** [All Employees / Relevant Departments / Specific Personnel]\n\n---\n\n**Notice Regarding [Announcement Topic]**\n\nDear Colleagues,\n\nPursuant to [relevant background/reason], it is hereby decided by the Company that the following matters regarding [announcement topic] are hereby notified:\n\n**I. Main Content**\n\n[Please fill in the main content of the announcement here, list format can be used]\n\n1. [Point 1]\n2. [Point 2]\n3. [Point 3]\n\n**II. Implementation Arrangements**\n\n- **Effective Date:** Effective from [DD/MM/YYYY]\n- **Responsible Department:** [Name of responsible department]\n- **Coordinating Departments:** [Names of relevant departments]\n\n**III. Important Notes**\n\nPlease read this announcement carefully and strictly implement it as required. Should you have any questions during implementation, please contact [responsible department/contact person] in a timely manner.\n\n**IV. Supplementary Information**\n\n[If there are other matters requiring explanation, please supplement them here]\n\nThe Company reserves the right of final interpretation of this announcement.\n\nThis is hereby notified.\n\n---\n\n**[Company Name]**\n**[Name of Issuing Department]**\n\n**Contact Information:**\n- Contact Person: [Name]\n- Phone: [Phone Number]\n- Email: [Email Address]\n\n---\n\n---\n\n### 使用说明\n\n---\n\n#### 【中文说明】\n\n1. **替换占位符**：将方括号 `[]` 中的内容替换为实际信息\n2. **内容调整**：根据实际公告需求，可增删\"主要内容\"条目\n3. **日期格式**：建议使用 YYYY年MM月DD日 格式\n4. **适用范围**：根据实际情况选择或修改适用对象\n5. **发布部门**：明确公告的发布主体，便于追溯\n\n#### 【English Instructions】\n\n1. **Replace Placeholders**: Replace the content within square brackets `[]` with actual information\n2. **Content Adjustment**: You may add or delete items under \"Main Content\" based on actual announcement needs\n3. **Date Format**: It is recommended to use DD/MM/YYYY format\n4. **Scope**: Select or modify the applicable parties based on actual circumstances\n5. **Issuing Department**: Clearly specify the issuing entity of the announcement for traceability\n\n---\n\n### 可用占位符清单\n\n| 中文占位符 | English Placeholder | 说明 |\n|-----------|---------------------|------|\n| [公司名称] | [Company Name] | 企业全称 |\n| [编号-YYYY-XXX] | [No.-YYYY-XXX] | 公告编号格式 |\n| [YYYY年MM月DD日] | [DD/MM/YYYY] | 发布日期 |\n| [全体员工/相关部门/特定人员] | [All Employees/Relevant Departments/Specific Personnel] | 适用范围 |\n| [公告主题] | [Announcement Topic] | 公告核心内容 |\n| [相关背景/原因] | [relevant background/reason] | 公告背景 |\n| [负责部门名称] | [Name of responsible department] | 责任部门 |\n| [相关部门名称] | [Names of relevant departments] | 配合部门 |\n| [负责部门/联系人] | [responsible department/contact person] | 咨询对象 |\n| [发布部门名称] | [Name of Issuing Department] | 发布部门 |\n| [姓名] | [Name] | 联系人姓名 |\n| [电话号码] | [Phone Number] | 联系电话 |\n| [邮箱地址] | [Email Address] | 联系邮箱 |\n\n---\n\n**模板版本：** V1.0  \n**创建日期：** 2025-01-15  \n**适用场景：** 人事变动、制度更新、活动通知、重要事项告知等通用企业公告场景"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 2123,
+      "createdAt": "2026-03-01T15:21:32.680Z",
+      "updatedAt": "2026-03-01T15:22:02.475Z"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "ts": "2026-02-28T23:31:43.846122Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "pending",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:31:48.854511Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:31:53.859606Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:31:58.867064Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:32:03.872398Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:32:08.878612Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:32:13.886901Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "running",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:32:18.895915Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "completed",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:32:23.903121Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "completed",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:32:28.913034Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "completed",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:32:33.920759Z",
+    "status": "executing",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "completed",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  },
+  {
+    "ts": "2026-02-28T23:32:38.926826Z",
+    "status": "completed",
+    "subtasks": [
+      {
+        "id": "aa257fc44adccf96",
+        "status": "completed",
+        "title": "自动启动默认执行子任务"
+      }
+    ]
+  }
+]

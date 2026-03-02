@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-03-01T08:18:15.503759Z",
+  "runLabel": "round23-20260301-081815",
+  "sessions": [
+    {
+      "label": "round23-pm-content",
+      "sessionId": "round23-content-20260301-081815",
+      "evidence": "run-logs/round23-pm-content.audit.20260301-081815.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round23-pm-stock",
+      "sessionId": "round23-stock-20260301-081815",
+      "evidence": "run-logs/round23-pm-stock.audit.20260301-081815.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round23-pm-customer-memory",
+      "sessionId": "round23-cs-20260301-081815",
+      "evidence": "run-logs/round23-pm-customer-memory.audit.20260301-081815.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    }
+  ]
+}

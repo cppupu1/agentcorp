@@ -1,0 +1,39 @@
+{
+  "label": "round38-onboarding",
+  "sessionId": "round38-onboarding-20260301-140242",
+  "kind": "onboarding",
+  "userPrompt": "下周新人入职，直接安排一份前两周计划，按天写关键动作和产出。",
+  "pmChatDurationMs": 731,
+  "pmChatError": null,
+  "pmTools": [],
+  "taskIds": [],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 731
+    },
+    {
+      "name": "task_created",
+      "ok": false,
+      "taskIds": []
+    }
+  ],
+  "allChecksPassed": false,
+  "task": null
+}

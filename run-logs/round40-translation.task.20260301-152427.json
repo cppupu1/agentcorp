@@ -1,0 +1,71 @@
+{
+  "id": "c76230ad0fc1517f",
+  "teamId": "429c8dcad444e1ab",
+  "teamName": "内容创作",
+  "title": "企业公告模板中英双语简版",
+  "description": "创建一个可以直接复用的企业公告模板，包含中英文双语版本。要求：\n1. 模板结构清晰，包含公告标题、发布日期、正文内容、落款等标准要素\n2. 中英文内容对应准确，语言正式规范\n3. 版式简洁，便于快速填写和修改使用\n4. 适用于各类企业公告场景（人事变动、政策通知、活动通知等）",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "90149162a4728d88",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "5b3bc73b9c2fd88d",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "de1308769d6e519a",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告模板中英双语简版",
+        "description": "创建一个可以直接复用的企业公告模板，包含中英文双语版本。要求：\n1. 模板结构清晰，包含公告标题、发布日期、正文内容、落款等标准要素\n2. 中英文内容对应准确，语言正式规范\n3. 版式简洁，便于快速填写和修改使用\n4. 适用于各类企业公告场景（人事变动、政策通知、活动通知等）",
+        "assigneeId": "5b3bc73b9c2fd88d",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成企业公告模板中英双语简版的创建。模板结构清晰，包含公告标题、发布日期、正文内容、落款等标准要素；中英文内容对应准确，语言正式规范；版式简洁便于快速填写修改；适用于人事变动、政策通知、活动通知等各类企业公告场景。额外提供了使用指南、常见应用场景示例、使用检查清单和专业写作建议，方便用户快速上手。",
+    "deliverables": "# 企业公告模板（中文版）\n\n---\n\n## 【公告标题】\n\n**发布日期：** YYYY年MM月DD日  \n**公告编号：** [年份]-[编号]\n\n---\n\n### 致：全体员工 / 相关部门 / 特定人员\n\n尊敬的各位同事：\n\n[引言段落 - 简要说明公告目的和背景]\n\n根据公司相关规定/为了[目的]，现就[事项]公告如下：\n\n---\n\n### 一、[事项一标题]\n\n[详细内容说明]\n\n### 二、[事项二标题]\n\n[详细内容说明]\n\n### 三、[事项三标题]\n\n[详细内容说明]\n\n---\n\n### 重要提示\n\n1. **执行时间：** [具体时间要求]\n2. **联系人：** [姓名]，联系电话：[电话号码]\n3. **相关文档：** [如有附件，说明附件名称]\n4. **注意事项：** [重要提醒事项]\n\n---\n\n### 生效日期\n\n本公告自发布之日起生效 / 自 [具体日期] 起执行。\n\n---\n\n### 特此公告。\n\n**[公司名称]**  \n**[部门名称]**  \n**发布人：** [姓名]  \n**盖章位置：** [公司公章]\n\n---\n\n**附件：**\n- 附件1：[名称]\n- 附件2：[名称]\n\n---\n\n---\n\n# Company Announcement Template (English Version)\n\n---\n\n## [Announcement Title]\n\n**Date:** MM/DD/YYYY  \n**Announcement No.:** [Year]-[Number]\n\n---\n\n### To: All Employees / Relevant Departments / Specific Personnel\n\nDear Colleagues,\n\n[Introductory paragraph - Briefly explain the purpose and background of the announcement]\n\nIn accordance with company regulations / To [purpose], we hereby announce the following regarding [matter]:\n\n---\n\n### I. [First Section Title]\n\n[Detailed description]\n\n### II. [Second Section Title]\n\n[Detailed description]\n\n### III. [Third Section Title]\n\n[Detailed description]\n\n---\n\n### Important Notes\n\n1. **Effective Date:** [Specific time requirement]\n2. **Contact Person:** [Name], Phone: [Phone Number]\n3. **Related Documents:** [If applicable, specify document names]\n4. **Important Reminders:** [Key points to note]\n\n---\n\n### Effective Date\n\nThis announcement is effective from the date of issuance / from [specific date].\n\n---\n\n### This announcement is hereby made.\n\n**[Company Name]**  \n**[Department Name]**  \n**Issued by:** [Name]  \n**Stamp:** [Company Seal]\n\n---\n\n**Attachments:**\n- Attachment 1: [Name]\n- Attachment 2: [Name]\n\n---\n\n## 📝 使用指南 / Usage Guide\n\n### 常见应用场景示例 / Common Application Examples\n\n| 场景 / Scenario | 中文示例标题 / Chinese Example Title | 英文示例标题 / English Example Title |\n|-----------------|-------------------------------------|-------------------------------------|\n| 人事变动 / Personnel Changes | 关于[职位]任命的公告 | Announcement Regarding Appointment of [Position] |\n| 政策通知 / Policy Notice | 关于[政策名称]实施的通知 | Notice Regarding Implementation of [Policy Name] |\n| 活动通知 / Event Notice | 关于[活动名称]的通知 | Notice Regarding [Event Name] |\n| 系统升级 / System Upgrade | 关于系统升级维护的公告 | Announcement Regarding System Upgrade and Maintenance |\n| 办公地点变更 / Office Relocation | 关于办公地点迁移的公告 | Announcement Regarding Office Relocation |\n| 节假日安排 / Holiday Schedule | 关于[节日]放假安排的通知 | Notice Regarding Holiday Arrangement for [Holiday] |\n\n---\n\n## ✅ 使用检查清单 / Usage Checklist\n\n### 中文版本 / Chinese Version\n- [ ] 标题清晰明确\n- [ ] 发布日期填写完整\n- [ ] 公告编号填写规范\n- [ ] 致送对象准确\n- [ ] 正文逻辑清晰，条理分明\n- [ ] 重要提示完整\n- [ ] 生效日期明确\n- [ ] 落款信息完整\n- [ ] 附件清单齐全\n\n### English Version\n- [ ] Title is clear and specific\n- [ ] Date is filled in completely\n- [ ] Announcement number is properly formatted\n- [ ] Recipients are accurately identified\n- [ ] Body content is logically organized\n- [ ] Important notes are comprehensive\n- [ ] Effective date is clearly stated\n- [ ] Closing information is complete\n- [ ] Attachment list is complete\n\n---\n\n## 💡 专业写作建议 / Professional Writing Tips\n\n### 中文写作要点\n1. **正式规范**：使用正式商务用语，避免口语化表达\n2. **结构清晰**：采用分层标题，便于快速阅读\n3. **信息完整**：包含时间、地点、人员、要求等关键要素\n4. **语言简练**：表达准确，避免冗长模糊\n5. **语气恰当**：根据公告性质调整语气（严肃、亲切等）\n\n### English Writing Tips\n1. **Formal Tone**: Use formal business language throughout\n2. **Clear Structure**: Use section headings for easy navigation\n3. **Complete Information**: Include all key elements (time, location, personnel, requirements)\n4. **Concise Expression**: Be precise and avoid ambiguity\n5. **Appropriate Tone**: Adjust tone based on announcement type (serious, friendly, etc.)",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T15:35:12.291Z"
+  },
+  "tokenUsage": 6721,
+  "createdAt": "2026-03-01T15:34:23.139Z",
+  "updatedAt": "2026-03-01T15:35:12.297Z",
+  "subtasks": [
+    {
+      "id": "699de447d6917122",
+      "title": "企业公告模板中英双语简版",
+      "description": "创建一个可以直接复用的企业公告模板，包含中英文双语版本。要求：\n1. 模板结构清晰，包含公告标题、发布日期、正文内容、落款等标准要素\n2. 中英文内容对应准确，语言正式规范\n3. 版式简洁，便于快速填写和修改使用\n4. 适用于各类企业公告场景（人事变动、政策通知、活动通知等）",
+      "assigneeId": "5b3bc73b9c2fd88d",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "我将为您创建一个完整的企业公告模板，包含中英文双语版本：\n\n---\n\n# 企业公告模板（中文版）\n\n---\n\n## 【公告标题】\n\n**发布日期：** YYYY年MM月DD日  \n**公告编号：** [年份]-[编号]\n\n---\n\n### 致：全体员工 / 相关部门 / 特定人员\n\n尊敬的各位同事：\n\n[引言段落 - 简要说明公告目的和背景]\n\n根据公司相关规定/为了[目的]，现就[事项]公告如下：\n\n---\n\n### 一、[事项一标题]\n\n[详细内容说明]\n\n### 二、[事项二标题]\n\n[详细内容说明]\n\n### 三、[事项三标题]\n\n[详细内容说明]\n\n---\n\n### 重要提示\n\n1. **执行时间：** [具体时间要求]\n2. **联系人：** [姓名]，联系电话：[电话号码]\n3. **相关文档：** [如有附件，说明附件名称]\n4. **注意事项：** [重要提醒事项]\n\n---\n\n### 生效日期\n\n本公告自发布之日起生效 / 自 [具体日期] 起执行。\n\n---\n\n### 特此公告。\n\n**[公司名称]**  \n**[部门名称]**  \n**发布人：** [姓名]  \n**盖章位置：** [公司公章]\n\n---\n\n**附件：**\n- 附件1：[名称]\n- 附件2：[名称]\n\n---\n\n---\n\n# Company Announcement Template (English Version)\n\n---\n\n## [Announcement Title]\n\n**Date:** MM/DD/YYYY  \n**Announcement No.:** [Year]-[Number]\n\n---\n\n### To: All Employees / Relevant Departments / Specific Personnel\n\nDear Colleagues,\n\n[Introductory paragraph - Briefly explain the purpose and background of the announcement]\n\nIn accordance with company regulations / To [purpose], we hereby announce the following regarding [matter]:\n\n---\n\n### I. [First Section Title]\n\n[Detailed description]\n\n### II. [Second Section Title]\n\n[Detailed description]\n\n### III. [Third Section Title]\n\n[Detailed description]\n\n---\n\n### Important Notes\n\n1. **Effective Date:** [Specific time requirement]\n2. **Contact Person:** [Name], Phone: [Phone Number]\n3. **Related Documents:** [If applicable, specify document names]\n4. **Important Reminders:** [Key points to note]\n\n---\n\n### Effective Date\n\nThis announcement is effective from the date of issuance / from [specific date].\n\n---\n\n### This announcement is hereby made.\n\n**[Company Name]**  \n**[Department Name]**  \n**Issued by:** [Name]  \n**Stamp:** [Company Seal]\n\n---\n\n**Attachments:**\n- Attachment 1: [Name]\n- Attachment 2: [Name]\n\n---\n\n---\n\n## 📝 使用指南 / Usage Guide\n\n### 常见应用场景示例 / Common Application Examples\n\n| 场景 / Scenario | 中文示例标题 / Chinese Example Title | 英文示例标题 / English Example Title |\n|-----------------|-------------------------------------|-------------------------------------|\n| 人事变动 / Personnel Changes | 关于[职位]任命的公告 | Announcement Regarding Appointment of [Position] |\n| 政策通知 / Policy Notice | 关于[政策名称]实施的通知 | Notice Regarding Implementation of [Policy Name] |\n| 活动通知 / Event Notice | 关于[活动名称]的通知 | Notice Regarding [Event Name] |\n| 系统升级 / System Upgrade | 关于系统升级维护的公告 | Announcement Regarding System Upgrade and Maintenance |\n| 办公地点变更 / Office Relocation | 关于办公地点迁移的公告 | Announcement Regarding Office Relocation |\n| 节假日安排 / Holiday Schedule | 关于[节日]放假安排的通知 | Notice Regarding Holiday Arrangement for [Holiday] |\n\n---\n\n## ✅ 使用检查清单 / Usage Checklist\n\n### 中文版本 / Chinese Version\n- [ ] 标题清晰明确\n- [ ] 发布日期填写完整\n- [ ] 公告编号填写规范\n- [ ] 致送对象准确\n- [ ] 正文逻辑清晰，条理分明\n- [ ] 重要提示完整\n- [ ] 生效日期明确\n- [ ] 落款信息完整\n- [ ] 附件清单齐全\n\n### English Version\n- [ ] Title is clear and specific\n- [ ] Date is filled in completely\n- [ ] Announcement number is properly formatted\n- [ ] Recipients are accurately identified\n- [ ] Body content is logically organized\n- [ ] Important notes are comprehensive\n- [ ] Effective date is clearly stated\n- [ ] Closing information is complete\n- [ ] Attachment list is complete\n\n---\n\n## 💡 专业写作建议 / Professional Writing Tips\n\n### 中文写作要点\n1. **正式规范**：使用正式商务用语，避免口语化表达\n2. **结构清晰**：采用分层标题，便于快速阅读\n3. **信息完整**：包含时间、地点、人员、要求等关键要素\n4. **语言简练**：表达准确，避免冗长模糊\n5. **语气恰当**：根据公告性质调整语气（严肃、亲切等）\n\n### English Writing Tips\n1. **Formal Tone**: Use formal business language throughout\n2. **Clear Structure**: Use section headings for easy navigation\n3. **Complete Information**: Include all key elements (time, location, personnel, requirements)\n4. **Concise Expression**: Be precise and avoid ambiguity\n5. **Appropriate Tone**: Adjust tone based on announcement type (serious, friendly, etc.)\n\n---\n\n此模板已经过优化，可直接复制使用，只需根据具体公告内容填充相应字段即可。中英文版本在结构上保持一致，确保双语发布的协调性和专业性。"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 6721,
+      "createdAt": "2026-03-01T15:34:29.144Z",
+      "updatedAt": "2026-03-01T15:34:54.893Z"
+    }
+  ]
+}

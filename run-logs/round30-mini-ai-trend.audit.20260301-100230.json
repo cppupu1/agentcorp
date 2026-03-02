@@ -1,0 +1,104 @@
+{
+  "label": "round30-mini-ai-trend",
+  "sessionId": "round30-mini-ai-20260301-100230",
+  "pmChatDurationMs": 40719,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "a263cd9cdb9359e6"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 40719
+    },
+    {
+      "name": "uses_minimax_model",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ],
+      "expected": "b9df4501c7f6f9a6"
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "a263cd9cdb9359e6",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 104906,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_ai_search",
+          "count": 10
+        },
+        {
+          "tool": "1791ada993a23a56__get_markdown_summary",
+          "count": 4
+        },
+        {
+          "tool": "fc5f4c5bf43702d4__get-env",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。整理近30天AI技术行业趋势，输出3条关键结论：1）AI商业化进程加速，百度AI业务营收达400亿元；2）中国大模型全球市场份额激增421%；3）AI智能体(Agent)从技术概念走向商业规模化落地。每条结论均附具体日期和来源链接，并经过至少2个独立来源交叉验证。"
+    }
+  ]
+}

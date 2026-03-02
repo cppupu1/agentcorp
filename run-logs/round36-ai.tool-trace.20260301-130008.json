@@ -1,0 +1,338 @@
+[
+  {
+    "id": "a6bdbd3e2ea83396",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_15cc747f560c44a38065125f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:25.686Z"
+  },
+  {
+    "id": "8132ec30c2996e2c",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025十大AI技术趋势 - 行业研究报告 - 小牛行研\nURL: https://www.hangyan.co/reports/3542433668351919232\nDescription: 类型: 行业动态分析 机构: 北京智源人工智能研究院 发表时间: 2025-01-10 00:00:00 更新时间: 2025-01-10 20:10:22\nPublished date: 2025-02-04T19:14:06+08:00\nSite name: 小牛行研\n\nTitle: 人工智能行业现状及发展趋势-报告智库\nURL: https://www.baogaozhiku.com/rgzn\nDescription: 易观分析:2025年AI产业发展十大趋势报告,AI产业加速多元化发展 趋势1:self-playRL范式开启,大模型技术军备赛进入复杂推理阶段 由0p... 3 天前 0 0 4 2024年机器人在工业生产中的应用,人形机器人在工业领域发展机遇 2025 年有望成为人形机器人量产元年。特斯拉从一代人形机器人到二代迭代仅用9 ... 5 天前 0 0 2 智源研究院:2025年ai技术未来发展前景如何?十大AI技术趋势分析 2024年,全球范围内的具身智能竞争日渐白热化。从融资规模、产品发布等多维度来看... 7 天前 0 0 5 极数:2024年全球人工智能简史电子版下载,全球人工智能产业发展 2022年,开源大型语言模型(LLM)领域经历了重大变革,一些先驱模型引领了潮流... 7 天前 0 0 4 高盛:2025年人工智能的五大发展方向是什么?人工智能五大发展趋势 自两年前ChatGPT横空出世以来,全球范围内生成式人工智能的热潮便持续升温。高... 1 周前 0 0 5 德勤:2025年全球保险行业现状分析报告,如何应对人工智能技术浪潮 保险行业转型过程中的一个重要环节是将先进技术能力有效嵌入其商业模式中。多年来,保... 1 周前 0 0 6 伽马数据:2024年人工智能行业发展趋势和前景,3大政策趋势分析 自2022年ChatGPT发布以来,生成式人工智能(AIGC)和大语言模型(LL... 1 周前 0 0 6 香港中文大学:2024中国人工智能岗位研究方向有哪些?详细报告解读 基于2023年至2024年上半年的招聘数据,我们可以从图表1观察到,人工智能岗位... 1 周前 0 0 6 定见咨询:人工智能行业AI硬件全景洞察报告,下一波Al创新机遇 AI硬件是集成人工智能技术的硬件设备,可以执行机器学习算法,通常能接入网络,能处... 4 周前 0 0 11 2\nPublished date: 2025-01-19T21:56:31+08:00\nSite name: www.baogaozhiku.com\n\nTitle: 无标题\nURL: http://www.sas.com/fi_fi/news/media-coverage/_jcr_content/par/tabwrapper_e2f3/tabwrapperpar/tab_12b4/tabpar/styledcontainer_9f8e/par/listgroup_f335.ajaxlist.html\nDescription: The Top Information Management Trends for 2025 DBTA 9. tammikuuta 2025 In 2025, AI Winners Will Focus on These Three Trends Techstrong.ai 9. tammikuuta 2025 The Top 2025 Generative AI Predictions BigDATAwire 9. tammikuuta 2025 Digital transformation 2025: What’s in, what’s out CIO 7. tammikuuta 2025 Trendspotting: Predictions for Bio-IT World in 2025 BioIT World 7. tammikuuta 2025 Healthcare AI Tools – 2025 Health IT Predictions Healthcare IT Today 7. tammikuuta 2025 Quantum AI 2025: Industry Leaders Weigh in on the Year Ahead AI Business 6. tammikuuta 2025 Get Going With GitOps InformationWeek 6. tammikuut",
+    "isError": false,
+    "durationMs": 452,
+    "createdAt": "2026-03-01T13:01:26.138Z"
+  },
+  {
+    "id": "7e874a92c53dc18a",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_1091ed066145422a9148d237"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:26.460Z"
+  },
+  {
+    "id": "f3f36d64189a4e65",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: collection\nURL: http://www.baguaai.com/\nDescription: 2025.01.06 Github Latest AI Repos\n2025.01.08 AI News\n2025.01.08 Github Latest AI Repos\n2025.01.07 Github Latest AI Repos\n2025.01.07 AI News\n2025.01.06 Github Latest AI Repos\n2025.01.08 AI News\n2024.07.25 Github Latest AI Repos\n2024.10.10 AI News\n Latest AI News\nAll\n2025.01.08 AI News\nAI News\n 2025 1 8 \n2025.01.08 Github Latest AI Repos\nGithub AI News\n 2025 1 8 \n2025.01.07 Github Latest AI Repos\nGithub AI News\n 2025 1 8 \n2025.01.07 AI News\nAI News\n 2025 1 8 \n2025.01.06 Github Latest AI Repos\nGithub AI News\n 2025 1 7 \n2025.01.06 AI News\nAI News\n 2025 1 7 \n2025.01.05 AI News\nAI News\n 2025 1 6 \n2025.01.05 Github Latest AI Repos\nGithub AI News\n 2025 1 6 \n2025.01.04 AI News\nAI News\n 2025 1 5 \n2025.01.04 Github Latest AI Repos\nGithub AI News\n 2025 1 5 \nRandomized sites Latest sites\nMasterpiece X\nPublished date: 2025-01-08T08:00:00+08:00\nSite name: www.baguaai.com\n\nTitle: 警方提醒:新的情报!-2025年01月12日\nURL: http://goldhoo.cn/Sleep?and/4516307cec10.html\nDescription: 新的情报! 中国新闻网讯:2025年01月12日,全球局势依然动荡不安,各国情报部门不断收集和交换情报,以确保国家安全和稳定。在这个充满挑战的时刻,新的情报再次引起人们的关注。 人工智能在情报收集中的应用 随着人工智能技术的不断发展,情报部门开始大规模应用人工智能技术来加强情报收集和分析能力。\nPublished date: 2025-01-12T01:33:56+08:00\nSite name: goldhoo.cn\n\nTitle: Artificial Intelligence\nURL: http://arxiv.org/list/cs.AI/recent?show=94&skip=0\nDescription: Authors and titles for recent submissions\n Mon, 20 Jan 2025   Fri, 17 Jan 2025   Thu, 16 Jan 2025   Wed, 15 Jan 2025   Tue, 14 Jan 2025 \nSee today's  new  changes\nTotal of 562 entries :  1-94 95-188 189-282 283-376 ... 471-562\nShowing up to 94 entries per page:   fewer  |   more  |   all\nMon, 20 Jan 2025 (showing 76 of 76 entries )\n[1]  arXiv:2501.10326   [ pdf ,  html ,  other ] \nTitle:  Large language models for automated scholarly paper review: A survey \nZhenzhen Zhuang ,  Jiandong Chen ,  Hongfeng Xu ,  Yuwen Jiang ,  Jialiang Lin\nComments:  Work in progress \nSubjects: Artificial Intelligence (cs.AI) ; Computation and Language (cs.CL); Digital Librarie",
+    "isError": false,
+    "durationMs": 264,
+    "createdAt": "2026-03-01T13:01:26.724Z"
+  },
+  {
+    "id": "a7d87b3ec8b16425",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_b9ab0555abb64e07b5ddec5f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:30.076Z"
+  },
+  {
+    "id": "7ddd783c07de94bc",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 谷歌的Gemini 2.0 FlashThinking模型和OpenAI的o1模型有什么不同?-CSDN博客\nURL: https://blog.csdn.net/weixin_41429382/article/details/144676649\nDescription: 文章浏览阅读925次,点赞8次,收藏8次。Gemini 2.0 FlashThinking模型于2024年12月20日由谷歌发布,是一款多模态推理模型。OpenAI于2024年9月13日发布o1系列模型,包括o1 ...\nPublished date: 2025-01-21T13:51:29+08:00\nSite name: CSDN\n\nTitle: 谷歌或将在1月23日发布 Gemini 2.0 Flash Thinking 模型\nURL: https://www.pingwest.com/w/301934\nDescription: 品玩1月21日讯,据 X 用户@sir04680280 表示,他在谷歌直播中发现一张图片中出现“Gemini 2.0 Flash Thinking Exp-0123”的字样,疑似全新升级版 Gemini AI 模型将在1月23日发布。\nGemini 2.0 Flash Think 模型是谷歌在去年12月20日发布的思考模型,通过Gemini 2.0 Flash训练而来。该模型针对推理能力进行了增强,支持多模态推理,使用类似 o1 模型的慢思维思考方式,可以深度可视化展示整个思维链过程,尤其是在执行数学、编程等复杂问题方面,能持续输出全部推理过程,而不是直接给出答案。\n谷歌目前尚未对此事发表回应。\nPublished date: 2025-01-21T08:00:00+08:00\nSite name: 品玩\n\nTitle: 谷歌或将在1月23日发布 Gemini 2.0 Flash Thinking 模型推理编程知名企业flashgemini视频生成模型thinking_网易订阅\nURL: https://www.163.com/dy/article/JME3D8AM05566WT8.html\nDescription: 品玩1月21日讯,据X用户@sir04680280 表示,他在谷歌直播中发现一张图片中出现“Gemini 2.0 Flash Thinking Exp-0123”的字样,疑似全新升级版 Gemini AI 模型将在1月23日发布。Gemini 2.0 Flash Think 模型是谷歌在去年12月20日发布的思考模型,通过Gemini 2.0 Flash训练而来。该模型针对推理能力进行了增强,支持多模态推理,使用类似 o1 模型的慢思维思考方式,可以深度可视化展示整个思维链过程,尤其是在执行数学、编程等复杂问题方面,能持续输出全部推理过程,而不是直接给出答案。谷歌目前尚未对此事发表回应。\nPublished date: 2025-01-21T11:38:11+08:00\nSite name: 网易\n\nTitle: 谷歌被曝1月23日发布增强 Gemini 2.0 Flash Thinking\nURL: https://new.qq.com/rain/a/20250121A03B1F00\nDescription: IT之家 1 月 21 日消息,消息源 @sir04680280 于 1 月 19 日发布博文,报道称观看谷歌黑客马拉松直播时,发现谷歌升级版 Gemini AI 模型“Gemini 2.0 Flash Thinking Exp-0123”,暗示 1 月 23 日发布。新模型名称为“Gemini 2.0 Flash Thinking Exp-0123”,应该是现有“Exp-1219”模型的升级版本,可能具备更先进的功能。IT之家注:谷歌 Gemini 2.0 Flash Think 思考模式是一种实验性的模型,它建立在 Gemini 2.0 Flash 的基础上。该模型的特点在于,它会在回答问题时生成其所经历的“思考过程”,让用户了解模型是如何得出结论的。这类似于 OpenAI 的 o1 模型的“慢思考”方式,提高了 AI 思维的透明度。\nPublished date: 2025-01-21T10:45:11+08:00\nSite name: 腾讯网\n\nTitle: 谷歌Gemini 2.0 AI新模型“Flash Thinking”或将1月23日发布\nURL: https://m.sohu.com/a/851437747_121850782/?pvid=000115_3w_a\nDescription: 近期,有关谷歌AI领域的最新进展引起了广泛关注。据网友@sir04680280在1月19",
+    "isError": false,
+    "durationMs": 272,
+    "createdAt": "2026-03-01T13:01:30.348Z"
+  },
+  {
+    "id": "bab8a7e984e58cca",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_e0c8ab26d7fc45039267fd84"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:30.358Z"
+  },
+  {
+    "id": "97190091bf462799",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 大模型迎来2025开年大作：deepseek-R1与deepseek-R1-Zero\nURL: https://m.blog.csdn.net/sexy19910923/article/details/145271916\nDescription: 2025-01-20正式发布 DeepSeek-R1,并同步开源模型权重。\nDeepSeek-R1 遵循 MIT License,允许用户通过蒸馏技术借助 R1 训练其他模型。 DeepSeek-R1 上线API,对用户开放思维链输出,通过设置  model='deepseek-reasoner'  即可调用。 DeepSeek 官网与 App 即日起同步更新上线。\n论文地址: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf\n开源地址: https://huggingface.co/deepseek-ai/DeepSeek-R1\n一. 主要介绍\nDeepSeek-R1-Zero 是一种通过大规模强化学习 (RL) 训练的模型,无需监督微调 (SFT) 作为初步步骤,在推理方面表现出色。在 RL 的帮助下,DeepSeek-R1-Zero 自然而然地出现了许多强大而有趣的推理行为。然而,DeepSeek-R1-Zero 面临着诸如无休止重复、可读性差和语言混合等挑战。\n 为了解决这些问题并进一步提高推理性能,我们引入了 DeepSeek-R1,它在 RL 之前整合了冷启动数据。DeepSeek-R1 在数学、代码和推理任务中实现了与 OpenAI-o1 相当的性能。为了支持研究社区,我们开源了 DeepSeek-R1-Zero、DeepSeek-R1 以及基于 Llama 和 Qwen 从 DeepSeek-R1 中提炼出的六个密集模型。 DeepSeek-R1-Distill-Qwen-32B 在各种基准测试中均优于 OpenAI-o1-mini,为密集模型取得了新的最先进成果。\n二. 模型摘要\n训练后:基础模型上的大规模强化学习\n直接将强化学习 (RL) 应用于基础模型,而无需依赖监\nPublished date: 2025-01-20T08:00:00+08:00\nSite name: CSDN\n\nTitle: DeepSeek于2025年1月20日发布的R1系列模型确实在全球AI领域引发了巨大震动_r1大模型发布时间-CSDN博客\nURL: https://blog.csdn.net/weixin_41429382/article/details/145354813\nDescription: DeepSeek R1系列的发布不仅是国产AI的里程碑,更标志着全球AI竞争进入“开源 vs. 闭源”“效率 vs. 资源”的新阶段。其通过强化学习突破、低成本训练和开源生态,重新定义了AI...\nPublished date: 2025-01-27T11:20:22+08:00\nSite name: CSDN\n\nTitle: 最新发布 - 有设计 - 第2页\nURL: https://www.yousheji.cn/new/page/2?t&o\nDescription: 2025年deepseek R1 大型模型本地安装部署(文件+教程)。教程涵盖详细的 1 万字...\nPublished date: 2025-02-02T02:03:00+08:00\nSite name: 有设计\n\nTitle: AI界新星DeepSeek:从崛起到引领,如何颠覆一切?_模型_推理_OpenAI\nURL: https://www.sohu.com/a/853774201_121956424\nDescription: DeepSeek于2024年4月正式上线,随后在短短8个月的时间内就经历了多次版本迭代:2024年5月,DeepSeek-V2上线;2024年12月26日,DeepSeek-V3也随之推出。随后,在2025年1月20日,DeepSeek发布了最新的R1模型,成为又一热门议题。R1模型专注于处理数学、编程和自然语言推理等复杂任务,极具竞争力。\nPublished date: 2025-01-27T13:14:00+08:00\nSite name: 搜狐\n\nTitle: 挑战AI巨头!DeepSeek狂飙突进,2025年能否颠覆OpenAI?\nURL: https://new.qq.com/rain/a/20250205A05NS100\nDescription: 2025年1月推出的R1更是可以和OpenAI旗下的推理大模型o1比肩,而且还可以进行联网搜索。DeepSeek凭借开源策略和技术创",
+    "isError": false,
+    "durationMs": 252,
+    "createdAt": "2026-03-01T13:01:30.611Z"
+  },
+  {
+    "id": "3222d6f2db0a4dc2",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_6b7815c5fc7e472a88751ca9"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:31.013Z"
+  },
+  {
+    "id": "d95984da857dad31",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 【人工智能】欧盟的 AI 法案将于 2025 年 2 月 2 日起生效\nURL: https://3g.163.com/news/article/JNCD9FPV0556APK2.html\nDescription: 2025 年 2 月 2 日,欧盟 (EU) 的《人工智能法案》(AI Act) 将分阶段开始实施。本文总结了自 2025 年 2 月 2 日起将适用于欧盟地区的新义务。它还指出了公司何时可以期待第一批执法行动,以及执法制度将是什么样子。\n欧盟对提供或使用人工智能工具的公司的新义务\n2025年2月2日,《 人工智能法案 》关于人工智能素养和禁止人工智能用途的规定将生效:\n人工智能素养。 《人工智能法案》第 4 条要求所有人工智能系统的提供商和部署者确保其员工对人工智能有足够的了解和理解,包括人工智能带来的机遇和风险。这一要求适用于所有使用人工智能的公司,即使是以低风险的方式。在实践中,这通常意味着实施人工智能治理政策和人工智能员工培训计划。\n禁止使用人工智能。 《人工智能法案》第 5 条禁止某些被认为会产生不可接受风险的人工智能用途,例如在工作场所或教育机构中操纵或利用个人、进行社交评分和推断个人情绪的人工智能系统。该禁令适用于提供此类人工智能系统的公司以及使用此类人工智能系统的公司。欧盟委员会 (EC) 预计将于今年年初发布有关禁止使用人工智能实践的指南。\n国家执法制度与欧盟层面执法相结合的复杂网络\n《人工智能法案》要求每个欧盟国家确定主管监管机构来执行该法案。欧盟国家在如何构建国家执法方面拥有一定的灵活性。一些国家,例如西班牙,采取了集中化的方式,建立了一个新的专门的人工智能机构(西班牙人工智能监管机构),负责监督各行业对《人工智能法案》的遵守情况。其他国家可能会采用分散化的模式,即由多个现有监管机构负责监督各个行业的合规情况(例如,卫生和安全局可以监督卫生部门的人工智能使用情况)。此外,其他监管机构可以监督与基本权利相关的义务的遵守情况。在许多国家,执法结构仍不明确,因为欧盟国家必须在 2025 年 8 月 2 日之前指定主管当局。\n此外,欧盟国家有权自行决定适用的制\nPublished date: 2025-02-02T14:08:00+08:00\nSite name: 网易\n\nTitle: 【人工智能】欧盟的 AI 法案将于 2025 年 2 月 2 日起生效\nURL: https://m.163.com/dy/article/JNCD9FPV0556APK2.html\nDescription: 2025 年 2 月 2 日,欧盟 (EU) 的《人工智能法案》(AI Act) 将分阶段开始实施。本文总结了自 2025 年 2 月 2 日起将适用于欧盟地区的新义务。它还指出了公司何时可以期待第一批执法行动,以及执法制度将是什么样子。\n欧盟对提供或使用人工智能工具的公司的新义务\n2025年2月2日,《人工智能法案》关于人工智能素养和禁止人工智能用途的规定将生效:\n人工智能素养。 《人工智能法案》第 4 条要求所有人工智能系统的提供商和部署者确保其员工对人工智能有足够的了解和理解,包括人工智能带来的机遇和风险。这一要求适用于所有使用人工智能的公司,即使是以低风险的方式。在实践中,这通常意味着实施人工智能治理政策和人工智能员工培训计划。\n禁止使用人工智能。 《人工智能法案》第 5 条禁止某些被认为会产生不可接受风险的人工智能用途,例如在工作场所或教育机构中操纵或利用个人、进行社交评分和推断个人情绪的人工智能系统。该禁令适用于提供此类人工智能系统的公司以及使用此类人工智能系统的公司。欧盟委员会 (EC) 预计将于今年年初发布有关禁止使用人工智能实践的指南。\n国家执法制度与欧盟层面执法相结合的复杂网络\n《人工智能法案》要求每个欧盟国家确定主管监管机构来执行该法案。欧盟国家在如何构建国家执法方面拥有一定的灵活性。一些国家,例如西班牙,采取了集中化的方式,建立了一个新的专门的人工智能机构(西班牙人工智能监管机构),负责监督各行业对《人工智能法案》的遵守情况。其他国家可能会采用分散化的模式,即由多个现有监管机构负责监督各个行业的合规情况(例如,卫生和安全局可以监督卫生部门的人工智能使用情况)。此外,其他监管机构可以监督与基本权利相关的义务的遵守情况。在许多国家,执法结构仍不明确,因为欧盟国家必须在 2025 年 8 月 2 日之前指定主管当局。\n此外,欧盟国家有权自行决定适用的制裁措\nPublished date: 2025-02-02T14:08:06+08:00\nSite name: 网易\n\nTitle: 【人工智能】欧盟的 AI 法案将于 2025 年2月2日起生效ai法案欧盟委员会人工智能法案社交媒体",
+    "isError": false,
+    "durationMs": 276,
+    "createdAt": "2026-03-01T13:01:31.289Z"
+  },
+  {
+    "id": "a4b23eb1800a9bd8",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_983256cdc4a442d4b547d7c6"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:35.152Z"
+  },
+  {
+    "id": "ce277c916b5f7b41",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_d905941f8ad14f5cab28fcdb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:35.904Z"
+  },
+  {
+    "id": "56d772d6a1136174",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 够新!够权威!智源研究院发布2025十大AI技术趋势_baai_ac_https\nURL: https://www.sohu.com/a/846691911_129720\nDescription: 下载报告全文链接: https://ticket-assets.baai.ac.cn/uploads/2025%E5%8D%81%E5%A4%A7AI%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF%E4%B8%A8%E6%99%BA%E6%BA%90%E7%A0%94%E7%A9%B6%E9%99%A2.pdf\nPublished date: 2025-01-08T14:32:00+08:00\nSite name: 搜狐\n\nTitle: 智源研究院:2025十大AI技术趋势研究院_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2025-01-12/doc-ineeszpv3807462.shtml\nDescription: 智源研究院:2025十大AI技术趋势 (转自:数局) 海量资讯、精准解读,尽在新浪财经APP VIP课程推荐 加载中... APP专享直播 热门推荐 收起 新浪财经公众号 24小时滚动播报最新的财经资讯和视频,更多粉丝福利扫描二维码关注(sinafinance) 图文直播间 视频直播间\nPublished date: 2025-01-12T14:40:00+08:00\nSite name: 新浪财经\n\nTitle: 够新！够权威！智源研究院发布2025十大AI技术趋势\nURL: https://m.163.com/dy/article/JLD1AMLF0511AQHO.html\nDescription: 下载报告全文链接:\nhttps://ticket-assets.baai.ac.cn/uploads/2025%E5%8D%81%E5%A4%A7AI%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF%E4%B8%A8%E6%99%BA%E6%BA%90%E7%A0%94%E7%A9%B6%E9%99%A2.pdf\nPublished date: 2025-01-08T23:38:41+08:00\nSite name: 网易\n\nTitle: 机器人科学网\nURL: http://www.robotsci.com.cn/detail/1877228121070112768\nDescription: 1月8日,北京智源人工智能研究院(下称智源研究院)发布“2025十大AI技术趋势”。今年的十大AI趋势是智源研究院根据行业技术及应用热点,给出的年度AI趋势预测。从基础设施到产品应用,智源对Scaling Law、基础模型、具身智能、超级应用、AI安全等关键方向作出预测。针对每个趋势观点,报告给出其可成为2025年度趋势的论证逻辑。 一图读懂2025十大AI技术趋势 扫码下载报告全文 文章来源:机器之心\nPublished date: 2025-01-09T14:07:15+08:00\nSite name: www.robotsci.com.cn\n\nTitle: 够新!够权威!智源研究院发布2025十大AI技术趋势_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2025-01-08/doc-ineefzct1086200.shtml\nDescription: 下载报告全文链接: https://ticket-assets.baai.ac.cn/uploads/2025%E5%8D%81%E5%A4%A7AI%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF%E4%B8%A8%E6%99%BA%E6%BA%90%E7%A0%94%E7%A9%B6%E9%99%A2.pdf 海量资讯、精准解读,尽在新浪财经APP VIP课程推荐 加载中... APP专享直播 热门推荐 收起 新浪财经公众号 24小时滚动播报最新的财经资讯和视频,更多粉丝福利扫描二维码关注(sinafinance)\nPublished date: 2025-01-08T15:38:00+08:00\nSite name: 新浪财经\n\nTitle: 智源研究院发布2025十大AI技术趋势_智源研究院_InfoQ写作社区\nURL: https://xie.infoq.cn/article/7b800b6b8cc5fb17653592de9\nDescription: 在\n2025\n年伊始,智源研究院提出十个人工智能技术及应用趋势,以剖析科技演进轨迹,洞察未来发展方向,预测关键驱动力,指引人类",
+    "isError": false,
+    "durationMs": 412,
+    "createdAt": "2026-03-01T13:01:36.316Z"
+  },
+  {
+    "id": "5944ec78cdc1e2f5",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_72081ac7157c4c9a8e1e578b"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:36.466Z"
+  },
+  {
+    "id": "41bed651af55f103",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "够新！够权威！智源研究院发布2025十大AI技术趋势|人工智能技术|智源研究院_手机网易网\n\n[](https://m.163.com/hot/newsList) ![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0108%2F6af04477j00spre0u018fd000u007pwm.jpg&thumbnail=750x2147483647&quality=75&type=jpg) \n\n[网易](/) [网易号](/touch/dy) \n\n[ ](https://m.163.com/search) \n\n[ 0 ](/touch/comment.html?docid=JLD1AMLF0511AQHO) \n\n# 够新！够权威！智源研究院发布2025十大AI技术趋势\n\n[ ![机器之心Pro](https://static.ws.126.net/163/frontend/images/2022/empty.png) ](/news/sub/T1473761139764.html) \n\n[机器之心Pro](/news/sub/T1473761139764.html) ![](https://img2.cache.netease.com/m/newsapp/reading/vip/bluenew.png) \n\n2025-01-08 15:38 ·北京 ·《机器之心》官方网易号 \n\n[ 0 ](/touch/comment.html?docid=JLD1AMLF0511AQHO) \n\n![](https://static.ws.126.net/163/frontend/images/2022/empty.png) \n\n 打开网易新闻 查看精彩图片 \n\n**下载报告全文链接:**\n\nhttps://ticket-assets.baai.ac.cn/uploads/2025%E5%8D%81%E5%A4%A7AI%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF%E4%B8%A8%E6%99%BA%E6%BA%90%E7%A0%94%E7%A9%B6%E9%99%A2.pdf\n\n特别声明：本文为网易自媒体平台“网易号”作者上传并发布，仅代表该作者观点。网易仅提供信息发布平台。\n\n 打开网易新闻体验更佳\n\n### 热搜\n\n* [开局之年经济工作怎么干](https://m.163.com/cm/news/search?spsc=sps&spss=sps%5Fsem&redirect=1&keyword=%E5%BC%80%E5%B1%80%E4%B9%8B%E5%B9%B4%E7%BB%8F%E6%B5%8E%E5%B7%A5%E4%BD%9C%E6%80%8E%E4%B9%88%E5%B9%B2)\n* [个税汇算清缴首日网友晒退税额，有人退税上万元有人需补缴](https://m.163.com/cm/news/search?spsc=sps&spss=sps%5Fsem&redirect=1&keyword=%E4%B8%AA%E7%A8%8E%E6%B1%87%E7%AE%97%E6%B8%85%E7%BC%B4%E9%A6%96%E6%97%A5%E7%BD%91%E5%8F%8B%E6%99%92%E9%80%80%E7%A8%8E%E9%A2%9D%EF%BC%8C%E6%9C%89%E4%BA%BA%E9%80%80%E7%A8%8E%E4%B8%8A%E4%B8%87%E5%85%83%E6%9C%89%E4%BA%BA%E9%9C%80%E8%A1%A5%E7%BC%B4)\n* [油价或出现历史性飙升](https://m.163.com/cm/news/search?spsc=sps&spss=sps%5Fsem&redirect=1&keyword=%E6%B2%B9%E4%BB%B7%E6%88%96%E5%87%BA%E7%8E%B0%E5%8E%86%E5%8F%B2%E6%80%A7%E9%A3%99%E5%8D%87)\n* [年度个税汇算攻略来了](https://m.163.com/cm/news/search?spsc=sps&spss=sps%5Fsem&redirect=1&keyword=%E5%B9%B4%E5%BA%A6%E4%B8%AA%E7%A8%8E%E6%B1%87%E7%AE%97%E6%94%BB%E7%95%A5%E6%9D%A5%E4%BA%86)\n* [北京国安时隔23年再夺超级杯冠军](https://m.163.com/cm/news/search?s",
+    "isError": false,
+    "durationMs": 1366,
+    "createdAt": "2026-03-01T13:01:36.518Z"
+  },
+  {
+    "id": "cfea12cca52e8f49",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: DeepSeek-R1发布\nURL: https://new.qq.com/rain/a/20250120A08QOM00\nDescription: 1月20日,DeepSeek公司宣布正式发布最新人工智能模型DeepSeek-R1,并同步开源模型权重。      DeepSeek-R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。      在数学、代码、自然语言推理等任务上的性能已比肩OpenAI的o1正式版。\nPublished date: 2025-01-20T20:56:12+08:00\nSite name: 腾讯网\n\nTitle: DeepSeek-R1发布\nURL: https://kuaibao.qq.com/s/20250120A08QOM00?refer=cp_1009\nDescription: 观点网讯:1月20日,DeepSeek公司宣布正式发布最新人工智能模型DeepSeek-R1,并同步开源模型权重。      DeepSeek-R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。      在数学、代码、自然语言推理等任务上的性能已比肩OpenAI的o1正式版。\nPublished date: 2025-01-20T20:56:12+08:00\nSite name: 腾讯网\n\nTitle: DeepSeek发布R1模型,性能对标OpenAI o1正式版\nURL: https://new.qq.com/rain/a/20250120A08S5U00\nDescription: 1月20日讯 1月20日,幻方量化旗下AI公司深度求索(DeepSeek)正式发布DeepSeek-R1模型。在数学、代码、自然语言推理等任务上,该模型性能比肩OpenAI o1正式版。DeepSeek称,R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。DeepSeek不仅将R1训练技术全部公开,还蒸馏了6个小模型开源给社区,允许用户借此训练其他模型。API价格方面,每百万输入tokens 1 元(缓存命中)/4元(缓存未命中),每百万输出tokens 16元,较o1正式版低27-55倍。\nPublished date: 2025-01-20T21:04:16+08:00\nSite name: 腾讯网\n\nTitle: DeepSeek发布R1模型,性能对标OpenAI o1正式版推理r1模型openai视频生成模型deepseek_网易订阅\nURL: https://www.163.com/dy/article/JMCHLQN805198R91.html\nDescription: 1月20日,幻方量化旗下AI公司深度求索(DeepSeek)正式发布DeepSeek-R1模型。在数学、代码、自然语言推理等任务上,该模型性能比肩OpenAI o1正式版。DeepSeek称,R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。DeepSeek不仅将R1训练技术全部公开,还蒸馏了6个小模型开源给社区,允许用户借此训练其他模型。API价格方面,每百万输入tokens 1 元(缓存命中)/4元(缓存未命中),每百万输出tokens 16元,较o1正式版低27-55倍。\nPublished date: 2025-01-20T21:09:03+08:00\nSite name: 网易\n\nTitle: DeepSeek发布R1模型,性能对标OpenAI o1正式版 - 腾讯云开发者社区-腾讯云\nURL: https://cloud.tencent.com/developer/news/2105118\nDescription: 1月20日,幻方量化旗下AI公司深度求索(DeepSeek)正式发布DeepSeek-R1模型。在数学、代码、自然语言推理等任务上,该模型性能比肩OpenAI o1正式版。DeepSeek称,R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。DeepSeek不仅将R1训练技术全部公开,还蒸馏了6个小模型开源给社区,允许用户借此训练其他模型。API价格方面,每百万输入tokens 1 元(缓存命中)/4元(缓存未命中),每百万输出tokens 16元,较o1正式版低27-55倍。\nPublished date: 2025-01-20T21:04:16+08:00\nSite name: 腾讯云\n\nTitle: DeepSeek-R1发布 - 观点网\nURL: https://www.guandian.c",
+    "isError": false,
+    "durationMs": 250,
+    "createdAt": "2026-03-01T13:01:36.716Z"
+  },
+  {
+    "id": "16d3adc1890278fe",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_8dd339cf1f614e2295863e71"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:37.224Z"
+  },
+  {
+    "id": "616ea1ce2f330e10",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 【人工智能】欧盟的 AI 法案将于 2025 年 2 月 2 日起生效\nURL: https://m.163.com/dy/article/JNCD9FPV0556APK2.html\nDescription: 2025 年 2 月 2 日,欧盟 (EU) 的《人工智能法案》(AI Act) 将分阶段开始实施。本文总结了自 2025 年 2 月 2 日起将适用于欧盟地区的新义务。它还指出了公司何时可以期待第一批执法行动,以及执法制度将是什么样子。\n欧盟对提供或使用人工智能工具的公司的新义务\n2025年2月2日,《人工智能法案》关于人工智能素养和禁止人工智能用途的规定将生效:\n人工智能素养。 《人工智能法案》第 4 条要求所有人工智能系统的提供商和部署者确保其员工对人工智能有足够的了解和理解,包括人工智能带来的机遇和风险。这一要求适用于所有使用人工智能的公司,即使是以低风险的方式。在实践中,这通常意味着实施人工智能治理政策和人工智能员工培训计划。\n禁止使用人工智能。 《人工智能法案》第 5 条禁止某些被认为会产生不可接受风险的人工智能用途,例如在工作场所或教育机构中操纵或利用个人、进行社交评分和推断个人情绪的人工智能系统。该禁令适用于提供此类人工智能系统的公司以及使用此类人工智能系统的公司。欧盟委员会 (EC) 预计将于今年年初发布有关禁止使用人工智能实践的指南。\n国家执法制度与欧盟层面执法相结合的复杂网络\n《人工智能法案》要求每个欧盟国家确定主管监管机构来执行该法案。欧盟国家在如何构建国家执法方面拥有一定的灵活性。一些国家,例如西班牙,采取了集中化的方式,建立了一个新的专门的人工智能机构(西班牙人工智能监管机构),负责监督各行业对《人工智能法案》的遵守情况。其他国家可能会采用分散化的模式,即由多个现有监管机构负责监督各个行业的合规情况(例如,卫生和安全局可以监督卫生部门的人工智能使用情况)。此外,其他监管机构可以监督与基本权利相关的义务的遵守情况。在许多国家,执法结构仍不明确,因为欧盟国家必须在 2025 年 8 月 2 日之前指定主管当局。\n此外,欧盟国家有权自行决定适用的制裁措\nPublished date: 2025-02-02T14:08:06+08:00\nSite name: 网易\n\nTitle: 【人工智能】欧盟的 AI 法案将于 2025 年 2 月 2 日起生效\nURL: https://3g.163.com/news/article/JNCD9FPV0556APK2.html\nDescription: 2025 年 2 月 2 日,欧盟 (EU) 的《人工智能法案》(AI Act) 将分阶段开始实施。本文总结了自 2025 年 2 月 2 日起将适用于欧盟地区的新义务。它还指出了公司何时可以期待第一批执法行动,以及执法制度将是什么样子。\n欧盟对提供或使用人工智能工具的公司的新义务\n2025年2月2日,《 人工智能法案 》关于人工智能素养和禁止人工智能用途的规定将生效:\n人工智能素养。 《人工智能法案》第 4 条要求所有人工智能系统的提供商和部署者确保其员工对人工智能有足够的了解和理解,包括人工智能带来的机遇和风险。这一要求适用于所有使用人工智能的公司,即使是以低风险的方式。在实践中,这通常意味着实施人工智能治理政策和人工智能员工培训计划。\n禁止使用人工智能。 《人工智能法案》第 5 条禁止某些被认为会产生不可接受风险的人工智能用途,例如在工作场所或教育机构中操纵或利用个人、进行社交评分和推断个人情绪的人工智能系统。该禁令适用于提供此类人工智能系统的公司以及使用此类人工智能系统的公司。欧盟委员会 (EC) 预计将于今年年初发布有关禁止使用人工智能实践的指南。\n国家执法制度与欧盟层面执法相结合的复杂网络\n《人工智能法案》要求每个欧盟国家确定主管监管机构来执行该法案。欧盟国家在如何构建国家执法方面拥有一定的灵活性。一些国家,例如西班牙,采取了集中化的方式,建立了一个新的专门的人工智能机构(西班牙人工智能监管机构),负责监督各行业对《人工智能法案》的遵守情况。其他国家可能会采用分散化的模式,即由多个现有监管机构负责监督各个行业的合规情况(例如,卫生和安全局可以监督卫生部门的人工智能使用情况)。此外,其他监管机构可以监督与基本权利相关的义务的遵守情况。在许多国家,执法结构仍不明确,因为欧盟国家必须在 2025 年 8 月 2 日之前指定主管当局。\n此外,欧盟国家有权自行决定适用的制\nPublished date: 2025-02-02T14:08:00+08:00\nSite name: 网易\n\nTitle: 【人工智能】欧盟的 AI 法案将于 2025 年2月2日起生效ai法案欧盟委员会人工智能法案社交媒体",
+    "isError": false,
+    "durationMs": 294,
+    "createdAt": "2026-03-01T13:01:37.518Z"
+  },
+  {
+    "id": "4099547caa29de13",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_8178743f8d9544b4a70873f6"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:41.822Z"
+  },
+  {
+    "id": "08b7f44df1e53166",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 够新!够权威!智源研究院发布2025十大AI技术趋势_baai_ac_https\nURL: https://www.sohu.com/a/846691911_129720\nDescription: 下载报告全文链接: https://ticket-assets.baai.ac.cn/uploads/2025%E5%8D%81%E5%A4%A7AI%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF%E4%B8%A8%E6%99%BA%E6%BA%90%E7%A0%94%E7%A9%B6%E9%99%A2.pdf\nPublished date: 2025-01-08T14:32:00+08:00\nSite name: 搜狐\n\nTitle: 够新！够权威！智源研究院发布2025十大AI技术趋势\nURL: https://m.163.com/dy/article/JLD1AMLF0511AQHO.html\nDescription: 下载报告全文链接:\nhttps://ticket-assets.baai.ac.cn/uploads/2025%E5%8D%81%E5%A4%A7AI%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF%E4%B8%A8%E6%99%BA%E6%BA%90%E7%A0%94%E7%A9%B6%E9%99%A2.pdf\nPublished date: 2025-01-08T23:38:41+08:00\nSite name: 网易\n\nTitle: 够新!够权威!智源研究院发布2025十大AI技术趋势_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2025-01-08/doc-ineefzct1086200.shtml\nDescription: 下载报告全文链接: https://ticket-assets.baai.ac.cn/uploads/2025%E5%8D%81%E5%A4%A7AI%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF%E4%B8%A8%E6%99%BA%E6%BA%90%E7%A0%94%E7%A9%B6%E9%99%A2.pdf 海量资讯、精准解读,尽在新浪财经APP VIP课程推荐 加载中... APP专享直播 热门推荐 收起 新浪财经公众号 24小时滚动播报最新的财经资讯和视频,更多粉丝福利扫描二维码关注(sinafinance)\nPublished date: 2025-01-08T15:38:00+08:00\nSite name: 新浪财经\n\nTitle: 智源研究院预测2025十大AI技术趋势,具身智能、AI安全成焦点 - 今日头条\nURL: https://www.toutiao.com/article/7457456780491244086/\nDescription: 中新网北京1月8日电 (记者 夏宾)北京智源人工智能研究院(下称“智源研究院”)8日在京发布“2025十大AI技术趋势”。今年的十大AI趋势是智源研究院根据行业技术及应用热点,给出的年度AI趋势预测。\nPublished date: 2025-01-08T16:21:00+08:00\nSite name: 今日头条\n\nTitle: 智源研究院发布2025十大AI技术趋势\nURL: https://www.pingwest.com/a/301594\nDescription: 扫码 或点击“阅读原 文” 下载报告全文\nPublished date: 2025-01-08T08:00:00+08:00\nSite name: 品玩",
+    "isError": false,
+    "durationMs": 360,
+    "createdAt": "2026-03-01T13:01:42.182Z"
+  },
+  {
+    "id": "df862c5788422f7b",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_7ecee1d206b34a82ba26d8db"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:42.308Z"
+  },
+  {
+    "id": "8cfebbaf519a1ad5",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: DeepSeek-R1 发布,性能对标 OpenAI o1 正式版 - 今日头条\nURL: https://www.toutiao.com/article/7461974686310629907/\nDescription: 评论 收藏 DeepSeek宣布正式发布DeepSeek-R1,并同步开源模型权重。DeepSeek-R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。在数学、代码、自然语言推理等任务上,性能比肩OpenAI o1正式版。(DeepSeek) 举报 评论 4 请先 登录 后发表评论~ 评论 赞 图片分析非常差,我拍摄重庆大礼堂的照片,居然不知道是哪里。ChatGPT就可以。 回复 · 3天前 赞 因为没有进行这个训练,deepseek和openAI最大的区别就是一个是专家模式,一个是全能模式,训练编程的他就转注于编程,文本处理的就专注于文本处理,和人一样,英语老师教英语,物理老师教物理,而openai则是全能训练,所以他的成本非常高而且不专业,不管训练什么,都需要激活全部神经元 回复 · 3天前 牛[赞][赞][赞] 回复 · 4天前 赞 厉害呀,超棒的! 回复 · 3天前 查看全部 4 条评论 4天前\nPublished date: 2025-01-20T20:33:00+08:00\nSite name: 今日头条\n\nTitle: DeepSeek-R1发布\nURL: https://new.qq.com/rain/a/20250120A08QOM00\nDescription: 1月20日,DeepSeek公司宣布正式发布最新人工智能模型DeepSeek-R1,并同步开源模型权重。      DeepSeek-R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。      在数学、代码、自然语言推理等任务上的性能已比肩OpenAI的o1正式版。\nPublished date: 2025-01-20T20:56:12+08:00\nSite name: 腾讯网\n\nTitle: DeepSeek发布R1模型,性能对标OpenAI o1正式版推理r1模型openai视频生成模型deepseek_网易订阅\nURL: https://www.163.com/dy/article/JMCHLQN805198R91.html\nDescription: 1月20日,幻方量化旗下AI公司深度求索(DeepSeek)正式发布DeepSeek-R1模型。在数学、代码、自然语言推理等任务上,该模型性能比肩OpenAI o1正式版。DeepSeek称,R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。DeepSeek不仅将R1训练技术全部公开,还蒸馏了6个小模型开源给社区,允许用户借此训练其他模型。API价格方面,每百万输入tokens 1 元(缓存命中)/4元(缓存未命中),每百万输出tokens 16元,较o1正式版低27-55倍。\nPublished date: 2025-01-20T21:09:03+08:00\nSite name: 网易\n\nTitle: DeepSeek-R1发布\nURL: https://kuaibao.qq.com/s/20250120A08QOM00?refer=cp_1009\nDescription: 观点网讯:1月20日,DeepSeek公司宣布正式发布最新人工智能模型DeepSeek-R1,并同步开源模型权重。      DeepSeek-R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。      在数学、代码、自然语言推理等任务上的性能已比肩OpenAI的o1正式版。\nPublished date: 2025-01-20T20:56:12+08:00\nSite name: 腾讯网\n\nTitle: DeepSeek发布R1模型,性能对标OpenAI o1正式版\nURL: https://new.qq.com/rain/a/20250120A08S5U00\nDescription: 1月20日讯 1月20日,幻方量化旗下AI公司深度求索(DeepSeek)正式发布DeepSeek-R1模型。在数学、代码、自然语言推理等任务上,该模型性能比肩OpenAI o1正式版。DeepSeek称,R1在后训练阶段大规模使用了强化学习技术,在仅有极少标注数据的情况下,极大提升了模型推理能力。DeepSeek不仅将R1训练技术全部公开,还蒸馏了6个小模型开源给社区,允许用户借此训练其他模型。API价格方面,每百万输入token",
+    "isError": false,
+    "durationMs": 304,
+    "createdAt": "2026-03-01T13:01:42.612Z"
+  },
+  {
+    "id": "438e13147ae665ff",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_f2c96427d4184b44860bd01c"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T13:01:43.784Z"
+  },
+  {
+    "id": "2311b186f1e74bdc",
+    "type": "tool_call",
+    "taskId": "6e099c9d5b79493e",
+    "subtaskId": "c73682f6f508a1b6",
+    "employeeId": "13a8bfff8e74f981",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 【人工智能】欧盟的 AI 法案将于 2025 年 2 月 2 日起生效\nURL: https://3g.163.com/news/article/JNCD9FPV0556APK2.html\nDescription: 2025 年 2 月 2 日,欧盟 (EU) 的《人工智能法案》(AI Act) 将分阶段开始实施。本文总结了自 2025 年 2 月 2 日起将适用于欧盟地区的新义务。它还指出了公司何时可以期待第一批执法行动,以及执法制度将是什么样子。\n欧盟对提供或使用人工智能工具的公司的新义务\n2025年2月2日,《 人工智能法案 》关于人工智能素养和禁止人工智能用途的规定将生效:\n人工智能素养。 《人工智能法案》第 4 条要求所有人工智能系统的提供商和部署者确保其员工对人工智能有足够的了解和理解,包括人工智能带来的机遇和风险。这一要求适用于所有使用人工智能的公司,即使是以低风险的方式。在实践中,这通常意味着实施人工智能治理政策和人工智能员工培训计划。\n禁止使用人工智能。 《人工智能法案》第 5 条禁止某些被认为会产生不可接受风险的人工智能用途,例如在工作场所或教育机构中操纵或利用个人、进行社交评分和推断个人情绪的人工智能系统。该禁令适用于提供此类人工智能系统的公司以及使用此类人工智能系统的公司。欧盟委员会 (EC) 预计将于今年年初发布有关禁止使用人工智能实践的指南。\n国家执法制度与欧盟层面执法相结合的复杂网络\n《人工智能法案》要求每个欧盟国家确定主管监管机构来执行该法案。欧盟国家在如何构建国家执法方面拥有一定的灵活性。一些国家,例如西班牙,采取了集中化的方式,建立了一个新的专门的人工智能机构(西班牙人工智能监管机构),负责监督各行业对《人工智能法案》的遵守情况。其他国家可能会采用分散化的模式,即由多个现有监管机构负责监督各个行业的合规情况(例如,卫生和安全局可以监督卫生部门的人工智能使用情况)。此外,其他监管机构可以监督与基本权利相关的义务的遵守情况。在许多国家,执法结构仍不明确,因为欧盟国家必须在 2025 年 8 月 2 日之前指定主管当局。\n此外,欧盟国家有权自行决定适用的制\nPublished date: 2025-02-02T14:08:00+08:00\nSite name: 网易\n\nTitle: 【人工智能】欧盟的 AI 法案将于 2025 年 2 月 2 日起生效\nURL: https://m.163.com/dy/article/JNCD9FPV0556APK2.html\nDescription: 2025 年 2 月 2 日,欧盟 (EU) 的《人工智能法案》(AI Act) 将分阶段开始实施。本文总结了自 2025 年 2 月 2 日起将适用于欧盟地区的新义务。它还指出了公司何时可以期待第一批执法行动,以及执法制度将是什么样子。\n欧盟对提供或使用人工智能工具的公司的新义务\n2025年2月2日,《人工智能法案》关于人工智能素养和禁止人工智能用途的规定将生效:\n人工智能素养。 《人工智能法案》第 4 条要求所有人工智能系统的提供商和部署者确保其员工对人工智能有足够的了解和理解,包括人工智能带来的机遇和风险。这一要求适用于所有使用人工智能的公司,即使是以低风险的方式。在实践中,这通常意味着实施人工智能治理政策和人工智能员工培训计划。\n禁止使用人工智能。 《人工智能法案》第 5 条禁止某些被认为会产生不可接受风险的人工智能用途,例如在工作场所或教育机构中操纵或利用个人、进行社交评分和推断个人情绪的人工智能系统。该禁令适用于提供此类人工智能系统的公司以及使用此类人工智能系统的公司。欧盟委员会 (EC) 预计将于今年年初发布有关禁止使用人工智能实践的指南。\n国家执法制度与欧盟层面执法相结合的复杂网络\n《人工智能法案》要求每个欧盟国家确定主管监管机构来执行该法案。欧盟国家在如何构建国家执法方面拥有一定的灵活性。一些国家,例如西班牙,采取了集中化的方式,建立了一个新的专门的人工智能机构(西班牙人工智能监管机构),负责监督各行业对《人工智能法案》的遵守情况。其他国家可能会采用分散化的模式,即由多个现有监管机构负责监督各个行业的合规情况(例如,卫生和安全局可以监督卫生部门的人工智能使用情况)。此外,其他监管机构可以监督与基本权利相关的义务的遵守情况。在许多国家,执法结构仍不明确,因为欧盟国家必须在 2025 年 8 月 2 日之前指定主管当局。\n此外,欧盟国家有权自行决定适用的制裁措\nPublished date: 2025-02-02T14:08:06+08:00\nSite name: 网易\n\nTitle: 【人工智能】欧盟的 AI 法案将于 2025 年2月2日起生效ai法案欧盟委员会人工智能法案社交媒体",
+    "isError": false,
+    "durationMs": 259,
+    "createdAt": "2026-03-01T13:01:44.043Z"
+  }
+]

@@ -1,0 +1,534 @@
+[
+  {
+    "id": "19609a522515d2ea",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_297ebb4ce54647bbae6c9c5a"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:39:17.706Z"
+  },
+  {
+    "id": "567459ad4707568e",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_dadefd7885c542d4ae30afbe"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:39:18.418Z"
+  },
+  {
+    "id": "8853b1b6c8340258",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 国家网信办关于AIGC服务已备案信息的公告\nURL: https://docs.feishu.cn/article/wiki/EOoowWT6biS5XPkY2y5crkoUnwc\nDescription: 促进生成式人工智能服务创新发展和规范应用,网信部门会同相关部门按照《生成式人工智能服务管理暂行办法》要求,有序开展生成式人工智能服务备案工作,现将已备案信息予以公告。提供具有舆论属性或者社会动员能力的生成式人工智能服务的,可通过属地网信部门履行备案程序,属地网信部门应及时将已备案信息对外公开发布, 网信办将在官网定期汇总更新,不再另行公告 。\n已上线的生成式人工智能应用或功能,应在显著位置或产品详情页面公示所使用已备案生成式人工智能服务情况,注明模型名称及备案号。\n部分已备案模型一览表(截止目前)\nPublished date: 2025-02-13T15:03:51+08:00\nSite name: 飞书文档\n\nTitle: 生成式人工智能服务已备案和已登记信息(2025年1月)_知识_星球_文件\nURL: https://www.sohu.com/a/847092329_121124365\nDescription: 微信公众号 计算机与网络安全 加入知识星球: 人工智能、算力算网 下载文件 | 来源: 中国网信网 返回搜狐,查看更多\nPublished date: 2025-01-09T07:57:00+08:00\nSite name: 搜狐\n\nTitle: 网信发布_中央网络安全和信息化委员会办公室\nURL: https://www.cac.gov.cn/wxzw/wxfb/A093702index_1.htm\nDescription: 国家互联网信息办公室关于发布2024年生成式人工智能服务已备案信息的公告 国家互联网信息办公室关于发布第九批深度合成服务算法备案信息的公告 《数字化绿色化协同转型发展优...\nPublished date: 2025-02-08T18:54:34+08:00\nSite name: 中央网络安全和信息化委员会办公室\n\nTitle: 2025年1月:揭晓生成式人工智能服务备案新规!_监管_技术_用户\nURL: https://www.sohu.com/a/847092367_122004016\nDescription: 根据最新消息,中国网信网公布了截至2025年1月的生成式人工智能服务备案和登记信息。这一动态不仅反映了监管机构对技术发展的重视,也为行业未来发展指明了方向。 什么是生成式人工智能?简而言之,它是一种利用机器学习技术生成文本、图像、音乐等多种内容的人工智能。随着技术的飞速发展,这类服务已经融入了我们生活的方方面面,从聊天机器人到自动化广告生成、甚至是内容创作工具。\nPublished date: 2025-01-09T07:57:00+08:00\nSite name: 搜狐\n\nTitle: 半月谈|（1.1-1.15）数据法要闻一览-飞书云文档\nURL: https://vugdevvjrb.feishu.cn/wiki/RZoAwKNepiEzytkuVqgcIvt6nyf\nDescription: 2024年4月18日修改\n国内要闻速览 ​\n    \n编辑:袁卓然、 赵梓蕊、韩诗懿、郑书康、龙唐玉 ​\n校对:赵梓蕊 ​\n算法与AI ​\n1.\n国家互联网信息办公室关于发布第三批深度合成服务算法备案信息的公告 ​\n2024年1月5日,国家互联网信息办公室发布公告,根据《互联网信息服务深度合成管理规定》,公开发布第三批境内深度合成服务算法备案信息。具体信息可通过互联网信息服务算法备案系统( https://beian.cac.gov.cn )进行查询。并提示,《互联网信息服务深度合成管理规定》 第十九条 明确规定, 具有舆论属性或者社会动员能力的深度合成服务提供者,应当按照《互联网信息服务算法推荐管理规定》履行备案和变更、注销备案手续。 深度合成服务技术支持者应当参照履行备案和变更、注销备案手续。请尚未履行备案手续的深度合成服务提供者和技术支持者尽快申请备案。 ​\n​\n2.\n中国信通院发布《区块链基础设施研究报告(2023年)》 ​\n2023年12月25日召开的“2024中国信通院ICT深度观察报告会”数字基础设施赋能新型工业化分论坛上,中国信息通信研究院(简称“中国信通院”)工业互联网与物联网研究所张钰雯对《区块链基础设施研究报告(2023年)》进行了解读。 ​\n​\n区块链基础设施研究报告.pdf\n​\n​\n3.\n清华产业院联合浪潮信息发布《中国算力发展观察报告(2023)》 ​\n2023年12月26日,由清华大学全球产业研究院主办、浪潮信息承办的“算力高质量发",
+    "isError": false,
+    "durationMs": 1948,
+    "createdAt": "2026-03-02T04:39:19.654Z"
+  },
+  {
+    "id": "734f839711194bd3",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 关注AIGC法律监管与伦理考量_人工智能_保护法_数据\nURL: https://www.sohu.com/a/844848378_121124708\nDescription: 《互联网信息服务算法推荐管理规定》要求算法推荐服务提供者应当建立健全算法机制机理审核,定期审核､评估､验证算法机制机理､模型､数据和应用结果等,不得设置诱导用户沉迷､过度消费等违反法律法规或者违背伦理道德的算法模型,并需向网信部门完成备案｡《互联网信息服务深度合成管理规定》明确AIGC 属于其监管范围,明确深度合成服务提供者应当采取技术或者人工方式对深度合成服务使用者的输入数据和合成结果进行审核,且在生成或者编辑的信息内容的合理位置､区域进行显著标识,向公众提示深度合成情况 ｡\nPublished date: 2025-01-03T11:30:00+08:00\nSite name: 搜狐\n\nTitle: AIGC产品合规需要哪些出生证明?iLaw - 今日头条\nURL: https://www.toutiao.com/article/7457071018855645731/\nDescription: 纲要(2020—2025年)》,制定完善对网络直播､自媒体､知识社区问答等新媒体业态和算法推荐､深度伪造等新技术应用的规范管理办法｡ (3)《互联网信息服务算法推荐管理规定》2022年3月1日施行,第二十四条规定,具有舆论属性或者社会动员能力的算法推荐服务提供者应当在提供服务之日起十个工作日内通过互联网信息服务算法备案系统填报服务提供者的名称､服务形式､应用领域､算法类型､算法自评估报告､拟公示内容等信息,履行备案手续｡ (4)《互联网信息服务深度合成管理规定》2023年1月10日起施行,第十九条规定,具有舆论属性或者社会动员能力的深度合成服务提供者,应当按照《互联网信息服务算法推荐管理规定》履行备案和变更､注销备案手续｡\nPublished date: 2025-01-07T19:08:00+08:00\nSite name: 今日头条\n\nTitle: 2025年中国AIGC发展前景全解析:政策助力与产业变革_技术_内容_应用\nURL: https://www.sohu.com/a/849256373_121956422\nDescription: 随着人工智能技术的飞速发展,AIGC(AI-Generated Content,人工智能生成内容)已然成为当今数字经济中的新兴热词｡它不仅是技术的突破,更是内容创作方式的革命｡本文将对2025年中国AIGC的发展历程及相关政策进行梳理,深入分析其产业链,以呈现一个鲜活的AIGC生态｡ 1. 背景介绍与重要性 AIGC的定义是基于人工智能技术,通过已有数据寻找规律,并通过泛化能力生成相关内容的技术｡\nPublished date: 2025-01-15T13:56:00+08:00\nSite name: 搜狐\n\nTitle: 互联网发展_河北网信网\nURL: http://www.caheb.gov.cn/system/2025/02/08/030329049.shtml\nDescription: 近年来,《生成式人工智能服务管理暂行办法》《互联网信息服务算法推荐管理规定》《互联网信息服务深度合成管理规定》等法规颁布,其目的是预防技术滥用带来的各类安全风险,确保技术创新发展符合知识产权规范,防止滥用,预防风险｡在科技创新和新质生产力发展的新时期,强化法律监管和创新司法实践是预防知识产权带来的法律合规风险的有效手段,是促进人工智能安全可靠发展的制度保障｡ 开展模型训练的合理使用 \nPublished date: 2025-02-08T10:14:46+08:00\nSite name: www.caheb.gov.cn\n\nTitle: 全球监管体系构建 欧盟AI法案(2025修订版)新增「生成内容溯源」条款,要求AIGC输出必须嵌入不可擦除的数字水印,违规企业将面临全球营收4%的罚款...\nURL: https://www.toutiao.com/w/1825216208696330/\nDescription: 全球监管体系构建 欧盟AI法案(2025修订版)新增｢生成内容溯源｣条款,要求AIGC输出必须嵌入不可擦除的数字水印,违规企业将面临全球营收4%的罚款｡\nPublished date: 2025-02-27T21:10:00+08:00\nSite name: 今日头条\n\nTitle: 2025-2029年中国未来产业人工智能生成内容(AIGC)行业研究报告 - 今日头条\nURL: http://www.toutiao.com/a7472596850152014372/\nDescription: A",
+    "isError": false,
+    "durationMs": 3073,
+    "createdAt": "2026-03-02T04:39:21.490Z"
+  },
+  {
+    "id": "634dec8c59b069d7",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_4bb5b757d94a47aabd0e050a"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:39:43.417Z"
+  },
+  {
+    "id": "6bca3a7305a449bf",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_38f9ec9893274240a419d0fe"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:39:44.588Z"
+  },
+  {
+    "id": "faf1f5c7acb45557",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_bed62415206f4c1b88ec9741"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:39:45.511Z"
+  },
+  {
+    "id": "ecdd64bf6e293a93",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 国家互联网信息办公室关于发布第四批深度合成服务算法备案信息的公告\nURL: http://www.ah12377.cn/newsDetail/991\nDescription: 根据《互联网信息服务深度合成管理规定》,现公开发布第四批境内深度合成服务算法备案信息,具体信息可通过互联网信息服务算法备案系统 ( 《互联网信息服务深度合成管理规定》第十九条明确规定,具有舆论属性或者社会动员能力的深度合成服务提供者,应当按照《互联网信息服务算法推荐管理规定》履行备案和变更、注销备案手续。深度合成服务技术支持者应当参照履行备案和变更、注销备案手续。请尚未履行备案手续的深度合成服务提供者和技术支持者尽快申请备案。 点击“阅读原文”查看“境内深度合成服务算法备案清单(2024年2月)”\nPublished date: 2025-01-01T06:51:13+08:00\nSite name: www.ah12377.cn\n\nTitle: 半月谈|（1.1-1.15）数据法要闻一览-飞书云文档\nURL: https://vugdevvjrb.feishu.cn/wiki/RZoAwKNepiEzytkuVqgcIvt6nyf\nDescription: 2024年4月18日修改\n国内要闻速览 ​\n    \n编辑:袁卓然、 赵梓蕊、韩诗懿、郑书康、龙唐玉 ​\n校对:赵梓蕊 ​\n算法与AI ​\n1.\n国家互联网信息办公室关于发布第三批深度合成服务算法备案信息的公告 ​\n2024年1月5日,国家互联网信息办公室发布公告,根据《互联网信息服务深度合成管理规定》,公开发布第三批境内深度合成服务算法备案信息。具体信息可通过互联网信息服务算法备案系统( https://beian.cac.gov.cn )进行查询。并提示,《互联网信息服务深度合成管理规定》 第十九条 明确规定, 具有舆论属性或者社会动员能力的深度合成服务提供者,应当按照《互联网信息服务算法推荐管理规定》履行备案和变更、注销备案手续。 深度合成服务技术支持者应当参照履行备案和变更、注销备案手续。请尚未履行备案手续的深度合成服务提供者和技术支持者尽快申请备案。 ​\n​\n2.\n中国信通院发布《区块链基础设施研究报告(2023年)》 ​\n2023年12月25日召开的“2024中国信通院ICT深度观察报告会”数字基础设施赋能新型工业化分论坛上,中国信息通信研究院(简称“中国信通院”)工业互联网与物联网研究所张钰雯对《区块链基础设施研究报告(2023年)》进行了解读。 ​\n​\n区块链基础设施研究报告.pdf\n​\n​\n3.\n清华产业院联合浪潮信息发布《中国算力发展观察报告(2023)》 ​\n2023年12月26日,由清华大学全球产业研究院主办、浪潮信息承办的“算力高质量发展与应用高端论坛”在北京举行。本次论坛以“算力引领 以智赋质”为主题。工业和信息化部原副部长、中国数字经济百人会专家委员会主任杨学山,清华大学全球产业研究院副院长李东红,中国信通院产业与规划研究所副总工程师王青,浪潮元脑首席技术官张东出席论坛并做主题发言。此外,论坛还邀请了北京奔驰汽车有限公司车身二工厂总经理郭东栋、\nPublished date: 2025-02-22T00:11:07+08:00\nSite name: 飞书官网\n\nTitle: 中软国际解放号:深度合成服务算法备案迈出重要一步_Gen-AI_行业_技术\nURL: https://www.sohu.com/a/846017461_122004016\nDescription: 近日,国家互联网信息办公室正式发布了第九批深度合成服务算法备案清单,其中,中软国际解放号自主研发的生成式算法喜获备案(网信算备3201240019号),这标志着在合规、安全与透明性上又迈出了重要一步。 该备案制度旨在对算法应用进行集中管理,确保市场秩序的规范化,提高行业准入门槛,防范技术滥用与安全风险,堵截不实信息的传播,借此维护社会稳定。\nPublished date: 2025-01-07T04:57:00+08:00\nSite name: 搜狐\n\nTitle: 网信发布_中央网络安全和信息化委员会办公室\nURL: https://www.cac.gov.cn/wxzw/wxfb/A093702index_1.htm\nDescription: 国家互联网信息办公室关于发布2024年生成式人工智能服务已备案信息的公告 国家互联网信息办公室关于发布第九批深度合成服务算法备案信息的公告 《数字化绿色化协同转型发展优...\nPublished date: 2025-02-08T18:54:34+08:00\nSite name: 中央网络安全和信息化委员会办公室\n\nTitle: 权威认证  中软国",
+    "isError": false,
+    "durationMs": 2616,
+    "createdAt": "2026-03-02T04:39:46.033Z"
+  },
+  {
+    "id": "5df884b5c0de696a",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年数据领域值得关注的十大趋势 —— 数据和人工智能法律2025展望系列之一\nURL: https://www.junhe.com/legal-updates/2608\nDescription: 2025.02.10 董潇 郭超 前言 2024年,我国通过制定一系列立法和技术标准,继续对网络数据管理、个人信息保护、重要数据监管等方面的规则进行细化与完善,并推动对数据跨境流动有序放松的管理。在迅猛发展的人工智能领域,通过发布多项具体实施指南和管理规定,明确了人工智能技术应用的安全边界和服务规范,同时发布多批算法备案信息以及落地实施大模型备案要求,确定了对人工智能技术包容式监管的框架。新春伊始,我们在回顾过去一年数据领域立法和执法情况的同时,也希冀展望我国未来一年与数据保护、网络安全及人工智能相关的且值得关注的重大趋势。 就本文所探讨的相关趋势和重点问题,后续我们将陆续发布 系列性文章 ,进行详细、全面地阐述和分析,敬请关注。 1. 人工智能领域监管逐步落地 2024年,随着生成式人工智能领域的跨越式发展,该领域也成为我国新技术新领域的监管发展最快的领域之一。算法备案在落地两年后已形成常态化合规流程。生成式人工智能大模型备案规则也在2024年进一步明晰,大模型备案数量显著增加。多项标准、指南或其征求意见稿的发布,进一步针对安全评估、内容标识、数据训练安全、应急相应等等亟待监管的领域提出细化规则。人工智能侵权判例及执法活动也不断增加。在人工智能国际合作方面,我国也取得诸多进展,2024世界人工智能大会发布了《人工智能全球治理上海宣言》 1 ,中国与法国发布了关于人工智能和全球治理的联合声明 2 ,中非互联网发展与合作论坛发布了关于中非人工智能合作的声明 3 。 预计我国在2025年对人工智能将延续重点事项监管、促进产业有序发展的方向。一方面,2024年已发布的若干人工智能专项规定草案,例如《人工智能生成合成内容标识办法(征求意见稿)》、《信息安全技术 生成式人工智能数据标注安全规范(征求意见稿)》,有望在2025年陆续出台。人工智能安全标准体系将稳中有进、逐步\nPublished date: 2025-02-10T22:45:06+08:00\nSite name: 君合律师事务所\n\nTitle: 政策\nURL: http://www.longtengyatai.com/tags/9xarticlex1\nDescription: 工业和信息化部办公厅 国家药品监督管理局综合和规划财务司关于开展2025年人工智能医疗器械创新任务揭榜挂帅工作的通知\n工业和信息化部办公厅 国家药品监督管理局综合和规划财务司关于开展2025年人工智能医疗器械创新任务揭榜挂帅工作的通知\n2025-02-10 9 浏览\n人工智能\n政策\n关于发布多物理场高效飞行科学基础与调控机理重大研究计划2025年度项目指南的通告\n关于发布多物理场高效飞行科学基础与调控机理 重大研究计划2025年度项目指南的通告\n2025-02-07 19 浏览\n人工智能\n政策\n关于发布高精度量子操控与探测重大研究计划 2025年度项目指南的通告\n关于发布高精度量子操控与探测重大研究计划 2025年度项目指南的通告\n2025-02-07 30 浏览\n人工智能\n政策\n关于发布可解释、可通用的下一代人工智能方法 重大研究计划2025年度项目指南的通告\n关于发布可解释、可通用的下一代人工智能方法 重大研究计划2025年度项目指南的通告\n2025-02-07 39 浏览\n人工智能\n政策\n关于发布集成芯片前沿技术科学基础重大研究计划 2025年度项目指南的通告\n关于发布集成芯片前沿技术科学基础重大研究计划 2025年度项目指南的通告\n2025-02-05 40 浏览\n人工智能\n政策\n中国互联网络信息中心发布《生成式人工智能应用发展报告(2024)》\n生成式人工智能应用\n2024-12-27 177 浏览\n政策\n空间飞行器在轨服务与维护系统”国家科技重大专项2024年度 公开项目申报指南发布\n空间飞行器\n2024-11-28 199 浏览\n政策\n￥ 5680\n2400人\n看回放\n基于FPGA的深度学习模型开发与部署研修班(第一天)\n2022/04/08 结束\n￥ 4580\n84人\n看回放\n深度学习核心技术实践与图神经网络新技术应用研修班(22年2月25日)\n2022/0\nPublished date: 2025-02-10T08:00:00+08:00\nSite name: www.longtengyatai.com\n\nTitle: 2025年数据安全新规与AI应用前景:数字化时代的双重考验_保护_用户_领域\nURL: https://www.sohu.com/a/8491",
+    "isError": false,
+    "durationMs": 2525,
+    "createdAt": "2026-03-02T04:39:47.113Z"
+  },
+  {
+    "id": "5223395bc740b209",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 全球监管体系构建 欧盟AI法案(2025修订版)新增「生成内容溯源」条款,要求AIGC输出必须嵌入不可擦除的数字水印,违规企业将面临全球营收4%的罚款...\nURL: https://www.toutiao.com/w/1825216208696330/\nDescription: 全球监管体系构建 欧盟AI法案(2025修订版)新增｢生成内容溯源｣条款,要求AIGC输出必须嵌入不可擦除的数字水印,违规企业将面临全球营收4%的罚款｡\nPublished date: 2025-02-27T21:10:00+08:00\nSite name: 今日头条\n\nTitle: 2025年AIGC安全发展趋势:刘忱呼吁多管齐下应对挑战_技术_内容_伦理\nURL: https://www.sohu.com/a/849245387_121902920\nDescription: 数字水印技术,可以有效追踪和溯源AIGC合成内容;在主动检测方面,引入AI欺诈检测技术,实时识别伪造内容,形成技术防御与人工干预相结合的安全体系｡ 第三,构建合理的伦理训练与数据集体系至关重要｡当前,AIGC的导向仍主要掌握在训练模型的人类手中,因此,建立公正的数据集是缓解算法偏见的重要途径｡强化伦理训练也能确保AIGC生成的内容符合社会伦理规范,减少虚假信息的产生｡ \nPublished date: 2025-01-15T13:57:00+08:00\nSite name: 搜狐\n\nTitle: 深圳知识产权保护中心发布2025年AIGC作品版权认定分析报告,浅析未来挑战与机遇_创作_法律风险_技术\nURL: https://www.sohu.com/a/863635472_121798711\nDescription: 在数字经济飞速发展的今天,人工智能生成内容(AIGC)已逐渐成为文化创意产业的新动力｡2025年即将到来,深圳知识产权保护中心发布的《2025人工智能生产内容(AIGC)作品版权认定分析报告》,对此进行了深度剖析,揭示了AIGC作品的版权认定与相关法律风险,阐明了这一领域的创新趋势和未来发展的重要性｡ \nPublished date: 2025-02-25T17:22:00+08:00\nSite name: 搜狐\n\nTitle: 2025人工智能生产内容(AIGC)作品版权认定分析报告_法律_判例_本行业\nURL: https://www.sohu.com/a/848589226_121781381\nDescription: 随着人工智能生成内容(AIGC)技术的迅速发展,关于AIGC作品的版权认定面临新的挑战｡《2025人工智能生产内容(AIGC)作品版权认定分析报告》由深圳知识产权保护中心发布｡本行业报告系专家研讨及实例分享的总结凝练,内容覆盖“AIGC 发展现状” “AIGC 产业生态”“AIGC 商业应用和常用工具”“AIGC 创新机遇”“AIGC 在创 意设计行业的发展历程和创新价值”“AIGC \nPublished date: 2025-01-13T22:33:00+08:00\nSite name: 搜狐\n\nTitle: 关注AIGC法律监管与伦理考量_人工智能_保护法_数据\nURL: https://www.sohu.com/a/844848378_121124708\nDescription: 本期综述AIGC法律监管与伦理考量相关问题,供参考｡ 一､AIGC法律监管框架 针对AIGC应用法律监管,国内外均以各种方式积极应对｡ (一)国内AIGC法律监管现状与发展趋势 2023 年7月13 日,国家互联网信息办公室等七部门联合发布《生成式人工智能服务管理暂行办法》,据悉这是全球首部 AIGC 领域的监管法规｡\nPublished date: 2025-01-03T11:30:00+08:00\nSite name: 搜狐\n\nTitle: AI生成内容标注新规 - 今日头条\nURL: https://www.toutiao.com/article/7474059408977314316/\nDescription: 新规的主要内容 新规对AI生成合成内容的标识方式､主体责任等方面做出了详细规定｡标识包括显式标识和隐式标识｡显式标识方面,文本需在起始､末尾等位置添加文字等提示;音频要在适当位置添加语音等提示;图片要在适当位置添加显著提示标识;视频需在起始画面等位置添加标识｡隐式标识要求服务提供者在文件元数据中添加相关制作要素信息,还鼓励添加数字水印｡同时,明确了服务提供者､网络信息内容传播平台､互联网应用程序分发平台以及用户的责任,如用户上传生成合成内容时应主动声明并使用标识功能｡\nPublished date: 2025-02-22T10",
+    "isError": false,
+    "durationMs": 3707,
+    "createdAt": "2026-03-02T04:39:49.218Z"
+  },
+  {
+    "id": "d0ba2a8b2de84413",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_a89bbd2779b9453db939fd40"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:40:08.245Z"
+  },
+  {
+    "id": "ef8b3456377d41df",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_6f50da21c9ef4553ba1fca65"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:40:08.663Z"
+  },
+  {
+    "id": "9a29cda893eab0f0",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_e1dfde25e38843728158e45b"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:40:09.475Z"
+  },
+  {
+    "id": "5d56db64932687a6",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 解读《人工智能生成合成内容标识办法》\nURL: http://www.cicjc.com.cn/info/1041/16634.htm\nDescription: 【学科类别】人工智能 \n 【出处】微信公众号:法易同晖 \n 【写作时间】2025年 \n 【中文关键字】人工智能生成合成内容标识办法;人工智能;生成;合成;解读 \n 【全文】 \n   《人工智能生成合成内容标识办法》(以下简称《标识办法》)由国家互联网信息办公室、工业和信息化部、公安部、国家广播电视总局联合发布,自2025年9月1日起施行。该办法旨在规范人工智能生成合成内容的标识,保护公民、法人和其他组织的合法权益,维护社会公共利益。 \n   一、总体思路 \n   《标识办法》的制定主要围绕以下四个方面展开: \n   1.细化已有规定:在《互联网信息服务算法推荐管理规定》《互联网信息服务深度合成管理规定》《生成式人工智能服务管理暂行办法》等已有法规基础上,进一步明确标识的具体实施规范。 \n   2.解决关键问题:重点解决“哪些是生成的”“谁生成的”“从哪里生成的”等问题,推动内容生成与传播的全流程安全管理。 \n   3.统筹发展与安全:考虑技术发展需要,针对技术难点(如数字水印)不作强制要求,同时创新提出低成本的标识方法,如文本符号标识、音频节奏标识等。 \n   4.管理要求与技术标准结合:与强制性国家标准《网络安全技术 人工智能生成合成内容标识方法》同步发布,形成一套完整的操作机制。 \n   二、主要内容 \n   (一)适用范围 \n   《标识办法》适用于符合《互联网信息服务算法推荐管理规定》《互联网信息服务深度合成管理规定》《生成式人工智能服务管理暂行办法》规定情形的网络信息服务提供者。对于特定活动有另行规定的,从其规定。 \n   (二)标识类型 \n   《标识办法》明确了两种标识方式: \n   1.显式标识:以文字、声音、图形等方式呈现,用户可以明显感知到的标识。 \n   2.隐式标识:通过技术手段嵌入文件数据中,不易被用户直接察觉,但可用于溯源和监管。 \n   (三)\nPublished date: 2025-01-01T08:00:00+08:00\nSite name: 中国政法大学法律信息中心\n\nTitle: 关于征求《网络安全技术人工智能生成合成内容标识方法》强制性国家标准(征求意见稿)意见的通知_中央网络安全和信息化委员会办公室\nURL: https://www.cac.gov.cn/2024-09/14/c_1728000680671017.htm\nDescription: 各有关单位及专家:根据国家标准化管理委员会标准制修订计划,中央网络安全和信息化委员会办公室已组织完成了《网络安全技术\n人工智能生成合成内容标识方法》国家标准的征求意见稿,现公开征求意见。请于2024年11月13日前将意见反馈给组织起草部门。联系人:许晓耕联系电话:010-64102744联系邮箱:biaoshi@cac.gov.cn附件:1.《网络安全技术\n人工智能生成合成内容标识方法(征求意见稿)》2.编制说明中央网络安全和信息化委员会办公室2024年9月14日\nPublished date: 2025-01-16T14:49:09+08:00\nSite name: 中央网络安全和信息化委员会办公室\n\nTitle: 全国网安标委公开征求《网络安全标准实践指南——人工智能生成合成内容标识 服务提供者编码规则(征求意见稿)》意见_光明网\nURL: http://wlaq.gmw.cn/2025-02/05/content_37833458.htm\nDescription: 关于对《网络安全标准实践指南——人工智能生成合成内容标识 服务提供者编码规则(征求意见稿)》公开征求意见的通知 网安秘字〔2025〕14号 各有关单位: 为支撑《人工智能生成合成内容标识办法》和强制性国家标准《网络安全技术 人工智能生成合成内容标识方法》,为生成合成服务提供者和内容传播服务提供者提供编码规则,指导其开展人工智能生成合成内容的文件元数据隐式标识工作,秘书处组织编制了《网络安全标准实践指南——人工智能生成合成内容标识 服务提供者编码规则(征求意见稿)》。 根据《全国网络安全标准化技术委员会<网络安全标准实践指南>管理办法(暂行)》要求,秘书处现组织对《网络安全标准实践指南——人工智能生成合成内容标识 服务提供者编码规则(征求意见稿)》面向社会公开征求意见。如有意见或建议,请于2025年2月5日前反馈至秘书处。 联系人:王寒生  010-64102730  wanghs@cesi.cn 附件:《网络安全标准实践指南——人工智能生成合成内容标识 服务提供者编码规则(征求意见稿)》 全国网络安全",
+    "isError": false,
+    "durationMs": 1970,
+    "createdAt": "2026-03-02T04:40:11.445Z"
+  },
+  {
+    "id": "ab7d207e5062baa2",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "网信发布_中央网络安全和信息化委员会办公室\n\n2026年03月02日 星期一\n\n[设为首页](###)[加入收藏](###)[手机版](//wap.cac.gov.cn/)[繁體](javascript:StranBody%28%29 \"點擊以繁體中文方式浏覽\")\n\n* ![](//www.cac.gov.cn/lib/pc/scheme/images/logo02.png)\n* ![](//www.cac.gov.cn/lib/pc/scheme/images/logo01.png)\n* ![](//www.cac.gov.cn/lib/pc/scheme/images/logo02.png)\n* ![](//www.cac.gov.cn/lib/pc/scheme/images/logo01.png)\n\n[搜索](javascript:) \n\n* ### [首 页](//www.cac.gov.cn/index.htm)\n* ### [时政要闻](//www.cac.gov.cn/yaowen/szyw/A093601index%5F1.htm)\n* ### [网信政务](//www.cac.gov.cn/wxzw/A0937index%5F1.htm)\n* ### [互动服务](//www.cac.gov.cn/hdfw/A0938index%5F1.htm)\n* ### [热点专题](//www.cac.gov.cn/gzzt/ztzl/A092001index%5F1.htm)\n\n当前位置：[首页](//www.cac.gov.cn/index.htm) \\> [网信政务](//www.cac.gov.cn/wxzw/A0937index%5F1.htm) \\> [网信发布](//www.cac.gov.cn/wxzw/wxfb/A093702index%5F1.htm)\n\n网信发布\n\n* ##### [国家网信办发布《政务移动互联网应用程序备案工作指南（第一版）》](//www.cac.gov.cn/2026-02/28/c%5F1773925231290620.htm \"国家网信办发布《政务移动互联网应用程序备案工作指南（第一版）》\")  \n2026-02-28\n* ##### [关于印发《未成年人用户数量巨大和对未成年人群体具有显著影响的网络平台服务提供者认定办法》的通知](//www.cac.gov.cn/2026-02/28/c%5F1774010730056867.htm \"关于印发《未成年人用户数量巨大和对未成年人群体具有显著影响的网络平台服务提供者认定办法》的通知\")  \n2026-02-28\n* ##### [国家互联网信息办公室关于发布第四批境内金融信息服务机构报备编号的公告](//www.cac.gov.cn/2026-02/14/c%5F1772800146857074.htm \"国家互联网信息办公室关于发布第四批境内金融信息服务机构报备编号的公告\")  \n2026-02-14\n* ##### [工业和信息化部等五部门办公厅（秘书局、综合局、综合司）关于加强信息通信业能力建设 支撑低空基础设施发展的实施意见](//www.cac.gov.cn/2026-02/12/c%5F1772636107182872.htm \"工业和信息化部等五部门办公厅（秘书局、综合局、综合司）关于加强信息通信业能力建设 支撑低空基础设施发展的实施意见\")  \n2026-02-12\n* ##### [金融监管总局、中央网信办、公安部、中国人民银行、中国证监会关于警惕不法“代理维权”短视频及直播陷阱的风险提示](//www.cac.gov.cn/2026-02/06/c%5F1772110875635198.htm \"金融监管总局、中央网信办、公安部、中国人民银行、中国证监会关于警惕不法“代理维权”短视频及直播陷阱的风险提示\")  \n2026-02-06\n* ##### [一图读懂《关于提升境外人员入境数字化服务便利性的实施意见》](//www.cac.gov.cn/2026-02/05/c%5F1772021797519844.htm \"一图读懂《关于提升境外人员入境数字化服务便利性的实施意见》\")  \n2026-02-05\n* ##### [国家网信办有关负责同志就《关于提升境外人员入境数字化服务便利性的实施意见》答记者问](//www.cac.gov.cn/2026-02/05/c%5F1772021797525014.htm \"国家网信办有关负责同志就《关于提升境外人员入境数字化服务便利性的实施意见》答记者问\")  \n2026-02-05\n* ##### [关于提升境外人员入境数字化服务便利性的实施意见](//w",
+    "isError": false,
+    "durationMs": 4346,
+    "createdAt": "2026-03-02T04:40:12.591Z"
+  },
+  {
+    "id": "39503f5edcfd42ba",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "    2025年数据领域值得关注的十大趋势 —— 数据和人工智能法律2025展望系列之一\n\n[ ![君合](/images/site-logo.png) ](/about/global-network) \n\nen \n\n[中文](javascript:location.href = '/?locale=zh') [En](javascript:location.href = '/?locale=en') \n\n[首页](/) [君合招聘](/careers) [联系我们](/contact-us/1) \n\n* [关于我们](/about)  \n   * [君合概览](/about/overview)  \n   * [办公网络](/about/offices)  \n   * [国际平台](/about/global-network)  \n   * [专业荣誉 ](/about/award/practice)  \n         * [专业排名](/about/award/practice)  \n         * [机构奖项](/about/award/office)  \n         * [交易奖项](/about/award/deal)  \n         * [律师榜单](/about/award/lawyer)  \n   * [社会责任](/about/social-responsibility)  \n   * [君合ESG报告](/about/esg)\n* [新闻业绩](/deal-and-news)  \n   * [君合新闻](/news)  \n   * [君合业绩](/deals)  \n   * [君合声誉](/reputations)\n* [专业领域](/practices)\n* [专业人员](/professionals/search)\n* [文章发布](/law-review-and-humanity)  \n   * [君合法评](/legal-updates)  \n   * [君合人文](/humanities)\n\n[首页](/) /[文章发布](/law-review-and-humanity) /[君合法评](/legal-updates) /君合法评详情 \n\n# 2025年数据领域值得关注的十大趋势 —— 数据和人工智能法律2025展望系列之一\n\n2025.02.10 [董潇](/professionals/255) 郭超\n\n前言  \n\n  \n2024年，我国通过制定一系列立法和技术标准，继续对网络数据管理、个人信息保护、重要数据监管等方面的规则进行细化与完善，并推动对数据跨境流动有序放松的管理。在迅猛发展的人工智能领域，通过发布多项具体实施指南和管理规定，明确了人工智能技术应用的安全边界和服务规范，同时发布多批算法备案信息以及落地实施大模型备案要求，确定了对人工智能技术包容式监管的框架。新春伊始，我们在回顾过去一年数据领域立法和执法情况的同时，也希冀展望我国未来一年与数据保护、网络安全及人工智能相关的且值得关注的重大趋势。\n\n  \n就本文所探讨的相关趋势和重点问题，后续我们将陆续发布**系列性文章**，进行详细、全面地阐述和分析，敬请关注。\n\n  \n1\\. 人工智能领域监管逐步落地\n\n  \n2024年，随着生成式人工智能领域的跨越式发展，该领域也成为我国新技术新领域的监管发展最快的领域之一。算法备案在落地两年后已形成常态化合规流程。生成式人工智能大模型备案规则也在2024年进一步明晰，大模型备案数量显著增加。多项标准、指南或其征求意见稿的发布，进一步针对安全评估、内容标识、数据训练安全、应急相应等等亟待监管的领域提出细化规则。人工智能侵权判例及执法活动也不断增加。在人工智能国际合作方面，我国也取得诸多进展，2024世界人工智能大会发布了《人工智能全球治理上海宣言》1，中国与法国发布了关于人工智能和全球治理的联合声明2，中非互联网发展与合作论坛发布了关于中非人工智能合作的声明3。\n\n  \n预计我国在2025年对人工智能将延续重点事项监管、促进产业有序发展的方向。一方面，2024年已发布的若干人工智能专项规定草案，例如《人工智能生成合成内容标识办法（征求意见稿）》、《信息安全技术 生成式人工智能数据标注安全规范（征求意见稿）》，有望在2025年陆续出台。人工智能安全标准体系将稳中有进、逐步建立完善4。另一方面，随着治理规则的完善，预计在人工智能领域的执法行动将有所增加。生成内容合规、人工智能模型安全、网络平台算法滥用问题将是监管部门执法的重点。此外，随着司法领域与人工智能相关的诉讼和执法案件数量不断增长，2025年有可能发布更多指导性案例对人工智能领域关键争议提供明确指引。\n\n  \n2\\. 数据",
+    "isError": false,
+    "durationMs": 7117,
+    "createdAt": "2026-03-02T04:40:15.780Z"
+  },
+  {
+    "id": "116f1f40ea5b6528",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_37415b83de8a462f996d569c"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:40:27.522Z"
+  },
+  {
+    "id": "9822a64e5c4afba1",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": {
+      "toolCallId": "call_db183356c7f5438abe91d2d6"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:40:28.011Z"
+  },
+  {
+    "id": "013278cea9dd0575",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_c4043fa1b95148dd888db443"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:40:28.812Z"
+  },
+  {
+    "id": "9d6cd659429baac6",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_raw_text",
+    "input": null,
+    "output": "<!DOCTYPE>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<title>页面没有找到</title>\r\n<style type=\"text/css\">\r\nhtml,body,ul,li,dl,dt,dd{ margin:0; padding:0; background:#fff; line-height:200%; color:#555;}\r\n.container{ width:1000px; margin:50px auto 0 auto; height:370px; background:url(//img.gmw.cn/pic/404error.png) 74px 0 no-repeat; position:relative;}\r\n.container ol{position:absolute; width:400px;left:570px;top: 160px; font-size:14px;}\r\na{ color:#f30;}\r\n.picsBlock{width:1000px; margin:0 auto; position:relative;color:#555; font-size:12px;}\r\n.picsBlock h5{ font-size:12px; background:#fff; padding:0 10px;font-weight:normal;position:absolute;left:30px;top:-36px;}\r\n.picsBlock a{ text-decoration:none; color:#333;}\r\n.picsBlock a:hover{ text-decoration:underline;}\r\n/*广告代码 20230414*/\r\n._vr9oc5xl31b,._ccm92lekf6_22i26so1huu{width:100%; max-width:1000px; margin:0 auto;}\r\n._vr9oc5xl31b:after,._ccm92lekf6_22i26so1huu:after{content: ''; overflow: hidden; width: 100%; height: 0px; font-size: 0px; display: block; clear: both;}\r\n._ccm92lekf6{float:left;}\r\n._22i26so1huu{float:right;}\r\n._onbemtzoepq{position: fixed; top: 0; right: 50%; margin-right: -670px;}\r\n/*广告代码 20230414*/\r\n</style>\r\n<!-- Global site tag (gtag.js) - Google Analytics -->\r\n<!-- GMW Statistics -------------------BEGIN-------- -->\r\n<script>document.write(unescape(\"%3Cscript type='text/javascript' src='//channel-analysis-js.gmw.cn/md.js?\" + Math.random() + \"'%3E%3C/script%3E\"));</script>\r\n<!-- GMW Statistics -------------------END -------- -->\r\n<!-- Google tag (gtag.js) 谷歌 统计2023 -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-1NBSV0RRQR\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'G-1NBSV0RRQR');\r\n</script>\r\n\r\n\r\n</head>\r\n<body>\r\n<!--广告位 modify by wam 20230414-->\r\n<!--pc404页1000*200：（上方）-->\r\n<div class=\"_vr9oc5xl31b\"></div>\r\n<!--pc404页右侧对联160*500：",
+    "isError": false,
+    "durationMs": 1622,
+    "createdAt": "2026-03-02T04:40:29.633Z"
+  },
+  {
+    "id": "7bb6c3eda691600f",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 整治ai技术滥用、整治涉企网络“黑嘴”......中央网信办公布2025年“清朗”行动整治重点\nURL: https://view.inews.qq.com/a/20250221A09KMV00?scene=qqsearch\nDescription: 据了解,2025年,“清朗”系列专项行动重点整治任务主要包括:一是整治春节网络环境,集中打击挑起极端对立、炮制不实信息、宣扬低俗恶俗、鼓吹不良文化、违法活动引流等问题。二是整治“自媒体”发布不实信息,包括发布干扰舆论、误导公众内容,不做信息标注、内容以假乱真问题,缺失资质、提供伪专业信息等问题,规范重点领域信息内容传播。三是整治短视频领域恶意营销,打击虚假摆拍、虚假人设、虚假营销、炒作争议性话题等问题,强化信息来源标注、虚构和演绎标签标注。四是整治AI技术滥用乱象,突出AI技术管理和信息内容管理,强化生成合成内容标识,打击借AI技术生成发布虚假信息、实施网络水军行为等问题,规范AI类应用网络生态。\nPublished date: 2025-02-21T23:15:07+08:00\nSite name: 腾讯网\n\nTitle: 【2025年“清朗”行动重点开展8项整治任务】新华社北京2月21日电 记者21日从中央网信办获悉，近年来，中央网信办持续部署开展“清朗”系列...\nURL: https://m.toutiao.com/w/1824724963975179/\nDescription: 【2025年“清朗”行动重点开展8项整治任务】新华社北京2月21日电 记者21日从中央网信办获悉,近年来,中央网信办持续部署开展“清朗”系列专项行动,集中时间、集中力量打击网上各类乱象问题,从严处置违规平台和账号,取得积极成效,形成有力震慑。2025年,“清朗”系列专项行动将进一步巩固提升治理成效,聚焦人民群众反映强烈的突出问题,重点开展8项整治任务。\n  重点整治任务包括:整治春节网络环境、整治“自媒体”发布不实信息、整治短视频领域恶意营销、整治AI技术滥用乱象、整治涉企网络“黑嘴”、整治暑期未成年人网络环境、整治网络直播打赏乱象、整治恶意挑动负面情绪等。\n  其中,整治AI技术滥用乱象方面,突出AI技术管理和信息内容管理,强化生成合成内容标识,打击借AI技术生成发布虚假信息、实施网络水军行为等问题,规范AI类应用网络生态。\n  中央网信办相关部门负责人表示,将有序推进“清朗”系列专项行动各项任务,同时,也会根据实际情况需要增加重点整治内容。将进一步压实各方主体责任,持续净化信息内容、规范功能服务,确保整治工作取得实效,推动网络生态持续向好。\n《中国教育报》2025年02月22日 第02版 版名:新闻·要闻\nPublished date: 2025-02-22T19:02:00+08:00\nSite name: 今日头条\n\nTitle: 中央网信办发布2025年“清朗”系列专项行动整治重点 包括打击借AI技术生成发布虚假信息、实施网络水军行为等问题\nURL: https://m.10jqka.com.cn/20250221/c666197962.html\nDescription: 中央网信办发布2025年“清朗”系列专项行动整治重点,重点整治任务主要包括:一是整治春节网络环境,集中打击挑起极端对立、炮制不实信息、宣扬低俗恶俗、鼓吹不良文化、违法活动引流等问题。二是整治“自媒体”发布不实信息,包括发布干扰舆论、误导\nPublished date: 2025-02-21T08:00:00+08:00\nSite name: 同花顺\n\nTitle: 2025年“清朗”行动重点开展8项整治任务\nURL: https://view.inews.qq.com/a/20250221A075JT00?scene=qqsearch\nDescription: 2025年,“清朗”系列专项行动将进一步巩固提升治理成效,聚焦人民群众反映强烈的突出问题,重点开展8项整治任务。重点整治任务包括:整治春节网络环境、整治“自媒体”发布不实信息、整治短视频领域恶意营销、整治AI技术滥用乱象、整治涉企网络“黑嘴”、整治暑期未成年人网络环境、整治网络直播打赏乱象、整治恶意挑动负面情绪等。其中,整治AI技术滥用乱象方面,突出AI技术管理和信息内容管理,强化生成合成内容标识,打击借AI技术生成发布虚假信息、实施网络水军行为等问题,规范AI类应用网络生态。\nPublished date: 2025-02-21T17:33:16+08:00\nSite name: 腾讯网\n\nTitle: “清朗”行动来了!-新闻中心-北方网\nURL: http://news.enorth.com.cn/system/2025/02/26/058",
+    "isError": false,
+    "durationMs": 2244,
+    "createdAt": "2026-03-02T04:40:31.056Z"
+  },
+  {
+    "id": "01ecd26612c722e1",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "国家标准 - 全国标准信息公共服务平台\n\n[  注册](https://puac.sacinfo.org.cn/uac/registerv2/register-individual.do?registerServer=http://std.samr.gov.cn/)  登录 \n\n![](https://std.samr.gov.cn/images/bgrep.gif) ![](https://std.samr.gov.cn/images/logonew.png) \n\nToggle navigation [ ![](https://std.samr.gov.cn/images/shareLogo.png) 全国标准信息公共服务平台](https://std.samr.gov.cn) \n\n* [首页](https://std.samr.gov.cn/)\n* [国家标准](https://openstd.samr.gov.cn/bzgk/std/)\n* [行业标准](https://hbba.sacinfo.org.cn)\n* [地方标准](https://dbba.sacinfo.org.cn)\n* [团体标准](https://www.ttbz.org.cn/)\n* [企业标准](https://www.qybz.org.cn/)\n* [国际标准](https://std.samr.gov.cn/#gj)\n* [国外标准](https://std.samr.gov.cn/#gw)\n* [技术委员会](https://std.samr.gov.cn/org)\n* [标准化人才](https://talent.sacinfo.org.cn/)\n\n#### 网络安全技术 人工智能生成合成内容标识方法\n\n##### Cybersecurity technology—Labeling method for content generated by artificial intelligence\n\n国家标准 强制性 现行 \n\n[英文版标准](https://std.samr.gov.cn/gfs/search/gfsDetailed?id=49FD67338933DAE4E06397BE0A0A7167) \n\n国家标准《网络安全技术 人工智能生成合成内容标识方法》 由[252](https://std.samr.gov.cn/search/orgOthers?q=%E4%B8%AD%E5%A4%AE%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%92%8C%E4%BF%A1%E6%81%AF%E5%8C%96%E5%A7%94%E5%91%98%E4%BC%9A%E5%8A%9E%E5%85%AC%E5%AE%A4)（中央网络安全和信息化委员会办公室）归口，委托[TC260](https://std.samr.gov.cn/search/orgDetailView?tcCode=TC260)（全国网络安全标准化技术委员会）执行 。\n\n主要起草单位中国电子技术标准化研究院 、浙江大学 、国家计算机网络应急技术处理协调中心 、中国科学院软件研究所 、中央网信办（国家网信办）数据与技术保障中心 、中国科学院计算技术研究所 、行吟信息科技（上海）有限公司 、北京快手科技有限公司 、阿里云计算有限公司 、北京智谱华章科技有限公司 、厦门美图网科技有限公司 、科大讯飞股份有限公司 、上海稀宇科技有限公司 、上海喜马拉雅科技有限公司 、上海宽娱数码科技有限公司 、广州市动悦信息技术有限公司 、北京智者天下科技有限公司 、杭州中科睿鉴科技有限公司 、国投智能（厦门）信息股份有限公司 。\n\n主要起草人范科峰 、姚相振 、郝春亮 、许晓耕 、刘浩远 、任奎 、胡影 、秦湛 、张严 、张震 、贺敏 、王红兵 、翟羽佳 、王志伟 、杨子祺 、张立武 、曹娟 、王姣 、王秉政 、张妍婷 、张雨桐 、张立尧 、杨思佳 、陈海龙 、李鹏霄 、吕东 、史倩君 、谷晨 、吴汇洋 、乔文斌 、宫琦 、高建清 、彭韬 、闵杰 、马晓伟 、谢越 、王豫斯 、何覃 、赵建强 。\n\n查看全文意见建议\n\n## 目录\n\n1. 1标准状态\n2. 2基础信息\n3. 3起草单位\n4. 4起草人\n1. 5相近标准(计划)\n\n## 标准状态\n\n1. [发布于 2025-02-28](#)\n2. [实施于 2025-09-01](#)\n3. [上次复审](#)\n4. [废止](#)\n\n 当前标准\n\n GB 45438-2025现行 \n\n网络安全技术 人工智能生成合成内容标识方法\n\n## 基础信息\n\n**标准号:** GB 45438-2025\n**发布日期:** 20",
+    "isError": false,
+    "durationMs": 8371,
+    "createdAt": "2026-03-02T04:40:35.892Z"
+  },
+  {
+    "id": "951d46af1ee24131",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_9d41213c4baa4443a0ecd05f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:43:44.729Z"
+  },
+  {
+    "id": "e03c721732464e98",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_c5aaab7b6139443f911a1b09"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:43:45.350Z"
+  },
+  {
+    "id": "4f9b59005cec572d",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_6e48b7906a9248d7bce65021"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:43:46.230Z"
+  },
+  {
+    "id": "237c971dc885e187",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_e57c85fd1e2c418dbeb3b4fa"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:43:46.877Z"
+  },
+  {
+    "id": "9ce38d50c7be4eb1",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年中国人工智能生成内容(AIGC)行业发展现状、市场前景、投资方向\nURL: https://m.renrendoc.com/paper/401396467.html\nDescription: 上传人:1*** IP属地:山东 上传时间:2025-03-25 格式:DOCX 页数:27 大小:169.92KB 积分:25\n文档描述\n研究报告-1-2025年中国人工智能生成内容(AIGC)行业发展现状、市场前景、投资方向一、AIGC行业发展现状1.政策环境分析(1)近年来,我国政府高度重视人工智能产业的发展,出台了一系列政策措施,旨在推动人工智能技术的创新与应用。在AIGC领域,政府积极营造良好的政策环境,通过制定专项规划、设立产业发展基金、提供税收优惠等方式,支持AIGC技术的发展。例如,《新一代人工智能发展规划》明确提出,要加快人工智能与实体经济深度融合,推动AIGC技术在各个领域的应用。(2)在政策引导方面,政府鼓励企业加大研发投入,提升AIGC技术的核心竞争力。同时,通过建立产学研合作机制,促进AIGC技术成果的转化与应用。此外,政府还积极推动国际交流与合作,引进国外先进技术,助力我国AIGC行业的发展。例如,国家发展改革委等部门联合发布的《关于促进人工智能与实体经济深度融合的实施意见》中,明确提出要推动AIGC技术在文化创意、教育、医疗等领域的应用,以提升我国文化产业和公共服务水平。(3)在法律法规方面,政府不断完善相关法律法规,保障AIGC行业的健康发展。针对数据安全、知识产权保护等问题,政府出台了一系列政策措施,如《网络安全法》、《个人信息保护法》等,为AIGC行业提供了有力保障。此外,政府还加强了行业监管,规范AIGC市场的秩序,促进AIGC行业的良性竞争。在政策环境的推动下,我国AIGC行业正逐步走向成熟,为经济社会发展注入新动能。2.技术发展水平(1)我国AIGC技术发展迅速,在自然语言处理、计算机视觉、语音识别等领域取得了显著成果。在自然语言处理方面,我国研究者提出了多种高效的算法,如基于深度学习的语义分析、情感识别等技术,有效提升了文本内容的\nPublished date: 2025-03-25T08:00:00+08:00\nSite name: 人人文库\n\nTitle: AI规范及政策-图书馆\nURL: https://tsg.ymun.edu.cn/AIzt/AIgfjzc.htm\nDescription: AI规范及政策 国家部委政策规范 国信办 《 人工智能生成合成内容标识办法 》 2025.3.7 国信办 《人工智能安全治理框架》 1.0版 2024.9.9 科技部 《 负责任研究行为规范指引 》 2023.12.21 国务院多部委 《 生成式人工智能服务管理暂行办法 》 2023.7.10 全国信息安全标准化技术委员会 《网络安全标准实践指南 ——生成式人工智能服务内容标识方法》 2023.8.25 科技部 《 新一代人工智能伦理规范 》 2021.9.26 教育部 《 高等学校人工智能创新行动计划 》 2018.4.2 国际组织政策规范 联合国教科文组织 UNESCO 《学生人工智能能力框架》 AI competency framework for students 2024.8 联合国教科文组织 UNESCO 《教师人工智能能力框架》 AI competency framework for teachers 2024.8 联合国教科文组织 UNESCO 《通过媒介与信息素养赋能用户,应对生成式人工智能的演变》 User Empowerment through Media and Information Literacy Responses to the Evolution of Generative Artificial Intelligence (GAI) 2024.3 联合国教科文组织 UNESCO 《在高等教育中利用人工智能的时代:面向高等教育利益相关者的入门指南》 Harnessing the era of artificial intelligence in higher education: a primer for higher education stakeholders 2023.12 联合国教科文组织 UNESCO 《生成式人工智能教育与研究\nPublished date: 2025-03-07T18:53:57+08:00\nSite name: 右江民族医学院\n\nTitle: 2025年中国人工智能生成内容(AIGC)行业发展现状、市场前景、投资方向-20250128084716.docx-原创力文档\nURL: https://max.boo",
+    "isError": false,
+    "durationMs": 2439,
+    "createdAt": "2026-03-02T04:43:47.168Z"
+  },
+  {
+    "id": "28141327f1de10fd",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 对算法推荐服务者落实算法安全主体责任的监督检查\nURL: https://wap.miit.gov.cn/qzqd/zjstxglj/qlqd/xzjc/art/2025/art_0b97590c563344ce8bfd807e2e71054c.html\nDescription: 1.《互联网信息服务算法推荐管理规定》(2021年11月16日国家互联网信息办公室审议通过,国家互联网信息办公室、中华人民共和国工业和信息化部、中华人民共和国公安部、国家市场监督管理总局第9号令)第三条:“国家网信部门负责统筹协调全国算法推荐服务治理和相关监督管理工作。国务院电信、公安、市场监管等有关部门依据各自职责负责算法推荐服务监督管理工作。地方网信部门负责统筹协调本行政区域内的算法推荐服务治理和相关监督管理工作。地方电信、公安、市场监管等有关部门依据各自职责负责本行政区域内的算法推荐服务监督管理工作。”第二十八条:“网信部门会同电信、公安、市场监管等有关部门对算法推荐服务依法开展安全评估和监督检查工作,对发现的问题及时提出整改意见并限期整改。算法推荐服务提供者应当依法留存网络日志,配合网信部门和电信、公安、市场监管等有关部门开展安全评估和监督检查工作,并提供必要的技术、数据等支持和协助。”\nPublished date: 2025-11-04T16:32:00+08:00\nSite name: 中华人民共和国工业和信息化部\n\nTitle: 国家互联网信息办公室关于发布互联网信息服务算法备案信息的公告_权威发布_广东网信网\nURL: https://www.cagd.gov.cn/v/2022/08/1483.html\nDescription: 国家互联网信息办公室关于发布互联网信息服务算法备案信息的公告\n来源:中国网信网\n2022-08-12\n15:15\n字号减小\n字号增大\n根据《互联网信息服务算法推荐管理规定》,现公开发布境内互联网信息服务算法名称及备案编号,相关信息可通过互联网信息服务算法备案系统(https://beian.cac.gov.cn)进行查询。任何单位或个人如有疑议,请发送邮件至pingguchu@cac.gov.cn,提出疑议应以事实为依据,并提供相关证据材料。后续将在本页面持续更新算法备案清单。附件:境内互联网信息服务算法备案清单(2022年8月)\nPublished date: 2025-08-20T16:18:27+08:00\nSite name: 网信河北\n\nTitle: 开启合规新篇章:『算法备案』综合分析和处理策略\nURL: https://shenzhen.11467.com/info/30698355.htm\nDescription: 详细介绍 在当前信息时代,算法已成各行业bukehuoque的核心,不仅改善生活和工作,也在创新中展现巨大潜力。随着算法应用的普及,如何合规管理算法,保护用户权益和隐私,确保公正运行,成为重要议题。 国家互联网信息办等四部门发布的《互联网信息服务算法推荐管理规定》,为规范算法推荐服务,提出科学合规要求,该规定已于2022年3月1日生效。 本文将为您以图文方式分享几个关于算法备案的重要知识点。 算法备案定义 “算法”本身是一个技术概念,顾名思义是指“计算的方法”,体现为一系列解决问题的步骤或计算机指令。 算法备案的全称为互联网信息服务算法备案,是引导算法应用gongpinggongzheng、透明可释,充分保障网民合法权益,综合治理着眼于管理好使用好发展好算法应用。 算法备案是由网信办主导,与公安部、工信部、市监总局一起联合发布出台《互联网信息服务算法推荐管理规定》后的具有强制性的备案制度,自2022年3月起施行,旨在规范互联网信息服务算法推荐活动,抵制不良的深度生成合成、算法歧视、“大数据杀熟”、诱导沉迷等不合理应用。 若未办理备案,随时面临网站APP程序产品下架和xingzhengchufa的风险,并可能无法更新应用市场上产品,也无法发布新产品。 算法备案主体 关于算法备案的要求Zui初见于《互联网信息服务算法推荐管理规定》(2022年3月施行,以下简称《算法推荐规定》),其中第24条第1款对相关服务上线后的算法备案进行了明确规定,第2款、第3款则分别对备案变更、注销进行了规定。 此后,《互联网信息服务深度合成管理规定》(2023年1月施行,以下简称《深度合成规定》)以及近日出台的《生成式人工智能服务管理暂行办法》(以下简称《生成AI办法》)都提及了算法备案,但其渊源均为《算法推荐规定》。 按照《算法推荐规定》的要求,“具有舆论属性或者社会动员能力的算法推荐服务提供者”应\nPublished date: 2025-01-23T08:08:00+08:00\nSit",
+    "isError": false,
+    "durationMs": 2592,
+    "createdAt": "2026-03-02T04:43:48.822Z"
+  },
+  {
+    "id": "a66432d819893c9c",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 政策服务-武汉市互联网行业网上党群服务中心\nURL: http://whhlwdj.gov.cn/list/57.html?page=6\nDescription: 互联网信息服务深度合成管理规定 国家互联网信息办公室中华人民共和国工业和信息化部中华人民共和国公安部令第12号《互联网信息服务深度合成管理规定》已经2022年11月3日国家互联网信息办公室2022年第21次室务会议审议通过,并经工业和信息化部、公安部同意,现予公布,自2023年1月10日起施行。国家互联网信息办公室主任 庄荣文工业和信息化部部长 金壮龙公安部部长 王小洪2022年11月25日\nPublished date: 2025-02-07T15:12:25+08:00\nSite name: whhlwdj.gov.cn\n\nTitle: 互联网信息服务深度合成管理规定\nURL: http://www.ahsz12377.gov.cn/newsDetail/545\nDescription: 国家互联网信息办公室 中华人民共和国工业和信息化部 中华人民共和国公安部 令 第12号 《互联网信息服务深度合成管理规定》已经2022年11月3日国家互联网信息办公室2022年第21次室务会议审议通过,并经工业和信息化部、公安部同意,现予公布,自2023年1月10日起施行。 国家互联网信息办公室主任 庄荣文 工业和信息化部部长 金壮龙 公安部部长 王小洪 2022年11月25日 互联网信息服务深度合成管理规定 第一章 总则 第一条 为了加强互联网信息服务深度合成管理,弘扬社会主义核心价值观,维护国家安全和社会公共利益,保护公民、法人和其他组织的合法权益,根据《中华人民共和国网络安全法》、《中华人民共和国数据安全法》、《中华人民共和国个人信息保护法》、《互联网信息服务管理办法》等法律、行政法规,制定本规定。 第二条 在中华人民共和国境内应用深度合成技术提供互联网信息服务(以下简称深度合成服务),适用本规定。法律、行政法规另有规定的,依照其规定。 第三条 国家网信部门负责统筹协调全国深度合成服务的治理和相关监督管理工作。国务院电信主管部门、公安部门依据各自职责负责深度合成服务的监督管理工作。 地方网信部门负责统筹协调本行政区域内的深度合成服务的治理和相关监督管理工作。地方电信主管部门、公安部门依据各自职责负责本行政区域内的深度合成服务的监督管理工作。 第四条 提供深度合成服务,应当遵守法律法规,尊重社会公德和伦理道德,坚持正确政治方向、舆论导向、价值取向,促进深度合成服务向上向善。 第五条 鼓励相关行业组织加强行业自律,建立健全行业标准、行业准则和自律管理制度,督促指导深度合成服务提供者和技术支持者制定完善业务规范、依法开展业务和接受社会监督。 第二章 一般规定 第六条 任何组织和个人不得利用深度合成服务制作、复制、发布、传播法律、行政法规禁止的信息,不得利用深度合成服务从事危\nPublished date: 2025-01-05T05:04:21+08:00\nSite name: www.ahsz12377.gov.cn\n\nTitle: 互联网信息服务深度合成管理规定\nURL: http://ahsz12377.gov.cn/newsDetail/545\nDescription: 国家互联网信息办公室 中华人民共和国工业和信息化部 中华人民共和国公安部 令 第12号 《互联网信息服务深度合成管理规定》已经2022年11月3日国家互联网信息办公室2022年第21次室务会议审议通过,并经工业和信息化部、公安部同意,现予公布,自2023年1月10日起施行。 国家互联网信息办公室主任 庄荣文 工业和信息化部部长 金壮龙 公安部部长 王小洪 2022年11月25日 互联网信息服务深度合成管理规定 第一章 总则 第一条 为了加强互联网信息服务深度合成管理,弘扬社会主义核心价值观,维护国家安全和社会公共利益,保护公民、法人和其他组织的合法权益,根据《中华人民共和国网络安全法》、《中华人民共和国数据安全法》、《中华人民共和国个人信息保护法》、《互联网信息服务管理办法》等法律、行政法规,制定本规定。 第二条 在中华人民共和国境内应用深度合成技术提供互联网信息服务(以下简称深度合成服务),适用本规定。法律、行政法规另有规定的,依照其规定。 第三条 国家网信部门负责统筹协调全国深度合成服务的治理和相关监督管理工作。国务院电信主管部门、公安部门依据各自职责负责深度合成服务的监督管理工作。 地方网信部门负责统筹协调本行政区域内的深度合成服务的治理和相关监督管理工作。地方电信主管部门、公安部门依据各自职责负责本行政区域内的深度合成服务的监督管理工作。 第四条 提供深度合成服务,应当遵守法律法规",
+    "isError": false,
+    "durationMs": 3533,
+    "createdAt": "2026-03-02T04:43:48.884Z"
+  },
+  {
+    "id": "2c72c3782d427b0c",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 深度解析GB45438-2025：人工智能合成内容的网络安全新规与应用机遇\nURL: https://m.sohu.com/a/871923105_121902920/?pvid=000115_3w_a\nDescription: 2025年3月14日,中国国家互联网信息办公室、工业和信息化部、公安部、国家广播电视总局联合发布了《人工智能生成合成内容标识办法》。这项规定将于2025年9月1日起正式实施,旨在为快速发展的人工智能技术设立相应的网络安全标准,保障内容的可追溯性和合法性。与此同时,强制性国家标准GB45438-2025《网络安全技术人工智能生成合成内容标识方法》也随之由国家市场监督管理总局和国家标准化管理委员会批准并发布,成为合规使用该技术的强制性要求。\n首先,我们需要理解这项新标准的核心目的在于保护用户的网络安全与数字内容的真实性。随着人工智能生成内容技术的普及,假新闻、虚假信息等现象日趋严重,如何有效识别和标识合成内容成为了重中之重。GB45438-2025标准的实施,将对AI内容的生产者提出更高的技术要求和法律责任,促使其对于生成的内容进行明确标签和透明处理。\n在技术框架方面,GB45438-2025规定了生成合成内容的标识方法,包括内容来源标识、内容生成的技术参数、内容使用的目的和授权等。这样的框架不仅提高了内容发布的透明度,也为内容接收者提供了必要的信息,以判断所接收内容的可信度。对于企业和个人创作者而言,依照此标准生成和发布内容将成为保证合法性的必要步骤。\n接下来,值得一提的是实践指南的出台,针对生成合成服务及内容传播服务的提供者制定了具体的编码规则。这为行业标准的落实提供了细化的实施路径,同时也为实体创建了一个可参考的执行规范。对于从事内容创作和分享的用户来说,了解并遵循这些规范是未来发展的重要趋势。\n不容忽视的是,随着这些标准的实施,人工智能创作的工具和服务也将面临转型与进化。AI绘画、AI写作等工具的提供者将需要增强自身平台的合规性。例如,简单AI作为一个综合性AI创作工具,具备AI绘画、文生图、图生图等多项功能,能够迅速满足创作者的需求。用户在使用此类工具时,除了考虑到其\nPublished date: 2025-03-17T16:00:00+08:00\nSite name: 手机搜狐网\n\nTitle: 2025 年 10月 9 日 随笔档案 - ai和数据安全研究院 - 博客园\nURL: https://www.cnblogs.com/AI-DATA-SEC/p/archive/2025/10/09\nDescription: 摘要:\n随着生成式AI技术在金融、政务、电商等核心领域的快速普及,AI违规输出内容已成为企业面临的重大安全挑战。2025年,全球每日产生2.3亿条AI生成内容,其中21%触及法律红线,提示词注入攻击、数据泄露、违规内容生成等安全威胁呈现隐蔽化、多元化、高成本化新特征。\n传统安全防护手段在AI应用场景下暴露出明显局限:静态规则更新滞后导致对新型攻击拦截率不足60%,单轮检测机制无法识别多轮会话中的渐进式攻击,性能与安全失衡造成用户体验下降,缺乏全链路审计能力难以满足合规要求。面对《生成式人工智能服务管理暂行办法》《人工智能生成合成内容标识办法》等法规的强制合规要求,企业亟需新一代AI应用安全防护解决方案。\n阅读全文\nPublished date: 2025-10-09T17:34:00+08:00\nSite name: 博客园\n\nTitle: 聚焦2025年人工智能发展:数据透视与未来趋势_报告大厅\nURL: https://m.chinabgao.com/info/1284497.html\nDescription: 中国报告大厅网讯,在人工智能技术加速迭代的背景下,全球AI产业规模持续扩大。中国作为全球最大AI应用市场之一,在技术创新与政策监管层面正同步推进。随着《网络安全技术人工智能生成合成内容标识方法》(GB\n45438—2025)于今日正式实施,我国对人工智能生成内容的安全治理迈入新阶段,也为行业发展提供了明确指引。\n一、人工智能生成内容监管升级:国家标准落地筑牢安全防线\n中国报告大厅发布的《2025-2030年中国人工智能行业市场分析及发展前景预测报告》指出,自2025年9月1日起,《网络安全技术人工智能生成合成内容标识方法》强制性国家标准开始执行。该标准要求生成合成服务提供者和传播平台对AI生成的内容进行规范标识,涵盖文本、图像、音频及视频等多种形式。此举旨在通过统一的技术框架防范虚假信息扩散风险,同时保障用户知情权与行业健康发展。据统计,2024年中国AI内容生成市场规模已突破1800亿元,年增长率达37%,此次标准的实施将为这一高速发展的领域提供关",
+    "isError": false,
+    "durationMs": 2585,
+    "createdAt": "2026-03-02T04:43:49.462Z"
+  },
+  {
+    "id": "e6fa7e9004f30119",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_3e746564cb8646f7af2b6ff5"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:43:55.104Z"
+  },
+  {
+    "id": "9b9f2fa04f4ee570",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_ff37ba7fcefa41f48a2b4913"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:43:55.733Z"
+  },
+  {
+    "id": "529a8bb78e19960b",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_aec91b1ba1254fdea25c9dd7"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:43:56.181Z"
+  },
+  {
+    "id": "49eeefbda6038620",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": {
+      "toolCallId": "call_dfb70868b6eb41669b6dada1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:43:56.641Z"
+  },
+  {
+    "id": "c6c7256e56e9f045",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 信息化动态\nURL: http://xxzx.fj.gov.cn/bmzy/zfwzc/xxhdt/\nDescription: 《个人信息保护合规审计管理办法》答记者问   2025-02-15   地方融资信用服务平台完成优化整合   2025-02-12   公共数据资源授权运营如何定价?两部门发文明确   2025-02-05   国家网信办加强互联网新闻信息服务许可管理   2025-01-26   促进人工智能助力教育变革   2025-01-24 \n 14部门发文加强极端场景应急通信能力建设   2025-01-22   我国网民规模超11亿   2025-01-20   工业和信息化部部署加强互联网数据中心客户数据安全保护   2025-01-16   六部门:强化个人数据流通保障,完善个人数据权益保障机制   2025-01-15   培育壮大数据标注产业 这份文件利好人工智能   2025-01-13 \n 政策加码 未来5年数字经济规模或达80万亿元   2025-01-10   新一轮数字基础设施布局开启   2025-01-07   激活数据资源 助推产业发展   2025-01-02   确保客户信息和金融交易数据安全   2025-01-02   国家发展改革委、国家数据局、教育部、财政部、金融监管总局、中国证监会印发《关于促进数据产业高质量发展的指导意见》   2024-12-31 \n 深挖企业数据金矿 这份文件推动企业数据开发利用   2024-12-26   国家发展改革委正式开通民营经济发展综合服务平台   2024-12-23   首家数据科技央企中国数联物流成立   2024-12-20   再优化!跨国公司跨境资金管理更便利   2024-12-19   加码数字贸易,为开放注入新动能   2024-12-17 \n 让城市更安全更智能   2024-12-09   海关总署推出16条措施优化口岸营商环境 促进企业通关便利   2024-12-06   两部门发\nPublished date: 2025-02-15T08:00:00+08:00\nSite name: 福建省经济信息中心\n\nTitle: 信息化动态\nURL: https://www.fjgov.cn/jjxx/xxhdt/\nDescription: 国家网信办加强互联网新闻信息服务许可管理   2025-01-26   促进人工智能助力教育变革   2025-01-24   14部门发文加强极端场景应急通信能力建设   2025-01-22   我国网民规模超11亿   2025-01-20   工业和信息化部部署加强互联网数据中心客户数据安全保护   2025-01-16 \n 六部门:强化个人数据流通保障,完善个人数据权益保障机制   2025-01-15   培育壮大数据标注产业 这份文件利好人工智能   2025-01-13   政策加码 未来5年数字经济规模或达80万亿元   2025-01-10   新一轮数字基础设施布局开启   2025-01-07   激活数据资源 助推产业发展   2025-01-02 \n 确保客户信息和金融交易数据安全   2025-01-02   国家发展改革委、国家数据局、教育部、财政部、金融监管总局、中国证监会印发《关于促进数据产业高质量发展的指导意见》   2024-12-31   京津冀晋:推进14类公共信用数据跨区域共享调用   2024-12-31   深挖企业数据金矿 这份文件推动企业数据开发利用   2024-12-26   建设100个以上可信数据空间,这份文件以可信安全促要素流通   2024-12-25 \n 国家数据局印发《可信数据空间发展行动计划(2024—2028年)》   2024-12-25   国家数据局陈荣辉:充分发挥数据要素与数字技术双轮驱动,推进产业数字化   2024-12-25   国家数据局部署数字中国建设2025年工作   2024-12-25   IDC:前三季度中国安全硬件市场规模同比下降2.9%   2024-12-25   中国信通院发布2025深度观察十大趋势   2024-12-25 \n 跨域异构算力网络实验取得阶段性成果,\nPublished date: 2025-01-26T08:00:00+08:00\nSite name: www.fjgov.cn\n\nTitle: 工信动态\nURL: https://www.miit.gov.cn/xwfb/gxdt/index.html\nDescription: 工信动态\n两部门关于公布5G+医疗健康应用试点全国优秀项目及通过验收项目的通知 2025-02-14 五部门关于调",
+    "isError": false,
+    "durationMs": 2202,
+    "createdAt": "2026-03-02T04:43:57.307Z"
+  },
+  {
+    "id": "01e52a9ea0bbba4b",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025 年人工智能监管将变得严肃起来 - 今日头条\nURL: https://www.toutiao.com/article/7451805800542028340/\nDescription: 第一个里程碑是2025 年2月2日,届时在欧盟运营的组织必须确保参与 AI 使用、部署或监督的员工具备足够的 AI 素养。\nPublished date: 2024-12-24T18:53:00+08:00\nSite name: 今日头条\n\nTitle: 2025年1月:揭晓生成式人工智能服务备案新规!_监管_技术_用户\nURL: https://www.sohu.com/a/847092367_122004016\nDescription: 根据最新消息,中国网信网公布了截至2025年1月的生成式人工智能服务备案和登记信息。这一动态不仅反映了监管机构对技术发展的重视,也为行业未来发展指明了方向。 什么是生成式人工智能?简而言之,它是一种利用机器学习技术生成文本、图像、音乐等多种内容的人工智能。随着技术的飞速发展,这类服务已经融入了我们生活的方方面面,从聊天机器人到自动化广告生成、甚至是内容创作工具。\nPublished date: 2025-01-09T07:57:00+08:00\nSite name: 搜狐\n\nTitle: 人工智能白皮书（2022年）.docx\nURL: https://m.docin.com/touch_new/preview_new.do?id=4808706633\nDescription: 工中国信通院No.202205人工智能白皮书(2022年)中国信息通信研究院2022年4月版权声明本白皮书版权属于中国信息通信研究院,并受法律保护。转载、摘编或利用.\nPublished date: 2025-01-21T06:10:00+08:00\nSite name: 豆丁网\n\nTitle: Ai监管! - 腾讯云开发者社区-腾讯云\nURL: https://cloud.tencent.com/developer/news/1131115\nDescription: AI监管-网信办发布《生成式人工智能服务管理暂行办法》将于8月15日施行 1,推动生成式人工智能基础设施和公共训练数据资源平台建设; 2,提供者应当按照《互联网信息服务深度合成管理规定》对图片、视频等生成内容进行标识; 3,鼓励生成式人工智能算法、框架、芯片及配套软件平台等基础技术的自主创新 这一《办法》直接利好的主要是数据要素、数据标注、AI安全概念,此外,芯片等基础设施也有一定刺激。 相关名单: $人民网(SH603000)$ 人民网、$新华网(SH603888)$ 新华网、视觉中国$视觉中国(SZ000681)$ $奥飞娱乐(SZ002292)$ $幸福蓝海(SZ300528)$\nPublished date: 2023-07-14T08:08:16+08:00\nSite name: 腾讯云\n\nTitle: 信息详情\nURL: http://sjj.qinghai.gov.cn/ywdt/002009/20260226/8169b21d-e9a9-4ab5-810a-9a6b37492448.html\nDescription: 人工智能产业发展研究报告\n(2025\n年)\n【发布时间】:2026-02-26\n阅读次数:\n次\n【来源】:中国信息通信研究院\nPublished date: 2026-02-26T00:00:00+08:00\nSite name: sjj.qinghai.gov.cn\n\nTitle: 监管动态\nURL: https://www.nfra.gov.cn/branch/jiangxi/view/pages/common/ItemList.html?itemId=1510&itemName=%E7%9B%91%E7%AE%A1%E5%8A%A8%E6%80%81&itemPId=1509&itemUrl=ItemListRightList.html&itemsubPId=1509\nDescription: 2025-03-18\n2025-03-05\n2025-03-05\n2025-02-21\n2025-02-21\n2025-02-21\n2025-02-11\n2025-01-27\n2025-01-24\n2025-01-14\n2025-01-06\n2025-01-06\n2024-12-23\n2024-12-17\n2024-12-04\n2024-12-04\n2024-11-25\n2024-11-11\nPublished date: 2025-03-18T08:00:00+08:00\nSite name: 国家金融监督管理总局\n",
+    "isError": false,
+    "durationMs": 2004,
+    "createdAt": "2026-03-02T04:43:57.737Z"
+  },
+  {
+    "id": "faada986424e4e8c",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2025年1月1日起施行 《网络数据安全管理条例》_法治宣传_海口市医保局\nURL: https://ybj.haikou.gov.cn/hksybj/fzxc/202501/7d85b61d1a1a4e1ea419ec35623069d7.shtml\nDescription: 2025年1月1日起施行\n《网络数据安全管理条例》\n2025-01-06\n17:24\n来源:\n中华人民共和国中央人民政府网\n阅读次数:\nPublished date: 2025-01-06T17:24:00+08:00\nSite name: 海口市政府门户网站\n\nTitle: 通用法律_网络数据安全管理条例(2025年1月1日起施行)_广东烟草广州市有限公司门户网站\nURL: https://gd.tobacco.gov.cn/guangzhou/zcfg/tyfl/content/mpost_38947.html\nDescription: 网络数据安全管理条例(2025年1月1日起施行)\n时间\n:\n2025-01-27\n09:37\n来源\n:\n国务院\n相关附件\nPublished date: 2025-01-27T09:37:00+08:00\nSite name: 中国烟草总公司广东省公司门户网站\n\nTitle: 《网络数据安全管理条例》2025年1月1日起正式施行__法治网\nURL: http://m.legaldaily.com.cn/index/content/2025-01/02/content_9111519.htm\nDescription: 电子报 发布时间:2025-01-02 16:53:05 来源:中国法院网 责任编辑:高弼浡 京ICP备13032916号-1 法制网传媒(北京)有限公司版权所有,未经协议授权禁止转载\nPublished date: 2025-01-02T16:53:05+08:00\nSite name: 法治网\n\nTitle: 《网络数据安全管理条例》2025年1月1日起正式施行\nURL: https://www.chinacourt.org/article/subjectartdetail/sid/MDAxMHAyMDAwMDAwMDAw/id/8591944.shtml\nDescription: 《网络数据安全管理条例》以《中华人民共和国网络安全法》《中华人民共和国数据安全法》《中华人民共和国个人信息保护法》等法律为依据,聚焦网络数据,细化相关规定,完善网络数据安全规则,为提升网络数据安全治理体系和能力现代化提供了更有可操作性的法治保障,标志着我国网络数据安全治理进入了新阶段。\nPublished date: 2025-01-01T08:00:00+08:00\nSite name: 中国法院网\n\nTitle: 《网络数据安全管理条例》1月1日起施行-信息化办公室\nURL: https://io.neepu.edu.cn/info/1052/4193.htm\nDescription: 网络数据安全管理条例》(以下简称《条例》)自2025年1月1日起施行。《条例》的出台,标志着我国数据安全法规体系的进一步完善,对我国强化数据安全和个人信息保护、保障数据要素有序开发利用、促进数字经济健康有序发展意义重大。让我们和小安一起来学习《条例》的主要内容,进一步筑牢我国网络数据安全防线,以高水平安全护航网络强国建设。\nPublished date: 2025-01-04T01:01:10+08:00\nSite name: 东北电力大学\n\nTitle: 数据安全管理法实施时间-今日头条\nURL: https://www.toutiao.com/topic/7479237390964508698/\nDescription: 资讯 《网络数据安全管理条例》生效在即,8大合规要点简评 《网络数据安全管理条例》[1]即将于2025年1月1日起生效,其立足于过往立法,在《中华人民共和国网络安全法》[2]《中华人民共和国数据安全法》[3]与《中华人民共和国个人信息保护法》[4]的框架下,将散见于不同法规细则的合规义务进行了总结与澄清。 第一财经 1 评论 《网络数据安全管理条例》1月1日起施行 完善数据安全规则 优化数据跨境流动 编者按:大型网络平台服务提供者不得对用户实施不合理的差别待遇;推动能源领域自然垄断环节独立运营和竞争性环节市场化改革;金融机构应建立客户尽职调查制度;设立专项资金,培养青年科学技术人才......1月起,《中华人民共和国能源法》《中华人民共和国反洗钱法》《网络数据安全管理条例》《国家自然 中国青年网 《网络数据安全管理条例》明年起施行 “守门人”责任被明确 本报记者 曲忠芳 北京报道近日,据中国政府信息",
+    "isError": false,
+    "durationMs": 1891,
+    "createdAt": "2026-03-02T04:43:58.072Z"
+  },
+  {
+    "id": "b8754cac78e3a568",
+    "type": "tool_call",
+    "taskId": "75e223a01bab5f1d",
+    "subtaskId": "ba53cab4dce0990d",
+    "employeeId": "cfa770c8cba10b81",
+    "toolName": "1791ada993a23a56__get_markdown",
+    "input": null,
+    "output": "关于印发《人工智能生成合成内容标识办法》的通知_国务院部门文件_中国政府网\n\n[](javascript:void%280%29) \n\n[![](/images/gtrs_logo_lt.png)![](/images/gtrs_logo_rt.png)](https://www.gov.cn/)\n\n* [首页](https://www.gov.cn/)\n* |\n* [简](https://www.gov.cn)\n* |\n* [繁](http://big5.www.gov.cn/gate/big5/www.gov.cn/)\n* |\n* [EN](http://english.www.gov.cn/)\n* |\n* [登录](javascript:void%280%29;)\n* [](javascript:void%280%29;)  \n   * [个人中心](javascript:void%280%29;)  \n   * [退出](javascript:void%280%29;)\n* |\n* [邮箱](https://mail.www.gov.cn/nsmail/index.html)\n* |\n* [无障碍](javascript:;)\n\n[![](/images/newlogo19ysp_lt.png)![](/images/newlogo19ysp_rt.png)](https://www.gov.cn/) [EN](https://english.www.gov.cn/) [ ![](/images/gtrs_newsearch.png) ![](/images/gtrs_newshouqi.png) ](javascript:;) \n\nhttps://www.gov.cn/\n\n[首页](https://www.gov.cn/ \"首页\") \\> [政策](https://www.gov.cn/zc/ \"政策\") \\> [国务院政策文件库](https://www.gov.cn/zhengce/zhengcewenjianku/ \"国务院政策文件库\") \\> [国务院部门文件](https://www.gov.cn/zhengce/zhengceku/bmwj/ \"国务院部门文件\") \n\n字号：默认 大 超大 | 打印 \n\n收藏\n\n留言\n\n| \n\n| 标 题：  | 关于印发《人工智能生成合成内容标识办法》的通知 | 发文机关： | 国家网信办 工业和信息化部 公安部 广电总局 |\n| ----- | ----------------------- | ----- | ---------------------- |\n| 发文字号： | 国信办通字〔2025〕2号           | 来 源：  | 国家网信办网站                |\n| 主题分类： | 科技、教育\\\\科技               | 公文种类： | 通知                     |\n| 成文日期： | 2025年03月07日             |       |                        |\n\n* 标 题： 关于印发《人工智能生成合成内容标识办法》的通知\n* 发文机关：国家网信办 工业和信息化部 公安部 广电总局\n* 发文字号：国信办通字〔2025〕2号\n* 来 源：国家网信办网站\n* 主题分类：科技、教育\\\\科技\n* 公文种类：通知\n* 成文日期：2025年03月07日\n\n**关于印发《人工智能生成合成内容标识办法》的通知**  \n国信办通字〔2025〕2号\n\n各省、自治区、直辖市互联网信息办公室、通信管理局、公安厅（局）、广播电视局，新疆生产建设兵团互联网信息办公室、工业和信息化局、公安局、文化体育广电和旅游局：\n\n为了促进人工智能健康发展，规范人工智能生成合成内容标识，保护公民、法人和其他组织合法权益，维护社会公共利益，国家互联网信息办公室、工业和信息化部、公安部、国家广播电视总局制定了《人工智能生成合成内容标识办法》，现印发给你们，请认真遵照执行。\n\n国家互联网信息办公室  \n工业和信息化部  \n公安部  \n国家广播电视总局  \n2025年3月7日\n\n**人工智能生成合成内容标识办法**\n\n**第一条** 为了促进人工智能健康发展，规范人工智能生成合成内容标识，保护公民、法人和其他组织合法权益，维护社会公共利益，根据《中华人民共和国网络安全法》、《互联网信息服务算法推荐管理规定》、《互联网信息服务深度合成管理规定》、《生成式人工智能服务管理暂行办法》等法律、行政法规和部门规章，制定本办法。\n\n**第二条** 符合《互联网信息服务算法推荐管理规定》、《互联网信息服务深度合成管理规定》、《",
+    "isError": false,
+    "durationMs": 9013,
+    "createdAt": "2026-03-02T04:44:05.654Z"
+  }
+]

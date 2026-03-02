@@ -1,0 +1,1 @@
+ALTER TABLE `tools` ADD `enabled` integer DEFAULT 1;

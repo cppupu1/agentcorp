@@ -1,0 +1,87 @@
+[
+  {
+    "id": "751ef7963b38c270",
+    "type": "decision",
+    "taskId": "e91270dd90623d97",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask",
+    "input": {
+      "employeeId": "033e2a7a9a6c6e2f",
+      "instruction": "请将以下企业公告模板输出中英双语简版，保持语义一致。原文：尊敬的客户，我们将于下周二22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解。",
+      "subtaskId": "27eb16ca728ea700"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T09:56:29.672Z"
+  },
+  {
+    "id": "d037b5ef82ea310c",
+    "type": "decision",
+    "taskId": "e91270dd90623d97",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "assign_subtask_result",
+    "input": null,
+    "output": "[已派发] 子任务「企业公告中英双语翻译」(27eb16ca728ea700) 已分配给员工 033e2a7a9a6c6e2f 开始执行。请继续派发其他可执行的子任务，全部派发后调用 wait_subtasks 等待结果。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T09:56:29.675Z"
+  },
+  {
+    "id": "0936f305b82196ce",
+    "type": "decision",
+    "taskId": "e91270dd90623d97",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks",
+    "input": {},
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T09:56:35.927Z"
+  },
+  {
+    "id": "bf4130a884fc078f",
+    "type": "decision",
+    "taskId": "e91270dd90623d97",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "wait_subtasks_result",
+    "input": null,
+    "output": "共 1 个子任务执行完毕：\n\n[27eb16ca728ea700]「企业公告中英双语翻译」: ## 中英双语简版\n\n**中文版：**\n> 尊敬的客户，我们将于下周二22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解。\n\n---\n\n**English Version:**\n> Dear Valued Customer, we will perform system maintenance next Tuesday from 22:00 to 23:00. During this period, services may experience temporary fluctuations. Thank you for your understanding.",
+    "reasoning": null,
+    "createdAt": "2026-03-01T09:56:39.046Z"
+  },
+  {
+    "id": "d3d6c47831e9bd76",
+    "type": "decision",
+    "taskId": "e91270dd90623d97",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task",
+    "input": {
+      "deliverables": "## 企业公告中英双语简版\n\n**中文版：**\n> 尊敬的客户，我们将于下周二22:00-23:00进行系统维护，期间服务可能短暂波动，感谢理解。\n\n---\n\n**English Version:**\n> Dear Valued Customer, we will perform system maintenance next Tuesday from 22:00 to 23:00. During this period, services may experience temporary fluctuations. Thank you for your understanding.",
+      "summary": "任务已成功完成。企业公告中英双语翻译已完成，中文版保持原意，英文版准确传达了系统维护时间及可能的服务波动信息，措辞专业得体，符合企业公告规范。"
+    },
+    "output": null,
+    "reasoning": null,
+    "createdAt": "2026-03-01T09:56:45.158Z"
+  },
+  {
+    "id": "74bf44950109758a",
+    "type": "decision",
+    "taskId": "e91270dd90623d97",
+    "subtaskId": null,
+    "employeeId": null,
+    "actor": "pm",
+    "action": "complete_task_result",
+    "input": null,
+    "output": "任务已完成。",
+    "reasoning": null,
+    "createdAt": "2026-03-01T09:56:45.162Z"
+  }
+]

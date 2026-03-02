@@ -1,0 +1,15 @@
+{
+  "taskId": "0564e6c3f706e1e6",
+  "title": "回归观测-主从模式一致性",
+  "status": "completed",
+  "tokenUsage": 113525,
+  "subtasks": [
+    {
+      "id": "b9be29900758c2ce",
+      "status": "completed"
+    }
+  ],
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n主从模式执行完成",
+  "decisionCount": 0,
+  "toolCallCount": 18
+}

@@ -1,0 +1,82 @@
+{
+  "label": "round18-pm-stock-compare",
+  "sessionId": "round18-stock-20260301-065314",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "e60cffa259394c01"
+  ],
+  "autoAssign": {
+    "recommended": 3,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 3,
+      "min": 1
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "e60cffa259394c01",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 22929,
+      "tools": [
+        {
+          "tool": "tushare_mcp_001__daily",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__today",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasTimeTool": true,
+      "hasStockTool": true,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成贵州茅台(600519)与宁德时代(300750)近30天股价走势对比分析。分析涵盖2024年12月10日至2025年1月9日共22个交易日的完整K线数据，对比了两只股票的涨跌幅、振幅、成交量等关键指标，并总结了近期走势特点、市场影响因素及下周（1月13日-1月17日）的重点观察点。贵州茅台期间累计跌幅6.63%，表现相对抗跌；宁德时代累计跌幅8.59%，波动更大但弹性更强。"
+    }
+  ]
+}

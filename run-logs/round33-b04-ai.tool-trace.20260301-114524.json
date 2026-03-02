@@ -1,0 +1,226 @@
+[
+  {
+    "id": "6da07f0b64cff367",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": {
+      "toolCallId": "call_function_tvd8wmmbv0fu_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:46:01.620Z"
+  },
+  {
+    "id": "9f81a8e40ca1fb56",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": null,
+    "output": "{\n  \"NODE\": \"/opt/homebrew/Cellar/node@22/22.16.0/bin/node\",\n  \"INIT_CWD\": \"/Users/chenpu/workspace/claude-code/YourTeam2/packages/server\",\n  \"TERM\": \"xterm-256color\",\n  \"SHELL\": \"/bin/zsh\",\n  \"npm_config_global_prefix\": \"/opt/homebrew\",\n  \"COLOR\": \"0\",\n  \"npm_config_noproxy\": \"\",\n  \"npm_config_local_prefix\": \"/Users/chenpu/workspace/claude-code/YourTeam2\",\n  \"USER\": \"chenpu\",\n  \"npm_config_globalconfig\": \"/opt/homebrew/etc/npmrc\",\n  \"__CF_USER_TEXT_ENCODING\": \"0x1F5:0:0\",\n  \"npm_execpath\": \"/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/bin/npm-cli.js\",\n  \"PATH\": \"/Users/chenpu/.npm-cache-new/_npx/5b2dd62b9d0bddd4/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bi",
+    "isError": false,
+    "durationMs": 2,
+    "createdAt": "2026-03-01T11:46:01.622Z"
+  },
+  {
+    "id": "31fa9e2edfdd7d8a",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_61f3wfdba9oc_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:46:19.368Z"
+  },
+  {
+    "id": "6eeec8b9752e19c6",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年AI大模型资料汇编\nURL: http://www.sohu.com/a/987995144_121649707\nDescription: 2025年AI大模型资料汇编 报告共计:61页 2025年AI大模型行业迎来全方位结构性变革,竞争从单纯的能力与参数比拼转向可持续性之战,头部玩家在极限能力､成本效率等维度重新取舍,技术､市场､开源､治理四大力量交织,推动行业从野蛮生长走向成熟化､体系化发展｡ 技术层面迎来多重革命,训练范式从RLHF升级为RLVR,依托客观可验证的奖励信号实现模型推理能力飞跃,多智能体自我博弈､合成数据微调也成为模型进化主流方式,让模型摆脱对人类标注的依赖｡同时,模型呈现出“锯齿状”能力结构,在数学､编程等形式化智力领域实现突破性进展,却在常识推理上存在明显短板,传统评测基准因模型“应试”失效,行业转向贴近真实应用的综合评测体系｡此外,MoE架构回潮､RAG成为标配,算力格局走向云+端协同,本地部署技术的突破让大模型从云端走向个人设备｡ 市场与生态格局深度洗牌,谷歌Gemini3实现对OpenAI的反超,中国模型凭借成本效益实现弯道超车,“百模大战”走向行业出清,竞争核心从模型本身转向生态控制权,巨头纷纷构筑芯片､模型､应用的全栈生态闭环｡开源浪潮成为关键变量,中国厂商成为全球开源生态主力军,通义千问､DeepSeek等开源模型性能逼近闭源模型,形成开源蚕食长尾市场､闭源聚焦高端企业级市场的双轨竞争格局,技术民主化让中小企业和个人开发者获得更多创新机会｡ \nPublished date: 2026-02-17T08:44:40+08:00\nSite name: 搜狐\n\nTitle: 中国大模型一年狂飙421%,全球AI格局变天\nURL: https://new.qq.com/rain/a/20260228A07TNP00\nDescription: 2025年初,DeepSeek-R1横空出世｡奠定了大模型新一轮军备竞赛的主旋律:即更低的成本､更强悍的性能､以及开源｡      一年过去,全球大模型产业格局正由少数科技巨头依托算力､数据和资本优势形成的垄断态势,逐步转向多极竞争与生态共建｡中国大模型,陆续坐上牌桌｡      全球头部大模型API聚合平台OpenRouter的数据显示,过去一年,中国大模型在全球市场的Token消耗占比增长了421%｡      (图源:OpenRouter,对比日期:2025年2月8日/2026年2月10日)      可以看到,2025年初,大模型推理市场还是典型的“美系双寡头”结构:Anthropic一家的Token消耗占比就达到总量的42.2%,紧随其后的是Google,达25.8%,两家合计接近68%｡再往后,欧洲的Mistral消耗量占8.2%,DeepSeek 6.7%,OpenAI 4.9%,Meta Llama 4.5%,整体呈现出高度集中的金字塔格局｡      但到2026年初,这一市场格局被颠覆｡Google虽为第一,但Token消耗占比只有18.8%,Anthropic下降至14.7%,两家合计仅约33%,头部企业的控制力几乎减半｡与此同时,中国大模型Token消耗份额逼近三成:月之暗面的MoonshotAI达到14.5%,DeepSeek 9.0%,MiniMax 4.2%,Qwen也提升至2.6%｡      \nPublished date: 2026-02-28T22:32:14+08:00\nSite name: 腾讯网\n\nTitle: 2025年最好用的AI大模型汇总 - AIBetas\nURL: https://www.aibetas.com.cn/p/4372.html\nDescription:  01|AI绘画 1. 图像生成 – Flux Pro ultra 官网: https://blackforestlabs.ai/ultra-home/ 母公司:Black Forest Labs 发布时间:2024年11月 最新版本:Flux 1.1 Pro Ultra 价格:$0.06/张 Flux Pro Ultra 是由 Black Forest Labs 公司开发的高性能AI图像生成模型,其最新版本 Flux 1.1 Pro Ultra 于 2024年11月 正式发布,并在2025年2月进一步升级支持更高分辨率生成功能｡该模型以 超高分辨率(4兆像素,即2048×2048)为核心亮点,提供两种生成模式 : Ultra模式:生成速度比同类高分辨率模型快2.5倍,10秒内完成4兆像素图像,且能精准响应提示词,适合广告设计､电商展示等需要细节的场景; 添加图片注释,不超过 140 字(可选) 2. 中文文字生成 – 即",
+    "isError": false,
+    "durationMs": 1548,
+    "createdAt": "2026-03-01T11:46:20.916Z"
+  },
+  {
+    "id": "4adff65d953369b1",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_ct5emsspuk5r_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:46:24.165Z"
+  },
+  {
+    "id": "fb1a351a7037001f",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: AI应用井喷式爆发 美图7款产品入选2025年度图谱 _ 东方财富网\nURL: http://finance.eastmoney.com/a/202603013657712858.html\nDescription: 2月26日,2025年AI应用的主要领域及代表产品图谱公布,效率办公和图像视频两大领域上榜产品最多,美图公司成为最大赢家｡该公司旗下产品美图秀秀､美颜相机､Wink､美图设计室､开拍､RoboNeo､WHEE占据7个席位｡ 数据发布方认为,2025年AI应用井喷式爆发,市场进入规模化应用期,AI的应用能力正加速向图像视频､效率办公等高价值垂直领域纵深渗透｡ AI行业研究人士对记者表示,在AI的助力下,应用发展呈现新趋势:一是AI与创意场景的融合将更加深入,从基础的内容生成向全流程创意服务延伸;二是差异化竞争将成为核心主线,美图等企业应巩固自身的审美沉淀和需求洞察优势,在特定场景做深做实;三是商业模式将持续创新,AI将驱动创意软件实现从解决单点问题到场景化方案的跨越,推动创意软件行业实现价值跃升｡\nPublished date: 2026-03-01T00:00:00+08:00\nSite name: 东方财富网\n\nTitle: 七麦数据《2025全球移动互联网行业白皮书》重磅发布!AI步入规模化应用新阶段、游戏产业规模再创新高、中国应用出海驶入快车道_市场\nURL: https://www.sohu.com/a/990666801_121379383\nDescription: 白皮书指出,随着AI技术的加速落地,AI的应用能力正从图像视频､效率办公等热门赛道,加速向医疗等高价值场景以及更多垂直领域纵深渗透,各类AI产品井喷式爆发｡头部互联网大厂纷纷加速C端AI布局,智能助手逐渐演变成“超级入口”之争的核心战场｡同时,大厂也在加速向AI硬件延伸,全力抢占下一代人机交互入口｡\nPublished date: 2026-02-27T16:48:04+08:00\nSite name: 搜狐\n\nTitle: 2025麦肯锡AI应用现状调研-智能体创新和转型_企业_规模化_职能\nURL: https://www.sohu.com/a/990583325_121711272\nDescription: 2025年麦肯锡全球AI应用现状调研显示,近九成企业已在至少一个职能中常态化应用AI,生成式AI与AI智能体应用持续扩张,但多数企业仍处于探索或试点阶段,仅约三分之一推进规模化落地,从试点走向规模化成为行业核心挑战｡其中中国大陆AI应用普及率与全球持平,生成式AI使用比例领先全球,45%企业实现AI规模化或全面部署,高于全球38%的均值,展现出应用深度优势｡ 智能体成为企业探索重点,62%的企业已开启试用,23%实现部分职能规模化应用,IT与知识管理领域采用率最高,科技､媒体与电信及医疗行业领跑,但各职能规模化应用比例均未超10%,普及仍受局限｡同时,高绩效企业获得高层强力背书,建立了人机协同､敏捷交付等系统化管理实践,超三分之一将20%以上数字化预算投向AI,资源投入与战略布局成为其核心优势｡ 企业对AI的就业影响预期分化,32%预计未来一年员工规模下降,43%认为保持稳定,13%预计增长,且企业普遍在招聘AI相关人才,软件工程师､数据工程师为核心需求｡\nPublished date: 2026-02-27T13:14:12+08:00\nSite name: 搜狐\n\nTitle: 2025年AI行业洞察:企业如何通过AI创造价值-麦肯锡_应用_息税前利润_业务\nURL: https://www.sohu.com/a/990586988_121649899\nDescription: 2025年麦肯锡AI行业洞察报告显示,企业正通过组织架构调整､流程重构等方式挖掘生成式AI的商业价值,行业整体处于AI应用的早期发展阶段,大型企业在布局和落地中占据领先地位,超七成企业已在至少一个业务职能中应用AI,生成式AI的使用更是呈快速增长态势｡ \nPublished date: 2026-02-27T13:28:11+08:00\nSite name: 搜狐\n\nTitle: 2025年AI行业洞察:企业如何通过AI创造价值-麦肯锡_应用_职能_重构\nURL: https://www.sohu.com/a/990475304_121649707\nDescription: 2025年麦肯锡AI行业洞察报告显示,企业正通过组织架构调整､流程重构等方式挖掘生成式AI的商业价值,行业整体处于AI应用的早期探索阶段,但大型企业的推进速度显著快于中小企业,AI(含生成式AI与分析式AI)的应用渗透率和落地深度均持续提升,超七成企业已在至少一个业务职",
+    "isError": false,
+    "durationMs": 1468,
+    "createdAt": "2026-03-01T11:46:25.633Z"
+  },
+  {
+    "id": "83f5ea56be724e63",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_3szj6kzp9v3v_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:46:28.795Z"
+  },
+  {
+    "id": "c7055e5cb2377826",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: ODI备案审核升级,AI、量子计算领域重监管_影城_识别_生物\nURL: https://www.sohu.com/a/990676652_122619571\nDescription: ODI备案敏感行业扩容了 2025年底起,发改委和商务部对AI基础设施､量子计算､6G､生物识别､战略矿产资源开发等领域实施重点监管,审慎备案/核准 房地产､酒店､影城等领域是持续严控 政策一变就很容易踩坑,大家要注意了 ODI备案新规,有问题可滴我\nPublished date: 2026-02-27T17:09:09+08:00\nSite name: 搜狐\n\nTitle: 2025 年如何应对数字化监管--商用办公频道-至顶网\nURL: http://biz.zhiding.cn/2025/0327/3164741.shtml\nDescription: 2025年将是数字监管实施的关键年份｡新的在线安全和竞争法规将生效,企业需要提前准备｡消费者保护､人工智能､云计算和数据共享等领域都将面临新的监管要求｡公司应采取积极主动的策略,评估风险,调整业务模式,以适应不断变化的监管环境｡数字监管将继续成为公众､政治和经济辩论的核心话题｡ 鉴于数字技术已经深深融入我们的生活､工作､交易和通信方式,英国和欧盟近期已经完成了前所未有的大量数字监管法规制定｡ \nPublished date: 2026-02-05T14:33:17+08:00\nSite name: biz.zhiding.cn\n\nTitle: 政策红利持续释放 AI制药发展提速-中新网\nURL: https://www.chinanews.com.cn/cj/2026/02-04/10565352.shtml\nDescription:  记者获悉,日前印发的《江苏省“人工智能+”行动方案》提出:增强生物医药研发创新能力;推动人工智能在药物靶标筛选､药物分子设计､医疗器械制造等场景中的推广应用; 在国家层面,覆盖AI制药全链条的政策支持体系正在形成｡“十五五”规划建议明确提出“全面实施‘人工智能+’行动”,为行业发展划定了清晰目标;2025年4月,工信部､国家卫生健康委等七部门联合发布《医药工业数智化转型实施方案(2025—2030年)》,提出到2027年建设10个以上医药大模型创新平台,打造100个以上医药工业数智技术应用典型场景;当年12月,工信部等八部门又联合印发《“人工智能+制造”专项行动实施意见》,将“提升医药智能研发”明确为AI赋能的重点攻坚领域｡ 专家表示,AI制药已被纳入“人工智能+”专项行动,随着政策支持不断完善,行业也将从自发探索进入政策引导的规范化发展阶段｡\nPublished date: 2026-02-28T02:31:19+08:00\nSite name: 中国新闻网\n\nTitle: 2025年中国AI解决方案行业分类、政策、产业链及下游分析\nURL: https://www.sohu.com/a/990250570_121717382\nDescription: 一､AI解决方案应用领域分类 AI解决方案是随时可用的自动化分析AI程序,能够产生准确和有意义的洞察,应对新的业务趋势和客户需求｡AI解决方案可以通过硬件､软件或云计算服务来部署｡ 二､AI解决方案行业主要产业政策 世界主要发达国家把发展人工智能作为提升国家竞争力､维护国家安全的重大战略,加紧出台规划和政策,围绕核心技术､顶尖人才､标准规范等强化部署,力图在新一轮国际科技竞争中掌握主导权｡\nPublished date: 2026-02-26T15:21:43+08:00\nSite name: 搜狐\n\nTitle: AI 专家预测:2025 年AI 泡沫或将破裂--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0121/3162964.shtml\nDescription: 专家预测,随着人工智能技术的迅速发展和广泛应用,2025 年可能成为 AI 泡沫破裂的关键一年｡尽管 AI 仍有望在多模态模型和自动机器学习等领域取得突破,但技术瓶颈､投资回报率下降､监管趋严以及环境和伦理问题等因素可能导致 AI 热潮降温｡未来 AI 发展将更注重平衡和可持续性｡ 人工智能在过去两年中一直是科技界的宠儿,吸引了数十亿美元的资金投入｡然而,随着 2025 \nPublished date: 2026-02-18T17:27:39+08:00\nSite name: ai.zhiding.cn\n\nTitle: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphc",
+    "isError": false,
+    "durationMs": 1230,
+    "createdAt": "2026-03-01T11:46:30.025Z"
+  },
+  {
+    "id": "646bba8af406b698",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_r9zra5yn6k6k_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:46:34.223Z"
+  },
+  {
+    "id": "677751165e8d0eed",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 我国人工智能企业数量已超6200家,AI大模型融入千行百业\nURL: https://k.sina.com.cn/article_7857201856_1d45362c001902d2gy.html\nDescription: 我国人工智能企业数量已超6200家,AI大模型融入千行百�IT之家消息,据央视新闻今日报道,截至目前, 我国人工智能企业数量已超 6200 家 ,人工智能大模型不仅融入千行百业,还不断拓展出更丰富的应用场景｡ 据IT之家此前报道,截至 2025 年9月, 人工智能企业数量超 5300 家 ,全球占比达到 15% ,形成覆盖基础底座､模型框架､行业应用的完整产业体系｡\nPublished date: 2026-02-13T14:37:04+08:00\nSite name: 新浪网\n\nTitle: 中国人工智能企业数量已超6200家\nURL: https://www.tmtpost.com/nictation/7845474.html\nDescription: 1月16日消息,数据显示,截至目前,中国人工智能企业数量已超6200家,人工智能大模型不仅融入千行百业,还不断拓展出更丰富的应用场景｡ (央视新闻) \nPublished date: 2026-02-18T13:20:24+08:00\nSite name: 钛媒体\n\nTitle: 从“能思考”到“能实干” 中国AI产业规模与应用双提速人工智能_新浪财经_新浪网\nURL: https://finance.sina.com.cn/jjxw/2026-02-03/doc-inhkpvfa7220843.shtml\nDescription: 截至2025年年底,我国人工智能企业数量超过6000家,全球占比达16%,形成了从基础底座､模型框架到行业应用的完整产业体系｡人工智能正加速从“能思考”向“能实干”转变,为千行百业开拓赋能新空间｡ 《报告》显示,人工智能应用逐步扩展,并加快向高附加值环节渗透｡\nPublished date: 2026-02-03T17:32:51+08:00\nSite name: 新浪财经\n\nTitle: 证券日报网-AI大模型进入“群模时代” 商业化曙光初现\nURL: http://epaper.zqrb.cn/html/2023-12/25/content_1008983.htm\nDescription: 截至12月24日,A股69家AIGC概念股的市值合计为8182.47亿元,较年初增加2194.49亿元,其中55家公司股价实现上涨,下跌公司数量仅14家｡截至2023年10月初,国内公开的AI大模型数量已经达到238个,从“一百模”升级至“二百模”｡ \nPublished date: 2026-02-12T03:06:07+08:00\nSite name: epaper.zqrb.cn\n\nTitle: 2025 年我国人工智能企业数量超 6000 家-IT之家\nURL: https://www.ithome.com/0/915/017.htm\nDescription: 国内企业发布多款人工智能芯片产品,智能算力规模达 1590EFLOPS,行业高质量数据集加速涌现,国内大模型引领全球开源生态｡据有关机构测算, 2025 年我国人工智能企业数量超 6000 家,核心产业规模预计突破 1.2 万亿元 ｡ 此外,我国加强优质企业梯度培育, 累计培育专精特新中小企业超 14 万家 ,有效期内的高新技术企业达 50.4 万家｡2025 \nPublished date: 2026-02-28T01:43:19+08:00\nSite name: IT之家\n\nTitle: 我国生成式AI服务大模型注册用户超6亿 我国人工智能企业数量超4500家\nURL: https://k.sina.com.cn/article_7857201856_1d45362c00190258hu.html?from=tech\nDescription: 我国生成式AI服务大模型注册用户超6亿 我国人工智能企业数量超4500�工业和信息化部12日表示,截至目前,我国生成式人工智能服务大模型的注册用户超过6亿｡我国人工智能核心产业的规模在不断提升,企业数量超过了4500家｡一批人工智能领域专精特新企业茁壮成长,技术创新能力不断提升,专利申请量和授权量居全球前列｡ \nPublished date: 2026-02-06T07:19:22+08:00\nSite name: 新浪网\n\nTitle: 2026全球与中国AI发展全景解读:市场规模、技术突破与行业应用深度解析-CSDN博客\nURL: https://blog.csdn.net/m0_74942241/arti",
+    "isError": false,
+    "durationMs": 1311,
+    "createdAt": "2026-03-01T11:46:35.534Z"
+  },
+  {
+    "id": "beb09a5a5d5b844c",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_4m9i6snubvpq_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:46:44.656Z"
+  },
+  {
+    "id": "a26bb0da3c77813b",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": " 我国人工智能企业数量已超 6200 家，AI 大模型融入千行百业 - IT之家                 \n\n[App](http://m.ruanmei.com/d/it/) [公众号](http://m.ruanmei.com/d/it/) [投稿](//dyn.ithome.com/tougao/) [评论](#post_comm) [顶部](javascript:; \"顶部\")\n\n![](//img.ithome.com/images/svg/app.svg)\n\n![](//img.ithome.com/images/svg/weixin.svg)\n\n[](https://www.ithome.com)[](https://img.ithome.com/app/songs/index.html)\n\n[首页](https://www.ithome.com)\n\n[IT圈](https://quan.ithome.com)\n\n[最会买](https://www.zuihuimai.com)\n\n[设置](###)\n\n*   日夜间\n    \n    随系统\n    \n    浅色\n    \n    深色\n    \n*   主题色\n    \n    黑色\n    \n\n[投稿](https://dyn.ithome.com/tougao/)\n\n[订阅](###)\n\n*   [RSS订阅](//www.ithome.com/rss/)\n*   [收藏IT之家](# \"IT之家\")\n\n[软媒应用](https://www.ruanmei.com)\n\n*   [App客户端](//m.ruanmei.com/)\n*   [要知App](//yaozhi.ruanmei.com/)\n*   [软媒魔方](//mofang.ruanmei.com/)\n\n[业界](//it.ithome.com) [手机](//mobile.ithome.com/) [电脑](//www.ithome.com/pc/) [测评](//www.ithome.com/labs/) [视频](//www.ithome.com/video/) [AI](//next.ithome.com/) [苹果](//www.ithome.com/apple/) [iPhone](//iphone.ithome.com/) [鸿蒙](//hmos.ithome.com/) [软件](//soft.ithome.com/)\n\n[智车](//auto.ithome.com) [数码](//digi.ithome.com/) [学院](//www.ithome.com/college/) [游戏](//game.ithome.com/) [直播](//www.ithome.com/live/) [5G](//www.ithome.com/5g/) [微软](//www.ithome.com/microsoft/) [Win10](//win10.ithome.com/) [Win11](//win11.ithome.com/) [专题](//www.ithome.com/zt/)\n\n搜索\n\n[首页](//www.ithome.com) \\> [智能时代](https://next.ithome.com/)\\>[人工智能](https://next.ithome.com/ai)\n\n# 我国人工智能企业数量已超 6200 家，AI 大模型融入千行百业\n\n2026/1/16 14:59:44 来源：[IT之家](https://www.ithome.com/0/913/835.htm) 作者：**清源** 责编：**清源**\n\n[评论：0](#post_comm)\n\n[IT之家](https://www.ithome.com/) 1 月 16 日消息，据央视新闻今日报道，截至目前，**我国人工智能企业数量已超 6200 家**，人工智能大模型不仅融入千行百业，还不断拓展出更丰富的应用场景。\n\n目前，AI 大模型已应用到金融、医疗、制造、交通、教育等多个行业。据中国电子信息产业发展研究院人工智能研究室主任钟新龙介绍，2025 年我国人工智能核心产业规模**已突破 1 万亿元**。大模型已经把传统经验决策升级为“数据 + 模型”驱动的智能决策，改变研发方式、运维模式和风险管理。\n\n据IT之家此前报道，[截至 2025 年 9 月，**人工智能企业数量超 5300 家**](https://www.ithome.com/0/887/393.htm)**，全球占比达到 15%**，形成覆盖基础底座、模型框架、行业应用的完整产业体系。同月，中国信通院发布了“2025 人工智能产业十大关键词”",
+    "isError": false,
+    "durationMs": 1564,
+    "createdAt": "2026-03-01T11:46:46.220Z"
+  },
+  {
+    "id": "01fc16e296904add",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_vkpexqk370zv_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:46:54.621Z"
+  },
+  {
+    "id": "e8336f42f667e20d",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "       百度2025年营收达1291亿元 第四季度AI业务收入占比43% \\_ 东方财富网                     \n\n*   [财经](http://finance.eastmoney.com/)\n*   [焦点](http://finance.eastmoney.com/yaowen.html)\n*   [股票](http://stock.eastmoney.com/)\n*   [新股](http://stock.eastmoney.com/newstock.html)\n*   [期指](http://stock.eastmoney.com/gzqh.html)\n*   [期权](http://option.eastmoney.com/)\n*   [行情](http://quote.eastmoney.com/flash/sz300059.html)\n*   [数据](http://data.eastmoney.com/)\n*   [全球](http://stock.eastmoney.com/global.html)\n*   [美股](http://stock.eastmoney.com/america.html)\n*   [港股](http://hk.eastmoney.com/)\n*   [期货](http://futures.eastmoney.com/)\n*   [外汇](http://forex.eastmoney.com/)\n*   [银行](http://bank.eastmoney.com/)\n*   [基金](http://www.1234567.com.cn/)\n*   [理财](http://money.eastmoney.com/)\n*   [债券](http://bond.eastmoney.com/)\n*   [直播]( https://roadshow.eastmoney.com/)\n*   [股吧](http://guba.eastmoney.com/)\n*   [基金吧](http://guba.eastmoney.com/jj.html)\n*   [博客](http://blog.eastmoney.com/)\n*   [财富号](http://caifuhao.eastmoney.com/)\n*   [搜索](http://so.eastmoney.com/)\n\n行情中心\n\n[指数](http://quote.eastmoney.com/center/hszs.html) [期指](http://quote.eastmoney.com/center/gridlist.html#futures_cffex) [期权](http://quote.eastmoney.com/center/qqsc.html) [个股](http://quote.eastmoney.com/) [板块](http://quote.eastmoney.com/center/hsbk.html) [排行](http://quote.eastmoney.com/center/gridlist.html#hs_a_board) [新股](http://quote.eastmoney.com/center/gridlist.html#newshares) [基金](http://quote.eastmoney.com/center/jjsc.html) [港股](http://quote.eastmoney.com/center/ggsc.html) [美股](http://quote.eastmoney.com/center/mgsc.html) [期货](http://quote.eastmoney.com/center/futures.html) [外汇](http://quote.eastmoney.com/center/whsc.html) [黄金](http://quote.eastmoney.com/center/hjsc.html) [自选股](http://quote.eastmoney.com/zixuan/) [自选基金](http://favor.fund.eastmoney.com/)\n\n \n\n数据中心\n\n[资金流向](https://acttg.eastmoney.com/pub/web_dfcfsy_wzl_dhl_03_01_01_0) [主力排名](https://acttg.eastmoney.com/pub/web_dfcfsy_wzl_dhl_03_01_02_0) [板块资金](https://acttg.eastmoney.com/pub/web_df",
+    "isError": false,
+    "durationMs": 828,
+    "createdAt": "2026-03-01T11:46:55.448Z"
+  },
+  {
+    "id": "9ff451d9d935c1bd",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_p7c3hxy0srid_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T11:47:06.354Z"
+  },
+  {
+    "id": "70007c4f206db856",
+    "type": "tool_call",
+    "taskId": "6ad4e027fb3c8f3f",
+    "subtaskId": "7565b7554bd2715a",
+    "employeeId": "599e9a9980a05d5a",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "       北京市已有216款大模型完成备案 计划今年推动人工智能产业核心规模突破5500亿元|北京市\\_新浪财经\\_新浪网                                \n\n![](//beacon.sina.com.cn/a.gif?noScript)\n\n           \n\n*   [新浪首页](http://www.sina.com.cn/)\n*   [新闻](http://news.sina.com.cn/)\n*   [体育](http://sports.sina.com.cn/)\n*   [财经](http://finance.sina.com.cn/)\n*   [娱乐](http://ent.sina.com.cn/)\n*   [科技](http://tech.sina.com.cn/)\n*   [博客](http://blog.sina.com.cn/)\n*   [图片](http://photo.sina.com.cn/)\n*   [专栏](http://zhuanlan.sina.com.cn/)\n*   [更多](#)\n\n*   [汽车](http://auto.sina.com.cn/) [教育](http://edu.sina.com.cn/) [时尚](http://fashion.sina.com.cn/) [女性](http://eladies.sina.com.cn/) [星座](http://astro.sina.com.cn/) [健康](http://health.sina.com.cn/)\n*   [房产](http://www.leju.com/#source=pc_sina_dbdh1&source_ext=pc_sina)[历史](http://history.sina.com.cn/)[视频](http://video.sina.com.cn/)[收藏](http://collection.sina.com.cn/)[育儿](http://baby.sina.com.cn/)[读书](http://book.sina.com.cn/)\n*   [佛学](http://fo.sina.com.cn/)[游戏](http://games.sina.com.cn/)[旅游](http://travel.sina.com.cn/)[邮箱](http://mail.sina.com.cn/)[导航](http://news.sina.com.cn/guide/)\n\n[移动客户端](#)\n\n*   [新浪微博](http://m.sina.com.cn/m/weibo.shtml)\n*   [新浪新闻](http://news.sina.com.cn/m/sinanews.html)\n*   [新浪财经](https://finance.sina.com.cn/mobile/comfinanceweb.shtml?source=daohang01)\n*   [新浪体育](http://m.sina.com.cn/m/sinasports.shtml)\n*   [新浪众测](http://zhongce.sina.com.cn/about/app)\n*   [新浪博客](http://blog.sina.com.cn/lm/z/app/)\n*   [新浪视频](http://video.sina.com.cn/app)\n*   [新浪游戏](http://games.sina.com.cn/o/kb/12392.shtml)\n*   [天气通](http://m.sina.com.cn/m/weather.shtml)\n\n[我的收藏](http://my.sina.com.cn/#location=fav)\n\n[注册](https://login.sina.com.cn/signup/signup?entry=news)\n\n[![](//i.sso.sina.com.cn/images/login/thumb_default.png)登录](#)\n\n[×](javascript:;)\n\n新浪微博、博客、邮箱帐号，请直接登录\n\n*   加载中...[换个账号登录](javascript:;)\n*   [×](javascript:;)\n*   \n*   [](javascript:; \"看不清？换一换\")[](javascript:;)\n*   \n*   [登录](javascript:;)\n    \n    下次自动登录\n*   [忘记密码](https://login.sina.com.cn/getpass.html)[立即注册](https://login.sina",
+    "isError": false,
+    "durationMs": 1755,
+    "createdAt": "2026-03-01T11:47:08.109Z"
+  }
+]

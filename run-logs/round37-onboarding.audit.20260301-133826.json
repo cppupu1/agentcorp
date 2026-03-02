@@ -1,0 +1,81 @@
+{
+  "label": "round37-onboarding",
+  "sessionId": "round37-onboarding-20260301-133826",
+  "kind": "onboarding",
+  "userPrompt": "请直接创建并启动任务：设计新员工入职前两周计划，按天列关键动作与产出。",
+  "pmTools": [
+    {
+      "tool": "quick_create_task",
+      "count": 2
+    },
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "b9e5fe1666d6a740"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": true,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 31983
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "b9e5fe1666d6a740"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "onboarding_timeline",
+      "ok": false,
+      "dayHits": 0
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "b9e5fe1666d6a740",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 8305,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成新员工入职前两周计划的设计任务。由文案策划（员工ID: 43dbefb5809adc50）执行，产出了完整的10个工作日行动计划表，涵盖：第一周（融入与基础认知）和第二周（深入与实操上手），包含每日具体任务、责任人、交付物/产出物，并附带导师制、每日站会、周报机制等配套说明，确保新员工两周内完成从制度熟悉到独立上岗的完整融入过程。"
+  }
+}

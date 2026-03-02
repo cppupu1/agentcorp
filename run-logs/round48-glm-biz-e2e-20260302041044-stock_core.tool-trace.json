@@ -1,0 +1,86 @@
+[
+  {
+    "id": "0d637c84104f79e2",
+    "type": "tool_call",
+    "taskId": "7ec273c719acc4e4",
+    "subtaskId": "b6bfdd8a343876da",
+    "employeeId": "a9dfb57e4bad23a0",
+    "toolName": "tushare_mcp_001__today",
+    "input": {
+      "toolCallId": "call_eab3d3ede2384e418f03ea87"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:11:38.962Z"
+  },
+  {
+    "id": "5c277e0eee9c7cef",
+    "type": "tool_call",
+    "taskId": "7ec273c719acc4e4",
+    "subtaskId": "b6bfdd8a343876da",
+    "employeeId": "a9dfb57e4bad23a0",
+    "toolName": "tushare_mcp_001__today",
+    "input": null,
+    "output": "20260302",
+    "isError": false,
+    "durationMs": 4,
+    "createdAt": "2026-03-02T04:11:38.966Z"
+  },
+  {
+    "id": "22563276c539357a",
+    "type": "tool_call",
+    "taskId": "7ec273c719acc4e4",
+    "subtaskId": "b6bfdd8a343876da",
+    "employeeId": "a9dfb57e4bad23a0",
+    "toolName": "tushare_mcp_001__daily",
+    "input": {
+      "toolCallId": "call_ec64c186e54049be88ac8bcb"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:12:14.583Z"
+  },
+  {
+    "id": "0209692f2483ab0b",
+    "type": "tool_call",
+    "taskId": "7ec273c719acc4e4",
+    "subtaskId": "b6bfdd8a343876da",
+    "employeeId": "a9dfb57e4bad23a0",
+    "toolName": "tushare_mcp_001__daily",
+    "input": null,
+    "output": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount\n002594.SZ,20260227,89.4,89.94,89.1,89.32,89.85,-0.53,-0.5899,219340.83,1962319.079\n002594.SZ,20260226,91.4,91.4,89.61,89.85,91.45,-1.6,-1.7496,291018.94,2619922.211\n002594.SZ,20260225,90.89,92.79,90.89,91.45,90.87,0.58,0.6383,324780.1,2985714.58\n002594.SZ,20260224,91.98,91.99,90.61,90.87,90.27,0.6,0.6647,206444.58,1879888.761\n002594.SZ,20260213,90.05,91.09,89.88,90.27,91.16,-0.89,-0.9763,217338.87,1963579.417\n002594.SZ,20260212,92.29,92.35,91.08,91.16,92.28,-1.12,-1.2137,230313.32,2106032.227\n002594.SZ,20260211,90.88,92.95,90.88,92.28,90.81,1.47,1.6188,396949.59,3662117.779\n002594.SZ,20260210,90.0,91.57,89.84,90.81,90.06,0.75,0.8328,267604.81,2434219.975\n002594.SZ,20260209,90.5,90.65,89.83,90.06,89.82,0.24,0.2672,208179.51,1875980.039\n002594.SZ,20260206,89.39,90.66,89.0,89.82,90.11,-0.29,-0.3218,247087.79,2217096.985\n002594.SZ,20260205,88.5,91.23,88.33,90.11,89.14,0.97,1.0882,354240.31,3184480.193\n002594.SZ,20260204,86.99,89.33,86.45,89.14,87.37,1.77,2.0259,376504.71,3322530.225\n002594.SZ,20260203,87.2,87.4,85.88,87.37,87.05,0.32,0.3676,377826.85,3275997.179\n002594.SZ,20260202,88.0,89.09,86.97,87.05,90.89,-3.84,-4.2249,646973.85,5676850.727\n",
+    "isError": false,
+    "durationMs": 1724,
+    "createdAt": "2026-03-02T04:12:16.306Z"
+  },
+  {
+    "id": "3b27e376bfd66742",
+    "type": "tool_call",
+    "taskId": "7ec273c719acc4e4",
+    "subtaskId": "b6bfdd8a343876da",
+    "employeeId": "a9dfb57e4bad23a0",
+    "toolName": "ask_user_decision",
+    "input": {
+      "toolCallId": "call_ebe43f7516b641b0802eb685"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T04:12:57.782Z"
+  },
+  {
+    "id": "1a96201e17ca0669",
+    "type": "tool_call",
+    "taskId": "7ec273c719acc4e4",
+    "subtaskId": "b6bfdd8a343876da",
+    "employeeId": "a9dfb57e4bad23a0",
+    "toolName": "ask_user_decision",
+    "input": null,
+    "output": "方案A：使用假设数据进行框架展示",
+    "isError": false,
+    "durationMs": 0,
+    "createdAt": "2026-03-02T04:12:57.782Z"
+  }
+]

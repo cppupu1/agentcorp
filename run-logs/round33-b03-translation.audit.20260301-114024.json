@@ -1,0 +1,66 @@
+{
+  "label": "round33-b03-translation",
+  "sessionId": "round33-b03-translation-20260301-114024",
+  "kind": "translation",
+  "pmChatDurationMs": 36811,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "742aafb31bc667d8"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 36811
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "742aafb31bc667d8",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 4555,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告中英双语简版输出任务。文案策划将原始公告内容转化为规范的中英双语版本，英文版采用国际通行的公告格式，中文版保持原有意向，内容涵盖会议时间、地点、议程等核心信息，语义一致，格式清晰。"
+  }
+}

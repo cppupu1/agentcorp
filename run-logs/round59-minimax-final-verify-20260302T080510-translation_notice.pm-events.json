@@ -1,0 +1,417 @@
+[
+  {
+    "event": "delta",
+    "data": {
+      "seq": 0,
+      "text": "<think>\n用户要求"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 1,
+      "text": "直接创建并启动任务，生成一版可直接发送给全员的中英双语放假通知，要求简洁正式。\n\n这是一个创建任务的请求，我需要：\n1. 先查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 2,
+      "text": "可用的场景模板\n2. 根据需求创建任务\n3. 分配工具\n4. 启动任务\n\n让我先查看"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 3,
+      "text": "可用的模板和团队。\n</think>\n\n\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 4,
+      "toolCallId": "call_function_cycsdtzhsm3y_1",
+      "toolName": "list_templates",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 5,
+      "toolCallId": "call_function_cycsdtzhsm3y_1",
+      "toolName": "list_templates",
+      "result": "[{\"id\":\"software-dev\",\"name\":\"软件开发\",\"description\":\"标准软件开发团队，包含项目经理、前端开发、后端开发和测试工程师，适用于Web应用、移动端等软件项目的全流程开发。\",\"icon\":\"💻\",\"employeeCount\":4},{\"id\":\"content-creation\",\"name\":\"内容创作\",\"description\":\"专业内容创作团队，包含项目经理、文案策划和视觉设计师，适用于品牌营销、自媒体运营、广告创意等内容生产场景。\",\"icon\":\"✍️\",\"employeeCount\":3},{\"id\":\"data-analysis\",\"name\":\"数据分析\",\"description\":\"专业数据分析团队，包含项目经理、数据分析师和数据工程师，适用于业务数据洞察、用户行为分析、数据驱动决策等场景。\",\"icon\":\"📊\",\"employeeCount\":3},{\"id\":\"research-report\",\"name\":\"研究报告\",\"description\":\"研究报告团队，包含项目经理、研究员和撰稿人，适用于行业研",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 6,
+      "usage": {
+        "inputTokens": 1194,
+        "outputTokens": 85
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 7,
+      "text": "<think>\n模板列表"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 8,
+      "text": "显示没有直接适合\"放假通知\"这种行政公文的模板。但根据"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 9,
+      "text": "工作流程，我可以基于某个模板创建任务，或者使用一个通用的方式创建。\n\n由于这是一个简单的文案任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 10,
+      "text": "，内容创作团队可能比较合适。但用户没有指定团队，让我先查看一下有没有已存在的"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 11,
+      "text": "团队，或者直接使用内容创作模板来创建。\n\n考虑到这是一个简单的中英双语放假通知，我可以用\"content"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 12,
+      "text": "-creation\"（内容创作）模板来创建，任务描述清晰说明需求。\n\n让我创建任务：\n- 模板："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 13,
+      "text": "content-creation\n- 标题：生成中英双语放假通知\n- 描述：生成一版可直接发送给全员的中英双语放假通知，要求简洁正式\n- 执行"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 14,
+      "text": "模式：auto（自动执行）\n</think>\n\n\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 15,
+      "toolCallId": "call_function_8dlblvx9x795_1",
+      "toolName": "quick_create_task",
+      "args": {
+        "description": "生成一版可直接发送给全员的中英双语放假通知，要求简洁正式。包括以下内容：\n1. 放假时间\n2. 返岗时间\n3. 值班安排（如有）\n4. 紧急联系方式\n5. 祝福语\n\n请确保语言简洁、专业，适合全员群发。",
+        "mode": "auto",
+        "templateId": "content-creation",
+        "title": "生成中英双语放假通知"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 16,
+      "toolCallId": "call_function_8dlblvx9x795_1",
+      "toolName": "quick_create_task",
+      "result": "{\"success\":true,\"taskId\":\"137f045b51585f28\",\"teamId\":\"e63bd4781d3e75d3\",\"title\":\"生成中英双语放假通知\"}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 17,
+      "usage": {
+        "inputTokens": 1579,
+        "outputTokens": 267
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 18,
+      "text": "<think>\n任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 19,
+      "text": "创建成功，taskId是137f045b51585f28，teamId是e63bd4781d3e75d3。\n\n现在需要："
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 20,
+      "text": "\n1. 查看可用的工具\n2. 为团队分配工具\n3. 启动任务\n\n让我先查看可用工具。\n</think>\n\n\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 21,
+      "toolCallId": "call_function_90nnrdobabz0_1",
+      "toolName": "list_tools",
+      "args": {}
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 22,
+      "toolCallId": "call_function_90nnrdobabz0_1",
+      "toolName": "list_tools",
+      "result": "[{\"id\":\"fc5f4c5bf43702d4\",\"name\":\"当前时间\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"740410911af25b5b\",\"name\":\"计算器\",\"description\":\"MCP演示服务器，包含echo、add等多种工具\",\"groupName\":null},{\"id\":\"b931c6ca2b7ad17b\",\"name\":\"文件读取\",\"description\":\"文件系统访问工具，支持读取、列出目录等操作\",\"groupName\":null},{\"id\":\"a6d0277e32709254\",\"name\":\"搏查\",\"description\":\"搏查搜索服务\",\"groupName\":\"互联网\"},{\"id\":\"1791ada993a23a56\",\"name\":\"Web Fetch\",\"description\":\"抓取网页内容并转换为 Markdown，让 AI 能够阅读和处理网页信息。支持自定义 User-Agent 和代理设置。\",\"groupNam",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 23,
+      "usage": {
+        "inputTokens": 1903,
+        "outputTokens": 77
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 24,
+      "text": "<think>\n对于"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 25,
+      "text": "生成放假通知这个任务，主要需要AI内容创作能力。让我看看有哪些工具适合：\n\n- 文件"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 26,
+      "text": "读取 (b931c6ca2b7ad17b) - 可能需要读取公司原有的通知模板\n- Web Fetch (179"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 27,
+      "text": "1ada993a23a56) - 可能需要参考其他公司的放假通知格式\n- Memory (ef64b3f65f2ab2a2)"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 28,
+      "text": " - 记忆工具\n\n对于这个内容创作任务，我需要给团队分配合适的工具。由于任务需要生成文本内容"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 29,
+      "text": "，可能需要：\n- 文件读取工具（如果公司有模板）\n- Web Fetch（参考其他通知格式"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 30,
+      "text": "）\n- Memory（记住公司相关信息）\n\n让我分配这些工具，然后启动任务。\n</think>\n\n"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 31,
+      "text": "任务已创建，现在为您分配合适的工具并启动任务：\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 32,
+      "toolCallId": "call_function_r70buxah0zte_1",
+      "toolName": "assign_team_tools",
+      "args": {
+        "teamId": "e63bd4781d3e75d3",
+        "toolIds": [
+          "b931c6ca2b7ad17b",
+          "1791ada993a23a56"
+        ]
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 33,
+      "toolCallId": "call_function_r70buxah0zte_1",
+      "toolName": "assign_team_tools",
+      "result": "{\"success\":true,\"count\":2}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 34,
+      "usage": {
+        "inputTokens": 2400,
+        "outputTokens": 227
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 35,
+      "text": "<think>\n工具"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 36,
+      "text": "分配成功，现在启动任务。\n</think>\n\n\n"
+    }
+  },
+  {
+    "event": "tool_call",
+    "data": {
+      "seq": 37,
+      "toolCallId": "call_function_cbg11sk26hdm_1",
+      "toolName": "start_task",
+      "args": {
+        "taskId": "137f045b51585f28"
+      }
+    }
+  },
+  {
+    "event": "tool_result",
+    "data": {
+      "seq": 38,
+      "toolCallId": "call_function_cbg11sk26hdm_1",
+      "toolName": "start_task",
+      "result": "{\"success\":true,\"taskId\":\"137f045b51585f28\",\"message\":\"任务已启动\",\"autoAssignedTools\":{\"teamId\":\"e63bd4781d3e75d3\",\"added\":0,\"recommended\":0}}",
+      "isError": false
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 39,
+      "usage": {
+        "inputTokens": 2653,
+        "outputTokens": 42
+      }
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 40,
+      "text": "<think>\n任务"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 41,
+      "text": "已成功创建和启动。我需要告知用户任务已启动，并提醒用户提供更多具体信息（如放假时间"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 42,
+      "text": "等），这样生成的通知会更准确。\n</think>\n\n✅ **任务已成功创建并启动！**\n\n| 项目 | 信息"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 43,
+      "text": " |\n|------|------|\n| 任务ID | 137f045b51585f28 |\n| 任务标题 | 生成中英双语放假通知 |\n| 执行模式"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 44,
+      "text": " | 自动执行 |\n\n---\n\n📝 **为使通知更准确，请您补充以下信息：**\n\n1. **放假时间"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 45,
+      "text": "** - 从哪天放到哪天？（如：1月28日-2月4日）\n2."
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 46,
+      "text": " **返岗日期** - 哪天正式上班？\n3. **公司名称** - 通知中需要体现的公司名称\n4"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 47,
+      "text": ". **值班安排** - 是否有值班人员？\n5. **紧急联系方式** - 需要留谁的联系方式？\n\n请"
+    }
+  },
+  {
+    "event": "delta",
+    "data": {
+      "seq": 48,
+      "text": "提供以上信息，团队将为您生成精准的放假通知！"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 49,
+      "usage": {
+        "inputTokens": 2760,
+        "outputTokens": 193
+      }
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 50,
+      "text": "<think>\n用户要求直接创建并启动任务，生成一版可直接发送给全员的中英双语放假通知，要求简洁正式。\n\n这是一个创建任务的请求，我需要：\n1. 先查看可用的场景模板\n2. 根据需求创建任务\n3. 分配工具\n4. 启动任务\n\n让我先查看可用的模板和团队。\n</think>\n\n\n<think>\n模板列表显示没有直接适合\"放假通知\"这种行政公文的模板。但根据工作流程，我可以基于某个模板创建任务，或者使用一个通用的方式创建。\n\n由于这是一个简单的文案任务，内容创作团队可能比较合适。但用户没有指定团队，让我先查看一下有没有已存在的团队，或者直接使用内容创作模板来创建。\n\n考虑到这是一个简单的中英双语放假通知，我可以用\"content-creation\"（内容创作）模板来创建，任务描述清晰说明需求。\n\n让我创建任务：\n- 模板：content-creation\n- 标题：生成中英双语放假通知\n- 描述：生成一版可直接发送给全员的中英双语放假通知，要求简洁正式\n- 执行模式：auto（自动执行）\n</think>\n\n\n<think>\n任务创建成功，taskId是137f045b51585f28，teamId是e63bd4781d3e75d3。\n\n现在需要：\n1. 查看可用的工具\n2. 为团队分配工具\n3. 启动任务\n\n让我先查看可用工具。\n</think>\n\n\n<think>\n对于生成放假通知这个任务，主要需要AI内容创作能力。让我看看有哪些工具适合：\n\n- 文件读取 (b931c6ca2b7ad17b) - 可能需要读取公司原有的通知模板\n- Web Fetch (1791ada993a23a56) - 可能需要参考其他公司的放假通知格式\n- Memory (ef64b3f65f2ab2a2) - 记忆工具\n\n对于这个内容创作任务，我需要给团队分配合适的工具。由于任务需要生成文本内容，可能需要：\n- 文件读取工具（如果公司有模板）\n- Web Fetch（参考其他通知格式）\n- Memory（记住公司相关信息）\n\n让我分配这些工具，然后启动任务。\n</think>\n\n任务已创建，现在为您分配合适的工具并启动任务：\n<think>\n工具分配成功，现在启动任务。\n</think>\n\n\n<think>\n任务已成功创建和启动。我需要告知用户任务已启动，并提醒用户提供更多具体信息（如放假时间等），这样生成的通知会更准确。\n</think>\n\n✅ **任务已成功创建并启动！**\n\n| 项目 | 信息 |\n|------|------|\n| 任务ID | 137f045b51585f28 |\n| 任务标题 | 生成中英双语放假通知 |\n| 执行模式 | 自动执行 |\n\n---\n\n📝 **为使通知更准确，请您补充以下信息：**\n\n1. **放假时间** - 从哪天放到哪天？（如：1月28日-2月4日）\n2. **返岗日期** - 哪天正式上班？\n3. **公司名称** - 通知中需要体现的公司名称\n4. **值班安排** - 是否有值班人员？\n5. **紧急联系方式** - 需要留谁的联系方式？\n\n请提供以上信息，团队将为您生成精准的放假通知！",
+      "messageId": "c813197a3e26fe83",
+      "finishReason": "stop"
+    }
+  }
+]

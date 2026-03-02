@@ -1,0 +1,76 @@
+{
+  "label": "round24-pm-content",
+  "sessionId": "round24-content-20260301-083127",
+  "pmChatDurationMs": 34758,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "b972b2d2d4ba0c3b"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 34758
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "b972b2d2d4ba0c3b",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 2689,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n企业AI助手发布文案创作任务已完成。文案策划团队成功创作了1篇发布短文和2条社媒文案，全部符合要求：发布短文（约600字）专业正式地介绍了企业AI助手的核心功能、提升效率和智能协作的价值，突出企业级安全性和数据保护；2条社媒文案风格活泼，分别突出团队协作效率和日常工作实用性，均包含吸引眼球的标题和明确的行动号召，适合微博、朋友圈等社交平台传播。整体内容积极正面，体现创新科技感，同时保持真实可信。"
+    }
+  ]
+}

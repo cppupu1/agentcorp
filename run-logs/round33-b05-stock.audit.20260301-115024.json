@@ -1,0 +1,70 @@
+{
+  "label": "round33-b05-stock",
+  "sessionId": "round33-b05-stock-20260301-115024",
+  "kind": "stock",
+  "pmChatDurationMs": 40425,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "f0a2129893eadcbc"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 40425
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "f0a2129893eadcbc",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 13853,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成贵州茅台(600519)与宁德时代(300750)近30天走势比较分析任务。分析结果显示：茅台30天累计上涨3.86%，宁德时代下跌2.28%。发现2个关键观察点：1) 2月4日两大龙头同步反弹，宁德时代弹性更强(+4.92% vs +3.40%)；2) 2月27日走势分化，茅台抗跌而宁德时代创新低。茅台展现出避险属性，宁德时代波动性更大。"
+  }
+}

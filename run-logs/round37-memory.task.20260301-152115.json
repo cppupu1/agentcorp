@@ -1,0 +1,69 @@
+{
+  "id": "4600d331880dc355",
+  "teamId": "d8885a94d2853088",
+  "teamName": "售后FAQ知识沉淀团队",
+  "title": "基于售后投诉整理5条FAQ并沉淀为知识条目",
+  "description": "任务目标：从最近一个月的售后投诉数据中，分析整理出最频繁的5个问题，编写为FAQ，并沉淀为标准化的知识条目。\n\n具体要求：\n1. 分析最近一个月的售后投诉数据，识别出最常见、最紧迫的5个问题\n2. 为每个问题编写清晰的FAQ，包括：问题描述、原因分析、解决方案\n3. 将FAQ标准化为知识条目格式，确保可检索和复用\n4. 知识条目应包含：问题标题、分类标签、适用场景、详细解答、相关链接等\n5. 输出格式要求：5条完整的FAQ知识条目文档",
+  "status": "failed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "a36b4fd98bb48c3e",
+      "name": "客服主管"
+    },
+    "members": [
+      {
+        "id": "14f2ab5d963f9f10",
+        "name": "知识管理员",
+        "taskPrompt": "负责知识库建设与FAQ维护"
+      },
+      {
+        "id": "ff7aff6a705c3ff1",
+        "name": "客服专员",
+        "taskPrompt": "负责客户问题解答与服务支持"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "基于售后投诉整理5条FAQ并沉淀为知识条目",
+        "description": "任务目标：从最近一个月的售后投诉数据中，分析整理出最频繁的5个问题，编写为FAQ，并沉淀为标准化的知识条目。\n\n具体要求：\n1. 分析最近一个月的售后投诉数据，识别出最常见、最紧迫的5个问题\n2. 为每个问题编写清晰的FAQ，包括：问题描述、原因分析、解决方案\n3. 将FAQ标准化为知识条目格式，确保可检索和复用\n4. 知识条目应包含：问题标题、分类标签、适用场景、详细解答、相关链接等\n5. 输出格式要求：5条完整的FAQ知识条目文档",
+        "assigneeId": "14f2ab5d963f9f10",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "任务执行失败：PM执行异常: usage limit exceeded (2056)",
+    "error": "PM执行异常: usage limit exceeded (2056)",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 0,
+      "failed": 0,
+      "pending": 1
+    },
+    "failedAt": "2026-03-01T15:21:43.603Z"
+  },
+  "tokenUsage": 0,
+  "createdAt": "2026-03-01T15:21:34.674Z",
+  "updatedAt": "2026-03-01T15:21:43.603Z",
+  "subtasks": [
+    {
+      "id": "6323c2ab2dc6e9d8",
+      "title": "基于售后投诉整理5条FAQ并沉淀为知识条目",
+      "description": "任务目标：从最近一个月的售后投诉数据中，分析整理出最频繁的5个问题，编写为FAQ，并沉淀为标准化的知识条目。\n\n具体要求：\n1. 分析最近一个月的售后投诉数据，识别出最常见、最紧迫的5个问题\n2. 为每个问题编写清晰的FAQ，包括：问题描述、原因分析、解决方案\n3. 将FAQ标准化为知识条目格式，确保可检索和复用\n4. 知识条目应包含：问题标题、分类标签、适用场景、详细解答、相关链接等\n5. 输出格式要求：5条完整的FAQ知识条目文档",
+      "assigneeId": "14f2ab5d963f9f10",
+      "assigneeName": "知识管理员",
+      "status": "pending",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-01T15:21:43.161Z",
+      "updatedAt": "2026-03-01T15:21:43.161Z"
+    }
+  ]
+}

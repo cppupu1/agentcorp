@@ -1,0 +1,86 @@
+{
+  "label": "round13-pm-ops-relative-time",
+  "sessionId": "round13-ops-20260301-025537",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "dee550ddc02602a2"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    },
+    {
+      "name": "uses_time_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "dee550ddc02602a2",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 20971,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 4
+        },
+        {
+          "tool": "fc5f4c5bf43702d4__get-env",
+          "count": 2
+        }
+      ],
+      "hasFinanceTool": false,
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasTimeTool": true,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成API 5xx错误波动分析任务，对最近一周的数据进行了全面梳理，识别出高峰时段（凌晨2-4点和上午9-11点）的双峰分布模式，定位了多个异常波动点，从资源瓶颈、数据库、第三方依赖、代码配置等多个维度排查了根本原因，并提供了8步详细排查建议和分级告警策略。"
+    }
+  ]
+}

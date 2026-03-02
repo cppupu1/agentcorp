@@ -1,0 +1,18 @@
+[
+  {
+    "id": "5894f84a7cbe3849",
+    "sessionId": "round38-onboarding-20260301-140334",
+    "role": "user",
+    "content": "下周新人入职，直接安排一份前两周计划，按天写关键动作和产出。",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:03:34.630Z"
+  },
+  {
+    "id": "64009fb60c604f7b",
+    "sessionId": "round38-onboarding-20260301-140334",
+    "role": "assistant",
+    "content": "",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:03:34.630Z"
+  }
+]

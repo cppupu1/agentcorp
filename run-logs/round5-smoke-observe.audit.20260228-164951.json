@@ -1,0 +1,36 @@
+{
+  "taskId": "c0ae0148cf00c275",
+  "title": "回归观测-执行冒烟-2026-02-28",
+  "status": "completed",
+  "tokenUsage": 93957,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "pending",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 10,
+  "tools": [
+    {
+      "tool": "a6d0277e32709254__bocha_ai_search",
+      "count": 3
+    },
+    {
+      "tool": "ef64b3f65f2ab2a2__create_entities",
+      "count": 3
+    },
+    {
+      "tool": "ef64b3f65f2ab2a2__create_relations",
+      "count": 2
+    },
+    {
+      "tool": "ef64b3f65f2ab2a2__read_graph",
+      "count": 2
+    }
+  ],
+  "decisions": [],
+  "hasFinanceToolCall": false,
+  "hasWebToolCall": true,
+  "resultSummaryLinkCount": 0
+}

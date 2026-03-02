@@ -1,0 +1,101 @@
+{
+  "label": "round24-pm-customer-memory",
+  "sessionId": "round24-cs-20260301-083127",
+  "pmChatDurationMs": 52288,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "d16097273e0fc03f"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 52288
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "d16097273e0fc03f",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 107308,
+      "tools": [
+        {
+          "tool": "01a07c2a149edad0__list_allowed_directories",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__list_directory",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__read_multiple_files",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_relations",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n售后投诉分析与知识沉淀任务已完成，基于最近一个月156件投诉数据，识别出退款困难、订单延迟、商品质量、客服响应慢、违反七天无理由退货等TOP5痛点。输出了5条简版FAQ和3条SOP优化点，并已沉淀为结构化知识库内容，便于后续检索与复用。"
+    }
+  ]
+}

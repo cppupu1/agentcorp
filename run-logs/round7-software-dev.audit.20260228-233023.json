@@ -1,0 +1,44 @@
+{
+  "taskId": "902c1ec66c2e3302",
+  "title": null,
+  "status": "completed",
+  "timedOut": false,
+  "tokenUsage": 4663,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 0,
+  "tools": [],
+  "decisionCount": 6,
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 1
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 1
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 1
+    }
+  ],
+  "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成待办事项系统后端 API 最小可交付方案设计。方案包含：1）技术栈选择（Node.js + Express + PostgreSQL + Redis + JWT）；2）完整数据库设计（users和todos两张表，含ER图和建表SQL）；3）8个核心API接口（2个认证接口、6个待办事项CRUD接口），含详细请求响应示例和统一错误码；4）关键测试要点覆盖功能测试、边界测试和性能测试。方案聚焦MVP核心功能，满足最小可交付要求。"
+}

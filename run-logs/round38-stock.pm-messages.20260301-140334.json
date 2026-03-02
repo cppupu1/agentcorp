@@ -1,0 +1,18 @@
+[
+  {
+    "id": "155df0fa5c2a3c7c",
+    "sessionId": "round38-stock-20260301-140334",
+    "role": "user",
+    "content": "明早投研会要讲两只龙头最近表现，你直接安排搞定：贵州茅台和宁德时代近30天走势，给两条带日期的结论。",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:03:34.616Z"
+  },
+  {
+    "id": "89da94d08b1451be",
+    "sessionId": "round38-stock-20260301-140334",
+    "role": "assistant",
+    "content": "",
+    "toolCalls": null,
+    "createdAt": "2026-03-01T14:03:34.616Z"
+  }
+]

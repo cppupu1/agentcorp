@@ -1,0 +1,58 @@
+[
+  {
+    "id": "3d3905c07072a731",
+    "type": "tool_call",
+    "taskId": "5a7b9fca1fc9c6e2",
+    "subtaskId": "454873dfe4b66cf3",
+    "employeeId": "4c819ef6720571ae",
+    "toolName": "ef64b3f65f2ab2a2__search_nodes",
+    "input": {
+      "toolCallId": "call_function_a1b5n4p4up5d_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:36:31.958Z"
+  },
+  {
+    "id": "53d73394dbd3c1c1",
+    "type": "tool_call",
+    "taskId": "5a7b9fca1fc9c6e2",
+    "subtaskId": "454873dfe4b66cf3",
+    "employeeId": "4c819ef6720571ae",
+    "toolName": "ef64b3f65f2ab2a2__search_nodes",
+    "input": null,
+    "output": "{\n  \"entities\": [],\n  \"relations\": []\n}",
+    "isError": false,
+    "durationMs": 15,
+    "createdAt": "2026-03-02T07:36:31.973Z"
+  },
+  {
+    "id": "c09da09c6bc44756",
+    "type": "tool_call",
+    "taskId": "5a7b9fca1fc9c6e2",
+    "subtaskId": "454873dfe4b66cf3",
+    "employeeId": "4c819ef6720571ae",
+    "toolName": "ef64b3f65f2ab2a2__read_graph",
+    "input": {
+      "toolCallId": "call_function_28tdbk8rgm6r_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-02T07:36:34.991Z"
+  },
+  {
+    "id": "2c6a4ecd1fe797b4",
+    "type": "tool_call",
+    "taskId": "5a7b9fca1fc9c6e2",
+    "subtaskId": "454873dfe4b66cf3",
+    "employeeId": "4c819ef6720571ae",
+    "toolName": "ef64b3f65f2ab2a2__read_graph",
+    "input": null,
+    "output": "{\n  \"entities\": [\n    {\n      \"name\": \"竞品分析质量审核\",\n      \"entityType\": \"审核任务\",\n      \"observations\": [\n        \"任务：对竞品分析对比矩阵和差异化总结报告进行质量审核\",\n        \"审核标准：四维度完整、每平台5+核心功能点、3+商业洞察、免费/付费版区分\",\n        \"审核结果：全部通过\"\n      ]\n    },\n    {\n      \"name\": \"四维度完整性\",\n      \"entityType\": \"验收标准\",\n      \"observations\": [\n        \"维度一：商业洞察分析（3个洞察）✅\",\n        \"维度二：市场定位策略与优劣势分析（3个平台）✅\",\n        \"维度三：企业客户选型建议（决策矩阵+场景化建议）✅\",\n        \"维度四：风险提示（4类风险）✅\"\n      ]\n    },\n    {\n      \"name\": \"核心功能点数量\",\n      \"entityType\": \"验收标准\",\n      \"observations\": [\n        \"企业微信：8个功能类别（即时通讯、视频会议、文档协作、OA审批、打卡考勤、项目管理、CRM客户管理、企业邮箱）✅\",\n        \"钉钉：8个功能类别 ✅\",\n        \"飞书：8个功能类别 ✅\"\n      ]\n    },\n    {\n      \"name\": \"商业洞察数量\",\n      \"entityType\": \"验收标准\",\n      \"observations\": [\n        \"洞察一：生态绑定决定企业迁移成本 ✅\",\n        \"洞察二：定价策略折射平台定位 ✅\",\n        \"洞察三：AI能力与协作体验成差异化主战场 ✅\"\n      ]\n    },\n    {\n      \"name\": \"免费付费版区分\",\n      \"entityType\": \"验收标准\",\n      \"observations\": [\n        \"企业微信：免费版100人，付费版按需定制 ✅\",\n        \"钉钉：免费版50人，基础付费9800元/年（10人起）✅\",\n        \"飞书：免费版10人，基础付费120元/人/年 ✅\"\n      ]\n    },\n    {\n      \"name\": \"企业协作平台竞品分析对比矩阵\",\n      \"entityType\": \"竞品分析报告\",\n      \"observations\": [\n        \"核心功能对比矩阵：每个平台8个功能类别，每个类别列出具体功能点\",\n        \"目标用户群体对比：涵盖定位、客户类型、使用场景、生态优势\",\n        \"定价策略对比：包含各版本定价、收费模式、试用政策\",\n        \"市场份额与竞争地位：包含客户数、用户规模、市场覆盖率\",\n        \"数据时效性：2023-2024年市场数据\"\n      ]\n    },\n    {\n      \"name\": \"三大巨头差异化总结报告\",\n      \"entityType\": \"竞品分析报告\",\n      \"observations\": [\n        \"一、商业洞察（3个）：生态绑定、定价策略、AI能力与协作体验\",\n        \"二、各平台市场定位策略与优劣势分析（企业微信、钉钉、飞书）\",\n        \"三、企业客户选型建议（决策矩阵+场景化建议+决策流程）\",\n        \"四、风险提示（4类）：生态锁定、定价变动、功能同质化、数据合规\",\n        \"五、总结\"\n      ]\n    },\n    {\n      \"name\": \"Slave节点测试实体A\",\n      \"entityType\": \"测试节点\",\n      \"observations\": [\n        \"这是Slave节点创建的测试实体A\",\n        \"用于验证MCP工具调用功能\"\n      ]\n    },\n    {\n      \"name\": \"Slave节点测试实体B\",\n      \"entityType\": \"测试节点\",\n      \"observations\": [\n        \"这是Slave节点创建的测试实体B\",\n        \"与实体A存在关联关系\"\n      ]\n    },\n    {\n      \"name\": \"回归观测-执行冒烟-2026-02-28\",\n      \"entityT",
+    "isError": false,
+    "durationMs": 18,
+    "createdAt": "2026-03-02T07:36:35.009Z"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "data": {
+    "id": "188ab7861942fd26",
+    "teamId": "9dee101e8250bd63",
+    "teamName": "数据分析",
+    "title": "A股双标的趋势与风险分析（茅台/宁德时代）",
+    "description": "请完成贵州茅台（600519.SH）和宁德时代（300750.SZ）的近3个月趋势分析。要求：1）使用金融工具抓取真实日线/周线数据并做对比表；2）分析波动、成交量变化、阶段性拐点；3）给出1个月与3-6个月观察指标和风险清单。输出中文Markdown报告，标注数据日期。",
+    "status": "draft",
+    "mode": "auto",
+    "brief": null,
+    "teamConfig": null,
+    "plan": null,
+    "result": null,
+    "tokenUsage": 0,
+    "createdAt": "2026-02-28T15:08:42.708Z",
+    "updatedAt": "2026-02-28T15:08:42.708Z",
+    "subtasks": []
+  }
+}

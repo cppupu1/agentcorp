@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { qualityApi, type QualityTrendData, type QualityRankingItem, type QualityAlerts } from '@/api/client';
+import MarkdownContent from '@/components/MarkdownContent';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/toast';
@@ -187,7 +188,7 @@ function AlertsTab() {
             {data.criticalFindings.map(f => (
               <div key={f.id} className="bg-card rounded-3xl p-5 border border-border/40 shadow-[var(--shadow-sm)] md-transition">
                 <Badge variant="destructive">{t('quality.critical')}</Badge>
-                <p className="text-sm mt-1">{f.description}</p>
+                <MarkdownContent content={f.description} className="text-sm mt-1" />
                 <p className="text-xs text-muted-foreground mt-1">{new Date(f.createdAt).toLocaleString(locale === 'zh' ? 'zh-CN' : 'en-US')}</p>
               </div>
             ))}

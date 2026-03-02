@@ -1,0 +1,59 @@
+{
+  "id": "55a4310c771659e8",
+  "teamId": "44f35a7ea7a43a22",
+  "teamName": "数据分析",
+  "title": "股票走势对比分析",
+  "description": "对比贵州茅台和宁德时代近20个交易日走势，给2条带日期结论和1条风险提示",
+  "status": "executing",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "d53eee2fe213daf3",
+      "name": "数据项目经理"
+    },
+    "members": [
+      {
+        "id": "7050e37008c661c8",
+        "name": "数据分析师",
+        "taskPrompt": "负责数据探索分析与业务洞察输出"
+      },
+      {
+        "id": "ee6e1c55b558c1dd",
+        "name": "数据工程师",
+        "taskPrompt": "负责数据管道建设与数据基础设施维护"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "股票走势对比分析",
+        "description": "对比贵州茅台和宁德时代近20个交易日走势，给2条带日期结论和1条风险提示",
+        "assigneeId": "7050e37008c661c8",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": null,
+  "tokenUsage": 0,
+  "createdAt": "2026-03-02T04:29:33.332Z",
+  "updatedAt": "2026-03-02T04:36:21.382Z",
+  "subtasks": [
+    {
+      "id": "ff72a817ae11a86a",
+      "title": "股票走势对比分析",
+      "description": "对比贵州茅台和宁德时代近20个交易日走势，给2条带日期结论和1条风险提示",
+      "assigneeId": "7050e37008c661c8",
+      "assigneeName": "数据分析师",
+      "status": "running",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-03-02T04:29:56.102Z",
+      "updatedAt": "2026-03-02T04:34:28.638Z"
+    }
+  ]
+}

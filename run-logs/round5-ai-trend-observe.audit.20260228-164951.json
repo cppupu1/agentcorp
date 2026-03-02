@@ -1,0 +1,53 @@
+{
+  "taskId": "c59ea9178362bde9",
+  "title": "回归观测-AI行业趋势-2026-02-28",
+  "status": "completed",
+  "tokenUsage": 126156,
+  "subtaskTotal": 1,
+  "subtaskStatus": [
+    {
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "toolCallsTotal": 24,
+  "tools": [
+    {
+      "tool": "a6d0277e32709254__bocha_ai_search",
+      "count": 12
+    },
+    {
+      "tool": "a6d0277e32709254__bocha_web_search",
+      "count": 12
+    }
+  ],
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 2
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 2
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 2
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 2
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    }
+  ],
+  "hasFinanceToolCall": false,
+  "hasWebToolCall": true,
+  "resultSummaryLinkCount": 0
+}

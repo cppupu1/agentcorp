@@ -1,0 +1,80 @@
+{
+  "label": "round25-pm-legal-compliance",
+  "sessionId": "round25-legal-20260301-085720",
+  "pmChatDurationMs": 55121,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "7090bc91ced86066"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 55121
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "7090bc91ced86066",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 4880,
+      "tools": [],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成数据合规检查清单（简版）的起草任务。清单覆盖了数据采集、数据存储、访问控制、审计留痕、删除策略五个核心领域，每个维度包含5-8个关键检查点及可操作的实施建议，以GDPR、CCPA/CPRA、中国《个人信息保护法》和NIST SP 800-53 Rev.5等权威框架为依据，便于实际使用和合规自查。"
+    }
+  ]
+}

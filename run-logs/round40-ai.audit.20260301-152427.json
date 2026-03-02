@@ -1,0 +1,57 @@
+{
+  "label": "round40-ai",
+  "sessionId": "round40-ai-20260301-152427",
+  "kind": "ai",
+  "userPrompt": "请直接创建并启动任务：整理近7天AI技术行业趋势，输出3条结论，每条附日期和来源链接。",
+  "pmChatDurationMs": 10763,
+  "pmChatError": null,
+  "taskIds": [
+    "9172b0282c7552ab"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": true,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 10763
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "9172b0282c7552ab"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "9172b0282c7552ab",
+    "status": "completed",
+    "tokenUsage": 69071,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务执行遇到技术问题：子任务在尝试重新分配时出现系统状态异常（多次提示\"状态为completed，无需执行\"），导致无法完成近7天AI技术行业趋势的整理工作。已尝试2次重派发均未成功。"
+  }
+}

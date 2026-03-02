@@ -1,0 +1,85 @@
+{
+  "label": "round36-translation",
+  "sessionId": "round36-translation-20260301-130659",
+  "kind": "translation",
+  "userPrompt": "我今天要快速发通知，请你直接发起并启动任务：产出一个企业公告模板的中英双语简版，语义保持一致，先给可直接用的版本。",
+  "pmChatDurationMs": 38642,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "quick_create_task",
+      "count": 2
+    },
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "5deeca4e77568595"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "user_prompt_without_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 38642
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "5deeca4e77568595"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "not_waiting_for_user",
+      "ok": true
+    },
+    {
+      "name": "bilingual_structure",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "5deeca4e77568595",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 8391,
+    "decisionRows": 6,
+    "decisionRequiredCount": 0,
+    "decisionAutoResolvedCount": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告模板中英双语版的制作。交付物包含6大类企业公告模板：政策调整公告、业务变更公告、重要通知、放假通知、人事变动公告、办公地址变更通知。每个模板均提供中文和英文版本，语义保持一致，格式规范，可直接使用。"
+  }
+}

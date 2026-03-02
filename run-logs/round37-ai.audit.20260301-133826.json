@@ -1,0 +1,90 @@
+{
+  "label": "round37-ai",
+  "sessionId": "round37-ai-20260301-133826",
+  "kind": "ai",
+  "userPrompt": "请直接创建并启动任务：整理近7天AI技术行业趋势，输出3条结论，每条附日期和来源链接。",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "8d03d9c29f16125d"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": true,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 30400
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "8d03d9c29f16125d"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    },
+    {
+      "name": "ai_has_dates",
+      "ok": true,
+      "dateHits": 7
+    },
+    {
+      "name": "ai_has_links",
+      "ok": true,
+      "linkHits": 12
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "8d03d9c29f16125d",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 180731,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务完成。研究团队已完成近7天AI技术行业趋势的调研整理，输出了3条关键结论：1. 百度AI业务商业化突破：2025年营收达400亿元，同比增长48%，占总收入43%，标志着中国AI大模型商业化进入实质性落地阶段2. 全球AI竞争格局重塑：中国大模型在全球市场Token消耗占比增长421%，中国大模型凭借高性价比实现快速起量3. AI编程大战升级：OpenAI与Anthropic同日发布新模型，AI Agent正从\"编程助手\"向\"编程操作者\"进化所有结论"
+  }
+}

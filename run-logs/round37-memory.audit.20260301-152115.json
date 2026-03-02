@@ -1,0 +1,89 @@
+{
+  "label": "round37-memory",
+  "sessionId": "round37-memory-20260301-152115",
+  "kind": "memory",
+  "userPrompt": "请直接创建并启动任务：基于最近一个月售后投诉整理5条FAQ，并沉淀为知识条目。",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "4600d331880dc355"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 33165
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "4600d331880dc355"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": false,
+      "status": "failed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": false
+    },
+    {
+      "name": "memory_has_faq",
+      "ok": false,
+      "faqHits": 0
+    }
+  ],
+  "allChecksPassed": false,
+  "task": {
+    "taskId": "4600d331880dc355",
+    "status": "failed",
+    "timedOut": false,
+    "tokenUsage": 0,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "任务执行失败：PM执行异常: usage limit exceeded (2056)"
+  }
+}

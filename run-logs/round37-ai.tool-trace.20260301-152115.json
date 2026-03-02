@@ -1,0 +1,254 @@
+[
+  {
+    "id": "d1ba56254880fc95",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_b7711659ded64aaca7c87a65"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T15:22:03.961Z"
+  },
+  {
+    "id": "4abf5e0c3779cf44",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: collection\nURL: http://www.baguaai.com/\nDescription: 2025.01.06 Github Latest AI Repos\n2025.01.08 AI News\n2025.01.08 Github Latest AI Repos\n2025.01.07 Github Latest AI Repos\n2025.01.07 AI News\n2025.01.06 Github Latest AI Repos\n2025.01.08 AI News\n2024.07.25 Github Latest AI Repos\n2024.10.10 AI News\n Latest AI News\nAll\n2025.01.08 AI News\nAI News\n 2025 1 8 \n2025.01.08 Github Latest AI Repos\nGithub AI News\n 2025 1 8 \n2025.01.07 Github Latest AI Repos\nGithub AI News\n 2025 1 8 \n2025.01.07 AI News\nAI News\n 2025 1 8 \n2025.01.06 Github Latest AI Repos\nGithub AI News\n 2025 1 7 \n2025.01.06 AI News\nAI News\n 2025 1 7 \n2025.01.05 AI News\nAI News\n 2025 1 6 \n2025.01.05 Github Latest AI Repos\nGithub AI News\n 2025 1 6 \n2025.01.04 AI News\nAI News\n 2025 1 5 \n2025.01.04 Github Latest AI Repos\nGithub AI News\n 2025 1 5 \nRandomized sites Latest sites\nMasterpiece X\nPublished date: 2025-01-08T08:00:00+08:00\nSite name: www.baguaai.com\n\nTitle: The International Joint Conference on Artificial Intelligence (IJCAI)  Artificial Intelligence\nURL: https://dl.acm.org/doi/10.1016/0004-3702%2872%2990052-5\nDescription: article Share on The International Joint Conference on Artificial Intelligence (IJCAI) 0 citation 0 Downloads Metrics Last 12 Months 0 Last 6 weeks 0 Abstract No abstract available. Recommendations\nPublished date: 2025-01-06T04:40:17+08:00\nSite name: dl.acm.org\n\nTitle: 「AI」人工智能的发展阶段:ANI、AGI与ASI-CSDN博客\nURL: https://blog.csdn.net/qq_49443542/article/details/145076854\nDescription: 人工智能的发展历程充满了探索与挑战,但也取得了显著的成就。从ANI到AGI,再到ASI,每一个阶段都标志着技术上的重大突破和应用领域的拓展。未来,随着技术的不断进步和应...\nPublished date: 2025-01-11T14:23:21+08:00\nSite name: CSDN\n\nTitle: AGI时代AI才有突破AI人工智能_新浪科技_新浪网\nURL: https://finance.sina.com.cn/tech/roll/2025-01-06/doc-inecywaf2743884.shtml\nDescription: 最好不要去看有关论述人工智能的未来的文章,因为人工智能经历了半个世纪,却几乎是停滞不前,甚至是倒退。如今借助算法的突破,稍微产生了一点令人震惊的应用效果,却被人误认为是人工神经网络的作用,是复杂链接,是大算力,大模型所起的作用。殊不只背后是在偏离数学的基础理论的结果。 本文引用地址: 又因为即将进入 AGI 的时代的人工智能是一个循序渐近的发展过程,因此人们不可能预测出发展到一定阶段的真实状况,正如计算机时代的初期人们仅仅看到的是极其简单的“与”“或”“非”电路,当时谁也不",
+    "isError": false,
+    "durationMs": 628,
+    "createdAt": "2026-03-01T15:22:04.589Z"
+  },
+  {
+    "id": "1fafbd5e0e703db1",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_2dedd73882624696ad0299ea"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T15:22:08.430Z"
+  },
+  {
+    "id": "14aa33fc9be34083",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025 AI技术人才供需洞察报告\nURL: http://k.sina.com.cn/article_7857201856_1d45362c001902oy9k.html\nDescription:  一､AI技术人才需求分析 1､AI技术岗呈现明显高学历化､高薪化特征,远超整体职位 1)AI技术岗硕博人才需求占比近47%,比重远超整体岗位硕博人才需求 近一年(2024年2月-2025年1月)AI技术人才整体呈现平稳增长态势,比上一年(2023年2月-2024年1月)同比增长6.53%｡AI技术职位对学历的要求普遍较高,近一年明确要求硕博学历的职位占比总计46.98%,其中硕士学历需求42.72%,博士需求4.27%｡在整体职位中,要求硕博学历的职位占比仅为4.47%,其中硕士学历需求3.96%,博士需求0.51%｡这充分说明了AI技术岗位的准入门槛相对较高,对求职者的学术背景和专业知识有着较为严格的要求｡ 2)50万以上招聘年薪在AI技术职位中超3成,而在整体职位中不足1成 从AI技术职位的招聘薪资来看,50万年薪以上的职位占比最高,为30.97%;而整体职位中50万年薪以上的职位仅占5.36%,排名倒数第二｡AI技术岗高薪化较为突出,由于AI正值时代风口,人才稀缺,公开数据表明AI人才缺口到2023年为400万｡而AI技术人才则更为紧俏,因此其呈现人以稀为贵的特质｡ 2､AI技术岗位细分职能需求分析 1)算法工程师人才需求近7成,深度学习与机器学习名词上升跻身前五 从近一年AI技术人才需求的职能分布来看,算法工程师占比67.17%｡连续两年稳居第一;图像算法､机器视觉排名与上一年保持一致,位居第二､第三,占比｡\nPublished date: 2026-02-28T03:30:05+08:00\nSite name: 新浪网\n\nTitle: AIGCRank:2025年度AI网站总榜发布!\nURL: https://new.qq.com/rain/a/20260203A01IY400\nDescription:       全球市场格局      ChatGPT 稳守生态位,Gemini 开启狂飙模式      在消费级AI市场,ChatGPT 依然展示了其无可撼动的地位｡2025年,ChatGPT 年度总访问量达到惊人的 633.32 亿次,在极其庞大的基数下仍保持了 49.50% 的同比增长｡其流量表现从年初的 38.49 亿次稳步增长至年底的 55.17 亿次,证明了其作为用户首选AI入口的极高粘性｡      与此同时,Gemini 正在以挑战者的姿态全速追赶｡作为年度增长最显著的巨头产品,Gemini 年度访问量突破 92.30 亿次,同比增速高达 563.64%｡Google 通过 Gemini 系列新模型能力的爆发,实现了月活从 1 月的 2.67 亿次到 12 月 17.35 亿次的跨越式增长,成为全球范围内唯一能与 OpenAI 正面交锋的竞争对手｡\nPublished date: 2026-02-03T07:37:59+08:00\nSite name: 腾讯网\n\nTitle: 2025年AI报告\nURL: https://www.sohu.com/a/989906645_121101099\nDescription: 读:AI 使用率持续攀升,78% 的受访者表示所在组织至少在一个业务职能中应用 AI,生成式 AI 的应用增长尤为显著,71% 的组织已常规使用该技术,覆盖营销销售､产品开发等多个领域｡企业正通过组织架构调整挖掘 AI 价值,CEO 参与 AI 治理､重构工作流程成为提升盈利影响的关键因素｡AI 部署呈现选择性集中特征,风险合规与数据治理多采用集中化模式,技术人才与解决方案落地则以混合模式为主｡企业积极应对 AI 相关风险,加大对准确性､网络安全等风险的管控力度,同时通过招聘专业人才与员工再培训适配技术发展｡AI 对劳动力市场产生多维度影响,部分职能面临人员缩减压力,IT 与产品开发等领域则需求上升｡尽管 AI 在业务单元层面已实现营收增长与成本降低,但其对企业整体盈利的实质性影响尚未充分显现,行业仍处于价值释放的早期阶段｡\nPublished date: 2026-02-25T16:05:36+08:00\nSite name: 搜狐\n\nTitle: 2025 Report: AI Trends in Financial Management  Citizens\nURL: https://www.citizensbank.com/corporate-finance/insights/artificial-intelligence-trends-report-2025.aspx\nDe",
+    "isError": false,
+    "durationMs": 1086,
+    "createdAt": "2026-03-01T15:22:09.516Z"
+  },
+  {
+    "id": "dfb1d2c4216ab2b6",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_aad8e490cdc446c3a4ca493d"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T15:22:14.635Z"
+  },
+  {
+    "id": "9c9bc5d420b26a16",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_e0124c7174264f90919fa554"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T15:22:15.046Z"
+  },
+  {
+    "id": "f9f289f33bc7ec24",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_84a6b322389c4c29bc8f447f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T15:22:15.328Z"
+  },
+  {
+    "id": "aaefad6340c1c4fb",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_a9cfb99e2d6d4590ba48a6aa"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T15:22:15.632Z"
+  },
+  {
+    "id": "a32e29cc35952343",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "\\[2310.06167\\] Predictable Artificial Intelligence                               \n\n# Computer Science > Artificial Intelligence\n\n**arXiv:2310.06167** (cs)\n\n\\[Submitted on 9 Oct 2023 ([v1](https://arxiv.org/abs/2310.06167v1)), last revised 7 Jan 2025 (this version, v3)\\]\n\n# Title:Predictable Artificial Intelligence\n\nAuthors:[Lexin Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+L), [Pablo A. Moreno-Casares](https://arxiv.org/search/cs?searchtype=author&query=Moreno-Casares,+P+A), [Fernando Martínez-Plumed](https://arxiv.org/search/cs?searchtype=author&query=Mart%C3%ADnez-Plumed,+F), [John Burden](https://arxiv.org/search/cs?searchtype=author&query=Burden,+J), [Ryan Burnell](https://arxiv.org/search/cs?searchtype=author&query=Burnell,+R), [Lucy Cheke](https://arxiv.org/search/cs?searchtype=author&query=Cheke,+L), [Cèsar Ferri](https://arxiv.org/search/cs?searchtype=author&query=Ferri,+C), [Alexandru Marcoci](https://arxiv.org/search/cs?searchtype=author&query=Marcoci,+A), [Behzad Mehrbakhsh](https://arxiv.org/search/cs?searchtype=author&query=Mehrbakhsh,+B), [Yael Moros-Daval](https://arxiv.org/search/cs?searchtype=author&query=Moros-Daval,+Y), [Seán Ó hÉigeartaigh](https://arxiv.org/search/cs?searchtype=author&query=h%C3%89igeartaigh,+S+%C3%93), [Danaja Rutar](https://arxiv.org/search/cs?searchtype=author&query=Rutar,+D), [Wout Schellaert](https://arxiv.org/search/cs?searchtype=author&query=Schellaert,+W), [Konstantinos Voudouris](https://arxiv.org/search/cs?searchtype=author&query=Voudouris,+K), [José Hernández-Orallo](https://arxiv.org/search/cs?searchtype=author&query=Hern%C3%A1ndez-Orallo,+J)\n\nView a PDF of the paper titled Predictable Artificial Intelligence, by Lexin Zhou and 14 other authors\n\n[View PDF](/pdf/2310.06167) [HTML (experimental)](https://arxiv.org/html/2310.06167v3)\n\n> Abstract:We introduce the fundamental ideas and challenges of Predictable AI, a nascent research area that explores the ways in which we can anticipate key validity i",
+    "isError": false,
+    "durationMs": 1277,
+    "createdAt": "2026-03-01T15:22:16.323Z"
+  },
+  {
+    "id": "854b21ab8969ab23",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "\\[2412.04604\\] ARC Prize 2024: Technical Report                               \n\n# Computer Science > Artificial Intelligence\n\n**arXiv:2412.04604** (cs)\n\n\\[Submitted on 5 Dec 2024 ([v1](https://arxiv.org/abs/2412.04604v1)), last revised 8 Jan 2025 (this version, v2)\\]\n\n# Title:ARC Prize 2024: Technical Report\n\nAuthors:[Francois Chollet](https://arxiv.org/search/cs?searchtype=author&query=Chollet,+F), [Mike Knoop](https://arxiv.org/search/cs?searchtype=author&query=Knoop,+M), [Gregory Kamradt](https://arxiv.org/search/cs?searchtype=author&query=Kamradt,+G), [Bryan Landers](https://arxiv.org/search/cs?searchtype=author&query=Landers,+B)\n\nView a PDF of the paper titled ARC Prize 2024: Technical Report, by Francois Chollet and 3 other authors\n\n[View PDF](/pdf/2412.04604) [HTML (experimental)](https://arxiv.org/html/2412.04604v2)\n\n> Abstract:As of December 2024, the ARC-AGI benchmark is five years old and remains unbeaten. We believe it is currently the most important unsolved AI benchmark in the world because it seeks to measure generalization on novel tasks -- the essence of intelligence -- as opposed to skill at tasks that can be prepared for in advance. This year, we launched ARC Prize, a global competition to inspire new ideas and drive open progress towards AGI by reaching a target benchmark score of 85\\\\%. As a result, the state-of-the-art score on the ARC-AGI private evaluation set increased from 33\\\\% to 55.5\\\\%, propelled by several frontier AGI reasoning techniques including deep learning-guided program synthesis and test-time training. In this paper, we survey top approaches, review new open-source implementations, discuss the limitations of the ARC-AGI-1 dataset, and share key insights gained from the competition.\n\n| Subjects: | Artificial Intelligence (cs.AI) |\n|---|---|\n| Cite as: | arXiv:2412.04604 [cs.AI] |\n|  | (or arXiv:2412.04604v2 [cs.AI] for this version) |\n|  | https://doi.org/10.48550/arXiv.2412.04604Focus to learn morearXiv-issued DOI via DataCite",
+    "isError": false,
+    "durationMs": 1230,
+    "createdAt": "2026-03-01T15:22:16.558Z"
+  },
+  {
+    "id": "57d60c8b4de79b85",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "  安全验证   \n\n# 进入网站\n\n为提升会员帐户安全，我们需与您确认此网页操作行为确实出自您本人。\n\n为什么需要经过「我不是机器人」的验证? 在您浏览网页过程中，可能有以下几种原因启动此验证程式：\n\n*   系统侦测到您浏览网页的速度异常，为非正常操作。\n*   您的电脑设定/软体阻挡网页 Javascript 程式运行。\n*   您使用的IP位址(IP:113.102.166.16)与网路机器人相同。\n\n*   无法操作验证页面? 联络我们\n\n开始验证",
+    "isError": false,
+    "durationMs": 950,
+    "createdAt": "2026-03-01T15:22:16.581Z"
+  },
+  {
+    "id": "a81e4b3ab29e61e7",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "OpenAI公布25年目标，人工智能AIETF(515070)涨超1.3%，连续5日净流入超2.5亿元！ | 每经网                  ![每日经济新闻](http://static.nbd.com.cn/images/app/nbd_icon_300_normal.png) \n\n \n\n*   [每经网首页](https://www.nbd.com.cn)丨\n*   [宏观](https://economy.nbd.com.cn)丨\n*   [金融](https://finance.nbd.com.cn)丨\n*   [公司](https://industry.nbd.com.cn)丨\n*   [视频](https://www.nbd.com.cn/video/)丨\n*   [券商](https://stocks.nbd.com.cn)丨\n*   [IPO](https://www.nbd.com.cn/kechuang/)丨\n*   [基金](https://money.nbd.com.cn)丨\n*   [汽车](https://auto.nbd.com.cn)丨\n*   [房产](https://www.nbd.com.cn/fangchan/)丨\n*   [新文化](https://movie.nbd.com.cn)丨\n*   [未来商业](https://tmt.nbd.com.cn)丨\n*   [文创通](https://tfcci.nbd.com.cn/)丨\n*   [城市](https://cd.nbd.com.cn)丨\n*   [每经商学院](https://www.nbd.com.cn/corp/nbdCollege/dist/index.html#/)\n\n[![每经网](http://static.nbd.com.cn/images/nbd_v5/big_logo.png \"每经网\")](http://www.nbd.com.cn)\n\n     ![](http://static.nbd.com.cn/images/app/nbd_icon_300_normal.png)   \n\n[基金快讯](https://www.nbd.com.cn/columns/1658/)\n\n[每经网首页](https://www.nbd.com.cn) > [基金快讯](https://www.nbd.com.cn/columns/1658/) > 正文\n\n# OpenAI公布25年目标，人工智能AIETF(515070)涨超1.3%，连续5日净流入超2.5亿元！\n\n每日经济新闻 2025-01-07 10:17:03\n\n当地时间1月6日，OpenAI 首席执行官Sam Altman在社交媒体上公布了 2025 年 OpenAI 即将发布的技术产品。分别是：AGI（通用人工智能）、Agents（智能体）、更好的 GPT-4o 升级版、更好的记忆存储、更好的上下文窗口、成人模式、深度研究特色功能、更好的Sora、更好的个性化定制。\n\n今日AI板块延续上涨趋势，截至10:07，人工智能AIETF（515070）上涨1.39%，持仓股中瑞芯微、光环新网涨超6%，恒玄科技、浪潮信息、科沃斯等个股跟涨。2025年开年以来，人工智能AIETF（515070）累计涨幅4.28%。资金方面，人工智能AIETF（515070）近5个交易日持续流入，合计“吸金”超2.5亿元！\n\n国信证券认为，展望2025年，人工智能有望赋能国内互联网巨头打开新增长空间。2024年海外科技巨头在人工智能的产业趋势下，我们观察到AI主要对巨头的业务存在三方面趋势性的影响：1）加速企业上云趋势，拉动传统云业务增长；2）AI带动数字广告行业需求增长。主要体现在广告推荐系统精准度、和素材制作效率的提升，以及扩充原有搜索场景和功能带动广告位增长；3）AI Coding提效空间大，Capex或替代人工成本。程序员作为互联网企业的核心人力资产，AI有望充分激发互联网企业加速产品开发效率，和降低开发成本。\n\n人工智能AIETF（515070）紧密跟踪中证人工智能主题指数，中证人工智能主题指数选取50只业务涉及为人工智能提供基础资源、技术以及应用支持的上市公司证券作为指数样本，以反映人工智能主题上市公司证券的整体表现。人工智能AIETF（515070），场外联接(A类：008585；C类：008586；华夏中证人工智能主题ETF联接D：021580)。机器人ETF（562500），场外联接基金（A类018344/C类018345）。\n\n如需转载请与《每日经济新闻》报社联系。  \n未经《每日经济新闻》报社授权，严禁转载或镜像，违者必究。\n\n读者热线：4008890008",
+    "isError": false,
+    "durationMs": 1990,
+    "createdAt": "2026-03-01T15:22:16.625Z"
+  },
+  {
+    "id": "5e765223412f9847",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_dd4b2cd3418d4d41b054a391"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T15:22:18.642Z"
+  },
+  {
+    "id": "50d8fa34e6bb4d04",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: OpenAI公布2025年新产品，包括智能体和AGI\nURL: https://new.qq.com/rain/a/20250106A02ZRL00?media_id=&suid=\nDescription: PANews 1月6日消息,据财联社报道,OpenAI首席执行官Sam Altman于上周公布了2025年即将发布的技术产品。分别是:AGI(通用人工智能)、Agents(智能体)、更好的GPT-4o升级版、更好的记忆存储、更好的上下文窗口、“Grow up mode”(成人模式)、深度研究特色功能、更好的Sora、更好的个性化定制。\n举报\n3427支股票的诊断结果已出,散户赶紧输入代码,免费领取诊股报告\n广告 老卢说财\n了解详情\n评论 0 文明上网理性发言,请遵守 《新闻评论服务协议》\n已显示所有评论\n3328只股票诊断结果已更新,输入代码,查看你的股票\n作者其他文章\n曾交易TRUMP亏损1572万美元的某巨鲸再度买入超33.3万枚TRUMP\n4分钟前\n印度五大银行之一Axis Bank将采用摩根大通的区块链支付\n9分钟前\n00:21\nPublished date: 2025-01-06T18:08:00+08:00\nSite name: 腾讯网\n\nTitle: OpenAI 2025年愿景揭示:AI加速行业变革,投资机会应运而生_人工智能_应用_工具\nURL: https://www.sohu.com/a/846178349_121902920\nDescription: 当地时间1月6日,OpenAI首席执行官Sam Altman在社交媒体上正式发布了该公司在2025年的技术产品愿景,其中包括通用人工智能(AGI)、智能体(Agents)、升级版GPT-4o、全新的记忆存储、改进的上下文窗口、成人模式、深度研究特色功能、以及个性化定制等。\nPublished date: 2025-01-07T10:17:00+08:00\nSite name: 搜狐\n\nTitle: 2025年:通用人工智能的崭新篇章即将开启_人类_OpenAI_挑战性\nURL: https://www.sohu.com/a/847320813_122004016\nDescription: 2025年渐渐在视野中浮现,伴随着通用人工智能 (AGI) 的逐步成熟,一个新的时代即将开启。 ### AGI的曙光 AGI,作为实现人类梦想的终极目标,意味着能够像人类一般进行思考和解决问题的智能体。如今,当我们步入2025年,AGI的雏形已经现出端倪,它会逐步演化,带来深刻的社会转变。OpenAI的创始人Sam Altman及其前首席科学家Ilya\nPublished date: 2025-01-09T23:19:00+08:00\nSite name: 搜狐\n\nTitle: OpenAI CEO日前发文称,已知晓如何构建AGI山姆奥特曼agi初创公司人工智能openai_网易订阅\nURL: https://www.163.com/dy/article/JL85VTV00511BE1V.html\nDescription: 用人工智能(AGI)。他表示,“我们相信,到2025年,我们可能会看到第一批AI Agent可以‘加入劳动力队伍’,并实质性地改变公司的产出。我们仍然相信,不断将出色的AI工具交到人们手中,将带来广泛实质成果”。同时他还强调,OpenAI的目标已转向“真正意义上的超级智能”,并表示,“我们喜欢我们目前的产品,但我们是为了那辉煌的未来而来。有了超级智能,我们就能做任何其他事情。\nPublished date: 2025-01-06T18:12:12+08:00\nSite name: 网易\n\nTitle: 2025：迈入通用人工智能新纪元\nURL: https://m.sohu.com/a/847320819_121798711/?pvid=000115_3w_a\nDescription: 随着技术发展达到前所未有的速度,我们正在进入通用人工智能(AGI)的光谱。2025年即将到来,这一年将标志着人类历史的重大转折点。全球科技巨头如OpenAI的Sam Altman和Ilya Sutskever都预见到AGI将彻底改变我们工作、生活和思维的方式。AGI究竟是什么?它不仅仅是一个工具,而是代表着人类进入历史新阶段的核心基础。在这一影响深远的技术革命中,AGI将成为一种能够执行人类心智工作的智能系统,进而改变我们的工作模式和社会结构。\nAGI的黎明 \nAGI的概念,即一个能够执行人类智力任务的高度自主的系统,早已被视为人工智能的终极目标。随着OpenAI发布越来越强大的推理模型,我们可以看到AGI的曙光逐渐显现。特别是在2024年9月,Alt",
+    "isError": false,
+    "durationMs": 414,
+    "createdAt": "2026-03-01T15:22:19.056Z"
+  },
+  {
+    "id": "04c217f34ae7094d",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_8d40b3fdaaf14688b365057c"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T15:22:19.433Z"
+  },
+  {
+    "id": "6231d1925bb71d8e",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 斯坦福:2023年人工智能指数报告(中文版).docx-原创力文档\nURL: https://max.book118.com/html/2025/0109/8014066063007017.shtm\nDescription: 人工 智能 指数报告 2023 HAI三 2023年AI指数报告简介 来自联合导演 十大要点 1 1 2. 2. 4 几乎在, 几乎在, 十大要点(续)在。 8 9 9 10 指导委员会 工作人员和研究人员 如何引用这份报告 公开数据和工具 AIIndex和StanfordHAI 支持合作伙伴 Google SOpenAI NETBASEQUID 分析和研究合作伙伴 GitHub goviniLLightcastLinkedin 贡献者 组织 目录 报告强调 研发展 MAhMM 研发 概述 章强调了 一械 1.1出版物 概述 一级 AI期刊出版物 由 一里 AI会议出版物 一级 人工智能的存储库 mu 顶级出版机构 一预 ** 一里 1.2重要机器学习系统的趋 势 一般的机器 学习系统 T十 T十8aWN:十0十国WK可I 日 日 一预 大型语言和多模态 贺猬 贺 猬 滑* 5一预 一预 1.3AI 1.4开源AI软件 项目 一致 星星 燕 技术性能 技术性能 1 1 m m m1 m 1 概述 章强调了 章强调了 2.12022年的新动向:时间线 smingorgh0g0 年5月 年5月 段既 Gim l 年10 臭 2.2计算机视觉-图像 图像分类 人脸检测与识别 Deepfake检测 人体姿态估计 语义分割 医学图像分割 对象检测 图像生成 近距离观察图像生成的进展 能力的多模态推理系统的兴起 2.3计算机视觉-视频 活动识别 hh 2.4语言 英语语言理解 语言模型到底变得好了多少? 声, 更国的我 -国oen 天型语言模型中的规划和推理 文本摘要 自然语言推理 S 多任务语言理解 机器翻译(MT) 2.5讲话 耳语 2.6强化学习 聘黜 聘 黜 I 5录 基准饱和\nPublished date: 2025-01-11T17:09:22+08:00\nSite name: 原创力文档\n\nTitle: 2024年人工智能发展全景：突破、挑战与未来展望\nURL: https://m.sohu.com/a/846141030_121956422/?pvid=000115_3w_a\nDescription: 引言\n2024年是人工智能(AI)领域的重要一年。伴随着技术的突破与广泛应用,AI正逐步融合到我们生活的方方面面。从改善行业效率到促进科学研究,人工智能带来了颠覆性的变革。然而,在辉煌的成就背后,AI的发展同样伴随着挑战与困惑。本文将深入分析斯坦福大学李飞飞教授团队发布的2024年人工智能发展报告,总结这一领域近年来的核心进展与面临的挑战,展望未来的发展趋势。\n核心信息总结\n在过去的一年中,AI在图像分类、语言理解等特定任务上超越了人类的表现,展示了其在处理大量信息与复杂数据时的强大能力。然而,面对更为复杂综合的任务,AI仍显示出明显的局限性。这使得许多专家认为,AI的智能程度并不能简单地与人类智能相提并论。\n与此相比,工业界在AI研究中的主导地位愈加明显。诸多知名公司在机器学习模型的研发上裂变出众多创新应用。例如,OpenAI的GPT-4与Google的Gimini等模型,均在多模态处理能力上达到了新的高度。但值得注意的是,训练这样大型的模型所需的资金投入相当庞大,GPT-4的研发成本约7800万美元,而Gimini更是高达1.91亿美元。\n在全球范围内,美国、中国和欧洲成为AI模型研发的主要力量,其中,中国在AI专利申请数量上持续领先,显示出其在此行业的创新潜力。然而,尽管发展迅速,当前行业内对AI模型可靠性评估缺乏统一标准,这也为未来的产业应用留下了隐忧。\nAI研究与发展\nAI研究主导地位的现状\n本年度的AI研究逐渐演变为以工业界为主导的态势。众多科技巨头通过大规模资金投入推动了AI相关技术的快速进步。同时,开源模型的数量也呈现出明显的增长,吸引越来越多的研究者和开发者参与其中。\n与历史数据对比\n从2010年至2022年,AI相关论文的发表数量逐年上升,尤其是在机器学习与深度学习领域。根据统计数据,美国在发布优秀的机器学习模型数量上依然领跑全球,展现出其深厚的技术积累\nPublished date: 2025-01-07T16:01:00+08:00\nSite name: 手机搜狐网\n\nTitle: 揭开AAAI 2025 自动化所新作的技术革新面纱_人工智能_用户_模型\nURL: https://www.sohu.com/a/847641091_122118475\nDescript",
+    "isError": false,
+    "durationMs": 270,
+    "createdAt": "2026-03-01T15:22:19.703Z"
+  },
+  {
+    "id": "6eff566cd5929bde",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_49c506e2ee044735ac3a854f"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T15:22:19.760Z"
+  },
+  {
+    "id": "578cfddcb773618e",
+    "type": "tool_call",
+    "taskId": "76809df4472d090f",
+    "subtaskId": "a79cae9feb87741b",
+    "employeeId": "97ad71c766c6140c",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 本周AI领域重大新闻:技术进步与行业突破引领未来发展_3D快讯 - 大屏时代\nURL: https://www.dapingtime.com/article/642.html\nDescription: 2025年1月10日,随着人工智能技术的飞速发展,本周多项AI领域的重大新闻引起了广泛关注。从微软和谷歌的AI平台升级,到中国发布的全球首个AI治理框架,再到Meta推出的语音助手Mina,AI正以前所未有的速度渗透到各行各业,为未来的技术生态和社会发展带来了深远影响。 1. 微软Azure AI功能大升级,推动大模型训练和应用效率提升 2025年1月10日,微软宣布对其Azure AI平台进行了一系列重要功能更新,显著提升了大规模模型训练和云端推理能力。新功能将有助于AI开发者在处理复杂任务时提高效率,尤其是在超大规模数据集的处理和训练方面。微软通过优化GPU和TPU硬件,致力于减少AI开发的时间和成本,为全球开发者提供更加灵活的云端AI解决方案。 Azure AI的新自动化调优工具也帮助开发者快速调试和优化模型参数,提高了从实验室到实际应用的转化效率。此举预示着云计算与AI的融合将为未来的技术应用提供更坚实的基础。 2. 谷歌发布Gemini 1.5,AI多模态能力再升级 2025年1月9日,谷歌推出了全新的AI模型——Gemini 1.5。该模型专注于提升多模态数据的理解和生成能力,包括文本、图像、视频和音频等多种输入形式。Gemini 1.5能够在医疗影像分析、金融数据预测和视频生成等复杂任务中展现出色的表现。 据谷歌介绍,Gemini 1.5在跨领域推理和任务适应性方面实现了显著提升,未来该模型将成为推动AI智能化和全自动化服务的核心工具。随着模型的发展,谷歌预计将进一步推动AI技术在多领域的突破应用。 3. OpenAI推出自定义指令功能,增强ChatGPT个性化体验 2025年1月8日,OpenAI宣布为其ChatGPT模型推出了自定义指令功能,允许用户根据需求调整AI的行为和输出风格。这一新功能能够让用户轻松定制ChatGPT的语气、知识专注点、对话时长等内\nPublished date: 2025-01-12T19:48:58+08:00\nSite name: www.dapingtime.com\n\nTitle: 微软发布2025年六大AI预测：AI模型将变得更加强大和有用\nURL: http://t.cj.sina.cn/articles/view/5999834179/1659e344302001ga8w?finpagefr=p_104\nDescription: 极客网·人工智能1月6日 微软在2025年对人工智能(AI)的未来做出了六项重要预测,包括AI模型将变得更加强大和有用、AI Agents将彻底改变工作方式、AI伴侣将支持日常生活、AI资源的利用将更高效、测试与定制是开发AI的关键、AI将加速科学研究突破。 以下是微软的预测及其潜在影响的详细解读: 生成海报 (免责声明:本网站内容主要来自原创、合作伙伴供稿和第三方自媒体作者投稿,凡在本网站出现的信息,均仅供参考。本网站将尽力确保所提供信息的准确性及可靠性,但不保证有关资料的准确性及可靠性,读者在使用前请进一步核实,并对任何自主决定的行为负责。本网站对有关资料所引致的错误、不确或遗漏,概不负任何法律责任。 任何单位或个人认为本网站中的网页或链接内容可能涉嫌侵犯其知识产权或存在不实内容时,应及时向本网站提出书面权利通知或不实情况说明,并提供身份证明、权属证明及详细侵权或不实情况证明。本网站在收到上述法律文件后,将会依法尽快联系相关文章源头核实,沟通删除相关内容或断开相关链接。 ) 科技圈AI速递:昨夜今晨科技热点一览丨2025年2月8日 2月8日 06:54 | 新浪AI 科技圈 280 2月7日 22:26 | 环球市场播报 乐视风波 软银 微软 54 评论丨 我国人工智能发展还需要哪些突破? 2月8日 01:01 | 21世纪经济报道 智慧城市 人工智能 DeepSeek因服务器紧张暂停充值 联想集团携AI基建概念节后累涨逾30% 2月7日 15:40 | 市场资讯 ai技术 联想集团 服务器 今天 07:01 | 市场资讯 机器学习 医疗 2月8日 06:47 | 环球网 法国 人工智能 数据中心 85 AI顿悟时刻 2月8日 17:06 | 媒体滚动 ai技术 人工智能 开源 DeepSeek来了,算力还重要吗? 今天 12:00 | 媒体速报 ai技术 人工智能 开\nPublished date: 2025-01-06T16:38:00+08:00\nSite name: 财经头条\n\nTitle: 人工智能周报（25年第1周）-",
+    "isError": false,
+    "durationMs": 247,
+    "createdAt": "2026-03-01T15:22:20.008Z"
+  }
+]

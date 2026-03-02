@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-03-01T08:11:21.983732Z",
+  "runLabel": "round24-20260301-081121",
+  "sessions": [
+    {
+      "label": "round24-pm-stock-compare",
+      "sessionId": "round24-stock-20260301-081121",
+      "evidence": "run-logs/round24-pm-stock-compare.audit.20260301-081121.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round24-pm-ai-trend",
+      "sessionId": "round24-ai-20260301-081121",
+      "evidence": "run-logs/round24-pm-ai-trend.audit.20260301-081121.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round24-pm-customer-memory",
+      "sessionId": "round24-cs-20260301-081121",
+      "evidence": "run-logs/round24-pm-customer-memory.audit.20260301-081121.json",
+      "allCompleted": true,
+      "allChecksPassed": false
+    },
+    {
+      "label": "round24-pm-content",
+      "sessionId": "round24-content-20260301-081121",
+      "evidence": "run-logs/round24-pm-content.audit.20260301-081121.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round24-pm-incident",
+      "sessionId": "round24-incident-20260301-081121",
+      "evidence": "run-logs/round24-pm-incident.audit.20260301-081121.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round24-pm-onboarding",
+      "sessionId": "round24-onboarding-20260301-081121",
+      "evidence": "run-logs/round24-pm-onboarding.audit.20260301-081121.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round24-pm-ops-weekly",
+      "sessionId": "round24-ops-20260301-081121",
+      "evidence": "run-logs/round24-pm-ops-weekly.audit.20260301-081121.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    }
+  ]
+}

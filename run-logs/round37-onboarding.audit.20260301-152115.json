@@ -1,0 +1,81 @@
+{
+  "label": "round37-onboarding",
+  "sessionId": "round37-onboarding-20260301-152115",
+  "kind": "onboarding",
+  "userPrompt": "请直接创建并启动任务：设计新员工入职前两周计划，按天列关键动作与产出。",
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "cad6120b80d50dc3"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 25904
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "cad6120b80d50dc3"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "onboarding_timeline",
+      "ok": true,
+      "dayHits": 40
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "cad6120b80d50dc3",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 6044,
+    "decisionRequired": 0,
+    "decisionAutoResolved": 0,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n新员工入职前两周详细计划已完成设计，涵盖了第1周（环境融入与基础认知）和第2周（实践参与与价值创造）的全部10天内容。每一天都详细列出了关键动作（含具体时间安排）和明确的产出物，确保新员工能快速融入团队并开始产生价值。计划还包含了导师支持、HR跟进和成果追踪等保障机制。"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "label": "round23-pm-customer-memory",
+  "sessionId": "round23-cs-20260301-080320",
+  "pmChatDurationMs": 19448,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "88931040ba8a6789"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 2
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 19448
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "88931040ba8a6789",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 76859,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_ai_search",
+          "count": 4
+        },
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成售后投诉FAQ知识沉淀任务。基于最近一个月的售后投诉数据（中消协及黑猫投诉平台数据），分析了售后服务占比27.68%、客服态度问题超40%、质量问题22%等关键数据，筛选出最重要的5个高频问题：1）客服态度问题 2）产品质量问题 3）退货退款困难 4）售后服务响应慢/推诿 5）虚假宣传问题。为每个问题编写了简洁明了的FAQ答案，并已整理为知识条目录入系统，便于客服人员快速查询使用，有效提升处理效率和客户满意度。"
+    }
+  ]
+}

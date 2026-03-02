@@ -1,0 +1,39 @@
+{
+  "taskId": "349a53e26cd7036b",
+  "toolCallsTotal": 18,
+  "toolErrorsTotal": 0,
+  "tools": [
+    {
+      "tool": "a6d0277e32709254__bocha_ai_search",
+      "count": 18,
+      "errors": 0
+    }
+  ],
+  "decisions": [
+    {
+      "action": "assign_subtask",
+      "count": 2
+    },
+    {
+      "action": "assign_subtask_result",
+      "count": 2
+    },
+    {
+      "action": "complete_task",
+      "count": 1
+    },
+    {
+      "action": "complete_task_result",
+      "count": 1
+    },
+    {
+      "action": "wait_subtasks",
+      "count": 2
+    },
+    {
+      "action": "wait_subtasks_result",
+      "count": 2
+    }
+  ],
+  "askUserDecisionEvents": 0
+}

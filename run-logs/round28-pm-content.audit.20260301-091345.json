@@ -1,0 +1,75 @@
+{
+  "label": "round28-pm-content",
+  "sessionId": "round28-content-20260301-091345",
+  "pmChatDurationMs": 28753,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "20db4e9e5272d77b"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 28753
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "20db4e9e5272d77b",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 2144,
+      "tools": [],
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n企业AI助手发布文案创作任务已圆满完成。文案策划共交付了3篇内容：1篇官网/公众号发布短文（约450字），系统阐述了智汇企业AI助手的四大核心能力及价值主张；2条社媒文案分别针对微博和小红书平台特点定制，内容简洁有力，搭配了合适的话题标签。所有文案均符合专业、简洁、有吸引力的风格要求，突出了AI助手提升工作效率的核心价值。"
+    }
+  ]
+}

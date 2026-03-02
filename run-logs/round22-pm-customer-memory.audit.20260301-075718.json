@@ -1,0 +1,111 @@
+{
+  "label": "round22-pm-customer-memory",
+  "sessionId": "round22-cs-20260301-075718",
+  "pmChatDurationMs": 36210,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "f6f70dbbcf2e760f"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 2
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 36210
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "f6f70dbbcf2e760f",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 232843,
+      "tools": [
+        {
+          "tool": "01a07c2a149edad0__read_text_file",
+          "count": 4
+        },
+        {
+          "tool": "01a07c2a149edad0__list_allowed_directories",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__list_directory",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__read_multiple_files",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_relations",
+          "count": 2
+        },
+        {
+          "tool": "list_allowed_directories",
+          "count": 1
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": true,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成售后投诉数据分析任务，基于最近一个月（2025-02-05至2025-03-05）的156件投诉数据，识别出5个高频问题并提炼了对应FAQ，提出了3条可落地的SOP优化建议，并完成了知识库结构化沉淀。预期通过优化措施可使客服响应时间从8分钟降至5分钟，退款投诉减少40%，用户满意度从2.8分提升至3.5分。"
+    }
+  ]
+}

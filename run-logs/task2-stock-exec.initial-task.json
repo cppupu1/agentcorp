@@ -1,0 +1,318 @@
+{
+  "id": "188ab7861942fd26",
+  "teamId": "9dee101e8250bd63",
+  "teamName": "数据分析",
+  "title": "贵州茅台与宁德时代近3个月股价趋势分析",
+  "description": "请完成贵州茅台（600519.SH）和宁德时代（300750.SZ）的近3个月趋势分析。要求：1）使用金融工具抓取真实日线/周线数据并做对比表；2）分析波动、成交量变化、阶段性拐点；3）给出1个月与3-6个月观察指标和风险清单。输出中文Markdown报告，标注数据日期。",
+  "status": "executing",
+  "mode": "auto",
+  "brief": {
+    "title": "贵州茅台与宁德时代近3个月股价趋势分析",
+    "objective": "通过对贵州茅台（600519.SH）和宁德时代（300750.SZ）近3个月的真实交易数据进行对比分析，揭示两只股票的波动特征、成交量变化规律及关键拐点，为投资决策提供数据驱动的参考依据。",
+    "deliverables": "1. 数据采集模块：两只股票近3个月日线和周线完整数据集（包含开高低收、成交量等字段）\n2. 对比分析表：关键指标横向对比表（涨跌幅、波动率、成交额、换手率等）\n3. 趋势分析报告：包含波动特征分析、成交量变化趋势、阶段性拐点识别（中文Markdown格式）\n4. 观察指标清单：1个月短期观察指标与3-6个月中期观察指标\n5. 风险清单：基于数据分析提炼的主要风险点及预警信号\n6. 注明数据日期的完整分析报告",
+    "acceptanceCriteria": "1. 数据来源真实可追溯，使用合规金融工具抓取\n2. 对比表数据完整、维度清晰、数值准确\n3. 趋势分析逻辑严密，拐点识别有明确数据支撑\n4. 观察指标和风险清单具有实操性和预警价值\n5. 输出格式为中文Markdown，结构清晰易读\n6. 明确标注数据采集日期和分析基准日"
+  },
+  "teamConfig": {
+    "pm": {
+      "id": "338a04c3533421a0",
+      "name": "数据项目经理"
+    },
+    "members": [
+      {
+        "id": "3a34cb9ee0539b68",
+        "name": "数据工程师",
+        "taskPrompt": "负责数据采集模块建设。请利用合规的金融数据接口（如Tushare、AKShare或Wind API），采集贵州茅台（600519.SH）和宁德时代（300750.SZ）最近3个月的日线和周线交易数据。所需字段包括：开盘价、最高价、最低价、收盘价、成交量、成交额等。需确保数据来源真实可追溯，并对采集的数据进行清洗，剔除异常值，最后将整理好的完整数据集（CSV/Excel格式）交付给数据分析师。"
+      },
+      {
+        "id": "534a85c8f21fa1ce",
+        "name": "数据分析师",
+        "taskPrompt": "负责数据分析与报告撰写。基于数据工程师提供的数据，执行以下任务：1. 计算涨跌幅、波动率、成交额、换手率等指标，生成关键指标横向对比表；2. 深入分析两只股票的波动特征、成交量变化规律及阶段性拐点，需有明确数据支撑；3. 输出1个月短期观察指标与3-6个月中期观察指标清单；4. 基于数据提炼风险点及预警信号；5. 汇总所有内容，撰写一份完整的中文Markdown格式趋势分析报告，并在文中明确标注数据采集日期和分析基准日。报告需逻辑严密，具有投资参考价值。"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_8f3a2b",
+        "title": "数据采集环境搭建与接口配置",
+        "description": "配置Python环境，安装所需库（如Tushare/AKShare），配置API密钥，确保网络连接通畅，选定贵州茅台（600519.SH）和宁德时代（300750.SZ）作为标的代码。",
+        "assigneeId": "3a34cb9ee0539b68",
+        "dependsOn": []
+      },
+      {
+        "id": "sub_9d1c4e",
+        "title": "近3个月日线与周线数据抓取",
+        "description": "调用合规金融数据接口，抓取两只股票最近3个月（约60个交易日）的日线数据和周线数据。确保字段完整，包括：开盘价、最高价、最低价、收盘价、成交量、成交额。",
+        "assigneeId": "3a34cb9ee0539b68",
+        "dependsOn": [
+          "sub_8f3a2b"
+        ]
+      },
+      {
+        "id": "sub_2a5f1b",
+        "title": "数据清洗与异常值处理",
+        "description": "对采集的原始数据进行预处理，检查缺失值并填充或剔除，处理停牌日期数据，确保时间序列连续，并将数据格式统一（日期格式化、数值类型转换），剔除明显的异常数据。",
+        "assigneeId": "3a34cb9ee0539b68",
+        "dependsOn": [
+          "sub_9d1c4e"
+        ]
+      },
+      {
+        "id": "sub_7c8e3d",
+        "title": "清洗后数据集交付",
+        "description": "将清洗整理好的贵州茅台和宁德时代数据集整理为CSV或Excel格式，交付给数据分析师，同时记录数据采集的截止日期。",
+        "assigneeId": "3a34cb9ee0539b68",
+        "dependsOn": [
+          "sub_2a5f1b"
+        ]
+      },
+      {
+        "id": "sub_4b2a9c",
+        "title": "关键指标计算",
+        "description": "接收数据，计算两只股票的涨跌幅（日/周）、波动率（标准差）、成交额、换手率等衍生指标，为后续分析奠定基础。",
+        "assigneeId": "534a85c8f21fa1ce",
+        "dependsOn": [
+          "sub_7c8e3d"
+        ]
+      },
+      {
+        "id": "sub_1e5d8f",
+        "title": "生成关键指标横向对比表",
+        "description": "基于计算出的指标，制作贵州茅台与宁德时代的横向对比表，清晰展示近3个月来的涨跌幅、波动率、成交额及换手率差异。",
+        "assigneeId": "534a85c8f21fa1ce",
+        "dependsOn": [
+          "sub_4b2a9c"
+        ]
+      },
+      {
+        "id": "sub_9f3a2c",
+        "title": "波动特征与拐点深度分析",
+        "description": "深入分析股价走势，识别波动特征（如震荡、趋势）、成交量变化规律，并结合价格与成交量找出阶段性的关键拐点（最高点、最低点、放量突破点），确保有明确数据支撑。",
+        "assigneeId": "534a85c8f21fa1ce",
+        "dependsOn": [
+          "sub_7c8e3d"
+        ]
+      },
+      {
+        "id": "sub_3c7d1e",
+        "title": "制定观察指标清单",
+        "description": "基于上述分析，输出具有实操性的观察指标清单，区分为1个月短期观察指标（如均线、MACD）与3-6个月中期观察指标（如筹码分布、基本面动态）。",
+        "assigneeId": "534a85c8f21fa1ce",
+        "dependsOn": [
+          "sub_9f3a2c"
+        ]
+      },
+      {
+        "id": "sub_8a4b2f",
+        "title": "提炼风险清单与预警信号",
+        "description": "基于数据分析结果，提炼主要风险点（如高位滞涨、成交量异常萎缩/放大等）并设置对应的预警信号。",
+        "assigneeId": "534a85c8f21fa1ce",
+        "dependsOn": [
+          "sub_9f3a2c"
+        ]
+      },
+      {
+        "id": "sub_5e1c9a",
+        "title": "撰写并整合Markdown分析报告",
+        "description": "将对比表、波动分析、观察指标、风险清单汇总，撰写完整的趋势分析报告。报告逻辑需严密，包含数据支撑的结论。",
+        "assigneeId": "534a85c8f21fa1ce",
+        "dependsOn": [
+          "sub_1e5d8f",
+          "sub_3c7d1e",
+          "sub_8a4b2f"
+        ]
+      },
+      {
+        "id": "sub_2f8d4b",
+        "title": "报告最终审核与格式化",
+        "description": "检查报告格式是否符合中文Markdown规范，确认结构清晰易读，并明确标注数据采集日期和分析基准日，确保满足所有验收标准。",
+        "assigneeId": "534a85c8f21fa1ce",
+        "dependsOn": [
+          "sub_5e1c9a"
+        ]
+      }
+    ]
+  },
+  "result": null,
+  "tokenUsage": 0,
+  "createdAt": "2026-02-28T15:08:42.708Z",
+  "updatedAt": "2026-02-28T15:11:10.465Z",
+  "subtasks": [
+    {
+      "id": "b366affbb3f042f1",
+      "title": "数据采集环境搭建与接口配置",
+      "description": "配置Python环境，安装所需库（如Tushare/AKShare），配置API密钥，确保网络连接通畅，选定贵州茅台（600519.SH）和宁德时代（300750.SZ）作为标的代码。",
+      "assigneeId": "3a34cb9ee0539b68",
+      "assigneeName": "数据工程师",
+      "status": "running",
+      "dependsOn": [],
+      "output": null,
+      "sortOrder": 0,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:12:16.605Z"
+    },
+    {
+      "id": "939c3a72726e9252",
+      "title": "近3个月日线与周线数据抓取",
+      "description": "调用合规金融数据接口，抓取两只股票最近3个月（约60个交易日）的日线数据和周线数据。确保字段完整，包括：开盘价、最高价、最低价、收盘价、成交量、成交额。",
+      "assigneeId": "3a34cb9ee0539b68",
+      "assigneeName": "数据工程师",
+      "status": "pending",
+      "dependsOn": [
+        "b366affbb3f042f1"
+      ],
+      "output": null,
+      "sortOrder": 1,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    },
+    {
+      "id": "feb78890f6aae9c9",
+      "title": "数据清洗与异常值处理",
+      "description": "对采集的原始数据进行预处理，检查缺失值并填充或剔除，处理停牌日期数据，确保时间序列连续，并将数据格式统一（日期格式化、数值类型转换），剔除明显的异常数据。",
+      "assigneeId": "3a34cb9ee0539b68",
+      "assigneeName": "数据工程师",
+      "status": "pending",
+      "dependsOn": [
+        "939c3a72726e9252"
+      ],
+      "output": null,
+      "sortOrder": 2,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    },
+    {
+      "id": "29e89db5d82eddb0",
+      "title": "清洗后数据集交付",
+      "description": "将清洗整理好的贵州茅台和宁德时代数据集整理为CSV或Excel格式，交付给数据分析师，同时记录数据采集的截止日期。",
+      "assigneeId": "3a34cb9ee0539b68",
+      "assigneeName": "数据工程师",
+      "status": "pending",
+      "dependsOn": [
+        "feb78890f6aae9c9"
+      ],
+      "output": null,
+      "sortOrder": 3,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    },
+    {
+      "id": "402cf48acd2c8b1b",
+      "title": "关键指标计算",
+      "description": "接收数据，计算两只股票的涨跌幅（日/周）、波动率（标准差）、成交额、换手率等衍生指标，为后续分析奠定基础。",
+      "assigneeId": "534a85c8f21fa1ce",
+      "assigneeName": "数据分析师",
+      "status": "pending",
+      "dependsOn": [
+        "29e89db5d82eddb0"
+      ],
+      "output": null,
+      "sortOrder": 4,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    },
+    {
+      "id": "f8cec9a392e4e15f",
+      "title": "生成关键指标横向对比表",
+      "description": "基于计算出的指标，制作贵州茅台与宁德时代的横向对比表，清晰展示近3个月来的涨跌幅、波动率、成交额及换手率差异。",
+      "assigneeId": "534a85c8f21fa1ce",
+      "assigneeName": "数据分析师",
+      "status": "pending",
+      "dependsOn": [
+        "402cf48acd2c8b1b"
+      ],
+      "output": null,
+      "sortOrder": 5,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    },
+    {
+      "id": "84468a37308d0860",
+      "title": "波动特征与拐点深度分析",
+      "description": "深入分析股价走势，识别波动特征（如震荡、趋势）、成交量变化规律，并结合价格与成交量找出阶段性的关键拐点（最高点、最低点、放量突破点），确保有明确数据支撑。",
+      "assigneeId": "534a85c8f21fa1ce",
+      "assigneeName": "数据分析师",
+      "status": "pending",
+      "dependsOn": [
+        "29e89db5d82eddb0"
+      ],
+      "output": null,
+      "sortOrder": 6,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    },
+    {
+      "id": "b558a07f684b83e1",
+      "title": "制定观察指标清单",
+      "description": "基于上述分析，输出具有实操性的观察指标清单，区分为1个月短期观察指标（如均线、MACD）与3-6个月中期观察指标（如筹码分布、基本面动态）。",
+      "assigneeId": "534a85c8f21fa1ce",
+      "assigneeName": "数据分析师",
+      "status": "pending",
+      "dependsOn": [
+        "84468a37308d0860"
+      ],
+      "output": null,
+      "sortOrder": 7,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    },
+    {
+      "id": "824af805a755d7b8",
+      "title": "提炼风险清单与预警信号",
+      "description": "基于数据分析结果，提炼主要风险点（如高位滞涨、成交量异常萎缩/放大等）并设置对应的预警信号。",
+      "assigneeId": "534a85c8f21fa1ce",
+      "assigneeName": "数据分析师",
+      "status": "pending",
+      "dependsOn": [
+        "84468a37308d0860"
+      ],
+      "output": null,
+      "sortOrder": 8,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    },
+    {
+      "id": "4f43410716f569d5",
+      "title": "撰写并整合Markdown分析报告",
+      "description": "将对比表、波动分析、观察指标、风险清单汇总，撰写完整的趋势分析报告。报告逻辑需严密，包含数据支撑的结论。",
+      "assigneeId": "534a85c8f21fa1ce",
+      "assigneeName": "数据分析师",
+      "status": "pending",
+      "dependsOn": [
+        "f8cec9a392e4e15f",
+        "b558a07f684b83e1",
+        "824af805a755d7b8"
+      ],
+      "output": null,
+      "sortOrder": 9,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    },
+    {
+      "id": "9a49cef1f642036e",
+      "title": "报告最终审核与格式化",
+      "description": "检查报告格式是否符合中文Markdown规范，确认结构清晰易读，并明确标注数据采集日期和分析基准日，确保满足所有验收标准。",
+      "assigneeId": "534a85c8f21fa1ce",
+      "assigneeName": "数据分析师",
+      "status": "pending",
+      "dependsOn": [
+        "4f43410716f569d5"
+      ],
+      "output": null,
+      "sortOrder": 10,
+      "tokenUsage": 0,
+      "createdAt": "2026-02-28T15:11:10.460Z",
+      "updatedAt": "2026-02-28T15:11:10.460Z"
+    }
+  ]
+}

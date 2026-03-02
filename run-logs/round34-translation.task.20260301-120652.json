@@ -1,0 +1,71 @@
+{
+  "id": "9a784d3ba2a306bb",
+  "teamId": "a01d3068c7e69dfe",
+  "teamName": "双语内容创作团队",
+  "title": "企业公告中英双语简版输出",
+  "description": "将企业公告模板输出中英双语简版，保持语义一致。要求：\n1. 提取公告核心信息\n2. 产出中文简版和英文简版两个版本\n3. 确保两个版本语义一致\n4. 格式规范易读",
+  "status": "completed",
+  "mode": "auto",
+  "brief": null,
+  "teamConfig": {
+    "pm": {
+      "id": "4b05ffc22594c404",
+      "name": "内容主管"
+    },
+    "members": [
+      {
+        "id": "36920e73a73dcf60",
+        "name": "文案策划",
+        "taskPrompt": "负责文字内容创作与品牌文案撰写"
+      },
+      {
+        "id": "f6c5e36b4fd3f4b6",
+        "name": "视觉设计师",
+        "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+      }
+    ]
+  },
+  "plan": {
+    "subtasks": [
+      {
+        "id": "sub_autostart_bootstrap",
+        "title": "企业公告中英双语简版输出",
+        "description": "将企业公告模板输出中英双语简版，保持语义一致。要求：\n1. 提取公告核心信息\n2. 产出中文简版和英文简版两个版本\n3. 确保两个版本语义一致\n4. 格式规范易读",
+        "assigneeId": "36920e73a73dcf60",
+        "dependsOn": []
+      }
+    ]
+  },
+  "result": {
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n任务已完成。企业公告模板中英双语简版已输出，包含4个常用公告模板（公司搬迁公告、重大事项公告、公司更名公告、组织架构调整公告），每个模板均提供中文简版和英文简版，语义一致，格式规范易读。同时提供了日期、公司名称、公告结尾等格式规范说明。",
+    "deliverables": "# 企业公告模板中英双语简版\n## Corporate Announcement Bilingual Template (Simplified)\n\n---\n\n## 模板一：公司搬迁公告 / Company Relocation Notice\n\n### 中文简版\n\n| 项目 | 内容 |\n|------|------|\n| 标题 | 公司搬迁公告 |\n| 原因 | 因公司业务发展需要 |\n| 新地址 | 北京市朝阳区建国路88号SOHO现代城A座15层 |\n| 邮编 | 100022 |\n| 电话 | 010-12345678 |\n| 生效日期 | 2024年12月30日 |\n| 声明 | 搬迁期间业务正常运行 |\n\n**XX有限公司 | 2024年12月15日**\n\n---\n\n### English Simplified\n\n| Item | Content |\n|------|---------|\n| Title | Company Relocation Notice |\n| Reason | Due to business development needs |\n| New Address | Floor 15, Building A, SOHO Modern City, No. 88 Jianguo Road, Chaoyang District, Beijing |\n| Postal Code | 100022 |\n| Contact | 010-12345678 |\n| Effective Date | December 30, 2024 |\n| Statement | Business operations continue normally during relocation |\n\n**XX Co., Ltd. | December 15, 2024**\n\n---\n\n## 模板二：重大事项公告 / Major Event Notice\n\n### 中文简版\n\n| 项目 | 内容 |\n|------|------|\n| 标题 | 重大事项公告 |\n| 事项概述 | 公司拟与XX集团实施战略重组 |\n| 事项影响 | 预计对业务发展产生积极影响 |\n| 风险提示 | 需经董事会、股东大会审议批准，存在不确定性 |\n| 联系电话 | 010-12345678 |\n| 电子邮箱 | ir@company.com |\n\n**XX股份有限公司 | 2024年12月15日**\n\n---\n\n### English Simplified\n\n| Item | Content |\n|------|---------|\n| Title | Major Event Notice |\n| Overview | The Company plans strategic restructuring with XX Group |\n| Impact | Expected to have positive impact on business development |\n| Risk Warning | Subject to Board and Shareholder approval; uncertainty exists |\n| Contact | 010-12345678 |\n| Email | ir@company.com |\n\n**XX Co., Ltd. | December 15, 2024**\n\n---\n\n## 模板三：公司更名公告 / Name Change Notice\n\n### 中文简版\n\n| 项目 | 内容 |\n|------|------|\n| 标题 | 公司更名公告 |\n| 原名称 | XX科技有限公司 |\n| 新名称 | YY创新科技股份有限公司 |\n| 生效日期 | 2025年1月1日 |\n| 变更说明 | 法律主体、业务模式、联系方式均保持不变 |\n| 联系电话 | 010-12345678 |\n\n**XX科技有限公司 | 2024年12月15日**\n\n---\n\n### English Simplified\n\n| Item | Content |\n|------|---------|\n| Title | Company Name Change Notice |\n| Original Name | XX Technology Co., Ltd. |\n| New Name | YY Innovative Technology Co., Ltd. |\n| Effective Date | January 1, 2025 |\n| Note | Legal entity, business model, and contact information remain unchanged |\n| Contact | 010-12345678 |\n\n**XX Technology Co., Ltd. | December 15, 2024**\n\n---\n\n## 模板四：组织架构调整公告 / Organizational Structure Adjustment Notice\n\n### 中文简版\n\n| 项目 | 内容 |\n|------|------|\n| 标题 | 关于公司组织架构调整的公告 |\n| 调整目的 | 优化公司治理结构、提升运营效率 |\n| 调整内容 | 1. 部门职能整合 2. 核心管理层任命 |\n| 生效日期 | XXXX年XX月XX日 |\n\n**XX公司 | XXXX年XX月XX日**\n\n---\n\n### English Simplified\n\n| Item | Content |\n|------|---------|\n| Title | Announcement on Organizational Structure Adjustment |\n| Purpose | Optimize governance structure and improve operational efficiency |\n| Changes | 1. Department function integration 2. Core management appointments |\n| Effective Date | XX/XX/XXXX |\n\n**XX Company | XX/XX/XXXX**\n\n---\n\n## 格式规范说明 / Format Guidelines\n\n| 要素 Element | 中文格式 Chinese Format | 英文格式 English Format |\n|--------------|-------------------------|------------------------|\n| 日期 Date | YYYY年MM月DD日 | Month DD, YYYY 或 DD/MM/YYYY |\n| 公司名称 | XX有限公司 | XX Co., Ltd. |\n| 公告结尾 | 特此公告 | Sincerely / Hereby notified |\n\n---\n\n*模板可根据实际需求调整使用。*\n*Template can be adjusted according to actual needs.*",
+    "subtaskSummary": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    "completedAt": "2026-03-01T12:08:53.909Z"
+  },
+  "tokenUsage": 30360,
+  "createdAt": "2026-03-01T12:07:24.069Z",
+  "updatedAt": "2026-03-01T12:08:57.315Z",
+  "subtasks": [
+    {
+      "id": "02545d167a4c3726",
+      "title": "企业公告中英双语简版输出",
+      "description": "将企业公告模板输出中英双语简版，保持语义一致。要求：\n1. 提取公告核心信息\n2. 产出中文简版和英文简版两个版本\n3. 确保两个版本语义一致\n4. 格式规范易读",
+      "assigneeId": "36920e73a73dcf60",
+      "assigneeName": "文案策划",
+      "status": "completed",
+      "dependsOn": [],
+      "output": {
+        "summary": "我需要先查找企业公告模板文件。让我先检查可访问的目录。\n\n\n\n\n\n我找到了几个可能包含企业公告模板的文件。让我读取它们来确定原始模板内容。\n\n\n已获取到企业公告模板内容。现在为您输出中英双语简版：\n\n---\n\n# 企业公告模板中英双语简版\n## Corporate Announcement Bilingual Template (Simplified)\n\n---\n\n## 模板一：公司搬迁公告 / Company Relocation Notice\n\n### 中文简版\n\n| 项目 | 内容 |\n|------|------|\n| 标题 | 公司搬迁公告 |\n| 原因 | 因公司业务发展需要 |\n| 新地址 | 北京市朝阳区建国路88号SOHO现代城A座15层 |\n| 邮编 | 100022 |\n| 电话 | 010-12345678 |\n| 生效日期 | 2024年12月30日 |\n| 声明 | 搬迁期间业务正常运行 |\n\n**XX有限公司 | 2024年12月15日**\n\n---\n\n### English Simplified\n\n| Item | Content |\n|------|---------|\n| Title | Company Relocation Notice |\n| Reason | Due to business development needs |\n| New Address | Floor 15, Building A, SOHO Modern City, No. 88 Jianguo Road, Chaoyang District, Beijing |\n| Postal Code | 100022 |\n| Contact | 010-12345678 |\n| Effective Date | December 30, 2024 |\n| Statement | Business operations continue normally during relocation |\n\n**XX Co., Ltd. | December 15, 2024**\n\n---\n\n## 模板二：重大事项公告 / Major Event Notice\n\n### 中文简版\n\n| 项目 | 内容 |\n|------|------|\n| 标题 | 重大事项公告 |\n| 事项概述 | 公司拟与XX集团实施战略重组 |\n| 事项影响 | 预计对业务发展产生积极影响 |\n| 风险提示 | 需经董事会、股东大会审议批准，存在不确定性 |\n| 联系电话 | 010-12345678 |\n| 电子邮箱 | ir@company.com |\n\n**XX股份有限公司 | 2024年12月15日**\n\n---\n\n### English Simplified\n\n| Item | Content |\n|------|---------|\n| Title | Major Event Notice |\n| Overview | The Company plans strategic restructuring with XX Group |\n| Impact | Expected to have positive impact on business development |\n| Risk Warning | Subject to Board and Shareholder approval; uncertainty exists |\n| Contact | 010-12345678 |\n| Email | ir@company.com |\n\n**XX Co., Ltd. | December 15, 2024**\n\n---\n\n## 模板三：公司更名公告 / Name Change Notice\n\n### 中文简版\n\n| 项目 | 内容 |\n|------|------|\n| 标题 | 公司更名公告 |\n| 原名称 | XX科技有限公司 |\n| 新名称 | YY创新科技股份有限公司 |\n| 生效日期 | 2025年1月1日 |\n| 变更说明 | 法律主体、业务模式、联系方式均保持不变 |\n| 联系电话 | 010-12345678 |\n\n**XX科技有限公司 | 2024年12月15日**\n\n---\n\n### English Simplified\n\n| Item | Content |\n|------|---------|\n| Title | Company Name Change Notice |\n| Original Name | XX Technology Co., Ltd. |\n| New Name | YY Innovative Technology Co., Ltd. |\n| Effective Date | January 1, 2025 |\n| Note | Legal entity, business model, and contact information remain unchanged |\n| Contact | 010-12345678 |\n\n**XX Technology Co., Ltd. | December 15, 2024**\n\n---\n\n## 模板四：组织架构调整公告 / Organizational Structure Adjustment Notice\n\n### 中文简版\n\n| 项目 | 内容 |\n|------|------|\n| 标题 | 关于公司组织架构调整的公告 |\n| 调整目的 | 优化公司治理结构、提升运营效率 |\n| 调整内容 | 1. 部门职能整合 2. 核心管理层任命 |\n| 生效日期 | XXXX年XX月XX日 |\n\n**XX公司 | XXXX年XX月XX日**\n\n---\n\n### English Simplified\n\n| Item | Content |\n|------|---------|\n| Title | Announcement on Organizational Structure Adjustment |\n| Purpose | Optimize governance structure and improve operational efficiency |\n| Changes | 1. Department function integration 2. Core management appointments |\n| Effective Date | XX/XX/XXXX |\n\n**XX Company | XX/XX/XXXX**\n\n---\n\n## 格式规范说明 / Format Guidelines\n\n| 要素 Element | 中文格式 Chinese Format | 英文格式 English Format |\n|--------------|-------------------------|------------------------|\n| 日期 Date | YYYY年MM月DD日 | Month DD, YYYY 或 DD/MM/YYYY |\n| 公司名称 | XX有限公司 | XX Co., Ltd. |\n| 公告结尾 | 特此公告 | Sincerely / Hereby notified |\n\n---\n\n*模板可根据实际需求调整使用。*\n*Template can be adjusted according to actual needs.*"
+      },
+      "sortOrder": 0,
+      "tokenUsage": 30360,
+      "createdAt": "2026-03-01T12:07:39.215Z",
+      "updatedAt": "2026-03-01T12:08:33.647Z"
+    }
+  ]
+}

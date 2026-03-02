@@ -1,0 +1,28 @@
+[
+  {
+    "event": "error",
+    "data": {
+      "seq": 0,
+      "message": "[object Object]"
+    }
+  },
+  {
+    "event": "step_finish",
+    "data": {
+      "seq": 1,
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      }
+    }
+  },
+  {
+    "event": "done",
+    "data": {
+      "seq": 2,
+      "text": "",
+      "messageId": "b5db49b2c26f672f",
+      "finishReason": "error"
+    }
+  }
+]

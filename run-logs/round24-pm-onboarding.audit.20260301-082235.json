@@ -1,0 +1,93 @@
+{
+  "label": "round24-pm-onboarding",
+  "sessionId": "round24-onboarding-20260301-082235",
+  "pmChatDurationMs": 28621,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "d1636766ebacf882"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 28621
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 2,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "d1636766ebacf882",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 266381,
+      "tools": [
+        {
+          "tool": "1791ada993a23a56__get_markdown_summary",
+          "count": 48
+        },
+        {
+          "tool": "01a07c2a149edad0__list_allowed_directories",
+          "count": 2
+        },
+        {
+          "tool": "01a07c2a149edad0__write_file",
+          "count": 2
+        },
+        {
+          "tool": "write_file",
+          "count": 1
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 18,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成新员工入职首周SOP模板的编写任务。模板结构清晰，包含每日目标规划（周一至周五）、沟通节奏安排、首周交付清单三大核心模块，并附带了里程碑节点、不同岗位适配说明、追踪与记录机制等内容。模板采用表格和检查清单形式，适用于不同岗位的新员工，具备良好的可执行性和可追踪性。"
+    }
+  ]
+}

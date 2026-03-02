@@ -1,0 +1,66 @@
+{
+  "label": "round34-translation",
+  "sessionId": "round34-translation-20260301-124248",
+  "kind": "translation",
+  "pmChatDurationMs": 31130,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "7e9b2376c7746267"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 31130
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "7e9b2376c7746267",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 29532,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告中英双语简版输出任务。将原有的中英双语公告模板（包括搬迁公告、重大事项公告、更名公告）进行简化处理，删除了冗长的客套语和感谢语句，精简了表格信息为核心内容，保留了关键信息（日期、事项、联系方式），并保持中英双语对照结构。"
+  }
+}

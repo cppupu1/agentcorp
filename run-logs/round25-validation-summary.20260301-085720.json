@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-03-01T08:57:20.348746Z",
+  "runLabel": "round25-20260301-085720",
+  "sessions": [
+    {
+      "label": "round25-pm-stock-compare",
+      "sessionId": "round25-stock-20260301-085720",
+      "evidence": "run-logs/round25-pm-stock-compare.audit.20260301-085720.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round25-pm-ai-trend",
+      "sessionId": "round25-ai-20260301-085720",
+      "evidence": "run-logs/round25-pm-ai-trend.audit.20260301-085720.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round25-pm-customer-memory",
+      "sessionId": "round25-cs-20260301-085720",
+      "evidence": "run-logs/round25-pm-customer-memory.audit.20260301-085720.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round25-pm-content",
+      "sessionId": "round25-content-20260301-085720",
+      "evidence": "run-logs/round25-pm-content.audit.20260301-085720.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round25-pm-incident",
+      "sessionId": "round25-incident-20260301-085720",
+      "evidence": "run-logs/round25-pm-incident.audit.20260301-085720.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round25-pm-legal-compliance",
+      "sessionId": "round25-legal-20260301-085720",
+      "evidence": "run-logs/round25-pm-legal-compliance.audit.20260301-085720.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round25-pm-prd",
+      "sessionId": "round25-prd-20260301-085720",
+      "evidence": "run-logs/round25-pm-prd.audit.20260301-085720.json",
+      "allCompleted": true,
+      "allChecksPassed": true
+    },
+    {
+      "label": "round25-pm-translation",
+      "sessionId": "round25-translation-20260301-085720",
+      "evidence": "run-logs/round25-pm-translation.audit.20260301-085720.json",
+      "allCompleted": false,
+      "allChecksPassed": false
+    }
+  ]
+}

@@ -17,7 +17,7 @@ import { useI18n } from '@/i18n';
 import { useIMEComposing } from '@/hooks/useIMEComposing';
 import {
   Plus, Trash2, Search, Loader2, ChevronDown, ChevronRight,
-  FileText, X, Pencil, BookOpen,
+  FileText, X, Pencil, BookOpen, Upload,
 } from 'lucide-react';
 import { EmptyState } from '@/components/ui/empty-state';
 
@@ -379,21 +379,40 @@ function AddDocumentDialog({ open, kbId, onClose, onSuccess }: {
   onClose: () => void;
   onSuccess: () => void;
 }) {
+  const [mode, setMode] = useState<'text' | 'file'>('text');
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
+  const [file, setFile] = useState<File | null>(null);
   const [saving, setSaving] = useState(false);
   const { toast } = useToast();
   const { t } = useI18n();
 
+  const MAX_FILE_SIZE = 20 * 1024 * 1024;
+
   useEffect(() => {
-    if (open) { setTitle(''); setContent(''); }
+    if (open) { setTitle(''); setContent(''); setFile(null); setMode('text'); }
   }, [open]);
 
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const selected = e.target.files?.[0];
+    if (!selected) return;
+    if (selected.size > MAX_FILE_SIZE) {
+      toast(t('kb.fileTooLarge'), 'error');
+      e.target.value = '';
+      return;
+    }
+    setFile(selected);
+  };
+
   const handleSubmit = async () => {
-    if (!title.trim() || !content.trim()) return;
     setSaving(true);
     try {
-      await knowledgeApi.addDocument(kbId, { title: title.trim(), content: content.trim() });
+      if (mode === 'file' && file) {
+        await knowledgeApi.uploadDocument(kbId, file);
+      } else {
+        if (!title.trim() || !content.trim()) return;
+        await knowledgeApi.addDocument(kbId, { title: title.trim(), content: content.trim() });
+      }
       toast(t('kb.docAdded'), 'success');
       onSuccess();
     } catch (err: unknown) {
@@ -403,30 +422,72 @@ function AddDocumentDialog({ open, kbId, onClose, onSuccess }: {
     }
   };
 
+  const canSubmit = mode === 'file' ? !!file : (!!title.trim() && !!content.trim());
+
   return (
     <Dialog open={open} onOpenChange={onClose}>
       <DialogHeader>
         <DialogTitle>{t('kb.addDocDialog')}</DialogTitle>
       </DialogHeader>
       <div className="space-y-4">
-        <div className="space-y-2">
-          <Label>{t('kb.docTitle')}</Label>
-          <Input value={title} onChange={e => setTitle(e.target.value)} placeholder={t('kb.docTitlePlaceholder')} />
+        {/* Mode toggle */}
+        <div className="flex gap-2">
+          <Button variant={mode === 'text' ? 'default' : 'outline'} size="sm" onClick={() => setMode('text')}>
+            <FileText className="h-4 w-4 mr-1" /> {t('kb.textInput')}
+          </Button>
+          <Button variant={mode === 'file' ? 'default' : 'outline'} size="sm" onClick={() => setMode('file')}>
+            <Upload className="h-4 w-4 mr-1" /> {t('kb.fileUpload')}
+          </Button>
         </div>
-        <div className="space-y-2">
-          <Label>{t('kb.docContent')}</Label>
-          <Textarea
-            value={content}
-            onChange={e => setContent(e.target.value)}
-            placeholder={t('kb.docContentPlaceholder')}
-            rows={10}
-          />
-        </div>
+
+        {mode === 'text' ? (
+          <>
+            <div className="space-y-2">
+              <Label>{t('kb.docTitle')}</Label>
+              <Input value={title} onChange={e => setTitle(e.target.value)} placeholder={t('kb.docTitlePlaceholder')} />
+            </div>
+            <div className="space-y-2">
+              <Label>{t('kb.docContent')}</Label>
+              <Textarea
+                value={content}
+                onChange={e => setContent(e.target.value)}
+                placeholder={t('kb.docContentPlaceholder')}
+                rows={10}
+              />
+            </div>
+          </>
+        ) : (
+          <div className="space-y-3">
+            <div className="border-2 border-dashed border-border rounded-xl p-6 text-center">
+              {file ? (
+                <div className="flex items-center justify-center gap-2">
+                  <FileText className="h-5 w-5 text-muted-foreground" />
+                  <span className="text-sm font-medium">{file.name}</span>
+                  <Button variant="ghost" size="icon" className="h-6 w-6" onClick={() => setFile(null)}>
+                    <X className="h-3 w-3" />
+                  </Button>
+                </div>
+              ) : (
+                <label className="cursor-pointer block">
+                  <Upload className="h-8 w-8 mx-auto text-muted-foreground mb-2" />
+                  <span className="text-sm text-muted-foreground">{t('kb.fileUpload')}</span>
+                  <input
+                    type="file"
+                    className="hidden"
+                    accept=".pdf,.docx,.xlsx,.pptx,.txt,.md"
+                    onChange={handleFileChange}
+                  />
+                </label>
+              )}
+            </div>
+            <p className="text-xs text-muted-foreground">{t('kb.supportedFormats')}</p>
+          </div>
+        )}
       </div>
       <DialogFooter>
         <Button variant="outline" onClick={onClose} disabled={saving}>{t('common.cancel')}</Button>
-        <Button onClick={handleSubmit} disabled={saving || !title.trim() || !content.trim()}>
-          {saving ? t('kb.adding') : t('common.add')}
+        <Button onClick={handleSubmit} disabled={saving || !canSubmit}>
+          {saving ? (mode === 'file' ? t('kb.uploadingFile') : t('kb.adding')) : t('common.add')}
         </Button>
       </DialogFooter>
     </Dialog>

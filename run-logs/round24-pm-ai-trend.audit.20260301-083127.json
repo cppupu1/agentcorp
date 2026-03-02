@@ -1,0 +1,93 @@
+{
+  "label": "round24-pm-ai-trend",
+  "sessionId": "round24-ai-20260301-083127",
+  "pmChatDurationMs": 34796,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "656676708416c3df"
+  ],
+  "autoAssign": {
+    "recommended": 2,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 34796
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 2,
+      "min": 1
+    },
+    {
+      "name": "uses_search_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "656676708416c3df",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 157046,
+      "tools": [
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 24
+        },
+        {
+          "tool": "fc5f4c5bf43702d4__echo",
+          "count": 2
+        }
+      ],
+      "hasSearchTool": true,
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\nAI技术行业趋势研究任务已完成。研究涵盖近30天（2024-11-13至2024-12-13）内AI模型、Agent、企业落地三个领域的关键进展。3条关键结论均包含明确日期、可核验来源链接，且每条结论至少有2个独立来源交叉验证。整体置信度高，未发现冲突信息。"
+    }
+  ]
+}

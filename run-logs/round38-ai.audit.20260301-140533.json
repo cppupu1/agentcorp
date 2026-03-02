@@ -1,0 +1,39 @@
+{
+  "label": "round38-ai",
+  "sessionId": "round38-ai-20260301-140533",
+  "kind": "ai",
+  "userPrompt": "老板今晚要看材料，麻烦你直接推进：近7天AI技术行业都发生了啥，提3条重点，每条要有日期和来源链接。",
+  "pmChatDurationMs": 730,
+  "pmChatError": null,
+  "pmTools": [],
+  "taskIds": [],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 730
+    },
+    {
+      "name": "task_created",
+      "ok": false,
+      "taskIds": []
+    }
+  ],
+  "allChecksPassed": false,
+  "task": null
+}

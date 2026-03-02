@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-02-28T16:49:51.345812Z",
+  "runLabel": "round5-20260228-164951",
+  "validated_tasks": [
+    {
+      "label": "round5-stock-observe",
+      "taskId": "603c8384bd2a5d43",
+      "status": "completed",
+      "evidence": "run-logs/round5-stock-observe.audit.20260228-164951.json"
+    },
+    {
+      "label": "round5-ai-trend-observe",
+      "taskId": "c59ea9178362bde9",
+      "status": "completed",
+      "evidence": "run-logs/round5-ai-trend-observe.audit.20260228-164951.json"
+    },
+    {
+      "label": "round5-smoke-observe",
+      "taskId": "c0ae0148cf00c275",
+      "status": "completed",
+      "evidence": "run-logs/round5-smoke-observe.audit.20260228-164951.json"
+    }
+  ]
+}

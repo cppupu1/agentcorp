@@ -7,10 +7,10 @@ import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { Skeleton } from '@/components/ui/skeleton';
 import { EmptyState } from '@/components/ui/empty-state';
-import { Plus, Trash2, Loader2, Search, Clock, ClipboardList, Sparkles, MessageSquare } from 'lucide-react';
+import { Plus, Trash2, Loader2, Search, Clock, ClipboardList, Sparkles, MessageSquare, Send } from 'lucide-react';
 import { useI18n } from '@/i18n';
-import { MagicInput } from '@/components/MagicInput';
 import { useChatDrawer } from '@/contexts/ChatDrawerContext';
+import { useIMEComposing } from '@/hooks/useIMEComposing';
 
 const STATUS_KEYS: Record<string, { key: string; variant: 'default' | 'secondary' | 'outline' | 'destructive' | 'success' | 'warning' }> = {
   draft: { key: 'tasks.statusDraft', variant: 'secondary' },
@@ -35,6 +35,8 @@ export default function TasksPage() {
   const navigate = useNavigate();
   const { t } = useI18n();
   const { openChat } = useChatDrawer();
+  const { onCompositionStart, onCompositionEnd, isComposing } = useIMEComposing();
+  const [pmInput, setPmInput] = useState('');
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -81,7 +83,40 @@ export default function TasksPage() {
         </Button>
       </div>
 
-      <MagicInput type="task" />
+      <div className="mb-5">
+        <div className="max-w-4xl mx-auto relative flex items-end gap-2 bg-muted/40 p-2 rounded-[28px] border border-border/40 focus-within:ring-2 focus-within:ring-primary/20 focus-within:border-primary/50 transition-all shadow-[var(--shadow-sm)]">
+          <Sparkles className="h-5 w-5 text-primary/60 ml-3 mb-3 shrink-0" />
+          <textarea
+            value={pmInput}
+            onChange={e => setPmInput(e.target.value)}
+            onKeyDown={e => {
+              if (e.key === 'Enter' && !e.shiftKey && !isComposing(e) && pmInput.trim()) {
+                e.preventDefault();
+                navigate(`/pm?message=${encodeURIComponent(pmInput.trim())}`);
+              }
+            }}
+            onCompositionStart={onCompositionStart}
+            onCompositionEnd={onCompositionEnd}
+            placeholder={t('pm.entryPlaceholder')}
+            rows={2}
+            className="flex-1 max-h-24 min-h-[56px] bg-transparent border-0 px-3 py-3 text-[15px] resize-none focus:outline-none placeholder:text-muted-foreground/70"
+            style={{ height: 'auto' }}
+            onInput={(e) => {
+              const target = e.target as HTMLTextAreaElement;
+              target.style.height = 'auto';
+              target.style.height = `${Math.min(target.scrollHeight, 96)}px`;
+            }}
+          />
+          <Button
+            size="icon"
+            className="h-11 w-11 rounded-full shrink-0 mb-0.5 mr-0.5"
+            disabled={!pmInput.trim()}
+            onClick={() => { if (pmInput.trim()) navigate(`/pm?message=${encodeURIComponent(pmInput.trim())}`); }}
+          >
+            <Send className="h-5 w-5" />
+          </Button>
+        </div>
+      </div>
 
       <div className="flex gap-3 mb-5">
         <select className="h-12 rounded-2xl border border-transparent bg-muted/80 px-4 py-2 text-[15px] transition-all duration-200 ease-out hover:bg-muted focus-visible:outline-none focus-visible:bg-background focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20" value={filterTeam} onChange={e => setFilterTeam(e.target.value)}>

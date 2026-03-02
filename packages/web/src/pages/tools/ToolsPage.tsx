@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { toolsApi, type Tool, type ToolInput } from '@/api/client';
+import { toolsApi, type Tool, type ToolInput, type ToolDetail } from '@/api/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -9,7 +9,7 @@ import { Dialog, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { useToast } from '@/components/ui/toast';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Plus, Pencil, Trash2, Zap, Loader2, Search, ChevronDown, ChevronRight, X, Wrench } from 'lucide-react';
+import { Plus, Pencil, Trash2, Zap, Loader2, Search, ChevronDown, ChevronRight, X, Wrench, Radar, Power } from 'lucide-react';
 import { EmptyState } from '@/components/ui/empty-state';
 import { useI18n } from '@/i18n';
 
@@ -105,6 +105,16 @@ export default function ToolsPage() {
     }
   };
 
+  const handleToggle = async (tool: Tool) => {
+    try {
+      await toolsApi.toggle(tool.id, !tool.enabled);
+      toast(tool.enabled ? t('tools.disabled') : t('tools.enabled'), 'success');
+      load();
+    } catch (err: unknown) {
+      toast(err instanceof Error ? err.message : t('common.operationFailed'), 'error');
+    }
+  };
+
   const handleTest = async (tool: Tool) => {
     setTestingId(tool.id);
     try {
@@ -157,10 +167,13 @@ export default function ToolsPage() {
                     const variant = statusVariant[tool.status] || statusVariant.untested;
                     const label = t(statusLabelKey[tool.status] || statusLabelKey.untested);
                     return (
-                      <div key={tool.id} data-testid={`tool-item-${tool.id}`} className="rounded-3xl p-6 md-transition border border-border/40 space-y-2 hover:shadow-[var(--shadow-sm)] transition-all bg-muted/30">
+                      <div key={tool.id} data-testid={`tool-item-${tool.id}`} className={`rounded-3xl p-6 md-transition border border-border/40 space-y-2 hover:shadow-[var(--shadow-sm)] transition-all ${tool.enabled ? 'bg-muted/30' : 'bg-muted/10 opacity-60'}`}>
                         <div className="flex items-start justify-between">
                           <div className="font-medium text-sm">{tool.name}</div>
-                          <Badge variant={variant} data-testid={`tool-status-${tool.id}`}>{label}</Badge>
+                          <div className="flex items-center gap-1.5">
+                            {!tool.enabled && <Badge variant="outline">{t('tools.statusDisabled')}</Badge>}
+                            <Badge variant={variant} data-testid={`tool-status-${tool.id}`}>{label}</Badge>
+                          </div>
                         </div>
                         <p className="text-xs text-muted-foreground line-clamp-2">{tool.description}</p>
                         <div className="flex items-center gap-1.5">
@@ -168,6 +181,9 @@ export default function ToolsPage() {
                           <span className="text-xs text-muted-foreground font-mono truncate">{tool.command}</span>
                         </div>
                         <div className="flex gap-1 pt-1">
+                          <Button variant="ghost" size="sm" onClick={() => handleToggle(tool)} title={tool.enabled ? t('tools.clickDisable') : t('tools.clickEnable')}>
+                            <Power className={`h-3 w-3 ${tool.enabled ? 'text-green-500' : 'text-muted-foreground'}`} />
+                          </Button>
                           <Button variant="ghost" size="sm" onClick={() => { setEditing(tool); setFormOpen(true); }}>
                             <Pencil className="h-3 w-3" />
                           </Button>
@@ -222,9 +238,14 @@ function ToolFormDialog({
   const [transportType, setTransportType] = useState('stdio');
   const [command, setCommand] = useState('');
   const [args, setArgs] = useState<string[]>([]);
-  const [envVars, setEnvVars] = useState<Array<{ key: string; value: string }>>([]);
+  const [envVars, setEnvVars] = useState<Array<{ key: string; value: string; existing?: boolean }>>([]);
+  const [deletedEnvKeys, setDeletedEnvKeys] = useState<string[]>([]);
   const [groupName, setGroupName] = useState('');
   const [accessLevel, setAccessLevel] = useState('read');
+  const [bearerToken, setBearerToken] = useState('');
+  const [probing, setProbing] = useState(false);
+  const [discovered, setDiscovered] = useState<Array<{ name: string; description: string }>>([]);
+  const [probeError, setProbeError] = useState('');
   const { t } = useI18n();
 
   useEffect(() => {
@@ -235,16 +256,86 @@ function ToolFormDialog({
       setCommand(editing?.command ?? '');
       setArgs(editing?.args ?? []);
       setEnvVars([]);
+      setDeletedEnvKeys([]);
       setGroupName(editing?.groupName ?? '');
       setAccessLevel(editing?.accessLevel ?? 'read');
+      setBearerToken('');
+      setDiscovered([]);
+      setProbeError('');
+      // Fetch detail to get existing env var keys
+      if (editing) {
+        toolsApi.get(editing.id).then(res => {
+          const detail = res.data;
+          const keys = detail.envKeys ?? [];
+          const isSSE = (editing.transportType ?? 'stdio') === 'sse';
+          const authKey = keys.find(k => k.toLowerCase() === 'authorization');
+          if (isSSE && authKey) {
+            setBearerToken('');
+            const otherKeys = keys.filter(k => k !== authKey);
+            if (otherKeys.length > 0) {
+              setEnvVars(otherKeys.map(k => ({ key: k, value: '', existing: true })));
+            }
+          } else {
+            setEnvVars(keys.map(k => ({ key: k, value: '', existing: true })));
+          }
+        }).catch(() => {});
+      }
     }
   }, [open, editing]);
+
+  const handleProbe = async () => {
+    try { new URL(command); } catch {
+      setProbeError(t('tools.probeFailed'));
+      return;
+    }
+    setProbing(true);
+    setDiscovered([]);
+    setProbeError('');
+    try {
+      const headers: Record<string, string> = {};
+      for (const { key, value } of envVars) {
+        if (key.trim()) headers[key.trim()] = value;
+      }
+      if (bearerToken.trim()) {
+        headers['Authorization'] = `Bearer ${bearerToken.trim()}`;
+      }
+      const res = await toolsApi.probe({
+        url: command,
+        transportType,
+        envVars: Object.keys(headers).length > 0 ? headers : undefined,
+      });
+      if (res.success && res.tools.length > 0) {
+        setDiscovered(res.tools);
+      } else {
+        setProbeError(res.message || t('tools.noToolsFound'));
+      }
+    } catch (err: unknown) {
+      setProbeError(err instanceof Error ? err.message : t('tools.probeFailed'));
+    } finally {
+      setProbing(false);
+    }
+  };
+
+  const selectDiscovered = (tool: { name: string; description: string }) => {
+    setName(tool.name);
+    setDescription(tool.description);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const envObj: Record<string, string> = {};
-    for (const { key, value } of envVars) {
-      if (key.trim()) envObj[key.trim()] = value;
+    for (const key of deletedEnvKeys) {
+      envObj[key] = '__DELETE__';
+    }
+    for (const { key, value, existing } of envVars) {
+      if (!key.trim()) continue;
+      // existing key with empty value = unchanged, send '' so backend skips it
+      // new key with empty value = skip entirely
+      if (!existing && !value) continue;
+      envObj[key.trim()] = value;
+    }
+    if (bearerToken.trim()) {
+      envObj['Authorization'] = `Bearer ${bearerToken.trim()}`;
     }
     onSave({
       name, description, transportType, command,
@@ -282,8 +373,52 @@ function ToolFormDialog({
         </div>
         <div className="space-y-2">
           <Label>{transportType === 'sse' ? t('tools.sseUrl') : t('tools.command')}</Label>
-          <Input data-testid="tool-command-input" value={command} onChange={e => setCommand(e.target.value)} placeholder={transportType === 'sse' ? 'https://mcp.example.com/sse' : '@modelcontextprotocol/server-filesystem'} required />
+          <div className="flex gap-2">
+            <Input data-testid="tool-command-input" value={command} onChange={e => setCommand(e.target.value)} placeholder={transportType === 'sse' ? 'https://mcp.example.com/sse' : '@modelcontextprotocol/server-filesystem'} required className="flex-1" />
+            {transportType === 'sse' && (
+              <Button type="button" variant="outline" size="sm" className="shrink-0 h-12" disabled={!command || probing} onClick={handleProbe}>
+                {probing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Radar className="h-3.5 w-3.5" />}
+                <span className="ml-1">{probing ? t('tools.probing') : t('tools.probe')}</span>
+              </Button>
+            )}
+          </div>
         </div>
+        {transportType === 'sse' && (discovered.length > 0 || probeError) && (
+          <div className="rounded-xl border border-border/40 bg-muted/30 p-3 space-y-2">
+            {probeError && <p className="text-xs text-destructive">{probeError}</p>}
+            {discovered.length > 0 && (
+              <>
+                <p className="text-xs text-muted-foreground">{t('tools.discoveredTools', { count: discovered.length })}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {discovered.map(tool => (
+                    <button
+                      key={tool.name}
+                      type="button"
+                      className={`text-xs px-2.5 py-1.5 rounded-lg border transition-colors ${
+                        name === tool.name ? 'bg-primary text-primary-foreground border-primary' : 'bg-background border-border/40 hover:bg-accent'
+                      }`}
+                      onClick={() => selectDiscovered(tool)}
+                      title={tool.description}
+                    >
+                      {tool.name}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        )}
+        {transportType === 'sse' && (
+          <div className="space-y-2">
+            <Label>{t('tools.bearerToken')}</Label>
+            <Input
+              value={bearerToken}
+              onChange={e => setBearerToken(e.target.value)}
+              placeholder={t('tools.bearerPlaceholder')}
+              type="password"
+            />
+          </div>
+        )}
         {transportType === 'stdio' && (
           <div className="space-y-2">
             <Label>{t('tools.args')}</Label>
@@ -299,10 +434,26 @@ function ToolFormDialog({
         <div className="space-y-2">
           <Label>{transportType === 'sse' ? t('tools.headers') : t('tools.envVars')}</Label>
           {envVars.map((ev, i) => (
-            <div key={i} className="flex gap-2">
-              <Input value={ev.key} onChange={e => { const v = [...envVars]; v[i] = { ...v[i], key: e.target.value }; setEnvVars(v); }} placeholder={transportType === 'sse' ? 'Header Name' : 'KEY'} className="w-1/3" />
-              <Input value={ev.value} onChange={e => { const v = [...envVars]; v[i] = { ...v[i], value: e.target.value }; setEnvVars(v); }} placeholder={transportType === 'sse' ? 'Header Value' : 'VALUE'} type="password" />
-              <Button type="button" variant="ghost" size="icon" onClick={() => setEnvVars(envVars.filter((_, j) => j !== i))}><X className="h-4 w-4" /></Button>
+            <div key={i} className="flex gap-2 items-center">
+              <Input value={ev.key} onChange={e => { const v = [...envVars]; v[i] = { ...v[i], key: e.target.value }; setEnvVars(v); }} placeholder={transportType === 'sse' ? 'Header Name' : 'KEY'} className="w-1/3" disabled={!!ev.existing} />
+              <Input
+                value={ev.value}
+                onChange={e => { const v = [...envVars]; v[i] = { ...v[i], value: e.target.value }; setEnvVars(v); }}
+                placeholder={ev.existing ? '••••••（已设置，留空则不修改）' : (transportType === 'sse' ? 'Header Value' : 'VALUE')}
+                type="password"
+              />
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={() => {
+                  const target = envVars[i];
+                  if (target?.existing && target.key.trim()) {
+                    setDeletedEnvKeys(prev => prev.includes(target.key.trim()) ? prev : [...prev, target.key.trim()]);
+                  }
+                  setEnvVars(envVars.filter((_, j) => j !== i));
+                }}
+              ><X className="h-4 w-4" /></Button>
             </div>
           ))}
           <Button type="button" variant="outline" size="sm" onClick={() => setEnvVars([...envVars, { key: '', value: '' }])}>{transportType === 'sse' ? t('tools.addHeader') : t('tools.addEnv')}</Button>

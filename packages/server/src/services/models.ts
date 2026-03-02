@@ -1,22 +1,34 @@
-import { db, models, employees, generateId, now } from '@agentcorp/db';
+import { db, models, modelPricing, employees, generateId, now } from '@agentcorp/db';
 import { eq, like } from 'drizzle-orm';
 import { AppError } from '../errors.js';
 
-// Omit apiKey from response
-function omitApiKey(model: typeof models.$inferSelect) {
+// Omit apiKey from response, attach pricing
+function omitApiKey(model: typeof models.$inferSelect, pricing?: { inputPricePerMToken: number | null; outputPricePerMToken: number | null } | null) {
   const { apiKey, ...rest } = model;
-  return rest;
+  return {
+    ...rest,
+    inputPricePerMToken: pricing?.inputPricePerMToken ?? null,
+    outputPricePerMToken: pricing?.outputPricePerMToken ?? null,
+  };
 }
 
 export async function listModels() {
-  const rows = await db.select().from(models).orderBy(models.createdAt);
-  return rows.map(omitApiKey);
+  const rows = await db
+    .select({ model: models, pricing: modelPricing })
+    .from(models)
+    .leftJoin(modelPricing, eq(models.id, modelPricing.modelId))
+    .orderBy(models.createdAt);
+  return rows.map(r => omitApiKey(r.model, r.pricing));
 }
 
 export async function getModel(id: string) {
-  const [row] = await db.select().from(models).where(eq(models.id, id));
+  const [row] = await db
+    .select({ model: models, pricing: modelPricing })
+    .from(models)
+    .leftJoin(modelPricing, eq(models.id, modelPricing.modelId))
+    .where(eq(models.id, id));
   if (!row) throw new AppError('NOT_FOUND', `模型 ${id} 不存在`);
-  return omitApiKey(row);
+  return omitApiKey(row.model, row.pricing);
 }
 
 export async function getModelWithKey(id: string) {

@@ -1,0 +1,66 @@
+{
+  "label": "round34-legal",
+  "sessionId": "round34-legal-20260301-124248",
+  "kind": "legal",
+  "pmChatDurationMs": 42847,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "6306853a96d7800c"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 42847
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "6306853a96d7800c",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 28853,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成供应商服务合同审阅任务，识别出3条高风险条款并给出改写建议：1）知识产权归属条款（资产失控+责任倒置风险）；2）违约金标准畸高（超过法定上限）；3）合同终止权利严重失衡（单向约束+资金风险）。同时补充了争议管辖权的优化建议。所有条款均从法律合规与风险控制角度进行分析并提供了具体改写方案。"
+  }
+}

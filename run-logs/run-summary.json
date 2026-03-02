@@ -1,0 +1,82 @@
+{
+  "task2": {
+    "taskId": "188ab7861942fd26",
+    "teamId": "9dee101e8250bd63",
+    "status": "executing",
+    "tokenUsage": 730474,
+    "subtasks": 11,
+    "toolCalls": 100,
+    "tools": {
+      "tushare_mcp_001__stock_basic": {
+        "count": 4,
+        "errors": 0
+      },
+      "tushare_mcp_001__today": {
+        "count": 4,
+        "errors": 0
+      },
+      "tushare_mcp_001__daily": {
+        "count": 16,
+        "errors": 0
+      },
+      "tushare_mcp_001__plot_daily_candlestick_chart": {
+        "count": 14,
+        "errors": 0
+      },
+      "01a07c2a149edad0__write_file": {
+        "count": 30,
+        "errors": 0
+      },
+      "01a07c2a149edad0__list_allowed_directories": {
+        "count": 4,
+        "errors": 0
+      },
+      "tushare_mcp_001__weekly": {
+        "count": 12,
+        "errors": 0
+      },
+      "01a07c2a149edad0__list_directory": {
+        "count": 2,
+        "errors": 0
+      },
+      "01a07c2a149edad0__list_directory_with_sizes": {
+        "count": 2,
+        "errors": 0
+      },
+      "01a07c2a149edad0__read_multiple_files": {
+        "count": 8,
+        "errors": 0
+      },
+      "01a07c2a149edad0__create_directory": {
+        "count": 2,
+        "errors": 0
+      },
+      "01a07c2a149edad0__read_text_file": {
+        "count": 2,
+        "errors": 0
+      }
+    },
+    "elapsedSec": 1202,
+    "result": null
+  },
+  "task3": {
+    "taskId": "865f2343abedea7f",
+    "teamId": "73ae7b380bfd4db9",
+    "status": "failed",
+    "tokenUsage": 0,
+    "subtasks": 7,
+    "toolCalls": 0,
+    "tools": {},
+    "elapsedSec": 80,
+    "result": {
+      "summary": "任务执行失败：PM员工不存在",
+      "error": "PM员工不存在",
+      "subtaskSummary": {
+        "total": 7,
+        "completed": 0,
+        "failed": 0
+      },
+      "failedAt": "2026-02-28T15:34:03.738Z"
+    }
+  }
+}

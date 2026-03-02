@@ -16,6 +16,7 @@ export interface CollaborationContext {
   plan: Record<string, unknown>;
   teamConfig: TeamConfig;
   signal: AbortSignal;
+  teamToolIds: string[];
 }
 
 export interface CollaborationStrategy {

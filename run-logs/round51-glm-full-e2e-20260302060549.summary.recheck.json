@@ -1,0 +1,364 @@
+{
+  "round": "round51-glm-full-e2e-20260302060549",
+  "startedAt": "2026-03-02T06:05:49.041Z",
+  "scenarios": [
+    {
+      "key": "stock_compare",
+      "sessionId": "round51-glm-full-e2e-20260302060549-stock_compare",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "expect_stock_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "0e8e661e6ea7faed",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "tushare_mcp_001__today",
+          "tushare_mcp_001__daily",
+          "a6d0277e32709254__bocha_web_search",
+          "tushare_mcp_001__stock_basic"
+        ],
+        "stock": true,
+        "search": true,
+        "memory": false,
+        "fs": false
+      },
+      "durationMs": 354881
+    },
+    {
+      "key": "legal_compliance",
+      "sessionId": "round51-glm-full-e2e-20260302060549-legal_compliance",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "expect_search_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "bd1495cb45c28ca6",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "a6d0277e32709254__bocha_web_search",
+          "a6d0277e32709254__bocha_ai_search"
+        ],
+        "stock": false,
+        "search": true,
+        "memory": false,
+        "fs": false
+      },
+      "durationMs": 208536
+    },
+    {
+      "key": "ai_industry_brief",
+      "sessionId": "round51-glm-full-e2e-20260302060549-ai_industry_brief",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "expect_search_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "d8833f5b0fe646f5",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "a6d0277e32709254__bocha_ai_search",
+          "a6d0277e32709254__bocha_web_search",
+          "1791ada993a23a56__get_markdown",
+          "1791ada993a23a56__get_markdown_summary",
+          "1791ada993a23a56__get_rendered_html"
+        ],
+        "stock": false,
+        "search": true,
+        "memory": false,
+        "fs": false
+      },
+      "durationMs": 444956
+    },
+    {
+      "key": "customer_memory",
+      "sessionId": "round51-glm-full-e2e-20260302060549-customer_memory",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "expect_memory_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "ebdda850c0dc307d",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "ef64b3f65f2ab2a2__search_nodes",
+          "ef64b3f65f2ab2a2__open_nodes"
+        ],
+        "stock": false,
+        "search": false,
+        "memory": true,
+        "fs": false
+      },
+      "durationMs": 101226
+    },
+    {
+      "key": "repo_onboarding",
+      "sessionId": "round51-glm-full-e2e-20260302060549-repo_onboarding",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "expect_fs_tool",
+          "ok": true,
+          "got": true
+        }
+      ],
+      "ok": true,
+      "taskId": "bb3278c4671f5bb8",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "b931c6ca2b7ad17b__list_allowed_directories",
+          "b931c6ca2b7ad17b__directory_tree",
+          "b931c6ca2b7ad17b__list_directory",
+          "b931c6ca2b7ad17b__read_multiple_files"
+        ],
+        "stock": false,
+        "search": false,
+        "memory": false,
+        "fs": true
+      },
+      "durationMs": 104271
+    },
+    {
+      "key": "translation_notice",
+      "sessionId": "round51-glm-full-e2e-20260302060549-translation_notice",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "d74efa7366d158ff",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "a6d0277e32709254__bocha_ai_search"
+        ],
+        "stock": false,
+        "search": true,
+        "memory": false,
+        "fs": false
+      },
+      "durationMs": 74505
+    },
+    {
+      "key": "ops_weekly",
+      "sessionId": "round51-glm-full-e2e-20260302060549-ops_weekly",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "93653d9117997f60",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "01a07c2a149edad0__write_file"
+        ],
+        "stock": false,
+        "search": false,
+        "memory": false,
+        "fs": true
+      },
+      "durationMs": 129932
+    },
+    {
+      "key": "customer_faq",
+      "sessionId": "round51-glm-full-e2e-20260302060549-customer_faq",
+      "checks": [
+        {
+          "name": "pm_created_task",
+          "ok": true
+        },
+        {
+          "name": "pm_started_task",
+          "ok": true
+        },
+        {
+          "name": "task_completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "task_not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "3a14e74723f41995",
+      "status": "completed",
+      "tools": {
+        "names": [],
+        "stock": false,
+        "search": false,
+        "memory": false,
+        "fs": false
+      },
+      "durationMs": 181806
+    }
+  ],
+  "allPassed": true,
+  "finishedAt": "2026-03-02T06:33:49.172Z",
+  "recheckedAt": "2026-03-02T06:34:49.670Z"
+}

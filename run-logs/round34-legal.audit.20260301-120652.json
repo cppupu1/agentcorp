@@ -1,0 +1,66 @@
+{
+  "label": "round34-legal",
+  "sessionId": "round34-legal-20260301-120652",
+  "kind": "legal",
+  "pmChatDurationMs": 28138,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "5f8875e2d709b148"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 28138
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "5f8875e2d709b148",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 39122,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成供应商服务合同草案审阅任务，识别出3条高风险条款并给出改写建议：1）责任限制条款 - 建议提高赔偿上限并区分重大过失与一般过失；2）知识产权归属条款 - 建议明确甲方既存知识产权和合作产出知识产权的归属；3）单方终止权条款 - 建议增加甲方补偿义务和乙方过渡期义务。同时提供了付款条款、保密条款、验收标准等5个其他需关注的审查要点。"
+  }
+}

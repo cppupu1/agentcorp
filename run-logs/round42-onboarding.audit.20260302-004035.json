@@ -1,0 +1,91 @@
+{
+  "label": "round42-onboarding",
+  "sessionId": "round42-onboarding-20260302-004035",
+  "kind": "onboarding",
+  "userPrompt": "请直接创建并启动任务：设计新员工入职前两周计划，按天列关键动作与产出。",
+  "pmChatDurationMs": 39835,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "f8bf0b2926f9878d"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_has_no_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 39835
+    },
+    {
+      "name": "pm_called_create_task_tool",
+      "ok": true
+    },
+    {
+      "name": "pm_called_start_task",
+      "ok": true
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "f8bf0b2926f9878d"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "f8bf0b2926f9878d",
+    "status": "completed",
+    "tokenUsage": 9941,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成新员工入职前两周计划的完整设计，涵盖入职引导流程、10天详细日程安排、导师职责、团队融入活动、业务技能学习路径及考核评估体系，结构清晰、可执行性强。"
+  }
+}

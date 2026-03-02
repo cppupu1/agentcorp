@@ -1,0 +1,91 @@
+{
+  "label": "round42-stock_a",
+  "sessionId": "round42-stock_a-20260302-004035",
+  "kind": "stock_a",
+  "userPrompt": "请直接创建并启动任务：比较贵州茅台和宁德时代近30天走势，给2条带日期观察结论。",
+  "pmChatDurationMs": 13840,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "0e040f841c13152e"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": true
+  },
+  "checks": [
+    {
+      "name": "prompt_has_no_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 13840
+    },
+    {
+      "name": "pm_called_create_task_tool",
+      "ok": true
+    },
+    {
+      "name": "pm_called_start_task",
+      "ok": true
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "0e040f841c13152e"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "0e040f841c13152e",
+    "status": "completed",
+    "tokenUsage": 17168,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n成功完成贵州茅台和宁德时代近30天走势对比分析。任务已获取两只股票（2026-01-09至2026-02-27，共30个交易日）的收盘价和涨跌幅数据，进行了详细的对比分析，输出了2条带具体日期的观察结论和关键转折点趋势分析。"
+  }
+}

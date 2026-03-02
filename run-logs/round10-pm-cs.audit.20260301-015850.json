@@ -1,0 +1,123 @@
+{
+  "label": "round10-pm-cs",
+  "sessionId": "round10-cs-20260301-015850",
+  "pm": {
+    "sseEvents": [
+      {
+        "event": "delta",
+        "count": 387
+      },
+      {
+        "event": "step_finish",
+        "count": 7
+      },
+      {
+        "event": "tool_call",
+        "count": 7
+      },
+      {
+        "event": "tool_result",
+        "count": 7
+      },
+      {
+        "event": "done",
+        "count": 1
+      }
+    ],
+    "pmTools": [
+      {
+        "tool": "assign_team_tools",
+        "count": 1
+      },
+      {
+        "tool": "create_task",
+        "count": 1
+      },
+      {
+        "tool": "list_models",
+        "count": 1
+      },
+      {
+        "tool": "list_teams",
+        "count": 1
+      },
+      {
+        "tool": "list_templates",
+        "count": 1
+      },
+      {
+        "tool": "list_tools",
+        "count": 1
+      },
+      {
+        "tool": "start_task",
+        "count": 1
+      }
+    ],
+    "taskIds": [
+      "8824fc0ad1457f6b"
+    ]
+  },
+  "tasks": [
+    {
+      "taskId": "8824fc0ad1457f6b",
+      "title": "订单延迟客服SOP制定",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 331214,
+      "subtaskStatus": [
+        {
+          "id": "0048fd76fb4e6c21",
+          "status": "completed"
+        }
+      ],
+      "toolCallsTotal": 26,
+      "tools": [
+        {
+          "tool": "ef64b3f65f2ab2a2__add_observations",
+          "count": 12
+        },
+        {
+          "tool": "a6d0277e32709254__bocha_web_search",
+          "count": 10
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__create_entities",
+          "count": 2
+        },
+        {
+          "tool": "ef64b3f65f2ab2a2__read_graph",
+          "count": 2
+        }
+      ],
+      "decisionCount": 6,
+      "decisions": [
+        {
+          "action": "assign_subtask",
+          "count": 1
+        },
+        {
+          "action": "assign_subtask_result",
+          "count": 1
+        },
+        {
+          "action": "complete_task",
+          "count": 1
+        },
+        {
+          "action": "complete_task_result",
+          "count": 1
+        },
+        {
+          "action": "wait_subtasks",
+          "count": 1
+        },
+        {
+          "action": "wait_subtasks_result",
+          "count": 1
+        }
+      ],
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成订单延迟客服SOP制定任务，知识管理员已基于行业最佳实践和主流电商平台标准，制定了完整可落地的订单延迟客服处理标准作业流程文档。"
+    }
+  ]
+}

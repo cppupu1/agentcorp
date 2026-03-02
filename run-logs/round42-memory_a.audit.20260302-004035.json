@@ -1,0 +1,95 @@
+{
+  "label": "round42-memory_a",
+  "sessionId": "round42-memory_a-20260302-004035",
+  "kind": "memory_a",
+  "userPrompt": "请直接创建并启动任务：基于最近一个月售后投诉整理5条FAQ，并沉淀为知识条目。",
+  "pmChatDurationMs": 19481,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "66d1ac95bd80f8f4"
+  ],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": true,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_has_no_tool_directive",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 19481
+    },
+    {
+      "name": "pm_called_create_task_tool",
+      "ok": true
+    },
+    {
+      "name": "pm_called_start_task",
+      "ok": true
+    },
+    {
+      "name": "task_created",
+      "ok": true,
+      "taskIds": [
+        "66d1ac95bd80f8f4"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true,
+      "status": "completed",
+      "timedOut": false
+    },
+    {
+      "name": "not_waiting",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "66d1ac95bd80f8f4",
+    "status": "completed",
+    "tokenUsage": 69054,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已基于2026年2月售后投诉数据完成FAQ整理与知识沉淀工作。识别出5个高频问题（客服服务质量、商品质量、退款困难、虚假发货、虚假宣传），并已编写详细的FAQ解答沉淀至知识库，可供客服团队查询使用。文档符合客户服务标准，包含问题标题、详细答案、处理时效、补偿方案及法律依据。"
+  }
+}

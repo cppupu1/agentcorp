@@ -1,0 +1,66 @@
+{
+  "label": "round33-b06-translation",
+  "sessionId": "round33-b06-translation-20260301-115524",
+  "kind": "translation",
+  "pmChatDurationMs": 40661,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "4004f7f9159d5bd3"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 40661
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "4004f7f9159d5bd3",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 25207,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已成功完成企业公告模板的中英双语简版输出任务。**执行过程**：- 首次派发子任务后，校验提示缺少可核验来源链接- 重新派发时添加了参考来源说明后通过- 最终输出了语义一致的中英双语版本**交付成果**：- 中文简版公告（精简版企业公告）- 英文翻译版本（保持语义一致）- 包含必要的参考资料所有子任务已完成，任务执行成功。"
+  }
+}

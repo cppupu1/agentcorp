@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { hrAssistantApi } from '@/api/client';
 import type { ChatSession, HrChatMessage } from '@/api/client';
 import { Button } from '@/components/ui/button';
@@ -26,6 +26,7 @@ interface StreamingMessage {
 
 export default function HrAssistantPage() {
   const { t } = useI18n();
+  const navigate = useNavigate();
   const { onCompositionStart, onCompositionEnd, isComposing } = useIMEComposing();
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
@@ -33,12 +34,14 @@ export default function HrAssistantPage() {
   const [streaming, setStreaming] = useState<StreamingMessage | null>(null);
   const [input, setInput] = useState('');
   const [sending, setSending] = useState(false);
+  const [configured, setConfigured] = useState<boolean | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const abortRef = useRef<AbortController | null>(null);
   const activeSessionRef = useRef<string | null>(null);
 
   useEffect(() => {
+    hrAssistantApi.status().then(res => setConfigured(res.data.configured)).catch(() => setConfigured(false));
     return () => { abortRef.current?.abort(); };
   }, []);
 
@@ -251,8 +254,17 @@ export default function HrAssistantPage() {
           <p className="text-sm text-muted-foreground">{t('hr.selectOrCreate')}</p>
         </div>
 
+        {configured === false && (
+          <div className="mx-4 mt-4 p-4 rounded-xl bg-warning/10 border border-warning/30 flex items-center justify-between gap-3">
+            <p className="text-sm text-warning-foreground">{t('hr.notConfigured')}</p>
+            <Button size="sm" variant="outline" onClick={() => navigate('/settings')}>
+              {t('hr.goSettings')}
+            </Button>
+          </div>
+        )}
+
         <div ref={chatContainerRef} className="flex-1 overflow-auto p-4 md:p-8 space-y-2">
-          {!activeSessionId && (
+          {!activeSessionId && configured !== false && (
             <div className="flex items-center justify-center h-full text-muted-foreground/50 text-[15px] font-medium">
               {t('hr.selectOrCreate')}
             </div>
@@ -295,11 +307,13 @@ export default function HrAssistantPage() {
   );
 }
 
+const HIDDEN_TOOLS = new Set(['list_models', 'list_tools']);
+
 function MessageBubble({ message }: { message: HrChatMessage }) {
   const isUser = message.role === 'user';
   let toolCalls: ToolCallEntry[] = [];
   try {
-    toolCalls = message.toolCalls ? JSON.parse(message.toolCalls) : [];
+    toolCalls = (message.toolCalls ? JSON.parse(message.toolCalls) : []).filter((tc: ToolCallEntry) => !HIDDEN_TOOLS.has(tc.toolName));
   } catch {
     toolCalls = [];
   }
@@ -334,7 +348,7 @@ function StreamingBubble({ msg }: { msg: StreamingMessage }) {
             <Loader2 className="h-4 w-4 animate-spin opacity-50" /> {t('hr.thinking')}
           </div>
         )}
-        {msg.toolCalls.length > 0 && <ToolCallsDisplay toolCalls={msg.toolCalls} />}
+        {msg.toolCalls.filter(tc => !HIDDEN_TOOLS.has(tc.toolName)).length > 0 && <ToolCallsDisplay toolCalls={msg.toolCalls.filter(tc => !HIDDEN_TOOLS.has(tc.toolName))} />}
         {!msg.done && <span className="inline-block w-2 h-4 bg-foreground/40 animate-pulse ml-1 rounded-sm align-middle" />}
       </div>
     </div>

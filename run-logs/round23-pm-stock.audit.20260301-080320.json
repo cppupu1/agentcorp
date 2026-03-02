@@ -1,0 +1,87 @@
+{
+  "label": "round23-pm-stock",
+  "sessionId": "round23-stock-20260301-080320",
+  "pmChatDurationMs": 17901,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_models",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "1db376466de02814"
+  ],
+  "autoAssign": {
+    "recommended": 3,
+    "added": 1
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 17901
+    },
+    {
+      "name": "auto_assign_min",
+      "ok": true,
+      "recommended": 3,
+      "min": 1
+    },
+    {
+      "name": "uses_stock_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "1db376466de02814",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 95085,
+      "tools": [
+        {
+          "tool": "tushare_mcp_001__daily",
+          "count": 4
+        },
+        {
+          "tool": "tushare_mcp_001__plot_daily_candlestick_chart",
+          "count": 4
+        }
+      ],
+      "hasSearchTool": false,
+      "hasMemoryTool": false,
+      "hasStockTool": true,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n贵州茅台(600519)与宁德时代(300750)近30个交易日股票走势对比分析已完成。成功获取了两只股票的历史数据，完成了走势趋势和涨跌幅变化的对比分析，识别出2条关键观察点，并输出了对比图表和分析总结。关键发现：1. 茅台在2026-01-29出现单日最大涨幅+8.6146%（收盘价1437.72），为重要趋势转折点2. 宁德时代在2026-02-26出现单日最大跌幅-4.4674%（收盘价346.00），反映短期回调压力"
+    }
+  ]
+}

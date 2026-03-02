@@ -1,0 +1,70 @@
+{
+  "label": "round34-memory",
+  "sessionId": "round34-memory-20260301-124248",
+  "kind": "memory",
+  "pmChatDurationMs": 41184,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "assign_team_tools",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "quick_create_task",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "bf32cb12e4dcfa47"
+  ],
+  "selectedModelIds": [
+    "b9df4501c7f6f9a6"
+  ],
+  "checks": [
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 41184
+    },
+    {
+      "name": "uses_minimax_model_id_only",
+      "ok": true,
+      "selectedModelIds": [
+        "b9df4501c7f6f9a6"
+      ]
+    },
+    {
+      "name": "task_completed",
+      "ok": true
+    },
+    {
+      "name": "uses_memory_tool",
+      "ok": true
+    }
+  ],
+  "allChecksPassed": true,
+  "task": {
+    "taskId": "bf32cb12e4dcfa47",
+    "status": "completed",
+    "timedOut": false,
+    "tokenUsage": 76617,
+    "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成售后FAQ知识沉淀任务，整理了最近一个月（2026年2月-3月）售后投诉数据，输出5条高频问题FAQ并沉淀为知识条目。FAQ涵盖客服服务、退款问题、商品质量、订单延迟、预付费问题五大类别，为后续客服响应和问题解决提供标准化参考。"
+  }
+}

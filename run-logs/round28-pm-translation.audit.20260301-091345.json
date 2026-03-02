@@ -1,0 +1,71 @@
+{
+  "label": "round28-pm-translation",
+  "sessionId": "round28-translation-20260301-091345",
+  "pmChatDurationMs": 24800,
+  "pmChatError": null,
+  "pmTools": [
+    {
+      "tool": "create_task",
+      "count": 1
+    },
+    {
+      "tool": "list_teams",
+      "count": 1
+    },
+    {
+      "tool": "list_templates",
+      "count": 1
+    },
+    {
+      "tool": "list_tools",
+      "count": 1
+    },
+    {
+      "tool": "start_task",
+      "count": 1
+    }
+  ],
+  "taskIds": [
+    "87b2ddf0d35a4ea5"
+  ],
+  "autoAssign": {
+    "recommended": 0,
+    "added": 0
+  },
+  "checks": [
+    {
+      "name": "tasks_completed",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_returned",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_duration_lt_90s",
+      "ok": true,
+      "durationMs": 24800
+    },
+    {
+      "name": "auto_assign_max",
+      "ok": true,
+      "recommended": 0,
+      "max": 2
+    }
+  ],
+  "allChecksPassed": true,
+  "tasks": [
+    {
+      "taskId": "87b2ddf0d35a4ea5",
+      "status": "completed",
+      "timedOut": false,
+      "tokenUsage": 3372,
+      "tools": [],
+      "hasMemoryTool": false,
+      "hasStockTool": false,
+      "decisionCount": 6,
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0，未完成 0。\n已完成企业公告的中英双语翻译任务。文案策划提供了专业的简体中文和英文两个版本，保持了原意准确、用词专业简洁、正式语气和流畅自然的表达。"
+    }
+  ]
+}

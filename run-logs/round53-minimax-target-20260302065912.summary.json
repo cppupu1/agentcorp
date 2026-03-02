@@ -1,0 +1,77 @@
+{
+  "round": "round53-minimax-target-20260302065912",
+  "model": "MiniMax-M2.5",
+  "startedAt": "2026-03-02T06:59:12.870Z",
+  "scenarios": [
+    {
+      "key": "translation_autofill",
+      "sessionId": "round53-minimax-target-20260302065912-translation_autofill",
+      "checks": [
+        {
+          "name": "task_id",
+          "ok": true
+        },
+        {
+          "name": "completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "0c491344295b0550",
+      "status": "completed",
+      "tools": {
+        "names": [],
+        "search": false
+      }
+    },
+    {
+      "key": "ai_brief_absolute",
+      "sessionId": "round53-minimax-target-20260302065912-ai_brief_absolute",
+      "checks": [
+        {
+          "name": "task_id",
+          "ok": true
+        },
+        {
+          "name": "completed",
+          "ok": true,
+          "status": "completed"
+        },
+        {
+          "name": "not_timeout",
+          "ok": true
+        },
+        {
+          "name": "no_bad_text",
+          "ok": true
+        },
+        {
+          "name": "search_tool",
+          "ok": true
+        }
+      ],
+      "ok": true,
+      "taskId": "2bf93d6a0a4a980f",
+      "status": "completed",
+      "tools": {
+        "names": [
+          "a6d0277e32709254__bocha_ai_search",
+          "a6d0277e32709254__get_markdown_summary",
+          "1791ada993a23a56__get_markdown_summary"
+        ],
+        "search": true
+      }
+    }
+  ],
+  "allPassed": true,
+  "finishedAt": "2026-03-02T07:04:26.473Z"
+}

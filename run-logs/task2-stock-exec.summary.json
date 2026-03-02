@@ -1,0 +1,58 @@
+{
+  "taskId": "188ab7861942fd26",
+  "status": "paused",
+  "tokenUsage": 1000278,
+  "subtasks": 11,
+  "toolCalls": 108,
+  "tools": {
+    "tushare_mcp_001__stock_basic": {
+      "count": 4,
+      "errors": 0
+    },
+    "tushare_mcp_001__today": {
+      "count": 4,
+      "errors": 0
+    },
+    "tushare_mcp_001__daily": {
+      "count": 16,
+      "errors": 0
+    },
+    "tushare_mcp_001__plot_daily_candlestick_chart": {
+      "count": 14,
+      "errors": 0
+    },
+    "01a07c2a149edad0__write_file": {
+      "count": 34,
+      "errors": 0
+    },
+    "01a07c2a149edad0__list_allowed_directories": {
+      "count": 4,
+      "errors": 0
+    },
+    "tushare_mcp_001__weekly": {
+      "count": 12,
+      "errors": 0
+    },
+    "01a07c2a149edad0__list_directory": {
+      "count": 2,
+      "errors": 0
+    },
+    "01a07c2a149edad0__list_directory_with_sizes": {
+      "count": 2,
+      "errors": 0
+    },
+    "01a07c2a149edad0__read_multiple_files": {
+      "count": 8,
+      "errors": 0
+    },
+    "01a07c2a149edad0__create_directory": {
+      "count": 2,
+      "errors": 0
+    },
+    "01a07c2a149edad0__read_text_file": {
+      "count": 6,
+      "errors": 0
+    }
+  },
+  "result": null
+}

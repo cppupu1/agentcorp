@@ -1,0 +1,39 @@
+{
+  "label": "round38-stock",
+  "sessionId": "round38-stock-20260301-140334",
+  "kind": "stock",
+  "userPrompt": "明早投研会要讲两只龙头最近表现，你直接安排搞定：贵州茅台和宁德时代近30天走势，给两条带日期的结论。",
+  "pmChatDurationMs": 534,
+  "pmChatError": null,
+  "pmTools": [],
+  "taskIds": [],
+  "selectedModelIds": [],
+  "toolFlags": {
+    "search": false,
+    "memory": false,
+    "stock": false
+  },
+  "checks": [
+    {
+      "name": "prompt_without_tool_hint",
+      "ok": true
+    },
+    {
+      "name": "pm_chat_done",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "pm_chat_lt_90s",
+      "ok": true,
+      "durationMs": 534
+    },
+    {
+      "name": "task_created",
+      "ok": false,
+      "taskIds": []
+    }
+  ],
+  "allChecksPassed": false,
+  "task": null
+}

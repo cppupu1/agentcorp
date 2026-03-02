@@ -1,6 +1,7 @@
 import type { FastifyInstance } from 'fastify';
 import { AppError } from '../errors.js';
 import * as knowledgeService from '../services/knowledge.js';
+import { parseFileContent, isSupportedFile } from '../services/document-parser.js';
 
 export function registerKnowledgeRoutes(app: FastifyInstance) {
   // List all knowledge bases
@@ -52,6 +53,34 @@ export function registerKnowledgeRoutes(app: FastifyInstance) {
         throw new AppError('VALIDATION_ERROR', '请求参数校验失败', { details: errors });
       }
       const doc = await knowledgeService.addDocument(req.params.id, title!, content!, mimeType);
+      return reply.status(201).send({ data: doc });
+    }
+  );
+
+  // Upload file as document
+  app.post<{ Params: { id: string } }>(
+    '/api/knowledge-bases/:id/upload', async (req, reply) => {
+      const file = await req.file();
+      if (!file) {
+        throw new AppError('VALIDATION_ERROR', '请上传文件', {
+          details: [{ field: 'file', rule: 'required', message: '文件必填' }],
+        });
+      }
+      const filename = file.filename;
+      if (!isSupportedFile(filename)) {
+        throw new AppError('VALIDATION_ERROR', '不支持的文件格式', {
+          details: [{ field: 'file', rule: 'format', message: '仅支持 PDF、Word、Excel、PPT、TXT、MD 格式' }],
+        });
+      }
+      const buffer = await file.toBuffer();
+      const { text, detectedMimeType } = await parseFileContent(buffer, filename, file.mimetype);
+      if (!text.trim()) {
+        throw new AppError('VALIDATION_ERROR', '文件内容为空', {
+          details: [{ field: 'file', rule: 'content', message: '无法从文件中提取文本内容' }],
+        });
+      }
+      const title = filename.replace(/\.[^.]+$/, '');
+      const doc = await knowledgeService.addDocument(req.params.id, title, text, detectedMimeType);
       return reply.status(201).send({ data: doc });
     }
   );

@@ -1,0 +1,72 @@
+{
+  "data": {
+    "id": "964dc993dc6086ff",
+    "teamId": "e74225445f56e34d",
+    "teamName": "内容创作",
+    "title": "回归验证-auto-start烟雾测试",
+    "description": "请给出100字内中文周报摘要（进展、风险、下周计划）。",
+    "status": "completed",
+    "mode": "auto",
+    "brief": null,
+    "teamConfig": {
+      "pm": {
+        "id": "10e50edcbcdb3f0c",
+        "name": "内容主管"
+      },
+      "members": [
+        {
+          "id": "a845eb9f40272a99",
+          "name": "文案策划",
+          "taskPrompt": "负责文字内容创作与品牌文案撰写"
+        },
+        {
+          "id": "fa51270271d7a1c9",
+          "name": "视觉设计师",
+          "taskPrompt": "负责视觉内容设计与品牌视觉呈现"
+        }
+      ]
+    },
+    "plan": {
+      "subtasks": [
+        {
+          "id": "sub_autostart_bootstrap",
+          "title": "回归验证-auto-start烟雾测试",
+          "description": "请给出100字内中文周报摘要（进展、风险、下周计划）。",
+          "assigneeId": "a845eb9f40272a99",
+          "dependsOn": []
+        }
+      ]
+    },
+    "result": {
+      "summary": "系统校验：子任务总数 1，已完成 1，失败 0。\n已完成\"回归验证-auto-start烟雾测试\"项目中文周报摘要的撰写任务。文案策划按照要求在100字内完成了包含进展、风险、下周计划三部分的周报摘要，内容简洁专业，符合周报写作规范。",
+      "deliverables": "**周报摘要（100字内）：**\n\n本周完成auto-start烟雾测试用例编写与执行，覆盖率90%，发现3处高优先级缺陷。风险：环境稳定性与接口响应延迟。下周：缺陷修复验证、回归测试、输出测试报告。",
+      "subtaskSummary": {
+        "total": 1,
+        "completed": 1,
+        "failed": 0
+      },
+      "completedAt": "2026-02-28T16:15:41.556Z"
+    },
+    "tokenUsage": 2987,
+    "createdAt": "2026-02-28T16:15:22.332Z",
+    "updatedAt": "2026-02-28T16:15:41.568Z",
+    "subtasks": [
+      {
+        "id": "818065840ebd495f",
+        "title": "回归验证-auto-start烟雾测试",
+        "description": "请给出100字内中文周报摘要（进展、风险、下周计划）。",
+        "assigneeId": "a845eb9f40272a99",
+        "assigneeName": "文案策划",
+        "status": "completed",
+        "dependsOn": [],
+        "output": {
+          "summary": "本周完成auto-start烟雾测试用例编写与执行，覆盖率90%，发现3处高优先级缺陷。风险：环境稳定性与接口响应延迟。下周：缺陷修复验证、回归测试、输出测试报告。"
+        },
+        "sortOrder": 0,
+        "tokenUsage": 2987,
+        "createdAt": "2026-02-28T16:15:22.335Z",
+        "updatedAt": "2026-02-28T16:15:38.956Z"
+      }
+    ]
+  }
+}

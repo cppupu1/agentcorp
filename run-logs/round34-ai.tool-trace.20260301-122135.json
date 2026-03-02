@@ -1,0 +1,254 @@
+[
+  {
+    "id": "18ba78ad0f89f479",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": {
+      "toolCallId": "call_function_cgehr9w8i8uy_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:22:23.324Z"
+  },
+  {
+    "id": "313e824594b7d47c",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "fc5f4c5bf43702d4__get-env",
+    "input": null,
+    "output": "{\n  \"NODE\": \"/opt/homebrew/Cellar/node@22/22.16.0/bin/node\",\n  \"INIT_CWD\": \"/Users/chenpu/workspace/claude-code/YourTeam2/packages/server\",\n  \"TERM\": \"xterm-256color\",\n  \"SHELL\": \"/bin/zsh\",\n  \"npm_config_global_prefix\": \"/opt/homebrew\",\n  \"COLOR\": \"0\",\n  \"npm_config_noproxy\": \"\",\n  \"npm_config_local_prefix\": \"/Users/chenpu/workspace/claude-code/YourTeam2\",\n  \"USER\": \"chenpu\",\n  \"npm_config_globalconfig\": \"/opt/homebrew/etc/npmrc\",\n  \"__CF_USER_TEXT_ENCODING\": \"0x1F5:0:0\",\n  \"npm_execpath\": \"/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/bin/npm-cli.js\",\n  \"PATH\": \"/Users/chenpu/.npm-cache-new/_npx/5b2dd62b9d0bddd4/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/server/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/packages/node_modules/.bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/chenpu/workspace/claude-code/YourTeam2/node_modules/.bin:/Users/chenpu/workspace/claude-code/node_modules/.bin:/Users/chenpu/workspace/node_modules/.bin:/Users/chenpu/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/Cellar/node@22/22.16.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bi",
+    "isError": false,
+    "durationMs": 2,
+    "createdAt": "2026-03-01T12:22:23.326Z"
+  },
+  {
+    "id": "1e788bcbbf5ec229",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_fq330ry2d93b_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:22:38.442Z"
+  },
+  {
+    "id": "0ce4af86a62eb02c",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年第四届AIGC中国开发者大会在北京圆满举行,发布2025年AI十大颠覆式行业发展趋势--人工智能-至顶网\nURL: https://ai.zhiding.cn/2025/0114/3162729.shtml\nDescription: 一､ 2025 年 AI 十大颠覆式行业发展趋势 1､world model元年:25年将是world model元年,从卷1D､2D类模型进入到卷理解物理世界规律的3D类world model时代,李飞飞主导的lwm也会在2025年发布 2､仿真数据蒸馏:2025年将是仿真数据蒸馏的元年,制约机器人､工业､自动驾驶､飞行器等各种场景的仿真数据集问题解决,借助cosmos即可完成生成,犹如大模型训练需要用gpt蒸馏数据,而不需要从头去构建数据集 3､AI孪生的GPT时刻:英伟达提出的groot+ominiverse+cosmos提供了新的AI孪生引擎,成为了仿真领域AI应用的GPT时刻 4､空间智能元年:AGI+DGI+OMINIVERSE结合cosmos=空间智能的技术架构,链接了推理､边缘设备､仿真三大物理AI的新架构,为空间智能的爆发提供了框架基础 5､产业落地方向:工业领域､自动驾驶､具身机器人仿真与ai深入结合的时代到来,实际应用也会进入现实 6､替代工种:AI落地应用从办公室替代信息工作者的agent,进入替代蓝领的实际工业\nPublished date: 2026-02-17T16:00:12+08:00\nSite name: ai.zhiding.cn\n\nTitle: 2025年12个AI预测--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0107/3162464.shtml\nDescription: 随着生成式AI的快速普及,企业已开始广泛应用并获得投资回报｡预计到2025年,AI将在企业中大规模采用,推动效率和生产力提升｡小型语言模型､边缘计算､AI推理能力､proven use cases的大规模应用､敏捷开发的演进､法规监管加强､AI的无处不在､AI代理的兴起､多模态AI等将成为主要趋势,彻底改变企业运营方式和软件开发模式｡ \nPublished date: 2026-02-17T15:46:16+08:00\nSite name: ai.zhiding.cn\n\nTitle: AI 发展五大趋势:2025 年ChatGPT 之外的新方向--人工智能-至顶网\nURL: http://ai.zhiding.cn/2024/1231/3162307.shtml\nDescription:  趋势一:无处不在的 AI 代理 \"代理式 AI\"(Agentic AI)将成为一个热门话题｡AI 代理是一种能够学习､创造行动并执行的软件,它结合了模式学习､内容生成和行动执行三大功能｡预计 2025 年,这一领域将迎来显著发展｡ 趋势二:教育体系的变革 AI 不仅影响学习方式,还将深刻改变学习内容｡面对 AI 驱动的就业市场变化,毕业生和教育机构都需要适应新的经济现实｡2025 年,我们可能会看到这些变革的开始｡ 趋势三:科学领域的 AI 应用 2023 年两项诺贝尔奖授予 AI 相关成果,标志着 AI 在科学领域的重要性｡尽管生成式 AI 备受关注,但科学应用领域的 AI 也在获得大量投资｡然而,AI 在药物研发等领域的成功率仍有待提高,这表明 AI 在科学领域的潜力尚未完全实现｡ 趋势四:易获取数据的短缺 高质量､符合伦理的数据将变得越来越难以获取｡2025 年,我们可能会看到更多努力来获取数据,包括商业合同､数据标注系统和传感器部署等｡这一趋势与 AI 在科学领域的应用相结合,可能会加速科学数据的利用｡ 趋势五:机器人技术的普及 AI 与物理自动化的结合将为制造业､外科手术､农业和太空探索等领域带来无限可能｡2025 年,我们将看到这一领域的现有趋势扩大,并引起更广泛的公众关注｡\nPublished date: 2026-02-17T19:46:54+08:00\nSite name: ai.zhiding.cn\n\nTitle: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphcxh3612916.shtml\nDescription: 一､产业发展格局:全球竞合与中国领跑的双轨态势 (一)全球市场规模持续扩张,亚太成为增长引擎 人工智能产业已进入爆发式增长期,成为全球经济复苏的核心动力｡2025年全球AI市场规模达7575.8亿美元,同比增长18.7%,预计2026年将突破9000亿美元关口｡区域竞争呈现显著分",
+    "isError": false,
+    "durationMs": 1412,
+    "createdAt": "2026-03-01T12:22:39.854Z"
+  },
+  {
+    "id": "81595058f66a82ca",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": {
+      "toolCallId": "call_function_eqzrldyhzdpq_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:22:46.407Z"
+  },
+  {
+    "id": "1ed57173da6c794c",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_web_search",
+    "input": null,
+    "output": "Title: 2026年AI大模型发展趋势_标签大全_报告大厅\nURL: https://m.chinabgao.com/tag/tendency/AIdamoxing.html\nDescription: AI大模型行业趋势研究报告是通过对影响AI大模型行业市场运行的诸多因素所进行的调查分析,掌握AI大模型行业市场运行规律,从而对AI大模型行业的未来的发展趋势特点、市场容量、竞争趋势、细分下游市场需求趋势等进行预测。\nAI大模型行业趋势研究报告主要分析要点包括:\n1)AI大模型行业发展趋势特点分析。通过对AI大模型行业发展影响因素分析,总结出未来AI大模型行业总体运行趋势特点;\n2)预测AI大模型行业生产发展及其变化趋势。对生产发展及其变化趋势的预测,这是对市场中商品供给量及其变化趋势的预测;\n3)预测AI大模型行业市场容量及变化。综合分析预测期内AI大模型行业生产技术、产品结构的调整,预测AI大模型行业的需求结构、数量及其变化趋势。4)预测AI大模型行业市场价格的变化。企业生产中投入品的价格和产品的销售价格直接关系到企业盈利水平。在商品价格的预测中,要充分研究劳动生产率、生产成本、利润的变化,市场供求关系的发展趋势,货币价值和货币流通量变化以及国家经济政策对商品价格的影响。\nAI大模型行业趋势研究报告主要依据了国家统计局、国家海关总署、国家发改委、国家商务部、国家工业和信息化部、行业协会、国内外相关刊物杂志等的基础信息,结合AI大模型行业历年供需关系变化规律,对AI大模型行业内的企业群体进行了深入的调查与研究,对AI大模型行业环境、AI大模型市场供需、AI大模型行业经济运行、AI大模型市场格局、AI大模型生产企业等的详尽分析。在对以上分析的基础上,对AI大模型行业未来发展趋势和市场前景进行科学、严谨的分析与预测。\n延伸阅读\nPublished date: 2026-02-28T15:55:03+08:00\nSite name: 报告大厅\n\nTitle: 2026-2031年中国AI大模型产业运行态势及投资规划深度研究报告_报告大厅\nURL: https://www.chinabgao.com/report/20105634.html\nDescription: 第一章\nAI大模型行业概况\n第一节AI大模型行业简介\n第二节\nAI大模型行业分类\n第三节\nAI大模型行业发展特点\n第四节\nAI大模型行业在国民经济中的地位\n第五节\nAI大模型行业趋势概述\n第二章\n2021-2025年全球AI大模型行业发展状况分析\n第一节\n2021-2025年全球AI大模型行业运行概况\n一、全球AI大模型行业市场供需分析\n二、全球市场竞争主体与梯队分析\n第二节\n2021-2025年全球主要地区AI大模型行业运行情况分析\n一、美国\n二、日韩地区\n三、欧洲\n第三节\n2021-2025年全球AI大模型行业发展趋势分析\n第三章\n2021-2025年中国AI大模型行业发展环境分析\n第一节\n2021-2025年中国经济环境分析\n一、宏观经济\n二、工业形势\n三、固定资产投资\n第二节\n2021-2025年中国AI大模型行业发展政策环境分析\n一、行业政策影响分析\n二、相关行业标准分析\n第三节\n2021-2025年中国AI大模型行业发展社会环境分析\n第四章\n2021-2025年中国AI大模型行业市场运行动态分析\n第一节\n2021-2025年中国AI大模型行业市场供需分析\n一、AI大模型市场需求结构分析\n二、AI大模型竞争格局分析\n三、中国AI大模型企业动态分析\n第二节\n2021-2025年中国AI大模型行业市场营销策略分析\n一、不断推出新的销售方式\n二、辨别并选择正确的销售对象\n三、创造性的广告策略\n四、密切关注消费者的需求\n第三节\n2021-2025年中国AI大模型市场供需平衡分析\n第五章\n2021-2025年中国AI大模型行业数据调查分析\n第一节\n2021-2025年中国AI大模型行业规模分析\n一、企业数量增长分析\n二、从业人数增长分析\n三、资产规模增长分析\n第二节\n2021-2025年中国AI大模型行业结构分析\n一、企业数量结构分析\n二、销售收入结构分析\n第三节\n202\nPublished date: 2026-02-28T22:45:45+08:00\nSite name: 报告大厅\n\nTitle: 2026年计算机行业春季投资策略:把握AI主线,重视新科技 - 报告精读 - 未来智库\nURL: https://www.vzkoo.com/read/4640686744209985536.html\nDescription: 人工智能迎来技术进化与场景落地双重变革\n大模型持续迭代,商业化落地可期\n大模型数量不断增加,能力快速增强:随着开源降低技术门槛,各国加快算力基础建",
+    "isError": false,
+    "durationMs": 602,
+    "createdAt": "2026-03-01T12:22:47.009Z"
+  },
+  {
+    "id": "516d6de1fb8aa6f4",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_upk624e2st2r_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:22:50.400Z"
+  },
+  {
+    "id": "99026ffc1f36403e",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 恒易贷:AI人工智能热门用途解析 - 今日头条\nURL: https://www.toutiao.com/article/7611463457447133722/\nDescription: 1. 智能体(AI Agent)崛起:从“工具”到“管家” 定义与特征:智能体AI能够自主设定任务､规划路径､试错反馈,具备“自主性”“举一反三”和“长期记忆”三大特征｡例如,腾讯将自研大模型深度融入900余个内部场景,通过智能体实现业务闭环;百度计划到2027年推出1000个工业智能体,打造“懂智能､熟行业”的赋能服务商｡ 2. 具身智能(Embodied AI):从数字世界到物理世界 定义与场景:具身智能机器人通过视觉､触觉等多模态感知与真实世界交互,完成复杂任务｡例如,中国团队训练的机器人“大脑”已具备在物理世界理解和执行任务的能力,可应用于巡检､服务营业厅､工厂等场景｡ 市场潜力:2025年中国具身智能市场规模达52.95亿元,占全球约27%｡预计2026年智能机器人将在制造､仓储､家庭服务等领域推出标志性产品,并进入规模化试用阶段｡ 3. 多模态交互:从“文本生成”到“全能感知” 技术演进:AI从单一文本处理扩展至文本､图像､音频､视频及3D点云等多源数据融合,推动人机交互向“所见即所得”演进｡ 二､产业应用:从“效率工具”到“范式革命” 1. 智能制造:从“机械重复”到“自主优化” 典型场景: 动态调度系统:某钢铁企业通过激光扫描构建库区三维数字孪生模型,实时采集行车位置､物料库存等200余维度数据,采用深度确定性策略梯度算法动态计算最优作业路径,使库区吞吐量提升32%｡ \nPublished date: 2026-02-28T16:15:16+08:00\nSite name: 今日头条\n\nTitle: AI能成交客户?2026年AI销冠智能体正在颠覆转化效率,快来雇佣AI员工!-CSDN.NET\nURL: https://blog.csdn.net/xinyuan82/article/details/156947239\nDescription: 在大模型语言能力快速升级的背景下,2025年作为AI Agent元年,AI智能体已经广泛应用在内容生成､客服等领域,随着技术的发展,2026年,企业级AI应用将会更规模化落地｡ 今天,我们将结合销售环节的常见问题与AI解决方案,为您介绍能够提高企业线索跟进､销售转化､客户服务效率的领先工具——尘锋AI销冠智能体｡ 一､ 什么是AI销冠智能体? \nPublished date: 2026-02-18T06:26:52+08:00\nSite name: blog.csdn.net\n\nTitle: 2025年值得关注的5大生成式AI趋势--人工智能-至顶网\nURL: http://ai.zhiding.cn/2025/0113/3162651.shtml\nDescription: 随着生成式AI逐渐成为企业应用的核心,它将显著提升运营效率､推动创新,并重塑组织与技术的交互方式｡本文梳理了2025年5大关键趋势,包括AI优先的应用开发､服务即软件模式､语音实时交互､生成式用户界面,以及企业级AI代理的深度集成｡这些趋势将为企业带来机遇与挑战,需要决策者深入了解并提前布局｡ 随着企业在日益数字化的环境中发展,生成式 AI 正成为企业应用的基石｡\nPublished date: 2026-02-19T21:32:11+08:00\nSite name: ai.zhiding.cn\n\nTitle: AI赋能企业数字化全景图智能体企业服务智能体AI Agent 2025 参赛项目AI Agent 全球专项赛\nURL: https://aiagent2025.com/projects/0qnfso2df8rt\nDescription: 这款智能体聚焦企业全场景数字化需求,无需复杂技术对接,即可为企业提供一站式 AI 赋能｡从品牌视觉层面的智能设计(自动生成企业 LOGO､营销海报),到办公效率层面的智能辅助(实时会议记录整理､多语言翻译),再到交互体验层面的数字人应用(智能客服､虚拟宣讲),覆盖企业从前端品牌展示到后端办公协同的全流程｡小白友好型操作界面,支持通过自然语言下达需求,帮助企业快速降低数字化转型门槛,用AI 驱动各部门效率提升,加速业务升级｡\nPublished date: 2026-02-25T15:08:00+08:00\nSite name: aiagent2025.com\n\nTitle: AI下一个引爆点—— 联想“超级智能体” 定义本体、组织、空间“三重”边界--计算频道-至顶网\nURL: http://server.zhiding.cn/server/2025/0508",
+    "isError": false,
+    "durationMs": 1386,
+    "createdAt": "2026-03-01T12:22:51.786Z"
+  },
+  {
+    "id": "40708131fd1d6b19",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_fs5ck51fa9r5_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:22:56.364Z"
+  },
+  {
+    "id": "59f7f59f26acb998",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 2025年人工智能发展回顾:开辟AI新场景—新闻—科学网\nURL: https://news.sciencenet.cn/htmlnews/2026/1/558263.shtm\nDescription: 在行业场景落地方面,AI技术深入航天､医疗､金融等各个领域｡6月,俄航天局计划将国产大模型GigaChat部署至国际空间站,旨在将卫星图像分辨率提升一倍｡医疗领域,Yandex推出了首批儿科专用核磁共振影像分析AI工具｡截至2025年11月底,莫斯科数字医疗平台已覆盖全国近2000家机构,医生可通过该系统使用AI技术分析放射学影像及其他医疗数据｡此外,金融行业AI投入持续加码,2025年全年投入规模预计突破1200亿卢布,占全行业数字化预算的34%,较2023年增长近两倍｡ 在模型领域,科技公司推出了多款AI模型｡1月OpenAI推出首个AI智能体Operator,赋予AI直接操作图形界面的能力;\nPublished date: 2026-02-12T08:39:41+08:00\nSite name: 科学网\n\nTitle: 2025年中国AI大模型产业市场前景及投资研究报告-前沿知识库\nURL: https://wk.askci.com/book/20250319/0b525e8c9f404ce99625733f3328f928.shtml\nDescription: 近年来,AI大模型的应用场景也越来越广泛,从智能家居到智慧医疗,从智慧城市到智能制造,大模型已经成为了人工智能技术的重要组成部分｡ PART1 AI大模型产业概况 AI大模型是指在机器学习和人工智能领域中,具有庞大参数量和复杂结构的模型,这些模型通常由大量的神经网络层组成,具有数百万或数十亿的参数,需要大量的计算资源和存储空间进行训练和推理｡\nPublished date: 2026-02-13T17:15:46+08:00\nSite name: wk.askci.com\n\nTitle: AI大模型的产业应用与发展趋势分析-CSDN专栏\nURL: https://download.csdn.net/blog/column/12252923/135578673\nDescription:  产业应用:AI大模型在各个产业中的应用,包括医疗､金融､物流､教育等领域｡ 前景:AI大模型在未来产业应用中的发展趋势和挑战｡ 这些概念之间的联系如下: AI大模型在产业应用中的发展趋势,取决于模型结构创新和算法优化｡ 模型结构创新和算法优化对于提高AI大模型的性能和效率至关重要,同时也会影响其在产业应用中的前景｡ 产业应用中的挑战和需求,会推动AI大模型的发展趋势和模型结构创新｡ 限时特价 \nPublished date: 2026-02-22T13:34:51+08:00\nSite name: download.csdn.net\n\nTitle: 2026人工智能发展趋势深度解析AI_新浪财经_新浪网\nURL: https://finance.sina.com.cn/roll/2026-02-27/doc-inhphcxh3612916.shtml\nDescription: 市场方面,生成式AI应用渗透率快速提升,截至2025年6月我国生成式AI用户规模达5.15亿人,普及率36.5%｡技术方面,DeepSeek､通义千问等大模型实现突破,清华大学SALMONN音视频大模型在多项评测中超越GPT-4o等国际主流模型｡三重动力叠加下,中国AI产业正从技术跟跑向部分领跑转变,2025-2035年市场规模复合增长率预计达30.6%-47.1%｡ \nPublished date: 2026-02-27T18:29:10+08:00\nSite name: 新浪财经\n\nTitle: 2025 年我国人工智能企业数量超 6000 家-IT之家\nURL: https://www.ithome.com/0/915/017.htm\nDescription: 前,AI 大模型已应用到金融､医疗､制造､交通､教育等多个行业｡据中国电子信息产业发展研究院人工智能研究室主任钟新龙介绍,大模型已经把传统经验决策升级为“数据 + 模型”驱动的智能决策,改变研发方式､运维模式和风险管理｡ 据IT之家此前报道,胡润研究院发布的《2025 胡润中国人工智能企业 50 强》报告显示: AI 芯片企业寒武纪以 6300 亿元的价值位居榜首,比去年增长 165%; 国产 \nPublished date: 2026-02-28T01:43:19+08:00\nSite name: IT之家\n\nTitle: 人工智能大模型赋能垂直行业 赛道详情 - 数字中国\nURL: https://www.dcic-china",
+    "isError": false,
+    "durationMs": 1220,
+    "createdAt": "2026-03-01T12:22:57.584Z"
+  },
+  {
+    "id": "6bd9d22af94f3919",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": {
+      "toolCallId": "call_function_4p00r2v8zojm_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:23:05.307Z"
+  },
+  {
+    "id": "d4857fe17c5cc738",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "a6d0277e32709254__bocha_ai_search",
+    "input": null,
+    "output": "Title: 破局与前行:企业级AI领域10大核心事件盘点-CSDN.NET\nURL: https://www.csdn.net/article/2026-01-23/157295869\nDescription:  NO.1 DeepSeek火爆出圈,掀起千行百业接入热潮 2025年初,中国开源大模型DeepSeek横空出世,迅速席卷全球开发者圈层与资本市场｡凭借性能､成本､工程可用性的三重突破,引发硅谷科技媒体与投资界高度关注,甚至导致纳斯达克AI概念股单日蒸发万亿美元市值｡ 热潮之下,各行业企业纷纷宣布接入､适配或上架DeepSeek模型｡作为数智化办公专家,蓝凌软件率先布局,旗下LanBots.AI､aiKM智能知识管理平台等多款产品接入DeepSeek,支持私有化部署,为用户带来更强大､智能的办公体验｡ NO.2 Manus正式发布,开启通用智能体新时代 2025年3月6日,中国Monica公司发布通用AI智能体Manus,通过自主任务执行､动态任务拆解､多模态交互和跨平台执行等能力,帮助用户高效完成复杂任务｡这一突破标志着AI从对话式助手进化为行动式专家,将人类从重复的流程化工作中解放出来｡ NO.3 信通院发布AI智能体10大关键词,研判未来发展趋势 2025年7月28日,中国信通院发布“2025智能体十大关键词”,分别是:通用智能体､专用智能体､端侧智能体､企业级智能体､智能体平台､智能体通信协议､多智能体协同､智能体价值评估､智能体可信､智能体基准测试,集中体现了智能体未来发展趋势､技术研究热点与产业关注重点｡\nPublished date: 2026-02-27T16:01:44+08:00\nSite name: CSDN技术社区\n\nTitle: 我国人工智能企业数量已超 6200 家,AI 大模型融入千行百业 - IT之家\nURL: https://www.ithome.com/0/913/835.htm\nDescription: 同月,中国信通院发布了“2025 人工智能产业十大关键词”,即基础超级模型､自主性更强的智能体､走向实训的具身智能､萌芽中的世界模型､AI 正在重塑软件､开放智算生态､面向行业的高质量数据集､开源成为标配､缓解模型幻觉､人工智能国际公共产品｡\nPublished date: 2026-02-27T23:41:31+08:00\nSite name: IT之家\n\nTitle: 重庆AI Agent技术发展观察:多智能体编排如何赋能企业数字化转型_模型_项目_the\nURL: https://www.sohu.com/a/991153689_122605043\nDescription: 据信通院《2025年中国AI Agent产业发展白皮书》数据,2025年国内AI Agent市场规模同比增长超60%,多智能体协作编排成为企业级AI应用的核心技术方向｡重庆作为国家数字经济创新发展试验区,其AI Agent技术生态正在加速成型｡ 什么是AI Agent?为何多智能体编排成为技术焦点 AI Agent是一种能够自主感知环境､制定计划并执行任务的智能系统｡\nPublished date: 2026-03-01T01:13:05+08:00\nSite name: 搜狐\n\nTitle: 中国信通院-科研能力-权威发布-专题报告\nURL: https://www.caict.ac.cn/kxyj/qwfb/ztbg/202508/t20250828_691092.htm\nDescription: 科研能力 人工智能高质量数据集建设指南 出版时间:2025.8 关键词:人工智能;数据集 【摘要】 指南从政策､技术､产业层面介绍了当前高质量数据集建设的背景,梳理了高质量数据集的定义､特征､分类､建设主体以及“三大建设难点”,提出了人工智能数据工程的“五大核心要素”和企业建设高质量数据集“三步走”战略,分析了高质量数据集建设的核心技术,展示了科学､通信､交通､铁塔､医疗､文化等领域高质量数据集建设实践,最后从工程能力､技术创新､质量评估､版权合规､基础制度创新等层面对未来高质量数据集建设的趋势进行了展望,并提出了对政府部门和企业机构的建议,为业界推进高质量数据集建设提供有力支撑｡ 【目录】 一､高质量数据集成为人工智能应用升级的核心要素 (一)政策层面:“人工智能+数据要素”政策协同布局 (二)技术层面:人工智能技术演进重构数据工程范式 (三)产业层面:数据成为人工智能行业应用的护城河 二､高质量数据集建设的现状和难点 (一)高质量数据集的“三高”特征 (二)高质量数据集分类维度 (三)高质量数据集建设主体 (四)高质量数据集建设难点 三､搭建人工智能数据工程能力核心要素 (一)管理体系 (二)开发维护",
+    "isError": false,
+    "durationMs": 968,
+    "createdAt": "2026-03-01T12:23:06.275Z"
+  },
+  {
+    "id": "75038662fc0986d2",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_j0iyk4xxhfqo_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:23:12.980Z"
+  },
+  {
+    "id": "c60a56be25ac1df1",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "破局与前行：企业级AI领域10大核心事件盘点-CSDN.NET                              \n\nCSDN首页\\> 业界\n\n订阅业界RSS\n\n破局与前行：企业级AI领域10大核心事件盘点\n\n发表于 2026-01-23 16:54:19\n\n2025年，企业级AI领域迎来跨越式发展，技术突破、政策引领、产业落地多点开花，智能体作为核心载体重塑产业形态与工作范式。蓝凌立足行业实践与观察，系统梳理年度10大核心事件，以为企业AI转型提供参考。\n\n**NO.1 DeepSeek火爆出圈，掀起千行百业接入热潮**\n\n2025年初，中国开源大模型DeepSeek横空出世，迅速席卷全球开发者圈层与资本市场。凭借性能、成本、工程可用性的三重突破，引发硅谷科技媒体与投资界高度关注，甚至导致纳斯达克AI概念股单日蒸发万亿美元市值。\n\n![](https://i-blog.csdnimg.cn/img_convert/bd3ceafc494f83be03a92e6aa85e6fde.webp?x-oss-process=image/format,png)\n\n热潮之下，各行业企业纷纷宣布接入、适配或上架DeepSeek模型。作为数智化办公专家，蓝凌软件率先布局，旗下LanBots.AI、aiKM智能知识管理平台等多款产品接入DeepSeek，支持私有化部署，为用户带来更强大、智能的办公体验。\n\n**NO.2 Manus正式发布，开启通用智能体新时代**\n\n2025年3月6日，中国Monica公司发布通用AI智能体Manus，通过自主任务执行、动态任务拆解、多模态交互和跨平台执行等能力，帮助用户高效完成复杂任务。这一突破标志着AI从对话式助手进化为行动式专家，将人类从重复的流程化工作中解放出来。\n\n![](https://i-blog.csdnimg.cn/img_convert/d70df14875ba7e52287d7abc2eddcc82.webp?x-oss-process=image/format,png)\n\n值得提及的是，12月30日，Manus在官网发布消息称，“Manus 即将加入 Meta”，Manus 将继续通过App和网站为用户提供产品和订阅服务。Manus称，根据12月初统计的数据，上线至今，Manus已处理超过147万亿个token，并创建了超过8000万台虚拟计算机。\n\n**NO.3 信通院发布AI智能体10大关键词，研判未来发展趋势**\n\n2025年7月28日，中国信通院发布“2025智能体十大关键词”，分别是：通用智能体、专用智能体、端侧智能体、企业级智能体、智能体平台、智能体通信协议、多智能体协同、智能体价值评估、智能体可信、智能体基准测试，集中体现了智能体未来发展趋势、技术研究热点与产业关注重点。\n\n![](https://i-blog.csdnimg.cn/img_convert/edc6031edf9dafc14ed0568bf3f7f75d.webp?x-oss-process=image/format,png)\n\n**NO.4 “人工智能 +” 国家战略落地，锚定智能体普及目标**\n\n2025年8月21日，国务院印发《关于深入实施“人工智能+”行动的意见》，明确了实施“人工智能+”行动的总体要求、发展目标和重点方向。\n\n![](https://i-blog.csdnimg.cn/img_convert/d97da83ca064e379a9eb8694d749230f.webp?x-oss-process=image/format,png)\n\n意见深刻把握人工智能技术和产业演进规律，明确了我国实施“人工智能+”行动的阶段性目标：到2027年，新一代智能终端、智能体等应用普及率超70%，智能经济核心产业规模快速增长；到2030年，新一代智能终端、智能体等应用普及率超90%，智能经济成为我国经济发展的重要增长极；到2035年，我国全面步入智能经济和智能社会发展新阶段。\n\n**NO.5 AI生成内容标识办法施行，筑牢行业治理安全防线**\n\n2025年9月1日，《人工智能生成合成内容标识办法》正式施行。《办法》明确，AI生成的文本、图片、音视频等内容需加显式和隐式标识，显式标识需用户可明显感知，隐式标识嵌入文件数据，鼓励用数字水印技术。传播平台需核验标识，对明确、疑似AI生成内容分别标注提示，并提供用户主动声明功能。\n\n![](https://i-blog.csdnimg.cn/img_convert/16ece33c90041d2c7656276922589e33.webp?x-oss-process=image/format,png)\n\n**NO.6 蓝凌LanBots.AI 3.0发布",
+    "isError": false,
+    "durationMs": 1867,
+    "createdAt": "2026-03-01T12:23:14.846Z"
+  },
+  {
+    "id": "2826d6181d8a63f4",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_bi192pb4s6sw_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:23:21.901Z"
+  },
+  {
+    "id": "f7ca696af659e171",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": "       2026人工智能发展趋势深度解析|AI\\_新浪财经\\_新浪网                                 \n\n![](//beacon.sina.com.cn/a.gif?noScript)\n\n           \n\n*   [新浪首页](http://www.sina.com.cn/)\n*   [新闻](http://news.sina.com.cn/)\n*   [体育](http://sports.sina.com.cn/)\n*   [财经](http://finance.sina.com.cn/)\n*   [娱乐](http://ent.sina.com.cn/)\n*   [科技](http://tech.sina.com.cn/)\n*   [博客](http://blog.sina.com.cn/)\n*   [图片](http://photo.sina.com.cn/)\n*   [专栏](http://zhuanlan.sina.com.cn/)\n*   [更多](#)\n\n*   [汽车](http://auto.sina.com.cn/) [教育](http://edu.sina.com.cn/) [时尚](http://fashion.sina.com.cn/) [女性](http://eladies.sina.com.cn/) [星座](http://astro.sina.com.cn/) [健康](http://health.sina.com.cn/)\n*   [房产](http://www.leju.com/#source=pc_sina_dbdh1&source_ext=pc_sina)[历史](http://history.sina.com.cn/)[视频](http://video.sina.com.cn/)[收藏](http://collection.sina.com.cn/)[育儿](http://baby.sina.com.cn/)[读书](http://book.sina.com.cn/)\n*   [佛学](http://fo.sina.com.cn/)[游戏](http://games.sina.com.cn/)[旅游](http://travel.sina.com.cn/)[邮箱](http://mail.sina.com.cn/)[导航](http://news.sina.com.cn/guide/)\n\n[移动客户端](#)\n\n*   [新浪微博](http://m.sina.com.cn/m/weibo.shtml)\n*   [新浪新闻](http://news.sina.com.cn/m/sinanews.html)\n*   [新浪财经](https://finance.sina.com.cn/mobile/comfinanceweb.shtml?source=daohang01)\n*   [新浪体育](http://m.sina.com.cn/m/sinasports.shtml)\n*   [新浪众测](http://zhongce.sina.com.cn/about/app)\n*   [新浪博客](http://blog.sina.com.cn/lm/z/app/)\n*   [新浪视频](http://video.sina.com.cn/app)\n*   [新浪游戏](http://games.sina.com.cn/o/kb/12392.shtml)\n*   [天气通](http://m.sina.com.cn/m/weather.shtml)\n\n[我的收藏](http://my.sina.com.cn/#location=fav)\n\n[注册](https://login.sina.com.cn/signup/signup?entry=news)\n\n[![](//i.sso.sina.com.cn/images/login/thumb_default.png)登录](#)\n\n[×](javascript:;)\n\n新浪微博、博客、邮箱帐号，请直接登录\n\n*   加载中...[换个账号登录](javascript:;)\n*   [×](javascript:;)\n*   \n*   [](javascript:; \"看不清？换一换\")[](javascript:;)\n*   \n*   [登录](javascript:;)\n    \n    下次自动登录\n*   [忘记密码](https://login.sina.com.cn/getpass.html)[立即注册](https://login.sina.com.cn/signup/signup.php",
+    "isError": false,
+    "durationMs": 1821,
+    "createdAt": "2026-03-01T12:23:23.722Z"
+  },
+  {
+    "id": "4183a26cdfc5d803",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": {
+      "toolCallId": "call_function_l8kxu68l4mmi_1"
+    },
+    "output": null,
+    "isError": false,
+    "durationMs": null,
+    "createdAt": "2026-03-01T12:23:28.658Z"
+  },
+  {
+    "id": "3434a62b6223587b",
+    "type": "tool_call",
+    "taskId": "9b4831ef3e8ca940",
+    "subtaskId": "2174610218648093",
+    "employeeId": "1fb1911743652776",
+    "toolName": "1791ada993a23a56__get_markdown_summary",
+    "input": null,
+    "output": " 2025年金融大模型招投标活跃：智能体项目均价百万 四大类厂商激战正酣\\_腾讯新闻                              [](javascript:void\\(0\\))\n\n[](https://www.qq.com)\n\n*   更多\n\n正在浏览：2025年金融大模型招投标活跃：智能体项目均价百万 四大类厂商激战正酣\n\n贝果财经\n\n搜索\n\n游戏\n\n无障碍\n\n登录\n\n点一点下载电脑版\n\n点一点下载电脑版\n\n关注\n\n0\n\n评论\n\n收藏\n\n1\n\n复制链接\n\n微信好友\n\n![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAABxCAYAAADifkzQAAAIrklEQVR4Aeyai3YjKRBDc+f//3l3mKSja5tq07YTm4Q9y7QsVKIaHTh5/Xl7e/vvK8Z/xX/VWpYf1bjW+NynmruHH6mtNOf93fq5hfi3dv0/8w6sEGdO76P3FeLHRsz8uAjx7/39duu4ZyOAN3gf1frwPg+c9Di6LvTrIXzl5Z6sgdRaA+GtN7b+KLbPRYieXHiOHVghzpHTbpe7IUKuBOjjXfePSUjtB/Xv4SvkH/HxD/T1H9P/HhANBP+bHPgHjtXAdT1c11StQWqhj6va3RCrosW/1g50QnytBlc313fg20P0FQq5NtxqpTE/ordmD9vXuKqB632P+FT+R/lvD/Fog0t/fQdWiNf36OUVTw2xunKgf13Bdb7ybEl4zrjN9QZkvRG9PSC15r8CPzXEr3ih3+i5QvwBqe+G6Cukwo/aA/tXntZUuKptPFy/4iAar9Hqt1HxcL128zh/2rPC5zXb590QN9F6vvYOjIX42u/w67u7CBFyJcAxfHQ3If5Vra8W6Ouhz597jnid12yf4foaR/0hnnAMb32150WIjVxjrh1YIc6VV7fbP74CHom7q+2QkOukkrk/a0b4pnFNhZtuG5CeNq49IXzlU/Gt/tFjncRqtyfiV4gThVW1+gdyNQAnOuDzj5fgGLaRrw/zFbYe+utWtebhtNZzxnCqg/fPlcb9GVtf8fDuDcef9jdeJ9G7MSm+OcRJ3/dHtn3x1anfsroSKo310L8uqlrzkFp7GkM0EGwf6xvem2vzo8M+kLXhOnat1xvhIf7Wr5Po3ZgUrxAnDc5t3xRidQ1AjvuIxo1UemuMrTe2BtIP4KmTr7o9AZzMwf5n11Z9WGMM8XYt9Pmq9qYQbbbw83dghfj8DO7u4KYQIccdgqsrwV1WGuj7uBaiqXjoa6xvuOqjzfWG9cbWQta2ZgRDakc8rbkpRBss/PwdeGSIz3+bX9rB8M9OR/YHciX4ChmprTRwu6d7aLhao81to9JA+oBg6zeP9jQP0UMfW9/qt2EeUmt+nUTvxqR4hThpcG77W352ul0N7Qn9K6HNbQP6GjcOxzSAy08w8PkN/tZDe1rUPveGNcbQ97SH9ffw6yR6JyfFK8RJg3Pbw1+d+rgbQ64NCPYixq41tsbYGuj7W1PVNg30611j3Gq2Yb7C0PeH8BBsHwgPwdZsvbSn+XUSvRuT4i8OcdJdmazt3RDbsd2G3wty3Lf582elh9RCsPWPwhB/4MQW+PyK1BMQHq5j1xp7P8yP4KoW+v3shjiy4NI8fwdWiM/P4O4OLr7ZhxzZo+6QWl8JxvYc4aHvaR/oa+y/h+1V6awxrvRwe0/2h+s+6yR6xybFK8RJg3PbFyH6eoAcZQi2xmbmIfqjmqN6r+taSA+Apz6/MoUx3sVeDzjxgvfP1rgW3uehflpvH0iNNRchenLhOXbg+0OcY1+m6nI3RB9lvxX0jzWEdy2Et48xXNdYbwxjtRCd+7NXxVsDfZ+R2kpT8V7XGNLDboguWvh1d2CF+LrZDHe2QhzeqtcV7v4+0W1XdzbkbrYGwtunwo+qtb89G/Yc9PuDPt/qewOih2PY/VQY4un1rV8n0bsxKV4hThqc294NEXKUXVQda7iuh75mxN8aY+h7QnjAJSfY72MMdH8aA+Gtt2nFVxqIJwRXPuZ3Q/SCX4mX9307s",
+    "isError": false,
+    "durationMs": 1114,
+    "createdAt": "2026-03-01T12:23:29.772Z"
+  }
+]
