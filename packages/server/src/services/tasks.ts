@@ -996,6 +996,24 @@ ${memberList}
       dependsOn: Array.isArray(st.dependsOn) ? st.dependsOn.filter((d: unknown) => typeof d === 'string') : [],
     }));
 
+  // Check if PM-generated plan is too simple (fewer subtasks than members)
+  // or doesn't utilize all team members
+  const assignedMemberIds = new Set(normalized.map(st => st.assigneeId));
+  const unassignedMembers = members.filter(m => !assignedMemberIds.has(m.id));
+
+  if (normalized.length === 0 || normalized.length < members.length || unassignedMembers.length > 0) {
+    // PM plan is too simple - use fallback instead for better collaboration
+    const fallbackSubtasks = buildAutoStartFallbackSubtasks(task, members);
+    const pmSubtaskIds = new Set(normalized.map(st => st.id));
+
+    // Merge: keep valid PM subtasks, add fallback subtasks that cover missing work
+    const additionalSubtasks = fallbackSubtasks.filter(st => !pmSubtaskIds.has(st.id));
+
+    if (additionalSubtasks.length > 0) {
+      normalized = [...normalized, ...additionalSubtasks];
+    }
+  }
+
   if (normalized.length === 0) {
     normalized = [{
       id: 'sub_fallback_1',
