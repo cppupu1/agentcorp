@@ -10,3 +10,13 @@ screenshots/
 test-results/
 visual-audit.mjs
 CLAUDE.md
+
+# Runtime files
+.pids/
+logs/
+*.log
+*.pid
+
+# Temporary generated files
+src/
+scripts/
